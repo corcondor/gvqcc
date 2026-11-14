@@ -1,0 +1,48 @@
+{
+  "input": "dqi_inputs/821_ccx480_gauge128.kmb",
+  "window": 4096,
+  "max_seconds": 240.0,
+  "memory_limit_bytes": 1073741824,
+  "scope": "Read-only residual scan; no file mutation or full simulation",
+  "identity_proof": {
+    "status": "PASS",
+    "basis_states": 16,
+    "classical_conditions": 2,
+    "checks": 32,
+    "phase": "Both sides are identical basis permutations with no phase gates."
+  },
+  "script_sha256": "0257317c33e43f81f9b3e4fe3f585a9a14299ea76a27ffbf9dc3962d3d650c66",
+  "input_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "header": {
+    "version": 2,
+    "num_qubits": 889,
+    "num_bits": 154799,
+    "num_registers": 4165,
+    "num_ops": 59378866,
+    "num_ops_with_3_target_qubits": 382934,
+    "num_ops_with_2_target_qubits": 32212227,
+    "num_ops_with_1_target_qubits": 273882,
+    "num_ops_with_1_target_bit": 21480153,
+    "num_ops_with_1_condition_bit": 21770524,
+    "num_ops_with_angle": 0,
+    "num_info_tags": 0,
+    "num_info_tag_chars": 0
+  },
+  "status": "COMPLETE",
+  "counts": {
+    "ccx_scanned": 363694,
+    "signature_pairs": 2248772,
+    "four_distinct_pairs": 213204,
+    "eligible_commuting_pairs": 0,
+    "central_meeting_pairs": 0,
+    "older_than_latest_pairs": 0,
+    "pairs_beyond_256": 0,
+    "barrier_resets": 49840
+  },
+  "hits": [],
+  "additional_ccx_reduction_proven": 0,
+  "candidate_written": false,
+  "caveat": "Overlapping discovered pairs are not yet a jointly applicable rewrite list.",
+  "elapsed_seconds": 23.88339244099916,
+  "max_rss_kib": 223636
+}

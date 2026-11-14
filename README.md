@@ -22,7 +22,7 @@
 
 **同じ102,400入力で元回路と比較する計算も完了しました。** 両回路とも値エラー・位相エラーは0、反復係数Rも一致しています。元回路の平均Toffoli数382599.9932617188に対し、v2は382115.5671582031で、平均 **484.426103515625 Toffoli削減、DQIコスト0.1266142478%改善**です。内訳は無条件のCCX削減480と、gauge変更による平均4.426103515625です。比較にはv2の通常の回路ハッシュ由来seedを使い、seedの探索はしていません。[入力を固定した比較結果](dqi_combined_v2_paired_comparison.json)と[元回路の検証記録](dqi_baseline_v2_paired_verification.json)を参照してください。
 
-この更新時点ではv2のKaggleノートブック実行・競技採点は未開始です。上記ローカル費用を、確認済みのPublic Scoreとして扱わないでください。
+v2は[Kaggle CPU notebook](https://www.kaggle.com/code/geocpuresearch/gvqcc-verified-480ccx-gauge128)で保存実行を開始しました。元ZIP・公式検証器のハッシュ照合まで通過し、全検証と競技採点はまだ完了していません。上記ローカル費用を、確認済みのPublic Scoreとして扱わないでください。
 
 v1は別途、Kaggleの競技添付Kickmixと公式検証コードでも102,400ショットPASSし、ローカルと同じ数値を再現しました。[Kaggle v1の実行記録](results/2026-11-14/kaggle_v1_full_verification.json)はノートブック実行の証拠であり、競技リーダーボード採点の結果ではありません。v1の回路・workerと以下の計算履歴は保持しています。
 
@@ -44,6 +44,16 @@ python reproduce_dqi_candidate.py --work-dir dqi_run_v2_zip --variant 480gauge12
 
 `invsqrt`とchemistryの各メンバーはバイト単位で保持し、全回路検証が通った場合だけ新しいZIPを作ります。Kaggleで使う自己完結版は [kaggle_score_worker_v2.py](kaggle_score_worker_v2.py)、埋め込みの確認結果は [kaggle_score_worker_v2_audit.json](kaggle_score_worker_v2_audit.json) です。これは実行用コードの静的・統合監査であり、Kaggleでのv2実行結果ではありません。
 
+### 追加：Kaggle v1出力からv2へ進める小型worker
+
+[kaggle_promote_v1_to_v2.py](kaggle_promote_v1_to_v2.py) は、検証済みv1ノートブックの出力を再利用する52,597 bytesのオフラインworkerです。埋め込みを含む全行を166文字以下にし、編集画面で巨大な1行を処理せずに済む形にしました。必要な入力は競技データと、`geocpuresearch/gvqcc-verified-96ccx-gauge128` の **version 1（scriptVersionId 369610226）出力**の2件です。
+
+旧 `submission.zip` 全体のSHA-256 `2f5c27607830431425889289c5d59c3f39fc006add37711db345ee4b26016ebf` と、そのDQI `aafed8…` を確認してから、384件の追加置換を適用します。最終 `e986d4…` のハッシュと16ブロックの証明を照合し、競技添付engine・公式verifierで102,400ショットのPASSを要求します。seedは既定値、saltは空、信頼度は `log2_delta=-128` です。
+
+PASS後に、その他17メンバーの非圧縮内容をバイト単位で保持して `/kaggle/working/submission.zip` を作ります。変換証明・全検証JSON・メンバー別ハッシュも出力します。`invsqrt`とchemistryの検証は、この昇格処理では再実行しません。Kaggleへの競技提出を行うコードは含みません。
+
+[ビルド記録](kaggle_promote_v1_to_v2_build.json)と[静的・合成ZIP監査](kaggle_promote_v1_to_v2_audit.json)では、埋込コードのハッシュと構文、17メンバーの保持、元ZIP不変、上書き・重複拒否を確認しました。これはworkerの監査結果であり、Kaggleでの実行完了記録ではありません。既存v1/v2 workerは変更していません。
+
 ### 一次資料から次の実験へ
 
 - [Claude研究の実装・探索手順・公開範囲](research_anthropic_method.md)：Anthropic/Harvardの原著、公開コード`andigu/uncompute`、独立評価と複数設計の保存、今回の競技へ適用する運転案。
@@ -58,6 +68,10 @@ python reproduce_dqi_candidate.py --work-dir dqi_run_v2_zip --variant 480gauge12
 Claude論文の反復ワードによるQROM削減を受け、[完全ワードの重複監査](anthropic_repeated_rows_audit.json)も実施しました。15表すべてで1,220個の40bit差分ワードがすべて異なり、完全ワードの重複は0でした。単なる行置換では新たな完全ワードの重複は作れません。部分ビットの共有や線形関係の利用は、この監査で否定していません。
 
 状態から履歴を復元する発想についても、[rolling flagの限定反例探索](dqi_rolling_flag_screen_report.md)を実施しました。許容された既知の25入力・425ノード状態で、ゼロ判定やパリティによる4種類の安い復元式を反証しました。同じ公開ノード内の反例であり、ノードごとに異なる係数を許すアフィン式も含みます。より複雑な非線形復元式まで否定した結果ではありません。検証済み回路は変更していません。
+
+追加の[共通制御・二次位相簡約スキャン](dqi_quadratic_phase_scan_report.md)では、原821回路のCCZ全7000個を、条件変更・測定等を跨がない区間に分けて調べました。9 CCZを持つ18区間の全9036部分集合には共通線形因子を持つものが216件ありましたが、元のCCZ数を減らせるものは0件でした。共通制御を持つ別の12 CCZ区間2個も、二次形式のpolar rankが24で、この簡約方式では各12 CCZが必要でした。
+
+新規の全区間・部分集合スキャン2本と結果JSON2件は同レポートから参照できます。合成規則は160ケースの独立シミュレーション、線形因子判定は31,713通りの直接代入との一致を確認しました。測定を跨ぐ変換、非線形な変数変換、一般的な三次形式の再合成まで否定する結果ではありません。追加削減が0件のため、検証済みe986候補・worker・KMBは変更していません。
 
 ## v1（96 CCX + gauge128）の実測結果・履歴
 
