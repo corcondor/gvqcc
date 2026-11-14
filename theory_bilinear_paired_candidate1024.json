@@ -1,0 +1,48 @@
+{
+  "circuit_sha256": "3dfa80eb777a55659dcc143466d22427ccf278e198b720f24009cc921747bbcc",
+  "seed_circuit_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "base_seed": 105627115000454673480560843138090279010582148233824853720275839910719324590759,
+  "salt": "",
+  "batch_size": 256,
+  "batches": [
+    {
+      "batch_index": 0,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "toffolis": 97821517,
+      "output_syndrome_sha256": "3c5724eaa9188f47f75a6151acfbf88cf7e56377c82d2d3f88a2f00a2244ded5",
+      "output_ancilla_sha256": "e927bd27935ebbe28ec490d6a47c32e1d542a7eb43385ef68d3bf180b420c62b",
+      "output_phase_sha256": "1e99f9c7c54ac94ef2be2236809d5375750371c11d5139d2d3684633b72ac7a4"
+    },
+    {
+      "batch_index": 1,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "toffolis": 97821069,
+      "output_syndrome_sha256": "fff206ec1c86a49bcb25d9a48b68e674ee7c42e936be414240bd12dca3a1016d",
+      "output_ancilla_sha256": "e927bd27935ebbe28ec490d6a47c32e1d542a7eb43385ef68d3bf180b420c62b",
+      "output_phase_sha256": "af86dccd1ac5eff397195ad21555cf7533676d674c5e23289d05fb67064ea2cf"
+    },
+    {
+      "batch_index": 2,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "toffolis": 97821324,
+      "output_syndrome_sha256": "eb8f47e5653637623baafce1a6ccef0068b29f13683a23c6cfea411fa6bea14b",
+      "output_ancilla_sha256": "e927bd27935ebbe28ec490d6a47c32e1d542a7eb43385ef68d3bf180b420c62b",
+      "output_phase_sha256": "ac704f0c2beef27335e97847217a58e003b91d091b4ceabc4e724b4f3da24525"
+    },
+    {
+      "batch_index": 3,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "toffolis": 97821022,
+      "output_syndrome_sha256": "52619a70e7627cb2fa29e267bdfd39dff8d3095d75f7d6874136e73d91b3dec9",
+      "output_ancilla_sha256": "e927bd27935ebbe28ec490d6a47c32e1d542a7eb43385ef68d3bf180b420c62b",
+      "output_phase_sha256": "00b74cac6917e108004e0555c6ab377de396ae711c222aa6970716caddd6d701"
+    }
+  ],
+  "failures": [],
+  "elapsed_seconds": 8.337042096000005,
+  "scope": "Exact input and simulator seeds from selected original 102400-shot verification batches."
+}

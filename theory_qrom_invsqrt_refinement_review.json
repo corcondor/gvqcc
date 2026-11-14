@@ -1,0 +1,19 @@
+{
+  "status": "PASS_EXHAUSTIVE_SMALL_COEFFICIENT_ORACLE",
+  "reviewed_source_sha256": "b90affba279067e77e7ccf120fb638fa74dfde8c0243923c35afc4fd84e4f60c",
+  "inputs": 6,
+  "signature_inputs": [
+    1,
+    4
+  ],
+  "generator_sets": 12,
+  "arbitrary_targets_per_generator_set": 64,
+  "totals": {
+    "queries": 768,
+    "member_targets": 296,
+    "nonmember_targets": 472,
+    "counterexample_refinements": 1580,
+    "max_refinements": 4
+  },
+  "scope": "Actual affine_match function against full coefficient enumeration on small truth tables, with deliberate signature collisions; no large circuit rerun."
+}
