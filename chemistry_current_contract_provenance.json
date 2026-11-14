@@ -1,0 +1,97 @@
+{
+  "schema": "gvqcc-current-chemistry-contract-provenance-v1",
+  "checked_at_utc": "2026-11-14T19:39:41.290768+00:00",
+  "repository": "Inzainos/quantum-circuit-compilation",
+  "resolved_main_commit": "4277c767440df9efb8a90860ae2ce47028e46ba9",
+  "head_resolution_url": "https://api.github.com/repos/Inzainos/quantum-circuit-compilation/git/ref/heads/main",
+  "commit_tree_verification_url": "https://api.github.com/repos/Inzainos/quantum-circuit-compilation/git/trees/4277c767440df9efb8a90860ae2ce47028e46ba9?recursive=1",
+  "files": [
+    {
+      "repository_path": "verifiers/dfthcsos/SCORING_README.md",
+      "local_path": "/workspace/scratch/7f542e06b7cf/official_sources/current_pinned_dfthcsos/SCORING_README.md",
+      "bytes": 22477,
+      "sha256": "c2228569f96e58e118419bc32be2be9e33d6abffb8117cb0b91e1fc25b2a0230",
+      "expected_kaggle_pin": "c2228569f96e58e118419bc32be2be9e33d6abffb8117cb0b91e1fc25b2a0230",
+      "matches_kaggle_pin": true,
+      "git_blob_sha1": "d210fc76ac9695031d331bf4bb3793898c406762",
+      "matches_resolved_commit_tree": true,
+      "retrieval_url": "https://api.github.com/repos/Inzainos/quantum-circuit-compilation/contents/verifiers/dfthcsos/SCORING_README.md",
+      "immutable_source_url": "https://github.com/Inzainos/quantum-circuit-compilation/blob/4277c767440df9efb8a90860ae2ce47028e46ba9/verifiers/dfthcsos/SCORING_README.md",
+      "prior_local_copy": {
+        "path": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dfthcsos/SCORING_README.md",
+        "bytes": 22478,
+        "sha256": "304d546013312b2daf500942897c4d8b18bfe4a6658f4bf4653b40c12591721b",
+        "only_difference_is_one_extra_trailing_lf": true
+      }
+    },
+    {
+      "repository_path": "verifiers/dfthcsos/scoreinfra/circuits.py",
+      "local_path": "/workspace/scratch/7f542e06b7cf/official_sources/current_pinned_dfthcsos/scoreinfra/circuits.py",
+      "bytes": 24418,
+      "sha256": "fc027b52fdcebe14404f403a089122485d097ed65d03e6d989623d620b1ab68c",
+      "expected_kaggle_pin": "fc027b52fdcebe14404f403a089122485d097ed65d03e6d989623d620b1ab68c",
+      "matches_kaggle_pin": true,
+      "git_blob_sha1": "0fd6eced3e493e80cbeff05c5beda0f59703df1a",
+      "matches_resolved_commit_tree": true,
+      "retrieval_url": "https://api.github.com/repos/Inzainos/quantum-circuit-compilation/contents/verifiers/dfthcsos/scoreinfra/circuits.py",
+      "immutable_source_url": "https://github.com/Inzainos/quantum-circuit-compilation/blob/4277c767440df9efb8a90860ae2ce47028e46ba9/verifiers/dfthcsos/scoreinfra/circuits.py",
+      "prior_local_copy": {
+        "path": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dfthcsos/scoreinfra/circuits.py",
+        "bytes": 24419,
+        "sha256": "98601c25aa5f57ff7024c545f8773badc43ad2e6b586e6400bc2158c2bd01b86",
+        "only_difference_is_one_extra_trailing_lf": true
+      }
+    }
+  ],
+  "contract_clauses": [
+    {
+      "source": "SCORING_README.md",
+      "section": "What a submission must do",
+      "lines": [
+        236,
+        250
+      ],
+      "excerpt": "is the reversible XOR oracle\nANGLE_k: |a>|z> -> |a>|z XOR delta[k, a]>",
+      "interpretation_ja": "各ANGLE_kをzに依存しない差分deltaによるXOR写像として定義し、その帰結としてz=0からのforward/reverse動作を説明している。"
+    },
+    {
+      "source": "scoreinfra/circuits.py",
+      "lines": [
+        8,
+        14
+      ],
+      "excerpt": "|a>|z> -> |a>|z XOR f_k(a)>",
+      "interpretation_ja": "実装ファイルの契約説明も、各回路を同じXOR oracleとして定義している。"
+    }
+  ],
+  "actual_simulator_scope": [
+    {
+      "source": "scoreinfra/circuits.py",
+      "function": "recover_words_from_circuits",
+      "lines": [
+        448,
+        458
+      ],
+      "description_ja": "全addressを各64ショットで検査し、wordは初期値0から開始する。各回路後に得られたbatchを読み取る。"
+    },
+    {
+      "source": "scoreinfra/circuits.py",
+      "function": "reset_between_circuits",
+      "lines": [
+        522,
+        531
+      ],
+      "description_ja": "各回路の間でsim.clear_for_shot()を実行し、selectionと直前batchをwordへ書き戻す。任意の初期wordは生成しない。"
+    },
+    {
+      "source": "scoreinfra/circuits.py",
+      "lines": [
+        533,
+        556
+      ],
+      "description_ja": "forwardで得たbatchesを保存し、reverseでは一つ前のbatchへの復元と最終的な0への復元を確認する。任意zの独立検査はない。"
+    }
+  ],
+  "qualification_ja": "SCORING_READMEの277–278行は構成の自由を述べるが、上の形式的XOR定義を撤回する文章は確認できない。軌道検証のPASSだけでは任意zのXOR適合を証明しない。",
+  "changes": "Retrieved source copies and this provenance only; no circuit, candidate, worker, or verifier modification."
+}

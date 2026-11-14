@@ -1,0 +1,22 @@
+{
+  "observed_at_utc": "2026-11-14T19:53:36Z",
+  "observed_date_jst": "2026-11-15",
+  "competition": "google-verifiable-quantum-circuit-compilation",
+  "submissions_url": "https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/submissions",
+  "source_notebook": "https://www.kaggle.com/code/geocpuresearch/gvqcc-verified-480ccx-gauge128",
+  "script_version_id": 369627280,
+  "notebook_version_title": "480CCX gauge128 full 102400 validation",
+  "output_file": "submission.zip",
+  "output_zip_sha256_from_notebook_receipt": "b0f55e7bb1cb58f1c8f2eac84d6971434f256682405e1e917649f2bbaae33803",
+  "candidate_dqi_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "submission_description": "v2: 480 CCX reduction + gauge128. Official DQI 102400 shots PASS, 0 value / 0 phase errors; Q889. Other 17 members preserved.",
+  "kaggle_submission_performed": true,
+  "status_observed": "Pending",
+  "submission_id": null,
+  "submission_id_note": "The visible submission detail dialog did not expose a numeric submission ID.",
+  "public_score": null,
+  "prior_submission_public_score": 27.30683,
+  "prior_submission_status": "Complete",
+  "evidence": "Kaggle Submissions list and Submission Details dialog both displayed the new notebook/version, selected output submission.zip, description, and Pending status.",
+  "scope": "Competition upload accepted; leaderboard scoring has not yet been observed. Official DQI notebook verification is recorded separately."
+}

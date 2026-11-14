@@ -1,0 +1,393 @@
+{
+  "schema": "gvqcc-reachable-exact-proof-independent-audit-v1",
+  "reviewed_at_utc": "2026-11-14T19:47:09.557809+00:00",
+  "status": "NO_BLOCKING_ISSUE_FOUND",
+  "proof_script_sha256": "f8d35e8c5be8de197b740761a01b1d2c8e06743c0cc627f90d5564f04189bd9a",
+  "proof_receipt_sha256": "97e797b0ea40ad3e72e7aae633b0fa2bc4e173d6a8f4407b4914dfab46b4388c",
+  "matches_receipt_script_hash": true,
+  "scope": "Independent code review plus native KMB metadata/serialization checks; no repeat of the exhaustive reachable proof or full scoring verification.",
+  "review_findings": [
+    {
+      "topic": "Exact address truth tables",
+      "assessment": "Integer bitsets evaluate X/CX/CCX over all 1220 valid addresses without sampling. Forward and reverse input batches are explicitly supplied for all 15 circuits."
+    },
+    {
+      "topic": "Measurement independence",
+      "assessment": "Conditional quantum state mutations are rejected; only phase corrections depend on HMR bits. Quantum wire truth tables therefore remain independent of every measurement result."
+    },
+    {
+      "topic": "HMR bit overwrite",
+      "assessment": "Each old measurement coefficient must be zero before its classical destination bit is reused. Forgetting that old variable is then valid."
+    },
+    {
+      "topic": "Reset",
+      "assessment": "Every R input is required to be identically zero over the full address domain, so resets cannot discard address-dependent information on the proved subspace."
+    },
+    {
+      "topic": "Coherent extension",
+      "assessment": "With fixed unconditional HMR count, each branch has input-independent normalization. Zero phase coefficient functions and the same output basis mapping imply the same isometry for arbitrary coherent inputs on the stated subspace, including a reference system."
+    },
+    {
+      "topic": "Inter-circuit classical state",
+      "assessment": "Every conditioned CZ must refer to a measurement bit initialized by an HMR in that circuit. No incoming classical bit value is silently assumed to be zero."
+    }
+  ],
+  "native_checks": {
+    "method": "kickmix.Circuit.from_file on each of the 15 original pinned KMB files, without simulation",
+    "seconds": 0.970362869,
+    "circuits": [
+      {
+        "k": 0,
+        "num_qubits": 128,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 1,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 2,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 3,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 4,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 5,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 6,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 7,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 8,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 9,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 10,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 11,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 12,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 13,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      },
+      {
+        "k": 14,
+        "num_qubits": 125,
+        "sha256_matches_proof_receipt": true,
+        "selection_ids": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "word_ids_are_contiguous_11_through_50": true,
+        "public_register_names_exactly_selection_and_5_words": true,
+        "all_printed_gate_arities_expected": true,
+        "conditioned_operations_are_only_CZ": true
+      }
+    ]
+  },
+  "supported_claims": {
+    "address_transition_cases": 36600,
+    "formal_HMR_variables": 2230,
+    "zero_R_inputs": 2230,
+    "valid_addresses": 1220,
+    "directions": 2,
+    "circuits": 15,
+    "arbitrary_target_XOR_proved": false,
+    "tensor_accuracy_rechecked": false,
+    "competition_submission_status_determined": false
+  },
+  "limitations": [
+    "The proof hardcodes selection q0..q10 and words q11..q50. Those assumptions were independently confirmed for these exact 15 KMB hashes; the script is not a layout-generic verifier.",
+    "The domain is the two expected batch graphs at valid addresses, not all 2048 addresses or all arbitrary word values.",
+    "Whole-algorithm composition assumes callers maintain the specified input-batch subspace and intervening angle-controlled operations leave word-register basis values unchanged.",
+    "Competition contract interpretation is a separate question; this audit does not turn a sampled scoring PASS into an arbitrary-target XOR proof."
+  ],
+  "artifacts_modified_by_audit": [
+    "chemistry_reachable_exact_proof_audit.json",
+    "README.md"
+  ],
+  "circuit_or_worker_modified": false
+}

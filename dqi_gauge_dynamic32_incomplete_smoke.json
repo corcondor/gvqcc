@@ -1,0 +1,22 @@
+{
+  "status": "INCOMPLETE_EXIT137_AFTER_ALL_BATCHES",
+  "exit_code": 137,
+  "candidate_sha256": "e25a29f427204113175678804ac6d56276ca2798bcee6facc96e4feebc940a32",
+  "seed": 20261115,
+  "log2_delta": -8,
+  "requested_shots": 1024,
+  "last_batch_callback": {
+    "event": "progress",
+    "batches": 4,
+    "total_batches": 4,
+    "shots": 1024,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "mean_toffolis": 382108.3720703125,
+    "seconds": 6.526664016999348
+  },
+  "official_final_report_created": false,
+  "log_sha256": "f178c8a933c2c173a21d83df60e266ced3b6ce3eeb623e022e9343ffe6ddfabd",
+  "diagnosis": "The process was killed after the final batch callback and before the official return. Memory exhaustion in final resource statistics is suspected, not confirmed by a kernel OOM log.",
+  "scope": "Incomplete smoke; not a PASS or official score. No full102400 run occurred on this candidate."
+}

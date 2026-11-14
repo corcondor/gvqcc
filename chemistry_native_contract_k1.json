@@ -1,0 +1,85 @@
+{
+  "k": 1,
+  "circuit": "dqi_inputs/chemistry_4033/angle_k_1.kmb",
+  "sha256": "e63f9de0a60ff79fc6f817056a1f95f5efed9ae82955cf56b11492e5ff28d70b",
+  "table_sha256": "3f864a7aeaa4d78984c8822761782b63be2d553b229f487e79640a73be147c44",
+  "shots": 328,
+  "seed": 123456789,
+  "address_count": 8,
+  "initial_z_patterns": "zero and each of 40 single bits",
+  "arbitrary_z_structure_mismatches": 80,
+  "declared_table_xor_mismatches": 198,
+  "phase_errors": 0,
+  "selection_errors": 0,
+  "workspace_errors": 0,
+  "first_counterexamples": [
+    {
+      "a": 0,
+      "z": 64,
+      "actual": 215248526962,
+      "zero_output": 1081479393779,
+      "xor_from_zero_expected": 1081479393715,
+      "declared_table_xor_expected": 1081479393715
+    },
+    {
+      "a": 0,
+      "z": 128,
+      "actual": 215248527026,
+      "zero_output": 1081479393779,
+      "xor_from_zero_expected": 1081479393651,
+      "declared_table_xor_expected": 1081479393651
+    },
+    {
+      "a": 0,
+      "z": 16384,
+      "actual": 1029867208710,
+      "zero_output": 1081479393779,
+      "xor_from_zero_expected": 1081479377395,
+      "declared_table_xor_expected": 1081479377395
+    },
+    {
+      "a": 0,
+      "z": 32768,
+      "actual": 1029867192326,
+      "zero_output": 1081479393779,
+      "xor_from_zero_expected": 1081479361011,
+      "declared_table_xor_expected": 1081479361011
+    },
+    {
+      "a": 0,
+      "z": 4194304,
+      "actual": 919718344713,
+      "zero_output": 1081479393779,
+      "xor_from_zero_expected": 1081483588083,
+      "declared_table_xor_expected": 1081483588083
+    },
+    {
+      "a": 0,
+      "z": 8388608,
+      "actual": 919722539017,
+      "zero_output": 1081479393779,
+      "xor_from_zero_expected": 1081487782387,
+      "declared_table_xor_expected": 1081487782387
+    },
+    {
+      "a": 0,
+      "z": 1073741824,
+      "actual": 156800311035,
+      "zero_output": 1081479393779,
+      "xor_from_zero_expected": 1080405651955,
+      "declared_table_xor_expected": 1080405651955
+    },
+    {
+      "a": 0,
+      "z": 2147483648,
+      "actual": 155726569211,
+      "zero_output": 1081479393779,
+      "xor_from_zero_expected": 1079331910131,
+      "declared_table_xor_expected": 1079331910131
+    }
+  ],
+  "status": "DIAGNOSTIC_COMPLETE_NOT_OFFICIAL_SCORE",
+  "script_sha256": "fc3ac946e88aff23188136a5623e9b014e91be26f1f48e96386672a78705e7d6",
+  "seconds": 0.040266624999276246,
+  "peak_rss_mib": 32.0078125
+}

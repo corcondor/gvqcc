@@ -1,0 +1,113 @@
+{
+  "status": "PAIRED_OUTPUTS_IDENTICAL_AND_TOFFOLIS_REDUCED_DEFAULT_COST_WORSE",
+  "baseline_circuit_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "candidate_circuit_sha256": "72b3525cc40397c595061d466a48241d65bd47f794d2aeac428b26829a8a2229",
+  "paired_input_seed_circuit_sha256": "72b3525cc40397c595061d466a48241d65bd47f794d2aeac428b26829a8a2229",
+  "paired_base_seed": 51880498807245916456986774758043813792790306185490934331776241325135561892393,
+  "paired_salt": "",
+  "paired_shots": 1024,
+  "batch_size": 256,
+  "paired_batches": [
+    {
+      "batch_index": 103,
+      "old_toffolis": 97821774,
+      "new_toffolis": 97820520,
+      "toffolis_saved": 1254,
+      "value_errors_old": 0,
+      "value_errors_new": 0,
+      "phase_errors_old": 0,
+      "phase_errors_new": 0,
+      "syndrome_outputs_identical": true,
+      "ancilla_outputs_identical": true,
+      "phase_outputs_identical": true
+    },
+    {
+      "batch_index": 104,
+      "old_toffolis": 97821920,
+      "new_toffolis": 97820567,
+      "toffolis_saved": 1353,
+      "value_errors_old": 1,
+      "value_errors_new": 1,
+      "phase_errors_old": 0,
+      "phase_errors_new": 0,
+      "syndrome_outputs_identical": true,
+      "ancilla_outputs_identical": true,
+      "phase_outputs_identical": true
+    },
+    {
+      "batch_index": 105,
+      "old_toffolis": 97821680,
+      "new_toffolis": 97820283,
+      "toffolis_saved": 1397,
+      "value_errors_old": 0,
+      "value_errors_new": 0,
+      "phase_errors_old": 0,
+      "phase_errors_new": 0,
+      "syndrome_outputs_identical": true,
+      "ancilla_outputs_identical": true,
+      "phase_outputs_identical": true
+    },
+    {
+      "batch_index": 106,
+      "old_toffolis": 97821031,
+      "new_toffolis": 97819854,
+      "toffolis_saved": 1177,
+      "value_errors_old": 0,
+      "value_errors_new": 0,
+      "phase_errors_old": 0,
+      "phase_errors_new": 0,
+      "syndrome_outputs_identical": true,
+      "ancilla_outputs_identical": true,
+      "phase_outputs_identical": true
+    }
+  ],
+  "old_mean_toffoli": 382115.6298828125,
+  "new_mean_toffoli": 382110.5703125,
+  "toffolis_saved_total": 5181,
+  "toffolis_saved_per_shot": 5.0595703125,
+  "additional_zero_masks_total": 471,
+  "paired_relative_toffoli_reduction_percent": 0.0013240940481946976,
+  "all_output_syndrome_ancilla_phase_hashes_equal": true,
+  "same_preexisting_failure": {
+    "batch_index": 104,
+    "shot_in_batch": 184,
+    "absolute_shot": 26808,
+    "sampled_error_weight": 31,
+    "value_error": true,
+    "phase_error": false,
+    "actual_phase": false,
+    "expected_phase": true
+  },
+  "failure_records_exactly_identical": true,
+  "default_verification_comparison": {
+    "same_inputs": false,
+    "baseline_score": 359753461767.22644,
+    "candidate_score": 361400858314.11945,
+    "cost_worsening_percent": 0.4579237511156853,
+    "baseline_value_errors": 0,
+    "candidate_value_errors": 1,
+    "baseline_phase_errors": 0,
+    "candidate_phase_errors": 0,
+    "baseline_repetition_factor": 1.1912604648115832,
+    "candidate_repetition_factor": 1.1967314991687559,
+    "note": "Different circuit hashes give different default samples. Do not interpret the observed default failure-count difference as evidence that the new gauge increased the true failure probability."
+  },
+  "recommendation": "Keep the existing e986 submission; retain this candidate as a verified research result, not an adopted score improvement.",
+  "candidate_default_full_attempts": 1,
+  "hash_or_salt_search_performed": false,
+  "evidence_files": {
+    "baseline_replay": {
+      "path": "gvqcc_repo/dqi_gauge_dynamic32_old128_paired1024.json",
+      "sha256": "dde68014489b91602b75a4303d74f6c1c7f5597782d1b9c704e83a21f87f9c15"
+    },
+    "candidate_replay": {
+      "path": "gvqcc_repo/dqi_gauge_dynamic32_failure_localization.json",
+      "sha256": "38b982f2b66155a6a131d515c9cb3f2691781a51c0f85e58260b590774dc039a"
+    },
+    "generator": {
+      "path": "gvqcc_repo/dqi_gauge_dynamic.py",
+      "sha256": "b2a3ae1dda4425dd8457007a0c7751ad6cd48f8848747a2be7d6b7aca8afd06d"
+    }
+  },
+  "scope": "Official verifier default102400 PASS and paired1024 output/gate comparison. No Kaggle competition submission or leaderboard score for this candidate."
+}

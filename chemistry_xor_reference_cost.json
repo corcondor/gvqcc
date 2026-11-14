@@ -1,0 +1,140 @@
+{
+  "status": "COST_MEASURED_NOT_OFFICIAL_SCORE",
+  "table_sha256": "3f864a7aeaa4d78984c8822761782b63be2d553b229f487e79640a73be147c44",
+  "generator_sha256": "aa32268dae7ad46cabd9fe3b620880cdd92909a32b6ca51c4b22da155e14ec7f",
+  "script_sha256": "5e5280b944520be4e6c05df7ca1aaa8f6edbd9b2430575ecce607ae2c7bb6bd2",
+  "generator": "official_sources/Inzainos/verifiers/dfthcsos/example_submission/angle_k_reference_circuit.py",
+  "loaders": [
+    {
+      "k": 0,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32688,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 1,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32897,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 2,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32627,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 3,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32813,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 4,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32968,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 5,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32941,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 6,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 33066,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 7,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32535,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 8,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32926,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 9,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32642,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 10,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32801,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 11,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32710,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 12,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32945,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 13,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32913,
+      "output_only_used_as_xor_target": true
+    },
+    {
+      "k": 14,
+      "num_qubits": 61,
+      "max_magic": 1218,
+      "reaction_depth": 10,
+      "num_instructions": 32391,
+      "output_only_used_as_xor_target": true
+    }
+  ],
+  "loader_ccx_per_pass": 18270,
+  "loader_qubits": 61,
+  "loader_scratch_qubits": 10,
+  "reference_geometry_heuristic_toffoli": 6662,
+  "derived_total_toffoli_same_geometry": 43202,
+  "derived_total_qubits_same_geometry": 427,
+  "cost_ratio_to_4033_same_geometry": 2.9333242802824553,
+  "note": "This is a fallback cost, not an optimal strict XOR synthesis. Same-geometry totals use the existing 4033 receipt's heuristic resource terms. Numerical factorization is unchanged.",
+  "candidate_files_written": false,
+  "seconds": 1.3185685640000884,
+  "peak_rss_mib": 43.796875
+}
