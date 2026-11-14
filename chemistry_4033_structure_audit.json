@@ -1,0 +1,898 @@
+{
+  "schema": "gvqcc-4033-structure-audit-v1",
+  "status": "READ_ONLY_STRUCTURE_AUDIT_COMPLETE",
+  "source_notebook": "https://www.kaggle.com/code/maoxin123/qcc-v27-4033-toffoli-coded-word-chemistry",
+  "factorization_sha256": "3f864a7aeaa4d78984c8822761782b63be2d553b229f487e79640a73be147c44",
+  "angle_words_shape": [
+    1220,
+    75
+  ],
+  "complete_16_address_blocks_audited": 76,
+  "partial_tail_rows_excluded_from_RM_claim": [
+    1216,
+    1217,
+    1218,
+    1219
+  ],
+  "batches": [
+    {
+      "batch": 0,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 2090,
+        "xor5_bit1_degree_gt1": 384,
+        "xor5_bit2_degree_gt2": 188
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        29,
+        32,
+        28,
+        30,
+        30
+      ]
+    },
+    {
+      "batch": 1,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 2084,
+        "xor5_bit1_degree_gt1": 430,
+        "xor5_bit2_degree_gt2": 197
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        30,
+        29,
+        29,
+        28,
+        31
+      ]
+    },
+    {
+      "batch": 2,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 2075,
+        "xor5_bit1_degree_gt1": 417,
+        "xor5_bit2_degree_gt2": 187
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        32,
+        29,
+        30,
+        30,
+        26
+      ]
+    },
+    {
+      "batch": 3,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        28,
+        28,
+        31,
+        32,
+        29
+      ]
+    },
+    {
+      "batch": 4,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        30,
+        30,
+        29,
+        30,
+        27
+      ]
+    },
+    {
+      "batch": 5,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        31,
+        29,
+        29,
+        28,
+        30
+      ]
+    },
+    {
+      "batch": 6,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        31,
+        31,
+        30,
+        29,
+        29
+      ]
+    },
+    {
+      "batch": 7,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        27,
+        29,
+        30,
+        26,
+        31
+      ]
+    },
+    {
+      "batch": 8,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        29,
+        27,
+        29,
+        32,
+        31
+      ]
+    },
+    {
+      "batch": 9,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        28,
+        31,
+        27,
+        29,
+        31
+      ]
+    },
+    {
+      "batch": 10,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        29,
+        27,
+        29,
+        26,
+        30
+      ]
+    },
+    {
+      "batch": 11,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        27,
+        29,
+        31,
+        29,
+        28
+      ]
+    },
+    {
+      "batch": 12,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        29,
+        31,
+        29,
+        29,
+        30
+      ]
+    },
+    {
+      "batch": 13,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        28,
+        27,
+        28,
+        27,
+        28
+      ]
+    },
+    {
+      "batch": 14,
+      "violating_anf_coefficients": {
+        "individual_word_bit0_degree_gt1": 0,
+        "xor5_bit1_degree_gt1": 0,
+        "xor5_bit2_degree_gt2": 0
+      },
+      "distinct_bit0_affine_coefficient_sets_per_word": [
+        30,
+        32,
+        29,
+        29,
+        28
+      ]
+    }
+  ],
+  "within_rho_complete_blocks": [
+    {
+      "address_first": 80,
+      "address_last": 95,
+      "rho": 0
+    },
+    {
+      "address_first": 96,
+      "address_last": 111,
+      "rho": 0
+    },
+    {
+      "address_first": 112,
+      "address_last": 127,
+      "rho": 0
+    },
+    {
+      "address_first": 128,
+      "address_last": 143,
+      "rho": 0
+    },
+    {
+      "address_first": 144,
+      "address_last": 159,
+      "rho": 0
+    },
+    {
+      "address_first": 160,
+      "address_last": 175,
+      "rho": 0
+    },
+    {
+      "address_first": 176,
+      "address_last": 191,
+      "rho": 0
+    },
+    {
+      "address_first": 192,
+      "address_last": 207,
+      "rho": 0
+    },
+    {
+      "address_first": 224,
+      "address_last": 239,
+      "rho": 1
+    },
+    {
+      "address_first": 240,
+      "address_last": 255,
+      "rho": 1
+    },
+    {
+      "address_first": 256,
+      "address_last": 271,
+      "rho": 1
+    },
+    {
+      "address_first": 272,
+      "address_last": 287,
+      "rho": 1
+    },
+    {
+      "address_first": 288,
+      "address_last": 303,
+      "rho": 1
+    },
+    {
+      "address_first": 304,
+      "address_last": 319,
+      "rho": 1
+    },
+    {
+      "address_first": 320,
+      "address_last": 335,
+      "rho": 1
+    },
+    {
+      "address_first": 336,
+      "address_last": 351,
+      "rho": 1
+    },
+    {
+      "address_first": 368,
+      "address_last": 383,
+      "rho": 2
+    },
+    {
+      "address_first": 384,
+      "address_last": 399,
+      "rho": 2
+    },
+    {
+      "address_first": 400,
+      "address_last": 415,
+      "rho": 2
+    },
+    {
+      "address_first": 416,
+      "address_last": 431,
+      "rho": 2
+    },
+    {
+      "address_first": 432,
+      "address_last": 447,
+      "rho": 2
+    },
+    {
+      "address_first": 448,
+      "address_last": 463,
+      "rho": 2
+    },
+    {
+      "address_first": 464,
+      "address_last": 479,
+      "rho": 2
+    },
+    {
+      "address_first": 480,
+      "address_last": 495,
+      "rho": 2
+    },
+    {
+      "address_first": 512,
+      "address_last": 527,
+      "rho": 3
+    },
+    {
+      "address_first": 528,
+      "address_last": 543,
+      "rho": 3
+    },
+    {
+      "address_first": 544,
+      "address_last": 559,
+      "rho": 3
+    },
+    {
+      "address_first": 560,
+      "address_last": 575,
+      "rho": 3
+    },
+    {
+      "address_first": 576,
+      "address_last": 591,
+      "rho": 3
+    },
+    {
+      "address_first": 592,
+      "address_last": 607,
+      "rho": 3
+    },
+    {
+      "address_first": 608,
+      "address_last": 623,
+      "rho": 3
+    },
+    {
+      "address_first": 624,
+      "address_last": 639,
+      "rho": 3
+    },
+    {
+      "address_first": 656,
+      "address_last": 671,
+      "rho": 4
+    },
+    {
+      "address_first": 672,
+      "address_last": 687,
+      "rho": 4
+    },
+    {
+      "address_first": 688,
+      "address_last": 703,
+      "rho": 4
+    },
+    {
+      "address_first": 704,
+      "address_last": 719,
+      "rho": 4
+    },
+    {
+      "address_first": 720,
+      "address_last": 735,
+      "rho": 4
+    },
+    {
+      "address_first": 736,
+      "address_last": 751,
+      "rho": 4
+    },
+    {
+      "address_first": 752,
+      "address_last": 767,
+      "rho": 4
+    },
+    {
+      "address_first": 768,
+      "address_last": 783,
+      "rho": 4
+    },
+    {
+      "address_first": 800,
+      "address_last": 815,
+      "rho": 5
+    },
+    {
+      "address_first": 816,
+      "address_last": 831,
+      "rho": 5
+    },
+    {
+      "address_first": 832,
+      "address_last": 847,
+      "rho": 5
+    },
+    {
+      "address_first": 848,
+      "address_last": 863,
+      "rho": 5
+    },
+    {
+      "address_first": 864,
+      "address_last": 879,
+      "rho": 5
+    },
+    {
+      "address_first": 880,
+      "address_last": 895,
+      "rho": 5
+    },
+    {
+      "address_first": 896,
+      "address_last": 911,
+      "rho": 5
+    },
+    {
+      "address_first": 912,
+      "address_last": 927,
+      "rho": 5
+    },
+    {
+      "address_first": 944,
+      "address_last": 959,
+      "rho": 6
+    },
+    {
+      "address_first": 960,
+      "address_last": 975,
+      "rho": 6
+    },
+    {
+      "address_first": 976,
+      "address_last": 991,
+      "rho": 6
+    },
+    {
+      "address_first": 992,
+      "address_last": 1007,
+      "rho": 6
+    },
+    {
+      "address_first": 1008,
+      "address_last": 1023,
+      "rho": 6
+    },
+    {
+      "address_first": 1024,
+      "address_last": 1039,
+      "rho": 6
+    },
+    {
+      "address_first": 1040,
+      "address_last": 1055,
+      "rho": 6
+    },
+    {
+      "address_first": 1056,
+      "address_last": 1071,
+      "rho": 6
+    },
+    {
+      "address_first": 1088,
+      "address_last": 1103,
+      "rho": 7
+    },
+    {
+      "address_first": 1104,
+      "address_last": 1119,
+      "rho": 7
+    },
+    {
+      "address_first": 1120,
+      "address_last": 1135,
+      "rho": 7
+    },
+    {
+      "address_first": 1136,
+      "address_last": 1151,
+      "rho": 7
+    },
+    {
+      "address_first": 1152,
+      "address_last": 1167,
+      "rho": 7
+    },
+    {
+      "address_first": 1168,
+      "address_last": 1183,
+      "rho": 7
+    },
+    {
+      "address_first": 1184,
+      "address_last": 1199,
+      "rho": 7
+    },
+    {
+      "address_first": 1200,
+      "address_last": 1215,
+      "rho": 7
+    }
+  ],
+  "within_rho_complete_block_count": 64,
+  "rows_in_these_blocks": 1024,
+  "rows_fixed_if_only_these_blocks_are_permuted": 196,
+  "loaders": [
+    {
+      "k": 0,
+      "sha256": "71735b23037e8a64d16e39b3347d440b36bdf8813613ec70c36a85bfd362d7c2",
+      "num_qubits": 128,
+      "num_ops": 45407,
+      "CCX": {
+        "without_explicit_condition": 291,
+        "with_explicit_condition": 0,
+        "total": 291
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 1,
+      "sha256": "e63f9de0a60ff79fc6f817056a1f95f5efed9ae82955cf56b11492e5ff28d70b",
+      "num_qubits": 125,
+      "num_ops": 46900,
+      "CCX": {
+        "without_explicit_condition": 286,
+        "with_explicit_condition": 0,
+        "total": 286
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 2,
+      "sha256": "e32afaf5d4b04756d20f15ecfbf08d6db325b57cbcb877428cb7fd61f13fcebb",
+      "num_qubits": 125,
+      "num_ops": 47217,
+      "CCX": {
+        "without_explicit_condition": 286,
+        "with_explicit_condition": 0,
+        "total": 286
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 3,
+      "sha256": "a932bc25467908c2189aadadd5f997ea88200b44d9401741c2b492fc1c2ebaa0",
+      "num_qubits": 125,
+      "num_ops": 46787,
+      "CCX": {
+        "without_explicit_condition": 286,
+        "with_explicit_condition": 0,
+        "total": 286
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 4,
+      "sha256": "dc70bda726f221813b502fc2d26acdd21882d1e30177f4264974880eb68cb2c2",
+      "num_qubits": 125,
+      "num_ops": 38846,
+      "CCX": {
+        "without_explicit_condition": 263,
+        "with_explicit_condition": 0,
+        "total": 263
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 5,
+      "sha256": "dbef059b4cd3030d2b249df4d09653efb54f8b803faa2d459f4e418394120fe2",
+      "num_qubits": 125,
+      "num_ops": 38806,
+      "CCX": {
+        "without_explicit_condition": 263,
+        "with_explicit_condition": 0,
+        "total": 263
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 6,
+      "sha256": "11cb19cb7e9d628f1416ef0e03f6d9d767726e42df839885e9224b029444f383",
+      "num_qubits": 125,
+      "num_ops": 38045,
+      "CCX": {
+        "without_explicit_condition": 261,
+        "with_explicit_condition": 0,
+        "total": 261
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 7,
+      "sha256": "e3a11ed9c462603f6f0734fe61fc0e4e924fa6bb4a6702574391f28f507a264b",
+      "num_qubits": 125,
+      "num_ops": 38756,
+      "CCX": {
+        "without_explicit_condition": 263,
+        "with_explicit_condition": 0,
+        "total": 263
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 8,
+      "sha256": "0fdcfe1906582661c40d0cd510df7efa2c115f287f9ad859223967d98150b0b2",
+      "num_qubits": 125,
+      "num_ops": 38170,
+      "CCX": {
+        "without_explicit_condition": 261,
+        "with_explicit_condition": 0,
+        "total": 261
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 9,
+      "sha256": "e0e95ba89402beb2c08017c5db7bc5070db26fd996bcd4f465d2ab1a21cfa55f",
+      "num_qubits": 125,
+      "num_ops": 39013,
+      "CCX": {
+        "without_explicit_condition": 263,
+        "with_explicit_condition": 0,
+        "total": 263
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 10,
+      "sha256": "c2e7dca4c51cdb3f82a47effbf0d529351b78a432e0b30bf5ca833bf2c5fcea3",
+      "num_qubits": 125,
+      "num_ops": 38078,
+      "CCX": {
+        "without_explicit_condition": 261,
+        "with_explicit_condition": 0,
+        "total": 261
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 11,
+      "sha256": "18fa8cd8125a1eccb959be27956ce7e871599909193052ab4a2ad1a5d0d6b01d",
+      "num_qubits": 125,
+      "num_ops": 38736,
+      "CCX": {
+        "without_explicit_condition": 263,
+        "with_explicit_condition": 0,
+        "total": 263
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 12,
+      "sha256": "62d6cd9855bcad70917a56527c0f03b912fba8bb14a2bfd91748a345f0a6fc72",
+      "num_qubits": 125,
+      "num_ops": 38832,
+      "CCX": {
+        "without_explicit_condition": 262,
+        "with_explicit_condition": 0,
+        "total": 262
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 13,
+      "sha256": "09a2faee4582e786548640ce4552bcc812e73667bd6784b37e0bbb5b817b8189",
+      "num_qubits": 125,
+      "num_ops": 38698,
+      "CCX": {
+        "without_explicit_condition": 262,
+        "with_explicit_condition": 0,
+        "total": 262
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    },
+    {
+      "k": 14,
+      "sha256": "a582eb78249c7ba5f58881b2753e2900a5a5be61eda719d2a24aff1fdad5f073",
+      "num_qubits": 125,
+      "num_ops": 39131,
+      "CCX": {
+        "without_explicit_condition": 262,
+        "with_explicit_condition": 0,
+        "total": 262
+      },
+      "CCZ": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      },
+      "CSWAP": {
+        "without_explicit_condition": 0,
+        "with_explicit_condition": 0,
+        "total": 0
+      }
+    }
+  ],
+  "static_CCX_total": 4033,
+  "generator_found": false,
+  "generator_reproduction_performed": false,
+  "row_permutation_experiments_performed": false,
+  "input_files_modified": false,
+  "limitations": [
+    "Static gate counts are not an official measured resource score.",
+    "No circuit semantic or phase verification was performed by this audit.",
+    "Known RM degrees survive a common invertible affine low-four-bit substitution within each block; this does not prove unchanged loader cost.",
+    "The pinned release notebook and dataset contain completed circuits, not the generator."
+  ],
+  "peak_rss_mib": 28.73828125
+}

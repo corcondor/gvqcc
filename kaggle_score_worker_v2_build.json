@@ -1,0 +1,120 @@
+{
+  "variant": "480gauge128",
+  "worker_title": "GVQCC 480 CCX + gauge128",
+  "candidate_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "additional_input_factor_rewrites": 384,
+  "worker": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/kaggle_score_worker_v2.py",
+  "worker_bytes": 553405,
+  "worker_sha256": "00c0d83f9ac9d6c7218a164d7e97cc81d91503164324206626c62584387769ef",
+  "source_payload_sha256": "27c124a4baaa8ba986a0d90959f7b5103285a38fd136168ab67b26a42bd6e7b0",
+  "source_payload_compressed_bytes": 402828,
+  "embedded_files": 17,
+  "embedded_file_hashes": {
+    "SOURCE_NOTICE.md": {
+      "sha256": "2ffb1af0e2ebf502c10d36776abc83169e7d8f1caf0194b77b29e84bdd48bcc9",
+      "bytes": 3354
+    },
+    "material/asterios_refit.npz": {
+      "sha256": "67f711e1a9656f1af9e630e11d491791009971a8c6ec30f95f092bad74ce6073",
+      "bytes": 344278
+    },
+    "material/invsqrt.kmb": {
+      "sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6",
+      "bytes": 198590
+    },
+    "material/invsqrt_upstream_receipt.json": {
+      "sha256": "05f66547aef625e9bf03c0d1025cdc136a9e3c71ae8a612ea1b90fd22a386e3f",
+      "bytes": 13761
+    },
+    "tools/NOTICE.md": {
+      "sha256": "c9a02fff09f24c2b6967f78dc56201c5696dbd8bab7e4ff136ccb8b2ba39c800",
+      "bytes": 1423
+    },
+    "tools/dqi_ccx_input_factor.py": {
+      "sha256": "b7495cb734408541fd23a983d7767074183010bf003c4e1a7dd96062c3ae97ea",
+      "bytes": 12342
+    },
+    "tools/dqi_ccx_peephole.py": {
+      "sha256": "13a7b05b7722468369d9132ef2b5f538c1698936167a662b5546915e715d9f69",
+      "bytes": 17467
+    },
+    "tools/dqi_gauge_expand.py": {
+      "sha256": "40b3cfc5f46a7c5bb248abe2cd652669b1a2b4dce0927f1b81d29e8df72f5578",
+      "bytes": 10381
+    },
+    "tools/dqi_gauge_expand_verify.py": {
+      "sha256": "a50012935bb494b83342c41944c34ac8c0ce068cb8aa26fbe39d0bcf7e623d51",
+      "bytes": 6213
+    },
+    "tools/kmb_profile.py": {
+      "sha256": "7e7d90fde91384b8c35e45103df09d3fed8400a3ca4544f9b5870a4ee0d83ede",
+      "bytes": 24020
+    },
+    "tools/kmb_splice.py": {
+      "sha256": "5833acf32fa9b25907ac92c531eba7c0dc51e132951ad0c4ce55282a0c19888f",
+      "bytes": 6090
+    },
+    "tools/replace_dqi_submission.py": {
+      "sha256": "d6f15afe834bc9bc784f02ea0415ccbc91698318598947c587675c9590db5d61",
+      "bytes": 17321
+    },
+    "tools/reproduce_dqi_candidate.py": {
+      "sha256": "135358e1250a9a8a84128fa9d3638d63e57bfa52e40029b38b5edce5dda4d191",
+      "bytes": 10068
+    },
+    "tools/third_party/Qualtran_Apache_2.0.txt": {
+      "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac",
+      "bytes": 11359
+    },
+    "tools/third_party/Syed_DQI_Apache_2.0.txt": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "tools/verify_dqi_candidate.py": {
+      "sha256": "0c3c97abececaa1ed0ac7e62fa0995cf7f24d514ca57baf1dafc03cb3282f6b7",
+      "bytes": 4759
+    }
+  },
+  "chemistry_loader_pins": {
+    "angle_k_0.kmb": "71735b23037e8a64d16e39b3347d440b36bdf8813613ec70c36a85bfd362d7c2",
+    "angle_k_1.kmb": "e63f9de0a60ff79fc6f817056a1f95f5efed9ae82955cf56b11492e5ff28d70b",
+    "angle_k_2.kmb": "e32afaf5d4b04756d20f15ecfbf08d6db325b57cbcb877428cb7fd61f13fcebb",
+    "angle_k_3.kmb": "a932bc25467908c2189aadadd5f997ea88200b44d9401741c2b492fc1c2ebaa0",
+    "angle_k_4.kmb": "dc70bda726f221813b502fc2d26acdd21882d1e30177f4264974880eb68cb2c2",
+    "angle_k_5.kmb": "dbef059b4cd3030d2b249df4d09653efb54f8b803faa2d459f4e418394120fe2",
+    "angle_k_6.kmb": "11cb19cb7e9d628f1416ef0e03f6d9d767726e42df839885e9224b029444f383",
+    "angle_k_7.kmb": "e3a11ed9c462603f6f0734fe61fc0e4e924fa6bb4a6702574391f28f507a264b",
+    "angle_k_8.kmb": "0fdcfe1906582661c40d0cd510df7efa2c115f287f9ad859223967d98150b0b2",
+    "angle_k_9.kmb": "e0e95ba89402beb2c08017c5db7bc5070db26fd996bcd4f465d2ab1a21cfa55f",
+    "angle_k_10.kmb": "c2e7dca4c51cdb3f82a47effbf0d529351b78a432e0b30bf5ca833bf2c5fcea3",
+    "angle_k_11.kmb": "18fa8cd8125a1eccb959be27956ce7e871599909193052ab4a2ad1a5d0d6b01d",
+    "angle_k_12.kmb": "62d6cd9855bcad70917a56527c0f03b912fba8bb14a2bfd91748a345f0a6fc72",
+    "angle_k_13.kmb": "09a2faee4582e786548640ce4552bcc812e73667bd6784b37e0bbb5b817b8189",
+    "angle_k_14.kmb": "a582eb78249c7ba5f58881b2753e2900a5a5be61eda719d2a24aff1fdad5f073"
+  },
+  "official_pins": {
+    "kickmix/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "kickmix/kickmix.so": "c66b3216c4029e0cdfd09054306aa0feadf53ab2f50c1164e37f752874e5005e",
+    "verifiers/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "verifiers/dfthcsos/FeMoCo76o113e.fcidump": "e5a48af746fd075026dec9e8f5df2d363802a121e8c53af9a0b984bde695e1bd",
+    "verifiers/dfthcsos/FeMoCo76o113e.fixed_shifts.npz": "7b7facf63fe35a9d9d3d00787ffdb700c863fa845fe4724d7f7c54778151cd87",
+    "verifiers/dfthcsos/SCORING_README.md": "c2228569f96e58e118419bc32be2be9e33d6abffb8117cb0b91e1fc25b2a0230",
+    "verifiers/dfthcsos/__init__.py": "81915e324cc0cade67f52a54b7a51991fd96abaea94d1f8a4d423dae20e57348",
+    "verifiers/dfthcsos/scoreinfra/__init__.py": "be90e0d503d5c20dcac0102af638b9a4ccad0341daa5baa5d49216a259e4516f",
+    "verifiers/dfthcsos/scoreinfra/circuits.py": "fc027b52fdcebe14404f403a089122485d097ed65d03e6d989623d620b1ab68c",
+    "verifiers/dfthcsos/scoreinfra/costs_prepare.py": "7f1e190c42fc5325f3e6689fbbef51f95b0cb12f1c828cda92b6c088e72206da",
+    "verifiers/dfthcsos/scoreinfra/dfthc_math.py": "ae82898d47a7a86b96378fb906e0f8a9f46003065cf19c7c09952a123b5b5af8",
+    "verifiers/dfthcsos/scoreinfra/reference.py": "a2d5a63191d655729e29f0fde1e85fe4630bf896a91a63bb894d8d7daf71ed39",
+    "verifiers/dfthcsos/verify.py": "0775be7a528922367caebe9e4d051d6199811f1aefeaa4b793eaaa4621b8ec9d",
+    "verifiers/dqi/__init__.py": "01c870aa9763f4e4357fc6654bff1d3296cec995bd0943f87b4a48946ada5b40",
+    "verifiers/dqi/verify_submission_dqi.py": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+  },
+  "validation": {
+    "worker_syntax": "PASS",
+    "embedded_script_syntax": "PASS",
+    "rendered_payload_hashes": "PASS",
+    "chemistry_npz_byte_exact_reconstruction": "PASS",
+    "local_numpy_version": "2.5.4",
+    "heavy_execution": "NOT_RUN"
+  }
+}

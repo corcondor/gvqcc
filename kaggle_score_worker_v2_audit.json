@@ -1,0 +1,29 @@
+{
+  "schema": "gvqcc-worker-v2-integration-audit-v1",
+  "worker_sha256": "00c0d83f9ac9d6c7218a164d7e97cc81d91503164324206626c62584387769ef",
+  "worker_bytes": 553405,
+  "variant": "480gauge128",
+  "candidate_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "embedded_scripts": [
+    "dqi_ccx_input_factor.py",
+    "dqi_ccx_peephole.py",
+    "dqi_gauge_expand.py",
+    "dqi_gauge_expand_verify.py",
+    "kmb_profile.py",
+    "kmb_splice.py",
+    "replace_dqi_submission.py",
+    "reproduce_dqi_candidate.py",
+    "verify_dqi_candidate.py"
+  ],
+  "runtime_payload_extraction": "PASS",
+  "all_payload_hashes": "PASS",
+  "all_15_loader_hashes": "PASS",
+  "embedded_inverse_pin": "PASS",
+  "exact_chemistry_npz_reconstruction": "PASS",
+  "existing_real_384_rewrite_report_contract": "PASS",
+  "v1_worker_byte_identical": true,
+  "v1_worker_sha256": "11181e4f67d415a13a07b36bcf84d5e5b06f2bbcd958f54d08fe40d37fe2cfff",
+  "orchestration_unit_tests_passed": 6,
+  "heavy_simulation": "NOT_RUN",
+  "actual_full_candidate_verification": "Performed separately by integration agent; not claimed by this audit."
+}

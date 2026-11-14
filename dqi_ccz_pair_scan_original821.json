@@ -1,0 +1,38 @@
+{
+  "scan_completed": true,
+  "window_operations": 4096,
+  "time_budget_seconds": 80.0,
+  "scan_seconds": 0.5028387750007823,
+  "last_ccz_source_op": 48237340,
+  "counts": {
+    "ccz_seen": 7000,
+    "explicitly_conditional_ccz_seen": 0,
+    "same_pair_and_condition_within_window": 13370,
+    "four_distinct_qubit_pairs": 164,
+    "blocked_by_ordering_barrier": 128,
+    "blocked_by_noncommuting_unitary": 36,
+    "proved_legal_pairs": 0
+  },
+  "legal_blocks_union": [],
+  "opportunities": [],
+  "nonoverlapping_intervals": [],
+  "nonoverlapping_static_ccz_savings": 0,
+  "execution_count_scope": "Each rewrite saves one conditional CCZ only when its shared condition and condition stack are true; static counts are not official mean Toffolis.",
+  "schema": "dqi-ccz-pair-read-only-v1",
+  "identity_check": {
+    "status": "PASS",
+    "quantum_basis_states": 16,
+    "explicit_condition_cases": 2,
+    "implicit_condition_stack_cases": 2,
+    "state_and_phase_cases": 64,
+    "conditional_off": "identity including phase",
+    "coherent_scope": "Exact phased-permutation equality on every basis state"
+  },
+  "input": "dqi_inputs/821bf8d157c0.kmb",
+  "input_sha256_from_cached_profile": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+  "input_sha256_recomputed_this_run": false,
+  "binary_modified": false,
+  "candidate_or_pipeline_modified": false,
+  "total_seconds": 1.4725348590000067,
+  "peak_rss_mib": 122.637
+}
