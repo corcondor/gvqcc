@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.kmb
+*.kmb.xz
+submission.zip
+dqi_audit_results*/
+dqi_audit_run*/
+_audit_work_*/

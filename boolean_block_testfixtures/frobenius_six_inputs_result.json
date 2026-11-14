@@ -1,0 +1,702 @@
+{
+  "format": "boolean-block-analysis-v1",
+  "block_sha256": "b561435222f90792b72b7ce13025ee4f81a51818e45e01187411235588d67a97",
+  "context": {
+    "inputs": [
+      "q0",
+      "q1",
+      "q2",
+      "q3",
+      "q4",
+      "q5"
+    ],
+    "outputs": [
+      "q6",
+      "q7",
+      "q8",
+      "q9",
+      "q10",
+      "q11",
+      "q12",
+      "q13",
+      "q14",
+      "q15",
+      "q16",
+      "q17"
+    ],
+    "known_zero": [
+      "q6",
+      "q7",
+      "q8",
+      "q9",
+      "q10",
+      "q11",
+      "q12",
+      "q13",
+      "q14",
+      "q15",
+      "q16",
+      "q17"
+    ],
+    "known_one": [],
+    "independent_input_count": 6
+  },
+  "assignments_checked": 64,
+  "gate_counts": {
+    "CX": 23,
+    "X": 2
+  },
+  "input_restoration": {
+    "q0": true,
+    "q1": true,
+    "q2": true,
+    "q3": true,
+    "q4": true,
+    "q5": true
+  },
+  "all_inputs_restored": true,
+  "other_wire_restoration": {},
+  "image_count": 64,
+  "output_map_injective": true,
+  "image_information_lower_bound_bits": 6,
+  "output_anf": {
+    "q6": {
+      "degree": 1,
+      "term_count": 3,
+      "monomial_masks": [
+        0,
+        1,
+        16
+      ],
+      "terms": [
+        [],
+        [
+          "q0"
+        ],
+        [
+          "q4"
+        ]
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    },
+    "q7": {
+      "degree": 1,
+      "term_count": 3,
+      "monomial_masks": [
+        8,
+        16,
+        32
+      ],
+      "terms": [
+        [
+          "q3"
+        ],
+        [
+          "q4"
+        ],
+        [
+          "q5"
+        ]
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    },
+    "q8": {
+      "degree": 1,
+      "term_count": 3,
+      "monomial_masks": [
+        8,
+        16,
+        32
+      ],
+      "terms": [
+        [
+          "q3"
+        ],
+        [
+          "q4"
+        ],
+        [
+          "q5"
+        ]
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    },
+    "q9": {
+      "degree": 1,
+      "term_count": 1,
+      "monomial_masks": [
+        16
+      ],
+      "terms": [
+        [
+          "q4"
+        ]
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    },
+    "q10": {
+      "degree": 1,
+      "term_count": 2,
+      "monomial_masks": [
+        4,
+        8
+      ],
+      "terms": [
+        [
+          "q2"
+        ],
+        [
+          "q3"
+        ]
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    },
+    "q11": {
+      "degree": 1,
+      "term_count": 2,
+      "monomial_masks": [
+        4,
+        16
+      ],
+      "terms": [
+        [
+          "q2"
+        ],
+        [
+          "q4"
+        ]
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    },
+    "q12": {
+      "degree": 1,
+      "term_count": 2,
+      "monomial_masks": [
+        8,
+        32
+      ],
+      "terms": [
+        [
+          "q3"
+        ],
+        [
+          "q5"
+        ]
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    },
+    "q13": {
+      "degree": 1,
+      "term_count": 1,
+      "monomial_masks": [
+        32
+      ],
+      "terms": [
+        [
+          "q5"
+        ]
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    },
+    "q14": {
+      "degree": 1,
+      "term_count": 4,
+      "monomial_masks": [
+        2,
+        4,
+        8,
+        32
+      ],
+      "terms": [
+        [
+          "q1"
+        ],
+        [
+          "q2"
+        ],
+        [
+          "q3"
+        ],
+        [
+          "q5"
+        ]
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    },
+    "q15": {
+      "degree": 1,
+      "term_count": 1,
+      "monomial_masks": [
+        16
+      ],
+      "terms": [
+        [
+          "q4"
+        ]
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    },
+    "q16": {
+      "degree": 1,
+      "term_count": 2,
+      "monomial_masks": [
+        4,
+        32
+      ],
+      "terms": [
+        [
+          "q2"
+        ],
+        [
+          "q5"
+        ]
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    },
+    "q17": {
+      "degree": 0,
+      "term_count": 1,
+      "monomial_masks": [
+        0
+      ],
+      "terms": [
+        []
+      ],
+      "convention": "[] is the constant 1; zero polynomial has degree -1"
+    }
+  },
+  "phase_anf": {
+    "degree": -1,
+    "term_count": 0,
+    "monomial_masks": [],
+    "terms": [],
+    "convention": "[] is the constant 1; zero polynomial has degree -1"
+  },
+  "affine_compression": {
+    "rank": 6,
+    "offset_at_input_zero": 2049,
+    "linear_basis_rows_bitmasks": [
+      9,
+      292,
+      40,
+      56,
+      8,
+      52,
+      76,
+      180,
+      6,
+      520,
+      1052,
+      2048
+    ],
+    "retained_output_wires": [
+      "q6",
+      "q7",
+      "q8",
+      "q9",
+      "q10",
+      "q11"
+    ],
+    "zero_output_wires_after_network": [
+      "q12",
+      "q13",
+      "q14",
+      "q15",
+      "q16",
+      "q17"
+    ],
+    "network_kmx": [
+      "X q6",
+      "X q17",
+      "CX q7 q14",
+      "CX q14 q7",
+      "CX q7 q14",
+      "CX q8 q10",
+      "CX q10 q8",
+      "CX q8 q10",
+      "CX q8 q7",
+      "CX q8 q11",
+      "CX q8 q16",
+      "CX q9 q10",
+      "CX q10 q9",
+      "CX q9 q10",
+      "CX q9 q8",
+      "CX q9 q11",
+      "CX q9 q12",
+      "CX q9 q14",
+      "CX q9 q16",
+      "CX q10 q6",
+      "CX q10 q8",
+      "CX q10 q9",
+      "CX q10 q12",
+      "CX q10 q15",
+      "CX q10 q16",
+      "CX q11 q7",
+      "CX q11 q8",
+      "CX q11 q9",
+      "CX q11 q13"
+    ],
+    "inverse_network_kmx": [
+      "CX q11 q13",
+      "CX q11 q9",
+      "CX q11 q8",
+      "CX q11 q7",
+      "CX q10 q16",
+      "CX q10 q15",
+      "CX q10 q12",
+      "CX q10 q9",
+      "CX q10 q8",
+      "CX q10 q6",
+      "CX q9 q16",
+      "CX q9 q14",
+      "CX q9 q12",
+      "CX q9 q11",
+      "CX q9 q8",
+      "CX q9 q10",
+      "CX q10 q9",
+      "CX q9 q10",
+      "CX q8 q16",
+      "CX q8 q11",
+      "CX q8 q7",
+      "CX q8 q10",
+      "CX q10 q8",
+      "CX q8 q10",
+      "CX q7 q14",
+      "CX q14 q7",
+      "CX q7 q14",
+      "X q17",
+      "X q6"
+    ],
+    "network_exhaustively_verified": true,
+    "scope": "An invertible change of output coordinates on this declared entry subspace. It does not reduce the original computation's peak qubits or automatically rewrite subsequent consumers.",
+    "output_wires_disjoint_from_inputs": true
+  },
+  "truth_table": [
+    {
+      "input": 0,
+      "output": 2049,
+      "phase_sign": 1
+    },
+    {
+      "input": 1,
+      "output": 2048,
+      "phase_sign": 1
+    },
+    {
+      "input": 2,
+      "output": 2305,
+      "phase_sign": 1
+    },
+    {
+      "input": 3,
+      "output": 2304,
+      "phase_sign": 1
+    },
+    {
+      "input": 4,
+      "output": 3377,
+      "phase_sign": 1
+    },
+    {
+      "input": 5,
+      "output": 3376,
+      "phase_sign": 1
+    },
+    {
+      "input": 6,
+      "output": 3121,
+      "phase_sign": 1
+    },
+    {
+      "input": 7,
+      "output": 3120,
+      "phase_sign": 1
+    },
+    {
+      "input": 8,
+      "output": 2391,
+      "phase_sign": 1
+    },
+    {
+      "input": 9,
+      "output": 2390,
+      "phase_sign": 1
+    },
+    {
+      "input": 10,
+      "output": 2135,
+      "phase_sign": 1
+    },
+    {
+      "input": 11,
+      "output": 2134,
+      "phase_sign": 1
+    },
+    {
+      "input": 12,
+      "output": 3175,
+      "phase_sign": 1
+    },
+    {
+      "input": 13,
+      "output": 3174,
+      "phase_sign": 1
+    },
+    {
+      "input": 14,
+      "output": 3431,
+      "phase_sign": 1
+    },
+    {
+      "input": 15,
+      "output": 3430,
+      "phase_sign": 1
+    },
+    {
+      "input": 16,
+      "output": 2606,
+      "phase_sign": 1
+    },
+    {
+      "input": 17,
+      "output": 2607,
+      "phase_sign": 1
+    },
+    {
+      "input": 18,
+      "output": 2862,
+      "phase_sign": 1
+    },
+    {
+      "input": 19,
+      "output": 2863,
+      "phase_sign": 1
+    },
+    {
+      "input": 20,
+      "output": 3870,
+      "phase_sign": 1
+    },
+    {
+      "input": 21,
+      "output": 3871,
+      "phase_sign": 1
+    },
+    {
+      "input": 22,
+      "output": 3614,
+      "phase_sign": 1
+    },
+    {
+      "input": 23,
+      "output": 3615,
+      "phase_sign": 1
+    },
+    {
+      "input": 24,
+      "output": 2936,
+      "phase_sign": 1
+    },
+    {
+      "input": 25,
+      "output": 2937,
+      "phase_sign": 1
+    },
+    {
+      "input": 26,
+      "output": 2680,
+      "phase_sign": 1
+    },
+    {
+      "input": 27,
+      "output": 2681,
+      "phase_sign": 1
+    },
+    {
+      "input": 28,
+      "output": 3656,
+      "phase_sign": 1
+    },
+    {
+      "input": 29,
+      "output": 3657,
+      "phase_sign": 1
+    },
+    {
+      "input": 30,
+      "output": 3912,
+      "phase_sign": 1
+    },
+    {
+      "input": 31,
+      "output": 3913,
+      "phase_sign": 1
+    },
+    {
+      "input": 32,
+      "output": 3527,
+      "phase_sign": 1
+    },
+    {
+      "input": 33,
+      "output": 3526,
+      "phase_sign": 1
+    },
+    {
+      "input": 34,
+      "output": 3271,
+      "phase_sign": 1
+    },
+    {
+      "input": 35,
+      "output": 3270,
+      "phase_sign": 1
+    },
+    {
+      "input": 36,
+      "output": 2295,
+      "phase_sign": 1
+    },
+    {
+      "input": 37,
+      "output": 2294,
+      "phase_sign": 1
+    },
+    {
+      "input": 38,
+      "output": 2551,
+      "phase_sign": 1
+    },
+    {
+      "input": 39,
+      "output": 2550,
+      "phase_sign": 1
+    },
+    {
+      "input": 40,
+      "output": 3217,
+      "phase_sign": 1
+    },
+    {
+      "input": 41,
+      "output": 3216,
+      "phase_sign": 1
+    },
+    {
+      "input": 42,
+      "output": 3473,
+      "phase_sign": 1
+    },
+    {
+      "input": 43,
+      "output": 3472,
+      "phase_sign": 1
+    },
+    {
+      "input": 44,
+      "output": 2465,
+      "phase_sign": 1
+    },
+    {
+      "input": 45,
+      "output": 2464,
+      "phase_sign": 1
+    },
+    {
+      "input": 46,
+      "output": 2209,
+      "phase_sign": 1
+    },
+    {
+      "input": 47,
+      "output": 2208,
+      "phase_sign": 1
+    },
+    {
+      "input": 48,
+      "output": 4072,
+      "phase_sign": 1
+    },
+    {
+      "input": 49,
+      "output": 4073,
+      "phase_sign": 1
+    },
+    {
+      "input": 50,
+      "output": 3816,
+      "phase_sign": 1
+    },
+    {
+      "input": 51,
+      "output": 3817,
+      "phase_sign": 1
+    },
+    {
+      "input": 52,
+      "output": 2776,
+      "phase_sign": 1
+    },
+    {
+      "input": 53,
+      "output": 2777,
+      "phase_sign": 1
+    },
+    {
+      "input": 54,
+      "output": 3032,
+      "phase_sign": 1
+    },
+    {
+      "input": 55,
+      "output": 3033,
+      "phase_sign": 1
+    },
+    {
+      "input": 56,
+      "output": 3774,
+      "phase_sign": 1
+    },
+    {
+      "input": 57,
+      "output": 3775,
+      "phase_sign": 1
+    },
+    {
+      "input": 58,
+      "output": 4030,
+      "phase_sign": 1
+    },
+    {
+      "input": 59,
+      "output": 4031,
+      "phase_sign": 1
+    },
+    {
+      "input": 60,
+      "output": 2958,
+      "phase_sign": 1
+    },
+    {
+      "input": 61,
+      "output": 2959,
+      "phase_sign": 1
+    },
+    {
+      "input": 62,
+      "output": 2702,
+      "phase_sign": 1
+    },
+    {
+      "input": 63,
+      "output": 2703,
+      "phase_sign": 1
+    }
+  ],
+  "bit_order": "bit i corresponds to the ith wire in the respective declared list",
+  "limitations": [
+    "The stated entry values and independent-input assumption must be justified externally.",
+    "Image size is not affine-span rank: six independent inputs can have output affine rank twelve.",
+    "No claim of optimal gate synthesis, lower peak workspace, or validity in a surrounding DQI circuit."
+  ]
+}

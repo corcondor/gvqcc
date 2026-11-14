@@ -1,0 +1,78 @@
+{
+  "report_kind": "synthetic_validation_not_user_circuit",
+  "created_utc": "2026-11-14T16:43:54.637711+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "unit_test_result": "23 tests passed",
+  "official_reference_fixtures": 4,
+  "benchmarks": [
+    {
+      "kind": "standalone_synthetic_repeated_CCX",
+      "operations": 200000,
+      "input_bytes": 2600288,
+      "elapsed_seconds": 0.075035,
+      "process_peak_rss_mib": 16.0,
+      "chunk_bytes": 1048576,
+      "register_summary_limit": 128,
+      "memory_scaling": "O(chunk_bytes + capped register summaries + ZIP directory metadata)",
+      "input_files_modified": false
+    },
+    {
+      "kind": "standalone_synthetic_repeated_CCX",
+      "operations": 2000000,
+      "input_bytes": 26000288,
+      "elapsed_seconds": 0.740909,
+      "process_peak_rss_mib": 19.23,
+      "chunk_bytes": 1048576,
+      "register_summary_limit": 128,
+      "memory_scaling": "O(chunk_bytes + capped register summaries + ZIP directory metadata)",
+      "input_files_modified": false
+    },
+    {
+      "kind": "deflated_zip_synthetic_repeated_CCX",
+      "operations": 2000000,
+      "input_bytes": 26000288,
+      "compressed_archive_bytes": 26265,
+      "elapsed_seconds": 0.840443,
+      "process_peak_rss_mib": 20.398,
+      "chunk_bytes": 1048576,
+      "register_summary_limit": 128,
+      "memory_scaling": "O(chunk_bytes + capped register summaries + ZIP directory metadata)",
+      "input_files_modified": false
+    }
+  ],
+  "limitations": [
+    "Repeated-CCX synthetic files are not representative of actual DQI opcode distributions or compression.",
+    "Timing is local measurement, not a runtime promise for another machine.",
+    "Peak RSS was measured in a fresh CLI subprocess for each benchmark.",
+    "The actual user dqi.kmb was not available and was not analyzed."
+  ],
+  "audit_reference_cases": {
+    "official_uncompressed_fixtures_passed": 4,
+    "operations_by_fixture": [
+      0,
+      3,
+      147,
+      43
+    ],
+    "compilation_warnings": 0,
+    "additional_container_checks": [
+      {
+        "container": "xz",
+        "num_operations": 43,
+        "window_operations": 43,
+        "python_cpp_histograms_match": true,
+        "active_condition_context_checked": true,
+        "temporary_staging_removed": true
+      },
+      {
+        "container": "zip",
+        "num_operations": 43,
+        "window_operations": 43,
+        "python_cpp_histograms_match": true,
+        "active_condition_context_checked": true,
+        "temporary_staging_removed": true
+      }
+    ]
+  }
+}

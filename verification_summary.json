@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-11-14T16:54:37.913922+00:00",
+  "uploaded_v4_sha256": "ce18eda70b1d84e03b4555e44b74973759bbb03f52c6c3a33e9a28aab77ac460",
+  "independent_unit_tests": {
+    "tests": 24,
+    "status": "PASS",
+    "seconds": 4.299
+  },
+  "boolean_exhaustive_checks": "PASS; test_boolean_block_analyze.py executed directly",
+  "symbolic_checks": "PASS; test_symbolic_block_analyze.py executed directly",
+  "full_inverse_gate_checks": "PASS; all 5 circuits, 4096 inputs and every symbolic measurement branch",
+  "actual_user_dqi_circuit_available": false,
+  "official_kickmix_verification_run": false,
+  "kaggle_submission_created": false,
+  "github_repository_modified": false,
+  "github_actions_executed": false,
+  "snapshot_context": {
+    "kind": "local_verification_before_github_initialization",
+    "github_flags_are_historical": true,
+    "interpretation": "GitHub-related false flags record the state at created_utc, not the current repository or Actions state.",
+    "repository_target": "corcondor/gvqcc"
+  }
+}

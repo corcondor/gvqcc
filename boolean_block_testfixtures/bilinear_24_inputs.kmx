@@ -1,0 +1,24 @@
+CCX q0 q12 q24
+CX q24 q36
+CCX q1 q13 q25
+CX q25 q37
+CCX q2 q14 q26
+CX q26 q38
+CCX q3 q15 q27
+CX q27 q39
+CCX q4 q16 q28
+CX q28 q40
+CCX q5 q17 q29
+CX q29 q41
+CCX q6 q18 q30
+CX q30 q42
+CCX q7 q19 q31
+CX q31 q43
+CCX q8 q20 q32
+CX q32 q44
+CCX q9 q21 q33
+CX q33 q45
+CCX q10 q22 q34
+CX q34 q46
+CCX q11 q23 q35
+CX q35 q47

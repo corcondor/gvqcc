@@ -1,0 +1,6326 @@
+# Experimental GF(2^12) inverse arithmetic kernel; not a DQI submission.
+# Validated by full-domain bitpacked symbolic-measurement gate simulator.
+# Official Kickmix parser/verifier has not been run in this environment.
+REGISTER r0 "input"
+APPEND_TO_REGISTER q0 r0
+APPEND_TO_REGISTER q1 r0
+APPEND_TO_REGISTER q2 r0
+APPEND_TO_REGISTER q3 r0
+APPEND_TO_REGISTER q4 r0
+APPEND_TO_REGISTER q5 r0
+APPEND_TO_REGISTER q6 r0
+APPEND_TO_REGISTER q7 r0
+APPEND_TO_REGISTER q8 r0
+APPEND_TO_REGISTER q9 r0
+APPEND_TO_REGISTER q10 r0
+APPEND_TO_REGISTER q11 r0
+REGISTER r1 "inverse"
+APPEND_TO_REGISTER q60 r1
+APPEND_TO_REGISTER q61 r1
+APPEND_TO_REGISTER q62 r1
+APPEND_TO_REGISTER q63 r1
+APPEND_TO_REGISTER q64 r1
+APPEND_TO_REGISTER q65 r1
+APPEND_TO_REGISTER q66 r1
+APPEND_TO_REGISTER q67 r1
+APPEND_TO_REGISTER q68 r1
+APPEND_TO_REGISTER q69 r1
+APPEND_TO_REGISTER q70 r1
+APPEND_TO_REGISTER q71 r1
+R q12
+R q13
+R q14
+R q15
+R q16
+R q17
+R q18
+R q19
+R q20
+R q21
+R q22
+R q23
+R q24
+R q25
+R q26
+R q27
+R q28
+R q29
+R q30
+R q31
+R q32
+R q33
+R q34
+R q35
+R q36
+R q37
+R q38
+R q39
+R q40
+R q41
+R q42
+R q43
+R q44
+R q45
+R q46
+R q47
+R q48
+R q49
+R q50
+R q51
+R q52
+R q53
+R q54
+R q55
+R q56
+R q57
+R q58
+R q59
+R q60
+R q61
+R q62
+R q63
+R q64
+R q65
+R q66
+R q67
+R q68
+R q69
+R q70
+R q71
+CX q11 q7
+CX q11 q6
+CX q10 q6
+CX q10 q5
+CX q9 q5
+CX q9 q4
+CX q9 q10
+CX q10 q9
+CX q9 q10
+CX q8 q4
+CX q8 q3
+CX q8 q10
+CX q10 q8
+CX q8 q10
+CX q7 q3
+CX q7 q2
+CX q7 q8
+CX q8 q7
+CX q7 q8
+CX q6 q2
+CX q6 q1
+CX q6 q8
+CX q8 q6
+CX q6 q8
+CX q5 q10
+CX q10 q5
+CX q5 q10
+CX q4 q8
+CX q8 q4
+CX q4 q8
+CX q3 q6
+CX q6 q3
+CX q3 q6
+CX q2 q4
+CX q4 q2
+CX q2 q4
+CX q1 q2
+CX q2 q1
+CX q1 q2
+CX q0 q12
+CX q1 q12
+CCX q0 q1 q12
+CX q2 q15
+CX q3 q15
+CCX q2 q3 q15
+CX q4 q18
+CX q5 q18
+CCX q4 q5 q18
+CX q6 q21
+CX q7 q21
+CCX q6 q7 q21
+CX q8 q12
+CX q8 q13
+CX q8 q16
+CX q8 q18
+CX q9 q12
+CX q9 q13
+CX q9 q16
+CX q9 q18
+CX q12 q13
+CX q12 q16
+CX q12 q18
+CCX q8 q9 q12
+CX q12 q18
+CX q12 q16
+CX q12 q13
+CX q10 q15
+CX q10 q16
+CX q10 q19
+CX q10 q21
+CX q11 q15
+CX q11 q16
+CX q11 q19
+CX q11 q21
+CX q15 q16
+CX q15 q19
+CX q15 q21
+CCX q10 q11 q15
+CX q15 q21
+CX q15 q19
+CX q15 q16
+CX q3 q2
+CX q16 q19
+CX q16 q20
+CCX q0 q2 q16
+CX q3 q2
+CX q16 q20
+CX q16 q19
+CX q13 q14
+CCX q1 q3 q13
+CX q13 q14
+CX q1 q0
+CX q13 q14
+CX q13 q16
+CX q13 q19
+CX q13 q20
+CCX q0 q2 q13
+CX q1 q0
+CX q13 q20
+CX q13 q19
+CX q13 q16
+CX q13 q14
+CX q5 q4
+CX q15 q17
+CX q15 q18
+CX q15 q20
+CX q15 q22
+CCX q0 q4 q15
+CX q5 q4
+CX q15 q22
+CX q15 q20
+CX q15 q18
+CX q15 q17
+CX q14 q16
+CCX q1 q5 q14
+CX q14 q16
+CX q1 q0
+CX q14 q15
+CX q14 q16
+CX q14 q17
+CX q14 q18
+CX q14 q20
+CX q14 q22
+CCX q0 q4 q14
+CX q1 q0
+CX q14 q22
+CX q14 q20
+CX q14 q18
+CX q14 q17
+CX q14 q16
+CX q14 q15
+CX q7 q6
+CX q12 q13
+CX q12 q17
+CX q12 q19
+CX q12 q20
+CX q12 q21
+CCX q0 q6 q12
+CX q7 q6
+CX q12 q21
+CX q12 q20
+CX q12 q19
+CX q12 q17
+CX q12 q13
+CX q15 q18
+CCX q1 q7 q15
+CX q15 q18
+CX q1 q0
+CX q12 q13
+CX q12 q15
+CX q12 q17
+CX q12 q18
+CX q12 q19
+CX q12 q20
+CX q12 q21
+CCX q0 q6 q12
+CX q1 q0
+CX q12 q21
+CX q12 q20
+CX q12 q19
+CX q12 q18
+CX q12 q17
+CX q12 q15
+CX q12 q13
+CX q9 q8
+CX q14 q15
+CX q14 q17
+CX q14 q21
+CCX q0 q8 q14
+CX q9 q8
+CX q14 q21
+CX q14 q17
+CX q14 q15
+CX q16 q20
+CCX q1 q9 q16
+CX q16 q20
+CX q1 q0
+CX q14 q15
+CX q14 q16
+CX q14 q17
+CX q14 q20
+CX q14 q21
+CCX q0 q8 q14
+CX q1 q0
+CX q14 q21
+CX q14 q20
+CX q14 q17
+CX q14 q16
+CX q14 q15
+CX q11 q10
+CX q12 q13
+CX q12 q17
+CX q12 q19
+CX q12 q20
+CCX q0 q10 q12
+CX q11 q10
+CX q12 q20
+CX q12 q19
+CX q12 q17
+CX q12 q13
+CX q17 q22
+CCX q1 q11 q17
+CX q17 q22
+CX q1 q0
+CX q12 q13
+CX q12 q19
+CX q12 q20
+CX q12 q22
+CCX q0 q10 q12
+CX q1 q0
+CX q12 q22
+CX q12 q20
+CX q12 q19
+CX q12 q13
+CX q5 q4
+CX q19 q22
+CX q19 q23
+CCX q2 q4 q19
+CX q5 q4
+CX q19 q23
+CX q19 q22
+CX q16 q17
+CCX q3 q5 q16
+CX q16 q17
+CX q3 q2
+CX q16 q17
+CX q16 q19
+CX q16 q22
+CX q16 q23
+CCX q2 q4 q16
+CX q3 q2
+CX q16 q23
+CX q16 q22
+CX q16 q19
+CX q16 q17
+CX q7 q6
+CX q13 q14
+CX q13 q17
+CX q13 q18
+CX q13 q19
+CX q13 q20
+CX q13 q21
+CX q13 q23
+CCX q2 q6 q13
+CX q7 q6
+CX q13 q23
+CX q13 q21
+CX q13 q20
+CX q13 q19
+CX q13 q18
+CX q13 q17
+CX q13 q14
+CX q17 q19
+CCX q3 q7 q17
+CX q17 q19
+CX q3 q2
+CX q13 q14
+CX q13 q18
+CX q13 q20
+CX q13 q21
+CX q13 q23
+CCX q2 q6 q13
+CX q3 q2
+CX q13 q23
+CX q13 q21
+CX q13 q20
+CX q13 q18
+CX q13 q14
+CX q9 q8
+CX q12 q13
+CX q12 q15
+CX q12 q18
+CX q12 q20
+CX q12 q22
+CX q12 q23
+CCX q2 q8 q12
+CX q9 q8
+CX q12 q23
+CX q12 q22
+CX q12 q20
+CX q12 q18
+CX q12 q15
+CX q12 q13
+CX q18 q21
+CCX q3 q9 q18
+CX q18 q21
+CX q3 q2
+CX q12 q13
+CX q12 q15
+CX q12 q20
+CX q12 q21
+CX q12 q22
+CX q12 q23
+CCX q2 q8 q12
+CX q3 q2
+CX q12 q23
+CX q12 q22
+CX q12 q21
+CX q12 q20
+CX q12 q15
+CX q12 q13
+CX q11 q10
+CX q12 q13
+CX q12 q16
+CX q12 q17
+CX q12 q20
+CCX q2 q10 q12
+CX q11 q10
+CX q12 q20
+CX q12 q17
+CX q12 q16
+CX q12 q13
+CX q19 q23
+CCX q3 q11 q19
+CX q19 q23
+CX q3 q2
+CX q12 q13
+CX q12 q16
+CX q12 q17
+CX q12 q19
+CX q12 q20
+CX q12 q23
+CCX q2 q10 q12
+CX q3 q2
+CX q12 q23
+CX q12 q20
+CX q12 q19
+CX q12 q17
+CX q12 q16
+CX q12 q13
+CX q7 q6
+CX q13 q15
+CX q13 q17
+CX q13 q18
+CX q13 q19
+CX q13 q20
+CX q13 q22
+CCX q4 q6 q13
+CX q7 q6
+CX q13 q22
+CX q13 q20
+CX q13 q19
+CX q13 q18
+CX q13 q17
+CX q13 q15
+CX q19 q20
+CCX q5 q7 q19
+CX q19 q20
+CX q5 q4
+CX q13 q15
+CX q13 q17
+CX q13 q18
+CX q13 q22
+CCX q4 q6 q13
+CX q5 q4
+CX q13 q22
+CX q13 q18
+CX q13 q17
+CX q13 q15
+CX q9 q8
+CX q12 q13
+CX q12 q14
+CX q12 q15
+CX q12 q17
+CX q12 q21
+CX q12 q22
+CX q12 q23
+CCX q4 q8 q12
+CX q9 q8
+CX q12 q23
+CX q12 q22
+CX q12 q21
+CX q12 q17
+CX q12 q15
+CX q12 q14
+CX q12 q13
+CX q20 q22
+CCX q5 q9 q20
+CX q20 q22
+CX q5 q4
+CX q12 q13
+CX q12 q14
+CX q12 q15
+CX q12 q17
+CX q12 q20
+CX q12 q21
+CX q12 q23
+CCX q4 q8 q12
+CX q5 q4
+CX q12 q23
+CX q12 q21
+CX q12 q20
+CX q12 q17
+CX q12 q15
+CX q12 q14
+CX q12 q13
+CX q11 q10
+CX q13 q16
+CX q13 q17
+CX q13 q19
+CX q13 q20
+CX q13 q21
+CX q13 q23
+CCX q4 q10 q13
+CX q11 q10
+CX q13 q23
+CX q13 q21
+CX q13 q20
+CX q13 q19
+CX q13 q17
+CX q13 q16
+CX q12 q13
+CX q12 q16
+CX q12 q18
+CX q12 q21
+CCX q5 q11 q12
+CX q12 q21
+CX q12 q18
+CX q12 q16
+CX q12 q13
+CX q5 q4
+CX q12 q17
+CX q12 q18
+CX q12 q19
+CX q12 q20
+CX q12 q23
+CCX q4 q10 q12
+CX q5 q4
+CX q12 q23
+CX q12 q20
+CX q12 q19
+CX q12 q18
+CX q12 q17
+CX q9 q8
+CX q13 q14
+CX q13 q16
+CX q13 q17
+CX q13 q18
+CX q13 q19
+CX q13 q20
+CX q13 q21
+CX q13 q22
+CX q13 q23
+CCX q6 q8 q13
+CX q9 q8
+CX q13 q23
+CX q13 q22
+CX q13 q21
+CX q13 q20
+CX q13 q19
+CX q13 q18
+CX q13 q17
+CX q13 q16
+CX q13 q14
+CX q22 q23
+CCX q7 q9 q22
+CX q22 q23
+CX q7 q6
+CX q13 q14
+CX q13 q16
+CX q13 q17
+CX q13 q18
+CX q13 q19
+CX q13 q20
+CX q13 q21
+CCX q6 q8 q13
+CX q7 q6
+CX q13 q21
+CX q13 q20
+CX q13 q19
+CX q13 q18
+CX q13 q17
+CX q13 q16
+CX q13 q14
+CX q11 q10
+CX q12 q18
+CX q12 q19
+CCX q6 q10 q12
+CX q11 q10
+CX q12 q19
+CX q12 q18
+CX q13 q14
+CX q13 q17
+CX q13 q19
+CX q13 q23
+CCX q7 q11 q13
+CX q13 q23
+CX q13 q19
+CX q13 q17
+CX q13 q14
+CX q7 q6
+CX q12 q13
+CX q12 q14
+CX q12 q17
+CX q12 q18
+CX q12 q23
+CCX q6 q10 q12
+CX q7 q6
+CX q12 q23
+CX q12 q18
+CX q12 q17
+CX q12 q14
+CX q12 q13
+CX q11 q10
+CX q12 q15
+CX q12 q21
+CX q12 q22
+CX q12 q23
+CCX q8 q10 q12
+CX q11 q10
+CX q12 q23
+CX q12 q22
+CX q12 q21
+CX q12 q15
+CX q13 q15
+CX q13 q17
+CX q13 q18
+CX q13 q19
+CX q13 q20
+CCX q9 q11 q13
+CX q13 q20
+CX q13 q19
+CX q13 q18
+CX q13 q17
+CX q13 q15
+CX q9 q8
+CX q12 q13
+CX q12 q17
+CX q12 q18
+CX q12 q19
+CX q12 q20
+CX q12 q21
+CX q12 q22
+CX q12 q23
+CCX q8 q10 q12
+CX q9 q8
+CX q12 q23
+CX q12 q22
+CX q12 q21
+CX q12 q20
+CX q12 q19
+CX q12 q18
+CX q12 q17
+CX q12 q13
+CX q1 q2
+CX q2 q1
+CX q1 q2
+CX q2 q4
+CX q4 q2
+CX q2 q4
+CX q3 q6
+CX q6 q3
+CX q3 q6
+CX q4 q8
+CX q8 q4
+CX q4 q8
+CX q5 q10
+CX q10 q5
+CX q5 q10
+CX q6 q8
+CX q8 q6
+CX q6 q8
+CX q6 q1
+CX q6 q2
+CX q7 q8
+CX q8 q7
+CX q7 q8
+CX q7 q2
+CX q7 q3
+CX q8 q10
+CX q10 q8
+CX q8 q10
+CX q8 q3
+CX q8 q4
+CX q9 q10
+CX q10 q9
+CX q9 q10
+CX q9 q4
+CX q9 q5
+CX q10 q5
+CX q10 q6
+CX q11 q6
+CX q11 q7
+CX q23 q22
+CX q23 q18
+CX q23 q16
+CX q23 q13
+CX q22 q21
+CX q22 q20
+CX q22 q19
+CX q22 q17
+CX q22 q16
+CX q22 q13
+CX q21 q23
+CX q21 q19
+CX q21 q18
+CX q21 q15
+CX q21 q12
+CX q21 q22
+CX q22 q21
+CX q21 q22
+CX q20 q16
+CX q20 q15
+CX q20 q21
+CX q21 q20
+CX q20 q21
+CX q19 q21
+CX q19 q20
+CX q19 q13
+CX q19 q12
+CX q18 q22
+CX q18 q20
+CX q18 q19
+CX q18 q17
+CX q18 q14
+CX q17 q23
+CX q17 q22
+CX q17 q21
+CX q17 q20
+CX q17 q18
+CX q17 q16
+CX q17 q15
+CX q17 q13
+CX q16 q23
+CX q16 q21
+CX q16 q19
+CX q16 q17
+CX q16 q15
+CX q15 q21
+CX q15 q20
+CX q15 q19
+CX q15 q14
+CX q15 q13
+CX q15 q12
+CX q15 q17
+CX q17 q15
+CX q15 q17
+CX q14 q20
+CX q20 q14
+CX q14 q20
+CX q13 q16
+CX q16 q13
+CX q13 q16
+CX q12 q24
+CX q14 q25
+CX q14 q26
+CX q14 q30
+CX q13 q24
+CX q13 q25
+CX q13 q26
+CX q13 q30
+CX q15 q24
+CX q24 q25
+CX q24 q26
+CX q24 q30
+CCX q12 q14 q24
+CX q24 q30
+CX q24 q26
+CX q24 q25
+CCX q13 q15 q24
+CX q13 q12
+CX q15 q14
+CX q25 q26
+CX q25 q30
+CCX q12 q14 q25
+CX q13 q12
+CX q15 q14
+CX q25 q30
+CX q25 q26
+CX q16 q29
+CX q18 q30
+CX q18 q31
+CX q18 q35
+CX q17 q29
+CX q17 q30
+CX q17 q31
+CX q17 q35
+CX q19 q29
+CX q29 q30
+CX q29 q31
+CX q29 q35
+CCX q16 q18 q29
+CX q29 q35
+CX q29 q31
+CX q29 q30
+CCX q17 q19 q29
+CX q17 q16
+CX q19 q18
+CX q30 q31
+CX q30 q35
+CCX q16 q18 q30
+CX q17 q16
+CX q19 q18
+CX q30 q35
+CX q30 q31
+CX q20 q34
+CX q22 q24
+CX q22 q25
+CX q22 q29
+CX q22 q30
+CX q22 q32
+CX q22 q34
+CX q22 q35
+CX q21 q24
+CX q21 q25
+CX q21 q29
+CX q21 q30
+CX q21 q32
+CX q21 q35
+CX q23 q34
+CX q24 q25
+CX q24 q29
+CX q24 q30
+CX q24 q32
+CX q24 q35
+CCX q20 q22 q24
+CX q24 q35
+CX q24 q32
+CX q24 q30
+CX q24 q29
+CX q24 q25
+CCX q21 q23 q34
+CX q21 q20
+CX q23 q22
+CX q24 q25
+CX q24 q29
+CX q24 q30
+CX q24 q32
+CX q24 q34
+CX q24 q35
+CCX q20 q22 q24
+CX q21 q20
+CX q23 q22
+CX q24 q35
+CX q24 q34
+CX q24 q32
+CX q24 q30
+CX q24 q29
+CX q24 q25
+CX q18 q16
+CX q24 q26
+CX q24 q28
+CX q24 q29
+CX q24 q30
+CX q24 q31
+CX q24 q33
+CCX q12 q16 q24
+CX q18 q16
+CX q24 q33
+CX q24 q31
+CX q24 q30
+CX q24 q29
+CX q24 q28
+CX q24 q26
+CX q14 q13
+CX q18 q17
+CX q19 q17
+CX q25 q27
+CX q25 q32
+CX q25 q33
+CX q25 q34
+CCX q13 q17 q25
+CX q14 q13
+CX q19 q17
+CX q18 q17
+CX q25 q34
+CX q25 q33
+CX q25 q32
+CX q25 q27
+CX q13 q12
+CX q14 q12
+CX q17 q16
+CX q19 q16
+CX q26 q28
+CX q26 q29
+CX q26 q30
+CX q26 q31
+CX q26 q32
+CX q26 q33
+CCX q12 q16 q26
+CX q14 q12
+CX q13 q12
+CX q19 q16
+CX q17 q16
+CX q26 q33
+CX q26 q32
+CX q26 q31
+CX q26 q30
+CX q26 q29
+CX q26 q28
+CX q15 q13
+CX q24 q27
+CX q24 q28
+CX q24 q33
+CX q24 q34
+CCX q13 q17 q24
+CX q15 q13
+CX q24 q34
+CX q24 q33
+CX q24 q28
+CX q24 q27
+CX q25 q28
+CCX q15 q19 q25
+CX q25 q28
+CX q19 q17
+CX q24 q25
+CX q24 q26
+CX q24 q29
+CX q24 q30
+CX q24 q31
+CX q24 q33
+CCX q13 q17 q24
+CX q19 q17
+CX q24 q33
+CX q24 q31
+CX q24 q30
+CX q24 q29
+CX q24 q26
+CX q24 q25
+CX q13 q12
+CX q15 q12
+CX q17 q16
+CX q18 q16
+CX q27 q28
+CX q27 q32
+CX q27 q33
+CX q27 q34
+CCX q12 q16 q27
+CX q15 q12
+CX q13 q12
+CX q18 q16
+CX q17 q16
+CX q27 q34
+CX q27 q33
+CX q27 q32
+CX q27 q28
+CX q14 q13
+CX q15 q13
+CX q18 q17
+CX q25 q26
+CX q25 q29
+CX q25 q30
+CX q25 q31
+CX q25 q32
+CX q25 q33
+CCX q13 q17 q25
+CX q15 q13
+CX q14 q13
+CX q18 q17
+CX q25 q33
+CX q25 q32
+CX q25 q31
+CX q25 q30
+CX q25 q29
+CX q25 q26
+CX q14 q12
+CX q24 q25
+CX q24 q27
+CX q24 q33
+CX q24 q34
+CCX q12 q16 q24
+CX q14 q12
+CX q24 q34
+CX q24 q33
+CX q24 q27
+CX q24 q25
+CX q22 q20
+CX q26 q27
+CX q26 q28
+CX q26 q29
+CX q26 q30
+CX q26 q31
+CX q26 q33
+CCX q12 q20 q26
+CX q22 q20
+CX q26 q33
+CX q26 q31
+CX q26 q30
+CX q26 q29
+CX q26 q28
+CX q26 q27
+CX q14 q13
+CX q22 q21
+CX q23 q21
+CX q24 q26
+CX q24 q27
+CX q24 q30
+CX q24 q31
+CX q24 q32
+CX q24 q33
+CX q24 q34
+CCX q13 q21 q24
+CX q14 q13
+CX q23 q21
+CX q22 q21
+CX q24 q34
+CX q24 q33
+CX q24 q32
+CX q24 q31
+CX q24 q30
+CX q24 q27
+CX q24 q26
+CX q13 q12
+CX q14 q12
+CX q21 q20
+CX q23 q20
+CX q24 q26
+CX q24 q27
+CX q24 q28
+CX q24 q31
+CCX q12 q20 q24
+CX q14 q12
+CX q13 q12
+CX q23 q20
+CX q21 q20
+CX q24 q31
+CX q24 q28
+CX q24 q27
+CX q24 q26
+CX q15 q13
+CX q27 q29
+CX q27 q31
+CX q27 q34
+CCX q13 q21 q27
+CX q15 q13
+CX q27 q34
+CX q27 q31
+CX q27 q29
+CX q26 q32
+CCX q15 q23 q26
+CX q26 q32
+CX q23 q21
+CX q27 q28
+CX q27 q29
+CX q27 q30
+CX q27 q31
+CX q27 q32
+CX q27 q33
+CCX q13 q21 q27
+CX q23 q21
+CX q27 q33
+CX q27 q32
+CX q27 q31
+CX q27 q30
+CX q27 q29
+CX q27 q28
+CX q13 q12
+CX q15 q12
+CX q21 q20
+CX q22 q20
+CX q24 q27
+CX q24 q30
+CX q24 q31
+CX q24 q33
+CX q24 q34
+CCX q12 q20 q24
+CX q15 q12
+CX q13 q12
+CX q22 q20
+CX q21 q20
+CX q24 q34
+CX q24 q33
+CX q24 q31
+CX q24 q30
+CX q24 q27
+CX q14 q13
+CX q15 q13
+CX q22 q21
+CX q24 q27
+CX q24 q28
+CX q24 q31
+CX q24 q32
+CCX q13 q21 q24
+CX q15 q13
+CX q14 q13
+CX q22 q21
+CX q24 q32
+CX q24 q31
+CX q24 q28
+CX q24 q27
+CX q14 q12
+CX q26 q27
+CX q26 q29
+CX q26 q31
+CX q26 q32
+CX q26 q34
+CCX q12 q20 q26
+CX q14 q12
+CX q26 q34
+CX q26 q32
+CX q26 q31
+CX q26 q29
+CX q26 q27
+CX q22 q20
+CX q24 q25
+CX q24 q26
+CX q24 q27
+CX q24 q28
+CX q24 q29
+CX q24 q31
+CX q24 q32
+CX q24 q33
+CX q24 q34
+CX q24 q35
+CCX q16 q20 q24
+CX q22 q20
+CX q24 q35
+CX q24 q34
+CX q24 q33
+CX q24 q32
+CX q24 q31
+CX q24 q29
+CX q24 q28
+CX q24 q27
+CX q24 q26
+CX q24 q25
+CX q18 q17
+CX q22 q21
+CX q23 q21
+CX q25 q28
+CX q25 q29
+CX q25 q33
+CCX q17 q21 q25
+CX q18 q17
+CX q23 q21
+CX q22 q21
+CX q25 q33
+CX q25 q29
+CX q25 q28
+CX q17 q16
+CX q18 q16
+CX q21 q20
+CX q23 q20
+CX q24 q27
+CX q24 q28
+CX q24 q29
+CX q24 q32
+CX q24 q33
+CX q24 q34
+CX q24 q35
+CCX q16 q20 q24
+CX q18 q16
+CX q17 q16
+CX q23 q20
+CX q21 q20
+CX q24 q35
+CX q24 q34
+CX q24 q33
+CX q24 q32
+CX q24 q29
+CX q24 q28
+CX q24 q27
+CX q19 q17
+CX q26 q28
+CX q26 q29
+CX q26 q30
+CX q26 q31
+CCX q17 q21 q26
+CX q19 q17
+CX q26 q31
+CX q26 q30
+CX q26 q29
+CX q26 q28
+CX q30 q33
+CCX q19 q23 q30
+CX q30 q33
+CX q23 q21
+CX q24 q25
+CX q24 q26
+CX q24 q27
+CX q24 q28
+CX q24 q29
+CX q24 q30
+CX q24 q31
+CX q24 q32
+CX q24 q34
+CX q24 q35
+CCX q17 q21 q24
+CX q23 q21
+CX q24 q35
+CX q24 q34
+CX q24 q32
+CX q24 q31
+CX q24 q30
+CX q24 q29
+CX q24 q28
+CX q24 q27
+CX q24 q26
+CX q24 q25
+CX q17 q16
+CX q19 q16
+CX q21 q20
+CX q22 q20
+CX q25 q28
+CX q25 q29
+CX q25 q30
+CCX q16 q20 q25
+CX q19 q16
+CX q17 q16
+CX q22 q20
+CX q21 q20
+CX q25 q30
+CX q25 q29
+CX q25 q28
+CX q18 q17
+CX q19 q17
+CX q22 q21
+CX q24 q27
+CX q24 q28
+CX q24 q29
+CX q24 q30
+CX q24 q32
+CX q24 q34
+CX q24 q35
+CCX q17 q21 q24
+CX q19 q17
+CX q18 q17
+CX q22 q21
+CX q24 q35
+CX q24 q34
+CX q24 q32
+CX q24 q30
+CX q24 q29
+CX q24 q28
+CX q24 q27
+CX q18 q16
+CX q26 q28
+CX q26 q29
+CX q26 q31
+CX q26 q33
+CCX q16 q20 q26
+CX q18 q16
+CX q26 q33
+CX q26 q31
+CX q26 q29
+CX q26 q28
+CX q13 q16
+CX q16 q13
+CX q13 q16
+CX q14 q20
+CX q20 q14
+CX q14 q20
+CX q15 q17
+CX q17 q15
+CX q15 q17
+CX q15 q12
+CX q15 q13
+CX q15 q14
+CX q15 q19
+CX q15 q20
+CX q15 q21
+CX q16 q15
+CX q16 q17
+CX q16 q19
+CX q16 q21
+CX q16 q23
+CX q17 q13
+CX q17 q15
+CX q17 q16
+CX q17 q18
+CX q17 q20
+CX q17 q21
+CX q17 q22
+CX q17 q23
+CX q18 q14
+CX q18 q17
+CX q18 q19
+CX q18 q20
+CX q18 q22
+CX q19 q12
+CX q19 q13
+CX q19 q20
+CX q19 q21
+CX q20 q21
+CX q21 q20
+CX q20 q21
+CX q20 q15
+CX q20 q16
+CX q21 q22
+CX q22 q21
+CX q21 q22
+CX q21 q12
+CX q21 q15
+CX q21 q18
+CX q21 q19
+CX q21 q23
+CX q22 q13
+CX q22 q16
+CX q22 q17
+CX q22 q19
+CX q22 q20
+CX q22 q21
+CX q23 q13
+CX q23 q16
+CX q23 q18
+CX q23 q22
+CX q35 q34
+CX q35 q33
+CX q35 q32
+CX q35 q31
+CX q35 q25
+CX q35 q24
+CX q34 q33
+CX q34 q32
+CX q34 q31
+CX q34 q30
+CX q34 q29
+CX q34 q28
+CX q34 q26
+CX q34 q35
+CX q35 q34
+CX q34 q35
+CX q33 q32
+CX q33 q31
+CX q33 q30
+CX q33 q28
+CX q33 q24
+CX q33 q35
+CX q35 q33
+CX q33 q35
+CX q32 q34
+CX q32 q28
+CX q32 q27
+CX q32 q33
+CX q33 q32
+CX q32 q33
+CX q31 q33
+CX q31 q32
+CX q31 q29
+CX q31 q27
+CX q31 q26
+CX q31 q25
+CX q30 q34
+CX q30 q29
+CX q30 q27
+CX q30 q25
+CX q30 q24
+CX q29 q33
+CX q29 q32
+CX q29 q31
+CX q29 q30
+CX q29 q25
+CX q28 q35
+CX q28 q34
+CX q28 q30
+CX q28 q29
+CX q28 q26
+CX q28 q25
+CX q28 q24
+CX q27 q34
+CX q27 q33
+CX q27 q31
+CX q27 q29
+CX q27 q26
+CX q27 q25
+CX q27 q24
+CX q27 q28
+CX q28 q27
+CX q27 q28
+CX q26 q32
+CX q32 q26
+CX q26 q32
+CX q25 q28
+CX q28 q25
+CX q25 q28
+CX q24 q36
+CX q25 q38
+CX q25 q40
+CX q25 q41
+CX q25 q42
+CX q25 q43
+CX q25 q44
+CX q25 q45
+CX q25 q46
+CX q26 q36
+CX q26 q37
+CX q26 q40
+CX q26 q41
+CX q26 q43
+CX q26 q44
+CX q26 q45
+CX q26 q46
+CX q27 q36
+CX q27 q38
+CX q27 q39
+CX q27 q40
+CX q27 q41
+CX q27 q44
+CX q27 q45
+CX q27 q47
+CX q28 q41
+CX q28 q42
+CX q28 q45
+CX q28 q47
+CX q29 q36
+CX q29 q38
+CX q29 q39
+CX q29 q40
+CX q29 q42
+CX q29 q43
+CX q29 q44
+CX q29 q47
+CX q30 q36
+CX q30 q37
+CX q30 q41
+CX q30 q43
+CX q30 q45
+CX q30 q46
+CX q30 q47
+CX q31 q38
+CX q31 q39
+CX q31 q40
+CX q31 q42
+CX q31 q43
+CX q31 q44
+CX q31 q45
+CX q31 q46
+CX q31 q47
+CX q32 q38
+CX q32 q39
+CX q32 q40
+CX q32 q41
+CX q32 q43
+CX q32 q47
+CX q33 q36
+CX q33 q38
+CX q33 q44
+CX q33 q45
+CX q34 q37
+CX q34 q44
+CX q34 q46
+CX q34 q47
+CX q35 q36
+CX q35 q38
+CX q35 q39
+CX q35 q43
+CX q35 q45
+CX q35 q46
+CX q36 q39
+CX q36 q40
+CX q36 q42
+CX q36 q43
+CX q36 q44
+CCX q24 q28 q36
+CX q36 q44
+CX q36 q43
+CX q36 q42
+CX q36 q40
+CX q36 q39
+CX q36 q38
+CX q36 q40
+CX q36 q41
+CX q36 q42
+CX q36 q43
+CX q36 q46
+CCX q25 q29 q36
+CX q36 q46
+CX q36 q43
+CX q36 q42
+CX q36 q41
+CX q36 q40
+CX q36 q38
+CX q25 q24
+CX q29 q28
+CX q38 q42
+CX q38 q43
+CX q38 q44
+CX q38 q45
+CX q38 q46
+CCX q24 q28 q38
+CX q25 q24
+CX q29 q28
+CX q38 q46
+CX q38 q45
+CX q38 q44
+CX q38 q43
+CX q38 q42
+CX q37 q39
+CX q37 q40
+CX q37 q42
+CX q37 q43
+CX q37 q44
+CX q37 q45
+CX q37 q46
+CCX q26 q30 q37
+CX q37 q46
+CX q37 q45
+CX q37 q44
+CX q37 q43
+CX q37 q42
+CX q37 q40
+CX q37 q39
+CX q37 q40
+CX q37 q41
+CX q37 q44
+CX q37 q46
+CCX q27 q31 q37
+CX q37 q46
+CX q37 q44
+CX q37 q41
+CX q37 q40
+CX q27 q26
+CX q31 q30
+CX q36 q37
+CX q36 q39
+CX q36 q41
+CX q36 q42
+CX q36 q43
+CX q36 q46
+CCX q26 q30 q36
+CX q27 q26
+CX q31 q30
+CX q36 q46
+CX q36 q43
+CX q36 q42
+CX q36 q41
+CX q36 q39
+CX q36 q37
+CX q26 q24
+CX q30 q28
+CX q36 q37
+CX q36 q38
+CX q36 q42
+CX q36 q43
+CX q36 q44
+CCX q24 q28 q36
+CX q26 q24
+CX q30 q28
+CX q36 q44
+CX q36 q43
+CX q36 q42
+CX q36 q38
+CX q36 q37
+CX q27 q25
+CX q31 q29
+CX q37 q38
+CX q37 q40
+CX q37 q41
+CX q37 q42
+CX q37 q43
+CX q37 q45
+CCX q25 q29 q37
+CX q27 q25
+CX q31 q29
+CX q37 q45
+CX q37 q43
+CX q37 q42
+CX q37 q41
+CX q37 q40
+CX q37 q38
+CX q25 q24
+CX q26 q24
+CX q27 q24
+CX q29 q28
+CX q30 q28
+CX q31 q28
+CX q39 q41
+CX q39 q42
+CX q39 q43
+CX q39 q45
+CCX q24 q28 q39
+CX q27 q24
+CX q26 q24
+CX q25 q24
+CX q31 q28
+CX q30 q28
+CX q29 q28
+CX q39 q45
+CX q39 q43
+CX q39 q42
+CX q39 q41
+CX q37 q39
+CX q37 q40
+CX q37 q41
+CX q37 q46
+CCX q24 q32 q37
+CX q37 q46
+CX q37 q41
+CX q37 q40
+CX q37 q39
+CX q36 q37
+CX q36 q38
+CX q36 q41
+CX q36 q42
+CX q36 q43
+CX q36 q44
+CX q36 q45
+CCX q25 q33 q36
+CX q36 q45
+CX q36 q44
+CX q36 q43
+CX q36 q42
+CX q36 q41
+CX q36 q38
+CX q36 q37
+CX q25 q24
+CX q33 q32
+CX q37 q38
+CX q37 q39
+CX q37 q41
+CX q37 q42
+CX q37 q44
+CX q37 q46
+CCX q24 q32 q37
+CX q25 q24
+CX q33 q32
+CX q37 q46
+CX q37 q44
+CX q37 q42
+CX q37 q41
+CX q37 q39
+CX q37 q38
+CX q39 q40
+CX q39 q43
+CCX q26 q34 q39
+CX q39 q43
+CX q39 q40
+CX q36 q37
+CX q36 q39
+CX q36 q41
+CX q36 q45
+CCX q27 q35 q36
+CX q36 q45
+CX q36 q41
+CX q36 q39
+CX q36 q37
+CX q27 q26
+CX q35 q34
+CX q36 q40
+CX q36 q45
+CX q36 q46
+CCX q26 q34 q36
+CX q27 q26
+CX q35 q34
+CX q36 q46
+CX q36 q45
+CX q36 q40
+CX q26 q24
+CX q34 q32
+CX q38 q39
+CX q38 q42
+CX q38 q43
+CX q38 q44
+CCX q24 q32 q38
+CX q26 q24
+CX q34 q32
+CX q38 q44
+CX q38 q43
+CX q38 q42
+CX q38 q39
+CX q27 q25
+CX q35 q33
+CX q36 q38
+CX q36 q42
+CX q36 q44
+CX q36 q45
+CX q36 q46
+CCX q25 q33 q36
+CX q27 q25
+CX q35 q33
+CX q36 q46
+CX q36 q45
+CX q36 q44
+CX q36 q42
+CX q36 q38
+CX q25 q24
+CX q26 q24
+CX q27 q24
+CX q33 q32
+CX q34 q32
+CX q35 q32
+CX q36 q37
+CX q36 q40
+CX q36 q41
+CX q36 q43
+CX q36 q45
+CCX q24 q32 q36
+CX q27 q24
+CX q26 q24
+CX q25 q24
+CX q35 q32
+CX q34 q32
+CX q33 q32
+CX q36 q45
+CX q36 q43
+CX q36 q41
+CX q36 q40
+CX q36 q37
+CX q40 q44
+CX q40 q45
+CX q40 q46
+CX q40 q47
+CCX q28 q32 q40
+CX q40 q47
+CX q40 q46
+CX q40 q45
+CX q40 q44
+CX q36 q39
+CX q36 q42
+CX q36 q46
+CCX q29 q33 q36
+CX q36 q46
+CX q36 q42
+CX q36 q39
+CX q29 q28
+CX q33 q32
+CX q36 q37
+CX q36 q38
+CX q36 q39
+CX q36 q40
+CX q36 q43
+CX q36 q44
+CX q36 q46
+CCX q28 q32 q36
+CX q29 q28
+CX q33 q32
+CX q36 q46
+CX q36 q44
+CX q36 q43
+CX q36 q40
+CX q36 q39
+CX q36 q38
+CX q36 q37
+CX q36 q37
+CX q36 q39
+CX q36 q45
+CX q36 q46
+CX q36 q47
+CCX q30 q34 q36
+CX q36 q47
+CX q36 q46
+CX q36 q45
+CX q36 q39
+CX q36 q37
+CX q36 q38
+CX q36 q39
+CX q36 q42
+CX q36 q43
+CCX q31 q35 q36
+CX q36 q43
+CX q36 q42
+CX q36 q39
+CX q36 q38
+CX q31 q30
+CX q35 q34
+CX q36 q38
+CX q36 q39
+CX q36 q40
+CX q36 q42
+CX q36 q43
+CX q36 q44
+CX q36 q45
+CX q36 q46
+CX q36 q47
+CCX q30 q34 q36
+CX q31 q30
+CX q35 q34
+CX q36 q47
+CX q36 q46
+CX q36 q45
+CX q36 q44
+CX q36 q43
+CX q36 q42
+CX q36 q40
+CX q36 q39
+CX q36 q38
+CX q30 q28
+CX q34 q32
+CX q38 q43
+CX q38 q46
+CCX q28 q32 q38
+CX q30 q28
+CX q34 q32
+CX q38 q46
+CX q38 q43
+CX q31 q29
+CX q35 q33
+CX q37 q40
+CX q37 q42
+CX q37 q44
+CX q37 q46
+CCX q29 q33 q37
+CX q31 q29
+CX q35 q33
+CX q37 q46
+CX q37 q44
+CX q37 q42
+CX q37 q40
+CX q29 q28
+CX q30 q28
+CX q31 q28
+CX q33 q32
+CX q34 q32
+CX q35 q32
+CX q37 q38
+CX q37 q42
+CX q37 q43
+CX q37 q45
+CX q37 q46
+CX q37 q47
+CCX q28 q32 q37
+CX q31 q28
+CX q30 q28
+CX q29 q28
+CX q35 q32
+CX q34 q32
+CX q33 q32
+CX q37 q47
+CX q37 q46
+CX q37 q45
+CX q37 q43
+CX q37 q42
+CX q37 q38
+CX q25 q28
+CX q28 q25
+CX q25 q28
+CX q26 q32
+CX q32 q26
+CX q26 q32
+CX q27 q28
+CX q28 q27
+CX q27 q28
+CX q27 q24
+CX q27 q25
+CX q27 q26
+CX q27 q29
+CX q27 q31
+CX q27 q33
+CX q27 q34
+CX q28 q24
+CX q28 q25
+CX q28 q26
+CX q28 q29
+CX q28 q30
+CX q28 q34
+CX q28 q35
+CX q29 q25
+CX q29 q30
+CX q29 q31
+CX q29 q32
+CX q29 q33
+CX q30 q24
+CX q30 q25
+CX q30 q27
+CX q30 q29
+CX q30 q34
+CX q31 q25
+CX q31 q26
+CX q31 q27
+CX q31 q29
+CX q31 q32
+CX q31 q33
+CX q32 q33
+CX q33 q32
+CX q32 q33
+CX q32 q27
+CX q32 q28
+CX q32 q34
+CX q33 q35
+CX q35 q33
+CX q33 q35
+CX q33 q24
+CX q33 q28
+CX q33 q30
+CX q33 q31
+CX q33 q32
+CX q34 q35
+CX q35 q34
+CX q34 q35
+CX q34 q26
+CX q34 q28
+CX q34 q29
+CX q34 q30
+CX q34 q31
+CX q34 q32
+CX q34 q33
+CX q35 q24
+CX q35 q25
+CX q35 q31
+CX q35 q32
+CX q35 q33
+CX q35 q34
+CX q11 q9
+CX q11 q7
+CX q11 q6
+CX q11 q5
+CX q11 q3
+CX q11 q2
+CX q10 q8
+CX q10 q6
+CX q10 q5
+CX q10 q4
+CX q10 q2
+CX q10 q1
+CX q9 q6
+CX q9 q2
+CX q8 q5
+CX q8 q4
+CX q8 q2
+CX q8 q10
+CX q10 q8
+CX q8 q10
+CX q7 q4
+CX q7 q3
+CX q7 q1
+CX q7 q8
+CX q8 q7
+CX q7 q8
+CX q6 q3
+CX q6 q2
+CX q6 q0
+CX q6 q8
+CX q8 q6
+CX q6 q8
+CX q5 q9
+CX q5 q8
+CX q5 q6
+CX q5 q3
+CX q4 q10
+CX q4 q2
+CX q4 q1
+CX q4 q5
+CX q5 q4
+CX q4 q5
+CX q3 q6
+CX q3 q1
+CX q3 q0
+CX q3 q4
+CX q4 q3
+CX q3 q4
+CX q2 q8
+CX q8 q2
+CX q2 q8
+CX q1 q4
+CX q4 q1
+CX q1 q4
+CX q50 q53
+CX q50 q54
+CX q50 q55
+CX q50 q56
+CX q50 q58
+CX q50 q59
+CCX q0 q12 q50
+CX q50 q59
+CX q50 q58
+CX q50 q56
+CX q50 q55
+CX q50 q54
+CX q50 q53
+CX q48 q49
+CX q48 q51
+CX q48 q52
+CX q48 q55
+CX q48 q56
+CX q48 q57
+CX q48 q59
+CCX q1 q13 q48
+CX q48 q59
+CX q48 q57
+CX q48 q56
+CX q48 q55
+CX q48 q52
+CX q48 q51
+CX q48 q49
+CX q1 q0
+CX q13 q12
+CX q48 q51
+CX q48 q55
+CX q48 q57
+CX q48 q58
+CCX q0 q12 q48
+CX q48 q58
+CX q48 q57
+CX q48 q55
+CX q48 q51
+CX q13 q12
+CX q1 q0
+CX q49 q52
+CX q49 q56
+CX q49 q58
+CX q49 q59
+CCX q2 q14 q49
+CX q49 q59
+CX q49 q58
+CX q49 q56
+CX q49 q52
+CX q2 q0
+CX q14 q12
+CX q48 q49
+CX q48 q50
+CX q48 q51
+CX q48 q52
+CX q48 q53
+CX q48 q56
+CX q48 q57
+CX q48 q59
+CCX q0 q12 q48
+CX q48 q59
+CX q48 q57
+CX q48 q56
+CX q48 q53
+CX q48 q52
+CX q48 q51
+CX q48 q50
+CX q48 q49
+CX q14 q12
+CX q2 q0
+CX q48 q50
+CX q48 q51
+CX q48 q53
+CX q48 q57
+CX q48 q58
+CCX q1 q13 q48
+CX q48 q58
+CX q48 q57
+CX q48 q53
+CX q48 q51
+CX q48 q50
+CX q1 q0
+CX q2 q0
+CX q13 q12
+CX q14 q12
+CX q48 q49
+CX q48 q51
+CX q48 q52
+CX q48 q57
+CCX q0 q12 q48
+CX q48 q57
+CX q48 q52
+CX q48 q51
+CX q48 q49
+CX q14 q12
+CX q13 q12
+CX q2 q0
+CX q1 q0
+CX q49 q51
+CX q49 q54
+CX q49 q55
+CX q49 q57
+CX q49 q58
+CX q49 q59
+CCX q3 q15 q49
+CX q49 q59
+CX q49 q58
+CX q49 q57
+CX q49 q55
+CX q49 q54
+CX q49 q51
+CX q48 q49
+CX q48 q50
+CX q48 q54
+CX q48 q55
+CX q48 q56
+CX q48 q58
+CX q48 q59
+CCX q4 q16 q48
+CX q48 q59
+CX q48 q58
+CX q48 q56
+CX q48 q55
+CX q48 q54
+CX q48 q50
+CX q48 q49
+CX q4 q3
+CX q16 q15
+CX q48 q50
+CX q48 q51
+CX q48 q52
+CX q48 q53
+CX q48 q55
+CX q48 q58
+CCX q3 q15 q48
+CX q48 q58
+CX q48 q55
+CX q48 q53
+CX q48 q52
+CX q48 q51
+CX q48 q50
+CX q16 q15
+CX q4 q3
+CX q49 q51
+CX q49 q52
+CX q49 q53
+CX q49 q54
+CX q49 q56
+CX q49 q59
+CCX q5 q17 q49
+CX q49 q59
+CX q49 q56
+CX q49 q54
+CX q49 q53
+CX q49 q52
+CX q49 q51
+CX q5 q3
+CX q17 q15
+CX q48 q49
+CX q48 q50
+CX q48 q53
+CX q48 q54
+CX q48 q55
+CX q48 q59
+CCX q3 q15 q48
+CX q48 q59
+CX q48 q55
+CX q48 q54
+CX q48 q53
+CX q48 q50
+CX q48 q49
+CX q17 q15
+CX q5 q3
+CX q48 q50
+CX q48 q51
+CX q48 q52
+CX q48 q55
+CX q48 q56
+CCX q4 q16 q48
+CX q48 q56
+CX q48 q55
+CX q48 q52
+CX q48 q51
+CX q48 q50
+CX q4 q3
+CX q5 q3
+CX q16 q15
+CX q17 q15
+CX q48 q49
+CX q48 q51
+CX q48 q55
+CCX q3 q15 q48
+CX q48 q55
+CX q48 q51
+CX q48 q49
+CX q17 q15
+CX q16 q15
+CX q5 q3
+CX q4 q3
+CX q3 q0
+CX q15 q12
+CX q48 q49
+CX q48 q51
+CX q48 q53
+CX q48 q57
+CX q48 q58
+CX q48 q59
+CCX q0 q12 q48
+CX q48 q59
+CX q48 q58
+CX q48 q57
+CX q48 q53
+CX q48 q51
+CX q48 q49
+CX q15 q12
+CX q3 q0
+CX q4 q1
+CX q16 q13
+CX q48 q50
+CX q48 q58
+CX q48 q59
+CCX q1 q13 q48
+CX q48 q59
+CX q48 q58
+CX q48 q50
+CX q16 q13
+CX q4 q1
+CX q1 q0
+CX q3 q0
+CX q4 q0
+CX q13 q12
+CX q15 q12
+CX q16 q12
+CX q48 q49
+CX q48 q58
+CCX q0 q12 q48
+CX q48 q58
+CX q48 q49
+CX q16 q12
+CX q15 q12
+CX q13 q12
+CX q4 q0
+CX q3 q0
+CX q1 q0
+CX q5 q2
+CX q17 q14
+CX q49 q50
+CX q49 q59
+CCX q2 q14 q49
+CX q49 q59
+CX q49 q50
+CX q17 q14
+CX q5 q2
+CX q2 q0
+CX q3 q0
+CX q5 q0
+CX q14 q12
+CX q15 q12
+CX q17 q12
+CX q48 q49
+CX q48 q52
+CX q48 q53
+CX q48 q59
+CCX q0 q12 q48
+CX q48 q59
+CX q48 q53
+CX q48 q52
+CX q48 q49
+CX q17 q12
+CX q15 q12
+CX q14 q12
+CX q5 q0
+CX q3 q0
+CX q2 q0
+CX q4 q1
+CX q16 q13
+CX q48 q50
+CX q48 q52
+CX q48 q53
+CCX q1 q13 q48
+CX q48 q53
+CX q48 q52
+CX q48 q50
+CX q16 q13
+CX q4 q1
+CX q1 q0
+CX q2 q0
+CX q3 q0
+CX q4 q0
+CX q5 q0
+CX q13 q12
+CX q14 q12
+CX q15 q12
+CX q16 q12
+CX q17 q12
+CX q48 q49
+CX q48 q52
+CCX q0 q12 q48
+CX q48 q52
+CX q48 q49
+CX q17 q12
+CX q16 q12
+CX q15 q12
+CX q14 q12
+CX q13 q12
+CX q5 q0
+CX q4 q0
+CX q3 q0
+CX q2 q0
+CX q1 q0
+CX q48 q51
+CX q48 q53
+CX q48 q54
+CX q48 q55
+CX q48 q56
+CX q48 q57
+CX q48 q58
+CCX q6 q18 q48
+CX q48 q58
+CX q48 q57
+CX q48 q56
+CX q48 q55
+CX q48 q54
+CX q48 q53
+CX q48 q51
+CX q49 q52
+CX q49 q54
+CX q49 q55
+CX q49 q56
+CX q49 q57
+CX q49 q58
+CX q49 q59
+CCX q7 q19 q49
+CX q49 q59
+CX q49 q58
+CX q49 q57
+CX q49 q56
+CX q49 q55
+CX q49 q54
+CX q49 q52
+CX q7 q6
+CX q19 q18
+CX q49 q50
+CX q49 q51
+CX q49 q54
+CX q49 q56
+CX q49 q58
+CCX q6 q18 q49
+CX q49 q58
+CX q49 q56
+CX q49 q54
+CX q49 q51
+CX q49 q50
+CX q19 q18
+CX q7 q6
+CX q50 q51
+CX q50 q52
+CX q50 q55
+CX q50 q57
+CX q50 q59
+CCX q8 q20 q50
+CX q50 q59
+CX q50 q57
+CX q50 q55
+CX q50 q52
+CX q50 q51
+CX q8 q6
+CX q20 q18
+CX q50 q52
+CX q50 q53
+CX q50 q54
+CX q50 q57
+CX q50 q58
+CCX q6 q18 q50
+CX q50 q58
+CX q50 q57
+CX q50 q54
+CX q50 q53
+CX q50 q52
+CX q20 q18
+CX q8 q6
+CX q51 q53
+CX q51 q54
+CX q51 q55
+CX q51 q58
+CX q51 q59
+CCX q7 q19 q51
+CX q51 q59
+CX q51 q58
+CX q51 q55
+CX q51 q54
+CX q51 q53
+CX q7 q6
+CX q8 q6
+CX q19 q18
+CX q20 q18
+CX q51 q52
+CX q51 q54
+CX q51 q58
+CCX q6 q18 q51
+CX q51 q58
+CX q51 q54
+CX q51 q52
+CX q20 q18
+CX q19 q18
+CX q8 q6
+CX q7 q6
+CX q48 q50
+CX q48 q51
+CX q48 q52
+CX q48 q53
+CX q48 q55
+CX q48 q56
+CX q48 q57
+CX q48 q58
+CX q48 q59
+CCX q9 q21 q48
+CX q48 q59
+CX q48 q58
+CX q48 q57
+CX q48 q56
+CX q48 q55
+CX q48 q53
+CX q48 q52
+CX q48 q51
+CX q48 q50
+CX q48 q51
+CX q48 q53
+CX q48 q56
+CX q48 q57
+CX q48 q58
+CX q48 q59
+CCX q10 q22 q48
+CX q48 q59
+CX q48 q58
+CX q48 q57
+CX q48 q56
+CX q48 q53
+CX q48 q51
+CX q10 q9
+CX q22 q21
+CX q49 q50
+CX q49 q52
+CX q49 q54
+CX q49 q55
+CX q49 q57
+CX q49 q59
+CCX q9 q21 q49
+CX q49 q59
+CX q49 q57
+CX q49 q55
+CX q49 q54
+CX q49 q52
+CX q49 q50
+CX q22 q21
+CX q10 q9
+CX q48 q49
+CX q48 q50
+CX q48 q51
+CX q48 q52
+CX q48 q53
+CX q48 q54
+CX q48 q55
+CX q48 q56
+CX q48 q58
+CCX q11 q23 q48
+CX q48 q58
+CX q48 q56
+CX q48 q55
+CX q48 q54
+CX q48 q53
+CX q48 q52
+CX q48 q51
+CX q48 q50
+CX q48 q49
+CX q11 q9
+CX q23 q21
+CX q48 q50
+CX q48 q52
+CX q48 q54
+CX q48 q56
+CX q48 q57
+CCX q9 q21 q48
+CX q48 q57
+CX q48 q56
+CX q48 q54
+CX q48 q52
+CX q48 q50
+CX q23 q21
+CX q11 q9
+CX q49 q51
+CX q49 q53
+CX q49 q55
+CX q49 q57
+CX q49 q58
+CCX q10 q22 q49
+CX q49 q58
+CX q49 q57
+CX q49 q55
+CX q49 q53
+CX q49 q51
+CX q10 q9
+CX q11 q9
+CX q22 q21
+CX q23 q21
+CX q49 q50
+CX q49 q53
+CX q49 q54
+CX q49 q57
+CCX q9 q21 q49
+CX q49 q57
+CX q49 q54
+CX q49 q53
+CX q49 q50
+CX q23 q21
+CX q22 q21
+CX q11 q9
+CX q10 q9
+CX q9 q6
+CX q21 q18
+CX q51 q56
+CX q51 q57
+CX q51 q58
+CCX q6 q18 q51
+CX q51 q58
+CX q51 q57
+CX q51 q56
+CX q21 q18
+CX q9 q6
+CX q10 q7
+CX q22 q19
+CX q52 q57
+CX q52 q58
+CX q52 q59
+CCX q7 q19 q52
+CX q52 q59
+CX q52 q58
+CX q52 q57
+CX q22 q19
+CX q10 q7
+CX q7 q6
+CX q9 q6
+CX q10 q6
+CX q19 q18
+CX q21 q18
+CX q22 q18
+CX q52 q53
+CX q52 q54
+CX q52 q55
+CX q52 q56
+CX q52 q58
+CCX q6 q18 q52
+CX q52 q58
+CX q52 q56
+CX q52 q55
+CX q52 q54
+CX q52 q53
+CX q22 q18
+CX q21 q18
+CX q19 q18
+CX q10 q6
+CX q9 q6
+CX q7 q6
+CX q11 q8
+CX q23 q20
+CX q53 q54
+CX q53 q55
+CX q53 q56
+CX q53 q57
+CX q53 q59
+CCX q8 q20 q53
+CX q53 q59
+CX q53 q57
+CX q53 q56
+CX q53 q55
+CX q53 q54
+CX q23 q20
+CX q11 q8
+CX q8 q6
+CX q9 q6
+CX q11 q6
+CX q20 q18
+CX q21 q18
+CX q23 q18
+CX q53 q55
+CX q53 q57
+CX q53 q58
+CCX q6 q18 q53
+CX q53 q58
+CX q53 q57
+CX q53 q55
+CX q23 q18
+CX q21 q18
+CX q20 q18
+CX q11 q6
+CX q9 q6
+CX q8 q6
+CX q10 q7
+CX q22 q19
+CX q54 q56
+CX q54 q58
+CX q54 q59
+CCX q7 q19 q54
+CX q54 q59
+CX q54 q58
+CX q54 q56
+CX q22 q19
+CX q10 q7
+CX q7 q6
+CX q8 q6
+CX q9 q6
+CX q10 q6
+CX q11 q6
+CX q19 q18
+CX q20 q18
+CX q21 q18
+CX q22 q18
+CX q23 q18
+CX q54 q55
+CX q54 q58
+CCX q6 q18 q54
+CX q54 q58
+CX q54 q55
+CX q23 q18
+CX q22 q18
+CX q21 q18
+CX q20 q18
+CX q19 q18
+CX q11 q6
+CX q10 q6
+CX q9 q6
+CX q8 q6
+CX q7 q6
+CX q6 q0
+CX q18 q12
+CX q48 q49
+CX q48 q52
+CX q48 q55
+CX q48 q56
+CX q48 q58
+CX q48 q59
+CCX q0 q12 q48
+CX q48 q59
+CX q48 q58
+CX q48 q56
+CX q48 q55
+CX q48 q52
+CX q48 q49
+CX q18 q12
+CX q6 q0
+CX q7 q1
+CX q19 q13
+CX q48 q50
+CX q48 q52
+CX q48 q53
+CX q48 q54
+CX q48 q56
+CX q48 q57
+CX q48 q59
+CCX q1 q13 q48
+CX q48 q59
+CX q48 q57
+CX q48 q56
+CX q48 q54
+CX q48 q53
+CX q48 q52
+CX q48 q50
+CX q19 q13
+CX q7 q1
+CX q1 q0
+CX q6 q0
+CX q7 q0
+CX q13 q12
+CX q18 q12
+CX q19 q12
+CX q48 q49
+CX q48 q52
+CX q48 q54
+CX q48 q55
+CX q48 q57
+CX q48 q58
+CCX q0 q12 q48
+CX q48 q58
+CX q48 q57
+CX q48 q55
+CX q48 q54
+CX q48 q52
+CX q48 q49
+CX q19 q12
+CX q18 q12
+CX q13 q12
+CX q7 q0
+CX q6 q0
+CX q1 q0
+CX q8 q2
+CX q20 q14
+CX q49 q50
+CX q49 q53
+CX q49 q55
+CX q49 q56
+CX q49 q58
+CX q49 q59
+CCX q2 q14 q49
+CX q49 q59
+CX q49 q58
+CX q49 q56
+CX q49 q55
+CX q49 q53
+CX q49 q50
+CX q20 q14
+CX q8 q2
+CX q2 q0
+CX q6 q0
+CX q8 q0
+CX q14 q12
+CX q18 q12
+CX q20 q12
+CX q48 q49
+CX q48 q52
+CX q48 q54
+CX q48 q56
+CX q48 q57
+CX q48 q59
+CCX q0 q12 q48
+CX q48 q59
+CX q48 q57
+CX q48 q56
+CX q48 q54
+CX q48 q52
+CX q48 q49
+CX q20 q12
+CX q18 q12
+CX q14 q12
+CX q8 q0
+CX q6 q0
+CX q2 q0
+CX q7 q1
+CX q19 q13
+CX q48 q50
+CX q48 q52
+CX q48 q53
+CX q48 q54
+CX q48 q55
+CX q48 q57
+CX q48 q58
+CCX q1 q13 q48
+CX q48 q58
+CX q48 q57
+CX q48 q55
+CX q48 q54
+CX q48 q53
+CX q48 q52
+CX q48 q50
+CX q19 q13
+CX q7 q1
+CX q1 q0
+CX q2 q0
+CX q6 q0
+CX q7 q0
+CX q8 q0
+CX q13 q12
+CX q14 q12
+CX q18 q12
+CX q19 q12
+CX q20 q12
+CX q48 q49
+CX q48 q52
+CX q48 q54
+CX q48 q57
+CCX q0 q12 q48
+CX q48 q57
+CX q48 q54
+CX q48 q52
+CX q48 q49
+CX q20 q12
+CX q19 q12
+CX q18 q12
+CX q14 q12
+CX q13 q12
+CX q8 q0
+CX q7 q0
+CX q6 q0
+CX q2 q0
+CX q1 q0
+CX q9 q3
+CX q21 q15
+CX q49 q52
+CX q49 q53
+CX q49 q54
+CX q49 q56
+CX q49 q58
+CX q49 q59
+CCX q3 q15 q49
+CX q49 q59
+CX q49 q58
+CX q49 q56
+CX q49 q54
+CX q49 q53
+CX q49 q52
+CX q21 q15
+CX q9 q3
+CX q10 q4
+CX q22 q16
+CX q48 q49
+CX q48 q50
+CX q48 q52
+CX q48 q53
+CX q48 q55
+CX q48 q57
+CX q48 q59
+CCX q4 q16 q48
+CX q48 q59
+CX q48 q57
+CX q48 q55
+CX q48 q53
+CX q48 q52
+CX q48 q50
+CX q48 q49
+CX q22 q16
+CX q10 q4
+CX q4 q3
+CX q9 q3
+CX q10 q3
+CX q16 q15
+CX q21 q15
+CX q22 q15
+CX q48 q50
+CX q48 q51
+CX q48 q53
+CX q48 q54
+CX q48 q57
+CX q48 q58
+CCX q3 q15 q48
+CX q48 q58
+CX q48 q57
+CX q48 q54
+CX q48 q53
+CX q48 q51
+CX q48 q50
+CX q22 q15
+CX q21 q15
+CX q16 q15
+CX q10 q3
+CX q9 q3
+CX q4 q3
+CX q11 q5
+CX q23 q17
+CX q49 q51
+CX q49 q52
+CX q49 q54
+CX q49 q55
+CX q49 q58
+CX q49 q59
+CCX q5 q17 q49
+CX q49 q59
+CX q49 q58
+CX q49 q55
+CX q49 q54
+CX q49 q52
+CX q49 q51
+CX q23 q17
+CX q11 q5
+CX q5 q3
+CX q9 q3
+CX q11 q3
+CX q17 q15
+CX q21 q15
+CX q23 q15
+CX q48 q49
+CX q48 q50
+CX q48 q55
+CX q48 q56
+CX q48 q57
+CX q48 q59
+CCX q3 q15 q48
+CX q48 q59
+CX q48 q57
+CX q48 q56
+CX q48 q55
+CX q48 q50
+CX q48 q49
+CX q23 q15
+CX q21 q15
+CX q17 q15
+CX q11 q3
+CX q9 q3
+CX q5 q3
+CX q10 q4
+CX q22 q16
+CX q48 q50
+CX q48 q51
+CX q48 q52
+CX q48 q54
+CX q48 q56
+CX q48 q57
+CX q48 q58
+CCX q4 q16 q48
+CX q48 q58
+CX q48 q57
+CX q48 q56
+CX q48 q54
+CX q48 q52
+CX q48 q51
+CX q48 q50
+CX q22 q16
+CX q10 q4
+CX q4 q3
+CX q5 q3
+CX q9 q3
+CX q10 q3
+CX q11 q3
+CX q16 q15
+CX q17 q15
+CX q21 q15
+CX q22 q15
+CX q23 q15
+CX q48 q49
+CX q48 q51
+CX q48 q54
+CX q48 q55
+CX q48 q57
+CCX q3 q15 q48
+CX q48 q57
+CX q48 q55
+CX q48 q54
+CX q48 q51
+CX q48 q49
+CX q23 q15
+CX q22 q15
+CX q21 q15
+CX q17 q15
+CX q16 q15
+CX q11 q3
+CX q10 q3
+CX q9 q3
+CX q5 q3
+CX q4 q3
+CX q3 q0
+CX q6 q0
+CX q9 q0
+CX q15 q12
+CX q18 q12
+CX q21 q12
+CX q48 q49
+CX q48 q52
+CX q48 q54
+CX q48 q57
+CX q48 q58
+CX q48 q59
+CCX q0 q12 q48
+CX q48 q59
+CX q48 q58
+CX q48 q57
+CX q48 q54
+CX q48 q52
+CX q48 q49
+CX q21 q12
+CX q18 q12
+CX q15 q12
+CX q9 q0
+CX q6 q0
+CX q3 q0
+CX q4 q1
+CX q7 q1
+CX q10 q1
+CX q16 q13
+CX q19 q13
+CX q22 q13
+CX q48 q50
+CX q48 q52
+CX q48 q53
+CX q48 q54
+CX q48 q55
+CX q48 q58
+CX q48 q59
+CCX q1 q13 q48
+CX q48 q59
+CX q48 q58
+CX q48 q55
+CX q48 q54
+CX q48 q53
+CX q48 q52
+CX q48 q50
+CX q22 q13
+CX q19 q13
+CX q16 q13
+CX q10 q1
+CX q7 q1
+CX q4 q1
+CX q1 q0
+CX q3 q0
+CX q4 q0
+CX q6 q0
+CX q7 q0
+CX q9 q0
+CX q10 q0
+CX q13 q12
+CX q15 q12
+CX q16 q12
+CX q18 q12
+CX q19 q12
+CX q21 q12
+CX q22 q12
+CX q48 q49
+CX q48 q52
+CX q48 q54
+CX q48 q58
+CCX q0 q12 q48
+CX q48 q58
+CX q48 q54
+CX q48 q52
+CX q48 q49
+CX q22 q12
+CX q21 q12
+CX q19 q12
+CX q18 q12
+CX q16 q12
+CX q15 q12
+CX q13 q12
+CX q10 q0
+CX q9 q0
+CX q7 q0
+CX q6 q0
+CX q4 q0
+CX q3 q0
+CX q1 q0
+CX q5 q2
+CX q8 q2
+CX q11 q2
+CX q17 q14
+CX q20 q14
+CX q23 q14
+CX q49 q50
+CX q49 q53
+CX q49 q55
+CX q49 q59
+CCX q2 q14 q49
+CX q49 q59
+CX q49 q55
+CX q49 q53
+CX q49 q50
+CX q23 q14
+CX q20 q14
+CX q17 q14
+CX q11 q2
+CX q8 q2
+CX q5 q2
+CX q2 q0
+CX q3 q0
+CX q5 q0
+CX q6 q0
+CX q8 q0
+CX q9 q0
+CX q11 q0
+CX q14 q12
+CX q15 q12
+CX q17 q12
+CX q18 q12
+CX q20 q12
+CX q21 q12
+CX q23 q12
+CX q48 q49
+CX q48 q52
+CX q48 q54
+CX q48 q59
+CCX q0 q12 q48
+CX q48 q59
+CX q48 q54
+CX q48 q52
+CX q48 q49
+CX q23 q12
+CX q21 q12
+CX q20 q12
+CX q18 q12
+CX q17 q12
+CX q15 q12
+CX q14 q12
+CX q11 q0
+CX q9 q0
+CX q8 q0
+CX q6 q0
+CX q5 q0
+CX q3 q0
+CX q2 q0
+CX q4 q1
+CX q7 q1
+CX q10 q1
+CX q16 q13
+CX q19 q13
+CX q22 q13
+CX q48 q50
+CX q48 q52
+CX q48 q53
+CX q48 q54
+CX q48 q55
+CCX q1 q13 q48
+CX q48 q55
+CX q48 q54
+CX q48 q53
+CX q48 q52
+CX q48 q50
+CX q22 q13
+CX q19 q13
+CX q16 q13
+CX q10 q1
+CX q7 q1
+CX q4 q1
+CX q1 q0
+CX q2 q0
+CX q3 q0
+CX q4 q0
+CX q5 q0
+CX q6 q0
+CX q7 q0
+CX q8 q0
+CX q9 q0
+CX q10 q0
+CX q11 q0
+CX q13 q12
+CX q14 q12
+CX q15 q12
+CX q16 q12
+CX q17 q12
+CX q18 q12
+CX q19 q12
+CX q20 q12
+CX q21 q12
+CX q22 q12
+CX q23 q12
+CX q48 q49
+CX q48 q52
+CX q48 q54
+CCX q0 q12 q48
+CX q48 q54
+CX q48 q52
+CX q48 q49
+CX q23 q12
+CX q22 q12
+CX q21 q12
+CX q20 q12
+CX q19 q12
+CX q18 q12
+CX q17 q12
+CX q16 q12
+CX q15 q12
+CX q14 q12
+CX q13 q12
+CX q11 q0
+CX q10 q0
+CX q9 q0
+CX q8 q0
+CX q7 q0
+CX q6 q0
+CX q5 q0
+CX q4 q0
+CX q3 q0
+CX q2 q0
+CX q1 q0
+CX q1 q4
+CX q4 q1
+CX q1 q4
+CX q2 q8
+CX q8 q2
+CX q2 q8
+CX q3 q4
+CX q4 q3
+CX q3 q4
+CX q3 q0
+CX q3 q1
+CX q3 q6
+CX q4 q5
+CX q5 q4
+CX q4 q5
+CX q4 q1
+CX q4 q2
+CX q4 q10
+CX q5 q3
+CX q5 q6
+CX q5 q8
+CX q5 q9
+CX q6 q8
+CX q8 q6
+CX q6 q8
+CX q6 q0
+CX q6 q2
+CX q6 q3
+CX q7 q8
+CX q8 q7
+CX q7 q8
+CX q7 q1
+CX q7 q3
+CX q7 q4
+CX q8 q10
+CX q10 q8
+CX q8 q10
+CX q8 q2
+CX q8 q4
+CX q8 q5
+CX q9 q2
+CX q9 q6
+CX q10 q1
+CX q10 q2
+CX q10 q4
+CX q10 q5
+CX q10 q6
+CX q10 q8
+CX q11 q2
+CX q11 q3
+CX q11 q5
+CX q11 q6
+CX q11 q7
+CX q11 q9
+CX q59 q58
+CX q59 q56
+CX q59 q55
+CX q59 q53
+CX q59 q51
+CX q59 q50
+CX q59 q48
+CX q58 q57
+CX q58 q56
+CX q58 q53
+CX q57 q55
+CX q57 q52
+CX q57 q51
+CX q57 q50
+CX q57 q58
+CX q58 q57
+CX q57 q58
+CX q56 q51
+CX q56 q49
+CX q56 q48
+CX q55 q54
+CX q55 q52
+CX q55 q50
+CX q55 q49
+CX q55 q48
+CX q54 q57
+CX q54 q53
+CX q54 q52
+CX q54 q51
+CX q54 q48
+CX q53 q58
+CX q53 q55
+CX q53 q54
+CX q53 q49
+CX q52 q55
+CX q52 q48
+CX q51 q57
+CX q51 q56
+CX q51 q50
+CX q51 q49
+CX q51 q48
+CX q51 q53
+CX q53 q51
+CX q51 q53
+CX q50 q58
+CX q50 q57
+CX q50 q56
+CX q50 q52
+CX q50 q49
+CX q50 q51
+CX q51 q50
+CX q50 q51
+CX q49 q58
+CX q49 q56
+CX q49 q54
+CX q49 q53
+CX q49 q52
+CX q49 q48
+CX q49 q50
+CX q50 q49
+CX q49 q50
+CX q62 q65
+CX q62 q66
+CX q62 q67
+CX q62 q68
+CX q62 q70
+CX q62 q71
+CCX q48 q36 q62
+CX q62 q71
+CX q62 q70
+CX q62 q68
+CX q62 q67
+CX q62 q66
+CX q62 q65
+CX q60 q61
+CX q60 q63
+CX q60 q64
+CX q60 q67
+CX q60 q68
+CX q60 q69
+CX q60 q71
+CCX q49 q37 q60
+CX q60 q71
+CX q60 q69
+CX q60 q68
+CX q60 q67
+CX q60 q64
+CX q60 q63
+CX q60 q61
+CX q49 q48
+CX q37 q36
+CX q60 q63
+CX q60 q67
+CX q60 q69
+CX q60 q70
+CCX q48 q36 q60
+CX q60 q70
+CX q60 q69
+CX q60 q67
+CX q60 q63
+CX q37 q36
+CX q49 q48
+CX q61 q64
+CX q61 q68
+CX q61 q70
+CX q61 q71
+CCX q50 q38 q61
+CX q61 q71
+CX q61 q70
+CX q61 q68
+CX q61 q64
+CX q50 q48
+CX q38 q36
+CX q60 q61
+CX q60 q62
+CX q60 q63
+CX q60 q64
+CX q60 q65
+CX q60 q68
+CX q60 q69
+CX q60 q71
+CCX q48 q36 q60
+CX q60 q71
+CX q60 q69
+CX q60 q68
+CX q60 q65
+CX q60 q64
+CX q60 q63
+CX q60 q62
+CX q60 q61
+CX q38 q36
+CX q50 q48
+CX q60 q62
+CX q60 q63
+CX q60 q65
+CX q60 q69
+CX q60 q70
+CCX q49 q37 q60
+CX q60 q70
+CX q60 q69
+CX q60 q65
+CX q60 q63
+CX q60 q62
+CX q49 q48
+CX q50 q48
+CX q37 q36
+CX q38 q36
+CX q60 q61
+CX q60 q63
+CX q60 q64
+CX q60 q69
+CCX q48 q36 q60
+CX q60 q69
+CX q60 q64
+CX q60 q63
+CX q60 q61
+CX q38 q36
+CX q37 q36
+CX q50 q48
+CX q49 q48
+CX q61 q63
+CX q61 q66
+CX q61 q67
+CX q61 q69
+CX q61 q70
+CX q61 q71
+CCX q51 q39 q61
+CX q61 q71
+CX q61 q70
+CX q61 q69
+CX q61 q67
+CX q61 q66
+CX q61 q63
+CX q60 q61
+CX q60 q62
+CX q60 q66
+CX q60 q67
+CX q60 q68
+CX q60 q70
+CX q60 q71
+CCX q52 q40 q60
+CX q60 q71
+CX q60 q70
+CX q60 q68
+CX q60 q67
+CX q60 q66
+CX q60 q62
+CX q60 q61
+CX q52 q51
+CX q40 q39
+CX q60 q62
+CX q60 q63
+CX q60 q64
+CX q60 q65
+CX q60 q67
+CX q60 q70
+CCX q51 q39 q60
+CX q60 q70
+CX q60 q67
+CX q60 q65
+CX q60 q64
+CX q60 q63
+CX q60 q62
+CX q40 q39
+CX q52 q51
+CX q61 q63
+CX q61 q64
+CX q61 q65
+CX q61 q66
+CX q61 q68
+CX q61 q71
+CCX q53 q41 q61
+CX q61 q71
+CX q61 q68
+CX q61 q66
+CX q61 q65
+CX q61 q64
+CX q61 q63
+CX q53 q51
+CX q41 q39
+CX q60 q61
+CX q60 q62
+CX q60 q65
+CX q60 q66
+CX q60 q67
+CX q60 q71
+CCX q51 q39 q60
+CX q60 q71
+CX q60 q67
+CX q60 q66
+CX q60 q65
+CX q60 q62
+CX q60 q61
+CX q41 q39
+CX q53 q51
+CX q60 q62
+CX q60 q63
+CX q60 q64
+CX q60 q67
+CX q60 q68
+CCX q52 q40 q60
+CX q60 q68
+CX q60 q67
+CX q60 q64
+CX q60 q63
+CX q60 q62
+CX q52 q51
+CX q53 q51
+CX q40 q39
+CX q41 q39
+CX q60 q61
+CX q60 q63
+CX q60 q67
+CCX q51 q39 q60
+CX q60 q67
+CX q60 q63
+CX q60 q61
+CX q41 q39
+CX q40 q39
+CX q53 q51
+CX q52 q51
+CX q51 q48
+CX q39 q36
+CX q60 q61
+CX q60 q63
+CX q60 q65
+CX q60 q69
+CX q60 q70
+CX q60 q71
+CCX q48 q36 q60
+CX q60 q71
+CX q60 q70
+CX q60 q69
+CX q60 q65
+CX q60 q63
+CX q60 q61
+CX q39 q36
+CX q51 q48
+CX q52 q49
+CX q40 q37
+CX q60 q62
+CX q60 q70
+CX q60 q71
+CCX q49 q37 q60
+CX q60 q71
+CX q60 q70
+CX q60 q62
+CX q40 q37
+CX q52 q49
+CX q49 q48
+CX q51 q48
+CX q52 q48
+CX q37 q36
+CX q39 q36
+CX q40 q36
+CX q60 q61
+CX q60 q70
+CCX q48 q36 q60
+CX q60 q70
+CX q60 q61
+CX q40 q36
+CX q39 q36
+CX q37 q36
+CX q52 q48
+CX q51 q48
+CX q49 q48
+CX q53 q50
+CX q41 q38
+CX q61 q62
+CX q61 q71
+CCX q50 q38 q61
+CX q61 q71
+CX q61 q62
+CX q41 q38
+CX q53 q50
+CX q50 q48
+CX q51 q48
+CX q53 q48
+CX q38 q36
+CX q39 q36
+CX q41 q36
+CX q60 q61
+CX q60 q64
+CX q60 q65
+CX q60 q71
+CCX q48 q36 q60
+CX q60 q71
+CX q60 q65
+CX q60 q64
+CX q60 q61
+CX q41 q36
+CX q39 q36
+CX q38 q36
+CX q53 q48
+CX q51 q48
+CX q50 q48
+CX q52 q49
+CX q40 q37
+CX q60 q62
+CX q60 q64
+CX q60 q65
+CCX q49 q37 q60
+CX q60 q65
+CX q60 q64
+CX q60 q62
+CX q40 q37
+CX q52 q49
+CX q49 q48
+CX q50 q48
+CX q51 q48
+CX q52 q48
+CX q53 q48
+CX q37 q36
+CX q38 q36
+CX q39 q36
+CX q40 q36
+CX q41 q36
+CX q60 q61
+CX q60 q64
+CCX q48 q36 q60
+CX q60 q64
+CX q60 q61
+CX q41 q36
+CX q40 q36
+CX q39 q36
+CX q38 q36
+CX q37 q36
+CX q53 q48
+CX q52 q48
+CX q51 q48
+CX q50 q48
+CX q49 q48
+CX q60 q63
+CX q60 q65
+CX q60 q66
+CX q60 q67
+CX q60 q68
+CX q60 q69
+CX q60 q70
+CCX q54 q42 q60
+CX q60 q70
+CX q60 q69
+CX q60 q68
+CX q60 q67
+CX q60 q66
+CX q60 q65
+CX q60 q63
+CX q61 q64
+CX q61 q66
+CX q61 q67
+CX q61 q68
+CX q61 q69
+CX q61 q70
+CX q61 q71
+CCX q55 q43 q61
+CX q61 q71
+CX q61 q70
+CX q61 q69
+CX q61 q68
+CX q61 q67
+CX q61 q66
+CX q61 q64
+CX q55 q54
+CX q43 q42
+CX q61 q62
+CX q61 q63
+CX q61 q66
+CX q61 q68
+CX q61 q70
+CCX q54 q42 q61
+CX q61 q70
+CX q61 q68
+CX q61 q66
+CX q61 q63
+CX q61 q62
+CX q43 q42
+CX q55 q54
+CX q62 q63
+CX q62 q64
+CX q62 q67
+CX q62 q69
+CX q62 q71
+CCX q56 q44 q62
+CX q62 q71
+CX q62 q69
+CX q62 q67
+CX q62 q64
+CX q62 q63
+CX q56 q54
+CX q44 q42
+CX q62 q64
+CX q62 q65
+CX q62 q66
+CX q62 q69
+CX q62 q70
+CCX q54 q42 q62
+CX q62 q70
+CX q62 q69
+CX q62 q66
+CX q62 q65
+CX q62 q64
+CX q44 q42
+CX q56 q54
+CX q63 q65
+CX q63 q66
+CX q63 q67
+CX q63 q70
+CX q63 q71
+CCX q55 q43 q63
+CX q63 q71
+CX q63 q70
+CX q63 q67
+CX q63 q66
+CX q63 q65
+CX q55 q54
+CX q56 q54
+CX q43 q42
+CX q44 q42
+CX q63 q64
+CX q63 q66
+CX q63 q70
+CCX q54 q42 q63
+CX q63 q70
+CX q63 q66
+CX q63 q64
+CX q44 q42
+CX q43 q42
+CX q56 q54
+CX q55 q54
+CX q60 q62
+CX q60 q63
+CX q60 q64
+CX q60 q65
+CX q60 q67
+CX q60 q68
+CX q60 q69
+CX q60 q70
+CX q60 q71
+CCX q57 q45 q60
+CX q60 q71
+CX q60 q70
+CX q60 q69
+CX q60 q68
+CX q60 q67
+CX q60 q65
+CX q60 q64
+CX q60 q63
+CX q60 q62
+CX q60 q63
+CX q60 q65
+CX q60 q68
+CX q60 q69
+CX q60 q70
+CX q60 q71
+CCX q58 q46 q60
+CX q60 q71
+CX q60 q70
+CX q60 q69
+CX q60 q68
+CX q60 q65
+CX q60 q63
+CX q58 q57
+CX q46 q45
+CX q61 q62
+CX q61 q64
+CX q61 q66
+CX q61 q67
+CX q61 q69
+CX q61 q71
+CCX q57 q45 q61
+CX q61 q71
+CX q61 q69
+CX q61 q67
+CX q61 q66
+CX q61 q64
+CX q61 q62
+CX q46 q45
+CX q58 q57
+CX q60 q61
+CX q60 q62
+CX q60 q63
+CX q60 q64
+CX q60 q65
+CX q60 q66
+CX q60 q67
+CX q60 q68
+CX q60 q70
+CCX q59 q47 q60
+CX q60 q70
+CX q60 q68
+CX q60 q67
+CX q60 q66
+CX q60 q65
+CX q60 q64
+CX q60 q63
+CX q60 q62
+CX q60 q61
+CX q59 q57
+CX q47 q45
+CX q60 q62
+CX q60 q64
+CX q60 q66
+CX q60 q68
+CX q60 q69
+CCX q57 q45 q60
+CX q60 q69
+CX q60 q68
+CX q60 q66
+CX q60 q64
+CX q60 q62
+CX q47 q45
+CX q59 q57
+CX q61 q63
+CX q61 q65
+CX q61 q67
+CX q61 q69
+CX q61 q70
+CCX q58 q46 q61
+CX q61 q70
+CX q61 q69
+CX q61 q67
+CX q61 q65
+CX q61 q63
+CX q58 q57
+CX q59 q57
+CX q46 q45
+CX q47 q45
+CX q61 q62
+CX q61 q65
+CX q61 q66
+CX q61 q69
+CCX q57 q45 q61
+CX q61 q69
+CX q61 q66
+CX q61 q65
+CX q61 q62
+CX q47 q45
+CX q46 q45
+CX q59 q57
+CX q58 q57
+CX q57 q54
+CX q45 q42
+CX q63 q68
+CX q63 q69
+CX q63 q70
+CCX q54 q42 q63
+CX q63 q70
+CX q63 q69
+CX q63 q68
+CX q45 q42
+CX q57 q54
+CX q58 q55
+CX q46 q43
+CX q64 q69
+CX q64 q70
+CX q64 q71
+CCX q55 q43 q64
+CX q64 q71
+CX q64 q70
+CX q64 q69
+CX q46 q43
+CX q58 q55
+CX q55 q54
+CX q57 q54
+CX q58 q54
+CX q43 q42
+CX q45 q42
+CX q46 q42
+CX q64 q65
+CX q64 q66
+CX q64 q67
+CX q64 q68
+CX q64 q70
+CCX q54 q42 q64
+CX q64 q70
+CX q64 q68
+CX q64 q67
+CX q64 q66
+CX q64 q65
+CX q46 q42
+CX q45 q42
+CX q43 q42
+CX q58 q54
+CX q57 q54
+CX q55 q54
+CX q59 q56
+CX q47 q44
+CX q65 q66
+CX q65 q67
+CX q65 q68
+CX q65 q69
+CX q65 q71
+CCX q56 q44 q65
+CX q65 q71
+CX q65 q69
+CX q65 q68
+CX q65 q67
+CX q65 q66
+CX q47 q44
+CX q59 q56
+CX q56 q54
+CX q57 q54
+CX q59 q54
+CX q44 q42
+CX q45 q42
+CX q47 q42
+CX q65 q67
+CX q65 q69
+CX q65 q70
+CCX q54 q42 q65
+CX q65 q70
+CX q65 q69
+CX q65 q67
+CX q47 q42
+CX q45 q42
+CX q44 q42
+CX q59 q54
+CX q57 q54
+CX q56 q54
+CX q58 q55
+CX q46 q43
+CX q66 q68
+CX q66 q70
+CX q66 q71
+CCX q55 q43 q66
+CX q66 q71
+CX q66 q70
+CX q66 q68
+CX q46 q43
+CX q58 q55
+CX q55 q54
+CX q56 q54
+CX q57 q54
+CX q58 q54
+CX q59 q54
+CX q43 q42
+CX q44 q42
+CX q45 q42
+CX q46 q42
+CX q47 q42
+CX q66 q67
+CX q66 q70
+CCX q54 q42 q66
+CX q66 q70
+CX q66 q67
+CX q47 q42
+CX q46 q42
+CX q45 q42
+CX q44 q42
+CX q43 q42
+CX q59 q54
+CX q58 q54
+CX q57 q54
+CX q56 q54
+CX q55 q54
+CX q54 q48
+CX q42 q36
+CX q60 q61
+CX q60 q64
+CX q60 q67
+CX q60 q68
+CX q60 q70
+CX q60 q71
+CCX q48 q36 q60
+CX q60 q71
+CX q60 q70
+CX q60 q68
+CX q60 q67
+CX q60 q64
+CX q60 q61
+CX q42 q36
+CX q54 q48
+CX q55 q49
+CX q43 q37
+CX q60 q62
+CX q60 q64
+CX q60 q65
+CX q60 q66
+CX q60 q68
+CX q60 q69
+CX q60 q71
+CCX q49 q37 q60
+CX q60 q71
+CX q60 q69
+CX q60 q68
+CX q60 q66
+CX q60 q65
+CX q60 q64
+CX q60 q62
+CX q43 q37
+CX q55 q49
+CX q49 q48
+CX q54 q48
+CX q55 q48
+CX q37 q36
+CX q42 q36
+CX q43 q36
+CX q60 q61
+CX q60 q64
+CX q60 q66
+CX q60 q67
+CX q60 q69
+CX q60 q70
+CCX q48 q36 q60
+CX q60 q70
+CX q60 q69
+CX q60 q67
+CX q60 q66
+CX q60 q64
+CX q60 q61
+CX q43 q36
+CX q42 q36
+CX q37 q36
+CX q55 q48
+CX q54 q48
+CX q49 q48
+CX q56 q50
+CX q44 q38
+CX q61 q62
+CX q61 q65
+CX q61 q67
+CX q61 q68
+CX q61 q70
+CX q61 q71
+CCX q50 q38 q61
+CX q61 q71
+CX q61 q70
+CX q61 q68
+CX q61 q67
+CX q61 q65
+CX q61 q62
+CX q44 q38
+CX q56 q50
+CX q50 q48
+CX q54 q48
+CX q56 q48
+CX q38 q36
+CX q42 q36
+CX q44 q36
+CX q60 q61
+CX q60 q64
+CX q60 q66
+CX q60 q68
+CX q60 q69
+CX q60 q71
+CCX q48 q36 q60
+CX q60 q71
+CX q60 q69
+CX q60 q68
+CX q60 q66
+CX q60 q64
+CX q60 q61
+CX q44 q36
+CX q42 q36
+CX q38 q36
+CX q56 q48
+CX q54 q48
+CX q50 q48
+CX q55 q49
+CX q43 q37
+CX q60 q62
+CX q60 q64
+CX q60 q65
+CX q60 q66
+CX q60 q67
+CX q60 q69
+CX q60 q70
+CCX q49 q37 q60
+CX q60 q70
+CX q60 q69
+CX q60 q67
+CX q60 q66
+CX q60 q65
+CX q60 q64
+CX q60 q62
+CX q43 q37
+CX q55 q49
+CX q49 q48
+CX q50 q48
+CX q54 q48
+CX q55 q48
+CX q56 q48
+CX q37 q36
+CX q38 q36
+CX q42 q36
+CX q43 q36
+CX q44 q36
+CX q60 q61
+CX q60 q64
+CX q60 q66
+CX q60 q69
+CCX q48 q36 q60
+CX q60 q69
+CX q60 q66
+CX q60 q64
+CX q60 q61
+CX q44 q36
+CX q43 q36
+CX q42 q36
+CX q38 q36
+CX q37 q36
+CX q56 q48
+CX q55 q48
+CX q54 q48
+CX q50 q48
+CX q49 q48
+CX q57 q51
+CX q45 q39
+CX q61 q64
+CX q61 q65
+CX q61 q66
+CX q61 q68
+CX q61 q70
+CX q61 q71
+CCX q51 q39 q61
+CX q61 q71
+CX q61 q70
+CX q61 q68
+CX q61 q66
+CX q61 q65
+CX q61 q64
+CX q45 q39
+CX q57 q51
+CX q58 q52
+CX q46 q40
+CX q60 q61
+CX q60 q62
+CX q60 q64
+CX q60 q65
+CX q60 q67
+CX q60 q69
+CX q60 q71
+CCX q52 q40 q60
+CX q60 q71
+CX q60 q69
+CX q60 q67
+CX q60 q65
+CX q60 q64
+CX q60 q62
+CX q60 q61
+CX q46 q40
+CX q58 q52
+CX q52 q51
+CX q57 q51
+CX q58 q51
+CX q40 q39
+CX q45 q39
+CX q46 q39
+CX q60 q62
+CX q60 q63
+CX q60 q65
+CX q60 q66
+CX q60 q69
+CX q60 q70
+CCX q51 q39 q60
+CX q60 q70
+CX q60 q69
+CX q60 q66
+CX q60 q65
+CX q60 q63
+CX q60 q62
+CX q46 q39
+CX q45 q39
+CX q40 q39
+CX q58 q51
+CX q57 q51
+CX q52 q51
+CX q59 q53
+CX q47 q41
+CX q61 q63
+CX q61 q64
+CX q61 q66
+CX q61 q67
+CX q61 q70
+CX q61 q71
+CCX q53 q41 q61
+CX q61 q71
+CX q61 q70
+CX q61 q67
+CX q61 q66
+CX q61 q64
+CX q61 q63
+CX q47 q41
+CX q59 q53
+CX q53 q51
+CX q57 q51
+CX q59 q51
+CX q41 q39
+CX q45 q39
+CX q47 q39
+CX q60 q61
+CX q60 q62
+CX q60 q67
+CX q60 q68
+CX q60 q69
+CX q60 q71
+CCX q51 q39 q60
+CX q60 q71
+CX q60 q69
+CX q60 q68
+CX q60 q67
+CX q60 q62
+CX q60 q61
+CX q47 q39
+CX q45 q39
+CX q41 q39
+CX q59 q51
+CX q57 q51
+CX q53 q51
+CX q58 q52
+CX q46 q40
+CX q60 q62
+CX q60 q63
+CX q60 q64
+CX q60 q66
+CX q60 q68
+CX q60 q69
+CX q60 q70
+CCX q52 q40 q60
+CX q60 q70
+CX q60 q69
+CX q60 q68
+CX q60 q66
+CX q60 q64
+CX q60 q63
+CX q60 q62
+CX q46 q40
+CX q58 q52
+CX q52 q51
+CX q53 q51
+CX q57 q51
+CX q58 q51
+CX q59 q51
+CX q40 q39
+CX q41 q39
+CX q45 q39
+CX q46 q39
+CX q47 q39
+CX q60 q61
+CX q60 q63
+CX q60 q66
+CX q60 q67
+CX q60 q69
+CCX q51 q39 q60
+CX q60 q69
+CX q60 q67
+CX q60 q66
+CX q60 q63
+CX q60 q61
+CX q47 q39
+CX q46 q39
+CX q45 q39
+CX q41 q39
+CX q40 q39
+CX q59 q51
+CX q58 q51
+CX q57 q51
+CX q53 q51
+CX q52 q51
+CX q51 q48
+CX q54 q48
+CX q57 q48
+CX q39 q36
+CX q42 q36
+CX q45 q36
+CX q60 q61
+CX q60 q64
+CX q60 q66
+CX q60 q69
+CX q60 q70
+CX q60 q71
+CCX q48 q36 q60
+CX q60 q71
+CX q60 q70
+CX q60 q69
+CX q60 q66
+CX q60 q64
+CX q60 q61
+CX q45 q36
+CX q42 q36
+CX q39 q36
+CX q57 q48
+CX q54 q48
+CX q51 q48
+CX q52 q49
+CX q55 q49
+CX q58 q49
+CX q40 q37
+CX q43 q37
+CX q46 q37
+CX q60 q62
+CX q60 q64
+CX q60 q65
+CX q60 q66
+CX q60 q67
+CX q60 q70
+CX q60 q71
+CCX q49 q37 q60
+CX q60 q71
+CX q60 q70
+CX q60 q67
+CX q60 q66
+CX q60 q65
+CX q60 q64
+CX q60 q62
+CX q46 q37
+CX q43 q37
+CX q40 q37
+CX q58 q49
+CX q55 q49
+CX q52 q49
+CX q49 q48
+CX q51 q48
+CX q52 q48
+CX q54 q48
+CX q55 q48
+CX q57 q48
+CX q58 q48
+CX q37 q36
+CX q39 q36
+CX q40 q36
+CX q42 q36
+CX q43 q36
+CX q45 q36
+CX q46 q36
+CX q60 q61
+CX q60 q64
+CX q60 q66
+CX q60 q70
+CCX q48 q36 q60
+CX q60 q70
+CX q60 q66
+CX q60 q64
+CX q60 q61
+CX q46 q36
+CX q45 q36
+CX q43 q36
+CX q42 q36
+CX q40 q36
+CX q39 q36
+CX q37 q36
+CX q58 q48
+CX q57 q48
+CX q55 q48
+CX q54 q48
+CX q52 q48
+CX q51 q48
+CX q49 q48
+CX q53 q50
+CX q56 q50
+CX q59 q50
+CX q41 q38
+CX q44 q38
+CX q47 q38
+CX q61 q62
+CX q61 q65
+CX q61 q67
+CX q61 q71
+CCX q50 q38 q61
+CX q61 q71
+CX q61 q67
+CX q61 q65
+CX q61 q62
+CX q47 q38
+CX q44 q38
+CX q41 q38
+CX q59 q50
+CX q56 q50
+CX q53 q50
+CX q50 q48
+CX q51 q48
+CX q53 q48
+CX q54 q48
+CX q56 q48
+CX q57 q48
+CX q59 q48
+CX q38 q36
+CX q39 q36
+CX q41 q36
+CX q42 q36
+CX q44 q36
+CX q45 q36
+CX q47 q36
+CX q60 q61
+CX q60 q64
+CX q60 q66
+CX q60 q71
+CCX q48 q36 q60
+CX q60 q71
+CX q60 q66
+CX q60 q64
+CX q60 q61
+CX q47 q36
+CX q45 q36
+CX q44 q36
+CX q42 q36
+CX q41 q36
+CX q39 q36
+CX q38 q36
+CX q59 q48
+CX q57 q48
+CX q56 q48
+CX q54 q48
+CX q53 q48
+CX q51 q48
+CX q50 q48
+CX q52 q49
+CX q55 q49
+CX q58 q49
+CX q40 q37
+CX q43 q37
+CX q46 q37
+CX q60 q62
+CX q60 q64
+CX q60 q65
+CX q60 q66
+CX q60 q67
+CCX q49 q37 q60
+CX q60 q67
+CX q60 q66
+CX q60 q65
+CX q60 q64
+CX q60 q62
+CX q46 q37
+CX q43 q37
+CX q40 q37
+CX q58 q49
+CX q55 q49
+CX q52 q49
+CX q49 q48
+CX q50 q48
+CX q51 q48
+CX q52 q48
+CX q53 q48
+CX q54 q48
+CX q55 q48
+CX q56 q48
+CX q57 q48
+CX q58 q48
+CX q59 q48
+CX q37 q36
+CX q38 q36
+CX q39 q36
+CX q40 q36
+CX q41 q36
+CX q42 q36
+CX q43 q36
+CX q44 q36
+CX q45 q36
+CX q46 q36
+CX q47 q36
+CX q60 q61
+CX q60 q64
+CX q60 q66
+CCX q48 q36 q60
+CX q60 q66
+CX q60 q64
+CX q60 q61
+CX q47 q36
+CX q46 q36
+CX q45 q36
+CX q44 q36
+CX q43 q36
+CX q42 q36
+CX q41 q36
+CX q40 q36
+CX q39 q36
+CX q38 q36
+CX q37 q36
+CX q59 q48
+CX q58 q48
+CX q57 q48
+CX q56 q48
+CX q55 q48
+CX q54 q48
+CX q53 q48
+CX q52 q48
+CX q51 q48
+CX q50 q48
+CX q49 q48
+CX q49 q50
+CX q50 q49
+CX q49 q50
+CX q49 q48
+CX q49 q52
+CX q49 q53
+CX q49 q54
+CX q49 q56
+CX q49 q58
+CX q50 q51
+CX q51 q50
+CX q50 q51
+CX q50 q49
+CX q50 q52
+CX q50 q56
+CX q50 q57
+CX q50 q58
+CX q51 q53
+CX q53 q51
+CX q51 q53
+CX q51 q48
+CX q51 q49
+CX q51 q50
+CX q51 q56
+CX q51 q57
+CX q52 q48
+CX q52 q55
+CX q53 q49
+CX q53 q54
+CX q53 q55
+CX q53 q58
+CX q54 q48
+CX q54 q51
+CX q54 q52
+CX q54 q53
+CX q54 q57
+CX q55 q48
+CX q55 q49
+CX q55 q50
+CX q55 q52
+CX q55 q54
+CX q56 q48
+CX q56 q49
+CX q56 q51
+CX q57 q58
+CX q58 q57
+CX q57 q58
+CX q57 q50
+CX q57 q51
+CX q57 q52
+CX q57 q55
+CX q58 q53
+CX q58 q56
+CX q58 q57
+CX q59 q48
+CX q59 q50
+CX q59 q51
+CX q59 q53
+CX q59 q55
+CX q59 q56
+CX q59 q58
+HMR q36 b0
+HMR q37 b1
+HMR q38 b2
+HMR q39 b3
+HMR q40 b4
+HMR q41 b5
+HMR q42 b6
+HMR q43 b7
+HMR q44 b8
+HMR q45 b9
+HMR q46 b10
+HMR q47 b11
+CX q35 q34
+CX q35 q33
+CX q35 q32
+CX q35 q31
+CX q35 q25
+CX q35 q24
+CX q34 q33
+CX q34 q32
+CX q34 q31
+CX q34 q30
+CX q34 q29
+CX q34 q28
+CX q34 q26
+CX q34 q35
+CX q35 q34
+CX q34 q35
+CX q33 q32
+CX q33 q31
+CX q33 q30
+CX q33 q28
+CX q33 q24
+CX q33 q35
+CX q35 q33
+CX q33 q35
+CX q32 q34
+CX q32 q28
+CX q32 q27
+CX q32 q33
+CX q33 q32
+CX q32 q33
+CX q31 q33
+CX q31 q32
+CX q31 q29
+CX q31 q27
+CX q31 q26
+CX q31 q25
+CX q30 q34
+CX q30 q29
+CX q30 q27
+CX q30 q25
+CX q30 q24
+CX q29 q33
+CX q29 q32
+CX q29 q31
+CX q29 q30
+CX q29 q25
+CX q28 q35
+CX q28 q34
+CX q28 q30
+CX q28 q29
+CX q28 q26
+CX q28 q25
+CX q28 q24
+CX q27 q34
+CX q27 q33
+CX q27 q31
+CX q27 q29
+CX q27 q26
+CX q27 q25
+CX q27 q24
+CX q27 q28
+CX q28 q27
+CX q27 q28
+CX q26 q32
+CX q32 q26
+CX q26 q32
+CX q25 q28
+CX q28 q25
+CX q25 q28
+Z q24 if b0
+Z q25 if b2
+Z q25 if b4
+Z q25 if b5
+Z q25 if b6
+Z q25 if b7
+Z q25 if b8
+Z q25 if b9
+Z q25 if b10
+Z q26 if b0
+Z q26 if b1
+Z q26 if b4
+Z q26 if b5
+Z q26 if b7
+Z q26 if b8
+Z q26 if b9
+Z q26 if b10
+Z q27 if b0
+Z q27 if b2
+Z q27 if b3
+Z q27 if b4
+Z q27 if b5
+Z q27 if b8
+Z q27 if b9
+Z q27 if b11
+Z q28 if b5
+Z q28 if b6
+Z q28 if b9
+Z q28 if b11
+Z q29 if b0
+Z q29 if b2
+Z q29 if b3
+Z q29 if b4
+Z q29 if b6
+Z q29 if b7
+Z q29 if b8
+Z q29 if b11
+Z q30 if b0
+Z q30 if b1
+Z q30 if b5
+Z q30 if b7
+Z q30 if b9
+Z q30 if b10
+Z q30 if b11
+Z q31 if b2
+Z q31 if b3
+Z q31 if b4
+Z q31 if b6
+Z q31 if b7
+Z q31 if b8
+Z q31 if b9
+Z q31 if b10
+Z q31 if b11
+Z q32 if b2
+Z q32 if b3
+Z q32 if b4
+Z q32 if b5
+Z q32 if b7
+Z q32 if b11
+Z q33 if b0
+Z q33 if b2
+Z q33 if b8
+Z q33 if b9
+Z q34 if b1
+Z q34 if b8
+Z q34 if b10
+Z q34 if b11
+Z q35 if b0
+Z q35 if b2
+Z q35 if b3
+Z q35 if b7
+Z q35 if b9
+Z q35 if b10
+CZ q24 q28 if b0
+CZ q24 q28 if b3
+CZ q24 q28 if b4
+CZ q24 q28 if b6
+CZ q24 q28 if b7
+CZ q24 q28 if b8
+CZ q25 q29 if b0
+CZ q25 q29 if b2
+CZ q25 q29 if b4
+CZ q25 q29 if b5
+CZ q25 q29 if b6
+CZ q25 q29 if b7
+CZ q25 q29 if b10
+CX q25 q24
+CX q29 q28
+CZ q24 q28 if b2
+CZ q24 q28 if b6
+CZ q24 q28 if b7
+CZ q24 q28 if b8
+CZ q24 q28 if b9
+CZ q24 q28 if b10
+CX q29 q28
+CX q25 q24
+CZ q26 q30 if b1
+CZ q26 q30 if b3
+CZ q26 q30 if b4
+CZ q26 q30 if b6
+CZ q26 q30 if b7
+CZ q26 q30 if b8
+CZ q26 q30 if b9
+CZ q26 q30 if b10
+CZ q27 q31 if b1
+CZ q27 q31 if b4
+CZ q27 q31 if b5
+CZ q27 q31 if b8
+CZ q27 q31 if b10
+CX q27 q26
+CX q31 q30
+CZ q26 q30 if b0
+CZ q26 q30 if b1
+CZ q26 q30 if b3
+CZ q26 q30 if b5
+CZ q26 q30 if b6
+CZ q26 q30 if b7
+CZ q26 q30 if b10
+CX q31 q30
+CX q27 q26
+CX q26 q24
+CX q30 q28
+CZ q24 q28 if b0
+CZ q24 q28 if b1
+CZ q24 q28 if b2
+CZ q24 q28 if b6
+CZ q24 q28 if b7
+CZ q24 q28 if b8
+CX q30 q28
+CX q26 q24
+CX q27 q25
+CX q31 q29
+CZ q25 q29 if b1
+CZ q25 q29 if b2
+CZ q25 q29 if b4
+CZ q25 q29 if b5
+CZ q25 q29 if b6
+CZ q25 q29 if b7
+CZ q25 q29 if b9
+CX q31 q29
+CX q27 q25
+CX q25 q24
+CX q26 q24
+CX q27 q24
+CX q29 q28
+CX q30 q28
+CX q31 q28
+CZ q24 q28 if b3
+CZ q24 q28 if b5
+CZ q24 q28 if b6
+CZ q24 q28 if b7
+CZ q24 q28 if b9
+CX q31 q28
+CX q30 q28
+CX q29 q28
+CX q27 q24
+CX q26 q24
+CX q25 q24
+CZ q24 q32 if b1
+CZ q24 q32 if b3
+CZ q24 q32 if b4
+CZ q24 q32 if b5
+CZ q24 q32 if b10
+CZ q25 q33 if b0
+CZ q25 q33 if b1
+CZ q25 q33 if b2
+CZ q25 q33 if b5
+CZ q25 q33 if b6
+CZ q25 q33 if b7
+CZ q25 q33 if b8
+CZ q25 q33 if b9
+CX q25 q24
+CX q33 q32
+CZ q24 q32 if b1
+CZ q24 q32 if b2
+CZ q24 q32 if b3
+CZ q24 q32 if b5
+CZ q24 q32 if b6
+CZ q24 q32 if b8
+CZ q24 q32 if b10
+CX q33 q32
+CX q25 q24
+CZ q26 q34 if b3
+CZ q26 q34 if b4
+CZ q26 q34 if b7
+CZ q27 q35 if b0
+CZ q27 q35 if b1
+CZ q27 q35 if b3
+CZ q27 q35 if b5
+CZ q27 q35 if b9
+CX q27 q26
+CX q35 q34
+CZ q26 q34 if b0
+CZ q26 q34 if b4
+CZ q26 q34 if b9
+CZ q26 q34 if b10
+CX q35 q34
+CX q27 q26
+CX q26 q24
+CX q34 q32
+CZ q24 q32 if b2
+CZ q24 q32 if b3
+CZ q24 q32 if b6
+CZ q24 q32 if b7
+CZ q24 q32 if b8
+CX q34 q32
+CX q26 q24
+CX q27 q25
+CX q35 q33
+CZ q25 q33 if b0
+CZ q25 q33 if b2
+CZ q25 q33 if b6
+CZ q25 q33 if b8
+CZ q25 q33 if b9
+CZ q25 q33 if b10
+CX q35 q33
+CX q27 q25
+CX q25 q24
+CX q26 q24
+CX q27 q24
+CX q33 q32
+CX q34 q32
+CX q35 q32
+CZ q24 q32 if b0
+CZ q24 q32 if b1
+CZ q24 q32 if b4
+CZ q24 q32 if b5
+CZ q24 q32 if b7
+CZ q24 q32 if b9
+CX q35 q32
+CX q34 q32
+CX q33 q32
+CX q27 q24
+CX q26 q24
+CX q25 q24
+CZ q28 q32 if b4
+CZ q28 q32 if b8
+CZ q28 q32 if b9
+CZ q28 q32 if b10
+CZ q28 q32 if b11
+CZ q29 q33 if b0
+CZ q29 q33 if b3
+CZ q29 q33 if b6
+CZ q29 q33 if b10
+CX q29 q28
+CX q33 q32
+CZ q28 q32 if b0
+CZ q28 q32 if b1
+CZ q28 q32 if b2
+CZ q28 q32 if b3
+CZ q28 q32 if b4
+CZ q28 q32 if b7
+CZ q28 q32 if b8
+CZ q28 q32 if b10
+CX q33 q32
+CX q29 q28
+CZ q30 q34 if b0
+CZ q30 q34 if b1
+CZ q30 q34 if b3
+CZ q30 q34 if b9
+CZ q30 q34 if b10
+CZ q30 q34 if b11
+CZ q31 q35 if b0
+CZ q31 q35 if b2
+CZ q31 q35 if b3
+CZ q31 q35 if b6
+CZ q31 q35 if b7
+CX q31 q30
+CX q35 q34
+CZ q30 q34 if b0
+CZ q30 q34 if b2
+CZ q30 q34 if b3
+CZ q30 q34 if b4
+CZ q30 q34 if b6
+CZ q30 q34 if b7
+CZ q30 q34 if b8
+CZ q30 q34 if b9
+CZ q30 q34 if b10
+CZ q30 q34 if b11
+CX q35 q34
+CX q31 q30
+CX q30 q28
+CX q34 q32
+CZ q28 q32 if b2
+CZ q28 q32 if b7
+CZ q28 q32 if b10
+CX q34 q32
+CX q30 q28
+CX q31 q29
+CX q35 q33
+CZ q29 q33 if b1
+CZ q29 q33 if b4
+CZ q29 q33 if b6
+CZ q29 q33 if b8
+CZ q29 q33 if b10
+CX q35 q33
+CX q31 q29
+CX q29 q28
+CX q30 q28
+CX q31 q28
+CX q33 q32
+CX q34 q32
+CX q35 q32
+CZ q28 q32 if b1
+CZ q28 q32 if b2
+CZ q28 q32 if b6
+CZ q28 q32 if b7
+CZ q28 q32 if b9
+CZ q28 q32 if b10
+CZ q28 q32 if b11
+CX q35 q32
+CX q34 q32
+CX q33 q32
+CX q31 q28
+CX q30 q28
+CX q29 q28
+CX q25 q28
+CX q28 q25
+CX q25 q28
+CX q26 q32
+CX q32 q26
+CX q26 q32
+CX q27 q28
+CX q28 q27
+CX q27 q28
+CX q27 q24
+CX q27 q25
+CX q27 q26
+CX q27 q29
+CX q27 q31
+CX q27 q33
+CX q27 q34
+CX q28 q24
+CX q28 q25
+CX q28 q26
+CX q28 q29
+CX q28 q30
+CX q28 q34
+CX q28 q35
+CX q29 q25
+CX q29 q30
+CX q29 q31
+CX q29 q32
+CX q29 q33
+CX q30 q24
+CX q30 q25
+CX q30 q27
+CX q30 q29
+CX q30 q34
+CX q31 q25
+CX q31 q26
+CX q31 q27
+CX q31 q29
+CX q31 q32
+CX q31 q33
+CX q32 q33
+CX q33 q32
+CX q32 q33
+CX q32 q27
+CX q32 q28
+CX q32 q34
+CX q33 q35
+CX q35 q33
+CX q33 q35
+CX q33 q24
+CX q33 q28
+CX q33 q30
+CX q33 q31
+CX q33 q32
+CX q34 q35
+CX q35 q34
+CX q34 q35
+CX q34 q26
+CX q34 q28
+CX q34 q29
+CX q34 q30
+CX q34 q31
+CX q34 q32
+CX q34 q33
+CX q35 q24
+CX q35 q25
+CX q35 q31
+CX q35 q32
+CX q35 q33
+CX q35 q34
+HMR q24 b12
+HMR q25 b13
+HMR q26 b14
+HMR q27 b15
+HMR q28 b16
+HMR q29 b17
+HMR q30 b18
+HMR q31 b19
+HMR q32 b20
+HMR q33 b21
+HMR q34 b22
+HMR q35 b23
+CX q11 q10
+CX q11 q9
+CX q11 q7
+CX q11 q5
+CX q11 q4
+CX q11 q3
+CX q11 q2
+CX q10 q7
+CX q10 q6
+CX q10 q4
+CX q10 q3
+CX q10 q1
+CX q9 q6
+CX q9 q5
+CX q9 q3
+CX q9 q2
+CX q9 q0
+CX q9 q10
+CX q10 q9
+CX q9 q10
+CX q8 q5
+CX q8 q1
+CX q8 q10
+CX q10 q8
+CX q8 q10
+CX q7 q8
+CX q7 q6
+CX q7 q4
+CX q7 q2
+CX q7 q1
+CX q6 q10
+CX q6 q5
+CX q6 q2
+CX q6 q0
+CX q6 q7
+CX q7 q6
+CX q6 q7
+CX q5 q7
+CX q5 q3
+CX q5 q2
+CX q5 q1
+CX q4 q10
+CX q4 q9
+CX q4 q6
+CX q4 q3
+CX q4 q2
+CX q4 q0
+CX q3 q10
+CX q3 q8
+CX q3 q6
+CX q3 q5
+CX q3 q2
+CX q3 q4
+CX q4 q3
+CX q3 q4
+CX q2 q10
+CX q2 q5
+CX q2 q1
+CX q2 q4
+CX q4 q2
+CX q2 q4
+CX q1 q8
+CX q8 q1
+CX q1 q8
+CZ q0 q48 if b12
+CZ q0 q49 if b13
+CZ q0 q50 if b14
+CZ q0 q51 if b15
+CZ q0 q52 if b16
+CZ q0 q53 if b17
+CZ q0 q54 if b18
+CZ q0 q55 if b19
+CZ q0 q56 if b20
+CZ q0 q57 if b21
+CZ q0 q58 if b22
+CZ q0 q59 if b23
+CZ q1 q48 if b13
+CZ q1 q49 if b14
+CZ q1 q50 if b15
+CZ q1 q51 if b16
+CZ q1 q52 if b17
+CZ q1 q53 if b18
+CZ q1 q54 if b19
+CZ q1 q55 if b20
+CZ q1 q56 if b21
+CZ q1 q57 if b22
+CZ q1 q58 if b23
+CZ q1 q59 if b12
+CZ q1 q59 if b13
+CZ q1 q59 if b16
+CZ q1 q59 if b18
+CZ q2 q48 if b14
+CZ q2 q49 if b15
+CZ q2 q50 if b16
+CZ q2 q51 if b17
+CZ q2 q52 if b18
+CZ q2 q53 if b19
+CZ q2 q54 if b20
+CZ q2 q55 if b21
+CZ q2 q56 if b22
+CZ q2 q57 if b23
+CZ q2 q58 if b12
+CZ q2 q58 if b13
+CZ q2 q58 if b16
+CZ q2 q58 if b18
+CZ q2 q59 if b13
+CZ q2 q59 if b14
+CZ q2 q59 if b17
+CZ q2 q59 if b19
+CZ q3 q48 if b15
+CZ q3 q49 if b16
+CZ q3 q50 if b17
+CZ q3 q51 if b18
+CZ q3 q52 if b19
+CZ q3 q53 if b20
+CZ q3 q54 if b21
+CZ q3 q55 if b22
+CZ q3 q56 if b23
+CZ q3 q57 if b12
+CZ q3 q57 if b13
+CZ q3 q57 if b16
+CZ q3 q57 if b18
+CZ q3 q58 if b13
+CZ q3 q58 if b14
+CZ q3 q58 if b17
+CZ q3 q58 if b19
+CZ q3 q59 if b14
+CZ q3 q59 if b15
+CZ q3 q59 if b18
+CZ q3 q59 if b20
+CZ q4 q48 if b16
+CZ q4 q49 if b17
+CZ q4 q50 if b18
+CZ q4 q51 if b19
+CZ q4 q52 if b20
+CZ q4 q53 if b21
+CZ q4 q54 if b22
+CZ q4 q55 if b23
+CZ q4 q56 if b12
+CZ q4 q56 if b13
+CZ q4 q56 if b16
+CZ q4 q56 if b18
+CZ q4 q57 if b13
+CZ q4 q57 if b14
+CZ q4 q57 if b17
+CZ q4 q57 if b19
+CZ q4 q58 if b14
+CZ q4 q58 if b15
+CZ q4 q58 if b18
+CZ q4 q58 if b20
+CZ q4 q59 if b15
+CZ q4 q59 if b16
+CZ q4 q59 if b19
+CZ q4 q59 if b21
+CZ q5 q48 if b17
+CZ q5 q49 if b18
+CZ q5 q50 if b19
+CZ q5 q51 if b20
+CZ q5 q52 if b21
+CZ q5 q53 if b22
+CZ q5 q54 if b23
+CZ q5 q55 if b12
+CZ q5 q55 if b13
+CZ q5 q55 if b16
+CZ q5 q55 if b18
+CZ q5 q56 if b13
+CZ q5 q56 if b14
+CZ q5 q56 if b17
+CZ q5 q56 if b19
+CZ q5 q57 if b14
+CZ q5 q57 if b15
+CZ q5 q57 if b18
+CZ q5 q57 if b20
+CZ q5 q58 if b15
+CZ q5 q58 if b16
+CZ q5 q58 if b19
+CZ q5 q58 if b21
+CZ q5 q59 if b16
+CZ q5 q59 if b17
+CZ q5 q59 if b20
+CZ q5 q59 if b22
+CZ q6 q48 if b18
+CZ q6 q49 if b19
+CZ q6 q50 if b20
+CZ q6 q51 if b21
+CZ q6 q52 if b22
+CZ q6 q53 if b23
+CZ q6 q54 if b12
+CZ q6 q54 if b13
+CZ q6 q54 if b16
+CZ q6 q54 if b18
+CZ q6 q55 if b13
+CZ q6 q55 if b14
+CZ q6 q55 if b17
+CZ q6 q55 if b19
+CZ q6 q56 if b14
+CZ q6 q56 if b15
+CZ q6 q56 if b18
+CZ q6 q56 if b20
+CZ q6 q57 if b15
+CZ q6 q57 if b16
+CZ q6 q57 if b19
+CZ q6 q57 if b21
+CZ q6 q58 if b16
+CZ q6 q58 if b17
+CZ q6 q58 if b20
+CZ q6 q58 if b22
+CZ q6 q59 if b17
+CZ q6 q59 if b18
+CZ q6 q59 if b21
+CZ q6 q59 if b23
+CZ q7 q48 if b19
+CZ q7 q49 if b20
+CZ q7 q50 if b21
+CZ q7 q51 if b22
+CZ q7 q52 if b23
+CZ q7 q53 if b12
+CZ q7 q53 if b13
+CZ q7 q53 if b16
+CZ q7 q53 if b18
+CZ q7 q54 if b13
+CZ q7 q54 if b14
+CZ q7 q54 if b17
+CZ q7 q54 if b19
+CZ q7 q55 if b14
+CZ q7 q55 if b15
+CZ q7 q55 if b18
+CZ q7 q55 if b20
+CZ q7 q56 if b15
+CZ q7 q56 if b16
+CZ q7 q56 if b19
+CZ q7 q56 if b21
+CZ q7 q57 if b16
+CZ q7 q57 if b17
+CZ q7 q57 if b20
+CZ q7 q57 if b22
+CZ q7 q58 if b17
+CZ q7 q58 if b18
+CZ q7 q58 if b21
+CZ q7 q58 if b23
+CZ q7 q59 if b12
+CZ q7 q59 if b13
+CZ q7 q59 if b16
+CZ q7 q59 if b19
+CZ q7 q59 if b22
+CZ q8 q48 if b20
+CZ q8 q49 if b21
+CZ q8 q50 if b22
+CZ q8 q51 if b23
+CZ q8 q52 if b12
+CZ q8 q52 if b13
+CZ q8 q52 if b16
+CZ q8 q52 if b18
+CZ q8 q53 if b13
+CZ q8 q53 if b14
+CZ q8 q53 if b17
+CZ q8 q53 if b19
+CZ q8 q54 if b14
+CZ q8 q54 if b15
+CZ q8 q54 if b18
+CZ q8 q54 if b20
+CZ q8 q55 if b15
+CZ q8 q55 if b16
+CZ q8 q55 if b19
+CZ q8 q55 if b21
+CZ q8 q56 if b16
+CZ q8 q56 if b17
+CZ q8 q56 if b20
+CZ q8 q56 if b22
+CZ q8 q57 if b17
+CZ q8 q57 if b18
+CZ q8 q57 if b21
+CZ q8 q57 if b23
+CZ q8 q58 if b12
+CZ q8 q58 if b13
+CZ q8 q58 if b16
+CZ q8 q58 if b19
+CZ q8 q58 if b22
+CZ q8 q59 if b13
+CZ q8 q59 if b14
+CZ q8 q59 if b17
+CZ q8 q59 if b20
+CZ q8 q59 if b23
+CZ q9 q48 if b21
+CZ q9 q49 if b22
+CZ q9 q50 if b23
+CZ q9 q51 if b12
+CZ q9 q51 if b13
+CZ q9 q51 if b16
+CZ q9 q51 if b18
+CZ q9 q52 if b13
+CZ q9 q52 if b14
+CZ q9 q52 if b17
+CZ q9 q52 if b19
+CZ q9 q53 if b14
+CZ q9 q53 if b15
+CZ q9 q53 if b18
+CZ q9 q53 if b20
+CZ q9 q54 if b15
+CZ q9 q54 if b16
+CZ q9 q54 if b19
+CZ q9 q54 if b21
+CZ q9 q55 if b16
+CZ q9 q55 if b17
+CZ q9 q55 if b20
+CZ q9 q55 if b22
+CZ q9 q56 if b17
+CZ q9 q56 if b18
+CZ q9 q56 if b21
+CZ q9 q56 if b23
+CZ q9 q57 if b12
+CZ q9 q57 if b13
+CZ q9 q57 if b16
+CZ q9 q57 if b19
+CZ q9 q57 if b22
+CZ q9 q58 if b13
+CZ q9 q58 if b14
+CZ q9 q58 if b17
+CZ q9 q58 if b20
+CZ q9 q58 if b23
+CZ q9 q59 if b12
+CZ q9 q59 if b13
+CZ q9 q59 if b14
+CZ q9 q59 if b15
+CZ q9 q59 if b16
+CZ q9 q59 if b21
+CZ q10 q48 if b22
+CZ q10 q49 if b23
+CZ q10 q50 if b12
+CZ q10 q50 if b13
+CZ q10 q50 if b16
+CZ q10 q50 if b18
+CZ q10 q51 if b13
+CZ q10 q51 if b14
+CZ q10 q51 if b17
+CZ q10 q51 if b19
+CZ q10 q52 if b14
+CZ q10 q52 if b15
+CZ q10 q52 if b18
+CZ q10 q52 if b20
+CZ q10 q53 if b15
+CZ q10 q53 if b16
+CZ q10 q53 if b19
+CZ q10 q53 if b21
+CZ q10 q54 if b16
+CZ q10 q54 if b17
+CZ q10 q54 if b20
+CZ q10 q54 if b22
+CZ q10 q55 if b17
+CZ q10 q55 if b18
+CZ q10 q55 if b21
+CZ q10 q55 if b23
+CZ q10 q56 if b12
+CZ q10 q56 if b13
+CZ q10 q56 if b16
+CZ q10 q56 if b19
+CZ q10 q56 if b22
+CZ q10 q57 if b13
+CZ q10 q57 if b14
+CZ q10 q57 if b17
+CZ q10 q57 if b20
+CZ q10 q57 if b23
+CZ q10 q58 if b12
+CZ q10 q58 if b13
+CZ q10 q58 if b14
+CZ q10 q58 if b15
+CZ q10 q58 if b16
+CZ q10 q58 if b21
+CZ q10 q59 if b13
+CZ q10 q59 if b14
+CZ q10 q59 if b15
+CZ q10 q59 if b16
+CZ q10 q59 if b17
+CZ q10 q59 if b22
+CZ q11 q48 if b23
+CZ q11 q49 if b12
+CZ q11 q49 if b13
+CZ q11 q49 if b16
+CZ q11 q49 if b18
+CZ q11 q50 if b13
+CZ q11 q50 if b14
+CZ q11 q50 if b17
+CZ q11 q50 if b19
+CZ q11 q51 if b14
+CZ q11 q51 if b15
+CZ q11 q51 if b18
+CZ q11 q51 if b20
+CZ q11 q52 if b15
+CZ q11 q52 if b16
+CZ q11 q52 if b19
+CZ q11 q52 if b21
+CZ q11 q53 if b16
+CZ q11 q53 if b17
+CZ q11 q53 if b20
+CZ q11 q53 if b22
+CZ q11 q54 if b17
+CZ q11 q54 if b18
+CZ q11 q54 if b21
+CZ q11 q54 if b23
+CZ q11 q55 if b12
+CZ q11 q55 if b13
+CZ q11 q55 if b16
+CZ q11 q55 if b19
+CZ q11 q55 if b22
+CZ q11 q56 if b13
+CZ q11 q56 if b14
+CZ q11 q56 if b17
+CZ q11 q56 if b20
+CZ q11 q56 if b23
+CZ q11 q57 if b12
+CZ q11 q57 if b13
+CZ q11 q57 if b14
+CZ q11 q57 if b15
+CZ q11 q57 if b16
+CZ q11 q57 if b21
+CZ q11 q58 if b13
+CZ q11 q58 if b14
+CZ q11 q58 if b15
+CZ q11 q58 if b16
+CZ q11 q58 if b17
+CZ q11 q58 if b22
+CZ q11 q59 if b14
+CZ q11 q59 if b15
+CZ q11 q59 if b16
+CZ q11 q59 if b17
+CZ q11 q59 if b18
+CZ q11 q59 if b23
+CX q1 q8
+CX q8 q1
+CX q1 q8
+CX q2 q4
+CX q4 q2
+CX q2 q4
+CX q2 q1
+CX q2 q5
+CX q2 q10
+CX q3 q4
+CX q4 q3
+CX q3 q4
+CX q3 q2
+CX q3 q5
+CX q3 q6
+CX q3 q8
+CX q3 q10
+CX q4 q0
+CX q4 q2
+CX q4 q3
+CX q4 q6
+CX q4 q9
+CX q4 q10
+CX q5 q1
+CX q5 q2
+CX q5 q3
+CX q5 q7
+CX q6 q7
+CX q7 q6
+CX q6 q7
+CX q6 q0
+CX q6 q2
+CX q6 q5
+CX q6 q10
+CX q7 q1
+CX q7 q2
+CX q7 q4
+CX q7 q6
+CX q7 q8
+CX q8 q10
+CX q10 q8
+CX q8 q10
+CX q8 q1
+CX q8 q5
+CX q9 q10
+CX q10 q9
+CX q9 q10
+CX q9 q0
+CX q9 q2
+CX q9 q3
+CX q9 q5
+CX q9 q6
+CX q10 q1
+CX q10 q3
+CX q10 q4
+CX q10 q6
+CX q10 q7
+CX q11 q2
+CX q11 q3
+CX q11 q4
+CX q11 q5
+CX q11 q7
+CX q11 q9
+CX q11 q10
+HMR q48 b24
+HMR q49 b25
+HMR q50 b26
+HMR q51 b27
+HMR q52 b28
+HMR q53 b29
+HMR q54 b30
+HMR q55 b31
+HMR q56 b32
+HMR q57 b33
+HMR q58 b34
+HMR q59 b35
+CX q11 q9
+CX q11 q7
+CX q11 q6
+CX q11 q5
+CX q11 q3
+CX q11 q2
+CX q10 q8
+CX q10 q6
+CX q10 q5
+CX q10 q4
+CX q10 q2
+CX q10 q1
+CX q9 q6
+CX q9 q2
+CX q8 q5
+CX q8 q4
+CX q8 q2
+CX q8 q10
+CX q10 q8
+CX q8 q10
+CX q7 q4
+CX q7 q3
+CX q7 q1
+CX q7 q8
+CX q8 q7
+CX q7 q8
+CX q6 q3
+CX q6 q2
+CX q6 q0
+CX q6 q8
+CX q8 q6
+CX q6 q8
+CX q5 q9
+CX q5 q8
+CX q5 q6
+CX q5 q3
+CX q4 q10
+CX q4 q2
+CX q4 q1
+CX q4 q5
+CX q5 q4
+CX q4 q5
+CX q3 q6
+CX q3 q1
+CX q3 q0
+CX q3 q4
+CX q4 q3
+CX q3 q4
+CX q2 q8
+CX q8 q2
+CX q2 q8
+CX q1 q4
+CX q4 q1
+CX q1 q4
+CZ q0 q12 if b24
+CZ q0 q13 if b25
+CZ q0 q14 if b26
+CZ q0 q15 if b27
+CZ q0 q16 if b28
+CZ q0 q17 if b29
+CZ q0 q18 if b30
+CZ q0 q19 if b31
+CZ q0 q20 if b32
+CZ q0 q21 if b33
+CZ q0 q22 if b34
+CZ q0 q23 if b35
+CZ q1 q12 if b25
+CZ q1 q13 if b26
+CZ q1 q14 if b27
+CZ q1 q15 if b28
+CZ q1 q16 if b29
+CZ q1 q17 if b30
+CZ q1 q18 if b31
+CZ q1 q19 if b32
+CZ q1 q20 if b33
+CZ q1 q21 if b34
+CZ q1 q22 if b35
+CZ q1 q23 if b24
+CZ q1 q23 if b25
+CZ q1 q23 if b28
+CZ q1 q23 if b30
+CZ q2 q12 if b26
+CZ q2 q13 if b27
+CZ q2 q14 if b28
+CZ q2 q15 if b29
+CZ q2 q16 if b30
+CZ q2 q17 if b31
+CZ q2 q18 if b32
+CZ q2 q19 if b33
+CZ q2 q20 if b34
+CZ q2 q21 if b35
+CZ q2 q22 if b24
+CZ q2 q22 if b25
+CZ q2 q22 if b28
+CZ q2 q22 if b30
+CZ q2 q23 if b25
+CZ q2 q23 if b26
+CZ q2 q23 if b29
+CZ q2 q23 if b31
+CZ q3 q12 if b27
+CZ q3 q13 if b28
+CZ q3 q14 if b29
+CZ q3 q15 if b30
+CZ q3 q16 if b31
+CZ q3 q17 if b32
+CZ q3 q18 if b33
+CZ q3 q19 if b34
+CZ q3 q20 if b35
+CZ q3 q21 if b24
+CZ q3 q21 if b25
+CZ q3 q21 if b28
+CZ q3 q21 if b30
+CZ q3 q22 if b25
+CZ q3 q22 if b26
+CZ q3 q22 if b29
+CZ q3 q22 if b31
+CZ q3 q23 if b26
+CZ q3 q23 if b27
+CZ q3 q23 if b30
+CZ q3 q23 if b32
+CZ q4 q12 if b28
+CZ q4 q13 if b29
+CZ q4 q14 if b30
+CZ q4 q15 if b31
+CZ q4 q16 if b32
+CZ q4 q17 if b33
+CZ q4 q18 if b34
+CZ q4 q19 if b35
+CZ q4 q20 if b24
+CZ q4 q20 if b25
+CZ q4 q20 if b28
+CZ q4 q20 if b30
+CZ q4 q21 if b25
+CZ q4 q21 if b26
+CZ q4 q21 if b29
+CZ q4 q21 if b31
+CZ q4 q22 if b26
+CZ q4 q22 if b27
+CZ q4 q22 if b30
+CZ q4 q22 if b32
+CZ q4 q23 if b27
+CZ q4 q23 if b28
+CZ q4 q23 if b31
+CZ q4 q23 if b33
+CZ q5 q12 if b29
+CZ q5 q13 if b30
+CZ q5 q14 if b31
+CZ q5 q15 if b32
+CZ q5 q16 if b33
+CZ q5 q17 if b34
+CZ q5 q18 if b35
+CZ q5 q19 if b24
+CZ q5 q19 if b25
+CZ q5 q19 if b28
+CZ q5 q19 if b30
+CZ q5 q20 if b25
+CZ q5 q20 if b26
+CZ q5 q20 if b29
+CZ q5 q20 if b31
+CZ q5 q21 if b26
+CZ q5 q21 if b27
+CZ q5 q21 if b30
+CZ q5 q21 if b32
+CZ q5 q22 if b27
+CZ q5 q22 if b28
+CZ q5 q22 if b31
+CZ q5 q22 if b33
+CZ q5 q23 if b28
+CZ q5 q23 if b29
+CZ q5 q23 if b32
+CZ q5 q23 if b34
+CZ q6 q12 if b30
+CZ q6 q13 if b31
+CZ q6 q14 if b32
+CZ q6 q15 if b33
+CZ q6 q16 if b34
+CZ q6 q17 if b35
+CZ q6 q18 if b24
+CZ q6 q18 if b25
+CZ q6 q18 if b28
+CZ q6 q18 if b30
+CZ q6 q19 if b25
+CZ q6 q19 if b26
+CZ q6 q19 if b29
+CZ q6 q19 if b31
+CZ q6 q20 if b26
+CZ q6 q20 if b27
+CZ q6 q20 if b30
+CZ q6 q20 if b32
+CZ q6 q21 if b27
+CZ q6 q21 if b28
+CZ q6 q21 if b31
+CZ q6 q21 if b33
+CZ q6 q22 if b28
+CZ q6 q22 if b29
+CZ q6 q22 if b32
+CZ q6 q22 if b34
+CZ q6 q23 if b29
+CZ q6 q23 if b30
+CZ q6 q23 if b33
+CZ q6 q23 if b35
+CZ q7 q12 if b31
+CZ q7 q13 if b32
+CZ q7 q14 if b33
+CZ q7 q15 if b34
+CZ q7 q16 if b35
+CZ q7 q17 if b24
+CZ q7 q17 if b25
+CZ q7 q17 if b28
+CZ q7 q17 if b30
+CZ q7 q18 if b25
+CZ q7 q18 if b26
+CZ q7 q18 if b29
+CZ q7 q18 if b31
+CZ q7 q19 if b26
+CZ q7 q19 if b27
+CZ q7 q19 if b30
+CZ q7 q19 if b32
+CZ q7 q20 if b27
+CZ q7 q20 if b28
+CZ q7 q20 if b31
+CZ q7 q20 if b33
+CZ q7 q21 if b28
+CZ q7 q21 if b29
+CZ q7 q21 if b32
+CZ q7 q21 if b34
+CZ q7 q22 if b29
+CZ q7 q22 if b30
+CZ q7 q22 if b33
+CZ q7 q22 if b35
+CZ q7 q23 if b24
+CZ q7 q23 if b25
+CZ q7 q23 if b28
+CZ q7 q23 if b31
+CZ q7 q23 if b34
+CZ q8 q12 if b32
+CZ q8 q13 if b33
+CZ q8 q14 if b34
+CZ q8 q15 if b35
+CZ q8 q16 if b24
+CZ q8 q16 if b25
+CZ q8 q16 if b28
+CZ q8 q16 if b30
+CZ q8 q17 if b25
+CZ q8 q17 if b26
+CZ q8 q17 if b29
+CZ q8 q17 if b31
+CZ q8 q18 if b26
+CZ q8 q18 if b27
+CZ q8 q18 if b30
+CZ q8 q18 if b32
+CZ q8 q19 if b27
+CZ q8 q19 if b28
+CZ q8 q19 if b31
+CZ q8 q19 if b33
+CZ q8 q20 if b28
+CZ q8 q20 if b29
+CZ q8 q20 if b32
+CZ q8 q20 if b34
+CZ q8 q21 if b29
+CZ q8 q21 if b30
+CZ q8 q21 if b33
+CZ q8 q21 if b35
+CZ q8 q22 if b24
+CZ q8 q22 if b25
+CZ q8 q22 if b28
+CZ q8 q22 if b31
+CZ q8 q22 if b34
+CZ q8 q23 if b25
+CZ q8 q23 if b26
+CZ q8 q23 if b29
+CZ q8 q23 if b32
+CZ q8 q23 if b35
+CZ q9 q12 if b33
+CZ q9 q13 if b34
+CZ q9 q14 if b35
+CZ q9 q15 if b24
+CZ q9 q15 if b25
+CZ q9 q15 if b28
+CZ q9 q15 if b30
+CZ q9 q16 if b25
+CZ q9 q16 if b26
+CZ q9 q16 if b29
+CZ q9 q16 if b31
+CZ q9 q17 if b26
+CZ q9 q17 if b27
+CZ q9 q17 if b30
+CZ q9 q17 if b32
+CZ q9 q18 if b27
+CZ q9 q18 if b28
+CZ q9 q18 if b31
+CZ q9 q18 if b33
+CZ q9 q19 if b28
+CZ q9 q19 if b29
+CZ q9 q19 if b32
+CZ q9 q19 if b34
+CZ q9 q20 if b29
+CZ q9 q20 if b30
+CZ q9 q20 if b33
+CZ q9 q20 if b35
+CZ q9 q21 if b24
+CZ q9 q21 if b25
+CZ q9 q21 if b28
+CZ q9 q21 if b31
+CZ q9 q21 if b34
+CZ q9 q22 if b25
+CZ q9 q22 if b26
+CZ q9 q22 if b29
+CZ q9 q22 if b32
+CZ q9 q22 if b35
+CZ q9 q23 if b24
+CZ q9 q23 if b25
+CZ q9 q23 if b26
+CZ q9 q23 if b27
+CZ q9 q23 if b28
+CZ q9 q23 if b33
+CZ q10 q12 if b34
+CZ q10 q13 if b35
+CZ q10 q14 if b24
+CZ q10 q14 if b25
+CZ q10 q14 if b28
+CZ q10 q14 if b30
+CZ q10 q15 if b25
+CZ q10 q15 if b26
+CZ q10 q15 if b29
+CZ q10 q15 if b31
+CZ q10 q16 if b26
+CZ q10 q16 if b27
+CZ q10 q16 if b30
+CZ q10 q16 if b32
+CZ q10 q17 if b27
+CZ q10 q17 if b28
+CZ q10 q17 if b31
+CZ q10 q17 if b33
+CZ q10 q18 if b28
+CZ q10 q18 if b29
+CZ q10 q18 if b32
+CZ q10 q18 if b34
+CZ q10 q19 if b29
+CZ q10 q19 if b30
+CZ q10 q19 if b33
+CZ q10 q19 if b35
+CZ q10 q20 if b24
+CZ q10 q20 if b25
+CZ q10 q20 if b28
+CZ q10 q20 if b31
+CZ q10 q20 if b34
+CZ q10 q21 if b25
+CZ q10 q21 if b26
+CZ q10 q21 if b29
+CZ q10 q21 if b32
+CZ q10 q21 if b35
+CZ q10 q22 if b24
+CZ q10 q22 if b25
+CZ q10 q22 if b26
+CZ q10 q22 if b27
+CZ q10 q22 if b28
+CZ q10 q22 if b33
+CZ q10 q23 if b25
+CZ q10 q23 if b26
+CZ q10 q23 if b27
+CZ q10 q23 if b28
+CZ q10 q23 if b29
+CZ q10 q23 if b34
+CZ q11 q12 if b35
+CZ q11 q13 if b24
+CZ q11 q13 if b25
+CZ q11 q13 if b28
+CZ q11 q13 if b30
+CZ q11 q14 if b25
+CZ q11 q14 if b26
+CZ q11 q14 if b29
+CZ q11 q14 if b31
+CZ q11 q15 if b26
+CZ q11 q15 if b27
+CZ q11 q15 if b30
+CZ q11 q15 if b32
+CZ q11 q16 if b27
+CZ q11 q16 if b28
+CZ q11 q16 if b31
+CZ q11 q16 if b33
+CZ q11 q17 if b28
+CZ q11 q17 if b29
+CZ q11 q17 if b32
+CZ q11 q17 if b34
+CZ q11 q18 if b29
+CZ q11 q18 if b30
+CZ q11 q18 if b33
+CZ q11 q18 if b35
+CZ q11 q19 if b24
+CZ q11 q19 if b25
+CZ q11 q19 if b28
+CZ q11 q19 if b31
+CZ q11 q19 if b34
+CZ q11 q20 if b25
+CZ q11 q20 if b26
+CZ q11 q20 if b29
+CZ q11 q20 if b32
+CZ q11 q20 if b35
+CZ q11 q21 if b24
+CZ q11 q21 if b25
+CZ q11 q21 if b26
+CZ q11 q21 if b27
+CZ q11 q21 if b28
+CZ q11 q21 if b33
+CZ q11 q22 if b25
+CZ q11 q22 if b26
+CZ q11 q22 if b27
+CZ q11 q22 if b28
+CZ q11 q22 if b29
+CZ q11 q22 if b34
+CZ q11 q23 if b26
+CZ q11 q23 if b27
+CZ q11 q23 if b28
+CZ q11 q23 if b29
+CZ q11 q23 if b30
+CZ q11 q23 if b35
+CX q1 q4
+CX q4 q1
+CX q1 q4
+CX q2 q8
+CX q8 q2
+CX q2 q8
+CX q3 q4
+CX q4 q3
+CX q3 q4
+CX q3 q0
+CX q3 q1
+CX q3 q6
+CX q4 q5
+CX q5 q4
+CX q4 q5
+CX q4 q1
+CX q4 q2
+CX q4 q10
+CX q5 q3
+CX q5 q6
+CX q5 q8
+CX q5 q9
+CX q6 q8
+CX q8 q6
+CX q6 q8
+CX q6 q0
+CX q6 q2
+CX q6 q3
+CX q7 q8
+CX q8 q7
+CX q7 q8
+CX q7 q1
+CX q7 q3
+CX q7 q4
+CX q8 q10
+CX q10 q8
+CX q8 q10
+CX q8 q2
+CX q8 q4
+CX q8 q5
+CX q9 q2
+CX q9 q6
+CX q10 q1
+CX q10 q2
+CX q10 q4
+CX q10 q5
+CX q10 q6
+CX q10 q8
+CX q11 q2
+CX q11 q3
+CX q11 q5
+CX q11 q6
+CX q11 q7
+CX q11 q9
+HMR q12 b36
+HMR q13 b37
+HMR q14 b38
+HMR q15 b39
+HMR q16 b40
+HMR q17 b41
+HMR q18 b42
+HMR q19 b43
+HMR q20 b44
+HMR q21 b45
+HMR q22 b46
+HMR q23 b47
+CX q11 q7
+CX q11 q6
+CX q10 q6
+CX q10 q5
+CX q9 q5
+CX q9 q4
+CX q9 q10
+CX q10 q9
+CX q9 q10
+CX q8 q4
+CX q8 q3
+CX q8 q10
+CX q10 q8
+CX q8 q10
+CX q7 q3
+CX q7 q2
+CX q7 q8
+CX q8 q7
+CX q7 q8
+CX q6 q2
+CX q6 q1
+CX q6 q8
+CX q8 q6
+CX q6 q8
+CX q5 q10
+CX q10 q5
+CX q5 q10
+CX q4 q8
+CX q8 q4
+CX q4 q8
+CX q3 q6
+CX q6 q3
+CX q3 q6
+CX q2 q4
+CX q4 q2
+CX q2 q4
+CX q1 q2
+CX q2 q1
+CX q1 q2
+Z q0 if b36
+Z q1 if b36
+Z q2 if b39
+Z q3 if b39
+Z q4 if b42
+Z q5 if b42
+Z q6 if b45
+Z q7 if b45
+Z q8 if b36
+Z q8 if b37
+Z q8 if b40
+Z q8 if b42
+Z q9 if b36
+Z q9 if b37
+Z q9 if b40
+Z q9 if b42
+Z q10 if b39
+Z q10 if b40
+Z q10 if b43
+Z q10 if b45
+Z q11 if b39
+Z q11 if b40
+Z q11 if b43
+Z q11 if b45
+CZ q0 q1 if b36
+CZ q2 q3 if b39
+CZ q4 q5 if b42
+CZ q6 q7 if b45
+CZ q8 q9 if b36
+CZ q8 q9 if b37
+CZ q8 q9 if b40
+CZ q8 q9 if b42
+CZ q10 q11 if b39
+CZ q10 q11 if b40
+CZ q10 q11 if b43
+CZ q10 q11 if b45
+CX q3 q2
+CZ q0 q2 if b40
+CZ q0 q2 if b43
+CZ q0 q2 if b44
+CX q3 q2
+CZ q1 q3 if b37
+CZ q1 q3 if b38
+CX q1 q0
+CZ q0 q2 if b37
+CZ q0 q2 if b38
+CZ q0 q2 if b40
+CZ q0 q2 if b43
+CZ q0 q2 if b44
+CX q1 q0
+CX q5 q4
+CZ q0 q4 if b39
+CZ q0 q4 if b41
+CZ q0 q4 if b42
+CZ q0 q4 if b44
+CZ q0 q4 if b46
+CX q5 q4
+CZ q1 q5 if b38
+CZ q1 q5 if b40
+CX q1 q0
+CZ q0 q4 if b38
+CZ q0 q4 if b39
+CZ q0 q4 if b40
+CZ q0 q4 if b41
+CZ q0 q4 if b42
+CZ q0 q4 if b44
+CZ q0 q4 if b46
+CX q1 q0
+CX q7 q6
+CZ q0 q6 if b36
+CZ q0 q6 if b37
+CZ q0 q6 if b41
+CZ q0 q6 if b43
+CZ q0 q6 if b44
+CZ q0 q6 if b45
+CX q7 q6
+CZ q1 q7 if b39
+CZ q1 q7 if b42
+CX q1 q0
+CZ q0 q6 if b36
+CZ q0 q6 if b37
+CZ q0 q6 if b39
+CZ q0 q6 if b41
+CZ q0 q6 if b42
+CZ q0 q6 if b43
+CZ q0 q6 if b44
+CZ q0 q6 if b45
+CX q1 q0
+CX q9 q8
+CZ q0 q8 if b38
+CZ q0 q8 if b39
+CZ q0 q8 if b41
+CZ q0 q8 if b45
+CX q9 q8
+CZ q1 q9 if b40
+CZ q1 q9 if b44
+CX q1 q0
+CZ q0 q8 if b38
+CZ q0 q8 if b39
+CZ q0 q8 if b40
+CZ q0 q8 if b41
+CZ q0 q8 if b44
+CZ q0 q8 if b45
+CX q1 q0
+CX q11 q10
+CZ q0 q10 if b36
+CZ q0 q10 if b37
+CZ q0 q10 if b41
+CZ q0 q10 if b43
+CZ q0 q10 if b44
+CX q11 q10
+CZ q1 q11 if b41
+CZ q1 q11 if b46
+CX q1 q0
+CZ q0 q10 if b36
+CZ q0 q10 if b37
+CZ q0 q10 if b43
+CZ q0 q10 if b44
+CZ q0 q10 if b46
+CX q1 q0
+CX q5 q4
+CZ q2 q4 if b43
+CZ q2 q4 if b46
+CZ q2 q4 if b47
+CX q5 q4
+CZ q3 q5 if b40
+CZ q3 q5 if b41
+CX q3 q2
+CZ q2 q4 if b40
+CZ q2 q4 if b41
+CZ q2 q4 if b43
+CZ q2 q4 if b46
+CZ q2 q4 if b47
+CX q3 q2
+CX q7 q6
+CZ q2 q6 if b37
+CZ q2 q6 if b38
+CZ q2 q6 if b41
+CZ q2 q6 if b42
+CZ q2 q6 if b43
+CZ q2 q6 if b44
+CZ q2 q6 if b45
+CZ q2 q6 if b47
+CX q7 q6
+CZ q3 q7 if b41
+CZ q3 q7 if b43
+CX q3 q2
+CZ q2 q6 if b37
+CZ q2 q6 if b38
+CZ q2 q6 if b42
+CZ q2 q6 if b44
+CZ q2 q6 if b45
+CZ q2 q6 if b47
+CX q3 q2
+CX q9 q8
+CZ q2 q8 if b36
+CZ q2 q8 if b37
+CZ q2 q8 if b39
+CZ q2 q8 if b42
+CZ q2 q8 if b44
+CZ q2 q8 if b46
+CZ q2 q8 if b47
+CX q9 q8
+CZ q3 q9 if b42
+CZ q3 q9 if b45
+CX q3 q2
+CZ q2 q8 if b36
+CZ q2 q8 if b37
+CZ q2 q8 if b39
+CZ q2 q8 if b44
+CZ q2 q8 if b45
+CZ q2 q8 if b46
+CZ q2 q8 if b47
+CX q3 q2
+CX q11 q10
+CZ q2 q10 if b36
+CZ q2 q10 if b37
+CZ q2 q10 if b40
+CZ q2 q10 if b41
+CZ q2 q10 if b44
+CX q11 q10
+CZ q3 q11 if b43
+CZ q3 q11 if b47
+CX q3 q2
+CZ q2 q10 if b36
+CZ q2 q10 if b37
+CZ q2 q10 if b40
+CZ q2 q10 if b41
+CZ q2 q10 if b43
+CZ q2 q10 if b44
+CZ q2 q10 if b47
+CX q3 q2
+CX q7 q6
+CZ q4 q6 if b37
+CZ q4 q6 if b39
+CZ q4 q6 if b41
+CZ q4 q6 if b42
+CZ q4 q6 if b43
+CZ q4 q6 if b44
+CZ q4 q6 if b46
+CX q7 q6
+CZ q5 q7 if b43
+CZ q5 q7 if b44
+CX q5 q4
+CZ q4 q6 if b37
+CZ q4 q6 if b39
+CZ q4 q6 if b41
+CZ q4 q6 if b42
+CZ q4 q6 if b46
+CX q5 q4
+CX q9 q8
+CZ q4 q8 if b36
+CZ q4 q8 if b37
+CZ q4 q8 if b38
+CZ q4 q8 if b39
+CZ q4 q8 if b41
+CZ q4 q8 if b45
+CZ q4 q8 if b46
+CZ q4 q8 if b47
+CX q9 q8
+CZ q5 q9 if b44
+CZ q5 q9 if b46
+CX q5 q4
+CZ q4 q8 if b36
+CZ q4 q8 if b37
+CZ q4 q8 if b38
+CZ q4 q8 if b39
+CZ q4 q8 if b41
+CZ q4 q8 if b44
+CZ q4 q8 if b45
+CZ q4 q8 if b47
+CX q5 q4
+CX q11 q10
+CZ q4 q10 if b37
+CZ q4 q10 if b40
+CZ q4 q10 if b41
+CZ q4 q10 if b43
+CZ q4 q10 if b44
+CZ q4 q10 if b45
+CZ q4 q10 if b47
+CX q11 q10
+CZ q5 q11 if b36
+CZ q5 q11 if b37
+CZ q5 q11 if b40
+CZ q5 q11 if b42
+CZ q5 q11 if b45
+CX q5 q4
+CZ q4 q10 if b36
+CZ q4 q10 if b41
+CZ q4 q10 if b42
+CZ q4 q10 if b43
+CZ q4 q10 if b44
+CZ q4 q10 if b47
+CX q5 q4
+CX q9 q8
+CZ q6 q8 if b37
+CZ q6 q8 if b38
+CZ q6 q8 if b40
+CZ q6 q8 if b41
+CZ q6 q8 if b42
+CZ q6 q8 if b43
+CZ q6 q8 if b44
+CZ q6 q8 if b45
+CZ q6 q8 if b46
+CZ q6 q8 if b47
+CX q9 q8
+CZ q7 q9 if b46
+CZ q7 q9 if b47
+CX q7 q6
+CZ q6 q8 if b37
+CZ q6 q8 if b38
+CZ q6 q8 if b40
+CZ q6 q8 if b41
+CZ q6 q8 if b42
+CZ q6 q8 if b43
+CZ q6 q8 if b44
+CZ q6 q8 if b45
+CX q7 q6
+CX q11 q10
+CZ q6 q10 if b36
+CZ q6 q10 if b42
+CZ q6 q10 if b43
+CX q11 q10
+CZ q7 q11 if b37
+CZ q7 q11 if b38
+CZ q7 q11 if b41
+CZ q7 q11 if b43
+CZ q7 q11 if b47
+CX q7 q6
+CZ q6 q10 if b36
+CZ q6 q10 if b37
+CZ q6 q10 if b38
+CZ q6 q10 if b41
+CZ q6 q10 if b42
+CZ q6 q10 if b47
+CX q7 q6
+CX q11 q10
+CZ q8 q10 if b36
+CZ q8 q10 if b39
+CZ q8 q10 if b45
+CZ q8 q10 if b46
+CZ q8 q10 if b47
+CX q11 q10
+CZ q9 q11 if b37
+CZ q9 q11 if b39
+CZ q9 q11 if b41
+CZ q9 q11 if b42
+CZ q9 q11 if b43
+CZ q9 q11 if b44
+CX q9 q8
+CZ q8 q10 if b36
+CZ q8 q10 if b37
+CZ q8 q10 if b41
+CZ q8 q10 if b42
+CZ q8 q10 if b43
+CZ q8 q10 if b44
+CZ q8 q10 if b45
+CZ q8 q10 if b46
+CZ q8 q10 if b47
+CX q9 q8
+CX q1 q2
+CX q2 q1
+CX q1 q2
+CX q2 q4
+CX q4 q2
+CX q2 q4
+CX q3 q6
+CX q6 q3
+CX q3 q6
+CX q4 q8
+CX q8 q4
+CX q4 q8
+CX q5 q10
+CX q10 q5
+CX q5 q10
+CX q6 q8
+CX q8 q6
+CX q6 q8
+CX q6 q1
+CX q6 q2
+CX q7 q8
+CX q8 q7
+CX q7 q8
+CX q7 q2
+CX q7 q3
+CX q8 q10
+CX q10 q8
+CX q8 q10
+CX q8 q3
+CX q8 q4
+CX q9 q10
+CX q10 q9
+CX q9 q10
+CX q9 q4
+CX q9 q5
+CX q10 q5
+CX q10 q6
+CX q11 q6
+CX q11 q7
+CX q71 q68
+CX q71 q67
+CX q71 q65
+CX q70 q67
+CX q70 q66
+CX q70 q64
+CX q69 q66
+CX q69 q65
+CX q69 q63
+CX q69 q70
+CX q70 q69
+CX q69 q70
+CX q68 q65
+CX q68 q64
+CX q68 q62
+CX q68 q70
+CX q70 q68
+CX q68 q70
+CX q67 q64
+CX q67 q63
+CX q67 q61
+CX q67 q68
+CX q68 q67
+CX q67 q68
+CX q66 q63
+CX q66 q62
+CX q66 q60
+CX q66 q68
+CX q68 q66
+CX q66 q68
+CX q65 q70
+CX q70 q65
+CX q65 q70
+CX q64 q68
+CX q68 q64
+CX q64 q68
+CX q63 q66
+CX q66 q63
+CX q63 q66
+CX q62 q64
+CX q64 q62
+CX q62 q64
+CX q61 q62
+CX q62 q61
+CX q61 q62

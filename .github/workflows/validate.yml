@@ -1,0 +1,38 @@
+name: Validate DQI analysis tools
+
+on:
+  workflow_dispatch:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu-verification:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Test binary parser and conservative analysis
+        run: python3 -m unittest discover -p 'test_*.py' -v
+      - name: Check exhaustive and symbolic Boolean analysis
+        run: |
+          python3 test_boolean_block_analyze.py
+          python3 test_symbolic_block_analyze.py
+      - name: Verify specialized finite-field kernels
+        run: python3 inverse_specialized.py
+      - name: Recompute inverse scheduling choices
+        run: python3 pebble_search.py
+      - name: Verify complete inverse gate circuits
+        run: python3 full_inverse_verify.py
+      - name: Save calculation results
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: dqi-arithmetic-verification
+          path: |
+            inverse_specialized_results.json
+            pebble_results.json
+            full_inverse_verify_results.json
+          if-no-files-found: error
+          retention-days: 14

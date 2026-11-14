@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "user_block_tested": false,
+  "checks": [
+    {
+      "case": "frobenius_six_inputs",
+      "assignments_crosschecked": 64,
+      "rank": 6,
+      "max_degree": 1
+    },
+    {
+      "case": "nonlinear_six_inputs_rank_twelve",
+      "assignments_crosschecked": 64,
+      "rank": 12,
+      "max_degree": 2
+    },
+    {
+      "case": "gf12_power_1_pure",
+      "assignments_crosschecked": 4096,
+      "rank": 12,
+      "max_degree": 2
+    },
+    {
+      "case": "phase_or_cswap",
+      "assignments_crosschecked": 4
+    },
+    {
+      "case": "phase_or_cswap",
+      "assignments_crosschecked": 4
+    },
+    {
+      "case": "24_inputs_24_outputs_bilinear",
+      "rank": 12,
+      "max_degree": 2,
+      "enumeration_used": false
+    },
+    {
+      "case": "resource_caps_fail_without_approximation",
+      "limits_checked": 3
+    }
+  ]
+}

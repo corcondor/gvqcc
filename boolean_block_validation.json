@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "user_block_tested": false,
+  "tests": [
+    {
+      "name": "frobenius_six_inputs",
+      "assignments": 64,
+      "image_count": 64,
+      "affine_rank": 6
+    },
+    {
+      "name": "nonlinear_six_inputs_rank_twelve",
+      "assignments": 64,
+      "image_count": 64,
+      "affine_rank": 12
+    },
+    {
+      "name": "phase_is_preserved_in_analysis",
+      "assignments": 4
+    },
+    {
+      "name": "existing_gf12_power_1",
+      "assignments": 4096,
+      "image_count": 1366,
+      "affine_rank": 12,
+      "gate_counts": {
+        "CCX": 51,
+        "CX": 532
+      }
+    },
+    {
+      "name": "reject_unsupported_or_ungrounded",
+      "rejections": 9
+    }
+  ]
+}

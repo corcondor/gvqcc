@@ -1,0 +1,1224 @@
+# GF(2^12) power map: target ^= source^(2^2+1)
+# Polynomial: x^12+x^6+x^4+x+1; little-endian polynomial basis.
+# Experimental kernel, not a DQI submission.
+REGISTER r0 "source"
+REGISTER r1 "target"
+APPEND_TO_REGISTER q0 r0
+APPEND_TO_REGISTER q1 r0
+APPEND_TO_REGISTER q2 r0
+APPEND_TO_REGISTER q3 r0
+APPEND_TO_REGISTER q4 r0
+APPEND_TO_REGISTER q5 r0
+APPEND_TO_REGISTER q6 r0
+APPEND_TO_REGISTER q7 r0
+APPEND_TO_REGISTER q8 r0
+APPEND_TO_REGISTER q9 r0
+APPEND_TO_REGISTER q10 r0
+APPEND_TO_REGISTER q11 r0
+APPEND_TO_REGISTER q12 r1
+APPEND_TO_REGISTER q13 r1
+APPEND_TO_REGISTER q14 r1
+APPEND_TO_REGISTER q15 r1
+APPEND_TO_REGISTER q16 r1
+APPEND_TO_REGISTER q17 r1
+APPEND_TO_REGISTER q18 r1
+APPEND_TO_REGISTER q19 r1
+APPEND_TO_REGISTER q20 r1
+APPEND_TO_REGISTER q21 r1
+APPEND_TO_REGISTER q22 r1
+APPEND_TO_REGISTER q23 r1
+R q12
+R q13
+R q14
+R q15
+R q16
+R q17
+R q18
+R q19
+R q20
+R q21
+R q22
+R q23
+CX q11 q10
+CX q11 q6
+CX q11 q4
+CX q11 q1
+CX q10 q9
+CX q10 q8
+CX q10 q7
+CX q10 q5
+CX q10 q4
+CX q10 q1
+CX q9 q11
+CX q9 q7
+CX q9 q6
+CX q9 q3
+CX q9 q0
+CX q9 q10
+CX q10 q9
+CX q9 q10
+CX q8 q4
+CX q8 q3
+CX q8 q9
+CX q9 q8
+CX q8 q9
+CX q7 q9
+CX q7 q8
+CX q7 q1
+CX q7 q0
+CX q6 q10
+CX q6 q8
+CX q6 q7
+CX q6 q5
+CX q6 q2
+CX q5 q11
+CX q5 q10
+CX q5 q9
+CX q5 q8
+CX q5 q6
+CX q5 q4
+CX q5 q3
+CX q5 q1
+CX q4 q11
+CX q4 q9
+CX q4 q7
+CX q4 q5
+CX q4 q3
+CX q3 q9
+CX q3 q8
+CX q3 q7
+CX q3 q2
+CX q3 q1
+CX q3 q0
+CX q3 q5
+CX q5 q3
+CX q3 q5
+CX q2 q8
+CX q8 q2
+CX q2 q8
+CX q1 q4
+CX q4 q1
+CX q1 q4
+CX q0 q12
+CX q2 q13
+CX q2 q14
+CX q2 q18
+CX q1 q12
+CX q1 q13
+CX q1 q14
+CX q1 q18
+CX q3 q12
+CX q12 q13
+CX q12 q14
+CX q12 q18
+CCX q0 q2 q12
+CX q12 q18
+CX q12 q14
+CX q12 q13
+CCX q1 q3 q12
+CX q1 q0
+CX q3 q2
+CX q13 q14
+CX q13 q18
+CCX q0 q2 q13
+CX q1 q0
+CX q3 q2
+CX q13 q18
+CX q13 q14
+CX q4 q17
+CX q6 q18
+CX q6 q19
+CX q6 q23
+CX q5 q17
+CX q5 q18
+CX q5 q19
+CX q5 q23
+CX q7 q17
+CX q17 q18
+CX q17 q19
+CX q17 q23
+CCX q4 q6 q17
+CX q17 q23
+CX q17 q19
+CX q17 q18
+CCX q5 q7 q17
+CX q5 q4
+CX q7 q6
+CX q18 q19
+CX q18 q23
+CCX q4 q6 q18
+CX q5 q4
+CX q7 q6
+CX q18 q23
+CX q18 q19
+CX q8 q22
+CX q10 q12
+CX q10 q13
+CX q10 q17
+CX q10 q18
+CX q10 q20
+CX q10 q22
+CX q10 q23
+CX q9 q12
+CX q9 q13
+CX q9 q17
+CX q9 q18
+CX q9 q20
+CX q9 q23
+CX q11 q22
+CX q12 q13
+CX q12 q17
+CX q12 q18
+CX q12 q20
+CX q12 q23
+CCX q8 q10 q12
+CX q12 q23
+CX q12 q20
+CX q12 q18
+CX q12 q17
+CX q12 q13
+CCX q9 q11 q22
+CX q9 q8
+CX q11 q10
+CX q12 q13
+CX q12 q17
+CX q12 q18
+CX q12 q20
+CX q12 q22
+CX q12 q23
+CCX q8 q10 q12
+CX q9 q8
+CX q11 q10
+CX q12 q23
+CX q12 q22
+CX q12 q20
+CX q12 q18
+CX q12 q17
+CX q12 q13
+CX q6 q4
+CX q12 q14
+CX q12 q16
+CX q12 q17
+CX q12 q18
+CX q12 q19
+CX q12 q21
+CCX q0 q4 q12
+CX q6 q4
+CX q12 q21
+CX q12 q19
+CX q12 q18
+CX q12 q17
+CX q12 q16
+CX q12 q14
+CX q2 q1
+CX q6 q5
+CX q7 q5
+CX q13 q15
+CX q13 q20
+CX q13 q21
+CX q13 q22
+CCX q1 q5 q13
+CX q2 q1
+CX q7 q5
+CX q6 q5
+CX q13 q22
+CX q13 q21
+CX q13 q20
+CX q13 q15
+CX q1 q0
+CX q2 q0
+CX q5 q4
+CX q7 q4
+CX q14 q16
+CX q14 q17
+CX q14 q18
+CX q14 q19
+CX q14 q20
+CX q14 q21
+CCX q0 q4 q14
+CX q2 q0
+CX q1 q0
+CX q7 q4
+CX q5 q4
+CX q14 q21
+CX q14 q20
+CX q14 q19
+CX q14 q18
+CX q14 q17
+CX q14 q16
+CX q3 q1
+CX q12 q15
+CX q12 q16
+CX q12 q21
+CX q12 q22
+CCX q1 q5 q12
+CX q3 q1
+CX q12 q22
+CX q12 q21
+CX q12 q16
+CX q12 q15
+CX q13 q16
+CCX q3 q7 q13
+CX q13 q16
+CX q7 q5
+CX q12 q13
+CX q12 q14
+CX q12 q17
+CX q12 q18
+CX q12 q19
+CX q12 q21
+CCX q1 q5 q12
+CX q7 q5
+CX q12 q21
+CX q12 q19
+CX q12 q18
+CX q12 q17
+CX q12 q14
+CX q12 q13
+CX q1 q0
+CX q3 q0
+CX q5 q4
+CX q6 q4
+CX q15 q16
+CX q15 q20
+CX q15 q21
+CX q15 q22
+CCX q0 q4 q15
+CX q3 q0
+CX q1 q0
+CX q6 q4
+CX q5 q4
+CX q15 q22
+CX q15 q21
+CX q15 q20
+CX q15 q16
+CX q2 q1
+CX q3 q1
+CX q6 q5
+CX q13 q14
+CX q13 q17
+CX q13 q18
+CX q13 q19
+CX q13 q20
+CX q13 q21
+CCX q1 q5 q13
+CX q3 q1
+CX q2 q1
+CX q6 q5
+CX q13 q21
+CX q13 q20
+CX q13 q19
+CX q13 q18
+CX q13 q17
+CX q13 q14
+CX q2 q0
+CX q12 q13
+CX q12 q15
+CX q12 q21
+CX q12 q22
+CCX q0 q4 q12
+CX q2 q0
+CX q12 q22
+CX q12 q21
+CX q12 q15
+CX q12 q13
+CX q10 q8
+CX q14 q15
+CX q14 q16
+CX q14 q17
+CX q14 q18
+CX q14 q19
+CX q14 q21
+CCX q0 q8 q14
+CX q10 q8
+CX q14 q21
+CX q14 q19
+CX q14 q18
+CX q14 q17
+CX q14 q16
+CX q14 q15
+CX q2 q1
+CX q10 q9
+CX q11 q9
+CX q12 q14
+CX q12 q15
+CX q12 q18
+CX q12 q19
+CX q12 q20
+CX q12 q21
+CX q12 q22
+CCX q1 q9 q12
+CX q2 q1
+CX q11 q9
+CX q10 q9
+CX q12 q22
+CX q12 q21
+CX q12 q20
+CX q12 q19
+CX q12 q18
+CX q12 q15
+CX q12 q14
+CX q1 q0
+CX q2 q0
+CX q9 q8
+CX q11 q8
+CX q12 q14
+CX q12 q15
+CX q12 q16
+CX q12 q19
+CCX q0 q8 q12
+CX q2 q0
+CX q1 q0
+CX q11 q8
+CX q9 q8
+CX q12 q19
+CX q12 q16
+CX q12 q15
+CX q12 q14
+CX q3 q1
+CX q15 q17
+CX q15 q19
+CX q15 q22
+CCX q1 q9 q15
+CX q3 q1
+CX q15 q22
+CX q15 q19
+CX q15 q17
+CX q14 q20
+CCX q3 q11 q14
+CX q14 q20
+CX q11 q9
+CX q15 q16
+CX q15 q17
+CX q15 q18
+CX q15 q19
+CX q15 q20
+CX q15 q21
+CCX q1 q9 q15
+CX q11 q9
+CX q15 q21
+CX q15 q20
+CX q15 q19
+CX q15 q18
+CX q15 q17
+CX q15 q16
+CX q1 q0
+CX q3 q0
+CX q9 q8
+CX q10 q8
+CX q12 q15
+CX q12 q18
+CX q12 q19
+CX q12 q21
+CX q12 q22
+CCX q0 q8 q12
+CX q3 q0
+CX q1 q0
+CX q10 q8
+CX q9 q8
+CX q12 q22
+CX q12 q21
+CX q12 q19
+CX q12 q18
+CX q12 q15
+CX q2 q1
+CX q3 q1
+CX q10 q9
+CX q12 q15
+CX q12 q16
+CX q12 q19
+CX q12 q20
+CCX q1 q9 q12
+CX q3 q1
+CX q2 q1
+CX q10 q9
+CX q12 q20
+CX q12 q19
+CX q12 q16
+CX q12 q15
+CX q2 q0
+CX q14 q15
+CX q14 q17
+CX q14 q19
+CX q14 q20
+CX q14 q22
+CCX q0 q8 q14
+CX q2 q0
+CX q14 q22
+CX q14 q20
+CX q14 q19
+CX q14 q17
+CX q14 q15
+CX q10 q8
+CX q12 q13
+CX q12 q14
+CX q12 q15
+CX q12 q16
+CX q12 q17
+CX q12 q19
+CX q12 q20
+CX q12 q21
+CX q12 q22
+CX q12 q23
+CCX q4 q8 q12
+CX q10 q8
+CX q12 q23
+CX q12 q22
+CX q12 q21
+CX q12 q20
+CX q12 q19
+CX q12 q17
+CX q12 q16
+CX q12 q15
+CX q12 q14
+CX q12 q13
+CX q6 q5
+CX q10 q9
+CX q11 q9
+CX q13 q16
+CX q13 q17
+CX q13 q21
+CCX q5 q9 q13
+CX q6 q5
+CX q11 q9
+CX q10 q9
+CX q13 q21
+CX q13 q17
+CX q13 q16
+CX q5 q4
+CX q6 q4
+CX q9 q8
+CX q11 q8
+CX q12 q15
+CX q12 q16
+CX q12 q17
+CX q12 q20
+CX q12 q21
+CX q12 q22
+CX q12 q23
+CCX q4 q8 q12
+CX q6 q4
+CX q5 q4
+CX q11 q8
+CX q9 q8
+CX q12 q23
+CX q12 q22
+CX q12 q21
+CX q12 q20
+CX q12 q17
+CX q12 q16
+CX q12 q15
+CX q7 q5
+CX q14 q16
+CX q14 q17
+CX q14 q18
+CX q14 q19
+CCX q5 q9 q14
+CX q7 q5
+CX q14 q19
+CX q14 q18
+CX q14 q17
+CX q14 q16
+CX q18 q21
+CCX q7 q11 q18
+CX q18 q21
+CX q11 q9
+CX q12 q13
+CX q12 q14
+CX q12 q15
+CX q12 q16
+CX q12 q17
+CX q12 q18
+CX q12 q19
+CX q12 q20
+CX q12 q22
+CX q12 q23
+CCX q5 q9 q12
+CX q11 q9
+CX q12 q23
+CX q12 q22
+CX q12 q20
+CX q12 q19
+CX q12 q18
+CX q12 q17
+CX q12 q16
+CX q12 q15
+CX q12 q14
+CX q12 q13
+CX q5 q4
+CX q7 q4
+CX q9 q8
+CX q10 q8
+CX q13 q16
+CX q13 q17
+CX q13 q18
+CCX q4 q8 q13
+CX q7 q4
+CX q5 q4
+CX q10 q8
+CX q9 q8
+CX q13 q18
+CX q13 q17
+CX q13 q16
+CX q6 q5
+CX q7 q5
+CX q10 q9
+CX q12 q15
+CX q12 q16
+CX q12 q17
+CX q12 q18
+CX q12 q20
+CX q12 q22
+CX q12 q23
+CCX q5 q9 q12
+CX q7 q5
+CX q6 q5
+CX q10 q9
+CX q12 q23
+CX q12 q22
+CX q12 q20
+CX q12 q18
+CX q12 q17
+CX q12 q16
+CX q12 q15
+CX q6 q4
+CX q14 q16
+CX q14 q17
+CX q14 q19
+CX q14 q21
+CCX q4 q8 q14
+CX q6 q4
+CX q14 q21
+CX q14 q19
+CX q14 q17
+CX q14 q16
+CX q1 q4
+CX q4 q1
+CX q1 q4
+CX q2 q8
+CX q8 q2
+CX q2 q8
+CX q3 q5
+CX q5 q3
+CX q3 q5
+CX q3 q0
+CX q3 q1
+CX q3 q2
+CX q3 q7
+CX q3 q8
+CX q3 q9
+CX q4 q3
+CX q4 q5
+CX q4 q7
+CX q4 q9
+CX q4 q11
+CX q5 q1
+CX q5 q3
+CX q5 q4
+CX q5 q6
+CX q5 q8
+CX q5 q9
+CX q5 q10
+CX q5 q11
+CX q6 q2
+CX q6 q5
+CX q6 q7
+CX q6 q8
+CX q6 q10
+CX q7 q0
+CX q7 q1
+CX q7 q8
+CX q7 q9
+CX q8 q9
+CX q9 q8
+CX q8 q9
+CX q8 q3
+CX q8 q4
+CX q9 q10
+CX q10 q9
+CX q9 q10
+CX q9 q0
+CX q9 q3
+CX q9 q6
+CX q9 q7
+CX q9 q11
+CX q10 q1
+CX q10 q4
+CX q10 q5
+CX q10 q7
+CX q10 q8
+CX q10 q9
+CX q11 q1
+CX q11 q4
+CX q11 q6
+CX q11 q10
+HMR q12 b0
+HMR q13 b1
+HMR q14 b2
+HMR q15 b3
+HMR q16 b4
+HMR q17 b5
+HMR q18 b6
+HMR q19 b7
+HMR q20 b8
+HMR q21 b9
+HMR q22 b10
+HMR q23 b11
+CX q11 q10
+CX q11 q6
+CX q11 q4
+CX q11 q1
+CX q10 q9
+CX q10 q8
+CX q10 q7
+CX q10 q5
+CX q10 q4
+CX q10 q1
+CX q9 q11
+CX q9 q7
+CX q9 q6
+CX q9 q3
+CX q9 q0
+CX q9 q10
+CX q10 q9
+CX q9 q10
+CX q8 q4
+CX q8 q3
+CX q8 q9
+CX q9 q8
+CX q8 q9
+CX q7 q9
+CX q7 q8
+CX q7 q1
+CX q7 q0
+CX q6 q10
+CX q6 q8
+CX q6 q7
+CX q6 q5
+CX q6 q2
+CX q5 q11
+CX q5 q10
+CX q5 q9
+CX q5 q8
+CX q5 q6
+CX q5 q4
+CX q5 q3
+CX q5 q1
+CX q4 q11
+CX q4 q9
+CX q4 q7
+CX q4 q5
+CX q4 q3
+CX q3 q9
+CX q3 q8
+CX q3 q7
+CX q3 q2
+CX q3 q1
+CX q3 q0
+CX q3 q5
+CX q5 q3
+CX q3 q5
+CX q2 q8
+CX q8 q2
+CX q2 q8
+CX q1 q4
+CX q4 q1
+CX q1 q4
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+Z q0 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b6
+Z q2 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b6
+Z q1 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+Z q3 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b5
+Z q4 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b11
+Z q6 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b11
+Z q5 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b5
+Z q7 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b10
+Z q8 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b10
+BIT_INVERT b12 if b11
+Z q10 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b11
+Z q9 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b10
+Z q11 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b6
+CZ q0 q2 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+CZ q1 q3 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b6
+CX q1 q0
+CX q3 q2
+CZ q0 q2 if b12
+CX q3 q2
+CX q1 q0
+BIT_STORE0 b12
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b11
+CZ q4 q6 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b5
+CZ q5 q7 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b11
+CX q5 q4
+CX q7 q6
+CZ q4 q6 if b12
+CX q7 q6
+CX q5 q4
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b11
+CZ q8 q10 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b10
+CZ q9 q11 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b10
+BIT_INVERT b12 if b11
+CX q9 q8
+CX q11 q10
+CZ q8 q10 if b12
+CX q11 q10
+CX q9 q8
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b9
+CX q6 q4
+CZ q0 q4 if b12
+CX q6 q4
+BIT_STORE0 b12
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b9
+BIT_INVERT b12 if b10
+CX q2 q1
+CX q6 q5
+CX q7 q5
+CZ q1 q5 if b12
+CX q7 q5
+CX q6 q5
+CX q2 q1
+BIT_STORE0 b12
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b9
+CX q1 q0
+CX q2 q0
+CX q5 q4
+CX q7 q4
+CZ q0 q4 if b12
+CX q7 q4
+CX q5 q4
+CX q2 q0
+CX q1 q0
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b9
+BIT_INVERT b12 if b10
+CX q3 q1
+CZ q1 q5 if b12
+CX q3 q1
+BIT_STORE0 b12
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b4
+CZ q3 q7 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b9
+CX q7 q5
+CZ q1 q5 if b12
+CX q7 q5
+BIT_STORE0 b12
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b9
+BIT_INVERT b12 if b10
+CX q1 q0
+CX q3 q0
+CX q5 q4
+CX q6 q4
+CZ q0 q4 if b12
+CX q6 q4
+CX q5 q4
+CX q3 q0
+CX q1 q0
+BIT_STORE0 b12
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b9
+CX q2 q1
+CX q3 q1
+CX q6 q5
+CZ q1 q5 if b12
+CX q6 q5
+CX q3 q1
+CX q2 q1
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b9
+BIT_INVERT b12 if b10
+CX q2 q0
+CZ q0 q4 if b12
+CX q2 q0
+BIT_STORE0 b12
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b9
+CX q10 q8
+CZ q0 q8 if b12
+CX q10 q8
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b9
+BIT_INVERT b12 if b10
+CX q2 q1
+CX q10 q9
+CX q11 q9
+CZ q1 q9 if b12
+CX q11 q9
+CX q10 q9
+CX q2 q1
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b7
+CX q1 q0
+CX q2 q0
+CX q9 q8
+CX q11 q8
+CZ q0 q8 if b12
+CX q11 q8
+CX q9 q8
+CX q2 q0
+CX q1 q0
+BIT_STORE0 b12
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b10
+CX q3 q1
+CZ q1 q9 if b12
+CX q3 q1
+BIT_STORE0 b12
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b8
+CZ q3 q11 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b9
+CX q11 q9
+CZ q1 q9 if b12
+CX q11 q9
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b9
+BIT_INVERT b12 if b10
+CX q1 q0
+CX q3 q0
+CX q9 q8
+CX q10 q8
+CZ q0 q8 if b12
+CX q10 q8
+CX q9 q8
+CX q3 q0
+CX q1 q0
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b8
+CX q2 q1
+CX q3 q1
+CX q10 q9
+CZ q1 q9 if b12
+CX q10 q9
+CX q3 q1
+CX q2 q1
+BIT_STORE0 b12
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b10
+CX q2 q0
+CZ q0 q8 if b12
+CX q2 q0
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b9
+BIT_INVERT b12 if b10
+BIT_INVERT b12 if b11
+CX q10 q8
+CZ q4 q8 if b12
+CX q10 q8
+BIT_STORE0 b12
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b9
+CX q6 q5
+CX q10 q9
+CX q11 q9
+CZ q5 q9 if b12
+CX q11 q9
+CX q10 q9
+CX q6 q5
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b9
+BIT_INVERT b12 if b10
+BIT_INVERT b12 if b11
+CX q5 q4
+CX q6 q4
+CX q9 q8
+CX q11 q8
+CZ q4 q8 if b12
+CX q11 q8
+CX q9 q8
+CX q6 q4
+CX q5 q4
+BIT_STORE0 b12
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+CX q7 q5
+CZ q5 q9 if b12
+CX q7 q5
+BIT_STORE0 b12
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b9
+CZ q7 q11 if b12
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b10
+BIT_INVERT b12 if b11
+CX q11 q9
+CZ q5 q9 if b12
+CX q11 q9
+BIT_STORE0 b12
+BIT_INVERT b12 if b1
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+CX q5 q4
+CX q7 q4
+CX q9 q8
+CX q10 q8
+CZ q4 q8 if b12
+CX q10 q8
+CX q9 q8
+CX q7 q4
+CX q5 q4
+BIT_STORE0 b12
+BIT_INVERT b12 if b0
+BIT_INVERT b12 if b3
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b6
+BIT_INVERT b12 if b8
+BIT_INVERT b12 if b10
+BIT_INVERT b12 if b11
+CX q6 q5
+CX q7 q5
+CX q10 q9
+CZ q5 q9 if b12
+CX q10 q9
+CX q7 q5
+CX q6 q5
+BIT_STORE0 b12
+BIT_INVERT b12 if b2
+BIT_INVERT b12 if b4
+BIT_INVERT b12 if b5
+BIT_INVERT b12 if b7
+BIT_INVERT b12 if b9
+CX q6 q4
+CZ q4 q8 if b12
+CX q6 q4
+CX q1 q4
+CX q4 q1
+CX q1 q4
+CX q2 q8
+CX q8 q2
+CX q2 q8
+CX q3 q5
+CX q5 q3
+CX q3 q5
+CX q3 q0
+CX q3 q1
+CX q3 q2
+CX q3 q7
+CX q3 q8
+CX q3 q9
+CX q4 q3
+CX q4 q5
+CX q4 q7
+CX q4 q9
+CX q4 q11
+CX q5 q1
+CX q5 q3
+CX q5 q4
+CX q5 q6
+CX q5 q8
+CX q5 q9
+CX q5 q10
+CX q5 q11
+CX q6 q2
+CX q6 q5
+CX q6 q7
+CX q6 q8
+CX q6 q10
+CX q7 q0
+CX q7 q1
+CX q7 q8
+CX q7 q9
+CX q8 q9
+CX q9 q8
+CX q8 q9
+CX q8 q3
+CX q8 q4
+CX q9 q10
+CX q10 q9
+CX q9 q10
+CX q9 q0
+CX q9 q3
+CX q9 q6
+CX q9 q7
+CX q9 q11
+CX q10 q1
+CX q10 q4
+CX q10 q5
+CX q10 q7
+CX q10 q8
+CX q10 q9
+CX q11 q1
+CX q11 q4
+CX q11 q6
+CX q11 q10
+BIT_STORE0 b12

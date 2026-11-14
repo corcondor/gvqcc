@@ -1,0 +1,110 @@
+{
+  "field_modulus": 4179,
+  "results": [
+    {
+      "status": "PASS",
+      "inputs_verified": 4096,
+      "measurement_variables": 60,
+      "all_measurement_outcomes": "Proved by exact cancellation of each independent symbolic phase coefficient.",
+      "checked_schedule_boundaries": 11,
+      "objective": "retained_output",
+      "extra_words": 4,
+      "qubits": 60,
+      "gates": 7293,
+      "gate_counts": {
+        "CX": 5660,
+        "CCX": 276,
+        "HMR": 60,
+        "Z_IF": 163,
+        "CZ_IF": 1134
+      },
+      "toffoli_count": 276,
+      "compilation_and_verification_seconds": 0.11943529700010913
+    },
+    {
+      "status": "PASS",
+      "inputs_verified": 4096,
+      "measurement_variables": 48,
+      "all_measurement_outcomes": "Proved by exact cancellation of each independent symbolic phase coefficient.",
+      "checked_schedule_boundaries": 9,
+      "objective": "retained_output",
+      "extra_words": 5,
+      "qubits": 72,
+      "gates": 6237,
+      "gate_counts": {
+        "CX": 4731,
+        "CCX": 240,
+        "HMR": 48,
+        "Z_IF": 97,
+        "CZ_IF": 1121
+      },
+      "toffoli_count": 240,
+      "compilation_and_verification_seconds": 0.04759813300006499
+    },
+    {
+      "status": "PASS",
+      "inputs_verified": 4096,
+      "measurement_variables": 84,
+      "all_measurement_outcomes": "Proved by exact cancellation of each independent symbolic phase coefficient.",
+      "checked_schedule_boundaries": 15,
+      "objective": "phase_then_clear",
+      "extra_words": 3,
+      "qubits": 48,
+      "gates": 8829,
+      "gate_counts": {
+        "CX": 6497,
+        "CCX": 327,
+        "HMR": 84,
+        "Z_IF": 187,
+        "CZ_IF": 1733,
+        "Z": 1
+      },
+      "toffoli_count": 327,
+      "compilation_and_verification_seconds": 0.09196549600028447
+    },
+    {
+      "status": "PASS",
+      "inputs_verified": 4096,
+      "measurement_variables": 72,
+      "all_measurement_outcomes": "Proved by exact cancellation of each independent symbolic phase coefficient.",
+      "checked_schedule_boundaries": 13,
+      "objective": "phase_then_clear",
+      "extra_words": 4,
+      "qubits": 60,
+      "gates": 7850,
+      "gate_counts": {
+        "CX": 5839,
+        "CCX": 267,
+        "HMR": 72,
+        "Z_IF": 203,
+        "CZ_IF": 1468,
+        "Z": 1
+      },
+      "toffoli_count": 267,
+      "compilation_and_verification_seconds": 0.08452240199994776
+    },
+    {
+      "status": "PASS",
+      "inputs_verified": 4096,
+      "measurement_variables": 60,
+      "all_measurement_outcomes": "Proved by exact cancellation of each independent symbolic phase coefficient.",
+      "checked_schedule_boundaries": 11,
+      "objective": "phase_then_clear",
+      "extra_words": 5,
+      "qubits": 72,
+      "gates": 6780,
+      "gate_counts": {
+        "CX": 4898,
+        "CCX": 240,
+        "Z": 1,
+        "HMR": 60,
+        "CZ_IF": 1484,
+        "Z_IF": 97
+      },
+      "toffoli_count": 240,
+      "compilation_and_verification_seconds": 0.04437589899998784
+    }
+  ],
+  "elapsed_seconds": 0.38871252100034326,
+  "scope": "Complete arithmetic-kernel gate and phase verification; no DQI integration or official validator."
+}

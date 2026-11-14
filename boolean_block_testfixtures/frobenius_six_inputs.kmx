@@ -1,0 +1,25 @@
+CX q0 q6
+CX q1 q14
+CX q2 q10
+CX q2 q11
+CX q2 q14
+CX q2 q16
+CX q3 q7
+CX q3 q8
+CX q3 q10
+CX q3 q12
+CX q3 q14
+CX q4 q6
+CX q4 q7
+CX q4 q8
+CX q4 q9
+CX q4 q11
+CX q4 q15
+CX q5 q7
+CX q5 q8
+CX q5 q12
+CX q5 q13
+CX q5 q14
+CX q5 q16
+X q6
+X q17
