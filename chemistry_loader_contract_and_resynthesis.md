@@ -10,6 +10,8 @@ The current official-pinned README and `circuits.py` have also been obtained und
 
 Finally, the linear-span resynthesis was repeated on the **exact union of both allowed input batches**, without assuming arbitrary targets. It again found **0 replacements out of 4033 CCX**, in 3.980 s and 42.25 MiB. Every rebuilt circuit was independently checked on all 36,600 transitions and every measurement branch. See `chemistry_context_span_resynthesis.py` and `chemistry_context_span_resynthesis.json`. No candidate KMB was emitted because the reduction was zero.
 
+A subsequent bounded joint-product experiment is documented in `chemistry_joint_product_report.md`. It normalized **2706 products in batches 1–14**, screened **260835 pairs**, and found no eligible repeated factors or output directions for the specified merge, quadratic-rank, and one-flip/merge rewrites. Batch 0 was excluded because its block crosses a nonlinear control update. Reconstructing all 14 normalized circuits passed the independent exact checker on **34160** forward/reverse transitions and all **2072** formal HMR phase coefficients, while preserving Q and T. The completed run was **4.534 s / 52.64 MiB**, with **0 CCX reduction**. No new circuit files were saved. The authoritative run is `chemistry_joint_product_verified.json`; this is a scoped negative result, not a claim of optimality.
+
 ### Exact structure of the target dependence
 
 The follow-up `chemistry_tag_dependency_analysis.py` / `.json` proved, for every address and arbitrary initial target, that batches 1–14 have the form

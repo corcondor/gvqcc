@@ -119,6 +119,8 @@ python reproduce_dqi_candidate.py --work-dir dqi_run_2 --baseline-zip ORIGINAL_S
 
 ## Chemistryの追加計算
 
+さらに[複数の積をまとめる再合成](chemistry_joint_product_report.md)で、k=1〜14の2706個のCCX積・260,835ペアを調べました。共通因子の統合、同一出力方向の二次rank分解、1回のXOR変換後の3→2統合は追加削減0件でした。14回路を正規化した式から再構築し、全34,160遷移と測定位相の厳密検証にPASSしています。k=0は区間途中の非線形な制御更新により今回の抽出対象外です。[確定結果](chemistry_joint_product_verified.json)はこの限定クラスの結果で、より大きい再設計の最適性を示しません。
+
 正確なFeMoCo参照データと実際の4033ローダーを照合し、7bit・6bit化、C44→43、列の直交回転を調べました。採用できる改善は得られませんでした。
 
 4033ローダーについては、任意の初期wordに対する汎用XOR写像とは一致しない[独立native反例](chemistry_native_contract_k1.json)を確認しました。一方、実アルゴリズムの前後batch上では、[厳密な到達部分空間証明](chemistry_reachable_exact_proof.json)により全1220 address × 15回路 × 2方向、計36,600遷移が正しいことを確認しました。全40出力bitが一致し、selectionとscratchを復元、2230個のHMR変数の位相係数が恒等的に0、2230個のRの入力も0です。サンプリングではなく全測定分岐を扱うため、この部分空間での任意の重ね合わせと参照系への絡みを含む正しさを支持します。[独立監査](chemistry_reachable_exact_proof_audit.json)でも実KMBの配置・ゲート形式・hashと証明の前提を確認しました。
