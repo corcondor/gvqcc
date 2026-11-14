@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE",
+  "arbitrary_qubits": 840,
+  "arbitrary_bits": 49140,
+  "instructions": 59378866,
+  "toffoli_like_scanned": 382934,
+  "hits": [],
+  "hit_count": 0,
+  "scope": "Conservative constant propagation; arbitrary ABI, initially-zero scratch, original measurement and phase operations retained. Candidate requires separate rewrite and verification.",
+  "input_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "input_path": "/workspace/scratch/7f542e06b7cf/dqi_inputs/821_ccx480_gauge128.kmb",
+  "value_domain": "0,1,unknown; conservatively joins classically conditional writes",
+  "script_current_sha256": "fd0411461559ef8ec60887577aff44fb507dea1d430a2037050a7b2bc46a4083",
+  "candidate_emitted": false
+}

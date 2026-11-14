@@ -1,0 +1,37 @@
+{
+  "source": "/workspace/scratch/7f542e06b7cf/dqi_inputs/chemistry_4033/screen/c43_refit.npz",
+  "source_sha256": "8873966d0386c0f0f324df53027272ce738d3f32a24412da669a09bf9705d425",
+  "candidate": "/workspace/scratch/3815fb5fae06/score_chemistry_c43_whiten/candidate.npz",
+  "candidate_sha256": "44f1536ac3b271937449724edd609b5f00c514efc657d2018aa4638d02349f8f",
+  "script_sha256": "aa75cac1d20de4ce69c44f5a200d856da52e9df6a86e087150411c689c9004df",
+  "parameterization": "Y_r=L_r.T W_r; exact Cholesky whitening of V_r V_r.T",
+  "orthogonality_error": 4.134470543704083e-13,
+  "gradient_check_error": 2.0464092920224886e-10,
+  "official_numeric_metrics": {
+    "error_1": 0.03193297036461767,
+    "error_2": 0.021123846948963274,
+    "Lambda": 293.9829476323044,
+    "E_SOS": -22144.3735190933,
+    "E_gap": 4.100169093300792,
+    "lambda_eff": 48.92798999637345,
+    "gap_in_domain": true
+  },
+  "two_body_error_pass": false,
+  "full_circuit_verified": false,
+  "calls": 520,
+  "seconds": 17.101875629999995,
+  "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+  "trace": [
+    {
+      "calls": 6,
+      "best_error2": 0.021579313979144782,
+      "seconds": 0.5107722229986393
+    },
+    {
+      "calls": 387,
+      "best_error2": 0.021127053625997486,
+      "seconds": 10.531221608998749
+    }
+  ],
+  "peak_rss_mib": 1056.82421875
+}

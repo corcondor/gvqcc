@@ -1,0 +1,128 @@
+{
+  "status": "PASS_SCOPED_INDEPENDENT_CODE_AND_MATHEMATICS_REVIEW",
+  "reviewer": "/root/ancilla_contraction",
+  "scope": "Read-only review of the four named chemistry implementations and their official numerical/acceptance dependencies. Small independent algebra checks were run; no production optimization, full circuit verification, or submission was performed.",
+  "reviewed_files": {
+    "score_chemistry_c43_whiten.py": "9232bb4f3ca8ed6f2f4dc8fb80ba84ba5535edcc26fbe9479065ec8e96e8e64c",
+    "score_chemistry_rank_bound.py": "341a17dfd2670a7243ffe6bd53c9acf79fef249165b3a1c36cadb20165888af0",
+    "score_dfthcsos_fixed_words_verify.py": "0c345d05c85fd88b8b42c075ac8bdc70563d7236629f574e6ce7899102b59689",
+    "score_chemistry_fast_model.py": "3ce5d4cc6f6067ed630ad9563a6b08cb82d5bbf24177a6a37be5874ffc978638"
+  },
+  "repository": "/workspace/scratch/7f542e06b7cf/gvqcc_repo",
+  "mathematics": {
+    "whitening": {
+      "status": "CORRECT",
+      "identities": [
+        "G_r=V_r V_r^T=L_r L_r^T, Q_r=L_r^{-1}V_r, Y_r=L_r^T W_r imply Q_r Q_r^T=I and W_r^T V_r=Y_r^T Q_r.",
+        "The transformed baseline is P0_y=L_r^T P0_r L_r and transformed residual projection is A_y=L_r^{-1} A_r L_r^{-T}; the two triangular solves implement this orientation correctly.",
+        "The residual expansion e20+2<A_y,delta>+<K delta,delta> is exact for the same W/Y point, and its gradient is 4(A_y+K delta)Y.",
+        "H2_I is reconstructed as d+sum_b W, so d is fixed during this two-body search. This does not preserve the one-body error when W changes."
+      ],
+      "current_input_guards": "Both angle_words and tree_edges must equal the baseline; R and B must match the baseline model.",
+      "output_scope": "The final official numerical evaluator is called; two_body_error_pass is only an error_2 flag. full_circuit_verified remains false. L-BFGS termination is not a global optimality or infeasibility certificate."
+    },
+    "rank_bound": {
+      "status": "CORRECT_NECESSARY_RELAXATION",
+      "identities": [
+        "sqrt(2) scaling on each off-diagonal symmetric pair is a Frobenius isometry; applying it to both tensor pair axes preserves the official four-tensor error_2 norm.",
+        "The target shift sign agrees with official error_2: approximate tei+(S tensor I+I tensor S)/2.",
+        "Any real submitted sum of R*C squares gives a PSD packed matrix X^T X with rank at most R*C, regardless of signs in W.",
+        "The best relaxed PSD rank-k Frobenius error is sqrt(sum of squared negative eigenvalues plus squared discarded positive eigenvalues)."
+      ],
+      "C43_observed_bound": 0.008168350739532808,
+      "official_error2_limit": 0.02,
+      "interpretation": "C43 is not excluded. A lower bound below the threshold does not prove that the structured, quantized factorization can attain the threshold.",
+      "numerical_scope": "Float64 eigendecomposition with residual and orthogonality diagnostics, explicitly not interval-certified. No global score bound follows."
+    },
+    "fast_model": {
+      "status": "CORRECT_ON_STATED_LOCAL_DIFFERENTIABLE_DOMAIN",
+      "identities": [
+        "Contracting sum_c W_rbc*d_rc before summing dyads produces the same h_prime without materializing X_rc.",
+        "For scalar F(h_prime), dF/dW_rbc=<A,X_rc>-d_rc<A,outer_rb> and dF/dH2_I_rc=-<A,X_rc>; the implemented contractions and chain derivatives agree.",
+        "The error_1 derivative is correct within a fixed Hungarian eigenvector assignment and away from spectral nondifferentiability.",
+        "For epsilon>=0, 0<=sum(sqrt(lambda_i^2+epsilon^2)-abs(lambda_i))<=N*epsilon. The smoothed gap has exactly this trace-norm bias; gap_smooth-N*epsilon is a conservative exact-gap lower bound.",
+        "The reserve is added with the correct sign: require gap_smooth>=3.91489802+N*epsilon. Weight smoothing does not enter the gap directly.",
+        "smooth=0 disables both weight and eigenvalue smoothing, giving the unsmoothed search metrics for candidate rechecks."
+      ],
+      "input_guards": "Both smoothing parameters are now required to be finite and nonnegative.",
+      "limits": [
+        "The three search constraints are not the complete official acceptance predicate: raw Lambda floor and the full gap domain still require the official evaluator/verifier.",
+        "Eigenvector-assignment changes can make error_1 nonsmooth. Local derivative checks do not establish global optimality.",
+        "Outside the positive radicand domain, the returned clamped sqrt and its formal gradient are not a generic differentiable objective pair. The inspected polish driver uses a squared-radicand extension; no acceptance claim may rely on the clamp."
+      ]
+    }
+  },
+  "fixed_word_verifier_wrapper": {
+    "status": "CORRECT_FOR_THE_FIXED_SHAPE_J5_WORKFLOW",
+    "checked_rules": [
+      "Candidate W and H2_I must exist, be finite, and have exactly baseline shapes. Thus this wrapper intentionally does not accept a C43 shape against the C44 baseline.",
+      "Provided candidate angle_words/tree_edges must equal the baseline. If omitted, baseline arrays are retained.",
+      "The output is formed from all baseline arrays with only W/H2_I replaced; other candidate arrays are not substituted.",
+      "The original 15 J=5 loader paths are required for the actual 75-angle baseline and are hashed.",
+      "When --baseline-portfolio-receipt is supplied, baseline NPZ hash, all loader hashes, PASS status, 78080 verified shots, and comparison cost are checked against the receipt.",
+      "Without that receipt, output explicitly labels the cost as a numeric comparison rather than a verified-baseline gain.",
+      "The unchanged official verify function recovers words from the circuits and rejects error_1>0.020, error_2>0.020, invalid gap domain, nonfinite effective lambda, raw Lambda<=49.0, E_gap<=3.914898, and invalid circuit/resource contracts.",
+      "Only an official verify return can produce a PASS wrapper status; an exception produces REJECTED and a nonzero exit. The wrapper performs no Kaggle submission."
+    ],
+    "provenance": "For this review, the actual official verify.py hash equals the baseline portfolio receipt's verifier hash. The receipt is an existing local-verification binding, not a new public score observation.",
+    "official_verify_sha256": "ca84ca08e6e9280922cda3b539d4776ae58990b2b03b5619a53d65de67df9d2b",
+    "portfolio_receipt": "results/2026-11-14/submission_v2_full_reconstruction.json",
+    "portfolio_receipt_sha256": "ac98dcd512678f96fb8ef3227362ba02a3a283e259d98acd1e153461cf2628b1"
+  },
+  "findings_resolved_by_owners_during_review": [
+    {
+      "id": "WHITEN_TREE_BINDING",
+      "finding": "Whitening originally checked angle_words but not tree_edges, although the model used baseline edges.",
+      "resolution": "Owner added equality assertion. Independently checked the actual C43 source and converged candidate: both edges, words, and every non-W/H2_I baseline array match.",
+      "historical_run_invalidated": false
+    },
+    {
+      "id": "TRACE_SMOOTH_PARAMETER_DOMAIN",
+      "finding": "The signed N*epsilon reserve was unsound for an accepted negative eigen_smooth; NaN/Inf were also unguarded.",
+      "resolution": "Owner added finite/nonnegative guards in constructor and evaluate, and separately validated positive epsilon and invalid inputs.",
+      "historical_run_invalidated": false,
+      "reason": "Reported runs used positive finite epsilon."
+    },
+    {
+      "id": "COMPARISON_COST_PROVENANCE",
+      "finding": "The old wrapper called a numeric comparison a verified-baseline gain without binding the current inputs to a receipt.",
+      "resolution": "Owner added optional exact portfolio binding and changed unbound output to comparison-only labels.",
+      "historical_reports_rewritten": false
+    }
+  ],
+  "historical_results_preserved": {
+    "C43_converged_report": "/workspace/scratch/3815fb5fae06/score_chemistry_c43_whiten/candidate_converged.json",
+    "C43_report_original_script_sha256": "aa75cac1d20de4ce69c44f5a200d856da52e9df6a86e087150411c689c9004df",
+    "C43_reported_error1": 0.031533886210786004,
+    "C43_reported_error2": 0.021121775043258892,
+    "C43_conclusion": "This local search result fails both official error limits. It is not a proof that C43 is impossible.",
+    "fast_contraction_validation_original_model_sha256": "1da1cf99de3004f35392bd82195d4e1435aa293efac3694a6245999ee1b769f3",
+    "current_positive_smoothing_validation": "score_chemistry_trace_smoothing_validation.json",
+    "current_positive_smoothing_validation_sha256": "a704552a678dbb49fb56ed33c63f86693ec2f92c7bef09ebed4073d3a6693e95",
+    "note": "Historical run hashes were left intact. Current reviewed source hashes are recorded separately above."
+  },
+  "independent_checks": {
+    "script": "score_independent_review_checks.py",
+    "script_sha256": "0425c5d06d5d3bd1a66568b47d8c95529ae6479281ce0fc01e7d25adf056a2d8",
+    "result": "score_independent_review_checks.json",
+    "result_sha256": "24c7c7678e3140b3e20e0d650bd1d463299e3e572521896addab6b54436eca77",
+    "reproduce": "OPENBLAS_NUM_THREADS=1 python3 score_independent_review_checks.py",
+    "status": "PASS",
+    "whitened_vs_direct_squared_residual_difference": 0.0,
+    "largest_whitening_gradient_absolute_error": 1.163484890029376e-12,
+    "pair_isometry_and_relaxed_rank_bound_errors": 0.0,
+    "largest_exact_fast_contraction_absolute_error": 2.5757174171303632e-14,
+    "largest_positive_epsilon_gradient_scaled_error": 2.3445924836463934e-08,
+    "tested_positive_epsilons": [1e-9, 1e-4, 0.01],
+    "scope": "Small independently constructed N4/R2/B3/C2 models, not a production-score verification."
+  },
+  "unresolved_blocking_findings_in_requested_scope": [],
+  "claims_not_supported_by_this_review": [
+    "C43 global infeasibility or global optimality",
+    "Attainability from a relaxed lower bound below20mHa",
+    "Official acceptance from smoothed constraints alone",
+    "A new whole-circuit PASS or a new Kaggle score",
+    "A realized score improvement from these unaccepted chemistry experiments"
+  ],
+  "reviewed_implementation_files_modified_by_reviewer": false
+}

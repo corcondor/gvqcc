@@ -1,0 +1,1 @@
+{"status":"COMPLETE_CONSERVATIVE_SYMBOLIC_VALUES","operations":49477357,"scratch_peak_nonzero_bound":49,"first_peak_at":17621207,"clean_transitions":31138,"toffoli_zero":0,"toffoli_one":0,"inactive_toffoli":0,"abstract_atoms":7183250,"overflow_forgetting":3141738,"final_scratch_nonzero_bound":6}

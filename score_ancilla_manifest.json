@@ -1,0 +1,224 @@
+{
+  "status": "COMPLETE_ISOLATED_ANCILLA_STUDY_NO_WHOLE_SCORE_CLAIM",
+  "measured_or_proven": {
+    "whole_tape_symbolic_instructions": 49477357,
+    "new_CCX_merges": 0,
+    "new_Toffoli_simplifications": 0,
+    "symbolic_scratch_peak_bound": 49,
+    "hybrid_controller_static_T_delta": 0,
+    "forward_arithmetic_flag_lifetimes_removed": 16,
+    "rolling_flag_consuming_sites_before": 66,
+    "rolling_flag_consuming_sites_after_hybrid": 34,
+    "prefix_phase_bilinear_coefficients_checked": 289,
+    "hybrid_flag_sequences_per_seed": 4181,
+    "hybrid_native_seeds": 3
+  },
+  "not_established": [
+    "Global Q reduction",
+    "Whole-decoder T reduction",
+    "Whole-decoder equivalence of an emitted new tape",
+    "Competition score improvement",
+    "General active Nzero/Dzero chart repair",
+    "A 23-helper consuming multiplier"
+  ],
+  "inputs": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/dqi_inputs/821_ccx480_gauge128.kmb",
+      "bytes": 496089859,
+      "sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7"
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/bilinear_runs/dqi_cpr_compact.kmb",
+      "bytes": 406976278,
+      "sha256": "3dfa80eb777a55659dcc143466d22427ccf278e198b720f24009cc921747bbcc"
+    }
+  ],
+  "files": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_consuming_sites.json",
+      "bytes": 247442,
+      "sha256": "673948031a31d5ba8c9b0fdc607a44ee5a2259b956ed73c212d54373b733aa3b"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_hybrid_tail.py",
+      "bytes": 3710,
+      "sha256": "2283373df5d6c8374c2e5186b451283653435053e32ff49833ac27decf61519a"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_hybrid_tail_check.py",
+      "bytes": 5909,
+      "sha256": "3ccf8e685910e0641612a7faf0cfc677d2e0387e8775862f8f1868267fdd0636"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_hybrid_tail_result.json",
+      "bytes": 14849,
+      "sha256": "a9cd89c37129fcb049f9cc6e457a60ea9ef2ef24407b85643bef3643cfc7ed76"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_manifest.py",
+      "bytes": 4405,
+      "sha256": "6869125a32af9407ccbedefa5eee58db6a32585e5cc66e580bf2526bb64d45d1"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_postcpr_ccx.json",
+      "bytes": 1550,
+      "sha256": "484e58a68d39e16a5c998e55579875c501c5e0765b0723d830e648bf50d409c1"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_prefix_phase.py",
+      "bytes": 6050,
+      "sha256": "b2c74331914d1009a7b77d2bfd7c07256585843b0de1b3fedf66167c4b1fe57c"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_prefix_phase_result.json",
+      "bytes": 1399,
+      "sha256": "2b7e604bd39735ab1da8d1b640e1ccebade0bf9b08d2b24c80f3f750f8eea0e1"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_report.md",
+      "bytes": 10795,
+      "sha256": "3850d60f8a00b2305c62c3c671b664adb3450dbad86b8b929d442c4ec6b4b1b0"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_semantic.cpp",
+      "bytes": 7622,
+      "sha256": "cc9f681732459c6079ade39dc9d5c611dbf54961f8e50ff3a1f3457827ea625c"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_semantic_changes.tsv",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_semantic_check.py",
+      "bytes": 3672,
+      "sha256": "1a2dfd2fcd65d190c8ad1da32e0649e595ac840017d5f3e77a2f5c99ad396ad6"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_semantic_check_result.json",
+      "bytes": 4542,
+      "sha256": "7c1478db348dcb09535d23fa5dd796a4222bcf0e6bfae539ae0f0d3e818fad59"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_semantic_result.json",
+      "bytes": 297,
+      "sha256": "6a642496cd34be9f6d00262a9ef5cb105aabe9b87b85093e03f6b3f004d88513"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_sites.py",
+      "bytes": 5981,
+      "sha256": "95b0574d291f935f1af7e279cff99c38e81d616afdcf16a05941ec3ca9bc281e"
+    }
+  ],
+  "direct_existing_dependencies": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/kmb_profile.py",
+      "bytes": 24020,
+      "sha256": "7e7d90fde91384b8c35e45103df09d3fed8400a3ca4544f9b5870a4ee0d83ede"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/test_scratch_audit.py",
+      "bytes": 5385,
+      "sha256": "2dc56d4b0004c78ada135d20fb99f4e8770d6b43b976ec7964c0f136d8b3e30e"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/dqi_ccx_input_factor.py",
+      "bytes": 12342,
+      "sha256": "b7495cb734408541fd23a983d7767074183010bf003c4e1a7dd96062c3ae97ea"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/dqi_ccx_peephole.py",
+      "bytes": 17467,
+      "sha256": "13a7b05b7722468369d9132ef2b5f538c1698936167a662b5546915e715d9f69"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/theory_bilinear_full_build.json",
+      "bytes": 5594664,
+      "sha256": "968a5b7cb9e52c884dce27de458dcd0c71016d26da7b626021a1585d1038730b"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/inverse_v2_actual_eea_product_certificate.json",
+      "bytes": 1656,
+      "sha256": "a9adf784c06b964a58141f2de822d6eb35abab98ba8a1536939492812c47f63c"
+    }
+  ],
+  "native_source_import_inventory": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/night_c27/arithmetic/c27_paths.py",
+      "bytes": 567,
+      "sha256": "09a22e041d6dc7e12fc5e5efb8bd8b0fd2bf1d088efb6ff47cfcfb03a11fe1d5",
+      "modules": [
+        "c27_paths"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/after_c5/extractor_width/ew_paths.py",
+      "bytes": 538,
+      "sha256": "8b7eee6f40565cae506dec09e29f435c42a049fac5785cca35d0eb10f00ac051",
+      "modules": [
+        "ew_paths"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/night_c27/controller/rolling_tail.py",
+      "bytes": 10717,
+      "sha256": "fa5cc8a0e4f3124355825ea74ddd42c37be6a59b25e784a6a73951d1637b6463",
+      "modules": [
+        "rolling_tail"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/night_c27/controller/rolling_tail_conditional.py",
+      "bytes": 3900,
+      "sha256": "86eb5ca81c7c7fd3f6ecb52a261ec2ae254efd9a6c837c9b33998d60ed98a8c6",
+      "modules": [
+        "rolling_tail_conditional"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/after_c5/extractor_width/rolling_tail_early.py",
+      "bytes": 5746,
+      "sha256": "52d5eaed848f40095056d806cd69fd1f90681c857fadb14d6b3cbf9223f82d00",
+      "modules": [
+        "rolling_tail_early"
+      ]
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/after_c5/converter_width/tail_phase_defer/rolling_tail_deferred.py",
+      "bytes": 5798,
+      "sha256": "d305f4accc27986db5364d73ecf82b1bb35e36964e8536404e1bc7c561d5b419",
+      "modules": [
+        "rolling_tail_deferred"
+      ]
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "kickmix": "1.0.0",
+    "numpy": "2.5.4",
+    "cpp": "C++17; g++ -O3 -std=c++17"
+  },
+  "scratch_only_artifacts": [
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score_ancilla_semantic",
+      "role": "Rebuildable C++ executable"
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score_ancilla_postcpr_ccx.kmb",
+      "role": "Unchanged byte-identical copy after zero-merge scan",
+      "sha256": "3dfa80eb777a55659dcc143466d22427ccf278e198b720f24009cc921747bbcc"
+    }
+  ],
+  "external_branch_reports_read_not_modified": [
+    "dqi_rare_chart_v2_report.md",
+    "results/2026-11-15/kaggle_v2_submission_complete.json"
+  ],
+  "main_report": "score_ancilla_report.md",
+  "reproduction": [
+    "g++ -O3 -std=c++17 score_ancilla_semantic.cpp -o /workspace/scratch/3815fb5fae06/score_ancilla_semantic",
+    "python3 score_ancilla_semantic_check.py",
+    "kickmix_venv/bin/python score_ancilla_prefix_phase.py",
+    "kickmix_venv/bin/python score_ancilla_hybrid_tail_check.py",
+    "python3 score_ancilla_sites.py"
+  ]
+}

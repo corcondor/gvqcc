@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "linear_uncompute",
+      "changes": 1,
+      "exhaustive_checks": 16,
+      "analysis": {
+        "status": "COMPLETE_CONSERVATIVE_SYMBOLIC_VALUES",
+        "operations": 5,
+        "scratch_peak_nonzero_bound": 1,
+        "first_peak_at": 0,
+        "clean_transitions": 1,
+        "toffoli_zero": 1,
+        "toffoli_one": 0,
+        "inactive_toffoli": 0,
+        "abstract_atoms": 6,
+        "overflow_forgetting": 0,
+        "final_scratch_nonzero_bound": 0
+      }
+    },
+    {
+      "name": "nonlinear_uncompute",
+      "changes": 1,
+      "exhaustive_checks": 16,
+      "analysis": {
+        "status": "COMPLETE_CONSERVATIVE_SYMBOLIC_VALUES",
+        "operations": 3,
+        "scratch_peak_nonzero_bound": 1,
+        "first_peak_at": 0,
+        "clean_transitions": 1,
+        "toffoli_zero": 1,
+        "toffoli_one": 0,
+        "inactive_toffoli": 0,
+        "abstract_atoms": 7,
+        "overflow_forgetting": 0,
+        "final_scratch_nonzero_bound": 0
+      }
+    },
+    {
+      "name": "restored_controls",
+      "changes": 1,
+      "exhaustive_checks": 16,
+      "analysis": {
+        "status": "COMPLETE_CONSERVATIVE_SYMBOLIC_VALUES",
+        "operations": 5,
+        "scratch_peak_nonzero_bound": 1,
+        "first_peak_at": 0,
+        "clean_transitions": 1,
+        "toffoli_zero": 1,
+        "toffoli_one": 0,
+        "inactive_toffoli": 0,
+        "abstract_atoms": 7,
+        "overflow_forgetting": 0,
+        "final_scratch_nonzero_bound": 0
+      }
+    },
+    {
+      "name": "conditional_uncompute",
+      "changes": 1,
+      "exhaustive_checks": 16,
+      "analysis": {
+        "status": "COMPLETE_CONSERVATIVE_SYMBOLIC_VALUES",
+        "operations": 3,
+        "scratch_peak_nonzero_bound": 1,
+        "first_peak_at": 0,
+        "clean_transitions": 1,
+        "toffoli_zero": 1,
+        "toffoli_one": 0,
+        "inactive_toffoli": 0,
+        "abstract_atoms": 7,
+        "overflow_forgetting": 0,
+        "final_scratch_nonzero_bound": 0
+      }
+    },
+    {
+      "name": "unknown_conditional_reset",
+      "changes": 0,
+      "exhaustive_checks": 0,
+      "analysis": {
+        "status": "COMPLETE_CONSERVATIVE_SYMBOLIC_VALUES",
+        "operations": 3,
+        "scratch_peak_nonzero_bound": 2,
+        "first_peak_at": 2,
+        "clean_transitions": 0,
+        "toffoli_zero": 0,
+        "toffoli_one": 0,
+        "inactive_toffoli": 0,
+        "abstract_atoms": 8,
+        "overflow_forgetting": 0,
+        "final_scratch_nonzero_bound": 2
+      }
+    },
+    {
+      "name": "known_one",
+      "changes": 3,
+      "exhaustive_checks": 48,
+      "analysis": {
+        "status": "COMPLETE_CONSERVATIVE_SYMBOLIC_VALUES",
+        "operations": 4,
+        "scratch_peak_nonzero_bound": 2,
+        "first_peak_at": 1,
+        "clean_transitions": 0,
+        "toffoli_zero": 0,
+        "toffoli_one": 3,
+        "inactive_toffoli": 0,
+        "abstract_atoms": 6,
+        "overflow_forgetting": 0,
+        "final_scratch_nonzero_bound": 2
+      }
+    },
+    {
+      "name": "copied_equal_swap",
+      "changes": 1,
+      "exhaustive_checks": 16,
+      "analysis": {
+        "status": "COMPLETE_CONSERVATIVE_SYMBOLIC_VALUES",
+        "operations": 3,
+        "scratch_peak_nonzero_bound": 2,
+        "first_peak_at": 1,
+        "clean_transitions": 0,
+        "toffoli_zero": 1,
+        "toffoli_one": 0,
+        "inactive_toffoli": 0,
+        "abstract_atoms": 6,
+        "overflow_forgetting": 0,
+        "final_scratch_nonzero_bound": 2
+      }
+    },
+    {
+      "name": "measurement_mask",
+      "changes": 1,
+      "exhaustive_checks": 32,
+      "analysis": {
+        "status": "COMPLETE_CONSERVATIVE_SYMBOLIC_VALUES",
+        "operations": 5,
+        "scratch_peak_nonzero_bound": 1,
+        "first_peak_at": 0,
+        "clean_transitions": 2,
+        "toffoli_zero": 1,
+        "toffoli_one": 0,
+        "inactive_toffoli": 0,
+        "abstract_atoms": 7,
+        "overflow_forgetting": 0,
+        "final_scratch_nonzero_bound": 0
+      }
+    },
+    {
+      "name": "nested_condition",
+      "changes": 1,
+      "exhaustive_checks": 16,
+      "analysis": {
+        "status": "COMPLETE_CONSERVATIVE_SYMBOLIC_VALUES",
+        "operations": 7,
+        "scratch_peak_nonzero_bound": 1,
+        "first_peak_at": 2,
+        "clean_transitions": 1,
+        "toffoli_zero": 1,
+        "toffoli_one": 0,
+        "inactive_toffoli": 0,
+        "abstract_atoms": 8,
+        "overflow_forgetting": 0,
+        "final_scratch_nonzero_bound": 0
+      }
+    }
+  ]
+}

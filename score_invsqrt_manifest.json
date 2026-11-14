@@ -1,0 +1,184 @@
+{
+  "status": "COMPLETE_NO_ADOPTABLE_SCORE_IMPROVEMENT",
+  "baseline_kmb_sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6",
+  "baseline_kmx_sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1",
+  "baseline_score": 78719.52914734723,
+  "baseline_qubits": 46,
+  "baseline_modified": false,
+  "new_candidate_kmb": null,
+  "new_official_verification": false,
+  "kaggle_submitted": false,
+  "active_processes": false,
+  "local_result": {
+    "six_input_joint_minimum_AND": 5,
+    "reachable_patterns": 47,
+    "first_AND_classes": 651,
+    "first_two_AND_classes": 1524950,
+    "unresolved_rank_one_cases": 0,
+    "seven_input_extra_q17_status": "TIME_LIMIT_NOT_UNSAT",
+    "seven_input_first_AND_classes_done": 385,
+    "seven_input_first_AND_classes_total": 2667,
+    "seven_input_prefixes_tested": 3907584,
+    "seven_input_limit_seconds": 60
+  },
+  "proof_scope": "Specified two Boolean outputs from specified six input functions on the exact reachable domain; not a global circuit optimum. The seven-input extension remains unresolved.",
+  "dependencies": {
+    "python": "3.12 + NumPy",
+    "enumerator": "g++ -O3 -std=c++17, no external libraries",
+    "optional_SAT": "z3-solver==4.15.4.0",
+    "original_generator_required": false
+  },
+  "storage_note": "Raw JSON SHA-256 values are authoritative execution hashes. Parent publication manifest records any gzip transport representation.",
+  "artifacts": [
+    {
+      "path": "score_invsqrt_joint_audit.json",
+      "bytes": 272,
+      "sha256": "11df9f3c04f6d830c7cd3289bde90ed43380aea5551defb6168859e420db4787"
+    },
+    {
+      "path": "score_invsqrt_joint_audit.py",
+      "bytes": 1888,
+      "sha256": "2d34609f952411b8ffef78deea68ef88fc26bbea9ee720d8a08adb0ff18ef281"
+    },
+    {
+      "path": "score_invsqrt_joint_enum.cpp",
+      "bytes": 5414,
+      "sha256": "fb81e5473287b03100928b403893da6f43a46294cd9bc8be0009ae99ea6d673e"
+    },
+    {
+      "path": "score_invsqrt_joint_enum_all.json",
+      "bytes": 163,
+      "sha256": "a533151c91db4182084b2ae527c5045f3454bf05071d3886b3fd5f6d7e6be6a6"
+    },
+    {
+      "path": "score_invsqrt_joint_enum_fixed.json",
+      "bytes": 159,
+      "sha256": "3ac136a74043daf879f9f7a542e4b3a03835e427273465d4a9bc2037ebaad784"
+    },
+    {
+      "path": "score_invsqrt_joint_enum_review.json",
+      "bytes": 7845,
+      "sha256": "8daf5b943ed0cc4dabde9c14e4fcea5c3777af8495c248f1228c9a3f22d7cef1"
+    },
+    {
+      "path": "score_invsqrt_joint_enum_review_replay.json",
+      "bytes": 164,
+      "sha256": "67cc0c618c9b03b0bf1075a9e713ac756d42b7f20dacf780038647c7ed5a2ddb"
+    },
+    {
+      "path": "score_invsqrt_joint_extra17_bounded.json",
+      "bytes": 145,
+      "sha256": "6f77f069d661c574ed57b1c60d99e581fa05740a660a29aaa1ee6fe887dcfec6"
+    },
+    {
+      "path": "score_invsqrt_joint_extra17_fixed.json",
+      "bytes": 159,
+      "sha256": "15656a05ef2f9a7e9f7ec65255e7c5ac7e7b86dcb946870c2c45ce6946b2c358"
+    },
+    {
+      "path": "score_invsqrt_joint_extra17_table.json",
+      "bytes": 2372,
+      "sha256": "ff52f8baba1a25ed10d4ae85683e8b1e3c01aca72bc546064dcc8a02f53b37b0"
+    },
+    {
+      "path": "score_invsqrt_joint_extra17_table.txt",
+      "bytes": 202,
+      "sha256": "30c80cfe17c6427e7a6619a29f4caf1e95864981843f8f919cbbd5e76811b63f"
+    },
+    {
+      "path": "score_invsqrt_joint_k4_seed19.json",
+      "bytes": 3104,
+      "sha256": "e226e3474f7dd3a50fde150ad266be355cd4a567a4b0f0edc6f274f0a7a69b53"
+    },
+    {
+      "path": "score_invsqrt_joint_known_five.json",
+      "bytes": 1288,
+      "sha256": "82615b8e6861cbbd8fcbb08ab53d0a7901f0e7875ba91491201c3ff14810841f"
+    },
+    {
+      "path": "score_invsqrt_joint_live_probe.json",
+      "bytes": 42649,
+      "sha256": "df3993110ceba42845142ee034d8941eea9ad0ea8e192d96a608f3f2313af83f"
+    },
+    {
+      "path": "score_invsqrt_joint_live_probe.py",
+      "bytes": 2343,
+      "sha256": "2aafd78834f97ba70a0ad161525dc1333f471027d99b224176d37a1cee03ef32"
+    },
+    {
+      "path": "score_invsqrt_joint_positive_control.json",
+      "bytes": 225,
+      "sha256": "bea02b8bb59c732637e0da8fc7f7f86f0a97faa569783fafce6ed183ef0aae4d"
+    },
+    {
+      "path": "score_invsqrt_joint_positive_control.txt",
+      "bytes": 142,
+      "sha256": "703eb3f9f056a5cea583324d2f85075e0a23284f0fc4744fbfca3e53f51a3f31"
+    },
+    {
+      "path": "score_invsqrt_joint_prepare.py",
+      "bytes": 2541,
+      "sha256": "621ef68e883862db9b2678a903d07645303e9fa5d8eb2956909c775ca6f68628"
+    },
+    {
+      "path": "score_invsqrt_joint_synthesis.py",
+      "bytes": 6087,
+      "sha256": "4517549ed726f9a2ee03209da7fee79ae3eefb8a8b003969f9805538c570ee77"
+    },
+    {
+      "path": "score_invsqrt_joint_table.json",
+      "bytes": 1853,
+      "sha256": "e4fcca4d005fb26eed3641b203ac20021e49dbefb11df62125200d8e7fe69209"
+    },
+    {
+      "path": "score_invsqrt_joint_table.txt",
+      "bytes": 144,
+      "sha256": "03d1068ad685839a25da200f7b8b69e9a4c4e2791a442f003e6065073153e9b3"
+    },
+    {
+      "path": "score_invsqrt_peak_certificate.json",
+      "bytes": 2102,
+      "sha256": "7b81df987d535fb0c0f3947b973dbf4f14ff5a1291b64535cf5a6ce3ea8f7103"
+    },
+    {
+      "path": "score_invsqrt_peak_certificate.py",
+      "bytes": 1622,
+      "sha256": "2855d6c787f3fe76e0293dc68fe95686fb3e8ef37a50dfa7040e782b6f3df7c0"
+    },
+    {
+      "path": "score_invsqrt_quadratic.json",
+      "bytes": 1856,
+      "sha256": "e4e4963a61839d47d81795988765f3a84af8dfe49998f42b76ee677f5663a8e3"
+    },
+    {
+      "path": "score_invsqrt_quadratic.py",
+      "bytes": 5321,
+      "sha256": "791c1b32c4dfd5bab83caadcbccca1627e6961f6b920dacc669e8c473dd6fe29"
+    },
+    {
+      "path": "score_invsqrt_report.md",
+      "bytes": 12329,
+      "sha256": "db78735d0790f772e6012d5006cd23d7c7b2bf94f8f05c3a01a14c68f7bae573"
+    },
+    {
+      "path": "score_invsqrt_retire.json",
+      "bytes": 570017,
+      "sha256": "8ee012a7666a6954ab4e332ebf0fae8a54677140e0f7fef103f50a428862eb71"
+    },
+    {
+      "path": "score_invsqrt_retire.py",
+      "bytes": 8079,
+      "sha256": "a2f701f5ed8fb2152e88a4b4ec2b4d29897e50459378db7f0e73100d9162dfd6"
+    },
+    {
+      "path": "score_invsqrt_short_retire.json",
+      "bytes": 276896,
+      "sha256": "64d2c8a19103a2a78fea2a4aafde6bdc1d913da7a8c87eb353a6f22718bbafcb"
+    },
+    {
+      "path": "score_invsqrt_short_retire.py",
+      "bytes": 2811,
+      "sha256": "40c6396237f2dc31d3b5908ff13b72cf9d5c39811547d80b5ac5d68619ba3130"
+    }
+  ]
+}

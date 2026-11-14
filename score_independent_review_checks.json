@@ -1,0 +1,66 @@
+{
+  "status": "PASS_SMALL_INDEPENDENT_ALGEBRA_CHECKS",
+  "seed": 31415926,
+  "whitening": {
+    "direct_vs_whitened_error2_squared_difference": 0.0,
+    "gradient_absolute_errors": [
+      8.668413209456105e-13,
+      5.072782471859938e-13,
+      1.163484890029376e-12
+    ],
+    "feature_orthogonality_error": 4.440892098500626e-16
+  },
+  "rank_bound": {
+    "pair_isometry_norm_error": 0.0,
+    "optimal_relaxed_PSD_truncation_norm_error": 0.0
+  },
+  "fast_model": {
+    "exact_contraction_max_absolute_errors": [
+      0.0,
+      3.608224830031759e-16,
+      2.220446049250313e-16,
+      2.5757174171303632e-14
+    ],
+    "positive_epsilon_checks": [
+      {
+        "eigen_epsilon": 1e-09,
+        "gap_bias": 0.0,
+        "gap_bias_upper_bound": 4e-09,
+        "exact_gap": 0.9999999999999998,
+        "reported_gap_lower_bound": 0.9999999959999998,
+        "gradient_scaled_errors": [
+          7.526456619638218e-10,
+          1.121662863059147e-09,
+          1.044475108131236e-09
+        ]
+      },
+      {
+        "eigen_epsilon": 0.0001,
+        "gap_bias": 1.774495888007266e-07,
+        "gap_bias_upper_bound": 0.0004,
+        "exact_gap": 0.9999999999999998,
+        "reported_gap_lower_bound": 0.9996001774495886,
+        "gradient_scaled_errors": [
+          1.5153446249549396e-09,
+          3.5192382341620032e-09,
+          2.201738925150829e-09
+        ]
+      },
+      {
+        "eigen_epsilon": 0.01,
+        "gap_bias": 0.0017505036408520525,
+        "gap_bias_upper_bound": 0.04,
+        "exact_gap": 0.9999999999999998,
+        "reported_gap_lower_bound": 0.9617505036408518,
+        "gradient_scaled_errors": [
+          2.3445924836463934e-08,
+          1.8231890960328142e-09,
+          7.483989569666279e-10
+        ]
+      }
+    ]
+  },
+  "model_sha256": "3ce5d4cc6f6067ed630ad9563a6b08cb82d5bbf24177a6a37be5874ffc978638",
+  "check_script_sha256": "0425c5d06d5d3bd1a66568b47d8c95529ae6479281ce0fc01e7d25adf056a2d8",
+  "scope": "Small algebra/gradient checks, no production optimization, no decoder verification, no score claim."
+}

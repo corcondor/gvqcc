@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "positive_trace_smoothing": [
+    {
+      "epsilon": 1e-07,
+      "actual_gap_bias": 1.528405846329406e-09,
+      "conservative_bound": 7.6e-06,
+      "exact_mode_unchanged": true,
+      "derivative_checks": [
+        {
+          "step": 1e-06,
+          "finite_difference": [
+            -0.3466847893207614,
+            8.204583719750858,
+            0.007266493073920799,
+            5.689599902325426
+          ],
+          "analytic": [
+            -0.34668585346030767,
+            8.204584198745755,
+            0.00726649302144302,
+            5.689618044232546
+          ],
+          "scaled_error": 3.188608589554662e-06,
+          "assignment_changes": 0
+        }
+      ]
+    },
+    {
+      "epsilon": 1e-09,
+      "actual_gap_bias": 1.1368683772161603e-13,
+      "conservative_bound": 7.6e-08,
+      "exact_mode_unchanged": true,
+      "derivative_checks": [
+        {
+          "step": 1e-06,
+          "finite_difference": [
+            -0.3466494646886531,
+            8.204583719750858,
+            0.007266493073920799,
+            5.68901441511116
+          ],
+          "analytic": [
+            -0.34665042407431645,
+            8.204584198745755,
+            0.00726649302144302,
+            5.68903072467721
+          ],
+          "scaled_error": 2.8668526496220107e-06,
+          "assignment_changes": 0
+        }
+      ]
+    }
+  ],
+  "invalid_parameter_guards": [
+    {
+      "argument": "eigen_smooth",
+      "value": "-1.0",
+      "rejected": true
+    },
+    {
+      "argument": "eigen_smooth",
+      "value": "nan",
+      "rejected": true
+    },
+    {
+      "argument": "eigen_smooth",
+      "value": "inf",
+      "rejected": true
+    },
+    {
+      "argument": "smooth",
+      "value": "-1.0",
+      "rejected": true
+    },
+    {
+      "argument": "smooth",
+      "value": "nan",
+      "rejected": true
+    },
+    {
+      "argument": "smooth",
+      "value": "inf",
+      "rejected": true
+    }
+  ],
+  "model_sha256": "3ce5d4cc6f6067ed630ad9563a6b08cb82d5bbf24177a6a37be5874ffc978638",
+  "script_sha256": "cfe465a5a459f518eb5a0e2de6d90ecf918f2b661672bd4c98d3f686efa30bc4",
+  "baseline_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5"
+}

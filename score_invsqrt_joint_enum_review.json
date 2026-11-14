@@ -1,0 +1,90 @@
+{
+  "status": "PASS_COMPLETE_FINITE_ENUMERATION_LOWER_BOUND_FOR_SPECIFIED_SIX_INPUT_TABLE",
+  "frozen": true,
+  "reviewer": "/root/ancilla_contraction",
+  "source_files_modified": false,
+  "file_sha256": {
+    "score_invsqrt_joint_enum.cpp": "fb81e5473287b03100928b403893da6f43a46294cd9bc8be0009ae99ea6d673e",
+    "score_invsqrt_joint_table.json": "e4fcca4d005fb26eed3641b203ac20021e49dbefb11df62125200d8e7fe69209",
+    "score_invsqrt_joint_table.txt": "03d1068ad685839a25da200f7b8b69e9a4c4e2791a442f003e6065073153e9b3",
+    "score_invsqrt_joint_enum_all.json": "a533151c91db4182084b2ae527c5045f3454bf05071d3886b3fd5f6d7e6be6a6",
+    "score_invsqrt_joint_enum_fixed.json": "3ac136a74043daf879f9f7a542e4b3a03835e427273465d4a9bc2037ebaad784",
+    "score_invsqrt_joint_positive_control.txt": "703eb3f9f056a5cea583324d2f85075e0a23284f0fc4744fbfca3e53f51a3f31",
+    "score_invsqrt_joint_positive_control.json": "bea02b8bb59c732637e0da8fc7f7f86f0a97faa569783fafce6ed183ef0aae4d",
+    "score_invsqrt_joint_known_five.json": "82615b8e6861cbbd8fcbb08ab53d0a7901f0e7875ba91491201c3ff14810841f",
+    "score_invsqrt_joint_synthesis.py": "4517549ed726f9a2ee03209da7fee79ae3eefb8a8b003969f9805538c570ee77",
+    "score_invsqrt_retire.py": "a2f701f5ed8fb2152e88a4b4ec2b4d29897e50459378db7f0e73100d9162dfd6",
+    "score_invsqrt_joint_enum_review_replay.json": "67cc0c618c9b03b0bf1075a9e713ac756d42b7f20dacf780038647c7ed5a2ddb",
+    "invsqrt_structural_e46.kmx": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1"
+  },
+  "proved_claim": {
+    "input_functions": 6,
+    "reachable_patterns": 47,
+    "output_functions": 2,
+    "no_circuit_with_at_most_AND_gates": 4,
+    "verified_existing_AND_gates": 5,
+    "minimum_AND_count_in_stated_model": 5
+  },
+  "circuit_model": "Acyclic Boolean straight-line circuits over the six stated input truth functions on the 47-row domain. Constants, NOT, arbitrary XOR/affine combinations and fanout are free. Each nonlinear gate is an AND of two affine combinations of input functions and earlier AND results. No topology, fanout, gate-depth, or clean-workspace restriction is imposed in this model.",
+  "table_integrity": {
+    "json_to_txt_bitvectors": "PASS: constant, all six inputs, and both output vectors reconstructed exactly",
+    "distinct_reachable_inputs": 47,
+    "affine_input_rank": 7,
+    "affine_plus_outputs_rank": 9,
+    "affine_plus_quadratic_span_rank": 22,
+    "independent_full_input_replay": {
+      "status": "PASS",
+      "legal_inputs": 3133452,
+      "matched_rows": 47,
+      "conditional_blocks_checked_value_identity": 74,
+      "explicit_conditional_value_updates": 0,
+      "output_qubits_clean_at_replacement_entry": true
+    },
+    "replay_method": "Independent bit-packed simulation of the pinned KMX on all x=1..3133452. X/CX/CCX/CSWAP/SWAP/HMR values were implemented directly, phase-only operations ignored for values. Each PUSH/POP block was checked to leave all values unchanged, making both enabled/skipped branches equivalent for extraction. No unhandled value-changing opcode was accepted.",
+    "source_inputs_at_replacement": [
+      18,
+      9,
+      34,
+      36,
+      30,
+      32
+    ],
+    "target_outputs": [
+      19,
+      20
+    ],
+    "capture_before_line": 7599,
+    "replacement_lines_inclusive": [
+      8433,
+      8544
+    ]
+  },
+  "completeness_arguments": {
+    "affine_quotient": "Basis.quotient eliminates every pivot from high to low, giving a canonical representative modulo the full preceding function span. The early-stop rem routine is used only as a membership predicate, where it is valid. Deduplication uses quotient, not rem.",
+    "constants_and_factor_normalization": "(a+c)(b+d)=ab+cb+da+cd, with the added terms in the preceding affine span. For independent homogeneous coefficient vectors a,b, the three bases of span{a,b} yield ab, a(a+b)=ab+a, and b(a+b)=ab+b. Exactly one ordered representative satisfies a<b<a XOR b. Swapping factors adds no case. Dependent, zero, or equal factors only produce an existing affine function and are redundant.",
+    "first_gate_coverage": "All 2-dimensional subspaces of the six-dimensional homogeneous input space are covered. There are (63*62)/6=651; the actual first gate inserted initially is deduplicated by its quotient against the same set. The observed initial quadratic rank22 confirms no missing first-gate quotient due to collapse on the 47 rows.",
+    "second_gate_coverage": "For each first-gate span, every homogeneous parity in the seven available nonconstant functions is considered, then every normalized factor pair. Nonzero product quotients are deduplicated only when they generate exactly the same enlarged affine function span. Later gates can use arbitrary parities from that span, so choosing one representative is complete.",
+    "one_product_solver": "For preceding functions f_i, Boolean idempotence makes each diagonal term f_i^2=f_i affine. The nonaffine product quotient is therefore sum_(i<j)(a_i b_j+a_j b_i) quotient(f_i f_j). The code enumerates every nonzero a by Gray code and solves the full GF(2) linear system in b. Its quadratic-span preliminary rejection is a necessary membership test. Thus one_product is exact for its target coset.",
+    "third_and_fourth_gate_criterion": "After the first two gates, the two target cosets have rank2 in every enumerated case. If two further AND gates suffice, their cosets must form a basis of that same two-dimensional output space; the third gate must therefore equal one of t0, t1, or t0 XOR t1 modulo the current span. Those three directions are all checked. Any two realizations of one direction differ by an existing affine function, so their enlarged spans are identical; one representative product is sufficient for the fourth-gate existence check. The final exact output solves are an additional witness check.",
+    "lower_rank_and_fewer_gate_cases": "A minimal circuit has no AND result already in the preceding affine span: such a gate can be removed by substitution. The targets initially add rank2, excluding zero/one-AND circuits. A two-AND realization would leave target quotient rank0 after its first two independent gates; a three-AND realization would leave rank at most1. The exhaustive scan reports rank1_unresolved=0, so none of these lower-rank cases occurs. The generic executable would be incomplete on a table with rank1_unresolved>0; it explicitly reports INCOMPLETE_RANK1 in that situation."
+  },
+  "independent_enum_replay": {
+    "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+    "first_gates_completed": 651,
+    "first_gates_total": 651,
+    "second_gates_tried": 1524950,
+    "rank1_unresolved": 0,
+    "seconds": 15.6109
+  },
+  "controls": {
+    "positive_control": "PASS: the reported four-AND witness was independently evaluated on every one of the same47 input rows and matches both control target bitvectors",
+    "existing_five_gate_program": "PASS: independently evaluated the algebraic five-AND transcript against all47 original input/output rows"
+  },
+  "scope_limits": [
+    "This is an exact finite-table XOR/AND lower bound, not a claim of global invsqrt circuit optimality or a universal quantum gate lower bound.",
+    "The claim fixes the six input functions at this replacement seam. Additional correlated live wires, including q17, enlarge the admissible function space and are not excluded by this result.",
+    "The seven-input q17 fixed-first-gate negative run and general run stopped after385/2667 first gates do not establish a seven-input lower bound; the latter remains UNKNOWN.",
+    "The proof relies on the reviewed implementation plus a fully completed deterministic replay, not an independently checked formal UNSAT certificate.",
+    "No candidate circuit, new official whole-circuit verification, or score improvement is produced by this review."
+  ]
+}

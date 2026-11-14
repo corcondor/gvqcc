@@ -1,0 +1,47 @@
+{
+  "status": "COMPLETE",
+  "input": "/workspace/scratch/3815fb5fae06/bilinear_runs/dqi_cpr_compact.kmb",
+  "input_sha256": "3dfa80eb777a55659dcc143466d22427ccf278e198b720f24009cc921747bbcc",
+  "scope": "Candidate written; full decoder verification is still required.",
+  "identity_proof": {
+    "status": "PASS",
+    "basis_states": 16,
+    "classical_conditions": 2,
+    "checks": 32,
+    "phase": "Both sides are identical basis permutations with no phase gates."
+  },
+  "window": 512,
+  "counts": {
+    "ccx_scanned": 363694,
+    "signature_pairs": 268536,
+    "four_distinct_qubit_pairs": 42439,
+    "barrier_free_pairs": 1627,
+    "proved_commuting_pairs": 0
+  },
+  "proved_pairs": [],
+  "blocks": [],
+  "total_current_block_rewrites": 0,
+  "scan_seconds": 2.4643202950010163,
+  "total_seconds": 29.27785869699983,
+  "max_rss_kib": 463248,
+  "output": "/workspace/scratch/3815fb5fae06/score_ancilla_postcpr_ccx.kmb",
+  "output_sha256": "3dfa80eb777a55659dcc143466d22427ccf278e198b720f24009cc921747bbcc",
+  "after_header": {
+    "version": 2,
+    "num_qubits": 889,
+    "num_bits": 154799,
+    "num_registers": 4165,
+    "num_ops": 49477357,
+    "num_ops_with_3_target_qubits": 382934,
+    "num_ops_with_2_target_qubits": 22310718,
+    "num_ops_with_1_target_qubits": 273882,
+    "num_ops_with_1_target_bit": 21480153,
+    "num_ops_with_1_condition_bit": 21770524,
+    "num_ops_with_angle": 0,
+    "num_info_tags": 0,
+    "num_info_tag_chars": 0
+  },
+  "binary_layout_validation": "passed",
+  "static_ccx_reduction": 0,
+  "static_cx_added": 0
+}

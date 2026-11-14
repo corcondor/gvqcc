@@ -1,0 +1,94 @@
+{
+  "status": "SPECTRAL_NECESSARY_BOUND_COMPUTED",
+  "reference_fcidump": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dfthcsos/FeMoCo76o113e.fcidump",
+  "reference_sha256": "e5a48af746fd075026dec9e8f5df2d363802a121e8c53af9a0b984bde695e1bd",
+  "matrix_dimension": 2926,
+  "symmetry_error": 0.0,
+  "negative_eigenvalue_error_floor": 0.0002976497842924111,
+  "eigendecomposition_frobenius_residual": 2.969374659802007e-14,
+  "eigenvectors_orthogonality_frobenius_error": 1.8836533803410962e-13,
+  "bound_scope": "All real PSD rank<=R*C matrices; relaxes all submitted factorization structure. Numerical float64 calculation, not interval-certified.",
+  "records": [
+    {
+      "R": 8,
+      "C": 40,
+      "rank_cap": 320,
+      "frobenius_error_lower_bound": 0.011743128105747165,
+      "margin_to_20_mHa": -0.008256871894252836,
+      "excluded_if_numerical_error_negligible": false
+    },
+    {
+      "R": 8,
+      "C": 41,
+      "rank_cap": 328,
+      "frobenius_error_lower_bound": 0.01026698627777446,
+      "margin_to_20_mHa": -0.00973301372222554,
+      "excluded_if_numerical_error_negligible": false
+    },
+    {
+      "R": 8,
+      "C": 42,
+      "rank_cap": 336,
+      "frobenius_error_lower_bound": 0.009129706358898359,
+      "margin_to_20_mHa": -0.010870293641101642,
+      "excluded_if_numerical_error_negligible": false
+    },
+    {
+      "R": 8,
+      "C": 43,
+      "rank_cap": 344,
+      "frobenius_error_lower_bound": 0.008168350739532808,
+      "margin_to_20_mHa": -0.011831649260467193,
+      "excluded_if_numerical_error_negligible": false
+    },
+    {
+      "R": 8,
+      "C": 44,
+      "rank_cap": 352,
+      "frobenius_error_lower_bound": 0.007361139556542451,
+      "margin_to_20_mHa": -0.01263886044345755,
+      "excluded_if_numerical_error_negligible": false
+    },
+    {
+      "R": 8,
+      "C": 45,
+      "rank_cap": 360,
+      "frobenius_error_lower_bound": 0.006675631407586347,
+      "margin_to_20_mHa": -0.013324368592413652,
+      "excluded_if_numerical_error_negligible": false
+    },
+    {
+      "R": 8,
+      "C": 46,
+      "rank_cap": 368,
+      "frobenius_error_lower_bound": 0.006055856298669412,
+      "margin_to_20_mHa": -0.013944143701330588,
+      "excluded_if_numerical_error_negligible": false
+    }
+  ],
+  "eigenvalues_near_rank344": [
+    0.0015757342088769475,
+    0.0015483835093526666,
+    0.0015355904756900248,
+    0.00150205153850572,
+    0.0014476682541204905,
+    0.0014127531974450225,
+    0.001391975286693878,
+    0.001344646606463888,
+    0.0013343954827447488,
+    0.001312208024589369,
+    0.0013004984650027737,
+    0.0012866866872746456,
+    0.0012689382964470688,
+    0.0012368097183346322,
+    0.0012186730924897715,
+    0.0012045965511188787,
+    0.001179283599380579,
+    0.0011453714173024997,
+    0.001133882064919733,
+    0.0011219640049343932
+  ],
+  "seconds": 28.18484187300055,
+  "peak_rss_mib": 596.609375,
+  "script_sha256": "341a17dfd2670a7243ffe6bd53c9acf79fef249165b3a1c36cadb20165888af0"
+}

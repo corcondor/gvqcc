@@ -1,0 +1,94 @@
+{
+  "status": "NO_ACCEPTED_C44_IMPROVEMENT",
+  "scope": "C44 fixed-word experiment code and evidence; root-owned C43/global-rank work is separate",
+  "baseline_npz_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "files": [
+    {
+      "path": "score_chemistry_report.md",
+      "sha256": "53d0c9ed926645d3590c473af0bd70483076166a83054f47e7188ed5791cc64f",
+      "bytes": 14284
+    },
+    {
+      "path": "score_chemistry_summary.json",
+      "sha256": "fc0237635c3191d41ca3761bdc0dae96ad437429dcb33a000541ad8a506fbc79",
+      "bytes": 4999
+    },
+    {
+      "path": "score_chemistry_c44_endpoint_records.json",
+      "sha256": "46f3fa5cbe73b84bc970552706f87fe6347e64a5eed24b3ded846374a76f6a3a",
+      "bytes": 18667
+    },
+    {
+      "path": "score_chemistry_c44_whiten_descent_record.json",
+      "sha256": "a480ea15a0f660a8f4ce87d6b7d3b12f57771bb03f07a154c9ee64df9d7355ac",
+      "bytes": 3815
+    },
+    {
+      "path": "score_chemistry_c44_trace_smooth_record.json",
+      "sha256": "d0b6cc3050ef1b569939d40536fcaf1bd612cb36fefddd27d3c19bfe4d869870",
+      "bytes": 4168
+    },
+    {
+      "path": "score_chemistry_c44_goal_branch_record.json",
+      "sha256": "55b3cefd51d2040de93346b3f328f8d4c0cc0fbb102e1c5d190bdc2537eecbdb",
+      "bytes": 7429
+    },
+    {
+      "path": "score_chemistry_polish.py",
+      "sha256": "a150337099608702b8c5ec7a6714a3f06c47062c21904ab94bc99067c9a3c1d6",
+      "bytes": 13923
+    },
+    {
+      "path": "score_chemistry_fast_model.py",
+      "sha256": "3ce5d4cc6f6067ed630ad9563a6b08cb82d5bbf24177a6a37be5874ffc978638",
+      "bytes": 4492
+    },
+    {
+      "path": "score_chemistry_fast_model_check.py",
+      "sha256": "335030d065b2f6ccaab66338d55a9ce32fe2db1f79173ee5df4799ce61eccb14",
+      "bytes": 2607
+    },
+    {
+      "path": "score_chemistry_fast_model_validation.json",
+      "sha256": "9251eb4f2cc9dc3f65478571207c954332c425d96c6a1be6d99245fca74bfe15",
+      "bytes": 3417
+    },
+    {
+      "path": "score_chemistry_trace_smoothing_check.py",
+      "sha256": "cfe465a5a459f518eb5a0e2de6d90ecf918f2b661672bd4c98d3f686efa30bc4",
+      "bytes": 3571
+    },
+    {
+      "path": "score_chemistry_trace_smoothing_validation.json",
+      "sha256": "a704552a678dbb49fb56ed33c63f86693ec2f92c7bef09ebed4073d3a6693e95",
+      "bytes": 2217
+    },
+    {
+      "path": "score_chemistry_identity_polish.py",
+      "sha256": "1e241bb9994655c54bd4f9a6c4482c025e578c5af78699bc681ba69ee552e582",
+      "bytes": 6384
+    },
+    {
+      "path": "score_chemistry_restore.py",
+      "sha256": "207c6df80b1e1da6cf4d83667f0390ba343ee1e08efad3bb399f03660ccb03f0",
+      "bytes": 3601
+    }
+  ],
+  "required_existing_repo_modules": [
+    "inverse_v2_chemistry_refit.py",
+    "inverse_v2_chemistry_screen.py"
+  ],
+  "external_runtime_inputs": [
+    "../dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+    "../official_sources/Inzainos/verifiers/dfthcsos/scoreinfra",
+    "../official_sources/Inzainos/verifiers/dfthcsos/FeMoCo76o113e.fcidump",
+    "../official_sources/Inzainos/verifiers/dfthcsos/FeMoCo76o113e.fixed_shifts.npz"
+  ],
+  "rejected_npz_included": false,
+  "syntax_and_json_readability_checked": true,
+  "external_candidate_update": {
+    "latest_pending_task": 1051,
+    "new_npz_available": false,
+    "verification_status": "USER_REPORTED_ONLY_NOT_OFFICIALLY_REEVALUATED"
+  }
+}
