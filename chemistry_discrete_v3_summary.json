@@ -1,0 +1,112 @@
+{
+  "created_at_utc": "2026-11-14T21:17:44.182123+00:00",
+  "scope": "Bounded independent integer-angle search; no user candidate file was available. No successful Kaggle submission or complete optimized circuit is claimed.",
+  "baseline": {
+    "path": "dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+    "sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+    "lambda_eff": 46.90658950862355,
+    "T": 14728,
+    "Q": 427
+  },
+  "screening": {
+    "first_order_affine_templates": 9975,
+    "high_address_curvature_templates": 1125,
+    "exact_table_screens": 20,
+    "refit_candidates": 3,
+    "repair_candidates": 3,
+    "large_array_artifacts_required_for_reproduction": false
+  },
+  "best": {
+    "index": 1,
+    "official_numerical_metrics": {
+      "error_1": 0.019999995000002664,
+      "error_2": 0.0199999949999999,
+      "Lambda": 282.9631897205862,
+      "E_SOS": -22144.188248005,
+      "E_gap": 3.914898005001305,
+      "lambda_eff": 46.90647745740767,
+      "gap_in_domain": true
+    },
+    "numerically_valid": true,
+    "changed_words": [
+      {
+        "row": 908,
+        "angle": 27,
+        "old": 194,
+        "new": 193,
+        "xor": 3
+      }
+    ],
+    "compact_path": "gvqcc_repo/chemistry_discrete_v3_best_compact.npz",
+    "compact_sha256": "a4cd3f6fa11ffa30100c81f8da57f02d6e7ef42f998de9216416bdc3a9bf9529",
+    "compact_bytes": 538697,
+    "compact_fields": [
+      "angle_words",
+      "W",
+      "H2_I"
+    ],
+    "full_array_sha256": "3ac48c40f5aa7597589768bdc2330e92356ea621de9e974c57649785e61c46ce",
+    "full_npz_sha256": "53fd401874c0e07ea7e24fce25d4807b5e614442451e722b6c8a1aeeec74a227",
+    "all_arrays_restored_identically": true,
+    "byte_identical_restore_current_environment": true,
+    "numpy_version": "2.3.5"
+  },
+  "cost_scope": {
+    "lambda_reduction_vs_reproduced_baseline": 0.0001120512158792053,
+    "relative_change_percent_assuming_unchanged_TQ": -0.0002388816092824264,
+    "hypothetical_cost_with_unchanged_TQ": 294988082.19688296,
+    "lambda_reduction_needed_for_one_extra_Toffoli_per_loader_pass": 0.006368851257107622,
+    "maximum_extra_Toffoli_per_loader_pass_affordable": 0.01759128372974761,
+    "single_word_loader_cost_established": false,
+    "full_circuit_verified": false,
+    "submitted": false,
+    "improves_user_reported_46_905894137": false
+  },
+  "final_candidate_outcomes": [
+    {
+      "index": 1,
+      "metrics": {
+        "error_1": 0.019999995000002664,
+        "error_2": 0.0199999949999999,
+        "Lambda": 282.9631897205862,
+        "E_SOS": -22144.188248005,
+        "E_gap": 3.914898005001305,
+        "lambda_eff": 46.90647745740767,
+        "gap_in_domain": true
+      },
+      "numerically_valid": true
+    },
+    {
+      "index": 5,
+      "metrics": {
+        "error_1": 0.019999995000056628,
+        "error_2": 0.019999995000003292,
+        "Lambda": 282.9639490324221,
+        "E_SOS": -22144.188248005,
+        "E_gap": 3.914898005001305,
+        "lambda_eff": 46.90654083088069,
+        "gap_in_domain": true
+      },
+      "numerically_valid": true
+    },
+    {
+      "index": 6,
+      "metrics": {
+        "error_1": 0.02031365168134054,
+        "error_2": 0.020209541056614364,
+        "Lambda": 283.2362075002516,
+        "E_SOS": -22144.27066389005,
+        "E_gap": 3.997313890049554,
+        "lambda_eff": 47.41718606661348,
+        "gap_in_domain": true
+      },
+      "numerically_valid": false
+    }
+  ],
+  "limitations": [
+    "First-order and diagonal Gauss-Newton scores rank candidates; they are not certified improvement bounds.",
+    "Affine low-bit loader transformations have separate exact mapping checks, but the selected single-word change is not such an affine mask.",
+    "No general loader resynthesis or full circuit verification was performed.",
+    "The user baseline 46.905894137 and continuous objective44.17 belong to unavailable arrays; they were not reproduced."
+  ]
+}

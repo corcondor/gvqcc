@@ -1,0 +1,51 @@
+{
+  "status": "BOUNDARY_AND_REVERSE_GUARD_PASS",
+  "additional_cases": [
+    {
+      "label": "last_batch_constant",
+      "status": "PASS",
+      "toffoli_per_pass": 4033,
+      "cases": 36600,
+      "tag_profile_sufficient": true,
+      "changed_words": 1220
+    },
+    {
+      "label": "coupled_high_bits",
+      "status": "PASS",
+      "toffoli_per_pass": 4033,
+      "cases": 36600,
+      "tag_profile_sufficient": true,
+      "changed_words": 610
+    },
+    {
+      "label": "unsafe_variable_tag",
+      "status": "REJECTED",
+      "tag_profile_sufficient": false,
+      "failure": "('k=1/reverse', 'output mismatch', 0, 0, 0)"
+    }
+  ],
+  "serialization_exact_proof_pass": true,
+  "changed_circuits": [
+    {
+      "batch": 0,
+      "source": "71735b23037e8a64d16e39b3347d440b36bdf8813613ec70c36a85bfd362d7c2",
+      "candidate": "622eba5887ecf3e6aee891a151798c555233b407f6afad298bbce3ce3bbd12db",
+      "pre": [],
+      "post": [
+        "CX q0 q11"
+      ]
+    },
+    {
+      "batch": 1,
+      "source": "e63f9de0a60ff79fc6f817056a1f95f5efed9ae82955cf56b11492e5ff28d70b",
+      "candidate": "577e67f72e33bf68f7e5e93a93457a565c556491f0afc1086e26218d9d6abd54",
+      "pre": [
+        "CX q0 q11"
+      ],
+      "post": []
+    }
+  ],
+  "byte_identical_circuit_count": 13,
+  "builder_sha256": "c9d7f66105b669be8d21094743684f38055468da79d2cede6e16141cb5454b84",
+  "physics_accuracy_checked": false
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "Conditional break-even calculation; no candidate validity or score claim",
+  "baseline_npz_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "baseline_lambda": 46.90658950862355,
+  "baseline_t": 14728,
+  "baseline_qubits": 427,
+  "original_per_pass_loader_t": 4033,
+  "formula": "lambda_new * Q_new * (T_nonloader_new + 2*L_new) < lambda_old * Q_old * T_old",
+  "rows": [
+    {
+      "candidate_lambda_if_numerically_valid": 44.17,
+      "candidate_qubits": 427,
+      "nonloader_t": 6662,
+      "per_pass_loader_strict_upper_bound": 4489.242815066873,
+      "max_improving_integer_loader": 4489,
+      "cost_ratio_with_original_loader": 0.9416587405460284,
+      "boundary_cost_ratio": 0.9999689504440444,
+      "next_integer_cost_ratio": 1.0000968237113645
+    },
+    {
+      "candidate_lambda_if_numerically_valid": 45.3,
+      "candidate_qubits": 427,
+      "nonloader_t": 6662,
+      "per_pass_loader_strict_upper_bound": 4294.16832541951,
+      "max_improving_integer_loader": 4294,
+      "cost_ratio_with_original_loader": 0.9657491724413647,
+      "boundary_cost_ratio": 0.9999779250224616,
+      "next_integer_cost_ratio": 1.000109069668366
+    },
+    {
+      "candidate_lambda_if_numerically_valid": 46.4,
+      "candidate_qubits": 427,
+      "nonloader_t": 6662,
+      "per_pass_loader_strict_upper_bound": 4113.399248739306,
+      "max_improving_integer_loader": 4113,
+      "cost_ratio_with_original_loader": 0.9892000353483296,
+      "boundary_cost_ratio": 0.9999463692467362,
+      "next_integer_cost_ratio": 1.0000806984204664
+    }
+  ]
+}

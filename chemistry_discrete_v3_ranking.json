@@ -1,0 +1,189 @@
+{
+  "baseline": {
+    "lambda_eff_smooth": 46.90658950861408,
+    "Lambda_smooth": 282.9645325169254,
+    "gap": 3.914898001499978,
+    "error1": 0.019999997999996976,
+    "error2": 0.0199999984994053
+  },
+  "mu": [
+    0.00020490204278176348,
+    4.157669356168666,
+    0.05637299652286543
+  ],
+  "affine_candidates": [
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 65,
+      "mask": 1,
+      "num_words": 1220,
+      "predicted_lagrangian_change": -0.3522705162908061
+    },
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 39,
+      "mask": 7,
+      "num_words": 610,
+      "predicted_lagrangian_change": -0.3463980537365536
+    },
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 39,
+      "mask": 145,
+      "num_words": 608,
+      "predicted_lagrangian_change": -0.33454244591350735
+    },
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 39,
+      "mask": 521,
+      "num_words": 612,
+      "predicted_lagrangian_change": -0.33118809630906876
+    },
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 39,
+      "mask": 35,
+      "num_words": 610,
+      "predicted_lagrangian_change": -0.33112053114351603
+    },
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 39,
+      "mask": 37,
+      "num_words": 610,
+      "predicted_lagrangian_change": -0.3305549249417142
+    },
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 39,
+      "mask": 640,
+      "num_words": 580,
+      "predicted_lagrangian_change": -0.32692425276475534
+    },
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 39,
+      "mask": 768,
+      "num_words": 580,
+      "predicted_lagrangian_change": -0.3241177460259191
+    },
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 65,
+      "mask": 2049,
+      "num_words": 1024,
+      "predicted_lagrangian_change": -0.3231869445919982
+    },
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 39,
+      "mask": 24,
+      "num_words": 608,
+      "predicted_lagrangian_change": -0.3206792326589898
+    },
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 39,
+      "mask": 2,
+      "num_words": 610,
+      "predicted_lagrangian_change": -0.3206036689493661
+    },
+    {
+      "kind": "affine_lsb_xor",
+      "angle": 39,
+      "mask": 264,
+      "num_words": 612,
+      "predicted_lagrangian_change": -0.3178330756290279
+    }
+  ],
+  "single_candidates": [
+    {
+      "kind": "single_word",
+      "row": 251,
+      "angle": 39,
+      "delta": 1,
+      "predicted_lagrangian_change": -0.1440509064410277
+    },
+    {
+      "kind": "single_word",
+      "row": 299,
+      "angle": 71,
+      "delta": -1,
+      "predicted_lagrangian_change": -0.13311801308792187
+    },
+    {
+      "kind": "single_word",
+      "row": 219,
+      "angle": 39,
+      "delta": 1,
+      "predicted_lagrangian_change": -0.10410690410464596
+    },
+    {
+      "kind": "single_word",
+      "row": 251,
+      "angle": 45,
+      "delta": 1,
+      "predicted_lagrangian_change": -0.08736799465145938
+    },
+    {
+      "kind": "single_word",
+      "row": 299,
+      "angle": 74,
+      "delta": -1,
+      "predicted_lagrangian_change": -0.08714087974605617
+    },
+    {
+      "kind": "single_word",
+      "row": 311,
+      "angle": 39,
+      "delta": 1,
+      "predicted_lagrangian_change": -0.07817232253511887
+    },
+    {
+      "kind": "single_word",
+      "row": 219,
+      "angle": 45,
+      "delta": 1,
+      "predicted_lagrangian_change": -0.0672105914701667
+    },
+    {
+      "kind": "single_word",
+      "row": 267,
+      "angle": 65,
+      "delta": 1,
+      "predicted_lagrangian_change": -0.06416945849437637
+    },
+    {
+      "kind": "single_word",
+      "row": 283,
+      "angle": 65,
+      "delta": 1,
+      "predicted_lagrangian_change": -0.0599128188313145
+    },
+    {
+      "kind": "single_word",
+      "row": 664,
+      "angle": 66,
+      "delta": -1,
+      "predicted_lagrangian_change": -0.05334386565757862
+    },
+    {
+      "kind": "single_word",
+      "row": 395,
+      "angle": 30,
+      "delta": 1,
+      "predicted_lagrangian_change": -0.047946984625347605
+    },
+    {
+      "kind": "single_word",
+      "row": 570,
+      "angle": 43,
+      "delta": -1,
+      "predicted_lagrangian_change": -0.04790648700550693
+    }
+  ],
+  "seconds": 13.236155346003216,
+  "ranking_is_first_order_heuristic": true,
+  "affine_template_count": 9975
+}

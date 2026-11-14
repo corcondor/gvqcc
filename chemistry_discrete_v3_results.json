@@ -1,0 +1,275 @@
+{
+  "baseline": {
+    "lambda_eff_smooth": 46.90658950861408,
+    "Lambda_smooth": 282.9645325169254,
+    "gap": 3.914898001499978,
+    "error1": 0.019999997999996976,
+    "error2": 0.0199999984994053
+  },
+  "exact_screen_count": 12,
+  "results": [
+    {
+      "proposal": {
+        "kind": "single_word",
+        "row": 908,
+        "angle": 27,
+        "delta": -1,
+        "quadratic_proxy": -0.0002207316748114929,
+        "index": 1,
+        "metrics_before_refit": {
+          "lambda_eff_smooth": 46.906589030984286,
+          "Lambda_smooth": 282.9645324377495,
+          "gap": 3.9148979223240303,
+          "error1": 0.01998959560264259,
+          "error2": 0.019999466720800167
+        },
+        "seconds": 22.85733359599908
+      },
+      "trace": [
+        {
+          "outer": 0,
+          "rho": 10.0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90656669664488,
+            "Lambda_smooth": 282.96426771341396,
+            "gap": 3.914897881977481,
+            "error1": 0.020001046982693987,
+            "error2": 0.019999540564062182
+          },
+          "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+          "seconds": 16.251058488996932
+        },
+        {
+          "outer": 1,
+          "rho": 100.0,
+          "metrics": {
+            "lambda_eff_smooth": 46.906566199710156,
+            "Lambda_smooth": 282.96425509882505,
+            "gap": 3.9148979754208995,
+            "error1": 0.01999703652513902,
+            "error2": 0.019999539566222163
+          },
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "seconds": 29.651216035999823
+        },
+        {
+          "outer": 2,
+          "rho": 1000.0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90656563390719,
+            "Lambda_smooth": 282.9642461349558,
+            "gap": 3.91489800607053,
+            "error1": 0.019997190106149833,
+            "error2": 0.019999539988392927
+          },
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "seconds": 38.274926731999585
+        },
+        {
+          "outer": 3,
+          "rho": 10000.0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90656563390719,
+            "Lambda_smooth": 282.9642461349558,
+            "gap": 3.91489800607053,
+            "error1": 0.019997190106149833,
+            "error2": 0.019999539988392927
+          },
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "seconds": 38.83017019199906
+        }
+      ],
+      "official_numerical_metrics": {
+        "error_1": 0.019997190106150198,
+        "error_2": 0.019999539988392972,
+        "Lambda": 282.9642461349558,
+        "E_SOS": -22144.18824800607,
+        "E_gap": 3.914898006070871,
+        "lambda_eff": 46.90656563390922,
+        "gap_in_domain": true
+      },
+      "numerically_valid": true,
+      "improves_lambda": true,
+      "candidate_compact_path": "gvqcc_repo/chemistry_discrete_v3_candidate_1.npz",
+      "loader_verified": false,
+      "full_circuit_verified": false,
+      "loader_cost_assumption": "unchanged4033 for affine-LSB only; single-word loader cost not established"
+    },
+    {
+      "proposal": {
+        "kind": "single_word",
+        "row": 840,
+        "angle": 30,
+        "delta": 1,
+        "quadratic_proxy": -0.00014573201252890235,
+        "index": 5,
+        "metrics_before_refit": {
+          "lambda_eff_smooth": 46.90689009330971,
+          "Lambda_smooth": 282.9645823445372,
+          "gap": 3.914947829111725,
+          "error1": 0.02000125848093059,
+          "error2": 0.01999960025049607
+        },
+        "seconds": 26.554348449000827
+      },
+      "trace": [
+        {
+          "outer": 0,
+          "rho": 10.0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90689009330971,
+            "Lambda_smooth": 282.9645823445372,
+            "gap": 3.914947829111725,
+            "error1": 0.02000125848093059,
+            "error2": 0.01999960025049607
+          },
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "seconds": 0.5837209720011742
+        },
+        {
+          "outer": 1,
+          "rho": 100.0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90689009330971,
+            "Lambda_smooth": 282.9645823445372,
+            "gap": 3.914947829111725,
+            "error1": 0.02000125848093059,
+            "error2": 0.01999960025049607
+          },
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "seconds": 1.1440598799999862
+        },
+        {
+          "outer": 2,
+          "rho": 1000.0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90689009330971,
+            "Lambda_smooth": 282.9645823445372,
+            "gap": 3.914947829111725,
+            "error1": 0.02000125848093059,
+            "error2": 0.01999960025049607
+          },
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "seconds": 1.7066775810017134
+        },
+        {
+          "outer": 3,
+          "rho": 10000.0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90689009330971,
+            "Lambda_smooth": 282.9645823445372,
+            "gap": 3.914947829111725,
+            "error1": 0.02000125848093059,
+            "error2": 0.01999960025049607
+          },
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "seconds": 2.2944877590016404
+        }
+      ],
+      "official_numerical_metrics": {
+        "error_1": 0.020001258480933252,
+        "error_2": 0.019999600250496036,
+        "Lambda": 282.9645823445372,
+        "E_SOS": -22144.18829782911,
+        "E_gap": 3.9149478291110427,
+        "lambda_eff": 46.906890093305655,
+        "gap_in_domain": true
+      },
+      "numerically_valid": false,
+      "improves_lambda": false,
+      "candidate_compact_path": "gvqcc_repo/chemistry_discrete_v3_candidate_5.npz",
+      "loader_verified": false,
+      "full_circuit_verified": false,
+      "loader_cost_assumption": "unchanged4033 for affine-LSB only; single-word loader cost not established"
+    },
+    {
+      "proposal": {
+        "kind": "affine_lsb_xor",
+        "angle": 70,
+        "mask": 2048,
+        "quadratic_proxy": 0.08523859829162067,
+        "num_words": 196,
+        "index": 6,
+        "metrics_before_refit": {
+          "lambda_eff_smooth": 46.91436682568356,
+          "Lambda_smooth": 282.9658218545967,
+          "gap": 3.916187339171188,
+          "error1": 0.02319457927313821,
+          "error2": 0.02017237627202021
+        },
+        "seconds": 27.793384917000367
+      },
+      "trace": [
+        {
+          "outer": 0,
+          "rho": 10.0,
+          "metrics": {
+            "lambda_eff_smooth": 46.91436682568356,
+            "Lambda_smooth": 282.9658218545967,
+            "gap": 3.916187339171188,
+            "error1": 0.02319457927313821,
+            "error2": 0.02017237627202021
+          },
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+          "seconds": 0.5593135969975265
+        },
+        {
+          "outer": 1,
+          "rho": 100.0,
+          "metrics": {
+            "lambda_eff_smooth": 46.910174946569974,
+            "Lambda_smooth": 283.0094234757926,
+            "gap": 3.914870926691947,
+            "error1": 0.02075997033518469,
+            "error2": 0.02051448007648181
+          },
+          "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+          "seconds": 17.557652849998703
+        },
+        {
+          "outer": 2,
+          "rho": 1000.0,
+          "metrics": {
+            "lambda_eff_smooth": 46.91817251612301,
+            "Lambda_smooth": 283.0921111491477,
+            "gap": 3.9150553536745747,
+            "error1": 0.02025539790480305,
+            "error2": 0.020420329617372394
+          },
+          "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+          "seconds": 37.845202444997994
+        },
+        {
+          "outer": 3,
+          "rho": 10000.0,
+          "metrics": {
+            "lambda_eff_smooth": 47.593244115489796,
+            "Lambda_smooth": 283.2521396556751,
+            "gap": 4.027037392140301,
+            "error1": 0.020028829555415458,
+            "error2": 0.020244863014941137
+          },
+          "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+          "seconds": 47.86466650699731
+        }
+      ],
+      "official_numerical_metrics": {
+        "error_1": 0.020028829555415302,
+        "error_2": 0.020244863014941206,
+        "Lambda": 283.25213965567514,
+        "E_SOS": -22144.30038739214,
+        "E_gap": 4.02703739214121,
+        "lambda_eff": 47.59324411549513,
+        "gap_in_domain": true
+      },
+      "numerically_valid": false,
+      "improves_lambda": false,
+      "candidate_compact_path": "gvqcc_repo/chemistry_discrete_v3_candidate_6.npz",
+      "loader_verified": false,
+      "full_circuit_verified": false,
+      "loader_cost_assumption": "unchanged4033 for affine-LSB only; single-word loader cost not established"
+    }
+  ],
+  "seconds": 124.89127634100078,
+  "source_user_candidate_available": false
+}
