@@ -1,0 +1,11 @@
+{
+  "file": "/workspace/scratch/7f542e06b7cf/deliverables/dqi_v2_patch_only.zip",
+  "bytes": 48630876,
+  "sha256": "f543dcbbb493c0d06354e8643e043d10d5040d6f929e24e42da376e3962562cc",
+  "member": "dqi.kmb",
+  "member_bytes": 496089859,
+  "member_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "verification": "PASS 102400 shots, zero value/phase errors",
+  "usage": "Replace dqi.kmb in an existing complete submission; other tasks are not in this patch ZIP.",
+  "seconds": 13.037075460999404
+}

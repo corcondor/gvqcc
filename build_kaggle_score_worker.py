@@ -6,6 +6,7 @@ access, circuit generation, quantum simulation or Kaggle submission.
 """
 from __future__ import annotations
 
+import argparse
 import ast
 import base64
 import hashlib
@@ -14,6 +15,8 @@ import json
 import lzma
 from pathlib import Path
 import zipfile
+
+from reproduce_dqi_candidate import DEFAULT_VARIANT, VARIANTS
 
 
 HERE = Path(__file__).resolve().parent
@@ -28,6 +31,20 @@ CHEMISTRY_SHA = "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae
 UPSTREAM_RECEIPT_SHA = "05f66547aef625e9bf03c0d1025cdc136a9e3c71ae8a612ea1b90fd22a386e3f"
 BASE_CHEMISTRY_SHA = "3f864a7aeaa4d78984c8822761782b63be2d553b229f487e79640a73be147c44"
 REFIT_SHA = "67f711e1a9656f1af9e630e11d491791009971a8c6ec30f95f092bad74ce6073"
+
+
+def worker_settings(variant):
+    configuration = VARIANTS[variant]
+    is_v2 = variant == "480gauge128"
+    return {
+        "variant": variant,
+        "candidate_sha256": configuration["candidate_sha256"],
+        "title": f"GVQCC {'480' if is_v2 else '96'} CCX + gauge128",
+        "worker_filename": "kaggle_score_worker_v2.py" if is_v2 else "kaggle_score_worker.py",
+        "build_filename": "kaggle_score_worker_v2_build.json" if is_v2 else "kaggle_score_worker_build.json",
+        "scripts": SCRIPTS + (("dqi_ccx_input_factor.py",) if is_v2 else ()),
+        "input_factor_rewrites": configuration["additional_input_factor_rewrites"],
+    }
 
 
 def digest(data):
@@ -49,9 +66,14 @@ def literal_assignment(path, target):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--variant", choices=tuple(VARIANTS), default=DEFAULT_VARIANT,
+                        help="96gauge128 builds v1; 480gauge128 writes separate v2 artifacts")
+    args = parser.parse_args()
+    settings = worker_settings(args.variant)
     import numpy as np
     entries = {}
-    for name in SCRIPTS:
+    for name in settings["scripts"]:
         raw = (HERE / name).read_bytes()
         compile(raw, name, "exec")
         entries[f"tools/{name}"] = raw
@@ -82,9 +104,9 @@ def main():
         expected = published_members[f"dfthcsos/{name}"]
         read_pinned(WORKSPACE / "dqi_inputs/chemistry_4033" / name, expected)
         loaders[name] = expected
-    notice = """# Sources and scope
+    notice = f"""# Sources and scope
 
-This private offline worker builds the96-CCX plus128-label adaptive-gauge DQI
+This private offline worker builds the {settings['title']} DQI
 candidate, runs the unchanged official default102400-shot DQI verification,
 runs the full official chemistry verification, and packages a submission ZIP.
 It does not call any Kaggle submission API or access credentials/network.
@@ -127,9 +149,23 @@ No frozen upstream certificate is claimed to certify the changed decoder.
 Full verifier PASS establishes validity under the checked workload, not a
 guaranteed leaderboard increase. DQI can retain a nonzero allowed error rate.
 """
+    if settings["input_factor_rewrites"]:
+        notice += """
+Variant 480gauge128 adds 384 input-side CCX factorizations AFTER constructing
+the exact 96gauge128 intermediate aafed8b0fa2bbfde21f47672a5e548a84a6d42d735e800557efbb2c04c310f09.
+The factorization preserves a shared control and target, with CNOT conjugation
+on the two differing controls. All 16 changed blocks have independent exact
+Boolean-polynomial proofs. These proofs and the 384-rewrite report are exported;
+the changed full decoder is then verified freshly with the original verifier.
+The final candidate must be e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7.
+The original v1 worker and completed v1 output are separate, unchanged artifacts.
+"""
     entries["SOURCE_NOTICE.md"] = notice.encode()
     manifest = {
         "schema": "gvqcc-offline-kaggle-worker-payload-v1",
+        "variant": settings["variant"], "worker_title": settings["title"],
+        "candidate_sha256": settings["candidate_sha256"],
+        "additional_input_factor_rewrites": settings["input_factor_rewrites"],
         "files": {name: {"sha256": digest(data), "bytes": len(data)} for name, data in sorted(entries.items())},
         "official_pins": official_pins,
         "chemistry_loader_pins": loaders,
@@ -152,8 +188,17 @@ guaranteed leaderboard increase. DQI can retain a nonzero allowed error rate.
     packed = lzma.compress(archive.getvalue(), preset=6)
     encoded = base64.b64encode(packed).decode("ascii")
     template = (HERE / "kaggle_score_worker_template.py").read_text()
-    worker = template.replace("__PAYLOAD_BASE64__", encoded).replace("__PAYLOAD_SHA256__", digest(packed))
-    compile(worker, "kaggle_score_worker.py", "exec")
+    replacements = {
+        "__PAYLOAD_BASE64__": encoded, "__PAYLOAD_SHA256__": digest(packed),
+        "__VARIANT__": settings["variant"], "__WORKER_TITLE__": settings["title"],
+        "__CANDIDATE_SHA256__": settings["candidate_sha256"],
+    }
+    worker = template
+    for marker, value in replacements.items():
+        if marker not in worker:
+            raise ValueError(f"Template marker is missing: {marker}")
+        worker = worker.replace(marker, value)
+    compile(worker, settings["worker_filename"], "exec")
     # Independently decode the rendered worker's literal payload and compare
     # every member hash; do not execute main or the reproduction driver.
     worker_tree = ast.parse(worker)
@@ -166,9 +211,12 @@ guaranteed leaderboard increase. DQI can retain a nonzero allowed error rate.
         assert set(zipped.namelist()) == set(entries)
         for name, original in entries.items():
             assert zipped.read(name) == original, name
-    output = HERE / "kaggle_score_worker.py"
+    output = HERE / settings["worker_filename"]
     output.write_text(worker)
     result = {
+        "variant": settings["variant"], "worker_title": settings["title"],
+        "candidate_sha256": settings["candidate_sha256"],
+        "additional_input_factor_rewrites": settings["input_factor_rewrites"],
         "worker": str(output), "worker_bytes": output.stat().st_size,
         "worker_sha256": digest(output.read_bytes()), "source_payload_sha256": digest(packed),
         "source_payload_compressed_bytes": len(packed), "embedded_files": len(entries),
@@ -178,7 +226,7 @@ guaranteed leaderboard increase. DQI can retain a nonzero allowed error rate.
                        "rendered_payload_hashes": "PASS", "chemistry_npz_byte_exact_reconstruction": "PASS",
                        "local_numpy_version": np.__version__, "heavy_execution": "NOT_RUN"},
     }
-    (HERE / "kaggle_score_worker_build.json").write_text(json.dumps(result, indent=2) + "\n")
+    (HERE / settings["build_filename"]).write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps({k: v for k, v in result.items() if k not in
                       ("embedded_file_hashes", "chemistry_loader_pins", "official_pins")}, indent=2))
 

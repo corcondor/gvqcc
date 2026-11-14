@@ -4,7 +4,60 @@
 
 大きい KMB 回路を全展開せずに調べる監査ツール、共有積を式に起こす解析器、有限体演算の検証コードをまとめています。2026-11-14には、実際の公開 `821bf8d157c0` 回路を改良し、公式DQI検証コードの102,400ショット検証まで実施しました。大きい回路ファイルは再現スクリプトで取得・生成します。
 
-## 今回の実測結果
+## 最新の実測結果：v2（480 CCX + gauge128）
+
+**追加の384件のCCX削減を組み合わせたv2が、ローカルの公式DQI検証コードで102,400ショットPASSになりました。値エラー・位相エラーはともに0です。** 従来の96件の削減と合わせて、構造変換による削減は480 CCXです。量子ビット数は889を維持しています。
+
+| 項目 | v2の実測値 |
+|---|---:|
+| 検証ショット数 | 102,400 |
+| 値エラー / 位相エラー | 0 / 0 |
+| 量子ビット数 | 889 |
+| 平均Toffoli数 | 382115.5671582031 |
+| 反復係数 R | 1.1912604648115832 |
+| ローカルDQIコスト | 359753461767.22644 |
+| 信頼度設定 / salt / seed | `log2_delta=-128` / 空文字 / 既定値 |
+
+候補SHA-256は `e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7` です。検証結果の原本コピーは [v2_candidate_full102400.json](results/2026-11-14/v2_candidate_full102400.json) にあります。公式検証コードは変更せず、ローカルのKickmix 1.0.0で実行しました。
+
+**同じ102,400入力で元回路と比較する計算も完了しました。** 両回路とも値エラー・位相エラーは0、反復係数Rも一致しています。元回路の平均Toffoli数382599.9932617188に対し、v2は382115.5671582031で、平均 **484.426103515625 Toffoli削減、DQIコスト0.1266142478%改善**です。内訳は無条件のCCX削減480と、gauge変更による平均4.426103515625です。比較にはv2の通常の回路ハッシュ由来seedを使い、seedの探索はしていません。[入力を固定した比較結果](dqi_combined_v2_paired_comparison.json)と[元回路の検証記録](dqi_baseline_v2_paired_verification.json)を参照してください。
+
+この更新時点ではv2のKaggleノートブック実行・競技採点は未開始です。上記ローカル費用を、確認済みのPublic Scoreとして扱わないでください。
+
+v1は別途、Kaggleの競技添付Kickmixと公式検証コードでも102,400ショットPASSし、ローカルと同じ数値を再現しました。[Kaggle v1の実行記録](results/2026-11-14/kaggle_v1_full_verification.json)はノートブック実行の証拠であり、競技リーダーボード採点の結果ではありません。v1の回路・workerと以下の計算履歴は保持しています。
+
+### v2を再現する
+
+依存パッケージと計算資源は後述の「実回路の再現と検証」を参照してください。
+
+```bash
+python reproduce_dqi_candidate.py --work-dir dqi_run_v2 --variant 480gauge128
+```
+
+まず従来の96件削減＋gauge128候補 `aafed8…` を正確に再現し、384件の入力側CCX因数分解を追加します。16ブロックの多項式証明・削減数・最終SHAを確認してから、変更後の全回路を新しく検証します。`dqi_input_factor384.json` に変換の証明と数値を保存します。variantを省略した場合は従来の `96gauge128` を実行します。
+
+既存の提出ZIP内のDQIだけを更新する場合：
+
+```bash
+python reproduce_dqi_candidate.py --work-dir dqi_run_v2_zip --variant 480gauge128 --baseline-zip ORIGINAL_SUBMISSION.zip
+```
+
+`invsqrt`とchemistryの各メンバーはバイト単位で保持し、全回路検証が通った場合だけ新しいZIPを作ります。Kaggleで使う自己完結版は [kaggle_score_worker_v2.py](kaggle_score_worker_v2.py)、埋め込みの確認結果は [kaggle_score_worker_v2_audit.json](kaggle_score_worker_v2_audit.json) です。これは実行用コードの静的・統合監査であり、Kaggleでのv2実行結果ではありません。
+
+### 一次資料から次の実験へ
+
+- [Claude研究の実装・探索手順・公開範囲](research_anthropic_method.md)：Anthropic/Harvardの原著、公開コード`andigu/uncompute`、独立評価と複数設計の保存、今回の競技へ適用する運転案。
+- [Claude研究のDQIと現回路の比較](research_anthropic_dqi.md)：論文のBM設計、現821系の出自、費用の定義差、履歴復元を移植する際の条件。
+- [Claude研究の化学・数値回路と現タスクの比較](research_anthropic_chemistry.md)：Fe2S2とDFTHCの違い、表の重複、制御された二次位相、量子化を含む近似設計。
+- [IBM・MicrosoftのDQI関連研究](research_dqi_ibm_microsoft.md)：可換性を使ったパターン照合、入力側CCX因数分解、依存関係と作業領域の交換条件。
+- [NTT・富士通の研究と適用条件](research_ntt_fujitsu.md)：QROMのデータ順序探索、整数加算、制御回転の合成。本競技の費用との違いを整理。
+- [化学・QROMの研究対応表](research_chemistry_qrom.md)：現4033ローダーの符号、許される因子ラベル変更、SelectCopyなどを実費用で比較する条件。
+
+[4033ローダーの構造監査](chemistry_4033_structure_audit.json)では、実KMBのCCX合計4033と、完全な16行ブロック76個における既知のReed–Muller条件を確認しました。同じrの内部に収まる16行ブロックは64個です。再現コードは [audit_chemistry_4033_structure.py](audit_chemistry_4033_structure.py)。公開資料から元の4033生成器は発見できておらず、生成器の同一コスト再現・行置換による改善実験はまだ行っていません。
+
+Claude論文の反復ワードによるQROM削減を受け、[完全ワードの重複監査](anthropic_repeated_rows_audit.json)も実施しました。15表すべてで1,220個の40bit差分ワードがすべて異なり、完全ワードの重複は0でした。単なる行置換では新たな完全ワードの重複は作れません。部分ビットの共有や線形関係の利用は、この監査で否定していません。
+
+## v1（96 CCX + gauge128）の実測結果・履歴
 
 **ゲート数は減りました。Kaggleでのスコア改善はまだ確認されていません。**
 

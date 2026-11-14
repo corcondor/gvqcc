@@ -1,0 +1,338 @@
+{
+  "schema": "anthropic-whole-word-repetition-screen-v1",
+  "factorization_sha256": "3f864a7aeaa4d78984c8822761782b63be2d553b229f487e79640a73be147c44",
+  "target": "f_k(a) = g_(k-1)(a) XOR g_k(a), first previous batch zero",
+  "source_idea": "https://arxiv.org/html/2610.22367v1",
+  "rows_are_unchanged": true,
+  "circuit_generated": false,
+  "candidate_modified": false,
+  "score_improvement_claim": false,
+  "batches": [
+    {
+      "angle_k": 0,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 1,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 2,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 3,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 4,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 5,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 6,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 7,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 8,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 9,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 10,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 11,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 12,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 13,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    },
+    {
+      "angle_k": 14,
+      "valid_rows": 1220,
+      "distinct_40bit_difference_words": 1220,
+      "duplicate_row_redundancy": 0,
+      "maximum_word_multiplicity": 1,
+      "zero_difference_rows": 0,
+      "equal_adjacent_row_pairs": 0,
+      "equal_halves_of_complete_aligned_blocks": {
+        "2": [],
+        "4": [],
+        "8": [],
+        "16": [],
+        "32": [],
+        "64": [],
+        "128": [],
+        "256": [],
+        "512": [],
+        "1024": []
+      }
+    }
+  ],
+  "total_duplicate_row_redundancy": 0,
+  "total_equal_adjacent_row_pairs": 0,
+  "total_equal_half_blocks": 0,
+  "limitations": [
+    "Whole 40-bit difference words only; partial-word, affine, RM and shared-product structure are not screened out.",
+    "A pure row permutation cannot create additional duplicate complete words, but joint retraining can alter the table.",
+    "Incomplete blocks extending beyond valid address 1219 are excluded; behavior outside the promised domain is not assumed.",
+    "Data redundancy is not a Toffoli-count certificate or a quantum-circuit correctness result."
+  ],
+  "seconds": 0.07204542399995262,
+  "peak_rss_mib": 23.796875
+}
