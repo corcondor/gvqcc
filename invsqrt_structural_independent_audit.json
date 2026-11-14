@@ -1,0 +1,42 @@
+{
+  "status": "PASS_STRUCTURAL_EDIT_AUDIT",
+  "records": [
+    {
+      "name": "walsh34",
+      "kmx_sha256": "97802e4e662d1703f33c491848e1a67774c8db2ed7b66c75d9f6b0abed6cb33a",
+      "kmb_sha256": "6f74b8d58cb20eeed9387bf362bfed88b62ca9de0957d309b4478ec2b754ae9e",
+      "nonphase_edit": "one CX/diagonal-rotation/CX conjugation",
+      "all_other_nonphase_lines_identical": true,
+      "classically_unconditional_insertion": true,
+      "delta_phase_independent_of_measurement_outcomes": true,
+      "native_result_and_file_hash_match": true
+    },
+    {
+      "name": "walsh32",
+      "kmx_sha256": "cb0d202af532ac51137798f457c1d6409e9f6c447d8a4c9304bc505eb4ee97a3",
+      "kmb_sha256": "02d988f18b33da3e6ebbb703d4332c94a0144f5333fbb4b37943974b668c951e",
+      "nonphase_edit": "one CX/diagonal-rotation/CX conjugation",
+      "all_other_nonphase_lines_identical": true,
+      "classically_unconditional_insertion": true,
+      "delta_phase_independent_of_measurement_outcomes": true,
+      "native_result_and_file_hash_match": true
+    }
+  ],
+  "conditional_quantum_opcodes_before_latest_modified_rotation": {
+    "Z": 61,
+    "CZ": 279,
+    "NEG": 1
+  },
+  "latest_modified_rotation_line": 8318,
+  "all_original_rotations_unconditional": true,
+  "insertion_condition_depths": {
+    "7705": 0,
+    "8189": 0
+  },
+  "source_kmx_sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1",
+  "limitations": [
+    "Phase-wire independence follows because all preceding conditionally executed quantum operations are diagonal; unconditional HMR resets do not depend on their recorded outcome.",
+    "The original baseline's correctness is not reproved here. The audit proves that the new edits add only a deterministic input-dependent diagonal phase to it.",
+    "Full-domain integer-oracle results and finite native checks remain separate evidence; this is not an official 200M-shot run or a global optimality proof."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "recorded_at_utc": "2026-11-14T20:12:42Z",
+  "source": "Signed-in Kaggle Submissions page after an explicit reload",
+  "url": "https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/submissions",
+  "notebook": "geocpuresearch/gvqcc-verified-480ccx-gauge128",
+  "script_version_id": 369627280,
+  "matching_visible_submissions": [
+    {
+      "status": "Pending",
+      "relative_time_display": "16 minutes ago",
+      "description_display": null,
+      "public_score": null,
+      "submission_id": null
+    },
+    {
+      "status": "Pending",
+      "relative_time_display": "22 minutes ago",
+      "description_display": "v2: 480 CCX reduction + gauge128. Official DQI 102400 shots PASS, 0 value / 0 phase errors; Q889. Other 17 members preserved.",
+      "public_score": null,
+      "submission_id": null
+    }
+  ],
+  "existing_baseline": {
+    "status": "Complete",
+    "public_score_display": "27.30683",
+    "description": "Baseline 27.30683 (4033/821/e46)"
+  },
+  "actions_in_this_recheck": "Read-only status check; no new submission and no submission deleted",
+  "limitations": "Two matching notebook/version rows are visible. The origin of the newer row was not established. Numeric submission IDs and new Public Scores are not exposed in the observed list."
+}

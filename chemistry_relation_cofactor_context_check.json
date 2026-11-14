@@ -1,0 +1,107 @@
+{
+  "status": "EXACT_CANONICAL_INPUT_MODEL_PASS",
+  "table_sha256": "3f864a7aeaa4d78984c8822761782b63be2d553b229f487e79640a73be147c44",
+  "method": "Independently propagate the circuit prefix on the exact previous/current word batches and on the canonical five-tag input; compare every entry control wire for all valid addresses and both directions. No random samples.",
+  "checks": [
+    {
+      "k": 1,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "e63f9de0a60ff79fc6f817056a1f95f5efed9ae82955cf56b11492e5ff28d70b"
+    },
+    {
+      "k": 2,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "e32afaf5d4b04756d20f15ecfbf08d6db325b57cbcb877428cb7fd61f13fcebb"
+    },
+    {
+      "k": 3,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "a932bc25467908c2189aadadd5f997ea88200b44d9401741c2b492fc1c2ebaa0"
+    },
+    {
+      "k": 4,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "dc70bda726f221813b502fc2d26acdd21882d1e30177f4264974880eb68cb2c2"
+    },
+    {
+      "k": 5,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "dbef059b4cd3030d2b249df4d09653efb54f8b803faa2d459f4e418394120fe2"
+    },
+    {
+      "k": 6,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "11cb19cb7e9d628f1416ef0e03f6d9d767726e42df839885e9224b029444f383"
+    },
+    {
+      "k": 7,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "e3a11ed9c462603f6f0734fe61fc0e4e924fa6bb4a6702574391f28f507a264b"
+    },
+    {
+      "k": 8,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "0fdcfe1906582661c40d0cd510df7efa2c115f287f9ad859223967d98150b0b2"
+    },
+    {
+      "k": 9,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "e0e95ba89402beb2c08017c5db7bc5070db26fd996bcd4f465d2ab1a21cfa55f"
+    },
+    {
+      "k": 10,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "c2e7dca4c51cdb3f82a47effbf0d529351b78a432e0b30bf5ca833bf2c5fcea3"
+    },
+    {
+      "k": 11,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "18fa8cd8125a1eccb959be27956ce7e871599909193052ab4a2ad1a5d0d6b01d"
+    },
+    {
+      "k": 12,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "62d6cd9855bcad70917a56527c0f03b912fba8bb14a2bfd91748a345f0a6fc72"
+    },
+    {
+      "k": 13,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "09a2faee4582e786548640ce4552bcc812e73667bd6784b37e0bbb5b817b8189"
+    },
+    {
+      "k": 14,
+      "control_wires_checked": 90,
+      "actual_address_direction_cases": 2440,
+      "canonical_control_state_equals_both_actual_batches": true,
+      "source_sha256": "a582eb78249c7ba5f58881b2753e2900a5a5be61eda719d2a24aff1fdad5f073"
+    }
+  ],
+  "total_address_direction_cases": 34160,
+  "source_files_modified": false
+}

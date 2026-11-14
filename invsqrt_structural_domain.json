@@ -1,0 +1,48 @@
+{
+  "contract": "all x=1..3133452; official integer oracle; circuit phase evaluated with exact integer sums, round-to-nearest 2^-64 turns",
+  "records": [
+    {
+      "name": "baseline",
+      "phase_error_count": 0,
+      "max_x": 3133452,
+      "min_margin_units2m64": 116320642,
+      "min_margin_turns": 6.3057546380654306e-12,
+      "worst_ratio": 0.9986660009092673,
+      "worst_x": 159
+    },
+    {
+      "name": "walsh34",
+      "phase_error_count": 0,
+      "max_x": 3133452,
+      "min_margin_units2m64": 167035552,
+      "min_margin_turns": 9.055015418035772e-12,
+      "worst_ratio": 0.9980843875444153,
+      "worst_x": 159,
+      "generic_rotations": 34,
+      "rotation_eps": 8.366814681012791e-13,
+      "rotation_toffoli_equiv": 236.0230409431484,
+      "arithmetic_toffoli_from_upstream": 1479.7500405453395,
+      "t_base": 1,
+      "predicted_toffoli_equiv": 1716.0230814884878,
+      "predicted_score": 78937.06174847044
+    },
+    {
+      "name": "walsh32",
+      "phase_error_count": 0,
+      "max_x": 3133452,
+      "min_margin_units2m64": 4996033,
+      "min_margin_turns": 2.708354916204636e-13,
+      "worst_ratio": 0.9999427040355857,
+      "worst_x": 159,
+      "generic_rotations": 32,
+      "rotation_eps": 2.658921221269464e-14,
+      "rotation_toffoli_equiv": 244.43076228105485,
+      "arithmetic_toffoli_from_upstream": 1479.7500405453395,
+      "t_base": 1,
+      "predicted_toffoli_equiv": 1724.4308028263945,
+      "predicted_score": 79323.81693001415
+    }
+  ],
+  "official_64_shots_per_x_rerun": false,
+  "elapsed_seconds": 5.364302635192871
+}

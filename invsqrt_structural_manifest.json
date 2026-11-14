@@ -1,0 +1,109 @@
+{
+  "files": [
+    {
+      "file": "invsqrt_structural_basis.json",
+      "bytes": 18060,
+      "sha256": "233a8db99cb12d76cc943a04b9352cee87bbdce5c498a1dbb7243b3af6848ae7"
+    },
+    {
+      "file": "invsqrt_structural_build_plans.json",
+      "bytes": 6308,
+      "sha256": "ff056a13112d67fddbaab0ea6ab3ec77ca77eeeb985ae02e2f382b18b66be12c"
+    },
+    {
+      "file": "invsqrt_structural_constant_results.json",
+      "bytes": 6241,
+      "sha256": "85cf07760563113db004d47670470c3e1fef77ba7717bd099c7468a0f57a5498"
+    },
+    {
+      "file": "invsqrt_structural_constant_search.py",
+      "bytes": 1336,
+      "sha256": "a7b37d7626ef9b054a69d988a41a3110a78e164566d19f6c22d661e6fe3dff82"
+    },
+    {
+      "file": "invsqrt_structural_domain.json",
+      "bytes": 1584,
+      "sha256": "7a1aa9892aeb89cc187b7296a5faa0ce00639531daf20a983e62da01fe612110"
+    },
+    {
+      "file": "invsqrt_structural_e46.kmx",
+      "bytes": 258420,
+      "sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1"
+    },
+    {
+      "file": "invsqrt_structural_extract.py",
+      "bytes": 3987,
+      "sha256": "be63bf451a3b0bd17897243a72204dac8e68c8da93c2ee99fd37e0cca00c8053"
+    },
+    {
+      "file": "invsqrt_structural_native.json",
+      "bytes": 1931,
+      "sha256": "455f2a66e1231b6b4e165059aeffd5d8ffbbb7061c06f0a9e6a7a5a04b8b81a8"
+    },
+    {
+      "file": "invsqrt_structural_pair_results.json",
+      "bytes": 37004,
+      "sha256": "f122fd3632c87cd3e67ef34ccd8df0f8c931937572909065c37ea3a27d6535eb"
+    },
+    {
+      "file": "invsqrt_structural_pair_search.py",
+      "bytes": 3348,
+      "sha256": "152d142dd49297491730369c127e08d9bfaafa0380764b201db2883fccdac9da"
+    },
+    {
+      "file": "invsqrt_structural_replace.py",
+      "bytes": 2694,
+      "sha256": "4736cff42de722295591e2a442c10efcb1d9e77ea90e3cf44ecba9df500e4627"
+    },
+    {
+      "file": "invsqrt_structural_replace_results.json",
+      "bytes": 56907,
+      "sha256": "2a05da51fc3817fb77c09a14bbc1fba68b6291f9fe44b13b891d1c007b65da52"
+    },
+    {
+      "file": "invsqrt_structural_report.md",
+      "bytes": 10878,
+      "sha256": "a2e7f5b27a1244ad22cb216ddcf17033278613b0626ba3475dae3850e919daea"
+    },
+    {
+      "file": "invsqrt_structural_search.py",
+      "bytes": 6848,
+      "sha256": "63f8b5f63d979da47c0034ef2fd63e5f16e695170a5264a1ccfb490b651008df"
+    },
+    {
+      "file": "invsqrt_structural_search_results.json",
+      "bytes": 31121,
+      "sha256": "8e3949539a04b12fe118e619e428669f8ce9a8ab52840eaf4417f2f4142a5339"
+    },
+    {
+      "file": "invsqrt_structural_summary.json",
+      "bytes": 1292,
+      "sha256": "ddd1b5f1b7ab3ee28f4ee2f93ee1f40b760c1993d7485f28236117208b3de44b"
+    },
+    {
+      "file": "invsqrt_structural_validate.py",
+      "bytes": 9532,
+      "sha256": "537bc02cb876e6cfc60d3ed694a7e0aea71ae5fe0024008d59ff509c355b94f9"
+    },
+    {
+      "file": "invsqrt_structural_walsh32.kmb",
+      "bytes": 198587,
+      "sha256": "02d988f18b33da3e6ebbb703d4332c94a0144f5333fbb4b37943974b668c951e"
+    },
+    {
+      "file": "invsqrt_structural_walsh32.kmx",
+      "bytes": 258914,
+      "sha256": "cb0d202af532ac51137798f457c1d6409e9f6c447d8a4c9304bc505eb4ee97a3"
+    },
+    {
+      "file": "invsqrt_structural_walsh34.kmb",
+      "bytes": 198629,
+      "sha256": "6f74b8d58cb20eeed9387bf362bfed88b62ca9de0957d309b4478ec2b754ae9e"
+    },
+    {
+      "file": "invsqrt_structural_walsh34.kmx",
+      "bytes": 259106,
+      "sha256": "97802e4e662d1703f33c491848e1a67774c8db2ed7b66c75d9f6b0abed6cb33a"
+    }
+  ]
+}

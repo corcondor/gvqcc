@@ -1,0 +1,1005 @@
+{
+  "max_x": 3133452,
+  "basis": [
+    {
+      "kind": "rotation",
+      "line": 232,
+      "qubit": 35,
+      "half_turns": "1/2",
+      "turns": 0.25,
+      "class": "clifford"
+    },
+    {
+      "kind": "rotation",
+      "line": 233,
+      "qubit": 36,
+      "half_turns": "3/2",
+      "turns": 0.75,
+      "class": "clifford"
+    },
+    {
+      "kind": "rotation",
+      "line": 234,
+      "qubit": 21,
+      "half_turns": "1/2",
+      "turns": 0.25,
+      "class": "clifford"
+    },
+    {
+      "kind": "rotation",
+      "line": 236,
+      "qubit": 21,
+      "half_turns": "3/2",
+      "turns": 0.75,
+      "class": "clifford"
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 0
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 1
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 2
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 3
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 4
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 5
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 6
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 7
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 8
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 9
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 10
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 11
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 12
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 13
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 14
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 15
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 16
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 17
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 18
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 19
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 20
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 21
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 22
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 23
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 24
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 25
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 26
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 27
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 28
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 29
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 30
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 31
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 32
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 33
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 34
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 35
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 36
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 37
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 38
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 39
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 40
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 41
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 42
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 43
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 44
+    },
+    {
+      "kind": "snapshot",
+      "line": 7705,
+      "qubit": 45
+    },
+    {
+      "kind": "rotation",
+      "line": 7705,
+      "qubit": 27,
+      "half_turns": "17592187047189/2305843009213693952",
+      "turns": 3.814697483066733e-06,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7706,
+      "qubit": 37,
+      "half_turns": "1099512168591/288230376151711744",
+      "turns": 1.9073495709769767e-06,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7732,
+      "qubit": 26,
+      "half_turns": "17592183332921/1152921504606846976",
+      "turns": 7.629393355326492e-06,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7733,
+      "qubit": 38,
+      "half_turns": "2199023544279/1152921504606846976",
+      "turns": 9.536744416216263e-07,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7770,
+      "qubit": 29,
+      "half_turns": "140737495555739/4611686018427387904",
+      "turns": 1.5258789843170125e-05,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7771,
+      "qubit": 6,
+      "half_turns": "2199019205965/2305843009213693952",
+      "turns": 4.768362800889204e-07,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7832,
+      "qubit": 31,
+      "half_turns": "562949962939067/9223372036854775808",
+      "turns": 3.051757864095853e-05,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7833,
+      "qubit": 5,
+      "half_turns": "4398021047863/9223372036854775808",
+      "turns": 2.3841719873650196e-07,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7894,
+      "qubit": 33,
+      "half_turns": "281474974567179/2305843009213693952",
+      "turns": 6.1035155785207516e-05,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7895,
+      "qubit": 4,
+      "half_turns": "2199003955467/9223372036854775808",
+      "turns": 1.1920824329107694e-07,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7932,
+      "qubit": 35,
+      "half_turns": "2251799817931131/9223372036854775808",
+      "turns": 0.00012207031273016978,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7933,
+      "qubit": 3,
+      "half_turns": "1099522072001/9223372036854775808",
+      "turns": 5.960521095796237e-08,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7970,
+      "qubit": 28,
+      "half_turns": "4503599543850013/9223372036854775808",
+      "turns": 0.00024414062047234554,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 7971,
+      "qubit": 2,
+      "half_turns": "549757900273/9223372036854775808",
+      "turns": 2.9802435490852795e-08,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8021,
+      "qubit": 32,
+      "half_turns": "4503599725546447/4611686018427387904",
+      "turns": 0.0004882812606442579,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8022,
+      "qubit": 1,
+      "half_turns": "137440977881/4611686018427387904",
+      "turns": 1.4901380680711236e-08,
+      "class": "rotation"
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 0
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 1
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 2
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 3
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 4
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 5
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 6
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 7
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 8
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 9
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 10
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 11
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 12
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 13
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 14
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 15
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 16
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 17
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 18
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 19
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 20
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 21
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 22
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 23
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 24
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 25
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 26
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 27
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 28
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 29
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 30
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 31
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 32
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 33
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 34
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 35
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 36
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 37
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 38
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 39
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 40
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 41
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 42
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 43
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 44
+    },
+    {
+      "kind": "snapshot",
+      "line": 8075,
+      "qubit": 45
+    },
+    {
+      "kind": "rotation",
+      "line": 8075,
+      "qubit": 30,
+      "half_turns": "273289579/9223372036854775808",
+      "turns": 1.4815057763472445e-11,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8086,
+      "qubit": 21,
+      "half_turns": "4503599667051107/2305843009213693952",
+      "turns": 0.000976562508604361,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8099,
+      "qubit": 0,
+      "half_turns": "4294135049/288230376151711744",
+      "turns": 7.449136878515117e-09,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8136,
+      "qubit": 36,
+      "half_turns": "136791843/2305843009213693952",
+      "turns": 2.966200267177921e-11,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8144,
+      "qubit": 21,
+      "half_turns": "36028797404477531/9223372036854775808",
+      "turns": 0.001953125020898732,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8152,
+      "qubit": 39,
+      "half_turns": "68721716703/9223372036854775808",
+      "turns": 3.725411727316299e-09,
+      "class": "rotation"
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 0
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 1
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 2
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 3
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 4
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 5
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 6
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 7
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 8
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 9
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 10
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 11
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 12
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 13
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 14
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 15
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 16
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 17
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 18
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 19
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 20
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 21
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 22
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 23
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 24
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 25
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 26
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 27
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 28
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 29
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 30
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 31
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 32
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 33
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 34
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 35
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 36
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 37
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 38
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 39
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 40
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 41
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 42
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 43
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 44
+    },
+    {
+      "kind": "snapshot",
+      "line": 8189,
+      "qubit": 45
+    },
+    {
+      "kind": "rotation",
+      "line": 8189,
+      "qubit": 34,
+      "half_turns": "1068004803/9223372036854775808",
+      "turns": 5.789665638187766e-11,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8196,
+      "qubit": 21,
+      "half_turns": "36028796777203405/4611686018427387904",
+      "turns": 0.003906249973788267,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8204,
+      "qubit": 43,
+      "half_turns": "34349166511/9223372036854775808",
+      "turns": 1.8620720477146267e-09,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8206,
+      "qubit": 21,
+      "half_turns": "1/4",
+      "turns": 0.125,
+      "class": "t"
+    },
+    {
+      "kind": "rotation",
+      "line": 8247,
+      "qubit": 9,
+      "half_turns": "2128524277/9223372036854775808",
+      "turns": 1.1538753226557688e-10,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8251,
+      "qubit": 21,
+      "half_turns": "72057593436409071/4611686018427387904",
+      "turns": 0.007812499934783194,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8257,
+      "qubit": 40,
+      "half_turns": "1075010047/576460752303423488",
+      "turns": 9.324225827209154e-10,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8260,
+      "qubit": 21,
+      "half_turns": "1152921463936371999/9223372036854775808",
+      "turns": 0.06249999779524913,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8293,
+      "qubit": 8,
+      "half_turns": "4303613531/9223372036854775808",
+      "turns": 2.3329935699241064e-10,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8302,
+      "qubit": 21,
+      "half_turns": "72057592501228855/2305843009213693952",
+      "turns": 0.015624999666781504,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8314,
+      "qubit": 41,
+      "half_turns": "4288498521/4611686018427387904",
+      "turns": 4.6495994131690727e-10,
+      "class": "rotation"
+    },
+    {
+      "kind": "rotation",
+      "line": 8318,
+      "qubit": 21,
+      "half_turns": "576460737800873725/9223372036854775808",
+      "turns": 0.031249999213815202,
+      "class": "rotation"
+    },
+    {
+      "kind": "phase_parity",
+      "line": 23900,
+      "turns": 0.5
+    }
+  ],
+  "ops": 17724
+}

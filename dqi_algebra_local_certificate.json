@@ -1,0 +1,34 @@
+{
+  "status": "EXACT_LIMITED_DICTIONARY_CERTIFICATE",
+  "local_GF16_dictionary_size": 15,
+  "subsets_of_size8_checked": 6435,
+  "GF16_rank8_symmetric_subsets": 0,
+  "local_GF16_symmetric_dictionary_minimum": 9,
+  "cumulative_symmetric_dictionary_ranks": {
+    "1": 10,
+    "2": 20,
+    "3": 30,
+    "4": 40,
+    "5": 50,
+    "6": 60,
+    "7": 70,
+    "8": 80,
+    "9": 90,
+    "10": 100,
+    "11": 110,
+    "12": 116,
+    "13": 122,
+    "14": 128,
+    "15": 134,
+    "16": 140,
+    "17": 142
+  },
+  "eleven_point_subspaces_form_direct_sum": true,
+  "eleven_point_cost_minimum": 99,
+  "explanation": "Each of the first eleven points contributes a disjoint 10-dimensional symmetric-form space. The target component at each point is an injective linear embedding of full GF16 multiplication. Every 8-of-15 choice was ruled out, so each point needs at least nine products in this restricted dictionary.",
+  "limitations": [
+    "Only the first eleven fixed points are certified as a direct sum here.",
+    "No lower bound for 12-17 active points, nonsymmetric products, cross-point products, nonlinear circuits, or unrestricted GF24 multiplication."
+  ],
+  "elapsed_seconds": 0.03681213399977423
+}

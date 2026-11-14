@@ -1,0 +1,520 @@
+{
+  "status": "COMPLETE_NO_LOWER_TOFFOLI_CANDIDATE",
+  "created_at_utc": "2026-11-14T20:16:04.204027+00:00",
+  "best_ccx": 99,
+  "new_candidate_generated": false,
+  "production_KMB_modified": false,
+  "README_or_worker_modified": false,
+  "official_native_full_verification_run": false,
+  "external_push_performed": false,
+  "identification": {
+    "status": "EXACT_GF_2_24_FIELD_IDENTIFICATION",
+    "basis_pairs": 576,
+    "base_modulus": "0x1053",
+    "extension_relation": "t^2 + t + 2048 = 0",
+    "trace_delta": 1,
+    "roots_in_GF4096": 0,
+    "operation": "target XOR conjugate(left) * right",
+    "conjugate": "(x0,x1) -> (x0 XOR x1,x1)",
+    "not_the_length_two_jet_algebra": true,
+    "tensor_sha256": "859f3b762522ca3b17302369f49903529483d794963901d492e945e401a58a99",
+    "generator_sha256": "330cdeba5965e03fa397b07f7200539925112a815793704791173d144e74c09d",
+    "dictionary_size": 255,
+    "dictionary_rank": 142,
+    "linear_dependencies": 113,
+    "evaluation_points": "all 16 GF16 points plus infinity",
+    "allowed_ANDs": "phi_p,m(left) AND phi_p,m(right), all 15 nonzero masks at each point",
+    "variable_output_directions": true,
+    "gf16_beta": 1970,
+    "tower_theta": 4096,
+    "initial_states": 24,
+    "all_initial_tensors_certified": true,
+    "initial_rank": 99,
+    "preparation_seconds": 0.378503402998831,
+    "input_sha256": "9ed920544c96a5de16b7a18e2651330a090e09e192bb3eea0d1f49310c2bda47",
+    "search_scope": "fixed 255-form symmetric dictionary only; not a global tensor-rank lower bound"
+  },
+  "target_block": {
+    "path": "inverse_v2_actual_eea_product.kmx",
+    "sha256": "f97f2a437fb9b538d85608ce5ae5393c87e5f8b8dcab750ca8af9eae754b5aac",
+    "input_left": [
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455
+    ],
+    "input_right": [
+      840,
+      841,
+      842,
+      843,
+      844,
+      845,
+      846,
+      847,
+      848,
+      849,
+      850,
+      851,
+      852,
+      853,
+      854,
+      855,
+      856,
+      857,
+      858,
+      859,
+      860,
+      861,
+      862,
+      863
+    ],
+    "output_qubits_in_field_order": [
+      868,
+      867,
+      865,
+      866,
+      872,
+      871,
+      869,
+      870,
+      876,
+      875,
+      885,
+      886,
+      880,
+      879,
+      881,
+      882,
+      874,
+      887,
+      888,
+      883,
+      884,
+      873,
+      878,
+      877
+    ],
+    "original_ccx": 99,
+    "original_cx": 6122
+  },
+  "searches": [
+    {
+      "status": "NO_IMPROVEMENT_IN_BOUNDED_SEARCH",
+      "best_rank": 99,
+      "proposals": 549588992,
+      "accepted": 319824218,
+      "neutral_moves": 305340160,
+      "rank_decreasing_moves": 7261156,
+      "restarts": 6889,
+      "visits_rank99": 43092055,
+      "maximum_visited_rank": 113,
+      "elapsed_seconds": 420.002,
+      "name": "symmetric",
+      "seed": 202611142004,
+      "wall_time_limit_seconds": 420,
+      "dictionary_size": 255,
+      "dictionary_rank": 142,
+      "initial_states": 24,
+      "dictionary_input_sha256": "9ed920544c96a5de16b7a18e2651330a090e09e192bb3eea0d1f49310c2bda47"
+    },
+    {
+      "status": "NO_IMPROVEMENT_IN_BOUNDED_SEARCH",
+      "best_rank": 99,
+      "proposals": 104980480,
+      "accepted": 68331281,
+      "neutral_moves": 68230739,
+      "rank_decreasing_moves": 49553,
+      "restarts": 622,
+      "visits_rank99": 238667,
+      "maximum_visited_rank": 113,
+      "elapsed_seconds": 360.002,
+      "name": "nonsymmetric_same_point",
+      "seed": 202611142009,
+      "wall_time_limit_seconds": 360,
+      "dictionary_size": 3825,
+      "dictionary_rank": 240,
+      "initial_states": 8,
+      "dictionary_input_sha256": "dcb930b59d86082bfc2046c6baa140dac56361a42f1af52b272d04aa4eb4ca50"
+    },
+    {
+      "status": "NO_IMPROVEMENT_IN_BOUNDED_SEARCH",
+      "best_rank": 99,
+      "proposals": 565248,
+      "accepted": 505459,
+      "neutral_moves": 505433,
+      "rank_decreasing_moves": 7,
+      "restarts": 3,
+      "visits_rank99": 173802,
+      "maximum_visited_rank": 107,
+      "exact_tensor_checks": 63,
+      "elapsed_seconds": 180.017,
+      "name": "nonsymmetric_cross_point",
+      "seed": 202611142013,
+      "wall_time_limit_seconds": 180,
+      "dictionary_size": 65025,
+      "dictionary_rank": 576,
+      "initial_states": 1,
+      "dictionary_input_sha256": "03d41c314943dfe2dbc748b43f7ad57091630ef78b9bdca0fab9168a2cd21ef4"
+    }
+  ],
+  "total_proposals": 655134720,
+  "total_accepted": 388660958,
+  "independent_checked_exchange_runs": [
+    {
+      "status": "NO_IMPROVEMENT_IN_BOUNDED_SEARCH",
+      "best_rank": 99,
+      "proposals": 3178496,
+      "accepted": 1852111,
+      "neutral_moves": 1768443,
+      "rank_decreasing_moves": 41943,
+      "restarts": 39,
+      "visits_rank99": 232413,
+      "maximum_visited_rank": 113,
+      "exact_tensor_checks": 228,
+      "elapsed_seconds": 3.0031
+    },
+    {
+      "status": "NO_IMPROVEMENT_IN_BOUNDED_SEARCH",
+      "best_rank": 99,
+      "proposals": 835584,
+      "accepted": 543533,
+      "neutral_moves": 542552,
+      "rank_decreasing_moves": 489,
+      "restarts": 4,
+      "visits_rank99": 607,
+      "maximum_visited_rank": 113,
+      "exact_tensor_checks": 68,
+      "elapsed_seconds": 3.01076
+    }
+  ],
+  "exact_tensor_identity_checks_in_checked_runs": 359,
+  "check_scope": "The first two long runs used the same exchange update before periodic check instrumentation; short separately seeded runs checked that update on 296 complete tensors. The cross-point long run checked 63 complete tensors. All initial tensors were separately certified on 576 basis pairs.",
+  "local_11_point_certificate": {
+    "status": "EXACT_LIMITED_DICTIONARY_CERTIFICATE",
+    "local_GF16_dictionary_size": 15,
+    "subsets_of_size8_checked": 6435,
+    "GF16_rank8_symmetric_subsets": 0,
+    "local_GF16_symmetric_dictionary_minimum": 9,
+    "cumulative_symmetric_dictionary_ranks": {
+      "1": 10,
+      "2": 20,
+      "3": 30,
+      "4": 40,
+      "5": 50,
+      "6": 60,
+      "7": 70,
+      "8": 80,
+      "9": 90,
+      "10": 100,
+      "11": 110,
+      "12": 116,
+      "13": 122,
+      "14": 128,
+      "15": 134,
+      "16": 140,
+      "17": 142
+    },
+    "eleven_point_subspaces_form_direct_sum": true,
+    "eleven_point_cost_minimum": 99,
+    "explanation": "Each of the first eleven points contributes a disjoint 10-dimensional symmetric-form space. The target component at each point is an injective linear embedding of full GF16 multiplication. Every 8-of-15 choice was ruled out, so each point needs at least nine products in this restricted dictionary.",
+    "limitations": [
+      "Only the first eleven fixed points are certified as a direct sum here.",
+      "No lower bound for 12-17 active points, nonsymmetric products, cross-point products, nonlinear circuits, or unrestricted GF24 multiplication."
+    ],
+    "elapsed_seconds": 0.03681213399977423
+  },
+  "construction_cost_screen": {
+    "status": "BOUNDED_CONSTRUCTION_COST_SCREEN_COMPLETE",
+    "explicit_binary_kernel_costs": {
+      "1": 1,
+      "2": 3,
+      "3": 6,
+      "4": 9,
+      "6": 15
+    },
+    "exact_kernel_basis_pairs": 66,
+    "rational_line": [
+      {
+        "base_field": 2,
+        "relative_degree": 24,
+        "required_coordinates": 47,
+        "place_counts": {
+          "1": 3,
+          "2": 1,
+          "3": 2,
+          "4": 3,
+          "6": 9
+        },
+        "binary_place_costs": {
+          "1": 1,
+          "2": 3,
+          "3": 6,
+          "4": 9,
+          "6": 15
+        },
+        "cheapest_catalogue_cost": 105,
+        "selected_places": {
+          "1": 3,
+          "2": 1,
+          "3": 2,
+          "4": 3,
+          "6": 4
+        }
+      },
+      {
+        "base_field": 4,
+        "relative_degree": 12,
+        "required_coordinates": 23,
+        "place_counts": {
+          "1": 5,
+          "2": 6,
+          "3": 20
+        },
+        "binary_place_costs": {
+          "1": 3,
+          "2": 9,
+          "3": 15
+        },
+        "cheapest_catalogue_cost": 99,
+        "selected_places": {
+          "1": 5,
+          "2": 6,
+          "3": 2
+        }
+      },
+      {
+        "base_field": 8,
+        "relative_degree": 8,
+        "required_coordinates": 15,
+        "place_counts": {
+          "1": 9,
+          "2": 28
+        },
+        "binary_place_costs": {
+          "1": 6,
+          "2": 15
+        },
+        "cheapest_catalogue_cost": 99,
+        "selected_places": {
+          "1": 9,
+          "2": 3
+        }
+      },
+      {
+        "base_field": 16,
+        "relative_degree": 6,
+        "required_coordinates": 11,
+        "place_counts": {
+          "1": 17
+        },
+        "binary_place_costs": {
+          "1": 9
+        },
+        "cheapest_catalogue_cost": 99,
+        "selected_places": {
+          "1": 11
+        }
+      },
+      {
+        "base_field": 64,
+        "relative_degree": 4,
+        "required_coordinates": 7,
+        "place_counts": {
+          "1": 65
+        },
+        "binary_place_costs": {
+          "1": 15
+        },
+        "cheapest_catalogue_cost": 105,
+        "selected_places": {
+          "1": 7
+        }
+      }
+    ],
+    "elliptic": [
+      {
+        "base_field": 2,
+        "relative_degree": 24,
+        "required_coordinates": 48,
+        "optimistic_best": {
+          "trace": 1,
+          "place_counts": {
+            "1": 2,
+            "2": 3,
+            "3": 4,
+            "4": 2,
+            "6": 6
+          },
+          "cost": 104,
+          "selected_places": {
+            "1": 2,
+            "2": 3,
+            "3": 4,
+            "4": 1,
+            "6": 4
+          }
+        },
+        "note": "All Hasse-interval integer traces admitted; existence/injectivity not asserted."
+      },
+      {
+        "base_field": 4,
+        "relative_degree": 12,
+        "required_coordinates": 24,
+        "optimistic_best": {
+          "trace": -2,
+          "place_counts": {
+            "1": 7,
+            "2": 7,
+            "3": 14
+          },
+          "cost": 99,
+          "selected_places": {
+            "1": 7,
+            "2": 7,
+            "3": 1
+          }
+        },
+        "note": "All Hasse-interval integer traces admitted; existence/injectivity not asserted."
+      },
+      {
+        "base_field": 8,
+        "relative_degree": 8,
+        "required_coordinates": 16,
+        "optimistic_best": {
+          "trace": -5,
+          "place_counts": {
+            "1": 14,
+            "2": 21
+          },
+          "cost": 99,
+          "selected_places": {
+            "1": 14,
+            "2": 1
+          }
+        },
+        "note": "All Hasse-interval integer traces admitted; existence/injectivity not asserted."
+      },
+      {
+        "base_field": 16,
+        "relative_degree": 6,
+        "required_coordinates": 12,
+        "optimistic_best": {
+          "trace": -8,
+          "place_counts": {
+            "1": 25
+          },
+          "cost": 108,
+          "selected_places": {
+            "1": 12
+          }
+        },
+        "note": "All Hasse-interval integer traces admitted; existence/injectivity not asserted."
+      },
+      {
+        "base_field": 64,
+        "relative_degree": 4,
+        "required_coordinates": 8,
+        "optimistic_best": {
+          "trace": -16,
+          "place_counts": {
+            "1": 81
+          },
+          "cost": 120,
+          "selected_places": {
+            "1": 8
+          }
+        },
+        "note": "All Hasse-interval integer traces admitted; existence/injectivity not asserted."
+      }
+    ],
+    "genus2_F4_optimistic_best": {
+      "a1": 4,
+      "a2": 12,
+      "place_counts": {
+        "1": 9,
+        "2": 8,
+        "3": 8
+      },
+      "cost": 99,
+      "selected_places": {
+        "1": 9,
+        "2": 8
+      }
+    },
+    "genus2_Weil_polynomials_examined": 91,
+    "genus2_F4_rational_point_cap": 10,
+    "genus2_cap_reason": "Genus-two hyperelliptic map has degree two to P1 over the finite field; 2*(4+1)=10.",
+    "excluded": [
+      "higher-degree place kernels outside the explicit catalogue",
+      "derivative evaluations",
+      "higher genus",
+      "unrestricted tensor decompositions"
+    ],
+    "warning": "Minimum within this priced catalogue only. Field counts do not prove evaluation injectivity or construct a curve."
+  },
+  "bounds_and_limitations": [
+    "Bounded stochastic basis-exchange searches, not exhaustive dictionary optimization.",
+    "No unrestricted lower bound on GF24 multiplicative or bilinear complexity.",
+    "No improved circuit, global splice count, or score improvement is claimed.",
+    "The eleven-point lower certificate applies only to the specified symmetric evaluation dictionary."
+  ],
+  "source_hashes": {
+    "dqi_algebra_interpolation.py": "4fa423eeb5c109edf30e1f111c75539e6f0cd3a0671a59fec12cf0df0a25e7dc",
+    "dqi_algebra_dictionary_search.cpp": "7e61d1ca1dfff3328cb2ce9256589f9ff2ed6de4369965c3e32b764d6972c86f",
+    "dqi_algebra_interpolation_costs.py": "3ee0bb757954f0b8cf8c4b853287fe61d6a5685c45c5cc1995341eb8fff6c441",
+    "dqi_algebra_local_certificate.py": "b2182a8a9d869dbdf81dca33217f63ca5715736d6fe9c05ac064596ccafef3f0"
+  },
+  "recommended_github_paths": [
+    "dqi_algebra_interpolation.py",
+    "dqi_algebra_dictionary_search.cpp",
+    "dqi_algebra_interpolation_costs.py",
+    "dqi_algebra_interpolation_costs.json",
+    "dqi_algebra_local_certificate.py",
+    "dqi_algebra_local_certificate.json",
+    "dqi_algebra_dictionary.json",
+    "dqi_algebra_nonsymmetric_dictionary.json",
+    "dqi_algebra_crosspoint_dictionary.json",
+    "dqi_algebra_report.md",
+    "dqi_algebra_report.json"
+  ],
+  "existing_dependencies_not_created_by_this_task": [
+    "inverse_v2_actual_tensor99.json",
+    "inverse_v2_actual_block_audit.py",
+    "inverse_v2_optimize.py",
+    "symbolic_block_analyze.py",
+    "inverse_specialized.py",
+    "full_inverse_verify.py",
+    "pebble_search.py"
+  ],
+  "external_required_source_files": [
+    "official_sources/Syed_v12/source/dqi_source/src/controller_work/night_root/extension24_tensor.py",
+    "official_sources/Syed_v12/source/dqi_source/src/controller_work/night_converter/night_reference.py"
+  ],
+  "regenerable_files_not_recommended_for_git": [
+    "dqi_algebra_*dictionary.txt",
+    "dqi_algebra_dictionary_search executable variants",
+    "dqi_algebra_*result.txt",
+    "dqi_algebra_*audit.txt"
+  ]
+}

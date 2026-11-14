@@ -1,0 +1,23 @@
+{
+  "recommendation": "KEEP_e46",
+  "adopted": false,
+  "kaggle_submitted": false,
+  "upstream_baseline_modified": false,
+  "phase_domain_inputs": 3133452,
+  "native_cases_per_circuit": 12288,
+  "lp_experiments": {
+    "initial": 18,
+    "targeted_removal": 35,
+    "two_new_bases": 20,
+    "constant1": 4
+  },
+  "main_findings": [
+    "Existing q30 generic rotation can be removed after refitting: 32 generic rotations are functionally feasible; total cost is worse because synthesis margin shrinks.",
+    "Actual new Boolean phase basis q42 enlarges min margin by about 44 percent but the extra generic rotation costs more than it saves.",
+    "The file identifier walsh32 is historical; its new parity reduces to existing q34 because q21 is identically zero. It is not evidence that a new independent Walsh basis was needed.",
+    "For unchanged arithmetic and Q, generic rotation count >=35 cannot beat e46 even with a perfect phase approximation under the official equal-error synthesis model."
+  ],
+  "native_and_domain": "See invsqrt_structural_native.json and invsqrt_structural_domain.json",
+  "official_200540928_shot_rerun": false,
+  "score_claim": "No score improvement found. Candidate scores are predictions using unchanged arithmetic upstream average, not new Kaggle scores."
+}

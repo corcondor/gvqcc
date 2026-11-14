@@ -1,0 +1,65 @@
+{
+  "records": [
+    {
+      "name": "baseline",
+      "native_cases": 12288,
+      "random_seeds": [
+        20261116,
+        20261117,
+        20261118
+      ],
+      "restoration_failures": 0,
+      "exact_phase_mismatches": 0,
+      "qubits": 46,
+      "ops": 23877,
+      "sample_total_toffoli": 18184105,
+      "sample_mean_toffoli": 1479.8262532552083,
+      "static_generic_rotations": 33,
+      "static_t_class": 1,
+      "static_toffoli": 1551
+    },
+    {
+      "name": "walsh34",
+      "native_cases": 12288,
+      "random_seeds": [
+        20261116,
+        20261117,
+        20261118
+      ],
+      "restoration_failures": 0,
+      "exact_phase_mismatches": 0,
+      "qubits": 46,
+      "ops": 23880,
+      "sample_total_toffoli": 18184105,
+      "sample_mean_toffoli": 1479.8262532552083,
+      "kmb": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/invsqrt_structural_walsh34.kmb",
+      "sha256": "6f74b8d58cb20eeed9387bf362bfed88b62ca9de0957d309b4478ec2b754ae9e",
+      "bytes": 198629,
+      "static_generic_rotations": 34,
+      "static_t_class": 1,
+      "static_toffoli": 1551
+    },
+    {
+      "name": "walsh32",
+      "native_cases": 12288,
+      "random_seeds": [
+        20261116,
+        20261117,
+        20261118
+      ],
+      "restoration_failures": 0,
+      "exact_phase_mismatches": 0,
+      "qubits": 46,
+      "ops": 23878,
+      "sample_total_toffoli": 18184105,
+      "sample_mean_toffoli": 1479.8262532552083,
+      "kmb": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/invsqrt_structural_walsh32.kmb",
+      "sha256": "02d988f18b33da3e6ebbb703d4332c94a0144f5333fbb4b37943974b668c951e",
+      "bytes": 198587,
+      "static_generic_rotations": 32,
+      "static_t_class": 1,
+      "static_toffoli": 1551
+    }
+  ],
+  "meaning": "Native random HMR outcomes at deterministic x set; complements exact full-domain phase and structural input-dependent diagonal proof, not full official 200M-shot run."
+}
