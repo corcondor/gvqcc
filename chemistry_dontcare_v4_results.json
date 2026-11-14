@@ -1,0 +1,304 @@
+{
+  "status": "NO_SINGLE_PRODUCT_DC_PRUNING",
+  "scope": "Drop one existing normalized product, without changing other products, iff its full output XOR touches only inactive low bits in every affected forward batch; no pair/global synthesis search.",
+  "processed_batches": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "batch0_excluded": true,
+  "products_checked": 2706,
+  "address_product_cases": 3301320,
+  "current_batch_only_hits": 0,
+  "whole_suffix_hits": 0,
+  "inactive_entries": 1416,
+  "independent_low_bit_dontcares": 8496,
+  "loaders": [
+    {
+      "batch": 1,
+      "products": 212,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 206,
+      "zero_support_products": 0,
+      "min_support": 260,
+      "max_support": 387,
+      "minimum_current_care_violations": 3377,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "e63f9de0a60ff79fc6f817056a1f95f5efed9ae82955cf56b11492e5ff28d70b"
+    },
+    {
+      "batch": 2,
+      "products": 212,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 201,
+      "zero_support_products": 0,
+      "min_support": 252,
+      "max_support": 369,
+      "minimum_current_care_violations": 3321,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "e32afaf5d4b04756d20f15ecfbf08d6db325b57cbcb877428cb7fd61f13fcebb"
+    },
+    {
+      "batch": 3,
+      "products": 212,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 207,
+      "zero_support_products": 0,
+      "min_support": 251,
+      "max_support": 351,
+      "minimum_current_care_violations": 3527,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "a932bc25467908c2189aadadd5f997ea88200b44d9401741c2b492fc1c2ebaa0"
+    },
+    {
+      "batch": 4,
+      "products": 189,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 187,
+      "zero_support_products": 0,
+      "min_support": 249,
+      "max_support": 357,
+      "minimum_current_care_violations": 2109,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "dc70bda726f221813b502fc2d26acdd21882d1e30177f4264974880eb68cb2c2"
+    },
+    {
+      "batch": 5,
+      "products": 189,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 184,
+      "zero_support_products": 0,
+      "min_support": 252,
+      "max_support": 345,
+      "minimum_current_care_violations": 2635,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "dbef059b4cd3030d2b249df4d09653efb54f8b803faa2d459f4e418394120fe2"
+    },
+    {
+      "batch": 6,
+      "products": 187,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 185,
+      "zero_support_products": 0,
+      "min_support": 248,
+      "max_support": 347,
+      "minimum_current_care_violations": 3164,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "11cb19cb7e9d628f1416ef0e03f6d9d767726e42df839885e9224b029444f383"
+    },
+    {
+      "batch": 7,
+      "products": 189,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 186,
+      "zero_support_products": 0,
+      "min_support": 258,
+      "max_support": 344,
+      "minimum_current_care_violations": 3064,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "e3a11ed9c462603f6f0734fe61fc0e4e924fa6bb4a6702574391f28f507a264b"
+    },
+    {
+      "batch": 8,
+      "products": 187,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 178,
+      "zero_support_products": 0,
+      "min_support": 270,
+      "max_support": 347,
+      "minimum_current_care_violations": 1526,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "0fdcfe1906582661c40d0cd510df7efa2c115f287f9ad859223967d98150b0b2"
+    },
+    {
+      "batch": 9,
+      "products": 189,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 186,
+      "zero_support_products": 0,
+      "min_support": 261,
+      "max_support": 354,
+      "minimum_current_care_violations": 1740,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "e0e95ba89402beb2c08017c5db7bc5070db26fd996bcd4f465d2ab1a21cfa55f"
+    },
+    {
+      "batch": 10,
+      "products": 187,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 181,
+      "zero_support_products": 0,
+      "min_support": 258,
+      "max_support": 350,
+      "minimum_current_care_violations": 2127,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "c2e7dca4c51cdb3f82a47effbf0d529351b78a432e0b30bf5ca833bf2c5fcea3"
+    },
+    {
+      "batch": 11,
+      "products": 189,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 182,
+      "zero_support_products": 0,
+      "min_support": 240,
+      "max_support": 354,
+      "minimum_current_care_violations": 2379,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "18fa8cd8125a1eccb959be27956ce7e871599909193052ab4a2ad1a5d0d6b01d"
+    },
+    {
+      "batch": 12,
+      "products": 188,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 178,
+      "zero_support_products": 0,
+      "min_support": 266,
+      "max_support": 350,
+      "minimum_current_care_violations": 2628,
+      "suffix_inactive_by_slot": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "62d6cd9855bcad70917a56527c0f03b912fba8bb14a2bfd91748a345f0a6fc72"
+    },
+    {
+      "batch": 13,
+      "products": 188,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 182,
+      "zero_support_products": 0,
+      "min_support": 256,
+      "max_support": 343,
+      "minimum_current_care_violations": 2634,
+      "suffix_inactive_by_slot": [
+        0,
+        6,
+        0,
+        2,
+        2
+      ],
+      "source_sha256": "09a2faee4582e786548640ce4552bcc812e73667bd6784b37e0bbb5b817b8189"
+    },
+    {
+      "batch": 14,
+      "products": 188,
+      "current_batch_only_hits": 0,
+      "whole_suffix_hits": 0,
+      "high_bit_directions": 182,
+      "zero_support_products": 0,
+      "min_support": 252,
+      "max_support": 360,
+      "minimum_current_care_violations": 2214,
+      "suffix_inactive_by_slot": [
+        22,
+        24,
+        13,
+        41,
+        36
+      ],
+      "source_sha256": "a582eb78249c7ba5f58881b2753e2900a5a5be61eda719d2a24aff1fdad5f073"
+    }
+  ],
+  "source_npz_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "generator_sha256": "6fd89522d3ba722824e8ee607c16b8bc883b496b3ce609c654eb6d844fd720b9",
+  "script_sha256": "26ef4bca4aa808f94a6d3c06e3b62d52362c88b0065bf1524704861e7584a408",
+  "source_files_modified": false,
+  "full_official_shots_run": false,
+  "score_improvement_claimed": false,
+  "elapsed_seconds": 2.4145825900013733,
+  "cpu_seconds": 2.4107777500000003,
+  "peak_rss_mib": 51.6875
+}

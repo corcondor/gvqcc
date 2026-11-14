@@ -1,0 +1,49 @@
+{
+  "status": "RANK_AUDIT_COMPLETE",
+  "scope": "Within-batch XOR subsets of original product contributions for k13 and k14; projected only onto cared outputs in all subsequent batches. No changes to control or output bases.",
+  "batches": [
+    {
+      "batch": 13,
+      "products": 188,
+      "full_rank": 188,
+      "cared_rank": 188,
+      "full_nullity": 0,
+      "cared_nullity": 0,
+      "new_dependencies_from_dontcares": 0,
+      "full_dependencies": [],
+      "cared_dependencies": [],
+      "suffix_inactive_by_slot": [
+        0,
+        6,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "batch": 14,
+      "products": 188,
+      "full_rank": 188,
+      "cared_rank": 188,
+      "full_nullity": 0,
+      "cared_nullity": 0,
+      "new_dependencies_from_dontcares": 0,
+      "full_dependencies": [],
+      "cared_dependencies": [],
+      "suffix_inactive_by_slot": [
+        22,
+        24,
+        13,
+        41,
+        36
+      ]
+    }
+  ],
+  "no_subset_deletion_candidate": true,
+  "source_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "script_sha256": "796f0171d27cae3e5480f3cc7ad6fc0e0cb7b8bb8fc2778f615c85053ce37cd7",
+  "cpu_seconds": 0.3332224760000002,
+  "elapsed_seconds": 0.30114972999945167,
+  "circuit_files_created": false,
+  "score_improvement_claimed": false
+}

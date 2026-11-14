@@ -1,0 +1,58 @@
+{
+  "source": "dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+  "source_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "operation": "angle_words[:,0] &= 127; all other arrays unchanged",
+  "angle_words_changed": 613,
+  "vectors_tested": 1220,
+  "dimensions": 76,
+  "max_abs_signed_vector_difference": 5.551115123125783e-16,
+  "max_abs_outer_product_difference": 6.106226635438361e-16,
+  "max_abs_weighted_x_difference": 2.498001805406602e-16,
+  "baseline_metrics": {
+    "error_1": 0.01999999799999866,
+    "error_2": 0.019999998499405293,
+    "Lambda": 282.9645325169254,
+    "E_SOS": -22144.1882480015,
+    "E_gap": 3.9148980015015695,
+    "lambda_eff": 46.90658950862355,
+    "gap_in_domain": true
+  },
+  "gauge_metrics": {
+    "error_1": 0.01999999799999905,
+    "error_2": 0.019999998499405286,
+    "Lambda": 282.9645325169254,
+    "E_SOS": -22144.1882480015,
+    "E_gap": 3.9148980015015695,
+    "lambda_eff": 46.90658950862355,
+    "gap_in_domain": true
+  },
+  "metric_differences": {
+    "error_1": 3.920475055707584e-16,
+    "error_2": -6.938893903907228e-18,
+    "Lambda": 0.0,
+    "E_SOS": 0.0,
+    "E_gap": 0.0,
+    "lambda_eff": 0.0
+  },
+  "baseline_numerically_valid": true,
+  "gauge_numerically_valid": true,
+  "gauge_fix_mask_is_address_affine": false,
+  "unique_affine_interpolant_mismatch_count": 615,
+  "original_tags_repeated_across_batches": true,
+  "gauge_tags_repeated_across_batches": false,
+  "limits": [
+    "No matching reduced-cost loader has been synthesized.",
+    "The gauge changes the preserved loader tag for batch0, slot0.",
+    "Deleting writes to q18 or reusing old loaders is not validated.",
+    "Floating-point metric differences are rounding effects, not an optimization result.",
+    "No full circuit verification or Kaggle submission."
+  ],
+  "elapsed_seconds": 17.613786658999743,
+  "existing_affine_wrapper_check": {
+    "constant_root_msb_patch": true,
+    "tag_profile_sufficient": false,
+    "accepted": false,
+    "exception_type": "AssertionError",
+    "message": "('k=1/reverse', 'output mismatch', 0, 0, 0)"
+  }
+}
