@@ -1,0 +1,368 @@
+{
+  "status": "COMPLETE",
+  "scope": "one additional live wire at the fixed restoration cut; arbitrary combinations of several extra wires are not excluded",
+  "records": [
+    {
+      "extra_qubit": 17,
+      "patterns": 63,
+      "chosen_value": 0,
+      "restricted_patterns": 32,
+      "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+      "result": {
+        "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+        "first_gates_completed": 2667,
+        "first_gates_total": 2667,
+        "second_gates_tried": 27031886,
+        "rank1_unresolved": 0,
+        "seconds": 91.9089
+      },
+      "source_result": "score2_invsqrt_extra17_complete.json",
+      "excludes_extra_wire": true
+    },
+    {
+      "extra_qubit": 28,
+      "patterns": 79,
+      "chosen_value": 0,
+      "restricted_patterns": 41,
+      "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+      "result": {
+        "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+        "first_gates_completed": 651,
+        "first_gates_total": 651,
+        "second_gates_tried": 1524950,
+        "rank1_unresolved": 0,
+        "seconds": 3.17577
+      },
+      "seconds": 3.17929058899972,
+      "restriction_table": "score2_invsqrt_extra28_fixed0.txt",
+      "excludes_extra_wire": true
+    },
+    {
+      "extra_qubit": 25,
+      "patterns": 80,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 16,
+      "patterns": 81,
+      "chosen_value": 1,
+      "restricted_patterns": 43,
+      "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+      "result": {
+        "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+        "first_gates_completed": 651,
+        "first_gates_total": 651,
+        "second_gates_tried": 1524950,
+        "rank1_unresolved": 0,
+        "seconds": 3.65766
+      },
+      "seconds": 3.663281025001197,
+      "restriction_table": "score2_invsqrt_extra16_fixed1.txt",
+      "excludes_extra_wire": true
+    },
+    {
+      "extra_qubit": 15,
+      "patterns": 85,
+      "chosen_value": 1,
+      "restricted_patterns": 43,
+      "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+      "result": {
+        "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+        "first_gates_completed": 651,
+        "first_gates_total": 651,
+        "second_gates_tried": 1524950,
+        "rank1_unresolved": 0,
+        "seconds": 3.06891
+      },
+      "seconds": 3.0728733139985707,
+      "restriction_table": "score2_invsqrt_extra15_fixed1.txt",
+      "excludes_extra_wire": true
+    },
+    {
+      "extra_qubit": 35,
+      "patterns": 85,
+      "chosen_value": 0,
+      "restricted_patterns": 43,
+      "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+      "result": {
+        "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+        "first_gates_completed": 651,
+        "first_gates_total": 651,
+        "second_gates_tried": 1524950,
+        "rank1_unresolved": 0,
+        "seconds": 3.58136
+      },
+      "seconds": 3.5875484620009956,
+      "restriction_table": "score2_invsqrt_extra35_fixed0.txt",
+      "excludes_extra_wire": true
+    },
+    {
+      "extra_qubit": 14,
+      "patterns": 89,
+      "chosen_value": 1,
+      "restricted_patterns": 46,
+      "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+      "result": {
+        "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+        "first_gates_completed": 651,
+        "first_gates_total": 651,
+        "second_gates_tried": 1524950,
+        "rank1_unresolved": 0,
+        "seconds": 2.86068
+      },
+      "seconds": 2.8669160069985082,
+      "restriction_table": "score2_invsqrt_extra14_fixed1.txt",
+      "excludes_extra_wire": true
+    },
+    {
+      "extra_qubit": 33,
+      "patterns": 89,
+      "chosen_value": 0,
+      "restricted_patterns": 46,
+      "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+      "result": {
+        "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+        "first_gates_completed": 651,
+        "first_gates_total": 651,
+        "second_gates_tried": 1524950,
+        "rank1_unresolved": 0,
+        "seconds": 2.86632
+      },
+      "seconds": 2.8707213749985385,
+      "restriction_table": "score2_invsqrt_extra33_fixed0.txt",
+      "excludes_extra_wire": true
+    },
+    {
+      "extra_qubit": 13,
+      "patterns": 92,
+      "chosen_value": 0,
+      "restricted_patterns": 46,
+      "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+      "result": {
+        "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+        "first_gates_completed": 651,
+        "first_gates_total": 651,
+        "second_gates_tried": 1524950,
+        "rank1_unresolved": 0,
+        "seconds": 2.92138
+      },
+      "seconds": 2.9259556679971865,
+      "restriction_table": "score2_invsqrt_extra13_fixed0.txt",
+      "excludes_extra_wire": true
+    },
+    {
+      "extra_qubit": 31,
+      "patterns": 92,
+      "chosen_value": 0,
+      "restricted_patterns": 46,
+      "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+      "result": {
+        "status": "NO_SOLUTION_IN_SEARCHED_FAMILY",
+        "first_gates_completed": 651,
+        "first_gates_total": 651,
+        "second_gates_tried": 1524950,
+        "rank1_unresolved": 0,
+        "seconds": 2.86706
+      },
+      "seconds": 2.871527197999967,
+      "restriction_table": "score2_invsqrt_extra31_fixed0.txt",
+      "excludes_extra_wire": true
+    },
+    {
+      "extra_qubit": 0,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 1,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 2,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 3,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 4,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 5,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 6,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 10,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 11,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 12,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 22,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 23,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 24,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 26,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 27,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 29,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 37,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 38,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 39,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 40,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 41,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 42,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 43,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    },
+    {
+      "extra_qubit": 45,
+      "patterns": 94,
+      "chosen_value": 0,
+      "restricted_patterns": 47,
+      "status": "EXCLUDED_BY_EXISTING_SIX_INPUT_LOWER_BOUND",
+      "reason": "Fixing the extra bit retains all 47 original patterns"
+    }
+  ],
+  "single_extra_wires_excluded": 34
+}

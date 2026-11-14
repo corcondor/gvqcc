@@ -1,0 +1,285 @@
+{
+  "pyzx_version": "0.10.8",
+  "status": "COMPLETE",
+  "source_hashes": {
+    "angle_k_0.kmb": "5b209c797f5b0685614537a155a40e21841bb5d05a61e9304915c85bf961b263",
+    "angle_k_1.kmb": "f5ffa423dcd52f845d48dc1d760706260a3bc57281b94ad7bd74d4edc6030295",
+    "angle_k_10.kmb": "331a4479981e23c92a8efe7dff69cf3d932d80d0756714a2610674126f888fce",
+    "angle_k_11.kmb": "7685c6be649eba08462532ef11f7badfcd65b0677ca32e56398b44476a34fb02",
+    "angle_k_12.kmb": "8d48abb9cb1a370d1bfd146dc1fb4a1ac400ed5f733e7a8e43416e373e7813a4",
+    "angle_k_13.kmb": "e771f32d57f3463021b8ac950fa4ac31c01aef4fb1941141d407d5f1215ecf50",
+    "angle_k_14.kmb": "cb43882ea1a3e82cadd099dcace290fbad05cfc8936ca7625188b8265ebd165e",
+    "angle_k_2.kmb": "05cf5393b4e40c1cbac7b4a08048d74ecd63e6669207e8899aca845b5756e30c",
+    "angle_k_3.kmb": "e8ac46e12b7dc2d99b7d97535f873f2b35d772745a75d0407d8ae1a0c5882c14",
+    "angle_k_4.kmb": "5c2a239a14fccbe5cc353fb22de56873c4af03d789ffacdabe29148c4b35cd61",
+    "angle_k_5.kmb": "f6d7a036373cf1aaedb2f162b8c409bd93331daba8f4af7e79b86b2b7761d3b1",
+    "angle_k_6.kmb": "f27896418872bb633b6448451b1807f8ae42bf3583ee871f0a0ac4d5c4c47043",
+    "angle_k_7.kmb": "2e036e9b3ff88173b8a37663c2e41973e896bbe1a30a7d2ee8b1844a8a7020fa",
+    "angle_k_8.kmb": "d364caa4a60c7e034a2f24347d0a0a0ca59508860851a93f37e9761d3d21841f",
+    "angle_k_9.kmb": "98b9037e226eec0a63a357348b11355e7ea038504f38bf7f0cc57b8b6a38a41c"
+  },
+  "source_script_sha256": "08d5996706146488277cc215d6248be99ba9b4b6d90e4e80443fd5424db253c0",
+  "source_directory": "/workspace/scratch/3815fb5fae06/score2_clifford_loaders",
+  "blocks": [
+    {
+      "file": "angle_k_3.kmb",
+      "start_zero_based": 32827,
+      "end_exclusive": 34533,
+      "qubits": 125,
+      "source_gates": 1706,
+      "zx_extracted_gates": 1134,
+      "vertices_before": 3644,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 572,
+      "seconds": 11.076126752999699
+    },
+    {
+      "file": "angle_k_1.kmb",
+      "start_zero_based": 30468,
+      "end_exclusive": 32161,
+      "qubits": 125,
+      "source_gates": 1693,
+      "zx_extracted_gates": 1159,
+      "vertices_before": 3614,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 534,
+      "seconds": 10.22047205600029
+    },
+    {
+      "file": "angle_k_11.kmb",
+      "start_zero_based": 24846,
+      "end_exclusive": 26520,
+      "qubits": 125,
+      "source_gates": 1674,
+      "zx_extracted_gates": 1150,
+      "vertices_before": 3583,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 524,
+      "seconds": 10.093100778998632
+    },
+    {
+      "file": "angle_k_6.kmb",
+      "start_zero_based": 23788,
+      "end_exclusive": 25443,
+      "qubits": 125,
+      "source_gates": 1655,
+      "zx_extracted_gates": 1127,
+      "vertices_before": 3548,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 528,
+      "seconds": 9.016287191996526
+    },
+    {
+      "file": "angle_k_12.kmb",
+      "start_zero_based": 23054,
+      "end_exclusive": 24702,
+      "qubits": 125,
+      "source_gates": 1648,
+      "zx_extracted_gates": 1133,
+      "vertices_before": 3534,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 515,
+      "seconds": 8.678768000998389
+    },
+    {
+      "file": "angle_k_2.kmb",
+      "start_zero_based": 31895,
+      "end_exclusive": 33535,
+      "qubits": 125,
+      "source_gates": 1640,
+      "zx_extracted_gates": 1098,
+      "vertices_before": 3518,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 542,
+      "seconds": 9.31976542099801
+    },
+    {
+      "file": "angle_k_8.kmb",
+      "start_zero_based": 24139,
+      "end_exclusive": 25778,
+      "qubits": 125,
+      "source_gates": 1639,
+      "zx_extracted_gates": 1113,
+      "vertices_before": 3511,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 526,
+      "seconds": 8.841335615998105
+    },
+    {
+      "file": "angle_k_9.kmb",
+      "start_zero_based": 24853,
+      "end_exclusive": 26487,
+      "qubits": 125,
+      "source_gates": 1634,
+      "zx_extracted_gates": 1131,
+      "vertices_before": 3505,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 503,
+      "seconds": 9.05481981399862
+    },
+    {
+      "file": "angle_k_13.kmb",
+      "start_zero_based": 23866,
+      "end_exclusive": 25500,
+      "qubits": 125,
+      "source_gates": 1634,
+      "zx_extracted_gates": 1102,
+      "vertices_before": 3496,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 532,
+      "seconds": 8.835622409002099
+    },
+    {
+      "file": "angle_k_14.kmb",
+      "start_zero_based": 22922,
+      "end_exclusive": 24546,
+      "qubits": 125,
+      "source_gates": 1624,
+      "zx_extracted_gates": 1128,
+      "vertices_before": 3488,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 496,
+      "seconds": 8.604434954999306
+    },
+    {
+      "file": "angle_k_10.kmb",
+      "start_zero_based": 24345,
+      "end_exclusive": 25965,
+      "qubits": 125,
+      "source_gates": 1620,
+      "zx_extracted_gates": 1128,
+      "vertices_before": 3477,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 492,
+      "seconds": 9.921043971997278
+    },
+    {
+      "file": "angle_k_4.kmb",
+      "start_zero_based": 25812,
+      "end_exclusive": 27421,
+      "qubits": 125,
+      "source_gates": 1609,
+      "zx_extracted_gates": 1130,
+      "vertices_before": 3448,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 479,
+      "seconds": 11.04580820600313
+    }
+  ],
+  "nonclifford_cost_change": 0,
+  "removed_gates": 6243,
+  "seconds": 115.33780007500172,
+  "candidate_hashes": {
+    "angle_k_3.kmb": "6225b9346a172dc9b3d6222b8545dccb6519d1d7a910e9c95aeeb89c21433348",
+    "angle_k_6.kmb": "387f1a6095132fb6114682c8cc102a36cc93426860fa57b1fd972b65d4e88561",
+    "angle_k_5.kmb": "f6d7a036373cf1aaedb2f162b8c409bd93331daba8f4af7e79b86b2b7761d3b1",
+    "angle_k_8.kmb": "0be2c2ec69d681f352c7e89fc94ed161f45b448110c9e617fe86181f72de646e",
+    "angle_k_2.kmb": "d67b80a7f10a977422798d9d0563e11f193215d15bcbe97c83ef7693046b7dda",
+    "angle_k_11.kmb": "d4eeedc38481610804ec2708e2fc02323b63d9f37487cec6cb9b42ed7c94c033",
+    "angle_k_7.kmb": "2e036e9b3ff88173b8a37663c2e41973e896bbe1a30a7d2ee8b1844a8a7020fa",
+    "angle_k_12.kmb": "61275eda03641d1a7b4052b36fa1df4383918f8986172e73a7f8dcaa817d0308",
+    "angle_k_13.kmb": "a4e43c2b183cf64de805701517fd0b56333dde662889579b824b4ee1ff0c3a72",
+    "angle_k_9.kmb": "3e31f13446a8a3c72bff3ac6c123d15f9c8b86039f505fe7b5510d7245246c99",
+    "angle_k_4.kmb": "0d8f807a5ed5f7304020aeadce03f5666ed6ac860994c018b724b99004cc3e6f",
+    "angle_k_1.kmb": "12876642933bb2dacf67e0b67f3a6be1256634ddfffef3f2c0b5c8e640ac0ca8",
+    "angle_k_0.kmb": "5b209c797f5b0685614537a155a40e21841bb5d05a61e9304915c85bf961b263",
+    "angle_k_14.kmb": "2db803b6c5eaf4d88142df541444ae2e2348fec66767cc901add881d1afcb0cb",
+    "angle_k_10.kmb": "656d5eb283c54a2b934fdcf38fc56d7b3cc7b0607e7731c26eb15b574e74f5eb"
+  }
+}

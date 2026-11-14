@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "method": "Independent Boolean state enumeration; does not reuse reducer.affine",
+  "random_seed": 20261115,
+  "circuits": 150,
+  "basis_inputs": 3720,
+  "circuits_with_gate_reduction": 150,
+  "nonaffine_and_conditional_barriers_preserved": [
+    "CCX q0 q1 q2",
+    "HMR q3 b0",
+    "CZ q0 q1 if b0",
+    "X q2 if b0",
+    "CX q1 q2 if b0",
+    "SWAP q1 q2 if b0",
+    "PUSH_CONDITION b0",
+    "POP_CONDITION"
+  ],
+  "file_sha256": {
+    "score2_clifford_affine_reduce.py": "9a6b104bc9e311794af9e12cde44d384c8805747aa5d846e9ce72381ebf77222",
+    "score2_clifford_validate.py": "66d02ed40c27ef145cb1b2f833e5da04a3baff914ff477763df21ccc5f78656d",
+    "score2_dfthcsos_fixed_words_verify.py": "3acf6e05f91ae359228551e69df082c4af318bc3081a072d072a21a8a41d6ea8",
+    "score2_dfthcsos_candidate_verify.py": "c680e718e30fc8bb538f82e84dec6a06bc7292457f812260473f4b6385464e2f"
+  },
+  "script_sha256": "0e65e861cfdb4ed27b98e77a2434b6f9df0c9cd78b8e801ceb65bfdafeef8767"
+}

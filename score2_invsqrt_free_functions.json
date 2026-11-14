@@ -1,0 +1,10 @@
+{
+  "legal_inputs": 3133452,
+  "live_wires": 40,
+  "fiber_patterns": 47,
+  "fiber_residual_rank": 34,
+  "intersection_dimension": 7,
+  "original_affine_function_dimension": 7,
+  "additional_free_functions": [],
+  "scope": "all affine combinations of all retained live wires which depend only on the six local inputs; not arbitrary nonlinear uses of other wires"
+}

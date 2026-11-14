@@ -1,0 +1,17 @@
+{
+  "status": "SAMPLE_MODEL",
+  "target_index": 0,
+  "cut": 36,
+  "zero_qubits_mask": 70368539705344,
+  "left_mask": 1,
+  "right_mask": 2,
+  "affine_mask_constant_then_qubits": 0,
+  "queries": 1,
+  "cut_index": 0,
+  "full_domain_positive_control": "PASS",
+  "legal_inputs": 3133452,
+  "reference_product_qubits": [
+    1,
+    0
+  ]
+}

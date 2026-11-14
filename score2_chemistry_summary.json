@@ -1,0 +1,113 @@
+{
+  "status": "PAIRED_WORD_CANDIDATE_FULL_PASS_AND_LOWER_MATCHED_COST",
+  "baseline_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "baseline_lambda_eff": 46.90658950862355,
+  "baseline_cost": 294988786.87084424,
+  "fixed_word_candidate": {
+    "candidate_sha256": "f5038776a978e83db0a0235ca94b452e78cacc4d6dab766675da8c818d268c25",
+    "metrics": {
+      "error_1": 0.019998360370531605,
+      "error_2": 0.019999998499405293,
+      "Lambda": 282.9632051555301,
+      "E_SOS": -22144.18824802,
+      "E_gap": 3.9148980200006918,
+      "lambda_eff": 46.9064788348674,
+      "gap_in_domain": true
+    },
+    "cost": 294988090.85952884,
+    "verified_shots": 78080,
+    "Toffoli": 14728.0,
+    "qubits": 427,
+    "num_ops": 408394,
+    "word_changes": 0,
+    "W_unchanged": true,
+    "H2_I_changed": true,
+    "receipt": "score2_combined_full_verification.json",
+    "role": "Preserved fully verified fallback"
+  },
+  "paired_word_candidate": {
+    "candidate": "/workspace/scratch/3815fb5fae06/score2_chemistry_paired_tail_refit/candidate.npz",
+    "candidate_sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+    "metrics": {
+      "error_1": 0.01999998000005401,
+      "error_2": 0.0199999936269957,
+      "Lambda": 282.96313136058893,
+      "E_SOS": -22144.18824802,
+      "E_gap": 3.9148980200006918,
+      "lambda_eff": 46.906472675810164,
+      "gap_in_domain": true
+    },
+    "changed_words": 20,
+    "edit": "angle_words[address,19] XOR 1 for addresses0..15 and1216..1219",
+    "W_unchanged": true,
+    "H2_I_changed": true,
+    "full_circuit_verified": true,
+    "official_cost": 294988052.12610483,
+    "verified_shots": 78080,
+    "Toffoli": 14728.0,
+    "qubits": 427,
+    "num_ops": 408788,
+    "receipt": "score2_chemistry_best_full_verification.json",
+    "family_sha256": "142af563255af76b2d2097fb5e8cbc61340c583ea70dadeddf7858de501faf84",
+    "local_cost_reduction": 734.7447394132614,
+    "local_cost_reduction_percent": 0.0002490754808737172,
+    "role": "Current best fully verified local candidate"
+  },
+  "paired_revert_control": {
+    "source": "/workspace/scratch/3815fb5fae06/score2_chemistry_paired_tail_refit/candidate.npz",
+    "source_sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+    "script_sha256": "56cb7fb453234b1ca18f78980646243d9b53830b7024626ea9982584a042e284",
+    "candidate": "/workspace/scratch/3815fb5fae06/score2_chemistry_paired_tail_revert/restored_all.npz",
+    "candidate_sha256": "492a4026b0a70b202505364ee63f3b4516ed06790ccac69d47a29cc377c34c31",
+    "restored_words": 20,
+    "restored_onebody_words": 16,
+    "restored_twobody_words": 4,
+    "remaining_changed_words_vs_baseline": 0,
+    "official_numeric_metrics": {
+      "error_1": 0.01999651442514459,
+      "error_2": 0.019999998499405293,
+      "Lambda": 282.96314766382375,
+      "E_SOS": -22144.188264323235,
+      "E_gap": 3.91491432323528,
+      "lambda_eff": 46.906571024915195,
+      "gap_in_domain": true
+    },
+    "numerical_pass": true,
+    "comparison_cost_original_T_Q": 294988670.62946403,
+    "W_and_H2_I_unchanged_vs_source": true,
+    "full_circuit_verified": false,
+    "seconds": 15.875200401002076,
+    "record_label": "paired_tail_all_words_revert_control",
+    "executed_script": "score2_chemistry_revert_all_check.py",
+    "full_record_source": "/workspace/scratch/3815fb5fae06/score2_chemistry_paired_tail_revert/restore_check.json",
+    "full_record_sha256": "8ac5d1ac53d7aee61761b0a53e76403d2992fe6fb788070fe6922965d68d368f"
+  },
+  "attribution": {
+    "first_free_block_gain_survives_restoring_words": true,
+    "first_gain_source": "H2_I refit; angle change not necessary",
+    "paired_all_word_revert_is_feasible": true,
+    "paired_change_lambda_reduction_at_same_W_H2_I": 9.834910503059291e-05,
+    "paired_control_beats_retained_fixedword_candidate": false
+  },
+  "screening_counts": {
+    "single_two_body_word_tag_preserving": 167413,
+    "single_two_body_word_LS_transport_eligible": 167307,
+    "single_one_body_word": 10526,
+    "free_high_block_patterns": 2310,
+    "paired_high_tail_patterns": 3010,
+    "multirow_LS_transport_last_batch": 365,
+    "multirow_LS_exact_shortlist": 17
+  },
+  "scope": {
+    "all_search_changes_are_actual_integer_words": true,
+    "continuous_theta_metrics_used_for_acceptance": false,
+    "global_optimality_claim": false,
+    "fixed_words_impossible_claim": false,
+    "public_kaggle_score_observed": null,
+    "user_reported_lambda_46_905894137_beaten": false
+  },
+  "runtime_peak_MiB_max": 1491.0625,
+  "evidence": "score2_chemistry_numeric_receipts.json",
+  "current_accepted_receipt": "score2_chemistry_best_full_verification.json",
+  "current_accepted_receipt_sha256": "eb4755d557f98400818a76245e25a427d573017c238ac83e9fcbc26cd1ebb87a"
+}

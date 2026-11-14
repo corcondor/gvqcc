@@ -1,0 +1,15 @@
+{
+  "scope": "4 two-AND predicates at zero-ancilla phase cuts; left parity is at most two arbitrary wires or an arbitrary parity of flags q22..q25,q7 plus one arbitrary wire; right parity and affine remainder unrestricted",
+  "records": [
+    {
+      "status": "NO_MODEL_IN_SEARCHED_LEFT_FAMILY",
+      "cuts": 133,
+      "queries": 1129224,
+      "left_parities": 2163,
+      "seconds": 2.07564,
+      "iteration": 0,
+      "samples": 512,
+      "elapsed_seconds": 2.080243968001014
+    }
+  ]
+}

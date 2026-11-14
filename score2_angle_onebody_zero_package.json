@@ -1,0 +1,115 @@
+{
+  "status": "READY_FOR_FULL_OFFICIAL_VERIFICATION",
+  "loaders": "/workspace/scratch/3815fb5fae06/score2_angle_zero_gain_family",
+  "factorization": "/workspace/scratch/3815fb5fae06/score2_angle_zero_gain_family/candidate_numeric.npz",
+  "factorization_sha256": "734378cb3b5f6cc2fde04d241932b4685d72a83f4c4626c8dcc927ac8ebb4112",
+  "source_numeric_candidate": "/workspace/scratch/3815fb5fae06/score2_chemistry_blocks_onebody_refit/candidate.npz",
+  "exact_loader_proof": "/workspace/scratch/3815fb5fae06/score2_angle_zero_gain_family/proof.json",
+  "proof_sha256": "6b8a5e06da82f82a2d45c935bb9d8dd90fcbf94a503d591ceeef777e7d572744",
+  "toffoli_per_pass": 4033,
+  "angle_toffoli_both_passes": 8066,
+  "max_loader_qubits": 128,
+  "changes": [
+    {
+      "address": 48,
+      "column": 45,
+      "old": 252,
+      "value": 253
+    },
+    {
+      "address": 49,
+      "column": 45,
+      "old": 210,
+      "value": 211
+    },
+    {
+      "address": 50,
+      "column": 45,
+      "old": 18,
+      "value": 19
+    },
+    {
+      "address": 51,
+      "column": 45,
+      "old": 124,
+      "value": 125
+    },
+    {
+      "address": 52,
+      "column": 45,
+      "old": 7,
+      "value": 6
+    },
+    {
+      "address": 53,
+      "column": 45,
+      "old": 255,
+      "value": 254
+    },
+    {
+      "address": 54,
+      "column": 45,
+      "old": 19,
+      "value": 18
+    },
+    {
+      "address": 55,
+      "column": 45,
+      "old": 83,
+      "value": 82
+    },
+    {
+      "address": 56,
+      "column": 45,
+      "old": 40,
+      "value": 41
+    },
+    {
+      "address": 57,
+      "column": 45,
+      "old": 194,
+      "value": 195
+    },
+    {
+      "address": 58,
+      "column": 45,
+      "old": 250,
+      "value": 251
+    },
+    {
+      "address": 59,
+      "column": 45,
+      "old": 66,
+      "value": 67
+    },
+    {
+      "address": 60,
+      "column": 45,
+      "old": 7,
+      "value": 6
+    },
+    {
+      "address": 61,
+      "column": 45,
+      "old": 13,
+      "value": 12
+    },
+    {
+      "address": 62,
+      "column": 45,
+      "old": 247,
+      "value": 246
+    },
+    {
+      "address": 63,
+      "column": 45,
+      "old": 189,
+      "value": 188
+    }
+  ],
+  "changed_nonangle_arrays": [
+    "H2_I"
+  ],
+  "full_official_verification_run": false,
+  "score_improvement_claimed": false
+}

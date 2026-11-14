@@ -1,0 +1,160 @@
+{
+  "created_utc": "2026-11-14T21:25:00.398534+00:00",
+  "status": "PASS_AND_LOWER_COMPARISON_COST",
+  "candidate_source": "/workspace/scratch/7f542e06b7cf/dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+  "candidate_source_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "baseline_source": "/workspace/scratch/7f542e06b7cf/dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+  "baseline_source_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "verifier": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dfthcsos/verify.py",
+  "verifier_sha256": "ca84ca08e6e9280922cda3b539d4776ae58990b2b03b5619a53d65de67df9d2b",
+  "script_sha256": "0c345d05c85fd88b8b42c075ac8bdc70563d7236629f574e6ce7899102b59689",
+  "baseline_cost": 294988786.8708443,
+  "logged_baseline_lambda": 46.905894137,
+  "comparison_cost_provenance": "Numeric comparison only; no baseline receipt supplied",
+  "kaggle_submission_performed": false,
+  "observed_public_score": null,
+  "declared_array_comparisons": {
+    "angle_words": true,
+    "tree_edges": true
+  },
+  "factorization": {
+    "path": "/workspace/scratch/3815fb5fae06/score2_clifford_full_verified/submission.npz",
+    "sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+    "replaced_arrays": [
+      "W",
+      "H2_I"
+    ],
+    "preserved_arrays": [
+      "U",
+      "H1_I",
+      "Hsym_lower",
+      "tree_edges",
+      "angle_words"
+    ]
+  },
+  "loaders": [
+    {
+      "name": "angle_k_0.kmb",
+      "sha256": "5b209c797f5b0685614537a155a40e21841bb5d05a61e9304915c85bf961b263"
+    },
+    {
+      "name": "angle_k_1.kmb",
+      "sha256": "f5ffa423dcd52f845d48dc1d760706260a3bc57281b94ad7bd74d4edc6030295"
+    },
+    {
+      "name": "angle_k_2.kmb",
+      "sha256": "05cf5393b4e40c1cbac7b4a08048d74ecd63e6669207e8899aca845b5756e30c"
+    },
+    {
+      "name": "angle_k_3.kmb",
+      "sha256": "e8ac46e12b7dc2d99b7d97535f873f2b35d772745a75d0407d8ae1a0c5882c14"
+    },
+    {
+      "name": "angle_k_4.kmb",
+      "sha256": "5c2a239a14fccbe5cc353fb22de56873c4af03d789ffacdabe29148c4b35cd61"
+    },
+    {
+      "name": "angle_k_5.kmb",
+      "sha256": "f6d7a036373cf1aaedb2f162b8c409bd93331daba8f4af7e79b86b2b7761d3b1"
+    },
+    {
+      "name": "angle_k_6.kmb",
+      "sha256": "f27896418872bb633b6448451b1807f8ae42bf3583ee871f0a0ac4d5c4c47043"
+    },
+    {
+      "name": "angle_k_7.kmb",
+      "sha256": "2e036e9b3ff88173b8a37663c2e41973e896bbe1a30a7d2ee8b1844a8a7020fa"
+    },
+    {
+      "name": "angle_k_8.kmb",
+      "sha256": "d364caa4a60c7e034a2f24347d0a0a0ca59508860851a93f37e9761d3d21841f"
+    },
+    {
+      "name": "angle_k_9.kmb",
+      "sha256": "98b9037e226eec0a63a357348b11355e7ea038504f38bf7f0cc57b8b6a38a41c"
+    },
+    {
+      "name": "angle_k_10.kmb",
+      "sha256": "331a4479981e23c92a8efe7dff69cf3d932d80d0756714a2610674126f888fce"
+    },
+    {
+      "name": "angle_k_11.kmb",
+      "sha256": "7685c6be649eba08462532ef11f7badfcd65b0677ca32e56398b44476a34fb02"
+    },
+    {
+      "name": "angle_k_12.kmb",
+      "sha256": "8d48abb9cb1a370d1bfd146dc1fb4a1ac400ed5f733e7a8e43416e373e7813a4"
+    },
+    {
+      "name": "angle_k_13.kmb",
+      "sha256": "e771f32d57f3463021b8ac950fa4ac31c01aef4fb1941141d407d5f1215ecf50"
+    },
+    {
+      "name": "angle_k_14.kmb",
+      "sha256": "cb43882ea1a3e82cadd099dcace290fbad05cfc8936ca7625188b8265ebd165e"
+    }
+  ],
+  "official_result": {
+    "status": "PASS",
+    "score": 294988786.87084424,
+    "lambda_eff": 46.90658950862355,
+    "toffoli_count": 14728.0,
+    "num_qubits": 427,
+    "brot": 8,
+    "batch_size": 5,
+    "num_circuits": 15,
+    "reaction_depth": 167,
+    "num_ops": 416697,
+    "verified_shots": 78080,
+    "submission_sha256": "400afef4cd3f5bb4597090a3366b1eb0264d6ceae3b8f11d44efc29853e73a4a",
+    "resources": {
+      "brot": 8,
+      "keep_bits": 10,
+      "angles_toffoli_per_pass": 4033.0,
+      "angles_toffoli": 8066.0,
+      "angles_qubits": 128,
+      "angles_selection_qubits": 11,
+      "angles_persistent_qubits": 40,
+      "angles_temporary_qubits": 77,
+      "outer_state_prep_toffoli": 317,
+      "inner_state_prep_toffoli": 4095,
+      "givens_rotations_toffoli": 2250,
+      "outer_state_prep_persistent_qubits": 40,
+      "outer_state_prep_temporary_qubits": 90,
+      "outer_state_prep_qubits": 130,
+      "inner_state_prep_persistent_qubits": 44,
+      "inner_state_prep_temporary_qubits": 303,
+      "inner_state_prep_qubits": 347,
+      "heuristic_persistent_qubits": 84,
+      "heuristic_temporary_qubits": 303,
+      "heuristic_toffoli": 6662,
+      "heuristic_qubits": 387,
+      "persistent_qubits": 124,
+      "temporary_qubits": 303,
+      "toffoli": 14728.0,
+      "qubits": 427,
+      "angles_within_cap": true
+    },
+    "metrics": {
+      "error_1": 0.01999999799999866,
+      "error_2": 0.019999998499405293,
+      "Lambda": 282.9645325169254,
+      "E_SOS": -22144.1882480015,
+      "E_gap": 3.9148980015015695,
+      "lambda_eff": 46.90658950862355,
+      "gap_in_domain": true
+    }
+  },
+  "lower_than_comparison_cost": true,
+  "local_cost_reduction_percent": 2.220446049250313e-14,
+  "lambda_below_user_log": false,
+  "seconds": 21.880209056998865,
+  "independent_cost_assessment": {
+    "status": "NO_SCORE_CHANGE",
+    "reason": "All factorization arrays and Q/Toffoli resource counts are unchanged; the 5.96e-8 numeric difference is one floating-point ULP. The original wrapper strict comparison is not a physical score gain.",
+    "baseline_cost": 294988786.8708443,
+    "observed_cost": 294988786.87084424,
+    "lower_comparison_flag_is_roundoff_only": true,
+    "comparison_wrapper_corrected_in": "score2_dfthcsos_fixed_words_verify.py"
+  }
+}
