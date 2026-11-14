@@ -25,7 +25,7 @@
 | 提出・最適化対象 | alias lookup、選択Pauliの適用、lookupの消去 | 因子NPZと15本のANGLE回路 |
 | 回路の入出力 | 16bitアドレス、16bit比較値、40bit系レジスタ。アドレスと比較値は復元し、選択した符号付きPauliを系へ適用 | 11bit選択レジスタに応じて5個の8bit角度差分を出力し、補助量子ビットを消去 |
 | 精度条件 | `1e-4 Ha`未満の係数を事前に除いた固定Pauli表。16bit alias確率の固定表に対して回路の作用を一致させる | 固定参照とsymmetry shiftに対し`error_1,error_2 <= 0.020 Ha`などを満たす |
-| 費用 | 実行Toffoli数 × peak live qubits | `lambda_eff × T_total × Q_total` |
+| 費用 | 著者評価器でのToffoli数 × peak live qubits | `lambda_eff × T_total × Q_total` |
 | 現在値 | 14,978 × 126 = 1,887,228 | 46.906589508623554 × 14,728 × 427 = 294,988,786.8708443 |
 
 左列の詳細は[task仕様][chem-task]と[契約データ][chem-contract]、右列はローカルで通した[chemistry_report.md](chemistry_report.md)・[結果JSON](chemistry_experiment_summary.json)による。ユーザーの別環境で報告された`lambda_eff=46.905894137`の配列は未取得なので、今回の基準をその値からの改善として扱わない。

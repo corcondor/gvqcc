@@ -80,3 +80,7 @@ The paper's chemistry-controlled quadratic phase technique suggests symbolic con
 ## Actions completed
 
 Read the primary paper and article, downloaded and hash-verified the author's DQI text sources, traced the current production source chain, checked the actual-block certificate and local verification reports, and documented the differences above. No additional full simulation, score submission, source rewrite or candidate mutation was performed.
+
+### Subsequent bounded experiment
+
+The proposed inexpensive witness screen was subsequently run against unchanged pure-Python references and existing admitted physical fixtures. It stopped after 25 trajectories and 425 node observations: all four specified zero-test/parity families were refuted, including every affine parity of the 48 head/carry bits and four half-word zero indicators. Each contradiction is within one public node; node-dependent coefficients were allowed. This excludes those proposed cheap decoders, not all nonlinear history reconstruction. Runtime was about 0.98 seconds and peak RSS about 37.5 MiB. See [the experiment report](dqi_rolling_flag_screen_report.md), [reproduction script](dqi_rolling_flag_screen.py), and [counterexample records](dqi_rolling_flag_screen_results.json). The validated KMB candidate remains unchanged.
