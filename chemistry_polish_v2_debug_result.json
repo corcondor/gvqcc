@@ -1,0 +1,152 @@
+{
+  "method": "exact L1 proximal SQP",
+  "official_numerical_metrics": {
+    "error_1": 0.01999999799999866,
+    "error_2": 0.019999998499405293,
+    "Lambda": 282.9645325169254,
+    "E_SOS": -22144.1882480015,
+    "E_gap": 3.9148980015015695,
+    "lambda_eff": 46.90658950862355,
+    "gap_in_domain": true
+  },
+  "full_circuit_verified": false,
+  "trace": [
+    {
+      "iteration": 1,
+      "seconds": 13.33925347100012,
+      "calls": 85,
+      "metrics": {
+        "lambda_eff_smooth": 46.90658950861408,
+        "Lambda_smooth": 282.9645325169254,
+        "gap": 3.914898001499978,
+        "error1": 0.019999997999996976,
+        "error2": 0.0199999984994053
+      },
+      "accepted": false,
+      "h": 0.0004,
+      "line_search": 11,
+      "dual_iterations": 2,
+      "dual_residual": 3.451981110673869e-16,
+      "step_norm": 0.005684635857643698,
+      "active_w_count": 42987
+    },
+    {
+      "iteration": 2,
+      "seconds": 26.22349316100008,
+      "calls": 169,
+      "metrics": {
+        "lambda_eff_smooth": 46.90658950861408,
+        "Lambda_smooth": 282.9645325169254,
+        "gap": 3.914898001499978,
+        "error1": 0.019999997999996976,
+        "error2": 0.0199999984994053
+      },
+      "accepted": false,
+      "h": 8e-05,
+      "line_search": 11,
+      "dual_iterations": 2,
+      "dual_residual": 5.4442193461086746e-17,
+      "step_norm": 0.001144984361662969,
+      "active_w_count": 42987
+    },
+    {
+      "iteration": 3,
+      "seconds": 39.42433335200076,
+      "calls": 253,
+      "metrics": {
+        "lambda_eff_smooth": 46.90658950861408,
+        "Lambda_smooth": 282.9645325169254,
+        "gap": 3.914898001499978,
+        "error1": 0.019999997999996976,
+        "error2": 0.0199999984994053
+      },
+      "accepted": false,
+      "h": 1.6000000000000003e-05,
+      "line_search": 11,
+      "dual_iterations": 2,
+      "dual_residual": 8.23993432015368e-18,
+      "step_norm": 0.00022975289081421377,
+      "active_w_count": 42987
+    },
+    {
+      "iteration": 4,
+      "seconds": 53.80169896900043,
+      "calls": 337,
+      "metrics": {
+        "lambda_eff_smooth": 46.90658950861408,
+        "Lambda_smooth": 282.9645325169254,
+        "gap": 3.914898001499978,
+        "error1": 0.019999997999996976,
+        "error2": 0.0199999984994053
+      },
+      "accepted": false,
+      "h": 3.2000000000000007e-06,
+      "line_search": 11,
+      "dual_iterations": 2,
+      "dual_residual": 1.6776546311555486e-18,
+      "step_norm": 4.605904968317638e-05,
+      "active_w_count": 42987
+    },
+    {
+      "iteration": 5,
+      "seconds": 72.55168892700021,
+      "calls": 421,
+      "metrics": {
+        "lambda_eff_smooth": 46.90658950861408,
+        "Lambda_smooth": 282.9645325169254,
+        "gap": 3.914898001499978,
+        "error1": 0.019999997999996976,
+        "error2": 0.0199999984994053
+      },
+      "accepted": false,
+      "h": 6.400000000000002e-07,
+      "line_search": 11,
+      "dual_iterations": 2,
+      "dual_residual": 4.747494351497552e-18,
+      "step_norm": 9.335042454636049e-06,
+      "active_w_count": 42987
+    },
+    {
+      "iteration": 6,
+      "seconds": 85.52447300399945,
+      "calls": 505,
+      "metrics": {
+        "lambda_eff_smooth": 46.90658950861408,
+        "Lambda_smooth": 282.9645325169254,
+        "gap": 3.914898001499978,
+        "error1": 0.019999997999996976,
+        "error2": 0.0199999984994053
+      },
+      "accepted": false,
+      "h": 1.2800000000000006e-07,
+      "line_search": 11,
+      "dual_iterations": 2,
+      "dual_residual": 3.86798063785013e-13,
+      "step_norm": 2.339424553402878e-06,
+      "active_w_count": 42987
+    },
+    {
+      "iteration": 7,
+      "seconds": 102.05299442000069,
+      "calls": 588,
+      "metrics": {
+        "lambda_eff_smooth": 46.90658950861408,
+        "Lambda_smooth": 282.9645325169254,
+        "gap": 3.914898001499978,
+        "error1": 0.019999997999996976,
+        "error2": 0.0199999984994053
+      },
+      "accepted": false,
+      "h": 2.5600000000000014e-08,
+      "line_search": 11,
+      "dual_iterations": 3,
+      "dual_residual": 2.2895851897119207e-14,
+      "step_norm": 1.3662161223948338e-06,
+      "active_w_count": 42987
+    }
+  ],
+  "baseline_source": "dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+  "angle_words_unchanged": true,
+  "exact_objective": true,
+  "seconds": 104.45424993699999
+}

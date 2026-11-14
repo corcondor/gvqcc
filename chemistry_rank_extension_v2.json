@@ -1,0 +1,341 @@
+{
+  "scope": "New-factor-column local curvature screen; no full refit, no circuit verification, no claimed score gain",
+  "source_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "baseline": {
+    "lambda_eff_smooth": 46.90658950861408,
+    "Lambda_smooth": 282.9645325169254,
+    "gap": 3.914898001499978,
+    "error1": 0.019999997999996976,
+    "error2": 0.0199999984994053
+  },
+  "angle_words_unchanged": true,
+  "lagrange_multiplier_estimate": [
+    0.00020490204278176348,
+    4.157669356168666,
+    0.05637299652286543
+  ],
+  "stationarity_residual_on_nonzero_support": 2.811722635385806,
+  "diagnostics": [
+    {
+      "lagrangian_curvature": -5.667910231645316,
+      "iterations": 180,
+      "optimizer_success": false,
+      "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "group": 0,
+      "finite_difference": [
+        {
+          "amplitude": 0.001,
+          "lagrangian_difference_over_amplitude_squared": -5.661795468154223,
+          "metrics": {
+            "lambda_eff_smooth": 46.90659041502752,
+            "Lambda_smooth": 282.96454337565,
+            "gap": 3.914898001521351,
+            "error1": 0.01999999795998657,
+            "error2": 0.019999982701906775
+          }
+        },
+        {
+          "amplitude": 0.0001,
+          "lagrangian_difference_over_amplitude_squared": -5.667852090242538,
+          "metrics": {
+            "lambda_eff_smooth": 46.906589517677624,
+            "Lambda_smooth": 282.9645326255127,
+            "gap": 3.9148980015000916,
+            "error1": 0.019999997999596945,
+            "error2": 0.019999998341284773
+          }
+        }
+      ]
+    },
+    {
+      "lagrangian_curvature": -7.90065690519251,
+      "iterations": 180,
+      "optimizer_success": false,
+      "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "group": 1,
+      "finite_difference": [
+        {
+          "amplitude": 0.001,
+          "lagrangian_difference_over_amplitude_squared": -7.891330469084083,
+          "metrics": {
+            "lambda_eff_smooth": 46.90659021005007,
+            "Lambda_smooth": 282.96454080851237,
+            "gap": 3.914898003081248,
+            "error1": 0.019999998141951417,
+            "error2": 0.01999997785360006
+          }
+        },
+        {
+          "amplitude": 0.0001,
+          "lagrangian_difference_over_amplitude_squared": -7.900567269678424,
+          "metrics": {
+            "lambda_eff_smooth": 46.90658951562771,
+            "Lambda_smooth": 282.9645325998413,
+            "gap": 3.9148980015156667,
+            "error1": 0.019999998001416497,
+            "error2": 0.01999999829272528
+          }
+        }
+      ]
+    },
+    {
+      "lagrangian_curvature": -5.905754004388675,
+      "iterations": 180,
+      "optimizer_success": false,
+      "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "group": 2,
+      "finite_difference": [
+        {
+          "amplitude": 0.001,
+          "lagrangian_difference_over_amplitude_squared": -5.8958568139944125,
+          "metrics": {
+            "lambda_eff_smooth": 46.906590269254195,
+            "Lambda_smooth": 282.96454168946934,
+            "gap": 3.9148980006738157,
+            "error1": 0.01999999801158713,
+            "error2": 0.019999982478063144
+          }
+        },
+        {
+          "amplitude": 0.0001,
+          "lagrangian_difference_over_amplitude_squared": -5.9056599623043695,
+          "metrics": {
+            "lambda_eff_smooth": 46.90658951621958,
+            "Lambda_smooth": 282.9645326086508,
+            "gap": 3.914898001491565,
+            "error1": 0.019999998000112644,
+            "error2": 0.019999998338956274
+          }
+        }
+      ]
+    },
+    {
+      "lagrangian_curvature": -7.758267793019786,
+      "iterations": 180,
+      "optimizer_success": false,
+      "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "group": 3,
+      "finite_difference": [
+        {
+          "amplitude": 0.001,
+          "lagrangian_difference_over_amplitude_squared": -7.749422254335664,
+          "metrics": {
+            "lambda_eff_smooth": 46.90659021635388,
+            "Lambda_smooth": 282.96454097532745,
+            "gap": 3.914898001800566,
+            "error1": 0.019999997890409838,
+            "error2": 0.019999978162402534
+          }
+        },
+        {
+          "amplitude": 0.0001,
+          "lagrangian_difference_over_amplitude_squared": -7.758181147823151,
+          "metrics": {
+            "lambda_eff_smooth": 46.90658951569118,
+            "Lambda_smooth": 282.9645326015094,
+            "gap": 3.9148980015029338,
+            "error1": 0.019999997998901144,
+            "error2": 0.01999999829582475
+          }
+        }
+      ]
+    },
+    {
+      "lagrangian_curvature": -9.243127034334435,
+      "iterations": 180,
+      "optimizer_success": false,
+      "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "group": 4,
+      "finite_difference": [
+        {
+          "amplitude": 0.001,
+          "lagrangian_difference_over_amplitude_squared": -9.234003016623866,
+          "metrics": {
+            "lambda_eff_smooth": 46.906590335999155,
+            "Lambda_smooth": 282.9645423378539,
+            "gap": 3.9148980027968037,
+            "error1": 0.019999997884714807,
+            "error2": 0.01999997431743941
+          }
+        },
+        {
+          "amplitude": 0.0001,
+          "lagrangian_difference_over_amplitude_squared": -9.243035579107186,
+          "metrics": {
+            "lambda_eff_smooth": 46.90658951688789,
+            "Lambda_smooth": 282.96453261513466,
+            "gap": 3.914898001512938,
+            "error1": 0.019999997998843822,
+            "error2": 0.01999999825736853
+          }
+        }
+      ]
+    },
+    {
+      "lagrangian_curvature": -9.407521727737109,
+      "iterations": 180,
+      "optimizer_success": false,
+      "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "group": 5,
+      "finite_difference": [
+        {
+          "amplitude": 0.001,
+          "lagrangian_difference_over_amplitude_squared": -9.401143453983977,
+          "metrics": {
+            "lambda_eff_smooth": 46.90659029824793,
+            "Lambda_smooth": 282.9645420692572,
+            "gap": 3.9148980002192957,
+            "error1": 0.019999997883518434,
+            "error2": 0.0199999739712857
+          }
+        },
+        {
+          "amplitude": 0.0001,
+          "lagrangian_difference_over_amplitude_squared": -9.407458943689193,
+          "metrics": {
+            "lambda_eff_smooth": 46.90658951651019,
+            "Lambda_smooth": 282.9645326124487,
+            "gap": 3.9148980014871313,
+            "error1": 0.019999997998832363,
+            "error2": 0.019999998253972376
+          }
+        }
+      ]
+    },
+    {
+      "lagrangian_curvature": -9.113535314618728,
+      "iterations": 180,
+      "optimizer_success": false,
+      "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "group": 6,
+      "finite_difference": [
+        {
+          "amplitude": 0.001,
+          "lagrangian_difference_over_amplitude_squared": -9.102664827895524,
+          "metrics": {
+            "lambda_eff_smooth": 46.906590075800636,
+            "Lambda_smooth": 282.9645394161871,
+            "gap": 3.914898000048197,
+            "error1": 0.019999997882196186,
+            "error2": 0.019999975221892674
+          }
+        },
+        {
+          "amplitude": 0.0001,
+          "lagrangian_difference_over_amplitude_squared": -9.113427455660748,
+          "metrics": {
+            "lambda_eff_smooth": 46.90658951428575,
+            "Lambda_smooth": 282.964532585918,
+            "gap": 3.914898001485426,
+            "error1": 0.01999999799881895,
+            "error2": 0.019999998266371465
+          }
+        }
+      ]
+    },
+    {
+      "lagrangian_curvature": -10.297888618214964,
+      "iterations": 180,
+      "optimizer_success": false,
+      "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+      "group": 7,
+      "finite_difference": [
+        {
+          "amplitude": 0.001,
+          "lagrangian_difference_over_amplitude_squared": -10.282546766939916,
+          "metrics": {
+            "lambda_eff_smooth": 46.90659011392376,
+            "Lambda_smooth": 282.96453983541016,
+            "gap": 3.914898000575022,
+            "error1": 0.01999999769072479,
+            "error2": 0.019999972299509162
+          }
+        },
+        {
+          "amplitude": 0.0001,
+          "lagrangian_difference_over_amplitude_squared": -10.297737991797128,
+          "metrics": {
+            "lambda_eff_smooth": 46.90658951466674,
+            "Lambda_smooth": 282.9645325901102,
+            "gap": 3.9148980014906556,
+            "error1": 0.019999997996904356,
+            "error2": 0.019999998237041197
+          }
+        }
+      ]
+    }
+  ],
+  "rank_resource_break_even": [
+    {
+      "C": 43,
+      "T": 14650,
+      "Q": 427,
+      "lambda_eff_must_be_below": 47.156331077328886,
+      "required_lambda_reduction_percent": -0.5324232081911129
+    },
+    {
+      "C": 44,
+      "T": 14728,
+      "Q": 427,
+      "lambda_eff_must_be_below": 46.906589508614076,
+      "required_lambda_reduction_percent": 1.1102230246251565e-14
+    },
+    {
+      "C": 45,
+      "T": 14807,
+      "Q": 427,
+      "lambda_eff_must_be_below": 46.65632810717013,
+      "required_lambda_reduction_percent": 0.5335314378334677
+    },
+    {
+      "C": 46,
+      "T": 14885,
+      "Q": 427,
+      "lambda_eff_must_be_below": 46.4118407983116,
+      "required_lambda_reduction_percent": 1.05475310715486
+    },
+    {
+      "C": 47,
+      "T": 14964,
+      "Q": 427,
+      "lambda_eff_must_be_below": 46.16681704643599,
+      "required_lambda_reduction_percent": 1.577118417535428
+    },
+    {
+      "C": 48,
+      "T": 15042,
+      "Q": 427,
+      "lambda_eff_must_be_below": 45.927419909777164,
+      "required_lambda_reduction_percent": 2.0874883659088073
+    },
+    {
+      "C": 49,
+      "T": 15121,
+      "Q": 427,
+      "lambda_eff_must_be_below": 45.68747108543536,
+      "required_lambda_reduction_percent": 2.599034455393179
+    },
+    {
+      "C": 50,
+      "T": 15199,
+      "Q": 427,
+      "lambda_eff_must_be_below": 45.4530067953726,
+      "required_lambda_reduction_percent": 3.098888084742424
+    },
+    {
+      "C": 51,
+      "T": 15278,
+      "Q": 427,
+      "lambda_eff_must_be_below": 45.21797684794267,
+      "required_lambda_reduction_percent": 3.599947637125289
+    },
+    {
+      "C": 52,
+      "T": 15356,
+      "Q": 427,
+      "lambda_eff_must_be_below": 44.988294496149265,
+      "required_lambda_reduction_percent": 4.0896066684032455
+    }
+  ],
+  "seconds": 6.424409039000238
+}

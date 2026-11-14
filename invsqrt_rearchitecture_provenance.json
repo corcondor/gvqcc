@@ -1,0 +1,31 @@
+{
+  "baseline_kmb_sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6",
+  "baseline_kmx_sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1",
+  "archive": {
+    "url": "https://www.kaggle.com/api/v1/datasets/download/syed3000/vqcc-own-circuit-portfolio/invsqrt_source_zip",
+    "dataset_version_metadata": 12,
+    "bytes": 2563106,
+    "sha256": "7d9801ae20e942dba2211a656bba6014a0a16d57da534c0b60328d1c5d9d8254",
+    "local_path": "invsqrt_rearchitecture_source/invsqrt_source",
+    "member_count": 561,
+    "published_sha256_manifest_entries_verified": 560,
+    "manifest_mismatches": [],
+    "reproduces_ancestor_kmb_sha256": "321aff83636214196daa9cbc9dcc9c5e12a155bcff8d9989e98b8cee40935177",
+    "baseline_e46_generator": false
+  },
+  "current_64_row_generator": {
+    "source_notebook": "https://www.kaggle.com/code/ahoirg/qcc-submit-verify-and-package",
+    "download_url": "https://www.kaggle.com/api/v1/kernels/pull/ahoirg/qcc-submit-verify-and-package",
+    "local_path": "invsqrt_rearchitecture_ahoirg_source.json",
+    "sha256": "bc0e1c84008e2fb7b8d17cf20bb1cc186938721812fb65d42b6c953f7c121e9b",
+    "author_statement": "Built in the private kernel ahoirg/qcc-invk6-k6c from an open fork of Syed Asad Ali generator",
+    "private_kernel_source_obtained": false
+  },
+  "e46_next_lineage": [
+    "ahoirg 64-row 4560ac0c",
+    "Atakan angle refit dcde7078",
+    "Asterios v5 measured target replacement e46d90c3"
+  ],
+  "unchanged_current_baseline": true,
+  "official_verifier_run": false
+}

@@ -1,0 +1,360 @@
+{
+  "created_utc": "2026-11-14T20:31:38.769628+00:00",
+  "status": "AUDITED_RESOURCE_CLAIMS_NO_NEW_SCORE_CANDIDATE",
+  "scope": "Read-only audit of shared artifacts; no user Windows filesystem or running WSL task access, no circuit mutation, no submission.",
+  "chemistry": {
+    "official_cap": 128,
+    "cap_applies_to": "Each whole ANGLE_k circuit including selection, words, workspace",
+    "selection_qubits": 11,
+    "J": 5,
+    "brot": 8,
+    "persistent_word_qubits": 40,
+    "maximum_legal_scratch": 77,
+    "per_loader_qubits_directly_reloaded": [
+      128,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "per_loader_scratch_directly_reloaded": [
+      77,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74,
+      74
+    ],
+    "unused_legal_qubits_per_loader": [
+      0,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "global_formula": "Q = outer_persistent + inner_persistent + J*brot + max(outer_temp, inner_temp, angle_temp)",
+    "global_current_formula": "Q = 40 + 44 + 40 + max(90,303,77) = 427",
+    "global_workspace303_claim": "The cost plateau does not override the independent 128-qubit ANGLE cap. 303 clean scratch is not legal at J5/brot8.",
+    "baseline": {
+      "status": "PASS",
+      "score": 294988786.8708443,
+      "lambda_eff": 46.906589508623554,
+      "toffoli_count": 14728.0,
+      "num_qubits": 427,
+      "brot": 8,
+      "batch_size": 5,
+      "num_circuits": 15,
+      "reaction_depth": 167,
+      "num_ops": 611422,
+      "verified_shots": 78080,
+      "submission_sha256": "7a97a87ab5994abebef3830781f85b6c5e227406a2bf45bb62a7ac1bfff89dc3",
+      "resources": {
+        "brot": 8,
+        "keep_bits": 10,
+        "angles_toffoli_per_pass": 4033.0,
+        "angles_toffoli": 8066.0,
+        "angles_qubits": 128,
+        "angles_selection_qubits": 11,
+        "angles_persistent_qubits": 40,
+        "angles_temporary_qubits": 77,
+        "outer_state_prep_toffoli": 317,
+        "inner_state_prep_toffoli": 4095,
+        "givens_rotations_toffoli": 2250,
+        "outer_state_prep_persistent_qubits": 40,
+        "outer_state_prep_temporary_qubits": 90,
+        "outer_state_prep_qubits": 130,
+        "inner_state_prep_persistent_qubits": 44,
+        "inner_state_prep_temporary_qubits": 303,
+        "inner_state_prep_qubits": 347,
+        "heuristic_persistent_qubits": 84,
+        "heuristic_temporary_qubits": 303,
+        "heuristic_toffoli": 6662,
+        "heuristic_qubits": 387,
+        "persistent_qubits": 124,
+        "temporary_qubits": 303,
+        "toffoli": 14728.0,
+        "qubits": 427,
+        "angles_within_cap": true
+      },
+      "metrics": {
+        "error_1": 0.019999997999999,
+        "error_2": 0.019999998499405272,
+        "Lambda": 282.96453251692543,
+        "E_SOS": -22144.1882480015,
+        "E_gap": 3.9148980015015695,
+        "lambda_eff": 46.906589508623554,
+        "gap_in_domain": true
+      }
+    },
+    "contract_notes": [
+      "All loaders share selection/word registers. Non-word workspace must begin/end zero without leftover phase.",
+      "Givens analytical Toffoli cost is 2*(76-1)*(2*brot-1), currently2250.",
+      "Changing J, brot, R/B/C changes resource calculations; recompute rather than holding427 fixed."
+    ],
+    "sources": {
+      "verify.py": [
+        134,
+        389,
+        399,
+        408,
+        445,
+        462,
+        492,
+        493,
+        516,
+        539,
+        553
+      ],
+      "circuits.py": [
+        10,
+        18,
+        20,
+        22,
+        28
+      ]
+    }
+  },
+  "dqi": {
+    "baseline_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+    "complete_eea_product": {
+      "status": "PASS_EXACT_ACTUAL_BLOCK",
+      "legacy_start_inclusive": 10528261,
+      "legacy_stop_exclusive": 10534482,
+      "kmb_start_inclusive": 12581893,
+      "kmb_stop_exclusive": 12588114,
+      "block_sha256": "f97f2a437fb9b538d85608ce5ae5393c87e5f8b8dcab750ca8af9eae754b5aac",
+      "ccx_count": 99,
+      "cx_count": 6122,
+      "input_left": [
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455
+      ],
+      "input_right": [
+        840,
+        841,
+        842,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        849,
+        850,
+        851,
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863
+      ],
+      "output_qubits_in_field_order": [
+        868,
+        867,
+        865,
+        866,
+        872,
+        871,
+        869,
+        870,
+        876,
+        875,
+        885,
+        886,
+        880,
+        879,
+        881,
+        882,
+        874,
+        887,
+        888,
+        883,
+        884,
+        873,
+        878,
+        877
+      ],
+      "field12_modulus": 4179,
+      "field24_relation": "t^2+t+2048=0 over GF(2^12)",
+      "operation": "output ^= conjugate(left)*right; inputs restored",
+      "basis_pairs_checked": 576,
+      "all_input_pairs_proven_by_bilinearity": true,
+      "output_affine_rank": 24,
+      "simple_12bit_linear_output_compression_possible": false,
+      "all_inputs_restored": true,
+      "arbitrary_target_xor_proven": true,
+      "existing_product_form_span_rank": 99,
+      "existing_product_forms_count": 99,
+      "limitations": [
+        "No impossibility claim for nonlinear or in-place resynthesis.",
+        "No full-circuit optimization or score improvement."
+      ]
+    },
+    "direct_kmx_gate_count": {
+      "CX": 6122,
+      "CCX": 99
+    },
+    "partial_window_recount": [
+      {
+        "legacy_window_start": 10529400,
+        "complete_block_prefix_ops_omitted": 1139,
+        "omitted_counts": {
+          "CX": 1118,
+          "CCX": 21
+        },
+        "remaining_counts": {
+          "CX": 5004,
+          "CCX": 78
+        }
+      },
+      {
+        "legacy_window_start": 10529430,
+        "complete_block_prefix_ops_omitted": 1169,
+        "omitted_counts": {
+          "CX": 1148,
+          "CCX": 21
+        },
+        "remaining_counts": {
+          "CX": 4974,
+          "CCX": 78
+        }
+      },
+      {
+        "legacy_window_start": 10529439,
+        "complete_block_prefix_ops_omitted": 1178,
+        "omitted_counts": {
+          "CX": 1157,
+          "CCX": 21
+        },
+        "remaining_counts": {
+          "CCX": 78,
+          "CX": 4965
+        }
+      }
+    ],
+    "interpretation_78": "78 exactly matches the remainder of the 99-CCX GF24 block after omitting its first21 CCX at all three logged peak-window starts. This is strong evidence of a partial-window counting error, not proof of which external script produced the pasted number.",
+    "occurrences_1477": "No verified1477-count source or block definition found in shared evidence; do not treat1477 as exact replacement occurrences.",
+    "actual_matching_templates": [
+      {
+        "degree": 12,
+        "rank": 42,
+        "source_path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/field_tensor.py",
+        "source_sha256": "5ff27ee0ee83d5a171430506c2f2abe0956f205ce25e31256cc6f2e04657575f",
+        "basis_pair_checks": 144
+      },
+      {
+        "degree": 24,
+        "rank": 99,
+        "source_path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/night_root/extension24_tensor.py",
+        "source_sha256": "330cdeba5965e03fa397b07f7200539925112a815793704791173d144e74c09d",
+        "basis_pair_checks": 576
+      }
+    ],
+    "exact_occurrences": [
+      {
+        "template": "gf24_multiplication",
+        "opcode_candidates": 1376,
+        "exact_matches": 1376
+      },
+      {
+        "template": "gf12_multiplication",
+        "opcode_candidates": 3823,
+        "exact_matches": 3823
+      },
+      {
+        "template": "gf24_multiplication_reversed",
+        "opcode_candidates": 0,
+        "exact_matches": 0
+      },
+      {
+        "template": "gf12_multiplication_reversed",
+        "opcode_candidates": 0,
+        "exact_matches": 0
+      }
+    ],
+    "cpr_removed_CX": 9901509,
+    "cpr_removed_CCX": 0,
+    "cpr_Q": 889,
+    "cpr_score_gain": "No cost improvement: score-relevant T and Q unchanged; lower storage/CNOT count only.",
+    "proposal54_comparison": "54CCX GF12 is worse than existing42 for the same accumulator map; it is not a drop-in replacement for the99CCX GF24 conjugate product. Two GF12 output halves are coupled components of one GF24 product.",
+    "optimality_limit": "42/99 are verified constructions, not proven globally minimal tensor ranks."
+  },
+  "external_artifacts": {
+    "searched_root": "/workspace/scratch/7f542e06b7cf",
+    "not_found": [
+      "polish_dfthcsos_brot8.py",
+      "dfthcsos_brot8_polished.npz",
+      "precomputed.npz",
+      "opt_dfthcsos_joint.py"
+    ],
+    "meaning": "Not present among accessible shared workspace files searched with rg --files; no claim about existence on the user Windows PC.",
+    "user_claim_45_308766": "Not reproduced from a provided candidate. Reported err2=20.396mHa fails the20mHa gate; final valid polish result is needed."
+  },
+  "source_sha256": {
+    "official_sources/Inzainos/verifiers/dfthcsos/verify.py": "ca84ca08e6e9280922cda3b539d4776ae58990b2b03b5619a53d65de67df9d2b",
+    "official_sources/Inzainos/verifiers/dfthcsos/scoreinfra/circuits.py": "98601c25aa5f57ff7024c545f8773badc43ad2e6b586e6400bc2158c2bd01b86",
+    "gvqcc_repo/inverse_v2_actual_eea_product.kmx": "f97f2a437fb9b538d85608ce5ae5393c87e5f8b8dcab750ca8af9eae754b5aac",
+    "gvqcc_repo/inverse_v2_actual_eea_product_certificate.json": "a9adf784c06b964a58141f2de822d6eb35abab98ba8a1536939492812c47f63c",
+    "gvqcc_repo/theory_bilinear_input_certificate.json": "a15d07cec4107069fa2bc820fd511ef5b4d23af0b9edfda0b23670911cace514",
+    "gvqcc_repo/theory_bilinear_manifest.json": "5e01750e72c05cc60d92f6f3408bf8485435a940470cef5d34884487199dc28a",
+    "gvqcc_repo/chemistry_experiment_summary.json": "99970b97e7c0389a95cf1f5066d17ad54c1c86a040f9288c18879f0c03b89721"
+  }
+}

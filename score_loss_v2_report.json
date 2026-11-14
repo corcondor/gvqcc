@@ -1,0 +1,949 @@
+{
+  "status": "CONDITIONAL_EXPLANATION_NOT_SERVER_FAILURE_DIAGNOSIS",
+  "assumptions": [
+    "Old DQI had zero failures.",
+    "DQI Q, chemistry T/Q and invsqrt cost stay fixed.",
+    "Local native T averages approximate the unpublished public-test averages.",
+    "Old lambda is user-reported; original baseline ZIP was not supplied.",
+    "Both compared evaluations use102400 shots and official default confidence.",
+    "Old score is known only to5 displayed decimals."
+  ],
+  "inputs": {
+    "verifier_dir": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dqi",
+    "old_score": 27.30683,
+    "observed_score": 27.27654,
+    "old_t": 382599.9932617188,
+    "new_t": 382115.5671582031,
+    "old_lambda": 46.905894137,
+    "new_lambda": 46.906589508623554,
+    "shots": 102400
+  },
+  "hypotheses": [
+    {
+      "hypothesized_new_total_failures": 0,
+      "eps_plus": 0.0008660587301657926,
+      "repetition_factor": 1.1912604648115832,
+      "total_cost_product_ratio": 0.9987486635757196,
+      "predicted_score": 27.3182295214175,
+      "predicted_display": "27.31823",
+      "difference_from_observed": 0.041689521417499265
+    },
+    {
+      "hypothesized_new_total_failures": 1,
+      "eps_plus": 0.0009104197583220583,
+      "repetition_factor": 1.1967314991687559,
+      "total_cost_product_ratio": 1.0033355599044476,
+      "predicted_score": 27.276536150619396,
+      "predicted_display": "27.27654",
+      "difference_from_observed": -3.8493806044925805e-06
+    },
+    {
+      "hypothesized_new_total_failures": 2,
+      "eps_plus": 0.0009488155716079551,
+      "repetition_factor": 1.2013880602795501,
+      "total_cost_product_ratio": 1.007239604673532,
+      "predicted_score": 27.241249380122127,
+      "predicted_display": "27.24125",
+      "difference_from_observed": -0.0352906198778733
+    }
+  ],
+  "toffoli_reduction_percent": 0.12661424779072394,
+  "one_failure_R_increase_percent": 0.4592643270536101,
+  "extra_t_break_even_if_one_failure_eliminated": 1754.920488076207,
+  "known_regression_classification": {
+    "status": "EXACT_EXISTING_FAILURE_FIXTURES_CLASSIFIED",
+    "classifier_path": "official_sources/Syed_v12/source/dqi_source/src/controller_work/night_c27/census/reference.py",
+    "classifier_sha256": "a43a7dbf3ef0cb02f8660067a0067c603cf39fe7a552584c3fc9bc228f501aa6",
+    "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+    "records": [
+      {
+        "case_sha256": "87c18965ac99615c6b1c20156350ac83acc398ead86fbe4a78bc2274c2c74433",
+        "fixture": "gvqcc_repo/dqi_gauge_dynamic32_failure_localization.json",
+        "fixture_sha256": "38b982f2b66155a6a131d515c9cb3f2691781a51c0f85e58260b590774dc039a",
+        "baseline_circuit": "72b3525cc40397c595061d466a48241d65bd47f794d2aeac428b26829a8a2229",
+        "batch": 104,
+        "shot_in_batch": 184,
+        "absolute_shot": 26808,
+        "input_verified_all70_syndromes_all4095_masks_and_phase": true,
+        "independent_field_syndromes_verified": true,
+        "positions": [
+          2529,
+          1658,
+          313,
+          2778,
+          2010,
+          3175,
+          2862,
+          1683,
+          965,
+          2720,
+          2334,
+          522,
+          2058,
+          3272,
+          1511,
+          1103,
+          3964,
+          3224,
+          2618,
+          2131,
+          3506,
+          3919,
+          833,
+          997,
+          689,
+          3696,
+          3656,
+          3056,
+          1769,
+          2101,
+          1607
+        ],
+        "roots": [
+          986,
+          1603,
+          3740,
+          1461,
+          3376,
+          2610,
+          2716,
+          1885,
+          2016,
+          1317,
+          850,
+          2683,
+          453,
+          2007,
+          297,
+          3183,
+          438,
+          4090,
+          3865,
+          3280,
+          1371,
+          3531,
+          2572,
+          1558,
+          3693,
+          919,
+          3794,
+          394,
+          4015,
+          3652,
+          1770
+        ],
+        "values": [
+          2011,
+          3647,
+          1768,
+          3748,
+          84,
+          1686,
+          1639,
+          1747,
+          620,
+          1519,
+          1507,
+          1009,
+          1691,
+          3343,
+          2862,
+          3185,
+          1594,
+          2656,
+          3069,
+          2311,
+          3499,
+          1359,
+          3017,
+          539,
+          578,
+          3808,
+          1139,
+          729,
+          2634,
+          1918,
+          3820
+        ],
+        "classification": {
+          "weight": 31,
+          "finite": {
+            "bad": true,
+            "slot": 13,
+            "kind": "N",
+            "numerator_remainder": [
+              0,
+              0
+            ],
+            "denominator_remainder": [
+              1013,
+              2476
+            ]
+          },
+          "half": {
+            "degrees": [
+              17,
+              16,
+              15,
+              14,
+              13,
+              12,
+              11,
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "degree_mask": 262143,
+            "reason_mask": 0,
+            "admitted": true,
+            "drop2_starts": []
+          },
+          "reason_mask": 1,
+          "union": {
+            "15": true,
+            "16": true,
+            "17": true
+          },
+          "numerator": [
+            3466,
+            940,
+            2876,
+            1329,
+            369,
+            962,
+            1979,
+            807,
+            202,
+            3580,
+            1772,
+            2429,
+            628,
+            2202,
+            285,
+            756,
+            4057,
+            1784,
+            3994,
+            3145,
+            1636,
+            10,
+            3717,
+            2499,
+            3304,
+            1067,
+            2657,
+            1718,
+            3734,
+            1651,
+            1419
+          ],
+          "locator": [
+            2043,
+            2429,
+            2786,
+            1508,
+            4075,
+            3818,
+            2149,
+            302,
+            2536,
+            270,
+            1076,
+            2855,
+            1757,
+            3965,
+            3991,
+            376,
+            800,
+            3453,
+            3558,
+            1428,
+            2813,
+            2062,
+            1869,
+            3045,
+            3238,
+            3053,
+            2043,
+            3397,
+            1005,
+            1818,
+            2151,
+            1
+          ],
+          "padded_locator": [
+            3364,
+            979,
+            1287,
+            3775,
+            297,
+            3634,
+            1186,
+            2911,
+            3375,
+            1404,
+            3091,
+            2284,
+            2148,
+            1484,
+            3893,
+            4075,
+            2475,
+            4040,
+            999,
+            147,
+            3513,
+            2306,
+            3118,
+            2874,
+            1898,
+            3343,
+            1055,
+            629,
+            2844,
+            2166,
+            590,
+            957,
+            2947,
+            612,
+            2151,
+            1
+          ]
+        },
+        "node_trace": [
+          {
+            "node": 0,
+            "numerator_degree": 30,
+            "denominator_degree": 31,
+            "numerator_remainder": [
+              3062,
+              2990
+            ],
+            "denominator_remainder": [
+              632,
+              1592
+            ],
+            "kappa": 2048
+          },
+          {
+            "node": 1,
+            "numerator_degree": 29,
+            "denominator_degree": 30,
+            "numerator_remainder": [
+              2135,
+              2934
+            ],
+            "denominator_remainder": [
+              3700,
+              3172
+            ],
+            "kappa": 2054
+          },
+          {
+            "node": 2,
+            "numerator_degree": 28,
+            "denominator_degree": 29,
+            "numerator_remainder": [
+              3507,
+              3838
+            ],
+            "denominator_remainder": [
+              445,
+              2980
+            ],
+            "kappa": 2068
+          },
+          {
+            "node": 3,
+            "numerator_degree": 27,
+            "denominator_degree": 28,
+            "numerator_remainder": [
+              2357,
+              3442
+            ],
+            "denominator_remainder": [
+              1933,
+              711
+            ],
+            "kappa": 2066
+          },
+          {
+            "node": 4,
+            "numerator_degree": 26,
+            "denominator_degree": 27,
+            "numerator_remainder": [
+              2857,
+              3595
+            ],
+            "denominator_remainder": [
+              3604,
+              2335
+            ],
+            "kappa": 2120
+          },
+          {
+            "node": 5,
+            "numerator_degree": 25,
+            "denominator_degree": 26,
+            "numerator_remainder": [
+              1336,
+              19
+            ],
+            "denominator_remainder": [
+              1069,
+              1160
+            ],
+            "kappa": 2126
+          },
+          {
+            "node": 6,
+            "numerator_degree": 24,
+            "denominator_degree": 25,
+            "numerator_remainder": [
+              157,
+              402
+            ],
+            "denominator_remainder": [
+              2474,
+              3848
+            ],
+            "kappa": 2140
+          },
+          {
+            "node": 7,
+            "numerator_degree": 23,
+            "denominator_degree": 24,
+            "numerator_remainder": [
+              1448,
+              1441
+            ],
+            "denominator_remainder": [
+              1726,
+              1139
+            ],
+            "kappa": 2138
+          },
+          {
+            "node": 8,
+            "numerator_degree": 22,
+            "denominator_degree": 23,
+            "numerator_remainder": [
+              2929,
+              3829
+            ],
+            "denominator_remainder": [
+              2850,
+              1942
+            ],
+            "kappa": 2320
+          },
+          {
+            "node": 9,
+            "numerator_degree": 21,
+            "denominator_degree": 22,
+            "numerator_remainder": [
+              3107,
+              244
+            ],
+            "denominator_remainder": [
+              3673,
+              2643
+            ],
+            "kappa": 2326
+          },
+          {
+            "node": 10,
+            "numerator_degree": 20,
+            "denominator_degree": 21,
+            "numerator_remainder": [
+              3917,
+              977
+            ],
+            "denominator_remainder": [
+              760,
+              869
+            ],
+            "kappa": 2308
+          },
+          {
+            "node": 11,
+            "numerator_degree": 19,
+            "denominator_degree": 20,
+            "numerator_remainder": [
+              3423,
+              1259
+            ],
+            "denominator_remainder": [
+              1622,
+              1698
+            ],
+            "kappa": 2306
+          },
+          {
+            "node": 12,
+            "numerator_degree": 18,
+            "denominator_degree": 19,
+            "numerator_remainder": [
+              344,
+              4002
+            ],
+            "denominator_remainder": [
+              1438,
+              59
+            ],
+            "kappa": 2392
+          },
+          {
+            "node": 13,
+            "numerator_degree": 17,
+            "denominator_degree": 18,
+            "numerator_remainder": [
+              0,
+              0
+            ],
+            "denominator_remainder": [
+              1013,
+              2476
+            ],
+            "kappa": 2398,
+            "numerator": [
+              1575,
+              511,
+              3039,
+              1239,
+              1384,
+              1941,
+              1863,
+              2028,
+              2122,
+              166,
+              703,
+              2445,
+              1984,
+              3853,
+              2001,
+              316,
+              1639,
+              2186
+            ],
+            "denominator": [
+              1791,
+              1861,
+              1515,
+              3980,
+              3674,
+              3700,
+              3609,
+              3772,
+              3580,
+              804,
+              1643,
+              3795,
+              2549,
+              2683,
+              357,
+              197,
+              1499,
+              1951,
+              1433
+            ]
+          }
+        ]
+      },
+      {
+        "case_sha256": "e92fab245e56346d002fdd3254466d3d98bc764a6db93596d46cb7b50da206ce",
+        "fixture": "dqi_inputs/baseline_821_candidate_failure_replay.json",
+        "fixture_sha256": "1394e3f0a5d2b13c158b432669cdc3ff0f785b35af5aae5a3777bd2c7160ee10",
+        "baseline_circuit": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+        "batch": 349,
+        "shot_in_batch": 121,
+        "absolute_shot": 89465,
+        "input_verified_all70_syndromes_all4095_masks_and_phase": true,
+        "independent_field_syndromes_verified": true,
+        "positions": [
+          371,
+          913,
+          1329,
+          1028,
+          2306,
+          252,
+          2404,
+          1681,
+          3061,
+          1857,
+          1088,
+          2026,
+          3317,
+          2462,
+          3020,
+          3085,
+          1359,
+          2063,
+          3266,
+          22,
+          2589,
+          1698,
+          2767,
+          1021,
+          1089,
+          3573,
+          3523,
+          4003,
+          2835,
+          3151,
+          448,
+          2235,
+          3255
+        ],
+        "roots": [
+          3421,
+          3672,
+          2266,
+          2320,
+          2636,
+          856,
+          2861,
+          3562,
+          437,
+          3921,
+          3660,
+          2207,
+          3508,
+          890,
+          3169,
+          74,
+          2218,
+          2133,
+          3948,
+          2172,
+          1394,
+          546,
+          385,
+          3621,
+          3275,
+          1164,
+          101,
+          696,
+          3641,
+          2935,
+          68,
+          1202,
+          4088
+        ],
+        "values": [
+          3582,
+          1866,
+          2728,
+          2150,
+          3435,
+          3429,
+          1544,
+          3267,
+          2270,
+          426,
+          1111,
+          3495,
+          3656,
+          3982,
+          2601,
+          2497,
+          3073,
+          3629,
+          2468,
+          1788,
+          3631,
+          2567,
+          2155,
+          4022,
+          2956,
+          256,
+          1146,
+          286,
+          1223,
+          3599,
+          1607,
+          1902,
+          2789
+        ],
+        "classification": {
+          "weight": 33,
+          "finite": {
+            "bad": true,
+            "slot": 2,
+            "kind": "D",
+            "numerator_remainder": [
+              1103,
+              3094
+            ],
+            "denominator_remainder": [
+              0,
+              0
+            ]
+          },
+          "half": {
+            "degrees": [
+              17,
+              16,
+              15,
+              14,
+              13,
+              12,
+              11,
+              10,
+              9,
+              8,
+              7,
+              6,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            "degree_mask": 262143,
+            "reason_mask": 0,
+            "admitted": true,
+            "drop2_starts": []
+          },
+          "reason_mask": 2,
+          "union": {
+            "15": true,
+            "16": true,
+            "17": true
+          },
+          "numerator": [
+            3309,
+            310,
+            3059,
+            914,
+            2820,
+            1481,
+            2784,
+            1293,
+            2488,
+            1338,
+            3123,
+            923,
+            2211,
+            838,
+            3281,
+            236,
+            2529,
+            2138,
+            2459,
+            694,
+            3609,
+            1309,
+            580,
+            673,
+            1503,
+            3800,
+            605,
+            2182,
+            478,
+            3009,
+            233,
+            1929,
+            805
+          ],
+          "locator": [
+            2444,
+            220,
+            3715,
+            807,
+            1117,
+            3720,
+            1953,
+            2599,
+            3690,
+            3067,
+            2189,
+            3208,
+            691,
+            3866,
+            212,
+            1143,
+            2360,
+            2628,
+            3748,
+            1419,
+            3237,
+            2756,
+            3167,
+            3955,
+            712,
+            883,
+            2442,
+            2349,
+            1217,
+            2947,
+            2424,
+            635,
+            3087,
+            1
+          ],
+          "padded_locator": [
+            306,
+            2657,
+            1269,
+            1437,
+            2414,
+            855,
+            3758,
+            3292,
+            3953,
+            3616,
+            195,
+            4066,
+            3739,
+            3009,
+            4000,
+            3337,
+            3880,
+            2150,
+            471,
+            3631,
+            2344,
+            532,
+            144,
+            544,
+            2882,
+            2659,
+            2,
+            2653,
+            2208,
+            3357,
+            3049,
+            2226,
+            282,
+            1633,
+            3086,
+            1
+          ]
+        },
+        "node_trace": [
+          {
+            "node": 0,
+            "numerator_degree": 32,
+            "denominator_degree": 33,
+            "numerator_remainder": [
+              2855,
+              3109
+            ],
+            "denominator_remainder": [
+              1811,
+              477
+            ],
+            "kappa": 2048
+          },
+          {
+            "node": 1,
+            "numerator_degree": 31,
+            "denominator_degree": 32,
+            "numerator_remainder": [
+              2365,
+              985
+            ],
+            "denominator_remainder": [
+              1495,
+              762
+            ],
+            "kappa": 2054
+          },
+          {
+            "node": 2,
+            "numerator_degree": 30,
+            "denominator_degree": 31,
+            "numerator_remainder": [
+              1103,
+              3094
+            ],
+            "denominator_remainder": [
+              0,
+              0
+            ],
+            "kappa": 2068,
+            "numerator": [
+              2224,
+              3767,
+              573,
+              727,
+              3966,
+              1776,
+              803,
+              2483,
+              2156,
+              637,
+              2509,
+              3921,
+              2023,
+              1513,
+              3810,
+              456,
+              2789,
+              405,
+              3262,
+              2115,
+              2158,
+              1207,
+              3193,
+              1965,
+              1319,
+              2029,
+              215,
+              2398,
+              1079,
+              3907,
+              763
+            ],
+            "denominator": [
+              3409,
+              2526,
+              2700,
+              3681,
+              59,
+              1163,
+              3298,
+              2104,
+              2485,
+              509,
+              1846,
+              1796,
+              1629,
+              238,
+              2363,
+              753,
+              1535,
+              2742,
+              931,
+              2770,
+              253,
+              973,
+              691,
+              133,
+              2927,
+              2582,
+              1813,
+              3428,
+              941,
+              3037,
+              1028,
+              3764
+            ]
+          }
+        ]
+      }
+    ],
+    "elapsed_seconds": 0.14172390900057508,
+    "scope": "Two known regression fixtures only; no population failure-rate estimate, no new quantum simulation, no candidate repair."
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "created_at_utc": "2026-11-14T20:50:15.159402+00:00",
+  "baseline": {
+    "path": "dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+    "sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+    "official_numerical_metrics": {
+      "error_1": 0.01999999799999866,
+      "error_2": 0.019999998499405293,
+      "Lambda": 282.9645325169254,
+      "E_SOS": -22144.1882480015,
+      "E_gap": 3.9148980015015695,
+      "lambda_eff": 46.90658950862355,
+      "gap_in_domain": true
+    },
+    "toffoli_count": 14728,
+    "qubits": 427,
+    "chemistry_cost": 294988786.87084424
+  },
+  "user_reported_candidate_not_available": true,
+  "reported_user_candidate": {
+    "lambda_eff": 45.308766,
+    "error_1_mHa": 19.998,
+    "error_2_mHa": 20.396,
+    "status": "Not independently reproduced; reported error_2 exceeds the official 20 mHa limit."
+  },
+  "angle_word_count": 91500,
+  "W_exact_zero_count": 7349,
+  "W_abs_below_1e_minus10_count": 7861,
+  "gradient_validation": {
+    "method": "Central differences in natural (W,d=H2_I-sum W) coordinates, three random directions",
+    "largest_scaled_relative_error": 2.4713811765502225e-06
+  },
+  "small_hprime_eigenvalues": [
+    -1.6908777558707872e-06,
+    -9.619697443122979e-07,
+    5.051313272419322e-06
+  ],
+  "experiments": [
+    {
+      "label": "lowdim",
+      "C": 44,
+      "candidate_path": "gvqcc_repo/chemistry_polish_v2_lowdim_candidate.npz",
+      "search_lambda_eff": 46.90658914663545,
+      "angle_words_unchanged": true
+    },
+    {
+      "label": "tight",
+      "C": 44,
+      "candidate_path": "gvqcc_repo/chemistry_polish_v2_tight_candidate.npz",
+      "search_lambda_eff": 46.90658778468451,
+      "angle_words_unchanged": true
+    },
+    {
+      "label": "schur",
+      "C": 44,
+      "candidate_path": "gvqcc_repo/chemistry_polish_v2_schur_candidate.npz",
+      "search_lambda_eff": 46.906578536060685,
+      "angle_words_unchanged": true
+    },
+    {
+      "label": "rank45",
+      "C": 45,
+      "candidate_path": "gvqcc_repo/chemistry_polish_v2_rank45_candidate.npz",
+      "search_lambda_eff": 46.89759466754706,
+      "angle_words_unchanged": true
+    },
+    {
+      "label": "rank45_scaled",
+      "C": 45,
+      "candidate_path": "gvqcc_repo/chemistry_polish_v2_rank45_scaled_candidate.npz",
+      "search_lambda_eff": 46.8976393971636,
+      "angle_words_unchanged": true
+    }
+  ],
+  "selected": [
+    {
+      "label": "schur",
+      "C": 44,
+      "candidate_path": "gvqcc_repo/chemistry_polish_v2_best_c44.npz",
+      "search_lambda_eff": 46.906578536060685,
+      "angle_words_unchanged": true,
+      "official_numerical_metrics": {
+        "error_1": 0.01999999900001466,
+        "error_2": 0.019999999000000723,
+        "Lambda": 282.96440108426106,
+        "E_SOS": -22144.188248001,
+        "E_gap": 3.9148980009995284,
+        "lambda_eff": 46.90657853605797,
+        "gap_in_domain": true
+      },
+      "numerically_valid": true,
+      "toffoli_count": 14728,
+      "qubits": 427,
+      "chemistry_cost": 294988717.8659594,
+      "cost_change_percent_vs_reproduced_baseline": -2.3392375547715005e-05,
+      "lambda_improvement_vs_reproduced_baseline": 1.097256557613946e-05,
+      "sha256": "55e98348480d4863f419a035a0d962cca4706f534550b7b4b9c4e554985bae0d",
+      "canonical_arrays_sha256": "a0fba1276aa1b27a5ba9a237480039600dae162668b88b322ad2f13cec3f8ceb",
+      "weights_checkpoint": {
+        "path": "gvqcc_repo/chemistry_polish_v2_best_c44_weights.npz",
+        "sha256": "42faef9c7b019b900e37aedc994d94f9a1f9d0935fa686f43739108d8b40e246",
+        "base_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+        "all_arrays_restored_identically": true,
+        "byte_identical_restore_in_current_environment": true,
+        "numpy_version": "2.3.5"
+      },
+      "full_circuit_verified": false,
+      "submitted": false,
+      "unchanged_fields": {
+        "U": true,
+        "H1_I": true,
+        "Hsym_lower": true,
+        "tree_edges": true,
+        "angle_words": true
+      }
+    },
+    {
+      "label": "rank45",
+      "C": 45,
+      "candidate_path": "gvqcc_repo/chemistry_polish_v2_best_c45.npz",
+      "search_lambda_eff": 46.89759466754706,
+      "angle_words_unchanged": true,
+      "official_numerical_metrics": {
+        "error_1": 0.019999999006343375,
+        "error_2": 0.01999999900045837,
+        "Lambda": 282.8567706481111,
+        "E_SOS": -22144.188248001,
+        "E_gap": 3.9148980009995284,
+        "lambda_eff": 46.89759466753827,
+        "gap_in_domain": true
+      },
+      "numerically_valid": true,
+      "toffoli_count": 14807,
+      "qubits": 427,
+      "chemistry_cost": 296514216.17143613,
+      "cost_change_percent_vs_reproduced_baseline": 0.5171143339966155,
+      "lambda_improvement_vs_reproduced_baseline": 0.008994841085275596,
+      "sha256": "072a4dc2cf20c16ce2337f689b125c9b8e58e20b6ac580886a3db02fc496d8c2",
+      "canonical_arrays_sha256": "97088f1748d118f6c1bdb69d094ca8d4afd3f5286b313b12ad0d5c2130f7ae54",
+      "weights_checkpoint": {
+        "path": "gvqcc_repo/chemistry_polish_v2_best_c45_weights.npz",
+        "sha256": "5005b9dd2a1964ee52e220b32d7585498f9633a745ba702dfc6fe0dd704b03cf",
+        "base_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+        "all_arrays_restored_identically": true,
+        "byte_identical_restore_in_current_environment": true,
+        "numpy_version": "2.3.5"
+      },
+      "full_circuit_verified": false,
+      "submitted": false,
+      "unchanged_fields": {
+        "U": true,
+        "H1_I": true,
+        "Hsym_lower": true,
+        "tree_edges": true,
+        "angle_words": true
+      }
+    }
+  ],
+  "all_optimality_claims": "No global optimality proof and no claim of improvement against the unavailable user baseline 46.905894137.",
+  "full_circuit_verification_performed": false,
+  "resource_source": "chemistry_rank_extension_v2.json rank_resource_break_even; existing baseline official verification"
+}

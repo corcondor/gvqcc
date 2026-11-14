@@ -1,0 +1,96 @@
+{
+  "status": "PASS_LOCAL_GENERAL_ZERO_CHART_COMPONENT_ONLY",
+  "domain": "All(N,D) except the joint-zero pair, with clean two flag bits",
+  "algebraic_proof": "If neither is zero, unchanged. If only N is zero, selected pair=(D,D),flags10. If only D is zero, selected pair=(N,N),flags01. Reverse the two controlled additions with these retained flags, then erase flags from restored source predicates. Thus all non-joint-zero inputs are covered by the case proof.",
+  "prefix_static_T": 94,
+  "roundtrip_static_T": 186,
+  "roundtrip_expected_T": 164,
+  "peak_Q_standalone": 72,
+  "input_data_qubits": 48,
+  "persistent_chart_flags": 2,
+  "additional_Q_at_later24_helper_arithmetic": 2,
+  "modeled_global_Q_with864_data_and24_helpers": 890,
+  "all35_slots_extra_expected_T": 5740,
+  "all35_slots_extra_static_T": 6510,
+  "naive_all35_flag_history_global_Q": 958,
+  "case_count": 14335,
+  "tests": [
+    {
+      "case": "prefix",
+      "seed": 31,
+      "shots": 14335,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "mean_T": 94.0
+    },
+    {
+      "case": "roundtrip",
+      "seed": 31,
+      "shots": 14335,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "mean_T": 164.2501569584932
+    },
+    {
+      "case": "prefix",
+      "seed": 33,
+      "shots": 14335,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "mean_T": 94.0
+    },
+    {
+      "case": "roundtrip",
+      "seed": 33,
+      "shots": 14335,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "mean_T": 164.1933728636205
+    },
+    {
+      "case": "prefix",
+      "seed": 104,
+      "shots": 14335,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "mean_T": 94.0
+    },
+    {
+      "case": "roundtrip",
+      "seed": 104,
+      "shots": 14335,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "mean_T": 163.7437042204395
+    },
+    {
+      "case": "prefix",
+      "seed": 349,
+      "shots": 14335,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "mean_T": 94.0
+    },
+    {
+      "case": "roundtrip",
+      "seed": 349,
+      "shots": 14335,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "mean_T": 164.10589466341122
+    }
+  ],
+  "elapsed_seconds": 0.7582975559998886,
+  "source_sha256": {
+    "official_sources/Syed_v12/source/dqi_source/src/controller_work/night_c27/controller/rolling_tail.py": "fa5cc8a0e4f3124355825ea74ddd42c37be6a59b25e784a6a73951d1637b6463",
+    "official_sources/Syed_v12/source/dqi_source/src/controller_work/night_c27/controller/rolling_tail_conditional.py": "86eb5ca81c7c7fd3f6ecb52a261ec2ae254efd9a6c837c9b33998d60ed98a8c6",
+    "gvqcc_repo/dqi_rare_chart_v2_local.py": "69003ba62a8f01da62ca84d35dbd7d9e74907939c9c7f404c8c4faa66ba4ae41"
+  },
+  "limitations": [
+    "No field multiplication, reciprocal-carry adaptation, polynomial synthesis, reverse EEA or full decoder integration.",
+    "Local phase tests sample HMR outcomes; general reversible map is proved by the3 case split using established zero-query primitives.",
+    "Existing rolling-tail flag erasure cannot be reused without a new invariant.",
+    "The additive164T/slot estimate is for this wrapper in isolation, not a proved minimum after global optimization.",
+    "The full decoder admissible domain is not extended merely by this local wrapper."
+  ]
+}

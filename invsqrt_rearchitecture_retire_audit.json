@@ -1,0 +1,42 @@
+{
+  "baseline_kmx_sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1",
+  "independent_implementation": "NumPy uint8 gate simulator on witness inputs",
+  "unique_legal_inputs": 715,
+  "records": [
+    {
+      "target": 42,
+      "excluded": [
+        21
+      ],
+      "witness_count": 400,
+      "verified_inconsistent_constant_linear_quadratic_system": true
+    },
+    {
+      "target": 45,
+      "excluded": [
+        21
+      ],
+      "witness_count": 400,
+      "verified_inconsistent_constant_linear_quadratic_system": true
+    },
+    {
+      "target": 42,
+      "excluded": [
+        45,
+        21
+      ],
+      "witness_count": 398,
+      "verified_inconsistent_constant_linear_quadratic_system": true
+    },
+    {
+      "target": 45,
+      "excluded": [
+        42,
+        21
+      ],
+      "witness_count": 396,
+      "verified_inconsistent_constant_linear_quadratic_system": true
+    }
+  ],
+  "status": "PASS"
+}

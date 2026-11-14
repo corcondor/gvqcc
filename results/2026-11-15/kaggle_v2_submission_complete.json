@@ -1,0 +1,15 @@
+{
+  "notebook_version": 369627280,
+  "public_score": 27.27654,
+  "baseline_public_score": 27.30683,
+  "status": "Complete",
+  "identical_completed_rows": 2,
+  "baseline_selected": true,
+  "url": "https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/submissions#",
+  "observed_date_jst": "2026-11-15",
+  "observation_utc_clock_bounds": [
+    "2026-11-14T20:32:18Z",
+    "2026-11-14T20:37:50Z"
+  ],
+  "time_note": "The browser observation is bounded by these clock reads; no exact timestamp was returned by the page."
+}

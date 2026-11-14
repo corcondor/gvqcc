@@ -1,0 +1,232 @@
+{
+  "status": "PASS_WITH_FLOAT_ROUNDING_QUALIFICATION_INITIALIZERS_NOT_SCORE_IMPROVEMENTS",
+  "elapsed_seconds": 18.60976010700324,
+  "baseline_error2_rederived": 0.019999998499405314,
+  "sources_sha256": {
+    "chemistry_rank_extension_v2.py": "23ea5655b9ee2a0986cc47222c6ca51dd8636b0a3a94747c5c14cd83d876ac73",
+    "chemistry_rank_extension_v2.json": "f4a5453d34b82e608adbdcd983a0ec0556551d598447ca403623233e608eceec",
+    "chemistry_rank_extension_v2.npz": "81cc60fcc24cd50f75eb97c3300215dc141230a1e63303511587eb492a1aa590",
+    "chemistry_rank_extension_v2_init.py": "832c66a35dc852503095c270530b0485579b80afb01e867f2726a2de9aea97e7",
+    "chemistry_rank_extension_v2_init.json": "6872a50ddd002e708c9ef9af0327e02b0b877ee000a146d8ac3ce1b78ff22776"
+  },
+  "qp": {
+    "independent_ell_max_abs_diff": 1.6805133673525319e-18,
+    "independent_gram_max_abs_diff": 7.771561172376096e-16,
+    "gram_eigenvalues": [
+      0.5868842095211569,
+      0.6137203661455813,
+      0.8066681545917215,
+      0.8774181776801695,
+      0.897161423844705,
+      0.9514700080276451,
+      1.0875990360957828,
+      1.4816963047130858
+    ],
+    "unique_unconstrained_minimizer": [
+      0.0005157045867631606,
+      0.00045386419093589134,
+      0.00031651911609930353,
+      0.00043137193126561725,
+      0.0005393161043362431,
+      0.0007891482155183115,
+      0.0003786125997701955,
+      0.00032933666342260885
+    ],
+    "minimizer_is_strictly_positive": true,
+    "saved_p_max_abs_difference_from_exact8x8_minimizer": 6.96353906991503e-10,
+    "saved_p_gradient_inf": 1.3164240078881659e-09,
+    "scope": "Convex8-variable nonnegative squared-amplitude problem for these fixed eight directions only."
+  },
+  "lagrangian_curvature": [
+    {
+      "group": 0,
+      "rederived_t2_coefficient": -5.667910231645342,
+      "reported_t2_coefficient": -5.667910231645316,
+      "absolute_difference": 2.5757174171303632e-14,
+      "objective_only_t2_coefficient": 0.9064143034147677
+    },
+    {
+      "group": 1,
+      "rederived_t2_coefficient": -7.9006569051925135,
+      "reported_t2_coefficient": -7.90065690519251,
+      "absolute_difference": 3.552713678800501e-15,
+      "objective_only_t2_coefficient": 0.7014365354702798
+    },
+    {
+      "group": 2,
+      "rederived_t2_coefficient": -5.9057540043886725,
+      "reported_t2_coefficient": -5.905754004388675,
+      "absolute_difference": 2.6645352591003757e-15,
+      "objective_only_t2_coefficient": 0.7606411113673962
+    },
+    {
+      "group": 3,
+      "rederived_t2_coefficient": -7.75826779301979,
+      "reported_t2_coefficient": -7.758267793019786,
+      "absolute_difference": 4.440892098500626e-15,
+      "objective_only_t2_coefficient": 0.7077398022631997
+    },
+    {
+      "group": 4,
+      "rederived_t2_coefficient": -9.24312703433445,
+      "reported_t2_coefficient": -9.243127034334435,
+      "absolute_difference": 1.4210854715202004e-14,
+      "objective_only_t2_coefficient": 0.8273857028593532
+    },
+    {
+      "group": 5,
+      "rederived_t2_coefficient": -9.407521727737107,
+      "reported_t2_coefficient": -9.407521727737109,
+      "absolute_difference": 1.7763568394002505e-15,
+      "objective_only_t2_coefficient": 0.7896347406586659
+    },
+    {
+      "group": 6,
+      "rederived_t2_coefficient": -9.113535314618726,
+      "reported_t2_coefficient": -9.113535314618728,
+      "absolute_difference": 1.7763568394002505e-15,
+      "objective_only_t2_coefficient": 0.56718758703097
+    },
+    {
+      "group": 7,
+      "rederived_t2_coefficient": -10.297888618214975,
+      "reported_t2_coefficient": -10.297888618214964,
+      "absolute_difference": 1.0658141036401503e-14,
+      "objective_only_t2_coefficient": 0.605309529807067
+    }
+  ],
+  "resources": {
+    "C": 45,
+    "angles_toffoli": 8066,
+    "outer_T": 320,
+    "inner_T": 4171,
+    "givens_T": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "T": 14807,
+    "Q": 427,
+    "lambda_break_even": 46.65632810717956,
+    "lambda_reduction_required_percent": 0.5335314378334455
+  },
+  "candidates": [
+    {
+      "fraction": 0.25,
+      "path": "gvqcc_repo/chemistry_rank_extension_v2_init_0p25.npz",
+      "shape": [
+        8,
+        143,
+        45
+      ],
+      "old_W_bitwise_unchanged": true,
+      "old_H2I_bitwise_unchanged": true,
+      "other_arrays_unchanged": {
+        "U": true,
+        "H1_I": true,
+        "Hsym_lower": true,
+        "tree_edges": true,
+        "angle_words": true
+      },
+      "old_native_d_max_difference": 0.0,
+      "new_native_d_max_abs": 5.3092025133899545e-18,
+      "amplitude_squared_max_difference": 8.131516293641283e-20,
+      "predicted_error2": 0.019982209687794496,
+      "reported_official_error2": 0.019982209687794503,
+      "error2_abs_difference": 6.938893903907228e-18,
+      "predicted_lambda": 46.90729540809375,
+      "reported_official_lambda": 46.90729540809375,
+      "lambda_abs_difference": 0.0,
+      "candidate_cost": 296575549.96696407,
+      "cost_ratio_to_baseline": 1.0053790624143775,
+      "sha256_matches_report": true
+    },
+    {
+      "fraction": 0.5,
+      "path": "gvqcc_repo/chemistry_rank_extension_v2_init_0p5.npz",
+      "shape": [
+        8,
+        143,
+        45
+      ],
+      "old_W_bitwise_unchanged": true,
+      "old_H2I_bitwise_unchanged": true,
+      "other_arrays_unchanged": {
+        "U": true,
+        "H1_I": true,
+        "Hsym_lower": true,
+        "tree_edges": true,
+        "angle_words": true
+      },
+      "old_native_d_max_difference": 0.0,
+      "new_native_d_max_abs": 7.670730370334944e-18,
+      "amplitude_squared_max_difference": 1.6263032587282567e-19,
+      "predicted_error2": 0.019969493691925046,
+      "reported_official_error2": 0.019969493691925258,
+      "error2_abs_difference": 2.1163626406917047e-16,
+      "predicted_lambda": 46.90800129694117,
+      "reported_official_lambda": 46.908001296941165,
+      "lambda_abs_difference": 7.105427357601002e-15,
+      "candidate_cost": 296580013.01202595,
+      "cost_ratio_to_baseline": 1.005394191955772,
+      "sha256_matches_report": true
+    },
+    {
+      "fraction": 1.0,
+      "path": "gvqcc_repo/chemistry_rank_extension_v2_init_1p0.npz",
+      "shape": [
+        8,
+        143,
+        45
+      ],
+      "old_W_bitwise_unchanged": true,
+      "old_H2I_bitwise_unchanged": true,
+      "other_arrays_unchanged": {
+        "U": true,
+        "H1_I": true,
+        "Hsym_lower": true,
+        "tree_edges": true,
+        "angle_words": true
+      },
+      "old_native_d_max_difference": 0.0,
+      "new_native_d_max_abs": 1.0618405026779909e-17,
+      "amplitude_squared_max_difference": 3.2526065174565133e-19,
+      "predicted_error2": 0.019959315061989086,
+      "reported_official_error2": 0.019959315061989145,
+      "error2_abs_difference": 5.898059818321144e-17,
+      "predicted_lambda": 46.90941304276952,
+      "reported_official_lambda": 46.90941304276951,
+      "lambda_abs_difference": 1.4210854715202004e-14,
+      "candidate_cost": 296588938.900671,
+      "cost_ratio_to_baseline": 1.0054244503555565,
+      "sha256_matches_report": true
+    }
+  ],
+  "claims_limits": [
+    "Lagrangian multipliers are estimated on a nonzero support and stationarity residual is2.8117, so negative t^2 coefficients do not certify a constrained optimum or feasible descent.",
+    "The quantity named curvature is the coefficient of t^2, half a conventional directional second derivative; the L1-squared term is piecewise quadratic.",
+    "Every saved direction optimizer stopped at180 iterations; directions are witnesses, not global minima.",
+    "d=0 is exact algebraically; actual NPZ native new d has up to1.06e-17 floating-point summation differences.",
+    "d=0 initialization can lowererror2 while increasinglambda_h2; it is numerical slack, not a score gain.",
+    "C45 needslambda_eff below46.6563281072; all three initializer costs are presently worse.",
+    "No current refit files touched; no full ANGLE/circuit verification or new submission performed."
+  ],
+  "additional_source_sha256": {
+    "dqi_inputs/chemistry_4033/submission_asterios_full.npz": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+    "official_sources/Inzainos/verifiers/dfthcsos/scoreinfra/costs_prepare.py": "ec44b99b1fbe6b4081d54e0c84a34bb2de893beabbb6d05efaad439d5061b04a",
+    "official_sources/Inzainos/verifiers/dfthcsos/scoreinfra/dfthc_math.py": "f95361cc4af30959afff905b674427af1a2645df0a948b7e2374bfc0f3e2696d",
+    "official_sources/Inzainos/verifiers/dfthcsos/scoreinfra/reference.py": "54ef543f91a5ebf75209a7390d2112e664e804ca6114ec710321552276e178ec"
+  }
+}
