@@ -1,0 +1,50 @@
+{
+  "status": "COMPLETE",
+  "input": "dqi_inputs/821_ccx480_gauge128.kmb",
+  "input_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "scope": "Read-only affine-basis sharing and same-output quadratic rank; no candidate written.",
+  "self_check": {
+    "status": "PASS",
+    "constructed_cases": 4,
+    "scope": "scanner algebra/barriers, not a generated circuit equivalence proof"
+  },
+  "counts": {
+    "pure_runs_with_ccx": 49872,
+    "distinct_piece_shapes": 6113,
+    "pieces": 53495,
+    "ccx_covered": 363694,
+    "same_direction_groups": 562,
+    "nonlinear_control_cuts": 2716,
+    "cache_hits": 47382
+  },
+  "candidates": [],
+  "max_piece_operations": 20000,
+  "elapsed_seconds": 236.21134927499952,
+  "max_rss_kib": 473260,
+  "memory_limit_bytes": 2147483648,
+  "script_sha256": "7ff2e45f315aa845067b0067f3bb01261835cb8760367740460cb1ae56193d4e",
+  "independent_validation": {
+    "command": "python -m unittest test_dqi_affine_ccx_scan -v",
+    "status": "PASS",
+    "tests": 2,
+    "constructed_cases": 4,
+    "random_circuits": 64,
+    "quadratic_groups_checked": 252,
+    "all_input_assignments_per_truth_table": 64,
+    "seconds": 0.328,
+    "test_sha256": "22d918fb7650380a77a978e19a0bddbdbf2c835e799f42cc0180229d4f40901b"
+  },
+  "representative_eea_product": {
+    "source": "gvqcc_repo/inverse_v2_actual_eea_product.kmx",
+    "source_sha256": "f97f2a437fb9b538d85608ce5ae5393c87e5f8b8dcab750ca8af9eae754b5aac",
+    "ccx": 99,
+    "input_variables": 72,
+    "distinct_linear_control_forms": 198,
+    "max_control_form_multiplicity": 1,
+    "distinct_output_directions": 99,
+    "same_quadratic_product_groups": 0,
+    "same_output_direction_groups": 0,
+    "algebraic_candidate_groups": 0,
+    "interpretation": "No pair shares a factor in any of the three tensor modes of this fixed decomposition. Not a proof that tensor rank 99 is optimal."
+  }
+}

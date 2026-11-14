@@ -1,0 +1,95 @@
+{
+  "status": "PAIRED_SELECTOR_MODEL_STUDY_COMPLETE",
+  "shots": 16384,
+  "seed": 20261115,
+  "input_sha256": "1cea8b9bef42520689d0b2a7a0ca6717ae66b353f54953c85073fd523e747787",
+  "scope": "Synthetic classical mask model only; 11 saved scan Toffolis per additional zero. Not a full-decoder or leaderboard score.",
+  "circuit_hash_or_verifier_seed_used": false,
+  "pointwise_monotonicity_fixture_checks": 114688,
+  "pointwise_monotonicity_proof": "All original128 candidates are first. A strict capped-count replacement can happen only when incumbent count is below7; therefore a replacing candidate has strictly larger exact count. Ties retain incumbent.",
+  "rows": {
+    "fixed128": {
+      "mean_zero_masks": 4.34918212890625,
+      "paired_additional_zeros_vs128": 0.0,
+      "paired_zero_delta_standard_error": 0.0,
+      "predicted_mean_toffoli_saving_vs128": 0.0,
+      "fraction_strictly_improved": 0.0,
+      "min_paired_zero_delta": 0,
+      "max_paired_zero_delta": 0
+    },
+    "fixed256": {
+      "mean_zero_masks": 4.73223876953125,
+      "paired_additional_zeros_vs128": 0.383056640625,
+      "paired_zero_delta_standard_error": 0.005174822184773764,
+      "predicted_mean_toffoli_saving_vs128": 4.213623046875,
+      "fraction_strictly_improved": 0.29730224609375,
+      "min_paired_zero_delta": 0,
+      "max_paired_zero_delta": 5
+    },
+    "fixed512": {
+      "mean_zero_masks": 5.108642578125,
+      "paired_additional_zeros_vs128": 0.75946044921875,
+      "paired_zero_delta_standard_error": 0.006562269746299762,
+      "predicted_mean_toffoli_saving_vs128": 8.35406494140625,
+      "fraction_strictly_improved": 0.5426025390625,
+      "min_paired_zero_delta": 0,
+      "max_paired_zero_delta": 6
+    },
+    "fixed1024": {
+      "mean_zero_masks": 5.4876708984375,
+      "paired_additional_zeros_vs128": 1.13848876953125,
+      "paired_zero_delta_standard_error": 0.0072633460119823755,
+      "predicted_mean_toffoli_saving_vs128": 12.52337646484375,
+      "fraction_strictly_improved": 0.72955322265625,
+      "min_paired_zero_delta": 0,
+      "max_paired_zero_delta": 6
+    },
+    "fixed4096": {
+      "mean_zero_masks": 6.194091796875,
+      "paired_additional_zeros_vs128": 1.84490966796875,
+      "paired_zero_delta_standard_error": 0.007773757614764112,
+      "predicted_mean_toffoli_saving_vs128": 20.29400634765625,
+      "fraction_strictly_improved": 0.9088134765625,
+      "min_paired_zero_delta": 0,
+      "max_paired_zero_delta": 7
+    },
+    "fixed128_plus_first32": {
+      "mean_zero_masks": 4.82147216796875,
+      "paired_additional_zeros_vs128": 0.4722900390625,
+      "paired_zero_delta_standard_error": 0.005812768996898197,
+      "predicted_mean_toffoli_saving_vs128": 5.1951904296875,
+      "fraction_strictly_improved": 0.347900390625,
+      "min_paired_zero_delta": 0,
+      "max_paired_zero_delta": 5
+    },
+    "fixed128_plus_first64": {
+      "mean_zero_masks": 5.08282470703125,
+      "paired_additional_zeros_vs128": 0.733642578125,
+      "paired_zero_delta_standard_error": 0.0067316986949624005,
+      "predicted_mean_toffoli_saving_vs128": 8.070068359375,
+      "fraction_strictly_improved": 0.5128173828125,
+      "min_paired_zero_delta": 0,
+      "max_paired_zero_delta": 5
+    },
+    "fixed128_plus_first128": {
+      "mean_zero_masks": 5.37933349609375,
+      "paired_additional_zeros_vs128": 1.0301513671875,
+      "paired_zero_delta_standard_error": 0.007321162132124606,
+      "predicted_mean_toffoli_saving_vs128": 11.3316650390625,
+      "fraction_strictly_improved": 0.67034912109375,
+      "min_paired_zero_delta": 0,
+      "max_paired_zero_delta": 7
+    }
+  },
+  "exact_union_bound": {
+    "full4096_expected_max_zeros_upper": 6.346841866471086,
+    "improvement_over_fixed_zero_upper": 4.364175850846086,
+    "toffoli_saving_over_fixed_zero_upper": 48.00593435930695,
+    "denominator_power_of_two": 48300,
+    "upper_numerator_sha256": "0997354f1a64d4881bfcba06c7f277460f7df3659ef39025f31ffd8c24fa9595",
+    "arithmetic": "Exact integer finite binomial tails and union bound; decimals rounded for display.",
+    "scope": "Uniform independent residual-mask model; bound is relative to fixed label0, so also bounds gain over gauge128."
+  },
+  "seconds": 1.906710159000795,
+  "peak_rss_kib": 59772
+}

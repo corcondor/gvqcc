@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "fixtures": 108,
+  "forced_dynamic_winners": 32,
+  "input_masks_preserved": true,
+  "scratch_cleared": true,
+  "phase_unchanged": true,
+  "quantum_bits": 0,
+  "toffoli_like": 0,
+  "instructions": 20197186,
+  "ledger": {
+    "fixed_ledger": {
+      "labels": 128,
+      "label_bits": 7,
+      "cap": 7,
+      "selector_instructions": 12887775,
+      "histogram_instructions": 12880000,
+      "peak_classical_work_bits": 642,
+      "additional_quantum_bits": 0,
+      "static_toffoli_like": 0
+    },
+    "observed_candidates": 32,
+    "promotion_classical_instructions": 7309411,
+    "selector_instructions": 20197186,
+    "retained_label_bits": 12,
+    "additional_quantum_bits": 0,
+    "static_toffoli_like": 0,
+    "equality_implementation": "Temporarily XOR each input word with a private candidate copy, test zero, then restore input.",
+    "pointwise_rule": "Original128 first, then input words in order; replace only on strictly larger count capped at7."
+  },
+  "fixture_sha256": "c5a1d1e59b261658b147e78f1b13c9751746f1154606e33db9fcb81ddc1132fb",
+  "seconds": 54.659770570000546,
+  "peak_rss_kib": 309104,
+  "scope": "Native classical selector only; no whole-decoder correctness or official score claim."
+}

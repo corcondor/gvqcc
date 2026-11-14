@@ -1,0 +1,200 @@
+{
+  "status": "SPLICED_REQUIRES_FULL_DECODER_VERIFICATION",
+  "baseline_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "dynamic_candidates": 32,
+  "prefix": {
+    "instructions": 26167727,
+    "bits": 155441,
+    "qubits": 840,
+    "static_toffoli_like": 0,
+    "bytes": 187527236,
+    "sha256": "52292decb3ee643eaee818aa4600f1c6251702e93540278040940dbd37b71250"
+  },
+  "pair": {
+    "instructions": 30542566,
+    "bits": 155441,
+    "qubits": 840,
+    "static_toffoli_like": 0,
+    "bytes": 226900735,
+    "sha256": "2cdc67cfd74a647952bdbb3caaa8048b5730767f1a5f8a0a6bb2b7847316a36e"
+  },
+  "selector_ledger": {
+    "fixed_ledger": {
+      "labels": 128,
+      "label_bits": 7,
+      "cap": 7,
+      "selector_instructions": 12887775,
+      "histogram_instructions": 12880000,
+      "peak_classical_work_bits": 642,
+      "additional_quantum_bits": 0,
+      "static_toffoli_like": 0
+    },
+    "observed_candidates": 32,
+    "promotion_classical_instructions": 8902123,
+    "selector_instructions": 21789898,
+    "retained_label_bits": 12,
+    "additional_quantum_bits": 0,
+    "static_toffoli_like": 0,
+    "pointwise_rule": "Original128 first, then input words in order; replace only on strictly larger count capped at7."
+  },
+  "phase_compensation_cz": 2126,
+  "all12_label_bits_shifted_and_compensated": true,
+  "boundary_checks": {
+    "prefix": {
+      "operation_count": 17244617,
+      "columns": {
+        "1": {
+          "equal": true,
+          "left_bytes": 17244617,
+          "right_bytes": 17244617,
+          "first_mismatch_byte": null
+        },
+        "2": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        },
+        "3": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        },
+        "4": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        },
+        "5": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        },
+        "6": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        },
+        "7": {
+          "equal": true,
+          "left_bytes": 8416,
+          "right_bytes": 8416,
+          "first_mismatch_byte": null
+        },
+        "8": {
+          "equal": true,
+          "left_bytes": 52508740,
+          "right_bytes": 52508740,
+          "first_mismatch_byte": null
+        },
+        "9": {
+          "equal": true,
+          "left_bytes": 50427356,
+          "right_bytes": 50427356,
+          "first_mismatch_byte": null
+        },
+        "10": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        }
+      },
+      "equal": true
+    },
+    "suffix": {
+      "operation_count": 4354714,
+      "columns": {
+        "1": {
+          "equal": true,
+          "left_bytes": 4354714,
+          "right_bytes": 4354714,
+          "first_mismatch_byte": null
+        },
+        "2": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        },
+        "3": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        },
+        "4": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        },
+        "5": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        },
+        "6": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        },
+        "7": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        },
+        "8": {
+          "equal": true,
+          "left_bytes": 17418856,
+          "right_bytes": 17418856,
+          "first_mismatch_byte": null
+        },
+        "9": {
+          "equal": true,
+          "left_bytes": 17418804,
+          "right_bytes": 17418804,
+          "first_mismatch_byte": null
+        },
+        "10": {
+          "equal": true,
+          "left_bytes": 0,
+          "right_bytes": 0,
+          "first_mismatch_byte": null
+        }
+      },
+      "equal": true
+    }
+  },
+  "decoder_body_preserved_byte_for_byte": true,
+  "candidate": {
+    "header": {
+      "version": 2,
+      "num_qubits": 889,
+      "num_bits": 155441,
+      "num_registers": 4165,
+      "num_ops": 68322101,
+      "num_ops_with_3_target_qubits": 382934,
+      "num_ops_with_2_target_qubits": 32212227,
+      "num_ops_with_1_target_qubits": 274744,
+      "num_ops_with_1_target_bit": 29625128,
+      "num_ops_with_1_condition_bit": 28188753,
+      "num_ops_with_angle": 0,
+      "num_info_tags": 0,
+      "num_info_tag_chars": 0
+    },
+    "sha256": "e25a29f427204113175678804ac6d56276ca2798bcee6facc96e4feebc940a32",
+    "bytes": 563289358
+  },
+  "candidate_path": "dqi_inputs/gauge_dynamic32/dqi_ccx480_gauge128_dynamic32.kmb",
+  "seconds": 91.551836396,
+  "peak_rss_kib": 1067060,
+  "scope": "New candidate only. No full-decoder verification or leaderboard score claim."
+}
