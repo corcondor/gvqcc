@@ -1,0 +1,34 @@
+{
+  "monotonicity": {
+    "status": "PASS",
+    "exact_count_pairs": 16212702,
+    "count_domain": "old0..4026; new0..4025",
+    "cap": 7,
+    "argument": "Original labels are processed first. A later label replaces only on strictly larger capped count. Then the old count is below7 and the new exact count is larger. Ties leave the original label unchanged.",
+    "conclusion": "Number of zero candidate scan masks never decreases for any original classical masks."
+  },
+  "native_selector": {
+    "status": "PASS",
+    "labels": 128,
+    "fixtures": 203,
+    "forced_winners": 128,
+    "qubits": 0,
+    "static_toffoli_like": 0,
+    "ledger": {
+      "labels": 128,
+      "label_bits": 7,
+      "cap": 7,
+      "selector_instructions": 12887775,
+      "histogram_instructions": 12880000,
+      "peak_classical_work_bits": 642,
+      "additional_quantum_bits": 0,
+      "static_toffoli_like": 0
+    },
+    "input_masks_preserved": true,
+    "work_bits_cleared": true,
+    "fixture_sha256": "639539a735ffc0e00750375b7d6dcddb233a4ebc1a3373e2ec736ee7a8626480",
+    "elapsed_seconds": 22.291206777999832
+  },
+  "kickmix_distribution_version": "1.0.0",
+  "scope": "Selector and pointwise scan-cost certificate only. Whole-decoder phase/correctness and score require verification after splicing."
+}

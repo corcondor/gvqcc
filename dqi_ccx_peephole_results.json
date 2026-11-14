@@ -1,0 +1,1460 @@
+{
+  "schema": "dqi-ccx-peephole-v1",
+  "input": "/workspace/scratch/7f542e06b7cf/dqi_inputs/821bf8d157c0.kmb",
+  "output": "/workspace/scratch/7f542e06b7cf/dqi_inputs/821_ccx_peephole.kmb",
+  "input_sha256": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+  "output_sha256": "5103812020bc0d6c4db32900777521479f01dfcca8dfd21ed74e9211770f389c",
+  "window_operations": 256,
+  "discovery": {
+    "adjacent_ccx_pairs": 1874,
+    "adjacent_same_control_pairs": 0,
+    "nearby_same_control_pairs": 153257,
+    "proved_commuting_pairs": 96
+  },
+  "rewritten_blocks": 8,
+  "static_ccx_reduction": 96,
+  "static_cx_added": 192,
+  "before_header": {
+    "version": 2,
+    "num_qubits": 889,
+    "num_bits": 154157,
+    "num_registers": 4165,
+    "num_ops": 52930180,
+    "num_ops_with_3_target_qubits": 383414,
+    "num_ops_with_2_target_qubits": 32211267,
+    "num_ops_with_1_target_qubits": 273704,
+    "num_ops_with_1_target_bit": 17093821,
+    "num_ops_with_1_condition_bit": 17643301,
+    "num_ops_with_angle": 0,
+    "num_info_tags": 0,
+    "num_info_tag_chars": 0
+  },
+  "after_header": {
+    "version": 2,
+    "num_qubits": 889,
+    "num_bits": 154157,
+    "num_registers": 4165,
+    "num_ops": 52930276,
+    "num_ops_with_3_target_qubits": 383318,
+    "num_ops_with_2_target_qubits": 32211459,
+    "num_ops_with_1_target_qubits": 273704,
+    "num_ops_with_1_target_bit": 17093821,
+    "num_ops_with_1_condition_bit": 17643301,
+    "num_ops_with_angle": 0,
+    "num_info_tags": 0,
+    "num_info_tag_chars": 0
+  },
+  "binary_layout_validation": "passed",
+  "official_verification": "not_run_by_this_tool",
+  "qubit_count_unchanged": true,
+  "preservation": "All register bytes, non-rewritten operations and their operands are copied verbatim; condition-stack operations are barriers.",
+  "proof": "Each moved CCX commutes with every crossed current operation; the two same-control CCXs then use the exact CX-CCX-CX identity under identical classical conditions.",
+  "blocks": [
+    {
+      "start_op": 22854231,
+      "end_op_exclusive": 22854255,
+      "merges": 12,
+      "rewrites": [
+        {
+          "first_source_op": 22854231,
+          "second_source_op": 22854243,
+          "controls": [
+            887,
+            886
+          ],
+          "first_target": 228,
+          "second_target": 276,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 11
+        },
+        {
+          "first_source_op": 22854232,
+          "second_source_op": 22854244,
+          "controls": [
+            887,
+            869
+          ],
+          "first_target": 229,
+          "second_target": 277,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 10
+        },
+        {
+          "first_source_op": 22854233,
+          "second_source_op": 22854245,
+          "controls": [
+            887,
+            878
+          ],
+          "first_target": 230,
+          "second_target": 278,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 9
+        },
+        {
+          "first_source_op": 22854234,
+          "second_source_op": 22854246,
+          "controls": [
+            887,
+            864
+          ],
+          "first_target": 231,
+          "second_target": 279,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 8
+        },
+        {
+          "first_source_op": 22854235,
+          "second_source_op": 22854247,
+          "controls": [
+            887,
+            883
+          ],
+          "first_target": 232,
+          "second_target": 280,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 7
+        },
+        {
+          "first_source_op": 22854236,
+          "second_source_op": 22854248,
+          "controls": [
+            887,
+            880
+          ],
+          "first_target": 233,
+          "second_target": 281,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 6
+        },
+        {
+          "first_source_op": 22854237,
+          "second_source_op": 22854249,
+          "controls": [
+            887,
+            888
+          ],
+          "first_target": 234,
+          "second_target": 282,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 5
+        },
+        {
+          "first_source_op": 22854238,
+          "second_source_op": 22854250,
+          "controls": [
+            887,
+            879
+          ],
+          "first_target": 235,
+          "second_target": 283,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 4
+        },
+        {
+          "first_source_op": 22854239,
+          "second_source_op": 22854251,
+          "controls": [
+            887,
+            874
+          ],
+          "first_target": 236,
+          "second_target": 284,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 3
+        },
+        {
+          "first_source_op": 22854240,
+          "second_source_op": 22854252,
+          "controls": [
+            887,
+            873
+          ],
+          "first_target": 237,
+          "second_target": 285,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 2
+        },
+        {
+          "first_source_op": 22854241,
+          "second_source_op": 22854253,
+          "controls": [
+            887,
+            877
+          ],
+          "first_target": 238,
+          "second_target": 286,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 1
+        },
+        {
+          "first_source_op": 22854242,
+          "second_source_op": 22854254,
+          "controls": [
+            887,
+            867
+          ],
+          "first_target": 239,
+          "second_target": 287,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 0
+        }
+      ]
+    },
+    {
+      "start_op": 22932958,
+      "end_op_exclusive": 22932982,
+      "merges": 12,
+      "rewrites": [
+        {
+          "first_source_op": 22932958,
+          "second_source_op": 22932970,
+          "controls": [
+            884,
+            886
+          ],
+          "first_target": 168,
+          "second_target": 216,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 11
+        },
+        {
+          "first_source_op": 22932959,
+          "second_source_op": 22932971,
+          "controls": [
+            884,
+            867
+          ],
+          "first_target": 169,
+          "second_target": 217,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 10
+        },
+        {
+          "first_source_op": 22932960,
+          "second_source_op": 22932972,
+          "controls": [
+            884,
+            877
+          ],
+          "first_target": 170,
+          "second_target": 218,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 9
+        },
+        {
+          "first_source_op": 22932961,
+          "second_source_op": 22932973,
+          "controls": [
+            884,
+            871
+          ],
+          "first_target": 171,
+          "second_target": 219,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 8
+        },
+        {
+          "first_source_op": 22932962,
+          "second_source_op": 22932974,
+          "controls": [
+            884,
+            878
+          ],
+          "first_target": 172,
+          "second_target": 220,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 7
+        },
+        {
+          "first_source_op": 22932963,
+          "second_source_op": 22932975,
+          "controls": [
+            884,
+            864
+          ],
+          "first_target": 173,
+          "second_target": 221,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 6
+        },
+        {
+          "first_source_op": 22932964,
+          "second_source_op": 22932976,
+          "controls": [
+            884,
+            883
+          ],
+          "first_target": 174,
+          "second_target": 222,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 5
+        },
+        {
+          "first_source_op": 22932965,
+          "second_source_op": 22932977,
+          "controls": [
+            884,
+            880
+          ],
+          "first_target": 175,
+          "second_target": 223,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 4
+        },
+        {
+          "first_source_op": 22932966,
+          "second_source_op": 22932978,
+          "controls": [
+            884,
+            888
+          ],
+          "first_target": 176,
+          "second_target": 224,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 3
+        },
+        {
+          "first_source_op": 22932967,
+          "second_source_op": 22932979,
+          "controls": [
+            884,
+            879
+          ],
+          "first_target": 177,
+          "second_target": 225,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 2
+        },
+        {
+          "first_source_op": 22932968,
+          "second_source_op": 22932980,
+          "controls": [
+            884,
+            874
+          ],
+          "first_target": 178,
+          "second_target": 226,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 1
+        },
+        {
+          "first_source_op": 22932969,
+          "second_source_op": 22932981,
+          "controls": [
+            884,
+            873
+          ],
+          "first_target": 179,
+          "second_target": 227,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 0
+        }
+      ]
+    },
+    {
+      "start_op": 23327823,
+      "end_op_exclusive": 23327847,
+      "merges": 12,
+      "rewrites": [
+        {
+          "first_source_op": 23327823,
+          "second_source_op": 23327835,
+          "controls": [
+            874,
+            886
+          ],
+          "first_target": 84,
+          "second_target": 132,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 11
+        },
+        {
+          "first_source_op": 23327824,
+          "second_source_op": 23327836,
+          "controls": [
+            874,
+            864
+          ],
+          "first_target": 85,
+          "second_target": 133,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 10
+        },
+        {
+          "first_source_op": 23327825,
+          "second_source_op": 23327837,
+          "controls": [
+            874,
+            882
+          ],
+          "first_target": 86,
+          "second_target": 134,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 9
+        },
+        {
+          "first_source_op": 23327826,
+          "second_source_op": 23327838,
+          "controls": [
+            874,
+            881
+          ],
+          "first_target": 87,
+          "second_target": 135,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 8
+        },
+        {
+          "first_source_op": 23327827,
+          "second_source_op": 23327839,
+          "controls": [
+            874,
+            869
+          ],
+          "first_target": 88,
+          "second_target": 136,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 7
+        },
+        {
+          "first_source_op": 23327828,
+          "second_source_op": 23327840,
+          "controls": [
+            874,
+            884
+          ],
+          "first_target": 89,
+          "second_target": 137,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 6
+        },
+        {
+          "first_source_op": 23327829,
+          "second_source_op": 23327841,
+          "controls": [
+            874,
+            865
+          ],
+          "first_target": 90,
+          "second_target": 138,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 5
+        },
+        {
+          "first_source_op": 23327830,
+          "second_source_op": 23327842,
+          "controls": [
+            874,
+            880
+          ],
+          "first_target": 91,
+          "second_target": 139,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 4
+        },
+        {
+          "first_source_op": 23327831,
+          "second_source_op": 23327843,
+          "controls": [
+            874,
+            877
+          ],
+          "first_target": 92,
+          "second_target": 140,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 3
+        },
+        {
+          "first_source_op": 23327832,
+          "second_source_op": 23327844,
+          "controls": [
+            874,
+            870
+          ],
+          "first_target": 93,
+          "second_target": 141,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 2
+        },
+        {
+          "first_source_op": 23327833,
+          "second_source_op": 23327845,
+          "controls": [
+            874,
+            878
+          ],
+          "first_target": 94,
+          "second_target": 142,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 1
+        },
+        {
+          "first_source_op": 23327834,
+          "second_source_op": 23327846,
+          "controls": [
+            874,
+            868
+          ],
+          "first_target": 95,
+          "second_target": 143,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 0
+        }
+      ]
+    },
+    {
+      "start_op": 23428194,
+      "end_op_exclusive": 23428218,
+      "merges": 12,
+      "rewrites": [
+        {
+          "first_source_op": 23428194,
+          "second_source_op": 23428206,
+          "controls": [
+            883,
+            886
+          ],
+          "first_target": 24,
+          "second_target": 72,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 11
+        },
+        {
+          "first_source_op": 23428195,
+          "second_source_op": 23428207,
+          "controls": [
+            883,
+            868
+          ],
+          "first_target": 25,
+          "second_target": 73,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 10
+        },
+        {
+          "first_source_op": 23428196,
+          "second_source_op": 23428208,
+          "controls": [
+            883,
+            878
+          ],
+          "first_target": 26,
+          "second_target": 74,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 9
+        },
+        {
+          "first_source_op": 23428197,
+          "second_source_op": 23428209,
+          "controls": [
+            883,
+            876
+          ],
+          "first_target": 27,
+          "second_target": 75,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 8
+        },
+        {
+          "first_source_op": 23428198,
+          "second_source_op": 23428210,
+          "controls": [
+            883,
+            882
+          ],
+          "first_target": 28,
+          "second_target": 76,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 7
+        },
+        {
+          "first_source_op": 23428199,
+          "second_source_op": 23428211,
+          "controls": [
+            883,
+            881
+          ],
+          "first_target": 29,
+          "second_target": 77,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 6
+        },
+        {
+          "first_source_op": 23428200,
+          "second_source_op": 23428212,
+          "controls": [
+            883,
+            869
+          ],
+          "first_target": 30,
+          "second_target": 78,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 5
+        },
+        {
+          "first_source_op": 23428201,
+          "second_source_op": 23428213,
+          "controls": [
+            883,
+            884
+          ],
+          "first_target": 31,
+          "second_target": 79,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 4
+        },
+        {
+          "first_source_op": 23428202,
+          "second_source_op": 23428214,
+          "controls": [
+            883,
+            865
+          ],
+          "first_target": 32,
+          "second_target": 80,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 3
+        },
+        {
+          "first_source_op": 23428203,
+          "second_source_op": 23428215,
+          "controls": [
+            883,
+            880
+          ],
+          "first_target": 33,
+          "second_target": 81,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 2
+        },
+        {
+          "first_source_op": 23428204,
+          "second_source_op": 23428216,
+          "controls": [
+            883,
+            877
+          ],
+          "first_target": 34,
+          "second_target": 82,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 1
+        },
+        {
+          "first_source_op": 23428205,
+          "second_source_op": 23428217,
+          "controls": [
+            883,
+            870
+          ],
+          "first_target": 35,
+          "second_target": 83,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 0
+        }
+      ]
+    },
+    {
+      "start_op": 31023310,
+      "end_op_exclusive": 31023334,
+      "merges": 12,
+      "rewrites": [
+        {
+          "first_source_op": 31023310,
+          "second_source_op": 31023322,
+          "controls": [
+            864,
+            886
+          ],
+          "first_target": 84,
+          "second_target": 132,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 11
+        },
+        {
+          "first_source_op": 31023311,
+          "second_source_op": 31023323,
+          "controls": [
+            864,
+            880
+          ],
+          "first_target": 85,
+          "second_target": 133,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 10
+        },
+        {
+          "first_source_op": 31023312,
+          "second_source_op": 31023324,
+          "controls": [
+            864,
+            875
+          ],
+          "first_target": 86,
+          "second_target": 134,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 9
+        },
+        {
+          "first_source_op": 31023313,
+          "second_source_op": 31023325,
+          "controls": [
+            864,
+            885
+          ],
+          "first_target": 87,
+          "second_target": 135,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 8
+        },
+        {
+          "first_source_op": 31023314,
+          "second_source_op": 31023326,
+          "controls": [
+            864,
+            888
+          ],
+          "first_target": 88,
+          "second_target": 136,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 7
+        },
+        {
+          "first_source_op": 31023315,
+          "second_source_op": 31023327,
+          "controls": [
+            864,
+            872
+          ],
+          "first_target": 89,
+          "second_target": 137,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 6
+        },
+        {
+          "first_source_op": 31023316,
+          "second_source_op": 31023328,
+          "controls": [
+            864,
+            878
+          ],
+          "first_target": 90,
+          "second_target": 138,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 5
+        },
+        {
+          "first_source_op": 31023317,
+          "second_source_op": 31023329,
+          "controls": [
+            864,
+            868
+          ],
+          "first_target": 91,
+          "second_target": 139,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 4
+        },
+        {
+          "first_source_op": 31023318,
+          "second_source_op": 31023330,
+          "controls": [
+            864,
+            874
+          ],
+          "first_target": 92,
+          "second_target": 140,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 3
+        },
+        {
+          "first_source_op": 31023319,
+          "second_source_op": 31023331,
+          "controls": [
+            864,
+            884
+          ],
+          "first_target": 93,
+          "second_target": 141,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 2
+        },
+        {
+          "first_source_op": 31023320,
+          "second_source_op": 31023332,
+          "controls": [
+            864,
+            882
+          ],
+          "first_target": 94,
+          "second_target": 142,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 1
+        },
+        {
+          "first_source_op": 31023321,
+          "second_source_op": 31023333,
+          "controls": [
+            864,
+            876
+          ],
+          "first_target": 95,
+          "second_target": 143,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 0
+        }
+      ]
+    },
+    {
+      "start_op": 31123681,
+      "end_op_exclusive": 31123705,
+      "merges": 12,
+      "rewrites": [
+        {
+          "first_source_op": 31123681,
+          "second_source_op": 31123693,
+          "controls": [
+            870,
+            886
+          ],
+          "first_target": 24,
+          "second_target": 72,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 11
+        },
+        {
+          "first_source_op": 31123682,
+          "second_source_op": 31123694,
+          "controls": [
+            870,
+            876
+          ],
+          "first_target": 25,
+          "second_target": 73,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 10
+        },
+        {
+          "first_source_op": 31123683,
+          "second_source_op": 31123695,
+          "controls": [
+            870,
+            882
+          ],
+          "first_target": 26,
+          "second_target": 74,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 9
+        },
+        {
+          "first_source_op": 31123684,
+          "second_source_op": 31123696,
+          "controls": [
+            870,
+            865
+          ],
+          "first_target": 27,
+          "second_target": 75,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 8
+        },
+        {
+          "first_source_op": 31123685,
+          "second_source_op": 31123697,
+          "controls": [
+            870,
+            875
+          ],
+          "first_target": 28,
+          "second_target": 76,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 7
+        },
+        {
+          "first_source_op": 31123686,
+          "second_source_op": 31123698,
+          "controls": [
+            870,
+            885
+          ],
+          "first_target": 29,
+          "second_target": 77,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 6
+        },
+        {
+          "first_source_op": 31123687,
+          "second_source_op": 31123699,
+          "controls": [
+            870,
+            888
+          ],
+          "first_target": 30,
+          "second_target": 78,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 5
+        },
+        {
+          "first_source_op": 31123688,
+          "second_source_op": 31123700,
+          "controls": [
+            870,
+            872
+          ],
+          "first_target": 31,
+          "second_target": 79,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 4
+        },
+        {
+          "first_source_op": 31123689,
+          "second_source_op": 31123701,
+          "controls": [
+            870,
+            878
+          ],
+          "first_target": 32,
+          "second_target": 80,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 3
+        },
+        {
+          "first_source_op": 31123690,
+          "second_source_op": 31123702,
+          "controls": [
+            870,
+            868
+          ],
+          "first_target": 33,
+          "second_target": 81,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 2
+        },
+        {
+          "first_source_op": 31123691,
+          "second_source_op": 31123703,
+          "controls": [
+            870,
+            874
+          ],
+          "first_target": 34,
+          "second_target": 82,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 1
+        },
+        {
+          "first_source_op": 31123692,
+          "second_source_op": 31123704,
+          "controls": [
+            870,
+            884
+          ],
+          "first_target": 35,
+          "second_target": 83,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 0
+        }
+      ]
+    },
+    {
+      "start_op": 31529875,
+      "end_op_exclusive": 31529899,
+      "merges": 12,
+      "rewrites": [
+        {
+          "first_source_op": 31529875,
+          "second_source_op": 31529887,
+          "controls": [
+            874,
+            886
+          ],
+          "first_target": 228,
+          "second_target": 276,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 11
+        },
+        {
+          "first_source_op": 31529876,
+          "second_source_op": 31529888,
+          "controls": [
+            874,
+            868
+          ],
+          "first_target": 229,
+          "second_target": 277,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 10
+        },
+        {
+          "first_source_op": 31529877,
+          "second_source_op": 31529889,
+          "controls": [
+            874,
+            875
+          ],
+          "first_target": 230,
+          "second_target": 278,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 9
+        },
+        {
+          "first_source_op": 31529878,
+          "second_source_op": 31529890,
+          "controls": [
+            874,
+            884
+          ],
+          "first_target": 231,
+          "second_target": 279,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 8
+        },
+        {
+          "first_source_op": 31529879,
+          "second_source_op": 31529891,
+          "controls": [
+            874,
+            871
+          ],
+          "first_target": 232,
+          "second_target": 280,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 7
+        },
+        {
+          "first_source_op": 31529880,
+          "second_source_op": 31529892,
+          "controls": [
+            874,
+            866
+          ],
+          "first_target": 233,
+          "second_target": 281,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 6
+        },
+        {
+          "first_source_op": 31529881,
+          "second_source_op": 31529893,
+          "controls": [
+            874,
+            887
+          ],
+          "first_target": 234,
+          "second_target": 282,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 5
+        },
+        {
+          "first_source_op": 31529882,
+          "second_source_op": 31529894,
+          "controls": [
+            874,
+            883
+          ],
+          "first_target": 235,
+          "second_target": 283,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 4
+        },
+        {
+          "first_source_op": 31529883,
+          "second_source_op": 31529895,
+          "controls": [
+            874,
+            880
+          ],
+          "first_target": 236,
+          "second_target": 284,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 3
+        },
+        {
+          "first_source_op": 31529884,
+          "second_source_op": 31529896,
+          "controls": [
+            874,
+            885
+          ],
+          "first_target": 237,
+          "second_target": 285,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 2
+        },
+        {
+          "first_source_op": 31529885,
+          "second_source_op": 31529897,
+          "controls": [
+            874,
+            882
+          ],
+          "first_target": 238,
+          "second_target": 286,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 1
+        },
+        {
+          "first_source_op": 31529886,
+          "second_source_op": 31529898,
+          "controls": [
+            874,
+            873
+          ],
+          "first_target": 239,
+          "second_target": 287,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 0
+        }
+      ]
+    },
+    {
+      "start_op": 31608602,
+      "end_op_exclusive": 31608626,
+      "merges": 12,
+      "rewrites": [
+        {
+          "first_source_op": 31608602,
+          "second_source_op": 31608614,
+          "controls": [
+            864,
+            886
+          ],
+          "first_target": 168,
+          "second_target": 216,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 11
+        },
+        {
+          "first_source_op": 31608603,
+          "second_source_op": 31608615,
+          "controls": [
+            864,
+            873
+          ],
+          "first_target": 169,
+          "second_target": 217,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 10
+        },
+        {
+          "first_source_op": 31608604,
+          "second_source_op": 31608616,
+          "controls": [
+            864,
+            882
+          ],
+          "first_target": 170,
+          "second_target": 218,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 9
+        },
+        {
+          "first_source_op": 31608605,
+          "second_source_op": 31608617,
+          "controls": [
+            864,
+            876
+          ],
+          "first_target": 171,
+          "second_target": 219,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 8
+        },
+        {
+          "first_source_op": 31608606,
+          "second_source_op": 31608618,
+          "controls": [
+            864,
+            875
+          ],
+          "first_target": 172,
+          "second_target": 220,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 7
+        },
+        {
+          "first_source_op": 31608607,
+          "second_source_op": 31608619,
+          "controls": [
+            864,
+            884
+          ],
+          "first_target": 173,
+          "second_target": 221,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 6
+        },
+        {
+          "first_source_op": 31608608,
+          "second_source_op": 31608620,
+          "controls": [
+            864,
+            871
+          ],
+          "first_target": 174,
+          "second_target": 222,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 5
+        },
+        {
+          "first_source_op": 31608609,
+          "second_source_op": 31608621,
+          "controls": [
+            864,
+            866
+          ],
+          "first_target": 175,
+          "second_target": 223,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 4
+        },
+        {
+          "first_source_op": 31608610,
+          "second_source_op": 31608622,
+          "controls": [
+            864,
+            887
+          ],
+          "first_target": 176,
+          "second_target": 224,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 3
+        },
+        {
+          "first_source_op": 31608611,
+          "second_source_op": 31608623,
+          "controls": [
+            864,
+            883
+          ],
+          "first_target": 177,
+          "second_target": 225,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 2
+        },
+        {
+          "first_source_op": 31608612,
+          "second_source_op": 31608624,
+          "controls": [
+            864,
+            880
+          ],
+          "first_target": 178,
+          "second_target": 226,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 1
+        },
+        {
+          "first_source_op": 31608613,
+          "second_source_op": 31608625,
+          "controls": [
+            864,
+            885
+          ],
+          "first_target": 179,
+          "second_target": 227,
+          "explicit_condition_bit": null,
+          "direction": "second_left",
+          "crossed_current_operations": 0
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 40.18657965199964,
+  "smoke256": {
+    "status": "PASS",
+    "score": 902297347690.3214,
+    "m": 4095,
+    "n": 70,
+    "degree": 12,
+    "r": 2016,
+    "verified_shots": 256,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "empirical_error_rate": 0.0,
+    "effective_error_rate": 0.021427937912299865,
+    "log2_delta": -8,
+    "repetition_factor": 2.9847755992784792,
+    "mean_error_weight": 31.046737331746634,
+    "toffoli_count": 382502.671875,
+    "max_toffoli_count": 383318,
+    "reaction_depth": 40891,
+    "num_ops": 52930276,
+    "shot_operation_counts": {
+      "BIT_INVERT": 1502717532,
+      "BIT_STORE0": 386609948,
+      "BIT_STORE1": 7476463,
+      "X": 27317340,
+      "Z": 5822684,
+      "R": 12189542,
+      "HMR": 18182944,
+      "CX": 7957959161,
+      "CZ": 69121892,
+      "SWAP": 68114728,
+      "CSWAP": 3133440,
+      "CCX": 93000877,
+      "CCZ": 1786367,
+      "POP_CONDITION": 389061376,
+      "PUSH_CONDITION": 389061376
+    },
+    "num_qubits": 889,
+    "num_bits": 154157,
+    "circuit_sha256": "5103812020bc0d6c4db32900777521479f01dfcca8dfd21ed74e9211770f389c",
+    "verification_scope": "256-shot smoke benchmark at log2_delta=-8, not official scoring confidence",
+    "seed": 20261114,
+    "kickmix_distribution_version": "1.0.0",
+    "kickmix_runtime_version": "0.1",
+    "load_seconds": 0.8622141730002113,
+    "verify_seconds": 8.723715348999576,
+    "max_rss_kib": 4704200
+  },
+  "baseline_smoke256": {
+    "status": "PASS",
+    "score": 902523805050.6156,
+    "m": 4095,
+    "n": 70,
+    "degree": 12,
+    "r": 2016,
+    "verified_shots": 256,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "empirical_error_rate": 0.0,
+    "effective_error_rate": 0.021427937912299865,
+    "log2_delta": -8,
+    "repetition_factor": 2.9847755992784792,
+    "mean_error_weight": 31.046737331746634,
+    "toffoli_count": 382598.671875,
+    "max_toffoli_count": 383414,
+    "reaction_depth": 40891,
+    "num_ops": 52930180,
+    "shot_operation_counts": {
+      "BIT_INVERT": 1502717532,
+      "BIT_STORE0": 386609948,
+      "BIT_STORE1": 7476463,
+      "X": 27317340,
+      "Z": 5822684,
+      "R": 12189542,
+      "HMR": 18182944,
+      "CX": 7957910009,
+      "CZ": 69121892,
+      "SWAP": 68114728,
+      "CSWAP": 3133440,
+      "CCX": 93025453,
+      "CCZ": 1786367,
+      "POP_CONDITION": 389061376,
+      "PUSH_CONDITION": 389061376
+    },
+    "num_qubits": 889,
+    "num_bits": 154157,
+    "circuit_sha256": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+    "verification_scope": "256-shot smoke benchmark at log2_delta=-8, not official scoring confidence",
+    "kickmix_distribution_version": "1.0.0",
+    "kickmix_runtime_version": "0.1",
+    "load_seconds": 0.9271554920001108,
+    "verify_seconds": 9.595271003999642,
+    "max_rss_kib": 4705028
+  },
+  "smoke_verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+  "regression_tests": {
+    "command": "python -m unittest test_dqi_ccx_peephole -v",
+    "tests": 14,
+    "status": "PASS",
+    "real_kickmix_optional_test_executed": true
+  },
+  "implementation_sha256": "13a7b05b7722468369d9132ef2b5f538c1698936167a662b5546915e715d9f69"
+}

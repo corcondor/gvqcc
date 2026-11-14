@@ -1,0 +1,16 @@
+{
+  "status": "PASS_EXACT_MATCH",
+  "replayed_shots": 1280,
+  "first_batch": 345,
+  "stop_batch": 350,
+  "base_seed": 77343458962116586234116065447774991137848806559339755775134102489580191158025,
+  "failing_absolute_shot": 89465,
+  "sampled_error_weight": 33,
+  "baseline_value_errors": 1,
+  "candidate_value_errors": 1,
+  "phase_errors": 0,
+  "all_output_syndromes_ancillas_phases_identical": true,
+  "failure_is_present_in_unchanged_baseline": true,
+  "baseline_toffolis": 382600.86953125,
+  "candidate_toffolis": 382500.5984375
+}

@@ -1,0 +1,80 @@
+{
+  "status": "BUILT_GAUGE_PIECES_NOT_DECODER_VERIFIED",
+  "labels": 128,
+  "fixed_pivot": [
+    49458,
+    49457,
+    49456,
+    49455,
+    49454,
+    49453,
+    49452,
+    49451,
+    49450,
+    49449,
+    49448,
+    49447
+  ],
+  "reserved_classical_through": 154157,
+  "baseline_prefix": {
+    "instructions": 10800436,
+    "bits": 49462,
+    "qubits": 840,
+    "static_toffoli_like": 0,
+    "bytes": 80041949,
+    "sha256": "25d9b7a82fbd43793c3d86bf359d736d4fec378418c92363fa9388b5283eae3d"
+  },
+  "baseline_pair": {
+    "instructions": 15151125,
+    "bits": 49462,
+    "qubits": 840,
+    "static_toffoli_like": 0,
+    "bytes": 119198098,
+    "sha256": "2f3e72f46525dbba7bfc82acfd8b7d19e8aca43e3d84173234ced0679116b2aa"
+  },
+  "expanded_prefix": {
+    "instructions": 17244617,
+    "bits": 154799,
+    "qubits": 840,
+    "static_toffoli_like": 0,
+    "bytes": 120508862,
+    "sha256": "4bc6cd08d7560a2e22ca539741e4fc696fe32e4dcaf6665720ae36bb3bb7fcf2"
+  },
+  "expanded_pair": {
+    "instructions": 21599331,
+    "bits": 154799,
+    "qubits": 840,
+    "static_toffoli_like": 0,
+    "bytes": 159701236,
+    "sha256": "df576b18b6da790813efa9290fb41c301018882e555b2ac13fa74c505c47a498"
+  },
+  "selector_ledger": {
+    "labels": 128,
+    "label_bits": 7,
+    "cap": 7,
+    "selector_instructions": 12887775,
+    "histogram_instructions": 12880000,
+    "peak_classical_work_bits": 642,
+    "additional_quantum_bits": 0,
+    "static_toffoli_like": 0,
+    "normalization_instructions": 307013,
+    "compensation_CZ": 1264,
+    "pivot": [
+      49458,
+      49457,
+      49456,
+      49455,
+      49454,
+      49453,
+      49452,
+      49451,
+      49450,
+      49449,
+      49448,
+      49447
+    ]
+  },
+  "elapsed_seconds": 45.69882948200029,
+  "splice_contract": "Compare baseline prefix and suffix instructions exactly before replacing. Suffix is pair[prefix_instructions:]. Preserve original registers and decoder body; update maximum classical bit count.",
+  "scope": "No old frozen certificate is reused as evidence for the new candidate."
+}

@@ -1,0 +1,9 @@
+{
+  "source_url": "https://raw.githubusercontent.com/zhendongli2008/Active-space-model-for-FeMoco/master/FCIDUMP.zip",
+  "archive": "official_sources/femoco_original_FCIDUMP.zip",
+  "archive_member": "FCIDUMP",
+  "bytes": 128128348,
+  "sha256": "e5a48af746fd075026dec9e8f5df2d363802a121e8c53af9a0b984bde695e1bd",
+  "verified_matches_official": true,
+  "destination": "official_sources/Inzainos/verifiers/dfthcsos/FeMoCo76o113e.fcidump"
+}
