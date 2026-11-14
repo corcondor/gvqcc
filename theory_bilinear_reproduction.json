@@ -1,0 +1,84 @@
+{
+  "polytof_repository": "https://github.com/ZIB-IOL/polytof",
+  "polytof_commit": "0dcac107d15adc34dc646242d222f21ae7d32699",
+  "source_roles": {
+    "author_unmodified": "Polytof cpd::BASE and cnot::cpr_abc headers",
+    "new_work": "Deterministic drivers, tensor bridge, conjugation normalization, exact proofs, placement matcher and KMB splice"
+  },
+  "inputs": {
+    "theory_bilinear_input_certificate.json": "a15d07cec4107069fa2bc820fd511ef5b4d23af0b9edfda0b23670911cace514",
+    "inverse_v2_actual_tensor99.json": "859f3b762522ca3b17302369f49903529483d794963901d492e945e401a58a99"
+  },
+  "generated_inputs": {
+    "gf12_input.txt": "6f365fe549322e632a43369b739f56d62c528ab59a1f6a1e063af12e5507edfb",
+    "gf24_actual_input.txt": "7809f1f61579f773e226eefe8df9291f51ccd242d074f7b0c52e61e9ef741e46",
+    "gf24_actual_symmetric_input.txt": "3fbe92601e6be0729bb409635d9300eb9409adcb19f77f40c47f98ac1d2b1ded",
+    "gf24_input.txt": "3fbe92601e6be0729bb409635d9300eb9409adcb19f77f40c47f98ac1d2b1ded"
+  },
+  "commands": [
+    [
+      "g++",
+      "-O3",
+      "-std=c++20",
+      "-DVEC_WORDS=2",
+      "-I",
+      "/workspace/scratch/3815fb5fae06/polytof_theory/src",
+      "-I",
+      "/workspace/scratch/3815fb5fae06/polytof_theory/third_party",
+      "/workspace/scratch/7f542e06b7cf/gvqcc_repo/theory_bilinear_cpr.cpp",
+      "-o",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/bin/cpr"
+    ],
+    [
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/bin/cpr",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf12_input.txt",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf12_cpr_local.kmx",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf12_cpr_local_meta.json",
+      "32"
+    ],
+    [
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/bin/cpr",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf12_input.txt",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf12_cpr1024_local.kmx",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf12_cpr1024_local_meta.json",
+      "1024"
+    ],
+    [
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/bin/cpr",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf24_actual_input.txt",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf24_actual_cpr_local.kmx",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf24_actual_cpr_local_meta.json",
+      "32"
+    ],
+    [
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/bin/cpr",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf24_actual_input.txt",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf24_actual_cpr1024_local.kmx",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf24_actual_cpr1024_local_meta.json",
+      "1024"
+    ],
+    [
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/bin/cpr",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf24_actual_symmetric_input.txt",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf24_actual_symmetric_cpr1024_local.kmx",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/gf24_actual_symmetric_cpr1024_local_meta.json",
+      "1024"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/7f542e06b7cf/gvqcc_repo/theory_bilinear_verify.py",
+      "--run-dir",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro",
+      "--repo-dir",
+      "/workspace/scratch/7f542e06b7cf/gvqcc_repo",
+      "--output-dir",
+      "/workspace/scratch/3815fb5fae06/bilinear_repro/verified"
+    ]
+  ],
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "exact_reproduced_kernel_sha256": {
+    "theory_bilinear_actual_cpr.kmx": "72be931e06208b90080f9d860062981613c97a0398737314f26a98d667318703",
+    "theory_bilinear_gf12_cpr.kmx": "9272094f5ebbf9747d43ed5a8b476bb60d15a2d4c8abc9e05ebb89222ab2c4f1"
+  },
+  "status": "REPRODUCED_EXACT_KERNEL_BYTES_AND_ARBITRARY_ACCUMULATOR_PROOFS"
+}

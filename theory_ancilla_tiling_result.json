@@ -1,0 +1,1263 @@
+{
+  "status": "PASS_EXACT_BLOCK_AND_FIXED_TILE_COUNTEREXAMPLES",
+  "block_sha256": "f97f2a437fb9b538d85608ce5ae5393c87e5f8b8dcab750ca8af9eae754b5aac",
+  "bilinear_basis_pairs_checked": 576,
+  "current_CCX": 99,
+  "current_field_relation": "theta^2+theta+2048=0 over GF(2^12), modulus0x1053",
+  "recovered_tensor_terms": [
+    [
+      831691,
+      203,
+      12733523
+    ],
+    [
+      4277268,
+      1044,
+      14869135
+    ],
+    [
+      5108959,
+      1247,
+      2141916
+    ],
+    [
+      7218914,
+      1762,
+      10009340
+    ],
+    [
+      3482450,
+      850,
+      13130224
+    ],
+    [
+      5965232,
+      1456,
+      5301004
+    ],
+    [
+      6460969,
+      1577,
+      9613151
+    ],
+    [
+      7628614,
+      1862,
+      8018035
+    ],
+    [
+      1503599,
+      367,
+      15267628
+    ],
+    [
+      203,
+      831691,
+      12734422
+    ],
+    [
+      1044,
+      4277268,
+      14870947
+    ],
+    [
+      1247,
+      5108959,
+      2139765
+    ],
+    [
+      1762,
+      7218914,
+      10009251
+    ],
+    [
+      850,
+      3482450,
+      13131681
+    ],
+    [
+      1456,
+      5965232,
+      5301506
+    ],
+    [
+      1577,
+      6460969,
+      9611988
+    ],
+    [
+      1862,
+      7628614,
+      8016640
+    ],
+    [
+      367,
+      1503599,
+      15268308
+    ],
+    [
+      4019385,
+      7783609,
+      14727013
+    ],
+    [
+      15010912,
+      2296928,
+      12143866
+    ],
+    [
+      14178521,
+      5621977,
+      5897119
+    ],
+    [
+      4953436,
+      1987932,
+      840757
+    ],
+    [
+      12978028,
+      11585388,
+      1159325
+    ],
+    [
+      9278000,
+      11440688,
+      1926312
+    ],
+    [
+      7782885,
+      6853093,
+      16634829
+    ],
+    [
+      2296588,
+      9685772,
+      11901135
+    ],
+    [
+      5622505,
+      16472809,
+      4737794
+    ],
+    [
+      7783609,
+      4019385,
+      14726863
+    ],
+    [
+      2296928,
+      15010912,
+      12141164
+    ],
+    [
+      5621977,
+      14178521,
+      5895331
+    ],
+    [
+      1987932,
+      4953436,
+      843052
+    ],
+    [
+      11585388,
+      12978028,
+      1162066
+    ],
+    [
+      11440688,
+      9278000,
+      1926782
+    ],
+    [
+      6853093,
+      7782885,
+      16634033
+    ],
+    [
+      9685772,
+      2296588,
+      11902784
+    ],
+    [
+      16472809,
+      5622505,
+      4739057
+    ],
+    [
+      6012019,
+      10259571,
+      10924797
+    ],
+    [
+      14047764,
+      7805460,
+      16663331
+    ],
+    [
+      9299559,
+      15439463,
+      5829086
+    ],
+    [
+      16446154,
+      14045898,
+      1508270
+    ],
+    [
+      11543516,
+      9298908,
+      10744086
+    ],
+    [
+      4903190,
+      6009110,
+      11858616
+    ],
+    [
+      10571449,
+      4906681,
+      1196101
+    ],
+    [
+      6715848,
+      16447944,
+      15286413
+    ],
+    [
+      13055857,
+      11544433,
+      16449736
+    ],
+    [
+      10259571,
+      6012019,
+      10924610
+    ],
+    [
+      7805460,
+      14047764,
+      16666567
+    ],
+    [
+      15439463,
+      9299559,
+      5832069
+    ],
+    [
+      14045898,
+      16446154,
+      1508009
+    ],
+    [
+      9298908,
+      11543516,
+      10745736
+    ],
+    [
+      6009110,
+      4903190,
+      11859233
+    ],
+    [
+      4906681,
+      10571449,
+      1197923
+    ],
+    [
+      16447944,
+      6715848,
+      15289710
+    ],
+    [
+      11544433,
+      13055857,
+      16452109
+    ],
+    [
+      10885121,
+      2492417,
+      6570753
+    ],
+    [
+      8393312,
+      10883680,
+      3344786
+    ],
+    [
+      2493025,
+      8395361,
+      5720723
+    ],
+    [
+      6906228,
+      8266100,
+      13929235
+    ],
+    [
+      1525730,
+      6907874,
+      3512299
+    ],
+    [
+      8267414,
+      1525398,
+      14753016
+    ],
+    [
+      13597045,
+      5777781,
+      8740857
+    ],
+    [
+      9917826,
+      13596034,
+      15172225
+    ],
+    [
+      5778679,
+      9919735,
+      6479224
+    ],
+    [
+      2492417,
+      10885121,
+      6573969
+    ],
+    [
+      10883680,
+      8393312,
+      3344802
+    ],
+    [
+      8395361,
+      2493025,
+      5719603
+    ],
+    [
+      8266100,
+      6906228,
+      13927980
+    ],
+    [
+      6907874,
+      1525730,
+      3512339
+    ],
+    [
+      1525398,
+      8267414,
+      14753343
+    ],
+    [
+      5777781,
+      13597045,
+      8737198
+    ],
+    [
+      13596034,
+      9917826,
+      15175566
+    ],
+    [
+      9919735,
+      5778679,
+      6479392
+    ],
+    [
+      333507,
+      6891203,
+      2916610
+    ],
+    [
+      3660682,
+      9403274,
+      15587264
+    ],
+    [
+      3329353,
+      15097161,
+      12670658
+    ],
+    [
+      13933848,
+      335128,
+      5764298
+    ],
+    [
+      7091646,
+      3659198,
+      4976042
+    ],
+    [
+      12101798,
+      3328166,
+      1841504
+    ],
+    [
+      13732827,
+      7093211,
+      3184738
+    ],
+    [
+      6024756,
+      12103220,
+      12198666
+    ],
+    [
+      9070063,
+      13932015,
+      9091944
+    ],
+    [
+      6891203,
+      333507,
+      2918079
+    ],
+    [
+      9403274,
+      3660682,
+      15589151
+    ],
+    [
+      15097161,
+      3329353,
+      12671392
+    ],
+    [
+      335128,
+      13933848,
+      5765142
+    ],
+    [
+      3659198,
+      7091646,
+      4976481
+    ],
+    [
+      3328166,
+      12101798,
+      1841015
+    ],
+    [
+      7093211,
+      13732827,
+      3183048
+    ],
+    [
+      12103220,
+      6024756,
+      12199689
+    ],
+    [
+      13932015,
+      9070063,
+      9090753
+    ],
+    [
+      15110833,
+      13468337,
+      1397
+    ],
+    [
+      12678142,
+      16684030,
+      1538
+    ],
+    [
+      2613583,
+      3346767,
+      887
+    ],
+    [
+      13995686,
+      4189862,
+      2467
+    ],
+    [
+      848256,
+      1372544,
+      1653
+    ],
+    [
+      14253862,
+      2826022,
+      4054
+    ],
+    [
+      3349527,
+      15887383,
+      2723
+    ],
+    [
+      13468286,
+      15360638,
+      4001
+    ],
+    [
+      16686697,
+      1576553,
+      1282
+    ]
+  ],
+  "single_output_bits": [
+    {
+      "output_bit": 0,
+      "existing_projected_terms": 50,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 1,
+      "existing_projected_terms": 50,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 2,
+      "existing_projected_terms": 42,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 3,
+      "existing_projected_terms": 42,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 4,
+      "existing_projected_terms": 40,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 5,
+      "existing_projected_terms": 50,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 6,
+      "existing_projected_terms": 46,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 7,
+      "existing_projected_terms": 52,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 8,
+      "existing_projected_terms": 56,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 9,
+      "existing_projected_terms": 60,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 10,
+      "existing_projected_terms": 50,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 11,
+      "existing_projected_terms": 48,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 12,
+      "existing_projected_terms": 48,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 13,
+      "existing_projected_terms": 36,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 14,
+      "existing_projected_terms": 52,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 15,
+      "existing_projected_terms": 52,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 16,
+      "existing_projected_terms": 40,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 17,
+      "existing_projected_terms": 36,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 18,
+      "existing_projected_terms": 36,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 19,
+      "existing_projected_terms": 40,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 20,
+      "existing_projected_terms": 48,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 21,
+      "existing_projected_terms": 48,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 22,
+      "existing_projected_terms": 48,
+      "bilinear_matrix_rank": 24
+    },
+    {
+      "output_bit": 23,
+      "existing_projected_terms": 48,
+      "bilinear_matrix_rank": 24
+    }
+  ],
+  "natural_two_tiles": [
+    {
+      "tile_sizes": [
+        1,
+        23
+      ],
+      "projected_existing_terms": [
+        50,
+        99
+      ],
+      "sum_terms": 149,
+      "extra_terms_vs_99": 50
+    },
+    {
+      "tile_sizes": [
+        2,
+        22
+      ],
+      "projected_existing_terms": [
+        75,
+        99
+      ],
+      "sum_terms": 174,
+      "extra_terms_vs_99": 75
+    },
+    {
+      "tile_sizes": [
+        3,
+        21
+      ],
+      "projected_existing_terms": [
+        84,
+        99
+      ],
+      "sum_terms": 183,
+      "extra_terms_vs_99": 84
+    },
+    {
+      "tile_sizes": [
+        4,
+        20
+      ],
+      "projected_existing_terms": [
+        92,
+        99
+      ],
+      "sum_terms": 191,
+      "extra_terms_vs_99": 92
+    },
+    {
+      "tile_sizes": [
+        6,
+        18
+      ],
+      "projected_existing_terms": [
+        96,
+        99
+      ],
+      "sum_terms": 195,
+      "extra_terms_vs_99": 96
+    },
+    {
+      "tile_sizes": [
+        8,
+        16
+      ],
+      "projected_existing_terms": [
+        98,
+        99
+      ],
+      "sum_terms": 197,
+      "extra_terms_vs_99": 98
+    },
+    {
+      "tile_sizes": [
+        12,
+        12
+      ],
+      "projected_existing_terms": [
+        99,
+        90
+      ],
+      "sum_terms": 189,
+      "extra_terms_vs_99": 90
+    },
+    {
+      "tile_sizes": [
+        16,
+        8
+      ],
+      "projected_existing_terms": [
+        99,
+        90
+      ],
+      "sum_terms": 189,
+      "extra_terms_vs_99": 90
+    },
+    {
+      "tile_sizes": [
+        20,
+        4
+      ],
+      "projected_existing_terms": [
+        99,
+        88
+      ],
+      "sum_terms": 187,
+      "extra_terms_vs_99": 88
+    },
+    {
+      "tile_sizes": [
+        23,
+        1
+      ],
+      "projected_existing_terms": [
+        99,
+        48
+      ],
+      "sum_terms": 147,
+      "extra_terms_vs_99": 48
+    }
+  ],
+  "exact_counterexamples_to_consuming_fixed_first_tile": [
+    {
+      "first_tile_bits": 1,
+      "source": 2,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        2
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 2,
+      "source": 4,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        4
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 3,
+      "source": 8,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        8
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 4,
+      "source": 16,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        16
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 5,
+      "source": 32,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        32
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 6,
+      "source": 64,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        64
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 7,
+      "source": 128,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        128
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 8,
+      "source": 256,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        256
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 9,
+      "source": 512,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        512
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 10,
+      "source": 1024,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        1024
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 11,
+      "source": 2048,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        2048
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 12,
+      "source": 4097,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        4096
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 13,
+      "source": 8194,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        8192
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 14,
+      "source": 16388,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        16384
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 15,
+      "source": 32776,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        32768
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 16,
+      "source": 65552,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        65536
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 17,
+      "source": 131104,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        131072
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 18,
+      "source": 262208,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        262144
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 19,
+      "source": 524416,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        524288
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 20,
+      "source": 1048832,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        1048576
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 21,
+      "source": 2097664,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        2097152
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 22,
+      "source": 4195328,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        4194304
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    },
+    {
+      "first_tile_bits": 23,
+      "source": 8390656,
+      "old_targets": [
+        0,
+        1
+      ],
+      "full_products": [
+        0,
+        8388608
+      ],
+      "first_tile_outputs": [
+        0,
+        0
+      ],
+      "retained_old_upper_bits": [
+        0,
+        0
+      ]
+    }
+  ],
+  "natural_12bit_pivot_zero_nonzero_sources": 4095,
+  "total_nonzero_sources": 16777215,
+  "natural_12bit_pivot_zero_fraction": "1/4097",
+  "fresh_tensor_natural_12plus12_cost": 168,
+  "fresh_tensor_natural_12plus12_reason": "Each output half is two independent rank42 GF12 products; this computes outputs but does not itself justify input consumption.",
+  "unchanged_R_cost_budgets": [
+    {
+      "qubits_saved": 1,
+      "new_Q": 888,
+      "maximum_extra_mean_T_strict": 861.1052304502056
+    },
+    {
+      "qubits_saved": 2,
+      "new_Q": 887,
+      "maximum_extra_mean_T_strict": 1725.1245213600655
+    },
+    {
+      "qubits_saved": 4,
+      "new_Q": 885,
+      "maximum_extra_mean_T_strict": 3461.958012773608
+    },
+    {
+      "qubits_saved": 6,
+      "new_Q": 883,
+      "maximum_extra_mean_T_strict": 5210.606677824127
+    },
+    {
+      "qubits_saved": 8,
+      "new_Q": 881,
+      "maximum_extra_mean_T_strict": 6971.177926950923
+    },
+    {
+      "qubits_saved": 11,
+      "new_Q": 878,
+      "maximum_extra_mean_T_strict": 9634.627620827509
+    },
+    {
+      "qubits_saved": 12,
+      "new_Q": 877,
+      "maximum_extra_mean_T_strict": 10528.523952700574
+    },
+    {
+      "qubits_saved": 24,
+      "new_Q": 865,
+      "maximum_extra_mean_T_strict": 21498.26177298502
+    },
+    {
+      "qubits_saved": 49,
+      "new_Q": 840,
+      "maximum_extra_mean_T_strict": 45880.40386225925
+    }
+  ],
+  "safe_conclusion": "Fixed projection plus measurement of consumed input is invalid without reversible pivot handling. No full-circuit improvement or score claimed."
+}

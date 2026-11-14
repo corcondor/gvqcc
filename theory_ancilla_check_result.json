@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "disjoint_after_R",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    {
+      "case": "disjoint_after_HMR",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    {
+      "case": "explicit_R_kept",
+      "expected": 2,
+      "actual": 2,
+      "status": "PASS"
+    },
+    {
+      "case": "explicit_HMR_kept",
+      "expected": 2,
+      "actual": 2,
+      "status": "PASS"
+    },
+    {
+      "case": "stack_R_kept",
+      "expected": 2,
+      "actual": 2,
+      "status": "PASS"
+    },
+    {
+      "case": "nested_stack_HMR_kept",
+      "expected": 2,
+      "actual": 2,
+      "status": "PASS"
+    }
+  ],
+  "baseline_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "scanner_sha256": "eea545757a4d41c0d2ffe621685cd2a6758c66c2a1127d98846ba45fa44d4e53",
+  "elapsed_seconds": 2.0407633159993566
+}

@@ -1,0 +1,152 @@
+{
+  "status": "EXACT_FIXED_PRODUCT_DICTIONARY_LOWER_BOUND",
+  "loaders": [
+    {
+      "batch": 1,
+      "source_sha256": "e63f9de0a60ff79fc6f817056a1f95f5efed9ae82955cf56b11492e5ff28d70b",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 303,
+      "products": 212,
+      "quotient_rank": 212,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 2,
+      "source_sha256": "e32afaf5d4b04756d20f15ecfbf08d6db325b57cbcb877428cb7fd61f13fcebb",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 303,
+      "products": 212,
+      "quotient_rank": 212,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 3,
+      "source_sha256": "a932bc25467908c2189aadadd5f997ea88200b44d9401741c2b492fc1c2ebaa0",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 303,
+      "products": 212,
+      "quotient_rank": 212,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 4,
+      "source_sha256": "dc70bda726f221813b502fc2d26acdd21882d1e30177f4264974880eb68cb2c2",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 280,
+      "products": 189,
+      "quotient_rank": 189,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 5,
+      "source_sha256": "dbef059b4cd3030d2b249df4d09653efb54f8b803faa2d459f4e418394120fe2",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 280,
+      "products": 189,
+      "quotient_rank": 189,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 6,
+      "source_sha256": "11cb19cb7e9d628f1416ef0e03f6d9d767726e42df839885e9224b029444f383",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 278,
+      "products": 187,
+      "quotient_rank": 187,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 7,
+      "source_sha256": "e3a11ed9c462603f6f0734fe61fc0e4e924fa6bb4a6702574391f28f507a264b",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 280,
+      "products": 189,
+      "quotient_rank": 189,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 8,
+      "source_sha256": "0fdcfe1906582661c40d0cd510df7efa2c115f287f9ad859223967d98150b0b2",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 278,
+      "products": 187,
+      "quotient_rank": 187,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 9,
+      "source_sha256": "e0e95ba89402beb2c08017c5db7bc5070db26fd996bcd4f465d2ab1a21cfa55f",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 280,
+      "products": 189,
+      "quotient_rank": 189,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 10,
+      "source_sha256": "c2e7dca4c51cdb3f82a47effbf0d529351b78a432e0b30bf5ca833bf2c5fcea3",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 278,
+      "products": 187,
+      "quotient_rank": 187,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 11,
+      "source_sha256": "18fa8cd8125a1eccb959be27956ce7e871599909193052ab4a2ad1a5d0d6b01d",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 280,
+      "products": 189,
+      "quotient_rank": 189,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 12,
+      "source_sha256": "62d6cd9855bcad70917a56527c0f03b912fba8bb14a2bfd91748a345f0a6fc72",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 279,
+      "products": 188,
+      "quotient_rank": 188,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 13,
+      "source_sha256": "09a2faee4582e786548640ce4552bcc812e73667bd6784b37e0bbb5b817b8189",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 279,
+      "products": 188,
+      "quotient_rank": 188,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    },
+    {
+      "batch": 14,
+      "source_sha256": "a582eb78249c7ba5f58881b2753e2900a5a5be61eda719d2a24aff1fdad5f073",
+      "feature_span_rank": 91,
+      "feature_plus_products_rank": 279,
+      "products": 188,
+      "quotient_rank": 188,
+      "all_product_output_directions_nonzero": true,
+      "deletable_existing_products_under_global_xor_recombination": 0
+    }
+  ],
+  "total_products": 2706,
+  "valid_addresses": 1220,
+  "scope": "Fixed prepared-feature space V and fixed linear input/output skeleton; accumulation with the existing product dictionary. The 35 incoming data-wire functions are not extra free resources.",
+  "proof": "Modulo the free span V of constant and prepared feature functions, all original products p_i are independent. Each has nonzero output direction w_i. Hence the vector function sum_i p_i w_i has a unique representation in this dictionary modulo V and requires every p_i. This includes arbitrary multi-product XOR recombination, not only pairwise matches.",
+  "limitation": "New products, changed feature maps, nonlinear resynthesis, changed angle encoding and other whole-loader architectures remain outside this lower bound.",
+  "seconds": 1.9999555070007773,
+  "script_sha256": "30d8b68b8de238c72f83c6d3f358fa7b261a47380fc0cde7a996e56f9ccfcdb2"
+}
