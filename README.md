@@ -22,7 +22,9 @@
 
 **同じ102,400入力で元回路と比較する計算も完了しました。** 両回路とも値エラー・位相エラーは0、反復係数Rも一致しています。元回路の平均Toffoli数382599.9932617188に対し、v2は382115.5671582031で、平均 **484.426103515625 Toffoli削減、DQIコスト0.1266142478%改善**です。内訳は無条件のCCX削減480と、gauge変更による平均4.426103515625です。比較にはv2の通常の回路ハッシュ由来seedを使い、seedの探索はしていません。[入力を固定した比較結果](dqi_combined_v2_paired_comparison.json)と[元回路の検証記録](dqi_baseline_v2_paired_verification.json)を参照してください。
 
-v2は[Kaggle CPU notebook](https://www.kaggle.com/code/geocpuresearch/gvqcc-verified-480ccx-gauge128)で保存実行を開始しました。元ZIP・公式検証器のハッシュ照合まで通過し、全検証と競技採点はまだ完了していません。上記ローカル費用を、確認済みのPublic Scoreとして扱わないでください。
+v2は[Kaggle CPU notebook](https://www.kaggle.com/code/geocpuresearch/gvqcc-verified-480ccx-gauge128)で保存実行を開始しました。元ZIP・公式検証器のハッシュ照合までは確認済みですが、その後ブラウザ接続がタイムアウトしたため、実行完了と競技採点は未確認です。上記ローカル費用を、確認済みのPublic Scoreとして扱わないでください。
+
+提出用の完全ZIP `submission_v2_full.zip` もローカルで組み立てました。18メンバー・50,321,865 bytes、SHA-256 `fbc5b37a1cfda9ac5e5277e0b16fb6c2d7b99d691a1bd3f4ce8a992ca2d9892f`。DQIは検証済みe986、他の17メンバーは実行済みv1 workerの全入力pinと一致し、全メンバーを読戻してCRC/SHAを確認しています。[構成と検証記録](results/2026-11-14/submission_v2_full_reconstruction.json)には、Kaggle実出力ZIPを直接比較したものではないことと、重い回路検証を再実行していないことを明記しています。
 
 v1は別途、Kaggleの競技添付Kickmixと公式検証コードでも102,400ショットPASSし、ローカルと同じ数値を再現しました。[Kaggle v1の実行記録](results/2026-11-14/kaggle_v1_full_verification.json)はノートブック実行の証拠であり、競技リーダーボード採点の結果ではありません。v1の回路・workerと以下の計算履歴は保持しています。
 
