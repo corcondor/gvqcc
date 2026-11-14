@@ -1,0 +1,578 @@
+{
+  "created_utc": "2026-11-14T17:35:58.083457+00:00",
+  "outcome": "No chemistry improvement accepted. Retain full-verified Asterios C44/brot8 baseline.",
+  "baseline": {
+    "status": "PASS",
+    "score": 294988786.8708443,
+    "lambda_eff": 46.906589508623554,
+    "toffoli_count": 14728.0,
+    "num_qubits": 427,
+    "brot": 8,
+    "batch_size": 5,
+    "num_circuits": 15,
+    "reaction_depth": 167,
+    "num_ops": 611422,
+    "verified_shots": 78080,
+    "submission_sha256": "7a97a87ab5994abebef3830781f85b6c5e227406a2bf45bb62a7ac1bfff89dc3",
+    "resources": {
+      "brot": 8,
+      "keep_bits": 10,
+      "angles_toffoli_per_pass": 4033.0,
+      "angles_toffoli": 8066.0,
+      "angles_qubits": 128,
+      "angles_selection_qubits": 11,
+      "angles_persistent_qubits": 40,
+      "angles_temporary_qubits": 77,
+      "outer_state_prep_toffoli": 317,
+      "inner_state_prep_toffoli": 4095,
+      "givens_rotations_toffoli": 2250,
+      "outer_state_prep_persistent_qubits": 40,
+      "outer_state_prep_temporary_qubits": 90,
+      "outer_state_prep_qubits": 130,
+      "inner_state_prep_persistent_qubits": 44,
+      "inner_state_prep_temporary_qubits": 303,
+      "inner_state_prep_qubits": 347,
+      "heuristic_persistent_qubits": 84,
+      "heuristic_temporary_qubits": 303,
+      "heuristic_toffoli": 6662,
+      "heuristic_qubits": 387,
+      "persistent_qubits": 124,
+      "temporary_qubits": 303,
+      "toffoli": 14728.0,
+      "qubits": 427,
+      "angles_within_cap": true
+    },
+    "metrics": {
+      "error_1": 0.019999997999999,
+      "error_2": 0.019999998499405272,
+      "Lambda": 282.96453251692543,
+      "E_SOS": -22144.1882480015,
+      "E_gap": 3.9148980015015695,
+      "lambda_eff": 46.906589508623554,
+      "gap_in_domain": true
+    }
+  },
+  "word_match": {
+    "all_words_match": true,
+    "different_words": 0,
+    "word_shape": [
+      1220,
+      75
+    ],
+    "brot": 8,
+    "seed": 20261114,
+    "extraction_shots_per_address": 1,
+    "full_verification_reference": "official_baseline_verify.json",
+    "canonical_int64_words_sha256": "958d774cdcebb6050e6fd2f96de62a568a49adb420c4f91eba95515bd00b2a64"
+  },
+  "inputs": {
+    "factorization_npz_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+    "original_4033_npz_sha256": "3f864a7aeaa4d78984c8822761782b63be2d553b229f487e79640a73be147c44",
+    "FCIDUMP_sha256": "e5a48af746fd075026dec9e8f5df2d363802a121e8c53af9a0b984bde695e1bd",
+    "fixed_shifts_sha256": "7b7facf63fe35a9d9d3d00787ffdb700c863fa845fe4724d7f7c54778151cd87",
+    "angle_circuit_sha256": {
+      "angle_k_0.kmb": "71735b23037e8a64d16e39b3347d440b36bdf8813613ec70c36a85bfd362d7c2",
+      "angle_k_1.kmb": "e63f9de0a60ff79fc6f817056a1f95f5efed9ae82955cf56b11492e5ff28d70b",
+      "angle_k_10.kmb": "c2e7dca4c51cdb3f82a47effbf0d529351b78a432e0b30bf5ca833bf2c5fcea3",
+      "angle_k_11.kmb": "18fa8cd8125a1eccb959be27956ce7e871599909193052ab4a2ad1a5d0d6b01d",
+      "angle_k_12.kmb": "62d6cd9855bcad70917a56527c0f03b912fba8bb14a2bfd91748a345f0a6fc72",
+      "angle_k_13.kmb": "09a2faee4582e786548640ce4552bcc812e73667bd6784b37e0bbb5b817b8189",
+      "angle_k_14.kmb": "a582eb78249c7ba5f58881b2753e2900a5a5be61eda719d2a24aff1fdad5f073",
+      "angle_k_2.kmb": "e32afaf5d4b04756d20f15ecfbf08d6db325b57cbcb877428cb7fd61f13fcebb",
+      "angle_k_3.kmb": "a932bc25467908c2189aadadd5f997ea88200b44d9401741c2b492fc1c2ebaa0",
+      "angle_k_4.kmb": "dc70bda726f221813b502fc2d26acdd21882d1e30177f4264974880eb68cb2c2",
+      "angle_k_5.kmb": "dbef059b4cd3030d2b249df4d09653efb54f8b803faa2d459f4e418394120fe2",
+      "angle_k_6.kmb": "11cb19cb7e9d628f1416ef0e03f6d9d767726e42df839885e9224b029444f383",
+      "angle_k_7.kmb": "e3a11ed9c462603f6f0734fe61fc0e4e924fa6bb4a6702574391f28f507a264b",
+      "angle_k_8.kmb": "0fdcfe1906582661c40d0cd510df7efa2c115f287f9ad859223967d98150b0b2",
+      "angle_k_9.kmb": "e0e95ba89402beb2c08017c5db7bc5070db26fd996bcd4f465d2ab1a21cfa55f"
+    }
+  },
+  "verifier": {
+    "repository": "Inzainos/quantum-circuit-compilation",
+    "commit": "4277c767440df9efb8a90860ae2ce47028e46ba9",
+    "kickmix_version": "1.0.0",
+    "verify_py_sha256": "ca84ca08e6e9280922cda3b539d4776ae58990b2b03b5619a53d65de67df9d2b",
+    "source_scope": "Public mirror of competition verifier. This is a local verification, not a new Kaggle submission score."
+  },
+  "fixed_W_rounding_screens": [
+    {
+      "kind": "brot7_floor",
+      "h2_change_norm": 0.4366295477797352,
+      "error2_lower_bound_from_passing_baseline": 0.4166295477797352,
+      "definitely_fails_at_fixed_W": true
+    },
+    {
+      "kind": "brot7_half_up",
+      "h2_change_norm": 0.4360206800496436,
+      "error2_lower_bound_from_passing_baseline": 0.4160206800496436,
+      "definitely_fails_at_fixed_W": true
+    },
+    {
+      "kind": "brot7_nearest_even",
+      "h2_change_norm": 0.4323813152267475,
+      "error2_lower_bound_from_passing_baseline": 0.4123813152267475,
+      "definitely_fails_at_fixed_W": true
+    },
+    {
+      "kind": "brot6_floor",
+      "h2_change_norm": 1.1819015784231006,
+      "error2_lower_bound_from_passing_baseline": 1.1619015784231006,
+      "definitely_fails_at_fixed_W": true
+    },
+    {
+      "kind": "brot6_half_up",
+      "h2_change_norm": 0.7104141006434654,
+      "error2_lower_bound_from_passing_baseline": 0.6904141006434654,
+      "definitely_fails_at_fixed_W": true
+    },
+    {
+      "kind": "brot6_nearest_even",
+      "h2_change_norm": 0.7391628383262292,
+      "error2_lower_bound_from_passing_baseline": 0.7191628383262292,
+      "definitely_fails_at_fixed_W": true
+    },
+    {
+      "kind": "C43_smallest_H2_component_householder",
+      "h2_change_norm": 0.00871906085142644,
+      "error2_lower_bound_from_passing_baseline": 0,
+      "definitely_fails_before_refit": false,
+      "lambda_h2_before": 269.76852814427383,
+      "lambda_h2_after": 279.14745401347716,
+      "smallest_eigenvalues": [
+        [
+          0.002665402484091642,
+          0.003691250108941641,
+          0.004044714184697889,
+          0.00431192137722873,
+          0.004617718811011916,
+          0.005171062065508343,
+          0.005609939433407408,
+          0.006494948057754273
+        ],
+        [
+          0.0024242474795480896,
+          0.002661873690144306,
+          0.003174559433827221,
+          0.003439793655857797,
+          0.003653981418216867,
+          0.004124576956218354,
+          0.004524252534716682,
+          0.0052151261635158775
+        ],
+        [
+          0.003299126787061694,
+          0.0033654005189480704,
+          0.0036177379276550363,
+          0.0037447576226744346,
+          0.004574383592379898,
+          0.0051355218978766815,
+          0.00540783934530922,
+          0.006975347226235412
+        ],
+        [
+          0.0034519374164941664,
+          0.0036872966248563646,
+          0.004056686718192237,
+          0.004618456402252829,
+          0.005123956545980198,
+          0.00518489409229142,
+          0.006271249300609769,
+          0.006798321948740124
+        ],
+        [
+          0.0034670042205952557,
+          0.0038410907620298603,
+          0.004168767267244717,
+          0.0048518755074855955,
+          0.004863698011682659,
+          0.005133632286821883,
+          0.005195971499930675,
+          0.005732732395687253
+        ],
+        [
+          0.0029483130888730996,
+          0.0032321148581017567,
+          0.0039996444133028365,
+          0.00439871805073526,
+          0.004696600165323315,
+          0.004787714597818305,
+          0.0053166400873742425,
+          0.005804455085499225
+        ],
+        [
+          0.0023657979721545845,
+          0.004063527187538139,
+          0.004363490697386141,
+          0.004448479313545396,
+          0.005134592482412336,
+          0.005391682051480177,
+          0.006277730380269971,
+          0.006741922642627678
+        ],
+        [
+          0.0036829442185752105,
+          0.00402856022749861,
+          0.004570983451871156,
+          0.005196140577190791,
+          0.005328715453705212,
+          0.0064512603183592785,
+          0.006939775603702052,
+          0.007632345271607526
+        ]
+      ],
+      "dropped_components": [
+        {
+          "r": 0,
+          "closest_column": 14,
+          "maximum_v_component": 0.4393879605475968,
+          "norm_squared": 0.002665402484091642
+        },
+        {
+          "r": 1,
+          "closest_column": 2,
+          "maximum_v_component": 0.4429438741750088,
+          "norm_squared": 0.0024242474795480896
+        },
+        {
+          "r": 2,
+          "closest_column": 1,
+          "maximum_v_component": 0.46774635311164325,
+          "norm_squared": 0.003299126787061694
+        },
+        {
+          "r": 3,
+          "closest_column": 9,
+          "maximum_v_component": 0.5856882878226944,
+          "norm_squared": 0.0034519374164941664
+        },
+        {
+          "r": 4,
+          "closest_column": 8,
+          "maximum_v_component": 0.45733750967801245,
+          "norm_squared": 0.0034670042205952557
+        },
+        {
+          "r": 5,
+          "closest_column": 4,
+          "maximum_v_component": 0.4225310539509379,
+          "norm_squared": 0.0029483130888730996
+        },
+        {
+          "r": 6,
+          "closest_column": 2,
+          "maximum_v_component": 0.5346097185304443,
+          "norm_squared": 0.0023657979721545845
+        },
+        {
+          "r": 7,
+          "closest_column": 0,
+          "maximum_v_component": 0.4375318442007989,
+          "norm_squared": 0.0036829442185752105
+        }
+      ]
+    }
+  ],
+  "baseline_triangle_projection_bounds": [
+    {
+      "brot": 7,
+      "rounding": "nearest_even",
+      "minimum_distance_to_baseline_H2_in_relaxed_span": 0.21465480462954797,
+      "error2_lower_bound": 0.19465480462954798,
+      "impossible_for_any_W_at_these_fixed_angles": true,
+      "QR_span_residual": 3.5432628002452525e-14,
+      "QR_orthogonality_residual": 2.3589841422900812e-14,
+      "projection_cross_residual": 8.603303286266994e-15,
+      "elapsed_seconds": 2.0142231800000445
+    },
+    {
+      "brot": 7,
+      "rounding": "half_up",
+      "minimum_distance_to_baseline_H2_in_relaxed_span": 0.2072669436845335,
+      "error2_lower_bound": 0.1872669436845335,
+      "impossible_for_any_W_at_these_fixed_angles": true,
+      "QR_span_residual": 3.497262185609142e-14,
+      "QR_orthogonality_residual": 2.362122313650635e-14,
+      "projection_cross_residual": 8.551001780869285e-15,
+      "elapsed_seconds": 3.7381367340003635
+    },
+    {
+      "brot": 7,
+      "rounding": "floor",
+      "minimum_distance_to_baseline_H2_in_relaxed_span": 0.21115756527187962,
+      "error2_lower_bound": 0.19115756527187963,
+      "impossible_for_any_W_at_these_fixed_angles": true,
+      "QR_span_residual": 3.5930079629997865e-14,
+      "QR_orthogonality_residual": 2.370497113706416e-14,
+      "projection_cross_residual": 9.045594542008927e-15,
+      "elapsed_seconds": 5.37040117900051
+    },
+    {
+      "brot": 6,
+      "rounding": "half_up",
+      "minimum_distance_to_baseline_H2_in_relaxed_span": 0.30311114923732174,
+      "error2_lower_bound": 0.2831111492373217,
+      "impossible_for_any_W_at_these_fixed_angles": true,
+      "QR_span_residual": 3.5660742343151965e-14,
+      "QR_orthogonality_residual": 2.4085082754335805e-14,
+      "projection_cross_residual": 8.941882888962717e-15,
+      "elapsed_seconds": 7.046341040000698
+    },
+    {
+      "brot": 6,
+      "rounding": "nearest_even",
+      "minimum_distance_to_baseline_H2_in_relaxed_span": 0.32181869961404513,
+      "error2_lower_bound": 0.3018186996140451,
+      "impossible_for_any_W_at_these_fixed_angles": true,
+      "QR_span_residual": 3.528365647115096e-14,
+      "QR_orthogonality_residual": 2.4272446983585983e-14,
+      "projection_cross_residual": 8.887393637547598e-15,
+      "elapsed_seconds": 8.7025235050005
+    },
+    {
+      "brot": 6,
+      "rounding": "floor",
+      "minimum_distance_to_baseline_H2_in_relaxed_span": 0.5036815945753236,
+      "error2_lower_bound": 0.48368159457532356,
+      "impossible_for_any_W_at_these_fixed_angles": true,
+      "QR_span_residual": 3.532633215750662e-14,
+      "QR_orthogonality_residual": 2.3978382461643024e-14,
+      "projection_cross_residual": 8.552937822872757e-15,
+      "elapsed_seconds": 10.36410615800014
+    }
+  ],
+  "exact_reference_projection_bounds": {
+    "reference_sha256": "e5a48af746fd075026dec9e8f5df2d363802a121e8c53af9a0b984bde695e1bd",
+    "target": "tei + (S tensor I + I tensor S)/2",
+    "method": "all-RB outer-product span, no rank or per-r restrictions",
+    "floating_point": "float64; margins are >9x the threshold, QR residuals reported",
+    "results": [
+      {
+        "brot": 7,
+        "rounding": "nearest_even",
+        "exact_reference_relaxed_error2_lower_bound": 0.21487732418319824,
+        "threshold": 0.02,
+        "rejected_for_any_W_at_fixed_angles": true,
+        "QR_span_residual": 4.038949205956685e-14,
+        "QR_orthogonality_residual": 3.489519200052316e-14,
+        "squared_norm_subtraction_scale": 148.4543635781524,
+        "elapsed_seconds": 18.051280745999975
+      },
+      {
+        "brot": 7,
+        "rounding": "half_up",
+        "exact_reference_relaxed_error2_lower_bound": 0.20750110794685914,
+        "threshold": 0.02,
+        "rejected_for_any_W_at_fixed_angles": true,
+        "QR_span_residual": 4.0171922141666666e-14,
+        "QR_orthogonality_residual": 3.455012565160252e-14,
+        "squared_norm_subtraction_scale": 148.4543635781524,
+        "elapsed_seconds": 19.33706812699984
+      },
+      {
+        "brot": 7,
+        "rounding": "floor",
+        "exact_reference_relaxed_error2_lower_bound": 0.21143624827601598,
+        "threshold": 0.02,
+        "rejected_for_any_W_at_fixed_angles": true,
+        "QR_span_residual": 4.016432100711685e-14,
+        "QR_orthogonality_residual": 3.466973748702955e-14,
+        "squared_norm_subtraction_scale": 148.4543635781524,
+        "elapsed_seconds": 20.145251048999853
+      },
+      {
+        "brot": 6,
+        "rounding": "half_up",
+        "exact_reference_relaxed_error2_lower_bound": 0.3032545517751796,
+        "threshold": 0.02,
+        "rejected_for_any_W_at_fixed_angles": true,
+        "QR_span_residual": 4.0245745002983215e-14,
+        "QR_orthogonality_residual": 3.470201929870199e-14,
+        "squared_norm_subtraction_scale": 148.4543635781524,
+        "elapsed_seconds": 21.021152727999834
+      },
+      {
+        "brot": 6,
+        "rounding": "nearest_even",
+        "exact_reference_relaxed_error2_lower_bound": 0.32196085510666,
+        "threshold": 0.02,
+        "rejected_for_any_W_at_fixed_angles": true,
+        "QR_span_residual": 4.0001801022237747e-14,
+        "QR_orthogonality_residual": 3.5342762520213364e-14,
+        "squared_norm_subtraction_scale": 148.4543635781524,
+        "elapsed_seconds": 21.755014681999455
+      },
+      {
+        "brot": 6,
+        "rounding": "floor",
+        "exact_reference_relaxed_error2_lower_bound": 0.5037432774122866,
+        "threshold": 0.02,
+        "rejected_for_any_W_at_fixed_angles": true,
+        "QR_span_residual": 3.9677672600877406e-14,
+        "QR_orthogonality_residual": 3.3789748530164985e-14,
+        "squared_norm_subtraction_scale": 148.4543635781524,
+        "elapsed_seconds": 22.509488966999925
+      }
+    ]
+  },
+  "C44_pairwise_gauge": {
+    "source": "../dqi_inputs/chemistry_4033/submission.npz",
+    "refit": "../dqi_inputs/chemistry_4033/asterios_refit.npz",
+    "lambda_h2_before": 269.76852814427383,
+    "lambda_h2_after": 269.76852814427355,
+    "absolute_improvement": 2.8421709430404007e-13,
+    "orthogonality_max_error": 0.0,
+    "extended_gram_max_error": 5.551115123125783e-17,
+    "trace": [
+      {
+        "sweep": 0,
+        "lambda_h2": 269.76852814427355,
+        "improvement": 2.8421709430404007e-13,
+        "changed_pairs": 1,
+        "largest_improvement": 3.0886404545071855e-13,
+        "seconds": 1.068163053000717
+      },
+      {
+        "sweep": 1,
+        "lambda_h2": 269.76852814427355,
+        "improvement": 0.0,
+        "changed_pairs": 0,
+        "largest_improvement": 0.0,
+        "seconds": 2.2001906929999677
+      }
+    ],
+    "official_verified": false
+  },
+  "C44_gauge_restarts": {
+    "trials": 2814,
+    "accepted": [],
+    "lambda_h2_before": 269.76852814427383,
+    "lambda_h2_after": 269.76852814427383,
+    "orthogonality_max_error": 0.0,
+    "extended_gram_max_error": 0.0,
+    "full_circuit_verified": false,
+    "elapsed_seconds": 60.149215718999585
+  },
+  "C43_refit": {
+    "source": "../dqi_inputs/chemistry_4033/screen/c43_gauge.npz",
+    "official_numeric_metrics": {
+      "error_1": 0.019970204671102724,
+      "error_2": 0.02158755869565028,
+      "Lambda": 288.23302899784176,
+      "E_SOS": -22144.30876348431,
+      "E_gap": 4.035413484310993,
+      "lambda_eff": 48.0624004986645,
+      "gap_in_domain": true
+    },
+    "trace": [
+      {
+        "outer": 0,
+        "penalty": 2.0,
+        "metrics": {
+          "lambda_eff_smooth": 47.38918139151304,
+          "Lambda_smooth": 288.0065373388401,
+          "gap": 3.925508340156398,
+          "error1": 0.02135890406439507,
+          "error2": 0.021848438435506767
+        },
+        "constraints": [
+          0.14050923809741644,
+          0.19338804195021386,
+          -1.0610320156398068
+        ],
+        "seconds": 0.915176660000725,
+        "calls": 10,
+        "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "outer": 1,
+        "penalty": 10.0,
+        "metrics": {
+          "lambda_eff_smooth": 47.38918139151304,
+          "Lambda_smooth": 288.0065373388401,
+          "gap": 3.925508340156398,
+          "error1": 0.02135890406439507,
+          "error2": 0.021848438435506767
+        },
+        "constraints": [
+          0.14050923809741644,
+          0.19338804195021386,
+          -1.0610320156398068
+        ],
+        "seconds": 1.8309649600005287,
+        "calls": 17,
+        "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "outer": 2,
+        "penalty": 50.0,
+        "metrics": {
+          "lambda_eff_smooth": 47.32536587712788,
+          "Lambda_smooth": 288.00313763325414,
+          "gap": 3.914917125618331,
+          "error1": 0.01967855063037844,
+          "error2": 0.02181295658957532
+        },
+        "constraints": [
+          -0.031884676489402075,
+          0.18951506697568776,
+          -0.001910561833096125
+        ],
+        "seconds": 21.624494935000257,
+        "calls": 152,
+        "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      },
+      {
+        "outer": 3,
+        "penalty": 250.0,
+        "metrics": {
+          "lambda_eff_smooth": 47.32536587712788,
+          "Lambda_smooth": 288.00313763325414,
+          "gap": 3.914917125618331,
+          "error1": 0.01967855063037844,
+          "error2": 0.02181295658957532
+        },
+        "constraints": [
+          -0.031884676489402075,
+          0.18951506697568776,
+          -0.001910561833096125
+        ],
+        "seconds": 22.572482062000745,
+        "calls": 158,
+        "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "outer": 4,
+        "penalty": 1250.0,
+        "metrics": {
+          "lambda_eff_smooth": 48.06240075335728,
+          "Lambda_smooth": 288.23303203115216,
+          "gap": 4.0354134843126985,
+          "error1": 0.0199702046711024,
+          "error2": 0.021587558695650263
+        },
+        "constraints": [
+          -0.002975319437335422,
+          0.1650590562123102,
+          -12.051546431269866
+        ],
+        "seconds": 31.421744111999942,
+        "calls": 225,
+        "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+      }
+    ],
+    "gradient_check_scaled_error": 8.120087383364727e-07,
+    "full_circuit_verified": false
+  },
+  "C43_resource_if_same_loaders": {
+    "toffoli": 14650,
+    "qubits": 427,
+    "lambda_eff_break_even_against_reproduced_baseline": 47.156331077338415
+  },
+  "limits": [
+    "Projection bounds apply to the six explicitly rounded fixed angle tables, not every possible 7-bit or 6-bit table.",
+    "Pairwise gauge minima and finite multi-column restarts do not prove global optimality.",
+    "C43 refit failed error2 and must not be submitted as a passing candidate.",
+    "User-reported local chemistry lambda_eff 46.905894137 has not been reproduced because its exact factorization was not supplied."
+  ]
+}

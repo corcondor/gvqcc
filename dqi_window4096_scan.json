@@ -1,0 +1,91 @@
+{
+  "input_sha256": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+  "old_window": 256,
+  "old_discovery": {
+    "adjacent_ccx_pairs": 1874,
+    "adjacent_same_control_pairs": 0,
+    "nearby_same_control_pairs": 153257,
+    "proved_commuting_pairs": 96
+  },
+  "old_blocks": [
+    [
+      22854231,
+      22854255
+    ],
+    [
+      22932958,
+      22932982
+    ],
+    [
+      23327823,
+      23327847
+    ],
+    [
+      23428194,
+      23428218
+    ],
+    [
+      31023310,
+      31023334
+    ],
+    [
+      31123681,
+      31123705
+    ],
+    [
+      31529875,
+      31529899
+    ],
+    [
+      31608602,
+      31608626
+    ]
+  ],
+  "new_window": 4096,
+  "scope": "Read-only BinaryCircuit mmap scan of original 821; no candidate rewritten.",
+  "status": "complete",
+  "new_discovery": {
+    "adjacent_ccx_pairs": 1874,
+    "adjacent_same_control_pairs": 0,
+    "nearby_same_control_pairs": 182840,
+    "proved_commuting_pairs": 96
+  },
+  "new_blocks": [
+    [
+      22854231,
+      22854255
+    ],
+    [
+      22932958,
+      22932982
+    ],
+    [
+      23327823,
+      23327847
+    ],
+    [
+      23428194,
+      23428218
+    ],
+    [
+      31023310,
+      31023334
+    ],
+    [
+      31123681,
+      31123705
+    ],
+    [
+      31529875,
+      31529899
+    ],
+    [
+      31608602,
+      31608626
+    ]
+  ],
+  "proved_pair_increase": 0,
+  "blocks_equal_old": true,
+  "elapsed_seconds": 19.22625098900062,
+  "max_rss_kib": 316760
+}

@@ -1,0 +1,13 @@
+{
+  "all_words_match": true,
+  "different_words": 0,
+  "word_shape": [
+    1220,
+    75
+  ],
+  "brot": 8,
+  "seed": 20261114,
+  "extraction_shots_per_address": 1,
+  "full_verification_reference": "official_baseline_verify.json",
+  "canonical_int64_words_sha256": "958d774cdcebb6050e6fd2f96de62a568a49adb420c4f91eba95515bd00b2a64"
+}

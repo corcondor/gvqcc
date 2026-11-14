@@ -1,0 +1,14 @@
+{
+  "source_notebook_url": "https://www.kaggle.com/code/atakanaldemir/qcc-gap-3-residue-repair-and-c43-native-compiler",
+  "source_notebook_version": 15,
+  "public_source_api": "https://www.kaggle.com/api/v1/kernels/pull/atakanaldemir/qcc-gap-3-residue-repair-and-c43-native-compiler",
+  "source_notebook_file": "official_sources/atakan_v15.ipynb",
+  "source_notebook_sha256": "5723395a834e2b50d1e65daa81c9264888580242ec1652c8861496bedd5e8f43",
+  "extraction": "AST literal extraction of BLOBS[invsqrt.kmb] in cell4, then base64 and xz decompression; no notebook code executed.",
+  "output": "dqi_inputs/invsqrt_e46d90c36d1b.kmb",
+  "sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6",
+  "bytes": 198590,
+  "matches_requested_sha256": true,
+  "matches_public_notebook_MEMBERS_pin": true,
+  "existing_e0db_unchanged": true
+}

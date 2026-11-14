@@ -1,0 +1,157 @@
+{
+  "baseline_sha256": "5103812020bc0d6c4db32900777521479f01dfcca8dfd21ed74e9211770f389c",
+  "labels": 128,
+  "prefix_comparison": {
+    "operation_count": 10800436,
+    "columns": {
+      "1": {
+        "equal": true,
+        "left_bytes": 10800436,
+        "right_bytes": 10800436,
+        "first_mismatch_byte": null
+      },
+      "2": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      },
+      "3": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      },
+      "4": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      },
+      "5": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      },
+      "6": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      },
+      "7": {
+        "equal": true,
+        "left_bytes": 7704,
+        "right_bytes": 7704,
+        "first_mismatch_byte": null
+      },
+      "8": {
+        "equal": true,
+        "left_bytes": 34979512,
+        "right_bytes": 34979512,
+        "first_mismatch_byte": null
+      },
+      "9": {
+        "equal": true,
+        "left_bytes": 33934564,
+        "right_bytes": 33934564,
+        "first_mismatch_byte": null
+      },
+      "10": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      }
+    },
+    "equal": true
+  },
+  "suffix_comparison": {
+    "operation_count": 4350689,
+    "columns": {
+      "1": {
+        "equal": true,
+        "left_bytes": 4350689,
+        "right_bytes": 4350689,
+        "first_mismatch_byte": null
+      },
+      "2": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      },
+      "3": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      },
+      "4": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      },
+      "5": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      },
+      "6": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      },
+      "7": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      },
+      "8": {
+        "equal": true,
+        "left_bytes": 17402756,
+        "right_bytes": 17402756,
+        "first_mismatch_byte": null
+      },
+      "9": {
+        "equal": true,
+        "left_bytes": 17402704,
+        "right_bytes": 17402704,
+        "first_mismatch_byte": null
+      },
+      "10": {
+        "equal": true,
+        "left_bytes": 0,
+        "right_bytes": 0,
+        "first_mismatch_byte": null
+      }
+    },
+    "equal": true
+  },
+  "output": {
+    "header": {
+      "version": 2,
+      "num_qubits": 889,
+      "num_bits": 154799,
+      "num_registers": 4165,
+      "num_ops": 59378482,
+      "num_ops_with_3_target_qubits": 383318,
+      "num_ops_with_2_target_qubits": 32211459,
+      "num_ops_with_1_target_qubits": 273882,
+      "num_ops_with_1_target_bit": 21480153,
+      "num_ops_with_1_condition_bit": 21770524,
+      "num_ops_with_angle": 0,
+      "num_info_tags": 0,
+      "num_info_tag_chars": 0
+    },
+    "sha256": "aafed8b0fa2bbfde21f47672a5e548a84a6d42d735e800557efbb2c04c310f09",
+    "bytes": 496087939
+  },
+  "status": "SPLICED_REQUIRES_FULL_DECODER_VERIFICATION",
+  "body_preserved_byte_for_byte": true
+}
