@@ -1,0 +1,291 @@
+{
+  "schema": "dqi-common-control-quadratic-phase-scan-v1",
+  "scope": "all consecutive CCZ groups bounded by non-affine/conditional/measurement barriers; max4096ops/64wires",
+  "input": "dqi_inputs/821bf8d157c0.kmb",
+  "input_sha256_from_cached_profile": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+  "input_sha256_recomputed_this_run": false,
+  "scan_completed": true,
+  "stats": {
+    "ccz_seen": 7000,
+    "rank_evaluated": 2,
+    "single_ccz_blocks": 6814,
+    "no_common_linear_control": 18
+  },
+  "ccz_count_per_block_histogram": {
+    "1": 6814,
+    "9": 18,
+    "12": 2
+  },
+  "evaluated_blocks": [
+    {
+      "status": "rank_evaluated",
+      "ccz_before": 12,
+      "ccz_after": 12,
+      "static_ccz_saving": 0,
+      "cubic_terms": 12,
+      "quadratic_polar_rank": 24,
+      "control_qubit": 886,
+      "start": 23712726,
+      "end_exclusive": 23712738,
+      "block_operations": 12,
+      "block_wires": 25,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 32424582,
+      "end_exclusive": 32424727,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 32502447,
+      "end_exclusive": 32502592,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 32588122,
+      "end_exclusive": 32588267,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 32677907,
+      "end_exclusive": 32678052,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 32772173,
+      "end_exclusive": 32772318,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 32875298,
+      "end_exclusive": 32875443,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 32987626,
+      "end_exclusive": 32987771,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 33109946,
+      "end_exclusive": 33110091,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 33244513,
+      "end_exclusive": 33244658,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 33389334,
+      "end_exclusive": 33389479,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 33549315,
+      "end_exclusive": 33549460,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 33725359,
+      "end_exclusive": 33725504,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 33774204,
+      "end_exclusive": 33774349,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 33823049,
+      "end_exclusive": 33823194,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 34266925,
+      "end_exclusive": 34267070,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 34315848,
+      "end_exclusive": 34315993,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 34364592,
+      "end_exclusive": 34364737,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "rank_evaluated",
+      "ccz_before": 12,
+      "ccz_after": 12,
+      "static_ccz_saving": 0,
+      "cubic_terms": 12,
+      "quadratic_polar_rank": 24,
+      "control_qubit": 886,
+      "start": 34836164,
+      "end_exclusive": 34836176,
+      "block_operations": 12,
+      "block_wires": 25,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    },
+    {
+      "status": "no_common_linear_control",
+      "cubic_terms": 81,
+      "linear_factor_space_dimension": 0,
+      "factor_test": "kernel of L -> L wedge cubic ANF",
+      "start": 34984568,
+      "end_exclusive": 34984713,
+      "block_operations": 145,
+      "block_wires": 22,
+      "implicit_condition": "unchanged inside block; PUSH/POP are barriers"
+    }
+  ],
+  "candidates": [],
+  "nonoverlapping_static_ccz_savings": 0,
+  "static_savings_not_official_average": true,
+  "self_check": {
+    "status": "PASS",
+    "synthetic_examples": [
+      {
+        "ccz_before": 2,
+        "ccz_after": 1,
+        "phase_anf_equal": true,
+        "affine_output_equal": true
+      },
+      {
+        "ccz_before": 3,
+        "ccz_after": 0,
+        "phase_anf_equal": true,
+        "affine_output_equal": true
+      },
+      {
+        "ccz_before": 2,
+        "ccz_after": 0,
+        "phase_anf_equal": true,
+        "affine_output_equal": true
+      },
+      {
+        "ccz_before": 3,
+        "ccz_after": 1,
+        "phase_anf_equal": true,
+        "affine_output_equal": true
+      }
+    ],
+    "independent_bit_simulation_cases": 160,
+    "exhaustive_5variable_factor_substitution_cases": 31713
+  },
+  "binary_modified": false,
+  "candidate_or_worker_modified": false,
+  "seconds": 0.9952830189995439,
+  "peak_rss_mib": 121.602,
+  "limitations": [
+    "Common linear factors of the whole cubic ANF are tested exactly; sums of separately factored subsets are not optimized jointly.",
+    "All classical writes, explicit conditional opcodes, PUSH/POP, measurement/reset, CCX/CSWAP, and unknown gates are barriers.",
+    "Single-CCZ blocks, >4096 operations, >64 wires, and >100000 ANF terms are excluded.",
+    "Candidates are isolated exact local proofs, not a new whole-circuit verification or score."
+  ]
+}

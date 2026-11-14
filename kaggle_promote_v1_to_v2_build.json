@@ -1,0 +1,49 @@
+{
+  "worker": "kaggle_promote_v1_to_v2.py",
+  "bytes": 52597,
+  "sha256": "f7e3456ca8251e5820794b63e44a93761d872916e0952ecc0eed0742d16e2813",
+  "max_line_length": 166,
+  "payload_sha256": "a24e4e6375c6f1a5fec87805bc146ccb605442937c76dae5c1e4882ca4009ff5",
+  "payload_compressed_bytes": 28058,
+  "embedded_files": {
+    "dqi_ccx_input_factor.py": {
+      "sha256": "b7495cb734408541fd23a983d7767074183010bf003c4e1a7dd96062c3ae97ea",
+      "bytes": 12342
+    },
+    "dqi_ccx_peephole.py": {
+      "sha256": "13a7b05b7722468369d9132ef2b5f538c1698936167a662b5546915e715d9f69",
+      "bytes": 17467
+    },
+    "kmb_profile.py": {
+      "sha256": "7e7d90fde91384b8c35e45103df09d3fed8400a3ca4544f9b5870a4ee0d83ede",
+      "bytes": 24020
+    },
+    "verify_dqi_candidate.py": {
+      "sha256": "0c3c97abececaa1ed0ac7e62fa0995cf7f24d514ca57baf1dafc03cb3282f6b7",
+      "bytes": 4759
+    },
+    "NOTICE.md": {
+      "sha256": "c9a02fff09f24c2b6967f78dc56201c5696dbd8bab7e4ff136ccb8b2ba39c800",
+      "bytes": 1423
+    },
+    "third_party/Qualtran_Apache_2.0.txt": {
+      "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac",
+      "bytes": 11359
+    },
+    "third_party/Syed_DQI_Apache_2.0.txt": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    }
+  },
+  "official_pins": {
+    "kickmix/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "kickmix/kickmix.so": "c66b3216c4029e0cdfd09054306aa0feadf53ab2f50c1164e37f752874e5005e",
+    "verifiers/LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "verifiers/dqi/__init__.py": "01c870aa9763f4e4357fc6654bff1d3296cec995bd0943f87b4a48946ada5b40",
+    "verifiers/dqi/verify_submission_dqi.py": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+  },
+  "baseline_zip_sha256": "2f5c27607830431425889289c5d59c3f39fc006add37711db345ee4b26016ebf",
+  "baseline_dqi_sha256": "aafed8b0fa2bbfde21f47672a5e548a84a6d42d735e800557efbb2c04c310f09",
+  "candidate_dqi_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "heavy_verification_run_locally": false
+}

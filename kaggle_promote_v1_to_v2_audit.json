@@ -1,0 +1,24 @@
+{
+  "status": "PASS_STATIC_AND_SYNTHETIC_PACKAGING_AUDIT",
+  "worker_sha256": "f7e3456ca8251e5820794b63e44a93761d872916e0952ecc0eed0742d16e2813",
+  "worker_bytes": 52597,
+  "max_line_length": 166,
+  "ast_valid": true,
+  "embedded_hashes_checked": 7,
+  "embedded_python_ast_valid": [
+    "dqi_ccx_input_factor.py",
+    "dqi_ccx_peephole.py",
+    "kmb_profile.py",
+    "verify_dqi_candidate.py"
+  ],
+  "synthetic_fixture_scope": "Only ZIP copy/structure helpers exercised. No synthetic PASS verifier reports were made.",
+  "synthetic_other_members_preserved": 17,
+  "synthetic_old_archive_unchanged": true,
+  "synthetic_output_overwrite_rejected": true,
+  "synthetic_duplicate_members_rejected": true,
+  "heavy_simulation_run": false,
+  "existing_workers_unchanged": {
+    "kaggle_score_worker.py": "11181e4f67d415a13a07b36bcf84d5e5b06f2bbcd958f54d08fe40d37fe2cfff",
+    "kaggle_score_worker_v2.py": "00c0d83f9ac9d6c7218a164d7e97cc81d91503164324206626c62584387769ef"
+  }
+}

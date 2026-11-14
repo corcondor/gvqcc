@@ -1,0 +1,183 @@
+{
+  "schema": "dqi-common-control-quadratic-subset-scan-v1",
+  "input_sha256_from_cached_profile": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+  "scan_completed": true,
+  "scope": "all size2..9 subsets of each nine-CCZ affine block",
+  "stats": {
+    "subsets_checked": 9036,
+    "no_common_linear_factor": 8820,
+    "factorable_subsets": 216,
+    "no_rank_saving": 216
+  },
+  "blocks": [
+    {
+      "start": 32424582,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 32502447,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 32588122,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 32677907,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 32772173,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 32875298,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 32987626,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 33109946,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 33244513,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 33389334,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 33549315,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 33725359,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 33774204,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 33823049,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 34266925,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 34315848,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 34364592,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    },
+    {
+      "start": 34984568,
+      "counts": {
+        "subsets_checked": 502,
+        "no_common_linear_factor": 490,
+        "factorable_subsets": 12,
+        "no_rank_saving": 12
+      }
+    }
+  ],
+  "candidates": [],
+  "candidate_count": 0,
+  "candidate_or_worker_modified": false,
+  "binary_modified": false,
+  "seconds": 4.942740759999651,
+  "peak_rss_mib": 120.363,
+  "limitation": "Does not combine different controls jointly or cross any original barrier; overlapping savings cannot be added."
+}
