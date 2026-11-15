@@ -80,7 +80,7 @@
     }
   },
   "all_component_official_verifications_pass": true,
-  "description": "DQI exact4096 with 16 additional unconditional CCX removed, Q=889. Official 102400-shot PASS, zero value/phase errors. DQI 5a60d662; inverse 684106f and score2 chemistry preserved. All 18 archive members SHA/CRC checked.",
+  "description": "DQI exact4096 with 16 additional unconditional CCX removed, Q=889. Official 102400-shot PASS, zero value/phase errors. Inverse and score2 chemistry preserved. All 18 members SHA/CRC checked. ZIP SHA256 72bac12e45e4d8f70af949f408a72a79c30e7422f9b3bb578e06ef8228cfb1e2.",
   "proof_screenshot": null,
   "additional_observed_evidence": [
     {
@@ -126,5 +126,7 @@
     "displayed_reset_in": "21 hours",
     "submit_button_enabled": false,
     "authoritative_observed_text": "0 submissions remaining; daily allowance of 5 submissions used; reset in 21 hours"
-  }
+  },
+  "prepared_description": "DQI exact4096 with 16 additional unconditional CCX removed, Q=889. Official 102400-shot PASS, zero value/phase errors. DQI 5a60d662; inverse 684106f and score2 chemistry preserved. All 18 archive members SHA/CRC checked.",
+  "actual_ui_description": "DQI exact4096 with 16 additional unconditional CCX removed, Q=889. Official 102400-shot PASS, zero value/phase errors. Inverse and score2 chemistry preserved. All 18 members SHA/CRC checked. ZIP SHA256 72bac12e45e4d8f70af949f408a72a79c30e7422f9b3bb578e06ef8228cfb1e2."
 }
