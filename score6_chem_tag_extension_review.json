@@ -1,0 +1,9 @@
+{
+  "status": "READ_ONLY_MATHEMATICAL_REVIEW_NO_CONCRETE_DEFECT",
+  "reviewer": "/root/ancilla_contraction",
+  "source": "score6_chem_tag_extension.py",
+  "source_sha256": "21ce1bfd80f334ecf6f30156026b94595f902fdd9e8da182ceda0e415b8e8d56",
+  "reasoning": "Under the asserted ordered-tree condition (each child new), descendant subtree norms fix active split magnitudes, so wprime equals plus or minus w modulo128. Valid earlier orbits preserve zero support. The sticky validity flag handles invalid earlier splits; quadrant endpoints are ignored exactly when the corresponding amplitude is zero; final signs are tested only on nonzero coordinates.",
+  "scope": "Existing-loader extension from first-batch MSB offsets only. Read-only source/math review, no independent numerical rerun.",
+  "limitation": "Pinned source NPZ makes uint8 casting safe here; generic unpinned reuse would need dtype/range guards."
+}

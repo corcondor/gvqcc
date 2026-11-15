@@ -1,0 +1,246 @@
+{
+  "status": "PASS",
+  "source_sha256": "73f296e97fe04a9251f19dbe37ef2777057217e2b573bafe3f3793f187dcd6a0",
+  "scanner_source_sha256": "e4bc1e8140e9124d16b71fa2bedaa5d026b3b6d0a12e1d66a376c5a64000b3dc",
+  "scanner_binary_sha256": "b27bf5b36096071059d0ac71a78dfd6725d0776bfc2a08203f9887f4042f631e",
+  "fixtures": [
+    {
+      "name": "cached_product",
+      "kmb_sha256": "9389ac1506950ffbc1922f002b7304e10dc53af54a175ef335a37527bd132200",
+      "expected_cache_candidates": 1,
+      "expected_phase_pairs": 0,
+      "observed": {
+        "schema": "score6-live-product-phase-v1",
+        "status": "DISCOVERY_ONLY",
+        "positive_control": "PASS",
+        "random_truth_mode": false,
+        "multiwire_span_enabled": true,
+        "branch_join_enabled": true,
+        "fredkin_relations": true,
+        "balanced_pair_filter": false,
+        "candidates": [
+          {
+            "index": 2,
+            "phase_qubit": 3,
+            "product_controls": [
+              0,
+              1
+            ],
+            "origin": 1,
+            "constant": -1,
+            "condition": -1,
+            "depth": 0,
+            "span_wires": [
+              2
+            ]
+          }
+        ],
+        "num_ops": 3,
+        "qubits": 4,
+        "ccx": 1,
+        "cswap": 0,
+        "ccz": 1,
+        "repeated_pair_queries": 2,
+        "span_queries": 1,
+        "candidate_count": 1,
+        "sparse_pair_skips": 0,
+        "formal_atoms": 9,
+        "phase_queries": 1,
+        "phase_duplicate_count": 0,
+        "phase_duplicates": []
+      }
+    },
+    {
+      "name": "dirty_target",
+      "kmb_sha256": "967f7fd85e12c531066354685714c7801973cb89fcd6baa5a75d4f55f5c4611e",
+      "expected_cache_candidates": 0,
+      "expected_phase_pairs": 0,
+      "observed": {
+        "schema": "score6-live-product-phase-v1",
+        "status": "DISCOVERY_ONLY",
+        "positive_control": "PASS",
+        "random_truth_mode": false,
+        "multiwire_span_enabled": true,
+        "branch_join_enabled": true,
+        "fredkin_relations": true,
+        "balanced_pair_filter": false,
+        "candidates": [],
+        "num_ops": 2,
+        "qubits": 4,
+        "ccx": 1,
+        "cswap": 0,
+        "ccz": 1,
+        "repeated_pair_queries": 2,
+        "span_queries": 2,
+        "candidate_count": 0,
+        "sparse_pair_skips": 0,
+        "formal_atoms": 9,
+        "phase_queries": 1,
+        "phase_duplicate_count": 0,
+        "phase_duplicates": []
+      }
+    },
+    {
+      "name": "fredkin_roundtrip",
+      "kmb_sha256": "bf5acf3d2874f955586ad471933d39bfb17388ca462889077213ab285cc86edf",
+      "expected_cache_candidates": 1,
+      "expected_phase_pairs": 0,
+      "observed": {
+        "schema": "score6-live-product-phase-v1",
+        "status": "DISCOVERY_ONLY",
+        "positive_control": "PASS",
+        "random_truth_mode": false,
+        "multiwire_span_enabled": true,
+        "branch_join_enabled": true,
+        "fredkin_relations": true,
+        "balanced_pair_filter": false,
+        "candidates": [
+          {
+            "index": 4,
+            "phase_qubit": 3,
+            "product_controls": [
+              0,
+              1
+            ],
+            "origin": 1,
+            "constant": -1,
+            "condition": -1,
+            "depth": 0,
+            "span_wires": [
+              4
+            ]
+          }
+        ],
+        "num_ops": 5,
+        "qubits": 6,
+        "ccx": 1,
+        "cswap": 2,
+        "ccz": 1,
+        "repeated_pair_queries": 2,
+        "span_queries": 1,
+        "candidate_count": 1,
+        "sparse_pair_skips": 0,
+        "formal_atoms": 12,
+        "phase_queries": 1,
+        "phase_duplicate_count": 0,
+        "phase_duplicates": []
+      }
+    },
+    {
+      "name": "branch_roundtrip",
+      "kmb_sha256": "2c13cc5a6bfa009648bba912a5719fe1a139cdfc39b2419a672de7cc92eff3ec",
+      "expected_cache_candidates": 1,
+      "expected_phase_pairs": 0,
+      "observed": {
+        "schema": "score6-live-product-phase-v1",
+        "status": "DISCOVERY_ONLY",
+        "positive_control": "PASS",
+        "random_truth_mode": false,
+        "multiwire_span_enabled": true,
+        "branch_join_enabled": true,
+        "fredkin_relations": true,
+        "balanced_pair_filter": false,
+        "candidates": [
+          {
+            "index": 5,
+            "phase_qubit": 3,
+            "product_controls": [
+              0,
+              1
+            ],
+            "origin": 2,
+            "constant": -1,
+            "condition": -1,
+            "depth": 1,
+            "span_wires": [
+              4
+            ]
+          }
+        ],
+        "num_ops": 7,
+        "qubits": 6,
+        "ccx": 1,
+        "cswap": 2,
+        "ccz": 1,
+        "repeated_pair_queries": 2,
+        "span_queries": 1,
+        "candidate_count": 1,
+        "sparse_pair_skips": 0,
+        "formal_atoms": 13,
+        "phase_queries": 1,
+        "phase_duplicate_count": 0,
+        "phase_duplicates": []
+      }
+    },
+    {
+      "name": "same_phase",
+      "kmb_sha256": "224e291e3afec89461a2d3265bf4706c8bcc265cee5b23494383d7c5dcbed116",
+      "expected_cache_candidates": 0,
+      "expected_phase_pairs": 1,
+      "observed": {
+        "schema": "score6-live-product-phase-v1",
+        "status": "DISCOVERY_ONLY",
+        "positive_control": "PASS",
+        "random_truth_mode": false,
+        "multiwire_span_enabled": true,
+        "branch_join_enabled": true,
+        "fredkin_relations": true,
+        "balanced_pair_filter": false,
+        "candidates": [],
+        "num_ops": 3,
+        "qubits": 5,
+        "ccx": 0,
+        "cswap": 0,
+        "ccz": 2,
+        "repeated_pair_queries": 4,
+        "span_queries": 4,
+        "candidate_count": 0,
+        "sparse_pair_skips": 0,
+        "formal_atoms": 10,
+        "phase_queries": 2,
+        "phase_duplicate_count": 1,
+        "phase_duplicates": [
+          {
+            "first": 0,
+            "second": 2,
+            "condition": -1,
+            "depth": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "different_guard_versions",
+      "kmb_sha256": "bc5429cf561d828c35a67816f8339231b7f9c4541d55f3724126765a883fc8de",
+      "expected_cache_candidates": 0,
+      "expected_phase_pairs": 0,
+      "observed": {
+        "schema": "score6-live-product-phase-v1",
+        "status": "DISCOVERY_ONLY",
+        "positive_control": "PASS",
+        "random_truth_mode": false,
+        "multiwire_span_enabled": true,
+        "branch_join_enabled": true,
+        "fredkin_relations": true,
+        "balanced_pair_filter": false,
+        "candidates": [],
+        "num_ops": 3,
+        "qubits": 3,
+        "ccx": 0,
+        "cswap": 0,
+        "ccz": 2,
+        "repeated_pair_queries": 4,
+        "span_queries": 4,
+        "candidate_count": 0,
+        "sparse_pair_skips": 0,
+        "formal_atoms": 8,
+        "phase_queries": 2,
+        "phase_duplicate_count": 0,
+        "phase_duplicates": []
+      }
+    }
+  ],
+  "all_basis_phase_columns_checked": 16,
+  "dirty_target_counterexamples": 4,
+  "production_rewrite_or_score_claim": null
+}

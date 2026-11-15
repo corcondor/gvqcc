@@ -1,0 +1,146 @@
+{
+  "status": "UNSAT_FIXED_FACTOR_CASE_NO_PROOF_OBJECT",
+  "input": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/symmetry_dqi_20261115_gf8_joint12_input.txt",
+  "input_sha256": "8446959c7d46f19571ce207d024f302cf28792bc04d1a5a6e7d5e3abc0913077",
+  "source_sha256": "2430995efcbbdd44ab8fb9c4efa374d1420cca0b8547a75844969e780f76db99",
+  "z3_version": "4.15.4",
+  "dimensions": [
+    3,
+    6,
+    6
+  ],
+  "rank_target": 11,
+  "initial_rank": 12,
+  "first_factors": [
+    1,
+    1,
+    2,
+    3,
+    3,
+    4,
+    5,
+    5,
+    6,
+    7,
+    7
+  ],
+  "first_factor_weights": [
+    8,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "nonsingular_slices": [
+    {
+      "a": 1,
+      "rank": 6,
+      "rows": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ]
+    },
+    {
+      "a": 2,
+      "rank": 6,
+      "rows": [
+        2,
+        4,
+        3,
+        16,
+        32,
+        24
+      ]
+    },
+    {
+      "a": 3,
+      "rank": 6,
+      "rows": [
+        3,
+        6,
+        7,
+        24,
+        48,
+        56
+      ]
+    },
+    {
+      "a": 4,
+      "rank": 6,
+      "rows": [
+        4,
+        3,
+        6,
+        32,
+        24,
+        48
+      ]
+    },
+    {
+      "a": 5,
+      "rank": 6,
+      "rows": [
+        5,
+        1,
+        2,
+        40,
+        8,
+        16
+      ]
+    },
+    {
+      "a": 6,
+      "rank": 6,
+      "rows": [
+        6,
+        7,
+        5,
+        48,
+        56,
+        40
+      ]
+    },
+    {
+      "a": 7,
+      "rank": 6,
+      "rows": [
+        7,
+        5,
+        1,
+        56,
+        40,
+        8
+      ]
+    }
+  ],
+  "nonzero_factors": true,
+  "within_group_v_strict_order": true,
+  "fix_first_v": true,
+  "normalization_v_index": 2,
+  "second_normalization_or_v_equals_8": [
+    3,
+    4,
+    8,
+    9,
+    10
+  ],
+  "basis_subset_cuts": 612,
+  "timeout_seconds": 42.0,
+  "memory_max_size_mb": 768,
+  "proof_objects_enabled": false,
+  "tensor_coefficients": 108,
+  "smt2_path": "score6_dqi_shared11_sat_noproof.smt2",
+  "smt2_sha256": "32503b39cba089014333c5eaa24dd3ccdd3d3f814bcbdd015310a6c3a63bfda1",
+  "solver_result": "unsat",
+  "seconds": 9.3186609139957,
+  "statistics": "(:max-memory              31.75\n :memory                  17.58\n :num-allocs              65993565\n :rlimit-count            22320343\n :sat-backjumps           128625\n :sat-conflicts           128626\n :sat-decisions           200390\n :sat-del-clause          117500\n :sat-elim-bool-vars-res  1262\n :sat-elim-clauses        2055\n :sat-elim-literals       11074\n :sat-gc-clause           96290\n :sat-minimized-lits      1120724\n :sat-mk-clause-2ary      1500\n :sat-mk-clause-3ary      744\n :sat-mk-clause-nary      148460\n :sat-mk-var              3932\n :sat-propagations-2ary   3594721\n :sat-propagations-nary   20563821\n :sat-restarts            7870\n :sat-scc-elim-vars       157\n :sat-subs-resolution     6007\n :sat-subs-resolution-dyn 66676\n :sat-subsumed            3133\n :sat-units               43\n :solve-eqs-elim-vars     1\n :solve-eqs-steps         1\n :time                    9.21)",
+  "maximum_rss_mib": 59.0703125,
+  "proof_path": null,
+  "scope": "Z3 solver conclusion; no proof object retained. Rank conclusion also requires the independently checked reductions."
+}

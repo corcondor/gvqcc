@@ -1,0 +1,43 @@
+{
+  "status": "UNSAT_INDEPENDENT_BOOLEAN_MODEL",
+  "encoding": "Boolean variables with XOR/AND and polynomial oracle; no BitVec",
+  "source_sha256": "8a78c8383c9ce23e481050798a9cf3fefc378ea5b879e884d2ea76a1515572fa",
+  "input_sha256": "8446959c7d46f19571ce207d024f302cf28792bc04d1a5a6e7d5e3abc0913077",
+  "z3_version": "4.15.4",
+  "input_tensor_matches_polynomial_oracle_all_512": true,
+  "field_modulus_hex": "0xb",
+  "tensor_coefficient_equations": 108,
+  "variable_boolean_count": 132,
+  "first_factors": [
+    1,
+    1,
+    2,
+    3,
+    3,
+    4,
+    5,
+    5,
+    6,
+    7,
+    7
+  ],
+  "first_v_normalization_index": 2,
+  "second_v_or_indices": [
+    3,
+    4,
+    8,
+    9,
+    10
+  ],
+  "basis_subset_cuts": 612,
+  "timeout_seconds": 60.0,
+  "memory_max_size_mb": 768,
+  "smt2_path": "score6_dqi_shared11_boolean.smt2",
+  "smt2_sha256": "e64d6c613be39db376c60ed7cfbb1af0b033ed3a3e044859ae4e3518b89aa648",
+  "proof_objects_enabled": false,
+  "solver_result": "unsat",
+  "seconds": 12.256099030004407,
+  "statistics": "(:max-memory              33.93\n :memory                  16.93\n :num-allocs              107837444\n :rlimit-count            27762931\n :sat-ate                 6\n :sat-backjumps           148863\n :sat-bce                 522\n :sat-conflicts           148864\n :sat-decisions           223159\n :sat-del-clause          138687\n :sat-elim-bool-vars-res  1331\n :sat-elim-clauses        18339\n :sat-elim-literals       41904\n :sat-gc-clause           98705\n :sat-minimized-lits      1212848\n :sat-mk-clause-2ary      1794\n :sat-mk-clause-3ary      706\n :sat-mk-clause-nary      172024\n :sat-mk-var              4622\n :sat-propagations-2ary   3747922\n :sat-propagations-nary   26781727\n :sat-restarts            8659\n :sat-scc-elim-vars       258\n :sat-subs-resolution     18444\n :sat-subs-resolution-dyn 66341\n :sat-subsumed            5942\n :sat-units               48\n :time                    11.86)",
+  "maximum_rss_mib": 58.5859375,
+  "proof_path": null
+}

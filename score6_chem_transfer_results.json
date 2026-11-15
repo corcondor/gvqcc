@@ -1,0 +1,176 @@
+{
+  "status": "BOUNDED_FIXED_WORD_COEFFICIENT_TRANSFER_COMPLETE",
+  "source_npz_sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+  "script_sha256": "5e22d85b90521ad02986f6cb87f6adf1292ac5de959d780b4beb2945b3d37986",
+  "loader_sha256": {
+    "angle_k_0.kmb": "39a74c931c745143d46ac3c3d7f76a84cc09982f0c7a9b2784e35e8cf0533b45",
+    "angle_k_1.kmb": "753b1424a819fadcac324155a7cae1841f0ee977ce873f29c7e364c55cdd4f37",
+    "angle_k_2.kmb": "487adc39d32a904021985241f80881fd90542fa35c0a379034fc88cc9ccfc337",
+    "angle_k_3.kmb": "8e01cc596c3cbfd372f2b6d009e3b49c29ae9448eaf0d9f21f50d088d2404d6a",
+    "angle_k_4.kmb": "f9b6e68a119dc2b819c21812a136f3ae76eddb36d8964d1847bab68f880b3330",
+    "angle_k_5.kmb": "a17d6c663f66b3e8d9487b0b19f77075f5647ff240d258b6b7d37cb58997cd6c",
+    "angle_k_6.kmb": "387f1a6095132fb6114682c8cc102a36cc93426860fa57b1fd972b65d4e88561",
+    "angle_k_7.kmb": "146cb20a99a8c6005539df2b0c9f0eb11b33a71ab10d66480f51fd5590e53711",
+    "angle_k_8.kmb": "0be2c2ec69d681f352c7e89fc94ed161f45b448110c9e617fe86181f72de646e",
+    "angle_k_9.kmb": "3e31f13446a8a3c72bff3ac6c123d15f9c8b86039f505fe7b5510d7245246c99",
+    "angle_k_10.kmb": "656d5eb283c54a2b934fdcf38fc56d7b3cc7b0607e7731c26eb15b574e74f5eb",
+    "angle_k_11.kmb": "d4eeedc38481610804ec2708e2fc02323b63d9f37487cec6cb9b42ed7c94c033",
+    "angle_k_12.kmb": "61275eda03641d1a7b4052b36fa1df4383918f8986172e73a7f8dcaa817d0308",
+    "angle_k_13.kmb": "a4e43c2b183cf64de805701517fd0b56333dde662889579b824b4ee1ff0c3a72",
+    "angle_k_14.kmb": "3b21fe0767295c6bd40c41e0c40ca1aeff02e54216ada02849c238ab66b70159"
+  },
+  "loaders_unchanged": true,
+  "angle_words_unchanged": true,
+  "current_loader_toffoli_per_pass": 4033,
+  "total_toffoli": 14728,
+  "total_qubits": 427,
+  "v27_word_mismatch_count": 6840,
+  "max_v27_signed_vector_difference": 1.116562966860553,
+  "v27_sign_equivalent_vectors": 387,
+  "official_numeric_cases": [
+    {
+      "name": "retained_baseline",
+      "metrics": {
+        "error_1": 0.01999998000005401,
+        "error_2": 0.0199999936269957,
+        "Lambda": 282.96313136058893,
+        "E_SOS": -22144.18824802,
+        "E_gap": 3.9148980200006918,
+        "lambda_eff": 46.906472675810164,
+        "gap_in_domain": true
+      },
+      "numeric_pass": true,
+      "cost_if_valid": 294988052.12610483
+    },
+    {
+      "name": "v27_H2_only_on_retained_words_and_W",
+      "metrics": {
+        "error_1": 0.022389896793371784,
+        "error_2": 0.0199999936269957,
+        "Lambda": 282.9577832226052,
+        "E_SOS": -22144.191157030127,
+        "E_gap": 3.917807030127733,
+        "lambda_eff": 46.92332866232366,
+        "gap_in_domain": true
+      },
+      "numeric_pass": false,
+      "cost_if_valid": 295094056.99802613
+    },
+    {
+      "name": "v27_W_H2_on_retained_words",
+      "metrics": {
+        "error_1": 0.022103595784080204,
+        "error_2": 0.02000542370918321,
+        "Lambda": 283.0018456549343,
+        "E_SOS": -22144.18868636676,
+        "E_gap": 3.9153363667610392,
+        "lambda_eff": 46.91231157640429,
+        "gap_in_domain": true
+      },
+      "numeric_pass": false,
+      "cost_if_valid": 295024772.1311396
+    }
+  ],
+  "search_calls": 435,
+  "search_seconds": 16.858459563998622,
+  "optimizer_results": [
+    {
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "x": [
+        -5.554514658874288e-11,
+        8.300819360270954e-11
+      ],
+      "fun": 46.90647267580724
+    },
+    {
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "x": [
+        -0.0007756918491592297,
+        0.000305318947009544
+      ],
+      "fun": 46.906470398464464
+    },
+    {
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "x": [
+        -0.0007756918489983165,
+        0.00030531892523378917
+      ],
+      "fun": 46.906470398465146
+    },
+    {
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "x": [
+        -0.000775691849197797,
+        0.0003053189238018566
+      ],
+      "fun": 46.90647039846447
+    }
+  ],
+  "feasible_trace": [
+    {
+      "call": 1,
+      "x": [
+        0.0,
+        0.0
+      ],
+      "lambda_eff": 46.906472675806775,
+      "lambda_eff_smooth": 46.906472675806775,
+      "Lambda_smooth": 282.9631313605889,
+      "gap": 3.9148980200001233,
+      "gap_lower_bound": 3.9148980200001233,
+      "eigen_trace_bias_bound": 0.0,
+      "error1": 0.019999980000055526,
+      "error2": 0.019999993626995723
+    },
+    {
+      "call": 19,
+      "x": [
+        -0.0007756918491591949,
+        0.0003053189812533447
+      ],
+      "lambda_eff": 46.906470398465125,
+      "lambda_eff_smooth": 46.906470398465125,
+      "Lambda_smooth": 282.9631054929985,
+      "gap": 3.914898000100038,
+      "gap_lower_bound": 3.914898000100038,
+      "eigen_trace_bias_bound": 0.0,
+      "error1": 0.01999890416235329,
+      "error2": 0.019999999800000005
+    }
+  ],
+  "endpoint": {
+    "x": [
+      -0.0007756918491591949,
+      0.0003053189812533447
+    ],
+    "metrics": {
+      "error_1": 0.01999890416235086,
+      "error_2": 0.019999999800000157,
+      "Lambda": 282.9631054929985,
+      "E_SOS": -22144.188248000097,
+      "E_gap": 3.9148980000973097,
+      "lambda_eff": 46.90647039844889,
+      "gap_in_domain": true
+    },
+    "numeric_pass": true,
+    "cost_if_valid": 294988037.80410767,
+    "numeric_cost_gain": 14.321997165679932,
+    "saved": true,
+    "path": "/workspace/scratch/3815fb5fae06/score6_chem/transfer/candidate.npz",
+    "sha256": "16ee9ad3716309385aa9ce48c1f714e59484b79126ac6fe60591d3ba8bd7ebcf"
+  },
+  "full_official_verifier_run": false,
+  "new_submission": false,
+  "limits": [
+    "The v27 4030-loader cost/receipt is not transferred to the retained4033 family.",
+    "Numeric endpoints still require unchanged official full-circuit validation before acceptance.",
+    "This is a bounded two-direction search, not an optimality or impossibility proof."
+  ],
+  "elapsed_seconds": 32.19924206099677,
+  "peak_rss_mib": 995.73828125
+}

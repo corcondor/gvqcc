@@ -1,0 +1,130 @@
+{
+  "status": "PASS_ALL_18_MEMBERS_SHA_AND_CRC",
+  "source_zip_sha256": "7b59403add6ec475513b9f1f634781cfc563cd5acdc50970db03c91ad3d03978",
+  "source_zip": "/workspace/scratch/3815fb5fae06/score5_final_submission/submission.zip",
+  "zip": "/workspace/scratch/3815fb5fae06/score6_delivery/score6_local_candidate.zip",
+  "zip_sha256": "938e08143c113817ca1c3749a361911a0f60b2db745735d4f8f4b1fc0a1e2b71",
+  "zip_bytes": 63553727,
+  "members": [
+    {
+      "name": "invsqrt.kmb",
+      "bytes": 198626,
+      "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dqi.kmb",
+      "bytes": 522343175,
+      "sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/submission.npz",
+      "bytes": 1154294,
+      "sha256": "16ee9ad3716309385aa9ce48c1f714e59484b79126ac6fe60591d3ba8bd7ebcf",
+      "unchanged_payload": false
+    },
+    {
+      "name": "dfthcsos/angle_k_0.kmb",
+      "bytes": 263985,
+      "sha256": "39a74c931c745143d46ac3c3d7f76a84cc09982f0c7a9b2784e35e8cf0533b45",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_1.kmb",
+      "bytes": 287256,
+      "sha256": "753b1424a819fadcac324155a7cae1841f0ee977ce873f29c7e364c55cdd4f37",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_2.kmb",
+      "bytes": 297819,
+      "sha256": "487adc39d32a904021985241f80881fd90542fa35c0a379034fc88cc9ccfc337",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_3.kmb",
+      "bytes": 308938,
+      "sha256": "8e01cc596c3cbfd372f2b6d009e3b49c29ae9448eaf0d9f21f50d088d2404d6a",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_4.kmb",
+      "bytes": 246511,
+      "sha256": "f9b6e68a119dc2b819c21812a136f3ae76eddb36d8964d1847bab68f880b3330",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_5.kmb",
+      "bytes": 237798,
+      "sha256": "a17d6c663f66b3e8d9487b0b19f77075f5647ff240d258b6b7d37cb58997cd6c",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_6.kmb",
+      "bytes": 227186,
+      "sha256": "387f1a6095132fb6114682c8cc102a36cc93426860fa57b1fd972b65d4e88561",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_7.kmb",
+      "bytes": 231189,
+      "sha256": "146cb20a99a8c6005539df2b0c9f0eb11b33a71ab10d66480f51fd5590e53711",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_8.kmb",
+      "bytes": 230215,
+      "sha256": "0be2c2ec69d681f352c7e89fc94ed161f45b448110c9e617fe86181f72de646e",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_9.kmb",
+      "bytes": 236811,
+      "sha256": "3e31f13446a8a3c72bff3ac6c123d15f9c8b86039f505fe7b5510d7245246c99",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_10.kmb",
+      "bytes": 232220,
+      "sha256": "656d5eb283c54a2b934fdcf38fc56d7b3cc7b0607e7731c26eb15b574e74f5eb",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_11.kmb",
+      "bytes": 236911,
+      "sha256": "d4eeedc38481610804ec2708e2fc02323b63d9f37487cec6cb9b42ed7c94c033",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_12.kmb",
+      "bytes": 220654,
+      "sha256": "61275eda03641d1a7b4052b36fa1df4383918f8986172e73a7f8dcaa817d0308",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_13.kmb",
+      "bytes": 227643,
+      "sha256": "a4e43c2b183cf64de805701517fd0b56333dde662889579b824b4ee1ff0c3a72",
+      "unchanged_payload": true
+    },
+    {
+      "name": "dfthcsos/angle_k_14.kmb",
+      "bytes": 219161,
+      "sha256": "3b21fe0767295c6bd40c41e0c40ca1aeff02e54216ada02849c238ab66b70159",
+      "unchanged_payload": true
+    }
+  ],
+  "unchanged_members": 17,
+  "changed_member": "dfthcsos/submission.npz",
+  "changed_arrays": [
+    "W.npy",
+    "H2_I.npy"
+  ],
+  "new_toffoli_reduction": 0,
+  "scorecard_sha256": "c5c9f94b95862b8871f4fb44539b01bfdcab6a6267817e7856d1d14f1fca0bc7",
+  "builder_sha256": "99d447db30a24aed81d092296c022f8a7e05c8f125c548b8605b4af5dde2e059",
+  "local_combined_score": 27.324751494620457,
+  "new_submission_performed": false,
+  "seconds": 17.23456217400235
+}

@@ -1,0 +1,149 @@
+{
+  "status": "FROZEN_NO_NEW_BENCHMARK_CANDIDATE",
+  "namespace": "score6_invsqrt",
+  "baseline": {
+    "path": "/workspace/scratch/3815fb5fae06/score6_invsqrt/baseline.kmb",
+    "bytes": 198626,
+    "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a"
+  },
+  "baseline_Q": 46,
+  "baseline_static_toffoli": 1550,
+  "baseline_verified_cost": 78673.55534364567,
+  "new_benchmark_candidate": false,
+  "claimed_benchmark_gain": 0,
+  "new_artifacts": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_baseline_binding.json",
+      "bytes": 525,
+      "sha256": "4c35180e8867fa7575fb125ab7b1c638b167833c544be13ce29a11f8ad7dbed9"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_joint_oneand.py",
+      "bytes": 7828,
+      "sha256": "3f0323127fd639d035559fafb658a2d7852c1b9d5d2e5ae1516784f2b5c5675e"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_joint_oneand_result.json",
+      "bytes": 1370,
+      "sha256": "7de44abf076c88c4b197ad646e9b222423e3707331f1c4b4f952ad8779fb521d"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_joint_phase.py",
+      "bytes": 8110,
+      "sha256": "c2cb310c635458582d28f3232615768d25f2764f8566a61de7de8af484a69b13"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_joint_phase_result.json",
+      "bytes": 1651,
+      "sha256": "713450625091af0e04452cc627600ab0239715abb5213d0570cbd60a6b90aab6"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_joint_positive.py",
+      "bytes": 5340,
+      "sha256": "8703eebc7e92d7db0aac2c04a0139f839266e8b5d51636581d3013ba72dcd6fe"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_joint_positive_candidate.kmb",
+      "bytes": 522,
+      "sha256": "a4e1d00e290a692f5b9d9c7d7d2e46116a43d9d73c3a47269b165969e40f14ed"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_joint_positive_candidate.kmx",
+      "bytes": 699,
+      "sha256": "37f8421f4fcba027b40b0b4f901fa16c1526bb5f19ded617797bb78135521b7e"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_joint_positive_result.json",
+      "bytes": 1991,
+      "sha256": "6f00719656127d283e887a4459e9849f99dca953d5875a6b92f5dfbfd77d211c"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_joint_positive_source.kmb",
+      "bytes": 557,
+      "sha256": "fb5553f368b4dac6130cee7b0352593df0ab424746136d6ba12aa2c88cac361b"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_joint_positive_source.kmx",
+      "bytes": 739,
+      "sha256": "4a5419069e65208b759e912e8048c3fee520113e5a30f316efe10c2a22cf318b"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_modular_certificate.json",
+      "bytes": 38709,
+      "sha256": "574ab081bf2282aee417b1dd83250d943f03b72d714f39123c013971522c89b1"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_modular_certificate.py",
+      "bytes": 6549,
+      "sha256": "f24411d45798a51366096cc875f35f1371a9dacb43a1ea7609c5aba19e9707c5"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_phase_features.json",
+      "bytes": 9652,
+      "sha256": "751275e725b9f4e4a697391d892343936149c08de55295f8a921d6959b6a71ad"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score6_invsqrt_report.md",
+      "bytes": 10170,
+      "sha256": "1c5362f044884a6c76386e5a25fdc6db0df9a462ff46c5dd0db23a4f67318e27"
+    }
+  ],
+  "read_only_dependencies": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_invsqrt_retire.py",
+      "bytes": 8079,
+      "sha256": "a2f701f5ed8fb2152e88a4b4ec2b4d29897e50459378db7f0e73100d9162dfd6"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score2_invsqrt_phase_relocation.py",
+      "bytes": 4783,
+      "sha256": "0d8f9952f619910ee46591e92bd76f9e46d1c48b7fbddbb4fe79808958d2e285"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score2_invsqrt_relocate_oneand.cpp",
+      "bytes": 4028,
+      "sha256": "e7c7e1ff511ff9e4c90cf4ded21667f9fb84c466facccca93fb1bc91315b5e5e"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache.kmx",
+      "bytes": 258469,
+      "sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_full_verification.json",
+      "bytes": 1370,
+      "sha256": "546961b969cf58f64093b4a98d9a1a603044c16118572eaa0ee76f78eb1c0b53"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/invsqrt/verify_submission_invsqrt.py",
+      "bytes": 17210,
+      "sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a"
+    }
+  ],
+  "scratch_reproducible_paths": [
+    "/workspace/scratch/3815fb5fae06/score6_invsqrt/phase_vectors.bin",
+    "/workspace/scratch/3815fb5fae06/score6_invsqrt/oneand/round0.txt",
+    "/workspace/scratch/3815fb5fae06/score6_invsqrt/oneand/round0_progress.jsonl"
+  ],
+  "primary_urls": [
+    "https://arxiv.org/abs/1601.07363",
+    "https://arxiv.org/abs/2410.23493",
+    "https://arxiv.org/abs/1709.06648",
+    "https://arxiv.org/abs/2203.10064"
+  ],
+  "math_review": {
+    "reviewer": "/root/qrom_contraction",
+    "scope": "Read-only argument review; no independent computational rerun",
+    "conclusion": "Coprime determinants \u22123 and \u22122 imply real coefficient changes are integral, with phase units and fixed-feature scope retained."
+  },
+  "not_performed": [
+    "submission",
+    "baseline mutation",
+    "new full official invsqrt run"
+  ],
+  "repro_environment": {
+    "certificate": "system python with numpy and sympy",
+    "native_control": "/workspace/scratch/7f542e06b7cf/kickmix_venv/bin/python",
+    "oneand_solver": "g++ -O3 -std=c++17 on unchanged source"
+  }
+}

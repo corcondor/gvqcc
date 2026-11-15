@@ -1,0 +1,77 @@
+{
+  "status": "UNSAT_CORROBORATED_BY_TWO_ENCODINGS_NO_INDEPENDENT_PROOF_OBJECT",
+  "candidate": null,
+  "new_gate_saving": 0,
+  "proof_scope": "Shared GF8 bilinear tensor rank12, finite reductions independently checked and two encodings UNSAT in Z3 4.15.4; no externally checked proof certificate. Larger GF12 rank77 and general nonlinear circuits remain unexcluded.",
+  "primary_results": [
+    "score6_dqi_shared11_sat_noproof.json",
+    "score6_dqi_shared11_boolean.json"
+  ],
+  "independent_reductions": "score6_dqi_shared11_independent.json",
+  "artifacts": {
+    "score6_dqi_shared11_boolean.py": {
+      "sha256": "8a78c8383c9ce23e481050798a9cf3fefc378ea5b879e884d2ea76a1515572fa",
+      "bytes": 5284
+    },
+    "score6_dqi_shared11_independent.py": {
+      "sha256": "2d8416981646613f213d3c2739201aeceae6ac1d16aec40d6a286068693d0ca1",
+      "bytes": 6434
+    },
+    "score6_dqi_shared11_sat.py": {
+      "sha256": "b918ff4ab91d3c3b39b209c3bcbe4fb8ae59d291e046286d5e7ba86c60b5b26a",
+      "bytes": 5119
+    },
+    "score6_dqi_shared11_sat_basis.py": {
+      "sha256": "6c89cf07544b91ba67747905d24eb91f89067f5e619338b7fe29e5bd2e64d552",
+      "bytes": 6673
+    },
+    "score6_dqi_shared11_sat_noproof.py": {
+      "sha256": "2430995efcbbdd44ab8fb9c4efa374d1420cca0b8547a75844969e780f76db99",
+      "bytes": 6524
+    },
+    "score6_dqi_shared11_boolean.json": {
+      "sha256": "6df6f611a21954b6e83a79827dc695bf89407e5441c4cc4c5a5b681f19052ec6",
+      "bytes": 2009
+    },
+    "score6_dqi_shared11_independent.json": {
+      "sha256": "344d9ff4d19a425adee18319bf9ea7e954749fdfeee03ec61213bb03d3e2c5e2",
+      "bytes": 3035
+    },
+    "score6_dqi_shared11_sat.json": {
+      "sha256": "bfb2ec424020c5a45bb6003dfdf821e11fdf11a321582dec3afa2bcf49496756",
+      "bytes": 2364
+    },
+    "score6_dqi_shared11_sat_basis.json": {
+      "sha256": "b5dda1f9ccd0dab68165a8c90dee2c56c6b4aa3a06eda9492b6b7263778f4c95",
+      "bytes": 2562
+    },
+    "score6_dqi_shared11_sat_noproof.json": {
+      "sha256": "b8e3aed9ee4e70707a806b33d2ac1cc5d6c34d63ae9462c857de8da81810072a",
+      "bytes": 3276
+    },
+    "score6_dqi_shared11_boolean.smt2": {
+      "sha256": "e64d6c613be39db376c60ed7cfbb1af0b033ed3a3e044859ae4e3518b89aa648",
+      "bytes": 275785
+    },
+    "score6_dqi_shared11_sat.smt2": {
+      "sha256": "a2856053cb6b6d6d1af40291767e65ed355c957b24a793c4470f418afe45a973",
+      "bytes": 12698
+    },
+    "score6_dqi_shared11_sat_basis.smt2": {
+      "sha256": "32503b39cba089014333c5eaa24dd3ccdd3d3f814bcbdd015310a6c3a63bfda1",
+      "bytes": 72028
+    },
+    "score6_dqi_shared11_sat_noproof.smt2": {
+      "sha256": "32503b39cba089014333c5eaa24dd3ccdd3d3f814bcbdd015310a6c3a63bfda1",
+      "bytes": 72028
+    },
+    "score6_dqi_shared11_report.md": {
+      "sha256": "3549ff6952b0aac29bd98dadb6d719b9cdd5c52815cb727b3a0cd2d54ae0c1bb",
+      "bytes": 6979
+    },
+    "symmetry_dqi_20261115_gf8_joint12_input.txt": {
+      "sha256": "8446959c7d46f19571ce207d024f302cf28792bc04d1a5a6e7d5e3abc0913077",
+      "bytes": 87
+    }
+  }
+}

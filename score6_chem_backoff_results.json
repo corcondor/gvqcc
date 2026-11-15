@@ -1,0 +1,40 @@
+{
+  "status": "BACKOFF_NUMERIC_CHECK",
+  "fraction": 0.2,
+  "source_npz_sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+  "endpoint_sha256": "16ee9ad3716309385aa9ce48c1f714e59484b79126ac6fe60591d3ba8bd7ebcf",
+  "baseline_receipt_sha256": "0d2410ba7ab526f4a0828b6af671996d64c9e8a683f185859e2244343319e661",
+  "baseline_metrics_exactly_reproduced": true,
+  "baseline_metrics": {
+    "error_1": 0.01999998000005401,
+    "error_2": 0.0199999936269957,
+    "Lambda": 282.96313136058893,
+    "E_SOS": -22144.18824802,
+    "E_gap": 3.9148980200006918,
+    "lambda_eff": 46.906472675810164,
+    "gap_in_domain": true
+  },
+  "metrics": {
+    "error_1": 0.01999976426910306,
+    "error_2": 0.0199999948602906,
+    "Lambda": 282.9631258424406,
+    "E_SOS": -22144.188248016184,
+    "E_gap": 3.914898016184452,
+    "lambda_eff": 46.90647219255269,
+    "gap_in_domain": true
+  },
+  "cost": 294988049.0869681,
+  "cost_gain": 3.0391367077827454,
+  "error2_margin_Ha": 5.139709401136283e-09,
+  "gap_margin_Ha": 1.618445200080032e-08,
+  "angle_words_unchanged": true,
+  "tree_edges_unchanged": true,
+  "loaders_unchanged": true,
+  "full_official_verifier_run": false,
+  "script_sha256": "8e1ac6e860b2da468e44906ac738d5b3861128d0a261f875abfa065b68799111",
+  "prior_discrepancy_resolution": "The earlier claimed mismatch mixed distinct candidates/baseline receipts. The SHA-bound5f8 official baseline is reproduced exactly here; no platform discrepancy was established.",
+  "saved": true,
+  "seconds": 20.625216175998503,
+  "path": "/workspace/scratch/3815fb5fae06/score6_chem/backoff/candidate.npz",
+  "sha256": "99627e266340dd5fe71fff264d088024593310e1f06b2b15a61ef6108ee699c0"
+}

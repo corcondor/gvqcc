@@ -1,0 +1,42 @@
+{
+  "status": "NO_PRODUCTION_REWRITE",
+  "source_kmb_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "source_kmb_bytes": 522343175,
+  "files": [
+    {
+      "path": "score6_dqi_phase_cache_scan.cpp",
+      "sha256": "e4bc1e8140e9124d16b71fa2bedaa5d026b3b6d0a12e1d66a376c5a64000b3dc",
+      "bytes": 11586
+    },
+    {
+      "path": "score6_dqi_phase_cache_check.py",
+      "sha256": "73f296e97fe04a9251f19dbe37ef2777057217e2b573bafe3f3793f187dcd6a0",
+      "bytes": 3240
+    },
+    {
+      "path": "score6_dqi_phase_cache_check.json",
+      "sha256": "01ca897a40a4e50fbbe60ee7e781caef11deaf38fa8ae69f4aa493f549ef2021",
+      "bytes": 7066
+    },
+    {
+      "path": "score6_dqi_phase_cache_runtime_v5.json",
+      "sha256": "d06b8379717cc88197ee3f4e54b50b0b36a27396e201f60aa1596bc48b43e300",
+      "bytes": 2358
+    },
+    {
+      "path": "score6_dqi_phase_cache_fredkin_structural.json",
+      "sha256": "bf7091406d47e04c8cce9140454142108bac7e08738acc1a2bab70d869db75b2",
+      "bytes": 498
+    },
+    {
+      "path": "score6_dqi_phase_cache_fredkin_truth_span.json",
+      "sha256": "c549be0e1ffdd9f70126911d48deeb6a3e3ab685d7a5e3554e68d7598e715ff5",
+      "bytes": 502
+    },
+    {
+      "path": "score6_dqi_phase_cache_report.md",
+      "sha256": "a456c9e22d0589af39748a4733599fdaa51ad31639e5b2bafbe276e06188ebac",
+      "bytes": 5174
+    }
+  ]
+}
