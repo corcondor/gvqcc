@@ -1,0 +1,419 @@
+{
+  "source_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "pairs": 34,
+  "cut_count": 96,
+  "first_samples": 4734,
+  "confirmed_cleanup_records": 39,
+  "results": [],
+  "rejects": [
+    {
+      "earlier": 9284,
+      "later": 9476,
+      "cuts": [
+        9285,
+        9303,
+        9476,
+        9477,
+        9506
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 10554,
+      "later": 10589,
+      "cuts": [
+        10555,
+        10573,
+        10589,
+        10590,
+        10609
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 10881,
+      "later": 10916,
+      "cuts": [
+        10882,
+        10900,
+        10916,
+        10917,
+        10944
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 11217,
+      "later": 11252,
+      "cuts": [
+        11218,
+        11236,
+        11252,
+        11253,
+        11280
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 11553,
+      "later": 11588,
+      "cuts": [
+        11554,
+        11572,
+        11588,
+        11589,
+        11616
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 11889,
+      "later": 11924,
+      "cuts": [
+        11890,
+        11908,
+        11924,
+        11925,
+        11952
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 12225,
+      "later": 12260,
+      "cuts": [
+        12226,
+        12244,
+        12260,
+        12261,
+        12288
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 12561,
+      "later": 12596,
+      "cuts": [
+        12562,
+        12580,
+        12596,
+        12597,
+        12624
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 12897,
+      "later": 12932,
+      "cuts": [
+        12898,
+        12916,
+        12932,
+        12933,
+        12960
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 13233,
+      "later": 13268,
+      "cuts": [
+        13234,
+        13252,
+        13268,
+        13269,
+        13296
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 13735,
+      "later": 13773,
+      "cuts": [
+        13736,
+        13765,
+        13773,
+        13774,
+        13801
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 14143,
+      "later": 14184,
+      "cuts": [
+        14144,
+        14184,
+        14185,
+        14212
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 19129,
+      "later": 19311,
+      "cuts": [
+        19130,
+        19154,
+        19311,
+        19312,
+        19336
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 19311,
+      "later": 19466,
+      "cuts": [
+        19312,
+        19336,
+        19466,
+        19467,
+        19491
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 19945,
+      "later": 20070,
+      "cuts": [
+        19946,
+        19964,
+        20070,
+        20071,
+        20089
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 20070,
+      "later": 20191,
+      "cuts": [
+        20071,
+        20089,
+        20191,
+        20192,
+        20210
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 20191,
+      "later": 20307,
+      "cuts": [
+        20192,
+        20210,
+        20307,
+        20308,
+        20326
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 20307,
+      "later": 20418,
+      "cuts": [
+        20308,
+        20326,
+        20418,
+        20419,
+        20437
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 20418,
+      "later": 20525,
+      "cuts": [
+        20419,
+        20437,
+        20525,
+        20526,
+        20542
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23813,
+      "later": 23820,
+      "cuts": [
+        23814,
+        23820,
+        23821,
+        23827
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23813,
+      "later": 23827,
+      "cuts": [
+        23814,
+        23820,
+        23827,
+        23828,
+        23834
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23813,
+      "later": 23834,
+      "cuts": [
+        23814,
+        23820,
+        23834,
+        23835,
+        23841
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23813,
+      "later": 23841,
+      "cuts": [
+        23814,
+        23820,
+        23841,
+        23842,
+        23848
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23813,
+      "later": 23848,
+      "cuts": [
+        23814,
+        23820,
+        23848,
+        23849,
+        23855
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23820,
+      "later": 23827,
+      "cuts": [
+        23821,
+        23827,
+        23828,
+        23834
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23820,
+      "later": 23834,
+      "cuts": [
+        23821,
+        23827,
+        23834,
+        23835,
+        23841
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23820,
+      "later": 23841,
+      "cuts": [
+        23821,
+        23827,
+        23841,
+        23842,
+        23848
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23820,
+      "later": 23848,
+      "cuts": [
+        23821,
+        23827,
+        23848,
+        23849,
+        23855
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23827,
+      "later": 23834,
+      "cuts": [
+        23828,
+        23834,
+        23835,
+        23841
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23827,
+      "later": 23841,
+      "cuts": [
+        23828,
+        23834,
+        23841,
+        23842,
+        23848
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23827,
+      "later": 23848,
+      "cuts": [
+        23828,
+        23834,
+        23848,
+        23849,
+        23855
+      ],
+      "failed_addresses_after_each_fit": []
+    },
+    {
+      "earlier": 23834,
+      "later": 23841,
+      "cuts": [
+        23835,
+        23841,
+        23842,
+        23848
+      ],
+      "failed_addresses_after_each_fit": [
+        7168
+      ]
+    },
+    {
+      "earlier": 23834,
+      "later": 23848,
+      "cuts": [
+        23835,
+        23841,
+        23848,
+        23849,
+        23855
+      ],
+      "failed_addresses_after_each_fit": [
+        7168
+      ]
+    },
+    {
+      "earlier": 23841,
+      "later": 23848,
+      "cuts": [
+        23842,
+        23848,
+        23849,
+        23855
+      ],
+      "failed_addresses_after_each_fit": [
+        4096
+      ]
+    }
+  ],
+  "elapsed_s": 6.568681220000144
+}

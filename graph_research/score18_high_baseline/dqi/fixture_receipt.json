@@ -1,0 +1,115 @@
+{
+  "repeated_product": {
+    "expected_and_observed": [
+      [
+        0,
+        2,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        2,
+        1,
+        2,
+        1
+      ]
+    ],
+    "scan": {
+      "operations": 2,
+      "paid_seen": 2,
+      "windows": 2,
+      "max_paid_in_window": 2,
+      "rank_reductions": 2
+    }
+  },
+  "moved_selector": {
+    "expected_and_observed": [
+      [
+        0,
+        3,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        3,
+        1,
+        2,
+        1
+      ]
+    ],
+    "scan": {
+      "operations": 3,
+      "paid_seen": 2,
+      "windows": 2,
+      "max_paid_in_window": 2,
+      "rank_reductions": 2
+    }
+  },
+  "mixed_controlled_linear": {
+    "expected_and_observed": [
+      [
+        0,
+        3,
+        0,
+        2,
+        0
+      ]
+    ],
+    "scan": {
+      "operations": 3,
+      "paid_seen": 2,
+      "windows": 1,
+      "max_paid_in_window": 2,
+      "rank_reductions": 1
+    }
+  },
+  "independent_products": {
+    "expected_and_observed": [],
+    "scan": {
+      "operations": 2,
+      "paid_seen": 2,
+      "windows": 1,
+      "max_paid_in_window": 2,
+      "rank_reductions": 0
+    }
+  },
+  "wrapped_selector": {
+    "expected_and_observed": [
+      [
+        0,
+        4,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        4,
+        1,
+        2,
+        1
+      ]
+    ],
+    "scan": {
+      "operations": 4,
+      "paid_seen": 2,
+      "windows": 2,
+      "max_paid_in_window": 2,
+      "rank_reductions": 2
+    }
+  },
+  "phase_barrier": {
+    "expected_and_observed": [],
+    "scan": {
+      "operations": 3,
+      "paid_seen": 2,
+      "windows": 0,
+      "max_paid_in_window": 0,
+      "rank_reductions": 0
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "normalization_only": {
+    "scope": "All factorizations under the official fixed shift and SOS gap floor, with the two-body error cap used only by the weaker double-trace bound",
+    "orbitals": 76,
+    "gap_floor": 3.914898,
+    "two_body_error_cap": 0.02,
+    "shifted_two_body_reference_double_trace": 521.8492383547127,
+    "submitted_double_trace_floor": 520.3292383547127,
+    "h0_trace": -758.2781079490753,
+    "gap_offset": -559.1324731485038,
+    "double_trace_partner_floor": 83.23473395977862,
+    "identity_partner_floor": 559.1324731485038,
+    "partner_2Lambda_minus_gap_floor": 559.1324731485038,
+    "lambda_eff_floor": 46.78617959252637,
+    "local_score_ceiling_at_unchanged_T_Q_and_other_tasks": 27.351864226033772,
+    "max_TQ_for_score_28_holding_other_tasks": 5859781.067996147,
+    "actual_TQ": 6286294.0,
+    "max_T_with_same_Q": 13723.140674464046,
+    "max_ANGLE_T_per_pass_with_same_Q_and_other_chemistry_T": 3530.570337232023
+  },
+  "exact_group_gram": {
+    "baseline_lambda_h2": 269.82108851884476,
+    "lambda_h2_floor": 269.68099929883977,
+    "lambda_eff_floor": 46.89796047455119,
+    "local_score_ceiling_at_unchanged_T_Q_and_other_tasks": 27.33011596088762,
+    "input_stacked_block_smallest_singular_values": [
+      0.08214583639244236,
+      0.07937406265958806,
+      0.08476206579980919,
+      0.084592360319114,
+      0.08339543196210471,
+      0.08838495941086905,
+      0.08024643073879839,
+      0.08735991118555207
+    ]
+  }
+}

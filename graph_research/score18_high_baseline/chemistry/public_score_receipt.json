@@ -1,0 +1,23 @@
+{
+  "starting_baseline": "score12 27.327844992124593",
+  "start_zip_sha256": "a339f391056756c72a9f3a994090d509d3bf38ebee94a075a6d68fe13f2bffea",
+  "local_score": 27.328123503355716,
+  "local_improvement": 0.0002785112311229909,
+  "costs": {
+    "dqi": 359707293756.04297,
+    "invsqrt": 78673.55534364567,
+    "chemistry": 294878855.8279802
+  },
+  "reference_costs": {
+    "invsqrt": 2076774.233715,
+    "dqi": 24439463583672.93,
+    "chemistry": 3355599588.3155375
+  },
+  "chemistry_shots": 78080,
+  "chemistry_verifier_digest": "955c24d39bcf7ec8df5628ed68a888dee9daeb48d450f75d9c678d206f5c4f9f",
+  "stage": "family_public",
+  "public_weights_warm_start_sha256": "f1888d7ad0533227fd5a373711cbaea2c82b6205ef785818c08e2a168414c491",
+  "normalized_weights_stage_sha256": "d256b6089d4f4c51ea9bfbc49c072be56c02dc4db0e4da5faafd437e9f93c555",
+  "replay_patch_sha256": "18a602ffd49bd9ebdd141a078dffad29c0482b1aa288c3a482b83b2d6a09b557",
+  "kaggle_submitted": false
+}

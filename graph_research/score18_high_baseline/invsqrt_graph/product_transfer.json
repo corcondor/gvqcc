@@ -1,0 +1,879 @@
+{
+  "intervals": 604,
+  "checked": 9,
+  "ordinary_contraction_candidates": 4,
+  "early_erasure_candidates": 2,
+  "first_full_width_birth": {
+    "wire": 45,
+    "birth": 2364,
+    "death": 2434,
+    "rank": 45,
+    "arity": 45,
+    "reversible_data_contraction": true,
+    "early_erasure_screen": false,
+    "measured_depends_on_product": false,
+    "control_intersection": 0,
+    "replacement": [
+      [
+        "CX",
+        37,
+        38
+      ],
+      [
+        "CCX",
+        26,
+        27,
+        37
+      ],
+      [
+        "CX",
+        37,
+        38
+      ],
+      [
+        "CX",
+        44,
+        43
+      ],
+      [
+        "CX",
+        44,
+        38
+      ],
+      [
+        "CX",
+        43,
+        42
+      ],
+      [
+        "SWAP",
+        43,
+        44
+      ],
+      [
+        "CX",
+        42,
+        44
+      ],
+      [
+        "CX",
+        42,
+        26
+      ],
+      [
+        "SWAP",
+        41,
+        43
+      ],
+      [
+        "SWAP",
+        40,
+        41
+      ],
+      [
+        "CX",
+        39,
+        42
+      ],
+      [
+        "CX",
+        39,
+        26
+      ],
+      [
+        "CX",
+        38,
+        37
+      ],
+      [
+        "CX",
+        38,
+        27
+      ],
+      [
+        "CX",
+        37,
+        42
+      ],
+      [
+        "CX",
+        37,
+        38
+      ],
+      [
+        "CX",
+        37,
+        27
+      ],
+      [
+        "CX",
+        37,
+        26
+      ],
+      [
+        "CX",
+        36,
+        42
+      ],
+      [
+        "CX",
+        36,
+        37
+      ],
+      [
+        "CX",
+        36,
+        26
+      ],
+      [
+        "CX",
+        35,
+        42
+      ],
+      [
+        "CX",
+        35,
+        37
+      ],
+      [
+        "CX",
+        35,
+        26
+      ],
+      [
+        "CX",
+        34,
+        42
+      ],
+      [
+        "CX",
+        34,
+        37
+      ],
+      [
+        "CX",
+        34,
+        26
+      ],
+      [
+        "CX",
+        33,
+        42
+      ],
+      [
+        "CX",
+        33,
+        26
+      ],
+      [
+        "CX",
+        32,
+        42
+      ],
+      [
+        "CX",
+        32,
+        26
+      ],
+      [
+        "CX",
+        31,
+        42
+      ],
+      [
+        "CX",
+        31,
+        37
+      ],
+      [
+        "CX",
+        31,
+        26
+      ],
+      [
+        "CX",
+        29,
+        42
+      ],
+      [
+        "CX",
+        29,
+        26
+      ],
+      [
+        "CX",
+        26,
+        42
+      ],
+      [
+        "SWAP",
+        26,
+        38
+      ],
+      [
+        "CX",
+        21,
+        37
+      ],
+      [
+        "CX",
+        20,
+        37
+      ],
+      [
+        "CX",
+        19,
+        38
+      ],
+      [
+        "CX",
+        19,
+        37
+      ],
+      [
+        "CX",
+        18,
+        27
+      ],
+      [
+        "CX",
+        16,
+        37
+      ]
+    ]
+  },
+  "all_rows": [
+    {
+      "wire": 34,
+      "birth": 614,
+      "death": 625,
+      "rank": 45,
+      "arity": 45,
+      "reversible_data_contraction": true,
+      "early_erasure_screen": false,
+      "measured_depends_on_product": true,
+      "control_intersection": 0,
+      "replacement": [
+        [
+          "CCX",
+          20,
+          36,
+          21
+        ],
+        [
+          "CX",
+          36,
+          20
+        ],
+        [
+          "CX",
+          18,
+          19
+        ],
+        [
+          "X",
+          18
+        ],
+        [
+          "X",
+          19
+        ],
+        [
+          "X",
+          20
+        ],
+        [
+          "X",
+          21
+        ]
+      ]
+    },
+    {
+      "wire": 45,
+      "birth": 2364,
+      "death": 2434,
+      "rank": 45,
+      "arity": 45,
+      "reversible_data_contraction": true,
+      "early_erasure_screen": false,
+      "measured_depends_on_product": false,
+      "control_intersection": 0,
+      "replacement": [
+        [
+          "CX",
+          37,
+          38
+        ],
+        [
+          "CCX",
+          26,
+          27,
+          37
+        ],
+        [
+          "CX",
+          37,
+          38
+        ],
+        [
+          "CX",
+          44,
+          43
+        ],
+        [
+          "CX",
+          44,
+          38
+        ],
+        [
+          "CX",
+          43,
+          42
+        ],
+        [
+          "SWAP",
+          43,
+          44
+        ],
+        [
+          "CX",
+          42,
+          44
+        ],
+        [
+          "CX",
+          42,
+          26
+        ],
+        [
+          "SWAP",
+          41,
+          43
+        ],
+        [
+          "SWAP",
+          40,
+          41
+        ],
+        [
+          "CX",
+          39,
+          42
+        ],
+        [
+          "CX",
+          39,
+          26
+        ],
+        [
+          "CX",
+          38,
+          37
+        ],
+        [
+          "CX",
+          38,
+          27
+        ],
+        [
+          "CX",
+          37,
+          42
+        ],
+        [
+          "CX",
+          37,
+          38
+        ],
+        [
+          "CX",
+          37,
+          27
+        ],
+        [
+          "CX",
+          37,
+          26
+        ],
+        [
+          "CX",
+          36,
+          42
+        ],
+        [
+          "CX",
+          36,
+          37
+        ],
+        [
+          "CX",
+          36,
+          26
+        ],
+        [
+          "CX",
+          35,
+          42
+        ],
+        [
+          "CX",
+          35,
+          37
+        ],
+        [
+          "CX",
+          35,
+          26
+        ],
+        [
+          "CX",
+          34,
+          42
+        ],
+        [
+          "CX",
+          34,
+          37
+        ],
+        [
+          "CX",
+          34,
+          26
+        ],
+        [
+          "CX",
+          33,
+          42
+        ],
+        [
+          "CX",
+          33,
+          26
+        ],
+        [
+          "CX",
+          32,
+          42
+        ],
+        [
+          "CX",
+          32,
+          26
+        ],
+        [
+          "CX",
+          31,
+          42
+        ],
+        [
+          "CX",
+          31,
+          37
+        ],
+        [
+          "CX",
+          31,
+          26
+        ],
+        [
+          "CX",
+          29,
+          42
+        ],
+        [
+          "CX",
+          29,
+          26
+        ],
+        [
+          "CX",
+          26,
+          42
+        ],
+        [
+          "SWAP",
+          26,
+          38
+        ],
+        [
+          "CX",
+          21,
+          37
+        ],
+        [
+          "CX",
+          20,
+          37
+        ],
+        [
+          "CX",
+          19,
+          38
+        ],
+        [
+          "CX",
+          19,
+          37
+        ],
+        [
+          "CX",
+          18,
+          27
+        ],
+        [
+          "CX",
+          16,
+          37
+        ]
+      ]
+    },
+    {
+      "wire": 45,
+      "birth": 2435,
+      "death": 2489,
+      "rank": 44,
+      "arity": 45,
+      "reversible_data_contraction": false,
+      "early_erasure_screen": true,
+      "measured_depends_on_product": false,
+      "control_intersection": null,
+      "replacement": null
+    },
+    {
+      "wire": 45,
+      "birth": 2490,
+      "death": 2551,
+      "rank": 44,
+      "arity": 45,
+      "reversible_data_contraction": false,
+      "early_erasure_screen": false,
+      "measured_depends_on_product": false,
+      "control_intersection": null,
+      "replacement": null
+    },
+    {
+      "wire": 45,
+      "birth": 2552,
+      "death": 2611,
+      "rank": 44,
+      "arity": 45,
+      "reversible_data_contraction": false,
+      "early_erasure_screen": false,
+      "measured_depends_on_product": false,
+      "control_intersection": null,
+      "replacement": null
+    },
+    {
+      "wire": 45,
+      "birth": 2614,
+      "death": 2662,
+      "rank": 45,
+      "arity": 45,
+      "reversible_data_contraction": true,
+      "early_erasure_screen": false,
+      "measured_depends_on_product": false,
+      "control_intersection": 0,
+      "replacement": [
+        [
+          "CCX",
+          16,
+          39,
+          40
+        ],
+        [
+          "CX",
+          43,
+          41
+        ],
+        [
+          "CX",
+          43,
+          40
+        ],
+        [
+          "SWAP",
+          43,
+          44
+        ],
+        [
+          "CX",
+          42,
+          41
+        ],
+        [
+          "SWAP",
+          42,
+          43
+        ],
+        [
+          "CX",
+          40,
+          44
+        ],
+        [
+          "CX",
+          40,
+          41
+        ],
+        [
+          "SWAP",
+          39,
+          44
+        ],
+        [
+          "CX",
+          38,
+          40
+        ],
+        [
+          "CX",
+          36,
+          41
+        ],
+        [
+          "CX",
+          36,
+          40
+        ],
+        [
+          "CX",
+          35,
+          41
+        ],
+        [
+          "CX",
+          34,
+          41
+        ],
+        [
+          "CX",
+          34,
+          40
+        ],
+        [
+          "CX",
+          33,
+          16
+        ],
+        [
+          "CX",
+          32,
+          41
+        ],
+        [
+          "CX",
+          32,
+          40
+        ],
+        [
+          "CX",
+          30,
+          41
+        ],
+        [
+          "CX",
+          30,
+          40
+        ],
+        [
+          "CX",
+          30,
+          16
+        ],
+        [
+          "CX",
+          28,
+          41
+        ],
+        [
+          "CX",
+          28,
+          40
+        ],
+        [
+          "CX",
+          26,
+          40
+        ],
+        [
+          "CX",
+          21,
+          40
+        ],
+        [
+          "CX",
+          20,
+          41
+        ],
+        [
+          "CX",
+          20,
+          40
+        ],
+        [
+          "CX",
+          18,
+          41
+        ],
+        [
+          "CX",
+          18,
+          40
+        ],
+        [
+          "CX",
+          17,
+          41
+        ],
+        [
+          "CX",
+          16,
+          41
+        ]
+      ]
+    },
+    {
+      "wire": 45,
+      "birth": 2663,
+      "death": 2726,
+      "rank": 44,
+      "arity": 45,
+      "reversible_data_contraction": false,
+      "early_erasure_screen": false,
+      "measured_depends_on_product": false,
+      "control_intersection": null,
+      "replacement": null
+    },
+    {
+      "wire": 45,
+      "birth": 2727,
+      "death": 2752,
+      "rank": 44,
+      "arity": 45,
+      "reversible_data_contraction": false,
+      "early_erasure_screen": true,
+      "measured_depends_on_product": false,
+      "control_intersection": null,
+      "replacement": null
+    },
+    {
+      "wire": 35,
+      "birth": 23593,
+      "death": 23603,
+      "rank": 45,
+      "arity": 45,
+      "reversible_data_contraction": true,
+      "early_erasure_screen": false,
+      "measured_depends_on_product": true,
+      "control_intersection": 0,
+      "replacement": [
+        [
+          "CCX",
+          28,
+          42,
+          21
+        ],
+        [
+          "X",
+          21
+        ]
+      ]
+    }
+  ],
+  "certified_data_and_phase": [
+    {
+      "wire": 34,
+      "birth": 614,
+      "death": 625,
+      "correction_gate_indices": [
+        626
+      ]
+    },
+    {
+      "wire": 45,
+      "birth": 2364,
+      "death": 2434,
+      "correction_gate_indices": [
+        20912,
+        20914,
+        20915,
+        20916,
+        20917,
+        20918,
+        20919,
+        20920,
+        20921,
+        20922,
+        20923,
+        20924,
+        20925,
+        20926,
+        20927,
+        20928,
+        20929,
+        20930,
+        20931,
+        20932,
+        20933,
+        20934,
+        20935,
+        20936,
+        20937,
+        20938,
+        20939,
+        20940,
+        20941,
+        20942,
+        20943,
+        20944
+      ]
+    },
+    {
+      "wire": 45,
+      "birth": 2614,
+      "death": 2662,
+      "correction_gate_indices": [
+        21047,
+        21049,
+        21050,
+        21051,
+        21052,
+        21053,
+        21054,
+        21055,
+        21056,
+        21057,
+        21058,
+        21059,
+        21060,
+        21061,
+        21062,
+        21063,
+        21064,
+        21065,
+        21066,
+        21067,
+        21068,
+        21069,
+        21070,
+        21071,
+        21072,
+        21073,
+        21074,
+        21075
+      ]
+    },
+    {
+      "wire": 35,
+      "birth": 23593,
+      "death": 23603,
+      "correction_gate_indices": [
+        23604
+      ]
+    }
+  ],
+  "eliminated_ccx": 0,
+  "eliminated_ccz": 0,
+  "candidate_qubits": 46,
+  "candidate_sha256": "0514bccf717ebfa0ba36eb9f67ae28c1df46dccfe478140f5ae3b3fc390173c3"
+}
