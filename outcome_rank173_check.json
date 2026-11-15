@@ -1,0 +1,26 @@
+{
+  "status": "PASS_BILINEAR_MAP_ONLY",
+  "coefficient_source": {
+    "author": "Chih-Kai Wang",
+    "source_url": "https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/759048",
+    "retrieved_utc": "2026-11-15T02:10:00Z",
+    "scope": "Numerical coefficients transcribed from visible Appendix B. Author reports old176-productblock family; not a replacement for current independent99-productmultipliers."
+  },
+  "coefficient_file_sha256": "99043b4ea6e7535681d8a201c8b324a1de14723b501f683ecac12baf02145c0b",
+  "checker_sha256": "73625615bd5ea9e5692614e7c8309f1ce3881b71056a7dba32e5bbd8e43e8a0b",
+  "rank": 173,
+  "field_polynomial": 4179,
+  "gamma": 2048,
+  "basis_pairs_checked": 576,
+  "output_bits_per_pair": 48,
+  "mismatched_pairs": 0,
+  "negative_control": {
+    "flipped_output_mask_bit": 0,
+    "term_index": 0,
+    "detected_mismatched_pairs": 52
+  },
+  "whole_circuit_candidate_generated": false,
+  "scope": "Complete identity check of the specified bilinear map, not a rank-optimality proof or a currentDQI substitution.",
+  "applicability": "Author states this improves older176-productpairedblocks to173. Current1376 independentGF24multipliers do not match that interface.",
+  "seconds": 0.03673036099644378
+}

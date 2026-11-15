@@ -26,9 +26,9 @@
   "local_num_qubits": 889,
   "local_repetition_factor": 1.1912604648115832,
   "local_dqi_cost": 359734745778.9876,
-  "latest_observed_status": "Pending",
-  "latest_observation_utc": "2026-11-15T01:40:39Z",
-  "public_score": null,
+  "latest_observed_status": "Complete",
+  "latest_observation_utc": "2026-11-15T02:05:00Z",
+  "public_score": 27.27705,
   "previous_best_public_score": 27.30683,
   "previous_best_selection_preserved": true,
   "description": "Exact4096 gauge DQI 9a82 + score2 chemistry + e46. DQI official 102400-shot PASS, value/phase errors 0; exact SHA reproduced on Kaggle. 17 other members preserved. ZIP 1807d6ae.",
@@ -38,7 +38,8 @@
     "Kaggle reproduced the exact SHA256-bound DQI circuit previously qualified with the official verifier. It did not rerun the full DQI simulation.",
     "All other 17 members were preserved from the first submitted portfolio, with per-member SHA256 and ZIP CRC checks.",
     "The local cost comparisons are not paired random samples and are not Kaggle public scores.",
-    "No Public Score improvement is claimed while the score is pending."
+    "Direct Kaggle UI observation at02:05UTC:Complete,Public Score27.27705. This is below previousbest27.30683. Server-side per-task failurecounts were not shown in the submission details."
   ],
-  "proof_screenshot": "results/2026-11-15/kaggle_two_submissions_pending.png"
+  "proof_screenshot": "results/2026-11-15/kaggle_two_submissions_pending.png",
+  "improved_previous_best": false
 }

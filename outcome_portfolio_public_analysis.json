@@ -1,0 +1,109 @@
+{
+  "status": "COMPLETED_MEMBER_AUDIT_AND_EXACT_SCORE2_COST_EXPLANATION",
+  "score2_observation": {
+    "source": "Parent agent reports direct Kaggle UI observation in this active task",
+    "received_at_utc": "2026-11-15T01:49:49.489048+00:00",
+    "notebook_script_version_id": 369715705,
+    "status": "Complete",
+    "public_score": 27.30672,
+    "prior_best_public_score": 27.30683,
+    "browser_observed_by_this_subagent": false
+  },
+  "portfolio_inventory": "outcome_portfolio_inventory.json",
+  "historical_best_zip_available": false,
+  "actual_zip_comparison_scope": "All 18 members were decompressed and hashed for each current complete portfolio. The historical best archive itself remains unavailable.",
+  "score2_cost_explanation": {
+    "reference_costs": {
+      "invsqrt": 2076774.233715,
+      "dqi": 24439463583672.93,
+      "dfthcsos": 3355599588.3155375
+    },
+    "same_inverse_sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6",
+    "same_dqi_sha256": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+    "historical_chemistry_lambda_source": "User supplied historical log; exact historical NPZ not available",
+    "historical_chemistry_lambda": 46.905894137,
+    "historical_chemistry_cost_from_log": 294984413.77883726,
+    "current_chemistry_npz_sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+    "current_chemistry_cost": 294988052.12610483,
+    "chemistry_cost_increase": 3638.3472675681114,
+    "chemistry_cost_increase_percent": 0.0012334032232219627,
+    "historical_total_score_from_reported_costs": 27.306830424220387,
+    "current_total_score_from_costs": 27.306718157367985,
+    "current_predicted_display": "27.30672",
+    "actual_public_score": 27.30672,
+    "inference": "The chemistry cost difference alone reproduces the observed five-decimal score loss. This is much stronger than speculation but does not recover the old ZIP bytes."
+  },
+  "v2_27_27654_explanation": {
+    "source": "score_loss_v2_report.json",
+    "state": "CONDITIONAL_EXPLANATION_NOT_SERVER_FAILURE_DIAGNOSIS",
+    "new_total_failure_hypothesis": 1,
+    "predicted_score_from_old_display": 27.276536150619396,
+    "observed_score": 27.27654,
+    "reason": "One total DQI failure raises R by about0.4593%, exceeding0.1266% T improvement.",
+    "server_failure_count_directly_observed": false
+  },
+  "confirmed_differences": [
+    {
+      "from": "submission_v2_full.zip",
+      "to": "submission_v5_score2/submission.zip",
+      "changed_members": "16 chemistry members only"
+    },
+    {
+      "from": "submission_v5_score2/submission.zip",
+      "to": "submission_v5_bestbase/submission.zip",
+      "changed_members": [
+        "dqi.kmb"
+      ],
+      "dqi_change": "e986 to821"
+    },
+    {
+      "from": "submission_v5_bestbase/submission.zip",
+      "to": "score3_kaggle_patch_test/predecessor.zip",
+      "changed_members": [
+        "dqi.kmb"
+      ],
+      "dqi_change": "821 to9a82"
+    },
+    {
+      "from": "score3_kaggle_patch_test/predecessor.zip",
+      "to": "score3_submission/submission.zip",
+      "changed_members": [
+        "invsqrt.kmb"
+      ],
+      "inverse_change": "e46 to684106"
+    }
+  ],
+  "invsqrt_684106": {
+    "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+    "bytes": 198626,
+    "official_local_cost": 78673.55534364567,
+    "full_official_verification_file": "score3_invsqrt_full_verification.json",
+    "current_1807_submitted_portfolio_includes_this": false,
+    "new_4030_public_inverse_same_bytes": "UNKNOWN until current public notebook pinned SHA or output bytes are acquired. Similar rounded cost is not identity proof."
+  },
+  "new_4030_public_portfolio": {
+    "source": "Parent supplied user-reported notebook values; not independently retrieved by this subagent",
+    "notebook": "maoxin123/qcc-v27-4030-toffoli-coded-word-chemistry",
+    "reported_public_score": 27.31512,
+    "reported_chemistry_cost": 294888332.1,
+    "reported_dqi_cost": 360209905486.02,
+    "reported_inverse_cost": 78673.57,
+    "public_bytes_sha_not_acquired_here": true,
+    "suggested_assembly": "Keep the exact public17 non-DQI members, replace only dqi.kmb with qualified9a82. Do not copy current5f8d chemistry over the4030 family.",
+    "conditional_score_anchored_to_reported_public": [
+      {
+        "failures": 0,
+        "score": 27.327141203820126
+      },
+      {
+        "failures": 1,
+        "score": 27.2854342319181
+      },
+      {
+        "failures": 2,
+        "score": 27.250135950261534
+      }
+    ],
+    "caveat": "These are sensitivity estimates using local average T, not verified future public scores. Preserving the public source portfolio itself is the lower-uncertainty first submission."
+  }
+}

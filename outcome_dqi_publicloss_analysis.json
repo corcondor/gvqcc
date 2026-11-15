@@ -1,0 +1,168 @@
+{
+  "status": "PAIRED_DIAGNOSIS_COMPLETED_NO_CANDIDATE_MODIFICATION",
+  "observation": {
+    "source": "Parent agent directKaggle UI observation",
+    "script_version_id": 369719696,
+    "reported_time_utc": "2026-11-15T02:05:00Z",
+    "public_score": 27.27705,
+    "status": "COMPLETE",
+    "browser_observed_by_this_subagent": false
+  },
+  "plan_sha256": "5ef376ae53935211601c301d3cf3d3c2eb0075092a90aea923bdd39cf4c788aa",
+  "circuits": {
+    "821": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+    "9a82": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1"
+  },
+  "groups": {
+    "known_weight31": {
+      "821": {
+        "shots": 256,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_toffoli_like": 382600.95703125
+      },
+      "9a82": {
+        "shots": 256,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_toffoli_like": 382095.734375
+      }
+    },
+    "known_weight33": {
+      "821": {
+        "shots": 256,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_toffoli_like": 382602.06640625
+      },
+      "9a82": {
+        "shots": 256,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_toffoli_like": 382097.57421875
+      }
+    },
+    "independent": {
+      "821": {
+        "shots": 16384,
+        "value_errors": 0,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_toffoli_like": 382599.97161865234
+      },
+      "9a82": {
+        "shots": 16384,
+        "value_errors": 0,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_toffoli_like": 382095.34716796875
+      }
+    }
+  },
+  "matching_batches_out_of66": {
+    "input_syndromes_sha256": 66,
+    "input_mbuc_sha256": 66,
+    "expected_phase_sha256": 66,
+    "output_syndromes_sha256": 66,
+    "output_ancillas_sha256": 66,
+    "output_phases_sha256": 65,
+    "output_mbuc_sha256": 66,
+    "value_errors": 66,
+    "phase_errors": 66,
+    "classical_changed_shots": 66
+  },
+  "phase_hash_differences": [
+    {
+      "group": "known_weight31",
+      "batch": 104
+    }
+  ],
+  "counterexamples_file": "outcome_dqi_publicloss_counterexamples.json",
+  "counterexamples_sha256": "387df9790198111217ca8312a81569d95b773aac918e192fb669619a60bffad4",
+  "comparison_conclusion": "Bothcircuits reproduce the same2knownvalue failures. No newfailure in16384independent inputs. Allsyndrome/ancilla/MBUC output hashes match; one phasebit differs on an already-value-failing weight31 input. This is finite evidence, not a proof of universal equivalence.",
+  "known_failure_structure": {
+    "weight31": {
+      "node": 13,
+      "N": [
+        0,
+        0
+      ],
+      "D": [
+        1013,
+        2476
+      ],
+      "kind": "active quadratic finiteN chart exception"
+    },
+    "weight33": {
+      "node": 2,
+      "N": [
+        1103,
+        3094
+      ],
+      "D": [
+        0,
+        0
+      ],
+      "kind": "active quadratic finiteD chart exception"
+    },
+    "both_half_profiles": "17,16,...,0 without degreegap",
+    "low_weight_cutoff18_cause": false,
+    "classification_evidence": "dqi_rare_failure_admission.json;score_loss_v2_report.json.known_regression_classification",
+    "classification_limit": "Public-source independent classical classifier matched actual knownfailure cases, not an official servertrace."
+  },
+  "score_bound": {
+    "reference_costs": {
+      "invsqrt": 2076774.233715,
+      "dqi": 24439463583672.93,
+      "dfthcsos": 3355599588.3155375
+    },
+    "inverse_cost": 78719.52914734723,
+    "chemistry_cost": 294988052.12610483,
+    "qubits": 889,
+    "observed_public_score": 27.27705,
+    "max_toffoli_count": 382934,
+    "zero_failure_minimum_possible_public": 27.29878587077612,
+    "implied_mean_toffoli_by_total_failure_hypothesis": {
+      "0": 383850.1589966043,
+      "1": 382095.331443945,
+      "2": 380614.3359855717
+    },
+    "zero_failure_implied_toffoli_interval_from_display_rounding": [
+      383849.94791255106,
+      383850.3700808124
+    ],
+    "one_failure_public_with_local_default_meanT": 27.277041520315045,
+    "assumptions": [
+      "Same exacte46 inverse and5f8d chemistry costs as local verification.",
+      "Official benchmark102400shots andlog2_delta=-128, reference normalization andQ889 unchanged.",
+      "Public score uses the documented geometric mean."
+    ],
+    "conclusion": "Under these assumptions zeroDQI failures cannot explain27.27705: required meanT383850.16 exceeds static max382934. Onefailure is numerically consistent; exactserver failurecount is not exposed and not asserted."
+  },
+  "verifier_seed_mechanism": {
+    "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+    "empty_salt": "int(canonical_kmb_sha256,16)",
+    "nonempty_salt": "int(sha256((canonical_kmb_sha256+salt).encode()).hexdigest(),16)",
+    "explicit_seed": "Overrides hashderived seed",
+    "sample_and_measurement_rng": "Separate perbatch SeedSequence streams, 256shots perbatch",
+    "public_seed_known": false,
+    "repeating_local_default_test": "Repeats sameinputs and same measurement seeds and adds no independent reliability evidence",
+    "this_audit": "One preregistered independent stream andtwo fixedregressions; noadaptive seedselection or candidatechange."
+  },
+  "limits": [
+    "Independent16384shots does not boundrare failure probability tightly and does not proveallinput correctness.",
+    "The two targetedfailures must not be used to estimatepopulation failure rate.",
+    "Exactserver seed,salt,inputs andtotalfailures remain unavailable.",
+    "Observed knownfailures are shared but there may be unobserved candidate-only failures."
+  ],
+  "files": {
+    "outcome_dqi_publicloss_plan.json": "5ef376ae53935211601c301d3cf3d3c2eb0075092a90aea923bdd39cf4c788aa",
+    "outcome_dqi_publicloss_paired.py": "2a5b1adabaa319cbbc7db78ef587be9bf8026cecfd46c76e49a225c425b4c63a",
+    "outcome_dqi_publicloss_821.json": "a5678abd213ac7d97c9df1a4fa037459723e6271cc6d79acef36bc63121a878d",
+    "outcome_dqi_publicloss_9a82.json": "e3f2cb638148ad0946925a32c823407f9923a063dfcc4615fc06d566fd75c691"
+  }
+}

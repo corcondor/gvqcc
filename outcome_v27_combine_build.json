@@ -1,0 +1,28 @@
+{
+  "worker": "outcome_v27_combine.py",
+  "worker_bytes": 16191,
+  "worker_sha256": "24f5c9487ef7f67df79524b1a2df6e1ea818f3dd8dc072e0e842af9fbb2ff9ee",
+  "public_pins_sha256": "c475486d7205534eb8c9612c6c73cc33b01f64910ce09cb30ca7aab6452586c1",
+  "qualification_sha256": "e98986fc57fcc920b6275f26fdd9b9db4f9f72604a24802b5a21cf85e05df714",
+  "source_public_notebook": "maoxin123/qcc-v27-4030-toffoli-coded-word-chemistry",
+  "source_public_version": 369706978,
+  "donor_zip_sha256": "1807d6ae6d2ea12b1d4bf2435f50d2513b25ade00fa0efb61390fdafb103ed37",
+  "expected_changed_members": [
+    "dqi.kmb"
+  ],
+  "preserved_members": 17,
+  "negative_control_zip": "/workspace/scratch/7f542e06b7cf/submission_v5_bestbase/submission.zip",
+  "negative_control_zip_sha256": "84d373c032b1e5d852a358db29fd830cc65f4889235c1e8ac03316dad7350032",
+  "checks": {
+    "old_score2_portfolio_rejected": {
+      "passed": true,
+      "reason": "Wrong member size: dfthcsos/angle_k_0.kmb"
+    },
+    "old_score2_chemistry_rejected": {
+      "passed": true,
+      "reason": "Wrong member size: dfthcsos/submission.npz"
+    }
+  },
+  "positive_v27_packaging_executed": false,
+  "note": "Exact public-v27 input is available to parent through Kaggle, not downloaded locally. No scientific simulation was rerun. No submission has been performed by this worker."
+}

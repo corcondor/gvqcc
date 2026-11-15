@@ -19,9 +19,9 @@
   "chemistry_verified_shots": 78080,
   "chemistry_cost": 294988052.12610483,
   "chemistry_lambda_eff": 46.906472675810164,
-  "latest_observed_status": "Pending",
-  "latest_observation_utc": "2026-11-15T01:40:39Z",
-  "public_score": null,
+  "latest_observed_status": "Complete",
+  "latest_observation_utc": "2026-11-15T01:49:00Z",
+  "public_score": 27.30672,
   "previous_best_public_score": 27.30683,
   "previous_best_selection_preserved": true,
   "description": "DQI821 + e46 + score2 chemistry; 20 angle words updated with matching 15 loaders; official 78080-shot PASS. NPZ 5f8dd37a, ZIP dfacbef6.",
@@ -29,8 +29,9 @@
     "Kaggle accepted the submission and showed a new Pending row. This is an actual competition submission, not only a saved notebook.",
     "The numeric script_version_id identifies the notebook version; it is not a competition submission ID.",
     "Kaggle and local ZIP container hashes differ. The worker verified all 18 uncompressed member hashes and ZIP CRCs before emitting the submitted archive.",
-    "No Public Score improvement is claimed while the score is pending."
+    "Observed own Public Score 27.30672, below the previous best 27.30683; retained baseline selection."
   ],
   "submission_time_utc_approx": "2026-11-15T01:17:50Z",
-  "proof_screenshot": "results/2026-11-15/kaggle_two_submissions_pending.png"
+  "proof_screenshot": "results/2026-11-15/kaggle_two_submissions_pending.png",
+  "improved_previous_best": false
 }

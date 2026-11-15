@@ -1,0 +1,30 @@
+{
+  "competition": "google-verifiable-quantum-circuit-compilation",
+  "notebook": "geocpuresearch/gvqcc-v27-chemistry-plus-exact4096",
+  "script_version_id": 369723885,
+  "notebook_version": 1,
+  "notebook_url": "https://www.kaggle.com/code/geocpuresearch/gvqcc-v27-chemistry-plus-exact4096?scriptVersionId=369723885",
+  "output": "submission.zip",
+  "notebook_runtime_seconds": 44.2,
+  "submission_performed": true,
+  "submission_time_utc_approx": "2026-11-15T01:58:00Z",
+  "latest_observed_status": "Pending",
+  "latest_observation_utc": "2026-11-15T01:58:30Z",
+  "public_score": null,
+  "submitted_zip_sha256": "730aff26a5f0783b373ffe58eae5227b61b570e39dfdaf31048efa86bfd80685",
+  "submitted_zip_bytes": 63606976,
+  "source_public_zip_sha256": "90cb0b81f7af58d99d6c4af3e61c2e641fb8e5794c2fe200b54cfd1bc20e3dfe",
+  "upstream_notebook": "maoxin123/qcc-v27-4030-toffoli-coded-word-chemistry",
+  "upstream_script_version_id": 369706978,
+  "upstream_public_score_observed": 27.31512,
+  "changed_members": [
+    "dqi.kmb"
+  ],
+  "preserved_members": 17,
+  "dqi_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "invsqrt_sha256": "1ba197b027713aac164056d12505c87f286c3fcd94f403c522073325763bf2f9",
+  "chemistry_npz_sha256": "4df35abdeec320a3f1c10f6f533e73550e50bb45d95e666deaa01062810a3559",
+  "qualification_sha256": "e98986fc57fcc920b6275f26fdd9b9db4f9f72604a24802b5a21cf85e05df714",
+  "validation_scope": "Exact18member hashes/sizes/CRC. DQI independently qualified with official102400shot verifier. Other17members match upstream verified portfolio. No full simulation rerun in packaging job.",
+  "description": "maoxin123 v27 4030 chemistry + public invsqrt 1ba197b0, preserving 17 members exactly; only DQI replaced with official 102400-shot qualified exact4096 9a82. ZIP 730aff26. Sources and licenses in notebook outputs."
+}

@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE",
+  "input": "score3_invsqrt_cache.kmb",
+  "input_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "local_identity": {
+    "status": "PASS",
+    "basis_and_record_cases": 32,
+    "before": "CSWAP c a b; HMR a r; HMR b s",
+    "after": "CX a b; HMR a u; CZ c b if u; HMR b v; r=u XOR v; s=v"
+  },
+  "window": 4096,
+  "total_cswaps": 129,
+  "scanned_cswaps": 129,
+  "strict_matches": [],
+  "strict_rejections": {
+    "control_written": 105,
+    "target_touched_by_CSWAP": 21,
+    "scope_or_unknown": 1,
+    "target_touched_by_CX": 2
+  },
+  "affine_terminal_cones": [],
+  "affine_rejections": {
+    "control_written": 105,
+    "cone_touched_by_CSWAP": 21,
+    "scope_or_unknown": 1,
+    "cone_touched_by_CCX": 1,
+    "cone_touched_by_CZ_IF": 1
+  },
+  "seconds": 0.04802019499766175,
+  "caveat": "Affine-cone hits are candidates only: phase/record dependencies still require proof. No circuit was changed."
+}

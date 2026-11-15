@@ -1,0 +1,54 @@
+{
+  "identity": {
+    "status": "PASS",
+    "basis_and_record_cases": 32,
+    "before": "CSWAP c a b; HMR a r; HMR b s",
+    "after": "CX a b; HMR a u; CZ c b if u; HMR b v; r=u XOR v; s=v"
+  },
+  "matchers": {
+    "status": "PASS",
+    "tests": [
+      {
+        "name": "direct",
+        "strict": true,
+        "affine_candidate": true
+      },
+      {
+        "name": "disjoint_and_control_read",
+        "strict": true,
+        "affine_candidate": true
+      },
+      {
+        "name": "shared_symmetric_phase",
+        "strict": true,
+        "affine_candidate": false
+      },
+      {
+        "name": "affine_fanout",
+        "strict": false,
+        "affine_candidate": true
+      },
+      {
+        "name": "control_overwritten",
+        "strict": false,
+        "affine_candidate": false
+      },
+      {
+        "name": "target_phase_read",
+        "strict": false,
+        "affine_candidate": false
+      },
+      {
+        "name": "early_record_read",
+        "strict": false,
+        "affine_candidate": true
+      },
+      {
+        "name": "scope_change",
+        "strict": false,
+        "affine_candidate": false
+      }
+    ],
+    "note": "Affine hits intentionally require subsequent classical-record dependency audit."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "competition": "google-verifiable-quantum-circuit-compilation",
+  "notebook": "geocpuresearch/qcc-v27-4030-toffoli-coded-word-chemistry",
+  "notebook_url": "https://www.kaggle.com/code/geocpuresearch/qcc-v27-4030-toffoli-coded-word-chemistry?scriptVersionId=369721985",
+  "notebook_version": 1,
+  "script_version_id": 369721985,
+  "competition_submission_id": null,
+  "submission_performed": true,
+  "submission_method": "Signed-in Kaggle notebook submission UI",
+  "submission_time_utc_approx": "2026-11-15T02:02:00Z",
+  "latest_observed_status": "Pending",
+  "latest_observation_utc": "2026-11-15T02:05:00Z",
+  "public_score": null,
+  "output_file": "submission.zip",
+  "output_bytes": 49283081,
+  "container_sha256": null,
+  "member_pins_file": "outcome_v27_public_pins.json",
+  "upstream_notebook": "maoxin123/qcc-v27-4030-toffoli-coded-word-chemistry",
+  "upstream_version_script_id": 369706978,
+  "upstream_public_score_observed": 27.31512,
+  "own_notebook_runtime_seconds": 900.0,
+  "own_official_verifier_results": {
+    "invsqrt": {
+      "status": "PASS",
+      "cost": 78673.56921101942,
+      "num_qubits": 46
+    },
+    "dqi": {
+      "status": "PASS",
+      "cost": 360209905486.0156,
+      "num_qubits": 889,
+      "value_errors": 0,
+      "phase_errors": 0
+    },
+    "dfthcsos": {
+      "status": "PASS",
+      "cost": 294888332.1042627,
+      "lambda_eff": 46.909726478631555,
+      "num_toffoli": 14722,
+      "num_qubits": 427,
+      "error1": 0.0199999200057113,
+      "error2": 0.01999998805240959
+    }
+  },
+  "own_local_geometric_mean_display": "27.31511",
+  "description": "Exact maoxin123 v27 public frontier copy: 4030-Toffoli chemistry 4df35abd, invsqrt1ba197b0, DQI821. All 3 official verifiers PASS in this notebook; reproduced geometric mean27.31511. Original authors and licenses retained.",
+  "notes": [
+    "Copy was already running when opened in this task; no sourcecode edits were made to that copy. Root observedall3PASS,the completedZIP,and actualPending competitionrow after submitting.",
+    "NotebookscriptVersionId is not a competition submissionID.",
+    "Local verifier result and upstreamauthor publicscore are not thisaccount publicscore.",
+    "Containerhash for this copywas notacquired; exact18member hasheswere checked by thenotebook."
+  ]
+}
