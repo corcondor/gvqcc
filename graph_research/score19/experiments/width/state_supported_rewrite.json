@@ -1,0 +1,17 @@
+{
+  "source_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "tested_full_domain": 3133452,
+  "candidates": 1,
+  "accepted": 0,
+  "gate_reductions": {},
+  "edits": [],
+  "sample_proposals": [
+    {
+      "index": 23816,
+      "prior": "CCZ q35 q40 q43",
+      "labels": [],
+      "swap": false,
+      "exact": false
+    }
+  ]
+}

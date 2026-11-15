@@ -1,0 +1,10 @@
+{
+  "source": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "counts": {
+    "equal_product_pairs": 132,
+    "fit_quadratic_correction": 87
+  },
+  "legal_inputs": 3133452,
+  "sample_plans": [],
+  "selected": []
+}

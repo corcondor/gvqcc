@@ -1,0 +1,78 @@
+{
+  "source": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "samples": 11077,
+  "outcomes": {
+    "rank_two_excluded": 4,
+    "projection_above_limit": 2
+  },
+  "certificate": [
+    {
+      "start": 8194,
+      "end": 8197,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1,
+      "status": "rank_two_excluded",
+      "common_dimension": 45,
+      "nullity": 19,
+      "star_rank": 9
+    },
+    {
+      "start": 8261,
+      "end": 8262,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1,
+      "status": "rank_two_excluded",
+      "common_dimension": 45,
+      "nullity": 19,
+      "star_rank": 9
+    },
+    {
+      "start": 13865,
+      "end": 13881,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1,
+      "status": "rank_two_excluded",
+      "common_dimension": 42,
+      "nullity": 7,
+      "star_rank": 2
+    },
+    {
+      "start": 19834,
+      "end": 19841,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1,
+      "status": "rank_two_excluded",
+      "common_dimension": 38,
+      "nullity": 8,
+      "star_rank": 2
+    },
+    {
+      "start": 20694,
+      "end": 20728,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1,
+      "status": "projection_above_limit",
+      "common_dimension": 40,
+      "nullity": 148,
+      "star_rank": 37,
+      "sat": "UNKNOWN"
+    },
+    {
+      "start": 20772,
+      "end": 20802,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1,
+      "status": "projection_above_limit",
+      "common_dimension": 41,
+      "nullity": 169,
+      "star_rank": 39,
+      "sat": "UNKNOWN"
+    }
+  ]
+}

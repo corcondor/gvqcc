@@ -1,0 +1,10 @@
+{
+  "source_sha": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "complements": false,
+  "sample_count": 10985,
+  "queries": 8245,
+  "results_summary": {
+    "outside_quadratic_span": 8221,
+    "rank_two_excluded": 24
+  }
+}

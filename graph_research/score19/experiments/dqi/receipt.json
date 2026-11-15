@@ -1,0 +1,44 @@
+{
+  "dqi_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "source_sha256": "b0c5695638f727381c5f6888fdaac7b12b24df8a3695d307addc930ecc9bc93f",
+  "source_assignments_checked": [
+    "JOINT_GATES",
+    "JOINT_OUTPUTS"
+  ],
+  "new_circuit": false,
+  "official_verifier_run": false,
+  "scan": {
+    "operations": 58868734,
+    "paid_seen": 375894,
+    "windows": 562,
+    "max_paid_in_window": 204,
+    "passive_inside_active_regions": 1067322,
+    "windows_crossing_passive": 4,
+    "rank_reductions": 0
+  },
+  "all_fixtures_pass": true,
+  "joint_quadratic_cayley": {
+    "paid_products": 13,
+    "witness_products": 0,
+    "occupied_differences": 2325855,
+    "lines": 775285,
+    "rich_3spaces": 4455470,
+    "third_cosets_checked": 167399885,
+    "fourth_cosets_checked": 759576815,
+    "rich_4space_encounters": 48701955,
+    "rank12_encounters": 0,
+    "witnesses": 0
+  },
+  "joint_quadratic_cayley_secondary_schedule": {
+    "paid_products": 13,
+    "witness_products": 0,
+    "occupied_differences": 2325855,
+    "lines": 775285,
+    "rich_3spaces": 4455470,
+    "third_cosets_checked": 167399885,
+    "fourth_cosets_checked": 919312910,
+    "rich_4space_encounters": 188044291,
+    "rank12_encounters": 0,
+    "witnesses": 0
+  }
+}

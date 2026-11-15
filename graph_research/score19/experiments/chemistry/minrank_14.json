@@ -1,0 +1,14 @@
+[
+  {
+    "batch": 14,
+    "first": 342,
+    "products": 187,
+    "closure_size": 286,
+    "original_components": 148,
+    "status": "unknown",
+    "setup_seconds": 3.1590512589900754,
+    "seconds": 15.256158029995277,
+    "source_sha256": "5471bb326eb1171283328dd748c4daa86e7b6550a8ce63af087fe650fa6dfa49",
+    "reason": "timeout"
+  }
+]

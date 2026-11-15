@@ -1,0 +1,622 @@
+{
+  "source_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "full_domain": 3133452,
+  "runs": 23,
+  "with_rank_reduction": 0,
+  "records": [
+    {
+      "start": 7608,
+      "end": 7619,
+      "control": 24,
+      "pairs": [
+        [
+          41,
+          43
+        ],
+        [
+          39,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          34
+        ],
+        [
+          2,
+          36
+        ],
+        [
+          3,
+          30
+        ],
+        [
+          4,
+          32
+        ],
+        [
+          5,
+          28
+        ],
+        [
+          6,
+          35
+        ],
+        [
+          38,
+          33
+        ],
+        [
+          37,
+          31
+        ],
+        [
+          27,
+          29
+        ]
+      ],
+      "active_inputs": 3117132,
+      "paid": 12,
+      "rank_modulo_selector": 12
+    },
+    {
+      "start": 7621,
+      "end": 7632,
+      "control": 25,
+      "pairs": [
+        [
+          41,
+          2
+        ],
+        [
+          40,
+          1
+        ],
+        [
+          43,
+          0
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          34
+        ],
+        [
+          6,
+          36
+        ],
+        [
+          38,
+          30
+        ],
+        [
+          37,
+          32
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          26,
+          35
+        ],
+        [
+          29,
+          33
+        ]
+      ],
+      "active_inputs": 63,
+      "paid": 12,
+      "rank_modulo_selector": 12
+    },
+    {
+      "start": 7636,
+      "end": 7643,
+      "control": 23,
+      "pairs": [
+        [
+          41,
+          9
+        ],
+        [
+          40,
+          34
+        ],
+        [
+          43,
+          36
+        ],
+        [
+          39,
+          30
+        ],
+        [
+          0,
+          32
+        ],
+        [
+          1,
+          28
+        ],
+        [
+          4,
+          31
+        ],
+        [
+          5,
+          29
+        ]
+      ],
+      "active_inputs": 2872272,
+      "paid": 8,
+      "rank_modulo_selector": 8
+    },
+    {
+      "start": 8330,
+      "end": 8337,
+      "control": 23,
+      "pairs": [
+        [
+          41,
+          9
+        ],
+        [
+          40,
+          34
+        ],
+        [
+          43,
+          36
+        ],
+        [
+          39,
+          30
+        ],
+        [
+          0,
+          32
+        ],
+        [
+          1,
+          28
+        ],
+        [
+          4,
+          31
+        ],
+        [
+          5,
+          29
+        ]
+      ],
+      "active_inputs": 2872272,
+      "paid": 8,
+      "rank_modulo_selector": 8
+    },
+    {
+      "start": 8341,
+      "end": 8352,
+      "control": 25,
+      "pairs": [
+        [
+          41,
+          2
+        ],
+        [
+          40,
+          1
+        ],
+        [
+          43,
+          0
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          34
+        ],
+        [
+          6,
+          36
+        ],
+        [
+          38,
+          30
+        ],
+        [
+          37,
+          32
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          26,
+          35
+        ],
+        [
+          29,
+          33
+        ]
+      ],
+      "active_inputs": 63,
+      "paid": 12,
+      "rank_modulo_selector": 12
+    },
+    {
+      "start": 8361,
+      "end": 8370,
+      "control": 24,
+      "pairs": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          34
+        ],
+        [
+          2,
+          36
+        ],
+        [
+          3,
+          30
+        ],
+        [
+          4,
+          32
+        ],
+        [
+          5,
+          28
+        ],
+        [
+          6,
+          35
+        ],
+        [
+          38,
+          33
+        ],
+        [
+          37,
+          31
+        ],
+        [
+          27,
+          29
+        ]
+      ],
+      "active_inputs": 3117132,
+      "paid": 10,
+      "rank_modulo_selector": 10
+    },
+    {
+      "start": 23638,
+      "end": 23639,
+      "control": 28,
+      "pairs": [
+        [
+          4,
+          42
+        ],
+        [
+          5,
+          21
+        ]
+      ],
+      "active_inputs": 65535,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23640,
+      "end": 23641,
+      "control": 23,
+      "pairs": [
+        [
+          2,
+          34
+        ],
+        [
+          3,
+          10
+        ]
+      ],
+      "active_inputs": 262140,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23642,
+      "end": 23643,
+      "control": 22,
+      "pairs": [
+        [
+          0,
+          45
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "active_inputs": 1048560,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23645,
+      "end": 23646,
+      "control": 24,
+      "pairs": [
+        [
+          6,
+          14
+        ],
+        [
+          30,
+          15
+        ]
+      ],
+      "active_inputs": 16320,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23649,
+      "end": 23650,
+      "control": 28,
+      "pairs": [
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          39
+        ]
+      ],
+      "active_inputs": 65280,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23653,
+      "end": 23654,
+      "control": 23,
+      "pairs": [
+        [
+          2,
+          40
+        ],
+        [
+          3,
+          43
+        ]
+      ],
+      "active_inputs": 261123,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23657,
+      "end": 23658,
+      "control": 22,
+      "pairs": [
+        [
+          0,
+          36
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "active_inputs": 1044495,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23663,
+      "end": 23664,
+      "control": 22,
+      "pairs": [
+        [
+          45,
+          42
+        ],
+        [
+          8,
+          21
+        ]
+      ],
+      "active_inputs": 986895,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23671,
+      "end": 23672,
+      "control": 23,
+      "pairs": [
+        [
+          40,
+          14
+        ],
+        [
+          43,
+          15
+        ]
+      ],
+      "active_inputs": 246723,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23679,
+      "end": 23680,
+      "control": 22,
+      "pairs": [
+        [
+          36,
+          12
+        ],
+        [
+          7,
+          39
+        ]
+      ],
+      "active_inputs": 986895,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23687,
+      "end": 23688,
+      "control": 23,
+      "pairs": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          30
+        ]
+      ],
+      "active_inputs": 246723,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23695,
+      "end": 23696,
+      "control": 22,
+      "pairs": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "active_inputs": 986895,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23707,
+      "end": 23708,
+      "control": 22,
+      "pairs": [
+        [
+          45,
+          34
+        ],
+        [
+          8,
+          10
+        ]
+      ],
+      "active_inputs": 838860,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23723,
+      "end": 23724,
+      "control": 22,
+      "pairs": [
+        [
+          12,
+          14
+        ],
+        [
+          39,
+          15
+        ]
+      ],
+      "active_inputs": 838860,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23739,
+      "end": 23740,
+      "control": 22,
+      "pairs": [
+        [
+          36,
+          40
+        ],
+        [
+          7,
+          43
+        ]
+      ],
+      "active_inputs": 838860,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23755,
+      "end": 23756,
+      "control": 22,
+      "pairs": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          30
+        ]
+      ],
+      "active_inputs": 838860,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    },
+    {
+      "start": 23771,
+      "end": 23772,
+      "control": 22,
+      "pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "active_inputs": 838860,
+      "paid": 2,
+      "rank_modulo_selector": 2
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "reports": [
+    {
+      "batch": 8,
+      "source_sha256": "7c9c36aa66b38c6157a5a235b3617fd968ff98049e385a74c2f62b0a0890fc10",
+      "output_dependency": [
+        16,
+        135,
+        144,
+        153
+      ],
+      "closure_size": 315,
+      "base_component_sizes": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "additional_components_tested": 143,
+      "checked_cross_component_supports": 19268,
+      "hits": []
+    },
+    {
+      "batch": 9,
+      "source_sha256": "16ab1f009c4e9ae6ac7538abc1b3c56c053cd5fe7c4ddd07b2140f3a49e6fb76",
+      "output_dependency": [
+        7,
+        79,
+        145,
+        151
+      ],
+      "closure_size": 271,
+      "base_component_sizes": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "additional_components_tested": 155,
+      "checked_cross_component_supports": 8240,
+      "hits": []
+    },
+    {
+      "batch": 14,
+      "source_sha256": "5471bb326eb1171283328dd748c4daa86e7b6550a8ce63af087fe650fa6dfa49",
+      "output_dependency": [
+        34,
+        72,
+        132,
+        177
+      ],
+      "closure_size": 286,
+      "base_component_sizes": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "additional_components_tested": 144,
+      "checked_cross_component_supports": 8705,
+      "hits": []
+    }
+  ],
+  "seconds": 0.7387276020017453
+}
