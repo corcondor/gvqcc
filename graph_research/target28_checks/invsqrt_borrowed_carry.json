@@ -1,0 +1,15 @@
+{
+  "tested": 3133452,
+  "wrong_output": 0,
+  "wrong_inputs": 0,
+  "dirty_workspace": 0,
+  "bad_phase": 0,
+  "measurement_seed": 42571,
+  "toffoli_like": 406,
+  "operations": 1575,
+  "qubits": 51,
+  "product_output_bits": 19,
+  "truncation": 12,
+  "source": "new_inv/truncated_product.json",
+  "sha256": "0e8602883648b2908b62ecffdecf0147f3d558be59b0f6fa73701ec582c5bb34"
+}

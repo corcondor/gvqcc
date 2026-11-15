@@ -1,0 +1,301 @@
+[
+  {
+    "file": "angle_k_0.kmb",
+    "kmb_sha256": "1f8e3ebb7eb6ea63658b8f65a028fc590992b693f40b3f3a4f47bdee4ca6f9a2",
+    "operations": 23012,
+    "instructions": {
+      "CX": 22469,
+      "R": 79,
+      "CCX": 291,
+      "X": 15,
+      "HMR": 79,
+      "CZ": 79
+    },
+    "edges": {
+      "q": 46014,
+      "b": 157
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_1.kmb",
+    "kmb_sha256": "1f86e479ac6022ce8fa1e3ee750a673cea482876c04abafc923b5b02d28ca05f",
+    "operations": 27177,
+    "instructions": {
+      "CX": 26551,
+      "SWAP": 10,
+      "CCX": 315,
+      "R": 72,
+      "X": 23,
+      "HMR": 103,
+      "CZ": 103
+    },
+    "edges": {
+      "q": 54343,
+      "b": 205
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_2.kmb",
+    "kmb_sha256": "5bb9781efd24e8814d92f940198be419ddccade54641cb4085b8ccfc6be8f8c8",
+    "operations": 26285,
+    "instructions": {
+      "CX": 25676,
+      "SWAP": 10,
+      "CCX": 309,
+      "R": 72,
+      "X": 24,
+      "HMR": 97,
+      "CZ": 97
+    },
+    "edges": {
+      "q": 52558,
+      "b": 193
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_3.kmb",
+    "kmb_sha256": "116d22214dda87b4dbdaba7c7ba35e68813a26243f9eff2a2431f7e0f2bc1537",
+    "operations": 26788,
+    "instructions": {
+      "CX": 26166,
+      "SWAP": 10,
+      "CCX": 315,
+      "R": 72,
+      "X": 19,
+      "HMR": 103,
+      "CZ": 103
+    },
+    "edges": {
+      "q": 53569,
+      "b": 205
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_4.kmb",
+    "kmb_sha256": "4143ae45b32d7659d0dba0c7026a1bcdcda4de4309e09e7558c2324f8691b2e6",
+    "operations": 21683,
+    "instructions": {
+      "CX": 21129,
+      "SWAP": 10,
+      "CCX": 279,
+      "R": 72,
+      "X": 13,
+      "HMR": 90,
+      "CZ": 90
+    },
+    "edges": {
+      "q": 43342,
+      "b": 179
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_5.kmb",
+    "kmb_sha256": "eb4922b68776bcbc34ae371b3e73a199cfb3a1184b9981f6ca73e486de087904",
+    "operations": 21474,
+    "instructions": {
+      "CX": 20920,
+      "SWAP": 10,
+      "CCX": 277,
+      "R": 72,
+      "X": 19,
+      "HMR": 88,
+      "CZ": 88
+    },
+    "edges": {
+      "q": 42918,
+      "b": 175
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_6.kmb",
+    "kmb_sha256": "fbf73edf409a47bccf4fe45cf5994405fbb4722aabad7ddeaa6f0c468416ada6",
+    "operations": 21478,
+    "instructions": {
+      "CX": 20915,
+      "SWAP": 10,
+      "CCX": 278,
+      "R": 72,
+      "X": 21,
+      "HMR": 91,
+      "CZ": 91
+    },
+    "edges": {
+      "q": 42922,
+      "b": 181
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_7.kmb",
+    "kmb_sha256": "c3ef2ee22b968a08a5233df46dd1ed56efd906e8deb58824d7d4c8a87ce956b0",
+    "operations": 21333,
+    "instructions": {
+      "CX": 20778,
+      "SWAP": 10,
+      "CCX": 278,
+      "R": 72,
+      "X": 17,
+      "HMR": 89,
+      "CZ": 89
+    },
+    "edges": {
+      "q": 42638,
+      "b": 177
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_8.kmb",
+    "kmb_sha256": "3ba2df6a1fd872117373fae6b4eb3cca760fd3eada7bac01d314d0497f1c4926",
+    "operations": 21487,
+    "instructions": {
+      "CX": 20929,
+      "SWAP": 10,
+      "CCX": 277,
+      "R": 72,
+      "X": 19,
+      "HMR": 90,
+      "CZ": 90
+    },
+    "edges": {
+      "q": 42942,
+      "b": 179
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_9.kmb",
+    "kmb_sha256": "297b69ce4bd289f353fcfbb2d0fef7d75232c87863388ef9b60980b68bb7287f",
+    "operations": 22124,
+    "instructions": {
+      "CX": 21556,
+      "SWAP": 10,
+      "CCX": 282,
+      "R": 72,
+      "X": 18,
+      "HMR": 93,
+      "CZ": 93
+    },
+    "edges": {
+      "q": 44219,
+      "b": 185
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_10.kmb",
+    "kmb_sha256": "913ff5e30092119edf7625372002362a57b88c714a3d72376ffcdc44636d995c",
+    "operations": 21194,
+    "instructions": {
+      "CX": 20649,
+      "SWAP": 10,
+      "CCX": 275,
+      "R": 72,
+      "X": 12,
+      "HMR": 88,
+      "CZ": 88
+    },
+    "edges": {
+      "q": 42363,
+      "b": 175
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_11.kmb",
+    "kmb_sha256": "1456614e2ddc157bd19e8cce5d2d6f2a32dd258ea908c32a9d5d659631c88176",
+    "operations": 21725,
+    "instructions": {
+      "CX": 21171,
+      "SWAP": 10,
+      "CCX": 277,
+      "R": 72,
+      "X": 19,
+      "HMR": 88,
+      "CZ": 88
+    },
+    "edges": {
+      "q": 43420,
+      "b": 175
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_12.kmb",
+    "kmb_sha256": "8aedfa81b23fd1874e80791fb045571eb517cf71fe60427933cfba9547e0d7ec",
+    "operations": 20959,
+    "instructions": {
+      "CX": 20419,
+      "SWAP": 10,
+      "CCX": 273,
+      "R": 72,
+      "X": 13,
+      "HMR": 86,
+      "CZ": 86
+    },
+    "edges": {
+      "q": 41892,
+      "b": 171
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_13.kmb",
+    "kmb_sha256": "7ea47b7e6bd4ad8378fa49d88fdf577299d531cf7e32d2ddd8f70dd69c6db292",
+    "operations": 20559,
+    "instructions": {
+      "CX": 20019,
+      "SWAP": 10,
+      "CCX": 270,
+      "R": 72,
+      "X": 22,
+      "HMR": 83,
+      "CZ": 83
+    },
+    "edges": {
+      "q": 41083,
+      "b": 165
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  },
+  {
+    "file": "angle_k_14.kmb",
+    "kmb_sha256": "bf04365c6069101498e180f1ef49fdf6e47967543eb1b06d505795bf731d86f9",
+    "operations": 21320,
+    "instructions": {
+      "CX": 20786,
+      "SWAP": 10,
+      "CCX": 272,
+      "R": 72,
+      "X": 10,
+      "HMR": 85,
+      "CZ": 85
+    },
+    "edges": {
+      "q": 42617,
+      "b": 169
+    },
+    "register_declarations": 57,
+    "roundtrip_byte_identical": true
+  }
+]
