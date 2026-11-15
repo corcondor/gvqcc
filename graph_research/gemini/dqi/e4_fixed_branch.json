@@ -1,0 +1,1 @@
+{"schema":"hmr-target-write-tail-v1","candidates":[],"hmr_seen":71502,"eligible_hmr":71502,"within_fixed_branch":true,"positive_intervals":0,"potential_static_ccx_reduction":0,"zero_ccx_intervals":3246,"qubits":889,"num_ops":58868734,"scope":"Read-only discovery; every target read is a barrier; fixed-branch mode cuts at every PUSH/POP; no KMB mutation or score claim."}

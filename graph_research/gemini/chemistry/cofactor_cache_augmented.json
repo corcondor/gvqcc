@@ -1,0 +1,207 @@
+{
+  "totals": {
+    "terms": 2703,
+    "direct_static": 613,
+    "both_factors_blocked": 1030,
+    "one_factor_projected_exact": 0,
+    "additional_projected_plus_affine": 0
+  },
+  "results": [
+    {
+      "batch": 1,
+      "missing": [
+        82,
+        83
+      ],
+      "terms": 212,
+      "direct_static": 21,
+      "both_factors_blocked": 97,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 2,
+      "missing": [
+        69,
+        120
+      ],
+      "terms": 212,
+      "direct_static": 32,
+      "both_factors_blocked": 84,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 3,
+      "missing": [
+        68,
+        89
+      ],
+      "terms": 212,
+      "direct_static": 22,
+      "both_factors_blocked": 102,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 4,
+      "missing": [
+        100,
+        106
+      ],
+      "terms": 189,
+      "direct_static": 18,
+      "both_factors_blocked": 113,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 5,
+      "missing": [
+        83,
+        102
+      ],
+      "terms": 189,
+      "direct_static": 14,
+      "both_factors_blocked": 107,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 6,
+      "missing": [
+        119,
+        120
+      ],
+      "terms": 187,
+      "direct_static": 100,
+      "both_factors_blocked": 26,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 7,
+      "missing": [
+        120,
+        122
+      ],
+      "terms": 189,
+      "direct_static": 125,
+      "both_factors_blocked": 7,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 8,
+      "missing": [
+        68,
+        100
+      ],
+      "terms": 187,
+      "direct_static": 18,
+      "both_factors_blocked": 94,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 9,
+      "missing": [
+        122,
+        124
+      ],
+      "terms": 189,
+      "direct_static": 89,
+      "both_factors_blocked": 17,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 10,
+      "missing": [
+        79,
+        102
+      ],
+      "terms": 187,
+      "direct_static": 17,
+      "both_factors_blocked": 98,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 11,
+      "missing": [
+        100,
+        112
+      ],
+      "terms": 189,
+      "direct_static": 20,
+      "both_factors_blocked": 89,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 12,
+      "missing": [
+        122,
+        124
+      ],
+      "terms": 187,
+      "direct_static": 96,
+      "both_factors_blocked": 1,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 13,
+      "missing": [
+        90,
+        112
+      ],
+      "terms": 187,
+      "direct_static": 22,
+      "both_factors_blocked": 95,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    },
+    {
+      "batch": 14,
+      "missing": [
+        69,
+        79
+      ],
+      "terms": 187,
+      "direct_static": 19,
+      "both_factors_blocked": 100,
+      "one_factor_projected_exact": 0,
+      "additional_projected_plus_affine": 0,
+      "first_witness": null,
+      "first_affine_witness": null
+    }
+  ]
+}

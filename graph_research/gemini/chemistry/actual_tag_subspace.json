@@ -1,0 +1,469 @@
+{
+  "matched_clean_ands": 1115,
+  "simply_redundant_ccx": 0,
+  "duplicate_output_product_classes": 0,
+  "totals": {
+    "APPEND_TO_REGISTER": 765,
+    "REGISTER": 90,
+    "CX": 298466,
+    "R": 1115,
+    "CCX": 4030,
+    "work_ccx": 1115,
+    "X": 264,
+    "word_ccx": 2915,
+    "HMR": 1115,
+    "CZ": 1115
+  },
+  "loaders": [
+    {
+      "sha256": "1f8e3ebb7eb6ea63658b8f65a028fc590992b693f40b3f3a4f47bdee4ca6f9a2",
+      "independent_arbitrary_word_bits": 40,
+      "addresses": 2048,
+      "q": 128,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 22469,
+        "R": 79,
+        "CCX": 291,
+        "work_ccx": 79,
+        "X": 15,
+        "word_ccx": 212,
+        "HMR": 79,
+        "CZ": 79
+      },
+      "matched_clean_ands": 79,
+      "first_compute_hmr_cz_control1_control2_target": [
+        1592,
+        12103,
+        12104,
+        0,
+        3,
+        127
+      ],
+      "arbitrary_target_xor_delta_sha256": "b4acf8d107bdbed63cb35122d4e6722c42c27d5ba92d9ba517735183146a0156",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "9c2c2ce22a81ede61ee6b010f5c441e8282a679c7c77a7959ce23610b47337a9",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 22018,
+        "R": 74,
+        "CCX": 286,
+        "work_ccx": 74,
+        "word_ccx": 212,
+        "X": 23,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        22406,
+        22407,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "7f7ce30613cfd0a387c222923be97f43de1ea9ca2c2d1b46eeb5dc09966af985",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "352cfd65d553b46762aa03111a1f504ff455967d37cdba5293d174684dd8268b",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 22162,
+        "R": 74,
+        "CCX": 286,
+        "work_ccx": 74,
+        "word_ccx": 212,
+        "X": 24,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        22551,
+        22552,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "f5e3b5d0675b8611127a25edfb20a40a63a9e100f8050d33575d04a1e9649420",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "6732d9af252f9a57e80802f0be917559492d2e790ed4292ceeff183ea8e6019d",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 22094,
+        "R": 74,
+        "CCX": 286,
+        "work_ccx": 74,
+        "word_ccx": 212,
+        "X": 19,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        22478,
+        22479,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "11a45dea803fbdfe10ca3d6f2746d9751d9402bb5d3f8e17a62a945d73c6672b",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "97f0e207258b897a6e99ccc85645da9987951ace189cf2b3f8920b52139bc6d8",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 19164,
+        "R": 74,
+        "CCX": 263,
+        "work_ccx": 74,
+        "word_ccx": 189,
+        "X": 13,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        19519,
+        19520,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "6aaf5485039445533dae413fa78c4ec77780cedc9adccece2e3df0faaa717122",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "a549eb9a6ce0f8e01b675c07c338350808a4665c70cb90cca9762bfef898e778",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 19315,
+        "R": 74,
+        "CCX": 263,
+        "work_ccx": 74,
+        "word_ccx": 189,
+        "X": 19,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        19676,
+        19677,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "82df63d29bd8860df268a17403af4905e4edb25610721636a06d8a1a6a9b45f6",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "7c2ea68b94c56715046239d5942d0a57b44450ee8f246c9de71e71a18c402762",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 18958,
+        "R": 74,
+        "CCX": 261,
+        "work_ccx": 74,
+        "word_ccx": 187,
+        "X": 21,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        19319,
+        19320,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "3e697214595bee38e15752ddbb69ccee7a365079cd5315140f00b1c90aca2dd2",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "810a8efbca01d1684732e4f5e0e582ce3af1c80a25ac5cd9bff2e7c273dcc629",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 19263,
+        "R": 74,
+        "CCX": 263,
+        "work_ccx": 74,
+        "word_ccx": 189,
+        "X": 17,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        19622,
+        19623,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "2a32d2bddfe46cceef8a00b391d4db2c0b016f23945d9e5dc2a37401db12bb33",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "7c9c36aa66b38c6157a5a235b3617fd968ff98049e385a74c2f62b0a0890fc10",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 18941,
+        "R": 74,
+        "CCX": 261,
+        "work_ccx": 74,
+        "word_ccx": 187,
+        "X": 19,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        19300,
+        19301,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "288f2f7a297231f283df577e2e3e68e31a423db52ac4abb4ddd81174b08ec719",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "16ab1f009c4e9ae6ac7538abc1b3c56c053cd5fe7c4ddd07b2140f3a49e6fb76",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 19181,
+        "R": 74,
+        "CCX": 263,
+        "work_ccx": 74,
+        "word_ccx": 189,
+        "X": 18,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        19541,
+        19542,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "90f32d46175cba972eab05f539f613e2db4b2603646fa72dfccfc67e3ac2cbf0",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "6885656cd8d6744c51027c8cfa7d8308da85991e35db9e980a01ae5561e1704b",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 19114,
+        "R": 74,
+        "CCX": 261,
+        "work_ccx": 74,
+        "word_ccx": 187,
+        "X": 12,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        19466,
+        19467,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "af887c67b02422d3ed770d2ef24d2e072d313baefcd43dcc82f161fd90bf46ea",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "a887a309993e166e3e60aa59471dea6cd36a85c99daeda6a9821d975457fa945",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 19116,
+        "R": 74,
+        "CCX": 263,
+        "work_ccx": 74,
+        "word_ccx": 189,
+        "X": 19,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        19477,
+        19478,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "33b5dbf704d87d5d215e8c17d184f35b9b1480e5dc4312f361cf4ecdf4459144",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "12160907d9a9880c79ca18446a130cab522a7853c141efe5ea5feb3c88292b5d",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 19024,
+        "R": 74,
+        "CCX": 261,
+        "work_ccx": 74,
+        "word_ccx": 187,
+        "X": 13,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        19377,
+        19378,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "1d3d0c2d6c95a23b41015f44b8fa13359063a492b86cf7e7e95f381a258c9504",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "98959513ccf849551577f9389a41e526ef354a135662479ad9f35cfac0835955",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 18796,
+        "R": 74,
+        "CCX": 261,
+        "work_ccx": 74,
+        "word_ccx": 187,
+        "X": 22,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        19158,
+        19159,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "2c64b8438dfe81fd8a99d11e643550d5fe44d5fbc9241396ede9df01995b93e5",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    },
+    {
+      "sha256": "5471bb326eb1171283328dd748c4daa86e7b6550a8ce63af087fe650fa6dfa49",
+      "independent_arbitrary_word_bits": 35,
+      "addresses": 1220,
+      "q": 125,
+      "histogram": {
+        "APPEND_TO_REGISTER": 51,
+        "REGISTER": 6,
+        "CX": 18851,
+        "R": 74,
+        "CCX": 261,
+        "work_ccx": 74,
+        "word_ccx": 187,
+        "X": 10,
+        "HMR": 74,
+        "CZ": 74
+      },
+      "matched_clean_ands": 74,
+      "first_compute_hmr_cz_control1_control2_target": [
+        258,
+        19201,
+        19202,
+        0,
+        123,
+        124
+      ],
+      "arbitrary_target_xor_delta_sha256": "41e57275e93a83316218f5dcefe0857d099b14d6a6d1c96848907a16d281f6d2",
+      "simply_redundant_ccx": [],
+      "repeated_output_products_up_to_complement": []
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "source_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "domain": [
+    1,
+    3133452
+  ],
+  "num_qubits": 46,
+  "instruction_counts": {
+    "APPEND_TO_REGISTER": 22,
+    "BIT_INVERT": 41,
+    "BIT_STORE0": 2,
+    "CCX": 1412,
+    "CCZ": 9,
+    "CSWAP": 129,
+    "CX": 13058,
+    "CZ": 2226,
+    "HMR": 1279,
+    "NEG": 27,
+    "POP_CONDITION": 702,
+    "PUSH_CONDITION": 702,
+    "REGISTER": 1,
+    "SWAP": 11,
+    "X": 3267,
+    "Z": 978,
+    "Z_POW": 38
+  },
+  "counts": {
+    "ccx_clean_target_before": 1162,
+    "ccx_post_changed_in_some_input": 1412,
+    "data_identity_joins": 702,
+    "hmr_next_cz_same_bit": 542,
+    "hmr_next_cz_matches_entire_erased_value": 541
+  },
+  "direct_ccx_cleanup": [],
+  "no_op_ccx": [],
+  "simple_hmr_examples": [
+    {
+      "line_1based": 649,
+      "text": [
+        "HMR q34 b1",
+        "CZ q36 q20 if b1"
+      ]
+    },
+    {
+      "line_1based": 653,
+      "text": [
+        "HMR q36 b1",
+        "CZ q18 q19 if b1"
+      ]
+    },
+    {
+      "line_1based": 675,
+      "text": [
+        "HMR q34 b1",
+        "CZ q36 q18 if b1"
+      ]
+    },
+    {
+      "line_1based": 679,
+      "text": [
+        "HMR q36 b1",
+        "CZ q16 q17 if b1"
+      ]
+    }
+  ],
+  "ccz_sites": [
+    {
+      "line_1based": 23812,
+      "wires": [
+        22,
+        2,
+        3
+      ],
+      "condition_depth": 1
+    },
+    {
+      "line_1based": 23819,
+      "wires": [
+        25,
+        4,
+        5
+      ],
+      "condition_depth": 1
+    },
+    {
+      "line_1based": 23826,
+      "wires": [
+        9,
+        6,
+        30
+      ],
+      "condition_depth": 1
+    },
+    {
+      "line_1based": 23833,
+      "wires": [
+        29,
+        36,
+        7
+      ],
+      "condition_depth": 1
+    },
+    {
+      "line_1based": 23840,
+      "wires": [
+        35,
+        40,
+        43
+      ],
+      "condition_depth": 1
+    },
+    {
+      "line_1based": 23847,
+      "wires": [
+        24,
+        12,
+        39
+      ],
+      "condition_depth": 1
+    },
+    {
+      "line_1based": 23854,
+      "wires": [
+        28,
+        14,
+        15
+      ],
+      "condition_depth": 1
+    },
+    {
+      "line_1based": 23871,
+      "wires": [
+        29,
+        45,
+        8
+      ],
+      "condition_depth": 1
+    },
+    {
+      "line_1based": 23884,
+      "wires": [
+        42,
+        34,
+        10
+      ],
+      "condition_depth": 2
+    }
+  ]
+}

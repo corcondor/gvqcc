@@ -1,0 +1,250 @@
+{
+  "omission_correction_failures": [],
+  "batches": [
+    {
+      "batch": 0,
+      "omitted_then_corrected_tags": [],
+      "added_CCX": 0,
+      "overall_toffoli_like": 291,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "1f8e3ebb7eb6ea63658b8f65a028fc590992b693f40b3f3a4f47bdee4ca6f9a2"
+    },
+    {
+      "batch": 1,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CCX": 51,
+      "overall_toffoli_like": 337,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "239fd25abf5d1579778642f92fc5c9b903c794ec92f9083a344df266a745a6d1"
+    },
+    {
+      "batch": 2,
+      "omitted_then_corrected_tags": [
+        26,
+        42
+      ],
+      "added_CCX": 51,
+      "overall_toffoli_like": 337,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "eb2b3dc7e6dcb81dedb970147634caf6a15b60eae0090740e53b3737e5b5a31b"
+    },
+    {
+      "batch": 3,
+      "omitted_then_corrected_tags": [
+        26,
+        42
+      ],
+      "added_CCX": 51,
+      "overall_toffoli_like": 337,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "6507a9b6f17a64e02f58b03f8c23b42b61d6e6e7ae982b70916da216510e1a32"
+    },
+    {
+      "batch": 4,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CCX": 46,
+      "overall_toffoli_like": 309,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "ab26b959803a18654ac2bdbe3cdc85e968e712d7b482bfc984396b27c984e9e5"
+    },
+    {
+      "batch": 5,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CCX": 46,
+      "overall_toffoli_like": 309,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "9ff4aeee7bb0311ae37bfa7b24a8d08c5fe87178a1dda0d9ddf3c491aa986a73"
+    },
+    {
+      "batch": 6,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CCX": 46,
+      "overall_toffoli_like": 307,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "ff72289f330d4a4f6a9a6a3d4a43b514bf945f663f8d4b9e48f564a652c97943"
+    },
+    {
+      "batch": 7,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CCX": 46,
+      "overall_toffoli_like": 309,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "8a9c9f5ed42ae071483622914fbeda319073556e373a3dd20402d1f33806f825"
+    },
+    {
+      "batch": 8,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CCX": 46,
+      "overall_toffoli_like": 307,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "d7674d229fcd8a0e07d4e35f50a8acc8f6fc0749d89fde8a0a800d6186249756"
+    },
+    {
+      "batch": 9,
+      "omitted_then_corrected_tags": [
+        18,
+        42
+      ],
+      "added_CCX": 46,
+      "overall_toffoli_like": 309,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "b36b43d3b7b58a5ca07409cd255931360053e7e4f87e071b3f860f87a8d7810d"
+    },
+    {
+      "batch": 10,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CCX": 46,
+      "overall_toffoli_like": 307,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "49c0ad54d8b5141019d2e6b68e79c975064def22aa5c145889da33411310bf6e"
+    },
+    {
+      "batch": 11,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CCX": 46,
+      "overall_toffoli_like": 309,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "1a894152c4a992df3a07d521f9748bff190a21c71b90379f36170cc924dadeb8"
+    },
+    {
+      "batch": 12,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CCX": 46,
+      "overall_toffoli_like": 307,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "1b24e11146481cfbef9809eaf077bd259923de4952a3896b46adc2affbd20327"
+    },
+    {
+      "batch": 13,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CCX": 46,
+      "overall_toffoli_like": 307,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "d006a13d660d9bb1174d1f14f1a1d91e5b9ca3f8d32ce6632358c9675810c4db"
+    },
+    {
+      "batch": 14,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CCX": 46,
+      "overall_toffoli_like": 307,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "ebfec82445ab22c80be8c22ce8070ac38f1e8ed6fb7a7a94f50ba920d4a01202"
+    }
+  ],
+  "scanned_tags": [
+    18,
+    26,
+    42
+  ],
+  "paired_correction": true,
+  "complete_proof": true,
+  "proved_toffoli": 4689
+}

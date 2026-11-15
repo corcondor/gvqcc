@@ -1,0 +1,5 @@
+{
+  "max_targets": 7,
+  "cases_per_identity": 2032,
+  "ccx_value_and_ccz_phase_equal": true
+}

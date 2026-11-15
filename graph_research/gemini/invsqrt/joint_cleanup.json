@@ -1,0 +1,765 @@
+{
+  "blocks": 28,
+  "joint_trials": 90,
+  "restored": 90,
+  "sample_models": [],
+  "unspanned": [
+    {
+      "removed": [
+        9483,
+        9487
+      ],
+      "first_unsolved_origin": 9477,
+      "rank": 780
+    },
+    {
+      "removed": [
+        9721,
+        9725
+      ],
+      "first_unsolved_origin": 9713,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9721,
+        9729
+      ],
+      "first_unsolved_origin": 9713,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9721,
+        9733
+      ],
+      "first_unsolved_origin": 9713,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9725,
+        9729
+      ],
+      "first_unsolved_origin": 9713,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9725,
+        9733
+      ],
+      "first_unsolved_origin": 9713,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9729,
+        9733
+      ],
+      "first_unsolved_origin": 9713,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9721,
+        9725,
+        9729
+      ],
+      "first_unsolved_origin": 9713,
+      "rank": 817
+    },
+    {
+      "removed": [
+        9721,
+        9725,
+        9733
+      ],
+      "first_unsolved_origin": 9713,
+      "rank": 817
+    },
+    {
+      "removed": [
+        9721,
+        9729,
+        9733
+      ],
+      "first_unsolved_origin": 9713,
+      "rank": 817
+    },
+    {
+      "removed": [
+        9725,
+        9729,
+        9733
+      ],
+      "first_unsolved_origin": 9713,
+      "rank": 817
+    },
+    {
+      "removed": [
+        9721,
+        9725,
+        9729,
+        9733
+      ],
+      "first_unsolved_origin": 9713,
+      "rank": 780
+    },
+    {
+      "removed": [
+        9985,
+        9989
+      ],
+      "first_unsolved_origin": 9977,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9985,
+        9993
+      ],
+      "first_unsolved_origin": 9977,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9985,
+        9997
+      ],
+      "first_unsolved_origin": 9977,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9989,
+        9993
+      ],
+      "first_unsolved_origin": 9977,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9989,
+        9997
+      ],
+      "first_unsolved_origin": 9977,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9993,
+        9997
+      ],
+      "first_unsolved_origin": 9977,
+      "rank": 855
+    },
+    {
+      "removed": [
+        9985,
+        9989,
+        9993
+      ],
+      "first_unsolved_origin": 9977,
+      "rank": 817
+    },
+    {
+      "removed": [
+        9985,
+        9989,
+        9997
+      ],
+      "first_unsolved_origin": 9977,
+      "rank": 817
+    },
+    {
+      "removed": [
+        9985,
+        9993,
+        9997
+      ],
+      "first_unsolved_origin": 9977,
+      "rank": 817
+    },
+    {
+      "removed": [
+        9989,
+        9993,
+        9997
+      ],
+      "first_unsolved_origin": 9977,
+      "rank": 817
+    },
+    {
+      "removed": [
+        9985,
+        9989,
+        9993,
+        9997
+      ],
+      "first_unsolved_origin": 9977,
+      "rank": 780
+    },
+    {
+      "removed": [
+        10249,
+        10253
+      ],
+      "first_unsolved_origin": 10241,
+      "rank": 855
+    },
+    {
+      "removed": [
+        10249,
+        10257
+      ],
+      "first_unsolved_origin": 10241,
+      "rank": 855
+    },
+    {
+      "removed": [
+        10249,
+        10261
+      ],
+      "first_unsolved_origin": 10241,
+      "rank": 855
+    },
+    {
+      "removed": [
+        10253,
+        10257
+      ],
+      "first_unsolved_origin": 10241,
+      "rank": 855
+    },
+    {
+      "removed": [
+        10253,
+        10261
+      ],
+      "first_unsolved_origin": 10241,
+      "rank": 855
+    },
+    {
+      "removed": [
+        10257,
+        10261
+      ],
+      "first_unsolved_origin": 10241,
+      "rank": 855
+    },
+    {
+      "removed": [
+        10249,
+        10253,
+        10257
+      ],
+      "first_unsolved_origin": 10241,
+      "rank": 817
+    },
+    {
+      "removed": [
+        10249,
+        10253,
+        10261
+      ],
+      "first_unsolved_origin": 10241,
+      "rank": 817
+    },
+    {
+      "removed": [
+        10249,
+        10257,
+        10261
+      ],
+      "first_unsolved_origin": 10241,
+      "rank": 817
+    },
+    {
+      "removed": [
+        10253,
+        10257,
+        10261
+      ],
+      "first_unsolved_origin": 10241,
+      "rank": 817
+    },
+    {
+      "removed": [
+        10249,
+        10253,
+        10257,
+        10261
+      ],
+      "first_unsolved_origin": 10241,
+      "rank": 780
+    },
+    {
+      "removed": [
+        10531,
+        10535
+      ],
+      "first_unsolved_origin": 10525,
+      "rank": 938
+    },
+    {
+      "removed": [
+        10858,
+        10862
+      ],
+      "first_unsolved_origin": 10852,
+      "rank": 938
+    },
+    {
+      "removed": [
+        11194,
+        11198
+      ],
+      "first_unsolved_origin": 11188,
+      "rank": 938
+    },
+    {
+      "removed": [
+        11530,
+        11534
+      ],
+      "first_unsolved_origin": 11524,
+      "rank": 938
+    },
+    {
+      "removed": [
+        11866,
+        11870
+      ],
+      "first_unsolved_origin": 11860,
+      "rank": 938
+    },
+    {
+      "removed": [
+        12202,
+        12206
+      ],
+      "first_unsolved_origin": 12196,
+      "rank": 938
+    },
+    {
+      "removed": [
+        12538,
+        12542
+      ],
+      "first_unsolved_origin": 12532,
+      "rank": 938
+    },
+    {
+      "removed": [
+        12874,
+        12878
+      ],
+      "first_unsolved_origin": 12868,
+      "rank": 938
+    },
+    {
+      "removed": [
+        13210,
+        13214
+      ],
+      "first_unsolved_origin": 13204,
+      "rank": 938
+    },
+    {
+      "removed": [
+        13712,
+        13716
+      ],
+      "first_unsolved_origin": 13706,
+      "rank": 941
+    },
+    {
+      "removed": [
+        13742,
+        13746
+      ],
+      "first_unsolved_origin": 13736,
+      "rank": 899
+    },
+    {
+      "removed": [
+        14120,
+        14124
+      ],
+      "first_unsolved_origin": 14114,
+      "rank": 944
+    },
+    {
+      "removed": [
+        14151,
+        14155
+      ],
+      "first_unsolved_origin": 14144,
+      "rank": 942
+    },
+    {
+      "removed": [
+        14151,
+        14159
+      ],
+      "first_unsolved_origin": 14144,
+      "rank": 942
+    },
+    {
+      "removed": [
+        14155,
+        14159
+      ],
+      "first_unsolved_origin": 14144,
+      "rank": 942
+    },
+    {
+      "removed": [
+        14151,
+        14155,
+        14159
+      ],
+      "first_unsolved_origin": 14144,
+      "rank": 902
+    },
+    {
+      "removed": [
+        14495,
+        14499
+      ],
+      "first_unsolved_origin": 14489,
+      "rank": 941
+    },
+    {
+      "removed": [
+        17494,
+        17498
+      ],
+      "first_unsolved_origin": 17487,
+      "rank": 938
+    },
+    {
+      "removed": [
+        17494,
+        17502
+      ],
+      "first_unsolved_origin": 17487,
+      "rank": 938
+    },
+    {
+      "removed": [
+        17498,
+        17502
+      ],
+      "first_unsolved_origin": 17487,
+      "rank": 938
+    },
+    {
+      "removed": [
+        17494,
+        17498,
+        17502
+      ],
+      "first_unsolved_origin": 17487,
+      "rank": 898
+    },
+    {
+      "removed": [
+        17534,
+        17537
+      ],
+      "first_unsolved_origin": 17528,
+      "rank": 936
+    },
+    {
+      "removed": [
+        17534,
+        17541
+      ],
+      "first_unsolved_origin": 17528,
+      "rank": 936
+    },
+    {
+      "removed": [
+        17534,
+        17545
+      ],
+      "first_unsolved_origin": 17528,
+      "rank": 936
+    },
+    {
+      "removed": [
+        17537,
+        17541
+      ],
+      "first_unsolved_origin": 17528,
+      "rank": 936
+    },
+    {
+      "removed": [
+        17537,
+        17545
+      ],
+      "first_unsolved_origin": 17528,
+      "rank": 936
+    },
+    {
+      "removed": [
+        17541,
+        17545
+      ],
+      "first_unsolved_origin": 17528,
+      "rank": 936
+    },
+    {
+      "removed": [
+        17534,
+        17537,
+        17541
+      ],
+      "first_unsolved_origin": 17528,
+      "rank": 896
+    },
+    {
+      "removed": [
+        17534,
+        17537,
+        17545
+      ],
+      "first_unsolved_origin": 17528,
+      "rank": 896
+    },
+    {
+      "removed": [
+        17534,
+        17541,
+        17545
+      ],
+      "first_unsolved_origin": 17528,
+      "rank": 896
+    },
+    {
+      "removed": [
+        17537,
+        17541,
+        17545
+      ],
+      "first_unsolved_origin": 17528,
+      "rank": 896
+    },
+    {
+      "removed": [
+        17534,
+        17537,
+        17541,
+        17545
+      ],
+      "first_unsolved_origin": 17528,
+      "rank": 857
+    },
+    {
+      "removed": [
+        17780,
+        17784
+      ],
+      "first_unsolved_origin": 17773,
+      "rank": 940
+    },
+    {
+      "removed": [
+        17780,
+        17788
+      ],
+      "first_unsolved_origin": 17773,
+      "rank": 940
+    },
+    {
+      "removed": [
+        17784,
+        17788
+      ],
+      "first_unsolved_origin": 17773,
+      "rank": 940
+    },
+    {
+      "removed": [
+        17780,
+        17784,
+        17788
+      ],
+      "first_unsolved_origin": 17773,
+      "rank": 900
+    },
+    {
+      "removed": [
+        17820,
+        17823
+      ],
+      "first_unsolved_origin": 17814,
+      "rank": 938
+    },
+    {
+      "removed": [
+        17820,
+        17827
+      ],
+      "first_unsolved_origin": 17814,
+      "rank": 938
+    },
+    {
+      "removed": [
+        17820,
+        17831
+      ],
+      "first_unsolved_origin": 17814,
+      "rank": 938
+    },
+    {
+      "removed": [
+        17823,
+        17827
+      ],
+      "first_unsolved_origin": 17814,
+      "rank": 938
+    },
+    {
+      "removed": [
+        17823,
+        17831
+      ],
+      "first_unsolved_origin": 17814,
+      "rank": 938
+    },
+    {
+      "removed": [
+        17827,
+        17831
+      ],
+      "first_unsolved_origin": 17814,
+      "rank": 938
+    },
+    {
+      "removed": [
+        17820,
+        17823,
+        17827
+      ],
+      "first_unsolved_origin": 17814,
+      "rank": 898
+    },
+    {
+      "removed": [
+        17820,
+        17823,
+        17831
+      ],
+      "first_unsolved_origin": 17814,
+      "rank": 898
+    },
+    {
+      "removed": [
+        17820,
+        17827,
+        17831
+      ],
+      "first_unsolved_origin": 17814,
+      "rank": 898
+    },
+    {
+      "removed": [
+        17823,
+        17827,
+        17831
+      ],
+      "first_unsolved_origin": 17814,
+      "rank": 898
+    },
+    {
+      "removed": [
+        17820,
+        17823,
+        17827,
+        17831
+      ],
+      "first_unsolved_origin": 17814,
+      "rank": 859
+    },
+    {
+      "removed": [
+        18077,
+        18081
+      ],
+      "first_unsolved_origin": 18071,
+      "rank": 942
+    },
+    {
+      "removed": [
+        18108,
+        18112
+      ],
+      "first_unsolved_origin": 18101,
+      "rank": 940
+    },
+    {
+      "removed": [
+        18108,
+        18116
+      ],
+      "first_unsolved_origin": 18101,
+      "rank": 940
+    },
+    {
+      "removed": [
+        18112,
+        18116
+      ],
+      "first_unsolved_origin": 18101,
+      "rank": 940
+    },
+    {
+      "removed": [
+        18108,
+        18112,
+        18116
+      ],
+      "first_unsolved_origin": 18101,
+      "rank": 900
+    },
+    {
+      "removed": [
+        18368,
+        18372
+      ],
+      "first_unsolved_origin": 18362,
+      "rank": 942
+    },
+    {
+      "removed": [
+        18398,
+        18402
+      ],
+      "first_unsolved_origin": 18392,
+      "rank": 900
+    },
+    {
+      "removed": [
+        18642,
+        18646
+      ],
+      "first_unsolved_origin": 18636,
+      "rank": 942
+    },
+    {
+      "removed": [
+        18889,
+        18893
+      ],
+      "first_unsolved_origin": 18883,
+      "rank": 940
+    }
+  ],
+  "samples": 2560,
+  "source_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "seconds": 6.171699471000466
+}

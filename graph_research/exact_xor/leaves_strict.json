@@ -1,0 +1,1499 @@
+[
+  {
+    "k": "angle_k_1",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 196,
+        "extra": 195
+      },
+      {
+        "wire": 69,
+        "sources": [
+          7,
+          61
+        ],
+        "uses": 200,
+        "extra": 199
+      },
+      {
+        "wire": 100,
+        "sources": [
+          9,
+          99
+        ],
+        "uses": 205,
+        "extra": 204
+      },
+      {
+        "wire": 106,
+        "sources": [
+          9,
+          105
+        ],
+        "uses": 207,
+        "extra": 206
+      },
+      {
+        "wire": 82,
+        "sources": [
+          8,
+          81
+        ],
+        "uses": 212,
+        "extra": 211
+      },
+      {
+        "wire": 90,
+        "sources": [
+          80,
+          88
+        ],
+        "uses": 213,
+        "extra": 212
+      },
+      {
+        "wire": 111,
+        "sources": [
+          4,
+          110
+        ],
+        "uses": 216,
+        "extra": 215
+      },
+      {
+        "wire": 68,
+        "sources": [
+          7,
+          56
+        ],
+        "uses": 222,
+        "extra": 221
+      },
+      {
+        "wire": 67,
+        "sources": [
+          7,
+          55
+        ],
+        "uses": 225,
+        "extra": 224
+      },
+      {
+        "wire": 77,
+        "sources": [
+          8,
+          59
+        ],
+        "uses": 227,
+        "extra": 226
+      },
+      {
+        "wire": 79,
+        "sources": [
+          7,
+          78
+        ],
+        "uses": 228,
+        "extra": 227
+      },
+      {
+        "wire": 112,
+        "sources": [
+          98,
+          110
+        ],
+        "uses": 228,
+        "extra": 227
+      },
+      {
+        "wire": 83,
+        "sources": [
+          76,
+          80
+        ],
+        "uses": 230,
+        "extra": 229
+      },
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 234,
+        "extra": 233
+      }
+    ]
+  },
+  {
+    "k": "angle_k_2",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 122,
+        "sources": [
+          0,
+          121
+        ],
+        "uses": 183,
+        "extra": 182
+      },
+      {
+        "wire": 120,
+        "sources": [
+          0,
+          50
+        ],
+        "uses": 196,
+        "extra": 195
+      },
+      {
+        "wire": 106,
+        "sources": [
+          9,
+          105
+        ],
+        "uses": 202,
+        "extra": 201
+      },
+      {
+        "wire": 79,
+        "sources": [
+          7,
+          78
+        ],
+        "uses": 209,
+        "extra": 208
+      },
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 209,
+        "extra": 208
+      },
+      {
+        "wire": 111,
+        "sources": [
+          4,
+          110
+        ],
+        "uses": 211,
+        "extra": 210
+      },
+      {
+        "wire": 82,
+        "sources": [
+          8,
+          81
+        ],
+        "uses": 215,
+        "extra": 214
+      },
+      {
+        "wire": 68,
+        "sources": [
+          7,
+          56
+        ],
+        "uses": 216,
+        "extra": 215
+      },
+      {
+        "wire": 90,
+        "sources": [
+          80,
+          88
+        ],
+        "uses": 216,
+        "extra": 215
+      },
+      {
+        "wire": 100,
+        "sources": [
+          9,
+          99
+        ],
+        "uses": 218,
+        "extra": 217
+      },
+      {
+        "wire": 83,
+        "sources": [
+          76,
+          80
+        ],
+        "uses": 220,
+        "extra": 219
+      },
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 220,
+        "extra": 219
+      },
+      {
+        "wire": 112,
+        "sources": [
+          98,
+          110
+        ],
+        "uses": 221,
+        "extra": 220
+      },
+      {
+        "wire": 67,
+        "sources": [
+          7,
+          55
+        ],
+        "uses": 222,
+        "extra": 221
+      },
+      {
+        "wire": 69,
+        "sources": [
+          7,
+          61
+        ],
+        "uses": 227,
+        "extra": 226
+      }
+    ]
+  },
+  {
+    "k": "angle_k_3",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 194,
+        "extra": 193
+      },
+      {
+        "wire": 67,
+        "sources": [
+          7,
+          55
+        ],
+        "uses": 199,
+        "extra": 198
+      },
+      {
+        "wire": 68,
+        "sources": [
+          7,
+          56
+        ],
+        "uses": 203,
+        "extra": 202
+      },
+      {
+        "wire": 77,
+        "sources": [
+          8,
+          59
+        ],
+        "uses": 207,
+        "extra": 206
+      },
+      {
+        "wire": 90,
+        "sources": [
+          80,
+          88
+        ],
+        "uses": 208,
+        "extra": 207
+      },
+      {
+        "wire": 112,
+        "sources": [
+          98,
+          110
+        ],
+        "uses": 210,
+        "extra": 209
+      },
+      {
+        "wire": 100,
+        "sources": [
+          9,
+          99
+        ],
+        "uses": 213,
+        "extra": 212
+      },
+      {
+        "wire": 106,
+        "sources": [
+          9,
+          105
+        ],
+        "uses": 220,
+        "extra": 219
+      },
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 221,
+        "extra": 220
+      },
+      {
+        "wire": 83,
+        "sources": [
+          76,
+          80
+        ],
+        "uses": 222,
+        "extra": 221
+      },
+      {
+        "wire": 82,
+        "sources": [
+          8,
+          81
+        ],
+        "uses": 225,
+        "extra": 224
+      }
+    ]
+  },
+  {
+    "k": "angle_k_4",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 69,
+        "sources": [
+          7,
+          61
+        ],
+        "uses": 182,
+        "extra": 181
+      },
+      {
+        "wire": 100,
+        "sources": [
+          9,
+          99
+        ],
+        "uses": 186,
+        "extra": 185
+      },
+      {
+        "wire": 82,
+        "sources": [
+          8,
+          81
+        ],
+        "uses": 187,
+        "extra": 186
+      },
+      {
+        "wire": 112,
+        "sources": [
+          98,
+          110
+        ],
+        "uses": 190,
+        "extra": 189
+      },
+      {
+        "wire": 106,
+        "sources": [
+          9,
+          105
+        ],
+        "uses": 194,
+        "extra": 193
+      },
+      {
+        "wire": 83,
+        "sources": [
+          76,
+          80
+        ],
+        "uses": 195,
+        "extra": 194
+      },
+      {
+        "wire": 67,
+        "sources": [
+          7,
+          55
+        ],
+        "uses": 198,
+        "extra": 197
+      },
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 198,
+        "extra": 197
+      },
+      {
+        "wire": 68,
+        "sources": [
+          7,
+          56
+        ],
+        "uses": 199,
+        "extra": 198
+      },
+      {
+        "wire": 90,
+        "sources": [
+          80,
+          88
+        ],
+        "uses": 201,
+        "extra": 200
+      },
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 203,
+        "extra": 202
+      },
+      {
+        "wire": 111,
+        "sources": [
+          4,
+          110
+        ],
+        "uses": 204,
+        "extra": 203
+      }
+    ]
+  },
+  {
+    "k": "angle_k_5",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 77,
+        "sources": [
+          8,
+          59
+        ],
+        "uses": 173,
+        "extra": 172
+      },
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 180,
+        "extra": 179
+      },
+      {
+        "wire": 83,
+        "sources": [
+          76,
+          80
+        ],
+        "uses": 189,
+        "extra": 188
+      },
+      {
+        "wire": 100,
+        "sources": [
+          9,
+          99
+        ],
+        "uses": 189,
+        "extra": 188
+      },
+      {
+        "wire": 82,
+        "sources": [
+          8,
+          81
+        ],
+        "uses": 199,
+        "extra": 198
+      },
+      {
+        "wire": 106,
+        "sources": [
+          9,
+          105
+        ],
+        "uses": 199,
+        "extra": 198
+      }
+    ]
+  },
+  {
+    "k": "angle_k_6",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 120,
+        "sources": [
+          0,
+          50
+        ],
+        "uses": 86,
+        "extra": 85
+      },
+      {
+        "wire": 119,
+        "sources": [
+          0,
+          34
+        ],
+        "uses": 97,
+        "extra": 96
+      },
+      {
+        "wire": 122,
+        "sources": [
+          0,
+          121
+        ],
+        "uses": 140,
+        "extra": 139
+      },
+      {
+        "wire": 124,
+        "sources": [
+          0,
+          123
+        ],
+        "uses": 153,
+        "extra": 152
+      },
+      {
+        "wire": 79,
+        "sources": [
+          7,
+          78
+        ],
+        "uses": 176,
+        "extra": 175
+      },
+      {
+        "wire": 100,
+        "sources": [
+          9,
+          99
+        ],
+        "uses": 181,
+        "extra": 180
+      },
+      {
+        "wire": 69,
+        "sources": [
+          7,
+          61
+        ],
+        "uses": 185,
+        "extra": 184
+      },
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 185,
+        "extra": 184
+      },
+      {
+        "wire": 67,
+        "sources": [
+          7,
+          55
+        ],
+        "uses": 190,
+        "extra": 189
+      },
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 196,
+        "extra": 195
+      },
+      {
+        "wire": 68,
+        "sources": [
+          7,
+          56
+        ],
+        "uses": 197,
+        "extra": 196
+      }
+    ]
+  },
+  {
+    "k": "angle_k_7",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 120,
+        "sources": [
+          0,
+          50
+        ],
+        "uses": 72,
+        "extra": 71
+      },
+      {
+        "wire": 122,
+        "sources": [
+          0,
+          121
+        ],
+        "uses": 115,
+        "extra": 114
+      },
+      {
+        "wire": 124,
+        "sources": [
+          0,
+          123
+        ],
+        "uses": 134,
+        "extra": 133
+      },
+      {
+        "wire": 119,
+        "sources": [
+          0,
+          34
+        ],
+        "uses": 142,
+        "extra": 141
+      },
+      {
+        "wire": 106,
+        "sources": [
+          9,
+          105
+        ],
+        "uses": 183,
+        "extra": 182
+      },
+      {
+        "wire": 77,
+        "sources": [
+          8,
+          59
+        ],
+        "uses": 184,
+        "extra": 183
+      },
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 186,
+        "extra": 185
+      },
+      {
+        "wire": 90,
+        "sources": [
+          80,
+          88
+        ],
+        "uses": 187,
+        "extra": 186
+      }
+    ]
+  },
+  {
+    "k": "angle_k_8",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 67,
+        "sources": [
+          7,
+          55
+        ],
+        "uses": 171,
+        "extra": 170
+      },
+      {
+        "wire": 106,
+        "sources": [
+          9,
+          105
+        ],
+        "uses": 177,
+        "extra": 176
+      },
+      {
+        "wire": 77,
+        "sources": [
+          8,
+          59
+        ],
+        "uses": 178,
+        "extra": 177
+      },
+      {
+        "wire": 79,
+        "sources": [
+          7,
+          78
+        ],
+        "uses": 184,
+        "extra": 183
+      },
+      {
+        "wire": 90,
+        "sources": [
+          80,
+          88
+        ],
+        "uses": 187,
+        "extra": 186
+      },
+      {
+        "wire": 112,
+        "sources": [
+          98,
+          110
+        ],
+        "uses": 187,
+        "extra": 186
+      },
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 190,
+        "extra": 189
+      },
+      {
+        "wire": 83,
+        "sources": [
+          76,
+          80
+        ],
+        "uses": 192,
+        "extra": 191
+      },
+      {
+        "wire": 100,
+        "sources": [
+          9,
+          99
+        ],
+        "uses": 198,
+        "extra": 197
+      },
+      {
+        "wire": 68,
+        "sources": [
+          7,
+          56
+        ],
+        "uses": 200,
+        "extra": 199
+      }
+    ]
+  },
+  {
+    "k": "angle_k_9",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 124,
+        "sources": [
+          0,
+          123
+        ],
+        "uses": 82,
+        "extra": 81
+      },
+      {
+        "wire": 120,
+        "sources": [
+          0,
+          50
+        ],
+        "uses": 140,
+        "extra": 139
+      },
+      {
+        "wire": 122,
+        "sources": [
+          0,
+          121
+        ],
+        "uses": 147,
+        "extra": 146
+      },
+      {
+        "wire": 119,
+        "sources": [
+          0,
+          34
+        ],
+        "uses": 155,
+        "extra": 154
+      },
+      {
+        "wire": 79,
+        "sources": [
+          7,
+          78
+        ],
+        "uses": 175,
+        "extra": 174
+      },
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 181,
+        "extra": 180
+      },
+      {
+        "wire": 82,
+        "sources": [
+          8,
+          81
+        ],
+        "uses": 182,
+        "extra": 181
+      },
+      {
+        "wire": 112,
+        "sources": [
+          98,
+          110
+        ],
+        "uses": 188,
+        "extra": 187
+      },
+      {
+        "wire": 77,
+        "sources": [
+          8,
+          59
+        ],
+        "uses": 189,
+        "extra": 188
+      },
+      {
+        "wire": 106,
+        "sources": [
+          9,
+          105
+        ],
+        "uses": 196,
+        "extra": 195
+      },
+      {
+        "wire": 90,
+        "sources": [
+          80,
+          88
+        ],
+        "uses": 197,
+        "extra": 196
+      },
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 199,
+        "extra": 198
+      },
+      {
+        "wire": 67,
+        "sources": [
+          7,
+          55
+        ],
+        "uses": 200,
+        "extra": 199
+      },
+      {
+        "wire": 69,
+        "sources": [
+          7,
+          61
+        ],
+        "uses": 213,
+        "extra": 212
+      }
+    ]
+  },
+  {
+    "k": "angle_k_10",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 179,
+        "extra": 178
+      },
+      {
+        "wire": 79,
+        "sources": [
+          7,
+          78
+        ],
+        "uses": 181,
+        "extra": 180
+      },
+      {
+        "wire": 106,
+        "sources": [
+          9,
+          105
+        ],
+        "uses": 183,
+        "extra": 182
+      },
+      {
+        "wire": 100,
+        "sources": [
+          9,
+          99
+        ],
+        "uses": 184,
+        "extra": 183
+      },
+      {
+        "wire": 112,
+        "sources": [
+          98,
+          110
+        ],
+        "uses": 188,
+        "extra": 187
+      },
+      {
+        "wire": 77,
+        "sources": [
+          8,
+          59
+        ],
+        "uses": 195,
+        "extra": 194
+      },
+      {
+        "wire": 68,
+        "sources": [
+          7,
+          56
+        ],
+        "uses": 196,
+        "extra": 195
+      },
+      {
+        "wire": 82,
+        "sources": [
+          8,
+          81
+        ],
+        "uses": 198,
+        "extra": 197
+      },
+      {
+        "wire": 69,
+        "sources": [
+          7,
+          61
+        ],
+        "uses": 199,
+        "extra": 198
+      },
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 199,
+        "extra": 198
+      },
+      {
+        "wire": 67,
+        "sources": [
+          7,
+          55
+        ],
+        "uses": 203,
+        "extra": 202
+      }
+    ]
+  },
+  {
+    "k": "angle_k_11",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 177,
+        "extra": 176
+      },
+      {
+        "wire": 69,
+        "sources": [
+          7,
+          61
+        ],
+        "uses": 179,
+        "extra": 178
+      },
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 182,
+        "extra": 181
+      },
+      {
+        "wire": 90,
+        "sources": [
+          80,
+          88
+        ],
+        "uses": 182,
+        "extra": 181
+      },
+      {
+        "wire": 82,
+        "sources": [
+          8,
+          81
+        ],
+        "uses": 185,
+        "extra": 184
+      },
+      {
+        "wire": 112,
+        "sources": [
+          98,
+          110
+        ],
+        "uses": 185,
+        "extra": 184
+      },
+      {
+        "wire": 111,
+        "sources": [
+          4,
+          110
+        ],
+        "uses": 189,
+        "extra": 188
+      },
+      {
+        "wire": 83,
+        "sources": [
+          76,
+          80
+        ],
+        "uses": 191,
+        "extra": 190
+      },
+      {
+        "wire": 68,
+        "sources": [
+          7,
+          56
+        ],
+        "uses": 196,
+        "extra": 195
+      },
+      {
+        "wire": 79,
+        "sources": [
+          7,
+          78
+        ],
+        "uses": 198,
+        "extra": 197
+      },
+      {
+        "wire": 100,
+        "sources": [
+          9,
+          99
+        ],
+        "uses": 203,
+        "extra": 202
+      }
+    ]
+  },
+  {
+    "k": "angle_k_12",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 122,
+        "sources": [
+          0,
+          121
+        ],
+        "uses": 82,
+        "extra": 81
+      },
+      {
+        "wire": 124,
+        "sources": [
+          0,
+          123
+        ],
+        "uses": 119,
+        "extra": 118
+      },
+      {
+        "wire": 119,
+        "sources": [
+          0,
+          34
+        ],
+        "uses": 141,
+        "extra": 140
+      },
+      {
+        "wire": 120,
+        "sources": [
+          0,
+          50
+        ],
+        "uses": 149,
+        "extra": 148
+      },
+      {
+        "wire": 68,
+        "sources": [
+          7,
+          56
+        ],
+        "uses": 178,
+        "extra": 177
+      },
+      {
+        "wire": 106,
+        "sources": [
+          9,
+          105
+        ],
+        "uses": 190,
+        "extra": 189
+      },
+      {
+        "wire": 79,
+        "sources": [
+          7,
+          78
+        ],
+        "uses": 192,
+        "extra": 191
+      },
+      {
+        "wire": 83,
+        "sources": [
+          76,
+          80
+        ],
+        "uses": 193,
+        "extra": 192
+      },
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 194,
+        "extra": 193
+      },
+      {
+        "wire": 112,
+        "sources": [
+          98,
+          110
+        ],
+        "uses": 194,
+        "extra": 193
+      },
+      {
+        "wire": 90,
+        "sources": [
+          80,
+          88
+        ],
+        "uses": 195,
+        "extra": 194
+      },
+      {
+        "wire": 100,
+        "sources": [
+          9,
+          99
+        ],
+        "uses": 196,
+        "extra": 195
+      },
+      {
+        "wire": 67,
+        "sources": [
+          7,
+          55
+        ],
+        "uses": 199,
+        "extra": 198
+      },
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 204,
+        "extra": 203
+      }
+    ]
+  },
+  {
+    "k": "angle_k_13",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 90,
+        "sources": [
+          80,
+          88
+        ],
+        "uses": 167,
+        "extra": 166
+      },
+      {
+        "wire": 112,
+        "sources": [
+          98,
+          110
+        ],
+        "uses": 180,
+        "extra": 179
+      },
+      {
+        "wire": 100,
+        "sources": [
+          9,
+          99
+        ],
+        "uses": 181,
+        "extra": 180
+      },
+      {
+        "wire": 111,
+        "sources": [
+          4,
+          110
+        ],
+        "uses": 188,
+        "extra": 187
+      },
+      {
+        "wire": 82,
+        "sources": [
+          8,
+          81
+        ],
+        "uses": 190,
+        "extra": 189
+      },
+      {
+        "wire": 79,
+        "sources": [
+          7,
+          78
+        ],
+        "uses": 192,
+        "extra": 191
+      },
+      {
+        "wire": 69,
+        "sources": [
+          7,
+          61
+        ],
+        "uses": 195,
+        "extra": 194
+      },
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 198,
+        "extra": 197
+      },
+      {
+        "wire": 106,
+        "sources": [
+          9,
+          105
+        ],
+        "uses": 201,
+        "extra": 200
+      },
+      {
+        "wire": 77,
+        "sources": [
+          8,
+          59
+        ],
+        "uses": 202,
+        "extra": 201
+      }
+    ]
+  },
+  {
+    "k": "angle_k_14",
+    "qubits": 125,
+    "eligible": [
+      {
+        "wire": 89,
+        "sources": [
+          7,
+          88
+        ],
+        "uses": 179,
+        "extra": 178
+      },
+      {
+        "wire": 69,
+        "sources": [
+          7,
+          61
+        ],
+        "uses": 182,
+        "extra": 181
+      },
+      {
+        "wire": 67,
+        "sources": [
+          7,
+          55
+        ],
+        "uses": 186,
+        "extra": 185
+      },
+      {
+        "wire": 79,
+        "sources": [
+          7,
+          78
+        ],
+        "uses": 188,
+        "extra": 187
+      },
+      {
+        "wire": 90,
+        "sources": [
+          80,
+          88
+        ],
+        "uses": 189,
+        "extra": 188
+      },
+      {
+        "wire": 102,
+        "sources": [
+          55,
+          101
+        ],
+        "uses": 195,
+        "extra": 194
+      },
+      {
+        "wire": 82,
+        "sources": [
+          8,
+          81
+        ],
+        "uses": 196,
+        "extra": 195
+      },
+      {
+        "wire": 77,
+        "sources": [
+          8,
+          59
+        ],
+        "uses": 204,
+        "extra": 203
+      },
+      {
+        "wire": 68,
+        "sources": [
+          7,
+          56
+        ],
+        "uses": 207,
+        "extra": 206
+      },
+      {
+        "wire": 83,
+        "sources": [
+          76,
+          80
+        ],
+        "uses": 207,
+        "extra": 206
+      }
+    ]
+  }
+]

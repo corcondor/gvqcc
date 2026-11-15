@@ -1,0 +1,1 @@
+{"hits":[],"ccx":363654,"hit_count":0,"pairs_compared":23267378,"barriers":{"branch":7624,"horizon":89593,"control_write":154736,"nonlinear":111304,"phase":317,"reset":80,"conditional":0,"live_at_end":0},"num_ops":58868734}

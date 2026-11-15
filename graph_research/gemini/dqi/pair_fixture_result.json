@@ -1,0 +1,173 @@
+{
+  "bare": {
+    "program": [
+      "CCX q0 q1 q2",
+      "CCX q0 q1 q3",
+      "CCZ q0 q1 q2",
+      "CCZ q0 q1 q3"
+    ],
+    "result": {
+      "examples": [
+        {
+          "type": "CCX",
+          "first": 0,
+          "second": 1,
+          "controls": [
+            0,
+            1
+          ],
+          "third": [
+            2,
+            3
+          ],
+          "branch_depth": 0
+        },
+        {
+          "type": "CCZ",
+          "first": 2,
+          "second": 3,
+          "controls": [
+            0,
+            1
+          ],
+          "third": [
+            2,
+            3
+          ],
+          "branch_depth": 0
+        }
+      ],
+      "ccx_same": 0,
+      "ccx_distinct": 1,
+      "ccz_same": 0,
+      "ccz_distinct": 1,
+      "contiguous_ccx_same": 0,
+      "contiguous_ccx_distinct": 1,
+      "contiguous_ccz_same": 0,
+      "contiguous_ccz_distinct": 1,
+      "num_ops": 4
+    }
+  },
+  "safe_gap": {
+    "program": [
+      "CCX q0 q1 q2",
+      "X q4",
+      "CCX q0 q1 q3",
+      "CCZ q0 q1 q2",
+      "CZ q2 q4",
+      "CCZ q0 q1 q3"
+    ],
+    "result": {
+      "examples": [
+        {
+          "type": "CCX",
+          "first": 0,
+          "second": 2,
+          "controls": [
+            0,
+            1
+          ],
+          "third": [
+            2,
+            3
+          ],
+          "branch_depth": 0
+        },
+        {
+          "type": "CCZ",
+          "first": 3,
+          "second": 5,
+          "controls": [
+            0,
+            1
+          ],
+          "third": [
+            2,
+            3
+          ],
+          "branch_depth": 0
+        }
+      ],
+      "ccx_same": 0,
+      "ccx_distinct": 1,
+      "ccz_same": 0,
+      "ccz_distinct": 1,
+      "contiguous_ccx_same": 0,
+      "contiguous_ccx_distinct": 0,
+      "contiguous_ccz_same": 0,
+      "contiguous_ccz_distinct": 0,
+      "num_ops": 6
+    }
+  },
+  "unsafe_gap": {
+    "program": [
+      "CCX q0 q1 q2",
+      "CX q2 q4",
+      "CCX q0 q1 q3",
+      "CCZ q0 q1 q2",
+      "X q2",
+      "CCZ q0 q1 q3"
+    ],
+    "result": {
+      "examples": [],
+      "ccx_same": 0,
+      "ccx_distinct": 0,
+      "ccz_same": 0,
+      "ccz_distinct": 0,
+      "contiguous_ccx_same": 0,
+      "contiguous_ccx_distinct": 0,
+      "contiguous_ccz_same": 0,
+      "contiguous_ccz_distinct": 0,
+      "num_ops": 6
+    }
+  },
+  "ccx_nonlatest": {
+    "program": [
+      "CCX q0 q1 q2",
+      "CCX q0 q1 q3",
+      "CX q3 q4",
+      "CCX q0 q1 q4"
+    ],
+    "result": {
+      "examples": [
+        {
+          "type": "CCX",
+          "first": 0,
+          "second": 1,
+          "controls": [
+            0,
+            1
+          ],
+          "third": [
+            2,
+            3
+          ],
+          "branch_depth": 0
+        },
+        {
+          "type": "CCX",
+          "first": 0,
+          "second": 3,
+          "controls": [
+            0,
+            1
+          ],
+          "third": [
+            2,
+            4
+          ],
+          "branch_depth": 0
+        }
+      ],
+      "ccx_same": 0,
+      "ccx_distinct": 2,
+      "ccz_same": 0,
+      "ccz_distinct": 0,
+      "contiguous_ccx_same": 0,
+      "contiguous_ccx_distinct": 1,
+      "contiguous_ccz_same": 0,
+      "contiguous_ccz_distinct": 0,
+      "num_ops": 4
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "counts": {
+    "pairs": 431,
+    "independent": 46,
+    "same_homogeneous_plane": 0,
+    "same_direction": 6,
+    "same_direction_shared_factor": 0,
+    "dependent_second_is_affine": 0,
+    "dependent_second_same_nonlinearity": 0
+  },
+  "hits": [],
+  "scope": "Consecutive CCX separated only by affine data gates within one guard. All free input states, with independent common planes or common factors, and dependent Boolean ANF tests."
+}

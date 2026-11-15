@@ -1,0 +1,187 @@
+{
+  "angle_batch": 1,
+  "addresses": 1220,
+  "all_hmr_branch_phases_cancelled": true,
+  "same_output_score11_score12_for_all_tested_inputs": true,
+  "sha256": {
+    "score11": "1a43bbc368785aa5fc5210f6e4d5d2f9ddf114f7f3f6d3e3964f9478056bb4be",
+    "score12": "9c2c2ce22a81ede61ee6b010f5c441e8282a679c7c77a7959ce23610b47337a9"
+  },
+  "tag_flip_results": [
+    {
+      "perturbed_input": 18,
+      "different_addresses": 1220,
+      "witness": {
+        "selection": 0,
+        "incoming_words": [
+          166,
+          41,
+          25,
+          226,
+          35
+        ],
+        "xor_contract_expected": [
+          92,
+          214,
+          36,
+          47,
+          225
+        ],
+        "score11_actual": [
+          179,
+          37,
+          227,
+          39,
+          23
+        ],
+        "score12_actual": [
+          179,
+          37,
+          227,
+          39,
+          23
+        ]
+      }
+    },
+    {
+      "perturbed_input": 26,
+      "different_addresses": 1220,
+      "witness": {
+        "selection": 0,
+        "incoming_words": [
+          38,
+          169,
+          25,
+          226,
+          35
+        ],
+        "xor_contract_expected": [
+          220,
+          86,
+          36,
+          47,
+          225
+        ],
+        "score11_actual": [
+          11,
+          183,
+          15,
+          245,
+          227
+        ],
+        "score12_actual": [
+          11,
+          183,
+          15,
+          245,
+          227
+        ]
+      }
+    },
+    {
+      "perturbed_input": 34,
+      "different_addresses": 1220,
+      "witness": {
+        "selection": 0,
+        "incoming_words": [
+          38,
+          41,
+          153,
+          226,
+          35
+        ],
+        "xor_contract_expected": [
+          220,
+          214,
+          164,
+          47,
+          225
+        ],
+        "score11_actual": [
+          10,
+          58,
+          112,
+          3,
+          216
+        ],
+        "score12_actual": [
+          10,
+          58,
+          112,
+          3,
+          216
+        ]
+      }
+    },
+    {
+      "perturbed_input": 42,
+      "different_addresses": 1220,
+      "witness": {
+        "selection": 0,
+        "incoming_words": [
+          38,
+          41,
+          25,
+          98,
+          35
+        ],
+        "xor_contract_expected": [
+          220,
+          214,
+          36,
+          175,
+          225
+        ],
+        "score11_actual": [
+          195,
+          52,
+          217,
+          163,
+          48
+        ],
+        "score12_actual": [
+          195,
+          52,
+          217,
+          163,
+          48
+        ]
+      }
+    },
+    {
+      "perturbed_input": 50,
+      "different_addresses": 1220,
+      "witness": {
+        "selection": 0,
+        "incoming_words": [
+          38,
+          41,
+          25,
+          226,
+          163
+        ],
+        "xor_contract_expected": [
+          220,
+          214,
+          36,
+          47,
+          97
+        ],
+        "score11_actual": [
+          249,
+          216,
+          232,
+          27,
+          79
+        ],
+        "score12_actual": [
+          249,
+          216,
+          232,
+          27,
+          79
+        ]
+      }
+    }
+  ]
+}

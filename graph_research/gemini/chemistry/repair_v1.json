@@ -1,0 +1,249 @@
+{
+  "omission_correction_failures": [],
+  "batches": [
+    {
+      "batch": 0,
+      "omitted_then_corrected_tags": [],
+      "added_CX_like_nonclifford": 0,
+      "overall_toffoli_like": 291,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "1f8e3ebb7eb6ea63658b8f65a028fc590992b693f40b3f3a4f47bdee4ca6f9a2"
+    },
+    {
+      "batch": 1,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CX_like_nonclifford": 75,
+      "overall_toffoli_like": 361,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "1cdde6f6a8886a5b70a420127fb96d6cc7d2956feef72162bce91980435b1f45"
+    },
+    {
+      "batch": 2,
+      "omitted_then_corrected_tags": [
+        26,
+        42
+      ],
+      "added_CX_like_nonclifford": 75,
+      "overall_toffoli_like": 361,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "15121ac58797d6f3f810741b6db704634062d6fa02b21185f208dc63f5fd4e81"
+    },
+    {
+      "batch": 3,
+      "omitted_then_corrected_tags": [
+        26,
+        42
+      ],
+      "added_CX_like_nonclifford": 75,
+      "overall_toffoli_like": 361,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "93bad135417f310f2394f6551a1f01b18468dd9946b5b1d4f42dd476c7ca387f"
+    },
+    {
+      "batch": 4,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CX_like_nonclifford": 63,
+      "overall_toffoli_like": 326,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "67485071ae84044658d6c5bf3efef88f3bc4ea2fe42e7f41054c66a46fafc497"
+    },
+    {
+      "batch": 5,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CX_like_nonclifford": 63,
+      "overall_toffoli_like": 326,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "54f51084099fd3676fbbf950ff3eaf858fb0770bceaacec2080d0abe299d20f2"
+    },
+    {
+      "batch": 6,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CX_like_nonclifford": 61,
+      "overall_toffoli_like": 322,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "1aa5a35439f38fe61a4425a1e1dba114454b30f35472deef45811f8d39836687"
+    },
+    {
+      "batch": 7,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CX_like_nonclifford": 63,
+      "overall_toffoli_like": 326,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "76e8d4f12740444999d4f0e3d73a982e3e5fd039a70e0a62d7c3dd37d377b7fd"
+    },
+    {
+      "batch": 8,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CX_like_nonclifford": 61,
+      "overall_toffoli_like": 322,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "141f09c2708a614ca7df381614eff9a2822f632cde108bdc2fb083d70bf8b5da"
+    },
+    {
+      "batch": 9,
+      "omitted_then_corrected_tags": [
+        18,
+        42
+      ],
+      "added_CX_like_nonclifford": 63,
+      "overall_toffoli_like": 326,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "50b0fb6cce4d175ca9fb52c09ee991b2142e5f3d12d4216dedb6f0bd2789a561"
+    },
+    {
+      "batch": 10,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CX_like_nonclifford": 61,
+      "overall_toffoli_like": 322,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "5135745b78011dfb41a912f2f1ac9b5c57dd62666079550ecc1b28691b372dd1"
+    },
+    {
+      "batch": 11,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CX_like_nonclifford": 63,
+      "overall_toffoli_like": 326,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "ce8136d722adf3695dffa98b4a4caa14258bccb6c1a98603c05b35541ad8da81"
+    },
+    {
+      "batch": 12,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CX_like_nonclifford": 61,
+      "overall_toffoli_like": 322,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "f69fb7b0cae1aa54c1e06eb0408e1db528e78e77be68c28ee67486181ad7176f"
+    },
+    {
+      "batch": 13,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CX_like_nonclifford": 61,
+      "overall_toffoli_like": 322,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "cee35f40e8dbaa49adbb8d9e862374548b9986ea246efc01c415043305bf65b5"
+    },
+    {
+      "batch": 14,
+      "omitted_then_corrected_tags": [
+        18,
+        26
+      ],
+      "added_CX_like_nonclifford": 61,
+      "overall_toffoli_like": 322,
+      "qubits": 128,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_word_bits": 40,
+        "all_measurement_branches": true
+      },
+      "sha256": "5ad258ce3be62e9b6c8b9665a7765312ed9813af582611bcfe75d503743b2c37"
+    }
+  ],
+  "scanned_TAGs": [
+    18,
+    26,
+    42
+  ],
+  "complete_proof": true,
+  "proved_toffoli": 4936
+}

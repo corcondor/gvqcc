@@ -1,0 +1,113 @@
+// SPDX-License-Identifier: Apache-2.0
+// Search CCX writes whose propagated XOR difference terminates in HMR.
+#include <algorithm>
+#include <array>
+#include <unordered_map>
+#include <cstdint>
+#include <fcntl.h>
+#include <fstream>
+#include <iostream>
+#include <stdexcept>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <vector>
+using namespace std;
+static uint64_t le(const uint8_t*p,int n){uint64_t x=0;for(int i=0;i<n;i++)x|=uint64_t(p[i])<<(8*i);return x;}
+struct Write {uint64_t pos;unsigned op,depth;};
+int main(int argc,char**argv){try{
+ if(argc!=3)throw runtime_error("input.kmb output.json required");
+ int fd=open(argv[1],O_RDONLY);struct stat st{};
+ if(fd<0||fstat(fd,&st))throw runtime_error("open");
+ auto*d=(const uint8_t*)mmap(nullptr,st.st_size,PROT_READ,MAP_PRIVATE,fd,0);
+ if(d==MAP_FAILED||st.st_size<104||le(d+16,4)!=2)throw runtime_error("KMBv2 required");
+ auto nq=le(d+20,4),nb=le(d+24,4),nr=le(d+28,4),n=le(d+32,8),at=uint64_t(104);
+ array<uint64_t,12> p{},end{};
+ for(uint64_t i=0;i<nr+11;i++){
+  if(at+16>uint64_t(st.st_size))throw runtime_error("packet");
+  auto kind=le(d+at,8),len=le(d+at+8,8);at+=16;
+  if(kind!=(i<nr?0:i-nr+1)||len>uint64_t(st.st_size)-at)throw runtime_error("packet length");
+  if(kind){p[kind]=at;end[kind]=at+len;}at+=len;
+ }
+ auto take=[&](int c,int bytes){if(p[c]+bytes>end[c])throw runtime_error("column");auto v=le(d+p[c],bytes);p[c]+=bytes;return v;};
+ struct Candidate {
+  uint64_t pos; unsigned a,b,t; vector<unsigned> delta; vector<pair<uint64_t,unsigned>> measurements;
+ };
+ vector<Candidate> live;
+ uint64_t seen=0,success=0,branches=0,horizon=0,writes=0,nonlinear=0,phase=0,reset=0,conditional=0,depth=0;
+ ofstream out(argv[2]);out<<"{\"hits\":[";
+ for(uint64_t i=1;i<=n;i++){
+  auto op=take(1,1);unsigned base=op&127,arity=(op>>4)&3;array<unsigned,3> q{};
+  for(unsigned j=0;j<arity;j++){q[j]=take(arity==3?2+j:arity==2?5+j:7,4);if(q[j]>=nq)throw runtime_error("q");}
+  int64_t b=(op&64)?int64_t(take(8,4)):-1,c=(op&128)?int64_t(take(9,4)):-1;
+  if(b>=int64_t(nb)||c>=int64_t(nb))throw runtime_error("b");
+  if(base==0x13){take(10,8);take(10,8);}
+  if(op==0x81||op==0x01){
+   branches+=live.size();live.clear();
+   if(op==0x81)depth++;
+   else {if(!depth)throw runtime_error("pop");depth--;}
+   continue;
+  }
+  if(arity>0){
+   live.erase(remove_if(live.begin(),live.end(),[&](Candidate& a){
+    if(i-a.pos>65536){horizon++;return true;}
+    const auto input=[&](unsigned wire){return wire==a.a||wire==a.b;};
+    const auto written=[&](unsigned wire){
+     if(input(wire)){writes++;return true;}return false;
+    };
+    const auto diff=[&](unsigned wire){return find(a.delta.begin(),a.delta.end(),wire)!=a.delta.end();};
+    const auto flip=[&](unsigned wire){
+     auto it=find(a.delta.begin(),a.delta.end(),wire);if(it==a.delta.end())a.delta.push_back(wire);else a.delta.erase(it);
+    };
+    if(base==0x13||base==0x10||base==0x20||base==0x30){
+     for(unsigned j=0;j<arity;j++)if(diff(q[j])){phase++;return true;}
+     return false;
+    }
+    if(base==0x50){
+     if(written(q[0]))return true;
+     if(!diff(q[0]))return false;
+     if(c>=0){conditional++;return true;}
+     flip(q[0]);a.measurements.emplace_back(i-1,unsigned(b));
+     if(!a.delta.empty())return false;
+     if(success++)out<<',';
+     out<<"{\"ccx\":"<<a.pos-1<<",\"controls\":["<<a.a<<','<<a.b<<"],\"target\":"<<a.t<<",\"depth\":"<<depth<<",\"hmr\":[";
+     bool comma=false;for(auto [p,v]:a.measurements){if(comma)out<<',';comma=true;out<<'['<<p<<','<<v<<']';}
+     out<<"]}";return true;
+    }
+    if(base==0x12){if(written(q[0]))return true;if(diff(q[0])){reset++;return true;}return false;}
+    if(base==0x11)return written(q[0]);
+    if(base==0x21){
+     if(written(q[1]))return true;
+     if(diff(q[0])){if(c>=0){conditional++;return true;}flip(q[1]);}
+     return false;
+    }
+    if(base==0x22){
+     if(written(q[0])||written(q[1]))return true;
+     if(diff(q[0])!=diff(q[1])){if(c>=0){conditional++;return true;}flip(q[0]);flip(q[1]);}
+     return false;
+    }
+    if(base==0x31){
+     if(written(q[2]))return true;
+     if(diff(q[0])||diff(q[1])){nonlinear++;return true;}
+     return false;
+    }
+    if(base==0x32){
+     if(written(q[1])||written(q[2]))return true;
+     if(diff(q[0])||diff(q[1])!=diff(q[2])){nonlinear++;return true;}
+     return false;
+    }
+    return false;
+   }),live.end());
+  }
+  if(base==0x31&&c<0){
+   seen++;
+   live.push_back({i,q[0],q[1],q[2],{q[2]},{}});
+  }
+ }
+ if(depth)throw runtime_error("unclosed");
+ out<<"],\"ccx\":"<<seen<<",\"hit_count\":"<<success<<",\"barriers\":{\"branch\":"<<branches
+    <<",\"horizon\":"<<horizon<<",\"control_write\":"<<writes<<",\"nonlinear\":"<<nonlinear
+    <<",\"phase\":"<<phase<<",\"reset\":"<<reset<<",\"conditional\":"<<conditional
+    <<",\"live_at_end\":"<<live.size()<<"},\"num_ops\":"<<n<<"}\n";
+ munmap((void*)d,st.st_size);close(fd);return 0;
+}catch(const exception&e){cerr<<e.what()<<'\n';return 1;}}

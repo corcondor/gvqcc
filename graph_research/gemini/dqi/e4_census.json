@@ -1,0 +1,18 @@
+{
+  "file_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "ops": 58868734,
+  "qubits": 889,
+  "static_opcodes": {
+    "HMR": 71502,
+    "R": 47946,
+    "CZ_with_explicit_classical_condition": 537071,
+    "CCX": 363654,
+    "CCZ": 7000,
+    "CSWAP": 12240
+  },
+  "static_toffoli_like": 382894,
+  "official_shots_inherited": 102400,
+  "official_mean_toffoli_inherited": 382066.529365234,
+  "official_cost_inherited": 359707293756.04297,
+  "scope": "This is the unchanged score12 DQI member. Static opcode counts include operations inside PUSH_CONDITION even if an operation has no individual condition bit."
+}

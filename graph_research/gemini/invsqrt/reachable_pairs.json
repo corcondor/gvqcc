@@ -1,0 +1,102 @@
+{
+  "source_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "candidate_windows": 431,
+  "sample_inputs": 2304,
+  "sample_hits": [
+    {
+      "lines_1based": [
+        146,
+        154
+      ],
+      "case": "first",
+      "affine_mask": 4294967296
+    },
+    {
+      "lines_1based": [
+        8262,
+        8263
+      ],
+      "case": "codirectional",
+      "factors": [
+        33554560,
+        1099511627904
+      ],
+      "affine_mask": 128
+    },
+    {
+      "lines_1based": [
+        8262,
+        8263
+      ],
+      "case": "codirectional",
+      "factors": [
+        33554560,
+        1099545182208
+      ],
+      "affine_mask": 33554432
+    },
+    {
+      "lines_1based": [
+        8262,
+        8263
+      ],
+      "case": "codirectional",
+      "factors": [
+        1099511627904,
+        1099545182208
+      ],
+      "affine_mask": 1099511627776
+    }
+  ],
+  "full_domain_hits": [],
+  "wide_screen_left_factors_tested": 6486,
+  "wide_screen_sample_hits": [
+    {
+      "lines_1based": [
+        8262,
+        8263
+      ],
+      "left_mask": 33554560,
+      "affine_mask": 128,
+      "right_mask": 1099511627904
+    },
+    {
+      "lines_1based": [
+        8262,
+        8263
+      ],
+      "left_mask": 1099511627904,
+      "affine_mask": 128,
+      "right_mask": 33554560
+    },
+    {
+      "lines_1based": [
+        8262,
+        8263
+      ],
+      "left_mask": 1099520016384,
+      "affine_mask": 128,
+      "right_mask": 33554560
+    },
+    {
+      "lines_1based": [
+        8262,
+        8263
+      ],
+      "left_mask": 1099528404992,
+      "affine_mask": 128,
+      "right_mask": 33554560
+    },
+    {
+      "lines_1based": [
+        8262,
+        8263
+      ],
+      "left_mask": 1099545182208,
+      "affine_mask": 33554432,
+      "right_mask": 33554560
+    }
+  ],
+  "wide_screen_full_domain_hits": [],
+  "scope": "For independent output directions, test if either actual update or their XOR is affine on reached wires. For same output direction, test if XOR is affine plus a product from the span of the original four controls or from a factor of at most two live wires and an arbitrary linear second factor."
+}
