@@ -1,0 +1,156 @@
+{
+  "status": "FULL_OFFICIAL_QUALIFIED_PORTABLE_BUNDLE",
+  "candidate_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+  "input_dqi_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "qualification_sha256": "8ac2774a59633641a1c8147616d782fcbb29d60d34418a946e0686715662bb70",
+  "proof_sha256": "2f7e5cffd7efdb9588a3390fb1fa0c5b6fc12a81219cb0cef092882c194e0bfc",
+  "patch_sha256": "44aa1782e6dedaa0fe8e85b568ad1bfe02b63bcb38e99ba7474aac3b5c976657",
+  "qualification_scope": {
+    "candidate_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+    "official_receipt_sha256": "8ac2774a59633641a1c8147616d782fcbb29d60d34418a946e0686715662bb70",
+    "guaranteed_component_domain": "Thirdpublicpivot finiteoutput: queriedN!=0. ZeroqueriedD is included.",
+    "fixed_known_valid_input": {
+      "weight": 33,
+      "batch": 349,
+      "shot_in_batch": 121,
+      "absolute_shot": 89465,
+      "first_exception_node_zero_based": 2,
+      "N": [
+        1103,
+        3094
+      ],
+      "D": [
+        0,
+        0
+      ],
+      "case_sha256": "e92fab245e56346d002fdd3254466d3d98bc764a6db93596d46cb7b50da206ce"
+    },
+    "remaining_known_valid_input_failure": {
+      "weight": 31,
+      "batch": 104,
+      "shot_in_batch": 184,
+      "absolute_shot": 26808,
+      "first_exception_node_zero_based": 13,
+      "N": [
+        0,
+        0
+      ],
+      "D": [
+        1013,
+        2476
+      ],
+      "case_sha256": "87c18965ac99615c6b1c20156350ac83acc398ead86fbe4a78bc2274c2c74433",
+      "still_value_error": true
+    },
+    "third_pivot_N_zero_also_guaranteed": false,
+    "independent_common_valid_inputs": 16384,
+    "new_failures_in_that_corpus": 0,
+    "global_correctness_or_public_score_claim": false,
+    "note": "The remainingknownN=0 counterexample is node13, not the thirdpivot. A finite officialPASS does not eliminate it."
+  },
+  "qualification_scope_sha256": "615152cf671034e3b832493f36201255a39f923c0edbea9cfc8b6c1378f3e83e",
+  "worker_sha256": "316dccef716ae84b80aa9e45defc2f9ca30322c4b6070b9664d0e81d6976bbbb",
+  "public17_pins_sha256": "c475486d7205534eb8c9612c6c73cc33b01f64910ce09cb30ca7aab6452586c1",
+  "full_kmb_in_bundle": false,
+  "submission_performed": false,
+  "files": {
+    "outcome_dqi_chart_norm_worker.py": {
+      "sha256": "316dccef716ae84b80aa9e45defc2f9ca30322c4b6070b9664d0e81d6976bbbb",
+      "bytes": 167538
+    },
+    "outcome_dqi_chart_norm_patch.json.gz": {
+      "sha256": "44aa1782e6dedaa0fe8e85b568ad1bfe02b63bcb38e99ba7474aac3b5c976657",
+      "bytes": 87716
+    },
+    "outcome_dqi_chart_norm_README.md": {
+      "sha256": "ec5c38c58e441d246fa4f9719e7ed9fa691b9827315dc140a549a2e5a848a519",
+      "bytes": 2588
+    },
+    "outcome_dqi_chart_norm_NOTICE.md": {
+      "sha256": "403ad982d13d7add8ec206799737992c5e91e03e646f90d6c895d7dd9f3dd9a1",
+      "bytes": 2912
+    },
+    "outcome_dqi_chart_norm_LICENSE.txt": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "outcome_dqi_chart_norm_proof.md": {
+      "sha256": "2f7e5cffd7efdb9588a3390fb1fa0c5b6fc12a81219cb0cef092882c194e0bfc",
+      "bytes": 7694
+    },
+    "outcome_dqi_chart_norm_full_verification.json": {
+      "sha256": "8ac2774a59633641a1c8147616d782fcbb29d60d34418a946e0686715662bb70",
+      "bytes": 1881
+    },
+    "outcome_dqi_chart_norm_qualification_scope.json": {
+      "sha256": "615152cf671034e3b832493f36201255a39f923c0edbea9cfc8b6c1378f3e83e",
+      "bytes": 1306
+    },
+    "outcome_dqi_chart_norm_component_report.json": {
+      "sha256": "b2fada6a9671fa04fa9c1a1b609875a935d771b19cf4de86b16fb2439571169b",
+      "bytes": 19561
+    },
+    "outcome_dqi_chart_norm_splice_report.json": {
+      "sha256": "07eb8f78048c5ec8859e87c70674df49168b7e1a50a76415b50a22062b7a19e6",
+      "bytes": 34497
+    },
+    "outcome_dqi_chart_norm_paired_comparison.json": {
+      "sha256": "025c8cef4c10803c53b4086e210b9c2a7abcdf0e930938e40bac518f96985d67",
+      "bytes": 2362
+    },
+    "outcome_dqi_chart_norm_patch_export.json": {
+      "sha256": "0f0def3997b53d526fbd886b43405d70b8cbc303db6e386959b3d0f125d45beb",
+      "bytes": 519
+    },
+    "outcome_dqi_chart_norm_worker_check.json": {
+      "sha256": "57de9d565ad725405286bfc5700be5bcf37f53b8a60229ebe165aa50d4adb54c",
+      "bytes": 1991
+    },
+    "outcome_dqi_chart_third_norm.py": {
+      "sha256": "1377945e07b304e9fc0bb70a0d05adc94eed9433277cd64a4b161df8806ba52f",
+      "bytes": 3897
+    },
+    "outcome_dqi_chart_inverse_norm.py": {
+      "sha256": "00ca06824f4697244c704c267b82c556a9d4fa52913691b4eb9d001b9ac792e0",
+      "bytes": 9269
+    },
+    "outcome_dqi_chart_check_norm.py": {
+      "sha256": "641ebcb85ccd4aebc4f1d095ce22f51771ebe6a371259dff6366d118d9a4b087",
+      "bytes": 9475
+    },
+    "outcome_dqi_chart_splice_norm.py": {
+      "sha256": "5ca9258325234ef1fc3180dc3c790d1ef6c0cd3885fad83db0583cf66b1d7bce",
+      "bytes": 9169
+    },
+    "outcome_dqi_chart_norm_export_patch.py": {
+      "sha256": "100fc47cfd9a8d3af621a4763fe0496d2d57006a11870c29f16846203d33cc1d",
+      "bytes": 6345
+    },
+    "outcome_dqi_chart_norm_build_bundle.py": {
+      "sha256": "144e25ebce52357f9ff0f109e910619515d8c01e292daf3c3cdfdcaf886cd5aa",
+      "bytes": 10272
+    },
+    "outcome_dqi_chart_norm_review.md": {
+      "sha256": "f4ae58220d4380029cf6ddbca0322e9df1d32e9fed738ee5324e39208483b6a4",
+      "bytes": 4069
+    },
+    "outcome_dqi_chart_norm_review.json": {
+      "sha256": "a1d7b31f150d22bc511d9ba5daabb6a17367fbff098431c31f7ea86145c581d9",
+      "bytes": 3703
+    },
+    "outcome_dqi_chart_norm_review.py": {
+      "sha256": "3f0cbf95ac9e6f2b0f98b1ace578e28598719a4c229d6f12e7bcf386d61733c6",
+      "bytes": 7093
+    }
+  },
+  "scientific_result": {
+    "status": "PASS",
+    "verified_shots": 102400,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "num_qubits": 889,
+    "toffoli_count": 382092.5565332031,
+    "max_toffoli_count": 382920,
+    "score": 359731797766.2993
+  }
+}

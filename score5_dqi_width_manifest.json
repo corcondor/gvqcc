@@ -1,0 +1,261 @@
+{
+  "schema": "gvqcc-score5-dqi-width-child-norm-pebble-v1",
+  "status": "FROZEN_LOCAL_PASS_GLOBAL_WIDTH_UNCHANGED_NOT_ADOPTED",
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_bind.py",
+      "bytes": 2508,
+      "sha256": "c41ae8503d4667499b78565d352db276c401162f79ffa7f1db3c1b775c3e35b4"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_binding.json",
+      "bytes": 9837,
+      "sha256": "b4b196bb9b7fe7f1c04494275c1906e573d15ad3cbb41e558f10e13dbf0a75ea"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_borrow1_chart.kmb",
+      "bytes": 625307,
+      "sha256": "838741177dc8767cc2d9c5c35797968567d5793f8f9d2d2406df3306683adc11"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_borrow1_pair.kmb",
+      "bytes": 205907,
+      "sha256": "c6f10bbea616a851127f55bec410f04a3bef7a8e125167dbf25ab774e306f69b"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_borrow6_chart.kmb",
+      "bytes": 647339,
+      "sha256": "82802732a9c9a5d7f0630f22a3239bb7c526e241ffc9124dfde804dcccbda77d"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_borrow6_pair.kmb",
+      "bytes": 213251,
+      "sha256": "f3996091da4d8145008f6e0ad4772478e124e6352a8b568426e1206e36cca548"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_branch.cpp",
+      "bytes": 5568,
+      "sha256": "221009d3dcbaaac30eb51cf87e2dd4c3e6849751af94ee5d50023b2cc88e4c5d"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_branch_baseline.json",
+      "bytes": 395,
+      "sha256": "99ad761efa823c722723512399f6ae3cf529bafebea3fe0c73096d454510bd47"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_branch_partial.json",
+      "bytes": 395,
+      "sha256": "ea022af1165c1006c265d71250177107925413f84ef9c42e8ca4dac2f74c597e"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_check.py",
+      "bytes": 8341,
+      "sha256": "17edbcea7d4c673dd74b7b7bc559f90e3d11ed06e4dfdeff9cbe937e01ce8646"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_component.json",
+      "bytes": 5700,
+      "sha256": "dd380cf09dfd942c0c9426dc582d8a7d5fdc7e4befe20e9dca37310433317734"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_intervals.cpp",
+      "bytes": 5538,
+      "sha256": "91b142ae7da667e586d27315db7e50c24130faa7198027d8f364add1badeed99"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_inverse.py",
+      "bytes": 11769,
+      "sha256": "1438bcabbbebd2c3529a6234734afe493151dcff576212ed8a894c164af21289"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_partial.json",
+      "bytes": 6131,
+      "sha256": "98a801047fca976187d4d8636526024c20c5863e7cd91227ae6e31f54598a263"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_peak_ledger.json",
+      "bytes": 152137,
+      "sha256": "a684d62f4982e2323eda6ff11cb86f3ff373b038cdd088c5d2cf2797074bf5b8"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_report.md",
+      "bytes": 12307,
+      "sha256": "d27d0cb91d664c4ed8ecdb7c4095cc9d2e901c233d38d3b7bf873f463ada8963"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_reset_audit.json",
+      "bytes": 59374,
+      "sha256": "9dbab235f4540e8fde9297e0e0b4827b18efc788a7baadb93ea64a6f8e27d6e3"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_splice.py",
+      "bytes": 5962,
+      "sha256": "fc951ca3ea3d5d7743ee4a82ef743389dd8713f0505a853b65c09747f1d4e21e"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_summary.json",
+      "bytes": 2397,
+      "sha256": "f7235f50d6cd6f194e1999659bd8f2f0e50739e2fca2dbfc4a8d340e4a58a9a3"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/dqi_ccx_peephole.py",
+      "bytes": 17467,
+      "sha256": "13a7b05b7722468369d9132ef2b5f538c1698936167a662b5546915e715d9f69"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/kmb_profile.py",
+      "bytes": 24020,
+      "sha256": "7e7d90fde91384b8c35e45103df09d3fed8400a3ca4544f9b5870a4ee0d83ede"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/kmb_splice.py",
+      "bytes": 6090,
+      "sha256": "5833acf32fa9b25907ac92c531eba7c0dc51e132951ad0c4ce55282a0c19888f"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_inverse_norm.py",
+      "bytes": 9269,
+      "sha256": "00ca06824f4697244c704c267b82c556a9d4fa52913691b4eb9d001b9ac792e0"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_match.py",
+      "bytes": 4205,
+      "sha256": "961e06f9fbcb91e4b030fdd2017ff73472a9512e455ec05f9c23f1e0d3fa22f9"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_splice_norm.py",
+      "bytes": 9169,
+      "sha256": "5ca9258325234ef1fc3180dc3c790d1ef6c0cd3885fad83db0583cf66b1d7bce"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_third_norm.py",
+      "bytes": 3897,
+      "sha256": "1377945e07b304e9fc0bb70a0d05adc94eed9433277cd64a4b161df8806ba52f"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_hybrid_tail.py",
+      "bytes": 3710,
+      "sha256": "2283373df5d6c8374c2e5186b451283653435053e32ff49833ac27decf61519a"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_prefix_phase.py",
+      "bytes": 6050,
+      "sha256": "b2c74331914d1009a7b77d2bfd7c07256585843b0de1b3fedf66167c4b1fe57c"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/after_c5/arithmetic_t/gf24_nested_norm.py",
+      "bytes": 13931,
+      "sha256": "e51535ecf80568d4a67b1406e3afeae718364587bec787f9aa7c6638d48d614a"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/cubic_inverse130.py",
+      "bytes": 13485,
+      "sha256": "b71110b9699fb4beb229fa725fd8a7126ac676e58f328344caffabbc4c96b27a"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/field_tensor.py",
+      "bytes": 5956,
+      "sha256": "5ff27ee0ee83d5a171430506c2f2abe0956f205ce25e31256cc6f2e04657575f"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/quantum_reciprocal.py",
+      "bytes": 9423,
+      "sha256": "8e791a49445eb9acadd08cc5f8c8ac4fb6faf7917ffb55d0723b835621b8f301"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/scalar_inverse_phase.py",
+      "bytes": 8405,
+      "sha256": "d1549c918b98501276c692427d611da204e61c3f20501b53b7b0ab4fd873e06a"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/tower_inverse.py",
+      "bytes": 17188,
+      "sha256": "4b3956a1e02a0e61c2daf983c9a556a5997774d012267bd4ca17c94a8463027e"
+    }
+  ],
+  "independent_evidence": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_chem_width_review.json",
+      "bytes": 6561,
+      "sha256": "cb8fec8c05fc7a8f4a00e4dc475afdcf48c0bf42e21d35abf665b7bf764a4715"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_chem_width_review.md",
+      "bytes": 4725,
+      "sha256": "7b1f526c938330d1a1dac5d1545b825329d9d1f8b578fe833710c9f4a6b70944"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_chem_width_late_classification.json",
+      "bytes": 33165,
+      "sha256": "7fb298a8b9aa2acd3f9ad4adad6aef810254d947677c758dde10b3a16915f2bb"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_chem_width_late_classification.md",
+      "bytes": 7439,
+      "sha256": "85fe716e25d9caba49047fc5654cbea32a780bd61b9075e54156b74dc32118e8"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_chem_width_manifest.json",
+      "bytes": 1434,
+      "sha256": "84d49031cf01787dad170841f3637d589586d00be530cdc70ef2802c2781c0a7"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_full_verification.json",
+      "bytes": 1881,
+      "sha256": "9aeb36196eb05df6961625d4f519aea8fea39f856cdaf1a61dece14a363caf1f"
+    }
+  ],
+  "scratch_intermediate": {
+    "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/borrow6_partial.kmb",
+    "bytes": 522379831,
+    "sha256": "11a14e1c9c13c41345fca7cb3a7fe38966123bb97009d32fe66bb9143baf8054"
+  },
+  "scratch_component_originals": [
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow0_chart.kmb",
+      "bytes": 610655,
+      "sha256": "bac6a5f2c4a87f47b0ecabc8d9eb3aa495795f6285f81cf3231e286209d71a1d"
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow0_pair.kmb",
+      "bytes": 201023,
+      "sha256": "76662a47d72e87871d845c1d4a4453e81f5af062aaccf9b6e2b5647e4f104141"
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow1_chart.kmb",
+      "bytes": 625307,
+      "sha256": "838741177dc8767cc2d9c5c35797968567d5793f8f9d2d2406df3306683adc11"
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow1_pair.kmb",
+      "bytes": 205907,
+      "sha256": "c6f10bbea616a851127f55bec410f04a3bef7a8e125167dbf25ab774e306f69b"
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow6_chart.kmb",
+      "bytes": 647339,
+      "sha256": "82802732a9c9a5d7f0630f22a3239bb7c526e241ffc9124dfde804dcccbda77d"
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow6_pair.kmb",
+      "bytes": 213251,
+      "sha256": "f3996091da4d8145008f6e0ad4772478e124e6352a8b568426e1206e36cca548"
+    }
+  ],
+  "baseline": {
+    "path": "/workspace/scratch/3815fb5fae06/score5_norm_fanout_fanin/dqi.kmb",
+    "sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02",
+    "unchanged": true
+  },
+  "python": "/workspace/scratch/7f542e06b7cf/kickmix_venv/bin/python",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "kickmix_version": "1.0.0",
+  "native_tests": "512 fixed inputs x2 seeds per three variants; no whole native/official run",
+  "new_measurement_or_classical_allocations": false,
+  "score_gain_claimed": false,
+  "whole_qubits": 889,
+  "whole_extra_Toffoli": 180,
+  "known_scope_limit": "Only two matched chart blocks changed; later rolling-flag and arithmetic peaks remain. Conservative lifetime bounds are not semantic lower bounds."
+}

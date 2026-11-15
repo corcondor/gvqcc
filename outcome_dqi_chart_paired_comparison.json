@@ -1,0 +1,65 @@
+{
+  "status": "PASS_NO_REGRESSION_IN_FIXED_INDEPENDENT_CORPUS_AND_WEIGHT33_FIXED",
+  "groups": [
+    {
+      "group": "known_weight31",
+      "baseline": {
+        "shots": 256,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382095.734375
+      },
+      "candidate": {
+        "shots": 256,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382227.12890625
+      },
+      "mean_T_delta": 131.39453125
+    },
+    {
+      "group": "known_weight33",
+      "baseline": {
+        "shots": 256,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382097.57421875
+      },
+      "candidate": {
+        "shots": 256,
+        "value_errors": 0,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382226.05859375
+      },
+      "mean_T_delta": 128.484375
+    },
+    {
+      "group": "independent",
+      "baseline": {
+        "shots": 16384,
+        "value_errors": 0,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382095.34716796875
+      },
+      "candidate": {
+        "shots": 16384,
+        "value_errors": 0,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382225.13592529297
+      },
+      "mean_T_delta": 129.78875732421875
+    }
+  ],
+  "baseline_circuit_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "candidate_circuit_sha256": "0743422b4054ee7aa9763ea6012bc476cf36c2545faf6d19312e51dba7ea9079",
+  "remaining_failure_groups": [
+    "known_weight31"
+  ],
+  "scope": "One shared independent16384sample plus512knownregression shots. Domain-specific improvement, not universaldecoder correctness or a server score."
+}

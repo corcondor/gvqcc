@@ -1,0 +1,99 @@
+{
+  "status": "PASS_INDEPENDENT_NORM_FLAG_REVIEW",
+  "candidate_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+  "candidate_path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_norm_dqi_9a82_third_projective.kmb",
+  "reviewed_source_sha256": {
+    "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_third_norm.py": "1377945e07b304e9fc0bb70a0d05adc94eed9433277cd64a4b161df8806ba52f",
+    "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_inverse_norm.py": "00ca06824f4697244c704c267b82c556a9d4fa52913691b4eb9d001b9ac792e0",
+    "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/cubic_inverse130.py": "b71110b9699fb4beb229fa725fd8a7126ac676e58f328344caffabbc4c96b27a",
+    "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/tower_inverse.py": "4b3956a1e02a0e61c2daf983c9a556a5997774d012267bd4ca17c94a8463027e"
+  },
+  "properties": {
+    "dirty_flag_is_exact_XOR": true,
+    "GF24_norm_zero_iff_input_zero": true,
+    "GF12_norm_zero_iff_input_zero": true,
+    "GF6_GF4_norm_zero_iff_input_zero": true,
+    "GF24_quadratic_delta": 2048,
+    "GF12_quadratic_delta": 42,
+    "both_quadratic_deltas_have_absolute_trace_one": true,
+    "GF6_norm_exponent": 21,
+    "GF6_norm_all_64_inputs_checked": true,
+    "saved_inverse_phase_debt_unchanged": true,
+    "reverse_toggle_valid_because_zero_is_invariant_under_inv0": true,
+    "extra_helpers_for_optional_flag": 0
+  },
+  "independent_native_dirty_flag_tests": [
+    {
+      "seed": 0,
+      "cases": 256,
+      "register_error_cases": {
+        "source": 0,
+        "target": 0,
+        "flag": 0,
+        "dirty": 0
+      },
+      "scratch_error_cases": 0,
+      "phase_error_cases": 0
+    },
+    {
+      "seed": 1,
+      "cases": 256,
+      "register_error_cases": {
+        "source": 0,
+        "target": 0,
+        "flag": 0,
+        "dirty": 0
+      },
+      "scratch_error_cases": 0,
+      "phase_error_cases": 0
+    },
+    {
+      "seed": 24301,
+      "cases": 256,
+      "register_error_cases": {
+        "source": 0,
+        "target": 0,
+        "flag": 0,
+        "dirty": 0
+      },
+      "scratch_error_cases": 0,
+      "phase_error_cases": 0
+    }
+  ],
+  "resource_ledger": {
+    "prefix_static_T": 624,
+    "return_static_T": 636,
+    "pair_static_T": 1260,
+    "delta_vs_old_static_T": -14,
+    "delta_vs_old_expected_T": -3,
+    "global_Q": 889,
+    "global_max_T": 382920
+  },
+  "collaborator_component_evidence": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_norm_component_report.json",
+    "sha256": "b2fada6a9671fa04fa9c1a1b609875a935d771b19cf4de86b16fb2439571169b",
+    "finite_output_cases": 3074,
+    "HMR_seeds": [
+      147,
+      1147,
+      2147,
+      3147
+    ],
+    "all_test_value_and_phase_errors_zero": true
+  },
+  "collaborator_full_verifier_evidence": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_norm_full_verification.json",
+    "sha256": "8ac2774a59633641a1c8147616d782fcbb29d60d34418a946e0686715662bb70",
+    "status": "PASS",
+    "shots": 102400,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "mean_T": 382092.5565332031,
+    "DQI_cost": 359731797766.2993,
+    "seed": null,
+    "salt": "",
+    "verification_scope": "full competition verifier defaults",
+    "reviewer_read_and_hash_bound_report_did_not_rerun_full_verifier": true
+  },
+  "scope": "Exact third-pivot contract on finite Y with N2 nonzero, including D2=0. N2=0 remains unsupported; finite random verification is not an all-input proof of the complete decoder."
+}

@@ -1,0 +1,12 @@
+{
+  "status": "EXACT_VIRTUAL_RECONSTRUCTION_VERIFIED",
+  "patch_file": "outcome_dqi_chart_norm_patch.json.gz",
+  "patch_bytes": 87716,
+  "patch_sha256": "44aa1782e6dedaa0fe8e85b568ad1bfe02b63bcb38e99ba7474aac3b5c976657",
+  "uncompressed_patch_bytes": 820880,
+  "replacements": 28,
+  "input_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "output_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+  "output_bytes": 522343027,
+  "raw_replacement_bytes": 607103
+}

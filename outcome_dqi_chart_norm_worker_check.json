@@ -1,0 +1,29 @@
+{
+  "status": "PASS_STDLIB_PORTABLE_PATCH_AND_NEGATIVE_GUARDS",
+  "positive_reconstruction": {
+    "sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+    "bytes": 522343027
+  },
+  "wrong_equal_size_input_rejected": "Wrong old patch region",
+  "partial_wrong_output_removed": true,
+  "old_non_v27_portfolio_rejected": "Wrong member size or mode: invsqrt.kmb",
+  "raw_patch_sha256": "44aa1782e6dedaa0fe8e85b568ad1bfe02b63bcb38e99ba7474aac3b5c976657",
+  "worker_template_sha256": "4bd9a5f31e3270f3a56d49638edc6a456547d67c4435a9402c08c8316c3b98a9",
+  "full_zip_positive_test": "Exact17member public-v27 source archive is not available locally. Parent will run positive packaging from pinned Kaggle notebook outputs.",
+  "third_party_dependencies": [],
+  "standalone_embedded_worker_entrypoint": {
+    "bytes": 522343027,
+    "event": "patched",
+    "sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e"
+  },
+  "worker_sha256": "316dccef716ae84b80aa9e45defc2f9ca30322c4b6070b9664d0e81d6976bbbb",
+  "embedded_full_qualification_checked": true,
+  "known_failure_scope_binding_checked": true,
+  "kaggle_mount_symlink_discovery": "PASS_one_file_with_backlinkcycle",
+  "ipykernel_f_argument_ignored": "PASS_real_entrypoint_reached_expected_emptyinput_refusal",
+  "empty_input_refusal": "Attach a ZIP with the pinned17 public-v27 non-DQI members",
+  "old_5f8d_chemistry_rejected": "Wrong member size or mode: dfthcsos/submission.npz",
+  "standalone_reconstruction_tested_worker_sha256": "ea20ad010504b6f1a6fddb7798dc9ae8a4884aaeb282f09d9896044bab5f9565",
+  "final_worker_portability_tests_sha256": "316dccef716ae84b80aa9e45defc2f9ca30322c4b6070b9664d0e81d6976bbbb",
+  "verification_change_scope": "The finalworker changes only notebookargv handling andsymlink discovery; the bytepatch applicator andembedded proof/qualification/patch are unchanged from the standalone reconstruction test. Both changed entry paths were exercised on the finalworker."
+}

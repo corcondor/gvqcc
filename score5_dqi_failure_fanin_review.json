@@ -1,0 +1,247 @@
+{
+  "status": "INDEPENDENT_FANIN_INSTRUMENT_AND_FULL_BINARY_BINDING_PASS",
+  "source_sha256": "98ad7b39a630a4152c54b39fbb14dece22fcaf34b00410ab8a45629db87e0b6f",
+  "candidate_sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02",
+  "exact_unconditional_ccx_reduction": 8,
+  "exact_added_cx": 16,
+  "quantum_width": 889,
+  "classical_bits": 208167,
+  "identity_basis_columns_checked": 16,
+  "phase_proof": "Exact equal permutation matrices with positive basis amplitudes; commutation holds for each independent HMR outcome and its classical feedback.",
+  "crossed_operations": {
+    "CX": 160,
+    "HMR": 80,
+    "CZ_IF": 80,
+    "CCX": 8
+  },
+  "groups": [
+    {
+      "source": [
+        26801231,
+        26801274
+      ],
+      "candidate": [
+        26801231,
+        26801275
+      ],
+      "independent_before_sha256": "9196bde726c0a5caae43b86bddb1cbbff7d23d6a0e6d811c35c1011956a1079e",
+      "independent_after_sha256": "e2b4a70b4f31018475d01413c496f1c14524c24666152f4691e726a25e60a613",
+      "actual_candidate_matches": true,
+      "all_crossed_instruments_commute": true
+    },
+    {
+      "source": [
+        26843321,
+        26843364
+      ],
+      "candidate": [
+        26843322,
+        26843366
+      ],
+      "independent_before_sha256": "441265c99926e24f07aebec64186931b11ce544f5817f33b2cb46c9f9e40c3f5",
+      "independent_after_sha256": "79a98399fce0c361fc731b36ce8438f6669453246dd7148445638cc308733f4b",
+      "actual_candidate_matches": true,
+      "all_crossed_instruments_commute": true
+    },
+    {
+      "source": [
+        27213946,
+        27213989
+      ],
+      "candidate": [
+        27213948,
+        27213992
+      ],
+      "independent_before_sha256": "af19b5c2ade45d53184f62b4c7b57f5d98c91d4e5b2d164a50c58810546a8e02",
+      "independent_after_sha256": "503da9c172bf2686c70a8294a5d825cf76aeafc6480bf7bbf5639428ae49c938",
+      "actual_candidate_matches": true,
+      "all_crossed_instruments_commute": true
+    },
+    {
+      "source": [
+        27247344,
+        27247387
+      ],
+      "candidate": [
+        27247347,
+        27247391
+      ],
+      "independent_before_sha256": "0aad8e6a246f4d8e6ed20ee12093a1acfd50bd8f02501a3ab5ce7c258c748668",
+      "independent_after_sha256": "784cd99ef1d3fc0ed54ad9a2831bebe62ea43c639d36be087f610140fa1db0d2",
+      "actual_candidate_matches": true,
+      "all_crossed_instruments_commute": true
+    },
+    {
+      "source": [
+        39876161,
+        39876204
+      ],
+      "candidate": [
+        39876165,
+        39876209
+      ],
+      "independent_before_sha256": "6ebedf3f9b412159a181619c2a6ff15f19b5277056ed6d8ef4843e4a2425e749",
+      "independent_after_sha256": "4097e943fd5e62623c882cd7d4f71e60e3777eec385e5ba72a95335b5d540873",
+      "actual_candidate_matches": true,
+      "all_crossed_instruments_commute": true
+    },
+    {
+      "source": [
+        39909559,
+        39909602
+      ],
+      "candidate": [
+        39909564,
+        39909608
+      ],
+      "independent_before_sha256": "e864698aefb77d36932d3f4422244c40675e41e7cd69c5ff52e410a0d9eadf5b",
+      "independent_after_sha256": "079812a9da703630518895efe22336346473fa614d71d015afad3ac27a600847",
+      "actual_candidate_matches": true,
+      "all_crossed_instruments_commute": true
+    },
+    {
+      "source": [
+        40464686,
+        40464729
+      ],
+      "candidate": [
+        40464692,
+        40464736
+      ],
+      "independent_before_sha256": "e36fce2c4e0b81c4a33172b109b25a544ab97f5838e3d2f09f70a4702c64b28e",
+      "independent_after_sha256": "91dffb272177003e00c6dc04f09e3161648fb67aab6dc477776e43ff5838d475",
+      "actual_candidate_matches": true,
+      "all_crossed_instruments_commute": true
+    },
+    {
+      "source": [
+        40506776,
+        40506819
+      ],
+      "candidate": [
+        40506783,
+        40506827
+      ],
+      "independent_before_sha256": "ba4af7e6ff7700b7766c338036d7968596adacaf6ebe3e52d8c16e0736cfce61",
+      "independent_after_sha256": "659e14d71f9c35bcaa27199f971a275076d03f135bce6e99f778ddb6752788bf",
+      "actual_candidate_matches": true,
+      "all_crossed_instruments_commute": true
+    }
+  ],
+  "unchanged_ranges": [
+    {
+      "source": [
+        0,
+        26801231
+      ],
+      "candidate": [
+        0,
+        26801231
+      ],
+      "all_ten_operation_columns_byte_equal": true
+    },
+    {
+      "source": [
+        26801274,
+        26843321
+      ],
+      "candidate": [
+        26801275,
+        26843322
+      ],
+      "all_ten_operation_columns_byte_equal": true
+    },
+    {
+      "source": [
+        26843364,
+        27213946
+      ],
+      "candidate": [
+        26843366,
+        27213948
+      ],
+      "all_ten_operation_columns_byte_equal": true
+    },
+    {
+      "source": [
+        27213989,
+        27247344
+      ],
+      "candidate": [
+        27213992,
+        27247347
+      ],
+      "all_ten_operation_columns_byte_equal": true
+    },
+    {
+      "source": [
+        27247387,
+        39876161
+      ],
+      "candidate": [
+        27247391,
+        39876165
+      ],
+      "all_ten_operation_columns_byte_equal": true
+    },
+    {
+      "source": [
+        39876204,
+        39909559
+      ],
+      "candidate": [
+        39876209,
+        39909564
+      ],
+      "all_ten_operation_columns_byte_equal": true
+    },
+    {
+      "source": [
+        39909602,
+        40464686
+      ],
+      "candidate": [
+        39909608,
+        40464692
+      ],
+      "all_ten_operation_columns_byte_equal": true
+    },
+    {
+      "source": [
+        40464729,
+        40506776
+      ],
+      "candidate": [
+        40464736,
+        40506783
+      ],
+      "all_ten_operation_columns_byte_equal": true
+    },
+    {
+      "source": [
+        40506819,
+        58868722
+      ],
+      "candidate": [
+        40506827,
+        58868730
+      ],
+      "all_ten_operation_columns_byte_equal": true
+    }
+  ],
+  "register_bytes_identical": true,
+  "header_changes_only_expected_counts": true,
+  "all_other_operation_columns_byte_identical": true,
+  "source_and_candidate_opened_read_only": true,
+  "root_native_receipts_reviewed": {
+    "blocks": 8,
+    "inputs_per_block": 256,
+    "all_reported_value_classical_phase_errors_zero": true
+  },
+  "new_native_or_official_run_performed": false,
+  "root_certificate_sha256": "09c1ac1906013c18d37ab598d91866ab5608e5d6cb19658f3ab07fec9e255e96",
+  "root_patch_sha256": "76ecbf7803d2c8df89c8456a02895f4cb2a57deb62a73ee7fed068ee5966fb26",
+  "audit_script_sha256": "79053cb3fb48e6f5380f4dbc698852aa71e9772f3a1ca31a75e620476e1723b3",
+  "elapsed_seconds": 9.546008600998903,
+  "scope": "Eight new fan-in identities are exactly bound to candidate6a998c. This preserves every predecessor instrument including the prior chart repair and sixteen fan-out edits. Full official cost/error measurement is separate. No claim of fixing the remaining numerator-zero class or a new Public Score."
+}

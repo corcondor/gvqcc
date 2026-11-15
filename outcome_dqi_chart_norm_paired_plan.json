@@ -1,0 +1,101 @@
+{
+  "created_utc": "2026-11-15T02:07:10.302742+00:00",
+  "purpose": "Replay the unchangedpaired inputcorpus against the cheaper same-map normfused thirdpivot repair.",
+  "independent_seed_label": "GVQCC independent paired reliability audit 2026-11-15; one non-adaptive 16384-shot sample",
+  "verifier": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dqi/verify_submission_dqi.py",
+  "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+  "variants": {
+    "chart_candidate": {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_norm_dqi_9a82_third_projective.kmb",
+      "sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e"
+    }
+  },
+  "groups": [
+    {
+      "name": "known_weight31",
+      "seed_sha256": "72b3525cc40397c595061d466a48241d65bd47f794d2aeac428b26829a8a2229",
+      "batches": [
+        104
+      ]
+    },
+    {
+      "name": "known_weight33",
+      "seed_sha256": "aafed8b0fa2bbfde21f47672a5e548a84a6d42d735e800557efbb2c04c310f09",
+      "batches": [
+        349
+      ]
+    },
+    {
+      "name": "independent",
+      "seed_sha256": "c45571244b1bee95f44054a0826663ea6e24ba0e2f51b08994a2b003316cd3aa",
+      "batches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ]
+    }
+  ],
+  "scope": "Known regressions were chosen before this new execution; independent stream fixed once before seeing either result. No adaptive search, no public or hidden test seed reconstruction.",
+  "comparison_baseline_result": "outcome_dqi_publicloss_9a82.json"
+}

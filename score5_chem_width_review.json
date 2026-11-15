@@ -1,0 +1,137 @@
+{
+  "schema": "gvqcc-score5-independent-child-norm-width-review-v1",
+  "status": "NO_CONCRETE_DEFECT_FOUND_IN_REVIEWED_COMPONENT",
+  "review_scope": "Read-only algebra, phase, scratch ownership, existing native receipt, and conditional score accounting; no native rerun or full-decoder verification by reviewer.",
+  "reviewed_sources": [
+    {
+      "path": "score5_dqi_width_check.py",
+      "sha256": "17edbcea7d4c673dd74b7b7bc559f90e3d11ed06e4dfdeff9cbe937e01ce8646"
+    },
+    {
+      "path": "score5_dqi_width_inverse.py",
+      "sha256": "1438bcabbbebd2c3529a6234734afe493151dcff576212ed8a894c164af21289"
+    },
+    {
+      "path": "outcome_dqi_chart_inverse_norm.py",
+      "sha256": "00ca06824f4697244c704c267b82c556a9d4fa52913691b4eb9d001b9ac792e0"
+    },
+    {
+      "path": "outcome_dqi_chart_third_norm.py",
+      "sha256": "1377945e07b304e9fc0bb70a0d05adc94eed9433277cd64a4b161df8806ba52f"
+    }
+  ],
+  "component_receipt": {
+    "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/component.json",
+    "sha256": "dd380cf09dfd942c0c9426dc582d8a7d5fdc7e4befe20e9dca37310433317734",
+    "status": "PASS_SOURCE_COMPONENT_ONLY"
+  },
+  "component_artifacts": [
+    {
+      "borrow_bits": 0,
+      "pair_Q": 73,
+      "pair_static_T": 389,
+      "pair_sha256": "76662a47d72e87871d845c1d4a4453e81f5af062aaccf9b6e2b5647e4f104141",
+      "chart_Q": 889,
+      "chart_static_T": 1260,
+      "chart_sha256": "bac6a5f2c4a87f47b0ecabc8d9eb3aa495795f6285f81cf3231e286209d71a1d",
+      "native_shots_per_seed": 512,
+      "native_seeds": [
+        251,
+        1251
+      ],
+      "recorded_value_phase_scratch_flag_errors": 0
+    },
+    {
+      "borrow_bits": 1,
+      "pair_Q": 72,
+      "pair_static_T": 413,
+      "pair_sha256": "c6f10bbea616a851127f55bec410f04a3bef7a8e125167dbf25ab774e306f69b",
+      "chart_Q": 888,
+      "chart_static_T": 1332,
+      "chart_sha256": "838741177dc8767cc2d9c5c35797968567d5793f8f9d2d2406df3306683adc11",
+      "native_shots_per_seed": 512,
+      "native_seeds": [
+        251,
+        1251
+      ],
+      "recorded_value_phase_scratch_flag_errors": 0
+    },
+    {
+      "borrow_bits": 6,
+      "pair_Q": 67,
+      "pair_static_T": 449,
+      "pair_sha256": "f3996091da4d8145008f6e0ad4772478e124e6352a8b568426e1206e36cca548",
+      "chart_Q": 883,
+      "chart_static_T": 1440,
+      "chart_sha256": "82802732a9c9a5d7f0630f22a3239bb7c526e241ffc9124dfde804dcccbda77d",
+      "native_shots_per_seed": 512,
+      "native_seeds": [
+        251,
+        1251
+      ],
+      "recorded_value_phase_scratch_flag_errors": 0
+    }
+  ],
+  "findings": [
+    "The selected child-norm coordinate is XORed with the exact polynomial norm of its still-live parent, so it becomes zero coherently; no new measurement or phase is introduced by that toggle.",
+    "The original parent register is mapped to its GF64 quadratic tower only during the norm toggle and is restored to polynomial coordinates before use by source phase_product.",
+    "The borrowed bits enter the consuming 12-bit multiplication target at zero, and each subsequent SWAP/HMR leaves all target bits zero. They are not read as child_norm while borrowed.",
+    "Each source HMR mask is paid using the surviving original norm and the updated source half. This uses new_half times original_norm equals old_half, including zero by inv0 and irreducible-norm zero iff source zero.",
+    "Borrowed child bits are restored after the second consuming HMR and before the original parent norm is measured or reconstructed through child_norm.",
+    "Only independently allocated temporary qubits are freed; caller-owned child_norm bits stay allocated. Source, clean bank and optional flag disjointness checks remain present.",
+    "The saved six-bit child phase mask remains in tower(child_norm) coordinates, and the matched return pays it against the reciprocal witness before that witness changes. The original record ownership checks remain.",
+    "The existing native fixture probes the intermediate inverse with arbitrary classical linear phase plus a cubic CCZ phase, so the recorded checks test more than an identity prefix/return composition.",
+    "The complete 4096-pair scalar test covers the one-bit norm toggle formula. Native pair tests sample 512 inputs under two fixed seeds; they are not an exhaustive 24-bit proof.",
+    "Local helper reduction does not establish whole-decoder width. Every remaining global peak and physical wire index must be accounted for before advertising Q888 or Q883."
+  ],
+  "borrowed_storage_contract": {
+    "one_bit": "caller child_norm[0], polynomial coordinate",
+    "six_bits": "caller child_norm[:6], polynomial coordinates",
+    "erase_restore_timing": "after inverse_norm computed; before original_norm HMR; two consuming HMR loops in between",
+    "new_temporary_qubits": {
+      "one": 11,
+      "six": 6
+    },
+    "new_additional_quantum_helpers": {
+      "one": 23,
+      "six": 18
+    },
+    "added_CCX_per_inverse_call": {
+      "one": 12,
+      "six": 30
+    },
+    "child_phase_mask_bits": 6
+  },
+  "cost_formula": "R * Q**2 * mean_T; compare on the same inputs and same repetition factor",
+  "cost_reference": {
+    "receipt": "score5_dqi_full_verification.json",
+    "receipt_sha256": "9aeb36196eb05df6961625d4f519aea8fea39f856cdaf1a61dece14a363caf1f",
+    "circuit_sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02",
+    "Q": 889,
+    "mean_T": 382068.47728515626,
+    "R": 1.1912604648115832,
+    "score": 359709127680.1104,
+    "verified_shots": 102400
+  },
+  "conditional_tradeoffs": [
+    {
+      "conditional_global_Q": 888,
+      "component_extra_T": 72,
+      "same_R_score_ratio_if_global_peak_reduced": 0.9979395707014188,
+      "total_added_T_break_even_at_same_R": 860.9991124600831
+    },
+    {
+      "conditional_global_Q": 883,
+      "component_extra_T": 180,
+      "same_R_score_ratio_if_global_peak_reduced": 0.9870120202747122,
+      "total_added_T_break_even_at_same_R": 5209.964550603759
+    }
+  ],
+  "global_candidate_built_or_verified_by_this_review": false,
+  "full_official_pass_inferred_from_component": false,
+  "limitations": [
+    "The inverse return caller must supply inv0(prefix-entry) in the same source wires; Python ownership checks cannot inspect that quantum value.",
+    "The enclosing chart finite-output domain and its existing flag-reset contract are unchanged.",
+    "A new full-file hash can change the default official test cohort, so numerical score projections hold only under the explicitly stated same-input/same-R comparison."
+  ]
+}

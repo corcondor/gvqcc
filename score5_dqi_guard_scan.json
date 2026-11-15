@@ -1,0 +1,408 @@
+{
+  "base_sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02",
+  "base_read_only": true,
+  "templates": {
+    "guard_zero_then_shift": {
+      "operations": 66,
+      "qubits": 23,
+      "bits": 1,
+      "static_T": 11,
+      "sha256": "eae52d642bc889aed9f6d89c381c1e92d847f8e557ac4ee492e14b71a6046050",
+      "opcode_hits": 18,
+      "exact_hits": []
+    },
+    "guarded_closing": {
+      "operations": 42291,
+      "qubits": 73,
+      "bits": 354,
+      "static_T": 384,
+      "sha256": "8da2a7b90b095fcd70d9d09dffe5fd8558167cf2aeb7e39b899aae3298fda4e7",
+      "opcode_hits": 0,
+      "exact_hits": []
+    },
+    "unguarded_closing": {
+      "operations": 42154,
+      "qubits": 72,
+      "bits": 354,
+      "static_T": 363,
+      "sha256": "2527a2234ee9f571ed926f385f09d032586ce1383ec88eebdf2835b7d94df92b",
+      "opcode_hits": 0,
+      "exact_hits": []
+    },
+    "nested_guarded_closing": {
+      "operations": 42427,
+      "qubits": 73,
+      "bits": 354,
+      "static_T": 381,
+      "sha256": "77f7fb0386aa7209e4cc5b43a086334285fffbeae1547c8d31cadfb67d49e07c",
+      "opcode_hits": 0,
+      "exact_hits": []
+    },
+    "nested_unguarded_closing": {
+      "operations": 42290,
+      "qubits": 72,
+      "bits": 354,
+      "static_T": 360,
+      "sha256": "1333c41f06b3a19a3ef005d0cf2b69fbecf0417ed56ff79741918df8aff4351e",
+      "opcode_hits": 50,
+      "exact_hits": [
+        {
+          "start": 35689634,
+          "end": 35731924,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "b0bf7217912aae6e19fd32fba6ec70bd1cb8bc2eaa43ca3a4e4615e7ad97633a"
+        },
+        {
+          "start": 35741358,
+          "end": 35783648,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "57a572aae799e87b6853fa5f2f978ed3ceb79a4f60e6028550400bad64bab0e7"
+        },
+        {
+          "start": 35793064,
+          "end": 35835354,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "5ec2d102e329426fa565d91925a28df5eb86319c2b1f0460966588594042ad42"
+        },
+        {
+          "start": 35844542,
+          "end": 35886832,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "b4de50f24392b15033e498daa63fe4d807bdcd9abb68de126a0d0fd57bb177f5"
+        },
+        {
+          "start": 35896020,
+          "end": 35938310,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "67a6f00f3f00e2d7fdd2d60e6531075c91051cea0e834cf7ee948a46b23f41ba"
+        },
+        {
+          "start": 35947758,
+          "end": 35990048,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "d944597082f88a2dae32006a07e72e94e6097c9fd954977905f74fcc3a68ff7a"
+        },
+        {
+          "start": 35999505,
+          "end": 36041795,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "91a2df2993dc144ee036e8af697d7ec3d303470b8dca4b50fa498f0356857f37"
+        },
+        {
+          "start": 36051243,
+          "end": 36093533,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "3b572f34fa47a51986633b555fbcb0900d4cd917b3d57a2cfa55cbe530f3d020"
+        },
+        {
+          "start": 36103022,
+          "end": 36145312,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "e23aced3026e5f13b196ee8e1e6e8e15fa53834b0b9a00f56a2065decf22f306"
+        },
+        {
+          "start": 36154671,
+          "end": 36196961,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "d29880bf9603eeff8a824704ba3333d986e0d9099955b18226b020f278d8f119"
+        },
+        {
+          "start": 36206064,
+          "end": 36248354,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "a8612db5f57227ccbbc88f8fd7a604055fa1e8d29e66ff3c8e6e60b4ce87571e"
+        },
+        {
+          "start": 36257441,
+          "end": 36299731,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "a5616bdbb77dd354fc317af50a134a0090b30ff854fca640f00fbffbeebbb050"
+        },
+        {
+          "start": 36308895,
+          "end": 36351185,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "03d107755f5bc21e9c53ca44b55cecb005ac0abd1a7b578d2ee6a5d8ec0ac939"
+        },
+        {
+          "start": 36360168,
+          "end": 36402458,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "ceb5d8cf78b213f40c281e99757ffd88bec10ad484e842ab6227fea1a7b2cce6"
+        },
+        {
+          "start": 36411542,
+          "end": 36453832,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "1ebaf61c0f8031e07e2a25534f46c765ee7484896e6b12ac5d1d9f8fa9e14688"
+        },
+        {
+          "start": 36462974,
+          "end": 36505264,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "c4614352fdb01c215209a6bf6956a542e55fdb5e7ec588bf09bc4042a3d32095"
+        },
+        {
+          "start": 41001217,
+          "end": 41043507,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "80b2259d767f320bcac7a232c485b5f11abb7ec3abc26b672129864c595b94ec"
+        },
+        {
+          "start": 41395195,
+          "end": 41437485,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "085ea726c18fa9b633fc0343039e8b06bd21a07a6f12d9e69eac98ce9739120b"
+        },
+        {
+          "start": 41769457,
+          "end": 41811747,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "822dbbf23871b3bfece04facee95fb846ab3810340c614ec894940d9f6e55119"
+        },
+        {
+          "start": 42126088,
+          "end": 42168378,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "d7940d3e2fa9b938b8b98fb53977a9e10ddc054df44bc14afaa4b555d48874f4"
+        },
+        {
+          "start": 42469380,
+          "end": 42511670,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "1a91d1ef088bbf97377722e74c116a3a8cf29413f189dd0aa10648a0ca1669cf"
+        },
+        {
+          "start": 42793101,
+          "end": 42835391,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "5b236a2fa33e29c3b82cc8ea78d87aa6aab156e09ba87b94051e2daa5a7e97cf"
+        },
+        {
+          "start": 43098242,
+          "end": 43140532,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "d88a31b9ee112e7cb043e62377f2cb82561ea1feaa63d29062e93cf0ed02ca49"
+        },
+        {
+          "start": 43383997,
+          "end": 43426287,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "fc646f7b794865451372722e3765e90108b36c163565159cf93968f2986c8b17"
+        },
+        {
+          "start": 43655729,
+          "end": 43698019,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "06683078a9cbac844e33aae8b905e7cd0178a14070f4db24a76dccf435f84b41"
+        },
+        {
+          "start": 43910011,
+          "end": 43952301,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "b13bd1f131ffb2a750c0260653df7ae0eb7bd0201d554dc7910891f601c1049a"
+        },
+        {
+          "start": 44148161,
+          "end": 44190451,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "5af94849f52361e41d8a4fff7fc8707de63dbe0535c189c2f3879d96b36afefe"
+        },
+        {
+          "start": 44369566,
+          "end": 44411856,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "38ccc09be886ee60635bf50b86899644997a5c51d035b5818929d433e82f934d"
+        },
+        {
+          "start": 44581386,
+          "end": 44623676,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "0fdf46f18dcf841d9f1631f2459e795e3a8a55d23f73b8fd71dc433aedac39eb"
+        },
+        {
+          "start": 44778640,
+          "end": 44820930,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "c1031e0115c8b42869cd2ac53e804c9a579ee3a80714d411a51f1e72c670a878"
+        },
+        {
+          "start": 44962705,
+          "end": 45004995,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "9b547b283b08be8214fd78c7a71bd65857bd7e0a7fcde76d744eb5b5ba8757ca"
+        },
+        {
+          "start": 45133006,
+          "end": 45175296,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "f877f9e7a3c7c9e2e839b7cfdc0c3fa8ce9f61a536afad1d6ba7315ae13806ce"
+        },
+        {
+          "start": 45292265,
+          "end": 45334555,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "a97e3aa5545472be3c95f6b0633bd0c640067b75fb789f31be7e94f5560e5f46"
+        },
+        {
+          "start": 45440091,
+          "end": 45482381,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "d1c438556b78a974dbff5bee91136b13e878d409b2a48c8d92fec0d0292e40eb"
+        },
+        {
+          "start": 45577074,
+          "end": 45619364,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "ec2315f4446fb0d205f2dedabfff788fa1d334f637237cd808f1c689443fb8c2"
+        },
+        {
+          "start": 45705351,
+          "end": 45747641,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "21b5ca79f977233954a15bc004b36b5e3cc935d888ca58d52a78db9bfa738975"
+        },
+        {
+          "start": 45824905,
+          "end": 45867195,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "d155e9b54ce43185a5114ff81a94bf91b1f50124137cbf402076fe6168668e81"
+        },
+        {
+          "start": 45934300,
+          "end": 45976590,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "d5da40cabdbfef3cc9c446d96cd4416c9a3010caa3e5bc33dc410248f5bf247d"
+        },
+        {
+          "start": 46035179,
+          "end": 46077469,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "9b22acaec4852970d332581ee45c61d76a2b399f6ec50e1c348153c5eddf7f71"
+        },
+        {
+          "start": 46127276,
+          "end": 46169566,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "e4af7c4f603c6bc0f46e9e2400355cd703742228e020f45f0a6ed826128d8639"
+        },
+        {
+          "start": 46212921,
+          "end": 46255211,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "00bf08e45ced88c9fb8e5afb94fb5f81556768575e8e3e79e88ef04e99d28162"
+        },
+        {
+          "start": 46291307,
+          "end": 46333597,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "5e652d263fc2d9cd614b1c052453889009a93bd1da5d44c66bec6ae70a4a1879"
+        },
+        {
+          "start": 46363047,
+          "end": 46405337,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "9c35b981bde3604ab444a80f2ce2c1b067092b8af0415e4ff392e8ca03f6f9b6"
+        },
+        {
+          "start": 46429609,
+          "end": 46471899,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "510e2fd11175170d55eefa41c610f3afe4099f1ae5a5473dc07936c013cc34e7"
+        },
+        {
+          "start": 46491530,
+          "end": 46533820,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "2ca2c53eb44147dfda0aa2abff550d692a72327ba2bca13849ecac28fe8f2d78"
+        },
+        {
+          "start": 46548911,
+          "end": 46591201,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "19b2645e509d6bb1aaabd8ef88bd18b129ab2acc14c0123589670ebbfa333437"
+        },
+        {
+          "start": 46602440,
+          "end": 46644730,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "54dec9711e119ed00b0ac9342e42c721d21e3bba4fc6fa6f9b49712c1c75ab7a"
+        },
+        {
+          "start": 46652832,
+          "end": 46695122,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "dd4504db6a07ae55d7b1a45792def066ede71cd73e3f34e1cc42b4168a6a719a"
+        },
+        {
+          "start": 46700698,
+          "end": 46742988,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "f43e01203742af6e281510bb3af3a2ecaae732d38ea229540a2a1bf03c8e9935"
+        },
+        {
+          "start": 46746278,
+          "end": 46788568,
+          "quantum_map_entries": 72,
+          "classical_map_entries": 354,
+          "mapping_sha256": "f593ce21f6c8c9c3fe9a00d6a52ddf8cb15d3ca1d93c2aeae84fa84cda92e8d5"
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 10.460196494001138,
+  "arithmetic_source_sha256": "0864e9455bf464c6e1501bbeb0bc1f9596fb81c9829c7df5ae5eab07bd4fb0f0",
+  "nested_arithmetic_source_sha256": "e51535ecf80568d4a67b1406e3afeae718364587bec787f9aa7c6638d48d614a",
+  "scanner_source_sha256": "4b37079f43b64d82aecd3308726377875e21f10819c28f6db0625112b10e90a2",
+  "masks_scope": "Each entire closing matches all HMR outputs and every subsequent classical target/condition use under one injective bit map. No masks are deleted or transferred, because no candidate rewrite is performed.",
+  "scope": "Literal upstream guarded closing and zero-predicate/shift motif only; no claim excluding transformed equivalent guards; no candidate or score improvement."
+}

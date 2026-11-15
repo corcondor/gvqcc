@@ -1,0 +1,84 @@
+{
+  "status": "PASS_FIXED_PAIRED_REGRESSION_AND_INDEPENDENT_CORPUS",
+  "groups": [
+    {
+      "group": "known_weight31",
+      "baseline": {
+        "shots": 256,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382095.734375
+      },
+      "candidate": {
+        "shots": 256,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382090.5703125
+      },
+      "mean_T_delta": -5.1640625
+    },
+    {
+      "group": "known_weight33",
+      "baseline": {
+        "shots": 256,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382097.57421875
+      },
+      "candidate": {
+        "shots": 256,
+        "value_errors": 0,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382087.59375
+      },
+      "mean_T_delta": -9.98046875
+    },
+    {
+      "group": "independent",
+      "baseline": {
+        "shots": 16384,
+        "value_errors": 0,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382095.34716796875
+      },
+      "candidate": {
+        "shots": 16384,
+        "value_errors": 0,
+        "phase_errors": 0,
+        "classical_changed_shots": 0,
+        "mean_T": 382092.53759765625
+      },
+      "mean_T_delta": -2.8095703125
+    }
+  ],
+  "baseline_circuit_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "candidate_circuit_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+  "output_hash_differences": [
+    {
+      "group": "known_weight31",
+      "batch": 104,
+      "fields": [
+        "output_phases_sha256"
+      ]
+    },
+    {
+      "group": "known_weight33",
+      "batch": 349,
+      "fields": [
+        "output_syndromes_sha256"
+      ]
+    }
+  ],
+  "fixed_failure": "known_weight33, batch349 slot121",
+  "remaining_failure_groups": [
+    "known_weight31"
+  ],
+  "baseline_receipt_sha256": "e3f2cb638148ad0946925a32c823407f9923a063dfcc4615fc06d566fd75c691",
+  "candidate_receipt_sha256": "57cdada744c1e3c6bb5954f2ef6d526ea953024833ea6bf894305ef93378a756",
+  "scope": "Same16384 independent validinputs and512targetedshots. No newfailures; third-pivot denominatorzero repaired. Not a populationfailure-rate estimate or a Public score."
+}

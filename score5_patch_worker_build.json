@@ -1,0 +1,35 @@
+{
+  "status": "PINNED_EXACT_PATCH_WORKER_BUILT",
+  "worker_sha256": "93222577d134739a3a0b1e005ac518b458548b33b023b92e92d3cfe7c6b290ea",
+  "worker_bytes": 154653,
+  "payload_raw_sha256": "26369f3b589dae35d16c89cbb5d1fe686e9fe4167c63546b44c9417236361a44",
+  "payload_compressed_bytes": 103231,
+  "manifest_sha256": "9220f57599577ceda066e0a1a278c1da6bbb977646e98fcd7273f89de9da13d6",
+  "builder_sha256": "ce86661966db5822c5c6e2aaaa670872166a3f601c3b2f7722e3a51d4ebc7df4",
+  "template_sha256": "4993ce6df517cabab7b0e6ea775344546c20bf9dda9b4508393e1fb10f1a4677",
+  "candidate_sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02",
+  "source_immutable": true,
+  "virtual_full_stream_checks": [
+    {
+      "label": "projective_norm",
+      "output_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+      "output_bytes": 522343027,
+      "virtual_stream_reconstruction_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e"
+    },
+    {
+      "label": "fanout16",
+      "output_sha256": "98ad7b39a630a4152c54b39fbb14dece22fcaf34b00410ab8a45629db87e0b6f",
+      "output_bytes": 522343107,
+      "virtual_stream_reconstruction_sha256": "98ad7b39a630a4152c54b39fbb14dece22fcaf34b00410ab8a45629db87e0b6f"
+    },
+    {
+      "label": "fanin8",
+      "output_sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02",
+      "output_bytes": 522343147,
+      "virtual_stream_reconstruction_sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02"
+    }
+  ],
+  "new_official_run": false,
+  "public_score": null,
+  "submission_performed": false
+}

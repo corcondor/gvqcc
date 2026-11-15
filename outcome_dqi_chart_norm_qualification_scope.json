@@ -1,0 +1,43 @@
+{
+  "candidate_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+  "official_receipt_sha256": "8ac2774a59633641a1c8147616d782fcbb29d60d34418a946e0686715662bb70",
+  "guaranteed_component_domain": "Thirdpublicpivot finiteoutput: queriedN!=0. ZeroqueriedD is included.",
+  "fixed_known_valid_input": {
+    "weight": 33,
+    "batch": 349,
+    "shot_in_batch": 121,
+    "absolute_shot": 89465,
+    "first_exception_node_zero_based": 2,
+    "N": [
+      1103,
+      3094
+    ],
+    "D": [
+      0,
+      0
+    ],
+    "case_sha256": "e92fab245e56346d002fdd3254466d3d98bc764a6db93596d46cb7b50da206ce"
+  },
+  "remaining_known_valid_input_failure": {
+    "weight": 31,
+    "batch": 104,
+    "shot_in_batch": 184,
+    "absolute_shot": 26808,
+    "first_exception_node_zero_based": 13,
+    "N": [
+      0,
+      0
+    ],
+    "D": [
+      1013,
+      2476
+    ],
+    "case_sha256": "87c18965ac99615c6b1c20156350ac83acc398ead86fbe4a78bc2274c2c74433",
+    "still_value_error": true
+  },
+  "third_pivot_N_zero_also_guaranteed": false,
+  "independent_common_valid_inputs": 16384,
+  "new_failures_in_that_corpus": 0,
+  "global_correctness_or_public_score_claim": false,
+  "note": "The remainingknownN=0 counterexample is node13, not the thirdpivot. A finite officialPASS does not eliminate it."
+}

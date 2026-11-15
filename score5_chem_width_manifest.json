@@ -1,0 +1,34 @@
+{
+  "status": "FROZEN_READ_ONLY_COMPONENT_REVIEW_AND_EXACT_LATE_CLASSIFICATION",
+  "files": {
+    "score5_chem_width_review.md": {
+      "sha256": "7b1f526c938330d1a1dac5d1545b825329d9d1f8b578fe833710c9f4a6b70944",
+      "bytes": 4725
+    },
+    "score5_chem_width_review.json": {
+      "sha256": "cb8fec8c05fc7a8f4a00e4dc475afdcf48c0bf42e21d35abf665b7bf764a4715",
+      "bytes": 6561
+    },
+    "score5_chem_width_classify.py": {
+      "sha256": "56800909a29ff7587f0ff316a96a01a5c9d385544d98acf73980cf1027d43128",
+      "bytes": 6289
+    },
+    "score5_chem_width_late_classification.md": {
+      "sha256": "85fe716e25d9caba49047fc5654cbea32a780bd61b9075e54156b74dc32118e8",
+      "bytes": 7439
+    },
+    "score5_chem_width_late_classification.json": {
+      "sha256": "7fb298a8b9aa2acd3f9ad4adad6aef810254d947677c758dde10b3a16915f2bb",
+      "bytes": 33165
+    }
+  },
+  "whole_dqi_source_sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02",
+  "scope": [
+    "Existing native component receipts were independently reviewed, not re-executed.",
+    "Late blocks were exactly matched against newly generated small source templates.",
+    "Original DQI bytes were independently hashed and left unchanged.",
+    "The paired-division +35-Toffoli schedule is an unadopted source proposal.",
+    "No whole-width circuit or formal verifier was run by this review."
+  ],
+  "no_claim_of_global_qubit_reduction": true
+}

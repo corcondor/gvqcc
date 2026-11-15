@@ -1,0 +1,13 @@
+{
+  "status": "FULL_OFFICIAL_QUALIFIED_PORTABLE_BUNDLE",
+  "bundle_path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_norm_bundle.zip",
+  "bundle_bytes": 242626,
+  "bundle_sha256": "29e259955bc55d32f4bbf0d56c4a47fb6b9ba3e75a0afcd05a1138a15b4537ac",
+  "worker_path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_norm_worker.py",
+  "worker_bytes": 167538,
+  "worker_sha256": "316dccef716ae84b80aa9e45defc2f9ca30322c4b6070b9664d0e81d6976bbbb",
+  "qualification_sha256": "8ac2774a59633641a1c8147616d782fcbb29d60d34418a946e0686715662bb70",
+  "candidate_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+  "files": 23,
+  "submission_performed": false
+}
