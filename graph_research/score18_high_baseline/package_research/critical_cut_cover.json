@@ -1,0 +1,44 @@
+{
+  "source_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "legal_inputs": 3133452,
+  "operations": 23881,
+  "scope_collapsed_vertices": 18768,
+  "scope_collapsed_lifetimes": 552,
+  "forced_width": 46,
+  "fixed_input_width": 22,
+  "forced_cuts": 6393,
+  "distinct_live_sets": 183,
+  "common_lifetimes": [
+    {
+      "wire": "q22",
+      "birth": 217,
+      "death": 23790,
+      "birth_gate": "CX q26 q22",
+      "death_gate": "HMR q22 b177"
+    },
+    {
+      "wire": "q23",
+      "birth": 227,
+      "death": 23783,
+      "birth_gate": "CX q28 q23",
+      "death_gate": "HMR q23 b49"
+    },
+    {
+      "wire": "q24",
+      "birth": 232,
+      "death": 23825,
+      "birth_gate": "CX q30 q24",
+      "death_gate": "HMR q24 b177"
+    },
+    {
+      "wire": "q25",
+      "birth": 234,
+      "death": 23797,
+      "birth_gate": "CX q34 q25",
+      "death_gate": "HMR q25 b177"
+    }
+  ],
+  "first_forced_cut": 2364,
+  "last_forced_cut": 20907,
+  "indices": "Zero-based KMB gate indices with register declarations omitted. Each cut follows the listed gate, at the end of a collapsed scope."
+}

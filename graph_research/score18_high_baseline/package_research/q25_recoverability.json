@@ -1,0 +1,266 @@
+{
+  "source_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "legal_inputs": 3133452,
+  "wire": "q25",
+  "predicate_at_reads": "1 <= x < 64",
+  "reads": 102,
+  "reads_by_gate_type": {
+    "Z": 7,
+    "CZ": 13,
+    "CSWAP": 24,
+    "CX": 55,
+    "CCX": 2,
+    "CCZ": 1
+  },
+  "affine_hits_excluding_gate_operands": [
+    {
+      "index": 588,
+      "gate": "Z q25",
+      "parity": [
+        "q24",
+        "q30"
+      ]
+    },
+    {
+      "index": 589,
+      "gate": "CZ q23 q25",
+      "parity": [
+        "q24",
+        "q30"
+      ]
+    },
+    {
+      "index": 594,
+      "gate": "Z q25",
+      "parity": [
+        "q34"
+      ]
+    },
+    {
+      "index": 599,
+      "gate": "Z q25",
+      "parity": [
+        "q34"
+      ]
+    }
+  ],
+  "collision_witnesses": [
+    {
+      "index": 603,
+      "gate": "Z q25",
+      "inputs": [
+        4,
+        262144
+      ]
+    },
+    {
+      "index": 607,
+      "gate": "CZ q23 q25",
+      "inputs": [
+        1,
+        65536
+      ]
+    },
+    {
+      "index": 7621,
+      "gate": "CSWAP q25 q41 q2",
+      "inputs": [
+        1,
+        65536
+      ]
+    },
+    {
+      "index": 7622,
+      "gate": "CSWAP q25 q40 q1",
+      "inputs": [
+        1,
+        65536
+      ]
+    },
+    {
+      "index": 7623,
+      "gate": "CSWAP q25 q43 q0",
+      "inputs": [
+        1,
+        65536
+      ]
+    },
+    {
+      "index": 7624,
+      "gate": "CSWAP q25 q3 q8",
+      "inputs": [
+        23,
+        1507328
+      ]
+    },
+    {
+      "index": 7625,
+      "gate": "CSWAP q25 q4 q9",
+      "inputs": [
+        23,
+        1507328
+      ]
+    },
+    {
+      "index": 7626,
+      "gate": "CSWAP q25 q5 q34",
+      "inputs": [
+        23,
+        1507328
+      ]
+    },
+    {
+      "index": 8344,
+      "gate": "CSWAP q25 q3 q8",
+      "inputs": [
+        4,
+        262144
+      ]
+    },
+    {
+      "index": 8345,
+      "gate": "CSWAP q25 q4 q9",
+      "inputs": [
+        4,
+        262144
+      ]
+    },
+    {
+      "index": 8346,
+      "gate": "CSWAP q25 q5 q34",
+      "inputs": [
+        4,
+        262144
+      ]
+    },
+    {
+      "index": 8347,
+      "gate": "CSWAP q25 q6 q36",
+      "inputs": [
+        4,
+        262144
+      ]
+    },
+    {
+      "index": 8348,
+      "gate": "CSWAP q25 q38 q30",
+      "inputs": [
+        4,
+        262144
+      ]
+    },
+    {
+      "index": 8349,
+      "gate": "CSWAP q25 q37 q32",
+      "inputs": [
+        4,
+        262144
+      ]
+    },
+    {
+      "index": 8350,
+      "gate": "CSWAP q25 q27 q28",
+      "inputs": [
+        4,
+        262144
+      ]
+    },
+    {
+      "index": 8351,
+      "gate": "CSWAP q25 q26 q35",
+      "inputs": [
+        4,
+        262144
+      ]
+    },
+    {
+      "index": 8352,
+      "gate": "CSWAP q25 q29 q33",
+      "inputs": [
+        4,
+        262144
+      ]
+    },
+    {
+      "index": 8375,
+      "gate": "CZ q23 q25",
+      "inputs": [
+        1,
+        65536
+      ]
+    },
+    {
+      "index": 23619,
+      "gate": "CX q25 q9",
+      "inputs": [
+        1,
+        65536
+      ]
+    },
+    {
+      "index": 23625,
+      "gate": "CX q25 q22",
+      "inputs": [
+        4,
+        64
+      ]
+    },
+    {
+      "index": 23644,
+      "gate": "CX q25 q24",
+      "inputs": [
+        16,
+        64
+      ]
+    },
+    {
+      "index": 23670,
+      "gate": "CX q25 q23",
+      "inputs": [
+        16,
+        64
+      ]
+    },
+    {
+      "index": 23686,
+      "gate": "CX q25 q23",
+      "inputs": [
+        16,
+        64
+      ]
+    },
+    {
+      "index": 23706,
+      "gate": "CX q25 q22",
+      "inputs": [
+        16,
+        64
+      ]
+    },
+    {
+      "index": 23722,
+      "gate": "CX q25 q22",
+      "inputs": [
+        16,
+        64
+      ]
+    },
+    {
+      "index": 23738,
+      "gate": "CX q25 q22",
+      "inputs": [
+        16,
+        64
+      ]
+    },
+    {
+      "index": 23754,
+      "gate": "CX q25 q22",
+      "inputs": [
+        16,
+        64
+      ]
+    }
+  ],
+  "indices": "Zero-based KMB gate indices with register declarations omitted."
+}

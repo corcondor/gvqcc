@@ -1,0 +1,47 @@
+{
+  "source": "https://github.com/alexon-v8/quantum-circuit-compilation-invsqrt/blob/main/invsqrt.kmb",
+  "verifier_sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a",
+  "options": [
+    "--max-x",
+    "64",
+    "--shots-per-x",
+    "1",
+    "--seed",
+    "0",
+    "--batch-size",
+    "64",
+    "--max-workers",
+    "1"
+  ],
+  "public_candidate": {
+    "sha256": "8ffcd4da89fd3c7270005a364e8840b795d209cec8d830e93fe7486cd8e2e7b2",
+    "bytes": 7016,
+    "exit_code": 1,
+    "output": {
+      "status": "FAIL",
+      "error": "x=1: phase error -3.119e-01 turns exceeds tolerance 5.960e-08."
+    }
+  },
+  "score18_control": {
+    "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+    "bytes": 198626,
+    "exit_code": 0,
+    "output": {
+      "status": "PASS",
+      "score": 76919.21070641607,
+      "toffoli_equivalent": 1672.1567544873058,
+      "toffoli_count": 1479.609375,
+      "max_toffoli_count": 1550,
+      "t_count": 1.0,
+      "rotation_count": 33.0,
+      "rotation_eps": 2.0860261601498685e-10,
+      "num_qubits": 46,
+      "reaction_depth": 1336,
+      "num_ops": 23881,
+      "verified_shots": 64,
+      "worst_error_over_tolerance": 0.7059008965516114,
+      "worst_x": 64,
+      "circuit_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a"
+    }
+  }
+}
