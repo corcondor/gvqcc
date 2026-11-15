@@ -1,0 +1,71 @@
+{
+  "config": {
+    "continued": true,
+    "do_fgs": true,
+    "do_reduce": false,
+    "do_sge": false,
+    "do_verify": true,
+    "max_attempts": 20000,
+    "path_limit": 500000,
+    "plus_lim": 5000,
+    "pool_size": 64,
+    "reduce_interval": 0,
+    "save_pools": true,
+    "sge_beam": 1,
+    "threads": 2,
+    "use_plus": true
+  },
+  "id": "9712",
+  "progress": [
+    {
+      "attempts": 20002,
+      "best_path": "\/workspace\/scratch\/4020ae2c83bc\/gvqcc\/dqi_next_arithmetic_norm_comm_run\/data\/cpd\/comm\/9712-00042.npy",
+      "best_rank": 42,
+      "best_updated": false,
+      "collected": 0,
+      "from_rank": 42,
+      "perf": {
+        "avg_flips_per_attempt": 5204.73702629737,
+        "avg_inner_sec": 24.403925865000001,
+        "avg_plus_fail_per_attempt": 1.0071992800719929,
+        "avg_plus_ok_per_attempt": 142.13373662633737,
+        "avg_reduce_calls_per_attempt": 0,
+        "avg_reduce_ok_per_attempt": 0,
+        "flips_mps_total": 4.2659181385773319,
+        "reduce_ok_by_rank": {},
+        "total_flips": 104105150,
+        "total_loop_ns": 48807851730,
+        "total_plus_fail": 20146,
+        "total_plus_ok": 2842959,
+        "total_reduce_calls": 0,
+        "total_reduce_ns": 0,
+        "total_reduce_ok": 0
+      },
+      "result_rank": 42,
+      "t_collect_sec": 24.730703814000002,
+      "verify": {
+        "ok": 0,
+        "t_sec": 0,
+        "total": 0
+      }
+    }
+  ],
+  "result": {
+    "best_path": "\/workspace\/scratch\/4020ae2c83bc\/gvqcc\/dqi_next_arithmetic_norm_comm_run\/data\/cpd\/comm\/9712-00042.npy",
+    "best_rank": 42,
+    "pool_size": 1
+  },
+  "run": {
+    "last_update": "2026-11-15T03:03:54Z",
+    "run_id": "fe2c3b08af",
+    "started_at": "2026-11-15T03:03:30Z",
+    "status": "finished"
+  },
+  "tensor": {
+    "n0": 24,
+    "n1": 24,
+    "n2": 12,
+    "nnz": 363
+  },
+  "tensor_path": "data\/tensors\/9712.npy"
+}

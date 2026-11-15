@@ -1,0 +1,402 @@
+{
+  "status": "EXACT_BOOLEAN_FEATURE_BINDING_PASS",
+  "source_public_kmb_sha256": "1ba197b027713aac164056d12505c87f286c3fcd94f403c522073325763bf2f9",
+  "inputs": 3133452,
+  "features": [
+    {
+      "feature": 0,
+      "kind": "rotation",
+      "old_line": 232,
+      "public_line": 232,
+      "qubit": 35,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 1,
+      "kind": "rotation",
+      "old_line": 233,
+      "public_line": 233,
+      "qubit": 36,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 2,
+      "kind": "rotation",
+      "old_line": 234,
+      "public_line": 234,
+      "qubit": 21,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 3,
+      "kind": "rotation",
+      "old_line": 236,
+      "public_line": 236,
+      "qubit": 21,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 4,
+      "kind": "candidate",
+      "old_line": 7538,
+      "public_line": 7551,
+      "qubit": 41,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 5,
+      "kind": "candidate",
+      "old_line": 7548,
+      "public_line": 7561,
+      "qubit": 41,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 6,
+      "kind": "candidate",
+      "old_line": 7573,
+      "public_line": 7586,
+      "qubit": 42,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 7,
+      "kind": "candidate",
+      "old_line": 7575,
+      "public_line": 7588,
+      "qubit": 41,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 8,
+      "kind": "candidate",
+      "old_line": 7620,
+      "public_line": 7633,
+      "qubit": 41,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 9,
+      "kind": "candidate",
+      "old_line": 7632,
+      "public_line": 7645,
+      "qubit": 43,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 10,
+      "kind": "candidate",
+      "old_line": 7647,
+      "public_line": 7660,
+      "qubit": 43,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 11,
+      "kind": "candidate",
+      "old_line": 7662,
+      "public_line": 7675,
+      "qubit": 36,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 12,
+      "kind": "rotation",
+      "old_line": 7709,
+      "public_line": 7722,
+      "qubit": 27,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 13,
+      "kind": "rotation",
+      "old_line": 7710,
+      "public_line": 7723,
+      "qubit": 37,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 14,
+      "kind": "rotation",
+      "old_line": 7736,
+      "public_line": 7749,
+      "qubit": 26,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 15,
+      "kind": "rotation",
+      "old_line": 7737,
+      "public_line": 7750,
+      "qubit": 38,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 16,
+      "kind": "rotation",
+      "old_line": 7774,
+      "public_line": 7787,
+      "qubit": 29,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 17,
+      "kind": "rotation",
+      "old_line": 7775,
+      "public_line": 7788,
+      "qubit": 6,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 18,
+      "kind": "rotation",
+      "old_line": 7836,
+      "public_line": 7849,
+      "qubit": 31,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 19,
+      "kind": "rotation",
+      "old_line": 7837,
+      "public_line": 7850,
+      "qubit": 5,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 20,
+      "kind": "rotation",
+      "old_line": 7898,
+      "public_line": 7911,
+      "qubit": 33,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 21,
+      "kind": "rotation",
+      "old_line": 7899,
+      "public_line": 7912,
+      "qubit": 4,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 22,
+      "kind": "rotation",
+      "old_line": 7936,
+      "public_line": 7949,
+      "qubit": 35,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 23,
+      "kind": "rotation",
+      "old_line": 7937,
+      "public_line": 7950,
+      "qubit": 3,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 24,
+      "kind": "rotation",
+      "old_line": 7974,
+      "public_line": 7987,
+      "qubit": 28,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 25,
+      "kind": "rotation",
+      "old_line": 7975,
+      "public_line": 7988,
+      "qubit": 2,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 26,
+      "kind": "rotation",
+      "old_line": 8025,
+      "public_line": 8038,
+      "qubit": 32,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 27,
+      "kind": "rotation",
+      "old_line": 8026,
+      "public_line": 8039,
+      "qubit": 1,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 28,
+      "kind": "candidate",
+      "old_line": 8070,
+      "public_line": 8083,
+      "qubit": 0,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 29,
+      "kind": "rotation",
+      "old_line": 8079,
+      "public_line": 8092,
+      "qubit": 30,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 30,
+      "kind": "candidate",
+      "old_line": 8081,
+      "public_line": 8094,
+      "qubit": 22,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 31,
+      "kind": "rotation",
+      "old_line": 8090,
+      "public_line": 8103,
+      "qubit": 21,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 32,
+      "kind": "rotation",
+      "old_line": 8103,
+      "public_line": 8116,
+      "qubit": 0,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 33,
+      "kind": "rotation",
+      "old_line": 8140,
+      "public_line": 8153,
+      "qubit": 36,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 34,
+      "kind": "rotation",
+      "old_line": 8148,
+      "public_line": 8161,
+      "qubit": 21,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 35,
+      "kind": "rotation",
+      "old_line": 8156,
+      "public_line": 8169,
+      "qubit": 39,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 36,
+      "kind": "rotation",
+      "old_line": 8193,
+      "public_line": 8206,
+      "qubit": 34,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 37,
+      "kind": "rotation",
+      "old_line": 8200,
+      "public_line": 8213,
+      "qubit": 21,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 38,
+      "kind": "rotation",
+      "old_line": 8208,
+      "public_line": 8221,
+      "qubit": 43,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 39,
+      "kind": "rotation",
+      "old_line": 8210,
+      "public_line": 8223,
+      "qubit": 21,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 40,
+      "kind": "rotation",
+      "old_line": 8251,
+      "public_line": 8264,
+      "qubit": 9,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 41,
+      "kind": "rotation",
+      "old_line": 8255,
+      "public_line": 8268,
+      "qubit": 21,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 42,
+      "kind": "rotation",
+      "old_line": 8261,
+      "public_line": 8274,
+      "qubit": 40,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 43,
+      "kind": "rotation",
+      "old_line": 8264,
+      "public_line": 8277,
+      "qubit": 21,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 44,
+      "kind": "rotation",
+      "old_line": 8297,
+      "public_line": 8310,
+      "qubit": 8,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 45,
+      "kind": "rotation",
+      "old_line": 8306,
+      "public_line": 8319,
+      "qubit": 21,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 46,
+      "kind": "rotation",
+      "old_line": 8318,
+      "public_line": 8331,
+      "qubit": 41,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 47,
+      "kind": "rotation",
+      "old_line": 8322,
+      "public_line": 8335,
+      "qubit": 21,
+      "equal_on_all_inputs": true
+    },
+    {
+      "feature": 48,
+      "kind": "phase_parity",
+      "old_line": null,
+      "public_line": null,
+      "qubit": null,
+      "equal_on_all_inputs": true
+    }
+  ],
+  "scope": "All 38 original rotation predicates, 10 shortlisted added predicates, and all-zero-HMR parity match the previously evaluated cache circuit. Angles are unchanged. This binds those numerical search results; it does not certify every measurement branch or earlier discarded candidates.",
+  "source_public_kmx_sha256": "c48666ae3a566096b026fc6b249ce8b15785f33db7fdc696308eccec79115720",
+  "kmx_export": "KickMix Circuit.from_file(exact public KMB).to_file(format=kmx)"
+}

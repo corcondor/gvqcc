@@ -1,0 +1,1 @@
+{"status":"DISCOVERY_ONLY_REQUIRES_EXACT_REPLAY","opportunities":[{"kind":"reduced_phase","index":2,"reason":"complement_factors","wires":[0,1,4]}],"ccx":0,"ccz":1,"repeated_phases":0,"reduced_phases":1,"formal_atoms":8,"zero_guard_operations":0,"num_ops":3,"num_qubits":5,"num_bits":4}

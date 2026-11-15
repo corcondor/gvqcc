@@ -1,0 +1,1 @@
+{"status":"DISCOVERY_ONLY_REQUIRES_EXACT_REPLAY","opportunities":[{"kind":"repeated_phase","first":0,"second":4,"first_wires":[0,1,2],"second_wires":[0,1,2],"same_guard":true}],"ccx":2,"ccz":3,"repeated_phases":1,"reduced_phases":0,"formal_atoms":8,"zero_guard_operations":0,"num_ops":5,"num_qubits":4,"num_bits":4}

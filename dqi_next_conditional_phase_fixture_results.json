@@ -1,0 +1,597 @@
+{
+  "status": "PASS",
+  "scope": "Finite small fixtures; discovery only; no production rewrite or proof of completeness",
+  "scanner_sha256": "c9363a304277b4832f7be08e7168edbc7836d1fba995a46426b635ef9d5dfbd6",
+  "fixtures": [
+    {
+      "name": "roundtrip_x",
+      "kmx": "dqi_next_conditional_phase_fixture_data/roundtrip_x.kmx",
+      "kmb_sha256": "e63545c1ca82087a876f928aec7fea1f9a17f697591e95ef7fdd4d3f18df240c",
+      "scanner_repeated": 1,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 0,
+          "second": 4,
+          "fingerprint_same_guard": true,
+          "truth_table_same_guard": true
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "roundtrip_cx",
+      "kmx": "dqi_next_conditional_phase_fixture_data/roundtrip_cx.kmx",
+      "kmb_sha256": "0fedc6195956be61619ab785ea99243c76d517383eb542cadf27b2d155e806b4",
+      "scanner_repeated": 1,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 0,
+          "second": 4,
+          "fingerprint_same_guard": true,
+          "truth_table_same_guard": true
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "roundtrip_swap",
+      "kmx": "dqi_next_conditional_phase_fixture_data/roundtrip_swap.kmx",
+      "kmb_sha256": "b0df901c52c37b2ccddd2901eb6b5e18208fe7ea7a52df93b3b244cfcb0c6810",
+      "scanner_repeated": 1,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 0,
+          "second": 4,
+          "fingerprint_same_guard": true,
+          "truth_table_same_guard": true
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "roundtrip_cswap",
+      "kmx": "dqi_next_conditional_phase_fixture_data/roundtrip_cswap.kmx",
+      "kmb_sha256": "5979d3bd3cd857afd825b5fbbb5d0c28160cbc9b839a10c7ae4ece58800fc615",
+      "scanner_repeated": 1,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 0,
+          "second": 4,
+          "fingerprint_same_guard": true,
+          "truth_table_same_guard": true
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "roundtrip_ccx",
+      "kmx": "dqi_next_conditional_phase_fixture_data/roundtrip_ccx.kmx",
+      "kmb_sha256": "8236dd5a0bb3ee8dbae6c2e17560a743d773c2fe07356938f5fed4d6167d7de5",
+      "scanner_repeated": 1,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 0,
+          "second": 4,
+          "fingerprint_same_guard": true,
+          "truth_table_same_guard": true
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "different_guards",
+      "kmx": "dqi_next_conditional_phase_fixture_data/different_guards.kmx",
+      "kmb_sha256": "d602e3076d3f69404f0fafe25c88ffee4dcbb9f47f502d258c3ae87f7c4cb36d",
+      "scanner_repeated": 1,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 0,
+          "second": 1,
+          "fingerprint_same_guard": false,
+          "truth_table_same_guard": false
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "invert_guard_roundtrip",
+      "kmx": "dqi_next_conditional_phase_fixture_data/invert_guard_roundtrip.kmx",
+      "kmb_sha256": "069e371a78ed6ecb3e2024f93a9fb65e2a715a585259d8c47b3ae3750965a007",
+      "scanner_repeated": 2,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 0,
+          "second": 2,
+          "fingerprint_same_guard": false,
+          "truth_table_same_guard": false
+        },
+        {
+          "first": 2,
+          "second": 4,
+          "fingerprint_same_guard": false,
+          "truth_table_same_guard": false
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "stores_and_zero_guards",
+      "kmx": "dqi_next_conditional_phase_fixture_data/stores_and_zero_guards.kmx",
+      "kmb_sha256": "61378a1b841240a28bccda1e0c28c01d2787357129871af52135968741c9151a",
+      "scanner_repeated": 1,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 3,
+          "second": 7,
+          "fingerprint_same_guard": true,
+          "truth_table_same_guard": true
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "irrelevant_conditional_bit_updates",
+      "kmx": "dqi_next_conditional_phase_fixture_data/irrelevant_conditional_bit_updates.kmx",
+      "kmb_sha256": "cf3d45410861a94bd9733a70fcf11a61d4c6766305567d1b1bc9beff36540c8b",
+      "scanner_repeated": 1,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 0,
+          "second": 4,
+          "fingerprint_same_guard": true,
+          "truth_table_same_guard": true
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "captured_stack_invert",
+      "kmx": "dqi_next_conditional_phase_fixture_data/captured_stack_invert.kmx",
+      "kmb_sha256": "ea553b13442acd4a2944626fa9fd8af7f8811f511bddf938362c42152305ac4b",
+      "scanner_repeated": 1,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 2,
+          "second": 4,
+          "fingerprint_same_guard": true,
+          "truth_table_same_guard": true
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "captured_stack_store",
+      "kmx": "dqi_next_conditional_phase_fixture_data/captured_stack_store.kmx",
+      "kmb_sha256": "889918e5aeef1ecbb3e1978b44d1efb4137ce2d559013984d6015f57ae43d9de",
+      "scanner_repeated": 1,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 2,
+          "second": 4,
+          "fingerprint_same_guard": true,
+          "truth_table_same_guard": true
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "nested_captured_stack",
+      "kmx": "dqi_next_conditional_phase_fixture_data/nested_captured_stack.kmx",
+      "kmb_sha256": "05ab1424a89f665eb56c60db91dea0f4b16d79b7fae0460febeaef0b8002e2cf",
+      "scanner_repeated": 1,
+      "scanner_reduced": 0,
+      "truth_table_cases": 64,
+      "pairs": [
+        {
+          "first": 4,
+          "second": 8,
+          "fingerprint_same_guard": true,
+          "truth_table_same_guard": true
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "hmr_new_guards",
+      "kmx": "dqi_next_conditional_phase_fixture_data/hmr_new_guards.kmx",
+      "kmb_sha256": "8bd5338220a5d2dc2730e755811c122672f61b1aef387786661d7f13aad1a61f",
+      "scanner_repeated": 2,
+      "scanner_reduced": 0,
+      "truth_table_cases": 256,
+      "pairs": [
+        {
+          "first": 0,
+          "second": 2,
+          "fingerprint_same_guard": false,
+          "truth_table_same_guard": false
+        },
+        {
+          "first": 2,
+          "second": 4,
+          "fingerprint_same_guard": false,
+          "truth_table_same_guard": false
+        }
+      ],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "hmr_destroys_factor",
+      "kmx": "dqi_next_conditional_phase_fixture_data/hmr_destroys_factor.kmx",
+      "kmb_sha256": "82383393e20449f535c478b6b426db925488fbd263e009786bd1e991ee382a2b",
+      "scanner_repeated": 0,
+      "scanner_reduced": 1,
+      "truth_table_cases": 128,
+      "pairs": [],
+      "reduced": [
+        {
+          "kind": "reduced_phase",
+          "index": 2,
+          "reason": "zero_factor",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "conditional_hmr",
+      "kmx": "dqi_next_conditional_phase_fixture_data/conditional_hmr.kmx",
+      "kmb_sha256": "023904e3d8da9ec02cba76a4ab654912786b32f3e61ced95920de7de28cd6804",
+      "scanner_repeated": 0,
+      "scanner_reduced": 0,
+      "truth_table_cases": 128,
+      "pairs": [],
+      "reduced": [],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "reset_destroys_factor",
+      "kmx": "dqi_next_conditional_phase_fixture_data/reset_destroys_factor.kmx",
+      "kmb_sha256": "f4b4964fc876ed69893efa74c9bd0a20bf7935c1ac4aeef593f8e019cccad197",
+      "scanner_repeated": 0,
+      "scanner_reduced": 1,
+      "truth_table_cases": 128,
+      "pairs": [],
+      "reduced": [
+        {
+          "kind": "reduced_phase",
+          "index": 2,
+          "reason": "zero_factor",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "equal_factors",
+      "kmx": "dqi_next_conditional_phase_fixture_data/equal_factors.kmx",
+      "kmb_sha256": "b47fa3228be357b04f7eb5151a41d676fe6d28562a3d81184e8d96ea52cda4d8",
+      "scanner_repeated": 0,
+      "scanner_reduced": 1,
+      "truth_table_cases": 64,
+      "pairs": [],
+      "reduced": [
+        {
+          "kind": "reduced_phase",
+          "index": 1,
+          "reason": "equal_factors",
+          "wires": [
+            0,
+            1,
+            4
+          ]
+        }
+      ],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "complement_factors",
+      "kmx": "dqi_next_conditional_phase_fixture_data/complement_factors.kmx",
+      "kmb_sha256": "210be5d9a98777a049bea4475d11fb173b8b1acee7c5e26acbf5e41d782d3792",
+      "scanner_repeated": 0,
+      "scanner_reduced": 1,
+      "truth_table_cases": 64,
+      "pairs": [],
+      "reduced": [
+        {
+          "kind": "reduced_phase",
+          "index": 2,
+          "reason": "complement_factors",
+          "wires": [
+            0,
+            1,
+            4
+          ]
+        }
+      ],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "affine_rank2_zero",
+      "kmx": "dqi_next_conditional_phase_fixture_data/affine_rank2_zero.kmx",
+      "kmb_sha256": "4076776dd5130efc03724c8d81a4a07597a8d7708b15b96a690a13d70546e6d1",
+      "scanner_repeated": 0,
+      "scanner_reduced": 1,
+      "truth_table_cases": 64,
+      "pairs": [],
+      "reduced": [
+        {
+          "kind": "reduced_phase",
+          "index": 2,
+          "reason": "affine_rank2_zero",
+          "wires": [
+            0,
+            1,
+            4
+          ]
+        }
+      ],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "affine_rank2_one",
+      "kmx": "dqi_next_conditional_phase_fixture_data/affine_rank2_one.kmx",
+      "kmb_sha256": "3271b76e726a3e83ae648046fbbbedec9c0192c57f89f59821b013fa638fb27b",
+      "scanner_repeated": 0,
+      "scanner_reduced": 1,
+      "truth_table_cases": 64,
+      "pairs": [],
+      "reduced": [
+        {
+          "kind": "reduced_phase",
+          "index": 3,
+          "reason": "affine_rank2_one",
+          "wires": [
+            0,
+            1,
+            4
+          ]
+        }
+      ],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "zero_factor",
+      "kmx": "dqi_next_conditional_phase_fixture_data/zero_factor.kmx",
+      "kmb_sha256": "39aa07e8ffa75629aeb563ce6bfbbc76c482fbf0ada15d3ceaa737bba7250cea",
+      "scanner_repeated": 0,
+      "scanner_reduced": 1,
+      "truth_table_cases": 64,
+      "pairs": [],
+      "reduced": [
+        {
+          "kind": "reduced_phase",
+          "index": 0,
+          "reason": "zero_factor",
+          "wires": [
+            0,
+            1,
+            4
+          ]
+        }
+      ],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    },
+    {
+      "name": "constant_one",
+      "kmx": "dqi_next_conditional_phase_fixture_data/constant_one.kmx",
+      "kmb_sha256": "2b1c281a7b3bd567ca72fd784ddd9585f47f019272585b95fa099f7f8c7b05b2",
+      "scanner_repeated": 0,
+      "scanner_reduced": 1,
+      "truth_table_cases": 64,
+      "pairs": [],
+      "reduced": [
+        {
+          "kind": "reduced_phase",
+          "index": 1,
+          "reason": "constant_one",
+          "wires": [
+            0,
+            1,
+            4
+          ]
+        }
+      ],
+      "native_cases": 512,
+      "seeds": [
+        202611151,
+        202611152
+      ],
+      "quantum_errors": 0,
+      "classical_errors": 0,
+      "phase_errors": 0
+    }
+  ],
+  "fixture_count": 22,
+  "native_cases": 11264,
+  "truth_table_cases": 1792
+}

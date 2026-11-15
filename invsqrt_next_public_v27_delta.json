@@ -1,0 +1,117 @@
+{
+  "old_kmx_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "new_kmx_sha256": "c48666ae3a566096b026fc6b249ce8b15785f33db7fdc696308eccec79115720",
+  "public_kmb_sha256": "1ba197b027713aac164056d12505c87f286c3fcd94f403c522073325763bf2f9",
+  "changes": [
+    {
+      "tag": "replace",
+      "old_lines": [
+        3263,
+        3264
+      ],
+      "new_lines": [
+        3263,
+        3269
+      ],
+      "old": [
+        "CX q37 q21",
+        "CX q38 q21"
+      ],
+      "new": [
+        "HMR q21 b61",
+        "PUSH_CONDITION if b61",
+        "Z q37",
+        "POP_CONDITION",
+        "PUSH_CONDITION if b61",
+        "Z q38",
+        "POP_CONDITION"
+      ]
+    },
+    {
+      "tag": "replace",
+      "old_lines": [
+        3276,
+        3276
+      ],
+      "new_lines": [
+        3281,
+        3283
+      ],
+      "old": [
+        "CX q38 q21"
+      ],
+      "new": [
+        "PUSH_CONDITION if b61",
+        "Z q38",
+        "POP_CONDITION"
+      ]
+    },
+    {
+      "tag": "replace",
+      "old_lines": [
+        3312,
+        3314
+      ],
+      "new_lines": [
+        3319,
+        3327
+      ],
+      "old": [
+        "CX q16 q21",
+        "CX q17 q21",
+        "CX q18 q21"
+      ],
+      "new": [
+        "PUSH_CONDITION if b61",
+        "Z q16",
+        "POP_CONDITION",
+        "PUSH_CONDITION if b61",
+        "Z q17",
+        "POP_CONDITION",
+        "PUSH_CONDITION if b61",
+        "Z q18",
+        "POP_CONDITION"
+      ]
+    },
+    {
+      "tag": "replace",
+      "old_lines": [
+        3316,
+        3317
+      ],
+      "new_lines": [
+        3329,
+        3331
+      ],
+      "old": [
+        "HMR q21 b61",
+        "CZ q16 q20 if b61"
+      ],
+      "new": [
+        "PUSH_CONDITION if b61",
+        "CZ q16 q20",
+        "POP_CONDITION"
+      ]
+    },
+    {
+      "tag": "replace",
+      "old_lines": [
+        3322,
+        3324
+      ],
+      "new_lines": [
+        3336,
+        3337
+      ],
+      "old": [
+        "CX q13 q21",
+        "CCX q10 q11 q13",
+        "CX q13 q21"
+      ],
+      "new": [
+        "CCX q10 q11 q21",
+        "CX q21 q13"
+      ]
+    }
+  ]
+}

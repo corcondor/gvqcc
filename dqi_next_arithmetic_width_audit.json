@@ -1,0 +1,1377 @@
+{
+  "status": "PASS_WIDTH_OBSTRUCTION_CONFIRMED",
+  "actual_public": {
+    "public_baseline_sha256": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+    "public_baseline_native_Q": 889,
+    "not_private_norm_candidate": true,
+    "exact_template_witnesses": [
+      {
+        "kernel": "gf12",
+        "all_exact_kernel_occurrences": 3823,
+        "target_q888_occurrences": 475,
+        "target_q888_count_scope": "Prior saved complete exact-template audit of the same freshly rehashed file.",
+        "newly_revalidated_witness": {
+          "kernel": "gf12",
+          "start": 11156836,
+          "end": 11158154,
+          "left": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "right": [
+            872,
+            871,
+            870,
+            869,
+            868,
+            867,
+            866,
+            865,
+            874,
+            873,
+            875,
+            876
+          ],
+          "target": [
+            877,
+            878,
+            879,
+            880,
+            881,
+            882,
+            883,
+            884,
+            885,
+            886,
+            887,
+            888
+          ]
+        },
+        "output_qubit_max_histogram": {
+          "851": 78,
+          "888": 475,
+          "878": 21,
+          "886": 123,
+          "887": 138,
+          "885": 180,
+          "827": 70,
+          "839": 66,
+          "803": 62,
+          "815": 64,
+          "779": 68,
+          "791": 64,
+          "755": 60,
+          "767": 62,
+          "731": 62,
+          "743": 62,
+          "707": 58,
+          "719": 60,
+          "683": 60,
+          "695": 56,
+          "659": 56,
+          "671": 58,
+          "635": 54,
+          "647": 54,
+          "611": 54,
+          "623": 56,
+          "587": 52,
+          "599": 48,
+          "563": 52,
+          "575": 54,
+          "539": 46,
+          "551": 46,
+          "515": 50,
+          "527": 52,
+          "491": 44,
+          "503": 40,
+          "467": 48,
+          "479": 50,
+          "443": 38,
+          "455": 38,
+          "419": 46,
+          "431": 48,
+          "395": 36,
+          "407": 32,
+          "371": 44,
+          "383": 46,
+          "347": 30,
+          "359": 30,
+          "323": 42,
+          "335": 46,
+          "299": 28,
+          "311": 24,
+          "275": 42,
+          "287": 28,
+          "251": 22,
+          "263": 22,
+          "227": 24,
+          "239": 26,
+          "203": 20,
+          "215": 16,
+          "179": 22,
+          "191": 42,
+          "155": 14,
+          "167": 14,
+          "131": 38,
+          "143": 18,
+          "107": 12,
+          "119": 8,
+          "83": 14,
+          "95": 16,
+          "59": 6,
+          "71": 6,
+          "883": 2,
+          "35": 11,
+          "47": 34,
+          "884": 35
+        }
+      },
+      {
+        "kernel": "gf24",
+        "all_exact_kernel_occurrences": 1376,
+        "target_q888_occurrences": 188,
+        "target_q888_count_scope": "Prior saved complete exact-template audit of the same freshly rehashed file.",
+        "newly_revalidated_witness": {
+          "kernel": "gf24",
+          "start": 11232055,
+          "end": 11238252,
+          "left": [
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "right": [
+            840,
+            841,
+            842,
+            843,
+            844,
+            845,
+            846,
+            847,
+            848,
+            849,
+            850,
+            851,
+            852,
+            853,
+            854,
+            855,
+            856,
+            857,
+            858,
+            859,
+            860,
+            861,
+            862,
+            863
+          ],
+          "target": [
+            882,
+            881,
+            879,
+            880,
+            886,
+            885,
+            883,
+            884,
+            873,
+            874,
+            887,
+            888,
+            877,
+            878,
+            868,
+            867,
+            865,
+            866,
+            872,
+            871,
+            869,
+            870,
+            876,
+            875
+          ]
+        },
+        "output_qubit_max_histogram": {
+          "863": 1184,
+          "888": 188,
+          "887": 4
+        }
+      }
+    ]
+  },
+  "components": [
+    {
+      "before": {
+        "case": "gf24_consuming_product",
+        "inplace_classical_scale": false,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 99,
+        "peak_allocation_events": 1,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_prefix:269"
+            ],
+            "live_helper_owners": {
+              "gf24_nested_norm.py:emit_prefix:269": 24
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      },
+      "after": {
+        "case": "gf24_consuming_product",
+        "inplace_classical_scale": true,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 99,
+        "peak_allocation_events": 1,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_prefix:269"
+            ],
+            "live_helper_owners": {
+              "gf24_nested_norm.py:emit_prefix:269": 24
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      }
+    },
+    {
+      "before": {
+        "case": "gf24_consuming_pair",
+        "inplace_classical_scale": false,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 459,
+        "peak_allocation_events": 8,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_prefix:269"
+            ],
+            "live_helper_owners": {
+              "gf24_nested_norm.py:emit_prefix:269": 24
+            }
+          },
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_closing:305"
+            ],
+            "live_helper_owners": {
+              "gf24_nested_norm.py:emit_closing:305": 24
+            }
+          },
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79",
+              "gf24_nested_norm.py:emit_closing:319"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82",
+              "gf24_nested_norm.py:emit_closing:319"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_closing:321"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "gf24_nested_norm.py:emit_closing:321": 12
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "inverse_phase27.py:_classical_scale:198",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:96",
+              "gf24_nested_norm.py:emit_closing:336"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "inverse_phase27.py:_classical_scale:198": 12
+            }
+          },
+          {
+            "allocated": 1,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "phase_inverse12.py:_leaf_phase12:28",
+              "phase_inverse12.py:fixed_inverse_trace12:66",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:97",
+              "gf24_nested_norm.py:emit_closing:336"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "phase_inverse12.py:fixed_inverse_trace12:60": 8,
+              "phase_inverse12.py:_leaf_phase12:28": 4
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      },
+      "after": {
+        "case": "gf24_consuming_pair",
+        "inplace_classical_scale": true,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 459,
+        "peak_allocation_events": 8,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_prefix:269"
+            ],
+            "live_helper_owners": {
+              "gf24_nested_norm.py:emit_prefix:269": 24
+            }
+          },
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_closing:305"
+            ],
+            "live_helper_owners": {
+              "gf24_nested_norm.py:emit_closing:305": 24
+            }
+          },
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79",
+              "gf24_nested_norm.py:emit_closing:319"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82",
+              "gf24_nested_norm.py:emit_closing:319"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_closing:321"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "gf24_nested_norm.py:emit_closing:321": 12
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "inverse_phase27.py:_classical_scale:198",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:96",
+              "gf24_nested_norm.py:emit_closing:336"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "inverse_phase27.py:_classical_scale:198": 12
+            }
+          },
+          {
+            "allocated": 1,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "phase_inverse12.py:_leaf_phase12:28",
+              "phase_inverse12.py:fixed_inverse_trace12:66",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:97",
+              "gf24_nested_norm.py:emit_closing:336"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "phase_inverse12.py:fixed_inverse_trace12:60": 8,
+              "phase_inverse12.py:_leaf_phase12:28": 4
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      }
+    },
+    {
+      "before": {
+        "case": "gf24_deferred_inverse",
+        "inplace_classical_scale": false,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 192,
+        "peak_allocation_events": 3,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79",
+              "gf24_nested_norm.py:inverse_deferred:101"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82",
+              "gf24_nested_norm.py:inverse_deferred:101"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:inverse_deferred:103"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "gf24_nested_norm.py:inverse_deferred:103": 12
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      },
+      "after": {
+        "case": "gf24_deferred_inverse",
+        "inplace_classical_scale": true,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 192,
+        "peak_allocation_events": 3,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79",
+              "gf24_nested_norm.py:inverse_deferred:101"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82",
+              "gf24_nested_norm.py:inverse_deferred:101"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:inverse_deferred:103"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "gf24_nested_norm.py:inverse_deferred:103": 12
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      }
+    },
+    {
+      "before": {
+        "case": "direct_division_and_next_return",
+        "inplace_classical_scale": false,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 933,
+        "peak_allocation_events": 13,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_prefix:269"
+            ],
+            "live_helper_owners": {
+              "gf24_nested_norm.py:emit_prefix:269": 24
+            }
+          },
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "direct_carry_arithmetic.py:_adjoint_consume:37",
+              "direct_carry_arithmetic.py:divide_deferred:72"
+            ],
+            "live_helper_owners": {
+              "direct_carry_arithmetic.py:_adjoint_consume:37": 24
+            }
+          },
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79",
+              "direct_carry_arithmetic.py:_inverse_norm:64",
+              "direct_carry_arithmetic.py:divide_deferred:73"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82",
+              "direct_carry_arithmetic.py:_inverse_norm:64",
+              "direct_carry_arithmetic.py:divide_deferred:73"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "direct_carry_arithmetic.py:_consume_halves:50",
+              "direct_carry_arithmetic.py:divide_deferred:74"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "direct_carry_arithmetic.py:_consume_halves:50": 12
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "inverse_phase27.py:_classical_scale:198",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:96",
+              "direct_carry_arithmetic.py:restore_with_shared_norm:156"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "inverse_phase27.py:_classical_scale:198": 12
+            }
+          },
+          {
+            "allocated": 1,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "phase_inverse12.py:_leaf_phase12:28",
+              "phase_inverse12.py:fixed_inverse_trace12:66",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:97",
+              "direct_carry_arithmetic.py:restore_with_shared_norm:156"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "phase_inverse12.py:fixed_inverse_trace12:60": 8,
+              "phase_inverse12.py:_leaf_phase12:28": 4
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      },
+      "after": {
+        "case": "direct_division_and_next_return",
+        "inplace_classical_scale": true,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 933,
+        "peak_allocation_events": 13,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_prefix:269"
+            ],
+            "live_helper_owners": {
+              "gf24_nested_norm.py:emit_prefix:269": 24
+            }
+          },
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "direct_carry_arithmetic.py:_adjoint_consume:37",
+              "direct_carry_arithmetic.py:divide_deferred:72"
+            ],
+            "live_helper_owners": {
+              "direct_carry_arithmetic.py:_adjoint_consume:37": 24
+            }
+          },
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79",
+              "direct_carry_arithmetic.py:_inverse_norm:64",
+              "direct_carry_arithmetic.py:divide_deferred:73"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82",
+              "direct_carry_arithmetic.py:_inverse_norm:64",
+              "direct_carry_arithmetic.py:divide_deferred:73"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "direct_carry_arithmetic.py:_consume_halves:50",
+              "direct_carry_arithmetic.py:divide_deferred:74"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "direct_carry_arithmetic.py:_consume_halves:50": 12
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "inverse_phase27.py:_classical_scale:198",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:96",
+              "direct_carry_arithmetic.py:restore_with_shared_norm:156"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "inverse_phase27.py:_classical_scale:198": 12
+            }
+          },
+          {
+            "allocated": 1,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "phase_inverse12.py:_leaf_phase12:28",
+              "phase_inverse12.py:fixed_inverse_trace12:66",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:97",
+              "direct_carry_arithmetic.py:restore_with_shared_norm:156"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "phase_inverse12.py:fixed_inverse_trace12:60": 8,
+              "phase_inverse12.py:_leaf_phase12:28": 4
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      }
+    },
+    {
+      "before": {
+        "case": "direct_division_and_retained_last_return",
+        "inplace_classical_scale": false,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 643,
+        "peak_allocation_events": 9,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "direct_carry_arithmetic.py:_adjoint_consume:37",
+              "direct_carry_arithmetic.py:divide_deferred:72"
+            ],
+            "live_helper_owners": {
+              "direct_carry_arithmetic.py:_adjoint_consume:37": 24
+            }
+          },
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79",
+              "direct_carry_arithmetic.py:_inverse_norm:64",
+              "direct_carry_arithmetic.py:divide_deferred:73"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82",
+              "direct_carry_arithmetic.py:_inverse_norm:64",
+              "direct_carry_arithmetic.py:divide_deferred:73"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "direct_carry_arithmetic.py:_consume_halves:50",
+              "direct_carry_arithmetic.py:divide_deferred:74"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "direct_carry_arithmetic.py:_consume_halves:50": 12
+            }
+          },
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_prefix:269",
+              "last_return_retained_norm.py:restore_with_shared_norm:102"
+            ],
+            "live_helper_owners": {
+              "gf24_nested_norm.py:emit_prefix:269": 24
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "last_return_retained_norm.py:inverse_twelve_keep_child:37",
+              "last_return_retained_norm.py:restore_with_shared_norm:104"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "last_return_retained_norm.py:inverse_twelve_keep_child:37": 6
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "scalar_inverse_phase.py:classical_scale:128",
+              "scalar_inverse_phase.py:phase_inverse_six:143",
+              "last_return_retained_norm.py:_repay_inverse_and_child:77",
+              "last_return_retained_norm.py:restore_with_shared_norm:121"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "scalar_inverse_phase.py:classical_scale:128": 6
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      },
+      "after": {
+        "case": "direct_division_and_retained_last_return",
+        "inplace_classical_scale": true,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 643,
+        "peak_allocation_events": 7,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "direct_carry_arithmetic.py:_adjoint_consume:37",
+              "direct_carry_arithmetic.py:divide_deferred:72"
+            ],
+            "live_helper_owners": {
+              "direct_carry_arithmetic.py:_adjoint_consume:37": 24
+            }
+          },
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79",
+              "direct_carry_arithmetic.py:_inverse_norm:64",
+              "direct_carry_arithmetic.py:divide_deferred:73"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82",
+              "direct_carry_arithmetic.py:_inverse_norm:64",
+              "direct_carry_arithmetic.py:divide_deferred:73"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "direct_carry_arithmetic.py:_consume_halves:50",
+              "direct_carry_arithmetic.py:divide_deferred:74"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "direct_carry_arithmetic.py:_consume_halves:50": 12
+            }
+          },
+          {
+            "allocated": 24,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "gf24_nested_norm.py:emit_prefix:269",
+              "last_return_retained_norm.py:restore_with_shared_norm:102"
+            ],
+            "live_helper_owners": {
+              "gf24_nested_norm.py:emit_prefix:269": 24
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "last_return_retained_norm.py:inverse_twelve_keep_child:37",
+              "last_return_retained_norm.py:restore_with_shared_norm:104"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "last_return_retained_norm.py:inverse_twelve_keep_child:37": 6
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      }
+    },
+    {
+      "before": {
+        "case": "gf24_affine_quotient_phase",
+        "inplace_classical_scale": false,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 261,
+        "peak_allocation_events": 5,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79",
+              "gf24_nested_norm.py:phase_affine_quotient:213"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82",
+              "gf24_nested_norm.py:phase_affine_quotient:213"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "inverse_phase27.py:_classical_scale:198",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:96",
+              "gf24_nested_norm.py:phase_affine_quotient:242"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "inverse_phase27.py:_classical_scale:198": 12
+            }
+          },
+          {
+            "allocated": 1,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "phase_inverse12.py:_leaf_phase12:28",
+              "phase_inverse12.py:fixed_inverse_trace12:66",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:97",
+              "gf24_nested_norm.py:phase_affine_quotient:242"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "phase_inverse12.py:fixed_inverse_trace12:60": 8,
+              "phase_inverse12.py:_leaf_phase12:28": 4
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      },
+      "after": {
+        "case": "gf24_affine_quotient_phase",
+        "inplace_classical_scale": true,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 261,
+        "peak_allocation_events": 5,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79",
+              "gf24_nested_norm.py:phase_affine_quotient:213"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82",
+              "gf24_nested_norm.py:phase_affine_quotient:213"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          },
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "inverse_phase27.py:_classical_scale:198",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:96",
+              "gf24_nested_norm.py:phase_affine_quotient:242"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "inverse_phase27.py:_classical_scale:198": 12
+            }
+          },
+          {
+            "allocated": 1,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "phase_inverse12.py:_leaf_phase12:28",
+              "phase_inverse12.py:fixed_inverse_trace12:66",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:97",
+              "gf24_nested_norm.py:phase_affine_quotient:242"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "phase_inverse12.py:fixed_inverse_trace12:60": 8,
+              "phase_inverse12.py:_leaf_phase12:28": 4
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      }
+    },
+    {
+      "before": {
+        "case": "outer_norm_plus_gf12_inverse",
+        "inplace_classical_scale": false,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 108,
+        "peak_allocation_events": 2,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      },
+      "after": {
+        "case": "outer_norm_plus_gf12_inverse",
+        "inplace_classical_scale": true,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 108,
+        "peak_allocation_events": 2,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 3,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_six_deferred:33",
+              "nested_norm_inverse.py:inverse_twelve_deferred:79"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 21,
+              "nested_norm_inverse.py:inverse_six_deferred:33": 3
+            }
+          },
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "nested_norm_inverse.py:inverse_twelve_deferred:82"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "nested_norm_inverse.py:inverse_twelve_deferred:82": 6
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      }
+    },
+    {
+      "before": {
+        "case": "outer_norm_plus_gf12_phase",
+        "inplace_classical_scale": false,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 69,
+        "peak_allocation_events": 3,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "inverse_phase27.py:_classical_scale:198",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:96"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "inverse_phase27.py:_classical_scale:198": 12
+            }
+          },
+          {
+            "allocated": 1,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "phase_inverse12.py:_leaf_phase12:28",
+              "phase_inverse12.py:fixed_inverse_trace12:66",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:97"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "phase_inverse12.py:fixed_inverse_trace12:60": 8,
+              "phase_inverse12.py:_leaf_phase12:28": 4
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      },
+      "after": {
+        "case": "outer_norm_plus_gf12_phase",
+        "inplace_classical_scale": true,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 69,
+        "peak_allocation_events": 3,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 12,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "inverse_phase27.py:_classical_scale:198",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:96"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "inverse_phase27.py:_classical_scale:198": 12
+            }
+          },
+          {
+            "allocated": 1,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "phase_inverse12.py:_leaf_phase12:28",
+              "phase_inverse12.py:fixed_inverse_trace12:66",
+              "phase_inverse12.py:phase_inverse_twelve_polynomial:97"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 12,
+              "phase_inverse12.py:fixed_inverse_trace12:60": 8,
+              "phase_inverse12.py:_leaf_phase12:28": 4
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      }
+    },
+    {
+      "before": {
+        "case": "outer_norm_child_plus_gf6_phase",
+        "inplace_classical_scale": false,
+        "retained": 865,
+        "native_peak_Q": 889,
+        "helpers": 24,
+        "static_T": 61,
+        "peak_allocation_events": 2,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 6,
+            "live_total": 889,
+            "live_helpers": 24,
+            "call_chain": [
+              "scalar_inverse_phase.py:classical_scale:128",
+              "scalar_inverse_phase.py:phase_inverse_six:143"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "scalar_inverse_phase.py:classical_scale:128": 6
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      },
+      "after": {
+        "case": "outer_norm_child_plus_gf6_phase",
+        "inplace_classical_scale": true,
+        "retained": 865,
+        "native_peak_Q": 887,
+        "helpers": 22,
+        "static_T": 61,
+        "peak_allocation_events": 1,
+        "unique_peak_allocation_compositions": [
+          {
+            "allocated": 1,
+            "live_total": 887,
+            "live_helpers": 22,
+            "call_chain": [
+              "scalar_inverse_phase.py:fixed_trace_phase:76",
+              "scalar_inverse_phase.py:phase_inverse_six:144"
+            ],
+            "live_helper_owners": {
+              "tower_inverse.py:init_norm:174": 18,
+              "scalar_inverse_phase.py:fixed_trace_phase:76": 4
+            }
+          }
+        ],
+        "scope": "Native construction and live-allocation measurement only; not a full-decoder equivalence test."
+      }
+    }
+  ],
+  "source_sha256": {
+    "after_c5/arithmetic_t/gf24_nested_norm.py": "e51535ecf80568d4a67b1406e3afeae718364587bec787f9aa7c6638d48d614a",
+    "after_c5/arithmetic_t/nested_norm_inverse.py": "20e8c8cd699916e198cb79ce6ddd53ca933a76c5dbcbf2f329ab1001a26f06c9",
+    "after_c5/extractor_width/direct_carry_arithmetic.py": "3be5e0ec74b40e5aa681f3bbf4624f6d10c766b0f65469b6a211a7359fdc8096",
+    "after_v3/k24/last_return_retained_norm.py": "35182c977774d579ef475ec3fdbd5959b7e616f79f03a837506c02c41f13db4a",
+    "work/round2/milestone152/source/scalar_inverse_phase.py": "d1549c918b98501276c692427d611da204e61c3f20501b53b7b0ab4fd873e06a",
+    "night_c27/arithmetic/phase_inverse12.py": "5d803160a953d9156b7c2cfd6a9afc791dbb27d24d4b6745e294e31b6b68a3c2"
+  },
+  "no_whole_decoder_kmb_emitted": true,
+  "limitations": [
+    "Component builder models 865 retained qubits; actual public kernel witnesses independently bind unchanged 24-wide arithmetic to DQI821.",
+    "No claim that the complete supplied source regenerates DQI821 byte for byte.",
+    "No global peak-width reduction or Public Score gain is established.",
+    "Private chart-norm candidate and public DQI821 remain separate."
+  ]
+}

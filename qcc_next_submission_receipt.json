@@ -1,0 +1,117 @@
+{
+  "status": "READY_COMPLETE_SUBMISSION_ZIP",
+  "source_zip_sha256": "90cb0b81f7af58d99d6c4af3e61c2e641fb8e5794c2fe200b54cfd1bc20e3dfe",
+  "output_zip_sha256": "6b05d78b1d5cfef6aebe5db59bbf000d52b6d266083adc2f56a9229fc10e00bb",
+  "size_bytes": 49283628,
+  "member_count": 18,
+  "members": {
+    "dfthcsos/angle_k_0.kmb": {
+      "size_bytes": 410442,
+      "sha256": "71735b23037e8a64d16e39b3347d440b36bdf8813613ec70c36a85bfd362d7c2"
+    },
+    "dfthcsos/angle_k_1.kmb": {
+      "size_bytes": 420614,
+      "sha256": "1a43bbc368785aa5fc5210f6e4d5d2f9ddf114f7f3f6d3e3964f9478056bb4be"
+    },
+    "dfthcsos/angle_k_10.kmb": {
+      "size_bytes": 347748,
+      "sha256": "5fea9f297afea7ffe74054ed1b44f92031a5f6e319a7f1c8741f86c05b234834"
+    },
+    "dfthcsos/angle_k_11.kmb": {
+      "size_bytes": 350356,
+      "sha256": "dc425931348cc4950931c400ab19322e01495b7cf3e2d02bafabcaaf9559d28a"
+    },
+    "dfthcsos/angle_k_12.kmb": {
+      "size_bytes": 348617,
+      "sha256": "64bbada35a382068b8dfbca0df0d781df8704aa367882cc426b76e2767f3d13f"
+    },
+    "dfthcsos/angle_k_13.kmb": {
+      "size_bytes": 344270,
+      "sha256": "958789349187a70ab3baf426655aacd2360113f71ab9a7b49d6624bd0e20bcd6"
+    },
+    "dfthcsos/angle_k_14.kmb": {
+      "size_bytes": 352571,
+      "sha256": "f35c803dece96ceb0ba24040e7c232a73170a3692c4f5212bdeadcbfcd154212"
+    },
+    "dfthcsos/angle_k_2.kmb": {
+      "size_bytes": 418801,
+      "sha256": "0970b392fb4bed09d6026b77b4b31510573123cb76955030115507bffde4a6bb"
+    },
+    "dfthcsos/angle_k_3.kmb": {
+      "size_bytes": 421008,
+      "sha256": "f9d313326dd07028bf6ef672bb47013f01e9311695d66b8d1ee2546d7dbacd7f"
+    },
+    "dfthcsos/angle_k_4.kmb": {
+      "size_bytes": 347635,
+      "sha256": "0ab29f06e44ef247035c971dcca30e27616bdfdc2a102fbb58c3882bbfbfd1e0"
+    },
+    "dfthcsos/angle_k_5.kmb": {
+      "size_bytes": 351040,
+      "sha256": "b346df2edafbaf4d95192a974db27abf71b770f51ee61dae2eb352f422cefdf4"
+    },
+    "dfthcsos/angle_k_6.kmb": {
+      "size_bytes": 347703,
+      "sha256": "749d9edb817c59f8a3507400002e75c2d8db55932a6933db5c5f6f59a2679f7b"
+    },
+    "dfthcsos/angle_k_7.kmb": {
+      "size_bytes": 350049,
+      "sha256": "0ad7d3775a36d7c14e3d4dfa4a144267e4e9759521fae4022715be25c309638e"
+    },
+    "dfthcsos/angle_k_8.kmb": {
+      "size_bytes": 346523,
+      "sha256": "46e0f8d69e532438d476aa8244f257a649fdc4cffe9d41f9921758f4dc18fa83"
+    },
+    "dfthcsos/angle_k_9.kmb": {
+      "size_bytes": 354023,
+      "sha256": "0b995537e919351a705babb6294dfe3525ef52a3c40b08122d842f45df8182da"
+    },
+    "dfthcsos/submission.npz": {
+      "size_bytes": 1139964,
+      "sha256": "df226db938dc440a37391091fba46c90ebcd14acfda88ec84939361ebcf9a955"
+    },
+    "dqi.kmb": {
+      "size_bytes": 455584321,
+      "sha256": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3"
+    },
+    "invsqrt.kmb": {
+      "size_bytes": 198631,
+      "sha256": "1ba197b027713aac164056d12505c87f286c3fcd94f403c522073325763bf2f9"
+    }
+  },
+  "changed_members": [
+    "dfthcsos/submission.npz"
+  ],
+  "changed_npz_arrays": [
+    "W",
+    "H2_I"
+  ],
+  "byte_identical_other_members": [
+    "dfthcsos/angle_k_0.kmb",
+    "dfthcsos/angle_k_1.kmb",
+    "dfthcsos/angle_k_10.kmb",
+    "dfthcsos/angle_k_11.kmb",
+    "dfthcsos/angle_k_12.kmb",
+    "dfthcsos/angle_k_13.kmb",
+    "dfthcsos/angle_k_14.kmb",
+    "dfthcsos/angle_k_2.kmb",
+    "dfthcsos/angle_k_3.kmb",
+    "dfthcsos/angle_k_4.kmb",
+    "dfthcsos/angle_k_5.kmb",
+    "dfthcsos/angle_k_6.kmb",
+    "dfthcsos/angle_k_7.kmb",
+    "dfthcsos/angle_k_8.kmb",
+    "dfthcsos/angle_k_9.kmb",
+    "dqi.kmb",
+    "invsqrt.kmb"
+  ],
+  "verification": {
+    "chemistry_status": "PASS",
+    "chemistry_verified_shots": 78080,
+    "chemistry_cost": 294887890.976471,
+    "chemistry_toffoli": 14722,
+    "chemistry_qubits": 427,
+    "scope": "Exact NPZ and 15 loaders match the separately recorded full official verifier run. DQI and invsqrt retain public v27 bytes and were not reverified by this builder."
+  },
+  "kaggle_submitted": false,
+  "observed_public_score": null
+}

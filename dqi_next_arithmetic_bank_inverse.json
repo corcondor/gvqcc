@@ -1,0 +1,181 @@
+{
+  "status": "PASS_LOCAL_WIDTH_T_TRADEOFF",
+  "baseline_special_source": "inverse_retained_norm_deferred.py matched special pair",
+  "whole_decoder_public_baseline": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+  "whole_decoder_integration": false,
+  "submission_kmb_emitted": false,
+  "independent_algebra_review": true,
+  "cases_per_seed": 16384,
+  "case_structure": "All 4096 low-only and all 4096 high-only words, including zero; 8192 fixed random general K24 words.",
+  "results": [
+    {
+      "candidate": false,
+      "Q": 889,
+      "retained_qubits": 865,
+      "additional_helpers": 24,
+      "T_static": 386,
+      "prefix_T_static": 191,
+      "exact_uniform_HMR_mean_T": 385.9375,
+      "native_prefix_checks": [
+        {
+          "seed": 2201,
+          "shots": 16384,
+          "source_errors": 0,
+          "bank_errors": 0,
+          "dirty_errors": 0,
+          "mask_errors": 0,
+          "helper_errors": 0,
+          "phase_errors": null,
+          "measured_mean_T": 191.0
+        }
+      ],
+      "native_pair_checks": [
+        {
+          "seed": 2201,
+          "shots": 16384,
+          "source_errors": 0,
+          "bank_errors": 0,
+          "dirty_errors": 0,
+          "mask_errors": 0,
+          "helper_errors": 0,
+          "phase_errors": 0,
+          "measured_mean_T": 385.94091796875
+        },
+        {
+          "seed": 2202,
+          "shots": 16384,
+          "source_errors": 0,
+          "bank_errors": 0,
+          "dirty_errors": 0,
+          "mask_errors": 0,
+          "helper_errors": 0,
+          "phase_errors": 0,
+          "measured_mean_T": 385.9423828125
+        },
+        {
+          "seed": 2203,
+          "shots": 16384,
+          "source_errors": 0,
+          "bank_errors": 0,
+          "dirty_errors": 0,
+          "mask_errors": 0,
+          "helper_errors": 0,
+          "phase_errors": 0,
+          "measured_mean_T": 385.94091796875
+        },
+        {
+          "seed": 2204,
+          "shots": 16384,
+          "source_errors": 0,
+          "bank_errors": 0,
+          "dirty_errors": 0,
+          "mask_errors": 0,
+          "helper_errors": 0,
+          "phase_errors": 0,
+          "measured_mean_T": 385.9365234375
+        }
+      ],
+      "details": {
+        "inverse_static_T": 195,
+        "retained_storage_bits": 24,
+        "original_norm_bits": 12,
+        "child_norm_bits": 6,
+        "child_inverse_bits": 6,
+        "scalar_inverse_phase_static_T": 4,
+        "maximum_additional_helpers": 24,
+        "all_owned_storage_bits_reset": true,
+        "deferred_prefix_mask_paid": true
+      }
+    },
+    {
+      "candidate": true,
+      "Q": 877,
+      "retained_qubits": 865,
+      "additional_helpers": 12,
+      "T_static": 409,
+      "prefix_T_static": 191,
+      "exact_uniform_HMR_mean_T": 408.993408203125,
+      "native_prefix_checks": [
+        {
+          "seed": 2201,
+          "shots": 16384,
+          "source_errors": 0,
+          "bank_errors": 0,
+          "dirty_errors": 0,
+          "mask_errors": 0,
+          "helper_errors": 0,
+          "phase_errors": null,
+          "measured_mean_T": 191.0
+        }
+      ],
+      "native_pair_checks": [
+        {
+          "seed": 2201,
+          "shots": 16384,
+          "source_errors": 0,
+          "bank_errors": 0,
+          "dirty_errors": 0,
+          "mask_errors": 0,
+          "helper_errors": 0,
+          "phase_errors": 0,
+          "measured_mean_T": 408.99505615234375
+        },
+        {
+          "seed": 2202,
+          "shots": 16384,
+          "source_errors": 0,
+          "bank_errors": 0,
+          "dirty_errors": 0,
+          "mask_errors": 0,
+          "helper_errors": 0,
+          "phase_errors": 0,
+          "measured_mean_T": 408.9967041015625
+        },
+        {
+          "seed": 2203,
+          "shots": 16384,
+          "source_errors": 0,
+          "bank_errors": 0,
+          "dirty_errors": 0,
+          "mask_errors": 0,
+          "helper_errors": 0,
+          "phase_errors": 0,
+          "measured_mean_T": 408.9967041015625
+        },
+        {
+          "seed": 2204,
+          "shots": 16384,
+          "source_errors": 0,
+          "bank_errors": 0,
+          "dirty_errors": 0,
+          "mask_errors": 0,
+          "helper_errors": 0,
+          "phase_errors": 0,
+          "measured_mean_T": 408.993408203125
+        }
+      ],
+      "details": {
+        "phase_peak_borrowed_from_owned_bank": 12
+      }
+    }
+  ],
+  "static_T_delta": 23,
+  "exact_mean_T_delta": 23.055908203125,
+  "helper_delta": -12,
+  "new_deferred_mask_bits": 12,
+  "previous_deferred_mask_bits": 6,
+  "proof": [
+    "C=Norm(N) and D=Norm(inv0(N)); erasing each child from its preserved parent is a zero-T phase repayment.",
+    "The now-clean owned bank12 consumes both source halves while N remains available to repay their masks.",
+    "Prefix mask is of polynomial N; matched return reciprocal norm equals that same N.",
+    "Return pays its own N mask with phase_inverse_twelve_polynomial(R, mask), since N=inv0(R).",
+    "Clean bank is explicitly lent to the phase helper allocator; all bank and extra helper values are zero at both boundaries."
+  ],
+  "limitations": [
+    "No general dirty-bank or arbitrary-carry claim.",
+    "This only addresses matched special inverse calls; actual DQI821 consuming product and generic norm peaks remain.",
+    "No full-circuit correctness, error rate or Public Score improvement is claimed.",
+    "Separate from the unpublished chart-norm repair candidate."
+  ],
+  "script_sha256": "a2e2a466191985912e95a930103921e09c90e149887a6ee2555fba8c6b5590ed"
+}

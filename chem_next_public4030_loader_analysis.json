@@ -1,0 +1,367 @@
+{
+  "status": "NO_NEW_ELEMENTARY_MERGE_IN_PREVIOUSLY_EXCLUDED_BATCH0_SEGMENTS",
+  "scope": "Exact pinned public4030; k>=1 eligibility audit only; batch0 independent segments between nonlinear/measurement boundaries",
+  "total_loader_CCX": 4030,
+  "rows": [
+    {
+      "k": 0,
+      "sha256": "71735b23037e8a64d16e39b3347d440b36bdf8813613ec70c36a85bfd362d7c2",
+      "CCX": 291,
+      "qubits": 128
+    },
+    {
+      "k": 1,
+      "sha256": "1a43bbc368785aa5fc5210f6e4d5d2f9ddf114f7f3f6d3e3964f9478056bb4be",
+      "CCX": 286,
+      "qubits": 125,
+      "core": {
+        "products": 212,
+        "distinct_control_forms": 424,
+        "distinct_output_directions": 212,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 2,
+      "sha256": "0970b392fb4bed09d6026b77b4b31510573123cb76955030115507bffde4a6bb",
+      "CCX": 286,
+      "qubits": 125,
+      "core": {
+        "products": 212,
+        "distinct_control_forms": 424,
+        "distinct_output_directions": 212,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 3,
+      "sha256": "f9d313326dd07028bf6ef672bb47013f01e9311695d66b8d1ee2546d7dbacd7f",
+      "CCX": 286,
+      "qubits": 125,
+      "core": {
+        "products": 212,
+        "distinct_control_forms": 424,
+        "distinct_output_directions": 212,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 4,
+      "sha256": "0ab29f06e44ef247035c971dcca30e27616bdfdc2a102fbb58c3882bbfbfd1e0",
+      "CCX": 263,
+      "qubits": 125,
+      "core": {
+        "products": 189,
+        "distinct_control_forms": 378,
+        "distinct_output_directions": 189,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 5,
+      "sha256": "b346df2edafbaf4d95192a974db27abf71b770f51ee61dae2eb352f422cefdf4",
+      "CCX": 263,
+      "qubits": 125,
+      "core": {
+        "products": 189,
+        "distinct_control_forms": 378,
+        "distinct_output_directions": 189,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 6,
+      "sha256": "749d9edb817c59f8a3507400002e75c2d8db55932a6933db5c5f6f59a2679f7b",
+      "CCX": 261,
+      "qubits": 125,
+      "core": {
+        "products": 187,
+        "distinct_control_forms": 374,
+        "distinct_output_directions": 187,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 7,
+      "sha256": "0ad7d3775a36d7c14e3d4dfa4a144267e4e9759521fae4022715be25c309638e",
+      "CCX": 263,
+      "qubits": 125,
+      "core": {
+        "products": 189,
+        "distinct_control_forms": 378,
+        "distinct_output_directions": 189,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 8,
+      "sha256": "46e0f8d69e532438d476aa8244f257a649fdc4cffe9d41f9921758f4dc18fa83",
+      "CCX": 261,
+      "qubits": 125,
+      "core": {
+        "products": 187,
+        "distinct_control_forms": 374,
+        "distinct_output_directions": 187,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 9,
+      "sha256": "0b995537e919351a705babb6294dfe3525ef52a3c40b08122d842f45df8182da",
+      "CCX": 263,
+      "qubits": 125,
+      "core": {
+        "products": 189,
+        "distinct_control_forms": 378,
+        "distinct_output_directions": 189,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 10,
+      "sha256": "5fea9f297afea7ffe74054ed1b44f92031a5f6e319a7f1c8741f86c05b234834",
+      "CCX": 261,
+      "qubits": 125,
+      "core": {
+        "products": 187,
+        "distinct_control_forms": 374,
+        "distinct_output_directions": 187,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 11,
+      "sha256": "dc425931348cc4950931c400ab19322e01495b7cf3e2d02bafabcaaf9559d28a",
+      "CCX": 263,
+      "qubits": 125,
+      "core": {
+        "products": 189,
+        "distinct_control_forms": 378,
+        "distinct_output_directions": 189,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 12,
+      "sha256": "64bbada35a382068b8dfbca0df0d781df8704aa367882cc426b76e2767f3d13f",
+      "CCX": 261,
+      "qubits": 125,
+      "core": {
+        "products": 187,
+        "distinct_control_forms": 374,
+        "distinct_output_directions": 187,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 13,
+      "sha256": "958789349187a70ab3baf426655aacd2360113f71ab9a7b49d6624bd0e20bcd6",
+      "CCX": 261,
+      "qubits": 125,
+      "core": {
+        "products": 187,
+        "distinct_control_forms": 374,
+        "distinct_output_directions": 187,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    },
+    {
+      "k": 14,
+      "sha256": "f35c803dece96ceb0ba24040e7c232a73170a3692c4f5212bdeadcbfcd154212",
+      "CCX": 261,
+      "qubits": 125,
+      "core": {
+        "products": 187,
+        "distinct_control_forms": 374,
+        "distinct_output_directions": 187,
+        "repeated_control_form_groups": 0,
+        "repeated_output_direction_groups": 0,
+        "two_shared_factor_groups": 0,
+        "degenerate_products": 0,
+        "elementary_search_eligible": false
+      },
+      "exhaustive_old_search_rerun": false
+    }
+  ],
+  "batch0_newly_screened_output_products": 212,
+  "batch0_segments": [
+    {
+      "products": 106,
+      "distinct_control_forms": 212,
+      "distinct_output_directions": 106,
+      "repeated_control_form_groups": 0,
+      "repeated_output_direction_groups": 0,
+      "two_shared_factor_groups": 0,
+      "degenerate_products": 0,
+      "elementary_search_eligible": false,
+      "first_operation": 1900,
+      "last_operation_exclusive": 23297,
+      "elementary_reduction_found": false
+    },
+    {
+      "products": 60,
+      "distinct_control_forms": 120,
+      "distinct_output_directions": 60,
+      "repeated_control_form_groups": 0,
+      "repeated_output_direction_groups": 0,
+      "two_shared_factor_groups": 0,
+      "degenerate_products": 0,
+      "elementary_search_eligible": false,
+      "first_operation": 23303,
+      "last_operation_exclusive": 35749,
+      "elementary_reduction_found": false
+    },
+    {
+      "products": 46,
+      "distinct_control_forms": 92,
+      "distinct_output_directions": 46,
+      "repeated_control_form_groups": 0,
+      "repeated_output_direction_groups": 0,
+      "two_shared_factor_groups": 0,
+      "degenerate_products": 0,
+      "elementary_search_eligible": false,
+      "first_operation": 35753,
+      "last_operation_exclusive": 45140,
+      "elementary_reduction_found": false
+    }
+  ],
+  "batch0_boundaries": [
+    {
+      "operation": 23297,
+      "line": "HMR q127 b0"
+    },
+    {
+      "operation": 23298,
+      "line": "CZ q0 q3 if b0"
+    },
+    {
+      "operation": 23299,
+      "line": "R q119"
+    },
+    {
+      "operation": 23300,
+      "line": "CCX q0 q124 q119"
+    },
+    {
+      "operation": 23301,
+      "line": "R q127"
+    },
+    {
+      "operation": 23302,
+      "line": "CCX q0 q2 q127"
+    },
+    {
+      "operation": 35749,
+      "line": "HMR q126 b0"
+    },
+    {
+      "operation": 35750,
+      "line": "CZ q0 q122 if b0"
+    },
+    {
+      "operation": 35751,
+      "line": "R q126"
+    },
+    {
+      "operation": 35752,
+      "line": "CCX q0 q123 q126"
+    }
+  ],
+  "total_task_T": 14722,
+  "total_task_Q": 427,
+  "one_loader_CCX_removed_gives_task_T_reduction": 2,
+  "one_loader_CCX_removed_chemistry_reduction_percent": 0.013585110718652357,
+  "one_loader_CCX_removed_geomean_score_increment": 0.0012370418023320122,
+  "thresholds_at_fixed_lambda_Q_and_other_tasks": [
+    {
+      "target_total_score_increment": 0.001,
+      "minimum_loader_CCX_perpass_removed_at_fixed_lambda_Q_and_other_tasks": 1
+    },
+    {
+      "target_total_score_increment": 0.01,
+      "minimum_loader_CCX_perpass_removed_at_fixed_lambda_Q_and_other_tasks": 9
+    },
+    {
+      "target_total_score_increment": 0.1,
+      "minimum_loader_CCX_perpass_removed_at_fixed_lambda_Q_and_other_tasks": 81
+    },
+    {
+      "target_total_score_increment": 0.5,
+      "minimum_loader_CCX_perpass_removed_at_fixed_lambda_Q_and_other_tasks": 390
+    }
+  ],
+  "limits": [
+    "Not a global synthesis lower bound",
+    "Does not exclude multi-step cost-neutral rewrites, new shared nonlinear products, or coherent encoded-output redesign",
+    "Cross-batch scratch reuse is not emitted: each ANGLE call must restore zero scratch, and separate calls include intervening Givens rotations"
+  ],
+  "emitted_candidate": false,
+  "new_gate_reduction": 0,
+  "official_verifier_run": false,
+  "seconds": 1.534759515998303
+}

@@ -1,0 +1,31 @@
+{
+  "scanner_source_sha256": "c9363a304277b4832f7be08e7168edbc7836d1fba995a46426b635ef9d5dfbd6",
+  "scanner_binary_sha256": "28bf880af362b6834b2c5b48641217a0edccc6e24693f54d0c237681fccf6bff",
+  "fixture_result": "dqi_next_conditional_phase_fixture_results.json",
+  "fixture_scope": {
+    "fixtures": 22,
+    "exact_truth_table_cases": 1792,
+    "native_shots": 11264
+  },
+  "runs": [
+    {
+      "input_sha256": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+      "input_kind": "exact public v27",
+      "result": "dqi_next_conditional_phase_public_v27_discovery.json",
+      "num_ops": 52930180,
+      "ccz": 7000,
+      "repeated_phases": 0,
+      "reduced_phases": 0
+    },
+    {
+      "input_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+      "input_kind": "separate prior norm candidate, not public baseline",
+      "result": "dqi_next_conditional_phase_discovery.json",
+      "num_ops": 58868706,
+      "ccz": 7000,
+      "repeated_phases": 0,
+      "reduced_phases": 0
+    }
+  ],
+  "scope": "Discovery only with selected Boolean-expression fingerprint simplifications. Negative results do not establish global optimality. No circuit rewrite or submission emitted."
+}

@@ -1,0 +1,45 @@
+{
+  "status": "OFFICIAL_FULL_CHEMISTRY_PASS",
+  "source_public_npz_sha256": "4df35abdeec320a3f1c10f6f533e73550e50bb45d95e666deaa01062810a3559",
+  "source_actual_circuit_words_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "candidate": "/workspace/scratch/4020ae2c83bc/candidate_public4030_joint/dfthcsos/submission.npz",
+  "candidate_sha256": "df226db938dc440a37391091fba46c90ebcd14acfda88ec84939361ebcf9a955",
+  "patch": "/workspace/scratch/4020ae2c83bc/gvqcc/chem_next_public4030_weights.npz",
+  "patch_sha256": "ce9a087668d181478044fd800dc24588b21c9270d522d4fac4742f780075789d",
+  "replacement_keys": [
+    "W",
+    "H2_I"
+  ],
+  "new_array_sha256": {
+    "W": "7f61a163034f30cee9ffe76bfc2cab8ddd4a0e7b798f63068781d820f9d77569",
+    "H2_I": "1dd71d35408723f83597c6c6092cf13cf4d24d961d0cdf0cad3c320b92e1b15c"
+  },
+  "fixed_angle_words_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "official_numeric_metrics": {
+    "error_1": 0.019999999000175406,
+    "error_2": 0.019999999000008428,
+    "Lambda": 283.0012787701885,
+    "E_SOS": -22144.188248001,
+    "E_gap": 3.9148980009995284,
+    "lambda_eff": 46.90965630568201,
+    "gap_in_domain": true
+  },
+  "numeric_thresholds_pass": true,
+  "reference_resources": {
+    "T": 14722,
+    "Q": 427,
+    "loader_toffoli_perpass": 4030
+  },
+  "cost_with_unchanged_public4030_loaders": 294887890.976471,
+  "original_public_cost": 294888332.10426265,
+  "previous_verified_H2_only_cost": 294887987.43371594,
+  "new_cost_reduction_from_previous_H2_only": 96.45724490727395,
+  "cost_reduction_percent_from_public": 0.00014959147027759911,
+  "cost_reduction_percent_from_previous_H2_only": 3.2709791175644654e-05,
+  "official_full_circuit_verification_run": true,
+  "kaggle_submitted": false,
+  "observed_public_score": null,
+  "qualification": "The final NPZ preserves every source array except W and H2_I. All 15 public4030 loader files are byte-identical to the source. The unmodified official verifier passed its default 78,080 shots. No new Kaggle submission or public score has been measured.",
+  "official_full_verifier_result": "chem_next_public4030_full_verifier.json",
+  "verified_shots": 78080
+}

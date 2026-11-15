@@ -1,0 +1,58 @@
+{
+  "status": "PASS_LOCAL_COMPONENT_ONLY",
+  "scale": {
+    "status": "PASS",
+    "exhaustive_nonzero_scalar_source_pairs": 4032,
+    "Q_input": 15,
+    "Q_helpers": 0,
+    "T_static": 0,
+    "dirty_qubits_preserved": 9,
+    "input_classical_registers_preserved": true,
+    "phase_preserved": true
+  },
+  "fixed_inverse_phase": {
+    "status": "PASS",
+    "quantum_root": false,
+    "Q_before": 12,
+    "Q_after": 10,
+    "helper_before": 6,
+    "helper_after": 4,
+    "T_static": 4,
+    "exact_uniform_mask_expected_T": 3.9375,
+    "native_mean_T_per_seed": [
+      3.9375,
+      3.9375,
+      3.9375,
+      3.9375
+    ],
+    "exhaustive_cases_per_seed": 4096,
+    "measurement_seeds": 4,
+    "byte_identical_builds": true,
+    "circuit_sha256": "74855b6971fa8435847055ad285cf4a819ea9e7cf86f36f4d3214b516ee8dd28"
+  },
+  "controlled_inverse_phase": {
+    "status": "PASS",
+    "quantum_root": true,
+    "Q_before": 13,
+    "Q_after": 13,
+    "helper_before": 6,
+    "helper_after": 6,
+    "T_static": 6,
+    "exact_uniform_mask_expected_T": 5.90625,
+    "native_mean_T_per_seed": [
+      5.90625,
+      5.90625,
+      5.90625,
+      5.90625
+    ],
+    "exhaustive_cases_per_seed": 8192,
+    "measurement_seeds": 4,
+    "byte_identical_builds": true,
+    "circuit_sha256": "dc7143a9e269f2f1148fadbf963a98165f4d5d2b9c73d604e44252955c83ef4e"
+  },
+  "proof": "For each nonzero classical a, Gaussian elimination forms E with E*R(a^-1)=I; its identical quantum row operations apply E=R(a).",
+  "domain": "All GF64 quantum inputs including zero; nonzero classical multiplication factors; all classical inverse-phase masks including zero.",
+  "whole_decoder_status": "No whole-decoder integration or score improvement claimed. Other simultaneous live registers may still determine the 889-qubit peak.",
+  "source_read_only": true,
+  "script_sha256": "067b4be6b1fe688c40761326ad5c07a907fc8f4fd6f1946db706c850d03b086a"
+}
