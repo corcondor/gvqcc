@@ -1,0 +1,84 @@
+{
+  "accepted_score11": 27.327844644007193,
+  "accepted_chemistry_cost": 294887882.9465613,
+  "families": {
+    "partition": {
+      "per_pass_toffoli": 6242,
+      "peak_angle_qubits": 127,
+      "total_toffoli": 19146.0,
+      "total_qubits": 435,
+      "shots": 78080,
+      "chemistry_cost": 390687530.999865,
+      "chemistry_change_fraction": 0.32486803830683075,
+      "local_score_with_score11_other_members": 24.881764334986727,
+      "sha256": {
+        "angle_k_0.kmb": "012723b2ccd22963b2e4389818929bf29b7b3406dc750f07200f6ebf47d96f8f",
+        "angle_k_1.kmb": "752fe2c3d35fda8259d79a0a0646b24ca9f1c9dfa62e8fca5d307a5eed8a6a47",
+        "angle_k_2.kmb": "238b501c886d9b3cf51786cf58ae62ca273e0f3304860f6dde7eec1d6b494e20",
+        "angle_k_3.kmb": "210f76ad2174c795ed2106db11b1be7d9b1b12c16fa2da38d2cf572334a0ea41",
+        "angle_k_4.kmb": "6fb670351b20f3d50a9ba0ca5319cf2b568063a3594349ed60bc39bbaaab7d20",
+        "angle_k_5.kmb": "e26a107c6ede06dc4166150f04ce9294c71c8760b101615ed97db2b2f02bf71e",
+        "angle_k_6.kmb": "49f9b801014c7344d3762d7e1e5e85037d2f9de1fb46f4da8736090fbc7d5b5b",
+        "angle_k_7.kmb": "0c64c9d435c7d09cc94a3f0c562d807e199d149154dd129cd7e7bb4d51a296a3",
+        "angle_k_8.kmb": "f7efc38acbeac98fd164bf338d66c0d8a77b451a79bdd4ef5e6cea18811f6748",
+        "angle_k_9.kmb": "9434e67ec04d7b7865c65b066a22d4809ff032cb2d93419970add01f96d24b05",
+        "angle_k_10.kmb": "46896d0daa9a0c42c187fae898cb664aa12e3d5e2eb963ced63185e4637be5e2",
+        "angle_k_11.kmb": "da6c61238cc91230710a679690e9ce8cb89f3dacd5576ce3fa9f38cf90281b6c",
+        "angle_k_12.kmb": "7cf4026317e41690f0513b15fc0424ba5a8ef27b89cd7a4589714ddd3ba416e2",
+        "submission.npz": "42be33687903988f5d09e8c2f7fefc093896d841d4648fde32186f499794d347"
+      }
+    },
+    "shared": {
+      "per_pass_toffoli": 6804,
+      "peak_angle_qubits": 119,
+      "total_toffoli": 20270.0,
+      "total_qubits": 435,
+      "shots": 78080,
+      "chemistry_cost": 413623537.7294089,
+      "chemistry_change_fraction": 0.4026467740770636,
+      "local_score_with_score11_other_members": 24.413081877886754,
+      "sha256": {
+        "angle_k_0.kmb": "efbea19c354821c363ccda8266f58cd19a818fb2e1943cd278271a9cd24e7d49",
+        "angle_k_1.kmb": "e7736a974ba4e0aea90d4ec120f0ff4a2447d32d97a31d991b5e4d29401beac5",
+        "angle_k_2.kmb": "65c5bd654fb90806ebbaecf4d4f7f98aef55df0de44a473bccd4a0a4fdefde2c",
+        "angle_k_3.kmb": "09e241475b2f00f5630b793f33e552b381fd7e6bdf8273362a5b95675282bfe5",
+        "angle_k_4.kmb": "7823e2f28ae30a4d0b50410f01d4179e0d2c23ecbe43b3a01f833acf8755f522",
+        "angle_k_5.kmb": "6e1d19caa8b86acdd0e9e763a5fa1c2aed82cb1b3bc6f23e06d7fcc15468946a",
+        "angle_k_6.kmb": "42f22d97730891b925b4bc57af94e1be6b72390de7689c8cb8e7d6e2bd2dbbbd",
+        "angle_k_7.kmb": "81a075c6f574a7c9a0ad54528445a3f4ad187e6b96954a7873e22c37850d3e1b",
+        "angle_k_8.kmb": "fb78f5d4539c0656f6a87244cfc7d843668426b3843d5b51244a4943ce41d719",
+        "angle_k_9.kmb": "1fe44370fe148183bc4108ac359af5b96080d201212ce5c10b982f31741d6040",
+        "angle_k_10.kmb": "c4663cdf453ba08b772e2f5b65bb91c0c1f44393c13b94d6eb0d6e3fb47616c0",
+        "angle_k_11.kmb": "3088a1bdda45430e692a4a8615e399d4e64a428f7ae46783432738b5425565e7",
+        "angle_k_12.kmb": "ddcff2b60ae7f2c02be66286e4fa720d41646d848c25786e9e83e9faeff7872e",
+        "submission.npz": "42be33687903988f5d09e8c2f7fefc093896d841d4648fde32186f499794d347"
+      }
+    },
+    "reorder": {
+      "per_pass_toffoli": 6233,
+      "peak_angle_qubits": 127,
+      "total_toffoli": 19128.0,
+      "total_qubits": 435,
+      "shots": 78080,
+      "chemistry_cost": 390320228.4009933,
+      "chemistry_change_fraction": 0.3236224713638911,
+      "local_score_with_score11_other_members": 24.889566707506585,
+      "sha256": {
+        "angle_k_0.kmb": "e424fad5a5e6615e24a5aa7bca4b10c0468fdce8f212ed0b0c26274833c8707a",
+        "angle_k_1.kmb": "bcf7456968d432445ad08a91e10f0e980265b87512afe0d0d482852c9a8a8895",
+        "angle_k_2.kmb": "86c8bd5a9d1ebafa44b23f1eb50c43b4b52b149f454e8f39ea13932ccd3b46e1",
+        "angle_k_3.kmb": "d138d2cfddec3a77f53d5da9554fb7cb77425e5dfd249b992b0773a70d1919ae",
+        "angle_k_4.kmb": "991880eb1a0b894742999a4ddea8cb351f73f0eb258e2b5c52fec2eea1516e41",
+        "angle_k_5.kmb": "7c3e5647c748ec33c174808ca53acd95a9452e827ed5add7cb648220d328d3ab",
+        "angle_k_6.kmb": "6039dc61c42e36d9a3fded2f4e25a55671a0bfb4210d64b3227ab265a264a26e",
+        "angle_k_7.kmb": "01d26fe430da6bc54277ee89a21f75000824496793b1ebd13b75c9fa146b8d19",
+        "angle_k_8.kmb": "c055928dfbdbea08f4d48f8bd742b7172a43c886ae44574c551e2e89321f6d03",
+        "angle_k_9.kmb": "feedc872e66dd4fd57afff270af45231ed897d3d9d6e403de7f59d6ce347f27f",
+        "angle_k_10.kmb": "2ce1873d7f7815e2543eec4f887c3ed8998bc1898d29990253c8d061cf6b368e",
+        "angle_k_11.kmb": "c49a2c7ef63f3d93127a13439058ca7543a24925a0a714243bbee83028f484d8",
+        "angle_k_12.kmb": "4354ba6dd503e68773277c51c7c10d256e997385ccea1c15457fa2cda5181cda",
+        "submission.npz": "4bd28afc19f563eb868e340bb426096e93253e650844012db419505141084d64"
+      }
+    }
+  }
+}

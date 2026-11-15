@@ -1,0 +1,307 @@
+{
+  "batch": 6,
+  "partition_mask": 31,
+  "true_word_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "score11_factorization_sha256": "42be33687903988f5d09e8c2f7fefc093896d841d4648fde32186f499794d347",
+  "circuits": [
+    {
+      "batch": 0,
+      "file": "j6_model/family/angle_k_0.kmb",
+      "sha256": "efbea19c354821c363ccda8266f58cd19a818fb2e1943cd278271a9cd24e7d49",
+      "bank_ccx": 58,
+      "independent_core": 672,
+      "shared_core": 497,
+      "shared_by_group": {
+        "2": 75,
+        "3": 17,
+        "4": 10,
+        "5": 9
+      },
+      "ccx": 555,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 1,
+      "file": "j6_model/family/angle_k_1.kmb",
+      "sha256": "e7736a974ba4e0aea90d4ec120f0ff4a2447d32d97a31d991b5e4d29401beac5",
+      "bank_ccx": 58,
+      "independent_core": 672,
+      "shared_core": 494,
+      "shared_by_group": {
+        "2": 77,
+        "3": 18,
+        "4": 11,
+        "5": 8
+      },
+      "ccx": 552,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 2,
+      "file": "j6_model/family/angle_k_2.kmb",
+      "sha256": "65c5bd654fb90806ebbaecf4d4f7f98aef55df0de44a473bccd4a0a4fdefde2c",
+      "bank_ccx": 58,
+      "independent_core": 672,
+      "shared_core": 492,
+      "shared_by_group": {
+        "2": 67,
+        "3": 24,
+        "4": 11,
+        "5": 8
+      },
+      "ccx": 550,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 3,
+      "file": "j6_model/family/angle_k_3.kmb",
+      "sha256": "09e241475b2f00f5630b793f33e552b381fd7e6bdf8273362a5b95675282bfe5",
+      "bank_ccx": 58,
+      "independent_core": 639,
+      "shared_core": 476,
+      "shared_by_group": {
+        "2": 62,
+        "3": 21,
+        "4": 9,
+        "5": 8
+      },
+      "ccx": 534,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 4,
+      "file": "j6_model/family/angle_k_4.kmb",
+      "sha256": "7823e2f28ae30a4d0b50410f01d4179e0d2c23ecbe43b3a01f833acf8755f522",
+      "bank_ccx": 58,
+      "independent_core": 606,
+      "shared_core": 453,
+      "shared_by_group": {
+        "2": 60,
+        "3": 19,
+        "4": 9,
+        "5": 7
+      },
+      "ccx": 511,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 5,
+      "file": "j6_model/family/angle_k_5.kmb",
+      "sha256": "6e1d19caa8b86acdd0e9e763a5fa1c2aed82cb1b3bc6f23e06d7fcc15468946a",
+      "bank_ccx": 58,
+      "independent_core": 604,
+      "shared_core": 453,
+      "shared_by_group": {
+        "2": 58,
+        "3": 19,
+        "4": 9,
+        "5": 7
+      },
+      "ccx": 511,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 6,
+      "file": "j6_model/family/angle_k_6.kmb",
+      "sha256": "42f22d97730891b925b4bc57af94e1be6b72390de7689c8cb8e7d6e2bd2dbbbd",
+      "bank_ccx": 58,
+      "independent_core": 605,
+      "shared_core": 455,
+      "shared_by_group": {
+        "2": 57,
+        "3": 19,
+        "4": 9,
+        "5": 7
+      },
+      "ccx": 513,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 7,
+      "file": "j6_model/family/angle_k_7.kmb",
+      "sha256": "81a075c6f574a7c9a0ad54528445a3f4ad187e6b96954a7873e22c37850d3e1b",
+      "bank_ccx": 58,
+      "independent_core": 605,
+      "shared_core": 455,
+      "shared_by_group": {
+        "2": 57,
+        "3": 19,
+        "4": 9,
+        "5": 7
+      },
+      "ccx": 513,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 8,
+      "file": "j6_model/family/angle_k_8.kmb",
+      "sha256": "fb78f5d4539c0656f6a87244cfc7d843668426b3843d5b51244a4943ce41d719",
+      "bank_ccx": 58,
+      "independent_core": 606,
+      "shared_core": 456,
+      "shared_by_group": {
+        "2": 61,
+        "3": 17,
+        "4": 9,
+        "5": 7
+      },
+      "ccx": 514,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 9,
+      "file": "j6_model/family/angle_k_9.kmb",
+      "sha256": "1fe44370fe148183bc4108ac359af5b96080d201212ce5c10b982f31741d6040",
+      "bank_ccx": 58,
+      "independent_core": 606,
+      "shared_core": 452,
+      "shared_by_group": {
+        "2": 59,
+        "3": 20,
+        "4": 9,
+        "5": 7
+      },
+      "ccx": 510,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 10,
+      "file": "j6_model/family/angle_k_10.kmb",
+      "sha256": "c4663cdf453ba08b772e2f5b65bb91c0c1f44393c13b94d6eb0d6e3fb47616c0",
+      "bank_ccx": 58,
+      "independent_core": 604,
+      "shared_core": 456,
+      "shared_by_group": {
+        "2": 59,
+        "3": 17,
+        "4": 9,
+        "5": 7
+      },
+      "ccx": 514,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 11,
+      "file": "j6_model/family/angle_k_11.kmb",
+      "sha256": "3088a1bdda45430e692a4a8615e399d4e64a428f7ae46783432738b5425565e7",
+      "bank_ccx": 58,
+      "independent_core": 605,
+      "shared_core": 455,
+      "shared_by_group": {
+        "2": 57,
+        "3": 19,
+        "4": 9,
+        "5": 7
+      },
+      "ccx": 513,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    },
+    {
+      "batch": 12,
+      "file": "j6_model/family/angle_k_12.kmb",
+      "sha256": "ddcff2b60ae7f2c02be66286e4fa720d41646d848c25786e9e83e9faeff7872e",
+      "bank_ccx": 58,
+      "independent_core": 606,
+      "shared_core": 456,
+      "shared_by_group": {
+        "2": 59,
+        "3": 18,
+        "4": 9,
+        "5": 7
+      },
+      "ccx": 514,
+      "Q": 119,
+      "proof": {
+        "addresses": 1220,
+        "arbitrary_target_bits": 48,
+        "HMR_phases_proved": 58,
+        "correct": true
+      }
+    }
+  ],
+  "ccx_per_pass": 6804,
+  "all_batches_emitted": true,
+  "forward_reverse_native_recovery": {
+    "PASS": true,
+    "addresses": 1220,
+    "shots_per_address": 1,
+    "word_mismatches": 0,
+    "observed_toffoli": 13608.0
+  },
+  "total_T": 20270.0,
+  "total_Q": 435,
+  "ratio_to_score11_at_fixed_physics": 1.4026467740770636,
+  "improves_score11": false
+}

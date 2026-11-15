@@ -1,0 +1,148 @@
+{
+  "rows": [
+    {
+      "name": "fixed",
+      "code": "ordinary",
+      "final_sign": 0,
+      "exact_reconstruction_error": 0.0,
+      "changed_legal_words": 0,
+      "fixed_order_ccx_rank_sum": 8608,
+      "near_quadrant_edges": 0
+    },
+    {
+      "name": "fixed",
+      "code": "tag",
+      "final_sign": 0,
+      "exact_reconstruction_error": 0.0,
+      "changed_legal_words": 0,
+      "fixed_order_ccx_rank_sum": 7455,
+      "near_quadrant_edges": 0
+    },
+    {
+      "name": "minimum_0",
+      "code": "ordinary",
+      "final_sign": 0,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 53004,
+      "fixed_order_ccx_rank_sum": 7914,
+      "near_quadrant_edges": 31
+    },
+    {
+      "name": "minimum_0",
+      "code": "tag",
+      "final_sign": 0,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 53004,
+      "fixed_order_ccx_rank_sum": 8032,
+      "near_quadrant_edges": 31
+    },
+    {
+      "name": "minimum_1",
+      "code": "ordinary",
+      "final_sign": 1,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 54169,
+      "fixed_order_ccx_rank_sum": 7913,
+      "near_quadrant_edges": 31
+    },
+    {
+      "name": "minimum_1",
+      "code": "tag",
+      "final_sign": 1,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 54169,
+      "fixed_order_ccx_rank_sum": 8027,
+      "near_quadrant_edges": 31
+    },
+    {
+      "name": "tag_0",
+      "code": "ordinary",
+      "final_sign": 0,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 50440,
+      "fixed_order_ccx_rank_sum": 8099,
+      "near_quadrant_edges": 8
+    },
+    {
+      "name": "tag_0",
+      "code": "tag",
+      "final_sign": 0,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 50440,
+      "fixed_order_ccx_rank_sum": 7872,
+      "near_quadrant_edges": 8
+    },
+    {
+      "name": "tag_1",
+      "code": "ordinary",
+      "final_sign": 1,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 52887,
+      "fixed_order_ccx_rank_sum": 8114,
+      "near_quadrant_edges": 8
+    },
+    {
+      "name": "tag_1",
+      "code": "tag",
+      "final_sign": 1,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 52887,
+      "fixed_order_ccx_rank_sum": 7885,
+      "near_quadrant_edges": 8
+    },
+    {
+      "name": "near_original_0",
+      "code": "ordinary",
+      "final_sign": 0,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 53004,
+      "fixed_order_ccx_rank_sum": 7914,
+      "near_quadrant_edges": 31
+    },
+    {
+      "name": "near_original_0",
+      "code": "tag",
+      "final_sign": 0,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 53004,
+      "fixed_order_ccx_rank_sum": 8032,
+      "near_quadrant_edges": 31
+    },
+    {
+      "name": "near_original_1",
+      "code": "ordinary",
+      "final_sign": 1,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 54169,
+      "fixed_order_ccx_rank_sum": 7913,
+      "near_quadrant_edges": 31
+    },
+    {
+      "name": "near_original_1",
+      "code": "tag",
+      "final_sign": 1,
+      "exact_reconstruction_error": 7.771561172376096e-16,
+      "changed_legal_words": 54169,
+      "fixed_order_ccx_rank_sum": 8027,
+      "near_quadrant_edges": 31
+    }
+  ],
+  "best_gauge": {
+    "name": "tag_0",
+    "code": "tag",
+    "final_sign": 0,
+    "exact_reconstruction_error": 7.771561172376096e-16,
+    "changed_legal_words": 50440,
+    "fixed_order_ccx_rank_sum": 7872,
+    "near_quadrant_edges": 8
+  },
+  "best_fixed": {
+    "name": "fixed",
+    "code": "tag",
+    "final_sign": 0,
+    "exact_reconstruction_error": 0.0,
+    "changed_legal_words": 0,
+    "fixed_order_ccx_rank_sum": 7455,
+    "near_quadrant_edges": 0
+  }
+}
