@@ -1,0 +1,49 @@
+{
+  "split": 10,
+  "cases": {
+    "xor_original": {
+      "helpers": 22,
+      "static_T": 23,
+      "mean_T": [
+        23.0,
+        23.0
+      ],
+      "ops": 137,
+      "sha256": "6808c407e0e799f26fc499132fe9b53eede77d6b77736bc4011d8e27e9e695b0",
+      "checked_shots": 16384
+    },
+    "xor_narrow": {
+      "helpers": 14,
+      "static_T": 31,
+      "mean_T": [
+        26.998046875,
+        27.05078125
+      ],
+      "ops": 171,
+      "sha256": "57a3c31efe5d998e5f08266b1d08a3d17993047e19488c5240b1812083e11139",
+      "checked_shots": 16384
+    },
+    "phase_original": {
+      "helpers": 22,
+      "static_T": 22,
+      "mean_T": [
+        10.69384765625,
+        10.69384765625
+      ],
+      "ops": 139,
+      "sha256": "94c839b166c5f73d4a7f466ede15c16458dbe1b4cff90e84534cf6ad30facc95",
+      "checked_shots": 16384
+    },
+    "phase_narrow": {
+      "helpers": 14,
+      "static_T": 30,
+      "mean_T": [
+        12.65869140625,
+        12.67333984375
+      ],
+      "ops": 173,
+      "sha256": "d73cd269e4a4991b817b124a8964762cd793d5cf7fdeedb29343a323d6605834",
+      "checked_shots": 16384
+    }
+  }
+}

@@ -1,0 +1,665 @@
+{
+  "source_sha256": "3e50000e18f2f1746de3270cf88c10d7b6ea3f577988a3cd13ba1f90a8da48e2",
+  "records": [
+    {
+      "range": [
+        17098522,
+        17103779
+      ],
+      "caller": "extractor.emit_prefix",
+      "edges": 14033,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 2324,
+          "high_881_positions": 2650
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 2290,
+          "high_881_positions": 2634
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 2315,
+          "high_881_positions": 2626
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        17099864,
+        17105121
+      ],
+      "caller": "extractor.emit_prefix",
+      "edges": 14111,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 2324,
+          "high_881_positions": 2650
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 2290,
+          "high_881_positions": 2634
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 2315,
+          "high_881_positions": 2626
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        18495157,
+        18504187
+      ],
+      "caller": "extractor.emit_prefix",
+      "edges": 24996,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5122,
+          "high_881_positions": 6623
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5053,
+          "high_881_positions": 6656
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5087,
+          "high_881_positions": 6639
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        18637110,
+        18646140
+      ],
+      "caller": "extractor.emit_prefix",
+      "edges": 25015,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5122,
+          "high_881_positions": 6627
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5053,
+          "high_881_positions": 6670
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5087,
+          "high_881_positions": 6653
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        18785201,
+        18794231
+      ],
+      "caller": "extractor.emit_prefix",
+      "edges": 25023,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5122,
+          "high_881_positions": 6627
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5053,
+          "high_881_positions": 6660
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5087,
+          "high_881_positions": 6643
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        18940181,
+        18949211
+      ],
+      "caller": "extractor.emit_prefix",
+      "edges": 25014,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5122,
+          "high_881_positions": 6627
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5053,
+          "high_881_positions": 6671
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5087,
+          "high_881_positions": 6654
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        18950787,
+        18956044
+      ],
+      "caller": "extractor.emit_prefix",
+      "edges": 12914,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 3107,
+          "high_881_positions": 4551
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 3073,
+          "high_881_positions": 4534
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 3627,
+          "high_881_positions": 5060
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        19101527,
+        19110557
+      ],
+      "caller": "extractor.emit_prefix",
+      "edges": 24984,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5122,
+          "high_881_positions": 6627
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5053,
+          "high_881_positions": 6670
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5087,
+          "high_881_positions": 6653
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        19818584,
+        19820745
+      ],
+      "caller": "extractor.emit_prefix",
+      "edges": 5037,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 301,
+          "high_881_positions": 658
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 212,
+          "high_881_positions": 605
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 261,
+          "high_881_positions": 614
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        20635780,
+        20636612
+      ],
+      "caller": "extractor.emit_prefix",
+      "edges": 2422,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 186,
+          "high_881_positions": 581
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 194,
+          "high_881_positions": 574
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 194,
+          "high_881_positions": 575
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        21552033,
+        21557290
+      ],
+      "caller": "extractor.emit_prefix",
+      "edges": 13954,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 2324,
+          "high_881_positions": 2650
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 2290,
+          "high_881_positions": 2633
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 2830,
+          "high_881_positions": 3177
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        46984110,
+        46992312
+      ],
+      "caller": "extractor.emit_closing",
+      "edges": 22671,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5110,
+          "high_881_positions": 6585
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5054,
+          "high_881_positions": 6575
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5094,
+          "high_881_positions": 6557
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        46990151,
+        46992312
+      ],
+      "caller": "extractor.emit_closing",
+      "edges": 4749,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 301,
+          "high_881_positions": 658
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 222,
+          "high_881_positions": 615
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 274,
+          "high_881_positions": 627
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        47286885,
+        47295915
+      ],
+      "caller": "extractor.emit_closing",
+      "edges": 21819,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5971,
+          "high_881_positions": 7454
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5829,
+          "high_881_positions": 7363
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5931,
+          "high_881_positions": 7402
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        47617330,
+        47626360
+      ],
+      "caller": "extractor.emit_closing",
+      "edges": 21819,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5971,
+          "high_881_positions": 7454
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5829,
+          "high_881_positions": 7363
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5931,
+          "high_881_positions": 7402
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        47940611,
+        47949641
+      ],
+      "caller": "extractor.emit_closing",
+      "edges": 21819,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5971,
+          "high_881_positions": 7454
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5829,
+          "high_881_positions": 7363
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5931,
+          "high_881_positions": 7402
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        48253895,
+        48263048
+      ],
+      "caller": "extractor.emit_closing",
+      "edges": 23779,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5906,
+          "high_881_positions": 8150
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5868,
+          "high_881_positions": 8154
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5910,
+          "high_881_positions": 8132
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        48260152,
+        48269182
+      ],
+      "caller": "extractor.emit_closing",
+      "edges": 21819,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5971,
+          "high_881_positions": 7454
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5829,
+          "high_881_positions": 7363
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5931,
+          "high_881_positions": 7402
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        48572617,
+        48581647
+      ],
+      "caller": "extractor.emit_closing",
+      "edges": 21819,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5971,
+          "high_881_positions": 7454
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5829,
+          "high_881_positions": 7363
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5931,
+          "high_881_positions": 7402
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        49480925,
+        49481757
+      ],
+      "caller": "extractor.emit_closing",
+      "edges": 2422,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 186,
+          "high_881_positions": 581
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 194,
+          "high_881_positions": 574
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 194,
+          "high_881_positions": 575
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        50833242,
+        50842395
+      ],
+      "caller": "extractor.emit_closing",
+      "edges": 23794,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 5906,
+          "high_881_positions": 8150
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 5868,
+          "high_881_positions": 8148
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 5910,
+          "high_881_positions": 8132
+        }
+      },
+      "shots_per_schedule": 1024
+    },
+    {
+      "range": [
+        54562533,
+        54567790
+      ],
+      "caller": "extractor.emit_closing",
+      "edges": 14168,
+      "metrics": {
+        "original": {
+          "peak": 889,
+          "high_positions": 2463,
+          "high_881_positions": 2952
+        },
+        "dfs": {
+          "peak": 889,
+          "high_positions": 2431,
+          "high_881_positions": 2862
+        },
+        "cleanup_priority": {
+          "peak": 889,
+          "high_positions": 2441,
+          "high_881_positions": 2972
+        }
+      },
+      "shots_per_schedule": 1024
+    }
+  ],
+  "spliced": [
+    {
+      "start": 17099864,
+      "end": 17105121,
+      "predicted_positions_retired": 34
+    },
+    {
+      "start": 18495157,
+      "end": 18504187,
+      "predicted_positions_retired": 69
+    },
+    {
+      "start": 18637110,
+      "end": 18646140,
+      "predicted_positions_retired": 69
+    },
+    {
+      "start": 18785201,
+      "end": 18794231,
+      "predicted_positions_retired": 69
+    },
+    {
+      "start": 18940181,
+      "end": 18949211,
+      "predicted_positions_retired": 69
+    },
+    {
+      "start": 18950787,
+      "end": 18956044,
+      "predicted_positions_retired": 34
+    },
+    {
+      "start": 19101527,
+      "end": 19110557,
+      "predicted_positions_retired": 69
+    },
+    {
+      "start": 19818584,
+      "end": 19820745,
+      "predicted_positions_retired": 89
+    },
+    {
+      "start": 21552033,
+      "end": 21557290,
+      "predicted_positions_retired": 34
+    },
+    {
+      "start": 46990151,
+      "end": 46992312,
+      "predicted_positions_retired": 79
+    },
+    {
+      "start": 47286885,
+      "end": 47295915,
+      "predicted_positions_retired": 142
+    },
+    {
+      "start": 47617330,
+      "end": 47626360,
+      "predicted_positions_retired": 142
+    },
+    {
+      "start": 47940611,
+      "end": 47949641,
+      "predicted_positions_retired": 142
+    },
+    {
+      "start": 48260152,
+      "end": 48269182,
+      "predicted_positions_retired": 142
+    },
+    {
+      "start": 48572617,
+      "end": 48581647,
+      "predicted_positions_retired": 142
+    },
+    {
+      "start": 50833242,
+      "end": 50842395,
+      "predicted_positions_retired": 38
+    },
+    {
+      "start": 54562533,
+      "end": 54567790,
+      "predicted_positions_retired": 32
+    }
+  ],
+  "candidate_sha256": "eb51a18491a1c5d44451f969ce6b4a50fe454b2e88219e65e4565a382ba86409"
+}

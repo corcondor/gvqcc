@@ -1,0 +1,34 @@
+{
+  "output_sha256": "9888d2b455cdf4e22f2e0dd5af1e8032c6370e644f44e5ac5b071641b68793e0",
+  "counts": {
+    "889": {
+      "old_total": 3978150,
+      "new_total": 2912577,
+      "old_spliced": 1065573,
+      "new_spliced": 0,
+      "new_total_runs": 1316,
+      "outside_new": 0,
+      "outside_removed": 0
+    },
+    "888": {
+      "old_total": 4499741,
+      "new_total": 3434004,
+      "old_spliced": 1065737,
+      "new_spliced": 0,
+      "new_total_runs": 1549,
+      "outside_new": 0,
+      "outside_removed": 0
+    },
+    "881": {
+      "old_total": 5058692,
+      "new_total": 3991807,
+      "old_spliced": 1066885,
+      "new_spliced": 0,
+      "new_total_runs": 1439,
+      "outside_new": 0,
+      "outside_removed": 0
+    }
+  },
+  "old_lifetime_sha": "2235fa4e76f8063d6b6c1ac2ccaeca806df273df04e43da9a084a62e2ff652df",
+  "new_lifetime_sha": "736fdc24b5444d14c9e0cd60a494c2331ffa5f88674270792ce160a88c6a1951"
+}

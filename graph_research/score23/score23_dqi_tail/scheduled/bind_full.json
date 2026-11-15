@@ -1,0 +1,675 @@
+{
+  "source_sha256": "3e50000e18f2f1746de3270cf88c10d7b6ea3f577988a3cd13ba1f90a8da48e2",
+  "exact_matches": 50,
+  "selected": [
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 18495868,
+      "old_end": 18496005,
+      "new_start": 18495868,
+      "new_end": 18496039,
+      "old_width_counts": {
+        "881": 24,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 18637819,
+      "old_end": 18637956,
+      "new_start": 18637853,
+      "new_end": 18638024,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 18785910,
+      "old_end": 18786047,
+      "new_start": 18785978,
+      "new_end": 18786149,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 18940890,
+      "old_end": 18941027,
+      "new_start": 18940992,
+      "new_end": 18941163,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 19102236,
+      "old_end": 19102373,
+      "new_start": 19102372,
+      "new_end": 19102543,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 19270452,
+      "old_end": 19270589,
+      "new_start": 19270622,
+      "new_end": 19270793,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 19444274,
+      "old_end": 19444411,
+      "new_start": 19444478,
+      "new_end": 19444649,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 19625267,
+      "old_end": 19625404,
+      "new_start": 19625505,
+      "new_end": 19625676,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 19812424,
+      "old_end": 19812561,
+      "new_start": 19812696,
+      "new_end": 19812867,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 20006737,
+      "old_end": 20006874,
+      "new_start": 20007043,
+      "new_end": 20007214,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 20206834,
+      "old_end": 20206971,
+      "new_start": 20207174,
+      "new_end": 20207345,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 20414128,
+      "old_end": 20414265,
+      "new_start": 20414502,
+      "new_end": 20414673,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 20627438,
+      "old_end": 20627575,
+      "new_start": 20627846,
+      "new_end": 20628017,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 20847892,
+      "old_end": 20848029,
+      "new_start": 20848334,
+      "new_end": 20848505,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 21072332,
+      "old_end": 21072469,
+      "new_start": 21072808,
+      "new_end": 21072979,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 21304004,
+      "old_end": 21304141,
+      "new_start": 21304514,
+      "new_end": 21304685,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 21542136,
+      "old_end": 21542273,
+      "new_start": 21542680,
+      "new_end": 21542851,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 47062858,
+      "old_end": 47062995,
+      "new_start": 47063436,
+      "new_end": 47063607,
+      "old_width_counts": {
+        "881": 42,
+        "888": 9,
+        "889": 1
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 47063022,
+      "old_end": 47063161,
+      "new_start": 47063634,
+      "new_end": 47063807,
+      "old_width_counts": {
+        "881": 30,
+        "888": 2,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 47399771,
+      "old_end": 47399908,
+      "new_start": 47400417,
+      "new_end": 47400588,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 47399935,
+      "old_end": 47400074,
+      "new_start": 47400615,
+      "new_end": 47400788,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 47730216,
+      "old_end": 47730353,
+      "new_start": 47730930,
+      "new_end": 47731101,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 47730380,
+      "old_end": 47730519,
+      "new_start": 47731128,
+      "new_end": 47731301,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 48053497,
+      "old_end": 48053634,
+      "new_start": 48054279,
+      "new_end": 48054450,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 48053661,
+      "old_end": 48053800,
+      "new_start": 48054477,
+      "new_end": 48054650,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 48373038,
+      "old_end": 48373175,
+      "new_start": 48373888,
+      "new_end": 48374059,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 48373202,
+      "old_end": 48373341,
+      "new_start": 48374086,
+      "new_end": 48374259,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 48685503,
+      "old_end": 48685640,
+      "new_start": 48686421,
+      "new_end": 48686592,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 48685667,
+      "old_end": 48685806,
+      "new_start": 48686619,
+      "new_end": 48686792,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 48991944,
+      "old_end": 48992081,
+      "new_start": 48992930,
+      "new_end": 48993101,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 48992108,
+      "old_end": 48992247,
+      "new_start": 48993128,
+      "new_end": 48993301,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 49291256,
+      "old_end": 49291393,
+      "new_start": 49292310,
+      "new_end": 49292481,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 49291420,
+      "old_end": 49291559,
+      "new_start": 49292508,
+      "new_end": 49292681,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 49584760,
+      "old_end": 49584897,
+      "new_start": 49585882,
+      "new_end": 49586053,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 49584924,
+      "old_end": 49585063,
+      "new_start": 49586080,
+      "new_end": 49586253,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 49871176,
+      "old_end": 49871313,
+      "new_start": 49872366,
+      "new_end": 49872537,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 49871340,
+      "old_end": 49871479,
+      "new_start": 49872564,
+      "new_end": 49872737,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 50151420,
+      "old_end": 50151557,
+      "new_start": 50152678,
+      "new_end": 50152849,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 50151584,
+      "old_end": 50151723,
+      "new_start": 50152876,
+      "new_end": 50153049,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 50424561,
+      "old_end": 50424698,
+      "new_start": 50425887,
+      "new_end": 50426058,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 50424725,
+      "old_end": 50424864,
+      "new_start": 50426085,
+      "new_end": 50426258,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 50691874,
+      "old_end": 50692011,
+      "new_start": 50693268,
+      "new_end": 50693439,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 50692038,
+      "old_end": 50692177,
+      "new_start": 50693466,
+      "new_end": 50693639,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 50952385,
+      "old_end": 50952522,
+      "new_start": 50953847,
+      "new_end": 50954018,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 50952549,
+      "old_end": 50952688,
+      "new_start": 50954045,
+      "new_end": 50954218,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 51206522,
+      "old_end": 51206659,
+      "new_start": 51208052,
+      "new_end": 51208223,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 51206686,
+      "old_end": 51206825,
+      "new_start": 51208250,
+      "new_end": 51208423,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 51453838,
+      "old_end": 51453975,
+      "new_start": 51455436,
+      "new_end": 51455607,
+      "old_width_counts": {
+        "881": 28,
+        "888": 1,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 51454002,
+      "old_end": 51454141,
+      "new_start": 51455634,
+      "new_end": 51455807,
+      "old_width_counts": {
+        "881": 26,
+        "888": 0,
+        "889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 51695017,
+      "old_end": 51695156,
+      "new_start": 51696683,
+      "new_end": 51696856,
+      "old_width_counts": {
+        "881": 22,
+        "888": 0,
+        "889": 0
+      }
+    }
+  ],
+  "rejected_classical": [],
+  "static_t_delta": 400,
+  "rescheduled_owned_helpers": true,
+  "candidate_sha256": "b233676b7ee4193a983bc2e3588ff3e179d42bee269549e5d0c6eab325d57de3",
+  "header": {
+    "version": 2,
+    "num_qubits": 889,
+    "num_bits": 208682,
+    "num_registers": 4165,
+    "num_ops": 59240574,
+    "num_ops_with_3_target_qubits": 387692,
+    "num_ops_with_2_target_qubits": 31774424,
+    "num_ops_with_1_target_qubits": 275455,
+    "num_ops_with_1_target_bit": 25419047,
+    "num_ops_with_1_condition_bit": 25885841,
+    "num_ops_with_angle": 0,
+    "num_info_tags": 0,
+    "num_info_tag_chars": 0
+  }
+}

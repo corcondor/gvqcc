@@ -1,0 +1,16 @@
+{
+  "maximum": 877,
+  "maxima": [
+    877
+  ],
+  "by_caller": {
+    "outer.emit_prefix": {
+      "sites": 23,
+      "retired_q889_cuts": 646130
+    },
+    "seam.outer_closing_with_inverse": {
+      "sites": 18,
+      "retired_q889_cuts": 419443
+    }
+  }
+}

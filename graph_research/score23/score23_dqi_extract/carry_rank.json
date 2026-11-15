@@ -1,0 +1,108 @@
+{
+  "source_sha256": "9cb3f1baf125912fc48c22813cb34e375de71b0741c02e9846aa95a4b1b04789",
+  "verified_shots": 1024,
+  "case_digest": "f3570e715036171c86972c0f8c2e8d1addb5f920a43c38950ad6736e7885b6ed",
+  "seed": 202611152305,
+  "rows": [
+    {
+      "pos": 26337672,
+      "caller": "outer.emit_prefix",
+      "site": "entry",
+      "rank_other": 852,
+      "rank_full": 864,
+      "rank_gauge_bank": 12,
+      "rank_increment": 12,
+      "bank_nonzero_cases": 1024
+    },
+    {
+      "pos": 26343455,
+      "caller": "outer.emit_prefix",
+      "site": "first_peak",
+      "rank_other": 867,
+      "rank_full": 879,
+      "rank_gauge_bank": 12,
+      "rank_increment": 12,
+      "bank_nonzero_cases": 1024
+    },
+    {
+      "pos": 27631056,
+      "caller": "outer.emit_prefix",
+      "site": "middle_peak",
+      "rank_other": 876,
+      "rank_full": 888,
+      "rank_gauge_bank": 12,
+      "rank_increment": 12,
+      "bank_nonzero_cases": 1024
+    },
+    {
+      "pos": 29620277,
+      "caller": "outer.emit_prefix",
+      "site": "last_peak",
+      "rank_other": 876,
+      "rank_full": 888,
+      "rank_gauge_bank": 12,
+      "rank_increment": 12,
+      "bank_nonzero_cases": 1024
+    },
+    {
+      "pos": 29623577,
+      "caller": "outer.emit_prefix",
+      "site": "exit",
+      "rank_other": 852,
+      "rank_full": 864,
+      "rank_gauge_bank": 12,
+      "rank_increment": 12,
+      "bank_nonzero_cases": 1024
+    },
+    {
+      "pos": 36575393,
+      "caller": "seam.outer_closing_with_inverse",
+      "site": "entry",
+      "rank_other": 864,
+      "rank_full": 876,
+      "rank_gauge_bank": 12,
+      "rank_increment": 12,
+      "bank_nonzero_cases": 1024
+    },
+    {
+      "pos": 36579572,
+      "caller": "seam.outer_closing_with_inverse",
+      "site": "first_peak",
+      "rank_other": 867,
+      "rank_full": 879,
+      "rank_gauge_bank": 12,
+      "rank_increment": 12,
+      "bank_nonzero_cases": 1024
+    },
+    {
+      "pos": 38939161,
+      "caller": "seam.outer_closing_with_inverse",
+      "site": "middle_peak",
+      "rank_other": 877,
+      "rank_full": 889,
+      "rank_gauge_bank": 12,
+      "rank_increment": 12,
+      "bank_nonzero_cases": 1024
+    },
+    {
+      "pos": 40772341,
+      "caller": "seam.outer_closing_with_inverse",
+      "site": "last_peak",
+      "rank_other": 876,
+      "rank_full": 888,
+      "rank_gauge_bank": 12,
+      "rank_increment": 12,
+      "bank_nonzero_cases": 1024
+    },
+    {
+      "pos": 40915662,
+      "caller": "seam.outer_closing_with_inverse",
+      "site": "exit",
+      "rank_other": 852,
+      "rank_full": 864,
+      "rank_gauge_bank": 12,
+      "rank_increment": 12,
+      "bank_nonzero_cases": 1024
+    }
+  ]
+}

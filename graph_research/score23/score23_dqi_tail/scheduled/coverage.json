@@ -1,0 +1,938 @@
+{
+  "source_sha256": "3e50000e18f2f1746de3270cf88c10d7b6ea3f577988a3cd13ba1f90a8da48e2",
+  "candidate_sha256": "b233676b7ee4193a983bc2e3588ff3e179d42bee269549e5d0c6eab325d57de3",
+  "whole_before": {
+    "max": 889,
+    "q881": 4509605,
+    "q888": 3434004,
+    "q889": 2912577
+  },
+  "whole_after": {
+    "max": 889,
+    "q881": 4508230,
+    "q888": 3433962,
+    "q889": 2912576
+  },
+  "local_deltas": {
+    "8": 50
+  },
+  "region_count": 50,
+  "caller_counts": {
+    "extractor.emit_prefix": 17,
+    "extractor.emit_closing": 33
+  },
+  "cuts_inside": {
+    "before": {
+      "q881": 1376,
+      "q888": 42,
+      "q889": 1
+    },
+    "after": {
+      "q881": 1,
+      "q888": 0,
+      "q889": 0
+    }
+  },
+  "regions": [
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 18495868,
+      "new_start": 18495868,
+      "before": {
+        "max": 887,
+        "q881": 24,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 18637819,
+      "new_start": 18637853,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 18785910,
+      "new_start": 18785978,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 18940890,
+      "new_start": 18940992,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 19102236,
+      "new_start": 19102372,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 19270452,
+      "new_start": 19270622,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 19444274,
+      "new_start": 19444478,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 19625267,
+      "new_start": 19625505,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 19812424,
+      "new_start": 19812696,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 20006737,
+      "new_start": 20007043,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 20206834,
+      "new_start": 20207174,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 20414128,
+      "new_start": 20414502,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 20627438,
+      "new_start": 20627846,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 20847892,
+      "new_start": 20848334,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 21072332,
+      "new_start": 21072808,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 21304004,
+      "new_start": 21304514,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_prefix",
+      "kind": "xor",
+      "old_start": 21542136,
+      "new_start": 21542680,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 47062858,
+      "new_start": 47063436,
+      "before": {
+        "max": 889,
+        "q881": 42,
+        "q888": 9,
+        "q889": 1
+      },
+      "after": {
+        "max": 881,
+        "q881": 1,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 47063022,
+      "new_start": 47063634,
+      "before": {
+        "max": 888,
+        "q881": 30,
+        "q888": 2,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 47399771,
+      "new_start": 47400417,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 47399935,
+      "new_start": 47400615,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 47730216,
+      "new_start": 47730930,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 47730380,
+      "new_start": 47731128,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 48053497,
+      "new_start": 48054279,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 48053661,
+      "new_start": 48054477,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 48373038,
+      "new_start": 48373888,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 48373202,
+      "new_start": 48374086,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 48685503,
+      "new_start": 48686421,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 48685667,
+      "new_start": 48686619,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 48991944,
+      "new_start": 48992930,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 48992108,
+      "new_start": 48993128,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 49291256,
+      "new_start": 49292310,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 49291420,
+      "new_start": 49292508,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 49584760,
+      "new_start": 49585882,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 49584924,
+      "new_start": 49586080,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 49871176,
+      "new_start": 49872366,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 49871340,
+      "new_start": 49872564,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 50151420,
+      "new_start": 50152678,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 50151584,
+      "new_start": 50152876,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 50424561,
+      "new_start": 50425887,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 50424725,
+      "new_start": 50426085,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 50691874,
+      "new_start": 50693268,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 50692038,
+      "new_start": 50693466,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 50952385,
+      "new_start": 50953847,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 50952549,
+      "new_start": 50954045,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 51206522,
+      "new_start": 51208052,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 51206686,
+      "new_start": 51208250,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "xor",
+      "old_start": 51453838,
+      "new_start": 51455436,
+      "before": {
+        "max": 888,
+        "q881": 28,
+        "q888": 1,
+        "q889": 0
+      },
+      "after": {
+        "max": 880,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 51454002,
+      "new_start": 51455634,
+      "before": {
+        "max": 887,
+        "q881": 26,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 879,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    },
+    {
+      "caller": "extractor.emit_closing",
+      "kind": "phase",
+      "old_start": 51695017,
+      "new_start": 51696683,
+      "before": {
+        "max": 886,
+        "q881": 22,
+        "q888": 0,
+        "q889": 0
+      },
+      "after": {
+        "max": 878,
+        "q881": 0,
+        "q888": 0,
+        "q889": 0
+      }
+    }
+  ]
+}

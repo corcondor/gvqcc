@@ -1,0 +1,56 @@
+{
+  "status": "PASS_NATIVE_OUTER_AND_FINISH_PAIR",
+  "fixtures_sha256": "6e023eb39758c15cc5e3835bc6bcdb0f8ad08c3ec15185d2c970dfbb201fac73",
+  "compiled_pinned_dqi": false,
+  "source_roles": "gauge flag/data omitted from isolated independent outer map",
+  "records": [
+    {
+      "neutral": false,
+      "abi": 865,
+      "checks": [
+        {
+          "path": "baseline_outer.kmb",
+          "sha256": "06a0d704ea9e00ba55b5e084b364858ab22d90f70ecf055327457ce56c628ebd",
+          "quantum": 889,
+          "operations": 3373009,
+          "static_paid": 57236,
+          "shots": 768,
+          "closed": false
+        },
+        {
+          "path": "baseline_pair.kmb",
+          "sha256": "523d3b6f87a6136b8de53bb81322e7c2731cd766be94110015a278db140d445a",
+          "quantum": 889,
+          "operations": 8842391,
+          "static_paid": 123392,
+          "shots": 768,
+          "closed": true
+        }
+      ]
+    },
+    {
+      "neutral": true,
+      "abi": 852,
+      "checks": [
+        {
+          "path": "neutral_outer.kmb",
+          "sha256": "db3de97feaa1ef17fba6e547bc02e0f4c7c884402692b6e65b850c967b7273a6",
+          "quantum": 877,
+          "operations": 3372281,
+          "static_paid": 56956,
+          "shots": 768,
+          "closed": false
+        },
+        {
+          "path": "neutral_pair.kmb",
+          "sha256": "5a44e5168f15841ea5732899bfc3b75c89b1977c79782dae6e5e0ebd907b45b0",
+          "quantum": 877,
+          "operations": 8840935,
+          "static_paid": 122832,
+          "shots": 768,
+          "closed": true
+        }
+      ]
+    }
+  ]
+}

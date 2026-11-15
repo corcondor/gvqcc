@@ -1,0 +1,42 @@
+{
+  "old": {
+    "Q": 889,
+    "global_positions_at_or_above": {
+      "881": 4509605,
+      "888": 3434004,
+      "889": 2912577
+    },
+    "sites": [
+      {
+        "max_width": 889,
+        "Q889_positions": 4644,
+        "above_Q881_positions": 7928
+      },
+      {
+        "max_width": 889,
+        "Q889_positions": 4783,
+        "above_Q881_positions": 8435
+      }
+    ]
+  },
+  "new": {
+    "Q": 889,
+    "global_positions_at_or_above": {
+      "881": 4493039,
+      "888": 3418811,
+      "889": 2903150
+    },
+    "sites": [
+      {
+        "max_width": 877,
+        "Q889_positions": 0,
+        "above_Q881_positions": 0
+      },
+      {
+        "max_width": 877,
+        "Q889_positions": 0,
+        "above_Q881_positions": 0
+      }
+    ]
+  }
+}

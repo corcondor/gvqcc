@@ -1,0 +1,40 @@
+{
+  "verified_end_to_end_shots": 1024,
+  "source": "9cb3f1baf125912fc48c22813cb34e375de71b0741c02e9846aa95a4b1b04789",
+  "input_sha256": "bf85be04fb8ba1d3fa5be55dcac21183fc5c5762dbca5914cf64d83ce5389ac1",
+  "seed": 202611152214,
+  "rows": [
+    {
+      "position": 26343455,
+      "caller": "outer.emit_prefix",
+      "wires": 12,
+      "rank": 12,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 29620277,
+      "caller": "outer.emit_prefix",
+      "wires": 12,
+      "rank": 12,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 36579572,
+      "caller": "seam.outer_closing_with_inverse",
+      "wires": 12,
+      "rank": 12,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 40772341,
+      "caller": "seam.outer_closing_with_inverse",
+      "wires": 12,
+      "rank": 12,
+      "full_rank": true,
+      "zero_in_this_test": []
+    }
+  ]
+}

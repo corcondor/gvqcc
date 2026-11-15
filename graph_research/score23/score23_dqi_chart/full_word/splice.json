@@ -1,0 +1,145 @@
+{
+  "source_sha256": "9888d2b455cdf4e22f2e0dd5af1e8032c6370e644f44e5ac5b071641b68793e0",
+  "output_sha256": "62239b8d1d1f67b86e575f306de16a769460fad3425780c32149b99ceea44290",
+  "static_T_delta": 180,
+  "old_bits_dead": 82,
+  "checked_lifetimes": 119,
+  "new_fresh_bits": 82,
+  "restored_hmr_fusions": [
+    {
+      "start": 23873,
+      "hmr": 32702,
+      "target": 864,
+      "measurement_bit": 5,
+      "inherited_depth": 0,
+      "ccx_removed": 1,
+      "writes": [
+        23873
+      ]
+    },
+    {
+      "start": 60410,
+      "hmr": 71146,
+      "target": 864,
+      "measurement_bit": 6,
+      "inherited_depth": 0,
+      "ccx_removed": 1,
+      "writes": [
+        60410
+      ]
+    }
+  ],
+  "sites": [
+    {
+      "old_start": 17097498,
+      "old_end": 17126975,
+      "new_start": 17097498,
+      "new_end": 17130283,
+      "new_helpers": [
+        865,
+        866,
+        867,
+        868,
+        869,
+        870,
+        871,
+        872,
+        873,
+        874,
+        875,
+        876
+      ],
+      "original_flag_qubit": 864,
+      "carry_bank_entry": "unchanged original third-chart contract",
+      "carry_physically_mapped": [
+        840,
+        841,
+        842,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        849,
+        850,
+        851,
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863
+      ]
+    },
+    {
+      "old_start": 54546276,
+      "old_end": 54581494,
+      "new_start": 54549584,
+      "new_end": 54588030,
+      "new_helpers": [
+        864,
+        865,
+        866,
+        867,
+        868,
+        869,
+        870,
+        871,
+        872,
+        873,
+        874,
+        876
+      ],
+      "original_flag_qubit": 875,
+      "carry_bank_entry": "unchanged original third-chart contract",
+      "carry_physically_mapped": [
+        840,
+        841,
+        842,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        849,
+        850,
+        851,
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863
+      ]
+    }
+  ],
+  "header": {
+    "version": 2,
+    "num_qubits": 889,
+    "num_bits": 208664,
+    "num_registers": 4165,
+    "num_ops": 59243442,
+    "num_ops_with_3_target_qubits": 388924,
+    "num_ops_with_2_target_qubits": 31778120,
+    "num_ops_with_1_target_qubits": 273415,
+    "num_ops_with_1_target_bit": 25418307,
+    "num_ops_with_1_condition_bit": 25885429,
+    "num_ops_with_angle": 0,
+    "num_info_tags": 0,
+    "num_info_tag_chars": 0
+  }
+}
