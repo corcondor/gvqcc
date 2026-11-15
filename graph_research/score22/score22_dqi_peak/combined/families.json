@@ -1,0 +1,168 @@
+{
+  "callers": {
+    "extractor.emit_prefix": {
+      "positions": 215181,
+      "peak_intervals": 139,
+      "idle_intersection": []
+    },
+    "crt.emit_prefix": {
+      "positions": 171938,
+      "peak_intervals": 34,
+      "idle_intersection": [
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        886
+      ]
+    },
+    "outer.emit_prefix": {
+      "positions": 1468828,
+      "peak_intervals": 350,
+      "idle_intersection": [
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863
+      ]
+    },
+    "finish.emit_prefix": {
+      "positions": 90657,
+      "peak_intervals": 17,
+      "idle_intersection": [
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        886
+      ]
+    },
+    "finish.emit_closing": {
+      "positions": 125691,
+      "peak_intervals": 116,
+      "idle_intersection": [
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        886
+      ]
+    },
+    "seam.outer_closing_with_inverse": {
+      "positions": 1430515,
+      "peak_intervals": 317,
+      "idle_intersection": [
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863
+      ]
+    },
+    "crt.emit_closing": {
+      "positions": 259250,
+      "peak_intervals": 238,
+      "idle_intersection": [
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        886
+      ]
+    },
+    "scalar_seed.close_padded": {
+      "positions": 2322,
+      "peak_intervals": 2,
+      "idle_intersection": [
+        840,
+        841,
+        842,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        849,
+        850,
+        851,
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        886
+      ]
+    },
+    "extractor.emit_closing": {
+      "positions": 213768,
+      "peak_intervals": 144,
+      "idle_intersection": []
+    }
+  },
+  "inner_membership_totals": {
+    "e4_scalar_42": 549292,
+    "e4_adjoint_99": 420727,
+    "e4_nested_divide_prefix": 510875,
+    "e4_ordinary_99": 247793,
+    "new_CRT_residue_GF24": 171938,
+    "gauge_park_virtual.products": 1378492
+  },
+  "not_bound_to_exact_inner_template": 1194230,
+  "caller_count": 9,
+  "total_positions": 3978150
+}

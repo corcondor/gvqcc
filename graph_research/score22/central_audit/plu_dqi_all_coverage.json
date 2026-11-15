@@ -1,0 +1,56 @@
+{
+  "whole_peak_before": 889,
+  "whole_peak_after": 889,
+  "q889_total_before": 8607724,
+  "q889_total_after": 8244161,
+  "paired_splice_scope": [
+    {
+      "old": {
+        "interval": [
+          26074636,
+          26452636
+        ],
+        "max_width": 889,
+        "cut_counts": {
+          "881": 373078,
+          "889": 373046
+        }
+      },
+      "new": {
+        "interval": [
+          26074636,
+          26497016
+        ],
+        "max_width": 879,
+        "cut_counts": {
+          "881": 0,
+          "889": 0
+        }
+      }
+    },
+    {
+      "old": {
+        "interval": [
+          41030626,
+          41434596
+        ],
+        "max_width": 889,
+        "cut_counts": {
+          "881": 10823,
+          "889": 7625
+        }
+      },
+      "new": {
+        "interval": [
+          41075006,
+          41510903
+        ],
+        "max_width": 889,
+        "cut_counts": {
+          "881": 37336,
+          "889": 16971
+        }
+      }
+    }
+  ]
+}

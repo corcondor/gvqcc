@@ -1,0 +1,306 @@
+{
+  "status": "SPLICED_CERTIFIED_LOANS",
+  "input_sha256": "9cb3f1baf125912fc48c22813cb34e375de71b0741c02e9846aa95a4b1b04789",
+  "output_sha256": "5d15e0eee5f59308bed138fa39969a0373ff319e1d43cd650d35113b27a67162",
+  "variants": 28,
+  "header": {
+    "version": 2,
+    "num_qubits": 889,
+    "num_bits": 208582,
+    "num_registers": 4165,
+    "num_ops": 59254601,
+    "num_ops_with_3_target_qubits": 384100,
+    "num_ops_with_2_target_qubits": 31792571,
+    "num_ops_with_1_target_qubits": 275027,
+    "num_ops_with_1_target_bit": 25418983,
+    "num_ops_with_1_condition_bit": 25885777,
+    "num_ops_with_angle": 0,
+    "num_info_tags": 0,
+    "num_info_tag_chars": 0
+  },
+  "splice": [
+    {
+      "start": 26448782,
+      "end": 26502092,
+      "points": 16,
+      "hot": 53215,
+      "new_start": 26448782,
+      "new_end": 26501420,
+      "retired_physical_helper": 888,
+      "extra_static": 30
+    },
+    {
+      "start": 26549191,
+      "end": 26598324,
+      "points": 15,
+      "hot": 49038,
+      "new_start": 26548519,
+      "new_end": 26594916,
+      "retired_physical_helper": 888,
+      "extra_static": 30
+    },
+    {
+      "start": 26929438,
+      "end": 26967778,
+      "points": 13,
+      "hot": 38245,
+      "new_start": 26926030,
+      "new_end": 26962164,
+      "retired_physical_helper": 888,
+      "extra_static": 26
+    },
+    {
+      "start": 27002598,
+      "end": 27035667,
+      "points": 12,
+      "hot": 32974,
+      "new_start": 26996984,
+      "new_end": 27029818,
+      "retired_physical_helper": 888,
+      "extra_static": 26
+    },
+    {
+      "start": 28024059,
+      "end": 28033132,
+      "points": 5,
+      "hot": 8978,
+      "new_start": 28018210,
+      "new_end": 28026499,
+      "retired_physical_helper": 888,
+      "extra_static": 18
+    },
+    {
+      "start": 28077571,
+      "end": 28089266,
+      "points": 6,
+      "hot": 11600,
+      "new_start": 28070938,
+      "new_end": 28082001,
+      "retired_physical_helper": 888,
+      "extra_static": 20
+    },
+    {
+      "start": 28143580,
+      "end": 28158350,
+      "points": 7,
+      "hot": 14675,
+      "new_start": 28136315,
+      "new_end": 28150267,
+      "retired_physical_helper": 888,
+      "extra_static": 22
+    },
+    {
+      "start": 28224411,
+      "end": 28241911,
+      "points": 8,
+      "hot": 17405,
+      "new_start": 28216328,
+      "new_end": 28233551,
+      "retired_physical_helper": 888,
+      "extra_static": 22
+    },
+    {
+      "start": 28318566,
+      "end": 28339704,
+      "points": 9,
+      "hot": 21043,
+      "new_start": 28310206,
+      "new_end": 28329861,
+      "retired_physical_helper": 888,
+      "extra_static": 22
+    },
+    {
+      "start": 28430036,
+      "end": 28455036,
+      "points": 10,
+      "hot": 24905,
+      "new_start": 28420193,
+      "new_end": 28444017,
+      "retired_physical_helper": 888,
+      "extra_static": 24
+    },
+    {
+      "start": 28560278,
+      "end": 28589802,
+      "points": 11,
+      "hot": 29429,
+      "new_start": 28549259,
+      "new_end": 28577239,
+      "retired_physical_helper": 888,
+      "extra_static": 26
+    },
+    {
+      "start": 28830436,
+      "end": 28863505,
+      "points": 12,
+      "hot": 32974,
+      "new_start": 28817873,
+      "new_end": 28850707,
+      "retired_physical_helper": 888,
+      "extra_static": 26
+    },
+    {
+      "start": 28897492,
+      "end": 28935832,
+      "points": 13,
+      "hot": 38245,
+      "new_start": 28884694,
+      "new_end": 28920828,
+      "retired_physical_helper": 888,
+      "extra_static": 26
+    },
+    {
+      "start": 28991469,
+      "end": 29034680,
+      "points": 14,
+      "hot": 43116,
+      "new_start": 28976465,
+      "new_end": 29018244,
+      "retired_physical_helper": 888,
+      "extra_static": 28
+    },
+    {
+      "start": 29357412,
+      "end": 29406545,
+      "points": 15,
+      "hot": 49038,
+      "new_start": 29340976,
+      "new_end": 29387373,
+      "retired_physical_helper": 888,
+      "extra_static": 30
+    },
+    {
+      "start": 29452923,
+      "end": 29506233,
+      "points": 16,
+      "hot": 53215,
+      "new_start": 29433751,
+      "new_end": 29486389,
+      "retired_physical_helper": 888,
+      "extra_static": 30
+    },
+    {
+      "start": 36812008,
+      "end": 36861141,
+      "points": 15,
+      "hot": 49038,
+      "new_start": 36792164,
+      "new_end": 36838561,
+      "retired_physical_helper": 888,
+      "extra_static": 30
+    },
+    {
+      "start": 37177801,
+      "end": 37221012,
+      "points": 14,
+      "hot": 43116,
+      "new_start": 37155221,
+      "new_end": 37197000,
+      "retired_physical_helper": 888,
+      "extra_static": 28
+    },
+    {
+      "start": 37281478,
+      "end": 37319818,
+      "points": 13,
+      "hot": 38245,
+      "new_start": 37257466,
+      "new_end": 37293600,
+      "retired_physical_helper": 888,
+      "extra_static": 26
+    },
+    {
+      "start": 37354773,
+      "end": 37387842,
+      "points": 12,
+      "hot": 32974,
+      "new_start": 37328555,
+      "new_end": 37361389,
+      "retired_physical_helper": 888,
+      "extra_static": 26
+    },
+    {
+      "start": 37622665,
+      "end": 37652189,
+      "points": 11,
+      "hot": 29429,
+      "new_start": 37596212,
+      "new_end": 37624192,
+      "retired_physical_helper": 888,
+      "extra_static": 26
+    },
+    {
+      "start": 38807686,
+      "end": 38816759,
+      "points": 5,
+      "hot": 8978,
+      "new_start": 38779689,
+      "new_end": 38787978,
+      "retired_physical_helper": 888,
+      "extra_static": 18
+    },
+    {
+      "start": 38920462,
+      "end": 38932157,
+      "points": 6,
+      "hot": 11600,
+      "new_start": 38891681,
+      "new_end": 38902744,
+      "retired_physical_helper": 888,
+      "extra_static": 20
+    },
+    {
+      "start": 39043347,
+      "end": 39058117,
+      "points": 7,
+      "hot": 14675,
+      "new_start": 39013934,
+      "new_end": 39027886,
+      "retired_physical_helper": 888,
+      "extra_static": 22
+    },
+    {
+      "start": 39178678,
+      "end": 39196178,
+      "points": 8,
+      "hot": 17405,
+      "new_start": 39148447,
+      "new_end": 39165670,
+      "retired_physical_helper": 888,
+      "extra_static": 22
+    },
+    {
+      "start": 39324253,
+      "end": 39345391,
+      "points": 9,
+      "hot": 21043,
+      "new_start": 39293745,
+      "new_end": 39313400,
+      "retired_physical_helper": 888,
+      "extra_static": 22
+    },
+    {
+      "start": 39485207,
+      "end": 39510207,
+      "points": 10,
+      "hot": 24905,
+      "new_start": 39453216,
+      "new_end": 39477040,
+      "retired_physical_helper": 888,
+      "extra_static": 24
+    },
+    {
+      "start": 39760309,
+      "end": 39789833,
+      "points": 11,
+      "hot": 29429,
+      "new_start": 39727142,
+      "new_end": 39755122,
+      "retired_physical_helper": 888,
+      "extra_static": 26
+    }
+  ],
+  "extra_static": 696,
+  "rejected_classical": [],
+  "hot_in_source_spliced": 838932
+}

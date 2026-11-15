@@ -1,0 +1,79 @@
+{
+  "source_sha256": "9d97cda71833e8ae4776355b9c39d3b90fba6f778bf4e869345feff477892d1d",
+  "r": 34,
+  "node": 0,
+  "matches": [
+    {
+      "old_start": 26074636,
+      "old_end": 26452636,
+      "new_start": 26074636,
+      "new_end": 26497016
+    },
+    {
+      "old_start": 41030626,
+      "old_end": 41434596,
+      "new_start": 41075006,
+      "new_end": 41510903
+    }
+  ],
+  "classical_output_mask_ids": [
+    52687,
+    52688,
+    52689,
+    52690,
+    52691,
+    52692,
+    52693,
+    52694,
+    52695,
+    52696,
+    52697,
+    52698,
+    52699,
+    52700,
+    52701,
+    52702,
+    52703,
+    52704,
+    52705,
+    52706,
+    52707,
+    52708,
+    52709,
+    52710
+  ],
+  "absorbed_exact_overlay_sites": [
+    {
+      "old_start": 41015597,
+      "old_end": 41034920,
+      "new_start": 41120093,
+      "new_end": 41145947,
+      "dropped_helper": 888,
+      "old_scratch_bits_dead": 270
+    }
+  ],
+  "retired_classical_bits_checked": 496,
+  "whole_width": 889,
+  "degree34_local_helper_width": [
+    24,
+    14
+  ],
+  "static_T_delta": 1103,
+  "stock_verifier_ran": false,
+  "output_header": {
+    "version": 2,
+    "num_qubits": 889,
+    "num_bits": 208899,
+    "num_registers": 4165,
+    "num_ops": 59480583,
+    "num_ops_with_3_target_qubits": 383997,
+    "num_ops_with_2_target_qubits": 31970549,
+    "num_ops_with_1_target_qubits": 275711,
+    "num_ops_with_1_target_bit": 25464114,
+    "num_ops_with_1_condition_bit": 25933996,
+    "num_ops_with_angle": 0,
+    "num_info_tags": 0,
+    "num_info_tag_chars": 0
+  },
+  "output_sha256": "94a0a8819234fd7fc4cbf7b5ff1ecd7fb383bbb7a02ba22966ff1cfdb1d7259e"
+}

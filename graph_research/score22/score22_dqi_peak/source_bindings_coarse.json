@@ -1,0 +1,226 @@
+{
+  "source": "9fef8304e502210b8c72e9abed4740c16dbeb0b06f064884307a7f28e5dc3f80",
+  "e4": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "scope_count": 13,
+  "mapped_scopes": 13,
+  "stage_events": [
+    {
+      "source": 13811220,
+      "label": "stage:\"odd_border_and_elimination\"",
+      "candidates": []
+    },
+    {
+      "source": 17126870,
+      "label": "stage:\"odd_full_preimage\"",
+      "candidates": [
+        29736552
+      ],
+      "anchor_length": 4096,
+      "sides": [
+        [
+          29736552,
+          "before"
+        ],
+        [
+          29736552,
+          "after"
+        ]
+      ]
+    },
+    {
+      "source": 17128859,
+      "label": "stage:\"raw_boundary\"",
+      "candidates": [
+        29738541
+      ],
+      "anchor_length": 4096,
+      "sides": [
+        [
+          29738541,
+          "before"
+        ],
+        [
+          29738541,
+          "after"
+        ]
+      ]
+    },
+    {
+      "source": 18705749,
+      "label": "stage:\"shared_seam_undo_odd_full_preimage\"",
+      "candidates": []
+    },
+    {
+      "source": 22716489,
+      "label": "stage:\"shared_seam_restored_raw_inputs\"",
+      "candidates": [
+        40926130
+      ],
+      "anchor_length": 4096,
+      "sides": [
+        [
+          40926130,
+          "after"
+        ]
+      ]
+    }
+  ],
+  "scopes": [
+    {
+      "label": "extractor.emit_prefix",
+      "source": [
+        4373855,
+        8858548
+      ],
+      "depth": 1,
+      "e4": [
+        17068169,
+        21555334
+      ]
+    },
+    {
+      "label": "rolling_tail.gauge_prefix",
+      "source": [
+        8858548,
+        8858625
+      ],
+      "depth": 1,
+      "e4": [
+        21555334,
+        21555411
+      ]
+    },
+    {
+      "label": "scalar_seed.emit_prefix",
+      "source": [
+        8858625,
+        8861309
+      ],
+      "depth": 1,
+      "e4": [
+        21555411,
+        21558095
+      ]
+    },
+    {
+      "label": "pipeline.emit_key_prefix",
+      "source": [
+        4020354,
+        13755850
+      ],
+      "depth": 0,
+      "e4": [
+        16714668,
+        26452636
+      ]
+    },
+    {
+      "label": "outer.emit_prefix",
+      "source": [
+        13755850,
+        17128859
+      ],
+      "depth": 0,
+      "e4": [
+        26452636,
+        29738541
+      ]
+    },
+    {
+      "label": "finish.emit_prefix",
+      "source": [
+        17128859,
+        17548526
+      ],
+      "depth": 0,
+      "e4": [
+        29738541,
+        30158208
+      ]
+    },
+    {
+      "label": "scan.emit",
+      "source": [
+        17548526,
+        17667627
+      ],
+      "depth": 0,
+      "e4": [
+        30158208,
+        35620925
+      ]
+    },
+    {
+      "label": "finish.emit_closing",
+      "source": [
+        17667627,
+        18632563
+      ],
+      "depth": 0,
+      "e4": [
+        35620925,
+        36585861
+      ]
+    },
+    {
+      "label": "seam.outer_closing_with_inverse",
+      "source": [
+        18632563,
+        22716489
+      ],
+      "depth": 0,
+      "e4": [
+        36585861,
+        40926130
+      ]
+    },
+    {
+      "label": "scalar_seed.close_padded",
+      "source": [
+        28580387,
+        28604406
+      ],
+      "depth": 1,
+      "e4": [
+        46790028,
+        46814047
+      ]
+    },
+    {
+      "label": "rolling_tail.gauge_return",
+      "source": [
+        28606710,
+        28606790
+      ],
+      "depth": 1,
+      "e4": [
+        46816351,
+        46816431
+      ]
+    },
+    {
+      "label": "extractor.emit_closing",
+      "source": [
+        28606790,
+        36155319
+      ],
+      "depth": 1,
+      "e4": [
+        46816431,
+        54248304
+      ]
+    },
+    {
+      "label": "pipeline.emit_key_closing",
+      "source": [
+        22716489,
+        36400910
+      ],
+      "depth": 0,
+      "e4": [
+        40926130,
+        54493895
+      ]
+    }
+  ]
+}

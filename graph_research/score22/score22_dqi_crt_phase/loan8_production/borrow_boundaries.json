@@ -1,0 +1,1696 @@
+{
+  "input_sha256": "9cb3f1baf125912fc48c22813cb34e375de71b0741c02e9846aa95a4b1b04789",
+  "lanes": 8,
+  "sites": [
+    {
+      "points": 16,
+      "start": 26448782,
+      "flag": 871,
+      "witness": [
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103
+      ],
+      "scratch_clean": true,
+      "query": [
+        26417149,
+        26417214
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "points": 16,
+      "start": 29452923,
+      "flag": 877,
+      "witness": [
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103
+      ],
+      "scratch_clean": true,
+      "query": [
+        29439387,
+        29439452
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "points": 16,
+      "start": 36711464,
+      "flag": 864,
+      "witness": [
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103
+      ],
+      "scratch_clean": true
+    },
+    {
+      "points": 16,
+      "start": 40681109,
+      "flag": 876,
+      "witness": [
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103
+      ],
+      "scratch_clean": false,
+      "query": [
+        40667573,
+        40667638
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "points": 15,
+      "start": 26549191,
+      "flag": 871,
+      "witness": [
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "scratch_clean": true,
+      "query": [
+        26520152,
+        26520217
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119
+      ]
+    },
+    {
+      "points": 15,
+      "start": 29357412,
+      "flag": 877,
+      "witness": [
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "scratch_clean": true,
+      "query": [
+        29345902,
+        29345967
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119
+      ]
+    },
+    {
+      "points": 15,
+      "start": 36812008,
+      "flag": 864,
+      "witness": [
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "scratch_clean": true,
+      "query": [
+        36782834,
+        36782899
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119
+      ]
+    },
+    {
+      "points": 15,
+      "start": 40566111,
+      "flag": 876,
+      "witness": [
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "scratch_clean": false,
+      "query": [
+        40554601,
+        40554666
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119
+      ]
+    },
+    {
+      "points": 14,
+      "start": 26804460,
+      "flag": 871,
+      "witness": [
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199
+      ],
+      "scratch_clean": true
+    },
+    {
+      "points": 14,
+      "start": 28991469,
+      "flag": 874,
+      "witness": [
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199
+      ],
+      "scratch_clean": true,
+      "query": [
+        28981658,
+        28981723
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ]
+    },
+    {
+      "points": 14,
+      "start": 37177801,
+      "flag": 874,
+      "witness": [
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199
+      ],
+      "scratch_clean": true,
+      "query": [
+        37108691,
+        37108756
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ]
+    },
+    {
+      "points": 14,
+      "start": 40303587,
+      "flag": 876,
+      "witness": [
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199
+      ],
+      "scratch_clean": false
+    },
+    {
+      "points": 13,
+      "start": 26929438,
+      "flag": 875,
+      "witness": [
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259
+      ],
+      "scratch_clean": true,
+      "query": [
+        26901206,
+        26901271
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215
+      ]
+    },
+    {
+      "points": 13,
+      "start": 28897492,
+      "flag": 874,
+      "witness": [
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259
+      ],
+      "scratch_clean": true,
+      "query": [
+        28889333,
+        28889398
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215
+      ]
+    },
+    {
+      "points": 13,
+      "start": 37281478,
+      "flag": 874,
+      "witness": [
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259
+      ],
+      "scratch_clean": true,
+      "query": [
+        37253111,
+        37253176
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215
+      ]
+    },
+    {
+      "points": 13,
+      "start": 40041121,
+      "flag": 877,
+      "witness": [
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259
+      ],
+      "scratch_clean": false,
+      "query": [
+        40032962,
+        40033027
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215
+      ]
+    },
+    {
+      "points": 12,
+      "start": 27002598,
+      "flag": 875,
+      "witness": [
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295
+      ],
+      "scratch_clean": true,
+      "query": [
+        26978731,
+        26978796
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251
+      ]
+    },
+    {
+      "points": 12,
+      "start": 28830436,
+      "flag": 874,
+      "witness": [
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295
+      ],
+      "scratch_clean": true,
+      "query": [
+        28823638,
+        28823703
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251
+      ]
+    },
+    {
+      "points": 12,
+      "start": 37354773,
+      "flag": 874,
+      "witness": [
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295
+      ],
+      "scratch_clean": true,
+      "query": [
+        37330771,
+        37330836
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251
+      ]
+    },
+    {
+      "points": 12,
+      "start": 39954578,
+      "flag": 877,
+      "witness": [
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295
+      ],
+      "scratch_clean": false,
+      "query": [
+        39947780,
+        39947845
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251
+      ]
+    },
+    {
+      "points": 11,
+      "start": 27185282,
+      "flag": 875,
+      "witness": [
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355
+      ],
+      "scratch_clean": true,
+      "query": [
+        27044290,
+        27044355
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 227,
+      "tested": [
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311
+      ]
+    },
+    {
+      "points": 11,
+      "start": 28560278,
+      "flag": 887,
+      "witness": [
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355
+      ],
+      "scratch_clean": true,
+      "query": [
+        28554880,
+        28554945
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311
+      ]
+    },
+    {
+      "points": 11,
+      "start": 37622665,
+      "flag": 880,
+      "witness": [
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355
+      ],
+      "scratch_clean": true,
+      "query": [
+        37576298,
+        37576363
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311
+      ]
+    },
+    {
+      "points": 11,
+      "start": 39760309,
+      "flag": 877,
+      "witness": [
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355
+      ],
+      "scratch_clean": true,
+      "query": [
+        39754911,
+        39754976
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311
+      ]
+    },
+    {
+      "points": 10,
+      "start": 27328563,
+      "flag": 875,
+      "witness": [
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391
+      ],
+      "scratch_clean": true,
+      "query": [
+        27252091,
+        27252156
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347
+      ]
+    },
+    {
+      "points": 10,
+      "start": 28430036,
+      "flag": 887,
+      "witness": [
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391
+      ],
+      "scratch_clean": true,
+      "query": [
+        28425807,
+        28425872
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347
+      ]
+    },
+    {
+      "points": 10,
+      "start": 37758039,
+      "flag": 880,
+      "witness": [
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391
+      ],
+      "scratch_clean": true,
+      "query": [
+        37660270,
+        37660335
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347
+      ]
+    },
+    {
+      "points": 10,
+      "start": 39485207,
+      "flag": 877,
+      "witness": [
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391
+      ],
+      "scratch_clean": true,
+      "query": [
+        39432133,
+        39432198
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347
+      ]
+    },
+    {
+      "points": 9,
+      "start": 27435113,
+      "flag": 875,
+      "witness": [
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451
+      ],
+      "scratch_clean": true,
+      "query": [
+        27369668,
+        27369733
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407
+      ]
+    },
+    {
+      "points": 9,
+      "start": 28318566,
+      "flag": 887,
+      "witness": [
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451
+      ],
+      "scratch_clean": true,
+      "query": [
+        28315322,
+        28315387
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407
+      ]
+    },
+    {
+      "points": 9,
+      "start": 37873770,
+      "flag": 880,
+      "witness": [
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451
+      ],
+      "scratch_clean": true,
+      "query": [
+        37789342,
+        37789407
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407
+      ]
+    },
+    {
+      "points": 9,
+      "start": 39324253,
+      "flag": 877,
+      "witness": [
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451
+      ],
+      "scratch_clean": true,
+      "query": [
+        39272164,
+        39272229
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407
+      ]
+    },
+    {
+      "points": 8,
+      "start": 27526274,
+      "flag": 875,
+      "witness": [
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487
+      ],
+      "scratch_clean": true,
+      "query": [
+        27470971,
+        27471036
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443
+      ]
+    },
+    {
+      "points": 8,
+      "start": 28224411,
+      "flag": 887,
+      "witness": [
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487
+      ],
+      "scratch_clean": true,
+      "query": [
+        28221933,
+        28221998
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443
+      ]
+    },
+    {
+      "points": 8,
+      "start": 37972176,
+      "flag": 880,
+      "witness": [
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487
+      ],
+      "scratch_clean": true,
+      "query": [
+        37899826,
+        37899891
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443
+      ]
+    },
+    {
+      "points": 8,
+      "start": 39178678,
+      "flag": 877,
+      "witness": [
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487
+      ],
+      "scratch_clean": true,
+      "query": [
+        39127355,
+        39127420
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443
+      ]
+    },
+    {
+      "points": 7,
+      "start": 27605331,
+      "flag": 875,
+      "witness": [
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547
+      ],
+      "scratch_clean": true,
+      "query": [
+        27557114,
+        27557179
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503
+      ]
+    },
+    {
+      "points": 7,
+      "start": 28143580,
+      "flag": 887,
+      "witness": [
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547
+      ],
+      "scratch_clean": true,
+      "query": [
+        28141878,
+        28141943
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503
+      ]
+    },
+    {
+      "points": 7,
+      "start": 38055398,
+      "flag": 880,
+      "witness": [
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547
+      ],
+      "scratch_clean": true,
+      "query": [
+        37993214,
+        37993279
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503
+      ]
+    },
+    {
+      "points": 7,
+      "start": 39043347,
+      "flag": 877,
+      "witness": [
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547
+      ],
+      "scratch_clean": true,
+      "query": [
+        38992800,
+        38992865
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503
+      ]
+    },
+    {
+      "points": 6,
+      "start": 27673030,
+      "flag": 875,
+      "witness": [
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583
+      ],
+      "scratch_clean": true,
+      "query": [
+        27633003,
+        27633068
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539
+      ]
+    },
+    {
+      "points": 6,
+      "start": 28077571,
+      "flag": 887,
+      "witness": [
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583
+      ],
+      "scratch_clean": true,
+      "query": [
+        28076446,
+        28076511
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539
+      ]
+    },
+    {
+      "points": 6,
+      "start": 38124886,
+      "flag": 880,
+      "witness": [
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583
+      ],
+      "scratch_clean": true,
+      "query": [
+        38073268,
+        38073333
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539
+      ]
+    },
+    {
+      "points": 6,
+      "start": 38920462,
+      "flag": 877,
+      "witness": [
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583
+      ],
+      "scratch_clean": true,
+      "query": [
+        38870492,
+        38870557
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539
+      ]
+    },
+    {
+      "points": 5,
+      "start": 27729998,
+      "flag": 875,
+      "witness": [
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643
+      ],
+      "scratch_clean": true,
+      "query": [
+        27696645,
+        27696710
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599
+      ]
+    },
+    {
+      "points": 5,
+      "start": 28024059,
+      "flag": 887,
+      "witness": [
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643
+      ],
+      "scratch_clean": true,
+      "query": [
+        28023394,
+        28023459
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599
+      ]
+    },
+    {
+      "points": 5,
+      "start": 38181255,
+      "flag": 880,
+      "witness": [
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643
+      ],
+      "scratch_clean": true,
+      "query": [
+        38138699,
+        38138764
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599
+      ]
+    },
+    {
+      "points": 5,
+      "start": 38807686,
+      "flag": 877,
+      "witness": [
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643
+      ],
+      "scratch_clean": true,
+      "query": [
+        38758176,
+        38758241
+      ],
+      "value_counterexample": "unsat",
+      "reachable_SAT_nodes": 0,
+      "tested": [
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599
+      ]
+    }
+  ],
+  "totals": [
+    [
+      "unsat",
+      true,
+      41
+    ],
+    [
+      "missing",
+      true,
+      2
+    ],
+    [
+      "unsat",
+      false,
+      4
+    ],
+    [
+      "missing",
+      false,
+      1
+    ]
+  ]
+}

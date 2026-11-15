@@ -1,0 +1,14 @@
+{
+  "source_sha256": "9d97cda71833e8ae4776355b9c39d3b90fba6f778bf4e869345feff477892d1d",
+  "sample_distribution": "stock DQI syndrome and mask sampler",
+  "sampled_shots": 1024,
+  "entry_to_bound_r34_stage": 26074636,
+  "end_of_original_stage": 26452636,
+  "output_scalar_and_old_P_bits": 432,
+  "output_scalar_and_old_P_affine_rank_including_constant": 433,
+  "output_scalar_old_P_and_D_bits": 456,
+  "output_scalar_old_P_and_D_affine_rank_including_constant": 457,
+  "chart_low_zero_high_nonzero": 0,
+  "zero_source_count": 0,
+  "scope": "Actual production prefix values on sampled verifier-distribution inputs. A full rank is a witness against a fixed affine dependency on these inputs, not a claim about every nonlinear encoding."
+}

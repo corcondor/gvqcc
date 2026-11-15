@@ -1,0 +1,66 @@
+{
+  "original_1": {
+    "T": 934,
+    "Q": 96,
+    "trials": [
+      {
+        "seed": 237,
+        "shots": 2048,
+        "errors": 0
+      },
+      {
+        "seed": 1237,
+        "shots": 2048,
+        "errors": 0
+      }
+    ]
+  },
+  "original_0": {
+    "T": 652,
+    "Q": 96,
+    "trials": [
+      {
+        "seed": 237,
+        "shots": 2048,
+        "errors": 0
+      },
+      {
+        "seed": 1237,
+        "shots": 2048,
+        "errors": 0
+      }
+    ]
+  },
+  "deferred_1": {
+    "T": 1395,
+    "Q": 96,
+    "trials": [
+      {
+        "seed": 237,
+        "shots": 2048,
+        "errors": 0
+      },
+      {
+        "seed": 1237,
+        "shots": 2048,
+        "errors": 0
+      }
+    ]
+  },
+  "deferred_0": {
+    "T": 1113,
+    "Q": 96,
+    "trials": [
+      {
+        "seed": 237,
+        "shots": 2048,
+        "errors": 0
+      },
+      {
+        "seed": 1237,
+        "shots": 2048,
+        "errors": 0
+      }
+    ]
+  }
+}

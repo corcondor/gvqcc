@@ -1,0 +1,88 @@
+{
+  "verified_end_to_end_shots": 1024,
+  "source": "9cb3f1baf125912fc48c22813cb34e375de71b0741c02e9846aa95a4b1b04789",
+  "input_sha256": "bf85be04fb8ba1d3fa5be55dcac21183fc5c5762dbca5914cf64d83ce5389ac1",
+  "seed": 202611152214,
+  "rows": [
+    {
+      "position": 17100570,
+      "caller": "extractor.emit_prefix",
+      "wires": 408,
+      "rank": 408,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 21555241,
+      "caller": "extractor.emit_prefix",
+      "wires": 408,
+      "rank": 408,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 29709445,
+      "caller": "finish.emit_prefix",
+      "wires": 372,
+      "rank": 372,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 29964736,
+      "caller": "finish.emit_prefix",
+      "wires": 372,
+      "rank": 372,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 35575848,
+      "caller": "finish.emit_closing",
+      "wires": 402,
+      "rank": 402,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 36511460,
+      "caller": "finish.emit_closing",
+      "wires": 402,
+      "rank": 402,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 47003783,
+      "caller": "scalar_seed.close_padded",
+      "wires": 816,
+      "rank": 816,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 47006285,
+      "caller": "scalar_seed.close_padded",
+      "wires": 816,
+      "rank": 816,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 47035780,
+      "caller": "extractor.emit_closing",
+      "wires": 408,
+      "rank": 408,
+      "full_rank": true,
+      "zero_in_this_test": []
+    },
+    {
+      "position": 54616179,
+      "caller": "extractor.emit_closing",
+      "wires": 408,
+      "rank": 408,
+      "full_rank": true,
+      "zero_in_this_test": []
+    }
+  ]
+}

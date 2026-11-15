@@ -1,0 +1,806 @@
+{
+  "status": "SPLICED_CERTIFIED_LOANS",
+  "input_sha256": "9cb3f1baf125912fc48c22813cb34e375de71b0741c02e9846aa95a4b1b04789",
+  "output_sha256": "3e50000e18f2f1746de3270cf88c10d7b6ea3f577988a3cd13ba1f90a8da48e2",
+  "variants": 41,
+  "retired_helpers_per_site": 8,
+  "header": {
+    "version": 2,
+    "num_qubits": 889,
+    "num_bits": 208582,
+    "num_registers": 4165,
+    "num_ops": 59238874,
+    "num_ops_with_3_target_qubits": 387292,
+    "num_ops_with_2_target_qubits": 31774024,
+    "num_ops_with_1_target_qubits": 274655,
+    "num_ops_with_1_target_bit": 25418647,
+    "num_ops_with_1_condition_bit": 25885441,
+    "num_ops_with_angle": 0,
+    "num_info_tags": 0,
+    "num_info_tag_chars": 0
+  },
+  "splice": [
+    {
+      "start": 26448782,
+      "end": 26502092,
+      "points": 16,
+      "hot": 53215,
+      "new_start": 26448782,
+      "new_end": 26500071,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 144
+    },
+    {
+      "start": 26549191,
+      "end": 26598324,
+      "points": 15,
+      "hot": 49038,
+      "new_start": 26547170,
+      "new_end": 26594075,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 136
+    },
+    {
+      "start": 26929438,
+      "end": 26967778,
+      "points": 13,
+      "hot": 38245,
+      "new_start": 26925189,
+      "new_end": 26961799,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 120
+    },
+    {
+      "start": 27002598,
+      "end": 27035667,
+      "points": 12,
+      "hot": 32974,
+      "new_start": 26996619,
+      "new_end": 27028252,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 112
+    },
+    {
+      "start": 27185282,
+      "end": 27214806,
+      "points": 11,
+      "hot": 29429,
+      "new_start": 27177867,
+      "new_end": 27206039,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 104
+    },
+    {
+      "start": 27328563,
+      "end": 27353563,
+      "points": 10,
+      "hot": 24905,
+      "new_start": 27319796,
+      "new_end": 27343607,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 96
+    },
+    {
+      "start": 27435113,
+      "end": 27456251,
+      "points": 9,
+      "hot": 21043,
+      "new_start": 27425157,
+      "new_end": 27445396,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 88
+    },
+    {
+      "start": 27526274,
+      "end": 27543774,
+      "points": 8,
+      "hot": 17405,
+      "new_start": 27515419,
+      "new_end": 27532025,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 80
+    },
+    {
+      "start": 27605331,
+      "end": 27620101,
+      "points": 7,
+      "hot": 14675,
+      "new_start": 27593582,
+      "new_end": 27607489,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 72
+    },
+    {
+      "start": 27673030,
+      "end": 27684725,
+      "points": 6,
+      "hot": 11600,
+      "new_start": 27660418,
+      "new_end": 27671329,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 64
+    },
+    {
+      "start": 27729998,
+      "end": 27739071,
+      "points": 5,
+      "hot": 8978,
+      "new_start": 27716602,
+      "new_end": 27725071,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 56
+    },
+    {
+      "start": 28024059,
+      "end": 28033132,
+      "points": 5,
+      "hot": 8978,
+      "new_start": 28010059,
+      "new_end": 28018528,
+      "retired_physical_helpers": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        888
+      ],
+      "extra_static": 56
+    },
+    {
+      "start": 28077571,
+      "end": 28089266,
+      "points": 6,
+      "hot": 11600,
+      "new_start": 28062967,
+      "new_end": 28073878,
+      "retired_physical_helpers": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        888
+      ],
+      "extra_static": 64
+    },
+    {
+      "start": 28143580,
+      "end": 28158350,
+      "points": 7,
+      "hot": 14675,
+      "new_start": 28128192,
+      "new_end": 28142099,
+      "retired_physical_helpers": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        888
+      ],
+      "extra_static": 72
+    },
+    {
+      "start": 28224411,
+      "end": 28241911,
+      "points": 8,
+      "hot": 17405,
+      "new_start": 28208160,
+      "new_end": 28224766,
+      "retired_physical_helpers": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        888
+      ],
+      "extra_static": 80
+    },
+    {
+      "start": 28318566,
+      "end": 28339704,
+      "points": 9,
+      "hot": 21043,
+      "new_start": 28301421,
+      "new_end": 28321660,
+      "retired_physical_helpers": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        888
+      ],
+      "extra_static": 88
+    },
+    {
+      "start": 28430036,
+      "end": 28455036,
+      "points": 10,
+      "hot": 24905,
+      "new_start": 28411992,
+      "new_end": 28435803,
+      "retired_physical_helpers": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        888
+      ],
+      "extra_static": 96
+    },
+    {
+      "start": 28560278,
+      "end": 28589802,
+      "points": 11,
+      "hot": 29429,
+      "new_start": 28541045,
+      "new_end": 28569217,
+      "retired_physical_helpers": [
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        888
+      ],
+      "extra_static": 104
+    },
+    {
+      "start": 28830436,
+      "end": 28863505,
+      "points": 12,
+      "hot": 32974,
+      "new_start": 28809851,
+      "new_end": 28841484,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 112
+    },
+    {
+      "start": 28897492,
+      "end": 28935832,
+      "points": 13,
+      "hot": 38245,
+      "new_start": 28875471,
+      "new_end": 28912081,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 120
+    },
+    {
+      "start": 28991469,
+      "end": 29034680,
+      "points": 14,
+      "hot": 43116,
+      "new_start": 28967718,
+      "new_end": 29008992,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 128
+    },
+    {
+      "start": 29357412,
+      "end": 29406545,
+      "points": 15,
+      "hot": 49038,
+      "new_start": 29331724,
+      "new_end": 29378629,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 136
+    },
+    {
+      "start": 29452923,
+      "end": 29506233,
+      "points": 16,
+      "hot": 53215,
+      "new_start": 29425007,
+      "new_end": 29476296,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 144
+    },
+    {
+      "start": 36812008,
+      "end": 36861141,
+      "points": 15,
+      "hot": 49038,
+      "new_start": 36782071,
+      "new_end": 36828976,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 136
+    },
+    {
+      "start": 37177801,
+      "end": 37221012,
+      "points": 14,
+      "hot": 43116,
+      "new_start": 37145636,
+      "new_end": 37186910,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 128
+    },
+    {
+      "start": 37281478,
+      "end": 37319818,
+      "points": 13,
+      "hot": 38245,
+      "new_start": 37247376,
+      "new_end": 37283986,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 120
+    },
+    {
+      "start": 37354773,
+      "end": 37387842,
+      "points": 12,
+      "hot": 32974,
+      "new_start": 37318941,
+      "new_end": 37350574,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 112
+    },
+    {
+      "start": 37622665,
+      "end": 37652189,
+      "points": 11,
+      "hot": 29429,
+      "new_start": 37585397,
+      "new_end": 37613569,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 104
+    },
+    {
+      "start": 37758039,
+      "end": 37783039,
+      "points": 10,
+      "hot": 24905,
+      "new_start": 37719419,
+      "new_end": 37743230,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 96
+    },
+    {
+      "start": 37873770,
+      "end": 37894908,
+      "points": 9,
+      "hot": 21043,
+      "new_start": 37833961,
+      "new_end": 37854200,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 88
+    },
+    {
+      "start": 37972176,
+      "end": 37989676,
+      "points": 8,
+      "hot": 17405,
+      "new_start": 37931468,
+      "new_end": 37948074,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 80
+    },
+    {
+      "start": 38055398,
+      "end": 38070168,
+      "points": 7,
+      "hot": 14675,
+      "new_start": 38013796,
+      "new_end": 38027703,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 72
+    },
+    {
+      "start": 38124886,
+      "end": 38136581,
+      "points": 6,
+      "hot": 11600,
+      "new_start": 38082421,
+      "new_end": 38093332,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 64
+    },
+    {
+      "start": 38181255,
+      "end": 38190328,
+      "points": 5,
+      "hot": 8978,
+      "new_start": 38138006,
+      "new_end": 38146475,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 56
+    },
+    {
+      "start": 38807686,
+      "end": 38816759,
+      "points": 5,
+      "hot": 8978,
+      "new_start": 38763833,
+      "new_end": 38772302,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 56
+    },
+    {
+      "start": 38920462,
+      "end": 38932157,
+      "points": 6,
+      "hot": 11600,
+      "new_start": 38876005,
+      "new_end": 38886916,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 64
+    },
+    {
+      "start": 39043347,
+      "end": 39058117,
+      "points": 7,
+      "hot": 14675,
+      "new_start": 38998106,
+      "new_end": 39012013,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 72
+    },
+    {
+      "start": 39178678,
+      "end": 39196178,
+      "points": 8,
+      "hot": 17405,
+      "new_start": 39132574,
+      "new_end": 39149180,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 80
+    },
+    {
+      "start": 39324253,
+      "end": 39345391,
+      "points": 9,
+      "hot": 21043,
+      "new_start": 39277255,
+      "new_end": 39297494,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 88
+    },
+    {
+      "start": 39485207,
+      "end": 39510207,
+      "points": 10,
+      "hot": 24905,
+      "new_start": 39437310,
+      "new_end": 39461121,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 96
+    },
+    {
+      "start": 39760309,
+      "end": 39789833,
+      "points": 11,
+      "hot": 29429,
+      "new_start": 39711223,
+      "new_end": 39739395,
+      "retired_physical_helpers": [
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888
+      ],
+      "extra_static": 104
+    }
+  ],
+  "extra_static": 3888,
+  "rejected_classical": [],
+  "hot_in_source_spliced": 1065573
+}

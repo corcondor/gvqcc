@@ -1,0 +1,52 @@
+{
+  "peak_intervals": 1357,
+  "common_idle_wires": [],
+  "interval_counts_by_idle_wire_count": {
+    "1": 50,
+    "13": 72,
+    "22": 4,
+    "24": 112,
+    "25": 392,
+    "31": 169,
+    "34": 4,
+    "36": 88,
+    "37": 133,
+    "39": 1,
+    "40": 169,
+    "41": 1,
+    "42": 1,
+    "44": 16,
+    "46": 1,
+    "47": 144
+  },
+  "forced_wires": [
+    864,
+    866,
+    868,
+    869,
+    871,
+    875,
+    877,
+    880,
+    882,
+    886,
+    888
+  ],
+  "minimum_pool": [
+    852,
+    864,
+    866,
+    868,
+    869,
+    871,
+    875,
+    877,
+    880,
+    882,
+    886,
+    888
+  ],
+  "minimum_pool_size": 12,
+  "peak_intervals_with_fewer_than_8_idle_wires": 50,
+  "scope": "Idle operands throughout each contiguous peak interval, without proof of clean state, reversible recovery or dirty-safe use."
+}

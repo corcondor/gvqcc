@@ -1,0 +1,38 @@
+{
+  "trace": {
+    "T": 85,
+    "scratch": 12,
+    "trials": [
+      {
+        "shots": 4096,
+        "seed": 91,
+        "errors": 0,
+        "mean_T": 84.9326171875
+      },
+      {
+        "shots": 4096,
+        "seed": 1091,
+        "errors": 0,
+        "mean_T": 84.923828125
+      }
+    ]
+  },
+  "affine_mask": {
+    "T": 112,
+    "scratch": 12,
+    "trials": [
+      {
+        "shots": 4096,
+        "seed": 91,
+        "errors": 0,
+        "mean_T": 77.6953125
+      },
+      {
+        "shots": 4096,
+        "seed": 1091,
+        "errors": 0,
+        "mean_T": 77.6845703125
+      }
+    ]
+  }
+}

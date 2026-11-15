@@ -1,0 +1,53 @@
+{
+  "1": {
+    "helpers": 12,
+    "T": 234,
+    "sha256": "47a27e85415ab4c67d9fb680e974d3095a2a950a0e50aa00f3be8c5d3883026d",
+    "trials": [
+      {
+        "shots": 4096,
+        "seed": 120,
+        "errors": 0
+      },
+      {
+        "shots": 4096,
+        "seed": 2020,
+        "errors": 0
+      }
+    ]
+  },
+  "4096": {
+    "helpers": 12,
+    "T": 234,
+    "sha256": "2a06f68781f258bc61a5b23e00bd39cdad8c4a30c3a5ad15b6b4a214210cdb53",
+    "trials": [
+      {
+        "shots": 4096,
+        "seed": 120,
+        "errors": 0
+      },
+      {
+        "shots": 4096,
+        "seed": 2020,
+        "errors": 0
+      }
+    ]
+  },
+  "328791": {
+    "helpers": 12,
+    "T": 234,
+    "sha256": "b50c7d98179b2275d41a9df2f0a18fb4efb010f9dbbf5018994bb794ddad79cd",
+    "trials": [
+      {
+        "shots": 4096,
+        "seed": 120,
+        "errors": 0
+      },
+      {
+        "shots": 4096,
+        "seed": 2020,
+        "errors": 0
+      }
+    ]
+  }
+}

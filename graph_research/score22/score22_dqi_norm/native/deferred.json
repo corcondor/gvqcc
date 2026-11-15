@@ -1,0 +1,19 @@
+{
+  "helper_width": 14,
+  "static_T": 752,
+  "sha256": "dcf28fdd54ea0ad54226293c429626ba04eecc8e103d225eedf3027da3ecec94",
+  "trials": [
+    {
+      "shots": 8192,
+      "seed": 1009,
+      "errors": 0,
+      "mean_T": 724.931884765625
+    },
+    {
+      "shots": 8192,
+      "seed": 2009,
+      "errors": 0,
+      "mean_T": 724.910400390625
+    }
+  ]
+}

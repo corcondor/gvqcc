@@ -1,0 +1,79 @@
+{
+  "original_basis_pair_checks": 576,
+  "terms": 99,
+  "directed_read_after_write_edges": 4616,
+  "self_alias_terms": 52,
+  "mutual_term_pairs": 1294,
+  "constant_field_scale_self_overlap_constraint_rank": 24,
+  "nonzero_constant_field_scales_passing_all_self_overlap_tests": 0,
+  "singular_local_update": {
+    "term": 0,
+    "nonzero_left_input": 1,
+    "colliding_right_inputs": [
+      0,
+      1538
+    ]
+  },
+  "naive_alias_sequential_counterexample": {
+    "a": 1,
+    "b": 1,
+    "expected": 1,
+    "obtained": 2132759
+  },
+  "disjoint_accumulation": [
+    {
+      "batch_size": 0,
+      "extra_work_wires": 0,
+      "static_paid": 99,
+      "operations": 6197,
+      "trials": [
+        {
+          "shots": 8192,
+          "seed": 912,
+          "errors": 0
+        },
+        {
+          "shots": 8192,
+          "seed": 1912,
+          "errors": 0
+        }
+      ]
+    },
+    {
+      "batch_size": 16,
+      "extra_work_wires": 16,
+      "static_paid": 99,
+      "operations": 9634,
+      "trials": [
+        {
+          "shots": 8192,
+          "seed": 912,
+          "errors": 0
+        },
+        {
+          "shots": 8192,
+          "seed": 1912,
+          "errors": 0
+        }
+      ]
+    },
+    {
+      "batch_size": 24,
+      "extra_work_wires": 24,
+      "static_paid": 99,
+      "operations": 9634,
+      "trials": [
+        {
+          "shots": 8192,
+          "seed": 912,
+          "errors": 0
+        },
+        {
+          "shots": 8192,
+          "seed": 1912,
+          "errors": 0
+        }
+      ]
+    }
+  ]
+}

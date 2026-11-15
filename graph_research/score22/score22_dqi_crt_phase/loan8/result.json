@@ -1,0 +1,278 @@
+[
+  {
+    "m": 5,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 234,
+        "ops": 9073,
+        "gates": "old_5.kmb",
+        "sha256": "7928a25363b420462cb6fcd6a8bffc3f9db5d046759d634b1721d6280a4c866f",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 290,
+        "ops": 8469,
+        "gates": "new_5.kmb",
+        "sha256": "727292cef1e0380ce7bec4c66fa7e5def79c3e75d99d9440ad41cc8c0e379370",
+        "verified_shots": 4096
+      }
+    ]
+  },
+  {
+    "m": 6,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 276,
+        "ops": 11695,
+        "gates": "old_6.kmb",
+        "sha256": "9266ffcb3de3a29c4d7037ae0797b074311a64cb7bfb7822ebfe3d9596cae601",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 340,
+        "ops": 10911,
+        "gates": "new_6.kmb",
+        "sha256": "999ed096eddeba12897558ed9d6c6e99de0124f2504dfed8a90650919a79bdf6",
+        "verified_shots": 4096
+      }
+    ]
+  },
+  {
+    "m": 7,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 318,
+        "ops": 14770,
+        "gates": "old_7.kmb",
+        "sha256": "0dc046651bd34b03bff204484f3266fe7c8ee4a75d6fc62c3ce2a8023af86f55",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 390,
+        "ops": 13907,
+        "gates": "new_7.kmb",
+        "sha256": "ccc3a42234f6d53eb3924b9935be4627f7ae0cceb9882b95b552515894c05cb6",
+        "verified_shots": 4096
+      }
+    ]
+  },
+  {
+    "m": 8,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 360,
+        "ops": 17500,
+        "gates": "old_8.kmb",
+        "sha256": "55f53a18af15380cab31b2a478fb524f7353d155ceaf5288919dd7ff16988495",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 440,
+        "ops": 16606,
+        "gates": "new_8.kmb",
+        "sha256": "cb3e529f03a3a7e4aa1590dd62855cee0e59b3fdf7f8dd6043264de5fdc4b2ae",
+        "verified_shots": 4096
+      }
+    ]
+  },
+  {
+    "m": 9,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 402,
+        "ops": 21138,
+        "gates": "old_9.kmb",
+        "sha256": "3c176f3274df36c89b9b581edd0f5667d5f3526ec81ef0d0c34e04b80242574a",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 490,
+        "ops": 20239,
+        "gates": "new_9.kmb",
+        "sha256": "e964c8e131f6e4c22fa49389e184e1896a27d9cb60a3dc4fb643913aeb83ce4d",
+        "verified_shots": 4096
+      }
+    ]
+  },
+  {
+    "m": 10,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 444,
+        "ops": 25000,
+        "gates": "old_10.kmb",
+        "sha256": "da24f0aeda805b159c7fcaa5f84b213746789e16ec8540e1ee1ff86882fcfdbf",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 540,
+        "ops": 23811,
+        "gates": "new_10.kmb",
+        "sha256": "56d08cc539a644a45420cfef3701f7cab4abe97b3ab1853530d2f69532507c79",
+        "verified_shots": 4096
+      }
+    ]
+  },
+  {
+    "m": 11,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 486,
+        "ops": 29524,
+        "gates": "old_11.kmb",
+        "sha256": "6355367a4f46ca7eb350a3d4cc080ddde22995e8147b82019183400b6cb54bd5",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 590,
+        "ops": 28172,
+        "gates": "new_11.kmb",
+        "sha256": "b6380882c0996c8531c7a8a923f980260dac88d37fdfa9593c06c6a26b95de72",
+        "verified_shots": 4096
+      }
+    ]
+  },
+  {
+    "m": 12,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 528,
+        "ops": 33069,
+        "gates": "old_12.kmb",
+        "sha256": "c9d423e19a7fc1960126555f3759507e7be5107153dae618357bd99643da3fd2",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 640,
+        "ops": 31633,
+        "gates": "new_12.kmb",
+        "sha256": "1d9a76ab1851055ab7149a1ed642ecc0c811ba6dc36bddaf8abd6d065eeffb2c",
+        "verified_shots": 4096
+      }
+    ]
+  },
+  {
+    "m": 13,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 570,
+        "ops": 38340,
+        "gates": "old_13.kmb",
+        "sha256": "98f5457bbbb8626954463f6514f78d6573dcf27521b6f8d5502dbe91a489fb2b",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 690,
+        "ops": 36610,
+        "gates": "new_13.kmb",
+        "sha256": "8b94bea5c2639dac9aa872afcd2f976ca564025397fc7e817196d308533f055d",
+        "verified_shots": 4096
+      }
+    ]
+  },
+  {
+    "m": 14,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 612,
+        "ops": 43211,
+        "gates": "old_14.kmb",
+        "sha256": "21dbbc41da4bd8b52377c2819b2f5582ace2c62f94d64f05b917d3d1e9369c4e",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 740,
+        "ops": 41274,
+        "gates": "new_14.kmb",
+        "sha256": "ccc6c39a8773990b3d1961338829194cdb131db2981a1023f68ca5c8be50d2fa",
+        "verified_shots": 4096
+      }
+    ]
+  },
+  {
+    "m": 15,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 654,
+        "ops": 49133,
+        "gates": "old_15.kmb",
+        "sha256": "eb78bcab347188331a54073009f89c9420e8ff73ea3fa29cfad1abecd65df515",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 790,
+        "ops": 46905,
+        "gates": "new_15.kmb",
+        "sha256": "8192d9673319ff0e7d1615d6e7227d480267fbe4f27b1e5afa344177631c96a9",
+        "verified_shots": 4096
+      }
+    ]
+  },
+  {
+    "m": 16,
+    "records": [
+      {
+        "new": false,
+        "Qhelper": 24,
+        "static_paid": 696,
+        "ops": 53310,
+        "gates": "old_16.kmb",
+        "sha256": "2220a3f669f2149c453247040f771c0fb9122fddab49f3914b12bc26370f5f45",
+        "verified_shots": 4096
+      },
+      {
+        "new": true,
+        "Qhelper": 16,
+        "static_paid": 840,
+        "ops": 51289,
+        "gates": "new_16.kmb",
+        "sha256": "7b9353e113839429e05f5a92f54f6fbb9c55803444502ca24e3f1f09ffef6c54",
+        "verified_shots": 4096
+      }
+    ]
+  }
+]

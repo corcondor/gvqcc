@@ -1,0 +1,26 @@
+[
+  {
+    "circuit": "prefix",
+    "peak_helpers": 14,
+    "static_T": 694,
+    "measured_mean_T": [
+      694.0,
+      693.980224609375
+    ],
+    "operations": 57494,
+    "shots": 8192,
+    "sha256": "a7a7daf7720984c5972193ce5275ad77b833b905b5d69dc80c2b846501b2076f"
+  },
+  {
+    "circuit": "closed",
+    "peak_helpers": 14,
+    "static_T": 1547,
+    "measured_mean_T": [
+      1546.98681640625,
+      1546.9736328125
+    ],
+    "operations": 138266,
+    "shots": 8192,
+    "sha256": "6ea7dc93ba4385f4710bddacab22d2e1989c5c1158ce01a38f1bb87d9cacfee1"
+  }
+]
