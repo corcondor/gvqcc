@@ -1,0 +1,215 @@
+{
+  "status": "PASS_NATIVE_TWO_CHART_GAUGE",
+  "fixtures": 32,
+  "seed": 202611151402,
+  "fixture_names": [
+    "chart0_constant0",
+    "chart0_constant1",
+    "chart0_constant2",
+    "chart0_constant7",
+    "chart0_constant2048",
+    "chart0_constant4095",
+    "chart1_constant0",
+    "chart1_constant1",
+    "chart1_constant2",
+    "chart1_constant7",
+    "chart1_constant2048",
+    "chart1_constant4095",
+    "zero_selected_random0",
+    "zero_selected_random1",
+    "zero_selected_random2",
+    "zero_selected_random3",
+    "zero_selected_random4",
+    "zero_selected_random5",
+    "zero_selected_random6",
+    "zero_selected_random7",
+    "zero_selected_random8",
+    "zero_selected_random9",
+    "zero_selected_random10",
+    "zero_selected_random11",
+    "original_random0",
+    "original_random1",
+    "original_random2",
+    "original_random3",
+    "original_random4",
+    "original_random5",
+    "original_random6",
+    "original_random7"
+  ],
+  "selected_labels": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      2048,
+      0
+    ],
+    [
+      4095,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      2048
+    ],
+    [
+      0,
+      4095
+    ],
+    [
+      225,
+      0
+    ],
+    [
+      0,
+      1133
+    ],
+    [
+      0,
+      3547
+    ],
+    [
+      3716,
+      0
+    ],
+    [
+      2651,
+      0
+    ],
+    [
+      1035,
+      0
+    ],
+    [
+      390,
+      0
+    ],
+    [
+      0,
+      891
+    ],
+    [
+      1496,
+      0
+    ],
+    [
+      1158,
+      0
+    ],
+    [
+      799,
+      0
+    ],
+    [
+      0,
+      2331
+    ],
+    [
+      2314,
+      0
+    ],
+    [
+      1103,
+      0
+    ],
+    [
+      2820,
+      0
+    ],
+    [
+      1528,
+      0
+    ],
+    [
+      0,
+      1373
+    ],
+    [
+      0,
+      289
+    ],
+    [
+      0,
+      2101
+    ],
+    [
+      2411,
+      0
+    ]
+  ],
+  "independent_mode_oracle_cases": 24,
+  "physical_error_weights": [
+    1,
+    18,
+    31,
+    35,
+    1,
+    18,
+    31,
+    35,
+    1,
+    18,
+    31,
+    35,
+    1,
+    18,
+    31,
+    35,
+    1,
+    18,
+    31,
+    35,
+    1,
+    18,
+    31,
+    35,
+    1,
+    18,
+    31,
+    35,
+    1,
+    18,
+    31,
+    35
+  ],
+  "quantum_inputs_preserved": true,
+  "classical_inputs_restored": true,
+  "phase_matches_original_minus_residual_oracle": true,
+  "all_classical_scratch_cleared": true,
+  "quantum_qubits": 840,
+  "Toffoli_count": 0,
+  "prefix_sha256": "b5639474469c5e411206512b580f8b4e31e302eeb7a669b6b4a0cd4187a8269b",
+  "suffix_sha256": "23f201d2bb7dc324fc03cdf38f0b04cd8ee7ac968d26715dc857c3b652463596",
+  "fixture_sha256": "9ebb80564f7df79f7de70f940f61e3d93d34457b1c2088b9a8010136e2271715",
+  "seconds": 7.714821370005666,
+  "scope": "Native exact gauge identity only; no whole decoder verification yet."
+}

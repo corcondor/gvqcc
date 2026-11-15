@@ -1,0 +1,13 @@
+{
+  "source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "sample_inputs": 2247,
+  "eligible_paid_lifetimes": 50,
+  "cuts": 1186,
+  "queries": 19859,
+  "sample_hits": [],
+  "scope": "Complete measured phase function as unrestricted quadratic polynomial at every depth-zero CCX, CSWAP, HMR boundary after its measurement and before guaranteed classical overwrite; excludes conditional-data routing.",
+  "full_results": [],
+  "accepted": 0,
+  "seconds": 24.78271214299457,
+  "receipt_note": "Coarse screening fit coefficients omitted; all full-domain fit coefficients retained. Reproduce from the named score8 source and arguments in the report."
+}

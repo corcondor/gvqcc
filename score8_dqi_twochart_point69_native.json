@@ -1,0 +1,27 @@
+{
+  "status": "PASS_NATIVE_BOUND_POINT69",
+  "fixtures": 8192,
+  "seeds": [
+    {
+      "seed": 202611151404,
+      "total_Toffoli": 87274,
+      "phase_errors": 0,
+      "value_errors": 0
+    },
+    {
+      "seed": 202611151405,
+      "total_Toffoli": 87274,
+      "phase_errors": 0,
+      "value_errors": 0
+    }
+  ],
+  "complete_locator_values": 4096,
+  "zero_locator_mask_values": 4096,
+  "arbitrary_other_quantum_data_preserved": true,
+  "mask_preserved": true,
+  "clean_ladder_restored": true,
+  "phase_law": "[locator=0] * dot(value, transpose(M_factor)*mask)",
+  "executed_T_law": "11*[mask!=0]",
+  "factor": 1199,
+  "circuit_sha256": "b5d0583b2c2da72ffbb4e08e7e39a551ee77115ac960bd49e0d88a2026e0254e"
+}

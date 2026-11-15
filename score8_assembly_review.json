@@ -1,0 +1,54 @@
+{
+  "status": "INDEPENDENT_ASSEMBLY_AND_UNIVERSAL_BOUND_REVIEW_PASS",
+  "review_scope": "Read-only source, archive hashes, receipts, array comparison, algebra and arithmetic; no full verifier rerun",
+  "reviewed_scripts": {
+    "score8_target28.py": "f361746d7eddb3e3ccf5504cca0623f7b70b88beebce88d423ee835878489d9d",
+    "score8_pack_portfolio.py": "e7e65398833f108cc2b9b4e497449761ec2912a609537bc005bcf35b238cb80c"
+  },
+  "universal_proof": {
+    "valid_for_all_accepted_factorization_shapes_and_angles": true,
+    "reason": "Triangle inequality is componentwise for arbitrary real W and H2_I; official load_inputs overrides shifts, fixes the Hamiltonian and normalizes all vectors. No optimization-specific assumptions enter.",
+    "ecore_from_reference_tail": -21021.2140122,
+    "beta": 4.955104996915907,
+    "constant_c": -559.1324731485038,
+    "lambda_floor": 46.78617959252637,
+    "score6_lambda_only_ceiling": 27.348149454261073,
+    "numeric_constant_is_float64": true
+  },
+  "accepted_npz_changed_arrays": [
+    "H2_I"
+  ],
+  "accepted_npz_sha256": "da30619d4a668d663adc9f7f0462cfd52ba8684cc5523980f5119dc3ef90302e",
+  "actual_words_raw_sha256": "5d48123a971949acaacfc9dbe4e749bd6c3ef6fc20c1600b8f6019d5e9032ce2",
+  "actual_words_hash_scope": "This is the .npy file hash; raw uint8 hash is recorded separately",
+  "actual_word_uint8_raw_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "all15_loader_hashes_match_exact_public_v27": true,
+  "archive": {
+    "path": "/workspace/scratch/3815fb5fae06/score8_delivery/score8_local_candidate.zip",
+    "bytes": 63604196,
+    "sha256": "4eceac6db61991bf238de0533110369ddf4ef298a6bc726bcd4af8471f9c1a48"
+  },
+  "all18_members_match_official_pass_receipts": true,
+  "dqi_circuit_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "dqi_cost": 359707293756.04297,
+  "dqi_receipt_path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_final_full_verification.json",
+  "dqi_selection": "Existing e4/score5 circuit retained; no new two-chart circuit included",
+  "invsqrt_circuit_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "costs": {
+    "dqi": 359707293756.04297,
+    "invsqrt": 78673.55534364567,
+    "dfthcsos": 294887961.3668603
+  },
+  "recomputed_local_score": 27.32784222155277,
+  "public_score_claimed": false,
+  "submission_performed": false,
+  "no_blocking_findings": true,
+  "qualifications": [
+    "The lambda-only ceiling is conditional on fixed other costs and fixed chemistry T,Q; it is not a universal portfolio score ceiling.",
+    "The quoted normalization constant is evaluated in float64; the analytic inequality is independent of the optimization.",
+    "The inherited DQI finite-test PASS does not prove correctness on every possible input; scorecard retains that qualification."
+  ],
+  "baseline_scorecard_hash_matches_bound": true,
+  "reference_costs_match_pinned_score6_scorecard": true,
+  "conditional_score_ceiling_recomputed": true
+}

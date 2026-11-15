@@ -1,0 +1,104 @@
+{
+  "status": "GAUGE_PIECES_BUILT_NOT_DECODER_VERIFIED",
+  "prefix": {
+    "instructions": 29958276,
+    "bits": 261493,
+    "qubits": 840,
+    "static_toffoli_like": 0,
+    "bytes": 261607585,
+    "sha256": "b5639474469c5e411206512b580f8b4e31e302eeb7a669b6b4a0cd4187a8269b"
+  },
+  "suffix": {
+    "instructions": 4664835,
+    "bits": 208181,
+    "qubits": 840,
+    "static_toffoli_like": 0,
+    "bytes": 42303148,
+    "sha256": "23f201d2bb7dc324fc03cdf38f0b04cd8ee7ac968d26715dc857c3b652463596"
+  },
+  "old_pivot": [
+    49458,
+    49457,
+    49456,
+    49455,
+    49454,
+    49453,
+    49452,
+    49451,
+    49450,
+    49449,
+    49448,
+    49447
+  ],
+  "new_pivot": [
+    208169,
+    208170,
+    208171,
+    208172,
+    208173,
+    208174,
+    208175,
+    208176,
+    208177,
+    208178,
+    208179,
+    208180
+  ],
+  "reserved_classical_through": 208181,
+  "selector": {
+    "charts": [
+      {
+        "instructions": 12336827,
+        "quantum_qubits": 0,
+        "toffoli_like": 0,
+        "retained_classical_bits": 24
+      },
+      {
+        "instructions": 12336827,
+        "quantum_qubits": 0,
+        "toffoli_like": 0,
+        "retained_classical_bits": 24
+      }
+    ],
+    "comparison_instructions": 115,
+    "exact_count_comparison": true,
+    "tie_rule": "Retain the accepted original chart",
+    "additional_quantum_bits": 0,
+    "static_toffoli_like": 0,
+    "shift_CX": 338284,
+    "compensation_CZ": 4478,
+    "old_label": [
+      49458,
+      49457,
+      49456,
+      49455,
+      49454,
+      49453,
+      49452,
+      49451,
+      49450,
+      49449,
+      49448,
+      49447
+    ],
+    "new_label": [
+      208169,
+      208170,
+      208171,
+      208172,
+      208173,
+      208174,
+      208175,
+      208176,
+      208177,
+      208178,
+      208179,
+      208180
+    ]
+  },
+  "extra_physical_point": 69,
+  "preserved_existing_scan_point": 70,
+  "quantum_width": 840,
+  "quantum_nonclifford_gates": 0,
+  "needed_integration": "Replace original gauge prefix/suffix and insert one conditional point69 scan cell."
+}

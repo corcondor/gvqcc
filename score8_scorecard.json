@@ -1,0 +1,79 @@
+{
+  "status": "HASH_BOUND_LOCAL_PORTFOLIO_SCORE",
+  "reference_costs": {
+    "invsqrt": 2076774.233715,
+    "dqi": 24439463583672.93,
+    "dfthcsos": 3355599588.3155375
+  },
+  "candidate_costs": {
+    "dqi": 359707293756.04297,
+    "invsqrt": 78673.55534364567,
+    "dfthcsos": 294887961.3668603
+  },
+  "previous_local_score": 27.324751494620457,
+  "local_combined_score": 27.32784222155277,
+  "local_combined_increase": 0.0030907269323137143,
+  "local_combined_score_5dp": "27.32784",
+  "target": 28,
+  "remaining_cost_product_reduction_percent": 7.030192704583005,
+  "chemistry_metrics": {
+    "error_1": 0.019999998000010073,
+    "error_2": 0.01999998805240961,
+    "Lambda": 283.0014128704472,
+    "E_SOS": -22144.188248002,
+    "E_gap": 3.9148980019999726,
+    "lambda_eff": 46.909667503120325,
+    "gap_in_domain": true
+  },
+  "chemistry_resources": {
+    "brot": 8,
+    "keep_bits": 10,
+    "angles_toffoli_per_pass": 4030.0,
+    "angles_toffoli": 8060.0,
+    "angles_qubits": 128,
+    "angles_selection_qubits": 11,
+    "angles_persistent_qubits": 40,
+    "angles_temporary_qubits": 77,
+    "outer_state_prep_toffoli": 317,
+    "inner_state_prep_toffoli": 4095,
+    "givens_rotations_toffoli": 2250,
+    "outer_state_prep_persistent_qubits": 40,
+    "outer_state_prep_temporary_qubits": 90,
+    "outer_state_prep_qubits": 130,
+    "inner_state_prep_persistent_qubits": 44,
+    "inner_state_prep_temporary_qubits": 303,
+    "inner_state_prep_qubits": 347,
+    "heuristic_persistent_qubits": 84,
+    "heuristic_temporary_qubits": 303,
+    "heuristic_toffoli": 6662,
+    "heuristic_qubits": 387,
+    "persistent_qubits": 124,
+    "temporary_qubits": 303,
+    "toffoli": 14722.0,
+    "qubits": 427,
+    "angles_within_cap": true
+  },
+  "verification_receipts": {
+    "dqi": {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_final_full_verification.json",
+      "sha256": "3b59268e86faedf7026ef4b53b2428675dd7bb3f031cee61e5eb5dfb236df043"
+    },
+    "invsqrt": {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_full_verification.json",
+      "sha256": "546961b969cf58f64093b4a98d9a1a603044c16118572eaa0ee76f78eb1c0b53"
+    },
+    "dfthcsos": {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score8_chem_v27_full_verification.json",
+      "sha256": "b03e22633a8053afb9c1fe631a859048e2924294c86fca69fccee8dc1be6fcd7"
+    }
+  },
+  "public_score": null,
+  "submission_performed": false,
+  "dqi_limit": "The inherited node13 numerator-zero failure remains. Finite default PASS is not universal correctness.",
+  "attribution": "Public4030 chemistry: maoxin123(CC0) and original credited lineage; new H2_I constrained solve and integration in this repository.",
+  "zip": {
+    "path": "/workspace/scratch/3815fb5fae06/score8_delivery/score8_local_candidate.zip",
+    "bytes": 63604196,
+    "sha256": "4eceac6db61991bf238de0533110369ddf4ef298a6bc726bcd4af8471f9c1a48"
+  }
+}

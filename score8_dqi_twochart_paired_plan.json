@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-11-15T02:07:10.302742+00:00",
+  "purpose": "Fixed known-regression and independent replay for exact two-chart classical gauge.",
+  "independent_seed_label": "GVQCC independent paired reliability audit 2026-11-15; one non-adaptive 16384-shot sample",
+  "verifier": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dqi/verify_submission_dqi.py",
+  "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+  "variants": {
+    "chart_candidate": {
+      "path": "/workspace/scratch/3815fb5fae06/score8_dqi_twochart/dqi.kmb",
+      "sha256": "1d66248da1fc23e3a41817fe8a2b39cdbba957ba0aa908fe2aacea7e2b36e9e9"
+    }
+  },
+  "groups": [
+    {
+      "name": "known_weight31",
+      "seed_sha256": "72b3525cc40397c595061d466a48241d65bd47f794d2aeac428b26829a8a2229",
+      "batches": [
+        104
+      ]
+    },
+    {
+      "name": "known_weight33",
+      "seed_sha256": "aafed8b0fa2bbfde21f47672a5e548a84a6d42d735e800557efbb2c04c310f09",
+      "batches": [
+        349
+      ]
+    },
+    {
+      "name": "independent",
+      "seed_sha256": "c45571244b1bee95f44054a0826663ea6e24ba0e2f51b08994a2b003316cd3aa",
+      "batches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "scope": "Known regressions were chosen before this new execution; independent stream fixed once before seeing either result. No adaptive search, no public or hidden test seed reconstruction.",
+  "comparison_baseline_result": "score8_dqi_twochart_paired_before.json"
+}

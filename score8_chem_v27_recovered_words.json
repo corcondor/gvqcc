@@ -1,0 +1,9 @@
+{
+  "source": "/workspace/scratch/3815fb5fae06/score8_v27_chemistry",
+  "actual_words_path": "score8_chem_v27_recovered_words.npy",
+  "actual_raw_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "matches_previous_actual_export": true,
+  "declared_word_differences": 473,
+  "total_angle_toffoli": 8060.0,
+  "seconds": 0.43011702800140483
+}

@@ -1,0 +1,95 @@
+{
+  "status": "CUTOFF_TRADEOFF_MODEL_NOT_CIRCUIT_REWRITE",
+  "N": 102400,
+  "log2_delta": -128,
+  "rows": [
+    {
+      "cutoff": 15,
+      "excluded_probability": 5.037865878108831e-09,
+      "expected_failures_if_all_excluded_fail": 0.0005158774659183443,
+      "expected_R_under_excluded_only_model": 1.1912632870865547,
+      "binomial_probability_mass_summed": 1.0,
+      "optimistic_T_saving_at_138_per_step": -414,
+      "modeled_cost_ratio_vs_cutoff18": 1.0007250855331857
+    },
+    {
+      "cutoff": 16,
+      "excluded_probability": 2.947826843544808e-08,
+      "expected_failures_if_all_excluded_fail": 0.0030185746877898836,
+      "expected_R_under_excluded_only_model": 1.1912769758284127,
+      "binomial_probability_mass_summed": 1.0,
+      "optimistic_T_saving_at_138_per_step": -276,
+      "modeled_cost_ratio_vs_cutoff18": 1.0003755163692363
+    },
+    {
+      "cutoff": 17,
+      "excluded_probability": 1.5754811663887698e-07,
+      "expected_failures_if_all_excluded_fail": 0.016132927143821002,
+      "expected_R_under_excluded_only_model": 1.1913486228665435,
+      "binomial_probability_mass_summed": 1.0000000000000002,
+      "optimistic_T_saving_at_138_per_step": -138,
+      "modeled_cost_ratio_vs_cutoff18": 1.0000745918527367
+    },
+    {
+      "cutoff": 18,
+      "excluded_probability": 7.712609753985093e-07,
+      "expected_failures_if_all_excluded_fail": 0.07897712388080735,
+      "expected_R_under_excluded_only_model": 1.1916900400427253,
+      "binomial_probability_mass_summed": 1.0,
+      "optimistic_T_saving_at_138_per_step": 0,
+      "modeled_cost_ratio_vs_cutoff18": 1.0
+    },
+    {
+      "cutoff": 19,
+      "excluded_probability": 3.466155701968961e-06,
+      "expected_failures_if_all_excluded_fail": 0.3549343438816216,
+      "expected_R_under_excluded_only_model": 1.1931535270164364,
+      "binomial_probability_mass_summed": 1.0,
+      "optimistic_T_saving_at_138_per_step": 138,
+      "modeled_cost_ratio_vs_cutoff18": 1.0008664396570939
+    },
+    {
+      "cutoff": 20,
+      "excluded_probability": 1.43258618683459e-05,
+      "expected_failures_if_all_excluded_fail": 1.46696825531862,
+      "expected_R_under_excluded_only_model": 1.1985625868849377,
+      "binomial_probability_mass_summed": 1.0,
+      "optimistic_T_saving_at_138_per_step": 276,
+      "modeled_cost_ratio_vs_cutoff18": 1.0050405057323935
+    },
+    {
+      "cutoff": 21,
+      "excluded_probability": 5.452428343035459e-05,
+      "expected_failures_if_all_excluded_fail": 5.58328662326831,
+      "expected_R_under_excluded_only_model": 1.2146561931955935,
+      "binomial_probability_mass_summed": 0.9999999999999994,
+      "optimistic_T_saving_at_138_per_step": 414,
+      "modeled_cost_ratio_vs_cutoff18": 1.0181674547529211
+    },
+    {
+      "cutoff": 22,
+      "excluded_probability": 0.00019126713925006657,
+      "expected_failures_if_all_excluded_fail": 19.585755059206818,
+      "expected_R_under_excluded_only_model": 1.253395090674306,
+      "binomial_probability_mass_summed": 1.0000000000000018,
+      "optimistic_T_saving_at_138_per_step": 552,
+      "modeled_cost_ratio_vs_cutoff18": 1.050259862283385
+    },
+    {
+      "cutoff": 23,
+      "excluded_probability": 0.0006186945010283824,
+      "expected_failures_if_all_excluded_fail": 63.35431690530636,
+      "expected_R_under_excluded_only_model": 1.3350178871260143,
+      "binomial_probability_mass_summed": 0.9999999999999899,
+      "optimistic_T_saving_at_138_per_step": 690,
+      "modeled_cost_ratio_vs_cutoff18": 1.1182495804326396
+    }
+  ],
+  "assumptions": [
+    "Every error word below cutoff causes a failure; all other inputs pass. This is a modeling assumption, not a complete decoder failure proof.",
+    "138T per removed tail slot is an optimistic source-controller static budget; actual expected saved T is lower. No cutoff19 circuit was emitted.",
+    "Expected R is averaged over the Binomial failure count using the official confidence routine, rather than applying R only to the rounded expected failure count.",
+    "No hash/salt resampling or leaderboard submission."
+  ],
+  "decision": "Do not pursue cutoff19+ for the small controller saving under this model; exact two-chart gauge selected instead."
+}

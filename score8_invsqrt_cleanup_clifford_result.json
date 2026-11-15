@@ -1,0 +1,468 @@
+{
+  "source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "eligible_paid_lifetimes": 50,
+  "helper_rejections": {
+    "outer_use_BIT_INVERT": 79,
+    "outer_use_HMR": 46,
+    "live_internal_measurement": 42,
+    "outer_use_PUSH_CONDITION": 1
+  },
+  "sample_input_count": 4443,
+  "sample_rows": [
+    {
+      "first": 9284,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 9476,
+      "removed_static_paid": 2,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 9712,
+      "removed_static_paid": 4,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 9976,
+      "removed_static_paid": 4,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 10240,
+      "removed_static_paid": 4,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 10554,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 896,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 10589,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 10881,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 896,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 10916,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 11217,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 896,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 11252,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 11553,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 896,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 11588,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 11889,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 896,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 11924,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 12225,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 896,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 12260,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 12561,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 896,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 12596,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 12897,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 896,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 12932,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 13233,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 896,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 13268,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 780,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 13735,
+      "removed_static_paid": 2,
+      "model": null,
+      "rank": 899,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 13773,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 820,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 14143,
+      "removed_static_paid": 3,
+      "model": null,
+      "rank": 902,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 14184,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 861,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 14518,
+      "removed_static_paid": 3,
+      "model": null,
+      "rank": 899,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 14808,
+      "removed_static_paid": 2,
+      "model": null,
+      "rank": 902,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 17527,
+      "removed_static_paid": 4,
+      "model": null,
+      "rank": 857,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 17813,
+      "removed_static_paid": 4,
+      "model": null,
+      "rank": 859,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 18141,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 859,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 18421,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 859,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 18684,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 859,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 18920,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 859,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 19129,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 859,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 19311,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 859,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 19466,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 856,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 19945,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 829,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 20070,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 827,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 20191,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 825,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 20307,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 801,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 20418,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 752,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 20525,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 708,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 23813,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 320,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 23820,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 313,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 23827,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 307,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 23834,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 298,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 23841,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 285,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    },
+    {
+      "first": 23848,
+      "removed_static_paid": 1,
+      "model": null,
+      "rank": 270,
+      "result": "NO_QUADRATIC_MODEL",
+      "correction_phase_equals_measured_value": true,
+      "all_internal_measurement_phase_coefficients_zero": true
+    }
+  ],
+  "full_rows": [],
+  "scope": "Immediate post-HMR resynthesis of a complete correction lifetime as an arbitrary quadratic phase on retained wires. All measurement outcomes kept symbolically; all accepted equalities require all legal x.",
+  "accepted": 0,
+  "seconds": 2.3737370710005052,
+  "receipt_note": "Coarse screening fit coefficients omitted; all full-domain fit coefficients retained. Reproduce from the named score8 source and arguments in the report."
+}

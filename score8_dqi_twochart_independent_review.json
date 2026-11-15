@@ -1,0 +1,725 @@
+{
+  "status": "PASS_INDEPENDENT_ALGEBRA_AND_STATIC_INTEGRATION_REVIEW",
+  "independent_field_modulus": "0x1053",
+  "field_basis_products_checked": 49152,
+  "polynomial_points_checked": 4095,
+  "ratio_points_checked": 4025,
+  "coefficients_match_for_both_degree70_polynomials": true,
+  "exact_fixed_zero_sets_checked": true,
+  "point69_independent_scale": 1199,
+  "mode_and_physical_scan_fixtures": [
+    {
+      "name": "all_zero",
+      "old_label": 0,
+      "new_label": 0,
+      "old_mode_count": 4026,
+      "new_mode_count": 4026,
+      "promote": false,
+      "physical_scan_T_before": 0,
+      "physical_scan_T_after": 0
+    },
+    {
+      "name": "old_constant4095",
+      "old_label": 4095,
+      "new_label": 0,
+      "old_mode_count": 4025,
+      "new_mode_count": 1,
+      "promote": false,
+      "physical_scan_T_before": 11,
+      "physical_scan_T_after": 11
+    },
+    {
+      "name": "new_constant1_old_label_zero",
+      "old_label": 0,
+      "new_label": 1,
+      "old_mode_count": 1,
+      "new_mode_count": 4025,
+      "promote": true,
+      "physical_scan_T_before": 44275,
+      "physical_scan_T_after": 11
+    },
+    {
+      "name": "new_constant2048_old_label_zero",
+      "old_label": 0,
+      "new_label": 2048,
+      "old_mode_count": 1,
+      "new_mode_count": 4025,
+      "promote": true,
+      "physical_scan_T_before": 44275,
+      "physical_scan_T_after": 11
+    },
+    {
+      "name": "new_constant4095_old_label_zero",
+      "old_label": 0,
+      "new_label": 4095,
+      "old_mode_count": 1,
+      "new_mode_count": 4025,
+      "promote": true,
+      "physical_scan_T_before": 44275,
+      "physical_scan_T_after": 11
+    },
+    {
+      "name": "independent_0",
+      "old_label": 467,
+      "new_label": 916,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_1",
+      "old_label": 1361,
+      "new_label": 109,
+      "old_mode_count": 7,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_2",
+      "old_label": 782,
+      "new_label": 1036,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_3",
+      "old_label": 1453,
+      "new_label": 1461,
+      "old_mode_count": 7,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_4",
+      "old_label": 2215,
+      "new_label": 43,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_5",
+      "old_label": 4057,
+      "new_label": 1024,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_6",
+      "old_label": 1047,
+      "new_label": 719,
+      "old_mode_count": 6,
+      "new_mode_count": 7,
+      "promote": true,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_7",
+      "old_label": 231,
+      "new_label": 3027,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_8",
+      "old_label": 1628,
+      "new_label": 777,
+      "old_mode_count": 7,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_9",
+      "old_label": 28,
+      "new_label": 1788,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_10",
+      "old_label": 69,
+      "new_label": 1020,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_11",
+      "old_label": 160,
+      "new_label": 2374,
+      "old_mode_count": 6,
+      "new_mode_count": 7,
+      "promote": true,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_12",
+      "old_label": 2568,
+      "new_label": 1335,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_13",
+      "old_label": 248,
+      "new_label": 321,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_14",
+      "old_label": 3087,
+      "new_label": 1426,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_15",
+      "old_label": 1514,
+      "new_label": 2390,
+      "old_mode_count": 8,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44198,
+      "physical_scan_T_after": 44198
+    },
+    {
+      "name": "independent_16",
+      "old_label": 212,
+      "new_label": 360,
+      "old_mode_count": 7,
+      "new_mode_count": 5,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_17",
+      "old_label": 1963,
+      "new_label": 2883,
+      "old_mode_count": 6,
+      "new_mode_count": 8,
+      "promote": true,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44198
+    },
+    {
+      "name": "independent_18",
+      "old_label": 334,
+      "new_label": 1875,
+      "old_mode_count": 7,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_19",
+      "old_label": 1155,
+      "new_label": 846,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_20",
+      "old_label": 594,
+      "new_label": 63,
+      "old_mode_count": 6,
+      "new_mode_count": 5,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_21",
+      "old_label": 3,
+      "new_label": 936,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_22",
+      "old_label": 347,
+      "new_label": 2996,
+      "old_mode_count": 7,
+      "new_mode_count": 7,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_23",
+      "old_label": 1976,
+      "new_label": 1702,
+      "old_mode_count": 8,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44198,
+      "physical_scan_T_after": 44198
+    },
+    {
+      "name": "independent_24",
+      "old_label": 2380,
+      "new_label": 785,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_25",
+      "old_label": 1135,
+      "new_label": 3401,
+      "old_mode_count": 7,
+      "new_mode_count": 7,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_26",
+      "old_label": 104,
+      "new_label": 1788,
+      "old_mode_count": 5,
+      "new_mode_count": 8,
+      "promote": true,
+      "physical_scan_T_before": 44231,
+      "physical_scan_T_after": 44198
+    },
+    {
+      "name": "independent_27",
+      "old_label": 568,
+      "new_label": 3930,
+      "old_mode_count": 7,
+      "new_mode_count": 7,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_28",
+      "old_label": 1703,
+      "new_label": 913,
+      "old_mode_count": 6,
+      "new_mode_count": 5,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_29",
+      "old_label": 2781,
+      "new_label": 2819,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_30",
+      "old_label": 1054,
+      "new_label": 1733,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_31",
+      "old_label": 2144,
+      "new_label": 403,
+      "old_mode_count": 7,
+      "new_mode_count": 5,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_32",
+      "old_label": 188,
+      "new_label": 3810,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_33",
+      "old_label": 2138,
+      "new_label": 1018,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_34",
+      "old_label": 955,
+      "new_label": 2484,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_35",
+      "old_label": 52,
+      "new_label": 3079,
+      "old_mode_count": 7,
+      "new_mode_count": 7,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_36",
+      "old_label": 3923,
+      "new_label": 1221,
+      "old_mode_count": 6,
+      "new_mode_count": 7,
+      "promote": true,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_37",
+      "old_label": 245,
+      "new_label": 1553,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_38",
+      "old_label": 2993,
+      "new_label": 1918,
+      "old_mode_count": 7,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_39",
+      "old_label": 3576,
+      "new_label": 344,
+      "old_mode_count": 6,
+      "new_mode_count": 7,
+      "promote": true,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_40",
+      "old_label": 1906,
+      "new_label": 2014,
+      "old_mode_count": 6,
+      "new_mode_count": 7,
+      "promote": true,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_41",
+      "old_label": 995,
+      "new_label": 104,
+      "old_mode_count": 6,
+      "new_mode_count": 5,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_42",
+      "old_label": 3201,
+      "new_label": 431,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_43",
+      "old_label": 1065,
+      "new_label": 2115,
+      "old_mode_count": 6,
+      "new_mode_count": 7,
+      "promote": true,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_44",
+      "old_label": 1334,
+      "new_label": 783,
+      "old_mode_count": 7,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_45",
+      "old_label": 909,
+      "new_label": 2410,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_46",
+      "old_label": 1734,
+      "new_label": 2673,
+      "old_mode_count": 6,
+      "new_mode_count": 8,
+      "promote": true,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44198
+    },
+    {
+      "name": "independent_47",
+      "old_label": 1054,
+      "new_label": 2560,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_48",
+      "old_label": 2020,
+      "new_label": 3096,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_49",
+      "old_label": 565,
+      "new_label": 119,
+      "old_mode_count": 6,
+      "new_mode_count": 7,
+      "promote": true,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_50",
+      "old_label": 21,
+      "new_label": 2050,
+      "old_mode_count": 7,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_51",
+      "old_label": 239,
+      "new_label": 1540,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_52",
+      "old_label": 3884,
+      "new_label": 1864,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_53",
+      "old_label": 1862,
+      "new_label": 1606,
+      "old_mode_count": 7,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_54",
+      "old_label": 1502,
+      "new_label": 1179,
+      "old_mode_count": 6,
+      "new_mode_count": 5,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_55",
+      "old_label": 2836,
+      "new_label": 2573,
+      "old_mode_count": 6,
+      "new_mode_count": 7,
+      "promote": true,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_56",
+      "old_label": 1689,
+      "new_label": 1163,
+      "old_mode_count": 6,
+      "new_mode_count": 5,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_57",
+      "old_label": 2514,
+      "new_label": 617,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_58",
+      "old_label": 3707,
+      "new_label": 2678,
+      "old_mode_count": 7,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_59",
+      "old_label": 40,
+      "new_label": 2416,
+      "old_mode_count": 6,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_60",
+      "old_label": 1469,
+      "new_label": 347,
+      "old_mode_count": 7,
+      "new_mode_count": 6,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_61",
+      "old_label": 618,
+      "new_label": 1243,
+      "old_mode_count": 6,
+      "new_mode_count": 7,
+      "promote": true,
+      "physical_scan_T_before": 44220,
+      "physical_scan_T_after": 44209
+    },
+    {
+      "name": "independent_62",
+      "old_label": 193,
+      "new_label": 2968,
+      "old_mode_count": 5,
+      "new_mode_count": 6,
+      "promote": true,
+      "physical_scan_T_before": 44231,
+      "physical_scan_T_after": 44220
+    },
+    {
+      "name": "independent_63",
+      "old_label": 1447,
+      "new_label": 2904,
+      "old_mode_count": 7,
+      "new_mode_count": 7,
+      "promote": false,
+      "physical_scan_T_before": 44209,
+      "physical_scan_T_after": 44209
+    }
+  ],
+  "old_zero_label_new_nonzero_promotion_cases": 3,
+  "all_physical_scan_differences_match_exact_mode_formula": true,
+  "new_pivot_bits_disjoint_from_every_old_body_classical_bit": true,
+  "old_num_bits": 208169,
+  "new_num_bits": 261506,
+  "qubits": 889,
+  "static_toffoli_like_delta": 11,
+  "baseline_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "candidate_sha256": "1d66248da1fc23e3a41817fe8a2b39cdbba957ba0aa908fe2aacea7e2b36e9e9",
+  "code_review_findings": [
+    "The virtual zero is private row4025; rows4026..4095 carry sentinel4096. Exact12-bit counters accommodate maximum4026.",
+    "Strict greater-than preserves old chart on a tie; the unselected label is cleared, so no simultaneous two-gauge shift occurs.",
+    "Transpose multiplication has the correct dual-mask direction; normalized residual shift uses h/g, while alternative mode labels use g/h.",
+    "Syndrome compensation uses coefficients of x^1..x^70, matching the syndrome power convention.",
+    "Whole-body operand-column preservation and bound clean-ladder placement were reviewed from the source and existing exact-match receipts.",
+    "Native32-case gauge and8192x2-seed cell receipts were inspected; not rerun by this independent reviewer.",
+    "The existing failed decoder input can change its phase. Equivalence and reliability claims must retain the report's successful-decoder-domain qualification."
+  ],
+  "blocking_defect_found": false,
+  "native_or_full_verifier_rerun": false,
+  "scope": "Independent field algebra, physical zero-count model, header/hash checks and static source review; not an exhaustive full-decoder proof or new native verification.",
+  "review_script_sha256": "e7edee6e1edce51c3424f6141785978335af9c7811f7571496217e7d1759c673",
+  "seconds": 9.60906422300468
+}

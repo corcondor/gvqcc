@@ -1,0 +1,15 @@
+{
+  "status": "CLASSICAL_MASK_MODEL_ONLY",
+  "fixtures": 16384,
+  "fixture_seed": 202611151401,
+  "old_extra_zeros": 6.19696044921875,
+  "alternative_extra_zeros": 6.188232421875,
+  "selected_extra_zeros": 6.51611328125,
+  "strict_promotions": 4323,
+  "predicted_mean_Toffoli_saving": 3.51068115234375,
+  "distribution": "4025 independent uniform12-bit residual masks and one virtual zero per chart",
+  "pointwise_nonincrease_proved": true,
+  "full_decoder_verification": false,
+  "count_pairs_sha256": "54dea10852914b0addd213a3fb8534c98446a2ce15d97e1a3b798f6eca36574e",
+  "seconds": 4.057348487003765
+}

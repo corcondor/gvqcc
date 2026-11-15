@@ -1,0 +1,37 @@
+{
+  "status": "PASS_EXACT_INTEGER_AUDIT",
+  "left_inverse_shape": [
+    39,
+    40
+  ],
+  "evaluation_shape": [
+    40,
+    39
+  ],
+  "integer_product": "I_39",
+  "excluded_generic_features": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    14,
+    15,
+    16,
+    18,
+    21,
+    24,
+    27,
+    31,
+    33,
+    35,
+    37
+  ],
+  "excluded_count": 19,
+  "nearest_lattice": "1/8 turns",
+  "bound": "sum_i abs(B_ji) * 2 * official_tolerance_i",
+  "scope": "Approximate changes on the same fixed phase predicates including constant phase. Baseline validity is established by the existing full official receipt; no unrestricted-circuit lower bound."
+}

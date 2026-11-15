@@ -1,0 +1,297 @@
+{
+  "status": "FROZEN_FINAL_FULL_OFFICIAL_PASS",
+  "candidate_npz": "/workspace/scratch/3815fb5fae06/score8_chem_v27_schur_full/submission.npz",
+  "candidate_npz_sha256": "da30619d4a668d663adc9f7f0462cfd52ba8684cc5523980f5119dc3ef90302e",
+  "actual_changed_arrays": [
+    "H2_I"
+  ],
+  "official_result": {
+    "status": "PASS",
+    "score": 294887961.3668603,
+    "lambda_eff": 46.909667503120325,
+    "toffoli_count": 14722.0,
+    "num_qubits": 427,
+    "brot": 8,
+    "batch_size": 5,
+    "num_circuits": 15,
+    "reaction_depth": 167,
+    "num_ops": 609579,
+    "verified_shots": 78080,
+    "submission_sha256": "ad23a28297ac3a9efa2c50cadfa011b1e96c83350b76004adef67650ed933912",
+    "resources": {
+      "brot": 8,
+      "keep_bits": 10,
+      "angles_toffoli_per_pass": 4030.0,
+      "angles_toffoli": 8060.0,
+      "angles_qubits": 128,
+      "angles_selection_qubits": 11,
+      "angles_persistent_qubits": 40,
+      "angles_temporary_qubits": 77,
+      "outer_state_prep_toffoli": 317,
+      "inner_state_prep_toffoli": 4095,
+      "givens_rotations_toffoli": 2250,
+      "outer_state_prep_persistent_qubits": 40,
+      "outer_state_prep_temporary_qubits": 90,
+      "outer_state_prep_qubits": 130,
+      "inner_state_prep_persistent_qubits": 44,
+      "inner_state_prep_temporary_qubits": 303,
+      "inner_state_prep_qubits": 347,
+      "heuristic_persistent_qubits": 84,
+      "heuristic_temporary_qubits": 303,
+      "heuristic_toffoli": 6662,
+      "heuristic_qubits": 387,
+      "persistent_qubits": 124,
+      "temporary_qubits": 303,
+      "toffoli": 14722.0,
+      "qubits": 427,
+      "angles_within_cap": true
+    },
+    "metrics": {
+      "error_1": 0.019999998000010073,
+      "error_2": 0.01999998805240961,
+      "Lambda": 283.0014128704472,
+      "E_SOS": -22144.188248002,
+      "E_gap": 3.9148980019999726,
+      "lambda_eff": 46.909667503120325,
+      "gap_in_domain": true
+    }
+  },
+  "official_receipt": "score8_chem_v27_full_verification.json",
+  "verified_shots": 78080,
+  "current_public_v27_cost": 294888332.1042627,
+  "additional_coefficient_cost_reduction": 370.73740243911743,
+  "score6_cost": 294988037.80410767,
+  "total_chemistry_cost_reduction_vs_score6": 100076.43724739552,
+  "total_reduction_percent_vs_score6": 0.03392559169258513,
+  "public_v27_import_receipt": "score8_v27_chemistry_verification.json",
+  "public_source_npz_sha256": "4df35abdeec320a3f1c10f6f533e73550e50bb45d95e666deaa01062810a3559",
+  "all15_loader_hashes_match_public_pins": true,
+  "loader_directory": "/workspace/scratch/3815fb5fae06/score8_v27_chemistry",
+  "loaders": [
+    {
+      "name": "angle_k_0.kmb",
+      "sha256": "71735b23037e8a64d16e39b3347d440b36bdf8813613ec70c36a85bfd362d7c2"
+    },
+    {
+      "name": "angle_k_1.kmb",
+      "sha256": "1a43bbc368785aa5fc5210f6e4d5d2f9ddf114f7f3f6d3e3964f9478056bb4be"
+    },
+    {
+      "name": "angle_k_2.kmb",
+      "sha256": "0970b392fb4bed09d6026b77b4b31510573123cb76955030115507bffde4a6bb"
+    },
+    {
+      "name": "angle_k_3.kmb",
+      "sha256": "f9d313326dd07028bf6ef672bb47013f01e9311695d66b8d1ee2546d7dbacd7f"
+    },
+    {
+      "name": "angle_k_4.kmb",
+      "sha256": "0ab29f06e44ef247035c971dcca30e27616bdfdc2a102fbb58c3882bbfbfd1e0"
+    },
+    {
+      "name": "angle_k_5.kmb",
+      "sha256": "b346df2edafbaf4d95192a974db27abf71b770f51ee61dae2eb352f422cefdf4"
+    },
+    {
+      "name": "angle_k_6.kmb",
+      "sha256": "749d9edb817c59f8a3507400002e75c2d8db55932a6933db5c5f6f59a2679f7b"
+    },
+    {
+      "name": "angle_k_7.kmb",
+      "sha256": "0ad7d3775a36d7c14e3d4dfa4a144267e4e9759521fae4022715be25c309638e"
+    },
+    {
+      "name": "angle_k_8.kmb",
+      "sha256": "46e0f8d69e532438d476aa8244f257a649fdc4cffe9d41f9921758f4dc18fa83"
+    },
+    {
+      "name": "angle_k_9.kmb",
+      "sha256": "0b995537e919351a705babb6294dfe3525ef52a3c40b08122d842f45df8182da"
+    },
+    {
+      "name": "angle_k_10.kmb",
+      "sha256": "5fea9f297afea7ffe74054ed1b44f92031a5f6e319a7f1c8741f86c05b234834"
+    },
+    {
+      "name": "angle_k_11.kmb",
+      "sha256": "dc425931348cc4950931c400ab19322e01495b7cf3e2d02bafabcaaf9559d28a"
+    },
+    {
+      "name": "angle_k_12.kmb",
+      "sha256": "64bbada35a382068b8dfbca0df0d781df8704aa367882cc426b76e2767f3d13f"
+    },
+    {
+      "name": "angle_k_13.kmb",
+      "sha256": "958789349187a70ab3baf426655aacd2360113f71ab9a7b49d6624bd0e20bcd6"
+    },
+    {
+      "name": "angle_k_14.kmb",
+      "sha256": "f35c803dece96ceb0ba24040e7c232a73170a3692c4f5212bdeadcbfcd154212"
+    }
+  ],
+  "actual_word_raw_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "declared_word_mismatches": 473,
+  "all_accepted_numerics_use_actual_words": true,
+  "restore_byte_identical": true,
+  "core_owned_files": [
+    {
+      "path": "score8_chem_report.md",
+      "bytes": 9252,
+      "sha256": "7c1e3aba4bb5a7772865102b3a4df21e74faa0871d8be27fe22b20c7bb7a8751"
+    },
+    {
+      "path": "score8_chem_v27_nullspace_polish.py",
+      "bytes": 7122,
+      "sha256": "9a5fa883a14ad79ee9f407bcefdeaf18b91f65c2b63c10c60d0d20c6ca8bd972"
+    },
+    {
+      "path": "score8_chem_v27_schur_polish.py",
+      "bytes": 6475,
+      "sha256": "9ea92d644fe2009d5e34f90daf2551e0d87d6fd7588e91338bab5732edd63126"
+    },
+    {
+      "path": "score8_chem_v27_restore.py",
+      "bytes": 2097,
+      "sha256": "1b8405eca3af786d7197128a1056a73adbb1a8d0afd1768bf4c1865f810c8ccd"
+    },
+    {
+      "path": "score8_chem_v27_identity_patch.npz",
+      "bytes": 2941,
+      "sha256": "056b9c04f4260bbb7d099650e93916c7e5e6b876b18d16827f0c3d1060262188"
+    },
+    {
+      "path": "score8_chem_v27_final_arrays.json",
+      "bytes": 1183,
+      "sha256": "b209a9601772169b299fbd2e93a2ea482b02950a379916dbe6b47a4a0169ca1f"
+    },
+    {
+      "path": "score8_chem_v27_full_verification.json",
+      "bytes": 5179,
+      "sha256": "b03e22633a8053afb9c1fe631a859048e2924294c86fca69fccee8dc1be6fcd7"
+    },
+    {
+      "path": "score8_chem_v27_schur_results.json",
+      "bytes": 52210,
+      "sha256": "a6a8627f87b4fc309651af3dc753ae1174bac7d7422e12ee4f232f75ed688c00"
+    },
+    {
+      "path": "score8_chem_v27_nullspace2_results.json",
+      "bytes": 159724,
+      "sha256": "57b8380bda23f93e24bb3a28ff1ea5089cfaf8d27cf4dc4126ee0d81a4b979d9"
+    },
+    {
+      "path": "score8_chem_v27_nullspace3_results.json",
+      "bytes": 23099,
+      "sha256": "a82f9c793c7752e9bb64dac25059669871db166fbc6b59c37aeb81e49ba04c74"
+    },
+    {
+      "path": "score8_chem_v27_recovered_words.npy",
+      "bytes": 91628,
+      "sha256": "5d48123a971949acaacfc9dbe4e749bd6c3ef6fc20c1600b8f6019d5e9032ce2"
+    },
+    {
+      "path": "score8_chem_v27_recovered_words.json",
+      "bytes": 369,
+      "sha256": "55f0cd2d76aa6020e00c3745fca3882686d1fb2bba3066eb62de7f622b8cbc08"
+    },
+    {
+      "path": "score8_chem_v27_restore_check.json",
+      "bytes": 558,
+      "sha256": "6827ee4eb4b62d2c6d0d080ad228ceb4d8f3ba7fcd5d3c20c1e4d456e615985e"
+    }
+  ],
+  "experimental_owned_files": [
+    {
+      "path": "score8_chem_search_summary.json",
+      "bytes": 6630,
+      "sha256": "e257f59c28d00bc2f6de6fda240c7c48246643a31e8ba274cb04bbe51c1cea87"
+    },
+    {
+      "path": "score8_chem_shared_features.py",
+      "bytes": 5920,
+      "sha256": "c18030df9f3ae5fed81ed9dc62c9ca5841b249c1482313875a86786533412fe8"
+    },
+    {
+      "path": "score8_chem_product_features.py",
+      "bytes": 4482,
+      "sha256": "a54407ec543148fe054e21d6af338280dc84498c08ab9f305b5ca9ff3b6c2f3f"
+    },
+    {
+      "path": "score8_chem_feature_opt.py",
+      "bytes": 7937,
+      "sha256": "233e5e966585742b591639655a65b6058f2a7957b66e6a2402706f83891f3ad2"
+    },
+    {
+      "path": "score8_chem_build_feature_candidate.py",
+      "bytes": 5545,
+      "sha256": "475e61c2698928eb78971f3106550b593b4c84698e414c233b0189ba494a162d"
+    },
+    {
+      "path": "score8_chem_prune_last.py",
+      "bytes": 7542,
+      "sha256": "953ba423547a9f92f7bca4d3927acb460e10ccba6aa438808635eef544f257ca"
+    },
+    {
+      "path": "score8_chem_feature_opt_results.json",
+      "bytes": 26504,
+      "sha256": "ba9c3db310fcc53d4e850bc7b7d321be8d7cc547e6ef4f070e99094aa8bf208c"
+    },
+    {
+      "path": "score8_chem_feature_exact_proof.json",
+      "bytes": 19121,
+      "sha256": "0b5475dc0ff93165bf1751d88d0221dee54e23571a602f2ceb3675ef1abe5e4c"
+    },
+    {
+      "path": "score8_chem_prune_last_results.json",
+      "bytes": 114784,
+      "sha256": "b82cb9dd9c2e502a1e139cb80d48065ca9678a1792c67f0e6bb384ebc36682e9"
+    }
+  ],
+  "source_dependencies": [
+    {
+      "path": "score_chemistry_fast_model.py",
+      "bytes": 4492,
+      "sha256": "3ce5d4cc6f6067ed630ad9563a6b08cb82d5bbf24177a6a37be5874ffc978638"
+    },
+    {
+      "path": "score_chemistry_identity_polish.py",
+      "bytes": 6384,
+      "sha256": "1e241bb9994655c54bd4f9a6c4482c025e578c5af78699bc681ba69ee552e582"
+    },
+    {
+      "path": "inverse_v2_chemistry_refit.py",
+      "bytes": 8575,
+      "sha256": "87e1ff058ef71e615bfb576a1551e8c84c8332dfcd41ed683f9d049340a74d5f"
+    },
+    {
+      "path": "inverse_v2_chemistry_screen.py",
+      "bytes": 3787,
+      "sha256": "5a720ace24bca0f8bf50e0cbcf7345487f53adc471a817ec502de162bd5af7f9"
+    },
+    {
+      "path": "score_dfthcsos_fixed_words_verify.py",
+      "bytes": 6522,
+      "sha256": "0c345d05c85fd88b8b42c075ac8bdc70563d7236629f574e6ce7899102b59689"
+    },
+    {
+      "path": "outcome_v27_public_pins.json",
+      "bytes": 3139,
+      "sha256": "c475486d7205534eb8c9612c6c73cc33b01f64910ce09cb30ca7aab6452586c1"
+    },
+    {
+      "path": "score8_target28.json",
+      "bytes": 2126,
+      "sha256": "756c4cfe9371d5a4759ff2f235783189922c8f4aa55facbd3ef148c5030400df"
+    }
+  ],
+  "reproducible_intermediates_not_required_for_final": [
+    "score8_chem_shared_features.json",
+    "score8_chem_shared_features.npz",
+    "score8_chem_product_features.json"
+  ],
+  "no_global_optimality_claim": true,
+  "public_kaggle_score_observed": null,
+  "submission_performed": false,
+  "manifest_self_hash_excluded": true,
+  "stopping_reason": "Final Schur endpoint independently passed full verification; further tiny variants stopped as requested by root."
+}

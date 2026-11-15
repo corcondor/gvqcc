@@ -1,0 +1,22 @@
+{
+  "status": "PASS_SCOPED_PHASE_ONLY_BOUND",
+  "domain_maximum": 3133452,
+  "domain_first_for_count": 65,
+  "relative_tolerance": "1/16777216",
+  "disjoint_interval_exact_positive_gap": "71192606146561/281474976710656",
+  "all_intervals_below_one_eighth_exact_positive_gap": "4398012956671/4398046511104",
+  "distinct_required_phase_intervals": 3133388,
+  "minimum_generic_rotations": 22,
+  "argument": "For any fixed generic-predicate bit pattern, changing Clifford/T predicates shifts phase only by multiples of 1/8 turn. Hence there is at most one phase in (0,1/8) per generic pattern. The required disjoint intervals number more than 2^21, so at least 22 generic predicates are necessary.",
+  "arithmetic_cost_assumed_unchanged": 1478.7506100300882,
+  "qubits_assumed_unchanged": 46,
+  "maximum_possible_margin_turns_upper_bound": 3.367197427203894e-11,
+  "ideal_22_rotation_toffoli_equivalent_lower_bound": 144.9505963590266,
+  "ideal_phase_only_cost_lower_bound": 74690.25549389928,
+  "incumbent_cost": 78673.55534364567,
+  "maximum_phase_only_reduction_percent": 5.0630733953071685,
+  "cost_needed_if_only_this_component_reaches_portfolio28": 73117.83871770013,
+  "phase_only_can_reach28_under_assumptions": false,
+  "scope": "Boolean-predicate monomial phase model with a fixed measurement transcript; Clifford/T phases on the 1/8-turn lattice. Unchanged Q46 and arithmetic mean used for cost comparison. No claim of a global optimum or impossibility of arithmetic, width, new interferometric, or multi-component improvements.",
+  "script_sha256": "57aab29d5738ab8f8f32cc45ba84c210ad9192bf47ef9d3cfa72e8c6c948c67c"
+}

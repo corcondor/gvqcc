@@ -1,0 +1,441 @@
+{
+  "source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "paid_blocks": 95,
+  "eligible": 53,
+  "rejected": {
+    "live_internal_outcome": 42
+  },
+  "sample_input_count": 4442,
+  "sample_results": [
+    {
+      "start": 9285,
+      "end": 9302,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 9477,
+      "end": 9505,
+      "paid": 2,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 9713,
+      "end": 9763,
+      "paid": 4,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 9977,
+      "end": 10027,
+      "paid": 4,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 10241,
+      "end": 10291,
+      "paid": 4,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 10555,
+      "end": 10572,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 896
+    },
+    {
+      "start": 10590,
+      "end": 10608,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 10882,
+      "end": 10899,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 896
+    },
+    {
+      "start": 10917,
+      "end": 10943,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 11218,
+      "end": 11235,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 896
+    },
+    {
+      "start": 11253,
+      "end": 11279,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 11554,
+      "end": 11571,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 896
+    },
+    {
+      "start": 11589,
+      "end": 11615,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 11890,
+      "end": 11907,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 896
+    },
+    {
+      "start": 11925,
+      "end": 11951,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 12226,
+      "end": 12243,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 896
+    },
+    {
+      "start": 12261,
+      "end": 12287,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 12562,
+      "end": 12579,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 896
+    },
+    {
+      "start": 12597,
+      "end": 12623,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 12898,
+      "end": 12915,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 896
+    },
+    {
+      "start": 12933,
+      "end": 12959,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 13234,
+      "end": 13251,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 896
+    },
+    {
+      "start": 13269,
+      "end": 13295,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 780
+    },
+    {
+      "start": 13736,
+      "end": 13764,
+      "paid": 2,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 899
+    },
+    {
+      "start": 13774,
+      "end": 13800,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 820
+    },
+    {
+      "start": 14144,
+      "end": 14183,
+      "paid": 3,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 902
+    },
+    {
+      "start": 14185,
+      "end": 14211,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 861
+    },
+    {
+      "start": 14519,
+      "end": 14567,
+      "paid": 3,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 899
+    },
+    {
+      "start": 14809,
+      "end": 14846,
+      "paid": 2,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 902
+    },
+    {
+      "start": 17528,
+      "end": 17572,
+      "paid": 4,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 857
+    },
+    {
+      "start": 17814,
+      "end": 17858,
+      "paid": 4,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 859
+    },
+    {
+      "start": 18142,
+      "end": 18155,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 859
+    },
+    {
+      "start": 18422,
+      "end": 18445,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 859
+    },
+    {
+      "start": 18685,
+      "end": 18708,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 859
+    },
+    {
+      "start": 18921,
+      "end": 18944,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 859
+    },
+    {
+      "start": 19130,
+      "end": 19153,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 859
+    },
+    {
+      "start": 19312,
+      "end": 19335,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 859
+    },
+    {
+      "start": 19467,
+      "end": 19490,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 856
+    },
+    {
+      "start": 19946,
+      "end": 19963,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 829
+    },
+    {
+      "start": 20071,
+      "end": 20088,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 827
+    },
+    {
+      "start": 20192,
+      "end": 20209,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 825
+    },
+    {
+      "start": 20308,
+      "end": 20325,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 801
+    },
+    {
+      "start": 20419,
+      "end": 20436,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 752
+    },
+    {
+      "start": 20526,
+      "end": 20541,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 708
+    },
+    {
+      "start": 23807,
+      "end": 23812,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 325
+    },
+    {
+      "start": 23814,
+      "end": 23819,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 320
+    },
+    {
+      "start": 23821,
+      "end": 23826,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 313
+    },
+    {
+      "start": 23828,
+      "end": 23833,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 308
+    },
+    {
+      "start": 23835,
+      "end": 23840,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 298
+    },
+    {
+      "start": 23842,
+      "end": 23847,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 285
+    },
+    {
+      "start": 23849,
+      "end": 23854,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 270
+    },
+    {
+      "start": 23864,
+      "end": 23879,
+      "paid": 3,
+      "nonzero_terms": 2,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 253
+    },
+    {
+      "start": 23881,
+      "end": 23885,
+      "paid": 1,
+      "nonzero_terms": 1,
+      "result": "NO_QUADRATIC_MODEL",
+      "rank": 253
+    }
+  ],
+  "full_results": [],
+  "accepted": 0,
+  "full_domain_inputs": 0,
+  "seconds": 0.6912692890036851,
+  "scope": "whole conditional quantum-data identity blocks, all retained live entry wires, unrestricted quadratic Clifford phase; dead internal outcomes only; full domain for every accepted model",
+  "receipt_note": "Coarse screening fit coefficients omitted; all full-domain fit coefficients retained. Reproduce from the named score8 source and arguments in the report."
+}
