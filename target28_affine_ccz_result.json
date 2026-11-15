@@ -1,0 +1,120 @@
+{
+  "source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "inputs": 4221,
+  "blocks": [
+    {
+      "start": 9477,
+      "end": 9505,
+      "original_paid": 2,
+      "condition": [],
+      "model": {
+        "status": "NO_HIT_WITHIN_TIME_BUDGET",
+        "queries": 24312,
+        "cubic_cache": 9139
+      }
+    },
+    {
+      "start": 9713,
+      "end": 9763,
+      "original_paid": 4,
+      "condition": [],
+      "model": {
+        "status": "NO_HIT_WITHIN_TIME_BUDGET",
+        "queries": 22682,
+        "cubic_cache": 9139
+      }
+    },
+    {
+      "start": 9977,
+      "end": 10027,
+      "original_paid": 4,
+      "condition": [],
+      "model": {
+        "status": "NO_HIT_WITHIN_TIME_BUDGET",
+        "queries": 22792,
+        "cubic_cache": 9139
+      }
+    },
+    {
+      "start": 10241,
+      "end": 10291,
+      "original_paid": 4,
+      "condition": [],
+      "model": {
+        "status": "NO_HIT_WITHIN_TIME_BUDGET",
+        "queries": 22201,
+        "cubic_cache": 9139
+      }
+    },
+    {
+      "start": 13736,
+      "end": 13764,
+      "original_paid": 2,
+      "condition": [],
+      "model": {
+        "status": "NO_HIT_WITHIN_TIME_BUDGET",
+        "queries": 18132,
+        "cubic_cache": 11480
+      }
+    },
+    {
+      "start": 14144,
+      "end": 14183,
+      "original_paid": 3,
+      "condition": [],
+      "model": {
+        "status": "NO_HIT_WITHIN_TIME_BUDGET",
+        "queries": 18862,
+        "cubic_cache": 11480
+      }
+    },
+    {
+      "start": 14519,
+      "end": 14567,
+      "original_paid": 3,
+      "condition": [],
+      "model": {
+        "status": "NO_HIT_WITHIN_TIME_BUDGET",
+        "queries": 20224,
+        "cubic_cache": 11480
+      }
+    },
+    {
+      "start": 14809,
+      "end": 14846,
+      "original_paid": 2,
+      "condition": [],
+      "model": {
+        "status": "NO_HIT_WITHIN_TIME_BUDGET",
+        "queries": 17891,
+        "cubic_cache": 12341
+      }
+    },
+    {
+      "start": 17528,
+      "end": 17572,
+      "original_paid": 4,
+      "condition": [],
+      "model": {
+        "status": "NO_HIT_WITHIN_TIME_BUDGET",
+        "queries": 19708,
+        "cubic_cache": 10660
+      }
+    },
+    {
+      "start": 17814,
+      "end": 17858,
+      "original_paid": 4,
+      "condition": [],
+      "model": {
+        "status": "NO_HIT_WITHIN_TIME_BUDGET",
+        "queries": 20212,
+        "cubic_cache": 10660
+      }
+    }
+  ],
+  "scope": "First parity weight 2-4; second weight 1-4; arbitrary third parity; arbitrary quadratic correction. Fixed wall-clock budget; no general lower bound.",
+  "full_domain_hits": 0,
+  "candidate_emitted": false,
+  "full_official_verification": false
+}
