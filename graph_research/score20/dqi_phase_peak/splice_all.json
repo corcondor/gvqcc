@@ -1,0 +1,686 @@
+{
+  "status": "EXACT_MASKED_COMPONENT_SPLICE",
+  "selected": 82,
+  "dropped_helper_histogram": {
+    "888": 42,
+    "884": 8,
+    "885": 32
+  },
+  "rejected": [],
+  "output": {
+    "header": {
+      "version": 2,
+      "num_qubits": 889,
+      "num_bits": 208581,
+      "num_registers": 4165,
+      "num_ops": 59404276,
+      "num_ops_with_3_target_qubits": 382894,
+      "num_ops_with_2_target_qubits": 31944152,
+      "num_ops_with_1_target_qubits": 274327,
+      "num_ops_with_1_target_bit": 25418647,
+      "num_ops_with_1_condition_bit": 25885441,
+      "num_ops_with_angle": 0,
+      "num_info_tags": 0,
+      "num_info_tag_chars": 0
+    },
+    "sha256": "9d97cda71833e8ae4776355b9c39d3b90fba6f778bf4e869345feff477892d1d",
+    "sites": [
+      {
+        "old_start": 35704014,
+        "old_end": 35723337,
+        "new_start": 35704014,
+        "new_end": 35729868,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 35755738,
+        "old_end": 35775061,
+        "new_start": 35762269,
+        "new_end": 35788123,
+        "dropped_helper": 884,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 35807444,
+        "old_end": 35826767,
+        "new_start": 35820506,
+        "new_end": 35846360,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 35858922,
+        "old_end": 35878245,
+        "new_start": 35878515,
+        "new_end": 35904369,
+        "dropped_helper": 884,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 35910400,
+        "old_end": 35929723,
+        "new_start": 35936524,
+        "new_end": 35962378,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 35962138,
+        "old_end": 35981461,
+        "new_start": 35994793,
+        "new_end": 36020647,
+        "dropped_helper": 884,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 36013885,
+        "old_end": 36033208,
+        "new_start": 36053071,
+        "new_end": 36078925,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 36065623,
+        "old_end": 36084946,
+        "new_start": 36111340,
+        "new_end": 36137194,
+        "dropped_helper": 884,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 36117402,
+        "old_end": 36136725,
+        "new_start": 36169650,
+        "new_end": 36195504,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 36169051,
+        "old_end": 36188374,
+        "new_start": 36227830,
+        "new_end": 36253684,
+        "dropped_helper": 884,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 36220444,
+        "old_end": 36239767,
+        "new_start": 36285754,
+        "new_end": 36311608,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 36271821,
+        "old_end": 36291144,
+        "new_start": 36343662,
+        "new_end": 36369516,
+        "dropped_helper": 884,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 36323275,
+        "old_end": 36342598,
+        "new_start": 36401647,
+        "new_end": 36427501,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 36374548,
+        "old_end": 36393871,
+        "new_start": 36459451,
+        "new_end": 36485305,
+        "dropped_helper": 884,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 36425922,
+        "old_end": 36445245,
+        "new_start": 36517356,
+        "new_end": 36543210,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 36477354,
+        "old_end": 36496677,
+        "new_start": 36575319,
+        "new_end": 36601173,
+        "dropped_helper": 884,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 41015597,
+        "old_end": 41034920,
+        "new_start": 41120093,
+        "new_end": 41145947,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 41409575,
+        "old_end": 41428898,
+        "new_start": 41520602,
+        "new_end": 41546456,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 41783837,
+        "old_end": 41803160,
+        "new_start": 41901395,
+        "new_end": 41927249,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 42140468,
+        "old_end": 42159791,
+        "new_start": 42264557,
+        "new_end": 42290411,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 42483760,
+        "old_end": 42503083,
+        "new_start": 42614380,
+        "new_end": 42640234,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 42807481,
+        "old_end": 42826804,
+        "new_start": 42944632,
+        "new_end": 42970486,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 43112622,
+        "old_end": 43131945,
+        "new_start": 43256304,
+        "new_end": 43282158,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 43398377,
+        "old_end": 43417700,
+        "new_start": 43548590,
+        "new_end": 43574444,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 43670109,
+        "old_end": 43689432,
+        "new_start": 43826853,
+        "new_end": 43852707,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 43924391,
+        "old_end": 43943714,
+        "new_start": 44087666,
+        "new_end": 44113520,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 44162541,
+        "old_end": 44181864,
+        "new_start": 44332347,
+        "new_end": 44358201,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 44383946,
+        "old_end": 44403269,
+        "new_start": 44560283,
+        "new_end": 44586137,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 44595766,
+        "old_end": 44615089,
+        "new_start": 44778634,
+        "new_end": 44804488,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 44793020,
+        "old_end": 44812343,
+        "new_start": 44982419,
+        "new_end": 45008273,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 44977085,
+        "old_end": 44996408,
+        "new_start": 45173015,
+        "new_end": 45198869,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 45147386,
+        "old_end": 45166709,
+        "new_start": 45349847,
+        "new_end": 45375701,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 45306645,
+        "old_end": 45325968,
+        "new_start": 45515637,
+        "new_end": 45541491,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 45454471,
+        "old_end": 45473794,
+        "new_start": 45669994,
+        "new_end": 45695848,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 45591454,
+        "old_end": 45610777,
+        "new_start": 45813508,
+        "new_end": 45839362,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 45719731,
+        "old_end": 45739054,
+        "new_start": 45948316,
+        "new_end": 45974170,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 45839285,
+        "old_end": 45858608,
+        "new_start": 46074401,
+        "new_end": 46100255,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 45948680,
+        "old_end": 45968003,
+        "new_start": 46190327,
+        "new_end": 46216181,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46049559,
+        "old_end": 46068882,
+        "new_start": 46297737,
+        "new_end": 46323591,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46141656,
+        "old_end": 46160979,
+        "new_start": 46396365,
+        "new_end": 46422219,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46227301,
+        "old_end": 46246624,
+        "new_start": 46488541,
+        "new_end": 46514395,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46305687,
+        "old_end": 46325010,
+        "new_start": 46573458,
+        "new_end": 46599312,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46377427,
+        "old_end": 46396750,
+        "new_start": 46651729,
+        "new_end": 46677583,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46443989,
+        "old_end": 46463312,
+        "new_start": 46724822,
+        "new_end": 46750676,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46505910,
+        "old_end": 46525233,
+        "new_start": 46793274,
+        "new_end": 46819128,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46563291,
+        "old_end": 46582614,
+        "new_start": 46857186,
+        "new_end": 46883040,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46616820,
+        "old_end": 46636143,
+        "new_start": 46917246,
+        "new_end": 46943100,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46667212,
+        "old_end": 46686535,
+        "new_start": 46974169,
+        "new_end": 47000023,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46715078,
+        "old_end": 46734401,
+        "new_start": 47028566,
+        "new_end": 47054420,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46760658,
+        "old_end": 46779981,
+        "new_start": 47080677,
+        "new_end": 47106531,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 46794724,
+        "old_end": 46814047,
+        "new_start": 47121274,
+        "new_end": 47147128,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 47202851,
+        "old_end": 47222174,
+        "new_start": 47535932,
+        "new_end": 47561786,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 47526765,
+        "old_end": 47546088,
+        "new_start": 47866377,
+        "new_end": 47892231,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 47843515,
+        "old_end": 47862838,
+        "new_start": 48189658,
+        "new_end": 48215512,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 48156525,
+        "old_end": 48175848,
+        "new_start": 48509199,
+        "new_end": 48535053,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 48462459,
+        "old_end": 48481782,
+        "new_start": 48821664,
+        "new_end": 48847518,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 48762369,
+        "old_end": 48781692,
+        "new_start": 49128105,
+        "new_end": 49153959,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 49055150,
+        "old_end": 49074473,
+        "new_start": 49427417,
+        "new_end": 49453271,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 49342123,
+        "old_end": 49361446,
+        "new_start": 49720921,
+        "new_end": 49746775,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 49622008,
+        "old_end": 49641331,
+        "new_start": 50007337,
+        "new_end": 50033191,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 49895721,
+        "old_end": 49915044,
+        "new_start": 50287581,
+        "new_end": 50313435,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 50162331,
+        "old_end": 50181654,
+        "new_start": 50560722,
+        "new_end": 50586576,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 50423113,
+        "old_end": 50442436,
+        "new_start": 50828035,
+        "new_end": 50853889,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 50677093,
+        "old_end": 50696416,
+        "new_start": 51088546,
+        "new_end": 51114400,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 50924699,
+        "old_end": 50944022,
+        "new_start": 51342683,
+        "new_end": 51368537,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 51165484,
+        "old_end": 51184807,
+        "new_start": 51589999,
+        "new_end": 51615853,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 51400107,
+        "old_end": 51419430,
+        "new_start": 51831153,
+        "new_end": 51857007,
+        "dropped_helper": 888,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 51627805,
+        "old_end": 51647128,
+        "new_start": 52065382,
+        "new_end": 52091236,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 51848909,
+        "old_end": 51868232,
+        "new_start": 52293017,
+        "new_end": 52318871,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 52063263,
+        "old_end": 52082586,
+        "new_start": 52513902,
+        "new_end": 52539756,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 52271743,
+        "old_end": 52291066,
+        "new_start": 52728913,
+        "new_end": 52754767,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 52473571,
+        "old_end": 52492894,
+        "new_start": 52937272,
+        "new_end": 52963126,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 52669015,
+        "old_end": 52688338,
+        "new_start": 53139247,
+        "new_end": 53165101,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 52857820,
+        "old_end": 52877143,
+        "new_start": 53334583,
+        "new_end": 53360437,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 53040309,
+        "old_end": 53059632,
+        "new_start": 53523603,
+        "new_end": 53549457,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 53216194,
+        "old_end": 53235517,
+        "new_start": 53706019,
+        "new_end": 53731873,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 53385671,
+        "old_end": 53404994,
+        "new_start": 53882027,
+        "new_end": 53907881,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 53548603,
+        "old_end": 53567926,
+        "new_start": 54051490,
+        "new_end": 54077344,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 53705223,
+        "old_end": 53724546,
+        "new_start": 54214641,
+        "new_end": 54240495,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 53855333,
+        "old_end": 53874656,
+        "new_start": 54371282,
+        "new_end": 54397136,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 53999049,
+        "old_end": 54018372,
+        "new_start": 54521529,
+        "new_end": 54547383,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      },
+      {
+        "old_start": 54136318,
+        "old_end": 54155641,
+        "new_start": 54665329,
+        "new_end": 54691183,
+        "dropped_helper": 885,
+        "old_scratch_bits_dead": 270
+      }
+    ]
+  }
+}

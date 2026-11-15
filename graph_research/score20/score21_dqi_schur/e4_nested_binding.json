@@ -1,0 +1,588 @@
+{
+  "modeled_core_Toffoli": 291,
+  "component_qubits": 72,
+  "component_operations": 12967,
+  "scope": "nested source binding; exact whole contiguous old operation template, through injective wire renaming",
+  "source_module": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/after_c5/extractor_width/direct_carry_arithmetic.py",
+  "input_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "opcode_matches": 82,
+  "matched": [
+    {
+      "start": 17146179,
+      "end": 17159146,
+      "source_slot": 3,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 17191036,
+      "end": 17204003,
+      "source_slot": 4,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 17242408,
+      "end": 17255375,
+      "source_slot": 5,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 17300166,
+      "end": 17313133,
+      "source_slot": 6,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 17364502,
+      "end": 17377469,
+      "source_slot": 7,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 17434928,
+      "end": 17447895,
+      "source_slot": 8,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 17511967,
+      "end": 17524934,
+      "source_slot": 9,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 17595406,
+      "end": 17608373,
+      "source_slot": 10,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 17685517,
+      "end": 17698484,
+      "source_slot": 11,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 17781920,
+      "end": 17794887,
+      "source_slot": 12,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 17885030,
+      "end": 17897997,
+      "source_slot": 13,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 17994516,
+      "end": 18007483,
+      "source_slot": 14,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 18110722,
+      "end": 18123689,
+      "source_slot": 15,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 18232418,
+      "end": 18245385,
+      "source_slot": 16,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 18360932,
+      "end": 18373899,
+      "source_slot": 17,
+      "target_is_carry": true,
+      "positions_at_Q889": 0
+    },
+    {
+      "start": 18496029,
+      "end": 18508996,
+      "source_slot": 18,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 18637982,
+      "end": 18650949,
+      "source_slot": 19,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 18786073,
+      "end": 18799040,
+      "source_slot": 20,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 18941053,
+      "end": 18954020,
+      "source_slot": 21,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 19102399,
+      "end": 19115366,
+      "source_slot": 22,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 19270615,
+      "end": 19283582,
+      "source_slot": 23,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 19444437,
+      "end": 19457404,
+      "source_slot": 24,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 19625430,
+      "end": 19638397,
+      "source_slot": 25,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 19812587,
+      "end": 19825554,
+      "source_slot": 26,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 20006900,
+      "end": 20019867,
+      "source_slot": 27,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 20206997,
+      "end": 20219964,
+      "source_slot": 28,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 20414291,
+      "end": 20427258,
+      "source_slot": 29,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 20627601,
+      "end": 20640568,
+      "source_slot": 30,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 20848055,
+      "end": 20861022,
+      "source_slot": 31,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 21072495,
+      "end": 21085462,
+      "source_slot": 32,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 21304167,
+      "end": 21317134,
+      "source_slot": 33,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 21542299,
+      "end": 21555266,
+      "source_slot": 34,
+      "target_is_carry": true,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 35689636,
+      "end": 35702603,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 7631
+    },
+    {
+      "start": 35741360,
+      "end": 35754327,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 35793066,
+      "end": 35806033,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 35844544,
+      "end": 35857511,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 35896022,
+      "end": 35908989,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 35947760,
+      "end": 35960727,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 35999507,
+      "end": 36012474,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 36051245,
+      "end": 36064212,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 36103024,
+      "end": 36115991,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 36154673,
+      "end": 36167640,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 36206066,
+      "end": 36219033,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 36257443,
+      "end": 36270410,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 36308897,
+      "end": 36321864,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 36360170,
+      "end": 36373137,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 36411544,
+      "end": 36424511,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 36462976,
+      "end": 36475943,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 41001219,
+      "end": 41014186,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8779
+    },
+    {
+      "start": 41395197,
+      "end": 41408164,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 41769459,
+      "end": 41782426,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 42126090,
+      "end": 42139057,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 42469382,
+      "end": 42482349,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 42793103,
+      "end": 42806070,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 43098244,
+      "end": 43111211,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 43383999,
+      "end": 43396966,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 43655731,
+      "end": 43668698,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 43910013,
+      "end": 43922980,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 44148163,
+      "end": 44161130,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 44369568,
+      "end": 44382535,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 44581388,
+      "end": 44594355,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 44778642,
+      "end": 44791609,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 44962707,
+      "end": 44975674,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 45133008,
+      "end": 45145975,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 45292267,
+      "end": 45305234,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 45440093,
+      "end": 45453060,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 45577076,
+      "end": 45590043,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 45705353,
+      "end": 45718320,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 45824907,
+      "end": 45837874,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 45934302,
+      "end": 45947269,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46035181,
+      "end": 46048148,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46127278,
+      "end": 46140245,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46212923,
+      "end": 46225890,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46291309,
+      "end": 46304276,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46363049,
+      "end": 46376016,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46429611,
+      "end": 46442578,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46491532,
+      "end": 46504499,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46548913,
+      "end": 46561880,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46602442,
+      "end": 46615409,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46652834,
+      "end": 46665801,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46700700,
+      "end": 46713667,
+      "source_slot": null,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    },
+    {
+      "start": 46746280,
+      "end": 46759247,
+      "source_slot": 34,
+      "target_is_carry": false,
+      "positions_at_Q889": 8620
+    }
+  ],
+  "exact_matches": 82,
+  "exact_matches_with_Q889": 67,
+  "covered_Q889_positions": 559897
+}

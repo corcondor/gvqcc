@@ -1,0 +1,68 @@
+{
+  "divide": {
+    "width": 62,
+    "helper_width": 14,
+    "static_Toffoli": 852,
+    "sha256": "d319743fbccd730e7ce09f11a9d8bfd3071ce11d446cf60f30d604a97e29f3dc",
+    "trials": [
+      {
+        "shots": 8192,
+        "seed": 631,
+        "errors": 0,
+        "mean_Toffoli": 851.869140625
+      },
+      {
+        "shots": 8192,
+        "seed": 1631,
+        "errors": 0,
+        "mean_Toffoli": 851.88671875
+      }
+    ],
+    "a_zero_nonzero_b_fixtures": 4095,
+    "zero_source_zero_target": true
+  },
+  "multiply": {
+    "width": 62,
+    "helper_width": 14,
+    "static_Toffoli": 852,
+    "sha256": "ecec2fd9da4ce3d835be2d19b2166387e13c63cceb95a96808cebf91dcc83be1",
+    "trials": [
+      {
+        "shots": 8192,
+        "seed": 631,
+        "errors": 0,
+        "mean_Toffoli": 851.86865234375
+      },
+      {
+        "shots": 8192,
+        "seed": 1631,
+        "errors": 0,
+        "mean_Toffoli": 851.89306640625
+      }
+    ],
+    "a_zero_nonzero_b_fixtures": 4095,
+    "zero_source_zero_target": true
+  },
+  "adjoint": {
+    "width": 62,
+    "helper_width": 14,
+    "static_Toffoli": 852,
+    "sha256": "29e6ad187b3bfd74a52b191bb7bbb0956a256a64736549188ad8637b95ee73e9",
+    "trials": [
+      {
+        "shots": 8192,
+        "seed": 631,
+        "errors": 0,
+        "mean_Toffoli": 851.86865234375
+      },
+      {
+        "shots": 8192,
+        "seed": 1631,
+        "errors": 0,
+        "mean_Toffoli": 851.89306640625
+      }
+    ],
+    "a_zero_nonzero_b_fixtures": 4095,
+    "zero_source_zero_target": true
+  }
+}

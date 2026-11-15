@@ -1,0 +1,13 @@
+{
+  "modeled_core_Toffoli": 294,
+  "component_qubits": 72,
+  "component_operations": 12831,
+  "scope": "exact whole contiguous old operation template, through injective wire renaming",
+  "source_module": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/after_c5/extractor_width/direct_carry_arithmetic.py",
+  "input_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "opcode_matches": 0,
+  "matched": [],
+  "exact_matches": 0,
+  "exact_matches_with_Q889": 0,
+  "covered_Q889_positions": 0
+}

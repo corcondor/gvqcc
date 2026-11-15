@@ -1,0 +1,81 @@
+{
+  "degree": 5,
+  "node": 29,
+  "expected_t_increase_per_prefix": 15,
+  "rows": [
+    {
+      "case": "original_prefix",
+      "helper_peak": 24,
+      "instructions": 18086,
+      "prefix_operations": 18086,
+      "native_shots": 2048,
+      "static_t": 294,
+      "marks": {},
+      "sha256": "6fcffb59924ceb1049e393f11d61651247fb2e3b850f2f8b8753060e383e036e"
+    },
+    {
+      "case": "original_closed",
+      "helper_peak": 24,
+      "instructions": 72424,
+      "prefix_operations": 18086,
+      "native_shots": 2048,
+      "static_t": 867,
+      "marks": {},
+      "sha256": "99a2a2a1827980b24cc559b8999ca876899c98c5436816889d1202842ed24355"
+    },
+    {
+      "case": "split_prefix",
+      "helper_peak": 24,
+      "instructions": 19397,
+      "prefix_operations": 19397,
+      "native_shots": 2048,
+      "static_t": 309,
+      "marks": {
+        "begin_scalar_updates": {
+          "operation": 1335,
+          "live_extra": 0
+        },
+        "end_scalar_updates": {
+          "operation": 9157,
+          "live_extra": 0
+        },
+        "begin_residue": {
+          "operation": 9749,
+          "live_extra": 0
+        },
+        "end_residue": {
+          "operation": 15994,
+          "live_extra": 0
+        }
+      },
+      "sha256": "aa0fadad33a8a49363face89ba695b4dbfb481b45a2e6ad1f63e908e47c297df"
+    },
+    {
+      "case": "split_closed",
+      "helper_peak": 24,
+      "instructions": 73735,
+      "prefix_operations": 19397,
+      "native_shots": 2048,
+      "static_t": 882,
+      "marks": {
+        "begin_scalar_updates": {
+          "operation": 1335,
+          "live_extra": 0
+        },
+        "end_scalar_updates": {
+          "operation": 9157,
+          "live_extra": 0
+        },
+        "begin_residue": {
+          "operation": 9749,
+          "live_extra": 0
+        },
+        "end_residue": {
+          "operation": 15994,
+          "live_extra": 0
+        }
+      },
+      "sha256": "343064f4540ad20097b84405b844a35dadaba5714409cfef340fb39b800482d0"
+    }
+  ]
+}

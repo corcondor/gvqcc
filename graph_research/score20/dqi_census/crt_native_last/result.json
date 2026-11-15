@@ -1,0 +1,81 @@
+{
+  "degree": 34,
+  "node": 0,
+  "expected_t_increase_per_prefix": 15,
+  "rows": [
+    {
+      "case": "original_prefix",
+      "helper_peak": 24,
+      "instructions": 378000,
+      "prefix_operations": 378000,
+      "native_shots": 2048,
+      "static_t": 1512,
+      "marks": {},
+      "sha256": "f432afb3072823aaec088925641df8b1a04b6ccfe8a7a120fdb556ca388cbea2"
+    },
+    {
+      "case": "original_closed",
+      "helper_peak": 24,
+      "instructions": 775735,
+      "prefix_operations": 378000,
+      "native_shots": 2048,
+      "static_t": 3303,
+      "marks": {},
+      "sha256": "81e70cddbcd3d275cfd8b0a7e85facb44a2165851a2b57194934056bde5755b2"
+    },
+    {
+      "case": "split_prefix",
+      "helper_peak": 24,
+      "instructions": 371155,
+      "prefix_operations": 371155,
+      "native_shots": 2048,
+      "static_t": 1527,
+      "marks": {
+        "begin_scalar_updates": {
+          "operation": 70152,
+          "live_extra": 0
+        },
+        "end_scalar_updates": {
+          "operation": 268978,
+          "live_extra": 0
+        },
+        "begin_residue": {
+          "operation": 273417,
+          "live_extra": 0
+        },
+        "end_residue": {
+          "operation": 279662,
+          "live_extra": 0
+        }
+      },
+      "sha256": "67702bc9fc4ef8ab6063b049ab61b91fbc82dfe755104d8c9899a7b08d9c8104"
+    },
+    {
+      "case": "split_closed",
+      "helper_peak": 24,
+      "instructions": 768890,
+      "prefix_operations": 371155,
+      "native_shots": 2048,
+      "static_t": 3318,
+      "marks": {
+        "begin_scalar_updates": {
+          "operation": 70152,
+          "live_extra": 0
+        },
+        "end_scalar_updates": {
+          "operation": 268978,
+          "live_extra": 0
+        },
+        "begin_residue": {
+          "operation": 273417,
+          "live_extra": 0
+        },
+        "end_residue": {
+          "operation": 279662,
+          "live_extra": 0
+        }
+      },
+      "sha256": "2d546fd9959c17941104f448478fdb0aff242335128c24a0c599ca9c2779f456"
+    }
+  ]
+}

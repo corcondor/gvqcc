@@ -1,0 +1,419 @@
+{
+  "source": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "samples": 2797,
+  "counts": {
+    "converged": 2,
+    "paid_savings_model": 2
+  },
+  "hits": [
+    {
+      "start": 22310,
+      "end": 22401,
+      "corrections": [
+        {
+          "guards": [
+            [
+              "b49",
+              18
+            ]
+          ],
+          "site": 22319,
+          "terms": [
+            [
+              22319,
+              "Z q28"
+            ],
+            [
+              22319,
+              "Z q29"
+            ],
+            [
+              22319,
+              "Z q31"
+            ],
+            [
+              22319,
+              "CZ q8 q29"
+            ],
+            [
+              22319,
+              "CZ q8 q31"
+            ],
+            [
+              22319,
+              "CZ q8 q32"
+            ],
+            [
+              22319,
+              "CZ q9 q10"
+            ],
+            [
+              22319,
+              "CZ q9 q21"
+            ],
+            [
+              22319,
+              "CZ q9 q31"
+            ],
+            [
+              22319,
+              "CZ q9 q32"
+            ],
+            [
+              22319,
+              "CZ q9 q35"
+            ],
+            [
+              22319,
+              "CZ q21 q28"
+            ],
+            [
+              22319,
+              "CZ q29 q33"
+            ],
+            [
+              22319,
+              "CZ q29 q34"
+            ],
+            [
+              22319,
+              "CZ q29 q45"
+            ],
+            [
+              22319,
+              "CZ q31 q32"
+            ],
+            [
+              22319,
+              "CZ q31 q34"
+            ],
+            [
+              22319,
+              "CZ q32 q33"
+            ],
+            [
+              22319,
+              "CZ q32 q34"
+            ],
+            [
+              22319,
+              "CZ q32 q42"
+            ],
+            [
+              22319,
+              "CZ q33 q35"
+            ],
+            [
+              22319,
+              "CZ q42 q45"
+            ]
+          ]
+        },
+        {
+          "guards": [
+            [
+              "b49",
+              22
+            ]
+          ],
+          "site": 22401,
+          "terms": [
+            [
+              22401,
+              "CZ q8 q33"
+            ]
+          ]
+        },
+        {
+          "guards": [
+            [
+              "b49",
+              19
+            ]
+          ],
+          "site": 22376,
+          "terms": [
+            [
+              22376,
+              "PARITY_CCZ q28 q34 q10 q21 q29 q31 q35 q41"
+            ]
+          ]
+        }
+      ],
+      "run_on": [],
+      "pair": null,
+      "removed": "CCX q28 q34 q37",
+      "expected_cost_bound": "1/2",
+      "expected_saving_bound": "1/2"
+    },
+    {
+      "start": 22351,
+      "end": 22393,
+      "corrections": [
+        {
+          "guards": [
+            [
+              "b49",
+              20
+            ]
+          ],
+          "site": 22393,
+          "terms": [
+            [
+              22393,
+              "CZ q10 q29"
+            ]
+          ]
+        },
+        {
+          "guards": [
+            [
+              "b49",
+              19
+            ]
+          ],
+          "site": 22367,
+          "terms": [
+            [
+              22367,
+              "PARITY_CCZ q35 q21 q8 q9 q34 q37 q45"
+            ]
+          ]
+        }
+      ],
+      "run_on": [],
+      "pair": null,
+      "removed": "CCX q35 q21 q41",
+      "expected_cost_bound": "1/2",
+      "expected_saving_bound": "1/2"
+    }
+  ],
+  "validated": [
+    {
+      "start": 22310,
+      "end": 22401,
+      "corrections": [
+        {
+          "guards": [
+            [
+              "b49",
+              18
+            ]
+          ],
+          "site": 22319,
+          "terms": [
+            [
+              22319,
+              "Z q28"
+            ],
+            [
+              22319,
+              "Z q29"
+            ],
+            [
+              22319,
+              "Z q31"
+            ],
+            [
+              22319,
+              "CZ q8 q29"
+            ],
+            [
+              22319,
+              "CZ q8 q31"
+            ],
+            [
+              22319,
+              "CZ q8 q32"
+            ],
+            [
+              22319,
+              "CZ q9 q10"
+            ],
+            [
+              22319,
+              "CZ q9 q21"
+            ],
+            [
+              22319,
+              "CZ q9 q31"
+            ],
+            [
+              22319,
+              "CZ q9 q32"
+            ],
+            [
+              22319,
+              "CZ q9 q35"
+            ],
+            [
+              22319,
+              "CZ q21 q28"
+            ],
+            [
+              22319,
+              "CZ q29 q33"
+            ],
+            [
+              22319,
+              "CZ q29 q34"
+            ],
+            [
+              22319,
+              "CZ q29 q45"
+            ],
+            [
+              22319,
+              "CZ q31 q32"
+            ],
+            [
+              22319,
+              "CZ q31 q34"
+            ],
+            [
+              22319,
+              "CZ q32 q33"
+            ],
+            [
+              22319,
+              "CZ q32 q34"
+            ],
+            [
+              22319,
+              "CZ q32 q42"
+            ],
+            [
+              22319,
+              "CZ q33 q35"
+            ],
+            [
+              22319,
+              "CZ q42 q45"
+            ]
+          ]
+        },
+        {
+          "guards": [
+            [
+              "b49",
+              22
+            ]
+          ],
+          "site": 22401,
+          "terms": [
+            [
+              22401,
+              "CZ q8 q33"
+            ]
+          ]
+        },
+        {
+          "guards": [
+            [
+              "b49",
+              19
+            ]
+          ],
+          "site": 22376,
+          "terms": [
+            [
+              22376,
+              "PARITY_CCZ q28 q34 q10 q21 q29 q31 q35 q41"
+            ]
+          ]
+        }
+      ],
+      "run_on": [],
+      "pair": null,
+      "removed": "CCX q28 q34 q37",
+      "expected_cost_bound": "1/2",
+      "expected_saving_bound": "1/2"
+    },
+    {
+      "start": 22351,
+      "end": 22393,
+      "corrections": [
+        {
+          "guards": [
+            [
+              "b49",
+              20
+            ]
+          ],
+          "site": 22393,
+          "terms": [
+            [
+              22393,
+              "CZ q10 q29"
+            ]
+          ]
+        },
+        {
+          "guards": [
+            [
+              "b49",
+              19
+            ]
+          ],
+          "site": 22367,
+          "terms": [
+            [
+              22367,
+              "PARITY_CCZ q35 q21 q8 q9 q34 q37 q45"
+            ]
+          ]
+        }
+      ],
+      "run_on": [],
+      "pair": null,
+      "removed": "CCX q35 q21 q41",
+      "expected_cost_bound": "1/2",
+      "expected_saving_bound": "1/2"
+    }
+  ],
+  "selected": [
+    {
+      "start": 22351,
+      "end": 22393,
+      "corrections": [
+        {
+          "guards": [
+            [
+              "b49",
+              20
+            ]
+          ],
+          "site": 22393,
+          "terms": [
+            [
+              22393,
+              "CZ q10 q29"
+            ]
+          ]
+        },
+        {
+          "guards": [
+            [
+              "b49",
+              19
+            ]
+          ],
+          "site": 22367,
+          "terms": [
+            [
+              22367,
+              "PARITY_CCZ q35 q21 q8 q9 q34 q37 q45"
+            ]
+          ]
+        }
+      ],
+      "run_on": [],
+      "pair": null,
+      "removed": "CCX q35 q21 q41",
+      "expected_cost_bound": "1/2",
+      "expected_saving_bound": "1/2"
+    }
+  ],
+  "candidate_sha": "e3b4498ab7dea405aa0e221dbc77de8e48a53eac20c39d55977bba185a457e2d",
+  "exact_minimum_expected_savings": "1/2"
+}

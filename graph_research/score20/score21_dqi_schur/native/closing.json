@@ -1,0 +1,66 @@
+{
+  "original_1": {
+    "T": 940,
+    "Q": 96,
+    "trials": [
+      {
+        "seed": 237,
+        "shots": 2048,
+        "errors": 0
+      },
+      {
+        "seed": 1237,
+        "shots": 2048,
+        "errors": 0
+      }
+    ]
+  },
+  "original_0": {
+    "T": 658,
+    "Q": 96,
+    "trials": [
+      {
+        "seed": 237,
+        "shots": 2048,
+        "errors": 0
+      },
+      {
+        "seed": 1237,
+        "shots": 2048,
+        "errors": 0
+      }
+    ]
+  },
+  "schur_1": {
+    "T": 1498,
+    "Q": 96,
+    "trials": [
+      {
+        "seed": 237,
+        "shots": 2048,
+        "errors": 0
+      },
+      {
+        "seed": 1237,
+        "shots": 2048,
+        "errors": 0
+      }
+    ]
+  },
+  "schur_0": {
+    "T": 1216,
+    "Q": 96,
+    "trials": [
+      {
+        "seed": 237,
+        "shots": 2048,
+        "errors": 0
+      },
+      {
+        "seed": 1237,
+        "shots": 2048,
+        "errors": 0
+      }
+    ]
+  }
+}

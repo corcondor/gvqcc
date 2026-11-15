@@ -1,0 +1,64 @@
+{
+  "whole_width_before": 889,
+  "whole_width_after": 889,
+  "stages": [
+    [
+      [
+        26074636,
+        26452636
+      ]
+    ],
+    [
+      [
+        26074636,
+        26445791
+      ]
+    ]
+  ],
+  "residue": [
+    [
+      26348053,
+      26354298
+    ]
+  ],
+  "measure": {
+    "889": {
+      "old_whole": 9484383,
+      "new_whole": 9116394,
+      "old_block": 373046,
+      "new_block": 5057,
+      "new_block_inside_residue": 5057,
+      "new_block_peak_intervals": [
+        [
+          26349217,
+          26354274
+        ]
+      ]
+    },
+    "888": {
+      "old_whole": 9835323,
+      "new_whole": 9467468,
+      "old_block": 373050,
+      "new_block": 5195,
+      "new_block_inside_residue": 5195,
+      "new_block_peak_intervals": null
+    },
+    "885": {
+      "old_whole": 10039747,
+      "new_whole": 9672768,
+      "old_block": 373067,
+      "new_block": 6088,
+      "new_block_inside_residue": 6088,
+      "new_block_peak_intervals": null
+    },
+    "881": {
+      "old_whole": 10274028,
+      "new_whole": 9907133,
+      "old_block": 373078,
+      "new_block": 6183,
+      "new_block_inside_residue": 6183,
+      "new_block_peak_intervals": null
+    }
+  },
+  "stock_dqi_verifier_ran": true
+}

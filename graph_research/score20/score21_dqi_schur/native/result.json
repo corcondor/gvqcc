@@ -1,0 +1,22 @@
+{
+  "width": 62,
+  "helper_width": 14,
+  "static_Toffoli": 852,
+  "sha256": "d319743fbccd730e7ce09f11a9d8bfd3071ce11d446cf60f30d604a97e29f3dc",
+  "trials": [
+    {
+      "shots": 8192,
+      "seed": 631,
+      "errors": 0,
+      "mean_Toffoli": 851.869140625
+    },
+    {
+      "shots": 8192,
+      "seed": 1631,
+      "errors": 0,
+      "mean_Toffoli": 851.88671875
+    }
+  ],
+  "a_zero_nonzero_b_fixtures": 4095,
+  "zero_source_zero_target": true
+}

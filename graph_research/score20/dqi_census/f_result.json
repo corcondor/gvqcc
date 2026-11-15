@@ -1,0 +1,32 @@
+{
+  "points": 5,
+  "masked_subspaces": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "total_mask_preparations": 21,
+  "cases": [
+    {
+      "early": false,
+      "helpers_excluding_two_flags": 23,
+      "paid": 302,
+      "instructions": 9292,
+      "input_output_scratch_phase_pass": 8192,
+      "sha256": "b952d3316665741cda7c54f02ac63c689c22a4876ec723cdc4fb8440935ec418"
+    },
+    {
+      "early": true,
+      "helpers_excluding_two_flags": 14,
+      "paid": 365,
+      "instructions": 10652,
+      "input_output_scratch_phase_pass": 8192,
+      "sha256": "6922c3ef0cb0a51eda043957d83812ae9cd5c12abeab81eded18183db6287fc2"
+    }
+  ],
+  "scope": "Isolated raw-window F pass, no e4 binding or complete G rewrite"
+}
