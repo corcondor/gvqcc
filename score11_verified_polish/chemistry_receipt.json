@@ -1,0 +1,51 @@
+{
+  "chemistry_status": "PASS",
+  "chemistry_verified_shots": 78080,
+  "before_cost": 294887890.976471,
+  "after_cost": 294887882.9465613,
+  "cost_reduction": 8.02990972995758,
+  "cost_reduction_fraction": 2.7230381360753412e-08,
+  "portfolio_before": 27.32784439595798,
+  "portfolio_after_with_same_dqi_and_invsqrt": 27.327844644007197,
+  "portfolio_gain_with_same_dqi_and_invsqrt": 2.4804921494592236e-07,
+  "kaggle_submitted": false,
+  "baseline_npz_sha256": "df226db938dc440a37391091fba46c90ebcd14acfda88ec84939361ebcf9a955",
+  "optimizer_start_sha256": "56214fd2151569758bf8fc3572c69d3258f030180a5f44b73217157b1d3e75f6",
+  "recovered_angle_words_raw_uint8_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "candidate_npz_sha256": "42be33687903988f5d09e8c2f7fefc093896d841d4648fde32186f499794d347",
+  "candidate_weights_patch_sha256": "0cd54e42757d8dd6a51fdcd2552d9a7fc8c0ad9f63c51acc25f3e0247403ea15",
+  "changed_npz_arrays": {
+    "W": "d4222e02b861067cf459b464eb1e80b3df6294cadfd641e06318e17b48613a80",
+    "H2_I": "0a99569693d983c710477eaf490e6f37786290bb6c2a4733b01e1b6874bb169b"
+  },
+  "unchanged_npz_arrays": [
+    "U",
+    "H1_I",
+    "Hsym_lower",
+    "tree_edges",
+    "angle_words"
+  ],
+  "all_final_chemistry_members": {
+    "angle_k_0.kmb": "71735b23037e8a64d16e39b3347d440b36bdf8813613ec70c36a85bfd362d7c2",
+    "angle_k_1.kmb": "1a43bbc368785aa5fc5210f6e4d5d2f9ddf114f7f3f6d3e3964f9478056bb4be",
+    "angle_k_10.kmb": "5fea9f297afea7ffe74054ed1b44f92031a5f6e319a7f1c8741f86c05b234834",
+    "angle_k_11.kmb": "dc425931348cc4950931c400ab19322e01495b7cf3e2d02bafabcaaf9559d28a",
+    "angle_k_12.kmb": "64bbada35a382068b8dfbca0df0d781df8704aa367882cc426b76e2767f3d13f",
+    "angle_k_13.kmb": "958789349187a70ab3baf426655aacd2360113f71ab9a7b49d6624bd0e20bcd6",
+    "angle_k_14.kmb": "f35c803dece96ceb0ba24040e7c232a73170a3692c4f5212bdeadcbfcd154212",
+    "angle_k_2.kmb": "0970b392fb4bed09d6026b77b4b31510573123cb76955030115507bffde4a6bb",
+    "angle_k_3.kmb": "f9d313326dd07028bf6ef672bb47013f01e9311695d66b8d1ee2546d7dbacd7f",
+    "angle_k_4.kmb": "0ab29f06e44ef247035c971dcca30e27616bdfdc2a102fbb58c3882bbfbfd1e0",
+    "angle_k_5.kmb": "b346df2edafbaf4d95192a974db27abf71b770f51ee61dae2eb352f422cefdf4",
+    "angle_k_6.kmb": "749d9edb817c59f8a3507400002e75c2d8db55932a6933db5c5f6f59a2679f7b",
+    "angle_k_7.kmb": "0ad7d3775a36d7c14e3d4dfa4a144267e4e9759521fae4022715be25c309638e",
+    "angle_k_8.kmb": "46e0f8d69e532438d476aa8244f257a649fdc4cffe9d41f9921758f4dc18fa83",
+    "angle_k_9.kmb": "0b995537e919351a705babb6294dfe3525ef52a3c40b08122d842f45df8182da",
+    "submission.npz": "42be33687903988f5d09e8c2f7fefc093896d841d4648fde32186f499794d347"
+  },
+  "default_verifier_submission_sha256": "eec95967d990a3e25801eac09e0738d9d1a17fec5b7582befa7a5a311c7daf26",
+  "default_verifier_output_sha256": "9ac09664f29db3794dfb6d9d39ee9d785af77af09196ddc2722cd91470e6ec74",
+  "numerical_margin_error1": 9.997884464763018e-11,
+  "numerical_margin_error2": 9.999900907331494e-11,
+  "numerical_margin_gap": 1.0094769464785713e-10
+}
