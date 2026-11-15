@@ -1,0 +1,13 @@
+{
+  "planes": 244179,
+  "kernel_basis_entries": 2915,
+  "dictionary_size": 4108,
+  "full_elimination_fallbacks": 0,
+  "matched_every_full_elimination_kernel_byte_for_byte": true,
+  "kernel_sha256": "85f793385268cc353f0cd8e3af653199b8706c28abb8919ab28e30c8632c5bd5",
+  "one_run_wall_seconds": {
+    "all": 29.727,
+    "certified": 26.609
+  },
+  "new_kmb": false
+}

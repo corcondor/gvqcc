@@ -1,0 +1,64 @@
+{
+  "status": "NATIVE_COMPONENT_PASS_NOT_PRODUCTION",
+  "chart": "bit 0 of GF24 source equals 1",
+  "multiplication_tensor_basis_pairs_pass": 576,
+  "split_terms": {
+    "early": 44,
+    "late": 55,
+    "nonlinear_residual_rank": 22
+  },
+  "rows": [
+    {
+      "component": "reference_prefix",
+      "helpers": 24,
+      "static_toffoli": 99,
+      "operations": 6269,
+      "source_target_probe_scratch_and_phase_pass": true,
+      "shots": 4096,
+      "mean_toffoli": [
+        99.0,
+        99.0
+      ],
+      "sha256": "d1c13e36eb746465be67eab6d9e937cad9c9a849810170b215d9df58f3d64b93"
+    },
+    {
+      "component": "reference_pair",
+      "helpers": 24,
+      "static_toffoli": 459,
+      "operations": 48560,
+      "source_target_probe_scratch_and_phase_pass": true,
+      "shots": 4096,
+      "mean_toffoli": [
+        459.0,
+        459.0
+      ],
+      "sha256": "eeccd54a252383cdaa2bb66b7a32f5cbbb5fa922145a87526e14ea9a63472534"
+    },
+    {
+      "component": "pivot_prefix",
+      "helpers": 23,
+      "static_toffoli": 121,
+      "operations": 6728,
+      "source_target_probe_scratch_and_phase_pass": true,
+      "shots": 4096,
+      "mean_toffoli": [
+        121.0,
+        121.0
+      ],
+      "sha256": "2640b34dc636dec573836a0168706e0bad5b6ba4a3ae102473b5ef148833f14c"
+    },
+    {
+      "component": "pivot_pair",
+      "helpers": 24,
+      "static_toffoli": 481,
+      "operations": 49019,
+      "source_target_probe_scratch_and_phase_pass": true,
+      "shots": 4096,
+      "mean_toffoli": [
+        481.0,
+        481.0
+      ],
+      "sha256": "99c3580f3238c5c9b1c845e7153743130a9f6c4cd1f93597f640dba53e40be86"
+    }
+  ]
+}

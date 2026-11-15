@@ -1,0 +1,126 @@
+{
+  "method": "HistGradientBoostingRegressor, no LightGBM dependency",
+  "feature_scope": "route geometry computed before exact alternative path optimization",
+  "baseline_greedy_transition_cost_sum": 531087,
+  "measured_savings_over_greedy": {
+    "always_mst": 429,
+    "always_steiner": 358,
+    "oracle_both": 511,
+    "boost_one_candidate": 210
+  },
+  "learned_candidate_selections": {
+    "greedy": 258,
+    "mst": 124,
+    "steiner": 36
+  },
+  "cases": 418,
+  "labeled_alternatives": 792,
+  "folds": [
+    {
+      "train_batches": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ],
+      "test_batches": [
+        2,
+        5,
+        13
+      ]
+    },
+    {
+      "train_batches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14
+      ],
+      "test_batches": [
+        6,
+        9,
+        10
+      ]
+    },
+    {
+      "train_batches": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14
+      ],
+      "test_batches": [
+        0,
+        7,
+        11
+      ]
+    },
+    {
+      "train_batches": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14
+      ],
+      "test_batches": [
+        3,
+        4,
+        12
+      ]
+    },
+    {
+      "train_batches": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "test_batches": [
+        1,
+        8,
+        14
+      ]
+    }
+  ],
+  "scope": "bucket-local control + fanout operation counts, not official score or training/runtime speedup"
+}

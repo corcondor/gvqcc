@@ -1,0 +1,337 @@
+{
+  "input_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "lifetimes": [
+    {
+      "qubit": 864,
+      "first_operation": {
+        "index": 17099459,
+        "opcode": "0x31",
+        "quantum": [
+          876,
+          875,
+          864
+        ],
+        "classical": null,
+        "condition": null
+      },
+      "last_operation": {
+        "index": 17119219,
+        "opcode": "0x50",
+        "quantum": [
+          864
+        ],
+        "classical": 208167,
+        "condition": null
+      },
+      "witness": 17100570,
+      "nearest_touch_at_or_before_witness": {
+        "index": 17099459,
+        "opcode": "0x31",
+        "quantum": [
+          876,
+          875,
+          864
+        ],
+        "classical": null,
+        "condition": null
+      },
+      "nearest_touch_at_or_after_witness": {
+        "index": 17107254,
+        "opcode": "0x31",
+        "quantum": [
+          864,
+          0,
+          48
+        ],
+        "classical": null,
+        "condition": null
+      },
+      "actions": [
+        {
+          "opcode": "0x31",
+          "operand": 0,
+          "count": 48
+        },
+        {
+          "opcode": "0x31",
+          "operand": 2,
+          "count": 2
+        },
+        {
+          "opcode": "0x50",
+          "operand": 0,
+          "count": 1
+        }
+      ],
+      "distinct_companion_wires": 76,
+      "most_frequent_companions": [
+        [
+          48,
+          2
+        ],
+        [
+          49,
+          2
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          2
+        ],
+        [
+          52,
+          2
+        ],
+        [
+          53,
+          2
+        ],
+        [
+          54,
+          2
+        ],
+        [
+          55,
+          2
+        ]
+      ]
+    },
+    {
+      "qubit": 863,
+      "first_operation": {
+        "index": 17127041,
+        "opcode": "0x21",
+        "quantum": [
+          840,
+          863
+        ],
+        "classical": null,
+        "condition": null
+      },
+      "last_operation": {
+        "index": 54188265,
+        "opcode": "0x50",
+        "quantum": [
+          863
+        ],
+        "classical": 208118,
+        "condition": null
+      },
+      "witness": 18497205,
+      "nearest_touch_at_or_before_witness": {
+        "index": 18496028,
+        "opcode": "0x32",
+        "quantum": [
+          864,
+          455,
+          863
+        ],
+        "classical": null,
+        "condition": null
+      },
+      "nearest_touch_at_or_after_witness": {
+        "index": 18497260,
+        "opcode": "0x21",
+        "quantum": [
+          863,
+          842
+        ],
+        "classical": null,
+        "condition": null
+      },
+      "actions": [
+        {
+          "opcode": "0x11",
+          "operand": 0,
+          "count": 32
+        },
+        {
+          "opcode": "0x21",
+          "operand": 0,
+          "count": 22257
+        },
+        {
+          "opcode": "0x21",
+          "operand": 1,
+          "count": 119113
+        },
+        {
+          "opcode": "0x22",
+          "operand": 0,
+          "count": 105
+        },
+        {
+          "opcode": "0x22",
+          "operand": 1,
+          "count": 7433
+        },
+        {
+          "opcode": "0x30",
+          "operand": 2,
+          "count": 2
+        },
+        {
+          "opcode": "0x31",
+          "operand": 1,
+          "count": 18
+        },
+        {
+          "opcode": "0x32",
+          "operand": 2,
+          "count": 64
+        },
+        {
+          "opcode": "0x50",
+          "operand": 0,
+          "count": 1
+        },
+        {
+          "opcode": "0x90",
+          "operand": 0,
+          "count": 33
+        },
+        {
+          "opcode": "0xa1",
+          "operand": 0,
+          "count": 4
+        }
+      ],
+      "distinct_companion_wires": 77,
+      "most_frequent_companions": [
+        [
+          840,
+          72156
+        ],
+        [
+          841,
+          23344
+        ],
+        [
+          842,
+          15986
+        ],
+        [
+          843,
+          12348
+        ],
+        [
+          846,
+          4736
+        ],
+        [
+          845,
+          3131
+        ],
+        [
+          844,
+          2876
+        ],
+        [
+          853,
+          1524
+        ]
+      ]
+    },
+    {
+      "qubit": 875,
+      "first_operation": {
+        "index": 54180065,
+        "opcode": "0x31",
+        "quantum": [
+          886,
+          887,
+          875
+        ],
+        "classical": null,
+        "condition": null
+      },
+      "last_operation": {
+        "index": 54203659,
+        "opcode": "0x50",
+        "quantum": [
+          875
+        ],
+        "classical": 208168,
+        "condition": null
+      },
+      "witness": 54192960,
+      "nearest_touch_at_or_before_witness": {
+        "index": 54191954,
+        "opcode": "0x31",
+        "quantum": [
+          879,
+          876,
+          875
+        ],
+        "classical": null,
+        "condition": null
+      },
+      "nearest_touch_at_or_after_witness": {
+        "index": 54201656,
+        "opcode": "0x31",
+        "quantum": [
+          875,
+          0,
+          48
+        ],
+        "classical": null,
+        "condition": null
+      },
+      "actions": [
+        {
+          "opcode": "0x31",
+          "operand": 0,
+          "count": 48
+        },
+        {
+          "opcode": "0x31",
+          "operand": 2,
+          "count": 2
+        },
+        {
+          "opcode": "0x50",
+          "operand": 0,
+          "count": 1
+        }
+      ],
+      "distinct_companion_wires": 76,
+      "most_frequent_companions": [
+        [
+          48,
+          2
+        ],
+        [
+          49,
+          2
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          2
+        ],
+        [
+          52,
+          2
+        ],
+        [
+          53,
+          2
+        ],
+        [
+          54,
+          2
+        ],
+        [
+          55,
+          2
+        ]
+      ]
+    }
+  ]
+}

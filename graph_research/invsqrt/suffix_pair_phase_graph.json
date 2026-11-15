@@ -1,0 +1,1167 @@
+{
+  "source_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "sample_count": 1552,
+  "suffix_index": 233988,
+  "analyzed": 115,
+  "sample_passes": 0,
+  "full_domain_passes": [],
+  "full_domain_denied": [],
+  "aggregate": {
+    "mixed_two": 6,
+    "unpaid": 115,
+    "local_span": 107,
+    "single_suffix": 2
+  },
+  "records": [
+    {
+      "removed": 9290,
+      "branch_start": 9285,
+      "branch_end": 9302,
+      "debts": 2,
+      "recovery": {
+        "mixed_two": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 9487,
+      "branch_start": 9477,
+      "branch_end": 9505,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 9483,
+      "branch_start": 9477,
+      "branch_end": 9505,
+      "debts": 2,
+      "recovery": {
+        "mixed_two": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 9733,
+      "branch_start": 9713,
+      "branch_end": 9763,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 9729,
+      "branch_start": 9713,
+      "branch_end": 9763,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 9725,
+      "branch_start": 9713,
+      "branch_end": 9763,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 9721,
+      "branch_start": 9713,
+      "branch_end": 9763,
+      "debts": 2,
+      "recovery": {
+        "mixed_two": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 9997,
+      "branch_start": 9977,
+      "branch_end": 10027,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 9993,
+      "branch_start": 9977,
+      "branch_end": 10027,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 9989,
+      "branch_start": 9977,
+      "branch_end": 10027,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 9985,
+      "branch_start": 9977,
+      "branch_end": 10027,
+      "debts": 2,
+      "recovery": {
+        "mixed_two": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10261,
+      "branch_start": 10241,
+      "branch_end": 10291,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10257,
+      "branch_start": 10241,
+      "branch_end": 10291,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10253,
+      "branch_start": 10241,
+      "branch_end": 10291,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10249,
+      "branch_start": 10241,
+      "branch_end": 10291,
+      "debts": 2,
+      "recovery": {
+        "mixed_two": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10511,
+      "branch_start": 10506,
+      "branch_end": 10523,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10535,
+      "branch_start": 10525,
+      "branch_end": 10553,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10531,
+      "branch_start": 10525,
+      "branch_end": 10553,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10560,
+      "branch_start": 10555,
+      "branch_end": 10572,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10838,
+      "branch_start": 10833,
+      "branch_end": 10850,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10862,
+      "branch_start": 10852,
+      "branch_end": 10880,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10858,
+      "branch_start": 10852,
+      "branch_end": 10880,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 10887,
+      "branch_start": 10882,
+      "branch_end": 10899,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11174,
+      "branch_start": 11169,
+      "branch_end": 11186,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11198,
+      "branch_start": 11188,
+      "branch_end": 11216,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11194,
+      "branch_start": 11188,
+      "branch_end": 11216,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11223,
+      "branch_start": 11218,
+      "branch_end": 11235,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11510,
+      "branch_start": 11505,
+      "branch_end": 11522,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11534,
+      "branch_start": 11524,
+      "branch_end": 11552,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11530,
+      "branch_start": 11524,
+      "branch_end": 11552,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11559,
+      "branch_start": 11554,
+      "branch_end": 11571,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11846,
+      "branch_start": 11841,
+      "branch_end": 11858,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11870,
+      "branch_start": 11860,
+      "branch_end": 11888,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11866,
+      "branch_start": 11860,
+      "branch_end": 11888,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 11895,
+      "branch_start": 11890,
+      "branch_end": 11907,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12182,
+      "branch_start": 12177,
+      "branch_end": 12194,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12206,
+      "branch_start": 12196,
+      "branch_end": 12224,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12202,
+      "branch_start": 12196,
+      "branch_end": 12224,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12231,
+      "branch_start": 12226,
+      "branch_end": 12243,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12518,
+      "branch_start": 12513,
+      "branch_end": 12530,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12542,
+      "branch_start": 12532,
+      "branch_end": 12560,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12538,
+      "branch_start": 12532,
+      "branch_end": 12560,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12567,
+      "branch_start": 12562,
+      "branch_end": 12579,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12854,
+      "branch_start": 12849,
+      "branch_end": 12866,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12878,
+      "branch_start": 12868,
+      "branch_end": 12896,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12874,
+      "branch_start": 12868,
+      "branch_end": 12896,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 12903,
+      "branch_start": 12898,
+      "branch_end": 12915,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 13190,
+      "branch_start": 13185,
+      "branch_end": 13202,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 13214,
+      "branch_start": 13204,
+      "branch_end": 13232,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 13210,
+      "branch_start": 13204,
+      "branch_end": 13232,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 13239,
+      "branch_start": 13234,
+      "branch_end": 13251,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 13692,
+      "branch_start": 13687,
+      "branch_end": 13704,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 13716,
+      "branch_start": 13706,
+      "branch_end": 13734,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 13712,
+      "branch_start": 13706,
+      "branch_end": 13734,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 13746,
+      "branch_start": 13736,
+      "branch_end": 13764,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 13742,
+      "branch_start": 13736,
+      "branch_end": 13764,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 14100,
+      "branch_start": 14095,
+      "branch_end": 14112,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 14124,
+      "branch_start": 14114,
+      "branch_end": 14142,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 14120,
+      "branch_start": 14114,
+      "branch_end": 14142,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 14159,
+      "branch_start": 14144,
+      "branch_end": 14183,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 14155,
+      "branch_start": 14144,
+      "branch_end": 14183,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 14151,
+      "branch_start": 14144,
+      "branch_end": 14183,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 14475,
+      "branch_start": 14470,
+      "branch_end": 14487,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 14499,
+      "branch_start": 14489,
+      "branch_end": 14517,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 14495,
+      "branch_start": 14489,
+      "branch_end": 14517,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 14795,
+      "branch_start": 14790,
+      "branch_end": 14807,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17473,
+      "branch_start": 17468,
+      "branch_end": 17485,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17502,
+      "branch_start": 17487,
+      "branch_end": 17526,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17498,
+      "branch_start": 17487,
+      "branch_end": 17526,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17494,
+      "branch_start": 17487,
+      "branch_end": 17526,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17545,
+      "branch_start": 17528,
+      "branch_end": 17572,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17541,
+      "branch_start": 17528,
+      "branch_end": 17572,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17537,
+      "branch_start": 17528,
+      "branch_end": 17572,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17534,
+      "branch_start": 17528,
+      "branch_end": 17572,
+      "debts": 2,
+      "recovery": {
+        "single_suffix": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17788,
+      "branch_start": 17773,
+      "branch_end": 17812,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17784,
+      "branch_start": 17773,
+      "branch_end": 17812,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17780,
+      "branch_start": 17773,
+      "branch_end": 17812,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17831,
+      "branch_start": 17814,
+      "branch_end": 17858,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17827,
+      "branch_start": 17814,
+      "branch_end": 17858,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17823,
+      "branch_start": 17814,
+      "branch_end": 17858,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 17820,
+      "branch_start": 17814,
+      "branch_end": 17858,
+      "debts": 2,
+      "recovery": {
+        "single_suffix": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18057,
+      "branch_start": 18052,
+      "branch_end": 18069,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18081,
+      "branch_start": 18071,
+      "branch_end": 18099,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18077,
+      "branch_start": 18071,
+      "branch_end": 18099,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18116,
+      "branch_start": 18101,
+      "branch_end": 18140,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18112,
+      "branch_start": 18101,
+      "branch_end": 18140,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18108,
+      "branch_start": 18101,
+      "branch_end": 18140,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18144,
+      "branch_start": 18142,
+      "branch_end": 18155,
+      "debts": 2,
+      "recovery": {
+        "mixed_two": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18348,
+      "branch_start": 18343,
+      "branch_end": 18360,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18372,
+      "branch_start": 18362,
+      "branch_end": 18390,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18368,
+      "branch_start": 18362,
+      "branch_end": 18390,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18402,
+      "branch_start": 18392,
+      "branch_end": 18420,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18398,
+      "branch_start": 18392,
+      "branch_end": 18420,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18426,
+      "branch_start": 18422,
+      "branch_end": 18445,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18622,
+      "branch_start": 18617,
+      "branch_end": 18634,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18646,
+      "branch_start": 18636,
+      "branch_end": 18664,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18642,
+      "branch_start": 18636,
+      "branch_end": 18664,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18671,
+      "branch_start": 18666,
+      "branch_end": 18683,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18689,
+      "branch_start": 18685,
+      "branch_end": 18708,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18869,
+      "branch_start": 18864,
+      "branch_end": 18881,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18893,
+      "branch_start": 18883,
+      "branch_end": 18911,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18889,
+      "branch_start": 18883,
+      "branch_end": 18911,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 18925,
+      "branch_start": 18921,
+      "branch_end": 18944,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 19089,
+      "branch_start": 19084,
+      "branch_end": 19101,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 19108,
+      "branch_start": 19103,
+      "branch_end": 19120,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 19134,
+      "branch_start": 19130,
+      "branch_end": 19153,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 19282,
+      "branch_start": 19277,
+      "branch_end": 19294,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 19316,
+      "branch_start": 19312,
+      "branch_end": 19335,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 19471,
+      "branch_start": 19467,
+      "branch_end": 19490,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 19951,
+      "branch_start": 19946,
+      "branch_end": 19963,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 20076,
+      "branch_start": 20071,
+      "branch_end": 20088,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 20197,
+      "branch_start": 20192,
+      "branch_end": 20209,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 20313,
+      "branch_start": 20308,
+      "branch_end": 20325,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 20424,
+      "branch_start": 20419,
+      "branch_end": 20436,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    },
+    {
+      "removed": 20531,
+      "branch_start": 20526,
+      "branch_end": 20541,
+      "debts": 2,
+      "recovery": {
+        "local_span": 1,
+        "unpaid": 1
+      }
+    }
+  ]
+}

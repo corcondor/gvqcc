@@ -1,0 +1,2310 @@
+{
+  "source_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "sample_count": 1552,
+  "max_cuts": 12,
+  "prior_hits": 178,
+  "analyzed": 115,
+  "sample_passes": 0,
+  "results": [
+    {
+      "removed": 9290,
+      "branch_start": 9285,
+      "branch_end": 9302,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 9296,
+          "rank": 780,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 9285,
+          "rank": 780,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 9487,
+      "branch_start": 9477,
+      "branch_end": 9505,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 9493,
+          "rank": 817,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 9477,
+          "rank": 817,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 9483,
+      "branch_start": 9477,
+      "branch_end": 9505,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 9498,
+          "rank": 780,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 9477,
+          "rank": 817,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 9733,
+      "branch_start": 9713,
+      "branch_end": 9763,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 9739,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 9713,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 9729,
+      "branch_start": 9713,
+      "branch_end": 9763,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 9744,
+          "rank": 855,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 9713,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 9725,
+      "branch_start": 9713,
+      "branch_end": 9763,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 9749,
+          "rank": 817,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 9713,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 9721,
+      "branch_start": 9713,
+      "branch_end": 9763,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 9754,
+          "rank": 780,
+          "cuts": 8,
+          "spanned": true
+        },
+        {
+          "origin": 9713,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 9997,
+      "branch_start": 9977,
+      "branch_end": 10027,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10003,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 9977,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 9993,
+      "branch_start": 9977,
+      "branch_end": 10027,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10008,
+          "rank": 855,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 9977,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 9989,
+      "branch_start": 9977,
+      "branch_end": 10027,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10013,
+          "rank": 817,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 9977,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 9985,
+      "branch_start": 9977,
+      "branch_end": 10027,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10018,
+          "rank": 780,
+          "cuts": 8,
+          "spanned": true
+        },
+        {
+          "origin": 9977,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10261,
+      "branch_start": 10241,
+      "branch_end": 10291,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10267,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 10241,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10257,
+      "branch_start": 10241,
+      "branch_end": 10291,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10272,
+          "rank": 855,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 10241,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10253,
+      "branch_start": 10241,
+      "branch_end": 10291,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10277,
+          "rank": 817,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 10241,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10249,
+      "branch_start": 10241,
+      "branch_end": 10291,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10282,
+          "rank": 780,
+          "cuts": 8,
+          "spanned": true
+        },
+        {
+          "origin": 10241,
+          "rank": 894,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10511,
+      "branch_start": 10506,
+      "branch_end": 10523,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10517,
+          "rank": 981,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 10506,
+          "rank": 981,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10535,
+      "branch_start": 10525,
+      "branch_end": 10553,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10541,
+          "rank": 979,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 10525,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10531,
+      "branch_start": 10525,
+      "branch_end": 10553,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10546,
+          "rank": 938,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 10525,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10560,
+      "branch_start": 10555,
+      "branch_end": 10572,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10566,
+          "rank": 896,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 10555,
+          "rank": 896,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10838,
+      "branch_start": 10833,
+      "branch_end": 10850,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10844,
+          "rank": 981,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 10833,
+          "rank": 981,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10862,
+      "branch_start": 10852,
+      "branch_end": 10880,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10868,
+          "rank": 979,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 10852,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10858,
+      "branch_start": 10852,
+      "branch_end": 10880,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10873,
+          "rank": 938,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 10852,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 10887,
+      "branch_start": 10882,
+      "branch_end": 10899,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 10893,
+          "rank": 896,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 10882,
+          "rank": 896,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11174,
+      "branch_start": 11169,
+      "branch_end": 11186,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11180,
+          "rank": 981,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 11169,
+          "rank": 981,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11198,
+      "branch_start": 11188,
+      "branch_end": 11216,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11204,
+          "rank": 979,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 11188,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11194,
+      "branch_start": 11188,
+      "branch_end": 11216,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11209,
+          "rank": 938,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 11188,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11223,
+      "branch_start": 11218,
+      "branch_end": 11235,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11229,
+          "rank": 896,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 11218,
+          "rank": 896,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11510,
+      "branch_start": 11505,
+      "branch_end": 11522,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11516,
+          "rank": 981,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 11505,
+          "rank": 981,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11534,
+      "branch_start": 11524,
+      "branch_end": 11552,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11540,
+          "rank": 979,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 11524,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11530,
+      "branch_start": 11524,
+      "branch_end": 11552,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11545,
+          "rank": 938,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 11524,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11559,
+      "branch_start": 11554,
+      "branch_end": 11571,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11565,
+          "rank": 896,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 11554,
+          "rank": 896,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11846,
+      "branch_start": 11841,
+      "branch_end": 11858,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11852,
+          "rank": 981,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 11841,
+          "rank": 981,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11870,
+      "branch_start": 11860,
+      "branch_end": 11888,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11876,
+          "rank": 979,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 11860,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11866,
+      "branch_start": 11860,
+      "branch_end": 11888,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11881,
+          "rank": 938,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 11860,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 11895,
+      "branch_start": 11890,
+      "branch_end": 11907,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 11901,
+          "rank": 896,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 11890,
+          "rank": 896,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12182,
+      "branch_start": 12177,
+      "branch_end": 12194,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12188,
+          "rank": 981,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 12177,
+          "rank": 981,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12206,
+      "branch_start": 12196,
+      "branch_end": 12224,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12212,
+          "rank": 979,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 12196,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12202,
+      "branch_start": 12196,
+      "branch_end": 12224,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12217,
+          "rank": 938,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 12196,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12231,
+      "branch_start": 12226,
+      "branch_end": 12243,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12237,
+          "rank": 896,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 12226,
+          "rank": 896,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12518,
+      "branch_start": 12513,
+      "branch_end": 12530,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12524,
+          "rank": 981,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 12513,
+          "rank": 981,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12542,
+      "branch_start": 12532,
+      "branch_end": 12560,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12548,
+          "rank": 979,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 12532,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12538,
+      "branch_start": 12532,
+      "branch_end": 12560,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12553,
+          "rank": 938,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 12532,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12567,
+      "branch_start": 12562,
+      "branch_end": 12579,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12573,
+          "rank": 896,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 12562,
+          "rank": 896,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12854,
+      "branch_start": 12849,
+      "branch_end": 12866,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12860,
+          "rank": 981,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 12849,
+          "rank": 981,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12878,
+      "branch_start": 12868,
+      "branch_end": 12896,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12884,
+          "rank": 979,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 12868,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12874,
+      "branch_start": 12868,
+      "branch_end": 12896,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12889,
+          "rank": 938,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 12868,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 12903,
+      "branch_start": 12898,
+      "branch_end": 12915,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 12909,
+          "rank": 896,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 12898,
+          "rank": 896,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 13190,
+      "branch_start": 13185,
+      "branch_end": 13202,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 13196,
+          "rank": 981,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 13185,
+          "rank": 981,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 13214,
+      "branch_start": 13204,
+      "branch_end": 13232,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 13220,
+          "rank": 979,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 13204,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 13210,
+      "branch_start": 13204,
+      "branch_end": 13232,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 13225,
+          "rank": 938,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 13204,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 13239,
+      "branch_start": 13234,
+      "branch_end": 13251,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 13245,
+          "rank": 896,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 13234,
+          "rank": 896,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 13692,
+      "branch_start": 13687,
+      "branch_end": 13704,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 13698,
+          "rank": 984,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 13687,
+          "rank": 984,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 13716,
+      "branch_start": 13706,
+      "branch_end": 13734,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 13722,
+          "rank": 982,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 13706,
+          "rank": 982,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 13712,
+      "branch_start": 13706,
+      "branch_end": 13734,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 13727,
+          "rank": 941,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 13706,
+          "rank": 982,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 13746,
+      "branch_start": 13736,
+      "branch_end": 13764,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 13752,
+          "rank": 939,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 13736,
+          "rank": 939,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 13742,
+      "branch_start": 13736,
+      "branch_end": 13764,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 13757,
+          "rank": 899,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 13736,
+          "rank": 939,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 14100,
+      "branch_start": 14095,
+      "branch_end": 14112,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 14106,
+          "rank": 987,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 14095,
+          "rank": 987,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 14124,
+      "branch_start": 14114,
+      "branch_end": 14142,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 14130,
+          "rank": 985,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 14114,
+          "rank": 985,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 14120,
+      "branch_start": 14114,
+      "branch_end": 14142,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 14135,
+          "rank": 944,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 14114,
+          "rank": 985,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 14159,
+      "branch_start": 14144,
+      "branch_end": 14183,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 14165,
+          "rank": 983,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 14144,
+          "rank": 983,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 14155,
+      "branch_start": 14144,
+      "branch_end": 14183,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 14170,
+          "rank": 942,
+          "cuts": 11,
+          "spanned": true
+        },
+        {
+          "origin": 14144,
+          "rank": 983,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 14151,
+      "branch_start": 14144,
+      "branch_end": 14183,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 14175,
+          "rank": 902,
+          "cuts": 7,
+          "spanned": true
+        },
+        {
+          "origin": 14144,
+          "rank": 983,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 14475,
+      "branch_start": 14470,
+      "branch_end": 14487,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 14481,
+          "rank": 984,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 14470,
+          "rank": 984,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 14499,
+      "branch_start": 14489,
+      "branch_end": 14517,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 14505,
+          "rank": 982,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 14489,
+          "rank": 982,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 14495,
+      "branch_start": 14489,
+      "branch_end": 14517,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 14510,
+          "rank": 941,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 14489,
+          "rank": 982,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 14795,
+      "branch_start": 14790,
+      "branch_end": 14807,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 14801,
+          "rank": 941,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 14790,
+          "rank": 941,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17473,
+      "branch_start": 17468,
+      "branch_end": 17485,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17479,
+          "rank": 940,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 17468,
+          "rank": 940,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17502,
+      "branch_start": 17487,
+      "branch_end": 17526,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17508,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 17487,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17498,
+      "branch_start": 17487,
+      "branch_end": 17526,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17513,
+          "rank": 938,
+          "cuts": 11,
+          "spanned": true
+        },
+        {
+          "origin": 17487,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17494,
+      "branch_start": 17487,
+      "branch_end": 17526,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17518,
+          "rank": 898,
+          "cuts": 7,
+          "spanned": true
+        },
+        {
+          "origin": 17487,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17545,
+      "branch_start": 17528,
+      "branch_end": 17572,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17551,
+          "rank": 977,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 17528,
+          "rank": 977,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17541,
+      "branch_start": 17528,
+      "branch_end": 17572,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17556,
+          "rank": 936,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 17528,
+          "rank": 977,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17537,
+      "branch_start": 17528,
+      "branch_end": 17572,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17561,
+          "rank": 896,
+          "cuts": 9,
+          "spanned": true
+        },
+        {
+          "origin": 17528,
+          "rank": 977,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17534,
+      "branch_start": 17528,
+      "branch_end": 17572,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17565,
+          "rank": 857,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 17528,
+          "rank": 977,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17788,
+      "branch_start": 17773,
+      "branch_end": 17812,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17794,
+          "rank": 981,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 17773,
+          "rank": 981,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17784,
+      "branch_start": 17773,
+      "branch_end": 17812,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17799,
+          "rank": 940,
+          "cuts": 11,
+          "spanned": true
+        },
+        {
+          "origin": 17773,
+          "rank": 981,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17780,
+      "branch_start": 17773,
+      "branch_end": 17812,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17804,
+          "rank": 900,
+          "cuts": 7,
+          "spanned": true
+        },
+        {
+          "origin": 17773,
+          "rank": 981,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17831,
+      "branch_start": 17814,
+      "branch_end": 17858,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17837,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 17814,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17827,
+      "branch_start": 17814,
+      "branch_end": 17858,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17842,
+          "rank": 938,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 17814,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17823,
+      "branch_start": 17814,
+      "branch_end": 17858,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17847,
+          "rank": 898,
+          "cuts": 9,
+          "spanned": true
+        },
+        {
+          "origin": 17814,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 17820,
+      "branch_start": 17814,
+      "branch_end": 17858,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 17851,
+          "rank": 859,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 17814,
+          "rank": 979,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18057,
+      "branch_start": 18052,
+      "branch_end": 18069,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18063,
+          "rank": 985,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 18052,
+          "rank": 985,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18081,
+      "branch_start": 18071,
+      "branch_end": 18099,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18087,
+          "rank": 983,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 18071,
+          "rank": 983,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18077,
+      "branch_start": 18071,
+      "branch_end": 18099,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18092,
+          "rank": 942,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 18071,
+          "rank": 983,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18116,
+      "branch_start": 18101,
+      "branch_end": 18140,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18122,
+          "rank": 981,
+          "cuts": 12,
+          "spanned": true
+        },
+        {
+          "origin": 18101,
+          "rank": 981,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18112,
+      "branch_start": 18101,
+      "branch_end": 18140,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18127,
+          "rank": 940,
+          "cuts": 11,
+          "spanned": true
+        },
+        {
+          "origin": 18101,
+          "rank": 981,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18108,
+      "branch_start": 18101,
+      "branch_end": 18140,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18132,
+          "rank": 900,
+          "cuts": 7,
+          "spanned": true
+        },
+        {
+          "origin": 18101,
+          "rank": 981,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18144,
+      "branch_start": 18142,
+      "branch_end": 18155,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18152,
+          "rank": 859,
+          "cuts": 2,
+          "spanned": true
+        },
+        {
+          "origin": 18142,
+          "rank": 859,
+          "cuts": 7,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18348,
+      "branch_start": 18343,
+      "branch_end": 18360,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18354,
+          "rank": 985,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 18343,
+          "rank": 985,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18372,
+      "branch_start": 18362,
+      "branch_end": 18390,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18378,
+          "rank": 983,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 18362,
+          "rank": 983,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18368,
+      "branch_start": 18362,
+      "branch_end": 18390,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18383,
+          "rank": 942,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 18362,
+          "rank": 983,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18402,
+      "branch_start": 18392,
+      "branch_end": 18420,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18408,
+          "rank": 940,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 18392,
+          "rank": 940,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18398,
+      "branch_start": 18392,
+      "branch_end": 18420,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18413,
+          "rank": 900,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 18392,
+          "rank": 940,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18426,
+      "branch_start": 18422,
+      "branch_end": 18445,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18440,
+          "rank": 859,
+          "cuts": 4,
+          "spanned": true
+        },
+        {
+          "origin": 18422,
+          "rank": 859,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18622,
+      "branch_start": 18617,
+      "branch_end": 18634,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18628,
+          "rank": 985,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 18617,
+          "rank": 985,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18646,
+      "branch_start": 18636,
+      "branch_end": 18664,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18652,
+          "rank": 983,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 18636,
+          "rank": 983,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18642,
+      "branch_start": 18636,
+      "branch_end": 18664,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18657,
+          "rank": 942,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 18636,
+          "rank": 983,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18671,
+      "branch_start": 18666,
+      "branch_end": 18683,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18677,
+          "rank": 900,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 18666,
+          "rank": 900,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18689,
+      "branch_start": 18685,
+      "branch_end": 18708,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18703,
+          "rank": 859,
+          "cuts": 4,
+          "spanned": true
+        },
+        {
+          "origin": 18685,
+          "rank": 859,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18869,
+      "branch_start": 18864,
+      "branch_end": 18881,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18875,
+          "rank": 983,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 18864,
+          "rank": 983,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18893,
+      "branch_start": 18883,
+      "branch_end": 18911,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18899,
+          "rank": 981,
+          "cuts": 10,
+          "spanned": true
+        },
+        {
+          "origin": 18883,
+          "rank": 981,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18889,
+      "branch_start": 18883,
+      "branch_end": 18911,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18904,
+          "rank": 940,
+          "cuts": 6,
+          "spanned": true
+        },
+        {
+          "origin": 18883,
+          "rank": 981,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 18925,
+      "branch_start": 18921,
+      "branch_end": 18944,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 18939,
+          "rank": 859,
+          "cuts": 4,
+          "spanned": true
+        },
+        {
+          "origin": 18921,
+          "rank": 859,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 19089,
+      "branch_start": 19084,
+      "branch_end": 19101,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 19095,
+          "rank": 983,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 19084,
+          "rank": 983,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 19108,
+      "branch_start": 19103,
+      "branch_end": 19120,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 19114,
+          "rank": 940,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 19103,
+          "rank": 940,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 19134,
+      "branch_start": 19130,
+      "branch_end": 19153,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 19148,
+          "rank": 859,
+          "cuts": 4,
+          "spanned": true
+        },
+        {
+          "origin": 19130,
+          "rank": 859,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 19282,
+      "branch_start": 19277,
+      "branch_end": 19294,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 19288,
+          "rank": 981,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 19277,
+          "rank": 981,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 19316,
+      "branch_start": 19312,
+      "branch_end": 19335,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 19330,
+          "rank": 859,
+          "cuts": 4,
+          "spanned": true
+        },
+        {
+          "origin": 19312,
+          "rank": 859,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 19471,
+      "branch_start": 19467,
+      "branch_end": 19490,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 19485,
+          "rank": 856,
+          "cuts": 4,
+          "spanned": true
+        },
+        {
+          "origin": 19467,
+          "rank": 856,
+          "cuts": 12,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 19951,
+      "branch_start": 19946,
+      "branch_end": 19963,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 19957,
+          "rank": 829,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 19946,
+          "rank": 829,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 20076,
+      "branch_start": 20071,
+      "branch_end": 20088,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 20082,
+          "rank": 827,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 20071,
+          "rank": 827,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 20197,
+      "branch_start": 20192,
+      "branch_end": 20209,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 20203,
+          "rank": 825,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 20192,
+          "rank": 825,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 20313,
+      "branch_start": 20308,
+      "branch_end": 20325,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 20319,
+          "rank": 801,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 20308,
+          "rank": 801,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 20424,
+      "branch_start": 20419,
+      "branch_end": 20436,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 20430,
+          "rank": 752,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 20419,
+          "rank": 752,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    },
+    {
+      "removed": 20531,
+      "branch_start": 20526,
+      "branch_end": 20541,
+      "debt_count": 2,
+      "visited": [
+        {
+          "origin": 20535,
+          "rank": 708,
+          "cuts": 5,
+          "spanned": true
+        },
+        {
+          "origin": 20526,
+          "rank": 708,
+          "cuts": 8,
+          "spanned": false
+        }
+      ]
+    }
+  ]
+}
