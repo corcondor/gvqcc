@@ -1,0 +1,6 @@
+inputs/
+runs/
+__pycache__/
+*.kmb
+*.zip
+*.pyc
