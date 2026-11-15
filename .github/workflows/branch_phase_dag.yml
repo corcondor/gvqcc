@@ -3,7 +3,8 @@ on:
   push:
     branches: [research/branch-phase-dag-20261116]
     paths:
-      - graph_research/branch_phase_dag/**
+      - graph_research/branch_phase_dag/build.py
+      - graph_research/branch_phase_dag/plans.json
       - .github/workflows/branch_phase_dag.yml
   workflow_dispatch:
 permissions:
@@ -36,11 +37,11 @@ jobs:
           assert hashlib.sha256(data).hexdigest()==expected
           Path('results/branch_phase/verify_submission_invsqrt.py').write_bytes(data)
           PY
-      - name: All legal inputs, one measurement sample each
+      - name: Official smoke on first 16384 inputs
         run: |
           set -o pipefail
-          python results/branch_phase/verify_submission_invsqrt.py results/branch_phase/invsqrt.kmb --shots-per-x 1 --max-workers 2 | tee results/branch_phase/official_one.json
-      - name: Official default 64 samples per input
+          python results/branch_phase/verify_submission_invsqrt.py results/branch_phase/invsqrt.kmb --max-x 16384 --shots-per-x 1 --max-workers 2 | tee results/branch_phase/official_smoke.json
+      - name: Official default all inputs and 64 samples per input
         run: |
           set -o pipefail
           python results/branch_phase/verify_submission_invsqrt.py results/branch_phase/invsqrt.kmb --max-workers 2 | tee results/branch_phase/official_full.json
