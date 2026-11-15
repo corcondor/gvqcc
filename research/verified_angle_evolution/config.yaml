@@ -1,0 +1,26 @@
+# OpenEvolve configuration: set OPENAI_API_KEY in your runner secrets.
+# Run from this directory after bootstrapping the exact pinned Score10 ZIP.
+max_iterations: 200
+checkpoint_interval: 10
+random_seed: 20261115
+max_code_length: 18000
+diff_based_evolution: true
+enforce_evolve_blocks: true
+llm:
+  api_base: https://api.openai.com/v1
+  api_key: ${OPENAI_API_KEY}
+  models:
+    - name: gpt-4.1
+      weight: 1.0
+  temperature: 0.7
+database:
+  population_size: 64
+  num_islands: 4
+  migration_interval: 20
+  feature_dimensions:
+    - toffoli_savings
+    - free_gate_savings
+evaluator:
+  cascade_evaluation: false
+  timeout: 180
+  enable_artifacts: true
