@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE",
+  "scaffolds": 1120,
+  "one_row_nullities": {
+    "0": 798,
+    "1": 315,
+    "3": 7
+  },
+  "projected_rank_histogram": {
+    "(6, 6, 6)": 1120
+  },
+  "min_norm_linear_output_products": 9
+}

@@ -1,0 +1,55 @@
+{
+  "samples": 4096,
+  "rows": [
+    {
+      "cut": 10984,
+      "seed": 202611151309,
+      "wire_mismatches": 0
+    },
+    {
+      "cut": 10984,
+      "seed": 202611151310,
+      "wire_mismatches": 0
+    },
+    {
+      "cut": 14888,
+      "seed": 202611151309,
+      "wire_mismatches": 0
+    },
+    {
+      "cut": 14888,
+      "seed": 202611151310,
+      "wire_mismatches": 0
+    },
+    {
+      "cut": 16799,
+      "seed": 202611151309,
+      "wire_mismatches": 0
+    },
+    {
+      "cut": 16799,
+      "seed": 202611151310,
+      "wire_mismatches": 0
+    },
+    {
+      "cut": 17202,
+      "seed": 202611151309,
+      "wire_mismatches": 0
+    },
+    {
+      "cut": 17202,
+      "seed": 202611151310,
+      "wire_mismatches": 0
+    },
+    {
+      "cut": 17287,
+      "seed": 202611151309,
+      "wire_mismatches": 0
+    },
+    {
+      "cut": 17287,
+      "seed": 202611151310,
+      "wire_mismatches": 0
+    }
+  ]
+}

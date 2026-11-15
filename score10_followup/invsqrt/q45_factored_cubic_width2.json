@@ -1,0 +1,38 @@
+{
+  "source_sha256": "35f3109fa3a6bd3b9c197cda767624edded521483ebda882f11a950d3b2ff510",
+  "sample_inputs_sha256": "5b169b70c9f8620cdba4eba84cd98a020aed8bf68e420e5b34d20c26a1235cd8",
+  "shots": 4096,
+  "factor_width": 2,
+  "results": {
+    "10984": {
+      "quadratic_rank": 741,
+      "quadratic_match_on_samples": false,
+      "factors_checked": 741,
+      "factored_cubic_matches_on_samples": []
+    },
+    "14888": {
+      "quadratic_rank": 859,
+      "quadratic_match_on_samples": false,
+      "factors_checked": 903,
+      "factored_cubic_matches_on_samples": []
+    },
+    "16799": {
+      "quadratic_rank": 795,
+      "quadratic_match_on_samples": false,
+      "factors_checked": 903,
+      "factored_cubic_matches_on_samples": []
+    },
+    "17202": {
+      "quadratic_rank": 942,
+      "quadratic_match_on_samples": false,
+      "factors_checked": 946,
+      "factored_cubic_matches_on_samples": []
+    },
+    "17287": {
+      "quadratic_rank": 779,
+      "quadratic_match_on_samples": false,
+      "factors_checked": 820,
+      "factored_cubic_matches_on_samples": []
+    }
+  }
+}

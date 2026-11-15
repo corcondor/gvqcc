@@ -1,0 +1,47 @@
+{
+  "status": "PASS_COMPONENT_ONLY",
+  "component_records": [
+    {
+      "name": "fixed_original",
+      "helpers": 12,
+      "qubits": 31,
+      "toffoli": 27,
+      "phase_oracle_errors": 0,
+      "shots": 16384,
+      "sha256": "ec28f6d1c0e8bfb924f18669ac42233f975a27f0a17876ffb0222dc353690b42"
+    },
+    {
+      "name": "fixed_phase11",
+      "helpers": 11,
+      "qubits": 30,
+      "toffoli": 27,
+      "phase_oracle_errors": 0,
+      "shots": 16384,
+      "sha256": "6651df37fd01ade22f4b9d8d0538ebb7010f8ba365e1c424e2d525a6af13524d"
+    },
+    {
+      "name": "masked_original",
+      "helpers": 12,
+      "qubits": 31,
+      "toffoli": 27,
+      "phase_oracle_errors": 0,
+      "shots": 16384,
+      "sha256": "03b61c2665bd9f4e165372a48b172f6f18dd39189c80dbf6ce7a0e7d44fe4c1f"
+    },
+    {
+      "name": "masked_phase11",
+      "helpers": 11,
+      "qubits": 30,
+      "toffoli": 27,
+      "phase_oracle_errors": 0,
+      "shots": 16384,
+      "sha256": "16f473e577a03c0c8e65ac6028c721b9ee0806544a6e65283b5abf85806a7795"
+    }
+  ],
+  "total_shots": 65536,
+  "whole_dqi_output": null,
+  "source_hashes": {
+    "phase_inverse12.py": "5d803160a953d9156b7c2cfd6a9afc791dbb27d24d4b6745e294e31b6b68a3c2",
+    "inverse_phase27.py": "b0c5695638f727381c5f6888fdaac7b12b24df8a3695d307addc930ecc9bc93f"
+  }
+}

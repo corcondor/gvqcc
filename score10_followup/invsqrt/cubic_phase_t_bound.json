@@ -1,0 +1,793 @@
+{
+  "status": "ANALYSIS_ONLY",
+  "source_kmx_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "native_recompiled_kmb_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "source_qubits": 46,
+  "source_static_toffoli_like": 1550,
+  "all_paid_conditional_blocks": 95,
+  "eligible_blocks": 53,
+  "branch_status_counts": {
+    "NO_STRICT_GAIN_OVER_STATIC_PAID": 42,
+    "NOT_A_CLIFFORD_T_PARITY_PHASE": 12,
+    "CLIFFORD_PHASE": 1
+  },
+  "rows": [
+    {
+      "start": 9285,
+      "end": 9302,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 9477,
+      "end": 9505,
+      "paid": 2,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 4,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        }
+      ]
+    },
+    {
+      "start": 9713,
+      "end": 9763,
+      "paid": 4,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 6,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        }
+      ]
+    },
+    {
+      "start": 9977,
+      "end": 10027,
+      "paid": 4,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 6,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        }
+      ]
+    },
+    {
+      "start": 10241,
+      "end": 10291,
+      "paid": 4,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 6,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        }
+      ]
+    },
+    {
+      "start": 10555,
+      "end": 10572,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 10590,
+      "end": 10608,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 10882,
+      "end": 10899,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 10917,
+      "end": 10943,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 11218,
+      "end": 11235,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 11253,
+      "end": 11279,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 11554,
+      "end": 11571,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 11589,
+      "end": 11615,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 11890,
+      "end": 11907,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 11925,
+      "end": 11951,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 12226,
+      "end": 12243,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 12261,
+      "end": 12287,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 12562,
+      "end": 12579,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 12597,
+      "end": 12623,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 12898,
+      "end": 12915,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 12933,
+      "end": 12959,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 13234,
+      "end": 13251,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 13269,
+      "end": 13295,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 13736,
+      "end": 13764,
+      "paid": 2,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 4,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        }
+      ]
+    },
+    {
+      "start": 13774,
+      "end": 13800,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 14144,
+      "end": 14183,
+      "paid": 3,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 5,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        }
+      ]
+    },
+    {
+      "start": 14185,
+      "end": 14211,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 14519,
+      "end": 14567,
+      "paid": 3,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 5,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        }
+      ]
+    },
+    {
+      "start": 14809,
+      "end": 14846,
+      "paid": 2,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 4,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        }
+      ]
+    },
+    {
+      "start": 17528,
+      "end": 17572,
+      "paid": 4,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 6,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        }
+      ]
+    },
+    {
+      "start": 17814,
+      "end": 17858,
+      "paid": 4,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 6,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        }
+      ]
+    },
+    {
+      "start": 18142,
+      "end": 18155,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 18422,
+      "end": 18445,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 18685,
+      "end": 18708,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 18921,
+      "end": 18944,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 19130,
+      "end": 19153,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 19312,
+      "end": 19335,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 19467,
+      "end": 19490,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 19946,
+      "end": 19963,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 20071,
+      "end": 20088,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 20192,
+      "end": 20209,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 20308,
+      "end": 20325,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 20419,
+      "end": 20436,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 20526,
+      "end": 20541,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 23807,
+      "end": 23812,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 23814,
+      "end": 23819,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 23821,
+      "end": 23826,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 23828,
+      "end": 23833,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 23835,
+      "end": 23840,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 23842,
+      "end": 23847,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 23849,
+      "end": 23854,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    },
+    {
+      "start": 23864,
+      "end": 23879,
+      "paid": 3,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 5,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        },
+        {
+          "true_external_guards": [
+            "external_b49"
+          ],
+          "phase_degree": 5,
+          "status": "NOT_A_CLIFFORD_T_PARITY_PHASE"
+        }
+      ]
+    },
+    {
+      "start": 23881,
+      "end": 23885,
+      "paid": 1,
+      "branches": [
+        {
+          "true_external_guards": [],
+          "phase_degree": 0,
+          "status": "CLIFFORD_PHASE"
+        },
+        {
+          "true_external_guards": [
+            "external_b49"
+          ],
+          "phase_degree": 3,
+          "cubic_rank": 3,
+          "t_lower_bound": 7,
+          "effective_toffoli_lower_bound": 1.75,
+          "status": "NO_STRICT_GAIN_OVER_STATIC_PAID"
+        }
+      ]
+    }
+  ],
+  "scope": "Independent live entry values, sound known constants, no reachable domain correlations. The source static paid count is an upper bound, not a modeled average. No replacement circuit or verifier run."
+}
