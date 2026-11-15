@@ -1,0 +1,14 @@
+{
+  "status": "BOUNDED_NEIGHBORHOOD_COMPLETE_NO_CONTRACTION",
+  "output_dimension": 8,
+  "initial_product_span_dimension": 13,
+  "rank_one_forms": 10795,
+  "rank_one_forms_in_original_span": 15,
+  "extension_groups": 6028,
+  "extension_groups_checked": 6028,
+  "subspaces_checked": 3924259,
+  "subspaces_with_at_least_12_forms": 6,
+  "candidate": null,
+  "seconds": 2.139781115001824,
+  "script_sha256": "a03dc8f428db8248923803aed5b2fba7a843abc3bfe95236701b8a78fc2f97d3"
+}

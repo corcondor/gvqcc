@@ -1,0 +1,15 @@
+{
+  "status": "BOUNDED_AFFINE_CACHE_SAMPLE_SEARCH_COMPLETE",
+  "source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "ccx": 1279,
+  "start_gates_with_capacity": 774,
+  "pair_queries": 18040,
+  "samples": 512,
+  "sample_hits": 0,
+  "sample_seconds": 3.866585794996354,
+  "hits": [],
+  "scope": "Consecutive or nonconsecutive unconditional CCX; a holder can route through existing constant slots. Later product XOR old product is affine in all current wire values except the dirty target. Original conditional blocks are atomic for holder routing.",
+  "exact_checks": [],
+  "seconds": 3.8672011730013764,
+  "script_sha256": "cafd18be00a45d75f9de3512490b6923d4ac3e4682e152dc229c82052a9869e0"
+}

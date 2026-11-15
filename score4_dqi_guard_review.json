@@ -1,0 +1,332 @@
+{
+  "status": "INDEPENDENT_LOCAL_INSTRUMENT_REVIEW_PASS",
+  "source_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "scanner_sha256": "8bed4ffd9ba97c1ddd74eb4f46f7a6a832fd918a548d835a6aea7991764d4549",
+  "scanner_result_sha256": "c42440bbdc99575533fb80edb61e6445a9fd8699d1aecc4bf2a6931bad330597",
+  "review_script_sha256": "76ab20da88177fae3c4cbeff5c8dca06a6c0930bdfbc1514235d965fa484d424",
+  "merges": 16,
+  "disjoint_intervals": 8,
+  "dirty_target_identity_inputs": 16,
+  "current_tape_commutation_counts": {
+    "CCX": 400,
+    "CSWAP": 192,
+    "CX": 520,
+    "HMR": 160,
+    "CZ_IF": 160
+  },
+  "instruction_delta": {
+    "CCX": -16,
+    "CX": 32
+  },
+  "exact_proof": "Each earlier CCX is unconditional. Every intervening operation commutes with it for every classical branch: controls are unwritten and its target is unread, including phase and measurement operands. Moving it right preserves each HMR Kraus operator and its recorded outcome. The adjacent two-CCX dirty-target identity is then exact. Overlapping proposals are rechecked after preceding local rewrites. No measurement is deleted or moved. Hence all values and coherent phases are preserved for arbitrary quantum inputs and all classical branches.",
+  "native_scope": "8 local circuits x256 arbitrary basis/classical inputs, aligned HMR branch seeds; not official scoring samples.",
+  "groups": [
+    {
+      "start": 26781103,
+      "end": 26781195,
+      "pairs": [
+        {
+          "first": 26781103,
+          "second": 26781192,
+          "crossed_current_instructions": 88,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 31,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        },
+        {
+          "first": 26781104,
+          "second": 26781194,
+          "crossed_current_instructions": 91,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 34,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        }
+      ],
+      "original_local_sha256": "ae72533865e2d15785add642b062891e41738f12d4ca8ac93325d90bb1e93aa3",
+      "rewritten_local_sha256": "c54587a0312caaaa9dc085a53a54f59b72b06b11e3721c26cc493052ceba0cc6",
+      "native_inputs": 256,
+      "native_quantum_value_mismatches": 0,
+      "native_classical_value_mismatches": 0,
+      "native_phase_mismatches": 0
+    },
+    {
+      "start": 26823191,
+      "end": 26823283,
+      "pairs": [
+        {
+          "first": 26823191,
+          "second": 26823280,
+          "crossed_current_instructions": 88,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 31,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        },
+        {
+          "first": 26823192,
+          "second": 26823282,
+          "crossed_current_instructions": 91,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 34,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        }
+      ],
+      "original_local_sha256": "af13185a08ccdc81516e5b52237b8cc399eeaf37d464ee16950f2d6ee3eb0872",
+      "rewritten_local_sha256": "3f0a98fb717158ae65c211eef88aaf82f02502a5cf1f75f96cbac9ef0851a121",
+      "native_inputs": 256,
+      "native_quantum_value_mismatches": 0,
+      "native_classical_value_mismatches": 0,
+      "native_phase_mismatches": 0
+    },
+    {
+      "start": 27198296,
+      "end": 27198388,
+      "pairs": [
+        {
+          "first": 27198296,
+          "second": 27198385,
+          "crossed_current_instructions": 88,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 31,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        },
+        {
+          "first": 27198297,
+          "second": 27198387,
+          "crossed_current_instructions": 91,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 34,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        }
+      ],
+      "original_local_sha256": "b24dcad077d356879107b7ce8cba10797b577c37494aaa51c4a5f7b78b6c7269",
+      "rewritten_local_sha256": "c992e368ad134ef2999bdb8716a24685504b225ae02b5fb7a85fda28815c8597",
+      "native_inputs": 256,
+      "native_quantum_value_mismatches": 0,
+      "native_classical_value_mismatches": 0,
+      "native_phase_mismatches": 0
+    },
+    {
+      "start": 27231692,
+      "end": 27231784,
+      "pairs": [
+        {
+          "first": 27231692,
+          "second": 27231781,
+          "crossed_current_instructions": 88,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 31,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        },
+        {
+          "first": 27231693,
+          "second": 27231783,
+          "crossed_current_instructions": 91,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 34,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        }
+      ],
+      "original_local_sha256": "5b2eda43c4630ce5c6eecf4497053ec6754f700bf5bc57d29e043abd1fc7332e",
+      "rewritten_local_sha256": "e7eb9adcae26228661d7feed2e888bdae1d86a677dd88cf666b804e96eaaace8",
+      "native_inputs": 256,
+      "native_quantum_value_mismatches": 0,
+      "native_classical_value_mismatches": 0,
+      "native_phase_mismatches": 0
+    },
+    {
+      "start": 39860507,
+      "end": 39860599,
+      "pairs": [
+        {
+          "first": 39860507,
+          "second": 39860596,
+          "crossed_current_instructions": 88,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 31,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        },
+        {
+          "first": 39860508,
+          "second": 39860598,
+          "crossed_current_instructions": 91,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 34,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        }
+      ],
+      "original_local_sha256": "057edd8f0dfd4fe8382a162b97e4c6c4f5648a6bce87c5a3b5ca33279b04db65",
+      "rewritten_local_sha256": "071a792ec3d6d46edc168ae08a20281d76636c181311ab67d2a1d7af64dac18b",
+      "native_inputs": 256,
+      "native_quantum_value_mismatches": 0,
+      "native_classical_value_mismatches": 0,
+      "native_phase_mismatches": 0
+    },
+    {
+      "start": 39893903,
+      "end": 39893995,
+      "pairs": [
+        {
+          "first": 39893903,
+          "second": 39893992,
+          "crossed_current_instructions": 88,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 31,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        },
+        {
+          "first": 39893904,
+          "second": 39893994,
+          "crossed_current_instructions": 91,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 34,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        }
+      ],
+      "original_local_sha256": "9fad66583d646562980abb2bc910cb7ef56c658db0875d3a9317d0c5bdf7175d",
+      "rewritten_local_sha256": "24e717130490d524e58cd39a2e594cd29655834974157751289388b632ca2582",
+      "native_inputs": 256,
+      "native_quantum_value_mismatches": 0,
+      "native_classical_value_mismatches": 0,
+      "native_phase_mismatches": 0
+    },
+    {
+      "start": 40444546,
+      "end": 40444638,
+      "pairs": [
+        {
+          "first": 40444546,
+          "second": 40444635,
+          "crossed_current_instructions": 88,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 31,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        },
+        {
+          "first": 40444547,
+          "second": 40444637,
+          "crossed_current_instructions": 91,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 34,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        }
+      ],
+      "original_local_sha256": "ea83db365c3bedc8a515fc50d24c91263c29bf699a22b06ff20e3844a441b06b",
+      "rewritten_local_sha256": "c7a55b197202e327639ca40b1579716665ca3dd2c7ae2eecd4f1521aa18e622a",
+      "native_inputs": 256,
+      "native_quantum_value_mismatches": 0,
+      "native_classical_value_mismatches": 0,
+      "native_phase_mismatches": 0
+    },
+    {
+      "start": 40486634,
+      "end": 40486726,
+      "pairs": [
+        {
+          "first": 40486634,
+          "second": 40486723,
+          "crossed_current_instructions": 88,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 31,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        },
+        {
+          "first": 40486635,
+          "second": 40486725,
+          "crossed_current_instructions": 91,
+          "crossed_families": {
+            "CCX": 25,
+            "CSWAP": 12,
+            "CX": 34,
+            "HMR": 10,
+            "CZ_IF": 10
+          },
+          "all_gatewise_instrument_commutations": true
+        }
+      ],
+      "original_local_sha256": "9ed6a2ec0d13c6cec286c582b558583cbfd52ade67c416e52d1cecb53a8823ab",
+      "rewritten_local_sha256": "83f5a5c4c0ef67143d6936d3622d58c94e2f0f08bc693a1905b13694803c5b35",
+      "native_inputs": 256,
+      "native_quantum_value_mismatches": 0,
+      "native_classical_value_mismatches": 0,
+      "native_phase_mismatches": 0
+    }
+  ],
+  "whole_candidate_verified": false,
+  "official_verifier_run": false,
+  "score_claimed": false
+}

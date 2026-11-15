@@ -1,0 +1,70 @@
+{
+  "status": "COMPLETE",
+  "input_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "counts": {
+    "same_input_pairs": 1191,
+    "symbolically_checked": 1190,
+    "too_long": 1
+  },
+  "matches": [],
+  "examples": [
+    {
+      "first": 21558623,
+      "second": 21559965,
+      "same": 0,
+      "inputs": 24,
+      "gap": 24
+    },
+    {
+      "first": 21559965,
+      "second": 21561337,
+      "same": 0,
+      "inputs": 24,
+      "gap": 54
+    },
+    {
+      "first": 21564114,
+      "second": 21565468,
+      "same": 0,
+      "inputs": 24,
+      "gap": 36
+    },
+    {
+      "first": 21565468,
+      "second": 21566870,
+      "same": 0,
+      "inputs": 24,
+      "gap": 84
+    },
+    {
+      "first": 21566870,
+      "second": 21568320,
+      "same": 0,
+      "inputs": 24,
+      "gap": 132
+    },
+    {
+      "first": 21572047,
+      "second": 21573413,
+      "same": 0,
+      "inputs": 24,
+      "gap": 48
+    },
+    {
+      "first": 21573413,
+      "second": 21574848,
+      "same": 0,
+      "inputs": 24,
+      "gap": 117
+    },
+    {
+      "first": 21574848,
+      "second": 21576377,
+      "same": 0,
+      "inputs": 24,
+      "gap": 211
+    }
+  ],
+  "seconds": 35.34049337599572,
+  "script_sha256": "a63cb96975bb2fa313c959fada7a1152a45351df5b19d1ceda613433bbd0d88c"
+}

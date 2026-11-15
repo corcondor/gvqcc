@@ -1,0 +1,21 @@
+{
+  "status": "SELF_CONTAINED_OFFLINE_CELL_BUILT",
+  "file": "score4_package_cell.py",
+  "bytes": 31815,
+  "sha256": "9537876589e8033e383cf9592a68368ade070bf289b986996cf9de201456148f",
+  "payload_bytes": 55614,
+  "payload_sha256": "99cfe420a659595af23a7f4a9dce07ed32a0a778f767341c5a053227c67bce7b",
+  "compressed_payload_bytes": 14733,
+  "module_sha256": {
+    "kmb_profile": "7e7d90fde91384b8c35e45103df09d3fed8400a3ca4544f9b5870a4ee0d83ede",
+    "dqi_ccx_peephole": "13a7b05b7722468369d9132ef2b5f538c1698936167a662b5546915e715d9f69"
+  },
+  "recipe_sha256": "8c45c3a1f5f11e05f785949cfe09d55e10d97867e072eb99b3f7eeff6716d8ef",
+  "source_manifest_sha256": "cabff4b166e9fb3d471a4525aee3d74623c40aa3599445689c9459f4571c0cab",
+  "source_zip_sha256": "5a3011d3f208a0bae3b1e1bfb9b763ac8c7201f4de35a74d772699949b971882",
+  "candidate_dqi_sha256": "5a60d66233198be8ce05d9710bd35a7d2d6700bbced87560d405651070ae8194",
+  "candidate_dqi_bytes": 522345695,
+  "stdlib_only": true,
+  "network_required": false,
+  "official_verifier_run": false
+}

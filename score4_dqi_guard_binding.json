@@ -1,0 +1,162 @@
+{
+  "status": "INDEPENDENT_FULL_BINARY_PROOF_BINDING_PASS",
+  "source_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "candidate_sha256": "5a60d66233198be8ce05d9710bd35a7d2d6700bbced87560d405651070ae8194",
+  "local_review_sha256": "8c383a7c461b89139163b57a40c381ae0d74bb124cd35c728371e96719960eb1",
+  "review_script_sha256": "76ab20da88177fae3c4cbeff5c8dca06a6c0930bdfbc1514235d965fa484d424",
+  "binding_script_sha256": "1c508eba0ea5ef7fb23b3666f7670d1a47d3ade49325b2f4aa548dd19c45d344",
+  "root_certificate_sha256": "46cd98cca7667ad9fa26702780b555cecea629be2f2e7e8795637a26f57a877c",
+  "root_patch_sha256": "8c45c3a1f5f11e05f785949cfe09d55e10d97867e072eb99b3f7eeff6716d8ef",
+  "registers_byte_identical": true,
+  "headers_changed_only_expected_gate_counts": true,
+  "info_tags_absent": true,
+  "all_replacement_blocks_match_independent_proof": true,
+  "all_other_operation_columns_byte_identical": true,
+  "quantum_width": 889,
+  "classical_bits": 208087,
+  "exact_unconditional_toffoli_reduction": 16,
+  "exact_added_cx": 32,
+  "groups": [
+    {
+      "source_start": 26781103,
+      "source_end": 26781195,
+      "candidate_start": 26781103,
+      "candidate_end": 26781197,
+      "independently_proved_after_text_sha256": "c54587a0312caaaa9dc085a53a54f59b72b06b11e3721c26cc493052ceba0cc6",
+      "actual_candidate_matches": true
+    },
+    {
+      "source_start": 26823191,
+      "source_end": 26823283,
+      "candidate_start": 26823193,
+      "candidate_end": 26823287,
+      "independently_proved_after_text_sha256": "3f0a98fb717158ae65c211eef88aaf82f02502a5cf1f75f96cbac9ef0851a121",
+      "actual_candidate_matches": true
+    },
+    {
+      "source_start": 27198296,
+      "source_end": 27198388,
+      "candidate_start": 27198300,
+      "candidate_end": 27198394,
+      "independently_proved_after_text_sha256": "c992e368ad134ef2999bdb8716a24685504b225ae02b5fb7a85fda28815c8597",
+      "actual_candidate_matches": true
+    },
+    {
+      "source_start": 27231692,
+      "source_end": 27231784,
+      "candidate_start": 27231698,
+      "candidate_end": 27231792,
+      "independently_proved_after_text_sha256": "e7eb9adcae26228661d7feed2e888bdae1d86a677dd88cf666b804e96eaaace8",
+      "actual_candidate_matches": true
+    },
+    {
+      "source_start": 39860507,
+      "source_end": 39860599,
+      "candidate_start": 39860515,
+      "candidate_end": 39860609,
+      "independently_proved_after_text_sha256": "071a792ec3d6d46edc168ae08a20281d76636c181311ab67d2a1d7af64dac18b",
+      "actual_candidate_matches": true
+    },
+    {
+      "source_start": 39893903,
+      "source_end": 39893995,
+      "candidate_start": 39893913,
+      "candidate_end": 39894007,
+      "independently_proved_after_text_sha256": "24e717130490d524e58cd39a2e594cd29655834974157751289388b632ca2582",
+      "actual_candidate_matches": true
+    },
+    {
+      "source_start": 40444546,
+      "source_end": 40444638,
+      "candidate_start": 40444558,
+      "candidate_end": 40444652,
+      "independently_proved_after_text_sha256": "c7a55b197202e327639ca40b1579716665ca3dd2c7ae2eecd4f1521aa18e622a",
+      "actual_candidate_matches": true
+    },
+    {
+      "source_start": 40486634,
+      "source_end": 40486726,
+      "candidate_start": 40486648,
+      "candidate_end": 40486742,
+      "independently_proved_after_text_sha256": "83f5a5c4c0ef67143d6936d3622d58c94e2f0f08bc693a1905b13694803c5b35",
+      "actual_candidate_matches": true
+    }
+  ],
+  "unchanged_ranges": [
+    {
+      "source_start": 0,
+      "source_end": 26781103,
+      "candidate_start": 0,
+      "candidate_end": 26781103,
+      "operation_count": 26781103,
+      "all_ten_operand_columns_equal": true
+    },
+    {
+      "source_start": 26781195,
+      "source_end": 26823191,
+      "candidate_start": 26781197,
+      "candidate_end": 26823193,
+      "operation_count": 41996,
+      "all_ten_operand_columns_equal": true
+    },
+    {
+      "source_start": 26823283,
+      "source_end": 27198296,
+      "candidate_start": 26823287,
+      "candidate_end": 27198300,
+      "operation_count": 375013,
+      "all_ten_operand_columns_equal": true
+    },
+    {
+      "source_start": 27198388,
+      "source_end": 27231692,
+      "candidate_start": 27198394,
+      "candidate_end": 27231698,
+      "operation_count": 33304,
+      "all_ten_operand_columns_equal": true
+    },
+    {
+      "source_start": 27231784,
+      "source_end": 39860507,
+      "candidate_start": 27231792,
+      "candidate_end": 39860515,
+      "operation_count": 12628723,
+      "all_ten_operand_columns_equal": true
+    },
+    {
+      "source_start": 39860599,
+      "source_end": 39893903,
+      "candidate_start": 39860609,
+      "candidate_end": 39893913,
+      "operation_count": 33304,
+      "all_ten_operand_columns_equal": true
+    },
+    {
+      "source_start": 39893995,
+      "source_end": 40444546,
+      "candidate_start": 39894007,
+      "candidate_end": 40444558,
+      "operation_count": 550551,
+      "all_ten_operand_columns_equal": true
+    },
+    {
+      "source_start": 40444638,
+      "source_end": 40486634,
+      "candidate_start": 40444652,
+      "candidate_end": 40486648,
+      "operation_count": 41996,
+      "all_ten_operand_columns_equal": true
+    },
+    {
+      "source_start": 40486726,
+      "source_end": 58869042,
+      "candidate_start": 40486742,
+      "candidate_end": 58869058,
+      "operation_count": 18382316,
+      "all_ten_operand_columns_equal": true
+    }
+  ],
+  "scope": "Full binary binding to the independently proved instrument identities. No new native or official verification was run here.",
+  "official_verification": "Separate root receipt",
+  "public_score_claimed": false
+}
