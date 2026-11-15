@@ -1,0 +1,838 @@
+{
+  "schema_version": 1,
+  "member": "angle_k_13.kmb",
+  "sha256": "6d8ed72476d067cd207473ea8c706446d224383963e4501839f32796466a9890",
+  "reference_sha256": "98959513ccf849551577f9389a41e526ef354a135662479ad9f35cfac0835955",
+  "recompiled_sha256_matches": true,
+  "selected": {
+    "variant": 2,
+    "batch": 13,
+    "removable_pairs": 1225,
+    "products": 187,
+    "groups": 10,
+    "rematerialized": 9,
+    "missing_start": [
+      69,
+      90
+    ],
+    "missing_end": [
+      68,
+      85
+    ],
+    "valid_start_pairs": 45,
+    "valid_end_pairs": 332,
+    "sha256": "6d8ed72476d067cd207473ea8c706446d224383963e4501839f32796466a9890",
+    "ccx": 273
+  },
+  "beam_width": 24,
+  "directed_edges_excluding_self_loops": 1483168,
+  "product_and_affine_terms": 278,
+  "moves": [
+    {
+      "group": 1,
+      "terminal_cleanup": false,
+      "missing_from": [
+        69,
+        90
+      ],
+      "missing_to": [
+        69,
+        90
+      ],
+      "product_ids_zero_based": [
+        30,
+        33,
+        42,
+        44,
+        45,
+        54,
+        57,
+        67,
+        69,
+        85,
+        114,
+        115,
+        117,
+        118,
+        135,
+        143,
+        167
+      ],
+      "affine_ids_zero_based": [
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277
+      ],
+      "rematerialized": 0,
+      "evicted": [],
+      "restored": [],
+      "kmx_rows": [],
+      "instructions": []
+    },
+    {
+      "group": 2,
+      "terminal_cleanup": false,
+      "missing_from": [
+        69,
+        90
+      ],
+      "missing_to": [
+        90,
+        124
+      ],
+      "product_ids_zero_based": [
+        1,
+        2,
+        6,
+        20,
+        21,
+        66,
+        71,
+        84,
+        86,
+        89,
+        90,
+        91,
+        93,
+        94,
+        95,
+        96,
+        109,
+        125,
+        130,
+        131,
+        136,
+        138,
+        139,
+        145,
+        161,
+        162,
+        168,
+        169,
+        173,
+        175,
+        176,
+        182,
+        183,
+        186
+      ],
+      "affine_ids_zero_based": [
+        222
+      ],
+      "rematerialized": 1,
+      "evicted": [
+        {
+          "feature": 124,
+          "wire": 124,
+          "controls": [
+            0,
+            123
+          ],
+          "logical_controls": [
+            0,
+            123
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "feature": 69,
+          "wire": 124,
+          "controls": [
+            7,
+            61
+          ],
+          "logical_controls": [
+            7,
+            61
+          ]
+        }
+      ],
+      "kmx_rows": [
+        3598,
+        3599,
+        3600
+      ],
+      "instructions": [
+        "HMR q124 b0",
+        "CZ q0 q123 if b0",
+        "CCX q7 q61 q124"
+      ]
+    },
+    {
+      "group": 3,
+      "terminal_cleanup": false,
+      "missing_from": [
+        90,
+        124
+      ],
+      "missing_to": [
+        119,
+        124
+      ],
+      "product_ids_zero_based": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        22,
+        24,
+        25,
+        26,
+        27,
+        31,
+        32,
+        40,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        53,
+        55,
+        56,
+        59,
+        60,
+        61,
+        62,
+        64,
+        65,
+        70,
+        72,
+        73,
+        74,
+        75,
+        76,
+        78,
+        80,
+        83,
+        87,
+        92,
+        97,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        110,
+        111,
+        116,
+        120,
+        123,
+        126,
+        128,
+        129,
+        132,
+        133,
+        140,
+        141,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        155,
+        158,
+        160,
+        164,
+        165,
+        166,
+        170,
+        172,
+        174,
+        177,
+        178,
+        180,
+        181,
+        184,
+        185
+      ],
+      "affine_ids_zero_based": [
+        243
+      ],
+      "rematerialized": 1,
+      "evicted": [
+        {
+          "feature": 119,
+          "wire": 119,
+          "controls": [
+            0,
+            34
+          ],
+          "logical_controls": [
+            0,
+            34
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "feature": 90,
+          "wire": 119,
+          "controls": [
+            80,
+            88
+          ],
+          "logical_controls": [
+            80,
+            88
+          ]
+        }
+      ],
+      "kmx_rows": [
+        6922,
+        6923,
+        6924
+      ],
+      "instructions": [
+        "HMR q119 b0",
+        "CZ q0 q34 if b0",
+        "CCX q80 q88 q119"
+      ]
+    },
+    {
+      "group": 4,
+      "terminal_cleanup": false,
+      "missing_from": [
+        119,
+        124
+      ],
+      "missing_to": [
+        119,
+        122
+      ],
+      "product_ids_zero_based": [
+        10,
+        12,
+        43,
+        58,
+        63,
+        79,
+        98,
+        112,
+        113,
+        122,
+        159
+      ],
+      "affine_ids_zero_based": [],
+      "rematerialized": 1,
+      "evicted": [
+        {
+          "feature": 122,
+          "wire": 122,
+          "controls": [
+            0,
+            121
+          ],
+          "logical_controls": [
+            0,
+            121
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "feature": 124,
+          "wire": 122,
+          "controls": [
+            0,
+            123
+          ],
+          "logical_controls": [
+            0,
+            123
+          ]
+        }
+      ],
+      "kmx_rows": [
+        15757,
+        15758,
+        15759
+      ],
+      "instructions": [
+        "HMR q122 b0",
+        "CZ q0 q121 if b0",
+        "CCX q0 q123 q122"
+      ]
+    },
+    {
+      "group": 5,
+      "terminal_cleanup": false,
+      "missing_from": [
+        119,
+        122
+      ],
+      "missing_to": [
+        65,
+        122
+      ],
+      "product_ids_zero_based": [
+        34,
+        35,
+        52,
+        119,
+        127,
+        134,
+        137,
+        142,
+        154,
+        156,
+        157
+      ],
+      "affine_ids_zero_based": [],
+      "rematerialized": 1,
+      "evicted": [
+        {
+          "feature": 65,
+          "wire": 65,
+          "controls": [
+            6,
+            59
+          ],
+          "logical_controls": [
+            6,
+            59
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "feature": 119,
+          "wire": 65,
+          "controls": [
+            0,
+            34
+          ],
+          "logical_controls": [
+            0,
+            34
+          ]
+        }
+      ],
+      "kmx_rows": [
+        17049,
+        17050,
+        17051
+      ],
+      "instructions": [
+        "HMR q65 b0",
+        "CZ q6 q59 if b0",
+        "CCX q0 q34 q65"
+      ]
+    },
+    {
+      "group": 6,
+      "terminal_cleanup": false,
+      "missing_from": [
+        65,
+        122
+      ],
+      "missing_to": [
+        67,
+        122
+      ],
+      "product_ids_zero_based": [
+        28,
+        37,
+        38,
+        39,
+        81,
+        121,
+        124,
+        144
+      ],
+      "affine_ids_zero_based": [],
+      "rematerialized": 1,
+      "evicted": [
+        {
+          "feature": 67,
+          "wire": 67,
+          "controls": [
+            7,
+            55
+          ],
+          "logical_controls": [
+            7,
+            55
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "feature": 65,
+          "wire": 67,
+          "controls": [
+            6,
+            59
+          ],
+          "logical_controls": [
+            6,
+            59
+          ]
+        }
+      ],
+      "kmx_rows": [
+        18147,
+        18148,
+        18149
+      ],
+      "instructions": [
+        "HMR q67 b0",
+        "CZ q7 q55 if b0",
+        "CCX q6 q59 q67"
+      ]
+    },
+    {
+      "group": 7,
+      "terminal_cleanup": false,
+      "missing_from": [
+        67,
+        122
+      ],
+      "missing_to": [
+        64,
+        122
+      ],
+      "product_ids_zero_based": [
+        23,
+        36,
+        68,
+        77,
+        88
+      ],
+      "affine_ids_zero_based": [],
+      "rematerialized": 1,
+      "evicted": [
+        {
+          "feature": 64,
+          "wire": 64,
+          "controls": [
+            5,
+            63
+          ],
+          "logical_controls": [
+            5,
+            63
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "feature": 67,
+          "wire": 64,
+          "controls": [
+            7,
+            55
+          ],
+          "logical_controls": [
+            7,
+            55
+          ]
+        }
+      ],
+      "kmx_rows": [
+        18993,
+        18994,
+        18995
+      ],
+      "instructions": [
+        "HMR q64 b0",
+        "CZ q5 q63 if b0",
+        "CCX q7 q55 q64"
+      ]
+    },
+    {
+      "group": 8,
+      "terminal_cleanup": false,
+      "missing_from": [
+        64,
+        122
+      ],
+      "missing_to": [
+        60,
+        122
+      ],
+      "product_ids_zero_based": [
+        82,
+        163,
+        171
+      ],
+      "affine_ids_zero_based": [],
+      "rematerialized": 1,
+      "evicted": [
+        {
+          "feature": 60,
+          "wire": 60,
+          "controls": [
+            5,
+            9
+          ],
+          "logical_controls": [
+            5,
+            9
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "feature": 64,
+          "wire": 60,
+          "controls": [
+            5,
+            63
+          ],
+          "logical_controls": [
+            5,
+            63
+          ]
+        }
+      ],
+      "kmx_rows": [
+        19573,
+        19574,
+        19575
+      ],
+      "instructions": [
+        "HMR q60 b0",
+        "CZ q5 q9 if b0",
+        "CCX q5 q63 q60"
+      ]
+    },
+    {
+      "group": 9,
+      "terminal_cleanup": false,
+      "missing_from": [
+        60,
+        122
+      ],
+      "missing_to": [
+        60,
+        85
+      ],
+      "product_ids_zero_based": [
+        13,
+        41
+      ],
+      "affine_ids_zero_based": [],
+      "rematerialized": 1,
+      "evicted": [
+        {
+          "feature": 85,
+          "wire": 85,
+          "controls": [
+            4,
+            84
+          ],
+          "logical_controls": [
+            4,
+            84
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "feature": 122,
+          "wire": 85,
+          "controls": [
+            0,
+            121
+          ],
+          "logical_controls": [
+            0,
+            121
+          ]
+        }
+      ],
+      "kmx_rows": [
+        19966,
+        19967,
+        19968
+      ],
+      "instructions": [
+        "HMR q85 b0",
+        "CZ q4 q84 if b0",
+        "CCX q0 q121 q85"
+      ]
+    },
+    {
+      "group": 10,
+      "terminal_cleanup": false,
+      "missing_from": [
+        60,
+        85
+      ],
+      "missing_to": [
+        68,
+        85
+      ],
+      "product_ids_zero_based": [
+        29,
+        179
+      ],
+      "affine_ids_zero_based": [],
+      "rematerialized": 1,
+      "evicted": [
+        {
+          "feature": 68,
+          "wire": 68,
+          "controls": [
+            7,
+            56
+          ],
+          "logical_controls": [
+            7,
+            56
+          ]
+        }
+      ],
+      "restored": [
+        {
+          "feature": 60,
+          "wire": 68,
+          "controls": [
+            5,
+            9
+          ],
+          "logical_controls": [
+            5,
+            9
+          ]
+        }
+      ],
+      "kmx_rows": [
+        20253,
+        20254,
+        20255
+      ],
+      "instructions": [
+        "HMR q68 b0",
+        "CZ q7 q56 if b0",
+        "CCX q5 q9 q68"
+      ]
+    },
+    {
+      "group": 11,
+      "terminal_cleanup": true,
+      "missing_from": [
+        68,
+        85
+      ],
+      "missing_to": [
+        68,
+        85
+      ],
+      "product_ids_zero_based": [],
+      "affine_ids_zero_based": [],
+      "rematerialized": 0,
+      "evicted": [],
+      "restored": [],
+      "kmx_rows": [],
+      "instructions": []
+    }
+  ]
+}

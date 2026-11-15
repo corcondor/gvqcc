@@ -1,0 +1,212 @@
+{
+  "address_count": 1220,
+  "input_trait": "canonical five logical product tags on batches 1 to 14, remaining data arbitrary",
+  "batches": [
+    {
+      "file": "angle_k_0.kmb",
+      "sha256": "1f8e3ebb7eb6ea63658b8f65a028fc590992b693f40b3f3a4f47bdee4ca6f9a2",
+      "examined_workspace_or_tag": 79,
+      "examined_word": 212,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": null
+    },
+    {
+      "file": "angle_k_1.kmb",
+      "sha256": "9c2c2ce22a81ede61ee6b010f5c441e8282a679c7c77a7959ce23610b47337a9",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 212,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_2.kmb",
+      "sha256": "352cfd65d553b46762aa03111a1f504ff455967d37cdba5293d174684dd8268b",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 212,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_3.kmb",
+      "sha256": "6732d9af252f9a57e80802f0be917559492d2e790ed4292ceeff183ea8e6019d",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 212,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_4.kmb",
+      "sha256": "97f0e207258b897a6e99ccc85645da9987951ace189cf2b3f8920b52139bc6d8",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 189,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_5.kmb",
+      "sha256": "a549eb9a6ce0f8e01b675c07c338350808a4665c70cb90cca9762bfef898e778",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 189,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_6.kmb",
+      "sha256": "7c2ea68b94c56715046239d5942d0a57b44450ee8f246c9de71e71a18c402762",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 187,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_7.kmb",
+      "sha256": "810a8efbca01d1684732e4f5e0e582ce3af1c80a25ac5cd9bff2e7c273dcc629",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 189,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_8.kmb",
+      "sha256": "7c9c36aa66b38c6157a5a235b3617fd968ff98049e385a74c2f62b0a0890fc10",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 187,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_9.kmb",
+      "sha256": "16ab1f009c4e9ae6ac7538abc1b3c56c053cd5fe7c4ddd07b2140f3a49e6fb76",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 189,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_10.kmb",
+      "sha256": "6885656cd8d6744c51027c8cfa7d8308da85991e35db9e980a01ae5561e1704b",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 187,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_11.kmb",
+      "sha256": "a887a309993e166e3e60aa59471dea6cd36a85c99daeda6a9821d975457fa945",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 189,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_12.kmb",
+      "sha256": "12160907d9a9880c79ca18446a130cab522a7853c141efe5ea5feb3c88292b5d",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 187,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_13.kmb",
+      "sha256": "98959513ccf849551577f9389a41e526ef354a135662479ad9f35cfac0835955",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 187,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    },
+    {
+      "file": "angle_k_14.kmb",
+      "sha256": "5471bb326eb1171283328dd748c4daa86e7b6550a8ce63af087fe650fa6dfa49",
+      "examined_workspace_or_tag": 74,
+      "examined_word": 187,
+      "found": 0,
+      "substitutions": [],
+      "full_feature_bank_prefix_rank": {
+        "original_ccx": 74,
+        "input_rank_with_constant": 17,
+        "output_rank_with_constant": 91,
+        "same_bank_ccx_lower_bound": 74
+      }
+    }
+  ],
+  "found": 0
+}

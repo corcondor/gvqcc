@@ -1,0 +1,42 @@
+{
+  "local_score": 27.01346768867764,
+  "local_strict_baseline_score": 26.199604239504218,
+  "local_strict_improvement": 0.8138634491734216,
+  "previous_streamed_only_score": 27.327844992124593,
+  "costs": {
+    "dqi": 359707293756.04297,
+    "invsqrt": 78673.55534364567,
+    "chemistry": 305303691.0816595
+  },
+  "reference_costs": {
+    "invsqrt": 2076774.233715,
+    "dqi": 24439463583672.93,
+    "chemistry": 3355599588.3155375
+  },
+  "chargeable_chemistry_toffoli": 15242.0,
+  "chemistry_verified_shots": 78080,
+  "chemistry_submission_digest": "ac0140956847ed5b5429fa9151fb8803cf63c7d55c19c4664d326d3dafd82d1b",
+  "kaggle_submitted": false,
+  "members": {
+    "dfthcsos/angle_k_0.kmb": "1f8e3ebb7eb6ea63658b8f65a028fc590992b693f40b3f3a4f47bdee4ca6f9a2",
+    "dfthcsos/angle_k_1.kmb": "95d2f332a1251413006319a6cf044a6d4ed0b19e81d21c0a049c49e579c93e28",
+    "dfthcsos/angle_k_2.kmb": "a448b5f4fa5d0d2612ac428339fa579eadc27a85349941d2b430002a472452ae",
+    "dfthcsos/angle_k_3.kmb": "116d22214dda87b4dbdaba7c7ba35e68813a26243f9eff2a2431f7e0f2bc1537",
+    "dfthcsos/angle_k_4.kmb": "8bf3356974f505083c5bbd843d51cb369766e21d461560e1937e4fa8f1894c07",
+    "dfthcsos/angle_k_5.kmb": "246fff864eff0105ae4d72e85d13324121bb623ec625b788081f31e4b504213e",
+    "dfthcsos/angle_k_6.kmb": "fbf73edf409a47bccf4fe45cf5994405fbb4722aabad7ddeaa6f0c468416ada6",
+    "dfthcsos/angle_k_7.kmb": "4d8ed3d57251770ae9e887647d00c999b6d3725f2b03b55b6dd77a9e617c746c",
+    "dfthcsos/angle_k_8.kmb": "3ba2df6a1fd872117373fae6b4eb3cca760fd3eada7bac01d314d0497f1c4926",
+    "dfthcsos/angle_k_9.kmb": "297b69ce4bd289f353fcfbb2d0fef7d75232c87863388ef9b60980b68bb7287f",
+    "dfthcsos/angle_k_10.kmb": "cd822293ff4aba5dba5fe9a419869d9debab8cefd680869350beff253578e674",
+    "dfthcsos/angle_k_11.kmb": "5fdea5ecd0c4b38ba53bae3949acb6b1ec3f308537fa0d6330b95ea709725af6",
+    "dfthcsos/angle_k_12.kmb": "823cce79d788cba5260f2ce42e333747a184e9471dd732fc198eaab1d2ad50e5",
+    "dfthcsos/angle_k_13.kmb": "6d8ed72476d067cd207473ea8c706446d224383963e4501839f32796466a9890",
+    "dfthcsos/angle_k_14.kmb": "cf1ad46e1254351d22016aafa4106ca616b13ad666ff0c97c716f540cea292a9",
+    "dfthcsos/submission.npz": "ec0a77a1803cb94acbc2158e691f2a26a85cdc0cff3ba41e8b1df1dff6136d4a",
+    "dqi.kmb": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+    "invsqrt.kmb": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a"
+  },
+  "zip_size": 63396182,
+  "zip_sha256": "6a72dc852cd5364bad16d548f32de0811cb19066e0c5134e600c7f66acc594ed"
+}

@@ -1,0 +1,28 @@
+digraph route {
+graph [rankdir=TB, bgcolor="#F8FAFD", pad="0.28", nodesep="0.28", ranksep="0.42", label="ANGLE k=13 ｜選択された欠損ペアの経路", labelloc=t, labeljust=l, fontname="Noto Sans CJK JP", fontsize=17, fontcolor="#172849"];
+node [shape=box, fontname="Noto Sans CJK JP", fontsize=11, color="#8EA2B9", margin="0.15,0.08", style="rounded,filled", fontcolor="#172849"];
+edge [fontname="Noto Sans CJK JP", fontsize=9, color="#506A89", fontcolor="#344D6C", arrowsize="0.72"];
+s0 [label="開始  {f69, f90}", fillcolor="#E5EDFC"];
+s1 [label="グループ 1  {f69, f90}\n積 17 ｜線形補正 89", fillcolor="#EEF3F9"];
+s0 -> s1 [label="再生成 CCX +0"];
+s2 [label="グループ 2  {f90, f124}\n積 34 ｜線形補正 1", fillcolor="#EEF3F9"];
+s1 -> s2 [label="再生成 CCX +1"];
+s3 [label="グループ 3  {f119, f124}\n積 94 ｜線形補正 1", fillcolor="#CEEFE1"];
+s2 -> s3 [label="再生成 CCX +1"];
+s4 [label="グループ 4  {f119, f122}\n積 11 ｜線形補正 0", fillcolor="#EEF3F9"];
+s3 -> s4 [label="再生成 CCX +1"];
+s5 [label="グループ 5  {f65, f122}\n積 11 ｜線形補正 0", fillcolor="#EEF3F9"];
+s4 -> s5 [label="再生成 CCX +1"];
+s6 [label="グループ 6  {f67, f122}\n積 8 ｜線形補正 0", fillcolor="#EEF3F9"];
+s5 -> s6 [label="再生成 CCX +1"];
+s7 [label="グループ 7  {f64, f122}\n積 5 ｜線形補正 0", fillcolor="#EEF3F9"];
+s6 -> s7 [label="再生成 CCX +1"];
+s8 [label="グループ 8  {f60, f122}\n積 3 ｜線形補正 0", fillcolor="#EEF3F9"];
+s7 -> s8 [label="再生成 CCX +1"];
+s9 [label="グループ 9  {f60, f85}\n積 2 ｜線形補正 0", fillcolor="#EEF3F9"];
+s8 -> s9 [label="再生成 CCX +1"];
+s10 [label="グループ 10  {f68, f85}\n積 2 ｜線形補正 0", fillcolor="#EEF3F9"];
+s9 -> s10 [label="再生成 CCX +1"];
+s11 [label="終了  {f68, f85}\nこの配置でアンコンピュート", fillcolor="#E5EDFC"];
+s10 -> s11 [label="再生成 CCX +0"];
+}

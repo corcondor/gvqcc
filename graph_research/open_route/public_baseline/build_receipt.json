@@ -1,0 +1,297 @@
+{
+  "batches": [
+    {
+      "batch": 0,
+      "source_ops": 45407,
+      "baseline_ops": 45407,
+      "new_ops": 23012,
+      "peak_q": 128,
+      "ccx": 291,
+      "sha256": "1f8e3ebb7eb6ea63658b8f65a028fc590992b693f40b3f3a4f47bdee4ca6f9a2",
+      "checked_blocks": [
+        {
+          "original_lines": 21701,
+          "compiled_lines": 10506,
+          "CCX": 106,
+          "start": 1596,
+          "end": 23297
+        },
+        {
+          "original_lines": 12446,
+          "compiled_lines": 6021,
+          "CCX": 60,
+          "start": 23303,
+          "end": 35749
+        },
+        {
+          "original_lines": 9504,
+          "compiled_lines": 4729,
+          "CCX": 46,
+          "start": 35753,
+          "end": 45257
+        }
+      ]
+    },
+    {
+      "batch": 1,
+      "source_ops": 46543,
+      "baseline_ops": 46543,
+      "new_ops": 22549,
+      "peak_q": 125,
+      "ccx": 286,
+      "sha256": "9c2c2ce22a81ede61ee6b010f5c441e8282a679c7c77a7959ce23610b47337a9",
+      "checked_blocks": [
+        {
+          "original_lines": 46141,
+          "compiled_lines": 22147,
+          "CCX": 212,
+          "start": 258,
+          "end": 46399
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "source_ops": 46342,
+      "baseline_ops": 46342,
+      "new_ops": 22694,
+      "peak_q": 125,
+      "ccx": 286,
+      "sha256": "352cfd65d553b46762aa03111a1f504ff455967d37cdba5293d174684dd8268b",
+      "checked_blocks": [
+        {
+          "original_lines": 45940,
+          "compiled_lines": 22292,
+          "CCX": 212,
+          "start": 258,
+          "end": 46198
+        }
+      ]
+    },
+    {
+      "batch": 3,
+      "source_ops": 46585,
+      "baseline_ops": 46585,
+      "new_ops": 22621,
+      "peak_q": 125,
+      "ccx": 286,
+      "sha256": "6732d9af252f9a57e80802f0be917559492d2e790ed4292ceeff183ea8e6019d",
+      "checked_blocks": [
+        {
+          "original_lines": 46183,
+          "compiled_lines": 22219,
+          "CCX": 212,
+          "start": 258,
+          "end": 46441
+        }
+      ]
+    },
+    {
+      "batch": 4,
+      "source_ops": 38440,
+      "baseline_ops": 38440,
+      "new_ops": 19662,
+      "peak_q": 125,
+      "ccx": 263,
+      "sha256": "97f0e207258b897a6e99ccc85645da9987951ace189cf2b3f8920b52139bc6d8",
+      "checked_blocks": [
+        {
+          "original_lines": 38038,
+          "compiled_lines": 19260,
+          "CCX": 189,
+          "start": 258,
+          "end": 38296
+        }
+      ]
+    },
+    {
+      "batch": 5,
+      "source_ops": 38821,
+      "baseline_ops": 38821,
+      "new_ops": 19819,
+      "peak_q": 125,
+      "ccx": 263,
+      "sha256": "a549eb9a6ce0f8e01b675c07c338350808a4665c70cb90cca9762bfef898e778",
+      "checked_blocks": [
+        {
+          "original_lines": 38419,
+          "compiled_lines": 19417,
+          "CCX": 189,
+          "start": 258,
+          "end": 38677
+        }
+      ]
+    },
+    {
+      "batch": 6,
+      "source_ops": 38452,
+      "baseline_ops": 38452,
+      "new_ops": 19462,
+      "peak_q": 125,
+      "ccx": 261,
+      "sha256": "7c2ea68b94c56715046239d5942d0a57b44450ee8f246c9de71e71a18c402762",
+      "checked_blocks": [
+        {
+          "original_lines": 38050,
+          "compiled_lines": 19060,
+          "CCX": 187,
+          "start": 258,
+          "end": 38308
+        }
+      ]
+    },
+    {
+      "batch": 7,
+      "source_ops": 38710,
+      "baseline_ops": 38710,
+      "new_ops": 19765,
+      "peak_q": 125,
+      "ccx": 263,
+      "sha256": "810a8efbca01d1684732e4f5e0e582ce3af1c80a25ac5cd9bff2e7c273dcc629",
+      "checked_blocks": [
+        {
+          "original_lines": 38308,
+          "compiled_lines": 19363,
+          "CCX": 189,
+          "start": 258,
+          "end": 38566
+        }
+      ]
+    },
+    {
+      "batch": 8,
+      "source_ops": 38320,
+      "baseline_ops": 38320,
+      "new_ops": 19443,
+      "peak_q": 125,
+      "ccx": 261,
+      "sha256": "7c9c36aa66b38c6157a5a235b3617fd968ff98049e385a74c2f62b0a0890fc10",
+      "checked_blocks": [
+        {
+          "original_lines": 37918,
+          "compiled_lines": 19041,
+          "CCX": 187,
+          "start": 258,
+          "end": 38176
+        }
+      ]
+    },
+    {
+      "batch": 9,
+      "source_ops": 39152,
+      "baseline_ops": 39152,
+      "new_ops": 19684,
+      "peak_q": 125,
+      "ccx": 263,
+      "sha256": "16ab1f009c4e9ae6ac7538abc1b3c56c053cd5fe7c4ddd07b2140f3a49e6fb76",
+      "checked_blocks": [
+        {
+          "original_lines": 38750,
+          "compiled_lines": 19282,
+          "CCX": 189,
+          "start": 258,
+          "end": 39008
+        }
+      ]
+    },
+    {
+      "batch": 10,
+      "source_ops": 38453,
+      "baseline_ops": 38453,
+      "new_ops": 19609,
+      "peak_q": 125,
+      "ccx": 261,
+      "sha256": "6885656cd8d6744c51027c8cfa7d8308da85991e35db9e980a01ae5561e1704b",
+      "checked_blocks": [
+        {
+          "original_lines": 38051,
+          "compiled_lines": 19207,
+          "CCX": 187,
+          "start": 258,
+          "end": 38309
+        }
+      ]
+    },
+    {
+      "batch": 11,
+      "source_ops": 38745,
+      "baseline_ops": 38745,
+      "new_ops": 19620,
+      "peak_q": 125,
+      "ccx": 263,
+      "sha256": "a887a309993e166e3e60aa59471dea6cd36a85c99daeda6a9821d975457fa945",
+      "checked_blocks": [
+        {
+          "original_lines": 38343,
+          "compiled_lines": 19218,
+          "CCX": 189,
+          "start": 258,
+          "end": 38601
+        }
+      ]
+    },
+    {
+      "batch": 12,
+      "source_ops": 38550,
+      "baseline_ops": 38550,
+      "new_ops": 19520,
+      "peak_q": 125,
+      "ccx": 261,
+      "sha256": "12160907d9a9880c79ca18446a130cab522a7853c141efe5ea5feb3c88292b5d",
+      "checked_blocks": [
+        {
+          "original_lines": 38148,
+          "compiled_lines": 19118,
+          "CCX": 187,
+          "start": 258,
+          "end": 38406
+        }
+      ]
+    },
+    {
+      "batch": 13,
+      "source_ops": 38071,
+      "baseline_ops": 38071,
+      "new_ops": 19301,
+      "peak_q": 125,
+      "ccx": 261,
+      "sha256": "98959513ccf849551577f9389a41e526ef354a135662479ad9f35cfac0835955",
+      "checked_blocks": [
+        {
+          "original_lines": 37669,
+          "compiled_lines": 18899,
+          "CCX": 187,
+          "start": 258,
+          "end": 37927
+        }
+      ]
+    },
+    {
+      "batch": 14,
+      "source_ops": 38988,
+      "baseline_ops": 38988,
+      "new_ops": 19344,
+      "peak_q": 125,
+      "ccx": 261,
+      "sha256": "5471bb326eb1171283328dd748c4daa86e7b6550a8ce63af087fe650fa6dfa49",
+      "checked_blocks": [
+        {
+          "original_lines": 38586,
+          "compiled_lines": 18942,
+          "CCX": 187,
+          "start": 258,
+          "end": 38844
+        }
+      ]
+    }
+  ],
+  "previous_total": 609579,
+  "new_total": 306105,
+  "toffoli_per_pass": 4030,
+  "route_counts": {
+    "greedy": 352,
+    "mst": 49,
+    "steiner": 17
+  },
+  "steiner_hubs": 985
+}

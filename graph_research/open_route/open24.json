@@ -1,0 +1,268 @@
+[
+  {
+    "batch": 1,
+    "removable_pairs": 1225,
+    "products": 212,
+    "groups": 30,
+    "rematerialized": 29,
+    "missing_start": [
+      82,
+      83
+    ],
+    "missing_end": [
+      100,
+      122
+    ],
+    "valid_start_pairs": 91,
+    "valid_end_pairs": 332,
+    "sha256": "22e5f01d1a1463fb7b06ff9198990afc55cbfdaa4a87e4f27c181c9f208c320e",
+    "ccx": 318
+  },
+  {
+    "batch": 2,
+    "removable_pairs": 1225,
+    "products": 212,
+    "groups": 24,
+    "rematerialized": 24,
+    "missing_start": [
+      69,
+      120
+    ],
+    "missing_end": [
+      89,
+      119
+    ],
+    "valid_start_pairs": 105,
+    "valid_end_pairs": 332,
+    "sha256": "a9adc8a441d6610dd6334950ca8ddd5756ae7f2166987766be225a2e05b9f0f4",
+    "ccx": 313
+  },
+  {
+    "batch": 3,
+    "removable_pairs": 1225,
+    "products": 212,
+    "groups": 27,
+    "rematerialized": 27,
+    "missing_start": [
+      68,
+      89
+    ],
+    "missing_end": [
+      75,
+      111
+    ],
+    "valid_start_pairs": 55,
+    "valid_end_pairs": 332,
+    "sha256": "43a46be28d1aa4f134d2a8cccbe2165f81bd96b095559f25fc28d7c8b5471f16",
+    "ccx": 316
+  },
+  {
+    "batch": 4,
+    "removable_pairs": 1225,
+    "products": 189,
+    "groups": 16,
+    "rematerialized": 17,
+    "missing_start": [
+      111,
+      112
+    ],
+    "missing_end": [
+      51,
+      124
+    ],
+    "valid_start_pairs": 66,
+    "valid_end_pairs": 332,
+    "sha256": "26b854bdd57307f387d2951f27ac874fa4b7f600cc55b84f0afcfd7b3d8c06ad",
+    "ccx": 283
+  },
+  {
+    "batch": 5,
+    "removable_pairs": 1225,
+    "products": 189,
+    "groups": 13,
+    "rematerialized": 13,
+    "missing_start": [
+      77,
+      102
+    ],
+    "missing_end": [
+      68,
+      102
+    ],
+    "valid_start_pairs": 15,
+    "valid_end_pairs": 332,
+    "sha256": "246fff864eff0105ae4d72e85d13324121bb623ec625b788081f31e4b504213e",
+    "ccx": 279
+  },
+  {
+    "batch": 6,
+    "removable_pairs": 1225,
+    "products": 187,
+    "groups": 15,
+    "rematerialized": 14,
+    "missing_start": [
+      119,
+      120
+    ],
+    "missing_end": [
+      51,
+      71
+    ],
+    "valid_start_pairs": 55,
+    "valid_end_pairs": 332,
+    "sha256": "fbf73edf409a47bccf4fe45cf5994405fbb4722aabad7ddeaa6f0c468416ada6",
+    "ccx": 278
+  },
+  {
+    "batch": 7,
+    "removable_pairs": 1225,
+    "products": 189,
+    "groups": 14,
+    "rematerialized": 15,
+    "missing_start": [
+      120,
+      122
+    ],
+    "missing_end": [
+      51,
+      120
+    ],
+    "valid_start_pairs": 28,
+    "valid_end_pairs": 332,
+    "sha256": "584d34953b8d53edbb2465f1e8c5fdb0c42f85be808082bcb666c4ae148aa4bf",
+    "ccx": 281
+  },
+  {
+    "batch": 8,
+    "removable_pairs": 1225,
+    "products": 187,
+    "groups": 14,
+    "rematerialized": 14,
+    "missing_start": [
+      67,
+      77
+    ],
+    "missing_end": [
+      64,
+      66
+    ],
+    "valid_start_pairs": 45,
+    "valid_end_pairs": 332,
+    "sha256": "42dd4cca5a43a081003606570ea9f5f5f989a8152f8037a14653e862ed15b008",
+    "ccx": 278
+  },
+  {
+    "batch": 9,
+    "removable_pairs": 1225,
+    "products": 189,
+    "groups": 16,
+    "rematerialized": 16,
+    "missing_start": [
+      79,
+      124
+    ],
+    "missing_end": [
+      75,
+      83
+    ],
+    "valid_start_pairs": 91,
+    "valid_end_pairs": 332,
+    "sha256": "297b69ce4bd289f353fcfbb2d0fef7d75232c87863388ef9b60980b68bb7287f",
+    "ccx": 282
+  },
+  {
+    "batch": 10,
+    "removable_pairs": 1225,
+    "products": 187,
+    "groups": 16,
+    "rematerialized": 16,
+    "missing_start": [
+      82,
+      106
+    ],
+    "missing_end": [
+      71,
+      93
+    ],
+    "valid_start_pairs": 55,
+    "valid_end_pairs": 332,
+    "sha256": "2376e2b2465e7e3e975a5c6a9981125da5c553d537a42a5d1a457f579449bddd",
+    "ccx": 280
+  },
+  {
+    "batch": 11,
+    "removable_pairs": 1225,
+    "products": 189,
+    "groups": 12,
+    "rematerialized": 12,
+    "missing_start": [
+      68,
+      79
+    ],
+    "missing_end": [
+      68,
+      90
+    ],
+    "valid_start_pairs": 55,
+    "valid_end_pairs": 332,
+    "sha256": "5fdea5ecd0c4b38ba53bae3949acb6b1ec3f308537fa0d6330b95ea709725af6",
+    "ccx": 278
+  },
+  {
+    "batch": 12,
+    "removable_pairs": 1225,
+    "products": 187,
+    "groups": 12,
+    "rematerialized": 12,
+    "missing_start": [
+      119,
+      122
+    ],
+    "missing_end": [
+      82,
+      106
+    ],
+    "valid_start_pairs": 91,
+    "valid_end_pairs": 332,
+    "sha256": "b4152a95bda82fd1bf77b3a520e96b0f77e7f11ae2ae94cdaf4de871c7ad27d4",
+    "ccx": 276
+  },
+  {
+    "batch": 13,
+    "removable_pairs": 1225,
+    "products": 187,
+    "groups": 10,
+    "rematerialized": 9,
+    "missing_start": [
+      69,
+      90
+    ],
+    "missing_end": [
+      68,
+      85
+    ],
+    "valid_start_pairs": 45,
+    "valid_end_pairs": 332,
+    "sha256": "6d8ed72476d067cd207473ea8c706446d224383963e4501839f32796466a9890",
+    "ccx": 273
+  },
+  {
+    "batch": 14,
+    "removable_pairs": 1225,
+    "products": 187,
+    "groups": 12,
+    "rematerialized": 12,
+    "missing_start": [
+      77,
+      83
+    ],
+    "missing_end": [
+      106,
+      124
+    ],
+    "valid_start_pairs": 45,
+    "valid_end_pairs": 332,
+    "sha256": "cf1ad46e1254351d22016aafa4106ca616b13ad666ff0c97c716f540cea292a9",
+    "ccx": 276
+  }
+]

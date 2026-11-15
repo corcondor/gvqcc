@@ -1,0 +1,28 @@
+digraph exchange {
+graph [rankdir=TB, bgcolor="#F8FAFD", pad="0.28", nodesep="0.28", ranksep="0.42", label="ANGLE k=13 ｜KMX 6922–7008行の値・位相依存", labelloc=t, labeljust=l, fontname="Noto Sans CJK JP", fontsize=17, fontcolor="#172849"];
+node [shape=box, fontname="Noto Sans CJK JP", fontsize=11, color="#8EA2B9", margin="0.15,0.08", style="rounded,filled", fontcolor="#172849"];
+edge [fontname="Noto Sans CJK JP", fontsize=9, color="#506A89", fontcolor="#344D6C", arrowsize="0.72"];
+old [label="旧 q119 = q0 ∧ q34\n特徴量 f119", fillcolor="#FFEAC9"];
+hmr [label="6922  HMR q119 b0", fillcolor="#FFEAC9"];
+zero [label="q119 のリセット後\n|0⟩", fillcolor="#EEF3F9"];
+phase_inputs [label="保持線 q0, q34", fillcolor="#DDEBF8"];
+cz [label="6923  CZ q0 q34 if b0\n測定の位相を相殺", fillcolor="#FFEAC9"];
+live [label="保持線 q80, q88", fillcolor="#DDEBF8"];
+remat [label="6924  CCX q80 q88 q119\n特徴量 f90 を再生成", fillcolor="#CEEFE1"];
+left [label="制御 q7\nCX 32本でパリティを組む", fillcolor="#DDEBF8"];
+right [label="制御 q119\nCX 41本でパリティを組む", fillcolor="#DDEBF8"];
+out [label="7008  CCX q7 q119 q29", fillcolor="#CEEFE1"];
+fanout [label="出力基底の準備\nq29 から CX 10本", fillcolor="#F2E8FC"];
+old -> hmr;
+hmr -> cz [label="古典 b0", style=dashed, color="#9A5F19"];
+phase_inputs -> cz;
+hmr -> zero;
+zero -> remat;
+cz -> remat [label="命令順", style=dotted];
+live -> remat;
+remat -> left [label="6925  CX q119 q7"];
+remat -> right;
+left -> out;
+right -> out;
+fanout -> out [label="先に実行", style=dotted];
+}
