@@ -1,0 +1,15 @@
+{
+  "status": "CROSS_ONLY_SEARCH_INPUT_PREPARED",
+  "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/polytof/data/cpd/comm/9200-00210.npy",
+  "source_sha256": "33092d44e0217eb8860c60af641fb04d726ff42021f183a36414b789fde4f4fc",
+  "input": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/matrix_0_input.txt",
+  "input_sha256": "6a0c08dbe6d519b5d40b866aa81f930ee1d1a3f334e3d64be311059dafa9b7ce",
+  "original_mixed_terms": 210,
+  "cross_terms": 420,
+  "grouped_rank_cost": 210,
+  "dimensions": [
+    76,
+    15,
+    28
+  ]
+}

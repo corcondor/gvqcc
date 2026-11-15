@@ -1,0 +1,5473 @@
+{
+  "status": "INDEPENDENT_EXACT_FAMILY_REVIEW_PASS_COST_WORSE_NOT_ADOPTED",
+  "review_source": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score9_rebatch_independent_review.py",
+    "bytes": 18849,
+    "sha256": "0f4a656f7455577b463b9647f5536fe474c33111150b039820b9d125e4086917"
+  },
+  "generator": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score9_rebatch_synth.py",
+    "bytes": 14510,
+    "sha256": "35562f4da1031074749ce48ca383e0e2bb59ad2cba1e0080d774174f8069dfb8"
+  },
+  "rank_search_source": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score9_rebatch_synth_rank_basis.cpp",
+    "bytes": 2813,
+    "sha256": "da287e41e9784cc6d24f80c5763ccc8caa76ed5a7a9e7b7d0c91adb1fff570a1"
+  },
+  "family_metadata": {
+    "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/result.json",
+    "bytes": 37285,
+    "sha256": "8127918004cb430658ba20e930b1a678f4c0e132f2297f3312b32d2b1295006e"
+  },
+  "actual_words": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score8_chem_v27_recovered_words.npy",
+    "bytes": 91628,
+    "sha256": "5d48123a971949acaacfc9dbe4e749bd6c3ef6fc20c1600b8f6019d5e9032ce2"
+  },
+  "fixed_extension": {
+    "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/source_words_1232.npy",
+    "bytes": 92528,
+    "sha256": "792e1b06ca6e4e7b5fa82c3cc96412b9e2d2d70a27edcd7ccb08eb242714bf68"
+  },
+  "candidate_npz": {
+    "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/submission.npz",
+    "bytes": 1136087,
+    "sha256": "da30619d4a668d663adc9f7f0462cfd52ba8684cc5523980f5119dc3ef90302e"
+  },
+  "accepted_npz": {
+    "path": "/workspace/scratch/3815fb5fae06/score8_chem_v27_schur_full/submission.npz",
+    "bytes": 1136087,
+    "sha256": "da30619d4a668d663adc9f7f0462cfd52ba8684cc5523980f5119dc3ef90302e"
+  },
+  "same_npz_bytes": true,
+  "same_actual1220_angle_words": true,
+  "same_physics_metrics_by_identical_inputs": true,
+  "inherited_metrics": {
+    "error_1": 0.019999998000010073,
+    "error_2": 0.01999998805240961,
+    "Lambda": 283.0014128704472,
+    "E_SOS": -22144.188248002,
+    "E_gap": 3.9148980019999726,
+    "lambda_eff": 46.909667503120325,
+    "gap_in_domain": true
+  },
+  "code_independence": "No import of score9_rebatch_synth or outcome_chem_j4_synthesize; own symbolic-target/phase engine, subset-incidence coefficient transform, binary-order left contractions, low-pivot batch elimination and greedy basis check.",
+  "verification_scope": {
+    "circuits": 19,
+    "directions": 2,
+    "official_addresses": 1220,
+    "fixed_extension_addresses": 1232,
+    "official_address_transitions": 46360,
+    "all_target_assignments_per_address": "all2^32, proved symbolically",
+    "HMR_variables_cancelled": 3040,
+    "full_official_numeric_verifier_run": false,
+    "submission_performed": false
+  },
+  "rows": [
+    {
+      "batch": 0,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_0.kmb",
+        "bytes": 316330,
+        "sha256": "88d5c28644ec18fc5b7670a431cb1ea94cab566dcd4a756f3644beb9492ec17d"
+      },
+      "num_qubits": 125,
+      "toffolis": 290,
+      "exact_checks": [
+        {
+          "label": "0/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 34413,
+            "R": 82,
+            "CCX": 290,
+            "X": 12,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "0/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 34413,
+            "R": 82,
+            "CCX": 290,
+            "X": 12,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 1,
+        "nontrivial_left_kernels": 0,
+        "maximum_kernel_dimension": 0,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0
+        }
+      },
+      "independent_minimum_paired_basis_cost": 224,
+      "joint_identity": {
+        "original_core": 224,
+        "joint_core": 210,
+        "pairs": 14,
+        "checks": [
+          {
+            "outputs": [
+              0,
+              1
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              2,
+              3
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 1,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_1.kmb",
+        "bytes": 313924,
+        "sha256": "996f444fb7adac106d49d1c58869235ba0330b3f8f7a17c08eea88251af0b6de"
+      },
+      "num_qubits": 125,
+      "toffolis": 290,
+      "exact_checks": [
+        {
+          "label": "1/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 34144,
+            "R": 82,
+            "CCX": 290,
+            "X": 15,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "1/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 34144,
+            "R": 82,
+            "CCX": 290,
+            "X": 15,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 1,
+        "nontrivial_left_kernels": 0,
+        "maximum_kernel_dimension": 0,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0
+        }
+      },
+      "independent_minimum_paired_basis_cost": 224,
+      "joint_identity": {
+        "original_core": 224,
+        "joint_core": 210,
+        "pairs": 14,
+        "checks": [
+          {
+            "outputs": [
+              0,
+              1
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              2,
+              3
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 2,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_2.kmb",
+        "bytes": 316606,
+        "sha256": "fe97f2e288a9bad52d026b32ab05c864ddbe81b2376ef60a8e1f96dfdb4783d6"
+      },
+      "num_qubits": 125,
+      "toffolis": 290,
+      "exact_checks": [
+        {
+          "label": "2/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 34442,
+            "R": 82,
+            "CCX": 290,
+            "X": 15,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "2/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 34442,
+            "R": 82,
+            "CCX": 290,
+            "X": 15,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 1,
+        "nontrivial_left_kernels": 0,
+        "maximum_kernel_dimension": 0,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0
+        }
+      },
+      "independent_minimum_paired_basis_cost": 224,
+      "joint_identity": {
+        "original_core": 224,
+        "joint_core": 210,
+        "pairs": 14,
+        "checks": [
+          {
+            "outputs": [
+              0,
+              1
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              2,
+              3
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 3,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_3.kmb",
+        "bytes": 311495,
+        "sha256": "d07254336adea39002eb850666a19ca0e70905c1e132b4af25d4f197f6706dc8"
+      },
+      "num_qubits": 125,
+      "toffolis": 290,
+      "exact_checks": [
+        {
+          "label": "3/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 33873,
+            "R": 82,
+            "CCX": 290,
+            "X": 17,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "3/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 33873,
+            "R": 82,
+            "CCX": 290,
+            "X": 17,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 1,
+        "nontrivial_left_kernels": 0,
+        "maximum_kernel_dimension": 0,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0
+        }
+      },
+      "independent_minimum_paired_basis_cost": 224,
+      "joint_identity": {
+        "original_core": 224,
+        "joint_core": 210,
+        "pairs": 14,
+        "checks": [
+          {
+            "outputs": [
+              0,
+              1
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              2,
+              3
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 4,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_4.kmb",
+        "bytes": 307037,
+        "sha256": "86d041ca9a3d2c94581e257ade0f3c021bd4b594a892b1507fc03ed3d857804f"
+      },
+      "num_qubits": 125,
+      "toffolis": 285,
+      "exact_checks": [
+        {
+          "label": "4/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 33386,
+            "R": 82,
+            "CCX": 285,
+            "X": 15,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "4/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 33386,
+            "R": 82,
+            "CCX": 285,
+            "X": 15,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 2,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 1,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "2097152": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 218,
+      "joint_identity": {
+        "original_core": 218,
+        "joint_core": 205,
+        "pairs": 13,
+        "checks": [
+          {
+            "outputs": [
+              1,
+              2
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              3,
+              4
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              5,
+              6
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              7,
+              8
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              9,
+              10
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              11,
+              12
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              13,
+              14
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              15,
+              16
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              17,
+              18
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              19,
+              20
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              21,
+              22
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              23,
+              24
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              25,
+              26
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 5,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_5.kmb",
+        "bytes": 284761,
+        "sha256": "a26c7cba7ccfb9e8f71dd12973ff486d19f1d51927c3b604bca690b87ee1ff7d"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "5/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30936,
+            "R": 82,
+            "CCX": 268,
+            "X": 14,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "5/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30936,
+            "R": 82,
+            "CCX": 268,
+            "X": 14,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 6,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_6.kmb",
+        "bytes": 282419,
+        "sha256": "112bd34a7dc49fe2871f3e2abe63f40d9a4a4b08803bfedd8fb87fb8cccf02bd"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "6/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30678,
+            "R": 82,
+            "CCX": 268,
+            "X": 10,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "6/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30678,
+            "R": 82,
+            "CCX": 268,
+            "X": 10,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 7,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_7.kmb",
+        "bytes": 282325,
+        "sha256": "412be5897d03c339f6d2dfad949200e1ee5d0b8830cf1dfd2a196e521de5a795"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "7/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30667,
+            "R": 82,
+            "CCX": 268,
+            "X": 11,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "7/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30667,
+            "R": 82,
+            "CCX": 268,
+            "X": 11,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 8,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_8.kmb",
+        "bytes": 282144,
+        "sha256": "c8779efcfb290dd8b36f34ddf4debce029f9a36eb8e411a925b7904bd0e19d11"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "8/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30643,
+            "R": 82,
+            "CCX": 268,
+            "X": 18,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "8/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30643,
+            "R": 82,
+            "CCX": 268,
+            "X": 18,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 9,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_9.kmb",
+        "bytes": 282659,
+        "sha256": "59469ca32269a861a60ade61bd839f0cfe8b7c6bf3a9b424ea71cd9866df8c49"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "9/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30703,
+            "R": 82,
+            "CCX": 268,
+            "X": 13,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "9/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30703,
+            "R": 82,
+            "CCX": 268,
+            "X": 13,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 10,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_10.kmb",
+        "bytes": 282844,
+        "sha256": "5c81e69c26cccc3b3993fc86c32d4f48ff8ab5ebb651f78d535e7cbfe6337e9f"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "10/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30723,
+            "R": 82,
+            "CCX": 268,
+            "X": 14,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "10/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30723,
+            "R": 82,
+            "CCX": 268,
+            "X": 14,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 11,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_11.kmb",
+        "bytes": 283892,
+        "sha256": "96b2b2f659d4a08b1f1833cb66e5c0641a0b4b2fad93633bf49818c65256c7ca"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "11/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30840,
+            "R": 82,
+            "CCX": 268,
+            "X": 13,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "11/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30840,
+            "R": 82,
+            "CCX": 268,
+            "X": 13,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 12,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_12.kmb",
+        "bytes": 284722,
+        "sha256": "7594d63a9c2b0a594fb3d4c8568adc610aa5a3151583aedd6ce0edb3447a9421"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "12/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30930,
+            "R": 82,
+            "CCX": 268,
+            "X": 17,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "12/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30930,
+            "R": 82,
+            "CCX": 268,
+            "X": 17,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 13,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_13.kmb",
+        "bytes": 282397,
+        "sha256": "7d76d828d03457a79e17e66314d652fde4c244f9a68ef932346f60a945a9e41d"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "13/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30670,
+            "R": 82,
+            "CCX": 268,
+            "X": 20,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "13/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30670,
+            "R": 82,
+            "CCX": 268,
+            "X": 20,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 14,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_14.kmb",
+        "bytes": 281739,
+        "sha256": "6f6b637d837459a77896e5290c3da8f056147e4c2795ee3da142456feb13f0f3"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "14/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30598,
+            "R": 82,
+            "CCX": 268,
+            "X": 18,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "14/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30598,
+            "R": 82,
+            "CCX": 268,
+            "X": 18,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 15,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_15.kmb",
+        "bytes": 280091,
+        "sha256": "6c6e0004da27c6caf4a04998710ed3f5c221a5078be258976353dfa931d472c6"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "15/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30416,
+            "R": 82,
+            "CCX": 268,
+            "X": 16,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "15/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30416,
+            "R": 82,
+            "CCX": 268,
+            "X": 16,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 16,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_16.kmb",
+        "bytes": 280334,
+        "sha256": "54406a415c701c947c77b02df827a6564fbd643143aca50c43fa6a45446bf4fe"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "16/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30443,
+            "R": 82,
+            "CCX": 268,
+            "X": 16,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "16/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30443,
+            "R": 82,
+            "CCX": 268,
+            "X": 16,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 17,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_17.kmb",
+        "bytes": 282013,
+        "sha256": "18b8c744a9a5ef52ae7c1e75a79c6feb74600794f96571ccf0aff341b8f59719"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "17/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30629,
+            "R": 82,
+            "CCX": 268,
+            "X": 17,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "17/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30629,
+            "R": 82,
+            "CCX": 268,
+            "X": 17,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    },
+    {
+      "batch": 18,
+      "circuit": {
+        "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_18.kmb",
+        "bytes": 283286,
+        "sha256": "92a9e3f91cea8de9e632174ae34fa24a66be6ea9a392f5ccb7b33d12792c24c2"
+      },
+      "num_qubits": 125,
+      "toffolis": 268,
+      "exact_checks": [
+        {
+          "label": "18/forward",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30771,
+            "R": 82,
+            "CCX": 268,
+            "X": 16,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        },
+        {
+          "label": "18/reverse",
+          "status": "EXACT_ARBITRARY_TARGET_XOR_AND_ALL_HMR_PHASE_PASS",
+          "addresses": 1232,
+          "official_addresses_covered": 1220,
+          "arbitrary_target_bits": 32,
+          "HMR_variables_cancelled": 80,
+          "zero_resets_checked": 82,
+          "gate_counts": {
+            "CX": 30771,
+            "R": 82,
+            "CCX": 268,
+            "X": 16,
+            "HMR": 80,
+            "CZ": 80
+          },
+          "workspace_zero": true,
+          "selection_preserved": true
+        }
+      ],
+      "rank_basis_review": {
+        "nonzero_left_vectors_checked": 32767,
+        "rank_deficient_outputs_including_zero": 16,
+        "nontrivial_left_kernels": 2047,
+        "maximum_kernel_dimension": 4,
+        "kernel_coverage_complete": true,
+        "output_ranks": {
+          "0": 0,
+          "1": 4,
+          "128": 4,
+          "129": 4,
+          "16384": 4,
+          "16385": 4,
+          "16512": 4,
+          "16513": 4,
+          "2097152": 4,
+          "2097153": 4,
+          "2097280": 4,
+          "2097281": 4,
+          "2113536": 4,
+          "2113537": 4,
+          "2113664": 4,
+          "2113665": 4
+        }
+      },
+      "independent_minimum_paired_basis_cost": 200,
+      "joint_identity": {
+        "original_core": 200,
+        "joint_core": 188,
+        "pairs": 12,
+        "checks": [
+          {
+            "outputs": [
+              4,
+              5
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              6,
+              7
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              8,
+              9
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              10,
+              11
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              12,
+              13
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              14,
+              15
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              16,
+              17
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              18,
+              19
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              20,
+              21
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              22,
+              23
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              24,
+              25
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          },
+          {
+            "outputs": [
+              26,
+              27
+            ],
+            "before_ranks": [
+              15,
+              15
+            ],
+            "after_ranks": [
+              14,
+              14
+            ],
+            "original_pair_cost": 16,
+            "joint_pair_cost": 15
+          }
+        ]
+      }
+    }
+  ],
+  "joint_identity": {
+    "formula": "(l1+B2)(l2+A1) + l1*l2 + A1*B2 = l1*A1 + l2*B2 over GF(2)",
+    "exhaustive_four_bit_cases": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        1,
+        1
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        0,
+        1
+      ],
+      [
+        8,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        0
+      ],
+      [
+        10,
+        1,
+        1
+      ],
+      [
+        11,
+        0,
+        1
+      ],
+      [
+        12,
+        1,
+        0
+      ],
+      [
+        13,
+        0,
+        1
+      ],
+      [
+        14,
+        0,
+        1
+      ],
+      [
+        15,
+        0,
+        0
+      ]
+    ],
+    "application": "Subtract the shared cross term from both rank15 slices; each loses a row and has rank at most14. Two7-product residuals plus one shared product use at most15 instead of16. Pure-bank corrections are implemented from the already built complete banks.",
+    "total_shared_pairs": 237,
+    "total_saved_ccx_per_pass": 237,
+    "separate_paired_family_cost": 5434,
+    "joint_family_cost": 5197
+  },
+  "rank_optimality_scope": {
+    "fixed_points": "1232=77*16 addresses, with the chosen values at1220..1231 fixed as part of the tensor. Official physics uses only0..1219; these12 values are otherwise free and were not optimized here.",
+    "fixed_model": "15 nonconstant low4 functions times76 nonconstant high7 functions; arbitrary invertible28-dimensional output basis; independently synthesized single-coordinate paired products costing ceil(matrix_rank/2).",
+    "complete_enumeration": "Every rank<15 matrix has a nonzero left-null vector. All32767 such vectors were independently checked; candidate kernels cover exactly2^(28-rank) solutions for each contraction.",
+    "minimum_basis": "Weighted vector-matroid greedy is exact. All omitted full-rank directions have the same cost8; coordinate units suffice to extend any selected independent set.",
+    "not_global": "No lower bound on joint multi-output tensors, alternate1232 extensions, different address splits/banks, alternative angle words, staged data-dependent circuits or general quantum circuits. The237-product joint gain is explicitly outside the independent-output optimum."
+  },
+  "resources": {
+    "loader_toffoli_per_pass": 5197,
+    "total_toffoli": 17056,
+    "total_qubits": 419,
+    "maximum_angle_qubits": 125,
+    "QT_ratio_to_score8": 1.1368326075745105,
+    "chemistry_cost": 335238250.0630193,
+    "local_portfolio_score_if_used": 26.1842316386983,
+    "adopt": false
+  },
+  "no_blocking_correctness_findings": true,
+  "seconds": 15.672682224998425
+}

@@ -1,0 +1,218 @@
+{
+  "status": "CROSS_MATRIX_EXPORT_BRIDGE_EXACT_PASS",
+  "batch": 5,
+  "output": {
+    "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/matrix_bridge_k5.kmb",
+    "bytes": 285103,
+    "sha256": "1f79669114e9ac59c4ff821c06f8bd57e1fa29ae9a034a7d4a8527035b1a2c90"
+  },
+  "source_search_result": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score9_rebatch_matrix_k5_result.json",
+    "bytes": 14159,
+    "sha256": "34dc136dbf18415eda1873a63163577161b043a239f089756cf2024592ea3de1"
+  },
+  "source_joint_pool": {
+    "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/polytof/data/cpd/comm/9205-00188.npy",
+    "bytes": 9152,
+    "sha256": "c17f1268d9eeed30532a80217c6176604237392ba7403849477d06709cd73272"
+  },
+  "actual_1232_words": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score9_rebatch_synth_source_words_1232.npy",
+    "bytes": 92528,
+    "sha256": "792e1b06ca6e4e7b5fa82c3cc96412b9e2d2d70a27edcd7ccb08eb242714bf68"
+  },
+  "source_basis": {
+    "path": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k05_result.json",
+    "bytes": 1467,
+    "sha256": "ca43b1b74f0c1b2f96dbe6a3b38d0ad6d61d8bba9b7581c97ab1ffa255223152"
+  },
+  "adapter": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score9_rebatch_matrix_build.py",
+    "bytes": 4641,
+    "sha256": "f00dba92ecaa3f0d7e77bdd1ef9e7be8ee23d484a28e4cdd5652247f664eb197"
+  },
+  "builder": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score9_rebatch_synth.py",
+    "bytes": 14510,
+    "sha256": "35562f4da1031074749ce48ca383e0e2bb59ad2cba1e0080d774174f8069dfb8"
+  },
+  "raw_bilinear_terms": 376,
+  "paired_products": 188,
+  "qubits": 125,
+  "ccx": 268,
+  "source_cross_sha256": "05a2497b134dc890b8dd7b99dc85c5ba9dd4bed916821239e291997467741379",
+  "independent_raw_cross_equal": true,
+  "paired_cross_equal": true,
+  "exact_proof": {
+    "status": "EXACT_ARBITRARY_TARGET_XOR_AND_PHASE_PASS",
+    "addresses": 1232,
+    "output_bits": 32,
+    "formal_measurement_variables_cancelled": 80
+  },
+  "output_ranks": [
+    {
+      "output_mask": 1,
+      "rank": 4
+    },
+    {
+      "output_mask": 2,
+      "rank": 4
+    },
+    {
+      "output_mask": 4,
+      "rank": 4
+    },
+    {
+      "output_mask": 8,
+      "rank": 4
+    },
+    {
+      "output_mask": 16,
+      "rank": 14
+    },
+    {
+      "output_mask": 32,
+      "rank": 14
+    },
+    {
+      "output_mask": 48,
+      "rank": 2
+    },
+    {
+      "output_mask": 64,
+      "rank": 14
+    },
+    {
+      "output_mask": 128,
+      "rank": 14
+    },
+    {
+      "output_mask": 192,
+      "rank": 2
+    },
+    {
+      "output_mask": 256,
+      "rank": 14
+    },
+    {
+      "output_mask": 512,
+      "rank": 14
+    },
+    {
+      "output_mask": 768,
+      "rank": 2
+    },
+    {
+      "output_mask": 1024,
+      "rank": 14
+    },
+    {
+      "output_mask": 2048,
+      "rank": 14
+    },
+    {
+      "output_mask": 3072,
+      "rank": 2
+    },
+    {
+      "output_mask": 4096,
+      "rank": 14
+    },
+    {
+      "output_mask": 8192,
+      "rank": 14
+    },
+    {
+      "output_mask": 12288,
+      "rank": 2
+    },
+    {
+      "output_mask": 16384,
+      "rank": 14
+    },
+    {
+      "output_mask": 32768,
+      "rank": 14
+    },
+    {
+      "output_mask": 49152,
+      "rank": 2
+    },
+    {
+      "output_mask": 65536,
+      "rank": 14
+    },
+    {
+      "output_mask": 131072,
+      "rank": 14
+    },
+    {
+      "output_mask": 196608,
+      "rank": 2
+    },
+    {
+      "output_mask": 262144,
+      "rank": 14
+    },
+    {
+      "output_mask": 524288,
+      "rank": 14
+    },
+    {
+      "output_mask": 786432,
+      "rank": 2
+    },
+    {
+      "output_mask": 1048576,
+      "rank": 14
+    },
+    {
+      "output_mask": 2097152,
+      "rank": 14
+    },
+    {
+      "output_mask": 3145728,
+      "rank": 2
+    },
+    {
+      "output_mask": 4194304,
+      "rank": 14
+    },
+    {
+      "output_mask": 8388608,
+      "rank": 14
+    },
+    {
+      "output_mask": 12582912,
+      "rank": 2
+    },
+    {
+      "output_mask": 16777216,
+      "rank": 14
+    },
+    {
+      "output_mask": 33554432,
+      "rank": 14
+    },
+    {
+      "output_mask": 50331648,
+      "rank": 2
+    },
+    {
+      "output_mask": 67108864,
+      "rank": 14
+    },
+    {
+      "output_mask": 134217728,
+      "rank": 14
+    },
+    {
+      "output_mask": 201326592,
+      "rank": 2
+    }
+  ],
+  "existing_19_circuit_family_modified": false,
+  "full_official_verifier_run": false,
+  "native_family_rerun": false,
+  "no_additional_gate_saving": true
+}
