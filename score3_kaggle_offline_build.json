@@ -1,0 +1,30 @@
+{
+  "status": "OFFLINE_PATCH_REPRODUCED_EXACT_FINAL_ZIP",
+  "inverse_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "inverse_bytes": 198626,
+  "compressed_inverse_bytes": 27917,
+  "base64_bytes": 37224,
+  "unchanged_dqi_worker_sha256": "1948c54cb653a7763984cac57bf2435245b12d43f56c064c3ee854aa65b77ff1",
+  "offline_patch": {
+    "file": "score3_kaggle_patch_offline.py",
+    "bytes": 44388,
+    "sha256": "75e47a6db3c30e879cb0cc80a01a0dc57dd5617df3eb8701cb849dc0aa96fcdc"
+  },
+  "combined_cell": {
+    "file": "score3_kaggle_combined_cell.py",
+    "bytes": 273752,
+    "sha256": "a4e9ffc037a575b06af482c37e3418abaea85a34ef4482c27188d81ed1827eea"
+  },
+  "network_required": false,
+  "new_quantum_verification_required": false,
+  "packaging_check": {
+    "receipt": "score3_kaggle_offline_patch_check.json",
+    "receipt_sha256": "3a474b872211906f42dbb769c92e782f5a9a929383c21ad84cd4a52e120d5eda",
+    "exact_zip_sha256": "5a3011d3f208a0bae3b1e1bfb9b763ac8c7201f4de35a74d772699949b971882",
+    "bytes": 63552631,
+    "members": 18,
+    "all_member_sha256_and_crc_pass": true,
+    "method": "Copied the known final 17 other members into a separate predecessor and restored only invsqrt.kmb to old e46; ran the offline patch once. Original circuits/submission were untouched."
+  },
+  "combined_cell_execution_scope": "Unchanged existing exact4096 worker plus the tested offline inverse patch; combined full DQI rebuild was not rerun locally."
+}

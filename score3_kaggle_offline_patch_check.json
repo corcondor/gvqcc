@@ -1,0 +1,125 @@
+{
+  "status": "MEMBER_IDENTICAL_TO_FULLY_VERIFIED_SCORE3_PACKAGE",
+  "source_zip_sha256": "359a8e38d03e18aeedd090a8a797d0e22782247d6ab2afe93475f8da6751d71f",
+  "output": "/workspace/scratch/3815fb5fae06/score3_kaggle_patch_test/submission.zip",
+  "zip_sha256": "5a3011d3f208a0bae3b1e1bfb9b763ac8c7201f4de35a74d772699949b971882",
+  "zip_bytes": 63552631,
+  "member_count": 18,
+  "members": [
+    {
+      "name": "invsqrt.kmb",
+      "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+      "bytes": 198626,
+      "crc32": "d7faa178"
+    },
+    {
+      "name": "dqi.kmb",
+      "sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+      "bytes": 522345615,
+      "crc32": "f1fc7893"
+    },
+    {
+      "name": "dfthcsos/submission.npz",
+      "sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+      "bytes": 1153807,
+      "crc32": "1890c31b"
+    },
+    {
+      "name": "dfthcsos/angle_k_0.kmb",
+      "sha256": "39a74c931c745143d46ac3c3d7f76a84cc09982f0c7a9b2784e35e8cf0533b45",
+      "bytes": 263985,
+      "crc32": "5b59c9c2"
+    },
+    {
+      "name": "dfthcsos/angle_k_1.kmb",
+      "sha256": "753b1424a819fadcac324155a7cae1841f0ee977ce873f29c7e364c55cdd4f37",
+      "bytes": 287256,
+      "crc32": "eb66c178"
+    },
+    {
+      "name": "dfthcsos/angle_k_2.kmb",
+      "sha256": "487adc39d32a904021985241f80881fd90542fa35c0a379034fc88cc9ccfc337",
+      "bytes": 297819,
+      "crc32": "f1f9e727"
+    },
+    {
+      "name": "dfthcsos/angle_k_3.kmb",
+      "sha256": "8e01cc596c3cbfd372f2b6d009e3b49c29ae9448eaf0d9f21f50d088d2404d6a",
+      "bytes": 308938,
+      "crc32": "c48991b8"
+    },
+    {
+      "name": "dfthcsos/angle_k_4.kmb",
+      "sha256": "f9b6e68a119dc2b819c21812a136f3ae76eddb36d8964d1847bab68f880b3330",
+      "bytes": 246511,
+      "crc32": "99d30744"
+    },
+    {
+      "name": "dfthcsos/angle_k_5.kmb",
+      "sha256": "a17d6c663f66b3e8d9487b0b19f77075f5647ff240d258b6b7d37cb58997cd6c",
+      "bytes": 237798,
+      "crc32": "d994f6da"
+    },
+    {
+      "name": "dfthcsos/angle_k_6.kmb",
+      "sha256": "387f1a6095132fb6114682c8cc102a36cc93426860fa57b1fd972b65d4e88561",
+      "bytes": 227186,
+      "crc32": "dfdc5926"
+    },
+    {
+      "name": "dfthcsos/angle_k_7.kmb",
+      "sha256": "146cb20a99a8c6005539df2b0c9f0eb11b33a71ab10d66480f51fd5590e53711",
+      "bytes": 231189,
+      "crc32": "7efb80a9"
+    },
+    {
+      "name": "dfthcsos/angle_k_8.kmb",
+      "sha256": "0be2c2ec69d681f352c7e89fc94ed161f45b448110c9e617fe86181f72de646e",
+      "bytes": 230215,
+      "crc32": "bd8291d6"
+    },
+    {
+      "name": "dfthcsos/angle_k_9.kmb",
+      "sha256": "3e31f13446a8a3c72bff3ac6c123d15f9c8b86039f505fe7b5510d7245246c99",
+      "bytes": 236811,
+      "crc32": "15e775ba"
+    },
+    {
+      "name": "dfthcsos/angle_k_10.kmb",
+      "sha256": "656d5eb283c54a2b934fdcf38fc56d7b3cc7b0607e7731c26eb15b574e74f5eb",
+      "bytes": 232220,
+      "crc32": "a293bd69"
+    },
+    {
+      "name": "dfthcsos/angle_k_11.kmb",
+      "sha256": "d4eeedc38481610804ec2708e2fc02323b63d9f37487cec6cb9b42ed7c94c033",
+      "bytes": 236911,
+      "crc32": "cb166b5c"
+    },
+    {
+      "name": "dfthcsos/angle_k_12.kmb",
+      "sha256": "61275eda03641d1a7b4052b36fa1df4383918f8986172e73a7f8dcaa817d0308",
+      "bytes": 220654,
+      "crc32": "97ea444d"
+    },
+    {
+      "name": "dfthcsos/angle_k_13.kmb",
+      "sha256": "a4e43c2b183cf64de805701517fd0b56333dde662889579b824b4ee1ff0c3a72",
+      "bytes": 227643,
+      "crc32": "201b0e16"
+    },
+    {
+      "name": "dfthcsos/angle_k_14.kmb",
+      "sha256": "3b21fe0767295c6bd40c41e0c40ca1aeff02e54216ada02849c238ab66b70159",
+      "bytes": 219161,
+      "crc32": "d8fb3b8e"
+    }
+  ],
+  "reference_zip_sha256": "5a3011d3f208a0bae3b1e1bfb9b763ac8c7201f4de35a74d772699949b971882",
+  "exact_zip_bytes_reproduced": true,
+  "all_member_sha256_and_crc_pass": true,
+  "inverse_source": "Embedded SHA-pinned circuit; no network access",
+  "zlib_runtime_version": "1.3.2",
+  "scope": "Exact previously verified circuit bytes; no new quantum verification or competition submission.",
+  "submission_performed": false
+}
