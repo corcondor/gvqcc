@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "fixtures": [
+    {
+      "name": "shared_a",
+      "expected_rewrite": true,
+      "observed": {
+        "first": 0,
+        "second": 2,
+        "qubits": [
+          0,
+          1,
+          2
+        ],
+        "status": "EXACT_REWRITE_CANDIDATE",
+        "witness_op": 2,
+        "steps": 1,
+        "exact_and_atoms": 7,
+        "nonlinear_passes": 1,
+        "data_correction_toffoli": 1,
+        "residual_outputs": [
+          3
+        ],
+        "phase_correction": "none",
+        "delta_toffoli": -1
+      },
+      "independent_basis_phase_columns": 16,
+      "kmb_sha256": "ff49c530ea26c7512eb6f475344948106affb101d7a9ad1a5b3c8ad5ced1c58e"
+    },
+    {
+      "name": "shared_b",
+      "expected_rewrite": true,
+      "observed": {
+        "first": 0,
+        "second": 2,
+        "qubits": [
+          0,
+          1,
+          2
+        ],
+        "status": "EXACT_REWRITE_CANDIDATE",
+        "witness_op": 2,
+        "steps": 1,
+        "exact_and_atoms": 7,
+        "nonlinear_passes": 1,
+        "data_correction_toffoli": 1,
+        "residual_outputs": [
+          3
+        ],
+        "phase_correction": "none",
+        "delta_toffoli": -1
+      },
+      "independent_basis_phase_columns": 16,
+      "kmb_sha256": "d42f30d6f4c52a7a2c004fb5716054022c5a4f3db56f2f4ce06c0d7843ecbfd0"
+    },
+    {
+      "name": "shared_phase",
+      "expected_rewrite": true,
+      "observed": {
+        "first": 0,
+        "second": 3,
+        "qubits": [
+          0,
+          1,
+          2
+        ],
+        "status": "EXACT_REWRITE_CANDIDATE",
+        "witness_op": 3,
+        "steps": 2,
+        "exact_and_atoms": 7,
+        "nonlinear_passes": 1,
+        "data_correction_toffoli": 1,
+        "residual_outputs": [
+          3
+        ],
+        "phase_correction": "CZ(a,b)",
+        "delta_toffoli": -1
+      },
+      "independent_basis_phase_columns": 16,
+      "kmb_sha256": "080fd4ecbc96bdaefddc909f5e1cbf9a02f1046e777a661be01e3cf9f3ef076b"
+    },
+    {
+      "name": "shared_outputs",
+      "expected_rewrite": true,
+      "observed": {
+        "first": 0,
+        "second": 3,
+        "qubits": [
+          0,
+          1,
+          2
+        ],
+        "status": "EXACT_REWRITE_CANDIDATE",
+        "witness_op": 3,
+        "steps": 2,
+        "exact_and_atoms": 9,
+        "nonlinear_passes": 2,
+        "data_correction_toffoli": 1,
+        "residual_outputs": [
+          3,
+          4
+        ],
+        "phase_correction": "none",
+        "delta_toffoli": -1
+      },
+      "independent_basis_phase_columns": 32,
+      "kmb_sha256": "e505519eaa649867489c2dc304209db22253726b79072b1e246f67b9a04850ed"
+    },
+    {
+      "name": "fredkin_shared_control",
+      "expected_rewrite": true,
+      "observed": {
+        "first": 0,
+        "second": 2,
+        "qubits": [
+          0,
+          1,
+          2
+        ],
+        "status": "EXACT_REWRITE_CANDIDATE",
+        "witness_op": 2,
+        "steps": 1,
+        "exact_and_atoms": 7,
+        "nonlinear_passes": 1,
+        "data_correction_toffoli": 1,
+        "residual_outputs": [
+          2,
+          3
+        ],
+        "phase_correction": "none",
+        "delta_toffoli": -1
+      },
+      "independent_basis_phase_columns": 16,
+      "kmb_sha256": "718c88a83f8fabdc9474417d9e50964c5c5a04b5ba85c085ad67e94d58565d71"
+    },
+    {
+      "name": "linear_phase_return",
+      "expected_rewrite": true,
+      "observed": {
+        "first": 0,
+        "second": 4,
+        "qubits": [
+          0,
+          1,
+          2
+        ],
+        "status": "EXACT_REWRITE_CANDIDATE",
+        "witness_op": 4,
+        "steps": 3,
+        "exact_and_atoms": 6,
+        "nonlinear_passes": 0,
+        "data_correction_toffoli": 0,
+        "residual_outputs": [],
+        "phase_correction": "CZ(a,b)",
+        "delta_toffoli": -2
+      },
+      "independent_basis_phase_columns": 16,
+      "kmb_sha256": "19c2a038bc52c671fe3ad3f0d686bd8c4cfc465803ef8a8a72d319fc5e1cf520"
+    },
+    {
+      "name": "nonshared_control",
+      "expected_rewrite": false,
+      "observed": {
+        "first": 0,
+        "second": 2,
+        "qubits": [
+          0,
+          1,
+          2
+        ],
+        "status": "nonconstant_control_derivative",
+        "witness_op": 1,
+        "steps": 1,
+        "exact_and_atoms": 8,
+        "nonlinear_passes": 0,
+        "derivative_terms": 1,
+        "operation_qubits": [
+          2,
+          3,
+          4
+        ]
+      },
+      "independent_basis_phase_columns": 0,
+      "kmb_sha256": "ebe293fe642c0b2c483edb99af815bcec783faf95072f87aa8a7296299f5b632"
+    },
+    {
+      "name": "nonshared_fredkin",
+      "expected_rewrite": false,
+      "observed": {
+        "first": 0,
+        "second": 2,
+        "qubits": [
+          0,
+          1,
+          2
+        ],
+        "status": "nonconstant_swap_derivative",
+        "witness_op": 1,
+        "steps": 1,
+        "exact_and_atoms": 8,
+        "nonlinear_passes": 0,
+        "derivative_terms": 2,
+        "operation_qubits": [
+          2,
+          3,
+          4
+        ]
+      },
+      "independent_basis_phase_columns": 0,
+      "kmb_sha256": "be9370e98802a214e391079040635ddefbdc4ae2b1a9c70e1fb52dcc3e2e0099"
+    }
+  ],
+  "fixture_count": 8,
+  "independent_basis_phase_columns": 112,
+  "source_sha256": "6b83a98cca699fff6f202d451eb22af3d338ff960f448ff6d9b3d15d829173c2",
+  "optimizer_sha256": "a4d1ea7ca1b486e04606cb2c05ef1177368d48bc16d4b1409420137f8181c884",
+  "benchmark_rewrite_or_score_gain": null
+}

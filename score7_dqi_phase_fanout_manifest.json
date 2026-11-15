@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_NO_CANDIDATE",
+  "candidate_count": 0,
+  "new_benchmark_gain": 0,
+  "baseline_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score7_dqi_phase_fanout.cpp",
+      "bytes": 8607,
+      "sha256": "8ee22ff145a1376fe3e78811433734b951b0d0b948ca1a7e67e2455586157822"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score7_dqi_phase_fanout_check.py",
+      "bytes": 3943,
+      "sha256": "3fdce05501b0d8288f620274be7a62f8187a365eac18a10ac3b9e8a99eaa137c"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score7_dqi_phase_fanout.json",
+      "bytes": 998,
+      "sha256": "010d015cbcc7f1810d1479bad155ec33404c145010a8d84881396ca4986dbaba"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score7_dqi_phase_fanout_controls.json",
+      "bytes": 2551,
+      "sha256": "74673fb0719cd85808e7bcfe5a8835f442d1c230414b5074a748cd62b260e0dc"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score7_dqi_phase_fanout_report.md",
+      "bytes": 5064,
+      "sha256": "6df550e35e4e11631d6b851ce18b02b4c303c8b1c14a789723ba4cbf59e25059"
+    }
+  ],
+  "synthetic_kmb_fixture_directory": "/workspace/scratch/3815fb5fae06/score7_dqi_phase_fanout_controls",
+  "fixtures_reproducible_from_check_script": true,
+  "no_submission": true,
+  "no_baseline_mutation": true,
+  "no_new_full_official_verification": true
+}

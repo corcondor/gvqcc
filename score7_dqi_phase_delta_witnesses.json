@@ -1,0 +1,469 @@
+{
+  "overlap_counts": {
+    "('nonlinear_control_delta', False)": 310,
+    "('nonlinear_control_delta', True)": 20,
+    "('fredkin_nonlinear_delta', False)": 32
+  },
+  "shared_control_witnesses": [
+    {
+      "pair": {
+        "first": 26757676,
+        "second": 26844566,
+        "qubits": [
+          96,
+          884,
+          886
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 26757722,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          96,
+          84,
+          132
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 26781011,
+        "second": 26801316,
+        "qubits": [
+          184,
+          871,
+          136
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 26782474,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          772,
+          184,
+          804
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 26781012,
+        "second": 26801317,
+        "qubits": [
+          185,
+          871,
+          137
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 26782498,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          773,
+          185,
+          806
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 26823102,
+        "second": 26843407,
+        "qubits": [
+          124,
+          871,
+          76
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 26824565,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          772,
+          124,
+          744
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 26823103,
+        "second": 26843408,
+        "qubits": [
+          125,
+          871,
+          77
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 26824589,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          773,
+          125,
+          746
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 27179085,
+        "second": 27248591,
+        "qubits": [
+          252,
+          884,
+          886
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 27179131,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          252,
+          228,
+          276
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 27198210,
+        "second": 27214033,
+        "qubits": [
+          328,
+          875,
+          280
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 27199673,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          784,
+          328,
+          804
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 27198211,
+        "second": 27214034,
+        "qubits": [
+          329,
+          875,
+          281
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 27199697,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          785,
+          329,
+          806
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 27231609,
+        "second": 27247432,
+        "qubits": [
+          268,
+          875,
+          220
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 27233072,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          784,
+          268,
+          744
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 27231610,
+        "second": 27247433,
+        "qubits": [
+          269,
+          875,
+          221
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 27233096,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          785,
+          269,
+          746
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 39841302,
+        "second": 39910808,
+        "qubits": [
+          252,
+          885,
+          886
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 39841348,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          252,
+          228,
+          276
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 39860427,
+        "second": 39876250,
+        "qubits": [
+          328,
+          877,
+          280
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 39861890,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          784,
+          328,
+          804
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 39860428,
+        "second": 39876251,
+        "qubits": [
+          329,
+          877,
+          281
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 39861914,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          785,
+          329,
+          806
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 39893826,
+        "second": 39909649,
+        "qubits": [
+          268,
+          877,
+          220
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 39895289,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          784,
+          268,
+          744
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 39893827,
+        "second": 39909650,
+        "qubits": [
+          269,
+          877,
+          221
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 39895313,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          785,
+          269,
+          746
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 40421137,
+        "second": 40508027,
+        "qubits": [
+          96,
+          878,
+          886
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 40421183,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          96,
+          84,
+          132
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 40444472,
+        "second": 40464777,
+        "qubits": [
+          184,
+          876,
+          136
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 40445935,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          772,
+          184,
+          804
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 40444473,
+        "second": 40464778,
+        "qubits": [
+          185,
+          876,
+          137
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 40445959,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          773,
+          185,
+          806
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 40486563,
+        "second": 40506868,
+        "qubits": [
+          124,
+          876,
+          76
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 40488026,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          772,
+          124,
+          744
+        ],
+        "condition": null
+      }
+    },
+    {
+      "pair": {
+        "first": 40486564,
+        "second": 40506869,
+        "qubits": [
+          125,
+          876,
+          77
+        ],
+        "status": "nonlinear_control_delta",
+        "witness_op": 40488050,
+        "affected_phase_ops": []
+      },
+      "witness": {
+        "opcode": "0x31",
+        "qubits": [
+          773,
+          125,
+          746
+        ],
+        "condition": null
+      }
+    }
+  ]
+}

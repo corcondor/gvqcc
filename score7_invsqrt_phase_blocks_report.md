@@ -1,0 +1,155 @@
+# score7 invsqrt: phase-polynomial block resynthesis
+
+## Outcome
+
+The accepted invsqrt circuit is unchanged. Its KMB SHA256 remains
+`684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a`, Q46,
+1,550 static Toffoli-like gates, and verified cost 78,673.55534364567.
+No benchmark gain, new official verifier run, or submission is claimed.
+
+`score7_invsqrt_phase_blocks.py` implements a new phase-polynomial transformation
+for eight closed compute/phase/measure blocks in that circuit. Unlike the older
+predicate-relocation searches, it replaces each complete nonlinear phase block
+by CNOTs and parity rotations. It verifies each extracted quantum instrument
+exactly before estimating its cost under the official tariff.
+
+The transformation removes all 1 or 2 CCX gates from each individual block,
+but introduces too many generic rotations. Every resulting block is more
+expensive at fixed Q46. An exact modular-lift argument also bounds the generic
+rotation count of **any context-independent CNOT-plus-phase replacement on
+the same local data wires**, including noncanonical whole-turn phase lifts.
+This is a scoped negative result, not an optimality statement about invsqrt.
+
+## The transformation is implemented and checked
+
+The accepted KMX has 23,904 lines including its register declarations. The
+eight inspected blocks are the existing phase-feature gadgets `j0`, `j1`,
+`j2`, `j7`, `j3`, `j6`, `j4`, and `j5`. Each starts with one or two clean
+scratch qubits. The last write to every such scratch qubit before the block
+is an unconditional HMR; its line and instruction are recorded in the JSON.
+
+For each block, the code enumerates every assignment of its 2–6 local data
+bits and every HMR outcome. In total, it checks 696 source basis/outcome
+cases. The input data and scratch return exactly to their initial states,
+and the resulting phase is independent of the measurement outcomes.
+
+The extracted half-turn phase table is transformed by an exact rational
+Walsh transform into a sum of parity phases. Each parity is computed in an
+existing data wire with CNOTs, phased, and restored. The same HMR instructions
+are retained in their original order on the now-clean scratch, preserving
+the classical output bits. All 696 corresponding candidate basis/outcome
+cases are checked as well. Because HMR in this model measures in the X basis,
+each outcome has the same state-independent normalization; agreement of the
+complex phase and data column in every branch establishes the local Kraus
+operator identity.
+
+The non-improving benchmark alternatives were not compiled or accepted.
+Their exact rational circuit identities and ideal fixed-Q costs are analysis
+results, not native full-benchmark verification receipts. In particular,
+serializing newly introduced extremely fine angles could incur fixed-point
+rounding; no claim of a byte-exact benchmark substitute is made.
+
+## Official cost comparison
+
+The official invsqrt objective is
+
+`Q * (mean_Toffoli + (T_angles + synthesized_rotation_T)/4)`.
+
+The retained circuit has 33 generic rotations, 1 T-class rotation, and 4
+Clifford rotations. Each generic rotation is charged
+`0.56*log2(1/epsilon)+5.3` T. Since the local transformations preserve the
+ideal phase exactly, the model preserves the residual error budget and
+redistributes it among the new total number of generic rotations. It holds
+Q46 fixed; it does not claim a width reduction.
+
+| Block | Original CCX | Original generic / T angles | New generic angles | Fixed-Q cost increase |
+|---|---:|---:|---:|---:|
+| j0 | 1 | 1 / 0 | 4 | +950.332833 |
+| j1 | 1 | 1 / 0 | 3 | +617.953793 |
+| j2 | 2 | 1 / 0 | 15 | +4,576.164589 |
+| j7 | 1 | 0 / 1 | 3 | +938.832833 |
+| j3 | 1 | 1 / 0 | 3 | +617.953793 |
+| j6 | 2 | 1 / 0 | 15 | +4,576.164589 |
+| j4 | 2 | 1 / 0 | 9 | +2,569.965549 |
+| j5 | 2 | 1 / 0 | 9 | +2,569.965549 |
+
+All new blocks have zero CCX. These numbers show why removing a nonlinear
+gate is insufficient when the replacement introduces expensive arbitrary
+angles. The j7 case is especially relevant: the original AND followed by a
+T-class phase costs `1 + 1/4`, while the parity decomposition needs three
+pi/8 rotations, classified as generic by this verifier.
+
+## Exact modular obstruction for these local replacements
+
+Let `f(x)` denote a phase table in **half turns**, so the phase is
+`exp(i*pi*f(x))`, and let `p_s(x)` be the Boolean parity indexed by nonzero
+mask `s`. Over the reals there is a unique representation
+
+`f(x) = f(0) + sum_{s != 0} a_s * p_s(x)`.
+
+The parity coefficient is
+
+`a_s = -2 / 2^n * sum_x f(x) * (-1)^(s dot x)`.
+
+Another exact phase lift has the form `f'(x) = f(x) + 2*z(x)`, where every
+`z(x)` is an integer. Consequently each nonconstant coefficient can change
+only by an integer multiple of `4/2^n`.
+
+A Clifford or T-class Z_POW angle is an integer multiple of `1/4` half
+turn. If a coefficient lies outside the lattice generated by `1/4` and
+`4/2^n`, no allowed whole-turn lift can make that parity Clifford or T.
+That lattice is `2^(-max(n-2,2)) * Z`. Each such parity requires at least
+one generic rotation in every CNOT-plus-phase realization on the same
+independent data wires.
+
+For all eight blocks, the number of these forced generic parities equals
+the number in the canonical candidate: respectively 4, 3, 15, 3, 3, 15, 9,
+and 9. Even the optimistic lower-bound cost, assigning zero cost to every
+other phase and removing all Toffolis, exceeds the original fixed-Q cost.
+
+**Scope:** this is a bound for context-independent local replacements,
+treating the local data as arbitrary independent quantum inputs. It does
+not exclude use of correlations on the benchmark's actual reachable states,
+phase sharing across multiple blocks, new nonlinear predicates, measurement
+gadgets with other bases, or rescheduling that changes the global width.
+The code does not implement or claim a complete Reed–Muller decoder or PyZX
+optimizer.
+
+## Positive control with an actual tariff improvement
+
+A synthetic controlled-S block demonstrates that the implemented rewrite
+can detect a useful conversion when the angle is appropriate:
+
+`(pi/2)*a*b = (pi/4)*a + (pi/4)*b - (pi/4)*(a XOR b)`.
+
+The source computes `a*b` using one CCX into a clean scratch, applies S,
+then HMR-erases with its conditional CZ correction. The replacement uses
+three T-class rotations and two CNOTs, retaining HMR on the clean scratch.
+Its local official effective cost changes from **1 to 0.75**, with **Q23
+unchanged**. This is a synthetic test, not an invsqrt improvement.
+
+All 8 source and 8 candidate basis/measurement cases pass exact Fraction
+arithmetic. Native Kickmix simulations run 512 inputs under two fixed seeds
+for each circuit, totaling 2,048 shots. Every input value, scratch value,
+and phase is correct; measured Toffolis are 1 for the source and 0 for the
+candidate. The four small KMX/KMB artifacts and their hashes are retained.
+
+## Reproduction and provenance
+
+From the repository snapshot:
+
+```bash
+/workspace/scratch/7f542e06b7cf/kickmix_venv/bin/python score7_invsqrt_phase_blocks.py --out /tmp/score7_invsqrt_phase
+```
+
+The code uses exact `fractions.Fraction` arithmetic for the transformation,
+and the installed Kickmix runtime only for the synthetic native checks.
+The official verifier is read-only:
+
+`/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/invsqrt/verify_submission_invsqrt.py`
+
+Its SHA256 is
+`ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a`.
+The detailed results are in `score7_invsqrt_phase_blocks.json`; the source,
+report, receipts, test artifacts, and read-only dependencies are bound by
+`score7_invsqrt_phase_blocks_manifest.json`.

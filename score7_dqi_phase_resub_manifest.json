@@ -1,0 +1,37 @@
+{
+  "status": "COMPLETE_NO_NEW_CANDIDATE",
+  "input": {
+    "path": "/workspace/scratch/3815fb5fae06/score5_norm_final/dqi.kmb",
+    "sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+    "bytes": 522343175
+  },
+  "files": [
+    {
+      "path": "score7_dqi_phase_resub.cpp",
+      "bytes": 7686,
+      "sha256": "8d0d2c17588472cefb95f0af874ffbda7c6841f4580efd12bf36d98c054fb776"
+    },
+    {
+      "path": "score7_dqi_phase_resub_scan.json",
+      "bytes": 333,
+      "sha256": "20163135ea04764b5b3a97887365e7e00d88522ff83ff79067ae636161ac2398"
+    },
+    {
+      "path": "score7_dqi_phase_resub_check.py",
+      "bytes": 3015,
+      "sha256": "3430d19fb40e57ff24c61eeecf9a58ad0b2b6f51aef3071c59d3edf18b241cd3"
+    },
+    {
+      "path": "score7_dqi_phase_resub_check.json",
+      "bytes": 5887,
+      "sha256": "a5bcce6dcfca3b19b0986bab25e1a92366c3b4e69b47fe9a36c9423fb3f69547"
+    },
+    {
+      "path": "score7_dqi_phase_resub_report.md",
+      "bytes": 3268,
+      "sha256": "bb992fd2cfae1f20d2cd43858d501ca65e13ea5780e7f3c7d4d647f80c8d5567"
+    }
+  ],
+  "score_improvement": 0,
+  "submitted": false
+}

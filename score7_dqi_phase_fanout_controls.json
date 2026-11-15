@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "controls": 10,
+  "exact_dirty_basis_phase_columns": 80,
+  "records": [
+    {
+      "name": "free_z",
+      "expected_delta": -1,
+      "candidates": 1,
+      "exact_dirty_basis_phase_columns": 16,
+      "kmb_sha256": "be7202f8aa84350b65f3caf96d62a3a1244d5b149a55a78c155c48d65b431766"
+    },
+    {
+      "name": "free_cz_overlap",
+      "expected_delta": -1,
+      "candidates": 1,
+      "exact_dirty_basis_phase_columns": 16,
+      "kmb_sha256": "41d292b85cdef67b410fc871d1abb102812c819a7eeffde77143618940bd2c2c"
+    },
+    {
+      "name": "cancel_ccz",
+      "expected_delta": -2,
+      "candidates": 1,
+      "exact_dirty_basis_phase_columns": 32,
+      "kmb_sha256": "f93861b2d9378da22a9b1a64661e3a603a18538c810dedb80749de4ba8b94f21"
+    },
+    {
+      "name": "commuting_target_write",
+      "expected_delta": -1,
+      "candidates": 1,
+      "exact_dirty_basis_phase_columns": 16,
+      "kmb_sha256": "ac3102247be8fae62294d5c28c0dd36c3b40c5091b759969efbe2752a3104f4a"
+    },
+    {
+      "name": "paid_correction",
+      "expected_delta": null,
+      "candidates": 0,
+      "exact_dirty_basis_phase_columns": 0,
+      "kmb_sha256": "48e59310cfa6371e298ade0efe34c919743ae265b4ef1bb3621fd7c8ecb3214e"
+    },
+    {
+      "name": "quartic",
+      "expected_delta": null,
+      "candidates": 0,
+      "exact_dirty_basis_phase_columns": 0,
+      "kmb_sha256": "4878be9117ee35e4ca7e26d63ced101ba7c9e50176e1ae8493ad50aa51e215c2"
+    },
+    {
+      "name": "target_used",
+      "expected_delta": null,
+      "candidates": 0,
+      "exact_dirty_basis_phase_columns": 0,
+      "kmb_sha256": "d7c17e3330cfb4de1e445690664dbda5d1dc12af0e2b5acfb8a425462e7c9276"
+    },
+    {
+      "name": "control_changed",
+      "expected_delta": null,
+      "candidates": 0,
+      "exact_dirty_basis_phase_columns": 0,
+      "kmb_sha256": "58f71f9657a8ce3b2a17916430feeffe1dc0b13a8adec615295289af0830da11"
+    },
+    {
+      "name": "guard_changed",
+      "expected_delta": null,
+      "candidates": 0,
+      "exact_dirty_basis_phase_columns": 0,
+      "kmb_sha256": "45c119198623abdfa33b6947ff1791380af19323f920a7c6b3a5977f0afa5c03"
+    },
+    {
+      "name": "branch_boundary",
+      "expected_delta": null,
+      "candidates": 0,
+      "exact_dirty_basis_phase_columns": 0,
+      "kmb_sha256": "cb4a122dd1b9ff0687cf64d1088c824759dd38849da217a10335ee3e82b0d56b"
+    }
+  ],
+  "scanner_sha256": "eb891fd5b0a658e38f774df3ce44baebc980ecce13e539a1a72c014ff99542ea",
+  "script_sha256": "3fdce05501b0d8288f620274be7a62f8187a365eac18a10ac3b9e8a99eaa137c"
+}

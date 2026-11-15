@@ -1,0 +1,4000 @@
+{
+  "schema": "score7-phase-return-v1",
+  "status": "SIGNATURE_DISCOVERY_ONLY",
+  "operations": 58868734,
+  "ccx": 363654,
+  "ccz": 7000,
+  "physical_pairs": 302494,
+  "boundary_rejections": 83384,
+  "control_expression_rejections": 218748,
+  "target_use_rejections": 362,
+  "guard_rejections": 0,
+  "candidate_count": 0,
+  "candidates": [],
+  "control_return_pairs": [
+    {
+      "first": 26635129,
+      "second": 26735569,
+      "crossed_phases": 3,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781044,
+      "second": 26801277,
+      "crossed_phases": 0,
+      "qubits": [
+        85,
+        884,
+        181
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781045,
+      "second": 26801278,
+      "crossed_phases": 0,
+      "qubits": [
+        86,
+        884,
+        182
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781046,
+      "second": 26801279,
+      "crossed_phases": 0,
+      "qubits": [
+        87,
+        884,
+        183
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781047,
+      "second": 26801280,
+      "crossed_phases": 0,
+      "qubits": [
+        88,
+        884,
+        184
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781048,
+      "second": 26801281,
+      "crossed_phases": 0,
+      "qubits": [
+        89,
+        884,
+        185
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781049,
+      "second": 26801282,
+      "crossed_phases": 0,
+      "qubits": [
+        90,
+        884,
+        186
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781050,
+      "second": 26801283,
+      "crossed_phases": 0,
+      "qubits": [
+        91,
+        884,
+        187
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781051,
+      "second": 26801284,
+      "crossed_phases": 0,
+      "qubits": [
+        92,
+        884,
+        188
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781052,
+      "second": 26801285,
+      "crossed_phases": 0,
+      "qubits": [
+        93,
+        884,
+        189
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781053,
+      "second": 26801286,
+      "crossed_phases": 0,
+      "qubits": [
+        94,
+        884,
+        190
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781054,
+      "second": 26801287,
+      "crossed_phases": 0,
+      "qubits": [
+        95,
+        884,
+        191
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781008,
+      "second": 26801313,
+      "crossed_phases": 0,
+      "qubits": [
+        181,
+        871,
+        133
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781009,
+      "second": 26801314,
+      "crossed_phases": 0,
+      "qubits": [
+        182,
+        871,
+        134
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781010,
+      "second": 26801315,
+      "crossed_phases": 0,
+      "qubits": [
+        183,
+        871,
+        135
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781011,
+      "second": 26801316,
+      "crossed_phases": 0,
+      "qubits": [
+        184,
+        871,
+        136
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781012,
+      "second": 26801317,
+      "crossed_phases": 0,
+      "qubits": [
+        185,
+        871,
+        137
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781013,
+      "second": 26801318,
+      "crossed_phases": 0,
+      "qubits": [
+        186,
+        871,
+        138
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781014,
+      "second": 26801319,
+      "crossed_phases": 0,
+      "qubits": [
+        187,
+        871,
+        139
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781015,
+      "second": 26801320,
+      "crossed_phases": 0,
+      "qubits": [
+        188,
+        871,
+        140
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781016,
+      "second": 26801321,
+      "crossed_phases": 0,
+      "qubits": [
+        189,
+        871,
+        141
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781017,
+      "second": 26801322,
+      "crossed_phases": 0,
+      "qubits": [
+        190,
+        871,
+        142
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26781018,
+      "second": 26801323,
+      "crossed_phases": 0,
+      "qubits": [
+        191,
+        871,
+        143
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823135,
+      "second": 26843368,
+      "crossed_phases": 0,
+      "qubits": [
+        25,
+        884,
+        121
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823136,
+      "second": 26843369,
+      "crossed_phases": 0,
+      "qubits": [
+        26,
+        884,
+        122
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823137,
+      "second": 26843370,
+      "crossed_phases": 0,
+      "qubits": [
+        27,
+        884,
+        123
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823138,
+      "second": 26843371,
+      "crossed_phases": 0,
+      "qubits": [
+        28,
+        884,
+        124
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823139,
+      "second": 26843372,
+      "crossed_phases": 0,
+      "qubits": [
+        29,
+        884,
+        125
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823140,
+      "second": 26843373,
+      "crossed_phases": 0,
+      "qubits": [
+        30,
+        884,
+        126
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823141,
+      "second": 26843374,
+      "crossed_phases": 0,
+      "qubits": [
+        31,
+        884,
+        127
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823142,
+      "second": 26843375,
+      "crossed_phases": 0,
+      "qubits": [
+        32,
+        884,
+        128
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823143,
+      "second": 26843376,
+      "crossed_phases": 0,
+      "qubits": [
+        33,
+        884,
+        129
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823144,
+      "second": 26843377,
+      "crossed_phases": 0,
+      "qubits": [
+        34,
+        884,
+        130
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823145,
+      "second": 26843378,
+      "crossed_phases": 0,
+      "qubits": [
+        35,
+        884,
+        131
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823099,
+      "second": 26843404,
+      "crossed_phases": 0,
+      "qubits": [
+        121,
+        871,
+        73
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823100,
+      "second": 26843405,
+      "crossed_phases": 0,
+      "qubits": [
+        122,
+        871,
+        74
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823101,
+      "second": 26843406,
+      "crossed_phases": 0,
+      "qubits": [
+        123,
+        871,
+        75
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823102,
+      "second": 26843407,
+      "crossed_phases": 0,
+      "qubits": [
+        124,
+        871,
+        76
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823103,
+      "second": 26843408,
+      "crossed_phases": 0,
+      "qubits": [
+        125,
+        871,
+        77
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823104,
+      "second": 26843409,
+      "crossed_phases": 0,
+      "qubits": [
+        126,
+        871,
+        78
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823105,
+      "second": 26843410,
+      "crossed_phases": 0,
+      "qubits": [
+        127,
+        871,
+        79
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823106,
+      "second": 26843411,
+      "crossed_phases": 0,
+      "qubits": [
+        128,
+        871,
+        80
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823107,
+      "second": 26843412,
+      "crossed_phases": 0,
+      "qubits": [
+        129,
+        871,
+        81
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823108,
+      "second": 26843413,
+      "crossed_phases": 0,
+      "qubits": [
+        130,
+        871,
+        82
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26823109,
+      "second": 26843414,
+      "crossed_phases": 0,
+      "qubits": [
+        131,
+        871,
+        83
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26757676,
+      "second": 26844566,
+      "crossed_phases": 0,
+      "qubits": [
+        96,
+        884,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26757688,
+      "second": 26844578,
+      "crossed_phases": 0,
+      "qubits": [
+        102,
+        884,
+        885
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26757766,
+      "second": 26844656,
+      "crossed_phases": 0,
+      "qubits": [
+        89,
+        101,
+        134
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26757939,
+      "second": 26844829,
+      "crossed_phases": 0,
+      "qubits": [
+        89,
+        101,
+        132
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26758277,
+      "second": 26845167,
+      "crossed_phases": 0,
+      "qubits": [
+        85,
+        97,
+        136
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26758923,
+      "second": 26845813,
+      "crossed_phases": 0,
+      "qubits": [
+        85,
+        97,
+        135
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26759084,
+      "second": 26845974,
+      "crossed_phases": 0,
+      "qubits": [
+        29,
+        101,
+        74
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26759257,
+      "second": 26846147,
+      "crossed_phases": 0,
+      "qubits": [
+        29,
+        101,
+        72
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26759595,
+      "second": 26846485,
+      "crossed_phases": 0,
+      "qubits": [
+        25,
+        97,
+        76
+      ],
+      "condition": -1
+    },
+    {
+      "first": 26760241,
+      "second": 26847131,
+      "crossed_phases": 0,
+      "qubits": [
+        25,
+        97,
+        75
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27093708,
+      "second": 27166358,
+      "crossed_phases": 3,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198243,
+      "second": 27213994,
+      "crossed_phases": 0,
+      "qubits": [
+        229,
+        884,
+        325
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198244,
+      "second": 27213995,
+      "crossed_phases": 0,
+      "qubits": [
+        230,
+        884,
+        326
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198245,
+      "second": 27213996,
+      "crossed_phases": 0,
+      "qubits": [
+        231,
+        884,
+        327
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198246,
+      "second": 27213997,
+      "crossed_phases": 0,
+      "qubits": [
+        232,
+        884,
+        328
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198247,
+      "second": 27213998,
+      "crossed_phases": 0,
+      "qubits": [
+        233,
+        884,
+        329
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198248,
+      "second": 27213999,
+      "crossed_phases": 0,
+      "qubits": [
+        234,
+        884,
+        330
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198249,
+      "second": 27214000,
+      "crossed_phases": 0,
+      "qubits": [
+        235,
+        884,
+        331
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198250,
+      "second": 27214001,
+      "crossed_phases": 0,
+      "qubits": [
+        236,
+        884,
+        332
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198251,
+      "second": 27214002,
+      "crossed_phases": 0,
+      "qubits": [
+        237,
+        884,
+        333
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198252,
+      "second": 27214003,
+      "crossed_phases": 0,
+      "qubits": [
+        238,
+        884,
+        334
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198253,
+      "second": 27214004,
+      "crossed_phases": 0,
+      "qubits": [
+        239,
+        884,
+        335
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198207,
+      "second": 27214030,
+      "crossed_phases": 0,
+      "qubits": [
+        325,
+        875,
+        277
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198208,
+      "second": 27214031,
+      "crossed_phases": 0,
+      "qubits": [
+        326,
+        875,
+        278
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198209,
+      "second": 27214032,
+      "crossed_phases": 0,
+      "qubits": [
+        327,
+        875,
+        279
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198210,
+      "second": 27214033,
+      "crossed_phases": 0,
+      "qubits": [
+        328,
+        875,
+        280
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198211,
+      "second": 27214034,
+      "crossed_phases": 0,
+      "qubits": [
+        329,
+        875,
+        281
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198212,
+      "second": 27214035,
+      "crossed_phases": 0,
+      "qubits": [
+        330,
+        875,
+        282
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198213,
+      "second": 27214036,
+      "crossed_phases": 0,
+      "qubits": [
+        331,
+        875,
+        283
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198214,
+      "second": 27214037,
+      "crossed_phases": 0,
+      "qubits": [
+        332,
+        875,
+        284
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198215,
+      "second": 27214038,
+      "crossed_phases": 0,
+      "qubits": [
+        333,
+        875,
+        285
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198216,
+      "second": 27214039,
+      "crossed_phases": 0,
+      "qubits": [
+        334,
+        875,
+        286
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27198217,
+      "second": 27214040,
+      "crossed_phases": 0,
+      "qubits": [
+        335,
+        875,
+        287
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231642,
+      "second": 27247393,
+      "crossed_phases": 0,
+      "qubits": [
+        169,
+        884,
+        265
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231643,
+      "second": 27247394,
+      "crossed_phases": 0,
+      "qubits": [
+        170,
+        884,
+        266
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231644,
+      "second": 27247395,
+      "crossed_phases": 0,
+      "qubits": [
+        171,
+        884,
+        267
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231645,
+      "second": 27247396,
+      "crossed_phases": 0,
+      "qubits": [
+        172,
+        884,
+        268
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231646,
+      "second": 27247397,
+      "crossed_phases": 0,
+      "qubits": [
+        173,
+        884,
+        269
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231647,
+      "second": 27247398,
+      "crossed_phases": 0,
+      "qubits": [
+        174,
+        884,
+        270
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231648,
+      "second": 27247399,
+      "crossed_phases": 0,
+      "qubits": [
+        175,
+        884,
+        271
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231649,
+      "second": 27247400,
+      "crossed_phases": 0,
+      "qubits": [
+        176,
+        884,
+        272
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231650,
+      "second": 27247401,
+      "crossed_phases": 0,
+      "qubits": [
+        177,
+        884,
+        273
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231651,
+      "second": 27247402,
+      "crossed_phases": 0,
+      "qubits": [
+        178,
+        884,
+        274
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231652,
+      "second": 27247403,
+      "crossed_phases": 0,
+      "qubits": [
+        179,
+        884,
+        275
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231606,
+      "second": 27247429,
+      "crossed_phases": 0,
+      "qubits": [
+        265,
+        875,
+        217
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231607,
+      "second": 27247430,
+      "crossed_phases": 0,
+      "qubits": [
+        266,
+        875,
+        218
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231608,
+      "second": 27247431,
+      "crossed_phases": 0,
+      "qubits": [
+        267,
+        875,
+        219
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231609,
+      "second": 27247432,
+      "crossed_phases": 0,
+      "qubits": [
+        268,
+        875,
+        220
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231610,
+      "second": 27247433,
+      "crossed_phases": 0,
+      "qubits": [
+        269,
+        875,
+        221
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231611,
+      "second": 27247434,
+      "crossed_phases": 0,
+      "qubits": [
+        270,
+        875,
+        222
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231612,
+      "second": 27247435,
+      "crossed_phases": 0,
+      "qubits": [
+        271,
+        875,
+        223
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231613,
+      "second": 27247436,
+      "crossed_phases": 0,
+      "qubits": [
+        272,
+        875,
+        224
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231614,
+      "second": 27247437,
+      "crossed_phases": 0,
+      "qubits": [
+        273,
+        875,
+        225
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231615,
+      "second": 27247438,
+      "crossed_phases": 0,
+      "qubits": [
+        274,
+        875,
+        226
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27231616,
+      "second": 27247439,
+      "crossed_phases": 0,
+      "qubits": [
+        275,
+        875,
+        227
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27179085,
+      "second": 27248591,
+      "crossed_phases": 0,
+      "qubits": [
+        252,
+        884,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27179097,
+      "second": 27248603,
+      "crossed_phases": 0,
+      "qubits": [
+        258,
+        884,
+        868
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27179175,
+      "second": 27248681,
+      "crossed_phases": 0,
+      "qubits": [
+        233,
+        257,
+        278
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27179348,
+      "second": 27248854,
+      "crossed_phases": 0,
+      "qubits": [
+        233,
+        257,
+        276
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27179686,
+      "second": 27249192,
+      "crossed_phases": 0,
+      "qubits": [
+        229,
+        253,
+        280
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27180332,
+      "second": 27249838,
+      "crossed_phases": 0,
+      "qubits": [
+        229,
+        253,
+        279
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27180493,
+      "second": 27249999,
+      "crossed_phases": 0,
+      "qubits": [
+        173,
+        257,
+        218
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27180666,
+      "second": 27250172,
+      "crossed_phases": 0,
+      "qubits": [
+        173,
+        257,
+        216
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27181004,
+      "second": 27250510,
+      "crossed_phases": 0,
+      "qubits": [
+        169,
+        253,
+        220
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27181650,
+      "second": 27251156,
+      "crossed_phases": 0,
+      "qubits": [
+        169,
+        253,
+        219
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27166293,
+      "second": 27347598,
+      "crossed_phases": 3,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27367068,
+      "second": 27484458,
+      "crossed_phases": 2,
+      "qubits": [
+        336,
+        337,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27484645,
+      "second": 27585773,
+      "crossed_phases": 2,
+      "qubits": [
+        396,
+        397,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27585948,
+      "second": 27671928,
+      "crossed_phases": 2,
+      "qubits": [
+        432,
+        433,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27672091,
+      "second": 27747829,
+      "crossed_phases": 2,
+      "qubits": [
+        492,
+        493,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27747980,
+      "second": 27811483,
+      "crossed_phases": 2,
+      "qubits": [
+        528,
+        529,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27811622,
+      "second": 27865145,
+      "crossed_phases": 2,
+      "qubits": [
+        588,
+        589,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27865272,
+      "second": 27909604,
+      "crossed_phases": 2,
+      "qubits": [
+        624,
+        625,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27909719,
+      "second": 27945228,
+      "crossed_phases": 2,
+      "qubits": [
+        684,
+        685,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27945331,
+      "second": 27976335,
+      "crossed_phases": 2,
+      "qubits": [
+        720,
+        721,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27976426,
+      "second": 28003332,
+      "crossed_phases": 2,
+      "qubits": [
+        780,
+        781,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 27347598,
+      "second": 28750514,
+      "crossed_phases": 44,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28750514,
+      "second": 28781864,
+      "crossed_phases": 2,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28669857,
+      "second": 28792827,
+      "crossed_phases": 4,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28753289,
+      "second": 28819546,
+      "crossed_phases": 3,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28781864,
+      "second": 28831923,
+      "crossed_phases": 3,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28781866,
+      "second": 28831925,
+      "crossed_phases": 1,
+      "qubits": [
+        206,
+        886,
+        878
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28781868,
+      "second": 28831927,
+      "crossed_phases": 1,
+      "qubits": [
+        207,
+        878,
+        864
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28781870,
+      "second": 28831929,
+      "crossed_phases": 1,
+      "qubits": [
+        208,
+        864,
+        883
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28781872,
+      "second": 28831931,
+      "crossed_phases": 1,
+      "qubits": [
+        209,
+        883,
+        880
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28781874,
+      "second": 28831933,
+      "crossed_phases": 1,
+      "qubits": [
+        210,
+        880,
+        888
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28781876,
+      "second": 28831935,
+      "crossed_phases": 1,
+      "qubits": [
+        211,
+        888,
+        879
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28781878,
+      "second": 28831937,
+      "crossed_phases": 1,
+      "qubits": [
+        212,
+        879,
+        874
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28781880,
+      "second": 28831939,
+      "crossed_phases": 1,
+      "qubits": [
+        213,
+        874,
+        873
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28781882,
+      "second": 28831941,
+      "crossed_phases": 0,
+      "qubits": [
+        214,
+        873,
+        877
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28792827,
+      "second": 28831988,
+      "crossed_phases": 3,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28819599,
+      "second": 28859249,
+      "crossed_phases": 2,
+      "qubits": [
+        204,
+        884,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28831923,
+      "second": 28860651,
+      "crossed_phases": 2,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28831988,
+      "second": 28871614,
+      "crossed_phases": 2,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28819546,
+      "second": 28898333,
+      "crossed_phases": 5,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28860651,
+      "second": 28910710,
+      "crossed_phases": 3,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28860653,
+      "second": 28910712,
+      "crossed_phases": 1,
+      "qubits": [
+        206,
+        886,
+        877
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28860655,
+      "second": 28910714,
+      "crossed_phases": 1,
+      "qubits": [
+        207,
+        877,
+        871
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28860657,
+      "second": 28910716,
+      "crossed_phases": 1,
+      "qubits": [
+        208,
+        871,
+        878
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28860659,
+      "second": 28910718,
+      "crossed_phases": 1,
+      "qubits": [
+        209,
+        878,
+        864
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28860661,
+      "second": 28910720,
+      "crossed_phases": 1,
+      "qubits": [
+        210,
+        864,
+        883
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28860663,
+      "second": 28910722,
+      "crossed_phases": 1,
+      "qubits": [
+        211,
+        883,
+        880
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28860665,
+      "second": 28910724,
+      "crossed_phases": 1,
+      "qubits": [
+        212,
+        880,
+        888
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28860667,
+      "second": 28910726,
+      "crossed_phases": 1,
+      "qubits": [
+        213,
+        888,
+        879
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28860669,
+      "second": 28910728,
+      "crossed_phases": 0,
+      "qubits": [
+        214,
+        879,
+        874
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28871614,
+      "second": 28910775,
+      "crossed_phases": 3,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28898333,
+      "second": 28938615,
+      "crossed_phases": 3,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28898335,
+      "second": 28938617,
+      "crossed_phases": 6,
+      "qubits": [
+        242,
+        886,
+        872
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28898337,
+      "second": 28938619,
+      "crossed_phases": 8,
+      "qubits": [
+        243,
+        872,
+        866
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28898339,
+      "second": 28938621,
+      "crossed_phases": 10,
+      "qubits": [
+        244,
+        866,
+        875
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28898341,
+      "second": 28938623,
+      "crossed_phases": 14,
+      "qubits": [
+        245,
+        875,
+        885
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28898343,
+      "second": 28938625,
+      "crossed_phases": 10,
+      "qubits": [
+        246,
+        885,
+        870
+      ],
+      "condition": -1
+    },
+    {
+      "first": 28898345,
+      "second": 28938627,
+      "crossed_phases": 28,
+      "qubits": [
+        247,
+        870,
+        876
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29220016,
+      "second": 29258858,
+      "crossed_phases": 2,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29096635,
+      "second": 29273037,
+      "crossed_phases": 4,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29222791,
+      "second": 29307454,
+      "crossed_phases": 3,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29258858,
+      "second": 29323069,
+      "crossed_phases": 3,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29258860,
+      "second": 29323071,
+      "crossed_phases": 1,
+      "qubits": [
+        50,
+        886,
+        882
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29258862,
+      "second": 29323073,
+      "crossed_phases": 1,
+      "qubits": [
+        51,
+        882,
+        881
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29258864,
+      "second": 29323075,
+      "crossed_phases": 1,
+      "qubits": [
+        52,
+        881,
+        869
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29258866,
+      "second": 29323077,
+      "crossed_phases": 1,
+      "qubits": [
+        53,
+        869,
+        884
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29258868,
+      "second": 29323079,
+      "crossed_phases": 1,
+      "qubits": [
+        54,
+        884,
+        865
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29258870,
+      "second": 29323081,
+      "crossed_phases": 1,
+      "qubits": [
+        55,
+        865,
+        880
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29258872,
+      "second": 29323083,
+      "crossed_phases": 1,
+      "qubits": [
+        56,
+        880,
+        877
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29258874,
+      "second": 29323085,
+      "crossed_phases": 1,
+      "qubits": [
+        57,
+        877,
+        870
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29258876,
+      "second": 29323087,
+      "crossed_phases": 0,
+      "qubits": [
+        58,
+        870,
+        878
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29273037,
+      "second": 29323134,
+      "crossed_phases": 3,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29307507,
+      "second": 29357887,
+      "crossed_phases": 2,
+      "qubits": [
+        48,
+        883,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29323069,
+      "second": 29359289,
+      "crossed_phases": 2,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29323134,
+      "second": 29373468,
+      "crossed_phases": 2,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29307454,
+      "second": 29407885,
+      "crossed_phases": 5,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29359289,
+      "second": 29423500,
+      "crossed_phases": 3,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29359291,
+      "second": 29423502,
+      "crossed_phases": 1,
+      "qubits": [
+        50,
+        886,
+        878
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29359293,
+      "second": 29423504,
+      "crossed_phases": 1,
+      "qubits": [
+        51,
+        878,
+        876
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29359295,
+      "second": 29423506,
+      "crossed_phases": 1,
+      "qubits": [
+        52,
+        876,
+        882
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29359297,
+      "second": 29423508,
+      "crossed_phases": 1,
+      "qubits": [
+        53,
+        882,
+        881
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29359299,
+      "second": 29423510,
+      "crossed_phases": 1,
+      "qubits": [
+        54,
+        881,
+        869
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29359301,
+      "second": 29423512,
+      "crossed_phases": 1,
+      "qubits": [
+        55,
+        869,
+        884
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29359303,
+      "second": 29423514,
+      "crossed_phases": 1,
+      "qubits": [
+        56,
+        884,
+        865
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29359305,
+      "second": 29423516,
+      "crossed_phases": 1,
+      "qubits": [
+        57,
+        865,
+        880
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29359307,
+      "second": 29423518,
+      "crossed_phases": 0,
+      "qubits": [
+        58,
+        880,
+        877
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29373468,
+      "second": 29423565,
+      "crossed_phases": 3,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29407885,
+      "second": 29460879,
+      "crossed_phases": 3,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29407887,
+      "second": 29460881,
+      "crossed_phases": 6,
+      "qubits": [
+        110,
+        886,
+        885
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29407889,
+      "second": 29460883,
+      "crossed_phases": 8,
+      "qubits": [
+        111,
+        885,
+        872
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29407891,
+      "second": 29460885,
+      "crossed_phases": 10,
+      "qubits": [
+        112,
+        872,
+        888
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29407893,
+      "second": 29460887,
+      "crossed_phases": 14,
+      "qubits": [
+        113,
+        888,
+        873
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29407895,
+      "second": 29460889,
+      "crossed_phases": 10,
+      "qubits": [
+        114,
+        873,
+        887
+      ],
+      "condition": -1
+    },
+    {
+      "first": 29407897,
+      "second": 29460891,
+      "crossed_phases": 28,
+      "qubits": [
+        115,
+        887,
+        875
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36793315,
+      "second": 36918398,
+      "crossed_phases": 3,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36915623,
+      "second": 36954465,
+      "crossed_phases": 2,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36886799,
+      "second": 36968644,
+      "crossed_phases": 4,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36918398,
+      "second": 37003061,
+      "crossed_phases": 3,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36954465,
+      "second": 37018676,
+      "crossed_phases": 3,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36954467,
+      "second": 37018678,
+      "crossed_phases": 1,
+      "qubits": [
+        50,
+        886,
+        875
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36954469,
+      "second": 37018680,
+      "crossed_phases": 1,
+      "qubits": [
+        51,
+        875,
+        885
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36954471,
+      "second": 37018682,
+      "crossed_phases": 1,
+      "qubits": [
+        52,
+        885,
+        888
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36954473,
+      "second": 37018684,
+      "crossed_phases": 1,
+      "qubits": [
+        53,
+        888,
+        872
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36954475,
+      "second": 37018686,
+      "crossed_phases": 1,
+      "qubits": [
+        54,
+        872,
+        878
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36954477,
+      "second": 37018688,
+      "crossed_phases": 1,
+      "qubits": [
+        55,
+        878,
+        868
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36954479,
+      "second": 37018690,
+      "crossed_phases": 1,
+      "qubits": [
+        56,
+        868,
+        874
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36954481,
+      "second": 37018692,
+      "crossed_phases": 1,
+      "qubits": [
+        57,
+        874,
+        884
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36954483,
+      "second": 37018694,
+      "crossed_phases": 0,
+      "qubits": [
+        58,
+        884,
+        882
+      ],
+      "condition": -1
+    },
+    {
+      "first": 36968644,
+      "second": 37018741,
+      "crossed_phases": 3,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37003114,
+      "second": 37053494,
+      "crossed_phases": 2,
+      "qubits": [
+        48,
+        870,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37018676,
+      "second": 37054896,
+      "crossed_phases": 2,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37018741,
+      "second": 37069075,
+      "crossed_phases": 2,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37003061,
+      "second": 37103492,
+      "crossed_phases": 5,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37054896,
+      "second": 37119107,
+      "crossed_phases": 3,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37054898,
+      "second": 37119109,
+      "crossed_phases": 1,
+      "qubits": [
+        50,
+        886,
+        882
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37054900,
+      "second": 37119111,
+      "crossed_phases": 1,
+      "qubits": [
+        51,
+        882,
+        865
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37054902,
+      "second": 37119113,
+      "crossed_phases": 1,
+      "qubits": [
+        52,
+        865,
+        875
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37054904,
+      "second": 37119115,
+      "crossed_phases": 1,
+      "qubits": [
+        53,
+        875,
+        885
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37054906,
+      "second": 37119117,
+      "crossed_phases": 1,
+      "qubits": [
+        54,
+        885,
+        888
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37054908,
+      "second": 37119119,
+      "crossed_phases": 1,
+      "qubits": [
+        55,
+        888,
+        872
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37054910,
+      "second": 37119121,
+      "crossed_phases": 1,
+      "qubits": [
+        56,
+        872,
+        878
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37054912,
+      "second": 37119123,
+      "crossed_phases": 1,
+      "qubits": [
+        57,
+        878,
+        868
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37054914,
+      "second": 37119125,
+      "crossed_phases": 0,
+      "qubits": [
+        58,
+        868,
+        874
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37069075,
+      "second": 37119172,
+      "crossed_phases": 3,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37341252,
+      "second": 37429293,
+      "crossed_phases": 3,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37426518,
+      "second": 37457868,
+      "crossed_phases": 2,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37406946,
+      "second": 37468831,
+      "crossed_phases": 4,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37429293,
+      "second": 37495550,
+      "crossed_phases": 3,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37457868,
+      "second": 37507927,
+      "crossed_phases": 3,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37457870,
+      "second": 37507929,
+      "crossed_phases": 1,
+      "qubits": [
+        206,
+        886,
+        875
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37457872,
+      "second": 37507931,
+      "crossed_phases": 1,
+      "qubits": [
+        207,
+        875,
+        884
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37457874,
+      "second": 37507933,
+      "crossed_phases": 1,
+      "qubits": [
+        208,
+        884,
+        871
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37457876,
+      "second": 37507935,
+      "crossed_phases": 1,
+      "qubits": [
+        209,
+        871,
+        866
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37457878,
+      "second": 37507937,
+      "crossed_phases": 1,
+      "qubits": [
+        210,
+        866,
+        887
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37457880,
+      "second": 37507939,
+      "crossed_phases": 1,
+      "qubits": [
+        211,
+        887,
+        883
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37457882,
+      "second": 37507941,
+      "crossed_phases": 1,
+      "qubits": [
+        212,
+        883,
+        880
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37457884,
+      "second": 37507943,
+      "crossed_phases": 1,
+      "qubits": [
+        213,
+        880,
+        885
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37457886,
+      "second": 37507945,
+      "crossed_phases": 0,
+      "qubits": [
+        214,
+        885,
+        882
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37468831,
+      "second": 37507992,
+      "crossed_phases": 3,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37495603,
+      "second": 37535253,
+      "crossed_phases": 2,
+      "qubits": [
+        204,
+        864,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37507927,
+      "second": 37536655,
+      "crossed_phases": 2,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37507992,
+      "second": 37547618,
+      "crossed_phases": 2,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37495550,
+      "second": 37574337,
+      "crossed_phases": 5,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37536655,
+      "second": 37586714,
+      "crossed_phases": 3,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37536657,
+      "second": 37586716,
+      "crossed_phases": 1,
+      "qubits": [
+        206,
+        886,
+        882
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37536659,
+      "second": 37586718,
+      "crossed_phases": 1,
+      "qubits": [
+        207,
+        882,
+        876
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37536661,
+      "second": 37586720,
+      "crossed_phases": 1,
+      "qubits": [
+        208,
+        876,
+        875
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37536663,
+      "second": 37586722,
+      "crossed_phases": 1,
+      "qubits": [
+        209,
+        875,
+        884
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37536665,
+      "second": 37586724,
+      "crossed_phases": 1,
+      "qubits": [
+        210,
+        884,
+        871
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37536667,
+      "second": 37586726,
+      "crossed_phases": 1,
+      "qubits": [
+        211,
+        871,
+        866
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37536669,
+      "second": 37586728,
+      "crossed_phases": 1,
+      "qubits": [
+        212,
+        866,
+        887
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37536671,
+      "second": 37586730,
+      "crossed_phases": 1,
+      "qubits": [
+        213,
+        887,
+        883
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37536673,
+      "second": 37586732,
+      "crossed_phases": 0,
+      "qubits": [
+        214,
+        883,
+        880
+      ],
+      "condition": -1
+    },
+    {
+      "first": 37547618,
+      "second": 37586779,
+      "crossed_phases": 3,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860460,
+      "second": 39876211,
+      "crossed_phases": 0,
+      "qubits": [
+        229,
+        885,
+        325
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860461,
+      "second": 39876212,
+      "crossed_phases": 0,
+      "qubits": [
+        230,
+        885,
+        326
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860462,
+      "second": 39876213,
+      "crossed_phases": 0,
+      "qubits": [
+        231,
+        885,
+        327
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860463,
+      "second": 39876214,
+      "crossed_phases": 0,
+      "qubits": [
+        232,
+        885,
+        328
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860464,
+      "second": 39876215,
+      "crossed_phases": 0,
+      "qubits": [
+        233,
+        885,
+        329
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860465,
+      "second": 39876216,
+      "crossed_phases": 0,
+      "qubits": [
+        234,
+        885,
+        330
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860466,
+      "second": 39876217,
+      "crossed_phases": 0,
+      "qubits": [
+        235,
+        885,
+        331
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860467,
+      "second": 39876218,
+      "crossed_phases": 0,
+      "qubits": [
+        236,
+        885,
+        332
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860468,
+      "second": 39876219,
+      "crossed_phases": 0,
+      "qubits": [
+        237,
+        885,
+        333
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860469,
+      "second": 39876220,
+      "crossed_phases": 0,
+      "qubits": [
+        238,
+        885,
+        334
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860470,
+      "second": 39876221,
+      "crossed_phases": 0,
+      "qubits": [
+        239,
+        885,
+        335
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860424,
+      "second": 39876247,
+      "crossed_phases": 0,
+      "qubits": [
+        325,
+        877,
+        277
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860425,
+      "second": 39876248,
+      "crossed_phases": 0,
+      "qubits": [
+        326,
+        877,
+        278
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860426,
+      "second": 39876249,
+      "crossed_phases": 0,
+      "qubits": [
+        327,
+        877,
+        279
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860427,
+      "second": 39876250,
+      "crossed_phases": 0,
+      "qubits": [
+        328,
+        877,
+        280
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860428,
+      "second": 39876251,
+      "crossed_phases": 0,
+      "qubits": [
+        329,
+        877,
+        281
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860429,
+      "second": 39876252,
+      "crossed_phases": 0,
+      "qubits": [
+        330,
+        877,
+        282
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860430,
+      "second": 39876253,
+      "crossed_phases": 0,
+      "qubits": [
+        331,
+        877,
+        283
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860431,
+      "second": 39876254,
+      "crossed_phases": 0,
+      "qubits": [
+        332,
+        877,
+        284
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860432,
+      "second": 39876255,
+      "crossed_phases": 0,
+      "qubits": [
+        333,
+        877,
+        285
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860433,
+      "second": 39876256,
+      "crossed_phases": 0,
+      "qubits": [
+        334,
+        877,
+        286
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39860434,
+      "second": 39876257,
+      "crossed_phases": 0,
+      "qubits": [
+        335,
+        877,
+        287
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893859,
+      "second": 39909610,
+      "crossed_phases": 0,
+      "qubits": [
+        169,
+        885,
+        265
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893860,
+      "second": 39909611,
+      "crossed_phases": 0,
+      "qubits": [
+        170,
+        885,
+        266
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893861,
+      "second": 39909612,
+      "crossed_phases": 0,
+      "qubits": [
+        171,
+        885,
+        267
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893862,
+      "second": 39909613,
+      "crossed_phases": 0,
+      "qubits": [
+        172,
+        885,
+        268
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893863,
+      "second": 39909614,
+      "crossed_phases": 0,
+      "qubits": [
+        173,
+        885,
+        269
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893864,
+      "second": 39909615,
+      "crossed_phases": 0,
+      "qubits": [
+        174,
+        885,
+        270
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893865,
+      "second": 39909616,
+      "crossed_phases": 0,
+      "qubits": [
+        175,
+        885,
+        271
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893866,
+      "second": 39909617,
+      "crossed_phases": 0,
+      "qubits": [
+        176,
+        885,
+        272
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893867,
+      "second": 39909618,
+      "crossed_phases": 0,
+      "qubits": [
+        177,
+        885,
+        273
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893868,
+      "second": 39909619,
+      "crossed_phases": 0,
+      "qubits": [
+        178,
+        885,
+        274
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893869,
+      "second": 39909620,
+      "crossed_phases": 0,
+      "qubits": [
+        179,
+        885,
+        275
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893823,
+      "second": 39909646,
+      "crossed_phases": 0,
+      "qubits": [
+        265,
+        877,
+        217
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893824,
+      "second": 39909647,
+      "crossed_phases": 0,
+      "qubits": [
+        266,
+        877,
+        218
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893825,
+      "second": 39909648,
+      "crossed_phases": 0,
+      "qubits": [
+        267,
+        877,
+        219
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893826,
+      "second": 39909649,
+      "crossed_phases": 0,
+      "qubits": [
+        268,
+        877,
+        220
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893827,
+      "second": 39909650,
+      "crossed_phases": 0,
+      "qubits": [
+        269,
+        877,
+        221
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893828,
+      "second": 39909651,
+      "crossed_phases": 0,
+      "qubits": [
+        270,
+        877,
+        222
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893829,
+      "second": 39909652,
+      "crossed_phases": 0,
+      "qubits": [
+        271,
+        877,
+        223
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893830,
+      "second": 39909653,
+      "crossed_phases": 0,
+      "qubits": [
+        272,
+        877,
+        224
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893831,
+      "second": 39909654,
+      "crossed_phases": 0,
+      "qubits": [
+        273,
+        877,
+        225
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893832,
+      "second": 39909655,
+      "crossed_phases": 0,
+      "qubits": [
+        274,
+        877,
+        226
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39893833,
+      "second": 39909656,
+      "crossed_phases": 0,
+      "qubits": [
+        275,
+        877,
+        227
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39841302,
+      "second": 39910808,
+      "crossed_phases": 0,
+      "qubits": [
+        252,
+        885,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39841314,
+      "second": 39910820,
+      "crossed_phases": 0,
+      "qubits": [
+        258,
+        885,
+        873
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39841392,
+      "second": 39910898,
+      "crossed_phases": 0,
+      "qubits": [
+        233,
+        257,
+        278
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39841565,
+      "second": 39911071,
+      "crossed_phases": 0,
+      "qubits": [
+        233,
+        257,
+        276
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39841903,
+      "second": 39911409,
+      "crossed_phases": 0,
+      "qubits": [
+        229,
+        253,
+        280
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39842549,
+      "second": 39912055,
+      "crossed_phases": 0,
+      "qubits": [
+        229,
+        253,
+        279
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39842710,
+      "second": 39912216,
+      "crossed_phases": 0,
+      "qubits": [
+        173,
+        257,
+        218
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39842883,
+      "second": 39912389,
+      "crossed_phases": 0,
+      "qubits": [
+        173,
+        257,
+        216
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39843221,
+      "second": 39912727,
+      "crossed_phases": 0,
+      "qubits": [
+        169,
+        253,
+        220
+      ],
+      "condition": -1
+    },
+    {
+      "first": 39843867,
+      "second": 39913373,
+      "crossed_phases": 0,
+      "qubits": [
+        169,
+        253,
+        219
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444505,
+      "second": 40464738,
+      "crossed_phases": 0,
+      "qubits": [
+        85,
+        878,
+        181
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444506,
+      "second": 40464739,
+      "crossed_phases": 0,
+      "qubits": [
+        86,
+        878,
+        182
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444507,
+      "second": 40464740,
+      "crossed_phases": 0,
+      "qubits": [
+        87,
+        878,
+        183
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444508,
+      "second": 40464741,
+      "crossed_phases": 0,
+      "qubits": [
+        88,
+        878,
+        184
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444509,
+      "second": 40464742,
+      "crossed_phases": 0,
+      "qubits": [
+        89,
+        878,
+        185
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444510,
+      "second": 40464743,
+      "crossed_phases": 0,
+      "qubits": [
+        90,
+        878,
+        186
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444511,
+      "second": 40464744,
+      "crossed_phases": 0,
+      "qubits": [
+        91,
+        878,
+        187
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444512,
+      "second": 40464745,
+      "crossed_phases": 0,
+      "qubits": [
+        92,
+        878,
+        188
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444513,
+      "second": 40464746,
+      "crossed_phases": 0,
+      "qubits": [
+        93,
+        878,
+        189
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444514,
+      "second": 40464747,
+      "crossed_phases": 0,
+      "qubits": [
+        94,
+        878,
+        190
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444515,
+      "second": 40464748,
+      "crossed_phases": 0,
+      "qubits": [
+        95,
+        878,
+        191
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444469,
+      "second": 40464774,
+      "crossed_phases": 0,
+      "qubits": [
+        181,
+        876,
+        133
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444470,
+      "second": 40464775,
+      "crossed_phases": 0,
+      "qubits": [
+        182,
+        876,
+        134
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444471,
+      "second": 40464776,
+      "crossed_phases": 0,
+      "qubits": [
+        183,
+        876,
+        135
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444472,
+      "second": 40464777,
+      "crossed_phases": 0,
+      "qubits": [
+        184,
+        876,
+        136
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444473,
+      "second": 40464778,
+      "crossed_phases": 0,
+      "qubits": [
+        185,
+        876,
+        137
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444474,
+      "second": 40464779,
+      "crossed_phases": 0,
+      "qubits": [
+        186,
+        876,
+        138
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444475,
+      "second": 40464780,
+      "crossed_phases": 0,
+      "qubits": [
+        187,
+        876,
+        139
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444476,
+      "second": 40464781,
+      "crossed_phases": 0,
+      "qubits": [
+        188,
+        876,
+        140
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444477,
+      "second": 40464782,
+      "crossed_phases": 0,
+      "qubits": [
+        189,
+        876,
+        141
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444478,
+      "second": 40464783,
+      "crossed_phases": 0,
+      "qubits": [
+        190,
+        876,
+        142
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40444479,
+      "second": 40464784,
+      "crossed_phases": 0,
+      "qubits": [
+        191,
+        876,
+        143
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486596,
+      "second": 40506829,
+      "crossed_phases": 0,
+      "qubits": [
+        25,
+        878,
+        121
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486597,
+      "second": 40506830,
+      "crossed_phases": 0,
+      "qubits": [
+        26,
+        878,
+        122
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486598,
+      "second": 40506831,
+      "crossed_phases": 0,
+      "qubits": [
+        27,
+        878,
+        123
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486599,
+      "second": 40506832,
+      "crossed_phases": 0,
+      "qubits": [
+        28,
+        878,
+        124
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486600,
+      "second": 40506833,
+      "crossed_phases": 0,
+      "qubits": [
+        29,
+        878,
+        125
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486601,
+      "second": 40506834,
+      "crossed_phases": 0,
+      "qubits": [
+        30,
+        878,
+        126
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486602,
+      "second": 40506835,
+      "crossed_phases": 0,
+      "qubits": [
+        31,
+        878,
+        127
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486603,
+      "second": 40506836,
+      "crossed_phases": 0,
+      "qubits": [
+        32,
+        878,
+        128
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486604,
+      "second": 40506837,
+      "crossed_phases": 0,
+      "qubits": [
+        33,
+        878,
+        129
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486605,
+      "second": 40506838,
+      "crossed_phases": 0,
+      "qubits": [
+        34,
+        878,
+        130
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486606,
+      "second": 40506839,
+      "crossed_phases": 0,
+      "qubits": [
+        35,
+        878,
+        131
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486560,
+      "second": 40506865,
+      "crossed_phases": 0,
+      "qubits": [
+        121,
+        876,
+        73
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486561,
+      "second": 40506866,
+      "crossed_phases": 0,
+      "qubits": [
+        122,
+        876,
+        74
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486562,
+      "second": 40506867,
+      "crossed_phases": 0,
+      "qubits": [
+        123,
+        876,
+        75
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486563,
+      "second": 40506868,
+      "crossed_phases": 0,
+      "qubits": [
+        124,
+        876,
+        76
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486564,
+      "second": 40506869,
+      "crossed_phases": 0,
+      "qubits": [
+        125,
+        876,
+        77
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486565,
+      "second": 40506870,
+      "crossed_phases": 0,
+      "qubits": [
+        126,
+        876,
+        78
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486566,
+      "second": 40506871,
+      "crossed_phases": 0,
+      "qubits": [
+        127,
+        876,
+        79
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486567,
+      "second": 40506872,
+      "crossed_phases": 0,
+      "qubits": [
+        128,
+        876,
+        80
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486568,
+      "second": 40506873,
+      "crossed_phases": 0,
+      "qubits": [
+        129,
+        876,
+        81
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486569,
+      "second": 40506874,
+      "crossed_phases": 0,
+      "qubits": [
+        130,
+        876,
+        82
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40486570,
+      "second": 40506875,
+      "crossed_phases": 0,
+      "qubits": [
+        131,
+        876,
+        83
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40421137,
+      "second": 40508027,
+      "crossed_phases": 0,
+      "qubits": [
+        96,
+        878,
+        886
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40421149,
+      "second": 40508039,
+      "crossed_phases": 0,
+      "qubits": [
+        102,
+        878,
+        881
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40421227,
+      "second": 40508117,
+      "crossed_phases": 0,
+      "qubits": [
+        89,
+        101,
+        134
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40421400,
+      "second": 40508290,
+      "crossed_phases": 0,
+      "qubits": [
+        89,
+        101,
+        132
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40421738,
+      "second": 40508628,
+      "crossed_phases": 0,
+      "qubits": [
+        85,
+        97,
+        136
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40422384,
+      "second": 40509274,
+      "crossed_phases": 0,
+      "qubits": [
+        85,
+        97,
+        135
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40422545,
+      "second": 40509435,
+      "crossed_phases": 0,
+      "qubits": [
+        29,
+        101,
+        74
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40422718,
+      "second": 40509608,
+      "crossed_phases": 0,
+      "qubits": [
+        29,
+        101,
+        72
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40423056,
+      "second": 40509946,
+      "crossed_phases": 0,
+      "qubits": [
+        25,
+        97,
+        76
+      ],
+      "condition": -1
+    },
+    {
+      "first": 40423702,
+      "second": 40510592,
+      "crossed_phases": 0,
+      "qubits": [
+        25,
+        97,
+        75
+      ],
+      "condition": -1
+    }
+  ],
+  "elapsed_seconds": 4.467738005005231,
+  "max_rss_kib": 613156
+}

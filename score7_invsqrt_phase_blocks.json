@@ -1,0 +1,847 @@
+{
+  "status": "COMPLETE",
+  "algorithm": "exact local phase extraction + rational Walsh parity resynthesis",
+  "source_path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache.kmx",
+  "source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "baseline_kmb_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "official_verifier_sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a",
+  "baseline_verified_cost": 78673.55534364567,
+  "phase_blocks": 8,
+  "total_exact_all_branch_cases": 696,
+  "beneficial_blocks": 0,
+  "blocks": [
+    {
+      "name": "feature_j0",
+      "lines_1_based": [
+        8080,
+        8102
+      ],
+      "data_wires": [
+        7,
+        22,
+        23,
+        24,
+        25,
+        30
+      ],
+      "clean_scratch": [
+        21
+      ],
+      "measurements": 1,
+      "clean_entry_last_write_evidence": {
+        "21": {
+          "line": 7978,
+          "instruction": "HMR q21 b381",
+          "depth": 0
+        }
+      },
+      "same_measurement_output_bits_and_order": true,
+      "exact_all_branch_cases": 128,
+      "original": {
+        "toffoli": 1,
+        "t": 0,
+        "generic": 1,
+        "clifford_phases": 0,
+        "cx": 9
+      },
+      "parity_candidate": {
+        "toffoli": 0,
+        "t": 0,
+        "generic": 4,
+        "clifford_phases": 0,
+        "cx": 16
+      },
+      "parity_modular_lower_bound": {
+        "lift_modulus_half_turns": "1/16",
+        "clifford_t_membership_lattice_half_turns": "1/16",
+        "forced_generic_parities": [
+          2,
+          31,
+          32,
+          61
+        ],
+        "minimum_generic_rotation_count": 4
+      },
+      "modeled_Q46_full_cost": 79623.88817628086,
+      "modeled_cost_change": 950.3328326351912,
+      "optimistic_modular_cost_lower_bound_Q46": 79623.88817628086,
+      "beneficial_under_fixed_Q_tariff": false,
+      "constant_half_turns": "0",
+      "coefficients": [
+        {
+          "parity_mask": 2,
+          "half_turns": "4503599667051107/4611686018427387904"
+        },
+        {
+          "parity_mask": 31,
+          "half_turns": "4503599667051107/4611686018427387904"
+        },
+        {
+          "parity_mask": 32,
+          "half_turns": "4503599667051107/4611686018427387904"
+        },
+        {
+          "parity_mask": 61,
+          "half_turns": "9218868437187724701/4611686018427387904"
+        }
+      ]
+    },
+    {
+      "name": "feature_j1",
+      "lines_1_based": [
+        8141,
+        8155
+      ],
+      "data_wires": [
+        7,
+        23,
+        24,
+        25,
+        36
+      ],
+      "clean_scratch": [
+        21
+      ],
+      "measurements": 1,
+      "clean_entry_last_write_evidence": {
+        "21": {
+          "line": 8091,
+          "instruction": "HMR q21 b381",
+          "depth": 0
+        }
+      },
+      "same_measurement_output_bits_and_order": true,
+      "exact_all_branch_cases": 64,
+      "original": {
+        "toffoli": 1,
+        "t": 0,
+        "generic": 1,
+        "clifford_phases": 0,
+        "cx": 6
+      },
+      "parity_candidate": {
+        "toffoli": 0,
+        "t": 0,
+        "generic": 3,
+        "clifford_phases": 0,
+        "cx": 14
+      },
+      "parity_modular_lower_bound": {
+        "lift_modulus_half_turns": "1/8",
+        "clifford_t_membership_lattice_half_turns": "1/8",
+        "forced_generic_parities": [
+          15,
+          16,
+          31
+        ],
+        "minimum_generic_rotation_count": 3
+      },
+      "modeled_Q46_full_cost": 79291.50913645024,
+      "modeled_cost_change": 617.9537928045756,
+      "optimistic_modular_cost_lower_bound_Q46": 79291.50913645024,
+      "beneficial_under_fixed_Q_tariff": false,
+      "constant_half_turns": "0",
+      "coefficients": [
+        {
+          "parity_mask": 15,
+          "half_turns": "36028797404477531/18446744073709551616"
+        },
+        {
+          "parity_mask": 16,
+          "half_turns": "36028797404477531/18446744073709551616"
+        },
+        {
+          "parity_mask": 31,
+          "half_turns": "36857459350014625701/18446744073709551616"
+        }
+      ]
+    },
+    {
+      "name": "feature_j2",
+      "lines_1_based": [
+        8194,
+        8207
+      ],
+      "data_wires": [
+        7,
+        22,
+        23,
+        24,
+        25,
+        34
+      ],
+      "clean_scratch": [
+        21
+      ],
+      "measurements": 1,
+      "clean_entry_last_write_evidence": {
+        "21": {
+          "line": 8149,
+          "instruction": "HMR q21 b381",
+          "depth": 0
+        }
+      },
+      "same_measurement_output_bits_and_order": true,
+      "exact_all_branch_cases": 128,
+      "original": {
+        "toffoli": 2,
+        "t": 0,
+        "generic": 1,
+        "clifford_phases": 0,
+        "cx": 4
+      },
+      "parity_candidate": {
+        "toffoli": 0,
+        "t": 0,
+        "generic": 15,
+        "clifford_phases": 0,
+        "cx": 66
+      },
+      "parity_modular_lower_bound": {
+        "lift_modulus_half_turns": "1/16",
+        "clifford_t_membership_lattice_half_turns": "1/16",
+        "forced_generic_parities": [
+          2,
+          5,
+          7,
+          24,
+          26,
+          29,
+          31,
+          32,
+          34,
+          37,
+          39,
+          56,
+          58,
+          61,
+          63
+        ],
+        "minimum_generic_rotation_count": 15
+      },
+      "modeled_Q46_full_cost": 83249.71993224412,
+      "modeled_cost_change": 4576.164588598447,
+      "optimistic_modular_cost_lower_bound_Q46": 83249.71993224412,
+      "beneficial_under_fixed_Q_tariff": false,
+      "constant_half_turns": "0",
+      "coefficients": [
+        {
+          "parity_mask": 2,
+          "half_turns": "36028796777203405/18446744073709551616"
+        },
+        {
+          "parity_mask": 5,
+          "half_turns": "36028796777203405/18446744073709551616"
+        },
+        {
+          "parity_mask": 7,
+          "half_turns": "36857459350641899827/18446744073709551616"
+        },
+        {
+          "parity_mask": 24,
+          "half_turns": "36028796777203405/18446744073709551616"
+        },
+        {
+          "parity_mask": 26,
+          "half_turns": "36028796777203405/18446744073709551616"
+        },
+        {
+          "parity_mask": 29,
+          "half_turns": "36028796777203405/18446744073709551616"
+        },
+        {
+          "parity_mask": 31,
+          "half_turns": "36857459350641899827/18446744073709551616"
+        },
+        {
+          "parity_mask": 32,
+          "half_turns": "36028796777203405/18446744073709551616"
+        },
+        {
+          "parity_mask": 34,
+          "half_turns": "36028796777203405/18446744073709551616"
+        },
+        {
+          "parity_mask": 37,
+          "half_turns": "36028796777203405/18446744073709551616"
+        },
+        {
+          "parity_mask": 39,
+          "half_turns": "36857459350641899827/18446744073709551616"
+        },
+        {
+          "parity_mask": 56,
+          "half_turns": "36857459350641899827/18446744073709551616"
+        },
+        {
+          "parity_mask": 58,
+          "half_turns": "36857459350641899827/18446744073709551616"
+        },
+        {
+          "parity_mask": 61,
+          "half_turns": "36857459350641899827/18446744073709551616"
+        },
+        {
+          "parity_mask": 63,
+          "half_turns": "36028796777203405/18446744073709551616"
+        }
+      ]
+    },
+    {
+      "name": "feature_j7",
+      "lines_1_based": [
+        8209,
+        8214
+      ],
+      "data_wires": [
+        25,
+        43
+      ],
+      "clean_scratch": [
+        21
+      ],
+      "measurements": 1,
+      "clean_entry_last_write_evidence": {
+        "21": {
+          "line": 8201,
+          "instruction": "HMR q21 b381",
+          "depth": 0
+        }
+      },
+      "same_measurement_output_bits_and_order": true,
+      "exact_all_branch_cases": 8,
+      "original": {
+        "toffoli": 1,
+        "t": 1,
+        "generic": 0,
+        "clifford_phases": 0,
+        "cx": 0
+      },
+      "parity_candidate": {
+        "toffoli": 0,
+        "t": 0,
+        "generic": 3,
+        "clifford_phases": 0,
+        "cx": 2
+      },
+      "parity_modular_lower_bound": {
+        "lift_modulus_half_turns": "1",
+        "clifford_t_membership_lattice_half_turns": "1/4",
+        "forced_generic_parities": [
+          1,
+          2,
+          3
+        ],
+        "minimum_generic_rotation_count": 3
+      },
+      "modeled_Q46_full_cost": 79612.38817628086,
+      "modeled_cost_change": 938.8328326351912,
+      "optimistic_modular_cost_lower_bound_Q46": 79612.38817628086,
+      "beneficial_under_fixed_Q_tariff": false,
+      "constant_half_turns": "0",
+      "coefficients": [
+        {
+          "parity_mask": 1,
+          "half_turns": "1/8"
+        },
+        {
+          "parity_mask": 2,
+          "half_turns": "1/8"
+        },
+        {
+          "parity_mask": 3,
+          "half_turns": "15/8"
+        }
+      ]
+    },
+    {
+      "name": "feature_j3",
+      "lines_1_based": [
+        8252,
+        8260
+      ],
+      "data_wires": [
+        9,
+        24,
+        25
+      ],
+      "clean_scratch": [
+        21
+      ],
+      "measurements": 1,
+      "clean_entry_last_write_evidence": {
+        "21": {
+          "line": 8211,
+          "instruction": "HMR q21 b381",
+          "depth": 0
+        }
+      },
+      "same_measurement_output_bits_and_order": true,
+      "exact_all_branch_cases": 16,
+      "original": {
+        "toffoli": 1,
+        "t": 0,
+        "generic": 1,
+        "clifford_phases": 0,
+        "cx": 2
+      },
+      "parity_candidate": {
+        "toffoli": 0,
+        "t": 0,
+        "generic": 3,
+        "clifford_phases": 0,
+        "cx": 6
+      },
+      "parity_modular_lower_bound": {
+        "lift_modulus_half_turns": "1/2",
+        "clifford_t_membership_lattice_half_turns": "1/4",
+        "forced_generic_parities": [
+          1,
+          6,
+          7
+        ],
+        "minimum_generic_rotation_count": 3
+      },
+      "modeled_Q46_full_cost": 79291.50913645024,
+      "modeled_cost_change": 617.9537928045756,
+      "optimistic_modular_cost_lower_bound_Q46": 79291.50913645024,
+      "beneficial_under_fixed_Q_tariff": false,
+      "constant_half_turns": "0",
+      "coefficients": [
+        {
+          "parity_mask": 1,
+          "half_turns": "72057593436409071/9223372036854775808"
+        },
+        {
+          "parity_mask": 6,
+          "half_turns": "72057593436409071/9223372036854775808"
+        },
+        {
+          "parity_mask": 7,
+          "half_turns": "18374686480273142545/9223372036854775808"
+        }
+      ]
+    },
+    {
+      "name": "feature_j6",
+      "lines_1_based": [
+        8262,
+        8269
+      ],
+      "data_wires": [
+        7,
+        22,
+        25,
+        40
+      ],
+      "clean_scratch": [
+        21
+      ],
+      "measurements": 1,
+      "clean_entry_last_write_evidence": {
+        "21": {
+          "line": 8256,
+          "instruction": "HMR q21 b381",
+          "depth": 0
+        }
+      },
+      "same_measurement_output_bits_and_order": true,
+      "exact_all_branch_cases": 32,
+      "original": {
+        "toffoli": 2,
+        "t": 0,
+        "generic": 1,
+        "clifford_phases": 0,
+        "cx": 0
+      },
+      "parity_candidate": {
+        "toffoli": 0,
+        "t": 0,
+        "generic": 15,
+        "clifford_phases": 0,
+        "cx": 34
+      },
+      "parity_modular_lower_bound": {
+        "lift_modulus_half_turns": "1/4",
+        "clifford_t_membership_lattice_half_turns": "1/4",
+        "forced_generic_parities": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_generic_rotation_count": 15
+      },
+      "modeled_Q46_full_cost": 83249.71993224412,
+      "modeled_cost_change": 4576.164588598447,
+      "optimistic_modular_cost_lower_bound_Q46": 83249.71993224412,
+      "beneficial_under_fixed_Q_tariff": false,
+      "constant_half_turns": "0",
+      "coefficients": [
+        {
+          "parity_mask": 1,
+          "half_turns": "1152921463936371999/36893488147419103232"
+        },
+        {
+          "parity_mask": 2,
+          "half_turns": "1152921463936371999/36893488147419103232"
+        },
+        {
+          "parity_mask": 3,
+          "half_turns": "72634054830901834465/36893488147419103232"
+        },
+        {
+          "parity_mask": 4,
+          "half_turns": "1152921463936371999/36893488147419103232"
+        },
+        {
+          "parity_mask": 5,
+          "half_turns": "1152921463936371999/36893488147419103232"
+        },
+        {
+          "parity_mask": 6,
+          "half_turns": "1152921463936371999/36893488147419103232"
+        },
+        {
+          "parity_mask": 7,
+          "half_turns": "72634054830901834465/36893488147419103232"
+        },
+        {
+          "parity_mask": 8,
+          "half_turns": "1152921463936371999/36893488147419103232"
+        },
+        {
+          "parity_mask": 9,
+          "half_turns": "1152921463936371999/36893488147419103232"
+        },
+        {
+          "parity_mask": 10,
+          "half_turns": "1152921463936371999/36893488147419103232"
+        },
+        {
+          "parity_mask": 11,
+          "half_turns": "72634054830901834465/36893488147419103232"
+        },
+        {
+          "parity_mask": 12,
+          "half_turns": "72634054830901834465/36893488147419103232"
+        },
+        {
+          "parity_mask": 13,
+          "half_turns": "72634054830901834465/36893488147419103232"
+        },
+        {
+          "parity_mask": 14,
+          "half_turns": "72634054830901834465/36893488147419103232"
+        },
+        {
+          "parity_mask": 15,
+          "half_turns": "1152921463936371999/36893488147419103232"
+        }
+      ]
+    },
+    {
+      "name": "feature_j4",
+      "lines_1_based": [
+        8298,
+        8317
+      ],
+      "data_wires": [
+        7,
+        8,
+        22,
+        23,
+        24,
+        25
+      ],
+      "clean_scratch": [
+        21,
+        44
+      ],
+      "measurements": 2,
+      "clean_entry_last_write_evidence": {
+        "21": {
+          "line": 8265,
+          "instruction": "HMR q21 b381",
+          "depth": 0
+        },
+        "44": {
+          "line": 8272,
+          "instruction": "HMR q44 b381",
+          "depth": 0
+        }
+      },
+      "same_measurement_output_bits_and_order": true,
+      "exact_all_branch_cases": 256,
+      "original": {
+        "toffoli": 2,
+        "t": 0,
+        "generic": 1,
+        "clifford_phases": 0,
+        "cx": 6
+      },
+      "parity_candidate": {
+        "toffoli": 0,
+        "t": 0,
+        "generic": 9,
+        "clifford_phases": 0,
+        "cx": 40
+      },
+      "parity_modular_lower_bound": {
+        "lift_modulus_half_turns": "1/16",
+        "clifford_t_membership_lattice_half_turns": "1/16",
+        "forced_generic_parities": [
+          2,
+          33,
+          35,
+          45,
+          47,
+          48,
+          50,
+          60,
+          62
+        ],
+        "minimum_generic_rotation_count": 9
+      },
+      "modeled_Q46_full_cost": 81243.52089282396,
+      "modeled_cost_change": 2569.9655491782905,
+      "optimistic_modular_cost_lower_bound_Q46": 81243.52089282396,
+      "beneficial_under_fixed_Q_tariff": false,
+      "constant_half_turns": "0",
+      "coefficients": [
+        {
+          "parity_mask": 2,
+          "half_turns": "72057592501228855/4611686018427387904"
+        },
+        {
+          "parity_mask": 33,
+          "half_turns": "72057592501228855/9223372036854775808"
+        },
+        {
+          "parity_mask": 35,
+          "half_turns": "18374686481208322761/9223372036854775808"
+        },
+        {
+          "parity_mask": 45,
+          "half_turns": "72057592501228855/9223372036854775808"
+        },
+        {
+          "parity_mask": 47,
+          "half_turns": "18374686481208322761/9223372036854775808"
+        },
+        {
+          "parity_mask": 48,
+          "half_turns": "72057592501228855/9223372036854775808"
+        },
+        {
+          "parity_mask": 50,
+          "half_turns": "18374686481208322761/9223372036854775808"
+        },
+        {
+          "parity_mask": 60,
+          "half_turns": "18374686481208322761/9223372036854775808"
+        },
+        {
+          "parity_mask": 62,
+          "half_turns": "72057592501228855/9223372036854775808"
+        }
+      ]
+    },
+    {
+      "name": "feature_j5",
+      "lines_1_based": [
+        8319,
+        8329
+      ],
+      "data_wires": [
+        23,
+        24,
+        25,
+        41
+      ],
+      "clean_scratch": [
+        21,
+        44
+      ],
+      "measurements": 2,
+      "clean_entry_last_write_evidence": {
+        "21": {
+          "line": 8307,
+          "instruction": "HMR q21 b1",
+          "depth": 0
+        },
+        "44": {
+          "line": 8309,
+          "instruction": "HMR q44 b381",
+          "depth": 0
+        }
+      },
+      "same_measurement_output_bits_and_order": true,
+      "exact_all_branch_cases": 64,
+      "original": {
+        "toffoli": 2,
+        "t": 0,
+        "generic": 1,
+        "clifford_phases": 0,
+        "cx": 1
+      },
+      "parity_candidate": {
+        "toffoli": 0,
+        "t": 0,
+        "generic": 9,
+        "clifford_phases": 0,
+        "cx": 24
+      },
+      "parity_modular_lower_bound": {
+        "lift_modulus_half_turns": "1/4",
+        "clifford_t_membership_lattice_half_turns": "1/4",
+        "forced_generic_parities": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_generic_rotation_count": 9
+      },
+      "modeled_Q46_full_cost": 81243.52089282396,
+      "modeled_cost_change": 2569.9655491782905,
+      "optimistic_modular_cost_lower_bound_Q46": 81243.52089282396,
+      "beneficial_under_fixed_Q_tariff": false,
+      "constant_half_turns": "0",
+      "coefficients": [
+        {
+          "parity_mask": 4,
+          "half_turns": "576460737800873725/36893488147419103232"
+        },
+        {
+          "parity_mask": 5,
+          "half_turns": "576460737800873725/36893488147419103232"
+        },
+        {
+          "parity_mask": 6,
+          "half_turns": "576460737800873725/36893488147419103232"
+        },
+        {
+          "parity_mask": 7,
+          "half_turns": "73210515557037332739/36893488147419103232"
+        },
+        {
+          "parity_mask": 8,
+          "half_turns": "576460737800873725/18446744073709551616"
+        },
+        {
+          "parity_mask": 12,
+          "half_turns": "73210515557037332739/36893488147419103232"
+        },
+        {
+          "parity_mask": 13,
+          "half_turns": "73210515557037332739/36893488147419103232"
+        },
+        {
+          "parity_mask": 14,
+          "half_turns": "73210515557037332739/36893488147419103232"
+        },
+        {
+          "parity_mask": 15,
+          "half_turns": "576460737800873725/36893488147419103232"
+        }
+      ]
+    }
+  ],
+  "positive_control": {
+    "synthetic_only": true,
+    "status": "PASS",
+    "exact_source_branch_cases": 8,
+    "exact_candidate_branch_cases": 8,
+    "native_receipts": [
+      {
+        "name": "source",
+        "seed": 720261115,
+        "shots": 512,
+        "phase_errors": 0,
+        "value_errors": 0,
+        "scratch_errors": 0,
+        "mean_toffoli": 1.0
+      },
+      {
+        "name": "source",
+        "seed": 720261116,
+        "shots": 512,
+        "phase_errors": 0,
+        "value_errors": 0,
+        "scratch_errors": 0,
+        "mean_toffoli": 1.0
+      },
+      {
+        "name": "candidate",
+        "seed": 720261115,
+        "shots": 512,
+        "phase_errors": 0,
+        "value_errors": 0,
+        "scratch_errors": 0,
+        "mean_toffoli": 0.0
+      },
+      {
+        "name": "candidate",
+        "seed": 720261116,
+        "shots": 512,
+        "phase_errors": 0,
+        "value_errors": 0,
+        "scratch_errors": 0,
+        "mean_toffoli": 0.0
+      }
+    ],
+    "cost_before": 1.0,
+    "cost_after": 0.75,
+    "Q_before": 23,
+    "Q_after": 23,
+    "identity": "(pi/2)*ab = (pi/4)*a + (pi/4)*b - (pi/4)*(a XOR b)",
+    "artifacts": [
+      {
+        "path": "/workspace/scratch/3815fb5fae06/score7_invsqrt_phase/positive_source.kmx",
+        "bytes": 632,
+        "sha256": "2d077758cf80e93c4f4b1ff4bdff469c0f86a744ab9e00b82da7eca54c2dd61c"
+      },
+      {
+        "path": "/workspace/scratch/3815fb5fae06/score7_invsqrt_phase/positive_source.kmb",
+        "bytes": 457,
+        "sha256": "2486b2bb988b5712bbee5e6ae0deda24f8f58899f71c7f9de5e2e7559a4ad6b0"
+      },
+      {
+        "path": "/workspace/scratch/3815fb5fae06/score7_invsqrt_phase/positive_candidate.kmx",
+        "bytes": 649,
+        "sha256": "e789a6e402ec5eb1612a3769d7f3137917e17a7fb5a175440063c297942d9c8f"
+      },
+      {
+        "path": "/workspace/scratch/3815fb5fae06/score7_invsqrt_phase/positive_candidate.kmb",
+        "bytes": 491,
+        "sha256": "c570513e24241e65281993e7df08c1046aba679b1ee4eefb5f788b3a7de385fa"
+      }
+    ]
+  },
+  "candidate_emitted": false,
+  "new_benchmark_gain": 0,
+  "limitations": [
+    "candidate uses canonical rational Walsh lift; modular bound covers every integer lift on the same independent data wires",
+    "eight pre-existing closed phase blocks; arbitrary global resynthesis not exhausted",
+    "cost comparison holds Q46 fixed and unchanged residual error; no full verifier run"
+  ],
+  "seconds": 0.2453883330017561,
+  "script_sha256": "64247971ca4c957be0dc1f99268a0f58dffca8ecf34205d7c18f133fb019a58a"
+}

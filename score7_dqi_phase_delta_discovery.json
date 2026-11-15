@@ -1,0 +1,4358 @@
+{
+  "schema": "score7-phase-delta-v1",
+  "interval_count": 362,
+  "propagation_steps": 841324,
+  "surviving_count": 0,
+  "intervals": [
+    {
+      "first": 26635129,
+      "second": 26735569,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26635131,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26757676,
+      "second": 26844566,
+      "qubits": [
+        96,
+        884,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26757722,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26757688,
+      "second": 26844578,
+      "qubits": [
+        102,
+        884,
+        885
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26757722,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26757766,
+      "second": 26844656,
+      "qubits": [
+        89,
+        101,
+        134
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 26761717,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26757939,
+      "second": 26844829,
+      "qubits": [
+        89,
+        101,
+        132
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 26761715,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26758277,
+      "second": 26845167,
+      "qubits": [
+        85,
+        97,
+        136
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 26761719,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26758923,
+      "second": 26845813,
+      "qubits": [
+        85,
+        97,
+        135
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 26761718,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26759084,
+      "second": 26845974,
+      "qubits": [
+        29,
+        101,
+        74
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 26803808,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26759257,
+      "second": 26846147,
+      "qubits": [
+        29,
+        101,
+        72
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 26803806,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26759595,
+      "second": 26846485,
+      "qubits": [
+        25,
+        97,
+        76
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 26803810,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26760241,
+      "second": 26847131,
+      "qubits": [
+        25,
+        97,
+        75
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 26803809,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781008,
+      "second": 26801313,
+      "qubits": [
+        181,
+        871,
+        133
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26782619,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781009,
+      "second": 26801314,
+      "qubits": [
+        182,
+        871,
+        134
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26782619,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781010,
+      "second": 26801315,
+      "qubits": [
+        183,
+        871,
+        135
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26782619,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781011,
+      "second": 26801316,
+      "qubits": [
+        184,
+        871,
+        136
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26782474,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781012,
+      "second": 26801317,
+      "qubits": [
+        185,
+        871,
+        137
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26782498,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781013,
+      "second": 26801318,
+      "qubits": [
+        186,
+        871,
+        138
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26782454,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781014,
+      "second": 26801319,
+      "qubits": [
+        187,
+        871,
+        139
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26782498,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781015,
+      "second": 26801320,
+      "qubits": [
+        188,
+        871,
+        140
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26782454,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781016,
+      "second": 26801321,
+      "qubits": [
+        189,
+        871,
+        141
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26782498,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781017,
+      "second": 26801322,
+      "qubits": [
+        190,
+        871,
+        142
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26782498,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781018,
+      "second": 26801323,
+      "qubits": [
+        191,
+        871,
+        143
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26782619,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781044,
+      "second": 26801277,
+      "qubits": [
+        85,
+        884,
+        181
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26781277,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781045,
+      "second": 26801278,
+      "qubits": [
+        86,
+        884,
+        182
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26781277,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781046,
+      "second": 26801279,
+      "qubits": [
+        87,
+        884,
+        183
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26781277,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781047,
+      "second": 26801280,
+      "qubits": [
+        88,
+        884,
+        184
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26781132,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781048,
+      "second": 26801281,
+      "qubits": [
+        89,
+        884,
+        185
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26781156,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781049,
+      "second": 26801282,
+      "qubits": [
+        90,
+        884,
+        186
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26781112,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781050,
+      "second": 26801283,
+      "qubits": [
+        91,
+        884,
+        187
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26781156,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781051,
+      "second": 26801284,
+      "qubits": [
+        92,
+        884,
+        188
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26781112,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781052,
+      "second": 26801285,
+      "qubits": [
+        93,
+        884,
+        189
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26781156,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781053,
+      "second": 26801286,
+      "qubits": [
+        94,
+        884,
+        190
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26781156,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26781054,
+      "second": 26801287,
+      "qubits": [
+        95,
+        884,
+        191
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26781277,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823099,
+      "second": 26843404,
+      "qubits": [
+        121,
+        871,
+        73
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26824710,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823100,
+      "second": 26843405,
+      "qubits": [
+        122,
+        871,
+        74
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26824710,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823101,
+      "second": 26843406,
+      "qubits": [
+        123,
+        871,
+        75
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26824710,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823102,
+      "second": 26843407,
+      "qubits": [
+        124,
+        871,
+        76
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26824565,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823103,
+      "second": 26843408,
+      "qubits": [
+        125,
+        871,
+        77
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26824589,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823104,
+      "second": 26843409,
+      "qubits": [
+        126,
+        871,
+        78
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26824545,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823105,
+      "second": 26843410,
+      "qubits": [
+        127,
+        871,
+        79
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26824589,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823106,
+      "second": 26843411,
+      "qubits": [
+        128,
+        871,
+        80
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26824545,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823107,
+      "second": 26843412,
+      "qubits": [
+        129,
+        871,
+        81
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26824589,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823108,
+      "second": 26843413,
+      "qubits": [
+        130,
+        871,
+        82
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26824589,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823109,
+      "second": 26843414,
+      "qubits": [
+        131,
+        871,
+        83
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26824710,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823135,
+      "second": 26843368,
+      "qubits": [
+        25,
+        884,
+        121
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26823368,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823136,
+      "second": 26843369,
+      "qubits": [
+        26,
+        884,
+        122
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26823368,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823137,
+      "second": 26843370,
+      "qubits": [
+        27,
+        884,
+        123
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26823368,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823138,
+      "second": 26843371,
+      "qubits": [
+        28,
+        884,
+        124
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26823223,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823139,
+      "second": 26843372,
+      "qubits": [
+        29,
+        884,
+        125
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26823247,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823140,
+      "second": 26843373,
+      "qubits": [
+        30,
+        884,
+        126
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26823203,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823141,
+      "second": 26843374,
+      "qubits": [
+        31,
+        884,
+        127
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26823247,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823142,
+      "second": 26843375,
+      "qubits": [
+        32,
+        884,
+        128
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26823203,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823143,
+      "second": 26843376,
+      "qubits": [
+        33,
+        884,
+        129
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26823247,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823144,
+      "second": 26843377,
+      "qubits": [
+        34,
+        884,
+        130
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26823247,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 26823145,
+      "second": 26843378,
+      "qubits": [
+        35,
+        884,
+        131
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 26823368,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27093708,
+      "second": 27166358,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27093710,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27166293,
+      "second": 27347598,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27166295,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27179085,
+      "second": 27248591,
+      "qubits": [
+        252,
+        884,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27179131,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27179097,
+      "second": 27248603,
+      "qubits": [
+        258,
+        884,
+        868
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27179131,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27179175,
+      "second": 27248681,
+      "qubits": [
+        233,
+        257,
+        278
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 27183126,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27179348,
+      "second": 27248854,
+      "qubits": [
+        233,
+        257,
+        276
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 27183124,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27179686,
+      "second": 27249192,
+      "qubits": [
+        229,
+        253,
+        280
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 27183128,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27180332,
+      "second": 27249838,
+      "qubits": [
+        229,
+        253,
+        279
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 27183127,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27180493,
+      "second": 27249999,
+      "qubits": [
+        173,
+        257,
+        218
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 27216525,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27180666,
+      "second": 27250172,
+      "qubits": [
+        173,
+        257,
+        216
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 27216523,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27181004,
+      "second": 27250510,
+      "qubits": [
+        169,
+        253,
+        220
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 27216527,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27181650,
+      "second": 27251156,
+      "qubits": [
+        169,
+        253,
+        219
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 27216526,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198207,
+      "second": 27214030,
+      "qubits": [
+        325,
+        875,
+        277
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27199818,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198208,
+      "second": 27214031,
+      "qubits": [
+        326,
+        875,
+        278
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27199818,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198209,
+      "second": 27214032,
+      "qubits": [
+        327,
+        875,
+        279
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27199818,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198210,
+      "second": 27214033,
+      "qubits": [
+        328,
+        875,
+        280
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27199673,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198211,
+      "second": 27214034,
+      "qubits": [
+        329,
+        875,
+        281
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27199697,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198212,
+      "second": 27214035,
+      "qubits": [
+        330,
+        875,
+        282
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27199653,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198213,
+      "second": 27214036,
+      "qubits": [
+        331,
+        875,
+        283
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27199697,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198214,
+      "second": 27214037,
+      "qubits": [
+        332,
+        875,
+        284
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27199653,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198215,
+      "second": 27214038,
+      "qubits": [
+        333,
+        875,
+        285
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27199697,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198216,
+      "second": 27214039,
+      "qubits": [
+        334,
+        875,
+        286
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27199697,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198217,
+      "second": 27214040,
+      "qubits": [
+        335,
+        875,
+        287
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27199818,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198243,
+      "second": 27213994,
+      "qubits": [
+        229,
+        884,
+        325
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27198476,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198244,
+      "second": 27213995,
+      "qubits": [
+        230,
+        884,
+        326
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27198476,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198245,
+      "second": 27213996,
+      "qubits": [
+        231,
+        884,
+        327
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27198476,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198246,
+      "second": 27213997,
+      "qubits": [
+        232,
+        884,
+        328
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27198331,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198247,
+      "second": 27213998,
+      "qubits": [
+        233,
+        884,
+        329
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27198355,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198248,
+      "second": 27213999,
+      "qubits": [
+        234,
+        884,
+        330
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27198311,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198249,
+      "second": 27214000,
+      "qubits": [
+        235,
+        884,
+        331
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27198355,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198250,
+      "second": 27214001,
+      "qubits": [
+        236,
+        884,
+        332
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27198311,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198251,
+      "second": 27214002,
+      "qubits": [
+        237,
+        884,
+        333
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27198355,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198252,
+      "second": 27214003,
+      "qubits": [
+        238,
+        884,
+        334
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27198355,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27198253,
+      "second": 27214004,
+      "qubits": [
+        239,
+        884,
+        335
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27198476,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231606,
+      "second": 27247429,
+      "qubits": [
+        265,
+        875,
+        217
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27233217,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231607,
+      "second": 27247430,
+      "qubits": [
+        266,
+        875,
+        218
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27233217,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231608,
+      "second": 27247431,
+      "qubits": [
+        267,
+        875,
+        219
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27233217,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231609,
+      "second": 27247432,
+      "qubits": [
+        268,
+        875,
+        220
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27233072,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231610,
+      "second": 27247433,
+      "qubits": [
+        269,
+        875,
+        221
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27233096,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231611,
+      "second": 27247434,
+      "qubits": [
+        270,
+        875,
+        222
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27233052,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231612,
+      "second": 27247435,
+      "qubits": [
+        271,
+        875,
+        223
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27233096,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231613,
+      "second": 27247436,
+      "qubits": [
+        272,
+        875,
+        224
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27233052,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231614,
+      "second": 27247437,
+      "qubits": [
+        273,
+        875,
+        225
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27233096,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231615,
+      "second": 27247438,
+      "qubits": [
+        274,
+        875,
+        226
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27233096,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231616,
+      "second": 27247439,
+      "qubits": [
+        275,
+        875,
+        227
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27233217,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231642,
+      "second": 27247393,
+      "qubits": [
+        169,
+        884,
+        265
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27231875,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231643,
+      "second": 27247394,
+      "qubits": [
+        170,
+        884,
+        266
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27231875,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231644,
+      "second": 27247395,
+      "qubits": [
+        171,
+        884,
+        267
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27231875,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231645,
+      "second": 27247396,
+      "qubits": [
+        172,
+        884,
+        268
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27231730,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231646,
+      "second": 27247397,
+      "qubits": [
+        173,
+        884,
+        269
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27231754,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231647,
+      "second": 27247398,
+      "qubits": [
+        174,
+        884,
+        270
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27231710,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231648,
+      "second": 27247399,
+      "qubits": [
+        175,
+        884,
+        271
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27231754,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231649,
+      "second": 27247400,
+      "qubits": [
+        176,
+        884,
+        272
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27231710,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231650,
+      "second": 27247401,
+      "qubits": [
+        177,
+        884,
+        273
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27231754,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231651,
+      "second": 27247402,
+      "qubits": [
+        178,
+        884,
+        274
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27231754,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27231652,
+      "second": 27247403,
+      "qubits": [
+        179,
+        884,
+        275
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27231875,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27347598,
+      "second": 28750514,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27347600,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27367068,
+      "second": 27484458,
+      "qubits": [
+        336,
+        337,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27367070,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27484645,
+      "second": 27585773,
+      "qubits": [
+        396,
+        397,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27484647,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27585948,
+      "second": 27671928,
+      "qubits": [
+        432,
+        433,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27585950,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27672091,
+      "second": 27747829,
+      "qubits": [
+        492,
+        493,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27672093,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27747980,
+      "second": 27811483,
+      "qubits": [
+        528,
+        529,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27747982,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27811622,
+      "second": 27865145,
+      "qubits": [
+        588,
+        589,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27811624,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27865272,
+      "second": 27909604,
+      "qubits": [
+        624,
+        625,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27865274,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27909719,
+      "second": 27945228,
+      "qubits": [
+        684,
+        685,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27909721,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27945331,
+      "second": 27976335,
+      "qubits": [
+        720,
+        721,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27945333,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 27976426,
+      "second": 28003332,
+      "qubits": [
+        780,
+        781,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 27976428,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28669857,
+      "second": 28792827,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28669859,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28750514,
+      "second": 28781864,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28750516,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28753289,
+      "second": 28819546,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28753291,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28781864,
+      "second": 28831923,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28781866,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28781866,
+      "second": 28831925,
+      "qubits": [
+        206,
+        886,
+        878
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28781868,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28781868,
+      "second": 28831927,
+      "qubits": [
+        207,
+        878,
+        864
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28781870,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28781870,
+      "second": 28831929,
+      "qubits": [
+        208,
+        864,
+        883
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28781872,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28781872,
+      "second": 28831931,
+      "qubits": [
+        209,
+        883,
+        880
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28781874,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28781874,
+      "second": 28831933,
+      "qubits": [
+        210,
+        880,
+        888
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28781876,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28781876,
+      "second": 28831935,
+      "qubits": [
+        211,
+        888,
+        879
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28781878,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28781878,
+      "second": 28831937,
+      "qubits": [
+        212,
+        879,
+        874
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28781880,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28781880,
+      "second": 28831939,
+      "qubits": [
+        213,
+        874,
+        873
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28781882,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28781882,
+      "second": 28831941,
+      "qubits": [
+        214,
+        873,
+        877
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28781883,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28792827,
+      "second": 28831988,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28792829,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28819546,
+      "second": 28898333,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28819548,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28819599,
+      "second": 28859249,
+      "qubits": [
+        204,
+        884,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28819633,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28831923,
+      "second": 28860651,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28831925,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28831988,
+      "second": 28871614,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28831990,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28860651,
+      "second": 28910710,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28860653,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28860653,
+      "second": 28910712,
+      "qubits": [
+        206,
+        886,
+        877
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28860655,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28860655,
+      "second": 28910714,
+      "qubits": [
+        207,
+        877,
+        871
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28860657,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28860657,
+      "second": 28910716,
+      "qubits": [
+        208,
+        871,
+        878
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28860659,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28860659,
+      "second": 28910718,
+      "qubits": [
+        209,
+        878,
+        864
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28860661,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28860661,
+      "second": 28910720,
+      "qubits": [
+        210,
+        864,
+        883
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28860663,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28860663,
+      "second": 28910722,
+      "qubits": [
+        211,
+        883,
+        880
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28860665,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28860665,
+      "second": 28910724,
+      "qubits": [
+        212,
+        880,
+        888
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28860667,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28860667,
+      "second": 28910726,
+      "qubits": [
+        213,
+        888,
+        879
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28860669,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28860669,
+      "second": 28910728,
+      "qubits": [
+        214,
+        879,
+        874
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28860670,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28871614,
+      "second": 28910775,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28871616,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28898333,
+      "second": 28938615,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28898335,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28898335,
+      "second": 28938617,
+      "qubits": [
+        242,
+        886,
+        872
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28898337,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28898337,
+      "second": 28938619,
+      "qubits": [
+        243,
+        872,
+        866
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28898339,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28898339,
+      "second": 28938621,
+      "qubits": [
+        244,
+        866,
+        875
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28898341,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28898341,
+      "second": 28938623,
+      "qubits": [
+        245,
+        875,
+        885
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28898343,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28898343,
+      "second": 28938625,
+      "qubits": [
+        246,
+        885,
+        870
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28898345,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 28898345,
+      "second": 28938627,
+      "qubits": [
+        247,
+        870,
+        876
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 28898347,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29096635,
+      "second": 29273037,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29096637,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29220016,
+      "second": 29258858,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29220018,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29222791,
+      "second": 29307454,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29222793,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29258858,
+      "second": 29323069,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29258860,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29258860,
+      "second": 29323071,
+      "qubits": [
+        50,
+        886,
+        882
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29258862,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29258862,
+      "second": 29323073,
+      "qubits": [
+        51,
+        882,
+        881
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29258864,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29258864,
+      "second": 29323075,
+      "qubits": [
+        52,
+        881,
+        869
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29258866,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29258866,
+      "second": 29323077,
+      "qubits": [
+        53,
+        869,
+        884
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29258868,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29258868,
+      "second": 29323079,
+      "qubits": [
+        54,
+        884,
+        865
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29258870,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29258870,
+      "second": 29323081,
+      "qubits": [
+        55,
+        865,
+        880
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29258872,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29258872,
+      "second": 29323083,
+      "qubits": [
+        56,
+        880,
+        877
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29258874,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29258874,
+      "second": 29323085,
+      "qubits": [
+        57,
+        877,
+        870
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29258876,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29258876,
+      "second": 29323087,
+      "qubits": [
+        58,
+        870,
+        878
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29258877,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29273037,
+      "second": 29323134,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29273039,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29307454,
+      "second": 29407885,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29307456,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29307507,
+      "second": 29357887,
+      "qubits": [
+        48,
+        883,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29307541,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29323069,
+      "second": 29359289,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29323071,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29323134,
+      "second": 29373468,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29323136,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29359289,
+      "second": 29423500,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29359291,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29359291,
+      "second": 29423502,
+      "qubits": [
+        50,
+        886,
+        878
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29359293,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29359293,
+      "second": 29423504,
+      "qubits": [
+        51,
+        878,
+        876
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29359295,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29359295,
+      "second": 29423506,
+      "qubits": [
+        52,
+        876,
+        882
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29359297,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29359297,
+      "second": 29423508,
+      "qubits": [
+        53,
+        882,
+        881
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29359299,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29359299,
+      "second": 29423510,
+      "qubits": [
+        54,
+        881,
+        869
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29359301,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29359301,
+      "second": 29423512,
+      "qubits": [
+        55,
+        869,
+        884
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29359303,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29359303,
+      "second": 29423514,
+      "qubits": [
+        56,
+        884,
+        865
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29359305,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29359305,
+      "second": 29423516,
+      "qubits": [
+        57,
+        865,
+        880
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29359307,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29359307,
+      "second": 29423518,
+      "qubits": [
+        58,
+        880,
+        877
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29359308,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29373468,
+      "second": 29423565,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29373470,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29407885,
+      "second": 29460879,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29407887,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29407887,
+      "second": 29460881,
+      "qubits": [
+        110,
+        886,
+        885
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29407889,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29407889,
+      "second": 29460883,
+      "qubits": [
+        111,
+        885,
+        872
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29407891,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29407891,
+      "second": 29460885,
+      "qubits": [
+        112,
+        872,
+        888
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29407893,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29407893,
+      "second": 29460887,
+      "qubits": [
+        113,
+        888,
+        873
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29407895,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29407895,
+      "second": 29460889,
+      "qubits": [
+        114,
+        873,
+        887
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29407897,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 29407897,
+      "second": 29460891,
+      "qubits": [
+        115,
+        887,
+        875
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 29407899,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36793315,
+      "second": 36918398,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36793317,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36886799,
+      "second": 36968644,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36886801,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36915623,
+      "second": 36954465,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36915625,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36918398,
+      "second": 37003061,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36918400,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36954465,
+      "second": 37018676,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36954467,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36954467,
+      "second": 37018678,
+      "qubits": [
+        50,
+        886,
+        875
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36954469,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36954469,
+      "second": 37018680,
+      "qubits": [
+        51,
+        875,
+        885
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36954471,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36954471,
+      "second": 37018682,
+      "qubits": [
+        52,
+        885,
+        888
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36954473,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36954473,
+      "second": 37018684,
+      "qubits": [
+        53,
+        888,
+        872
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36954475,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36954475,
+      "second": 37018686,
+      "qubits": [
+        54,
+        872,
+        878
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36954477,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36954477,
+      "second": 37018688,
+      "qubits": [
+        55,
+        878,
+        868
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36954479,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36954479,
+      "second": 37018690,
+      "qubits": [
+        56,
+        868,
+        874
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36954481,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36954481,
+      "second": 37018692,
+      "qubits": [
+        57,
+        874,
+        884
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36954483,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36954483,
+      "second": 37018694,
+      "qubits": [
+        58,
+        884,
+        882
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36954484,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 36968644,
+      "second": 37018741,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 36968646,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37003061,
+      "second": 37103492,
+      "qubits": [
+        108,
+        109,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37003063,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37003114,
+      "second": 37053494,
+      "qubits": [
+        48,
+        870,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37003148,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37018676,
+      "second": 37054896,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37018678,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37018741,
+      "second": 37069075,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37018743,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37054896,
+      "second": 37119107,
+      "qubits": [
+        48,
+        49,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37054898,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37054898,
+      "second": 37119109,
+      "qubits": [
+        50,
+        886,
+        882
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37054900,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37054900,
+      "second": 37119111,
+      "qubits": [
+        51,
+        882,
+        865
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37054902,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37054902,
+      "second": 37119113,
+      "qubits": [
+        52,
+        865,
+        875
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37054904,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37054904,
+      "second": 37119115,
+      "qubits": [
+        53,
+        875,
+        885
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37054906,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37054906,
+      "second": 37119117,
+      "qubits": [
+        54,
+        885,
+        888
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37054908,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37054908,
+      "second": 37119119,
+      "qubits": [
+        55,
+        888,
+        872
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37054910,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37054910,
+      "second": 37119121,
+      "qubits": [
+        56,
+        872,
+        878
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37054912,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37054912,
+      "second": 37119123,
+      "qubits": [
+        57,
+        878,
+        868
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37054914,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37054914,
+      "second": 37119125,
+      "qubits": [
+        58,
+        868,
+        874
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37054915,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37069075,
+      "second": 37119172,
+      "qubits": [
+        144,
+        145,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37069077,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37341252,
+      "second": 37429293,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37341254,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37406946,
+      "second": 37468831,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37406948,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37426518,
+      "second": 37457868,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37426520,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37429293,
+      "second": 37495550,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37429295,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37457868,
+      "second": 37507927,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37457870,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37457870,
+      "second": 37507929,
+      "qubits": [
+        206,
+        886,
+        875
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37457872,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37457872,
+      "second": 37507931,
+      "qubits": [
+        207,
+        875,
+        884
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37457874,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37457874,
+      "second": 37507933,
+      "qubits": [
+        208,
+        884,
+        871
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37457876,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37457876,
+      "second": 37507935,
+      "qubits": [
+        209,
+        871,
+        866
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37457878,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37457878,
+      "second": 37507937,
+      "qubits": [
+        210,
+        866,
+        887
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37457880,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37457880,
+      "second": 37507939,
+      "qubits": [
+        211,
+        887,
+        883
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37457882,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37457882,
+      "second": 37507941,
+      "qubits": [
+        212,
+        883,
+        880
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37457884,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37457884,
+      "second": 37507943,
+      "qubits": [
+        213,
+        880,
+        885
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37457886,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37457886,
+      "second": 37507945,
+      "qubits": [
+        214,
+        885,
+        882
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37457887,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37468831,
+      "second": 37507992,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37468833,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37495550,
+      "second": 37574337,
+      "qubits": [
+        240,
+        241,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37495552,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37495603,
+      "second": 37535253,
+      "qubits": [
+        204,
+        864,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37495637,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37507927,
+      "second": 37536655,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37507929,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37507992,
+      "second": 37547618,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37507994,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37536655,
+      "second": 37586714,
+      "qubits": [
+        204,
+        205,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37536657,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37536657,
+      "second": 37586716,
+      "qubits": [
+        206,
+        886,
+        882
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37536659,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37536659,
+      "second": 37586718,
+      "qubits": [
+        207,
+        882,
+        876
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37536661,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37536661,
+      "second": 37586720,
+      "qubits": [
+        208,
+        876,
+        875
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37536663,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37536663,
+      "second": 37586722,
+      "qubits": [
+        209,
+        875,
+        884
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37536665,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37536665,
+      "second": 37586724,
+      "qubits": [
+        210,
+        884,
+        871
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37536667,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37536667,
+      "second": 37586726,
+      "qubits": [
+        211,
+        871,
+        866
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37536669,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37536669,
+      "second": 37586728,
+      "qubits": [
+        212,
+        866,
+        887
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37536671,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37536671,
+      "second": 37586730,
+      "qubits": [
+        213,
+        887,
+        883
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37536673,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37536673,
+      "second": 37586732,
+      "qubits": [
+        214,
+        883,
+        880
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37536674,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 37547618,
+      "second": 37586779,
+      "qubits": [
+        300,
+        301,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 37547620,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39841302,
+      "second": 39910808,
+      "qubits": [
+        252,
+        885,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39841348,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39841314,
+      "second": 39910820,
+      "qubits": [
+        258,
+        885,
+        873
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39841348,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39841392,
+      "second": 39910898,
+      "qubits": [
+        233,
+        257,
+        278
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 39845343,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39841565,
+      "second": 39911071,
+      "qubits": [
+        233,
+        257,
+        276
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 39845341,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39841903,
+      "second": 39911409,
+      "qubits": [
+        229,
+        253,
+        280
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 39845345,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39842549,
+      "second": 39912055,
+      "qubits": [
+        229,
+        253,
+        279
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 39845344,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39842710,
+      "second": 39912216,
+      "qubits": [
+        173,
+        257,
+        218
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 39878742,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39842883,
+      "second": 39912389,
+      "qubits": [
+        173,
+        257,
+        216
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 39878740,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39843221,
+      "second": 39912727,
+      "qubits": [
+        169,
+        253,
+        220
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 39878744,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39843867,
+      "second": 39913373,
+      "qubits": [
+        169,
+        253,
+        219
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 39878743,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860424,
+      "second": 39876247,
+      "qubits": [
+        325,
+        877,
+        277
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39862035,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860425,
+      "second": 39876248,
+      "qubits": [
+        326,
+        877,
+        278
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39862035,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860426,
+      "second": 39876249,
+      "qubits": [
+        327,
+        877,
+        279
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39862035,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860427,
+      "second": 39876250,
+      "qubits": [
+        328,
+        877,
+        280
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39861890,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860428,
+      "second": 39876251,
+      "qubits": [
+        329,
+        877,
+        281
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39861914,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860429,
+      "second": 39876252,
+      "qubits": [
+        330,
+        877,
+        282
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39861870,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860430,
+      "second": 39876253,
+      "qubits": [
+        331,
+        877,
+        283
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39861914,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860431,
+      "second": 39876254,
+      "qubits": [
+        332,
+        877,
+        284
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39861870,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860432,
+      "second": 39876255,
+      "qubits": [
+        333,
+        877,
+        285
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39861914,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860433,
+      "second": 39876256,
+      "qubits": [
+        334,
+        877,
+        286
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39861914,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860434,
+      "second": 39876257,
+      "qubits": [
+        335,
+        877,
+        287
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39862035,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860460,
+      "second": 39876211,
+      "qubits": [
+        229,
+        885,
+        325
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39860693,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860461,
+      "second": 39876212,
+      "qubits": [
+        230,
+        885,
+        326
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39860693,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860462,
+      "second": 39876213,
+      "qubits": [
+        231,
+        885,
+        327
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39860693,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860463,
+      "second": 39876214,
+      "qubits": [
+        232,
+        885,
+        328
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39860548,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860464,
+      "second": 39876215,
+      "qubits": [
+        233,
+        885,
+        329
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39860572,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860465,
+      "second": 39876216,
+      "qubits": [
+        234,
+        885,
+        330
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39860528,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860466,
+      "second": 39876217,
+      "qubits": [
+        235,
+        885,
+        331
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39860572,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860467,
+      "second": 39876218,
+      "qubits": [
+        236,
+        885,
+        332
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39860528,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860468,
+      "second": 39876219,
+      "qubits": [
+        237,
+        885,
+        333
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39860572,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860469,
+      "second": 39876220,
+      "qubits": [
+        238,
+        885,
+        334
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39860572,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39860470,
+      "second": 39876221,
+      "qubits": [
+        239,
+        885,
+        335
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39860693,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893823,
+      "second": 39909646,
+      "qubits": [
+        265,
+        877,
+        217
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39895434,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893824,
+      "second": 39909647,
+      "qubits": [
+        266,
+        877,
+        218
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39895434,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893825,
+      "second": 39909648,
+      "qubits": [
+        267,
+        877,
+        219
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39895434,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893826,
+      "second": 39909649,
+      "qubits": [
+        268,
+        877,
+        220
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39895289,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893827,
+      "second": 39909650,
+      "qubits": [
+        269,
+        877,
+        221
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39895313,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893828,
+      "second": 39909651,
+      "qubits": [
+        270,
+        877,
+        222
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39895269,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893829,
+      "second": 39909652,
+      "qubits": [
+        271,
+        877,
+        223
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39895313,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893830,
+      "second": 39909653,
+      "qubits": [
+        272,
+        877,
+        224
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39895269,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893831,
+      "second": 39909654,
+      "qubits": [
+        273,
+        877,
+        225
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39895313,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893832,
+      "second": 39909655,
+      "qubits": [
+        274,
+        877,
+        226
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39895313,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893833,
+      "second": 39909656,
+      "qubits": [
+        275,
+        877,
+        227
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39895434,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893859,
+      "second": 39909610,
+      "qubits": [
+        169,
+        885,
+        265
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39894092,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893860,
+      "second": 39909611,
+      "qubits": [
+        170,
+        885,
+        266
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39894092,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893861,
+      "second": 39909612,
+      "qubits": [
+        171,
+        885,
+        267
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39894092,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893862,
+      "second": 39909613,
+      "qubits": [
+        172,
+        885,
+        268
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39893947,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893863,
+      "second": 39909614,
+      "qubits": [
+        173,
+        885,
+        269
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39893971,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893864,
+      "second": 39909615,
+      "qubits": [
+        174,
+        885,
+        270
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39893927,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893865,
+      "second": 39909616,
+      "qubits": [
+        175,
+        885,
+        271
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39893971,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893866,
+      "second": 39909617,
+      "qubits": [
+        176,
+        885,
+        272
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39893927,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893867,
+      "second": 39909618,
+      "qubits": [
+        177,
+        885,
+        273
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39893971,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893868,
+      "second": 39909619,
+      "qubits": [
+        178,
+        885,
+        274
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39893971,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 39893869,
+      "second": 39909620,
+      "qubits": [
+        179,
+        885,
+        275
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 39894092,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40421137,
+      "second": 40508027,
+      "qubits": [
+        96,
+        878,
+        886
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40421183,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40421149,
+      "second": 40508039,
+      "qubits": [
+        102,
+        878,
+        881
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40421183,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40421227,
+      "second": 40508117,
+      "qubits": [
+        89,
+        101,
+        134
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 40425178,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40421400,
+      "second": 40508290,
+      "qubits": [
+        89,
+        101,
+        132
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 40425176,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40421738,
+      "second": 40508628,
+      "qubits": [
+        85,
+        97,
+        136
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 40425180,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40422384,
+      "second": 40509274,
+      "qubits": [
+        85,
+        97,
+        135
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 40425179,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40422545,
+      "second": 40509435,
+      "qubits": [
+        29,
+        101,
+        74
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 40467269,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40422718,
+      "second": 40509608,
+      "qubits": [
+        29,
+        101,
+        72
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 40467267,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40423056,
+      "second": 40509946,
+      "qubits": [
+        25,
+        97,
+        76
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 40467271,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40423702,
+      "second": 40510592,
+      "qubits": [
+        25,
+        97,
+        75
+      ],
+      "status": "fredkin_nonlinear_delta",
+      "witness_op": 40467270,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444469,
+      "second": 40464774,
+      "qubits": [
+        181,
+        876,
+        133
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40446080,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444470,
+      "second": 40464775,
+      "qubits": [
+        182,
+        876,
+        134
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40446080,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444471,
+      "second": 40464776,
+      "qubits": [
+        183,
+        876,
+        135
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40446080,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444472,
+      "second": 40464777,
+      "qubits": [
+        184,
+        876,
+        136
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40445935,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444473,
+      "second": 40464778,
+      "qubits": [
+        185,
+        876,
+        137
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40445959,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444474,
+      "second": 40464779,
+      "qubits": [
+        186,
+        876,
+        138
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40445915,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444475,
+      "second": 40464780,
+      "qubits": [
+        187,
+        876,
+        139
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40445959,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444476,
+      "second": 40464781,
+      "qubits": [
+        188,
+        876,
+        140
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40445915,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444477,
+      "second": 40464782,
+      "qubits": [
+        189,
+        876,
+        141
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40445959,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444478,
+      "second": 40464783,
+      "qubits": [
+        190,
+        876,
+        142
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40445959,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444479,
+      "second": 40464784,
+      "qubits": [
+        191,
+        876,
+        143
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40446080,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444505,
+      "second": 40464738,
+      "qubits": [
+        85,
+        878,
+        181
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40444738,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444506,
+      "second": 40464739,
+      "qubits": [
+        86,
+        878,
+        182
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40444738,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444507,
+      "second": 40464740,
+      "qubits": [
+        87,
+        878,
+        183
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40444738,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444508,
+      "second": 40464741,
+      "qubits": [
+        88,
+        878,
+        184
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40444593,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444509,
+      "second": 40464742,
+      "qubits": [
+        89,
+        878,
+        185
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40444617,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444510,
+      "second": 40464743,
+      "qubits": [
+        90,
+        878,
+        186
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40444573,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444511,
+      "second": 40464744,
+      "qubits": [
+        91,
+        878,
+        187
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40444617,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444512,
+      "second": 40464745,
+      "qubits": [
+        92,
+        878,
+        188
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40444573,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444513,
+      "second": 40464746,
+      "qubits": [
+        93,
+        878,
+        189
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40444617,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444514,
+      "second": 40464747,
+      "qubits": [
+        94,
+        878,
+        190
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40444617,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40444515,
+      "second": 40464748,
+      "qubits": [
+        95,
+        878,
+        191
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40444738,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486560,
+      "second": 40506865,
+      "qubits": [
+        121,
+        876,
+        73
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40488171,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486561,
+      "second": 40506866,
+      "qubits": [
+        122,
+        876,
+        74
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40488171,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486562,
+      "second": 40506867,
+      "qubits": [
+        123,
+        876,
+        75
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40488171,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486563,
+      "second": 40506868,
+      "qubits": [
+        124,
+        876,
+        76
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40488026,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486564,
+      "second": 40506869,
+      "qubits": [
+        125,
+        876,
+        77
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40488050,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486565,
+      "second": 40506870,
+      "qubits": [
+        126,
+        876,
+        78
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40488006,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486566,
+      "second": 40506871,
+      "qubits": [
+        127,
+        876,
+        79
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40488050,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486567,
+      "second": 40506872,
+      "qubits": [
+        128,
+        876,
+        80
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40488006,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486568,
+      "second": 40506873,
+      "qubits": [
+        129,
+        876,
+        81
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40488050,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486569,
+      "second": 40506874,
+      "qubits": [
+        130,
+        876,
+        82
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40488050,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486570,
+      "second": 40506875,
+      "qubits": [
+        131,
+        876,
+        83
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40488171,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486596,
+      "second": 40506829,
+      "qubits": [
+        25,
+        878,
+        121
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40486829,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486597,
+      "second": 40506830,
+      "qubits": [
+        26,
+        878,
+        122
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40486829,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486598,
+      "second": 40506831,
+      "qubits": [
+        27,
+        878,
+        123
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40486829,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486599,
+      "second": 40506832,
+      "qubits": [
+        28,
+        878,
+        124
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40486684,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486600,
+      "second": 40506833,
+      "qubits": [
+        29,
+        878,
+        125
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40486708,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486601,
+      "second": 40506834,
+      "qubits": [
+        30,
+        878,
+        126
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40486664,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486602,
+      "second": 40506835,
+      "qubits": [
+        31,
+        878,
+        127
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40486708,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486603,
+      "second": 40506836,
+      "qubits": [
+        32,
+        878,
+        128
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40486664,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486604,
+      "second": 40506837,
+      "qubits": [
+        33,
+        878,
+        129
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40486708,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486605,
+      "second": 40506838,
+      "qubits": [
+        34,
+        878,
+        130
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40486708,
+      "affected_phase_ops": []
+    },
+    {
+      "first": 40486606,
+      "second": 40506839,
+      "qubits": [
+        35,
+        878,
+        131
+      ],
+      "status": "nonlinear_control_delta",
+      "witness_op": 40486829,
+      "affected_phase_ops": []
+    }
+  ],
+  "elapsed_seconds": 0.3544710159985698,
+  "max_rss_kib": 415724,
+  "rejection_counts": {
+    "nonlinear_control_delta": 330,
+    "fredkin_nonlinear_delta": 32
+  }
+}

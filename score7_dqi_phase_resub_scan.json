@@ -1,0 +1,1 @@
+{"schema":"score7-whole-phase-resub-v1","status":"DISCOVERY_ONLY","panel_bits":2048,"span_enabled":true,"candidates":[],"num_ops":58868734,"qubits":889,"ccx":363654,"cswap":12240,"ccz":7000,"eligible_phases":2950,"sparse_phase_skips":4050,"span_queries":2950,"affine_hits":0,"quadratic_hits":0,"candidate_count":0,"seconds":25.5787}

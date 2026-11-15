@@ -1,0 +1,259 @@
+{
+  "status": "INDEPENDENT_REVIEW_PASS",
+  "reviewer_source_sha256": "e2916aaace7abb272ed11f4c8078f7360cd2e569f3544bd01d6cce7e90b0a79f",
+  "reviewed_source_sha256": "224dc079eab0a5740eca842d432e830107ff5d4b68af07ba72d4da24e80b9ce3",
+  "reviewed_receipt_sha256": "1117ee95c62b6d5f09e6e840e00380b0b831ff9f9d0c993ae49d3f0c7a2f8e31",
+  "primary_source_archive_sha256": "39573ecf56e11380c7a50c009c84467e411c51d9a1285f9c225270a9a6af8de3",
+  "primary_source_main_tex_sha256": "0cb91201f79e6409fa9f5704361d415294fce57bda68d2a401dc442623017a9a",
+  "figures": {
+    "a": {
+      "unitary_parsed_from_primary_tex": true,
+      "feedback_parsed_from_primary_tex": [
+        [
+          1,
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        [
+          1,
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        ]
+      ],
+      "phase_convention_matches_exact_proof": true,
+      "t_count": 6,
+      "t_depth": 6,
+      "branches": [
+        {
+          "outcome": 0,
+          "scalar": [
+            0.49999999999999994,
+            0.4999999999999999
+          ],
+          "matrix_max_abs_error": 2.0014830212433607e-16,
+          "probability": 0.4999999999999998,
+          "reference_entangled_states": 64,
+          "reference_entangled_max_abs_error": 8.89289032550165e-17,
+          "cnot_equivalent": 6
+        },
+        {
+          "outcome": 1,
+          "scalar": [
+            0.4999999999999999,
+            -0.4999999999999999
+          ],
+          "matrix_max_abs_error": 1.5700924586837752e-16,
+          "probability": 0.4999999999999998,
+          "reference_entangled_states": 64,
+          "reference_entangled_max_abs_error": 6.206335383118183e-17,
+          "cnot_equivalent": 8
+        }
+      ],
+      "kraus_completeness_max_abs_error": 4.440892098500626e-16
+    },
+    "aprime": {
+      "unitary_parsed_from_primary_tex": true,
+      "feedback_parsed_from_primary_tex": [
+        [
+          1,
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        [
+          0,
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        ]
+      ],
+      "phase_convention_matches_exact_proof": true,
+      "t_count": 6,
+      "t_depth": 6,
+      "branches": [
+        {
+          "outcome": 0,
+          "scalar": [
+            0.4999999999999999,
+            -0.4999999999999999
+          ],
+          "matrix_max_abs_error": 1.2412670766236366e-16,
+          "probability": 0.4999999999999998,
+          "reference_entangled_states": 64,
+          "reference_entangled_max_abs_error": 5.928593550334434e-17,
+          "cnot_equivalent": 7
+        },
+        {
+          "outcome": 1,
+          "scalar": [
+            0.4999999999999999,
+            0.4999999999999999
+          ],
+          "matrix_max_abs_error": 1.2412670766236366e-16,
+          "probability": 0.4999999999999998,
+          "reference_entangled_states": 64,
+          "reference_entangled_max_abs_error": 6.938893903907228e-17,
+          "cnot_equivalent": 7
+        }
+      ],
+      "kraus_completeness_max_abs_error": 4.440892098500626e-16
+    },
+    "b": {
+      "unitary_parsed_from_primary_tex": true,
+      "feedback_parsed_from_primary_tex": [
+        [
+          1,
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        [
+          1,
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        ]
+      ],
+      "phase_convention_matches_exact_proof": true,
+      "t_count": 6,
+      "t_depth": 2,
+      "branches": [
+        {
+          "outcome": 0,
+          "scalar": [
+            0.5,
+            -0.4999999999999999
+          ],
+          "matrix_max_abs_error": 2.0014830212433607e-16,
+          "probability": 0.4999999999999999,
+          "reference_entangled_states": 64,
+          "reference_entangled_max_abs_error": 9.309503074677274e-17,
+          "cnot_equivalent": 12
+        },
+        {
+          "outcome": 1,
+          "scalar": [
+            -0.4999999999999999,
+            -0.4999999999999999
+          ],
+          "matrix_max_abs_error": 2.2887833992611187e-16,
+          "probability": 0.4999999999999998,
+          "reference_entangled_states": 64,
+          "reference_entangled_max_abs_error": 9.469747252991003e-17,
+          "cnot_equivalent": 14
+        }
+      ],
+      "kraus_completeness_max_abs_error": 4.440892098500626e-16
+    }
+  },
+  "ring_arithmetic": {
+    "integer_convolution_products": 256,
+    "shift_powers_tested": [
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complex_embedding_max_abs_error": 2.416106516409301e-14,
+    "relation": "zeta^4=-1",
+    "integer_product_check": "PASS"
+  },
+  "normalization_review": {
+    "six_T_figures": "2 unnormalised H gates -> amplitude denominator 2",
+    "coherent_15T": "4 unnormalised H gates -> amplitude denominator 4"
+  },
+  "coherent_15t_independent_matrix_max_abs_error": 5.67464084063076e-16,
+  "interface_audit": {
+    "parser": {
+      "H q0": {
+        "accepted": false,
+        "error": "Failed to parse kmx line (unknown operation name): 'H q0'"
+      },
+      "T q0": {
+        "accepted": false,
+        "error": "Failed to parse kmx line (unknown operation name): 'T q0'"
+      },
+      "Z_POW q0 0.25": {
+        "accepted": true
+      }
+    },
+    "dqi_rotation_rejection": "Z_POW gates are not allowed in Benchmark II.",
+    "chemistry_rotation_rejection": "ANGLE_0: Z_POW rotations are not allowed (phases must be multiples of pi)",
+    "official_guard_execution_scope": "Only unchanged AST rejection guards, not full verifier execution",
+    "source_sha256": {
+      "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dqi/verify_submission_dqi.py": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+      "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dfthcsos/scoreinfra/circuits.py": "98601c25aa5f57ff7024c545f8773badc43ad2e6b586e6400bc2158c2bd01b86",
+      "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/invsqrt/verify_submission_invsqrt.py": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a"
+    },
+    "cost_audit": {
+      "dqi": "R * Q^2 * mean num_toffoli_like",
+      "chemistry": "lambda_eff * total_Toffoli_like * Q_total",
+      "invsqrt": "Q * (mean num_toffoli_like + synthesized_T_count / 4)"
+    },
+    "t_count_not_identical_to_competition_toffoli_like": true
+  },
+  "limitations": [
+    "Complex numerical checks corroborate the separate integer proof; they are not themselves an exact proof.",
+    "T-depth is the depth of the displayed constructions, not a newly established minimum.",
+    "No competition circuit, verifier receipt, score, or submission was changed."
+  ]
+}
