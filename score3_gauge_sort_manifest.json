@@ -1,0 +1,77 @@
+{
+  "status": "NATIVE_SELECTOR_AND_EXACT_BOUNDARY_SPLICE_AND_FULL_OFFICIAL_DECODER_PASS",
+  "files": {
+    "score3_gauge_sort.py": {
+      "sha256": "435870acd0698f6b5214622b225cff81085847d6b0571a1b98afe5bcf69a3e2a",
+      "bytes": 19407
+    },
+    "score3_gauge_sort_proof.md": {
+      "sha256": "0c8a1ab4cca50f70dbd08e667dc1e9401c83cd440925183c9a5b6b0280c613fe",
+      "bytes": 8312
+    },
+    "score3_gauge_sort_native.json": {
+      "sha256": "f40864c4027dc5de02136abcc64ad1e6c972630a75a0d17192d652adafe38d57",
+      "bytes": 5720
+    },
+    "score3_gauge_sort_build.json": {
+      "sha256": "6c5aa137c11241196cbbe877cc193a09bcb21bc60bad0c45d7ef668d5e520a59",
+      "bytes": 5544
+    },
+    "score3_dqi_full_verification.json": {
+      "sha256": "965eeecfe2ec7c700af89abf4afb538d16423250053fc78d64fd491f4ba19307",
+      "bytes": 1880
+    }
+  },
+  "candidate": {
+    "header": {
+      "version": 2,
+      "num_qubits": 889,
+      "num_bits": 208087,
+      "num_registers": 4165,
+      "num_ops": 58869042,
+      "num_ops_with_3_target_qubits": 382934,
+      "num_ops_with_2_target_qubits": 32212227,
+      "num_ops_with_1_target_qubits": 274744,
+      "num_ops_with_1_target_bit": 24701619,
+      "num_ops_with_1_condition_bit": 25239591,
+      "num_ops_with_angle": 0,
+      "num_info_tags": 0,
+      "num_info_tag_chars": 0
+    },
+    "sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+    "bytes": 522345615
+  },
+  "candidate_path": "/workspace/scratch/3815fb5fae06/score3_gauge_sort_family/dqi_ccx480_gauge_sort4096.kmb",
+  "primary_algorithm_reference": "https://doi.org/10.1145/1468075.1468121",
+  "reproduction": {
+    "source_root": "official_sources/Syed_v12/source/dqi_source/src",
+    "baseline": "dqi_inputs/821_ccx480_gauge128.kmb",
+    "reference_pieces": "dqi_inputs/gauge128",
+    "native_command": "python score3_gauge_sort.py --source-root SOURCE_ROOT --output native.json",
+    "build_command": "MALLOC_ARENA_MAX=2 python score3_gauge_sort.py --source-root SOURCE_ROOT --output build.json --build-out-dir new_sort_family --baseline BASELINE --reference-pieces REFERENCE_PIECES"
+  },
+  "official_verification": {
+    "receipt": "score3_dqi_full_verification.json",
+    "receipt_sha256": "965eeecfe2ec7c700af89abf4afb538d16423250053fc78d64fd491f4ba19307",
+    "status": "PASS",
+    "verified_shots": 102400,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "toffoli_count": 382095.68779296876,
+    "max_toffoli_count": 382934,
+    "num_qubits": 889,
+    "num_bits": 208087,
+    "num_ops": 58869042,
+    "score": 359734745778.9876,
+    "repetition_factor": 1.1912604648115832,
+    "effective_error_rate": 0.0008660587301657926,
+    "seed": null,
+    "salt": "",
+    "log2_delta": -128.0,
+    "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+    "verification_scope": "full competition verifier defaults"
+  },
+  "native_and_build_hashes_retained": true,
+  "kaggle_submission_performed": false,
+  "observed_public_score": null
+}

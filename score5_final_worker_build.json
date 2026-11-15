@@ -1,0 +1,27 @@
+{
+  "status": "QUALIFIED_FINAL_PINNED_WORKER_BUILT",
+  "worker_sha256": "f2e9187bfc754712e139098aed195895b189fd203e174015d898198bd8c0578e",
+  "worker_bytes": 159959,
+  "payload_raw_sha256": "b9ef0c5ce6c7f72ab8e59ce9560793ddc9855b0be8ef16a4e664e3a5106cc687",
+  "manifest_sha256": "6cf356b86aba9b5f2d09a4e470fd72f52a0fe25193c753e395f1c5cc62b94172",
+  "candidate_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "previous_worker_sha256": "93222577d134739a3a0b1e005ac518b458548b33b023b92e92d3cfe7c6b290ea",
+  "previous_worker_unchanged": true,
+  "hmr_patch_raw_sha256": "c1b527a899d8803f653034d5a86eb4f69d3b1dfe7b5bfeb28cb150e4df09163e",
+  "hmr_patch_gzip_sha256": "c0d48b20e0a3587083227d7ac9f0a9309f699bcf553e583f0baa42623745dcd1",
+  "hmr_virtual_complete_output_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "strict_hmr_encoder_opcodes": [
+    "0x31",
+    "0x50",
+    "0xa0",
+    "0x40",
+    "0xc2"
+  ],
+  "official_receipt_sha256": "3b59268e86faedf7026ef4b53b2428675dd7bb3f031cee61e5eb5dfb236df043",
+  "independent_review_sha256": "48923ed5c3b1e65ace078b7823c37725fe311d70a969993f9c3659ad842900ee",
+  "builder_sha256": "3ef8d2c4c2f42088a1d9e00fdf09b9bc96de798f867d017d5468347a9172d2b3",
+  "template_sha256": "c9868c73c2bf8af010e2ba7007078df557290152dacc4942ed014524eeeb00cc",
+  "new_official_run": false,
+  "public_score": null,
+  "submission_performed": false
+}

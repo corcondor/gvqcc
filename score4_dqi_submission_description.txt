@@ -1,0 +1,1 @@
+DQI exact4096 with 16 additional unconditional CCX removed, Q=889. Official 102400-shot PASS, zero value/phase errors. DQI 5a60d662; inverse 684106f and score2 chemistry preserved. All 18 archive members SHA/CRC checked.

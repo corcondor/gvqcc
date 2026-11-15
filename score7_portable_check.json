@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope": "Extracted evidence archive portable entry points; no full benchmark verification",
+  "cccz_exact_receipt_byte_semantics_equal": true,
+  "invsqrt_all_eight_block_records_equal": true,
+  "invsqrt_source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "new_production_improvement": 0,
+  "portable_entrypoint_sha256": "c58fa3936196cbed700ecfd77c88b0743b2916c1c30c82ce6923247b34d9ab71"
+}

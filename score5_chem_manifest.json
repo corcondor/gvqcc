@@ -1,0 +1,106 @@
+{
+  "schema": "gvqcc-score5-chemistry-bounded-continuation-v1",
+  "status": "FROZEN_NO_NEW_ACCEPTED_CHEMISTRY_IMPROVEMENT",
+  "owned_files": [
+    {
+      "path": "score5_chem_v27_rank.py",
+      "bytes": 9229,
+      "sha256": "ad3eaff405290edce9aa79abc10f662c08a1a0ea0ee685c616bbd431a8a52655"
+    },
+    {
+      "path": "score5_chem_joint_words.py",
+      "bytes": 10498,
+      "sha256": "c5ee70e478b9c1a4a79495cf84da8b5fb0500f1265ea2d0a13df47030a4062f1"
+    },
+    {
+      "path": "score5_chem_v27_rank_results.json",
+      "bytes": 11834,
+      "sha256": "581f346f0aad3ffe14e84945637fcb1a0a289b0701272ac078c73a794aac24ed"
+    },
+    {
+      "path": "score5_chem_v27_word_screen.json",
+      "bytes": 41843,
+      "sha256": "a8da1696bff63891fb200e0b01f1c54d73bfc7a2de636e5adc990e939cac064d"
+    },
+    {
+      "path": "score5_chem_v27_joint_results.json",
+      "bytes": 40197,
+      "sha256": "64003dc87e299e2ec0e8be6b49830a792c2cfddc09271b43b073e26e62e15630"
+    },
+    {
+      "path": "score5_chem_v27_joint_changes.json",
+      "bytes": 960,
+      "sha256": "8eb631015311b88102d01da7c4a3cc5058049955d61f3e04d93c6c8d9a020167"
+    },
+    {
+      "path": "score5_chem_report.md",
+      "bytes": 7429,
+      "sha256": "c376936701399d5c648bd76b911205bce8be3030d66a3c01b2219b68b6e36d54"
+    }
+  ],
+  "read_only_dependencies": [
+    {
+      "path": "score3_chemistry_multistep_transport.py",
+      "bytes": 11039,
+      "sha256": "d1e87a68208711d81f48c9abd524ddd821a3070dd62e187e011248e8cc8d042f"
+    },
+    {
+      "path": "inverse_v2_chemistry_refit.py",
+      "bytes": 8575,
+      "sha256": "87e1ff058ef71e615bfb576a1551e8c84c8332dfcd41ed683f9d049340a74d5f"
+    },
+    {
+      "path": "inverse_v2_chemistry_screen.py",
+      "bytes": 3787,
+      "sha256": "5a720ace24bca0f8bf50e0cbcf7345487f53adc471a817ec502de162bd5af7f9"
+    },
+    {
+      "path": "score_chemistry_fast_model.py",
+      "bytes": 4492,
+      "sha256": "3ce5d4cc6f6067ed630ad9563a6b08cb82d5bbf24177a6a37be5874ffc978638"
+    },
+    {
+      "path": "score2_chemistry_discrete_screen.py",
+      "bytes": 10341,
+      "sha256": "47bd82e76962cfa6cfc0ed64db74b666c6f572b0d60938fffbe6c5443eb58d70"
+    },
+    {
+      "path": "score2_angle_sparse_patch.py",
+      "bytes": 23446,
+      "sha256": "796c900efa1c61b486f93d7dec830d66a2d5ec2bf9db79b99092f07caef665fb"
+    },
+    {
+      "path": "score2_angle_feature_patch.py",
+      "bytes": 19108,
+      "sha256": "fff8163708a22aef428b75d6bdf86edd3a0d38305dee930f805101fc52ad5d01"
+    },
+    {
+      "path": "outcome_v27_public_weights.npz",
+      "bytes": 406000,
+      "sha256": "fe0c10e981be453b762cddb302d3ab3a90d33312be04b9f52cbae3cbc89dacf5"
+    },
+    {
+      "path": "outcome_v27_actual_words_uint8.npy",
+      "bytes": 91628,
+      "sha256": "5d48123a971949acaacfc9dbe4e749bd6c3ef6fc20c1600b8f6019d5e9032ce2"
+    },
+    {
+      "path": "outcome_v27_chem_h2_patch.json",
+      "bytes": 5124,
+      "sha256": "06c454575fbfb59db59d35577cc6c8f39ba03ce259231a458537a2dd44cc2987"
+    }
+  ],
+  "source_v27_actual_word_raw_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "current_accepted_chemistry_npz_sha256": "82c285b14ebabdbea128f9a9abdf86c533035a30cec995f00116283c4c26ad1e",
+  "current_accepted_chemistry_cost": 294887987.4337159,
+  "current_accepted_receipt": "results/2026-11-15/outcome_next_candidate_kaggle.json",
+  "source_circuit_family_local": false,
+  "new_circuit_written": false,
+  "new_official_full_verification": false,
+  "new_submission": false,
+  "new_accepted_score_gain": false,
+  "scope": "One 30-second fixed-actual-v27-word C43 refit; exact LS screen of 583676 integer moves with 100 exact finalists; one joint12-word LS+30-second W refit. Both rank candidates fail the official numerical error gates. Feature-patch74T is conditional; generic patch372T. No global lower bound or no-go claim.",
+  "rejected_final_candidate_sha256": "4d589db6cf9495823482dd5e9e5ae3cdba11c3801bc377f13846aea736a8cbd7",
+  "rejected_final_candidate_error1": 0.033368841519862094,
+  "rejected_final_candidate_error2": 0.021118125880857347
+}

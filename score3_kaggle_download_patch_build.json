@@ -1,0 +1,61 @@
+{
+  "status": "KAGGLE_EXACT_FINAL_ZIP_SUBMITTED_PENDING",
+  "file": "score3_kaggle_download_patch_cell.py",
+  "bytes": 45997,
+  "sha256": "6c4062d7a3a618cc3379f993b0df875cee776802319bb9acfe703d327b76b42a",
+  "handle": "geocpuresearch/gvqcc-exact4096-gauge-score2/versions/1",
+  "api": "kagglehub.notebook_output_download(handle, path=\"submission.zip\")",
+  "source_zip_sha256": "1807d6ae6d2ea12b1d4bf2435f50d2513b25ade00fa0efb61390fdafb103ed37",
+  "source_zip_bytes": 63552987,
+  "source_notebook_script_version_id": 369719696,
+  "target_zip_sha256": "5a3011d3f208a0bae3b1e1bfb9b763ac8c7201f4de35a74d772699949b971882",
+  "output": "/kaggle/working/submission.zip",
+  "offline_patch_sha256": "75e47a6db3c30e879cb0cc80a01a0dc57dd5617df3eb8701cb849dc0aa96fcdc",
+  "offline_patch_packaging_check": "score3_kaggle_offline_patch_check.json",
+  "original_combined_cell_unchanged": true,
+  "executed_on_kaggle": true,
+  "primary_api_sources": [
+    "https://github.com/Kaggle/kagglehub/blob/main/README.md",
+    "https://github.com/Kaggle/kagglehub/blob/main/src/kagglehub/kaggle_cache_resolver.py"
+  ],
+  "mount_behavior": "In Kaggle notebooks the SDK attaches notebook output under the Kaggle cache mount, normally /kaggle/input; this prefix uses the returned file path directly and does not assume the mount slug.",
+  "kaggle_execution_observation": {
+    "initial_saved_run": "BLOCKED_AT_SDK_NOTEBOOK_ATTACHMENT",
+    "reported_error": "BackendError: New Notebooks cannot be attached in non-interactive sessions. Version [1] requested, found no versions attached...",
+    "interpretation": "The source notebook output must first be attached through an interactive editor run; this is a session capability restriction, not an access denial.",
+    "successful_end_to_end_kaggle_patch_observed_in_this_record": true,
+    "source_cell_unchanged": true,
+    "interactive_run": {
+      "notebook": "geocpuresearch/gvqcc-score3-exact4096-invsqrt-cache",
+      "elapsed_seconds": 31.842,
+      "exact_zip_bytes_reproduced": true,
+      "output_bytes": 63552631,
+      "output_sha256": "5a3011d3f208a0bae3b1e1bfb9b763ac8c7201f4de35a74d772699949b971882",
+      "member_count": 18,
+      "member_sha256_checks": "PASS",
+      "member_crc_checks": "PASS",
+      "source": "Observed Kaggle output reported by parent agent"
+    },
+    "saved_version_2_status_at_record": "SUCCESS",
+    "competition_submission_observed_in_this_record": true,
+    "saved_version_2_runtime_seconds": 45.9,
+    "submission_record": "results/2026-11-15/kaggle_score3_cache_submission_369722797.json",
+    "submission": {
+      "notebook_url": "https://www.kaggle.com/code/geocpuresearch/gvqcc-score3-exact4096-invsqrt-cache?scriptVersionId=369722797",
+      "notebook_version": 2,
+      "script_version_id": 369722797,
+      "competition_submission_id": null,
+      "submission_performed": true,
+      "submission_time_utc_approx": "2026-11-15T01:52:30Z",
+      "latest_observation_utc": "2026-11-15T01:53:10Z",
+      "latest_observed_status": "Pending",
+      "public_score": null,
+      "submitted_zip_bytes": 63552631,
+      "submitted_zip_sha256": "5a3011d3f208a0bae3b1e1bfb9b763ac8c7201f4de35a74d772699949b971882",
+      "member_count": 18,
+      "all_member_sha256_and_crc_pass": true,
+      "exact_zip_bytes_reproduced_on_kaggle": true
+    },
+    "public_score_improvement_claimed": false
+  }
+}

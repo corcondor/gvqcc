@@ -1,0 +1,204 @@
+{
+  "status": "DELAYED_CLEANUP_REUSE_EXACT_PASS",
+  "source_sha256": "89b029be9d4922e8a3c1534c14fc7918b0989e8ead71612062bd66e936a89f43",
+  "eligible_cleanup_groups": 4,
+  "rejected_classical_uses": {},
+  "pair_queries": 5,
+  "sample_hits_before_cleanup_proof": 3,
+  "sample_hits": 3,
+  "samples": 512,
+  "sample_seconds": 0.1807465250021778,
+  "hits": [
+    {
+      "cleanup": {
+        "index": 27,
+        "wire": 23,
+        "bit": "b1",
+        "phase_indices": [
+          30
+        ],
+        "nonconstant_phase_terms": {
+          "measurement_31": [
+            31,
+            32
+          ]
+        },
+        "remove_indices": [
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "blocks": [
+          [
+            28,
+            33
+          ]
+        ],
+        "next_overwrite": null,
+        "internal_measurement_versions_dead_outside_cleanup": true
+      },
+      "first": 27,
+      "last": 35,
+      "hops": [],
+      "final_holder": 23,
+      "final_constant": 0,
+      "consume": true,
+      "affine_mask": 0
+    },
+    {
+      "cleanup": {
+        "index": 27,
+        "wire": 23,
+        "bit": "b1",
+        "phase_indices": [
+          30
+        ],
+        "nonconstant_phase_terms": {
+          "measurement_31": [
+            31,
+            32
+          ]
+        },
+        "remove_indices": [
+          28,
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "blocks": [
+          [
+            28,
+            33
+          ]
+        ],
+        "next_overwrite": null,
+        "internal_measurement_versions_dead_outside_cleanup": true
+      },
+      "first": 27,
+      "last": 35,
+      "hops": [
+        {
+          "index": 35,
+          "old": 23,
+          "new": 44,
+          "old_constant": 0,
+          "new_constant": 0
+        }
+      ],
+      "final_holder": 44,
+      "final_constant": 0,
+      "consume": false,
+      "affine_mask": 0
+    },
+    {
+      "cleanup": {
+        "index": 25,
+        "wire": 22,
+        "bit": "b0",
+        "phase_indices": [
+          26
+        ],
+        "nonconstant_phase_terms": {},
+        "remove_indices": [
+          26
+        ],
+        "blocks": [],
+        "next_overwrite": null,
+        "internal_measurement_versions_dead_outside_cleanup": true
+      },
+      "first": 25,
+      "last": 34,
+      "hops": [
+        {
+          "index": 28,
+          "old": 22,
+          "new": 44,
+          "old_constant": 0,
+          "new_constant": 0
+        }
+      ],
+      "final_holder": 44,
+      "final_constant": 0,
+      "consume": false,
+      "affine_mask": 0
+    }
+  ],
+  "allow_blocks": true,
+  "scope": "Only full-lifetime inline Clifford/CCZ cleanup outcomes, never input-selective behavior. Holder routes through existing constant slots; later product differs by an arbitrary affine function excluding its dirty target. Consume-in-target endpoints are permitted.",
+  "exact_checks": [
+    {
+      "first": 27,
+      "last": 35,
+      "affine_exists": true,
+      "cleanup_phase_equal": true,
+      "internal_measurement_phase_terms_vanish": true
+    }
+  ],
+  "selected": {
+    "cleanup": {
+      "index": 27,
+      "wire": 23,
+      "bit": "b1",
+      "phase_indices": [
+        30
+      ],
+      "nonconstant_phase_terms": {
+        "measurement_31": [
+          31,
+          32
+        ]
+      },
+      "remove_indices": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "blocks": [
+        [
+          28,
+          33
+        ]
+      ],
+      "next_overwrite": null,
+      "internal_measurement_versions_dead_outside_cleanup": true
+    },
+    "first": 27,
+    "last": 35,
+    "hops": [],
+    "final_holder": 23,
+    "final_constant": 0,
+    "consume": true,
+    "affine_mask": 0
+  },
+  "patches": {
+    "27": [],
+    "28": [],
+    "29": [],
+    "30": [],
+    "31": [],
+    "32": [],
+    "33": [],
+    "35": []
+  },
+  "candidate_kmx": "/workspace/scratch/3815fb5fae06/score4_invsqrt_positive_control_run/candidate.kmx",
+  "candidate_kmb": "/workspace/scratch/3815fb5fae06/score4_invsqrt_positive_control_run/candidate.kmb",
+  "candidate_sha256": "2488cd304cf47d61b4c6aa2731fd9543bbe61da3f2fbedc63760edc3bd3febff",
+  "qubits": 46,
+  "removed_unconditional_ccx": 1,
+  "removed_static_toffoli": 2,
+  "static_toffoli_before": 5,
+  "static_toffoli_after": 3,
+  "proof": "The removed HMR outcome is read only by removed inline phase corrections until its next unconditional overwrite. Their total phase predicate exactly equals the measured value on all 3133452 inputs, so the complete cleanup has zero phase for either outcome. Retaining its value, routing it, and consuming/releasing it at the later CCX preserves all other original values; any new HMR is exactly corrected.",
+  "original_rotation_sequence_identical": true,
+  "full_official_run": false,
+  "seconds": 0.4401560629994492,
+  "script_sha256": "3dea3ae479e119d6b091055003c8630ab0f3b808767340d1c59bc803d48fb70b"
+}

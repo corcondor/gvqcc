@@ -1,0 +1,15 @@
+{
+  "k": 4,
+  "solver": "z3-solver 4.15.4.0",
+  "seed": 29,
+  "timeout_seconds": 60,
+  "elapsed_seconds": 60.01303507299963,
+  "status": "unknown",
+  "statistics": "(:max-memory              42.50\n :memory                  17.38\n :num-allocs              972506854\n :rlimit-count            100498717\n :sat-ate                 153\n :sat-backjumps           865300\n :sat-bce                 11\n :sat-conflicts           865300\n :sat-decisions           1437193\n :sat-del-clause          838366\n :sat-elim-bool-vars-res  3022\n :sat-elim-clauses        965\n :sat-elim-literals       34927\n :sat-gc-clause           798015\n :sat-minimized-lits      6026596\n :sat-mk-clause-2ary      6328\n :sat-mk-clause-3ary      8232\n :sat-mk-clause-nary      891185\n :sat-mk-var              5550\n :sat-probing-assigned    3\n :sat-propagations-2ary   7605573\n :sat-propagations-nary   97215562\n :sat-restarts            69283\n :sat-scc-elim-binary     6\n :sat-scc-elim-vars       200\n :sat-subs-resolution     32330\n :sat-subs-resolution-dyn 290084\n :sat-subsumed            19508\n :sat-tr                  5\n :sat-units               18\n :solve-eqs-elim-vars     6\n :solve-eqs-steps         202\n :time                    60.01)",
+  "reason": "timeout",
+  "extra_pair": [
+    17,
+    28
+  ],
+  "reachable_patterns": 95
+}

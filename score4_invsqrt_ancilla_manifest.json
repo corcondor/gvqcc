@@ -1,0 +1,151 @@
+{
+  "status": "BOUNDED_SCORE4_INVSQRT_BRANCH_COMPLETE_NO_ADDITIONAL_BENCHMARK_GAIN",
+  "actual_benchmark_candidate": null,
+  "actual_benchmark_static_toffoli_reduction": 0,
+  "retained_submission": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache.kmb",
+    "bytes": 198626,
+    "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a"
+  },
+  "retained_qubits": 46,
+  "retained_static_toffoli": 1550,
+  "all_original_Z_POW_precision_preserved": true,
+  "synthetic_positive_control": {
+    "is_invsqrt_submission": false,
+    "static_toffoli_before": 5,
+    "static_toffoli_after": 3,
+    "qubits": 46,
+    "full_valid_input_identity_pass": 3133452,
+    "native_rows": 4,
+    "native_inputs_per_row": 256,
+    "all_measurement_monomial_coefficients_certified": true
+  },
+  "scope": "Existing constant-zero/one cache slots, unconditional CCX endpoints, target-excluding affine updates, complete dead-outcome cleanup lifetimes. No global circuit lower bound.",
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_cache_route.py",
+      "bytes": 9508,
+      "sha256": "330e7973b9d75def00ac2d3e308ec46c2852b56c560bc40685910b534c3e13a3"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_affine_cache.py",
+      "bytes": 11382,
+      "sha256": "e3262cb007c5fb87e61f8ec56f489043c1d871ebe11ae9900b4d52eba56d880e"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_delay_reuse.py",
+      "bytes": 14903,
+      "sha256": "e8e243f8512181e36482cd37abd96d7b5649ae1d515679098f4982a555e6e8a0"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_block_cleanup.py",
+      "bytes": 5376,
+      "sha256": "0dc75fbd3d45526a52e7a406d4047dc83f6eccc4b0e1ebca42e39992ff90e760"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_positive_control_check.py",
+      "bytes": 2667,
+      "sha256": "6447f1cecc99ba2ff2203c61471e9d10209d707d2b94758eb74703f3f3dc5d8d"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_positive_control.kmx",
+      "bytes": 829,
+      "sha256": "89b029be9d4922e8a3c1534c14fc7918b0989e8ead71612062bd66e936a89f43"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_positive_control_rewritten.kmx",
+      "bytes": 718,
+      "sha256": "2b1ff8e41c563d38fe08f06e05a62ef4013b09ba5e6fa8837508d2c605df367f"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_positive_control_rewritten.kmb",
+      "bytes": 521,
+      "sha256": "2488cd304cf47d61b4c6aa2731fd9543bbe61da3f2fbedc63760edc3bd3febff"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_positive_control_proof.json",
+      "bytes": 4998,
+      "sha256": "46781523c0c977a0e84d58f41594afac659864d06b8a8282dcb59adeef3cbb66"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_positive_control_native.json",
+      "bytes": 1862,
+      "sha256": "b74160d754eaffb749dfa7165039f78d259ec355c30fb53ed222f094c1130f54"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_ancilla_report.md",
+      "bytes": 8534,
+      "sha256": "d757bf692ad2e8c4ef0dbe93ae9732852cdb167e575a34077a911c2cb0db27d2"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_route_results.json",
+      "bytes": 72713,
+      "sha256": "c288520a178f8ecc3643a0f7e4c2719751ed53fc965ab2a067676b47363712c6"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_affine_cache_results.json",
+      "bytes": 724,
+      "sha256": "91778cc944cdb9c57d0be4c4abc128bef9a60b2f71a8a75557a564a2df04110b"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_inline_delay_results.json",
+      "bytes": 847,
+      "sha256": "90f0b8ff65d560c1d49bcc66940535e4ecd61cf335efa9804c9a3294741711f8"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_hoisted_route_results.json",
+      "bytes": 73774,
+      "sha256": "365eb7513cd5f368675191e0f1b0888de3ea4d64a72729853a8d838df2d71a3a"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_hoisted_affine_results.json",
+      "bytes": 723,
+      "sha256": "672213246994d7f15de784003ad6ddfda861d9918f5c5193c704cbe525f60510"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score4_invsqrt_block_delay_results.json",
+      "bytes": 937,
+      "sha256": "2abc9edf80457aa174fed777354505213404e3d1a4c11c838015ce34bfd5e05c"
+    }
+  ],
+  "read_only_dependencies": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_invsqrt_retire.py",
+      "bytes": 8079,
+      "sha256": "a2f701f5ed8fb2152e88a4b4ec2b4d29897e50459378db7f0e73100d9162dfd6"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache.kmx",
+      "bytes": 258469,
+      "sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache.kmb",
+      "bytes": 198626,
+      "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a"
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score4_hmr_hoist_expose/candidate.kmx",
+      "bytes": 275780,
+      "sha256": "e46fa7c2277065a42551ab3c6ed1d853fb516b0d74d010c4a275bab305c32af8"
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score4_hmr_hoist_expose/candidate.kmb",
+      "bytes": 204436,
+      "sha256": "e3b13f39074e273ffcdccfec7845fe39e4152e83c96cbe2d7e743aa53504df85"
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score_invsqrt_source/invsqrt_source/src/tools/hold_pass.py",
+      "bytes": 7198,
+      "sha256": "48ba432ec8099a6249c8a630a46c15b3688e43b580223ead4c69cff079e00117"
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score_invsqrt_source/invsqrt_source/src/tools/audit_pairs.py",
+      "bytes": 4931,
+      "sha256": "bed299c59191a34fffb12b9aa2f70bf0fbc63f4b50e6f7c503e6463b9fa89f23"
+    }
+  ],
+  "historical_run_hashes_preserved": true,
+  "current_source_notes": "Added external classical assignment version separation to the block proof helper, then clarified scope text. The real-block negative run had zero affine sample hits before phase checking; the final phase logic passed a synthetic exact/native positive control.",
+  "running_jobs": false
+}

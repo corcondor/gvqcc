@@ -1,0 +1,306 @@
+{
+  "status": "REJECTED_EXPERIMENTS_RECORDED",
+  "free_features": {
+    "masks": 436506,
+    "statistics": [
+      {
+        "batch": 1,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 2,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 3,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 4,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 5,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 6,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 7,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 8,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 9,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 10,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 11,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 12,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 13,
+        "rank_current": 76,
+        "rank_next": 76,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      },
+      {
+        "batch": 14,
+        "rank_current": 76,
+        "rank_next": null,
+        "common_masks_by_weight": {
+          "1": 29,
+          "2": 1309,
+          "3": 29841
+        },
+        "total": 31179
+      }
+    ],
+    "tested_candidates": 8,
+    "numeric_passes": 2,
+    "improved_candidates": 0,
+    "exact_phase_proof": "score8_chem_feature_exact_proof.json"
+  },
+  "product_features": {
+    "statistics": [
+      {
+        "batch": 1,
+        "rank_current": 303,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 2,
+        "rank_current": 303,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 3,
+        "rank_current": 303,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 4,
+        "rank_current": 280,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 5,
+        "rank_current": 280,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 6,
+        "rank_current": 278,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 7,
+        "rank_current": 280,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 8,
+        "rank_current": 278,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 9,
+        "rank_current": 280,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 10,
+        "rank_current": 278,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 11,
+        "rank_current": 280,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 12,
+        "rank_current": 279,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 13,
+        "rank_current": 279,
+        "common_rank": 91,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      },
+      {
+        "batch": 14,
+        "rank_current": 279,
+        "common_rank": 279,
+        "unit_masks": 0,
+        "pair_masks": 0,
+        "sparse_mask_histogram": {},
+        "total": 0
+      }
+    ],
+    "total_sparse_candidates": 0
+  },
+  "final_product_deletion": {
+    "tested": 188,
+    "best_error2": 0.7587462988429235,
+    "best_error1": 3.975614100607093,
+    "source_family": "old4033",
+    "official_numeric_crosschecks": 2,
+    "new_accepted_improvements": 0
+  },
+  "scope": "These experiments do not supply an accepted circuit change; final accepted work changes H2_I only in the exact public4030 family."
+}

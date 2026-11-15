@@ -1,0 +1,132 @@
+{
+  "record_type": "submission_attempt_receipt",
+  "record_state": "BLOCKED_DAILY_QUOTA",
+  "competition": "google-verifiable-quantum-circuit-compilation",
+  "source_revision": {
+    "branch": "research/score-continuation-2026-11-14",
+    "commit": "d80147c46081736b03e14732d107f494d07f09ce"
+  },
+  "delivery_manifest": {
+    "file": "score4_delivery_manifest.json",
+    "sha256": "492d08e2c792f12561414f7eecdaaa8bdff0dafb5a5bf2ec3bbc85a8996bebea"
+  },
+  "notebook": "geocpuresearch/gvqcc-score4-exact4096-extra16-ccx",
+  "notebook_url": "https://www.kaggle.com/code/geocpuresearch/gvqcc-score4-exact4096-extra16-ccx?scriptVersionId=369731618",
+  "notebook_version": 3,
+  "script_version_id": 369731618,
+  "competition_submission_id": null,
+  "submission_performed": false,
+  "submission_method": "Signed-in Kaggle notebook submission UI; blocked before submission",
+  "submission_time_utc_approx": null,
+  "output_file": "submission.zip",
+  "submitted_zip_sha256": null,
+  "submitted_zip_bytes": null,
+  "submitted_member_sha256_and_crc_pass": null,
+  "notebook_execution": "SUCCESS",
+  "notebook_runtime_seconds": 96.1,
+  "latest_observed_status": "BLOCKED_DAILY_QUOTA",
+  "latest_observation_utc": "2026-11-15T02:41:55Z",
+  "public_score": null,
+  "previous_best_public_score": 27.30683,
+  "previous_best_selection_preserved": null,
+  "improved_previous_best": null,
+  "local_qualified_archive": {
+    "path": "/workspace/scratch/3815fb5fae06/score4_submission/submission.zip",
+    "sha256": "72bac12e45e4d8f70af949f408a72a79c30e7422f9b3bb578e06ef8228cfb1e2",
+    "bytes": 63552791,
+    "members": 18,
+    "other17_byte_identical": true,
+    "sha256_and_crc_pass": true
+  },
+  "candidate_dqi_sha256": "5a60d66233198be8ce05d9710bd35a7d2d6700bbced87560d405651070ae8194",
+  "baseline_dqi_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "exact_structural_change": {
+    "unconditional_ccx_removed": 16,
+    "cx_added": 32,
+    "quantum_width": 889,
+    "classical_bits": 208087
+  },
+  "local_dqi_verification": {
+    "status": "PASS",
+    "shots": 102400,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "seed": null,
+    "salt": "",
+    "log2_delta": -128,
+    "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+    "receipt": "score4_dqi_full_verification.json",
+    "receipt_sha256": "48d81caea9df6fdb8fbb8c3a0c3940ee0afd4f688e7320dd43973ccc727b3135",
+    "mean_toffoli": 382079.294375,
+    "static_toffoli": 382918,
+    "official_cost": 359719311733.9726
+  },
+  "local_official_cost_comparison": {
+    "before": 359734745778.9876,
+    "after": 359719311733.9726,
+    "reduction_percent": 0.004290395964280013,
+    "sampling_scope": "Exactly16 unconditional CCX are removed on every execution. The two default official runs use different hash-derived inputs; their measured mean difference is not the exact structural16."
+  },
+  "unchanged_component_receipts": {
+    "invsqrt": {
+      "path": "/workspace/scratch/3815fb5fae06/score3_invsqrt_full200m.json",
+      "sha256": "546961b969cf58f64093b4a98d9a1a603044c16118572eaa0ee76f78eb1c0b53",
+      "state": "PASS"
+    },
+    "dfthcsos": {
+      "path": "/workspace/scratch/3815fb5fae06/score2_final_verified/verification.json",
+      "sha256": "0d2410ba7ab526f4a0828b6af671996d64c9e8a683f185859e2244343319e661",
+      "state": "PASS"
+    }
+  },
+  "all_component_official_verifications_pass": true,
+  "description": "DQI exact4096 with 16 additional unconditional CCX removed, Q=889. Official 102400-shot PASS, zero value/phase errors. Inverse and score2 chemistry preserved. All 18 members SHA/CRC checked. ZIP SHA256 72bac12e45e4d8f70af949f408a72a79c30e7422f9b3bb578e06ef8228cfb1e2.",
+  "proof_screenshot": null,
+  "additional_observed_evidence": [
+    {
+      "source": "Direct signed-in browser observations reported by the submitting parent agent",
+      "observed_at_utc": "2026-11-15T02:41:55Z",
+      "notebook_save_and_run_all": "SUCCESS",
+      "submit_button_isEnabled": false
+    }
+  ],
+  "notes": [
+    "The saved notebook run completed successfully and reproduced the exact qualified score4 ZIP, including its container SHA256.",
+    "The competition submission dialog blocked submission because the daily allowance was exhausted. The Submit button was disabled; no submission was performed.",
+    "The scriptVersionId identifies the saved notebook version, not a competition submission ID. There is no new competition submission ID or Public Score.",
+    "The saved run package fields describe an available notebook output. Submitted ZIP fields remain null because Kaggle did not accept a new submission.",
+    "The displayed reset interval is recorded as observed and is not an exact reset timestamp.",
+    "The exact structural reduction is 16 unconditional CCX per execution. Local official mean-cost comparisons use different hash-derived input samples and are not Public Scores.",
+    "No ZIP modification, extra circuit verification, new optimization, or additional browser action was performed while preparing this receipt."
+  ],
+  "notebook_title": "GVQCC score4 exact4096 extra16 CCX",
+  "saved_cell_code": {
+    "bytes": 31815,
+    "sha256": "9537876589e8033e383cf9592a68368ade070bf289b986996cf9de201456148f",
+    "ui_clipboard_byte_for_byte_match": true
+  },
+  "saved_run_package": {
+    "output_file": "submission.zip",
+    "status": "PACKAGE_INTEGRITY_PASS",
+    "sha256": "72bac12e45e4d8f70af949f408a72a79c30e7422f9b3bb578e06ef8228cfb1e2",
+    "bytes": 63552791,
+    "member_count": 18,
+    "all_member_sha256_and_crc_pass": true,
+    "other17_byte_identical": true,
+    "visible_output_row": 25,
+    "output_elapsed_seconds": 87.0
+  },
+  "submission_dialog": {
+    "correct_notebook_and_version_selected": true,
+    "output_file": "submission.zip",
+    "description_filled": true,
+    "remaining_submissions": 0,
+    "daily_allowance": 5,
+    "used_submissions": 5,
+    "displayed_reset_in": "21 hours",
+    "submit_button_enabled": false,
+    "authoritative_observed_text": "0 submissions remaining; daily allowance of 5 submissions used; reset in 21 hours"
+  },
+  "prepared_description": "DQI exact4096 with 16 additional unconditional CCX removed, Q=889. Official 102400-shot PASS, zero value/phase errors. DQI 5a60d662; inverse 684106f and score2 chemistry preserved. All 18 archive members SHA/CRC checked.",
+  "actual_ui_description": "DQI exact4096 with 16 additional unconditional CCX removed, Q=889. Official 102400-shot PASS, zero value/phase errors. Inverse and score2 chemistry preserved. All 18 members SHA/CRC checked. ZIP SHA256 72bac12e45e4d8f70af949f408a72a79c30e7422f9b3bb578e06ef8228cfb1e2."
+}

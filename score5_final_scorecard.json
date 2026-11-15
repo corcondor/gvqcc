@@ -1,0 +1,98 @@
+{
+  "status": "HASH_BOUND_LOCAL_PORTFOLIO_SCORE",
+  "reference_costs": {
+    "invsqrt": 2076774.233715,
+    "dqi": 24439463583672.93,
+    "dfthcsos": 3355599588.3155375
+  },
+  "reference_source": "official_sources/maoxin_4033_cell07.py REFERENCE; independently agrees with atakan_v15_cell_10.py to published precision",
+  "formula": "geometric_mean(reference_cost / candidate_cost); DQI cost = repetition_factor * Q^2 * mean_Toffoli",
+  "candidate_costs": {
+    "dqi": 359707293756.04297,
+    "invsqrt": 78673.55534364567,
+    "dfthcsos": 294988052.12610483
+  },
+  "local_combined_score": 27.324751052404785,
+  "previous_score4_local_combined_score": 27.324446748556838,
+  "local_combined_increase": 0.0003043038479475513,
+  "local_combined_increase_percent": 0.0011136688356394586,
+  "dqi_cost_reduction_percent": 0.0033409320927768604,
+  "candidate": {
+    "zip_sha256": "7b59403add6ec475513b9f1f634781cfc563cd5acdc50970db03c91ad3d03978",
+    "zip_bytes": 63553234,
+    "dqi_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+    "invsqrt_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+    "chemistry_npz_sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357"
+  },
+  "qualification": {
+    "dqi": {
+      "receipt": "score5_dqi_final_full_verification.json",
+      "sha256": "3b59268e86faedf7026ef4b53b2428675dd7bb3f031cee61e5eb5dfb236df043",
+      "shots": 102400
+    },
+    "invsqrt": {
+      "receipt": "/workspace/scratch/3815fb5fae06/score3_invsqrt_full200m.json",
+      "sha256": "546961b969cf58f64093b4a98d9a1a603044c16118572eaa0ee76f78eb1c0b53",
+      "shots": 200540928,
+      "retained_byte_identical": true
+    },
+    "dfthcsos": {
+      "receipt": "/workspace/scratch/3815fb5fae06/score2_final_verified/verification.json",
+      "sha256": "0d2410ba7ab526f4a0828b6af671996d64c9e8a683f185859e2244343319e661",
+      "shots": 78080,
+      "retained_byte_identical": true
+    }
+  },
+  "dqi_metrics": {
+    "num_qubits": 889,
+    "num_bits": 208169,
+    "toffoli_count": 382066.52936523437,
+    "max_toffoli_count": 382894,
+    "verified_shots": 102400,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "seed": null,
+    "salt": "",
+    "log2_delta": -128.0,
+    "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+  },
+  "error_count_sensitivity": [
+    {
+      "total_dqi_errors": 0,
+      "effective_error_rate": 0.0008660587301657926,
+      "repetition_factor": 1.1912604648115832,
+      "dqi_cost": 359707293756.04297,
+      "combined_score": 27.324751052404785
+    },
+    {
+      "total_dqi_errors": 1,
+      "effective_error_rate": 0.0009104197583220583,
+      "repetition_factor": 1.1967314991687559,
+      "dqi_cost": 361359301038.07446,
+      "combined_score": 27.283047728377124
+    },
+    {
+      "total_dqi_errors": 2,
+      "effective_error_rate": 0.0009488155716079551,
+      "repetition_factor": 1.2013880602795501,
+      "dqi_cost": 362765373886.83496,
+      "combined_score": 27.24775253406282
+    }
+  ],
+  "sensitivity_scope": "Counterfactual calculation with measured mean Toffoli and other components fixed; not further runs or predictions of server errors.",
+  "public_score": null,
+  "new_submission_performed": false,
+  "exact_ccx_reduction_vs_projective_norm": 26,
+  "limits": [
+    "Different KMB hashes use different default samples. Exact gate reductions versus the projective-norm predecessor are proved separately; they are not inferred from finite mean differences.",
+    "One known node13 numerator-zero input remains incorrect; this finite default PASS is not universal correctness.",
+    "This ZIP retains the verified4033-loader chemistry. The newer4030-loader chemistry is not silently credited.",
+    "Public scoring may differ because the verifier samples/errors differ."
+  ],
+  "source_receipts": {
+    "score5_dqi_final_full_verification.json": "3b59268e86faedf7026ef4b53b2428675dd7bb3f031cee61e5eb5dfb236df043",
+    "score5_final_worker_check.json": "192bef84a4be1e8b7d43cf8e033084848d311b14a1ce239b133ac98523193c65",
+    "score3_submission_manifest.json": "cabff4b166e9fb3d471a4525aee3d74623c40aa3599445689c9459f4571c0cab",
+    "score4_dqi_full_verification.json": "48d81caea9df6fdb8fbb8c3a0c3940ee0afd4f688e7320dd43973ccc727b3135"
+  }
+}

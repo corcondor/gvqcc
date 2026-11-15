@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-11-15T02:07:10.302742+00:00",
+  "purpose": "Diagnostic replay of only the two observed default verification failure intervals; no new sample selection.",
+  "independent_seed_label": "GVQCC independent paired reliability audit 2026-11-15; one non-adaptive 16384-shot sample",
+  "verifier": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dqi/verify_submission_dqi.py",
+  "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+  "variants": {
+    "chart_candidate": {
+      "path": "/workspace/scratch/3815fb5fae06/score5_norm_final/dqi.kmb",
+      "sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355"
+    }
+  },
+  "groups": [
+    {
+      "name": "default_failure_interval_100_124",
+      "seed_sha256": "1d66248da1fc23e3a41817fe8a2b39cdbba957ba0aa908fe2aacea7e2b36e9e9",
+      "batches": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124
+      ]
+    },
+    {
+      "name": "default_failure_interval_275_299",
+      "seed_sha256": "1d66248da1fc23e3a41817fe8a2b39cdbba957ba0aa908fe2aacea7e2b36e9e9",
+      "batches": [
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299
+      ]
+    }
+  ],
+  "scope": "Input and simulator seeds reproduce the already observed candidate default intervals. Unchanged e4 is the only variant in this diagnostic localization. This is not a new official default verification or a seed search.",
+  "comparison_baseline_result": "score8_dqi_twochart_paired_before.json"
+}

@@ -1,0 +1,145 @@
+{
+  "source_sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02",
+  "candidate_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "header_num_bits": 208169,
+  "edits": [
+    {
+      "index": 17119219,
+      "old": {
+        "opcode": 49,
+        "qubits": [
+          868,
+          867,
+          864
+        ],
+        "bit": null,
+        "condition": null,
+        "angle_hex": "",
+        "source_index": 17119219
+      },
+      "new": [
+        {
+          "opcode": 80,
+          "qubits": [
+            864
+          ],
+          "bit": 208167,
+          "condition": null,
+          "angle_hex": "",
+          "source_index": null
+        },
+        {
+          "opcode": 160,
+          "qubits": [
+            868,
+            867
+          ],
+          "bit": null,
+          "condition": 208167,
+          "angle_hex": "",
+          "source_index": null
+        }
+      ]
+    },
+    {
+      "index": 17126972,
+      "old": {
+        "opcode": 80,
+        "qubits": [
+          864
+        ],
+        "bit": 208112,
+        "condition": null,
+        "angle_hex": "",
+        "source_index": 17126972
+      },
+      "new": [
+        {
+          "opcode": 64,
+          "qubits": [],
+          "bit": 208112,
+          "condition": null,
+          "angle_hex": "",
+          "source_index": null
+        },
+        {
+          "opcode": 194,
+          "qubits": [],
+          "bit": 208112,
+          "condition": 208167,
+          "angle_hex": "",
+          "source_index": null
+        }
+      ]
+    },
+    {
+      "index": 54203657,
+      "old": {
+        "opcode": 49,
+        "qubits": [
+          869,
+          865,
+          875
+        ],
+        "bit": null,
+        "condition": null,
+        "angle_hex": "",
+        "source_index": 54203657
+      },
+      "new": [
+        {
+          "opcode": 80,
+          "qubits": [
+            875
+          ],
+          "bit": 208168,
+          "condition": null,
+          "angle_hex": "",
+          "source_index": null
+        },
+        {
+          "opcode": 160,
+          "qubits": [
+            869,
+            865
+          ],
+          "bit": null,
+          "condition": 208168,
+          "angle_hex": "",
+          "source_index": null
+        }
+      ]
+    },
+    {
+      "index": 54213317,
+      "old": {
+        "opcode": 80,
+        "qubits": [
+          875
+        ],
+        "bit": 208099,
+        "condition": null,
+        "angle_hex": "",
+        "source_index": 54213317
+      },
+      "new": [
+        {
+          "opcode": 64,
+          "qubits": [],
+          "bit": 208099,
+          "condition": null,
+          "angle_hex": "",
+          "source_index": null
+        },
+        {
+          "opcode": 194,
+          "qubits": [],
+          "bit": 208099,
+          "condition": 208168,
+          "angle_hex": "",
+          "source_index": null
+        }
+      ]
+    }
+  ]
+}

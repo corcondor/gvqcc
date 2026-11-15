@@ -1,0 +1,142 @@
+{
+  "source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "sample_input_count": 4224,
+  "eligible_blocks": 10,
+  "sample_results": [
+    {
+      "start": 9477,
+      "end": 9505,
+      "original_paid": 2,
+      "condition": [],
+      "model": {
+        "status": "NO_MODEL_IN_SEARCHED_FAMILY",
+        "queries": 741,
+        "cached_cubic_terms": 9139,
+        "quadratic_rank": 780
+      },
+      "seconds": 0.6849829580023652
+    },
+    {
+      "start": 9713,
+      "end": 9763,
+      "original_paid": 4,
+      "condition": [],
+      "model": {
+        "status": "NO_MODEL_IN_SEARCHED_FAMILY",
+        "queries": 741,
+        "cached_cubic_terms": 9139,
+        "quadratic_rank": 780
+      },
+      "seconds": 0.6371130799961975
+    },
+    {
+      "start": 9977,
+      "end": 10027,
+      "original_paid": 4,
+      "condition": [],
+      "model": {
+        "status": "NO_MODEL_IN_SEARCHED_FAMILY",
+        "queries": 741,
+        "cached_cubic_terms": 9139,
+        "quadratic_rank": 780
+      },
+      "seconds": 0.6322408260020893
+    },
+    {
+      "start": 10241,
+      "end": 10291,
+      "original_paid": 4,
+      "condition": [],
+      "model": {
+        "status": "NO_MODEL_IN_SEARCHED_FAMILY",
+        "queries": 741,
+        "cached_cubic_terms": 9139,
+        "quadratic_rank": 780
+      },
+      "seconds": 0.6787961230002111
+    },
+    {
+      "start": 13736,
+      "end": 13764,
+      "original_paid": 2,
+      "condition": [],
+      "model": {
+        "status": "NO_MODEL_IN_SEARCHED_FAMILY",
+        "queries": 861,
+        "cached_cubic_terms": 11480,
+        "quadratic_rank": 899
+      },
+      "seconds": 0.9278952789973118
+    },
+    {
+      "start": 14144,
+      "end": 14183,
+      "original_paid": 3,
+      "condition": [],
+      "model": {
+        "status": "NO_MODEL_IN_SEARCHED_FAMILY",
+        "queries": 861,
+        "cached_cubic_terms": 11480,
+        "quadratic_rank": 902
+      },
+      "seconds": 0.9356274559977464
+    },
+    {
+      "start": 14519,
+      "end": 14567,
+      "original_paid": 3,
+      "condition": [],
+      "model": {
+        "status": "NO_MODEL_IN_SEARCHED_FAMILY",
+        "queries": 861,
+        "cached_cubic_terms": 11480,
+        "quadratic_rank": 899
+      },
+      "seconds": 0.9252587099981611
+    },
+    {
+      "start": 14809,
+      "end": 14846,
+      "original_paid": 2,
+      "condition": [],
+      "model": {
+        "status": "NO_MODEL_IN_SEARCHED_FAMILY",
+        "queries": 903,
+        "cached_cubic_terms": 12341,
+        "quadratic_rank": 903
+      },
+      "seconds": 1.0241167650019634
+    },
+    {
+      "start": 17528,
+      "end": 17572,
+      "original_paid": 4,
+      "condition": [],
+      "model": {
+        "status": "NO_MODEL_IN_SEARCHED_FAMILY",
+        "queries": 820,
+        "cached_cubic_terms": 10660,
+        "quadratic_rank": 857
+      },
+      "seconds": 0.9530715240034624
+    },
+    {
+      "start": 17814,
+      "end": 17858,
+      "original_paid": 4,
+      "condition": [],
+      "model": {
+        "status": "NO_MODEL_IN_SEARCHED_FAMILY",
+        "queries": 820,
+        "cached_cubic_terms": 10660,
+        "quadratic_rank": 859
+      },
+      "seconds": 0.9201648300004308
+    }
+  ],
+  "full_results": [],
+  "seconds": 8.422753630999068,
+  "scope": "Whole symbolic conditional phase, f = arbitrary quadratic + raw-wire pair times arbitrary linear parity; no arbitrary first two parity factors searched.",
+  "accepted": 0,
+  "receipt_note": "Coarse screening fit coefficients omitted; all full-domain fit coefficients retained. Reproduce from the named score8 source and arguments in the report."
+}

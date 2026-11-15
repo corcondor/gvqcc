@@ -1,0 +1,144 @@
+{
+  "status": "UNKNOWN_NO_RANK_BOUND",
+  "input": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/symmetry_dqi_20261115_gf8_joint12_input.txt",
+  "input_sha256": "8446959c7d46f19571ce207d024f302cf28792bc04d1a5a6e7d5e3abc0913077",
+  "source_sha256": "6c89cf07544b91ba67747905d24eb91f89067f5e619338b7fe29e5bd2e64d552",
+  "z3_version": "4.15.4",
+  "dimensions": [
+    3,
+    6,
+    6
+  ],
+  "rank_target": 11,
+  "initial_rank": 12,
+  "first_factors": [
+    1,
+    1,
+    2,
+    3,
+    3,
+    4,
+    5,
+    5,
+    6,
+    7,
+    7
+  ],
+  "first_factor_weights": [
+    8,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "nonsingular_slices": [
+    {
+      "a": 1,
+      "rank": 6,
+      "rows": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ]
+    },
+    {
+      "a": 2,
+      "rank": 6,
+      "rows": [
+        2,
+        4,
+        3,
+        16,
+        32,
+        24
+      ]
+    },
+    {
+      "a": 3,
+      "rank": 6,
+      "rows": [
+        3,
+        6,
+        7,
+        24,
+        48,
+        56
+      ]
+    },
+    {
+      "a": 4,
+      "rank": 6,
+      "rows": [
+        4,
+        3,
+        6,
+        32,
+        24,
+        48
+      ]
+    },
+    {
+      "a": 5,
+      "rank": 6,
+      "rows": [
+        5,
+        1,
+        2,
+        40,
+        8,
+        16
+      ]
+    },
+    {
+      "a": 6,
+      "rank": 6,
+      "rows": [
+        6,
+        7,
+        5,
+        48,
+        56,
+        40
+      ]
+    },
+    {
+      "a": 7,
+      "rank": 6,
+      "rows": [
+        7,
+        5,
+        1,
+        56,
+        40,
+        8
+      ]
+    }
+  ],
+  "nonzero_factors": true,
+  "within_group_v_strict_order": true,
+  "fix_first_v": true,
+  "normalization_v_index": 2,
+  "second_normalization_or_v_equals_8": [
+    3,
+    4,
+    8,
+    9,
+    10
+  ],
+  "basis_subset_cuts": 612,
+  "timeout_seconds": 60.0,
+  "memory_max_size_mb": 768,
+  "tensor_coefficients": 108,
+  "smt2_path": "score6_dqi_shared11_sat_basis.smt2",
+  "smt2_sha256": "32503b39cba089014333c5eaa24dd3ccdd3d3f814bcbdd015310a6c3a63bfda1",
+  "solver_result": "unknown",
+  "seconds": 18.146387150998635,
+  "statistics": "(:conflicts      120649\n :decisions      149911\n :del-clause     102887\n :max-memory     1025.17\n :memory         1003.94\n :minimized-lits 1222371\n :mk-bool-var    4669\n :mk-clause      138999\n :num-allocs     3357760029\n :num-checks     1\n :propagations   43917629\n :restarts       68\n :rlimit-count   41198605\n :sat-mk-var     1\n :time           18.07)",
+  "maximum_rss_mib": 546.328125,
+  "reason_unknown": "out of memory"
+}

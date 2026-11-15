@@ -1,0 +1,224 @@
+{
+  "status": "PASS_SOURCE_COMPONENT_ONLY",
+  "scalar_identity": {
+    "status": "PASS",
+    "input_pairs": 4096,
+    "errors": 0,
+    "selected_polynomial_bit": 0,
+    "product_row_masks": [
+      1,
+      32,
+      16,
+      8,
+      4,
+      2
+    ],
+    "added_CCX_per_toggle": 6,
+    "identity": "N(L,R) = L^2 + L*R + delta*R^2 in GF(64)"
+  },
+  "variants": [
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow0_pair.kmb",
+      "sha256": "76662a47d72e87871d845c1d4a4453e81f5af062aaccf9b6e2b5647e4f104141",
+      "Q": 73,
+      "T": 389,
+      "prefix_ops": 9714,
+      "operations": 21360,
+      "prefix_T": 192,
+      "borrow_bits": 0,
+      "native_tests": [
+        {
+          "seed": 251,
+          "shots": 512,
+          "source_errors": 0,
+          "flag_errors": 0,
+          "garbage_errors": 0,
+          "phase_errors": 0,
+          "mean_T": 388.9453125
+        },
+        {
+          "seed": 1251,
+          "shots": 512,
+          "source_errors": 0,
+          "flag_errors": 0,
+          "garbage_errors": 0,
+          "phase_errors": 0,
+          "mean_T": 388.9609375
+        }
+      ],
+      "chart_template": {
+        "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow0_chart.kmb",
+        "sha256": "bac6a5f2c4a87f47b0ecabc8d9eb3aa495795f6285f81cf3231e286209d71a1d",
+        "Q": 889,
+        "T": 1260,
+        "prefix_ops": 29475,
+        "operations": 64691,
+        "bits": 80,
+        "saved_child_masks": [
+          [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          [
+            6,
+            5,
+            4,
+            3,
+            0,
+            1
+          ],
+          [
+            12,
+            11,
+            10,
+            9,
+            7,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow1_pair.kmb",
+      "sha256": "c6f10bbea616a851127f55bec410f04a3bef7a8e125167dbf25ab774e306f69b",
+      "Q": 72,
+      "T": 413,
+      "prefix_ops": 9980,
+      "operations": 21892,
+      "prefix_T": 204,
+      "borrow_bits": 1,
+      "native_tests": [
+        {
+          "seed": 251,
+          "shots": 512,
+          "source_errors": 0,
+          "flag_errors": 0,
+          "garbage_errors": 0,
+          "phase_errors": 0,
+          "mean_T": 412.9453125
+        },
+        {
+          "seed": 1251,
+          "shots": 512,
+          "source_errors": 0,
+          "flag_errors": 0,
+          "garbage_errors": 0,
+          "phase_errors": 0,
+          "mean_T": 412.9609375
+        }
+      ],
+      "chart_template": {
+        "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow1_chart.kmb",
+        "sha256": "838741177dc8767cc2d9c5c35797968567d5793f8f9d2d2406df3306683adc11",
+        "Q": 888,
+        "T": 1332,
+        "prefix_ops": 30273,
+        "operations": 66287,
+        "bits": 80,
+        "saved_child_masks": [
+          [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          [
+            6,
+            5,
+            4,
+            3,
+            0,
+            1
+          ],
+          [
+            12,
+            11,
+            10,
+            9,
+            7,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow6_pair.kmb",
+      "sha256": "f3996091da4d8145008f6e0ad4772478e124e6352a8b568426e1206e36cca548",
+      "Q": 67,
+      "T": 449,
+      "prefix_ops": 10380,
+      "operations": 22692,
+      "prefix_T": 222,
+      "borrow_bits": 6,
+      "native_tests": [
+        {
+          "seed": 251,
+          "shots": 512,
+          "source_errors": 0,
+          "flag_errors": 0,
+          "garbage_errors": 0,
+          "phase_errors": 0,
+          "mean_T": 448.9453125
+        },
+        {
+          "seed": 1251,
+          "shots": 512,
+          "source_errors": 0,
+          "flag_errors": 0,
+          "garbage_errors": 0,
+          "phase_errors": 0,
+          "mean_T": 448.9609375
+        }
+      ],
+      "chart_template": {
+        "path": "/workspace/scratch/3815fb5fae06/score5_dqi_width/component/borrow6_chart.kmb",
+        "sha256": "82802732a9c9a5d7f0630f22a3239bb7c526e241ffc9124dfde804dcccbda77d",
+        "Q": 883,
+        "T": 1440,
+        "prefix_ops": 31473,
+        "operations": 68687,
+        "bits": 80,
+        "saved_child_masks": [
+          [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          [
+            6,
+            5,
+            4,
+            3,
+            0,
+            1
+          ],
+          [
+            12,
+            11,
+            10,
+            9,
+            7,
+            8
+          ]
+        ]
+      }
+    }
+  ],
+  "elapsed_seconds": 0.9869673260036507,
+  "proof_scope": "Exact coherent child-norm erase/restore identity plus source-local native checks; not yet a whole DQI width claim.",
+  "source_sha256": {
+    "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_check.py": "17edbcea7d4c673dd74b7b7bc559f90e3d11ed06e4dfdeff9cbe937e01ce8646",
+    "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_width_inverse.py": "1438bcabbbebd2c3529a6234734afe493151dcff576212ed8a894c164af21289",
+    "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_inverse_norm.py": "00ca06824f4697244c704c267b82c556a9d4fa52913691b4eb9d001b9ac792e0",
+    "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_third_norm.py": "1377945e07b304e9fc0bb70a0d05adc94eed9433277cd64a4b161df8806ba52f"
+  }
+}

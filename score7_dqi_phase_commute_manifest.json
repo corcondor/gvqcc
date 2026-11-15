@@ -1,0 +1,80 @@
+{
+  "schema": "score7-dqi-phase-commute-manifest-v1",
+  "baseline_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "benchmark_candidate_count": 0,
+  "benchmark_delta_toffoli": 0,
+  "kmb_modified": false,
+  "official_verifier_rerun": false,
+  "files": [
+    {
+      "name": "score7_dqi_phase_commute.cpp",
+      "bytes": 9067,
+      "sha256": "d342de07b6e1fb4a30f031a48aa8fe5a49965dbb8c0b24b15a67b01b9dc23247"
+    },
+    {
+      "name": "score7_dqi_phase_return.cpp",
+      "bytes": 7302,
+      "sha256": "ee80ce56b5a253eee01e9a76f188019c88d213c784982a7e4089648296f900a6"
+    },
+    {
+      "name": "score7_dqi_phase_delta.cpp",
+      "bytes": 5795,
+      "sha256": "8c358f3ad66d9f1c9774d98b2919459fb74020f14c12d1e4720823b65d911dfd"
+    },
+    {
+      "name": "score7_dqi_phase_conditioned.py",
+      "bytes": 8230,
+      "sha256": "a4d1ea7ca1b486e04606cb2c05ef1177368d48bc16d4b1409420137f8181c884"
+    },
+    {
+      "name": "score7_dqi_phase_commute_check.py",
+      "bytes": 6990,
+      "sha256": "5eb45850e7ceab2048698c59275f9ac3c24cc048276870d8f05c03b28c65ef90"
+    },
+    {
+      "name": "score7_dqi_phase_conditioned_check.py",
+      "bytes": 3493,
+      "sha256": "6b83a98cca699fff6f202d451eb22af3d338ff960f448ff6d9b3d15d829173c2"
+    },
+    {
+      "name": "score7_dqi_phase_commute_discovery.json",
+      "bytes": 615,
+      "sha256": "ab4c3ccf64b83f17f08bac1c6ba1cd2077a5c4ed68f8d898f8383e535a032381"
+    },
+    {
+      "name": "score7_dqi_phase_return_discovery.json",
+      "bytes": 64731,
+      "sha256": "75744c3d31c05c65cfc15e62c9a682989e519bac54027f3c059a5dae9540c0dc"
+    },
+    {
+      "name": "score7_dqi_phase_delta_discovery.json",
+      "bytes": 84498,
+      "sha256": "d210dc52c7d0d750280c3b599fc7d4bbcc0788292f55efdafb1a0e8a7f224dc3"
+    },
+    {
+      "name": "score7_dqi_phase_delta_witnesses.json",
+      "bytes": 8833,
+      "sha256": "0e9cd3c2b5a99e6ecb80949829f785f9687ba640483eb07ff103685d3a3bb8a8"
+    },
+    {
+      "name": "score7_dqi_phase_conditioned_discovery.json",
+      "bytes": 141718,
+      "sha256": "d78672a626e80628658c69176c6dc5e90a6d6720c24e8c4585094feb0ab15366"
+    },
+    {
+      "name": "score7_dqi_phase_commute_check.json",
+      "bytes": 20307,
+      "sha256": "29359dfe0ae33acd9765781ce53332437728bec12ea00f8625345f84ae850b5c"
+    },
+    {
+      "name": "score7_dqi_phase_conditioned_check.json",
+      "bytes": 5494,
+      "sha256": "b3da126eae02e62ad0a123eb6172e6196e4077e18bdb85d8404608ebf82b9d7e"
+    },
+    {
+      "name": "score7_dqi_phase_commute_report.md",
+      "bytes": 6162,
+      "sha256": "c2b4328976ffca78b3c493bbe1cafa5b72ae9c20f291a6f7a686dff96c25c9e5"
+    }
+  ]
+}

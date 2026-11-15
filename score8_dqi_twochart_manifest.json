@@ -1,0 +1,251 @@
+{
+  "status": "FROZEN_RESEARCH_CANDIDATE_NOT_ADOPTED",
+  "frozen_utc": "2026-11-15T07:22:10.258759+00:00",
+  "candidate": {
+    "file": "dqi.kmb",
+    "bytes": 639980658,
+    "sha256": "1d66248da1fc23e3a41817fe8a2b39cdbba957ba0aa908fe2aacea7e2b36e9e9",
+    "path": "/workspace/scratch/3815fb5fae06/score8_dqi_twochart/dqi.kmb",
+    "num_qubits": 889,
+    "adopted": false
+  },
+  "preserved_baseline": {
+    "file": "dqi.kmb",
+    "bytes": 522343175,
+    "sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+    "path": "/workspace/scratch/3815fb5fae06/score5_norm_final/dqi.kmb",
+    "unchanged": true
+  },
+  "official_run": {
+    "shots_observed": 102400,
+    "batches_observed": 400,
+    "value_errors": 2,
+    "phase_errors": 0,
+    "mean_toffolis": 382062.92126953125,
+    "process_exit_code": 137,
+    "termination_cause": "UNKNOWN",
+    "official_return_completed": false,
+    "official_pass": false,
+    "full_verification_json_absent": true,
+    "recovered_scalar_receipt": "score8_dqi_twochart_full_recovered.json",
+    "recovered_resource_cost": 362761948064.14136,
+    "baseline_cost": 359707293756.04297,
+    "cost_change_percent": 0.849205551603327
+  },
+  "failure_diagnostic": {
+    "receipt": "score8_dqi_twochart_failure_comparison.json",
+    "both_failed_inputs_also_fail_unchanged_e4": true,
+    "value_correct_shot_phases_exact": true,
+    "one_value_failing_shot_phase_changes": true,
+    "full_same_cohort_equivalence_claimed": false
+  },
+  "plan_metadata_caveat": "Executed failure replay plans inherit old descriptive created_utc, independent_seed_label and comparison_baseline_result fields. Actual groups[].seed_sha256, groups[].batches, circuit identities, runner hash and stored numeric seeds determine the replay. Executed plans were not edited after execution.",
+  "no_submission": true,
+  "no_default_resampling": true,
+  "files": [
+    {
+      "file": "score8_dqi_cutoff_tradeoff.json",
+      "bytes": 4224,
+      "sha256": "82182347f09445a25bf8456d32ca727724b5eb68233976b72f1b2dc1a2dd768b"
+    },
+    {
+      "file": "score8_dqi_recover_progress.py",
+      "bytes": 2285,
+      "sha256": "f6d62ef2d45e35db11da7b60c73c306b63c770ef14064ad4a508c76352851b1b"
+    },
+    {
+      "file": "score8_dqi_twochart.py",
+      "bytes": 19416,
+      "sha256": "9ce7cd55e767772fe98dc8ab1fc3b468f75b92d2413d040744d5d082d0498f49"
+    },
+    {
+      "file": "score8_dqi_twochart_bind.py",
+      "bytes": 7000,
+      "sha256": "9d20d7eea95e28dbe209eb46cf07de9ac1fba967bfad1f78b09ea72959f4bc15"
+    },
+    {
+      "file": "score8_dqi_twochart_binding.json",
+      "bytes": 20366,
+      "sha256": "4e92f10b513b3514705ba8658ecde0589ae5e85b056df6678a518e5693e0337d"
+    },
+    {
+      "file": "score8_dqi_twochart_build.json",
+      "bytes": 2046,
+      "sha256": "7c8271f48fb363b42eea5fabeaeae7aced3a017d36bcd409e2cf5f561c4b28f8"
+    },
+    {
+      "file": "score8_dqi_twochart_compare_failures.py",
+      "bytes": 5403,
+      "sha256": "657425c5e26ce5353b95f990a833e5be2116541ff0bef514d8e6e37c8531909a"
+    },
+    {
+      "file": "score8_dqi_twochart_failed_ranges_before.json",
+      "bytes": 171328,
+      "sha256": "778f1da857cae9823a3703ac0058ff5c15d9ee5bd13e55235844bc3d7a1efedd"
+    },
+    {
+      "file": "score8_dqi_twochart_failed_ranges_before_plan.json",
+      "bytes": 2044,
+      "sha256": "12de911f25b0d6634fd295ae41ae608e0ac845f829abe1d9a2e2165ed8be42f9"
+    },
+    {
+      "file": "score8_dqi_twochart_failure_after.json",
+      "bytes": 128799,
+      "sha256": "108f6e0fd1c07f4fc37bcb220f7ddf53bbfd1a306c68a52868be84481206cfad"
+    },
+    {
+      "file": "score8_dqi_twochart_failure_after_plan.json",
+      "bytes": 1381,
+      "sha256": "8331b2212c077d86f59c8f5c929de8d16be3336bc71b20cf86a14f8724e18e7b"
+    },
+    {
+      "file": "score8_dqi_twochart_failure_comparison.json",
+      "bytes": 4690,
+      "sha256": "cf3818516c77dc87573d14b211b61fd1be81e3b0503d8ea218597e1fd0d165df"
+    },
+    {
+      "file": "score8_dqi_twochart_full_recovered.json",
+      "bytes": 2080,
+      "sha256": "8c7545a5530a65f22ef792caf72807b49f7835b5b58308853db2d76259e17ac4"
+    },
+    {
+      "file": "score8_dqi_twochart_independent_review.json",
+      "bytes": 19326,
+      "sha256": "4c300ca1de1ec8641e16582c20c10e1ee5fea52b05606bbc60b410030c0ecb25"
+    },
+    {
+      "file": "score8_dqi_twochart_independent_review.py",
+      "bytes": 8632,
+      "sha256": "e7edee6e1edce51c3424f6141785978335af9c7811f7571496217e7d1759c673"
+    },
+    {
+      "file": "score8_dqi_twochart_model.json",
+      "bytes": 604,
+      "sha256": "6ebc30e2a01081ece666ba16368cb787c6f63eab4b44e7ed050438ee837910a6"
+    },
+    {
+      "file": "score8_dqi_twochart_native.json",
+      "bytes": 2924,
+      "sha256": "0743c3252837c25f5d14c0b41b3249c1accab4de88d216e38d2be39e0b7a77f2"
+    },
+    {
+      "file": "score8_dqi_twochart_paired_after.json",
+      "bytes": 72159,
+      "sha256": "5f34fd23d92b05a0953a30459f09f63973936606ea0ba6112fc260c818a3ecd1"
+    },
+    {
+      "file": "score8_dqi_twochart_paired_before.json",
+      "bytes": 72162,
+      "sha256": "a9cafbd109dea228a6847dc47a1bf27ece6e4865e702a71de1c2c8f2720c2443"
+    },
+    {
+      "file": "score8_dqi_twochart_paired_before_plan.json",
+      "bytes": 1568,
+      "sha256": "8d5239c06739bb6128d035f2c44da806dcf593f48ac461e4bdb45ada8f70b129"
+    },
+    {
+      "file": "score8_dqi_twochart_paired_comparison.json",
+      "bytes": 3034,
+      "sha256": "868349d6372d9d456abad60c858546d27b323acf6fa34e3d66933e013737df7e"
+    },
+    {
+      "file": "score8_dqi_twochart_paired_plan.json",
+      "bytes": 1570,
+      "sha256": "e5f9b8281cd1c8cc99dc8397b5adf3147932f0436957369e09ecd91ac9ea7fbc"
+    },
+    {
+      "file": "score8_dqi_twochart_point69_native.json",
+      "bytes": 712,
+      "sha256": "816a3bba1f2f4f94690338e8f2086b12d459657acd50a0d0264a7907f187d2ba"
+    },
+    {
+      "file": "score8_dqi_twochart_progress.json",
+      "bytes": 1404,
+      "sha256": "938050136d2c95979237c6149519f5b18b2966d1030a39831a14007ddde7f610"
+    },
+    {
+      "file": "score8_dqi_twochart_report.md",
+      "bytes": 14350,
+      "sha256": "31869cba4a2a7fcd01641736befff27605bc1666895e1f0b9d60b1850b52cfc4"
+    },
+    {
+      "file": "score8_dqi_twochart_scalar_recovery.json",
+      "bytes": 696,
+      "sha256": "33230ab0c890c9f398d6e0a329140065b0ea8215d2364430a544c340bde2b74b"
+    },
+    {
+      "file": "score8_dqi_twochart_splice.json",
+      "bytes": 5694,
+      "sha256": "3433cc7a3bc939a4fc78b9765bc23f139a5ab61d93534b6eb3de387f63e7b59c"
+    },
+    {
+      "file": "score8_dqi_twochart_splice.py",
+      "bytes": 6436,
+      "sha256": "c6458d0fabc4f70929dcb090e4cf0abb8ff845dee55c29b631663dbf2351f7d1"
+    }
+  ],
+  "existing_reproduction_dependencies": [
+    {
+      "file": "dqi_gauge_expand.py",
+      "bytes": 10381,
+      "sha256": "40b3cfc5f46a7c5bb248abe2cd652669b1a2b4dce0927f1b81d29e8df72f5578"
+    },
+    {
+      "file": "score3_gauge_sort.py",
+      "bytes": 19407,
+      "sha256": "435870acd0698f6b5214622b225cff81085847d6b0571a1b98afe5bcf69a3e2a"
+    },
+    {
+      "file": "kmb_splice.py",
+      "bytes": 6090,
+      "sha256": "5833acf32fa9b25907ac92c531eba7c0dc51e132951ad0c4ce55282a0c19888f"
+    },
+    {
+      "file": "kmb_profile.py",
+      "bytes": 24020,
+      "sha256": "7e7d90fde91384b8c35e45103df09d3fed8400a3ca4544f9b5870a4ee0d83ede"
+    },
+    {
+      "file": "dqi_ccx_peephole.py",
+      "bytes": 17467,
+      "sha256": "13a7b05b7722468369d9132ef2b5f538c1698936167a662b5546915e715d9f69"
+    },
+    {
+      "file": "outcome_dqi_chart_paired.py",
+      "bytes": 4786,
+      "sha256": "bd5d24abfce33c314870e81224054644044334ee4cd8f7cccc4ca9f9fef2c81a"
+    },
+    {
+      "file": "verify_dqi_candidate.py",
+      "bytes": 4759,
+      "sha256": "0c3c97abececaa1ed0ac7e62fa0995cf7f24d514ca57baf1dafc03cb3282f6b7"
+    }
+  ],
+  "large_piece_files": [
+    {
+      "file": "prefix.kmb",
+      "bytes": 261607585,
+      "sha256": "b5639474469c5e411206512b580f8b4e31e302eeb7a669b6b4a0cd4187a8269b",
+      "path": "/workspace/scratch/3815fb5fae06/score8_dqi_twochart/prefix.kmb"
+    },
+    {
+      "file": "suffix.kmb",
+      "bytes": 42303148,
+      "sha256": "23f201d2bb7dc324fc03cdf38f0b04cd8ee7ac968d26715dc857c3b652463596",
+      "path": "/workspace/scratch/3815fb5fae06/score8_dqi_twochart/suffix.kmb"
+    },
+    {
+      "file": "point69.kmb",
+      "bytes": 323208,
+      "sha256": "b5d0583b2c2da72ffbb4e08e7e39a551ee77115ac960bd49e0d88a2026e0254e",
+      "path": "/workspace/scratch/3815fb5fae06/score8_dqi_twochart/point69.kmb"
+    },
+    {
+      "file": "pieces.json",
+      "bytes": 2046,
+      "sha256": "7c8271f48fb363b42eea5fabeaeae7aced3a017d36bcd409e2cf5f561c4b28f8",
+      "path": "/workspace/scratch/3815fb5fae06/score8_dqi_twochart/pieces.json"
+    }
+  ],
+  "scope": "All listed code, evidence and report files are frozen. Native component validation and independent review passed. The official final aggregation did not return, recovered scalar cost is worse than retained e4, and this candidate is not included as the main DQI. No claim that 28 has been reached."
+}

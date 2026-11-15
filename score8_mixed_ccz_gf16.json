@@ -1,0 +1,18 @@
+{
+  "field_degree": 4,
+  "polynomial": 19,
+  "num_qubits": 12,
+  "requested_ccz_count": 8,
+  "solver": "z3",
+  "solver_version": "4.15.4",
+  "timeout_ms": 60000,
+  "status": "unknown",
+  "encoding_seconds": 0.7185809309958131,
+  "solve_seconds": 60.02765120800177,
+  "scope": "arbitrary mixed-register linear parities, CCZ phase plus free Z/CZ corrections",
+  "script_sha256": "cddeff518f8cdde1093963cec29933dfd8b631a4b7f8448275a72a511b0be982",
+  "actual_submission_modified": false,
+  "claimed_gate_savings": 0,
+  "reason_unknown": "timeout",
+  "not_a_lower_bound": true
+}

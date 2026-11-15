@@ -1,0 +1,579 @@
+{
+  "status": "NUMERICAL_FAIL",
+  "source": "/workspace/scratch/3815fb5fae06/score3_c43_points/candidate_00.npz",
+  "source_sha256": "abedb4c8133acf4be630761bd09826127b9eaf97b8de87bc3e67720e07ea9448",
+  "script_sha256": "2eec52bccfd79bf10b9b9332425a42e919507c1c854d9b5836a36c8108cba6ee",
+  "candidate": "/workspace/scratch/3815fb5fae06/score3_c43_point00_refit/candidate.npz",
+  "candidate_sha256": "359a98e0cf50305c04807a8f072aa0edb9780a6033e17033131f5c134bc313c3",
+  "initial": {
+    "event": "initial",
+    "error2": 0.02112099435987082,
+    "changed_words": 1,
+    "changes": [
+      {
+        "address": 1145,
+        "column": 35,
+        "old": 59,
+        "value": 60
+      }
+    ],
+    "estimated_T": 14658,
+    "estimated_Q": 427,
+    "added_task_toffoli": 8,
+    "lambda_break_even_user_log": 47.12989554166571,
+    "gradient_check": {
+      "finite_difference": 0.0007106317756466751,
+      "analytic": 0.0007106318917549072,
+      "scaled_error": 1.1610823207833937e-10
+    },
+    "orthogonality_error": 4.134470543704083e-13,
+    "preparation_seconds": 13.016424346998974
+  },
+  "official_numeric_metrics": {
+    "error_1": 0.03154039641289933,
+    "error_2": 0.021120948845592943,
+    "Lambda": 294.16050969121636,
+    "E_SOS": -22144.373803997536,
+    "E_gap": 4.100453997536533,
+    "lambda_eff": 48.94455590538698,
+    "gap_in_domain": true
+  },
+  "changed_words": 1,
+  "changes": [
+    {
+      "address": 1145,
+      "column": 35,
+      "old": 59,
+      "value": 60
+    }
+  ],
+  "unchanged_tree": true,
+  "integer_words_fixed_during_refit": true,
+  "W_shape": [
+    8,
+    143,
+    43
+  ],
+  "natural_d_preserved_during_W_refit": true,
+  "identity_refit": {
+    "attempted": false
+  },
+  "patch_estimate": {
+    "added_ccx_per_pass": 4,
+    "added_official_toffoli_both_passes": 8,
+    "maximum_loader_qubits": 128,
+    "chemistry_accuracy_tested": false,
+    "loader_exact_proof_run": false,
+    "score_improvement_claimed": false,
+    "loaders": [
+      {
+        "batch": 0,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 1,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 2,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 3,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 4,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 5,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 6,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 7,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 2,
+          "addresses": 1,
+          "groups": [
+            {
+              "high_address": 71,
+              "output_rank": 1,
+              "affine_constant_direction": "0x0",
+              "high_indicator_ccx": 1,
+              "added_ccx": 2
+            }
+          ],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 2,
+        "addresses": [
+          {
+            "address": 1145,
+            "mode": "tag_preserving_differential_exact_proof_required",
+            "delta_previous": 0,
+            "delta_current": 7
+          }
+        ]
+      },
+      {
+        "batch": 8,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 2,
+          "addresses": 1,
+          "groups": [
+            {
+              "high_address": 71,
+              "output_rank": 1,
+              "affine_constant_direction": "0x0",
+              "high_indicator_ccx": 1,
+              "added_ccx": 2
+            }
+          ],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 2,
+        "addresses": [
+          {
+            "address": 1145,
+            "mode": "tag_preserving_differential_exact_proof_required",
+            "delta_previous": 7,
+            "delta_current": 0
+          }
+        ]
+      },
+      {
+        "batch": 9,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 10,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 11,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 12,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 13,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 14,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      }
+    ]
+  },
+  "unpatched_resource": {
+    "B": 143,
+    "num_vectors": 1220,
+    "T": 14650,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 315,
+    "inner_toffoli": 4019,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.5296034763715318,
+    "lambda_break_even_user_log": 47.15563200339495,
+    "lambda_break_even_reproduced": 47.1563310773384,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  "estimated_T": 14658,
+  "estimated_Q": 427,
+  "conditional_cost": 306342311.2969163,
+  "lambda_break_even_user_log": 47.12989554166571,
+  "conditional_score_improvement": false,
+  "comparison_scope": "User logged lambda 46.905894137 at 14728T/427Q; source NPZ unavailable.",
+  "gradient_check_scaled_error": 1.1610823207833937e-10,
+  "official_error2_mismatch": 1.3530843112619095e-16,
+  "calls": 905,
+  "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "W_refit_seconds": 24.901193309997325,
+  "seconds": 39.508112796000205,
+  "trace": [
+    {
+      "calls": 6,
+      "best_error2": 0.021120979906160534,
+      "seconds": 0.07828888299991377
+    },
+    {
+      "calls": 363,
+      "best_error2": 0.021120948853543726,
+      "seconds": 10.080115127999306
+    },
+    {
+      "calls": 733,
+      "best_error2": 0.021120948845667963,
+      "seconds": 20.097277804998157
+    }
+  ],
+  "peak_rss_mib": 1058.23828125,
+  "full_circuit_verified": false
+}

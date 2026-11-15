@@ -1,0 +1,219 @@
+{
+  "status": "PASS",
+  "scope": "24 tiny scanner controls only; no production circuit rewrite or native verification",
+  "source_sha256": "93a5276f5ea1e530d08aa59c0b764d711e7b8f64d2c627bfd0a7a43a67c5c754",
+  "cases": [
+    {
+      "mode": "scan",
+      "fixture": "zero_uncompute",
+      "candidate_indices": [
+        2
+      ],
+      "expected": [
+        2
+      ],
+      "pass_check": true
+    },
+    {
+      "mode": "scan",
+      "fixture": "one_uncompute",
+      "candidate_indices": [
+        3
+      ],
+      "expected": [
+        3
+      ],
+      "pass_check": true
+    },
+    {
+      "mode": "scan",
+      "fixture": "dirty_accumulator",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "scan",
+      "fixture": "executed_branch",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "scan",
+      "fixture": "fredkin_pair",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "scan",
+      "fixture": "changed_control",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "truth",
+      "fixture": "zero_uncompute",
+      "candidate_indices": [
+        2
+      ],
+      "expected": [
+        2
+      ],
+      "pass_check": true
+    },
+    {
+      "mode": "truth",
+      "fixture": "one_uncompute",
+      "candidate_indices": [
+        3
+      ],
+      "expected": [
+        3
+      ],
+      "pass_check": true
+    },
+    {
+      "mode": "truth",
+      "fixture": "dirty_accumulator",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "truth",
+      "fixture": "executed_branch",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "truth",
+      "fixture": "fredkin_pair",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "truth",
+      "fixture": "changed_control",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "branch",
+      "fixture": "zero_uncompute",
+      "candidate_indices": [
+        2
+      ],
+      "expected": [
+        2
+      ],
+      "pass_check": true
+    },
+    {
+      "mode": "branch",
+      "fixture": "one_uncompute",
+      "candidate_indices": [
+        3
+      ],
+      "expected": [
+        3
+      ],
+      "pass_check": true
+    },
+    {
+      "mode": "branch",
+      "fixture": "dirty_accumulator",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "branch",
+      "fixture": "executed_branch",
+      "candidate_indices": [
+        4
+      ],
+      "expected": [
+        4
+      ],
+      "pass_check": true
+    },
+    {
+      "mode": "branch",
+      "fixture": "fredkin_pair",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "branch",
+      "fixture": "changed_control",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "cswap",
+      "fixture": "zero_uncompute",
+      "candidate_indices": [
+        2
+      ],
+      "expected": [
+        2
+      ],
+      "pass_check": true
+    },
+    {
+      "mode": "cswap",
+      "fixture": "one_uncompute",
+      "candidate_indices": [
+        3
+      ],
+      "expected": [
+        3
+      ],
+      "pass_check": true
+    },
+    {
+      "mode": "cswap",
+      "fixture": "dirty_accumulator",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    },
+    {
+      "mode": "cswap",
+      "fixture": "executed_branch",
+      "candidate_indices": [
+        4
+      ],
+      "expected": [
+        4
+      ],
+      "pass_check": true
+    },
+    {
+      "mode": "cswap",
+      "fixture": "fredkin_pair",
+      "candidate_indices": [
+        4
+      ],
+      "expected": [
+        4
+      ],
+      "pass_check": true
+    },
+    {
+      "mode": "cswap",
+      "fixture": "changed_control",
+      "candidate_indices": [],
+      "expected": [],
+      "pass_check": true
+    }
+  ]
+}

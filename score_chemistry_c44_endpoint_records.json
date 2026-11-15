@@ -1,0 +1,435 @@
+{
+  "status": "NO_ACCEPTED_C44_IMPROVEMENT",
+  "baseline_npz_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "numeric_gates": {
+    "error_1_max": 0.02,
+    "error_2_max": 0.02,
+    "Lambda_strict_min": 49.0,
+    "E_gap_strict_min": 3.914898,
+    "gap_in_domain_required": true,
+    "lambda_eff_finite_required": true
+  },
+  "resources_unchanged": {
+    "loader_ccx_one_pass": 4033,
+    "total_toffoli": 14728,
+    "total_qubits": 427
+  },
+  "endpoints": [
+    {
+      "route": "score_chemistry_polish_c44",
+      "checkpoint": "latest",
+      "status": "BASELINE_COPY",
+      "failed_constraints": [],
+      "official_numeric_metrics": {
+        "error_1": 0.01999999799999866,
+        "error_2": 0.019999998499405293,
+        "Lambda": 282.9645325169254,
+        "E_SOS": -22144.1882480015,
+        "E_gap": 3.9148980015015695,
+        "lambda_eff": 46.90658950862355,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 294988786.87084424,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+      "source_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+      "script_sha256": "4d8072620e9db5eaca4b9eaf30b896237ff86c469d599a864741936ac69d025c",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44/results.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44/latest.npz",
+      "configured_numerics": {
+        "smooth": 1e-05,
+        "objective_weight": 1
+      }
+    },
+    {
+      "route": "score_chemistry_polish_c44_fast_whiten_restore",
+      "checkpoint": "latest",
+      "status": "FAIL_NUMERIC_CONSTRAINTS",
+      "failed_constraints": [
+        "error_1",
+        "error_2"
+      ],
+      "official_numeric_metrics": {
+        "error_1": 0.020000023034069326,
+        "error_2": 0.020008651418396178,
+        "Lambda": 282.98899085334506,
+        "E_SOS": -22144.1882481765,
+        "E_gap": 3.914898176499264,
+        "lambda_eff": 46.90863183668756,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 295001630.7779436,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "2e6d6cdc346a20d08ae560c3db783787e46a0be5d7567336350fecbedb035d1e",
+      "source_sha256": "0dcc9c91a38cf3e23a5371a5a4464be3628ca7df5b0a81c509f2d17a2ab5ad03",
+      "script_sha256": "a6e3d0875c0a681139c59cf9870bf0ff5610a1617b88bab05d3805c1de8d52c3",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_fast_whiten_restore/results.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_fast_whiten_restore/latest.npz",
+      "configured_numerics": {
+        "smooth": 1e-06,
+        "objective_weight": 0.0,
+        "gap_equality": true,
+        "offset_coordinates": true,
+        "whiten_weights": true,
+        "fast_model": true
+      }
+    },
+    {
+      "route": "score_chemistry_polish_c44_goal_branch_release",
+      "checkpoint": "latest",
+      "status": "FAIL_NUMERIC_CONSTRAINTS",
+      "failed_constraints": [
+        "error_2"
+      ],
+      "official_numeric_metrics": {
+        "error_1": 0.019999860527325164,
+        "error_2": 0.020003194679960576,
+        "Lambda": 282.9512727865309,
+        "E_SOS": -22144.188305937947,
+        "E_gap": 3.914955937947525,
+        "lambda_eff": 46.90582747479046,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 294983994.5498009,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "578e49c6760ee18075e686c867008701656ca0f412bce70f07b1a9885d21f8c6",
+      "source_sha256": "71d82e943ae43c2f305d8260431e3dd80fb641587b6a567c2d83cb4939936fc3",
+      "script_sha256": "ba67d799f8eed91084fb25b09ab80c1471864b2fb8035f81173e5609fa6acd3d",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_goal_branch_release/results.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_goal_branch_release/latest.npz",
+      "configured_numerics": {
+        "smooth": 1e-07,
+        "eigen_smooth": 1e-09,
+        "objective_weight": 0.0,
+        "lambda_budget": 46.90585,
+        "gap_equality": false,
+        "offset_coordinates": true,
+        "whiten_weights": true,
+        "fast_model": true,
+        "initial_lag": "0,0,0,0"
+      }
+    },
+    {
+      "route": "score_chemistry_polish_c44_offset_restore",
+      "checkpoint": "latest",
+      "status": "FAIL_NUMERIC_CONSTRAINTS",
+      "failed_constraints": [
+        "error_2",
+        "E_gap"
+      ],
+      "official_numeric_metrics": {
+        "error_1": 0.019995155518689627,
+        "error_2": 0.020017799528309788,
+        "Lambda": 282.92866287640254,
+        "E_SOS": -22144.188247987488,
+        "E_gap": 3.914897987488075,
+        "lambda_eff": 46.90359559290314,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 294969958.5660024,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "0dcc9c91a38cf3e23a5371a5a4464be3628ca7df5b0a81c509f2d17a2ab5ad03",
+      "source_sha256": "53ad09ffb7fbce1f33eb522f85ad9f2ca09d7db06cf31136f9ba6114c521612e",
+      "script_sha256": "405c4721592909a04bbacd790c0cbfe408cacb45c934cb232be754a43ebdcd98",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_offset_restore/results.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_offset_restore/latest.npz",
+      "configured_numerics": {
+        "smooth": 1e-06,
+        "objective_weight": 0.0,
+        "gap_equality": true,
+        "offset_coordinates": true
+      }
+    },
+    {
+      "route": "score_chemistry_polish_c44_repair",
+      "checkpoint": "latest",
+      "status": "NUMERICALLY_FEASIBLE_BUT_MORE_COSTLY",
+      "failed_constraints": [],
+      "official_numeric_metrics": {
+        "error_1": 0.01999998000000927,
+        "error_2": 0.019999980000037443,
+        "Lambda": 282.92717620436287,
+        "E_SOS": -22144.251724078284,
+        "E_gap": 3.978374078284105,
+        "lambda_eff": 47.279518053807934,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 297334080.7897983,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "402cf5f8b860b52b813583192c7b359447be70bd3a969f977baec91398e13bfc",
+      "source_sha256": "53ad09ffb7fbce1f33eb522f85ad9f2ca09d7db06cf31136f9ba6114c521612e",
+      "script_sha256": "176cfcabdb3255a827b9cc45755124400dc66547c14af427897b5226963360e4",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_repair/results.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_repair/latest.npz",
+      "configured_numerics": {
+        "smooth": 1e-06,
+        "objective_weight": 0.0
+      }
+    },
+    {
+      "route": "score_chemistry_polish_c44_repair",
+      "checkpoint": "best_feasible",
+      "status": "NUMERICALLY_FEASIBLE_BUT_MORE_COSTLY",
+      "failed_constraints": [],
+      "official_numeric_metrics": {
+        "error_1": 0.01999998244873505,
+        "error_2": 0.019999981141948172,
+        "Lambda": 282.9271751912487,
+        "E_SOS": -22144.251721701366,
+        "E_gap": 3.9783717013669957,
+        "lambda_eff": 47.27950394476336,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 297333992.0600487,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "b0cf4dc330ebad4c843f806c173a420eaab2952012a31edf5656eca89e56cfa5",
+      "source_sha256": "53ad09ffb7fbce1f33eb522f85ad9f2ca09d7db06cf31136f9ba6114c521612e",
+      "script_sha256": "176cfcabdb3255a827b9cc45755124400dc66547c14af427897b5226963360e4",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_repair/results.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_repair/best_feasible.npz",
+      "configured_numerics": {
+        "smooth": 1e-06,
+        "objective_weight": 0.0
+      }
+    },
+    {
+      "route": "score_chemistry_polish_c44_repair",
+      "checkpoint": "identity_polished",
+      "status": "NUMERICALLY_FEASIBLE_BUT_MORE_COSTLY",
+      "failed_constraints": [],
+      "official_numeric_metrics": {
+        "error_1": 0.019999980175236253,
+        "error_2": 0.019999980000037443,
+        "Lambda": 282.9777251389631,
+        "E_SOS": -22144.241418624362,
+        "E_gap": 3.968068624362786,
+        "lambda_eff": 47.22292342101767,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 296978165.2938075,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "6b49f6092076eefaa0187b1c607d71ea2582d96781214c4ec826eb635760732d",
+      "source_sha256": "402cf5f8b860b52b813583192c7b359447be70bd3a969f977baec91398e13bfc",
+      "script_sha256": "ac14f4973b6b3dfc3612bef5d9591c9464a4717c56ab6e340d52230bf7906d7b",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_repair/identity_polished.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_repair/identity_polished.npz",
+      "configured_numerics": {}
+    },
+    {
+      "route": "score_chemistry_polish_c44_restore_gap",
+      "checkpoint": "latest",
+      "status": "FAIL_NUMERIC_CONSTRAINTS",
+      "failed_constraints": [
+        "error_1",
+        "error_2"
+      ],
+      "official_numeric_metrics": {
+        "error_1": 0.020000112214385708,
+        "error_2": 0.020019480405768793,
+        "Lambda": 282.9273078975179,
+        "E_SOS": -22144.188248051647,
+        "E_gap": 3.9148980516474694,
+        "lambda_eff": 46.90348287853387,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 294969249.721565,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "40c20746215402c4905d8d1e86bf1ceb08a4a15e9b4f60b1ec9ba97f51d2d6ac",
+      "source_sha256": "53ad09ffb7fbce1f33eb522f85ad9f2ca09d7db06cf31136f9ba6114c521612e",
+      "script_sha256": "7f74ab137c342c084456ea2b46e77e01d02ae8fd73cc7579d267344e1c42d9a6",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_restore_gap/results.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_restore_gap/latest.npz",
+      "configured_numerics": {
+        "smooth": 1e-06,
+        "objective_weight": 0.0,
+        "gap_equality": true
+      }
+    },
+    {
+      "route": "score_chemistry_polish_c44_squared",
+      "checkpoint": "latest",
+      "status": "FAIL_NUMERIC_CONSTRAINTS",
+      "failed_constraints": [
+        "error_2"
+      ],
+      "official_numeric_metrics": {
+        "error_1": 0.019995388137772893,
+        "error_2": 0.02003382418158332,
+        "Lambda": 282.9052164048358,
+        "E_SOS": -22144.188248916515,
+        "E_gap": 3.914898916515085,
+        "lambda_eff": 46.901644073880654,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 294957685.7438888,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "53ad09ffb7fbce1f33eb522f85ad9f2ca09d7db06cf31136f9ba6114c521612e",
+      "source_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+      "script_sha256": "2fe2af758f5a6bafd7a422180b47bae1ede90e248066f437eccb64c733288920",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_squared/results.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_squared/latest.npz",
+      "configured_numerics": {
+        "smooth": 1e-05,
+        "objective_weight": 1
+      }
+    },
+    {
+      "route": "score_chemistry_polish_c44_squared",
+      "checkpoint": "restored_stage1",
+      "status": "FAIL_NUMERIC_CONSTRAINTS",
+      "failed_constraints": [
+        "error_1",
+        "error_2"
+      ],
+      "official_numeric_metrics": {
+        "error_1": 0.02006479939816603,
+        "error_2": 0.020031541168042656,
+        "Lambda": 282.9174931528451,
+        "E_SOS": -22144.18825498837,
+        "E_gap": 3.914904988370836,
+        "lambda_eff": 46.90270492642103,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 294964357.29275244,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "32d392fda47b1fc65030d2076aea5e44d68680635eb6369df0b8bd50dbf9dfff",
+      "source_sha256": "5aaa8afdb1841ca481d6d5a6cef369d426a17315b560d746bca166e05289664d",
+      "script_sha256": "9e15a73f6dd838c1cb5ccfbff5ce41d244240186fce29d3a854caddb243c61be",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_squared/restored_stage1.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_squared/restored_stage1.npz",
+      "configured_numerics": {}
+    },
+    {
+      "route": "score_chemistry_polish_c44_squared",
+      "checkpoint": "restored_final",
+      "status": "FAIL_NUMERIC_CONSTRAINTS",
+      "failed_constraints": [
+        "error_1",
+        "error_2"
+      ],
+      "official_numeric_metrics": {
+        "error_1": 0.020015146409216606,
+        "error_2": 0.02002793370851257,
+        "Lambda": 282.9118791993173,
+        "E_SOS": -22144.18825287368,
+        "E_gap": 3.914902873679239,
+        "lambda_eff": 46.90222375581418,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 294961331.2800945,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "b802fac5103215f8a67700c55fcfa0a3ada560dbdfa700b1203591e396628e72",
+      "source_sha256": "53ad09ffb7fbce1f33eb522f85ad9f2ca09d7db06cf31136f9ba6114c521612e",
+      "script_sha256": "9e15a73f6dd838c1cb5ccfbff5ce41d244240186fce29d3a854caddb243c61be",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_squared/restored_final.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_squared/restored_final.npz",
+      "configured_numerics": {}
+    },
+    {
+      "route": "score_chemistry_polish_c44_trace_smooth",
+      "checkpoint": "latest",
+      "status": "FAIL_NUMERIC_CONSTRAINTS",
+      "failed_constraints": [
+        "error_2"
+      ],
+      "official_numeric_metrics": {
+        "error_1": 0.01999998913489401,
+        "error_2": 0.02000323630931461,
+        "Lambda": 282.95125041996346,
+        "E_SOS": -22144.188255575296,
+        "E_gap": 3.9149055752968707,
+        "lambda_eff": 46.905526006529136,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 294982098.6593168,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "71d82e943ae43c2f305d8260431e3dd80fb641587b6a567c2d83cb4939936fc3",
+      "source_sha256": "e948a371153687a2b6b2688e97ca3e345b86b5b01dd4010318a9c21d06bab472",
+      "script_sha256": "7d0421b79e75605d8d339937a0d04f74cc825510ea9d11062a65d79a2ba1b085",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_trace_smooth/results.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_trace_smooth/latest.npz",
+      "configured_numerics": {
+        "smooth": 1e-06,
+        "eigen_smooth": 1e-07,
+        "objective_weight": 1,
+        "gap_equality": false,
+        "offset_coordinates": true,
+        "whiten_weights": true,
+        "fast_model": true,
+        "initial_lag": "0.0022432958,2.6375726610,0.0446939335"
+      }
+    },
+    {
+      "route": "score_chemistry_polish_c44_whiten_descent",
+      "checkpoint": "latest",
+      "status": "FAIL_NUMERIC_CONSTRAINTS",
+      "failed_constraints": [
+        "error_2"
+      ],
+      "official_numeric_metrics": {
+        "error_1": 0.01999999794634038,
+        "error_2": 0.02000400650727304,
+        "Lambda": 282.9489852408358,
+        "E_SOS": -22144.1882480886,
+        "E_gap": 3.914898088602058,
+        "lambda_eff": 46.905292408622074,
+        "gap_in_domain": true
+      },
+      "comparison_cost_at_fixed_resources": 294980629.59571743,
+      "actual_official_circuit_score": null,
+      "full_circuit_verification_run": false,
+      "all_91500_angle_words_bitwise_equal": true,
+      "tree_edges_equal": true,
+      "candidate_sha256": "e948a371153687a2b6b2688e97ca3e345b86b5b01dd4010318a9c21d06bab472",
+      "source_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+      "script_sha256": "d80544f149a822a727dc2fb1647fad32006d9c95bd4b5499f02a700cc863d5bc",
+      "original_report": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_whiten_descent/results.json",
+      "scratch_checkpoint": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_whiten_descent/latest.npz",
+      "configured_numerics": {
+        "smooth": 1e-06,
+        "objective_weight": 1,
+        "gap_equality": false,
+        "offset_coordinates": true,
+        "whiten_weights": true,
+        "fast_model": true,
+        "initial_lag": "0.02,2.0,0.0595"
+      }
+    }
+  ]
+}

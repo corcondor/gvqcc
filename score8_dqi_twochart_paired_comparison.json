@@ -1,0 +1,116 @@
+{
+  "status": "PASS_PAIRED_ADMITTED_OUTPUTS_AND_KNOWN_FAILURE_CLASSIFICATION",
+  "shots": 2560,
+  "rows": [
+    {
+      "group": "known_weight31",
+      "batch": 104,
+      "value_and_input_differences": [],
+      "all_phase_hash_equal": false,
+      "old_T": 97808518,
+      "new_T": 97808704,
+      "saving": -186
+    },
+    {
+      "group": "known_weight33",
+      "batch": 349,
+      "value_and_input_differences": [],
+      "all_phase_hash_equal": true,
+      "old_T": 97807768,
+      "new_T": 97808300,
+      "saving": -532
+    },
+    {
+      "group": "independent",
+      "batch": 0,
+      "value_and_input_differences": [],
+      "all_phase_hash_equal": true,
+      "old_T": 97808398,
+      "new_T": 97805664,
+      "saving": 2734
+    },
+    {
+      "group": "independent",
+      "batch": 1,
+      "value_and_input_differences": [],
+      "all_phase_hash_equal": true,
+      "old_T": 97807365,
+      "new_T": 97808705,
+      "saving": -1340
+    },
+    {
+      "group": "independent",
+      "batch": 2,
+      "value_and_input_differences": [],
+      "all_phase_hash_equal": true,
+      "old_T": 97809838,
+      "new_T": 97807924,
+      "saving": 1914
+    },
+    {
+      "group": "independent",
+      "batch": 3,
+      "value_and_input_differences": [],
+      "all_phase_hash_equal": true,
+      "old_T": 97808957,
+      "new_T": 97808205,
+      "saving": 752
+    },
+    {
+      "group": "independent",
+      "batch": 4,
+      "value_and_input_differences": [],
+      "all_phase_hash_equal": true,
+      "old_T": 97811668,
+      "new_T": 97807052,
+      "saving": 4616
+    },
+    {
+      "group": "independent",
+      "batch": 5,
+      "value_and_input_differences": [],
+      "all_phase_hash_equal": true,
+      "old_T": 97809205,
+      "new_T": 97808212,
+      "saving": 993
+    },
+    {
+      "group": "independent",
+      "batch": 6,
+      "value_and_input_differences": [],
+      "all_phase_hash_equal": true,
+      "old_T": 97809725,
+      "new_T": 97808077,
+      "saving": 1648
+    },
+    {
+      "group": "independent",
+      "batch": 7,
+      "value_and_input_differences": [],
+      "all_phase_hash_equal": true,
+      "old_T": 97810159,
+      "new_T": 97808574,
+      "saving": 1585
+    }
+  ],
+  "total_T_saving": 12184,
+  "mean_T_saving": 4.759375,
+  "old_value_errors": 1,
+  "new_value_errors": 1,
+  "old_phase_errors": 0,
+  "new_phase_errors": 0,
+  "known_weight31_failure_preserved": true,
+  "known_weight33_repair_preserved": true,
+  "all_nonfailing_values_and_phases_equal": true,
+  "known_failed_shot_phase_differs": true,
+  "failure_details": [
+    {
+      "old_actual_phase": false,
+      "new_actual_phase": true,
+      "value_failure_same": true,
+      "absolute_shot": 26808
+    }
+  ],
+  "full_official_default_run": false,
+  "note": "The one pre-existing value-failed input can have a different phase off the decoder admitted domain. Every nonfailing output and all masks match. Conditional scan counts shift later HMR randomness, so fixed-seed whole T differences include random non-scan variation."
+}

@@ -1,0 +1,52 @@
+{
+  "algebra": {
+    "status": "PASS_BILINEAR_COEFFICIENT_IDENTITY",
+    "matrix_entries": 289,
+    "all_assignments_covered": 17179869184
+  },
+  "native": {
+    "status": "PASS_ISOLATED_NATIVE_COMPONENT",
+    "head_predicates": 17,
+    "Q": 18,
+    "T": 0,
+    "instructions": 223,
+    "runs": [
+      {
+        "seed": 1009,
+        "cases": 131072,
+        "phase_errors": 0,
+        "data_errors": 0,
+        "scratch_errors": 0
+      },
+      {
+        "seed": 2141,
+        "cases": 131072,
+        "phase_errors": 0,
+        "data_errors": 0,
+        "scratch_errors": 0
+      },
+      {
+        "seed": 3001,
+        "cases": 131072,
+        "phase_errors": 0,
+        "data_errors": 0,
+        "scratch_errors": 0
+      }
+    ],
+    "scope": "Already-available Boolean head predicates, no field zero-query synthesis, no DQI integration."
+  },
+  "optimistic_tail_schedule": {
+    "tail_slots": 17,
+    "zero_query_T": 23,
+    "added_seed_queries": 17,
+    "reverse_queries": 153,
+    "existing_reverse_queries": 16,
+    "net_extra_queries": 154,
+    "net_extra_static_T": 3542,
+    "net_extra_mean_T": 3542,
+    "score_win_budget_for_Q888": 861.1052304502069,
+    "optimistic_Q888_cost_ratio": 1.0070001516093106,
+    "whole_decoder_Q888_established": false,
+    "claim": "This explicit phase-batched tail schedule exceeds the Q\u22121 budget; this is not an algorithmic lower bound."
+  }
+}

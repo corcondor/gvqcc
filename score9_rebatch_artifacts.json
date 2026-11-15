@@ -1,0 +1,360 @@
+{
+  "status": "NONCOMPETITIVE_RESEARCH_ARCHIVE_SAVED",
+  "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score9_rebatch_experiments.zip",
+  "bytes": 2317841,
+  "sha256": "e59cbfae5eb6dbf9fb424ac93418128cede16b26e689b9d64e5ec96a10155712",
+  "members": 60,
+  "all_member_sha256_and_crc_pass": true,
+  "production_score_unchanged": 27.32784222155277,
+  "submission_performed": false,
+  "files": [
+    {
+      "path": "joint/angle_k_0.kmb",
+      "bytes": 316330,
+      "sha256": "88d5c28644ec18fc5b7670a431cb1ea94cab566dcd4a756f3644beb9492ec17d",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_0.kmb"
+    },
+    {
+      "path": "joint/angle_k_1.kmb",
+      "bytes": 313924,
+      "sha256": "996f444fb7adac106d49d1c58869235ba0330b3f8f7a17c08eea88251af0b6de",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_1.kmb"
+    },
+    {
+      "path": "joint/angle_k_10.kmb",
+      "bytes": 282844,
+      "sha256": "5c81e69c26cccc3b3993fc86c32d4f48ff8ab5ebb651f78d535e7cbfe6337e9f",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_10.kmb"
+    },
+    {
+      "path": "joint/angle_k_11.kmb",
+      "bytes": 283892,
+      "sha256": "96b2b2f659d4a08b1f1833cb66e5c0641a0b4b2fad93633bf49818c65256c7ca",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_11.kmb"
+    },
+    {
+      "path": "joint/angle_k_12.kmb",
+      "bytes": 284722,
+      "sha256": "7594d63a9c2b0a594fb3d4c8568adc610aa5a3151583aedd6ce0edb3447a9421",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_12.kmb"
+    },
+    {
+      "path": "joint/angle_k_13.kmb",
+      "bytes": 282397,
+      "sha256": "7d76d828d03457a79e17e66314d652fde4c244f9a68ef932346f60a945a9e41d",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_13.kmb"
+    },
+    {
+      "path": "joint/angle_k_14.kmb",
+      "bytes": 281739,
+      "sha256": "6f6b637d837459a77896e5290c3da8f056147e4c2795ee3da142456feb13f0f3",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_14.kmb"
+    },
+    {
+      "path": "joint/angle_k_15.kmb",
+      "bytes": 280091,
+      "sha256": "6c6e0004da27c6caf4a04998710ed3f5c221a5078be258976353dfa931d472c6",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_15.kmb"
+    },
+    {
+      "path": "joint/angle_k_16.kmb",
+      "bytes": 280334,
+      "sha256": "54406a415c701c947c77b02df827a6564fbd643143aca50c43fa6a45446bf4fe",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_16.kmb"
+    },
+    {
+      "path": "joint/angle_k_17.kmb",
+      "bytes": 282013,
+      "sha256": "18b8c744a9a5ef52ae7c1e75a79c6feb74600794f96571ccf0aff341b8f59719",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_17.kmb"
+    },
+    {
+      "path": "joint/angle_k_18.kmb",
+      "bytes": 283286,
+      "sha256": "92a9e3f91cea8de9e632174ae34fa24a66be6ea9a392f5ccb7b33d12792c24c2",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_18.kmb"
+    },
+    {
+      "path": "joint/angle_k_2.kmb",
+      "bytes": 316606,
+      "sha256": "fe97f2e288a9bad52d026b32ab05c864ddbe81b2376ef60a8e1f96dfdb4783d6",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_2.kmb"
+    },
+    {
+      "path": "joint/angle_k_3.kmb",
+      "bytes": 311495,
+      "sha256": "d07254336adea39002eb850666a19ca0e70905c1e132b4af25d4f197f6706dc8",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_3.kmb"
+    },
+    {
+      "path": "joint/angle_k_4.kmb",
+      "bytes": 307037,
+      "sha256": "86d041ca9a3d2c94581e257ade0f3c021bd4b594a892b1507fc03ed3d857804f",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_4.kmb"
+    },
+    {
+      "path": "joint/angle_k_5.kmb",
+      "bytes": 284761,
+      "sha256": "a26c7cba7ccfb9e8f71dd12973ff486d19f1d51927c3b604bca690b87ee1ff7d",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_5.kmb"
+    },
+    {
+      "path": "joint/angle_k_6.kmb",
+      "bytes": 282419,
+      "sha256": "112bd34a7dc49fe2871f3e2abe63f40d9a4a4b08803bfedd8fb87fb8cccf02bd",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_6.kmb"
+    },
+    {
+      "path": "joint/angle_k_7.kmb",
+      "bytes": 282325,
+      "sha256": "412be5897d03c339f6d2dfad949200e1ee5d0b8830cf1dfd2a196e521de5a795",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_7.kmb"
+    },
+    {
+      "path": "joint/angle_k_8.kmb",
+      "bytes": 282144,
+      "sha256": "c8779efcfb290dd8b36f34ddf4debce029f9a36eb8e411a925b7904bd0e19d11",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_8.kmb"
+    },
+    {
+      "path": "joint/angle_k_9.kmb",
+      "bytes": 282659,
+      "sha256": "59469ca32269a861a60ade61bd839f0cfe8b7c6bf3a9b424ea71cd9866df8c49",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/angle_k_9.kmb"
+    },
+    {
+      "path": "joint/k00_result.json",
+      "bytes": 1471,
+      "sha256": "8a3599188017e742291dc2f093578a0b9dd4e4e4faa8ae2d1ef0dda04052a466",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k00_result.json"
+    },
+    {
+      "path": "joint/k01_result.json",
+      "bytes": 1471,
+      "sha256": "7717ebd2c7bb2f986a302f48edcfd4d2a7813b3d4105dec5a316998b15a72f1d",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k01_result.json"
+    },
+    {
+      "path": "joint/k02_result.json",
+      "bytes": 1470,
+      "sha256": "bcbc47d67a5b013765d2eca5fb438fcf873f78185907c63edd4b8d4bea752855",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k02_result.json"
+    },
+    {
+      "path": "joint/k03_result.json",
+      "bytes": 1471,
+      "sha256": "b3765554c5682c3cacdea54eb40bb3b1d44d6234ee8e987c4fdf01516b66bc59",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k03_result.json"
+    },
+    {
+      "path": "joint/k04_result.json",
+      "bytes": 1472,
+      "sha256": "55f036acc8b5247a57c0398a60e2283f4e7e96c8a77c50411caf8cb5a8eff4c0",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k04_result.json"
+    },
+    {
+      "path": "joint/k05_result.json",
+      "bytes": 1467,
+      "sha256": "ca43b1b74f0c1b2f96dbe6a3b38d0ad6d61d8bba9b7581c97ab1ffa255223152",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k05_result.json"
+    },
+    {
+      "path": "joint/k06_result.json",
+      "bytes": 1467,
+      "sha256": "cf77bb87a3f3f759513ca66ba044a812d34337f1f1106bd8de7aba0d2fdaa07c",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k06_result.json"
+    },
+    {
+      "path": "joint/k07_result.json",
+      "bytes": 1467,
+      "sha256": "d6501b6464e7110a3bb93c33dc6822df02af80ee506b5f03eb871dbfca4c26ce",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k07_result.json"
+    },
+    {
+      "path": "joint/k08_result.json",
+      "bytes": 1467,
+      "sha256": "213bab1f9d086921f736b644494dd33ae3c71d1ec114505ee20ee5e2f9a68ec2",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k08_result.json"
+    },
+    {
+      "path": "joint/k09_result.json",
+      "bytes": 1466,
+      "sha256": "897e11563a5f5ca58f92bcb7f46394912fee28c299737a234197720c9e5fd8e3",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k09_result.json"
+    },
+    {
+      "path": "joint/k10_result.json",
+      "bytes": 1468,
+      "sha256": "d8bd6a4a4ab1ff6e7f490dee98232497aa042a4f26167ade9bc613e6d351adeb",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k10_result.json"
+    },
+    {
+      "path": "joint/k11_result.json",
+      "bytes": 1467,
+      "sha256": "c9b0381bccbe77bd4ceb07404227a68cfc51330ed9d72316e257c25fdeb3abb1",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k11_result.json"
+    },
+    {
+      "path": "joint/k12_result.json",
+      "bytes": 1468,
+      "sha256": "22a78f4ccab02ae8555d6638b426162681b6aa8699a8314c2aaedcb9d9e4b914",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k12_result.json"
+    },
+    {
+      "path": "joint/k13_result.json",
+      "bytes": 1468,
+      "sha256": "7be172f6aa8e81142f1af66544d016d78f70c337a044c194b405b786aff59fd2",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k13_result.json"
+    },
+    {
+      "path": "joint/k14_result.json",
+      "bytes": 1466,
+      "sha256": "0b4d4ae32687d43b16a6ba6af379ac46fc9a44c96afa55feafe3cc8008ce8d53",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k14_result.json"
+    },
+    {
+      "path": "joint/k15_result.json",
+      "bytes": 1468,
+      "sha256": "03e3b5debb558bba618782d53a29beeccaffbacc0d1a61920d02bd5f1f86dc54",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k15_result.json"
+    },
+    {
+      "path": "joint/k16_result.json",
+      "bytes": 1468,
+      "sha256": "99b033a38e981fbee5c8e353c5e7f281a7942adc2bcc80aa374d144260b1a5a1",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k16_result.json"
+    },
+    {
+      "path": "joint/k17_result.json",
+      "bytes": 1468,
+      "sha256": "af936a70722626c80e80522c64e66be11fe5dba087afec94c7cc898b521764c7",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k17_result.json"
+    },
+    {
+      "path": "joint/k18_result.json",
+      "bytes": 1467,
+      "sha256": "5deee9dc4c4aaed578fa25cedf601266e1bfd1082c1fa8b3b68e2f779eed84a6",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/k18_result.json"
+    },
+    {
+      "path": "joint/result.json",
+      "bytes": 37285,
+      "sha256": "8127918004cb430658ba20e930b1a678f4c0e132f2297f3312b32d2b1295006e",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/result.json"
+    },
+    {
+      "path": "joint/source_words_1232.npy",
+      "bytes": 92528,
+      "sha256": "792e1b06ca6e4e7b5fa82c3cc96412b9e2d2d70a27edcd7ccb08eb242714bf68",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/source_words_1232.npy"
+    },
+    {
+      "path": "joint/submission.npz",
+      "bytes": 1136087,
+      "sha256": "da30619d4a668d663adc9f7f0462cfd52ba8684cc5523980f5119dc3ef90302e",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/joint/submission.npz"
+    },
+    {
+      "path": "alternative/compiled.json",
+      "bytes": 9869,
+      "sha256": "5a9f460d884d43b23d5e12028c5e9b9368409d8ee53642c9c56edfc8d422970a",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/compiled.json"
+    },
+    {
+      "path": "alternative/partitions.csv",
+      "bytes": 2328529,
+      "sha256": "20c6ebb627e74155d4286a03de7de4d2f266c54abb24d038ba8296984bd69ccd",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/partitions.csv"
+    },
+    {
+      "path": "alternative/partitions.json",
+      "bytes": 153001,
+      "sha256": "364ed5790067763d46d9289c943fe3764470f80d4ea585d91345efbb31562b15",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/partitions.json"
+    },
+    {
+      "path": "alternative/coefficients.u32",
+      "bytes": 155648,
+      "sha256": "407bc319bb8d8ca1ca474d5a24575cb5c0c69c683b12124e0f12cac43830fdb9",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/coefficients.u32"
+    },
+    {
+      "path": "alternative/verification.json",
+      "bytes": 442,
+      "sha256": "02029209ac8ac593a6c8be0096cb8dae1c937281e0178d810035ce1f2c277cd3",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/verification.json"
+    },
+    {
+      "path": "alternative/alt_angle_k_0.kmb",
+      "bytes": 313045,
+      "sha256": "121a0a6f41cee142668576be3bad5b5b9014d6e3f5a81982de1c6c744cb6ac6e",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/alt_angle_k_0.kmb"
+    },
+    {
+      "path": "alternative/alt_angle_k_18.kmb",
+      "bytes": 279704,
+      "sha256": "f87fffcc1cfaab84e33a9975515b92037522461df24b9dacd43ec97053da8af4",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/alt_angle_k_18.kmb"
+    },
+    {
+      "path": "alternative/alt_angle_k_5.kmb",
+      "bytes": 280945,
+      "sha256": "84051d4195877d0d86ca493ee0cd5b2f12a47427c720fcf499c61342c33b3ef1",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/alt_angle_k_5.kmb"
+    },
+    {
+      "path": "alternative/care1039/alt_angle_k_0.kmb",
+      "bytes": 311925,
+      "sha256": "440f00f4789f523f87d38ebe5fbdcf6b0256e5be79838826675943b658aed270",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/care1039/alt_angle_k_0.kmb"
+    },
+    {
+      "path": "alternative/care1039/alt_angle_k_18.kmb",
+      "bytes": 282665,
+      "sha256": "caebadb70157b55bd3afc055c261efe04ac5174fb9f0f0df55ea94d6b48361d4",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/care1039/alt_angle_k_18.kmb"
+    },
+    {
+      "path": "alternative/care1039/alt_angle_k_5.kmb",
+      "bytes": 277930,
+      "sha256": "09bbd16a04ebf0bbd8ef5c12fd03bec9c65eaa6b1582adf0a7edc98346a7981f",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/care1039/alt_angle_k_5.kmb"
+    },
+    {
+      "path": "alternative/care1219/alt_angle_k_0.kmb",
+      "bytes": 316039,
+      "sha256": "8e45a307e9d43f5ae650336477ee2514c85879156cf554293b1a15c1ca173cb5",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/care1219/alt_angle_k_0.kmb"
+    },
+    {
+      "path": "alternative/care1219/alt_angle_k_18.kmb",
+      "bytes": 284928,
+      "sha256": "e7944cf06f1a23ae2c3975a301433b8ad349c2753a62b011aa555d2e13e1f6c1",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/care1219/alt_angle_k_18.kmb"
+    },
+    {
+      "path": "alternative/care1219/alt_angle_k_5.kmb",
+      "bytes": 282279,
+      "sha256": "71fb88851d6121ed0f5a627d7bd162701f501578fe19474348ed66d9a13dd548",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/care1219/alt_angle_k_5.kmb"
+    },
+    {
+      "path": "alternative/care1039/compiled.json",
+      "bytes": 5065,
+      "sha256": "afdf85444b3d7cfce5cfdd63d2797f643d44dbb949b8d3dfc70b045c4978f4ba",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/care1039/compiled.json"
+    },
+    {
+      "path": "alternative/care1219/compiled.json",
+      "bytes": 5080,
+      "sha256": "9f62a873afd2d2248a0cc51e2235bc6061b5931c2efd83e310f79afca29fedb6",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_alt/care1219/compiled.json"
+    },
+    {
+      "path": "matrix/matrix_bridge_k5.kmb",
+      "bytes": 285103,
+      "sha256": "1f79669114e9ac59c4ff821c06f8bd57e1fa29ae9a034a7d4a8527035b1a2c90",
+      "source": "/workspace/scratch/3815fb5fae06/score9_rebatch_synth/matrix_bridge_k5.kmb"
+    }
+  ]
+}

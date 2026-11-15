@@ -1,0 +1,53 @@
+{
+  "status": "BASELINE_REPACK_ALL_MEASUREMENT_PHASE_PASS",
+  "batch": 4,
+  "source_ccx": 263,
+  "repacked_ccx": 263,
+  "Q": 125,
+  "proofs": [
+    {
+      "label": "baseline_repack/forward",
+      "status": "EXACT_PASS",
+      "addresses": 1220,
+      "output_bits_checked": 40,
+      "HMR_formal_variables_cancelled": 74,
+      "R_zero_inputs_checked": 74,
+      "selection_restored": true,
+      "workspace_zero": true,
+      "output_equals_expected_batch": true,
+      "measurement_phase_identically_zero": true,
+      "gate_counts": {
+        "CX": 68270,
+        "R": 74,
+        "CCX": 263,
+        "X": 22,
+        "HMR": 74,
+        "CZ": 74
+      }
+    },
+    {
+      "label": "baseline_repack/reverse",
+      "status": "EXACT_PASS",
+      "addresses": 1220,
+      "output_bits_checked": 40,
+      "HMR_formal_variables_cancelled": 74,
+      "R_zero_inputs_checked": 74,
+      "selection_restored": true,
+      "workspace_zero": true,
+      "output_equals_expected_batch": true,
+      "measurement_phase_identically_zero": true,
+      "gate_counts": {
+        "CX": 68270,
+        "R": 74,
+        "CCX": 263,
+        "X": 22,
+        "HMR": 74,
+        "CZ": 74
+      }
+    }
+  ],
+  "seconds": 0.5036873959979857,
+  "compiler_sha256": "643b4ddadfa52089918c9c5d71113101d6904db5b47b9ce01b27539ce5c74e22",
+  "table_sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+  "candidate_written": false
+}

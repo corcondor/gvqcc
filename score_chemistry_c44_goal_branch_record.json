@@ -1,0 +1,266 @@
+{
+  "source": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_trace_smooth/latest.npz",
+  "source_sha256": "71d82e943ae43c2f305d8260431e3dd80fb641587b6a567c2d83cb4939936fc3",
+  "baseline": "/workspace/scratch/7f542e06b7cf/dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+  "script_sha256": "ba67d799f8eed91084fb25b09ab80c1471864b2fb8035f81173e5609fa6acd3d",
+  "smooth": 1e-07,
+  "eigen_smooth": 1e-09,
+  "objective_weight": 0.0,
+  "lambda_budget": 46.90585,
+  "gap_equality": false,
+  "offset_coordinates": true,
+  "whiten_weights": true,
+  "fast_model": true,
+  "initial_lag": "0,0,0,0",
+  "gradient_scaled_error": 4.063234542143999e-05,
+  "gradient_checks": [
+    {
+      "event": "gradient_check",
+      "attempt": 0,
+      "step": 1e-06,
+      "finite_difference": [
+        1.1771680235028725,
+        -114.92535601798082,
+        -0.01287314954634411,
+        -19.50782007043017,
+        117.71680235028725
+      ],
+      "analytic": [
+        1.1768744962307132,
+        0.8205232383344632,
+        -0.012873150545095273,
+        -19.507871004188146,
+        117.6874496230699
+      ],
+      "scaled_error": 1.0071396188514403,
+      "assignment_changes": 2,
+      "plus_error1": 0.019999997405855795,
+      "minus_error1": 0.020002295776614554
+    },
+    {
+      "event": "gradient_check",
+      "attempt": 0,
+      "step": 1e-07,
+      "finite_difference": [
+        1.1768741359219348,
+        -1156.2504841311495,
+        -0.01287315587461535,
+        -19.5078087017464,
+        117.68741359219348
+      ],
+      "analytic": [
+        1.1768744962307132,
+        0.8205232383344632,
+        -0.012873150545095273,
+        -19.507871004188146,
+        117.6874496230699
+      ],
+      "scaled_error": 1.000709641422508,
+      "assignment_changes": 2,
+      "plus_error1": 0.01999998995607329,
+      "minus_error1": 0.02000230231990215
+    },
+    {
+      "event": "gradient_check",
+      "attempt": 0,
+      "step": 1e-08,
+      "finite_difference": [
+        1.1769216712309571,
+        -11569.50176041116,
+        -0.012873113686140414,
+        -19.50866135302931,
+        117.69216712309571
+      ],
+      "analytic": [
+        1.1768744962307132,
+        0.8205232383344632,
+        -0.012873150545095273,
+        -19.507871004188146,
+        117.6874496230699
+      ],
+      "scaled_error": 1.0000709212250731,
+      "assignment_changes": 2,
+      "plus_error1": 0.019999989216955207,
+      "minus_error1": 0.020002302980089464
+    },
+    {
+      "event": "gradient_check",
+      "attempt": 0,
+      "step": 1e-09,
+      "finite_difference": [
+        1.1765806107177923,
+        -115702.01445754158,
+        -0.012873146992831153,
+        -19.50297701114323,
+        117.65806107177922
+      ],
+      "analytic": [
+        1.1768744962307132,
+        0.8205232383344632,
+        -0.012873150545095273,
+        -19.507871004188146,
+        117.6874496230699
+      ],
+      "scaled_error": 1.000007091693625,
+      "assignment_changes": 2,
+      "plus_error1": 0.019999989143099053,
+      "minus_error1": 0.02000230304616253
+    },
+    {
+      "event": "gradient_check",
+      "attempt": 1,
+      "step": 1e-06,
+      "finite_difference": [
+        1.2075731241623089,
+        0.8336726180502296,
+        -0.011413261225001747,
+        -19.51961507984379,
+        120.75731241623089
+      ],
+      "analytic": [
+        1.2076221906906115,
+        0.8336722073007774,
+        -0.011413261201196487,
+        -19.519618508137732,
+        120.76221906906
+      ],
+      "scaled_error": 4.063234542143999e-05,
+      "assignment_changes": 0
+    }
+  ],
+  "branch_releases": [
+    {
+      "event": "assignment_boundary_release",
+      "parameter_step": 1e-06,
+      "old_merit": 1.0605381504552618e-07,
+      "new_merit": 1.060481013167817e-07,
+      "old_metrics": {
+        "lambda_eff_smooth": 46.90553001471647,
+        "Lambda_smooth": 282.95129844267933,
+        "gap": 3.9149055753031234,
+        "gap_lower_bound": 3.9149054993031234,
+        "eigen_trace_bias_bound": 7.6e-08,
+        "error1": 0.01999998913489415,
+        "error2": 0.020003236309314776
+      },
+      "new_metrics": {
+        "lambda_eff_smooth": 46.90553120680866,
+        "Lambda_smooth": 282.9512988169434,
+        "gap": 3.9149057704407824,
+        "gap_lower_bound": 3.9149056944407823,
+        "eigen_trace_bias_bound": 7.6e-08,
+        "error1": 0.019999997405855795,
+        "error2": 0.020003236187902614
+      }
+    }
+  ],
+  "trace": [
+    {
+      "outer": 0,
+      "penalty": 1.0,
+      "metrics": {
+        "lambda_eff_smooth": 46.90553120680866,
+        "Lambda_smooth": 282.9512988169434,
+        "gap": 3.9149057704407824,
+        "gap_lower_bound": 3.9149056944407823,
+        "eigen_trace_bias_bound": 7.6e-08,
+        "error1": 0.019999997405855795,
+        "error2": 0.020003236187902614
+      },
+      "constraints": [
+        1.7405880774479243e-06,
+        0.0003256456228324378,
+        -0.000767444078242363,
+        -0.031879319134020534
+      ],
+      "lag": [
+        1.7405880774479243e-06,
+        0.0003256456228324378,
+        0.0,
+        0.0
+      ],
+      "calls": 31,
+      "seconds": 1.6398211669984448,
+      "message": "ABNORMAL: "
+    },
+    {
+      "outer": 1,
+      "penalty": 10.0,
+      "metrics": {
+        "lambda_eff_smooth": 46.905831478613784,
+        "Lambda_smooth": 282.95132075693533,
+        "gap": 3.9149559379497987,
+        "gap_lower_bound": 3.9149558619497986,
+        "eigen_trace_bias_bound": 7.6e-08,
+        "error1": 0.019999860527325365,
+        "error2": 0.020003194679960555
+      },
+      "constraints": [
+        -1.1947243726440071e-05,
+        0.00032149415299365103,
+        -0.005784194979874258,
+        -0.0018521386216718838
+      ],
+      "lag": [
+        0.0,
+        0.003540587152768948,
+        0.0,
+        0.0
+      ],
+      "calls": 80,
+      "seconds": 4.888442160998238,
+      "message": "ABNORMAL: "
+    },
+    {
+      "outer": 2,
+      "penalty": 100.0,
+      "metrics": {
+        "lambda_eff_smooth": 46.905831478613784,
+        "Lambda_smooth": 282.95132075693533,
+        "gap": 3.9149559379497987,
+        "gap_lower_bound": 3.9149558619497986,
+        "eigen_trace_bias_bound": 7.6e-08,
+        "error1": 0.019999860527325365,
+        "error2": 0.020003194679960555
+      },
+      "constraints": [
+        -1.1947243726440071e-05,
+        0.00032149415299365103,
+        -0.005784194979874258,
+        -0.0018521386216718838
+      ],
+      "lag": [
+        0.0,
+        0.03569000245213405,
+        0.0,
+        0.0
+      ],
+      "calls": 31,
+      "seconds": 6.234176508998644,
+      "message": "ABNORMAL: "
+    }
+  ],
+  "candidates": [
+    {
+      "name": "latest",
+      "path": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_goal_branch_release/latest.npz",
+      "sha256": "578e49c6760ee18075e686c867008701656ca0f412bce70f07b1a9885d21f8c6",
+      "official_numeric_metrics": {
+        "error_1": 0.019999860527325164,
+        "error_2": 0.020003194679960576,
+        "Lambda": 282.9512727865309,
+        "E_SOS": -22144.188305937947,
+        "E_gap": 3.914955937947525,
+        "lambda_eff": 46.90582747479046,
+        "gap_in_domain": true
+      },
+      "official_numeric_thresholds_pass": false,
+      "exact_angle_words_unchanged": true,
+      "full_circuit_verified": false
+    }
+  ],
+  "seconds": 7.92076611399898,
+  "evaluation_seconds": 5.847866081978282,
+  "calls": 157,
+  "peak_rss_mib": 1015.19140625
+}

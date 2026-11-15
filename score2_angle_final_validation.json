@@ -1,0 +1,30 @@
+{
+  "status": "EXACT_PASS",
+  "paired_twenty": {
+    "proof": "/workspace/scratch/3815fb5fae06/score2_angle_verified/feature_pair_twenty_final/proof.json",
+    "proof_sha256": "b2eaf164f141c2d32c89529b6e5c05b1b9be5b816db0e89b09aee89d291ce120",
+    "added_ccx_per_pass": 0,
+    "max_loader_qubits": 128
+  },
+  "baseline_min_differing_word_slots_by_transition": [
+    4,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2
+  ],
+  "arbitrary_one_word_endpoint_collision_excluded": true,
+  "builder_sha256": "796c900efa1c61b486f93d7dec830d66a2d5ec2bf9db79b99092f07caef665fb",
+  "feature_sha256": "fff8163708a22aef428b75d6bdf86edd3a0d38305dee930f805101fc52ad5d01",
+  "actual_zero_gain_package": "/workspace/scratch/3815fb5fae06/score2_angle_zero_gain_family/package.json"
+}

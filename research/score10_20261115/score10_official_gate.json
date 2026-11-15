@@ -1,0 +1,174 @@
+{
+  "status": "RESOURCE_GATE_REJECTED",
+  "baseline_score": 27.32784222155277,
+  "baseline_chemistry_cost": 294887961.3668603,
+  "baseline_archive_sha256": "4eceac6db61991bf238de0533110369ddf4ef298a6bc726bcd4af8471f9c1a48",
+  "review_sha256": "6d12b9696f58d77c4a68c1b0c99213aa2a68f2e58b8795a53fb4a7e098081fac",
+  "factorization_sha256": "0ec3ace86f4e7a80b8709ee9885a43354d55510a1cb0eaaccb49d76e8093cf7e",
+  "resources": {
+    "brot": 8,
+    "keep_bits": 10,
+    "angles_toffoli_per_pass": 5182.0,
+    "angles_toffoli": 10364,
+    "angles_qubits": 125,
+    "angles_selection_qubits": 11,
+    "angles_persistent_qubits": 32,
+    "angles_temporary_qubits": 82,
+    "outer_state_prep_toffoli": 317,
+    "inner_state_prep_toffoli": 4095,
+    "givens_rotations_toffoli": 2250,
+    "outer_state_prep_persistent_qubits": 40,
+    "outer_state_prep_temporary_qubits": 90,
+    "outer_state_prep_qubits": 130,
+    "inner_state_prep_persistent_qubits": 44,
+    "inner_state_prep_temporary_qubits": 303,
+    "inner_state_prep_qubits": 347,
+    "heuristic_persistent_qubits": 84,
+    "heuristic_temporary_qubits": 303,
+    "heuristic_toffoli": 6662,
+    "heuristic_qubits": 387,
+    "persistent_qubits": 116,
+    "temporary_qubits": 303,
+    "toffoli": 17026,
+    "qubits": 419,
+    "angles_within_cap": true
+  },
+  "predicted_chemistry_cost": 334648595.542505,
+  "predicted_portfolio_score": 26.199601583316536,
+  "cost_ratio": 1.134833019263814,
+  "improves_baseline": false,
+  "reaches28_by_resource_model": false,
+  "comparison_scope": "Identical decoded physics and unchanged other two task costs.",
+  "native_recovery": {
+    "required_addresses": 1220,
+    "shots_per_address": 1,
+    "seed": 2026111510,
+    "forward_and_reverse": true,
+    "baseline_and_candidate_recovered": true,
+    "decoded_vectors_bitwise_equal": true
+  },
+  "full_official_verifier_run": false,
+  "competition_submission_performed": false,
+  "members": [
+    {
+      "batch": 0,
+      "sha256": "54aa74f33145c09c7abe16808971b66d534f27cb3d90a3ea3e222546b952d9d0",
+      "toffoli": 290,
+      "qubits": 125
+    },
+    {
+      "batch": 1,
+      "sha256": "d6daaac26daa6b73dd59069d29e31a855873e6b94a577d12fbbf7d35ec3dd2a5",
+      "toffoli": 290,
+      "qubits": 125
+    },
+    {
+      "batch": 2,
+      "sha256": "7ac3e35494d49b7bf4e111864eb7639761f9d86a4f5ca2040cc97dd61c60fb4c",
+      "toffoli": 290,
+      "qubits": 125
+    },
+    {
+      "batch": 3,
+      "sha256": "f00bd41f379776bdcf185226946c1f6f4ec489fe5ed7bc93ead8f45b6c71d3db",
+      "toffoli": 290,
+      "qubits": 125
+    },
+    {
+      "batch": 4,
+      "sha256": "ef2567886008f11708dc3e3df069772f93fe1615bfd3d35e188134f3ae80c59d",
+      "toffoli": 279,
+      "qubits": 125
+    },
+    {
+      "batch": 5,
+      "sha256": "3d841b424297677b6cb189d5a5903ade044f0fa87b1244361e051a4b8bcaf17c",
+      "toffoli": 274,
+      "qubits": 125
+    },
+    {
+      "batch": 6,
+      "sha256": "5752846851e80b54e77885fb5bccdad57dfeeeb33c67e7bed97611895e00d86d",
+      "toffoli": 268,
+      "qubits": 125
+    },
+    {
+      "batch": 7,
+      "sha256": "f30f724ae422f88f379a4877a8cee21a96f455614bc6e5d3c2a28c3a1365fe92",
+      "toffoli": 268,
+      "qubits": 125
+    },
+    {
+      "batch": 8,
+      "sha256": "cacc74066d11745fd1a1c3c5d3a725719c56d9ab1816f17f179ce86b71937756",
+      "toffoli": 268,
+      "qubits": 125
+    },
+    {
+      "batch": 9,
+      "sha256": "ae1edb53cad11e801f590533db7e63e14a4009262068ecd9d70bf7c50e77a1cd",
+      "toffoli": 268,
+      "qubits": 125
+    },
+    {
+      "batch": 10,
+      "sha256": "ff219359532d97f8877f22d62291e9dce35c191c68dfdf23bf62824e8c338b91",
+      "toffoli": 268,
+      "qubits": 125
+    },
+    {
+      "batch": 11,
+      "sha256": "aa7b7883ae5d69cbf0d3544b6e9ddb6b7d01e70034d6be7d62bedf834b1a09fd",
+      "toffoli": 268,
+      "qubits": 125
+    },
+    {
+      "batch": 12,
+      "sha256": "bc6819a800088bba3b495ca18b8f6655e36659e8ee086335514e8ed450d9e7f9",
+      "toffoli": 268,
+      "qubits": 125
+    },
+    {
+      "batch": 13,
+      "sha256": "37579af32528e9f9c2a47ff1135ccc293b9233183c4fdc614e664794334ceb70",
+      "toffoli": 268,
+      "qubits": 125
+    },
+    {
+      "batch": 14,
+      "sha256": "7ad3dea18b42447c0a542b3bca9d96414e3997c72c8abfccb26c06e90fef90e0",
+      "toffoli": 268,
+      "qubits": 125
+    },
+    {
+      "batch": 15,
+      "sha256": "ead4df566e25798381f9beae3a565f0b65e736542069fe617d378dd25e720b42",
+      "toffoli": 263,
+      "qubits": 125
+    },
+    {
+      "batch": 16,
+      "sha256": "35b6256bcc989058d9fa83a30b515e98bdb38efb3f458be97a7b079821e039af",
+      "toffoli": 263,
+      "qubits": 125
+    },
+    {
+      "batch": 17,
+      "sha256": "3845d77a397bea2759aa037c49964d1d62d9fbb257d399ea3716d46f6a978bd7",
+      "toffoli": 263,
+      "qubits": 125
+    },
+    {
+      "batch": 18,
+      "sha256": "c8f7c8eb5097e477e329b3cefa3a378d77cee59f467d3f739ebd36e09a6b20ac",
+      "toffoli": 268,
+      "qubits": 125
+    }
+  ],
+  "official_source_sha256": {
+    "verify.py": "ca84ca08e6e9280922cda3b539d4776ae58990b2b03b5619a53d65de67df9d2b",
+    "scoreinfra/costs_prepare.py": "ec44b99b1fbe6b4081d54e0c84a34bb2de893beabbb6d05efaad439d5061b04a",
+    "scoreinfra/circuits.py": "98601c25aa5f57ff7024c545f8773badc43ad2e6b586e6400bc2158c2bd01b86"
+  },
+  "seconds": 13.371485657000449
+}

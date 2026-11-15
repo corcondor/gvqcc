@@ -1,0 +1,128 @@
+{
+  "status": "INDEPENDENT_KRAUS_AND_FULL_BINARY_BINDING_PASS",
+  "source_sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02",
+  "candidate_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "unconditional_ccx_reduction": 2,
+  "added_conditioned_CZ": 2,
+  "quantum_width": 889,
+  "classical_bits": 208169,
+  "hmr_count_unchanged": true,
+  "independent_kraus_entries": 64,
+  "exact_scope": "Kraus equality for each measurement outcome on arbitrary inputs and entangled references. All middle instruments act trivially on the measured target; fresh bits are outside the entire old classical address range. Original outcome bits are copied only at original HMR times.",
+  "blocks": [
+    {
+      "source": [
+        17119219,
+        17126973
+      ],
+      "candidate": [
+        17119219,
+        17126975
+      ],
+      "target": 864,
+      "fresh_measurement_bit": 208167,
+      "original_measurement_bit": 208112,
+      "intermediate_target_references": 0,
+      "intermediate_original_bit_reads": 51,
+      "intermediate_original_bit_writes": 2,
+      "old_bit_publication_timing_preserved": true,
+      "middle_all_columns_byte_equal": true,
+      "before_sha256": "888be67ce3c73535d26c42fd1df8bd2b9556e48733c11e0b29859ad8f2771042",
+      "independent_after_sha256": "dad6df8fc64be946a40790ea268602bae8fc502936bb1f68ede61154c0acdc40",
+      "actual_candidate_matches_independent_rewrite": true
+    },
+    {
+      "source": [
+        54203657,
+        54213318
+      ],
+      "candidate": [
+        54203659,
+        54213322
+      ],
+      "target": 875,
+      "fresh_measurement_bit": 208168,
+      "original_measurement_bit": 208099,
+      "intermediate_target_references": 0,
+      "intermediate_original_bit_reads": 167,
+      "intermediate_original_bit_writes": 224,
+      "old_bit_publication_timing_preserved": true,
+      "middle_all_columns_byte_equal": true,
+      "before_sha256": "3bcd7cf4c20d01f5706d3bbb77bf91e458ad8b2d6c2249dadbcd1154057fafd6",
+      "independent_after_sha256": "be3fe6e9404b64c1e15a1757a1e2f2eaa6edade4c6d99eae30cbe4f32b8c41bc",
+      "actual_candidate_matches_independent_rewrite": true
+    }
+  ],
+  "unchanged_ranges": [
+    {
+      "source": [
+        0,
+        17119219
+      ],
+      "candidate": [
+        0,
+        17119219
+      ],
+      "all_ten_columns_byte_equal": true
+    },
+    {
+      "source": [
+        17126973,
+        54203657
+      ],
+      "candidate": [
+        17126975,
+        54203659
+      ],
+      "all_ten_columns_byte_equal": true
+    },
+    {
+      "source": [
+        54213318,
+        58868730
+      ],
+      "candidate": [
+        54213322,
+        58868734
+      ],
+      "all_ten_columns_byte_equal": true
+    }
+  ],
+  "middle_operation_families": {
+    "X": 12,
+    "CX": 13277,
+    "CCX": 250,
+    "HMR": 144,
+    "Z_IF": 276,
+    "SWAP": 413,
+    "CZ_IF": 1864,
+    "BIT_STORE0": 61,
+    "BIT_INVERT_IF": 917,
+    "PUSH_CONDITION": 61,
+    "POP_CONDITION": 61,
+    "BIT_STORE1_IF": 6,
+    "CX_IF": 60,
+    "R": 4,
+    "CZ": 2,
+    "Z": 3
+  },
+  "all_register_bytes_identical": true,
+  "all_other_operation_columns_identical": true,
+  "header_changes_only_expected_counts": true,
+  "candidate_read_only": true,
+  "new_native_or_official_run": false,
+  "root_native_minimal_receipt": {
+    "status": "PASS",
+    "shots": 256,
+    "quantum_errors": 0,
+    "classical_errors": 0,
+    "phase_errors": 0,
+    "scope": "Native minimal instrument, with one HMR in each schedule. Full-interval random outcomes are not falsely paired by an unchanged RNG seed after measurement reordering."
+  },
+  "root_certificate_sha256": "3cc4ec8f3652e425ce7f67b6bf2f247af0ef1ee91574272e39be5af04af29fb1",
+  "root_patch_sha256": "c14c603002ea9587af84e17fd01e12b3c8a8f6ef852045875b0495ac6064c211",
+  "review_script_sha256": "80d5337f0ef66596985e83dfd59681da6a787262f31359e0b7e3b2adfd995de3",
+  "elapsed_seconds": 15.042219647999445,
+  "public_score": null,
+  "submission_performed": false
+}

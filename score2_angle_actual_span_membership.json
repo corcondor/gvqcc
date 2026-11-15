@@ -1,0 +1,30 @@
+{
+  "status": "EXACT_MEMBERSHIP_RESULTS",
+  "rows": [
+    {
+      "batch": 14,
+      "address": 322,
+      "feature_rank": 91,
+      "products": 188,
+      "span_rank": 279,
+      "single_point_free": false
+    },
+    {
+      "batch": 4,
+      "address": 38,
+      "feature_rank": 91,
+      "products": 189,
+      "span_rank": 280,
+      "single_point_free": false
+    },
+    {
+      "batch": 5,
+      "address": 38,
+      "feature_rank": 91,
+      "products": 189,
+      "span_rank": 280,
+      "single_point_free": false
+    }
+  ],
+  "scope": "valid1220, prefix features plus existing output products, source4033"
+}

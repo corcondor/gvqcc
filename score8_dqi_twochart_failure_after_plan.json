@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-11-15T02:07:10.302742+00:00",
+  "purpose": "Replay only the two already observed default failed batches in the unchanged candidate, to confirm matching failed shots against e4.",
+  "independent_seed_label": "GVQCC independent paired reliability audit 2026-11-15; one non-adaptive 16384-shot sample",
+  "verifier": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dqi/verify_submission_dqi.py",
+  "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+  "variants": {
+    "chart_candidate": {
+      "path": "/workspace/scratch/3815fb5fae06/score8_dqi_twochart/dqi.kmb",
+      "sha256": "1d66248da1fc23e3a41817fe8a2b39cdbba957ba0aa908fe2aacea7e2b36e9e9"
+    }
+  },
+  "groups": [
+    {
+      "name": "default_failure_interval_100_124",
+      "seed_sha256": "1d66248da1fc23e3a41817fe8a2b39cdbba957ba0aa908fe2aacea7e2b36e9e9",
+      "batches": [
+        110
+      ]
+    },
+    {
+      "name": "default_failure_interval_275_299",
+      "seed_sha256": "1d66248da1fc23e3a41817fe8a2b39cdbba957ba0aa908fe2aacea7e2b36e9e9",
+      "batches": [
+        280
+      ]
+    }
+  ],
+  "scope": "Only already observed failed batches, same original input/simulator seeds, same unchanged candidate bytes. No resampling or official score replacement.",
+  "comparison_baseline_result": "score8_dqi_twochart_paired_before.json"
+}

@@ -1,0 +1,162 @@
+{
+  "created_utc": "2026-11-15T07:04:09.751602+00:00",
+  "status": "PASS",
+  "provenance": {
+    "owner": "maoxin123",
+    "license": "CC0",
+    "dataset_url": "https://www.kaggle.com/datasets/maoxin123/qcc-chemistry-4030-toffoli-loaders",
+    "download_url": "https://www.kaggle.com/api/v1/datasets/download/maoxin123/qcc-chemistry-4030-toffoli-loaders",
+    "version": 1,
+    "notebook_script_version_id": 369706978
+  },
+  "archive": {
+    "path": "/workspace/scratch/3815fb5fae06/score8_v27_public_chem.zip",
+    "bytes": 1710586,
+    "sha256": "fb872dcacdd7ed87e0db373a7e5ba89d21517ba730c9a32dfdab7391007a91de"
+  },
+  "members": [
+    {
+      "name": "angle_k_0.kmb",
+      "bytes": 410442,
+      "sha256": "71735b23037e8a64d16e39b3347d440b36bdf8813613ec70c36a85bfd362d7c2"
+    },
+    {
+      "name": "angle_k_1.kmb",
+      "bytes": 420614,
+      "sha256": "1a43bbc368785aa5fc5210f6e4d5d2f9ddf114f7f3f6d3e3964f9478056bb4be"
+    },
+    {
+      "name": "angle_k_10.kmb",
+      "bytes": 347748,
+      "sha256": "5fea9f297afea7ffe74054ed1b44f92031a5f6e319a7f1c8741f86c05b234834"
+    },
+    {
+      "name": "angle_k_11.kmb",
+      "bytes": 350356,
+      "sha256": "dc425931348cc4950931c400ab19322e01495b7cf3e2d02bafabcaaf9559d28a"
+    },
+    {
+      "name": "angle_k_12.kmb",
+      "bytes": 348617,
+      "sha256": "64bbada35a382068b8dfbca0df0d781df8704aa367882cc426b76e2767f3d13f"
+    },
+    {
+      "name": "angle_k_13.kmb",
+      "bytes": 344270,
+      "sha256": "958789349187a70ab3baf426655aacd2360113f71ab9a7b49d6624bd0e20bcd6"
+    },
+    {
+      "name": "angle_k_14.kmb",
+      "bytes": 352571,
+      "sha256": "f35c803dece96ceb0ba24040e7c232a73170a3692c4f5212bdeadcbfcd154212"
+    },
+    {
+      "name": "angle_k_2.kmb",
+      "bytes": 418801,
+      "sha256": "0970b392fb4bed09d6026b77b4b31510573123cb76955030115507bffde4a6bb"
+    },
+    {
+      "name": "angle_k_3.kmb",
+      "bytes": 421008,
+      "sha256": "f9d313326dd07028bf6ef672bb47013f01e9311695d66b8d1ee2546d7dbacd7f"
+    },
+    {
+      "name": "angle_k_4.kmb",
+      "bytes": 347635,
+      "sha256": "0ab29f06e44ef247035c971dcca30e27616bdfdc2a102fbb58c3882bbfbfd1e0"
+    },
+    {
+      "name": "angle_k_5.kmb",
+      "bytes": 351040,
+      "sha256": "b346df2edafbaf4d95192a974db27abf71b770f51ee61dae2eb352f422cefdf4"
+    },
+    {
+      "name": "angle_k_6.kmb",
+      "bytes": 347703,
+      "sha256": "749d9edb817c59f8a3507400002e75c2d8db55932a6933db5c5f6f59a2679f7b"
+    },
+    {
+      "name": "angle_k_7.kmb",
+      "bytes": 350049,
+      "sha256": "0ad7d3775a36d7c14e3d4dfa4a144267e4e9759521fae4022715be25c309638e"
+    },
+    {
+      "name": "angle_k_8.kmb",
+      "bytes": 346523,
+      "sha256": "46e0f8d69e532438d476aa8244f257a649fdc4cffe9d41f9921758f4dc18fa83"
+    },
+    {
+      "name": "angle_k_9.kmb",
+      "bytes": 354023,
+      "sha256": "0b995537e919351a705babb6294dfe3525ef52a3c40b08122d842f45df8182da"
+    },
+    {
+      "name": "submission.npz",
+      "bytes": 1847692,
+      "sha256": "4df35abdeec320a3f1c10f6f533e73550e50bb45d95e666deaa01062810a3559"
+    }
+  ],
+  "destination": "/workspace/scratch/3815fb5fae06/score8_v27_chemistry",
+  "verifier_sha256": "ca84ca08e6e9280922cda3b539d4776ae58990b2b03b5619a53d65de67df9d2b",
+  "importer_sha256": "e28056935707479da09a9a346c4377f4b5544b04a9a4fe5549042af1ccacf4cf",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dfthcsos/verify.py",
+    "/workspace/scratch/3815fb5fae06/score8_v27_chemistry"
+  ],
+  "returncode": 0,
+  "official_result": {
+    "status": "PASS",
+    "score": 294888332.1042627,
+    "lambda_eff": 46.909726478631555,
+    "toffoli_count": 14722.0,
+    "num_qubits": 427,
+    "brot": 8,
+    "batch_size": 5,
+    "num_circuits": 15,
+    "reaction_depth": 167,
+    "num_ops": 609579,
+    "verified_shots": 78080,
+    "submission_sha256": "46adefb05e8668bf7bcc5f239c43b6f8e84681a80daccba512d833d2fc5017a1",
+    "resources": {
+      "brot": 8,
+      "keep_bits": 10,
+      "angles_toffoli_per_pass": 4030.0,
+      "angles_toffoli": 8060.0,
+      "angles_qubits": 128,
+      "angles_selection_qubits": 11,
+      "angles_persistent_qubits": 40,
+      "angles_temporary_qubits": 77,
+      "outer_state_prep_toffoli": 317,
+      "inner_state_prep_toffoli": 4095,
+      "givens_rotations_toffoli": 2250,
+      "outer_state_prep_persistent_qubits": 40,
+      "outer_state_prep_temporary_qubits": 90,
+      "outer_state_prep_qubits": 130,
+      "inner_state_prep_persistent_qubits": 44,
+      "inner_state_prep_temporary_qubits": 303,
+      "inner_state_prep_qubits": 347,
+      "heuristic_persistent_qubits": 84,
+      "heuristic_temporary_qubits": 303,
+      "heuristic_toffoli": 6662,
+      "heuristic_qubits": 387,
+      "persistent_qubits": 124,
+      "temporary_qubits": 303,
+      "toffoli": 14722.0,
+      "qubits": 427,
+      "angles_within_cap": true
+    },
+    "metrics": {
+      "error_1": 0.019999920005711252,
+      "error_2": 0.019999988052409632,
+      "Lambda": 283.00211958989314,
+      "E_SOS": -22144.188248001243,
+      "E_gap": 3.914898001243273,
+      "lambda_eff": 46.909726478631555,
+      "gap_in_domain": true
+    }
+  },
+  "submission_performed": false,
+  "public_score": null,
+  "seconds": 25.849114999997255
+}

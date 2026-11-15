@@ -1,0 +1,40 @@
+{
+  "baseline_scorecard_sha256": "c5c9f94b95862b8871f4fb44539b01bfdcab6a6267817e7856d1d14f1fca0bc7",
+  "local_score": 27.324751494620457,
+  "target": 28.0,
+  "required_cost_product_factor": 0.9293826673819658,
+  "required_product_reduction_percent": 7.061733261803416,
+  "equal_per_task_cost_factor": 0.9758839819507307,
+  "single_task_cost_targets": {
+    "dqi": 334305724147.73956,
+    "invsqrt": 73117.83871770013,
+    "dfthcsos": 274156769.42015374
+  },
+  "conditional_targets": {
+    "dqi_Q_at_fixed_R_and_T": 857.0359613621721,
+    "chemistry_lambda_at_fixed_T_and_Q": 43.59406057638365,
+    "chemistry_total_T_at_fixed_lambda_and_Q": 13687.947925201594,
+    "invsqrt_Q_at_fixed_mean_T_and_rotation_price": 42.75160269957043
+  },
+  "chemistry_universal_normalization_floor": {
+    "constant_c": -559.1324731485038,
+    "gap_floor": 3.914898,
+    "lambda_eff_strictly_greater_than": 46.78617959252637,
+    "lambda_only_score_ceiling_with_other_costs_fixed": 27.348149454261073,
+    "lambda_only_cannot_reach_28": true,
+    "proof": [
+      "Let P be the sum of positive eigenvalues of h1_prime and N the absolute sum of its negative eigenvalues.",
+      "Let d be the official generator offsets (H2_I - sum_b W_rbc in NPZ coordinates).",
+      "Triangle inequality gives lambda_h2 >= ||d||_2^2 / 4, independently of the factorization and angle table.",
+      "E_gap = c + 2N + ||d||_2^2 / 2 and Lambda = P+N+lambda_h2.",
+      "Therefore 2Lambda-E_gap >= 2P-c >= -c > 0.",
+      "lambda_eff^2 = E_gap (2Lambda-E_gap) >= -c E_gap > -c * gap_floor."
+    ],
+    "reference_py_sha256": "54ef543f91a5ebf75209a7390d2112e664e804ca6114ec710321552276e178ec",
+    "dfthc_math_py_sha256": "f95361cc4af30959afff905b674427af1a2645df0a948b7e2374bfc0f3e2696d",
+    "fixed_shifts_sha256": "7b7facf63fe35a9d9d3d00787ffdb700c863fa845fe4724d7f7c54778151cd87",
+    "forum_lead": "https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753633",
+    "attribution": "Lynn Langit's public bound; rederived and evaluated independently against the local official code."
+  },
+  "submission_performed": false
+}

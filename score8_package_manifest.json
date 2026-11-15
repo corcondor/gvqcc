@@ -1,0 +1,119 @@
+{
+  "created_utc": "2026-11-15T07:14:41.481317+00:00",
+  "archive": {
+    "path": "/workspace/scratch/3815fb5fae06/score8_delivery/score8_local_candidate.zip",
+    "bytes": 63604196,
+    "sha256": "4eceac6db61991bf238de0533110369ddf4ef298a6bc726bcd4af8471f9c1a48"
+  },
+  "members": [
+    {
+      "name": "dfthcsos/angle_k_0.kmb",
+      "sha256": "71735b23037e8a64d16e39b3347d440b36bdf8813613ec70c36a85bfd362d7c2",
+      "bytes": 410442
+    },
+    {
+      "name": "dfthcsos/angle_k_1.kmb",
+      "sha256": "1a43bbc368785aa5fc5210f6e4d5d2f9ddf114f7f3f6d3e3964f9478056bb4be",
+      "bytes": 420614
+    },
+    {
+      "name": "dfthcsos/angle_k_10.kmb",
+      "sha256": "5fea9f297afea7ffe74054ed1b44f92031a5f6e319a7f1c8741f86c05b234834",
+      "bytes": 347748
+    },
+    {
+      "name": "dfthcsos/angle_k_11.kmb",
+      "sha256": "dc425931348cc4950931c400ab19322e01495b7cf3e2d02bafabcaaf9559d28a",
+      "bytes": 350356
+    },
+    {
+      "name": "dfthcsos/angle_k_12.kmb",
+      "sha256": "64bbada35a382068b8dfbca0df0d781df8704aa367882cc426b76e2767f3d13f",
+      "bytes": 348617
+    },
+    {
+      "name": "dfthcsos/angle_k_13.kmb",
+      "sha256": "958789349187a70ab3baf426655aacd2360113f71ab9a7b49d6624bd0e20bcd6",
+      "bytes": 344270
+    },
+    {
+      "name": "dfthcsos/angle_k_14.kmb",
+      "sha256": "f35c803dece96ceb0ba24040e7c232a73170a3692c4f5212bdeadcbfcd154212",
+      "bytes": 352571
+    },
+    {
+      "name": "dfthcsos/angle_k_2.kmb",
+      "sha256": "0970b392fb4bed09d6026b77b4b31510573123cb76955030115507bffde4a6bb",
+      "bytes": 418801
+    },
+    {
+      "name": "dfthcsos/angle_k_3.kmb",
+      "sha256": "f9d313326dd07028bf6ef672bb47013f01e9311695d66b8d1ee2546d7dbacd7f",
+      "bytes": 421008
+    },
+    {
+      "name": "dfthcsos/angle_k_4.kmb",
+      "sha256": "0ab29f06e44ef247035c971dcca30e27616bdfdc2a102fbb58c3882bbfbfd1e0",
+      "bytes": 347635
+    },
+    {
+      "name": "dfthcsos/angle_k_5.kmb",
+      "sha256": "b346df2edafbaf4d95192a974db27abf71b770f51ee61dae2eb352f422cefdf4",
+      "bytes": 351040
+    },
+    {
+      "name": "dfthcsos/angle_k_6.kmb",
+      "sha256": "749d9edb817c59f8a3507400002e75c2d8db55932a6933db5c5f6f59a2679f7b",
+      "bytes": 347703
+    },
+    {
+      "name": "dfthcsos/angle_k_7.kmb",
+      "sha256": "0ad7d3775a36d7c14e3d4dfa4a144267e4e9759521fae4022715be25c309638e",
+      "bytes": 350049
+    },
+    {
+      "name": "dfthcsos/angle_k_8.kmb",
+      "sha256": "46e0f8d69e532438d476aa8244f257a649fdc4cffe9d41f9921758f4dc18fa83",
+      "bytes": 346523
+    },
+    {
+      "name": "dfthcsos/angle_k_9.kmb",
+      "sha256": "0b995537e919351a705babb6294dfe3525ef52a3c40b08122d842f45df8182da",
+      "bytes": 354023
+    },
+    {
+      "name": "dfthcsos/submission.npz",
+      "sha256": "da30619d4a668d663adc9f7f0462cfd52ba8684cc5523980f5119dc3ef90302e",
+      "bytes": 1136087
+    },
+    {
+      "name": "dqi.kmb",
+      "sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+      "bytes": 522343175
+    },
+    {
+      "name": "invsqrt.kmb",
+      "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+      "bytes": 198626
+    }
+  ],
+  "crc_pass": true,
+  "all_member_hashes_pass": true,
+  "base_zip_sha256": "938e08143c113817ca1c3749a361911a0f60b2db745735d4f8f4b1fc0a1e2b71",
+  "builder_sha256": "e7e65398833f108cc2b9b4e497449761ec2912a609537bc005bcf35b238cb80c",
+  "verification_receipts": {
+    "dqi": {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score5_dqi_final_full_verification.json",
+      "sha256": "3b59268e86faedf7026ef4b53b2428675dd7bb3f031cee61e5eb5dfb236df043"
+    },
+    "invsqrt": {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_full_verification.json",
+      "sha256": "546961b969cf58f64093b4a98d9a1a603044c16118572eaa0ee76f78eb1c0b53"
+    },
+    "dfthcsos": {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score8_chem_v27_full_verification.json",
+      "sha256": "b03e22633a8053afb9c1fe631a859048e2924294c86fca69fccee8dc1be6fcd7"
+    }
+  },
+  "submission_performed": false
+}

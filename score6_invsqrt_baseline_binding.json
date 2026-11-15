@@ -1,0 +1,10 @@
+{
+  "status": "PASS_BYTE_IDENTICAL",
+  "accepted_kmb_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "source_kmx_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "recompiled_kmb_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "source_path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache.kmx",
+  "incumbent_copy": "/workspace/scratch/3815fb5fae06/score6_invsqrt/baseline.kmb",
+  "Q": 46,
+  "static_toffoli": 1550
+}

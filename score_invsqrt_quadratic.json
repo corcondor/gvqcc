@@ -1,0 +1,82 @@
+{
+  "status": "COMPLETE",
+  "input_sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6",
+  "valid_inputs": 3133452,
+  "queries": [
+    {
+      "decision": "NONMEMBER",
+      "refinements": 3,
+      "feature_rank": 288,
+      "line": 23807,
+      "before": "CCZ q22 q2 q3",
+      "condition_depth": 1
+    },
+    {
+      "decision": "NONMEMBER",
+      "refinements": 3,
+      "feature_rank": 288,
+      "line": 23814,
+      "before": "CCZ q25 q4 q5",
+      "condition_depth": 1
+    },
+    {
+      "decision": "NONMEMBER",
+      "refinements": 3,
+      "feature_rank": 288,
+      "line": 23821,
+      "before": "CCZ q9 q6 q30",
+      "condition_depth": 1
+    },
+    {
+      "decision": "NONMEMBER",
+      "refinements": 6,
+      "feature_rank": 291,
+      "line": 23828,
+      "before": "CCZ q29 q36 q7",
+      "condition_depth": 1
+    },
+    {
+      "decision": "NONMEMBER",
+      "refinements": 4,
+      "feature_rank": 289,
+      "line": 23835,
+      "before": "CCZ q35 q40 q43",
+      "condition_depth": 1
+    },
+    {
+      "decision": "NONMEMBER",
+      "refinements": 0,
+      "feature_rank": 285,
+      "line": 23842,
+      "before": "CCZ q24 q12 q39",
+      "condition_depth": 1
+    },
+    {
+      "decision": "NONMEMBER",
+      "refinements": 0,
+      "feature_rank": 270,
+      "line": 23849,
+      "before": "CCZ q28 q14 q15",
+      "condition_depth": 1
+    },
+    {
+      "decision": "NONMEMBER",
+      "refinements": 0,
+      "feature_rank": 290,
+      "line": 23866,
+      "before": "CCZ q29 q45 q8",
+      "condition_depth": 1
+    },
+    {
+      "decision": "NONMEMBER",
+      "refinements": 0,
+      "feature_rank": 253,
+      "line": 23879,
+      "before": "CCZ q42 q34 q10",
+      "condition_depth": 2
+    }
+  ],
+  "static_CCZ_removed": 0,
+  "all_final_data_restored": true,
+  "elapsed_seconds": 3.1211143620002986
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "B": 143,
+    "num_vectors": 1220,
+    "T": 14728,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 317,
+    "inner_toffoli": 4095,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.0,
+    "lambda_break_even_user_log": 46.905894137,
+    "lambda_break_even_reproduced": 46.90658950862355,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  {
+    "B": 142,
+    "num_vectors": 1212,
+    "T": 14726,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 317,
+    "inner_toffoli": 4093,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.013579576317224173,
+    "lambda_break_even_user_log": 46.91226462377672,
+    "lambda_break_even_reproduced": 46.91296008984161,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  {
+    "B": 141,
+    "num_vectors": 1204,
+    "T": 14724,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 317,
+    "inner_toffoli": 4091,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.027159152634437245,
+    "lambda_break_even_user_log": 46.918636841193695,
+    "lambda_break_even_reproduced": 46.91933240172559,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  {
+    "B": 140,
+    "num_vectors": 1196,
+    "T": 14722,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 317,
+    "inner_toffoli": 4089,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.04073872895166142,
+    "lambda_break_even_user_log": 46.925010789956254,
+    "lambda_break_even_reproduced": 46.92570644498082,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  {
+    "B": 139,
+    "num_vectors": 1188,
+    "T": 14720,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 317,
+    "inner_toffoli": 4087,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.05431830526887449,
+    "lambda_break_even_user_log": 46.93138647077011,
+    "lambda_break_even_reproduced": 46.93208222031301,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  {
+    "B": 138,
+    "num_vectors": 1180,
+    "T": 14718,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 317,
+    "inner_toffoli": 4085,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.06789788158609866,
+    "lambda_break_even_user_log": 46.93776388434135,
+    "lambda_break_even_reproduced": 46.93845972842829,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  {
+    "B": 136,
+    "num_vectors": 1164,
+    "T": 14714,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 317,
+    "inner_toffoli": 4081,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.09505703422053591,
+    "lambda_break_even_user_log": 46.9505239125823,
+    "lambda_break_even_reproduced": 46.95121994583442,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  {
+    "B": 132,
+    "num_vectors": 1132,
+    "T": 14706,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 317,
+    "inner_toffoli": 4073,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.1493753394894104,
+    "lambda_break_even_user_log": 46.9760647932637,
+    "lambda_break_even_reproduced": 46.97676120515487,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  {
+    "B": 129,
+    "num_vectors": 1108,
+    "T": 14700,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 317,
+    "inner_toffoli": 4067,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.1901140684410607,
+    "lambda_break_even_user_log": 46.99523869726095,
+    "lambda_break_even_reproduced": 46.99593539340188,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  {
+    "B": 128,
+    "num_vectors": 1100,
+    "T": 13561,
+    "Q": 698,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 317,
+    "inner_toffoli": 2928,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 43,
+      "temporary": 575,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 33,
+      "temporary_for_qroam": 569
+    },
+    "same_lambda_cost_reduction_percent": -50.513511519424206,
+    "lambda_break_even_user_log": 31.163909248736555,
+    "lambda_break_even_reproduced": 31.16437124820526,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "status": "FROZEN_OBSERVED_PROGRESS_PROCESS_EXIT137",
+  "official_verifier_returned": false,
+  "process_exit_code": 137,
+  "termination_cause": "Unknown; memory increase during final aggregation suspected, not confirmed",
+  "circuit_sha256": "1d66248da1fc23e3a41817fe8a2b39cdbba957ba0aa908fe2aacea7e2b36e9e9",
+  "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+  "runner_sha256": "0c3c97abececaa1ed0ac7e62fa0995cf7f24d514ca57baf1dafc03cb3282f6b7",
+  "num_qubits": 889,
+  "seed": null,
+  "salt": "",
+  "log2_delta": -128,
+  "batch_size": 256,
+  "max_workers": 1,
+  "terminal_completed_batch_callback": {
+    "event": "progress",
+    "batches": 400,
+    "total_batches": 400,
+    "shots": 102400,
+    "value_errors": 2,
+    "phase_errors": 0,
+    "mean_toffolis": 382062.92126953125,
+    "seconds": 392.5428868300005
+  },
+  "observed_failure_intervals": [
+    {
+      "last_zero_failure_batch_count": 100,
+      "first_one_failure_batch_count": 125,
+      "zero_based_batch_interval": [
+        100,
+        125
+      ]
+    },
+    {
+      "last_one_failure_batch_count": 275,
+      "first_two_failure_batch_count": 300,
+      "zero_based_batch_interval": [
+        275,
+        300
+      ]
+    }
+  ],
+  "provenance": "Copied from the completed callbacks emitted by verify_dqi_candidate.py and the tool process result. No final official result JSON was written."
+}

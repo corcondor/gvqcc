@@ -1,0 +1,228 @@
+{
+  "status": "PASS",
+  "source_sha256": "3430d19fb40e57ff24c61eeecf9a58ad0b2b6f51aef3071c59d3edf18b241cd3",
+  "scanner_binary_sha256": "af24da8c471628dd2fa073f30ad67bc7c760e5ba09e1d14e03e0b870686e5951",
+  "scanner_source_sha256": "8d0d2c17588472cefb95f0af874ffbda7c6841f4580efd12bf36d98c054fb776",
+  "exact_kraus_entries": 64,
+  "dirty_counterexamples": 4,
+  "fixtures": [
+    {
+      "name": "whole_cubic_literal",
+      "input_sha256": "b16d34521b40a903db1c8c8eb1aef8bf3f6893991b1d4b9f2d73356e3b2246d8",
+      "expected_kind": "literal",
+      "result": {
+        "schema": "score7-whole-phase-resub-v1",
+        "status": "DISCOVERY_ONLY",
+        "panel_bits": 2048,
+        "span_enabled": true,
+        "candidates": [
+          {
+            "index": 6,
+            "kind": "literal",
+            "phase_qubits": [
+              0,
+              1,
+              2
+            ],
+            "condition": -1,
+            "depth": 0,
+            "constant": 0,
+            "wires": [
+              4
+            ],
+            "negated": []
+          }
+        ],
+        "num_ops": 7,
+        "qubits": 5,
+        "ccx": 2,
+        "cswap": 0,
+        "ccz": 1,
+        "eligible_phases": 1,
+        "sparse_phase_skips": 0,
+        "span_queries": 0,
+        "affine_hits": 1,
+        "quadratic_hits": 0,
+        "candidate_count": 1,
+        "seconds": 0.000150239
+      }
+    },
+    {
+      "name": "whole_cubic_xor",
+      "input_sha256": "5c06cf29b54fbda7171d79393b4b786603a6aa1b8366ad037351ba5535649979",
+      "expected_kind": "affine",
+      "result": {
+        "schema": "score7-whole-phase-resub-v1",
+        "status": "DISCOVERY_ONLY",
+        "panel_bits": 2048,
+        "span_enabled": true,
+        "candidates": [
+          {
+            "index": 7,
+            "kind": "affine",
+            "phase_qubits": [
+              0,
+              1,
+              2
+            ],
+            "condition": -1,
+            "depth": 0,
+            "constant": 0,
+            "wires": [
+              4,
+              5
+            ],
+            "negated": []
+          }
+        ],
+        "num_ops": 8,
+        "qubits": 6,
+        "ccx": 2,
+        "cswap": 0,
+        "ccz": 1,
+        "eligible_phases": 1,
+        "sparse_phase_skips": 0,
+        "span_queries": 1,
+        "affine_hits": 1,
+        "quadratic_hits": 0,
+        "candidate_count": 1,
+        "seconds": 0.00111052
+      }
+    },
+    {
+      "name": "quadratic",
+      "input_sha256": "5b161dc12f774401bc8efde9664507c3ded1d9640c2c8960c26d60359b88accf",
+      "expected_kind": "quadratic",
+      "result": {
+        "schema": "score7-whole-phase-resub-v1",
+        "status": "DISCOVERY_ONLY",
+        "panel_bits": 2048,
+        "span_enabled": true,
+        "candidates": [
+          {
+            "index": 2,
+            "kind": "quadratic",
+            "phase_qubits": [
+              0,
+              1,
+              2
+            ],
+            "condition": -1,
+            "depth": 0,
+            "constant": 0,
+            "wires": [
+              2,
+              3
+            ],
+            "negated": [
+              0,
+              0
+            ]
+          }
+        ],
+        "num_ops": 3,
+        "qubits": 4,
+        "ccx": 1,
+        "cswap": 0,
+        "ccz": 1,
+        "eligible_phases": 1,
+        "sparse_phase_skips": 0,
+        "span_queries": 1,
+        "affine_hits": 0,
+        "quadratic_hits": 1,
+        "candidate_count": 1,
+        "seconds": 0.0009716
+      }
+    },
+    {
+      "name": "dirty_negative",
+      "input_sha256": "89d1658b7864e3fd9f813a0e9de9ebfb53b0aae73b9e0eca80c31943003e4916",
+      "expected_kind": null,
+      "result": {
+        "schema": "score7-whole-phase-resub-v1",
+        "status": "DISCOVERY_ONLY",
+        "panel_bits": 2048,
+        "span_enabled": true,
+        "candidates": [],
+        "num_ops": 2,
+        "qubits": 4,
+        "ccx": 1,
+        "cswap": 0,
+        "ccz": 1,
+        "eligible_phases": 1,
+        "sparse_phase_skips": 0,
+        "span_queries": 1,
+        "affine_hits": 0,
+        "quadratic_hits": 0,
+        "candidate_count": 0,
+        "seconds": 0.000606597
+      }
+    },
+    {
+      "name": "branch_literal",
+      "input_sha256": "c731970bf6a11cd73394bf61563ae08f4a09ce9e6423d6ab3011e36bdb2cbc19",
+      "expected_kind": "literal",
+      "result": {
+        "schema": "score7-whole-phase-resub-v1",
+        "status": "DISCOVERY_ONLY",
+        "panel_bits": 2048,
+        "span_enabled": true,
+        "candidates": [
+          {
+            "index": 7,
+            "kind": "literal",
+            "phase_qubits": [
+              0,
+              1,
+              2
+            ],
+            "condition": -1,
+            "depth": 1,
+            "constant": 0,
+            "wires": [
+              4
+            ],
+            "negated": []
+          }
+        ],
+        "num_ops": 9,
+        "qubits": 5,
+        "ccx": 2,
+        "cswap": 0,
+        "ccz": 1,
+        "eligible_phases": 1,
+        "sparse_phase_skips": 0,
+        "span_queries": 0,
+        "affine_hits": 1,
+        "quadratic_hits": 0,
+        "candidate_count": 1,
+        "seconds": 0.000190414
+      }
+    },
+    {
+      "name": "conditional_write_negative",
+      "input_sha256": "c1664b95e7ec4d5771323672514832720733de06b5d826106fcd26ef0a6ca8da",
+      "expected_kind": null,
+      "result": {
+        "schema": "score7-whole-phase-resub-v1",
+        "status": "DISCOVERY_ONLY",
+        "panel_bits": 2048,
+        "span_enabled": true,
+        "candidates": [],
+        "num_ops": 3,
+        "qubits": 4,
+        "ccx": 1,
+        "cswap": 0,
+        "ccz": 1,
+        "eligible_phases": 1,
+        "sparse_phase_skips": 0,
+        "span_queries": 1,
+        "affine_hits": 0,
+        "quadratic_hits": 0,
+        "candidate_count": 0,
+        "seconds": 0.000536707
+      }
+    }
+  ],
+  "production_score_improvement": null
+}

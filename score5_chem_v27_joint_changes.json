@@ -1,0 +1,74 @@
+[
+  {
+    "address": 1145,
+    "column": 35,
+    "old": 59,
+    "value": 61
+  },
+  {
+    "address": 1098,
+    "column": 53,
+    "old": 241,
+    "value": 239
+  },
+  {
+    "address": 820,
+    "column": 57,
+    "old": 232,
+    "value": 233
+  },
+  {
+    "address": 839,
+    "column": 59,
+    "old": 244,
+    "value": 252
+  },
+  {
+    "address": 1185,
+    "column": 46,
+    "old": 201,
+    "value": 199
+  },
+  {
+    "address": 1162,
+    "column": 20,
+    "old": 233,
+    "value": 235
+  },
+  {
+    "address": 837,
+    "column": 53,
+    "old": 31,
+    "value": 32
+  },
+  {
+    "address": 675,
+    "column": 32,
+    "old": 202,
+    "value": 204
+  },
+  {
+    "address": 1137,
+    "column": 68,
+    "old": 255,
+    "value": 254
+  },
+  {
+    "address": 908,
+    "column": 27,
+    "old": 194,
+    "value": 193
+  },
+  {
+    "address": 761,
+    "column": 31,
+    "old": 41,
+    "value": 39
+  },
+  {
+    "address": 840,
+    "column": 59,
+    "old": 24,
+    "value": 16
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "status": "NATIVE_COMPARISON_PASS",
+  "rows": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/dqi_inputs/invsqrt_e46d90c36d1b.kmb",
+      "seed": 2026111501,
+      "inputs": 2081,
+      "qubits": 46,
+      "restored_input_failures": 0,
+      "dirty_scratch_failures": 0,
+      "phase_mismatches_against_baseline": 0,
+      "measured_mean_toffoli": 1479.728976453628
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/dqi_inputs/invsqrt_e46d90c36d1b.kmb",
+      "seed": 2026111502,
+      "inputs": 2081,
+      "qubits": 46,
+      "restored_input_failures": 0,
+      "dirty_scratch_failures": 0,
+      "phase_mismatches_against_baseline": 0,
+      "measured_mean_toffoli": 1479.884670831331
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score3_invsqrt_cache_run/candidate.kmb",
+      "seed": 2026111501,
+      "inputs": 2081,
+      "qubits": 46,
+      "restored_input_failures": 0,
+      "dirty_scratch_failures": 0,
+      "phase_mismatches_against_baseline": 0,
+      "measured_mean_toffoli": 1478.296011532917
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score3_invsqrt_cache_run/candidate.kmb",
+      "seed": 2026111502,
+      "inputs": 2081,
+      "qubits": 46,
+      "restored_input_failures": 0,
+      "dirty_scratch_failures": 0,
+      "phase_mismatches_against_baseline": 0,
+      "measured_mean_toffoli": 1478.7121576165305
+    }
+  ],
+  "candidate_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "source_sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6",
+  "exact_full_domain_patch_proof_is_separate": true,
+  "full_official_200540928_shots_run": false,
+  "whole_Q45": false,
+  "score_improvement_claimed": false,
+  "seconds": 0.1809669659996871,
+  "script_sha256": "21ac7e1d6fc3faf22b62f62cd4c576ecf190f8253c1430ef7ff717880fd00362"
+}

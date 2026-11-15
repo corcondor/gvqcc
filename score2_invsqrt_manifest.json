@@ -1,0 +1,338 @@
+{
+  "status": "COMPLETE_NO_ADOPTABLE_INVSQRT_SCORE_IMPROVEMENT",
+  "baseline_kmb_sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6",
+  "baseline_kmx_sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1",
+  "baseline_qubits": 46,
+  "baseline_score": 78719.52914734723,
+  "baseline_modified": false,
+  "frozen_prior_artifacts_checked": 30,
+  "frozen_prior_artifact_hash_mismatches": 0,
+  "new_candidate_kmb": null,
+  "new_official_verification": false,
+  "submitted": false,
+  "active_jobs": false,
+  "results": {
+    "extra_q17_full_first_AND_classes": 2667,
+    "extra_q17_full_prefixes": 27031886,
+    "extra_q17_unresolved_rank_cases": 0,
+    "single_extra_live_wires_excluded": 34,
+    "arbitrary_live_parity_free_function_space_dimension": 7,
+    "three_output_five_AND_search": "complete, no solution on specified six inputs",
+    "two_extra_wire_SAT": "two pairs, 60 seconds each, UNKNOWN",
+    "feature_unrestricted_one_AND_SAT": "four features, 30 seconds each, UNKNOWN",
+    "affine_phase_relocation_queries": 20410,
+    "one_AND_global_cut_queries": 17369732,
+    "one_AND_global_cuts": 2048,
+    "one_AND_left_parity_family_size": 2163,
+    "phase_relocation_candidates": 0
+  },
+  "limitations": [
+    "Single-extra-wire impossibility does not generalize to several extras used jointly.",
+    "One-AND relocation excludes only the enumerated left parity family.",
+    "Timeouts are UNKNOWN, not impossibility proofs.",
+    "No score improvement is claimed for invsqrt."
+  ],
+  "published_artifacts": [
+    {
+      "path": "score2_invsqrt_audit.json",
+      "bytes": 379,
+      "sha256": "49d8868451611aadc84ffe53121758fdec28747f7600e67e8f7306d44ebd04d9"
+    },
+    {
+      "path": "score2_invsqrt_audit.py",
+      "bytes": 3791,
+      "sha256": "986ae8365c9530704ecc9e7d01619114e11b2be7be2a58f2e46980311b3f0f4b"
+    },
+    {
+      "path": "score2_invsqrt_extra13_fixed0.txt",
+      "bytes": 137,
+      "sha256": "132ac5c22c43095d9b186929fec8af8886a0c3f494c2caa2139bc9f06bdf1cdc"
+    },
+    {
+      "path": "score2_invsqrt_extra14_fixed1.txt",
+      "bytes": 137,
+      "sha256": "fa29d07afe5c37e0b8303c2926105f53a7de3db0fa73063e028f04a4f109eaf8"
+    },
+    {
+      "path": "score2_invsqrt_extra15_fixed1.txt",
+      "bytes": 128,
+      "sha256": "4e83a9dda37b60110d8c2990ca6cbfe7dc4b88611c94ae30094b1bd8be1184d8"
+    },
+    {
+      "path": "score2_invsqrt_extra16_fixed1.txt",
+      "bytes": 128,
+      "sha256": "4e83a9dda37b60110d8c2990ca6cbfe7dc4b88611c94ae30094b1bd8be1184d8"
+    },
+    {
+      "path": "score2_invsqrt_extra17_complete.json",
+      "bytes": 167,
+      "sha256": "ffd714edfe6d7290408c4a6538152cef3a2f3e02c1376ceeb16809e34c809b98"
+    },
+    {
+      "path": "score2_invsqrt_extra17_complete_progress.jsonl",
+      "bytes": 4830,
+      "sha256": "0a19cdef419fd270237cc29a8fb9db05f9abf4e5b913b6814edb316f25eeb51e"
+    },
+    {
+      "path": "score2_invsqrt_extra28_fixed0.txt",
+      "bytes": 128,
+      "sha256": "edd24862d5e42cc28cdc5f316b822f96e586305a07774e88e95ee5408980c67b"
+    },
+    {
+      "path": "score2_invsqrt_extra31_fixed0.txt",
+      "bytes": 137,
+      "sha256": "fa29d07afe5c37e0b8303c2926105f53a7de3db0fa73063e028f04a4f109eaf8"
+    },
+    {
+      "path": "score2_invsqrt_extra33_fixed0.txt",
+      "bytes": 137,
+      "sha256": "fa29d07afe5c37e0b8303c2926105f53a7de3db0fa73063e028f04a4f109eaf8"
+    },
+    {
+      "path": "score2_invsqrt_extra35_fixed0.txt",
+      "bytes": 128,
+      "sha256": "4e83a9dda37b60110d8c2990ca6cbfe7dc4b88611c94ae30094b1bd8be1184d8"
+    },
+    {
+      "path": "score2_invsqrt_extra_restrictions.json",
+      "bytes": 11428,
+      "sha256": "0d15ca08bce3803cf4994ec3e15717d7bbde7c1655a842ab45994e1f33193a36"
+    },
+    {
+      "path": "score2_invsqrt_fast_positive.json",
+      "bytes": 225,
+      "sha256": "bea02b8bb59c732637e0da8fc7f7f86f0a97faa569783fafce6ed183ef0aae4d"
+    },
+    {
+      "path": "score2_invsqrt_fast_six_audit.json",
+      "bytes": 164,
+      "sha256": "3a303fc95c1993abc98f9c6d70044c828a0053e816ffe58baa877c668847731e"
+    },
+    {
+      "path": "score2_invsqrt_fast_six_progress.jsonl",
+      "bytes": 1150,
+      "sha256": "beeef4be070483cd19dc24dd44738c9a1c11980cc457e2a58defee438729ae1b"
+    },
+    {
+      "path": "score2_invsqrt_feature_dense.json",
+      "bytes": 1442,
+      "sha256": "aed146b83856b96ba57c0e61ebf939fd8690a7fa2b3fef6883b8ce744f79e4df"
+    },
+    {
+      "path": "score2_invsqrt_feature_dense.py",
+      "bytes": 3991,
+      "sha256": "efc458e196a6f9e6c939843216a4da1c281b565e53c904a2a330eb2f86bd45df"
+    },
+    {
+      "path": "score2_invsqrt_feature_oneand.json",
+      "bytes": 3077,
+      "sha256": "744f24089dae24c0aeddc2c952f974084e982ea21c391f4014f2952e9143ea9d"
+    },
+    {
+      "path": "score2_invsqrt_feature_oneand.py",
+      "bytes": 2016,
+      "sha256": "131322ec64e12a9f0b31776bceb1c1eced7a1b7c69d72f1e797b00699eb6277f"
+    },
+    {
+      "path": "score2_invsqrt_feature_sat.json",
+      "bytes": 2215,
+      "sha256": "c5e349c612ad1b72806bb1bb75e4cc29a0bad4031d8d2ba7a97a110a3d7bc6cb"
+    },
+    {
+      "path": "score2_invsqrt_feature_sat.py",
+      "bytes": 3725,
+      "sha256": "3e74824b9f670a508127ec26e959c656ee47b08b552c7cab2c9145434878e260"
+    },
+    {
+      "path": "score2_invsqrt_free_functions.json",
+      "bytes": 364,
+      "sha256": "d680db4fcf47e4788ad03d160741a454e6f0e4556917c647385191c38be3ad73"
+    },
+    {
+      "path": "score2_invsqrt_free_functions.py",
+      "bytes": 2947,
+      "sha256": "d40cae1302bcbe05ef4aa62de8753166c33436c6880e3ca4a207fe3fd6b6f33d"
+    },
+    {
+      "path": "score2_invsqrt_global_oneand_results.json",
+      "bytes": 515,
+      "sha256": "ea96830f46ff2dd1017c4a4408170acf787e1ba967410c96074075b122f5f110"
+    },
+    {
+      "path": "score2_invsqrt_global_oneand_round0_progress.jsonl",
+      "bytes": 13691,
+      "sha256": "dc527d6b2da7d3bff91178f48c0eba292ac3ca39d5400823e74eb353be6b1461"
+    },
+    {
+      "path": "score2_invsqrt_joint_fast.cpp",
+      "bytes": 6168,
+      "sha256": "23d5cf49979ddae9fec073e999534c75c64e0f505d268517f070c5cf6170bd23"
+    },
+    {
+      "path": "score2_invsqrt_joint_three.cpp",
+      "bytes": 6469,
+      "sha256": "f205563ba8d2b1ac10e98e5b03a7c24121b3d20cda058e806636ee68cd1a79ba"
+    },
+    {
+      "path": "score2_invsqrt_joint_three_progress.jsonl",
+      "bytes": 911,
+      "sha256": "cf53e49816200aa5cfbc2afff2c54dbd1db8d34cc5d08b846efd7aaab2223c8d"
+    },
+    {
+      "path": "score2_invsqrt_joint_three_results.json",
+      "bytes": 163,
+      "sha256": "8f9f9de22635ea8c3549929ada0cfd56b7e7da264e2108b8645d5351e09c57de"
+    },
+    {
+      "path": "score2_invsqrt_joint_three_table.json",
+      "bytes": 1964,
+      "sha256": "17dc1e05afa51055a22b32f367c787bfcba14a282d176214dea0574eda849d6a"
+    },
+    {
+      "path": "score2_invsqrt_joint_three_table.txt",
+      "bytes": 159,
+      "sha256": "0e3ffdaf00741fb86f5a028d647fa787d6d3f00efaf25ab213945db810e4a376"
+    },
+    {
+      "path": "score2_invsqrt_oneand_positive.json",
+      "bytes": 334,
+      "sha256": "6fdf1d796e8a96b07cd47057191c2648bc8df4180bcf97a1c5c192351578a393"
+    },
+    {
+      "path": "score2_invsqrt_oneand_positive.txt",
+      "bytes": 3871,
+      "sha256": "2619d59405484eded0146de1a8a76f5cc4c3ba249c05115b7bfe76db60da5ec3"
+    },
+    {
+      "path": "score2_invsqrt_pair17_16_sat.json",
+      "bytes": 1337,
+      "sha256": "cd80998491495107558639fe55a911d0d5f77118d08fc73a64beb4017ca1dceb"
+    },
+    {
+      "path": "score2_invsqrt_pair17_16_table.json",
+      "bytes": 3459,
+      "sha256": "da3818b643052be549347e744a99e64185471b5586d3122f47a80e7b9f605561"
+    },
+    {
+      "path": "score2_invsqrt_pair17_28_sat.json",
+      "bytes": 1335,
+      "sha256": "2d0104e67c40d2313dc1aab2069d00001b4333de925cc2833aedb35da5d6b8fb"
+    },
+    {
+      "path": "score2_invsqrt_pair17_28_table.json",
+      "bytes": 3452,
+      "sha256": "25b03bda1599e765d223c42c535b05b20ff2a2e32704e7b36aa587da25d4680f"
+    },
+    {
+      "path": "score2_invsqrt_pair_search.py",
+      "bytes": 724,
+      "sha256": "8e4fb60bd47ef21d6196ce50d4e4d139c2926a7e385291eef7bb1bae813dd42c"
+    },
+    {
+      "path": "score2_invsqrt_pair_tables.py",
+      "bytes": 1566,
+      "sha256": "c2bf8dc574b85552ef9de76581a0c481b7d9e00c939fd6fcf599bcf9f3f664e8"
+    },
+    {
+      "path": "score2_invsqrt_phase_relocation.json",
+      "bytes": 483,
+      "sha256": "1dd4b338c57c120b1bad966ee4705fd96964543db8a1239f05af50583e5331f7"
+    },
+    {
+      "path": "score2_invsqrt_phase_relocation.py",
+      "bytes": 4783,
+      "sha256": "0d8f9952f619910ee46591e92bd76f9e46d1c48b7fbddbb4fe79808958d2e285"
+    },
+    {
+      "path": "score2_invsqrt_prepare.py",
+      "bytes": 1879,
+      "sha256": "1960c8c77bb9ae6078998445e87026d61400f4831522470220624a4f85949c5c"
+    },
+    {
+      "path": "score2_invsqrt_relocate_oneand.cpp",
+      "bytes": 4028,
+      "sha256": "e7c7e1ff511ff9e4c90cf4ded21667f9fb84c466facccca93fb1bc91315b5e5e"
+    },
+    {
+      "path": "score2_invsqrt_relocate_oneand.py",
+      "bytes": 5074,
+      "sha256": "97a75b429d7c3f42d1e46f633a21c3f2210e13a4a510d2dc449489a1213c7e87"
+    },
+    {
+      "path": "score2_invsqrt_relocate_oneand_results.json",
+      "bytes": 496,
+      "sha256": "d6c5a0497124df939b030152fd17078a9207be3da90b3be4eea90ec0a6fa747f"
+    },
+    {
+      "path": "score2_invsqrt_relocate_oneand_round0_progress.jsonl",
+      "bytes": 892,
+      "sha256": "4e74bec9b252893cf63735902b1cc827cb7162cafeca77092dbe4ef60ac9a5b3"
+    },
+    {
+      "path": "score2_invsqrt_report.md",
+      "bytes": 8979,
+      "sha256": "3cebab7a5ec6447bbc3a1b6c3d67e0a2dee79dc9b0f9d7ee7b3d7b0491429a3f"
+    },
+    {
+      "path": "score2_invsqrt_restrict_extras.py",
+      "bytes": 3020,
+      "sha256": "12cfd402749da37ba1c227355fb3eb7bf54e7a2467a567b80cbda4cb4d96fb24"
+    },
+    {
+      "path": "score2_invsqrt_three_positive.json",
+      "bytes": 259,
+      "sha256": "815cbb35135df10638050c6267ed87fe4f7863092f04777b1e048062956f54fc"
+    },
+    {
+      "path": "score2_invsqrt_three_positive.txt",
+      "bytes": 156,
+      "sha256": "bb313cedfce69e0939f44f6ffff67f62e8423afb9154ae56725a311730fcb2b5"
+    }
+  ],
+  "regenerable_intermediates": [
+    {
+      "path": "score2_invsqrt_global_oneand_round0.txt",
+      "bytes": 12856335,
+      "sha256": "b417c00c236a4501f0fbcd74f6ab908ffa563e879cc1d140e8fd1766861c3fa2",
+      "generate": "python3 score2_invsqrt_relocate_oneand.py --global-cuts",
+      "publication_required": false
+    },
+    {
+      "path": "score2_invsqrt_relocate_oneand_round0.txt",
+      "bytes": 895775,
+      "sha256": "d9179361b520b7a8a6479ae09046e0cb8063f8a8782ed386e2aa62942c3e5c98",
+      "generate": "python3 score2_invsqrt_relocate_oneand.py",
+      "publication_required": false
+    }
+  ],
+  "auxiliary_interrupted_attempt": [
+    {
+      "path": "score2_invsqrt_extra17_continued.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "score2_invsqrt_extra17_progress.jsonl",
+      "bytes": 987,
+      "sha256": "dfc0ea9c4e147b76b819b532f681e7d4943a11ea60293c1acaee7cb42f2c75cf"
+    },
+    {
+      "path": "score2_invsqrt_joint_enum.cpp",
+      "bytes": 5880,
+      "sha256": "402c3779b2db5e908094019f4ef72c1b4232b80b9d15cbab35d31e968bc870e5"
+    }
+  ],
+  "dependencies": {
+    "python": "Python 3 + NumPy",
+    "exact_enumerators": "g++ -O3 -std=c++17",
+    "optional_SAT": "z3-solver==4.15.4.0",
+    "prior_repo_inputs": [
+      "score_invsqrt_retire.py",
+      "score_invsqrt_joint_synthesis.py",
+      "score_invsqrt_joint_table.json",
+      "score_invsqrt_joint_live_probe.json",
+      "score_invsqrt_joint_extra17_table.txt",
+      "invsqrt_structural_e46.kmx"
+    ]
+  }
+}

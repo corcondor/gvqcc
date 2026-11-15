@@ -1,0 +1,25 @@
+{
+  "source_path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache.kmx",
+  "source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "script_sha256": "3f0323127fd639d035559fafb658a2d7852c1b9d5d2e5ae1516784f2b5c5675e",
+  "solver_source_path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score2_invsqrt_relocate_oneand.cpp",
+  "solver_source_sha256": "e7c7e1ff511ff9e4c90cf4ded21667f9fb84c466facccca93fb1bc91315b5e5e",
+  "solver_binary_sha256": "c8fe564def0dae14dfd7f279552a8f6abba937468dccbe24f4d5872f7cd3e451",
+  "legal_inputs": 3133452,
+  "elapsed_seconds": 40.23664342199481,
+  "budget_seconds": 110.0,
+  "identity": "g<=f; alpha*f+beta*g=(alpha+beta)*f-beta*(f XOR g)",
+  "scope": "Four two-AND joint complements, depth-zero nonlinear/reset cuts with a full-domain-zero scratch outside all eight removable gadgets. Left parity: any single or pair of wires, or any parity of flags q22..q25,q7 plus one wire. Right and affine remainder unrestricted. Negative sample result excludes this family on the full domain; general two-factor synthesis is not exhausted.",
+  "records": [
+    {
+      "status": "NO_MODEL_IN_SEARCHED_LEFT_FAMILY",
+      "cuts": 2034,
+      "queries": 17266156,
+      "left_parities": 2163,
+      "seconds": 38.8175,
+      "iteration": 0,
+      "samples": 512
+    }
+  ],
+  "candidate_created": false
+}

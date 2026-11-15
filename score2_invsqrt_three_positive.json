@@ -1,0 +1,1 @@
+{"status":"SAT","gates":[{"left":[0],"right":[1]},{"left":[2],"right":[3]},{"left":[4,6],"right":[5,7]},{"left":[0,3,6],"right":[7]},{"left":[0,3],"right":[6,7]}],"output_coefficient_masks":[512,1280,3200],"first_gates_completed":1,"second_gates_tried":2391}

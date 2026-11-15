@@ -1,0 +1,159 @@
+{
+  "status": "ALL_EXACT_PASS",
+  "checks": [
+    {
+      "label": "one_address_all_outputs",
+      "status": "EXACT_PASS",
+      "addresses": 2048,
+      "arbitrary_target_bits": 40,
+      "symbolic_target_coefficients": 41,
+      "all_target_assignments_covered": true,
+      "HMR_formal_variables_cancelled": 10,
+      "all_measurement_branches_covered": true,
+      "selection_restored": true,
+      "workspace_zero": true,
+      "phase_identically_zero": true,
+      "ccx": 10,
+      "estimate": {
+        "addresses": 1,
+        "trie_ccx": 10,
+        "shear_ccx": 0,
+        "total_ccx": 10,
+        "variable_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "maximum_patch_scratch": 10
+      }
+    },
+    {
+      "label": "shared_prefix_many_addresses",
+      "status": "EXACT_PASS",
+      "addresses": 2048,
+      "arbitrary_target_bits": 40,
+      "symbolic_target_coefficients": 41,
+      "all_target_assignments_covered": true,
+      "HMR_formal_variables_cancelled": 37,
+      "all_measurement_branches_covered": true,
+      "selection_restored": true,
+      "workspace_zero": true,
+      "phase_identically_zero": true,
+      "ccx": 37,
+      "estimate": {
+        "addresses": 8,
+        "trie_ccx": 37,
+        "shear_ccx": 0,
+        "total_ccx": 37,
+        "variable_order": [
+          2,
+          3,
+          5,
+          9,
+          4,
+          8,
+          6,
+          7,
+          10,
+          1,
+          0
+        ],
+        "maximum_patch_scratch": 10
+      }
+    },
+    {
+      "label": "general_endpoint_adapter",
+      "status": "EXACT_PASS",
+      "addresses": 2048,
+      "arbitrary_target_bits": 40,
+      "symbolic_target_coefficients": 41,
+      "all_target_assignments_covered": true,
+      "HMR_formal_variables_cancelled": 19,
+      "all_measurement_branches_covered": true,
+      "selection_restored": true,
+      "workspace_zero": true,
+      "phase_identically_zero": true,
+      "ccx": 19,
+      "estimate": {
+        "addresses": 2,
+        "trie_ccx": 18,
+        "shear_ccx": 1,
+        "total_ccx": 19,
+        "variable_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "maximum_patch_scratch": 12
+      }
+    },
+    {
+      "label": "inverse_endpoint_adapter",
+      "status": "EXACT_PASS",
+      "addresses": 2048,
+      "arbitrary_target_bits": 40,
+      "symbolic_target_coefficients": 41,
+      "all_target_assignments_covered": true,
+      "HMR_formal_variables_cancelled": 19,
+      "all_measurement_branches_covered": true,
+      "selection_restored": true,
+      "workspace_zero": true,
+      "phase_identically_zero": true,
+      "ccx": 19,
+      "estimate": {
+        "addresses": 2,
+        "trie_ccx": 18,
+        "shear_ccx": 1,
+        "total_ccx": 19,
+        "variable_order": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "maximum_patch_scratch": 12
+      }
+    },
+    {
+      "label": "adapter_inverse_composition",
+      "status": "EXACT_PASS",
+      "addresses": 2048,
+      "arbitrary_target_bits": 40,
+      "symbolic_target_coefficients": 41,
+      "all_target_assignments_covered": true,
+      "HMR_formal_variables_cancelled": 38,
+      "all_measurement_branches_covered": true,
+      "selection_restored": true,
+      "workspace_zero": true,
+      "phase_identically_zero": true,
+      "ccx": 38
+    }
+  ],
+  "scope": "Standalone patches only; source ANGLE family has its separate valid1220 reachable-subspace proof",
+  "script_sha256": "e2e3360008dbb5d700c073b8194dfc706d64e2ff4d7dc4ada10b6f6c7ac82484",
+  "builder_sha256": "796c900efa1c61b486f93d7dec830d66a2d5ec2bf9db79b99092f07caef665fb",
+  "seconds": 0.046018496999749914
+}

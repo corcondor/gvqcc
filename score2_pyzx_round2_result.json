@@ -1,0 +1,656 @@
+{
+  "pyzx_version": "0.10.8",
+  "status": "COMPLETE",
+  "source_hashes": {
+    "angle_k_0.kmb": "5b209c797f5b0685614537a155a40e21841bb5d05a61e9304915c85bf961b263",
+    "angle_k_1.kmb": "12876642933bb2dacf67e0b67f3a6be1256634ddfffef3f2c0b5c8e640ac0ca8",
+    "angle_k_10.kmb": "656d5eb283c54a2b934fdcf38fc56d7b3cc7b0607e7731c26eb15b574e74f5eb",
+    "angle_k_11.kmb": "d4eeedc38481610804ec2708e2fc02323b63d9f37487cec6cb9b42ed7c94c033",
+    "angle_k_12.kmb": "61275eda03641d1a7b4052b36fa1df4383918f8986172e73a7f8dcaa817d0308",
+    "angle_k_13.kmb": "a4e43c2b183cf64de805701517fd0b56333dde662889579b824b4ee1ff0c3a72",
+    "angle_k_14.kmb": "2db803b6c5eaf4d88142df541444ae2e2348fec66767cc901add881d1afcb0cb",
+    "angle_k_2.kmb": "d67b80a7f10a977422798d9d0563e11f193215d15bcbe97c83ef7693046b7dda",
+    "angle_k_3.kmb": "6225b9346a172dc9b3d6222b8545dccb6519d1d7a910e9c95aeeb89c21433348",
+    "angle_k_4.kmb": "0d8f807a5ed5f7304020aeadce03f5666ed6ac860994c018b724b99004cc3e6f",
+    "angle_k_5.kmb": "f6d7a036373cf1aaedb2f162b8c409bd93331daba8f4af7e79b86b2b7761d3b1",
+    "angle_k_6.kmb": "387f1a6095132fb6114682c8cc102a36cc93426860fa57b1fd972b65d4e88561",
+    "angle_k_7.kmb": "2e036e9b3ff88173b8a37663c2e41973e896bbe1a30a7d2ee8b1844a8a7020fa",
+    "angle_k_8.kmb": "0be2c2ec69d681f352c7e89fc94ed161f45b448110c9e617fe86181f72de646e",
+    "angle_k_9.kmb": "3e31f13446a8a3c72bff3ac6c123d15f9c8b86039f505fe7b5510d7245246c99"
+  },
+  "source_script_sha256": "08d5996706146488277cc215d6248be99ba9b4b6d90e4e80443fd5424db253c0",
+  "source_directory": "/workspace/scratch/3815fb5fae06/score2_pyzx_loaders",
+  "blocks": [
+    {
+      "file": "angle_k_5.kmb",
+      "start_zero_based": 24982,
+      "end_exclusive": 26589,
+      "qubits": 125,
+      "source_gates": 1607,
+      "zx_extracted_gates": 1113,
+      "vertices_before": 3448,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 494,
+      "seconds": 8.436375954999676
+    },
+    {
+      "file": "angle_k_7.kmb",
+      "start_zero_based": 24264,
+      "end_exclusive": 25859,
+      "qubits": 125,
+      "source_gates": 1595,
+      "zx_extracted_gates": 1094,
+      "vertices_before": 3426,
+      "vertices_after": 378,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 501,
+      "seconds": 7.872918293000112
+    },
+    {
+      "file": "angle_k_0.kmb",
+      "start_zero_based": 245,
+      "end_exclusive": 1580,
+      "qubits": 110,
+      "source_gates": 1335,
+      "zx_extracted_gates": 889,
+      "vertices_before": 2875,
+      "vertices_after": 331,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 446,
+      "seconds": 4.852073507001478
+    },
+    {
+      "file": "angle_k_1.kmb",
+      "start_zero_based": 30468,
+      "end_exclusive": 31627,
+      "qubits": 125,
+      "source_gates": 1159,
+      "zx_extracted_gates": 1397,
+      "vertices_before": 2546,
+      "vertices_after": 387,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 12.699768573002075
+    },
+    {
+      "file": "angle_k_11.kmb",
+      "start_zero_based": 24846,
+      "end_exclusive": 25996,
+      "qubits": 125,
+      "source_gates": 1150,
+      "zx_extracted_gates": 1360,
+      "vertices_before": 2531,
+      "vertices_after": 385,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 13.268701394001255
+    },
+    {
+      "file": "angle_k_3.kmb",
+      "start_zero_based": 32827,
+      "end_exclusive": 33961,
+      "qubits": 125,
+      "source_gates": 1134,
+      "zx_extracted_gates": 1246,
+      "vertices_before": 2496,
+      "vertices_after": 381,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 9.969430347002344
+    },
+    {
+      "file": "angle_k_12.kmb",
+      "start_zero_based": 23054,
+      "end_exclusive": 24187,
+      "qubits": 125,
+      "source_gates": 1133,
+      "zx_extracted_gates": 1205,
+      "vertices_before": 2504,
+      "vertices_after": 381,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 11.683834499999648
+    },
+    {
+      "file": "angle_k_9.kmb",
+      "start_zero_based": 24853,
+      "end_exclusive": 25984,
+      "qubits": 125,
+      "source_gates": 1131,
+      "zx_extracted_gates": 1159,
+      "vertices_before": 2495,
+      "vertices_after": 379,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 11.294051362001483
+    },
+    {
+      "file": "angle_k_4.kmb",
+      "start_zero_based": 25812,
+      "end_exclusive": 26942,
+      "qubits": 125,
+      "source_gates": 1130,
+      "zx_extracted_gates": 1330,
+      "vertices_before": 2490,
+      "vertices_after": 384,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 11.598625979000644
+    },
+    {
+      "file": "angle_k_14.kmb",
+      "start_zero_based": 22922,
+      "end_exclusive": 24050,
+      "qubits": 125,
+      "source_gates": 1128,
+      "zx_extracted_gates": 1265,
+      "vertices_before": 2492,
+      "vertices_after": 383,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 9.284468262998416
+    },
+    {
+      "file": "angle_k_10.kmb",
+      "start_zero_based": 24345,
+      "end_exclusive": 25473,
+      "qubits": 125,
+      "source_gates": 1128,
+      "zx_extracted_gates": 1218,
+      "vertices_before": 2493,
+      "vertices_after": 381,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 9.975589240999398
+    },
+    {
+      "file": "angle_k_6.kmb",
+      "start_zero_based": 23788,
+      "end_exclusive": 24915,
+      "qubits": 125,
+      "source_gates": 1127,
+      "zx_extracted_gates": 1219,
+      "vertices_before": 2488,
+      "vertices_after": 381,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 10.890465183001652
+    },
+    {
+      "file": "angle_k_8.kmb",
+      "start_zero_based": 24139,
+      "end_exclusive": 25252,
+      "qubits": 125,
+      "source_gates": 1113,
+      "zx_extracted_gates": 1229,
+      "vertices_before": 2459,
+      "vertices_after": 381,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 9.487822566999967
+    },
+    {
+      "file": "angle_k_13.kmb",
+      "start_zero_based": 23866,
+      "end_exclusive": 24968,
+      "qubits": 125,
+      "source_gates": 1102,
+      "zx_extracted_gates": 1235,
+      "vertices_before": 2432,
+      "vertices_after": 381,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 8.990602647001651
+    },
+    {
+      "file": "angle_k_2.kmb",
+      "start_zero_based": 31895,
+      "end_exclusive": 32993,
+      "qubits": 125,
+      "source_gates": 1098,
+      "zx_extracted_gates": 1245,
+      "vertices_before": 2430,
+      "vertices_after": 382,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT",
+        "NOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": false,
+      "seconds": 10.399019278000196
+    },
+    {
+      "file": "angle_k_0.kmb",
+      "start_zero_based": 1596,
+      "end_exclusive": 1900,
+      "qubits": 103,
+      "source_gates": 304,
+      "zx_extracted_gates": 242,
+      "vertices_before": 814,
+      "vertices_after": 312,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 62,
+      "seconds": 0.7603317049979523
+    },
+    {
+      "file": "angle_k_2.kmb",
+      "start_zero_based": 27042,
+      "end_exclusive": 27264,
+      "qubits": 116,
+      "source_gates": 222,
+      "zx_extracted_gates": 178,
+      "vertices_before": 680,
+      "vertices_after": 351,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 44,
+      "seconds": 0.5283900360009284
+    },
+    {
+      "file": "angle_k_3.kmb",
+      "start_zero_based": 32458,
+      "end_exclusive": 32678,
+      "qubits": 112,
+      "source_gates": 220,
+      "zx_extracted_gates": 171,
+      "vertices_before": 664,
+      "vertices_after": 339,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 49,
+      "seconds": 0.5707879130022775
+    },
+    {
+      "file": "angle_k_2.kmb",
+      "start_zero_based": 19158,
+      "end_exclusive": 19375,
+      "qubits": 112,
+      "source_gates": 217,
+      "zx_extracted_gates": 165,
+      "vertices_before": 658,
+      "vertices_after": 339,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 52,
+      "seconds": 0.4528968949998671
+    },
+    {
+      "file": "angle_k_1.kmb",
+      "start_zero_based": 26836,
+      "end_exclusive": 27053,
+      "qubits": 117,
+      "source_gates": 217,
+      "zx_extracted_gates": 171,
+      "vertices_before": 672,
+      "vertices_after": 353,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 46,
+      "seconds": 0.6085661120014265
+    },
+    {
+      "file": "angle_k_3.kmb",
+      "start_zero_based": 3619,
+      "end_exclusive": 3835,
+      "qubits": 114,
+      "source_gates": 216,
+      "zx_extracted_gates": 191,
+      "vertices_before": 660,
+      "vertices_after": 344,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 25,
+      "seconds": 0.47822015400015516
+    },
+    {
+      "file": "angle_k_2.kmb",
+      "start_zero_based": 6957,
+      "end_exclusive": 7170,
+      "qubits": 113,
+      "source_gates": 213,
+      "zx_extracted_gates": 167,
+      "vertices_before": 652,
+      "vertices_after": 341,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 46,
+      "seconds": 0.5793587650005065
+    },
+    {
+      "file": "angle_k_3.kmb",
+      "start_zero_based": 24390,
+      "end_exclusive": 24602,
+      "qubits": 114,
+      "source_gates": 212,
+      "zx_extracted_gates": 181,
+      "vertices_before": 652,
+      "vertices_after": 344,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 31,
+      "seconds": 0.5787879730014538
+    },
+    {
+      "file": "angle_k_14.kmb",
+      "start_zero_based": 6626,
+      "end_exclusive": 6838,
+      "qubits": 109,
+      "source_gates": 212,
+      "zx_extracted_gates": 184,
+      "vertices_before": 646,
+      "vertices_after": 332,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 28,
+      "seconds": 0.4953280040026584
+    },
+    {
+      "file": "angle_k_3.kmb",
+      "start_zero_based": 9398,
+      "end_exclusive": 9608,
+      "qubits": 115,
+      "source_gates": 210,
+      "zx_extracted_gates": 159,
+      "vertices_before": 650,
+      "vertices_after": 347,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 51,
+      "seconds": 0.6801313190007932
+    },
+    {
+      "file": "angle_k_3.kmb",
+      "start_zero_based": 5441,
+      "end_exclusive": 5651,
+      "qubits": 112,
+      "source_gates": 210,
+      "zx_extracted_gates": 203,
+      "vertices_before": 648,
+      "vertices_after": 340,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 7,
+      "seconds": 0.6672491839999566
+    },
+    {
+      "file": "angle_k_2.kmb",
+      "start_zero_based": 3592,
+      "end_exclusive": 3802,
+      "qubits": 113,
+      "source_gates": 210,
+      "zx_extracted_gates": 173,
+      "vertices_before": 646,
+      "vertices_after": 343,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 37,
+      "seconds": 0.6145997419989726
+    },
+    {
+      "file": "angle_k_4.kmb",
+      "start_zero_based": 23204,
+      "end_exclusive": 23413,
+      "qubits": 107,
+      "source_gates": 209,
+      "zx_extracted_gates": 160,
+      "vertices_before": 632,
+      "vertices_after": 323,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 49,
+      "seconds": 0.5326360489998478
+    },
+    {
+      "file": "angle_k_3.kmb",
+      "start_zero_based": 25174,
+      "end_exclusive": 25383,
+      "qubits": 118,
+      "source_gates": 209,
+      "zx_extracted_gates": 196,
+      "vertices_before": 654,
+      "vertices_after": 358,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 13,
+      "seconds": 0.5613829100002476
+    },
+    {
+      "file": "angle_k_3.kmb",
+      "start_zero_based": 10192,
+      "end_exclusive": 10401,
+      "qubits": 108,
+      "source_gates": 209,
+      "zx_extracted_gates": 192,
+      "vertices_before": 638,
+      "vertices_after": 327,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 17,
+      "seconds": 0.584022761999222
+    },
+    {
+      "file": "angle_k_2.kmb",
+      "start_zero_based": 17074,
+      "end_exclusive": 17283,
+      "qubits": 115,
+      "source_gates": 209,
+      "zx_extracted_gates": 180,
+      "vertices_before": 648,
+      "vertices_after": 348,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 29,
+      "seconds": 0.5557434499969531
+    },
+    {
+      "file": "angle_k_2.kmb",
+      "start_zero_based": 9882,
+      "end_exclusive": 10091,
+      "qubits": 110,
+      "source_gates": 209,
+      "zx_extracted_gates": 176,
+      "vertices_before": 638,
+      "vertices_after": 333,
+      "zx_exact_equality": true,
+      "affine_gate_set_restored": true,
+      "extracted_gate_types": [
+        "CNOT"
+      ],
+      "independent_affine_equal": true,
+      "accepted": true,
+      "removed_gates": 33,
+      "seconds": 0.4969344249984715
+    }
+  ],
+  "nonclifford_cost_change": 0,
+  "removed_gates": 2060,
+  "seconds": 161.14925265000056,
+  "candidate_hashes": {
+    "angle_k_3.kmb": "aca48335fcabb6366fc7a1634430223eb2f8e1faf9c862baead54eb412fd019f",
+    "angle_k_6.kmb": "387f1a6095132fb6114682c8cc102a36cc93426860fa57b1fd972b65d4e88561",
+    "angle_k_5.kmb": "a17d6c663f66b3e8d9487b0b19f77075f5647ff240d258b6b7d37cb58997cd6c",
+    "angle_k_8.kmb": "0be2c2ec69d681f352c7e89fc94ed161f45b448110c9e617fe86181f72de646e",
+    "angle_k_2.kmb": "487adc39d32a904021985241f80881fd90542fa35c0a379034fc88cc9ccfc337",
+    "angle_k_11.kmb": "d4eeedc38481610804ec2708e2fc02323b63d9f37487cec6cb9b42ed7c94c033",
+    "angle_k_7.kmb": "146cb20a99a8c6005539df2b0c9f0eb11b33a71ab10d66480f51fd5590e53711",
+    "angle_k_12.kmb": "61275eda03641d1a7b4052b36fa1df4383918f8986172e73a7f8dcaa817d0308",
+    "angle_k_13.kmb": "a4e43c2b183cf64de805701517fd0b56333dde662889579b824b4ee1ff0c3a72",
+    "angle_k_9.kmb": "3e31f13446a8a3c72bff3ac6c123d15f9c8b86039f505fe7b5510d7245246c99",
+    "angle_k_4.kmb": "24133cf069c97b4fd78ef64f1ac1c99d88202f35d7a2c10bcf3c4c9e3a7fe104",
+    "angle_k_1.kmb": "753b1424a819fadcac324155a7cae1841f0ee977ce873f29c7e364c55cdd4f37",
+    "angle_k_0.kmb": "39a74c931c745143d46ac3c3d7f76a84cc09982f0c7a9b2784e35e8cf0533b45",
+    "angle_k_14.kmb": "3b21fe0767295c6bd40c41e0c40ca1aeff02e54216ada02849c238ab66b70159",
+    "angle_k_10.kmb": "656d5eb283c54a2b934fdcf38fc56d7b3cc7b0607e7731c26eb15b574e74f5eb"
+  }
+}

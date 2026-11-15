@@ -1,0 +1,529 @@
+{
+  "status": "PASS",
+  "source_sha256": "224dc079eab0a5740eca842d432e830107ff5d4b68af07ba72d4da24e80b9ce3",
+  "primary_source": "https://arxiv.org/abs/2410.00910v2",
+  "proof_domain": "Integer arithmetic in Z[zeta_8], zeta_8^4=-1; explicit common denominator",
+  "figures": {
+    "a": {
+      "status": "PASS",
+      "data_qubits": 4,
+      "clean_ancillas": 1,
+      "measurement_branches": 2,
+      "exact_kraus_matrix_entries": 512,
+      "t_count": 6,
+      "t_depth": 6,
+      "unconditional_cnot_count": 6,
+      "cnot_equivalent_including_cz_by_branch": [
+        6,
+        8
+      ],
+      "branch_scalar_numerators_in_basis_1_zeta_zeta2_zeta3": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "branch_scalar_denominator": 2,
+      "probability_each_branch": "1/2",
+      "gates": [
+        [
+          "H",
+          4
+        ],
+        [
+          "P",
+          4,
+          1
+        ],
+        [
+          "CX",
+          3,
+          4
+        ],
+        [
+          "P",
+          4,
+          -1
+        ],
+        [
+          "CX",
+          2,
+          4
+        ],
+        [
+          "P",
+          4,
+          1
+        ],
+        [
+          "CX",
+          3,
+          4
+        ],
+        [
+          "CX",
+          1,
+          4
+        ],
+        [
+          "P",
+          4,
+          1
+        ],
+        [
+          "CX",
+          0,
+          4
+        ],
+        [
+          "P",
+          4,
+          -1
+        ],
+        [
+          "CX",
+          1,
+          4
+        ],
+        [
+          "P",
+          4,
+          1
+        ],
+        [
+          "H",
+          4
+        ]
+      ],
+      "correction_convention": "q0..q3 top-to-bottom; q4 ancilla; see correction()"
+    },
+    "aprime": {
+      "status": "PASS",
+      "data_qubits": 4,
+      "clean_ancillas": 1,
+      "measurement_branches": 2,
+      "exact_kraus_matrix_entries": 512,
+      "t_count": 6,
+      "t_depth": 6,
+      "unconditional_cnot_count": 6,
+      "cnot_equivalent_including_cz_by_branch": [
+        7,
+        7
+      ],
+      "branch_scalar_numerators_in_basis_1_zeta_zeta2_zeta3": [
+        [
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "branch_scalar_denominator": 2,
+      "probability_each_branch": "1/2",
+      "gates": [
+        [
+          "H",
+          4
+        ],
+        [
+          "P",
+          4,
+          1
+        ],
+        [
+          "CX",
+          3,
+          4
+        ],
+        [
+          "P",
+          4,
+          -1
+        ],
+        [
+          "CX",
+          2,
+          4
+        ],
+        [
+          "P",
+          4,
+          1
+        ],
+        [
+          "CX",
+          3,
+          4
+        ],
+        [
+          "P",
+          4,
+          -2
+        ],
+        [
+          "CX",
+          1,
+          4
+        ],
+        [
+          "P",
+          4,
+          -1
+        ],
+        [
+          "CX",
+          0,
+          4
+        ],
+        [
+          "P",
+          4,
+          1
+        ],
+        [
+          "CX",
+          1,
+          4
+        ],
+        [
+          "P",
+          4,
+          -1
+        ],
+        [
+          "H",
+          4
+        ]
+      ],
+      "correction_convention": "q0..q3 top-to-bottom; q4 ancilla; see correction()"
+    },
+    "b": {
+      "status": "PASS",
+      "data_qubits": 4,
+      "clean_ancillas": 1,
+      "measurement_branches": 2,
+      "exact_kraus_matrix_entries": 512,
+      "t_count": 6,
+      "t_depth": 2,
+      "unconditional_cnot_count": 12,
+      "cnot_equivalent_including_cz_by_branch": [
+        12,
+        14
+      ],
+      "branch_scalar_numerators_in_basis_1_zeta_zeta2_zeta3": [
+        [
+          1,
+          0,
+          -1,
+          0
+        ],
+        [
+          -1,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "branch_scalar_denominator": 2,
+      "probability_each_branch": "1/2",
+      "gates": [
+        [
+          "H",
+          4
+        ],
+        [
+          "CX",
+          4,
+          2
+        ],
+        [
+          "CX",
+          4,
+          3
+        ],
+        [
+          "P",
+          2,
+          -1
+        ],
+        [
+          "P",
+          3,
+          -1
+        ],
+        [
+          "P",
+          4,
+          1
+        ],
+        [
+          "CX",
+          4,
+          2
+        ],
+        [
+          "CX",
+          4,
+          3
+        ],
+        [
+          "CX",
+          3,
+          4
+        ],
+        [
+          "CX",
+          2,
+          4
+        ],
+        [
+          "CX",
+          1,
+          4
+        ],
+        [
+          "CX",
+          0,
+          4
+        ],
+        [
+          "CX",
+          4,
+          0
+        ],
+        [
+          "CX",
+          4,
+          1
+        ],
+        [
+          "P",
+          0,
+          -1
+        ],
+        [
+          "P",
+          1,
+          -1
+        ],
+        [
+          "P",
+          4,
+          1
+        ],
+        [
+          "CX",
+          4,
+          0
+        ],
+        [
+          "CX",
+          4,
+          1
+        ],
+        [
+          "H",
+          4
+        ]
+      ],
+      "correction_convention": "q0..q3 top-to-bottom; q4 ancilla; see correction()"
+    }
+  },
+  "coherent_15t": {
+    "status": "PASS",
+    "t_count": 15,
+    "clean_ancillas": 1,
+    "measurement_count": 0,
+    "exact_isometry_entries": 512,
+    "ancilla_restored_to_zero": true,
+    "gates": [
+      [
+        "H",
+        4
+      ],
+      [
+        "P",
+        4,
+        1
+      ],
+      [
+        "CX",
+        1,
+        4
+      ],
+      [
+        "P",
+        4,
+        -1
+      ],
+      [
+        "CX",
+        0,
+        4
+      ],
+      [
+        "P",
+        4,
+        1
+      ],
+      [
+        "CX",
+        1,
+        4
+      ],
+      [
+        "P",
+        4,
+        -1
+      ],
+      [
+        "H",
+        4
+      ],
+      [
+        "P",
+        4,
+        1
+      ],
+      [
+        "P",
+        2,
+        1
+      ],
+      [
+        "P",
+        3,
+        1
+      ],
+      [
+        "CX",
+        4,
+        2
+      ],
+      [
+        "P",
+        2,
+        -1
+      ],
+      [
+        "CX",
+        4,
+        2
+      ],
+      [
+        "CX",
+        4,
+        3
+      ],
+      [
+        "P",
+        3,
+        -1
+      ],
+      [
+        "CX",
+        4,
+        3
+      ],
+      [
+        "CX",
+        2,
+        3
+      ],
+      [
+        "P",
+        3,
+        -1
+      ],
+      [
+        "CX",
+        2,
+        3
+      ],
+      [
+        "CX",
+        4,
+        3
+      ],
+      [
+        "CX",
+        2,
+        3
+      ],
+      [
+        "P",
+        3,
+        1
+      ],
+      [
+        "CX",
+        2,
+        3
+      ],
+      [
+        "CX",
+        4,
+        3
+      ],
+      [
+        "H",
+        4
+      ],
+      [
+        "P",
+        4,
+        1
+      ],
+      [
+        "CX",
+        1,
+        4
+      ],
+      [
+        "P",
+        4,
+        -1
+      ],
+      [
+        "CX",
+        0,
+        4
+      ],
+      [
+        "P",
+        4,
+        1
+      ],
+      [
+        "CX",
+        1,
+        4
+      ],
+      [
+        "P",
+        4,
+        -1
+      ],
+      [
+        "H",
+        4
+      ]
+    ]
+  },
+  "competition_artifact_changed": false,
+  "competition_score_improvement": null
+}

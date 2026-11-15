@@ -1,0 +1,61 @@
+{
+  "status": "NO_NEW_ACCEPTED_SCORE_IMPROVEMENT",
+  "reference_C43_error2": 0.02112177504326,
+  "required_error2": 0.02,
+  "experiments": [
+    {
+      "name": "point00",
+      "receipt": "score3_chemistry_point00_result.json",
+      "receipt_sha256": "7969a989490c81b4d6ff659760e43beeaed5a45a22074e356a53eb999080573c",
+      "status": "NUMERICAL_FAIL",
+      "official_numeric_metrics": {
+        "error_1": 0.03154039641289933,
+        "error_2": 0.021120948845592943,
+        "Lambda": 294.16050969121636,
+        "E_SOS": -22144.373803997536,
+        "E_gap": 4.100453997536533,
+        "lambda_eff": 48.94455590538698,
+        "gap_in_domain": true
+      },
+      "estimated_T": 14658,
+      "estimated_Q": 427,
+      "changed_words": 1,
+      "method": "lbfgs",
+      "W_refit_seconds": 24.901193309997325,
+      "candidate": "/workspace/scratch/3815fb5fae06/score3_c43_point00_refit/candidate.npz",
+      "candidate_sha256": "359a98e0cf50305c04807a8f072aa0edb9780a6033e17033131f5c134bc313c3",
+      "gradient_check_scaled_error": 1.1610823207833937e-10,
+      "official_error2_mismatch": 1.3530843112619095e-16
+    },
+    {
+      "name": "transport00_block",
+      "receipt": "score3_chemistry_transport00_block_result.json",
+      "receipt_sha256": "60a66efc788eab25677ccc8787b37d94a57fde27768dc367769d77baea83fa97",
+      "status": "NUMERICAL_FAIL",
+      "official_numeric_metrics": {
+        "error_1": 0.031551486722000324,
+        "error_2": 0.021120477706335742,
+        "Lambda": 294.1610307141352,
+        "E_SOS": -22144.373851430715,
+        "E_gap": 4.100501430715667,
+        "lambda_eff": 48.944880657990296,
+        "gap_in_domain": true
+      },
+      "estimated_T": 14658,
+      "estimated_Q": 427,
+      "changed_words": 1,
+      "method": "block",
+      "W_refit_seconds": 30.03387245400154,
+      "candidate": "/workspace/scratch/3815fb5fae06/score3_c43_transport00_block/candidate.npz",
+      "candidate_sha256": "5d276dfe4cc06ae439a5268b22218994d11b845ea805b60f97fb5b1c55e3a6c0",
+      "gradient_check_scaled_error": 1.465519333763033e-10,
+      "official_error2_mismatch": 9.367506770274758e-17
+    }
+  ],
+  "exact_block_scope": "Each whitened group is minimized exactly over PSD matrices of rank at most C while holding the other groups fixed. This does not establish global optimality or impossibility of another C43 angle table.",
+  "same_word_or_new_integer_word_scope": "The two probes use one changed integer angle word; the coefficient refit does not alter those integers.",
+  "accepted_score2_candidate_preserved": true,
+  "full_circuit_verification_run": false,
+  "source": "score3_chemistry_word_refit.py",
+  "source_sha256": "d681f088bb2d6e5f13b15b493bdb522a930750c04af5583a84f45514093bc721"
+}

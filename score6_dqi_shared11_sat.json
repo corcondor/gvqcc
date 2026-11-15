@@ -1,0 +1,133 @@
+{
+  "status": "UNKNOWN_NO_RANK_BOUND",
+  "input": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/symmetry_dqi_20261115_gf8_joint12_input.txt",
+  "input_sha256": "8446959c7d46f19571ce207d024f302cf28792bc04d1a5a6e7d5e3abc0913077",
+  "source_sha256": "b918ff4ab91d3c3b39b209c3bcbe4fb8ae59d291e046286d5e7ba86c60b5b26a",
+  "z3_version": "4.15.4",
+  "dimensions": [
+    3,
+    6,
+    6
+  ],
+  "rank_target": 11,
+  "initial_rank": 12,
+  "first_factors": [
+    1,
+    1,
+    2,
+    3,
+    3,
+    4,
+    5,
+    5,
+    6,
+    7,
+    7
+  ],
+  "first_factor_weights": [
+    8,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "nonsingular_slices": [
+    {
+      "a": 1,
+      "rank": 6,
+      "rows": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32
+      ]
+    },
+    {
+      "a": 2,
+      "rank": 6,
+      "rows": [
+        2,
+        4,
+        3,
+        16,
+        32,
+        24
+      ]
+    },
+    {
+      "a": 3,
+      "rank": 6,
+      "rows": [
+        3,
+        6,
+        7,
+        24,
+        48,
+        56
+      ]
+    },
+    {
+      "a": 4,
+      "rank": 6,
+      "rows": [
+        4,
+        3,
+        6,
+        32,
+        24,
+        48
+      ]
+    },
+    {
+      "a": 5,
+      "rank": 6,
+      "rows": [
+        5,
+        1,
+        2,
+        40,
+        8,
+        16
+      ]
+    },
+    {
+      "a": 6,
+      "rank": 6,
+      "rows": [
+        6,
+        7,
+        5,
+        48,
+        56,
+        40
+      ]
+    },
+    {
+      "a": 7,
+      "rank": 6,
+      "rows": [
+        7,
+        5,
+        1,
+        56,
+        40,
+        8
+      ]
+    }
+  ],
+  "nonzero_factors": true,
+  "within_group_v_strict_order": true,
+  "fix_first_v": false,
+  "timeout_seconds": 300.0,
+  "tensor_coefficients": 108,
+  "smt2_path": "score6_dqi_shared11_sat.smt2",
+  "smt2_sha256": "a2856053cb6b6d6d1af40291767e65ed355c957b24a793c4470f418afe45a973",
+  "solver_result": "unknown",
+  "seconds": 302.80366098899685,
+  "statistics": "(:conflicts      2024493\n :decisions      2596543\n :del-clause     1996222\n :max-memory     2151.30\n :memory         1774.03\n :minimized-lits 18455743\n :mk-bool-var    1124\n :mk-clause      2028215\n :num-allocs     250319142987.00\n :num-checks     1\n :propagations   223036473\n :restarts       654\n :rlimit-count   227661567\n :sat-mk-var     1\n :time           302.78)",
+  "reason_unknown": "timeout"
+}

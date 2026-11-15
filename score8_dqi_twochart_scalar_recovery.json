@@ -1,0 +1,18 @@
+{
+  "status": "RECOVERED_SCALAR_COST_NOT_OFFICIAL_PASS",
+  "source_progress_sha256": "938050136d2c95979237c6149519f5b18b2966d1030a39831a14007ddde7f610",
+  "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+  "observed_shots": 102400,
+  "value_errors": 2,
+  "phase_errors": 0,
+  "aggregate_Toffoli": 39123243138,
+  "mean_Toffoli": 382062.92126953125,
+  "effective_error_rate": 0.0009488155716079551,
+  "repetition_factor": 1.2013880602795501,
+  "recovered_resource_cost": 362761948064.14136,
+  "official_PASS_claimed": false,
+  "official_verifier_returned": false,
+  "original_process_exit_code": 137,
+  "new_circuit_execution": false,
+  "new_samples": false
+}

@@ -1,0 +1,124 @@
+{
+  "scope": "DFTHCSOS component only; not a complete three-task Kaggle submission",
+  "official_pass": true,
+  "official_verified_shots": 78080,
+  "exact_phase_address_transition_cases": 36600,
+  "all_91500_circuit_words_match_candidate_npz": true,
+  "changed_integer_words": 20,
+  "score_change_is_local_against_sha_bound_baseline": true,
+  "public_kaggle_score_observed": null,
+  "baseline_operations": 611422,
+  "candidate_operations": 408788,
+  "removed_operations": 202634,
+  "removed_operations_percent": 33.1414309593047,
+  "swap_expanded_candidate_operations": 409466,
+  "local_cost_before": 294988786.87084424,
+  "local_cost_after": 294988052.12610483,
+  "members": [
+    {
+      "path": "dfthcsos/angle_k_0.kmb",
+      "sha256": "39a74c931c745143d46ac3c3d7f76a84cc09982f0c7a9b2784e35e8cf0533b45",
+      "bytes": 263985
+    },
+    {
+      "path": "dfthcsos/angle_k_1.kmb",
+      "sha256": "753b1424a819fadcac324155a7cae1841f0ee977ce873f29c7e364c55cdd4f37",
+      "bytes": 287256
+    },
+    {
+      "path": "dfthcsos/angle_k_2.kmb",
+      "sha256": "487adc39d32a904021985241f80881fd90542fa35c0a379034fc88cc9ccfc337",
+      "bytes": 297819
+    },
+    {
+      "path": "dfthcsos/angle_k_3.kmb",
+      "sha256": "8e01cc596c3cbfd372f2b6d009e3b49c29ae9448eaf0d9f21f50d088d2404d6a",
+      "bytes": 308938
+    },
+    {
+      "path": "dfthcsos/angle_k_4.kmb",
+      "sha256": "f9b6e68a119dc2b819c21812a136f3ae76eddb36d8964d1847bab68f880b3330",
+      "bytes": 246511
+    },
+    {
+      "path": "dfthcsos/angle_k_5.kmb",
+      "sha256": "a17d6c663f66b3e8d9487b0b19f77075f5647ff240d258b6b7d37cb58997cd6c",
+      "bytes": 237798
+    },
+    {
+      "path": "dfthcsos/angle_k_6.kmb",
+      "sha256": "387f1a6095132fb6114682c8cc102a36cc93426860fa57b1fd972b65d4e88561",
+      "bytes": 227186
+    },
+    {
+      "path": "dfthcsos/angle_k_7.kmb",
+      "sha256": "146cb20a99a8c6005539df2b0c9f0eb11b33a71ab10d66480f51fd5590e53711",
+      "bytes": 231189
+    },
+    {
+      "path": "dfthcsos/angle_k_8.kmb",
+      "sha256": "0be2c2ec69d681f352c7e89fc94ed161f45b448110c9e617fe86181f72de646e",
+      "bytes": 230215
+    },
+    {
+      "path": "dfthcsos/angle_k_9.kmb",
+      "sha256": "3e31f13446a8a3c72bff3ac6c123d15f9c8b86039f505fe7b5510d7245246c99",
+      "bytes": 236811
+    },
+    {
+      "path": "dfthcsos/angle_k_10.kmb",
+      "sha256": "656d5eb283c54a2b934fdcf38fc56d7b3cc7b0607e7731c26eb15b574e74f5eb",
+      "bytes": 232220
+    },
+    {
+      "path": "dfthcsos/angle_k_11.kmb",
+      "sha256": "d4eeedc38481610804ec2708e2fc02323b63d9f37487cec6cb9b42ed7c94c033",
+      "bytes": 236911
+    },
+    {
+      "path": "dfthcsos/angle_k_12.kmb",
+      "sha256": "61275eda03641d1a7b4052b36fa1df4383918f8986172e73a7f8dcaa817d0308",
+      "bytes": 220654
+    },
+    {
+      "path": "dfthcsos/angle_k_13.kmb",
+      "sha256": "a4e43c2b183cf64de805701517fd0b56333dde662889579b824b4ee1ff0c3a72",
+      "bytes": 227643
+    },
+    {
+      "path": "dfthcsos/angle_k_14.kmb",
+      "sha256": "3b21fe0767295c6bd40c41e0c40ca1aeff02e54216ada02849c238ab66b70159",
+      "bytes": 219161
+    },
+    {
+      "path": "dfthcsos/submission.npz",
+      "sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+      "bytes": 1153807
+    },
+    {
+      "path": "evidence/score2_best_full_verification.json",
+      "sha256": "0d2410ba7ab526f4a0828b6af671996d64c9e8a683f185859e2244343319e661",
+      "bytes": 7346
+    },
+    {
+      "path": "evidence/score2_best_reachable_proof.json",
+      "sha256": "a28b54ecb14aaa355455b0fb0d76475215d414f4337c8f99fbd8b9326acbf62f",
+      "bytes": 23391
+    },
+    {
+      "path": "evidence/score2_pyzx_final_proof.json",
+      "sha256": "566b48afdc5f2d6f77705d1d3bf81bc52888c362224a6f58f052bc81f9135132",
+      "bytes": 468518
+    },
+    {
+      "path": "evidence/score2_angle_paired_zx_proof.json",
+      "sha256": "60431b857cb4c823abe256b1715c44019f904a7dcd686f93d3c5f35f8aa79cae",
+      "bytes": 45886
+    },
+    {
+      "path": "README.md",
+      "sha256": "5cbf2527988ebc8d15ee5e61988e4ca7f5b1902ed22caea4bf4b821630273ff2",
+      "bytes": 15150
+    }
+  ]
+}

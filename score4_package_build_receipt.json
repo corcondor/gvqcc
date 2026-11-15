@@ -1,0 +1,230 @@
+{
+  "status": "PACKAGE_INTEGRITY_PASS",
+  "source": "/workspace/scratch/3815fb5fae06/score3_submission/submission.zip",
+  "source_zip_sha256": "5a3011d3f208a0bae3b1e1bfb9b763ac8c7201f4de35a74d772699949b971882",
+  "output": "/workspace/scratch/3815fb5fae06/score4_submission/submission.zip",
+  "zip_sha256": "72bac12e45e4d8f70af949f408a72a79c30e7422f9b3bb578e06ef8228cfb1e2",
+  "zip_bytes": 63552791,
+  "member_count": 18,
+  "all_member_sha256_and_crc_pass": true,
+  "preserved_other_member_count": 17,
+  "source_dqi_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "candidate_dqi_sha256": "5a60d66233198be8ce05d9710bd35a7d2d6700bbced87560d405651070ae8194",
+  "patch": {
+    "source_header": {
+      "version": 2,
+      "num_qubits": 889,
+      "num_bits": 208087,
+      "num_registers": 4165,
+      "num_ops": 58869042,
+      "num_ops_with_3_target_qubits": 382934,
+      "num_ops_with_2_target_qubits": 32212227,
+      "num_ops_with_1_target_qubits": 274744,
+      "num_ops_with_1_target_bit": 24701619,
+      "num_ops_with_1_condition_bit": 25239591,
+      "num_ops_with_angle": 0,
+      "num_info_tags": 0,
+      "num_info_tag_chars": 0
+    },
+    "edited_original_operations": 32,
+    "old_ccx_in_edits": 32,
+    "new_ccx_in_edits": 16,
+    "static_ccx_removed": 16,
+    "source_and_old_operation_bytes_checked": true,
+    "unchanged_binary_columns_copied_verbatim": true
+  },
+  "members": [
+    {
+      "name": "invsqrt.kmb",
+      "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+      "bytes": 198626,
+      "compressed_bytes": 28699,
+      "crc32": "d7faa178",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dqi.kmb",
+      "sha256": "5a60d66233198be8ce05d9710bd35a7d2d6700bbced87560d405651070ae8194",
+      "bytes": 522345695,
+      "compressed_bytes": 61932242,
+      "crc32": "d19cdb35",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/submission.npz",
+      "sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+      "bytes": 1153807,
+      "compressed_bytes": 1150254,
+      "crc32": "1890c31b",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_0.kmb",
+      "sha256": "39a74c931c745143d46ac3c3d7f76a84cc09982f0c7a9b2784e35e8cf0533b45",
+      "bytes": 263985,
+      "compressed_bytes": 30859,
+      "crc32": "5b59c9c2",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_1.kmb",
+      "sha256": "753b1424a819fadcac324155a7cae1841f0ee977ce873f29c7e364c55cdd4f37",
+      "bytes": 287256,
+      "compressed_bytes": 33781,
+      "crc32": "eb66c178",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_2.kmb",
+      "sha256": "487adc39d32a904021985241f80881fd90542fa35c0a379034fc88cc9ccfc337",
+      "bytes": 297819,
+      "compressed_bytes": 35173,
+      "crc32": "f1f9e727",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_3.kmb",
+      "sha256": "8e01cc596c3cbfd372f2b6d009e3b49c29ae9448eaf0d9f21f50d088d2404d6a",
+      "bytes": 308938,
+      "compressed_bytes": 36573,
+      "crc32": "c48991b8",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_4.kmb",
+      "sha256": "f9b6e68a119dc2b819c21812a136f3ae76eddb36d8964d1847bab68f880b3330",
+      "bytes": 246511,
+      "compressed_bytes": 29464,
+      "crc32": "99d30744",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_5.kmb",
+      "sha256": "a17d6c663f66b3e8d9487b0b19f77075f5647ff240d258b6b7d37cb58997cd6c",
+      "bytes": 237798,
+      "compressed_bytes": 28433,
+      "crc32": "d994f6da",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_6.kmb",
+      "sha256": "387f1a6095132fb6114682c8cc102a36cc93426860fa57b1fd972b65d4e88561",
+      "bytes": 227186,
+      "compressed_bytes": 27001,
+      "crc32": "dfdc5926",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_7.kmb",
+      "sha256": "146cb20a99a8c6005539df2b0c9f0eb11b33a71ab10d66480f51fd5590e53711",
+      "bytes": 231189,
+      "compressed_bytes": 27533,
+      "crc32": "7efb80a9",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_8.kmb",
+      "sha256": "0be2c2ec69d681f352c7e89fc94ed161f45b448110c9e617fe86181f72de646e",
+      "bytes": 230215,
+      "compressed_bytes": 27548,
+      "crc32": "bd8291d6",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_9.kmb",
+      "sha256": "3e31f13446a8a3c72bff3ac6c123d15f9c8b86039f505fe7b5510d7245246c99",
+      "bytes": 236811,
+      "compressed_bytes": 28035,
+      "crc32": "15e775ba",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_10.kmb",
+      "sha256": "656d5eb283c54a2b934fdcf38fc56d7b3cc7b0607e7731c26eb15b574e74f5eb",
+      "bytes": 232220,
+      "compressed_bytes": 27473,
+      "crc32": "a293bd69",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_11.kmb",
+      "sha256": "d4eeedc38481610804ec2708e2fc02323b63d9f37487cec6cb9b42ed7c94c033",
+      "bytes": 236911,
+      "compressed_bytes": 28401,
+      "crc32": "cb166b5c",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_12.kmb",
+      "sha256": "61275eda03641d1a7b4052b36fa1df4383918f8986172e73a7f8dcaa817d0308",
+      "bytes": 220654,
+      "compressed_bytes": 26019,
+      "crc32": "97ea444d",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_13.kmb",
+      "sha256": "a4e43c2b183cf64de805701517fd0b56333dde662889579b824b4ee1ff0c3a72",
+      "bytes": 227643,
+      "compressed_bytes": 27184,
+      "crc32": "201b0e16",
+      "sha256_pass": true,
+      "crc_pass": true
+    },
+    {
+      "name": "dfthcsos/angle_k_14.kmb",
+      "sha256": "3b21fe0767295c6bd40c41e0c40ca1aeff02e54216ada02849c238ab66b70159",
+      "bytes": 219161,
+      "compressed_bytes": 25977,
+      "crc32": "d8fb3b8e",
+      "sha256_pass": true,
+      "crc_pass": true
+    }
+  ],
+  "payload_sha256": "99cfe420a659595af23a7f4a9dce07ed32a0a778f767341c5a053227c67bce7b",
+  "embedded_module_sha256": {
+    "dqi_ccx_peephole": "13a7b05b7722468369d9132ef2b5f538c1698936167a662b5546915e715d9f69",
+    "kmb_profile": "7e7d90fde91384b8c35e45103df09d3fed8400a3ca4544f9b5870a4ee0d83ede"
+  },
+  "recipe_sha256": "8c45c3a1f5f11e05f785949cfe09d55e10d97867e072eb99b3f7eeff6716d8ef",
+  "source_manifest_sha256": "cabff4b166e9fb3d471a4525aee3d74623c40aa3599445689c9459f4571c0cab",
+  "deterministic_zip": {
+    "timestamp": [
+      1980,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "compression": "DEFLATE",
+    "compression_level": 6,
+    "creator_system": "Unix",
+    "permissions": "regular 0644",
+    "extra_fields": false,
+    "comments": false,
+    "zip64": false,
+    "python": "3.12.14",
+    "zlib": "1.3.2"
+  },
+  "official_verifier_run": false,
+  "official_dqi_verification": "PENDING_SEPARATE_OFFICIAL_RECEIPT",
+  "kaggle_submission_performed": false,
+  "seconds": 36.908339392000926
+}

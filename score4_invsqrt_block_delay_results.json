@@ -1,0 +1,22 @@
+{
+  "status": "DELAY_REUSE_BOUNDED_SAMPLE_COMPLETE",
+  "source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "eligible_cleanup_groups": 978,
+  "rejected_classical_uses": {
+    "outer_use_BIT_INVERT": 79,
+    "outer_use_HMR": 46,
+    "live_internal_measurement": 42,
+    "outer_use_PUSH_CONDITION": 1
+  },
+  "pair_queries": 19969,
+  "sample_hits_before_cleanup_proof": 0,
+  "sample_hits": 0,
+  "samples": 512,
+  "sample_seconds": 3.9102904750034213,
+  "hits": [],
+  "allow_blocks": true,
+  "scope": "Only full-lifetime inline Clifford/CCZ cleanup outcomes, never input-selective behavior. Holder routes through existing constant slots; later product differs by an arbitrary affine function excluding its dirty target. Consume-in-target endpoints are permitted.",
+  "exact_checks": [],
+  "seconds": 3.910741429004702,
+  "script_sha256": "3dea3ae479e119d6b091055003c8630ab0f3b808767340d1c59bc803d48fb70b"
+}

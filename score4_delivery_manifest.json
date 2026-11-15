@@ -1,0 +1,93 @@
+{
+  "status": "EXACT_REWRITE_AND_FULL_OFFICIAL_AND_PACKAGE_PASS",
+  "baseline_dqi_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "candidate_dqi_sha256": "5a60d66233198be8ce05d9710bd35a7d2d6700bbced87560d405651070ae8194",
+  "additional_unconditional_ccx_removed": 16,
+  "added_cx": 32,
+  "quantum_width": 889,
+  "classical_bits": 208087,
+  "static_toffoli_before": 382934,
+  "static_toffoli_after": 382918,
+  "mean_toffoli_before": 382095.68779296876,
+  "mean_toffoli_after": 382079.294375,
+  "official_cost_before": 359734745778.9876,
+  "official_cost_after": 359719311733.9726,
+  "official_cost_reduction": 15434045.015014648,
+  "official_cost_reduction_percent": 0.004290395964280013,
+  "verification": {
+    "status": "PASS",
+    "shots": 102400,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "seed": null,
+    "salt": "",
+    "log2_delta": -128,
+    "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+    "receipt": "score4_dqi_full_verification.json"
+  },
+  "archive": {
+    "path": "/workspace/scratch/3815fb5fae06/score4_submission/submission.zip",
+    "sha256": "72bac12e45e4d8f70af949f408a72a79c30e7422f9b3bb578e06ef8228cfb1e2",
+    "bytes": 63552791,
+    "members": 18,
+    "other17_byte_identical": true,
+    "sha256_and_crc_pass": true
+  },
+  "unchanged_component_receipts": {
+    "invsqrt": {
+      "path": "/workspace/scratch/3815fb5fae06/score3_invsqrt_full200m.json",
+      "component": "invsqrt",
+      "state": "PASS",
+      "passes_bound_official_check": true,
+      "sha256": "546961b969cf58f64093b4a98d9a1a603044c16118572eaa0ee76f78eb1c0b53",
+      "reported_status": "PASS",
+      "official_metrics": {
+        "status": "PASS",
+        "score": 78673.55534364567,
+        "verified_shots": 200540928,
+        "toffoli_equivalent": 1710.2946813836015,
+        "toffoli_count": 1478.7506100300882,
+        "max_toffoli_count": 1550,
+        "num_qubits": 46,
+        "num_ops": 23881
+      }
+    },
+    "dfthcsos": {
+      "path": "/workspace/scratch/3815fb5fae06/score2_final_verified/verification.json",
+      "component": "dfthcsos",
+      "state": "PASS",
+      "passes_bound_official_check": true,
+      "sha256": "0d2410ba7ab526f4a0828b6af671996d64c9e8a683f185859e2244343319e661",
+      "reported_status": "PASS",
+      "official_metrics": {
+        "status": "PASS",
+        "score": 294988052.12610483,
+        "verified_shots": 78080,
+        "toffoli_count": 14728.0,
+        "num_qubits": 427,
+        "num_ops": 408788,
+        "lambda_eff": 46.906472675810164,
+        "metrics": {
+          "error_1": 0.01999998000005401,
+          "error_2": 0.0199999936269957,
+          "Lambda": 282.96313136058893,
+          "E_SOS": -22144.18824802,
+          "E_gap": 3.9148980200006918,
+          "lambda_eff": 46.906472675810164,
+          "gap_in_domain": true
+        }
+      }
+    }
+  },
+  "all_component_official_verifications_pass": true,
+  "new_kaggle_submission_performed": false,
+  "new_public_score": null,
+  "latest_prior_public_scores": {
+    "score3_369722797": 27.28236,
+    "v27_exact4096_369723885": 27.28543,
+    "selected_baseline": 27.30683
+  },
+  "prior_public_score_source": "Observed signed-in Kaggle submission UI, 2026-11-15 UTC",
+  "caution": "Exactly16 unconditional CCX are removed on every execution. The two default official runs use different hash-derived inputs; their measured mean difference is not the exact structural16.",
+  "no_new_qrom_or_invsqrt_gain_claimed": true
+}

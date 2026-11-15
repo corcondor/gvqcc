@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "empty",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "case": "short",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "case": "float",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "case": "negative",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "case": "overflow",
+      "accepted": false,
+      "expected": false
+    },
+    {
+      "case": "valid",
+      "accepted": true,
+      "expected": true
+    }
+  ],
+  "script_sha256": "6ee3bf730a81968ddf663bd6c16fec4211a55505a9d7432321c73b500f05dbee",
+  "scope": "Complete-domain input guards; existing circuit proofs were rerun on best family"
+}

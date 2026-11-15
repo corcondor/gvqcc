@@ -1,0 +1,1531 @@
+{
+  "status": "BUILT_EXACT_TWO_BLOCK_PATCH_REQUIRES_FULL_DECODER_TEST",
+  "input_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "output_path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/outcome_dqi_chart_norm_dqi_9a82_third_projective.kmb",
+  "output_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+  "output_bytes": 522343027,
+  "header": {
+    "version": 2,
+    "num_qubits": 889,
+    "num_bits": 208167,
+    "num_registers": 4165,
+    "num_ops": 58868706,
+    "num_ops_with_3_target_qubits": 382920,
+    "num_ops_with_2_target_qubits": 32212160,
+    "num_ops_with_1_target_qubits": 274491,
+    "num_ops_with_1_target_bit": 24701553,
+    "num_ops_with_1_condition_bit": 25239523,
+    "num_ops_with_angle": 0,
+    "num_info_tags": 0,
+    "num_info_tag_chars": 0
+  },
+  "static_T_delta": -14,
+  "mean_T_delta_model": -3,
+  "blocks": [
+    {
+      "start": 17097498,
+      "end": 17127071,
+      "old_ops": 29573,
+      "new_ops": 29475,
+      "condition_stack_depth": 0,
+      "quantum_mapping": {
+        "48": 48,
+        "49": 49,
+        "50": 50,
+        "51": 51,
+        "52": 52,
+        "53": 53,
+        "54": 54,
+        "55": 55,
+        "56": 56,
+        "57": 57,
+        "58": 58,
+        "59": 59,
+        "60": 60,
+        "61": 61,
+        "62": 62,
+        "63": 63,
+        "64": 64,
+        "65": 65,
+        "66": 66,
+        "67": 67,
+        "68": 68,
+        "69": 69,
+        "70": 70,
+        "71": 71,
+        "865": 868,
+        "866": 867,
+        "867": 865,
+        "868": 866,
+        "869": 872,
+        "870": 871,
+        "871": 869,
+        "872": 870,
+        "873": 876,
+        "874": 875,
+        "875": 873,
+        "876": 874,
+        "877": 888,
+        "878": 887,
+        "879": 886,
+        "880": 885,
+        "881": 884,
+        "882": 883,
+        "883": 882,
+        "884": 881,
+        "885": 880,
+        "886": 879,
+        "864": 864,
+        "840": 840,
+        "842": 842,
+        "844": 844,
+        "845": 845,
+        "846": 846,
+        "848": 848,
+        "849": 849,
+        "851": 851,
+        "841": 841,
+        "847": 847,
+        "850": 850,
+        "843": 843,
+        "853": 853,
+        "855": 855,
+        "857": 857,
+        "852": 852,
+        "854": 854,
+        "856": 856,
+        "858": 858,
+        "859": 859,
+        "861": 861,
+        "862": 862,
+        "863": 863,
+        "860": 860,
+        "888": 877,
+        "887": 878,
+        "12": 12,
+        "2": 2,
+        "13": 13,
+        "3": 3,
+        "14": 14,
+        "4": 4,
+        "15": 15,
+        "5": 5,
+        "16": 16,
+        "6": 6,
+        "17": 17,
+        "7": 7,
+        "18": 18,
+        "8": 8,
+        "19": 19,
+        "9": 9,
+        "20": 20,
+        "10": 10,
+        "21": 21,
+        "11": 11,
+        "22": 22,
+        "0": 0,
+        "1": 1,
+        "23": 23,
+        "36": 36,
+        "26": 26,
+        "37": 37,
+        "27": 27,
+        "38": 38,
+        "28": 28,
+        "39": 39,
+        "29": 29,
+        "40": 40,
+        "30": 30,
+        "41": 41,
+        "31": 31,
+        "42": 42,
+        "32": 32,
+        "43": 43,
+        "33": 33,
+        "44": 44,
+        "34": 34,
+        "45": 45,
+        "35": 35,
+        "46": 46,
+        "24": 24,
+        "25": 25,
+        "47": 47
+      }
+    },
+    {
+      "start": 54178176,
+      "end": 54213630,
+      "old_ops": 35454,
+      "new_ops": 35216,
+      "condition_stack_depth": 0,
+      "quantum_mapping": {
+        "54": 54,
+        "48": 48,
+        "56": 56,
+        "66": 66,
+        "60": 60,
+        "68": 68,
+        "840": 840,
+        "842": 842,
+        "844": 844,
+        "845": 845,
+        "846": 846,
+        "848": 848,
+        "849": 849,
+        "851": 851,
+        "52": 52,
+        "64": 64,
+        "841": 841,
+        "847": 847,
+        "850": 850,
+        "53": 53,
+        "55": 55,
+        "57": 57,
+        "58": 58,
+        "65": 65,
+        "67": 67,
+        "69": 69,
+        "70": 70,
+        "49": 49,
+        "50": 50,
+        "51": 51,
+        "59": 59,
+        "61": 61,
+        "62": 62,
+        "63": 63,
+        "71": 71,
+        "843": 843,
+        "853": 853,
+        "855": 855,
+        "857": 857,
+        "852": 852,
+        "854": 854,
+        "856": 856,
+        "864": 875,
+        "883": 888,
+        "884": 866,
+        "886": 881,
+        "885": 880,
+        "879": 873,
+        "880": 864,
+        "882": 884,
+        "881": 868,
+        "875": 887,
+        "858": 858,
+        "859": 859,
+        "861": 861,
+        "862": 862,
+        "863": 863,
+        "860": 860,
+        "878": 877,
+        "876": 886,
+        "877": 878,
+        "887": 871,
+        "866": 867,
+        "867": 865,
+        "868": 869,
+        "870": 883,
+        "871": 876,
+        "873": 870,
+        "888": 882,
+        "869": 874,
+        "872": 879,
+        "865": 885,
+        "36": 36,
+        "26": 26,
+        "37": 37,
+        "27": 27,
+        "38": 38,
+        "28": 28,
+        "39": 39,
+        "29": 29,
+        "40": 40,
+        "30": 30,
+        "41": 41,
+        "31": 31,
+        "42": 42,
+        "32": 32,
+        "43": 43,
+        "33": 33,
+        "44": 44,
+        "34": 34,
+        "45": 45,
+        "35": 35,
+        "46": 46,
+        "24": 24,
+        "25": 25,
+        "47": 47,
+        "874": 872,
+        "12": 12,
+        "2": 2,
+        "13": 13,
+        "3": 3,
+        "14": 14,
+        "4": 4,
+        "15": 15,
+        "5": 5,
+        "16": 16,
+        "6": 6,
+        "17": 17,
+        "7": 7,
+        "18": 18,
+        "8": 8,
+        "19": 19,
+        "9": 9,
+        "20": 20,
+        "10": 10,
+        "21": 21,
+        "11": 11,
+        "22": 22,
+        "0": 0,
+        "1": 1,
+        "23": 23
+      }
+    }
+  ],
+  "saved_original_mask_ids": [
+    49311,
+    49312,
+    49313,
+    49314,
+    49316,
+    49315,
+    49306,
+    49307,
+    49308,
+    49310,
+    49309,
+    49292,
+    49298,
+    49299,
+    49300,
+    49301,
+    49303,
+    49302,
+    49304
+  ],
+  "fresh_classical_bit_range": [
+    208087,
+    208167
+  ],
+  "new_shared_child_mask_ids": [
+    [
+      208100,
+      208101,
+      208102,
+      208103,
+      208104,
+      208105
+    ],
+    [
+      208093,
+      208092,
+      208091,
+      208090,
+      208087,
+      208088
+    ],
+    [
+      208099,
+      208098,
+      208097,
+      208096,
+      208094,
+      208095
+    ]
+  ],
+  "mask_ownership_audit": {
+    "saved_bits_middle_accesses": 0,
+    "affected_bits": [
+      49190,
+      49191,
+      49192,
+      49193,
+      49194,
+      49195,
+      49196,
+      49197,
+      49198,
+      49199,
+      49200,
+      49201,
+      49202,
+      49214,
+      49215,
+      49216,
+      49217,
+      49218,
+      49219,
+      49220,
+      49221,
+      49222,
+      49223,
+      49224,
+      49225,
+      49226,
+      49227,
+      49228,
+      49229,
+      49230,
+      49231,
+      49232,
+      49233,
+      49234,
+      49235,
+      49236,
+      49237,
+      49280,
+      49281,
+      49282,
+      49283,
+      49284,
+      49285,
+      49286,
+      49287,
+      49288,
+      49289,
+      49290,
+      49291,
+      49292,
+      49293,
+      49294,
+      49295,
+      49296,
+      49297,
+      49298,
+      49299,
+      49300,
+      49301,
+      49302,
+      49303,
+      49304,
+      49305,
+      49306,
+      49307,
+      49308,
+      49309,
+      49310,
+      49311,
+      49312,
+      49313,
+      49314,
+      49315,
+      49316,
+      49413,
+      49414,
+      49415,
+      49416,
+      49417,
+      49418,
+      49419,
+      49420,
+      49421,
+      49422,
+      49423,
+      49424,
+      49425,
+      49426,
+      49427,
+      49428,
+      49429,
+      49430,
+      49431,
+      49432,
+      49433,
+      49434,
+      49435,
+      49436,
+      49462
+    ],
+    "next_untouched_access_checks": [
+      {
+        "boundary": "after_prefix",
+        "bit": 49280,
+        "next_untouched_access": {
+          "op": 17152531,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49281,
+        "next_untouched_access": {
+          "op": 17152530,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49282,
+        "next_untouched_access": {
+          "op": 17152529,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49283,
+        "next_untouched_access": {
+          "op": 17152528,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49284,
+        "next_untouched_access": {
+          "op": 17152527,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49285,
+        "next_untouched_access": {
+          "op": 17152526,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49286,
+        "next_untouched_access": {
+          "op": 17152525,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49287,
+        "next_untouched_access": {
+          "op": 17152524,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49288,
+        "next_untouched_access": {
+          "op": 17152523,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49289,
+        "next_untouched_access": {
+          "op": 17152522,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49290,
+        "next_untouched_access": {
+          "op": 17152521,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49291,
+        "next_untouched_access": {
+          "op": 17152520,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49292,
+        "next_untouched_access": {
+          "op": 54219260,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49293,
+        "next_untouched_access": {
+          "op": 17152533,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49294,
+        "next_untouched_access": {
+          "op": 17152534,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49295,
+        "next_untouched_access": {
+          "op": 17152535,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49296,
+        "next_untouched_access": {
+          "op": 17152537,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49297,
+        "next_untouched_access": {
+          "op": 17152536,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49298,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49299,
+        "next_untouched_access": {
+          "op": 54215767,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49300,
+        "next_untouched_access": {
+          "op": 54215768,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49301,
+        "next_untouched_access": {
+          "op": 54217915,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49302,
+        "next_untouched_access": {
+          "op": 54217917,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49303,
+        "next_untouched_access": {
+          "op": 54217916,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49304,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49305,
+        "next_untouched_access": {
+          "op": 17152532,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49306,
+        "next_untouched_access": {
+          "op": 54219255,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49307,
+        "next_untouched_access": {
+          "op": 54219256,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49308,
+        "next_untouched_access": {
+          "op": 54219257,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49309,
+        "next_untouched_access": {
+          "op": 54219259,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49310,
+        "next_untouched_access": {
+          "op": 54219258,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49311,
+        "next_untouched_access": {
+          "op": 54222788,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49312,
+        "next_untouched_access": {
+          "op": 54222778,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49313,
+        "next_untouched_access": {
+          "op": 54222777,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49314,
+        "next_untouched_access": {
+          "op": 54222776,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49315,
+        "next_untouched_access": {
+          "op": 54222774,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49316,
+        "next_untouched_access": {
+          "op": 54222775,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_prefix",
+        "bit": 49462,
+        "next_untouched_access": {
+          "op": 18496033,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49190,
+        "next_untouched_access": {
+          "op": 54222168,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49191,
+        "next_untouched_access": {
+          "op": 54222167,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49192,
+        "next_untouched_access": {
+          "op": 54222157,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49193,
+        "next_untouched_access": {
+          "op": 54222156,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49194,
+        "next_untouched_access": {
+          "op": 54222155,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49195,
+        "next_untouched_access": {
+          "op": 54222154,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49196,
+        "next_untouched_access": {
+          "op": 54222153,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49197,
+        "next_untouched_access": {
+          "op": 54222152,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49198,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49199,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49200,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49201,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49202,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49214,
+        "next_untouched_access": {
+          "op": 54222376,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49215,
+        "next_untouched_access": {
+          "op": 54222377,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49216,
+        "next_untouched_access": {
+          "op": 54222378,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49217,
+        "next_untouched_access": {
+          "op": 54222379,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49218,
+        "next_untouched_access": {
+          "op": 54222566,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49219,
+        "next_untouched_access": {
+          "op": 54222567,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49220,
+        "next_untouched_access": {
+          "op": 54222568,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49221,
+        "next_untouched_access": {
+          "op": 54222569,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49222,
+        "next_untouched_access": {
+          "op": 54222570,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49223,
+        "next_untouched_access": {
+          "op": 54222571,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49224,
+        "next_untouched_access": {
+          "op": 54222581,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49225,
+        "next_untouched_access": {
+          "op": 54222582,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49226,
+        "next_untouched_access": {
+          "op": 54222169,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49227,
+        "next_untouched_access": {
+          "op": 54222170,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49228,
+        "next_untouched_access": {
+          "op": 54222171,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49229,
+        "next_untouched_access": {
+          "op": 54222172,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49230,
+        "next_untouched_access": {
+          "op": 54222359,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49231,
+        "next_untouched_access": {
+          "op": 54222360,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49232,
+        "next_untouched_access": {
+          "op": 54222361,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49233,
+        "next_untouched_access": {
+          "op": 54222362,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49234,
+        "next_untouched_access": {
+          "op": 54222363,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49235,
+        "next_untouched_access": {
+          "op": 54222364,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49236,
+        "next_untouched_access": {
+          "op": 54222374,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49237,
+        "next_untouched_access": {
+          "op": 54222375,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49292,
+        "next_untouched_access": {
+          "op": 54219260,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49298,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49299,
+        "next_untouched_access": {
+          "op": 54215767,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49300,
+        "next_untouched_access": {
+          "op": 54215768,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49301,
+        "next_untouched_access": {
+          "op": 54217915,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49302,
+        "next_untouched_access": {
+          "op": 54217917,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49303,
+        "next_untouched_access": {
+          "op": 54217916,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49304,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49306,
+        "next_untouched_access": {
+          "op": 54219255,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49307,
+        "next_untouched_access": {
+          "op": 54219256,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49308,
+        "next_untouched_access": {
+          "op": 54219257,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49309,
+        "next_untouched_access": {
+          "op": 54219259,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49310,
+        "next_untouched_access": {
+          "op": 54219258,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49311,
+        "next_untouched_access": {
+          "op": 54222788,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49312,
+        "next_untouched_access": {
+          "op": 54222778,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49313,
+        "next_untouched_access": {
+          "op": 54222777,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49314,
+        "next_untouched_access": {
+          "op": 54222776,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49315,
+        "next_untouched_access": {
+          "op": 54222774,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49316,
+        "next_untouched_access": {
+          "op": 54222775,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49413,
+        "next_untouched_access": {
+          "op": 54219249,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49414,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49415,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49416,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49417,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49418,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49419,
+        "next_untouched_access": {
+          "op": 54222585,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49420,
+        "next_untouched_access": {
+          "op": 54222584,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49421,
+        "next_untouched_access": {
+          "op": 54222583,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49422,
+        "next_untouched_access": {
+          "op": 54222586,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49423,
+        "next_untouched_access": {
+          "op": 54222773,
+          "kind": "target",
+          "opcode": "0x40",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49424,
+        "next_untouched_access": {
+          "op": 54217918,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49425,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49426,
+        "next_untouched_access": {
+          "op": 54219254,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49427,
+        "next_untouched_access": {
+          "op": 54219253,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49428,
+        "next_untouched_access": {
+          "op": 54219252,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49429,
+        "next_untouched_access": {
+          "op": 54219251,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49430,
+        "next_untouched_access": {
+          "op": 54219250,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49431,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49432,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49433,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49434,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49435,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49436,
+        "next_untouched_access": null
+      },
+      {
+        "boundary": "after_return",
+        "bit": 49462,
+        "next_untouched_access": {
+          "op": 54215916,
+          "kind": "target",
+          "opcode": "0x50",
+          "unconditional_overwrite": true
+        }
+      }
+    ]
+  },
+  "preservation": "All original register bytes and every operand column outside the two exact matched blocks copied verbatim. All new classical bits are fresh; the prefix and return share the same complete allocation.",
+  "scope": "General D=0 repair at third public pivot, finite final output domain. N=0 and other pivots remain unextended.",
+  "elapsed_seconds": 29.824195619999955
+}

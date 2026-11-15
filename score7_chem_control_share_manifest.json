@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_NO_NEW_CANDIDATE",
+  "files": [
+    {
+      "path": "score7_chem_window_rank.py",
+      "sha256": "e003866ee092744f2efd03ad91ce669d10a59bba4119e92fcf39c01ac867524b",
+      "bytes": 8104
+    },
+    {
+      "path": "score7_chem_window_rank_measurements.json",
+      "sha256": "c6db0e38da3666f44417cd1037d6d77dbcece61201a97aa7ade182c3d779cbb6",
+      "bytes": 13369
+    },
+    {
+      "path": "score7_chem_control_share_report.md",
+      "sha256": "14b74a6cf27dcf4c24e57d0dbf25f8ea6092bdf738471f81a2483d7f88bce248",
+      "bytes": 6534
+    }
+  ],
+  "new_toffoli_reduction": 0,
+  "official_reverification_performed": false,
+  "submitted": false
+}

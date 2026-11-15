@@ -1,0 +1,72 @@
+{
+  "source": "/workspace/scratch/3815fb5fae06/score_chemistry_c43_whiten/candidate.npz",
+  "source_sha256": "44f1536ac3b271937449724edd609b5f00c514efc657d2018aa4638d02349f8f",
+  "candidate": "/workspace/scratch/3815fb5fae06/score_chemistry_c43_whiten/candidate_converged.npz",
+  "candidate_sha256": "535059de7cba19724ba40d6370f69dc6024b87a094c884c7e7b473aef95d3aa3",
+  "script_sha256": "aa75cac1d20de4ce69c44f5a200d856da52e9df6a86e087150411c689c9004df",
+  "parameterization": "Y_r=L_r.T W_r; exact Cholesky whitening of V_r V_r.T",
+  "orthogonality_error": 4.134470543704083e-13,
+  "gradient_check_error": 7.512393593485378e-12,
+  "official_numeric_metrics": {
+    "error_1": 0.031533886210786004,
+    "error_2": 0.021121775043258892,
+    "Lambda": 294.1599337742243,
+    "E_SOS": -22144.373785806427,
+    "E_gap": 4.100435806427413,
+    "lambda_eff": 48.94439985050036,
+    "gap_in_domain": true
+  },
+  "two_body_error_pass": false,
+  "full_circuit_verified": false,
+  "calls": 1968,
+  "seconds": 88.7694754969998,
+  "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "trace": [
+    {
+      "calls": 6,
+      "best_error2": 0.021123840362257146,
+      "seconds": 0.32909330199981923
+    },
+    {
+      "calls": 361,
+      "best_error2": 0.02112189686201139,
+      "seconds": 10.3601968210005
+    },
+    {
+      "calls": 540,
+      "best_error2": 0.02112179699400746,
+      "seconds": 20.404044700000668
+    },
+    {
+      "calls": 736,
+      "best_error2": 0.021121777678438973,
+      "seconds": 30.450917018000837
+    },
+    {
+      "calls": 927,
+      "best_error2": 0.02112177548861139,
+      "seconds": 40.47602391299915
+    },
+    {
+      "calls": 1119,
+      "best_error2": 0.021121775112946523,
+      "seconds": 50.50061710599948
+    },
+    {
+      "calls": 1343,
+      "best_error2": 0.021121775050286316,
+      "seconds": 60.50211415400008
+    },
+    {
+      "calls": 1607,
+      "best_error2": 0.021121775043936253,
+      "seconds": 70.53097825899931
+    },
+    {
+      "calls": 1859,
+      "best_error2": 0.02112177504329147,
+      "seconds": 80.54950682900017
+    }
+  ],
+  "peak_rss_mib": 1057.1875
+}

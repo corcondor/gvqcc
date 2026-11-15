@@ -1,0 +1,31 @@
+{
+  "status": "ALL_MATCHED_INPUT_OUTPUT_PHASE_AND_CLASSICAL_HASHES_EQUAL",
+  "source_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+  "candidate_sha256": "98ad7b39a630a4152c54b39fbb14dece22fcaf34b00410ab8a45629db87e0b6f",
+  "shots": 16896,
+  "batches": 66,
+  "exact_mean_Toffoli_decrease": 16,
+  "all_failures_identical": true,
+  "groups": {
+    "known_weight31": {
+      "shots": 256,
+      "value_errors": 1,
+      "phase_errors": 0
+    },
+    "known_weight33": {
+      "shots": 256,
+      "value_errors": 0,
+      "phase_errors": 0
+    },
+    "independent": {
+      "shots": 16384,
+      "value_errors": 0,
+      "phase_errors": 0
+    }
+  },
+  "receipts": {
+    "outcome_dqi_chart_norm_paired.json": "57cdada744c1e3c6bb5954f2ef6d526ea953024833ea6bf894305ef93378a756",
+    "score5_dqi_norm_fanout_paired.json": "b810e14ce4bbfb9492f63ff25e90056bffa0439d116599eb618711e2dc3e25ed"
+  },
+  "scope": "Includes16384 fixed independent shots and512 prior regression shots. The numerator-zero regression remains; no new failure or phase error is introduced. No new simulation or server scoring."
+}

@@ -1,0 +1,37 @@
+{
+  "status": "FROZEN_NO_ADDITIONAL_QROM_CCX",
+  "additional_ccx_saved": 0,
+  "candidate_kmb_written": false,
+  "source_table_sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+  "files": {
+    "score4_qrom_cross.py": {
+      "bytes": 11801,
+      "sha256": "643b4ddadfa52089918c9c5d71113101d6904db5b47b9ce01b27539ce5c74e22"
+    },
+    "score4_qrom_cross_search.cpp": {
+      "bytes": 5713,
+      "sha256": "dc337a9d8027260d61ebca53cc2a0028b018838113552210dc507445b9b6db84"
+    },
+    "score4_qrom_matrix_search.cpp": {
+      "bytes": 5811,
+      "sha256": "e0893ddf5fb3548f14b15a0bfd0ecf8c681f8f17ac066f7639b47dc25f324348"
+    },
+    "score4_qrom_cross_bridge_check.json": {
+      "bytes": 1431,
+      "sha256": "5b925760e3d76ba46f4628e67c3114dd1b867e19fff306f15c624b7a2c4d1e88"
+    },
+    "score4_qrom_results.json": {
+      "bytes": 33541,
+      "sha256": "de12eae66dbee725dbaf82da3128079810917ca5bc0518d83b4a353d0f39d873"
+    },
+    "score4_qrom_report.md": {
+      "bytes": 6699,
+      "sha256": "65efd6eb8025eedd55895e6cdf31672d4849768b6eaa84612b96588e89f5a8ed"
+    },
+    "score4_qrom_raw_runs.json.gz": {
+      "bytes": 315759,
+      "sha256": "46bdcc61a65f6798e9e1a3b842b3fd3f6ec3db946fa937b2ce794aa044ff520c"
+    }
+  },
+  "stop_reason": "Bounded new functional searches completed without a reduction; no further search while root integrates a separate positive DQI candidate."
+}

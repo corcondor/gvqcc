@@ -1,0 +1,65 @@
+{
+  "status": "COMPLETE_EXACT_JOINT_PHASE_SCREEN",
+  "source_path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache.kmx",
+  "source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "legal_inputs": 3133452,
+  "targets": 8,
+  "eligible_cuts": 2532,
+  "queries": 20256,
+  "final_sample_rows": 4608,
+  "refinements": [],
+  "plans": [],
+  "scope": "Eight nested phase pairs. Search affine complement-within-base predicates at all depth-zero CCX/CSWAP/HMR cuts outside every removed gadget. General phase resynthesis is not exhausted.",
+  "exact_pair_supports": [
+    {
+      "name": "feature_j0",
+      "base": 1905323,
+      "subset": 862426,
+      "complement": 1042897
+    },
+    {
+      "name": "feature_j1",
+      "base": 1652895,
+      "subset": 215612,
+      "complement": 1437283
+    },
+    {
+      "name": "feature_j2",
+      "base": 1587658,
+      "subset": 53903,
+      "complement": 1533755
+    },
+    {
+      "name": "feature_j7",
+      "base": 1565960,
+      "subset": 54,
+      "complement": 1565906
+    },
+    {
+      "name": "feature_j3",
+      "base": 1570495,
+      "subset": 13478,
+      "complement": 1557017
+    },
+    {
+      "name": "feature_j6",
+      "base": 1565926,
+      "subset": 213,
+      "complement": 1565713
+    },
+    {
+      "name": "feature_j4",
+      "base": 1567632,
+      "subset": 3371,
+      "complement": 1564261
+    },
+    {
+      "name": "feature_j5",
+      "base": 1567225,
+      "subset": 841,
+      "complement": 1566384
+    }
+  ],
+  "elapsed_seconds": 5.716551595003693,
+  "script_sha256": "c2cb310c635458582d28f3232615768d25f2764f8566a61de7de8af484a69b13"
+}

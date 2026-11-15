@@ -1,0 +1,237 @@
+{
+  "status": "PASS_NECESSARY_COUNTS_AND_AUTOTOPIES_ONLY",
+  "input_sha256": "8446959c7d46f19571ce207d024f302cf28792bc04d1a5a6e7d5e3abc0913077",
+  "source_sha256": "2d8416981646613f213d3c2739201aeceae6ac1d16aec40d6a286068693d0ca1",
+  "tensor_dimensions": [
+    3,
+    6,
+    6
+  ],
+  "input_rank": 12,
+  "nonzero_slice_ranks": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "field_identity_coordinate": 1,
+  "scalar_autotopy_checks": 3584,
+  "rank_below_11_excluded_by": "4*r >= 7*6",
+  "rank11_count_vectors_enumerated": 12376,
+  "rank11_feasible_first_factor_count_vectors": [
+    {
+      "a0": 1,
+      "counts": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "weights": [
+        8,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "a0": 2,
+      "counts": [
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "weights": [
+        6,
+        8,
+        6,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "a0": 3,
+      "counts": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "weights": [
+        6,
+        6,
+        8,
+        6,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "a0": 4,
+      "counts": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "weights": [
+        6,
+        6,
+        6,
+        8,
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "a0": 5,
+      "counts": [
+        2,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "weights": [
+        6,
+        6,
+        6,
+        6,
+        8,
+        6,
+        6
+      ]
+    },
+    {
+      "a0": 6,
+      "counts": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "weights": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        8,
+        6
+      ]
+    },
+    {
+      "a0": 7,
+      "counts": [
+        2,
+        2,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "weights": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        8
+      ]
+    }
+  ],
+  "centralizer_group_size": 3528,
+  "nonzero_factor_orbit_size": 63,
+  "first_factor_stabilizer_size": 56,
+  "second_factor_stabilizer_orbit": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+  ],
+  "fixed_v_normalization": "Every nonzero factor can be mapped to1 by a centralizer conjugation; duplicate-u factors may be reordered.",
+  "rank11_sat_or_unsat_claim": null,
+  "seconds": 0.16590380200068466
+}

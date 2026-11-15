@@ -1,0 +1,38 @@
+{
+  "scope": "Reproducible numeric probes; no accepted circuit and no Public Score update.",
+  "source_kmx_sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1",
+  "files": [
+    {
+      "path": "score3_invsqrt_table_probe.py",
+      "sha256": "4df0dc42ab67634c0efb04fb23bffc667783bfe62e13709b1c3c1b272e034458",
+      "bytes": 11976
+    },
+    {
+      "path": "score3_invsqrt_table_extract.cpp",
+      "sha256": "5740ada15610d6f6f350b24decc17ffbe3c3cfeb9053aedb015a961f33c07dbe",
+      "bytes": 3647
+    },
+    {
+      "path": "score3_invsqrt_table_summarize.py",
+      "sha256": "c3c2f6731a3d3ef62b223b0e61fea87ce44c221531e1966d567f1d9423845fb8",
+      "bytes": 8303
+    },
+    {
+      "path": "score3_invsqrt_integer_table.json",
+      "sha256": "ebf8cac2da5fb3ec1993bff7c0cb74c9dca39175304af66aabe94c527c471952",
+      "bytes": 42776
+    },
+    {
+      "path": "score3_invsqrt_table_result.json",
+      "sha256": "f7ab25bdbdb702d55662dc5fcfc78202adc85eb80ada0fa6c5dc745aacc1b1de",
+      "bytes": 71803
+    },
+    {
+      "path": "score3_invsqrt_table_report.md",
+      "sha256": "b3d5148683bd75a1194e7426ba772e3502afdf193b7f36d84a6d3f5060f28987",
+      "bytes": 7730
+    }
+  ],
+  "large_intermediates": "Predicate bitsets, compiled extractor and per-trial roots are regenerated in the work directory and intentionally not published.",
+  "reproduction_code_note": "Final code adds table-packing metadata checks to the executed numeric algorithm; arithmetic/LP routines and evaluated candidates are unchanged."
+}

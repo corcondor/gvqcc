@@ -1,0 +1,111 @@
+{
+  "status": "HASH_BOUND_LOCAL_PORTFOLIO_SCORE",
+  "reference_costs": {
+    "invsqrt": 2076774.233715,
+    "dqi": 24439463583672.93,
+    "dfthcsos": 3355599588.3155375
+  },
+  "reference_source": "official_sources/maoxin_4033_cell07.py REFERENCE; independently agrees with atakan_v15_cell_10.py to published precision",
+  "formula": "geometric_mean(reference_cost / candidate_cost); DQI cost = repetition_factor * Q^2 * mean_Toffoli",
+  "candidate_costs": {
+    "dqi": 359707293756.04297,
+    "invsqrt": 78673.55534364567,
+    "dfthcsos": 294988037.80410767
+  },
+  "previous_score5_local_score": 27.324751052404785,
+  "local_combined_score": 27.324751494620457,
+  "local_combined_increase": 4.4221567208069246e-07,
+  "local_combined_score_5dp": "27.32475",
+  "previous_score5_5dp": "27.32475",
+  "new_toffoli_reduction": 0,
+  "public_score": null,
+  "submission_performed": false,
+  "chemistry_metrics": {
+    "error_1": 0.01999890416235086,
+    "error_2": 0.019999999800000157,
+    "Lambda": 282.9631054929985,
+    "E_SOS": -22144.188248000097,
+    "E_gap": 3.9148980000973097,
+    "lambda_eff": 46.90647039844889,
+    "gap_in_domain": true
+  },
+  "chemistry_resources": {
+    "brot": 8,
+    "keep_bits": 10,
+    "angles_toffoli_per_pass": 4033.0,
+    "angles_toffoli": 8066.0,
+    "angles_qubits": 128,
+    "angles_selection_qubits": 11,
+    "angles_persistent_qubits": 40,
+    "angles_temporary_qubits": 77,
+    "outer_state_prep_toffoli": 317,
+    "inner_state_prep_toffoli": 4095,
+    "givens_rotations_toffoli": 2250,
+    "outer_state_prep_persistent_qubits": 40,
+    "outer_state_prep_temporary_qubits": 90,
+    "outer_state_prep_qubits": 130,
+    "inner_state_prep_persistent_qubits": 44,
+    "inner_state_prep_temporary_qubits": 303,
+    "inner_state_prep_qubits": 347,
+    "heuristic_persistent_qubits": 84,
+    "heuristic_temporary_qubits": 303,
+    "heuristic_toffoli": 6662,
+    "heuristic_qubits": 387,
+    "persistent_qubits": 124,
+    "temporary_qubits": 303,
+    "toffoli": 14728.0,
+    "qubits": 427,
+    "angles_within_cap": true
+  },
+  "chemistry_npz_sha256": "16ee9ad3716309385aa9ce48c1f714e59484b79126ac6fe60591d3ba8bd7ebcf",
+  "margin_preserving_alternative": {
+    "npz_sha256": "99627e266340dd5fe71fff264d088024593310e1f06b2b15a61ef6108ee699c0",
+    "chemistry_cost": 294988049.0869681,
+    "local_combined_score": 27.324751146243223,
+    "metrics": {
+      "error_1": 0.01999976426910306,
+      "error_2": 0.0199999948602906,
+      "Lambda": 282.9631258424406,
+      "E_SOS": -22144.188248016184,
+      "E_gap": 3.914898016184452,
+      "lambda_eff": 46.90647219255269,
+      "gap_in_domain": true
+    },
+    "full_official_shots": 78080
+  },
+  "counterfactual_resource_sensitivities": [
+    {
+      "change": "DQI_Q889_to_888",
+      "combined_score": 27.345261724005095,
+      "increase": 0.020510229384637313
+    },
+    {
+      "change": "DQI_one_unconditional_CCX",
+      "combined_score": 27.324775334097854,
+      "increase": 2.38394773965922e-05
+    },
+    {
+      "change": "ANGLE_one_CCX_each_pass",
+      "combined_score": 27.325988468433582,
+      "increase": 0.0012369738131248198
+    },
+    {
+      "change": "invsqrt_one_unconditional_CCX",
+      "combined_score": 27.33007911598055,
+      "increase": 0.005327621360091683
+    }
+  ],
+  "sensitivity_scope": "Hypothetical only: fixed other costs, repetition factor and execution frequency; not achieved circuit changes or server-score predictions.",
+  "dqi_extra_CCX_break_even_for_Q888": 860.9947227827776,
+  "retained_dqi_limits": [
+    "Different KMB hashes use different default samples. Exact gate reductions versus the projective-norm predecessor are proved separately; they are not inferred from finite mean differences.",
+    "One known node13 numerator-zero input remains incorrect; this finite default PASS is not universal correctness."
+  ],
+  "receipts": {
+    "score6_chem_transfer_full_verification.json": "5d577efc96bdea384bc65e0506b52282f9d2e3ecd6a02118428875314b1d8cca",
+    "score5_dqi_final_full_verification.json": "3b59268e86faedf7026ef4b53b2428675dd7bb3f031cee61e5eb5dfb236df043",
+    "score3_invsqrt_full_verification.json": "546961b969cf58f64093b4a98d9a1a603044c16118572eaa0ee76f78eb1c0b53",
+    "score6_chem_backoff_full_verification.json": "c2249ff1aad7bec90cf20b48a8ee0a1ca7ada9416af3a0b7d2bae693c17c58e3",
+    "score5_final_scorecard.json": "0da82e37c24f27973ab05973da6476a2a1c0fe6d621665f656a0b012549228f0"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "status": "FROZEN_NEW_RESEARCH_FILES",
+  "files": [
+    {
+      "path": "score9_rebatch_alt_compile.py",
+      "bytes": 8915,
+      "sha256": "a7158cd29f506ac93dc455663b6c0d263812bc7bc0b6f3f50c4b5ebd8540188e"
+    },
+    {
+      "path": "score9_rebatch_alt_manifest.json",
+      "bytes": 4590,
+      "sha256": "96a5d96208aa84c8c7375868217004248306f488a7c62d2509676984207152c4"
+    },
+    {
+      "path": "score9_rebatch_alt_partitions.cpp",
+      "bytes": 4794,
+      "sha256": "a877fdf09550f78d4a011e3ae461dd9f362a200199b5d983e7e10739965d6c88"
+    },
+    {
+      "path": "score9_rebatch_alt_partitions.py",
+      "bytes": 4708,
+      "sha256": "2296a562f1c8ee2cce1e82d53581caf363acb9b850bf34b466e9d06b5ffd2597"
+    },
+    {
+      "path": "score9_rebatch_alt_report.md",
+      "bytes": 7210,
+      "sha256": "3007fe0853d0e5c7eba9dd9ca431c4a5d8b3ec57f598c344e280274032acf2e8"
+    },
+    {
+      "path": "score9_rebatch_alt_verify.py",
+      "bytes": 3018,
+      "sha256": "008764ad53a999aab52f748e626dc1b94913c2b23b3c6191d01112a5f77e02eb"
+    },
+    {
+      "path": "score9_rebatch_archive.py",
+      "bytes": 3393,
+      "sha256": "45fc16a2335bdfb2ae1f799331e74ceb4b95949f5e581b8e9318ebe00f36f1e0"
+    },
+    {
+      "path": "score9_rebatch_artifacts.json",
+      "bytes": 15067,
+      "sha256": "73888894d0aacd490618d84051c323e18ebab1b70b94ce77c8cc496f19405964"
+    },
+    {
+      "path": "score9_rebatch_borrow.json",
+      "bytes": 16334,
+      "sha256": "8bb27dcfbbb819a0ced01c2e930e725ef456a4cff1f92a2ef24e3d811a28d375"
+    },
+    {
+      "path": "score9_rebatch_borrow.py",
+      "bytes": 6252,
+      "sha256": "7bb106d71206beadd3418380fad27b2e88aa360b5845666247ad9ee131533931"
+    },
+    {
+      "path": "score9_rebatch_borrow_review.json",
+      "bytes": 33253,
+      "sha256": "88e625e5a553069519410d5945a5a97a9bf1b6df666b3d52083cf7af186ec3ab"
+    },
+    {
+      "path": "score9_rebatch_borrow_review.py",
+      "bytes": 11959,
+      "sha256": "89a1c3275c2d896953450162fc47661cc9b1b3889c61e9dca8e3d92e09432e37"
+    },
+    {
+      "path": "score9_rebatch_contract.json",
+      "bytes": 93496,
+      "sha256": "c55eb9d45e1325c45c05ba5df84fe4148a171fb42a6207178a360fb0b203b2dd"
+    },
+    {
+      "path": "score9_rebatch_contract.md",
+      "bytes": 8444,
+      "sha256": "618bc551f51d9d0c34ba0621e6639ad6bf7a6b99c53e734f9ef28a5cea96e6e9"
+    },
+    {
+      "path": "score9_rebatch_contract.py",
+      "bytes": 24386,
+      "sha256": "1d93a90ca675adebe23f7d3b1141f29b4716f549cb0dc901604400071ac1dd95"
+    },
+    {
+      "path": "score9_rebatch_experiments.zip",
+      "bytes": 2317841,
+      "sha256": "e59cbfae5eb6dbf9fb424ac93418128cede16b26e689b9d64e5ec96a10155712"
+    },
+    {
+      "path": "score9_rebatch_independent_review.json",
+      "bytes": 126381,
+      "sha256": "7bd7fdd448b8be5a2ce7a1ce69efada3aca645b7dcb4cb8371278081cd04924a"
+    },
+    {
+      "path": "score9_rebatch_independent_review.py",
+      "bytes": 18849,
+      "sha256": "0f4a656f7455577b463b9647f5536fe474c33111150b039820b9d125e4086917"
+    },
+    {
+      "path": "score9_rebatch_matrix_build.py",
+      "bytes": 4641,
+      "sha256": "f00dba92ecaa3f0d7e77bdd1ef9e7be8ee23d484a28e4cdd5652247f664eb197"
+    },
+    {
+      "path": "score9_rebatch_matrix_k0_input.json",
+      "bytes": 548,
+      "sha256": "6faf01ac2a072148369ef84137b9b3d215a8af7da9622facf1c68a1798c24a68"
+    },
+    {
+      "path": "score9_rebatch_matrix_k0_input.txt",
+      "bytes": 14521,
+      "sha256": "6a0c08dbe6d519b5d40b866aa81f930ee1d1a3f334e3d64be311059dafa9b7ce"
+    },
+    {
+      "path": "score9_rebatch_matrix_k0_result.json",
+      "bytes": 15630,
+      "sha256": "27c7b6b3cb0cf64901734c171b49f95e56d5957d083bd49d5d1262bd2dc86d47"
+    },
+    {
+      "path": "score9_rebatch_matrix_k5_input.json",
+      "bytes": 548,
+      "sha256": "90cdce67372d6d557ccb28b9b3e221ff3753e52bd0cf1b269429b1abbd1fdb92"
+    },
+    {
+      "path": "score9_rebatch_matrix_k5_input.txt",
+      "bytes": 13124,
+      "sha256": "587ac7b1adb4afde2a5f0494f6bd66119e4334dc2d6293f7a55aabdbeb84f172"
+    },
+    {
+      "path": "score9_rebatch_matrix_k5_result.json",
+      "bytes": 14159,
+      "sha256": "34dc136dbf18415eda1873a63163577161b043a239f089756cf2024592ea3de1"
+    },
+    {
+      "path": "score9_rebatch_matrix_prepare.py",
+      "bytes": 2013,
+      "sha256": "1b7b5790de036562535bf577dfa5cfcac0774e30a4e39c323e2853c7b244ddfb"
+    },
+    {
+      "path": "score9_rebatch_matrix_report.json",
+      "bytes": 4514,
+      "sha256": "420d0b231d3700bcba3507e32eb9fdce9e29ef6074b1bc582bf0916e6e5ad17d"
+    },
+    {
+      "path": "score9_rebatch_matrix_search.cpp",
+      "bytes": 6020,
+      "sha256": "55cc74e873148beb7805fa416da8c7abb1b71fee83f7d764eb1868e2b6359891"
+    },
+    {
+      "path": "score9_rebatch_results.md",
+      "bytes": 11280,
+      "sha256": "3e01800bc6e4cbc7b6b4cd5f05252621c60a371781957c1dd4ab649035f8d7e7"
+    },
+    {
+      "path": "score9_rebatch_status.json",
+      "bytes": 1315,
+      "sha256": "3cb24f7c86eecf38b8f49799c5168437d213df1d1e0f7d142d638a70ca6121b5"
+    },
+    {
+      "path": "score9_rebatch_synth.py",
+      "bytes": 14510,
+      "sha256": "35562f4da1031074749ce48ca383e0e2bb59ad2cba1e0080d774174f8069dfb8"
+    },
+    {
+      "path": "score9_rebatch_synth_manifest.json",
+      "bytes": 53441,
+      "sha256": "7df92bfd495674729856ba1ddaccbb2561bbbc886fb9b83072be6a0125f99964"
+    },
+    {
+      "path": "score9_rebatch_synth_rank_basis.cpp",
+      "bytes": 2813,
+      "sha256": "da287e41e9784cc6d24f80c5763ccc8caa76ed5a7a9e7b7d0c91adb1fff570a1"
+    },
+    {
+      "path": "score9_rebatch_synth_report.md",
+      "bytes": 7134,
+      "sha256": "8420b1b9031eb9850bc73619437f76e9ae603659dc9b0b65531a739be98b2eb9"
+    },
+    {
+      "path": "score9_rebatch_synth_source_words_1232.npy",
+      "bytes": 92528,
+      "sha256": "792e1b06ca6e4e7b5fa82c3cc96412b9e2d2d70a27edcd7ccb08eb242714bf68"
+    }
+  ],
+  "prior_files_modified": false,
+  "submission_performed": false
+}

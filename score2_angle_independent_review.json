@@ -1,0 +1,73 @@
+{
+  "status": "PASS_WITH_SCOPE_GUARD_FIXED",
+  "scope": "Read-only independent mathematical/code audit; fixed1220 chemistry runs retain full official verification as the acceptance gate",
+  "reviewed_files": {
+    "score2_clifford_affine_reduce.py": "6ee3bf730a81968ddf663bd6c16fec4211a55505a9d7432321c73b500f05dbee",
+    "score2_clifford_validate.py": "b3d4f9f93408c4a18f66e835012795a225c73e939fadd3f9f6a152405c221942",
+    "score2_dfthcsos_fixed_words_verify.py": "3acf6e05f91ae359228551e69df082c4af318bc3081a072d072a21a8a41d6ea8",
+    "score2_dfthcsos_candidate_verify.py": "c680e718e30fc8bb538f82e84dec6a06bc7292457f812260473f4b6385464e2f"
+  },
+  "independent_checks": {
+    "path": "score2_angle_independent_review_checks.json",
+    "sha256": "b2f80d4856d13197cfe744f2fac33f00c3ce7c45eada6d84032e653bb7c89140",
+    "circuits": 150,
+    "basis_inputs": 3720,
+    "all_pass": true
+  },
+  "conclusions": [
+    {
+      "file": "score2_clifford_affine_reduce.py",
+      "result": "Correct arbitrary-input affine equivalence",
+      "reason": "Gaussian row elimination is reversed to synthesize the linear map; transpose reverses gate order and reverses CX direction. Output X translations implement the affine offset. Each accepted block independently recomputes the same affine map. Nonlinear, measurement, phase and explicit condition operations are retained as barriers."
+    },
+    {
+      "file": "score2_clifford_validate.py",
+      "result": "Correct SWAP expansion and reachable phase check for the actual full table",
+      "reason": "SWAP is represented by its exact three-CX identity only in the proof representation. Candidate KMB SHA is checked before proving all15 forward/reverse endpoints. Source reported operation counts distinguish native SWAP from expanded CX."
+    },
+    {
+      "file": "score2_dfthcsos_fixed_words_verify.py",
+      "result": "W/H2_I-only replacement and full official acceptance are correctly scoped",
+      "reason": "Both changed arrays are finite and shape checked. Supplied angle_words/tree_edges mismatches are rejected. The saved NPZ begins from the complete baseline and replaces only W and H2_I. A supplied portfolio receipt binds exact baseline NPZ and all15 loaders, PASS78080 and comparison cost; absent receipt comparison is labeled numeric only. The official verify implementation either returns PASS or raises. Roundoff tolerance prevents a few ULPs being called a gain."
+    },
+    {
+      "file": "score2_dfthcsos_candidate_verify.py",
+      "result": "Actual candidate NPZ and complete official acceptance are correctly scoped",
+      "reason": "NPZ is copied byte for byte and SHA checked. Baseline comparison binds a prior full official PASS, NPZ and verifier hashes. Actual candidate must PASS78080 through unchanged official code. No public score or beating user loggedlambda is inferred."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "validator_scope_guard",
+      "files": [
+        "score2_clifford_validate.py",
+        "score2_clifford_affine_reduce.py"
+      ],
+      "issue": "In the reviewed versions the table is cast to uint64 before checking integer dtype, exact shape(1220,75) and 8bit bounds. A short or empty table can yield a correspondingly partial or vacuous reachable proof despite the broad status label.",
+      "impact_on_existing_runs": "None identified: actual tables are the full pinned original and the candidates also have full78080 official PASS.",
+      "recommendation": "Validate source angle_words shape/dtype/range before cast and record table_sha256. Parent was notified; any later patched source hash belongs in a new manifest, leaving historical run hashes intact.",
+      "current_status": "RESOLVED",
+      "resolution": "Owner added checked_angle_words before conversion in both entry points: exact(1220,75), integer dtype and0..255. Validator records table SHA and exact36600 scope; optional reference table is explicitly compared, replacing the unconditional unchanged assertion.",
+      "guard_validation_record": "score2_validator_guard_checks.json",
+      "guard_validation_sha256": "90c97b42076161dd4dd9782c9a501e6ea89f02c124ced13c7661754c19cf5685",
+      "guard_cases_passed": 6
+    }
+  ],
+  "unsupported_claims_found": false,
+  "limits": [
+    "The affine reducer is a local heuristic, not a global Clifford minimum.",
+    "Raw operations and three-CX-expanded operations are different metrics; both are reported.",
+    "Passing the local block or reachable proof alone is not full chemistry or public-score acceptance.",
+    "This audit does not rerun the official 78080-shot verifier."
+  ],
+  "files_modified_by_reviewer": false,
+  "historical_reviewed_files": {
+    "score2_clifford_affine_reduce.py": "9a6b104bc9e311794af9e12cde44d384c8805747aa5d846e9ce72381ebf77222",
+    "score2_clifford_validate.py": "66d02ed40c27ef145cb1b2f833e5da04a3baff914ff477763df21ccc5f78656d",
+    "score2_dfthcsos_fixed_words_verify.py": "3acf6e05f91ae359228551e69df082c4af318bc3081a072d072a21a8a41d6ea8",
+    "score2_dfthcsos_candidate_verify.py": "c680e718e30fc8bb538f82e84dec6a06bc7292457f812260473f4b6385464e2f"
+  },
+  "final_status": "PASS_WITH_SCOPE_GUARD_FIXED",
+  "final_full_official_receipt": "/workspace/scratch/3815fb5fae06/score2_best_family_verified/verification.json",
+  "final_full_official_receipt_sha256": "eb4755d557f98400818a76245e25a427d573017c238ac83e9fcbc26cd1ebb87a"
+}

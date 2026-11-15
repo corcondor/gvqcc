@@ -1,0 +1,113 @@
+{
+  "status": "PASS_SAME_TWO_PREEXISTING_VALUE_FAILURES",
+  "official_pass": false,
+  "new_official_evaluation": false,
+  "resampled": false,
+  "receipts": [
+    {
+      "file": "score8_dqi_twochart_failed_ranges_before.json",
+      "sha256": "778f1da857cae9823a3703ac0058ff5c15d9ee5bd13e55235844bc3d7a1efedd",
+      "bytes": 171328
+    },
+    {
+      "file": "score8_dqi_twochart_failure_after.json",
+      "sha256": "108f6e0fd1c07f4fc37bcb220f7ddf53bbfd1a306c68a52868be84481206cfad",
+      "bytes": 128799
+    }
+  ],
+  "executed_plans": [
+    {
+      "file": "score8_dqi_twochart_failed_ranges_before_plan.json",
+      "sha256": "12de911f25b0d6634fd295ae41ae608e0ac845f829abe1d9a2e2165ed8be42f9",
+      "bytes": 2044
+    },
+    {
+      "file": "score8_dqi_twochart_failure_after_plan.json",
+      "sha256": "8331b2212c077d86f59c8f5c929de8d16be3336bc71b20cf86a14f8724e18e7b",
+      "bytes": 1381
+    }
+  ],
+  "canonical_default_input_seed_sha256": "1d66248da1fc23e3a41817fe8a2b39cdbba957ba0aa908fe2aacea7e2b36e9e9",
+  "localization_shots_in_old_e4": 12800,
+  "reproduced_candidate_shots": 512,
+  "failures": [
+    {
+      "group": "default_failure_interval_100_124",
+      "batch": 110,
+      "shot_in_batch": 152,
+      "absolute_shot": 28312,
+      "sampled_error_weight": 32,
+      "rng_seed": 90716371776931731926192963674205792169084823393509792307900914028473668392869,
+      "sim_seed": 74156321031093578253239458558683716683948169972939430906496482252290000706097,
+      "value_error": true,
+      "phase_error": false,
+      "classical_changed": false,
+      "expected_phase": true,
+      "old_actual_phase": false,
+      "new_actual_phase": false,
+      "identical_input_syndrome_and_mask": true,
+      "identical_syndrome_error_locations_and_ancilla_outputs": true,
+      "differing_failure_fields": [],
+      "classification": "PREEXISTING_E4_VALUE_FAILURE_ON_IDENTICAL_INPUT"
+    },
+    {
+      "group": "default_failure_interval_275_299",
+      "batch": 280,
+      "shot_in_batch": 52,
+      "absolute_shot": 71732,
+      "sampled_error_weight": 30,
+      "rng_seed": 1398538859049577857940496904179092000344024527950168058327351198240059654102,
+      "sim_seed": 39688232067484893212005597458373591144642456720575617425589644984028496990652,
+      "value_error": true,
+      "phase_error": false,
+      "classical_changed": false,
+      "expected_phase": true,
+      "old_actual_phase": true,
+      "new_actual_phase": false,
+      "identical_input_syndrome_and_mask": true,
+      "identical_syndrome_error_locations_and_ancilla_outputs": true,
+      "differing_failure_fields": [
+        "actual_phase"
+      ],
+      "classification": "PREEXISTING_E4_VALUE_FAILURE_ON_IDENTICAL_INPUT"
+    }
+  ],
+  "matched_batches": [
+    {
+      "group": "default_failure_interval_100_124",
+      "batch": 110,
+      "shots": 256,
+      "input_hashes_identical": true,
+      "output_syndrome_ancilla_mask_hashes_identical": true,
+      "all_nonfailed_phases_equal_to_oracle_in_both_circuits": true,
+      "old_toffolis": 97808308,
+      "new_toffolis": 97809321,
+      "differing_batch_fields": [
+        "toffolis"
+      ]
+    },
+    {
+      "group": "default_failure_interval_275_299",
+      "batch": 280,
+      "shots": 256,
+      "input_hashes_identical": true,
+      "output_syndrome_ancilla_mask_hashes_identical": true,
+      "all_nonfailed_phases_equal_to_oracle_in_both_circuits": true,
+      "old_toffolis": 97808304,
+      "new_toffolis": 97806663,
+      "differing_batch_fields": [
+        "output_phases_sha256",
+        "toffolis"
+      ]
+    }
+  ],
+  "metadata_caveat": {
+    "inherited_descriptive_fields": [
+      "created_utc",
+      "independent_seed_label",
+      "comparison_baseline_result"
+    ],
+    "explanation": "The executed plans were copied from an earlier diagnostic plan. These descriptive fields retain old metadata and are not claims about the timing, cohort size or comparison source of this replay. The actual groups[].seed_sha256, groups[].batches, circuit identities, runner hash and stored numeric seeds define the executed work. Hash-bound plans are preserved unchanged."
+  },
+  "interpretation": "Both failures observed in the new candidate default cohort already occur in unchanged e4 on identical inputs. This is a fixed-case diagnostic, not a full same-cohort equivalence proof or an official return. The phase of the weight-30 value-failing shot changes, as permitted by the stated limited equivalence claim; all value-correct shots in both replayed batches have the exact oracle phase. The measured R penalty compares distinct canonical default cohorts, not evidence that the new chart increases the physical decoder failure probability."
+}

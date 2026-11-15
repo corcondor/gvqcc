@@ -1,0 +1,43 @@
+{
+  "status": "PASS_NO_REMAINING_BLOCKING_BUG_FOUND",
+  "scope": "Independent code review of the candidate runner and the observed final receipt; no simulator rerun performed by reviewer",
+  "reviewed_files": {
+    "score2_dfthcsos_candidate_verify.py": "9124a76e47be4d6102380eb22636e7046facbfc102217cdb41d29ffc8124dcc3",
+    "score2_clifford_affine_reduce.py": "6ee3bf730a81968ddf663bd6c16fec4211a55505a9d7432321c73b500f05dbee",
+    "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dfthcsos/verify.py": "ca84ca08e6e9280922cda3b539d4776ae58990b2b03b5619a53d65de67df9d2b",
+    "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dfthcsos/scoreinfra/circuits.py": "98601c25aa5f57ff7024c545f8773badc43ad2e6b586e6400bc2158c2bd01b86"
+  },
+  "resolved_finding": {
+    "issue": "Official verify scores recovered circuit words without comparing optional NPZ angle_words metadata. The earlier runner therefore did not bind its changed_word_count to words loaded by the circuits.",
+    "fix": "Complete (1220,75), integer, 8-bit guard; official forward/reverse recovery at every address; explicit equality to candidate NPZ; then unchanged official verify with default 64 shots/address.",
+    "status": "RESOLVED"
+  },
+  "confirmed": [
+    "Comparison baseline requires a prior PASS with 78,080 shots and matching NPZ/verifier SHA256.",
+    "Candidate NPZ is copied byte-for-byte and its copied SHA256 is checked.",
+    "All 91,500 recovered words are compared with the declared candidate; the preliminary check includes workspace, phase, selection and reverse traversal checks.",
+    "Seed 0 is used only for the auxiliary 2-shot word binding. The scoring run retains official default 64-shot hash-derived seeding.",
+    "Cost improvement classification uses max(1e-9, 32 ULPs), so a few floating-point ULPs cannot be reported as a gain."
+  ],
+  "final_receipt": {
+    "path": "/workspace/scratch/3815fb5fae06/score2_final_verified/verification.json",
+    "sha256": "0d2410ba7ab526f4a0828b6af671996d64c9e8a683f185859e2244343319e661",
+    "status": "PASS_AND_LOWER_MATCHED_COST",
+    "candidate_sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+    "script_sha_matches_reviewed_runner": true,
+    "copied_npz_sha_matches": true,
+    "baseline_npz_sha_matches": true,
+    "verifier_sha_matches": true,
+    "circuit_words_match_candidate_npz": true,
+    "all_declared_words": 91500,
+    "official_verified_shots": 78080,
+    "official_score": 294988052.12610483,
+    "comparison_roundoff_tolerance": 1.9073486328125e-06,
+    "local_cost_reduction": 734.7447394132614
+  },
+  "limitations": [
+    "The preliminary word-binding simulation uses 2 outcomes per address; it is not by itself a proof covering every measurement outcome. The separate final-family exact proof and the full official run remain distinct evidence.",
+    "This review does not claim a new public score."
+  ],
+  "source_code_modified_by_reviewer": false
+}

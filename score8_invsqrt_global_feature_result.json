@@ -1,0 +1,6058 @@
+{
+  "source_sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8",
+  "baseline_fit": {
+    "status": "CONVERGED",
+    "min_margin_turns": 6.305754776824717e-12,
+    "gap_turns": 1.0547118733938986e-24,
+    "iterations": 2,
+    "max_error_ratio": 0.9986660009028538,
+    "coeff_scaled": [
+      -9.779212699511809e-09,
+      6.644518500200524e-08,
+      7.170757750794951e-08,
+      -1.3668671817573594e-08,
+      5.499896693380808e-08,
+      -1.7719545674503092e-08,
+      -5.367965627912553e-08,
+      -1.9180506623168627e-08,
+      3.632174010699302e-08,
+      -2.2050068590373624e-08,
+      3.642825719234924e-08,
+      -1.2516535591161529e-08,
+      1.6131585460578104e-07,
+      -1.5080534948694637e-08,
+      -1.0114976177849413e-07,
+      -3.276552273621205e-08,
+      -2.9350297347037895e-08,
+      -7.997012655821502e-08,
+      1.1375930788985369e-08,
+      3.925828240350102e-09,
+      1.5361438685999378e-07,
+      -2.2524962050553414e-08,
+      2.3223621440233832e-08,
+      3.697374938868439e-08,
+      -1.7224513059076178e-08,
+      3.352861761061277e-08,
+      -1.5140403568394103e-07,
+      2.6707482787503767e-08,
+      -0.6615291987016232,
+      7.32880161334219e-09,
+      0.6615292464497968,
+      -1.2354923742994927e-08,
+      -9.810700822732844e-08
+    ]
+  },
+  "unique_tape_values": 7621,
+  "dual_support": 27,
+  "nonzero_dual_candidates": 7490,
+  "coarse_trials": 600,
+  "coarse_rows": [
+    {
+      "cut": 7573,
+      "wire": 42,
+      "dual_correlation": 0.5014688586583657,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 1.5551492168632415e-11
+      },
+      "candidate_rank": 0
+    },
+    {
+      "cut": 8574,
+      "wire": 42,
+      "dual_correlation": -0.4985311413416538,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 1.385147697803258e-11
+      },
+      "candidate_rank": 1
+    },
+    {
+      "cut": 3358,
+      "wire": 45,
+      "dual_correlation": -0.39483689772951097,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.585205976682517e-12
+      },
+      "candidate_rank": 2
+    },
+    {
+      "cut": 6851,
+      "wire": 5,
+      "dual_correlation": 0.386592832379884,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.646744209933147e-12
+      },
+      "candidate_rank": 3
+    },
+    {
+      "cut": 6825,
+      "wire": 5,
+      "dual_correlation": -0.3836551150631722,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6467442099331495e-12
+      },
+      "candidate_rank": 4
+    },
+    {
+      "cut": 813,
+      "wire": 14,
+      "dual_correlation": 0.3825133530274654,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.720846739482152e-12
+      },
+      "candidate_rank": 5
+    },
+    {
+      "cut": 19670,
+      "wire": 45,
+      "dual_correlation": 0.37644053250099696,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.621117170148058e-12
+      },
+      "candidate_rank": 6
+    },
+    {
+      "cut": 6937,
+      "wire": 0,
+      "dual_correlation": 0.3761595780350911,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5002979277780724e-12
+      },
+      "candidate_rank": 7
+    },
+    {
+      "cut": 3362,
+      "wire": 45,
+      "dual_correlation": -0.3735028151842851,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.612393142684125e-12
+      },
+      "candidate_rank": 8
+    },
+    {
+      "cut": 7571,
+      "wire": 45,
+      "dual_correlation": 0.3728019670914056,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.8515793487561544e-12
+      },
+      "candidate_rank": 9
+    },
+    {
+      "cut": 7262,
+      "wire": 39,
+      "dual_correlation": -0.3714084739558434,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.559624434712129e-12
+      },
+      "candidate_rank": 10
+    },
+    {
+      "cut": 8572,
+      "wire": 45,
+      "dual_correlation": -0.3698642497746938,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.851579348756161e-12
+      },
+      "candidate_rank": 11
+    },
+    {
+      "cut": 22489,
+      "wire": 4,
+      "dual_correlation": 0.36951664552669505,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.519422345464721e-12
+      },
+      "candidate_rank": 12
+    },
+    {
+      "cut": 4741,
+      "wire": 26,
+      "dual_correlation": 0.3639190892153502,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.578950847960454e-12
+      },
+      "candidate_rank": 13
+    },
+    {
+      "cut": 3562,
+      "wire": 42,
+      "dual_correlation": 0.36260198698377033,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.487485109092633e-12
+      },
+      "candidate_rank": 14
+    },
+    {
+      "cut": 4691,
+      "wire": 26,
+      "dual_correlation": -0.3609813718986383,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.578950847960484e-12
+      },
+      "candidate_rank": 15
+    },
+    {
+      "cut": 4690,
+      "wire": 26,
+      "dual_correlation": 0.3609813718986082,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.578950847960433e-12
+      },
+      "candidate_rank": 16
+    },
+    {
+      "cut": 1402,
+      "wire": 3,
+      "dual_correlation": 0.3594438126956249,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.548259528303729e-12
+      },
+      "candidate_rank": 17
+    },
+    {
+      "cut": 4628,
+      "wire": 26,
+      "dual_correlation": -0.35804365458189635,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.578950847960477e-12
+      },
+      "candidate_rank": 18
+    },
+    {
+      "cut": 4279,
+      "wire": 45,
+      "dual_correlation": 0.35684652195799693,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.592921692906548e-12
+      },
+      "candidate_rank": 19
+    },
+    {
+      "cut": 22693,
+      "wire": 3,
+      "dual_correlation": -0.35650609537891303,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.547382278483962e-12
+      },
+      "candidate_rank": 20
+    },
+    {
+      "cut": 4196,
+      "wire": 42,
+      "dual_correlation": 0.3544722516449475,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4489894760737984e-12
+      },
+      "candidate_rank": 21
+    },
+    {
+      "cut": 6867,
+      "wire": 43,
+      "dual_correlation": 0.3530972153721154,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.464597850557607e-12
+      },
+      "candidate_rank": 22
+    },
+    {
+      "cut": 9439,
+      "wire": 1,
+      "dual_correlation": 0.3509562192962194,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.54101496262041e-12
+      },
+      "candidate_rank": 23
+    },
+    {
+      "cut": 4773,
+      "wire": 37,
+      "dual_correlation": -0.35017487877430675,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.681507635104119e-12
+      },
+      "candidate_rank": 24
+    },
+    {
+      "cut": 9707,
+      "wire": 43,
+      "dual_correlation": -0.3501594980554036,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.464597850557597e-12
+      },
+      "candidate_rank": 25
+    },
+    {
+      "cut": 1568,
+      "wire": 33,
+      "dual_correlation": 0.3449690181051346,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.593147225964765e-12
+      },
+      "candidate_rank": 26
+    },
+    {
+      "cut": 1319,
+      "wire": 18,
+      "dual_correlation": -0.3418503209956106,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.572596689611279e-12
+      },
+      "candidate_rank": 27
+    },
+    {
+      "cut": 0,
+      "wire": 7,
+      "dual_correlation": 0.3413776202336076,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.671010702566174e-12
+      },
+      "candidate_rank": 28
+    },
+    {
+      "cut": 170,
+      "wire": 7,
+      "dual_correlation": 0.3413776202336076,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.671010702566179e-12
+      },
+      "candidate_rank": 29
+    },
+    {
+      "cut": 171,
+      "wire": 7,
+      "dual_correlation": 0.3413776202336076,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6710107025661734e-12
+      },
+      "candidate_rank": 30
+    },
+    {
+      "cut": 167,
+      "wire": 7,
+      "dual_correlation": -0.33843990291689574,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6710107025661686e-12
+      },
+      "candidate_rank": 31
+    },
+    {
+      "cut": 6042,
+      "wire": 3,
+      "dual_correlation": -0.33794669452972903,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4297348467280656e-12
+      },
+      "candidate_rank": 32
+    },
+    {
+      "cut": 2665,
+      "wire": 40,
+      "dual_correlation": -0.33484747966414397,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6398165629105065e-12
+      },
+      "candidate_rank": 33
+    },
+    {
+      "cut": 4021,
+      "wire": 0,
+      "dual_correlation": 0.3316759754195435,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.449463815129189e-12
+      },
+      "candidate_rank": 34
+    },
+    {
+      "cut": 5524,
+      "wire": 6,
+      "dual_correlation": 0.3296559743326407,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.47876606116875e-12
+      },
+      "candidate_rank": 35
+    },
+    {
+      "cut": 431,
+      "wire": 3,
+      "dual_correlation": -0.329473456467954,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.518325394460642e-12
+      },
+      "candidate_rank": 36
+    },
+    {
+      "cut": 530,
+      "wire": 3,
+      "dual_correlation": -0.329473456467954,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5183253944606395e-12
+      },
+      "candidate_rank": 37
+    },
+    {
+      "cut": 560,
+      "wire": 3,
+      "dual_correlation": -0.329473456467954,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.518325394460639e-12
+      },
+      "candidate_rank": 38
+    },
+    {
+      "cut": 573,
+      "wire": 3,
+      "dual_correlation": -0.329473456467954,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.518325394460646e-12
+      },
+      "candidate_rank": 39
+    },
+    {
+      "cut": 18209,
+      "wire": 0,
+      "dual_correlation": -0.32873825810283164,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4494638151291924e-12
+      },
+      "candidate_rank": 40
+    },
+    {
+      "cut": 4581,
+      "wire": 27,
+      "dual_correlation": 0.3277564555440839,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.605384017799434e-12
+      },
+      "candidate_rank": 41
+    },
+    {
+      "cut": 22816,
+      "wire": 6,
+      "dual_correlation": 0.327613414857962,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.569407416659093e-12
+      },
+      "candidate_rank": 42
+    },
+    {
+      "cut": 12472,
+      "wire": 6,
+      "dual_correlation": -0.3267182570159288,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4787660611687485e-12
+      },
+      "candidate_rank": 43
+    },
+    {
+      "cut": 5086,
+      "wire": 7,
+      "dual_correlation": 0.32517967243165125,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.51828823585371e-12
+      },
+      "candidate_rank": 44
+    },
+    {
+      "cut": 5536,
+      "wire": 31,
+      "dual_correlation": 0.3250135606671867,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.620372023953665e-12
+      },
+      "candidate_rank": 45
+    },
+    {
+      "cut": 4465,
+      "wire": 27,
+      "dual_correlation": -0.32481873822737206,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6053840177994345e-12
+      },
+      "candidate_rank": 46
+    },
+    {
+      "cut": 14716,
+      "wire": 27,
+      "dual_correlation": 0.3248187382273419,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.605384017799432e-12
+      },
+      "candidate_rank": 47
+    },
+    {
+      "cut": 14406,
+      "wire": 26,
+      "dual_correlation": 0.32481566208355644,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.597164780717208e-12
+      },
+      "candidate_rank": 48
+    },
+    {
+      "cut": 1293,
+      "wire": 6,
+      "dual_correlation": -0.32467569754125014,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.569407416659093e-12
+      },
+      "candidate_rank": 49
+    },
+    {
+      "cut": 22801,
+      "wire": 7,
+      "dual_correlation": 0.32409123022167025,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.636754051941945e-12
+      },
+      "candidate_rank": 50
+    },
+    {
+      "cut": 20363,
+      "wire": 19,
+      "dual_correlation": 0.32287922956951653,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.657944209630368e-12
+      },
+      "candidate_rank": 51
+    },
+    {
+      "cut": 20415,
+      "wire": 19,
+      "dual_correlation": 0.32287922956951653,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.661963971109108e-12
+      },
+      "candidate_rank": 52
+    },
+    {
+      "cut": 4131,
+      "wire": 29,
+      "dual_correlation": 0.3225654629032525,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4286837816591006e-12
+      },
+      "candidate_rank": 53
+    },
+    {
+      "cut": 5439,
+      "wire": 26,
+      "dual_correlation": -0.3224398536986265,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.486486290270336e-12
+      },
+      "candidate_rank": 54
+    },
+    {
+      "cut": 12504,
+      "wire": 31,
+      "dual_correlation": -0.3220758433504748,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.595400483564448e-12
+      },
+      "candidate_rank": 55
+    },
+    {
+      "cut": 4582,
+      "wire": 27,
+      "dual_correlation": -0.32188102091063003,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.604984949347133e-12
+      },
+      "candidate_rank": 56
+    },
+    {
+      "cut": 4742,
+      "wire": 26,
+      "dual_correlation": -0.32187794476684456,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.597164780717212e-12
+      },
+      "candidate_rank": 57
+    },
+    {
+      "cut": 6855,
+      "wire": 6,
+      "dual_correlation": 0.3216600512485344,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.554444020863712e-12
+      },
+      "candidate_rank": 58
+    },
+    {
+      "cut": 1524,
+      "wire": 36,
+      "dual_correlation": -0.32164723398277417,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.553166700588489e-12
+      },
+      "candidate_rank": 59
+    },
+    {
+      "cut": 1296,
+      "wire": 9,
+      "dual_correlation": -0.3211535129049584,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.63675405194192e-12
+      },
+      "candidate_rank": 60
+    },
+    {
+      "cut": 4610,
+      "wire": 37,
+      "dual_correlation": -0.3200009843660165,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.676415207693299e-12
+      },
+      "candidate_rank": 61
+    },
+    {
+      "cut": 2967,
+      "wire": 32,
+      "dual_correlation": -0.3199415122528047,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.661963971109122e-12
+      },
+      "candidate_rank": 62
+    },
+    {
+      "cut": 2994,
+      "wire": 32,
+      "dual_correlation": -0.3199415122528047,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6579442096303875e-12
+      },
+      "candidate_rank": 63
+    },
+    {
+      "cut": 6243,
+      "wire": 37,
+      "dual_correlation": 0.31898483153497215,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.563416184067405e-12
+      },
+      "candidate_rank": 64
+    },
+    {
+      "cut": 9638,
+      "wire": 6,
+      "dual_correlation": -0.31872233393182253,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.554070335435479e-12
+      },
+      "candidate_rank": 65
+    },
+    {
+      "cut": 5332,
+      "wire": 28,
+      "dual_correlation": 0.3184495825160104,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.552791589691752e-12
+      },
+      "candidate_rank": 66
+    },
+    {
+      "cut": 4746,
+      "wire": 31,
+      "dual_correlation": 0.31778103393291,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5665729469690645e-12
+      },
+      "candidate_rank": 67
+    },
+    {
+      "cut": 7266,
+      "wire": 39,
+      "dual_correlation": 0.317619536384111,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.488755705774148e-12
+      },
+      "candidate_rank": 68
+    },
+    {
+      "cut": 18574,
+      "wire": 0,
+      "dual_correlation": -0.31737857178747136,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.606139367951159e-12
+      },
+      "candidate_rank": 69
+    },
+    {
+      "cut": 22924,
+      "wire": 40,
+      "dual_correlation": 0.3172237392168259,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5570258755329055e-12
+      },
+      "candidate_rank": 70
+    },
+    {
+      "cut": 6568,
+      "wire": 3,
+      "dual_correlation": 0.31714478485963854,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.541361030685139e-12
+      },
+      "candidate_rank": 71
+    },
+    {
+      "cut": 4916,
+      "wire": 5,
+      "dual_correlation": 0.31698687614519994,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.469267492306694e-12
+      },
+      "candidate_rank": 72
+    },
+    {
+      "cut": 1530,
+      "wire": 34,
+      "dual_correlation": -0.31652853072093406,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.672167220615609e-12
+      },
+      "candidate_rank": 73
+    },
+    {
+      "cut": 4626,
+      "wire": 21,
+      "dual_correlation": 0.31639523115683194,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.55435679616694e-12
+      },
+      "candidate_rank": 74
+    },
+    {
+      "cut": 7569,
+      "wire": 38,
+      "dual_correlation": 0.3163372971154958,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4990215641949605e-12
+      },
+      "candidate_rank": 75
+    },
+    {
+      "cut": 961,
+      "wire": 9,
+      "dual_correlation": -0.3162470635644507,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.658434662002926e-12
+      },
+      "candidate_rank": 76
+    },
+    {
+      "cut": 6240,
+      "wire": 37,
+      "dual_correlation": -0.31604711421826026,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5634161840674025e-12
+      },
+      "candidate_rank": 77
+    },
+    {
+      "cut": 5306,
+      "wire": 28,
+      "dual_correlation": -0.3155118651992985,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5527915896918724e-12
+      },
+      "candidate_rank": 78
+    },
+    {
+      "cut": 22938,
+      "wire": 7,
+      "dual_correlation": 0.3149940476617704,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.584230061176835e-12
+      },
+      "candidate_rank": 79
+    },
+    {
+      "cut": 14432,
+      "wire": 31,
+      "dual_correlation": -0.3148433166161982,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.566232682280094e-12
+      },
+      "candidate_rank": 80
+    },
+    {
+      "cut": 7285,
+      "wire": 39,
+      "dual_correlation": -0.31468181906739917,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.483518774797022e-12
+      },
+      "candidate_rank": 81
+    },
+    {
+      "cut": 5949,
+      "wire": 38,
+      "dual_correlation": 0.3145300626405354,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4367271916511814e-12
+      },
+      "candidate_rank": 82
+    },
+    {
+      "cut": 6604,
+      "wire": 3,
+      "dual_correlation": -0.31420706754292665,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.541361030685142e-12
+      },
+      "candidate_rank": 83
+    },
+    {
+      "cut": 8570,
+      "wire": 38,
+      "dual_correlation": -0.3133995797987839,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.499021564194965e-12
+      },
+      "candidate_rank": 84
+    },
+    {
+      "cut": 4039,
+      "wire": 44,
+      "dual_correlation": 0.3131765593742027,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.552284887840643e-12
+      },
+      "candidate_rank": 85
+    },
+    {
+      "cut": 1187,
+      "wire": 9,
+      "dual_correlation": -0.3120563303450586,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.544648447291107e-12
+      },
+      "candidate_rank": 86
+    },
+    {
+      "cut": 3946,
+      "wire": 45,
+      "dual_correlation": 0.3116128529490418,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.550475518888644e-12
+      },
+      "candidate_rank": 87
+    },
+    {
+      "cut": 5999,
+      "wire": 38,
+      "dual_correlation": -0.31159234532382357,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4367271916511814e-12
+      },
+      "candidate_rank": 88
+    },
+    {
+      "cut": 20602,
+      "wire": 16,
+      "dual_correlation": -0.3109427662940828,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.614615335175179e-12
+      },
+      "candidate_rank": 89
+    },
+    {
+      "cut": 1548,
+      "wire": 8,
+      "dual_correlation": 0.3102624258264589,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.594783545862521e-12
+      },
+      "candidate_rank": 90
+    },
+    {
+      "cut": 23386,
+      "wire": 43,
+      "dual_correlation": 0.31007939527115014,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.444090036902769e-12
+      },
+      "candidate_rank": 91
+    },
+    {
+      "cut": 1205,
+      "wire": 35,
+      "dual_correlation": 0.3100106947265632,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.61963720405283e-12
+      },
+      "candidate_rank": 92
+    },
+    {
+      "cut": 450,
+      "wire": 7,
+      "dual_correlation": 0.30989277588137515,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5739012824173055e-12
+      },
+      "candidate_rank": 93
+    },
+    {
+      "cut": 530,
+      "wire": 7,
+      "dual_correlation": 0.30989277588137515,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5739012824172845e-12
+      },
+      "candidate_rank": 94
+    },
+    {
+      "cut": 567,
+      "wire": 7,
+      "dual_correlation": 0.30989277588137515,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.573901282417293e-12
+      },
+      "candidate_rank": 95
+    },
+    {
+      "cut": 4784,
+      "wire": 27,
+      "dual_correlation": 0.3098661159685334,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.555198387689008e-12
+      },
+      "candidate_rank": 96
+    },
+    {
+      "cut": 15445,
+      "wire": 35,
+      "dual_correlation": 0.30887559766910794,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5680879200648354e-12
+      },
+      "candidate_rank": 97
+    },
+    {
+      "cut": 18223,
+      "wire": 45,
+      "dual_correlation": -0.3086751356323299,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5504755188886475e-12
+      },
+      "candidate_rank": 98
+    },
+    {
+      "cut": 22505,
+      "wire": 36,
+      "dual_correlation": -0.307324708509747,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5906781037646295e-12
+      },
+      "candidate_rank": 99
+    },
+    {
+      "cut": 6963,
+      "wire": 6,
+      "dual_correlation": 0.30721345464276195,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5784860645571315e-12
+      },
+      "candidate_rank": 100
+    },
+    {
+      "cut": 835,
+      "wire": 11,
+      "dual_correlation": -0.3071416779544383,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.444090036902758e-12
+      },
+      "candidate_rank": 101
+    },
+    {
+      "cut": 4846,
+      "wire": 27,
+      "dual_correlation": -0.3069283986518216,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.555198387689001e-12
+      },
+      "candidate_rank": 102
+    },
+    {
+      "cut": 2176,
+      "wire": 29,
+      "dual_correlation": -0.3069125052422766,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.599154710670061e-12
+      },
+      "candidate_rank": 103
+    },
+    {
+      "cut": 7006,
+      "wire": 1,
+      "dual_correlation": 0.30610040328243515,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.510493643227379e-12
+      },
+      "candidate_rank": 104
+    },
+    {
+      "cut": 1391,
+      "wire": 8,
+      "dual_correlation": 0.3057999665725533,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.567226784298725e-12
+      },
+      "candidate_rank": 105
+    },
+    {
+      "cut": 14616,
+      "wire": 21,
+      "dual_correlation": 0.3055400324225398,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.560646543630813e-12
+      },
+      "candidate_rank": 106
+    },
+    {
+      "cut": 6703,
+      "wire": 39,
+      "dual_correlation": 0.3054841491437351,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.484837348882552e-12
+      },
+      "candidate_rank": 107
+    },
+    {
+      "cut": 2029,
+      "wire": 37,
+      "dual_correlation": -0.30473357005969975,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.679491396980886e-12
+      },
+      "candidate_rank": 108
+    },
+    {
+      "cut": 9541,
+      "wire": 6,
+      "dual_correlation": -0.3042757373260501,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.578486064557149e-12
+      },
+      "candidate_rank": 109
+    },
+    {
+      "cut": 2454,
+      "wire": 37,
+      "dual_correlation": -0.30390301123717295,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5913012703184e-12
+      },
+      "candidate_rank": 110
+    },
+    {
+      "cut": 6333,
+      "wire": 43,
+      "dual_correlation": -0.3034846556821162,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.479929284124064e-12
+      },
+      "candidate_rank": 111
+    },
+    {
+      "cut": 9451,
+      "wire": 1,
+      "dual_correlation": -0.3031626859657233,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.51049364322739e-12
+      },
+      "candidate_rank": 112
+    },
+    {
+      "cut": 1567,
+      "wire": 4,
+      "dual_correlation": 0.30315345753431827,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.498542123737515e-12
+      },
+      "candidate_rank": 113
+    },
+    {
+      "cut": 4419,
+      "wire": 7,
+      "dual_correlation": 0.3026023151057978,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.560646543630839e-12
+      },
+      "candidate_rank": 114
+    },
+    {
+      "cut": 6651,
+      "wire": 39,
+      "dual_correlation": -0.3025464318270233,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.484837348882545e-12
+      },
+      "candidate_rank": 115
+    },
+    {
+      "cut": 5508,
+      "wire": 0,
+      "dual_correlation": -0.30248285818875653,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.435470930364493e-12
+      },
+      "candidate_rank": 116
+    },
+    {
+      "cut": 18216,
+      "wire": 45,
+      "dual_correlation": 0.3022649646704662,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5857782475158385e-12
+      },
+      "candidate_rank": 117
+    },
+    {
+      "cut": 6361,
+      "wire": 2,
+      "dual_correlation": 0.30213884277520087,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.52688913671376e-12
+      },
+      "candidate_rank": 118
+    },
+    {
+      "cut": 3830,
+      "wire": 41,
+      "dual_correlation": 0.3018235380370134,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4845622451756566e-12
+      },
+      "candidate_rank": 119
+    },
+    {
+      "cut": 6587,
+      "wire": 45,
+      "dual_correlation": 0.3017866243116132,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.493165163959249e-12
+      },
+      "candidate_rank": 120
+    },
+    {
+      "cut": 4187,
+      "wire": 2,
+      "dual_correlation": 0.30075816690540663,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5099060251498605e-12
+      },
+      "candidate_rank": 121
+    },
+    {
+      "cut": 3965,
+      "wire": 44,
+      "dual_correlation": -0.3000957706099306,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.441442909412412e-12
+      },
+      "candidate_rank": 122
+    },
+    {
+      "cut": 18752,
+      "wire": 41,
+      "dual_correlation": 0.2997937958281145,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.500150769130723e-12
+      },
+      "candidate_rank": 123
+    },
+    {
+      "cut": 4418,
+      "wire": 6,
+      "dual_correlation": -0.29966459778908594,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.560646543630794e-12
+      },
+      "candidate_rank": 124
+    },
+    {
+      "cut": 1624,
+      "wire": 9,
+      "dual_correlation": -0.2993518565040622,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.555388915390496e-12
+      },
+      "candidate_rank": 125
+    },
+    {
+      "cut": 4463,
+      "wire": 11,
+      "dual_correlation": -0.2993518565040622,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.555388915390493e-12
+      },
+      "candidate_rank": 126
+    },
+    {
+      "cut": 1448,
+      "wire": 10,
+      "dual_correlation": 0.29935185650403207,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5553889153904984e-12
+      },
+      "candidate_rank": 127
+    },
+    {
+      "cut": 6728,
+      "wire": 40,
+      "dual_correlation": 0.2992857194126009,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.480615035965754e-12
+      },
+      "candidate_rank": 128
+    },
+    {
+      "cut": 10166,
+      "wire": 45,
+      "dual_correlation": -0.29884890699490135,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4931651639592455e-12
+      },
+      "candidate_rank": 129
+    },
+    {
+      "cut": 3710,
+      "wire": 39,
+      "dual_correlation": 0.2979152973554432,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.52080068250373e-12
+      },
+      "candidate_rank": 130
+    },
+    {
+      "cut": 17715,
+      "wire": 2,
+      "dual_correlation": -0.29782044958869475,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.509906025149864e-12
+      },
+      "candidate_rank": 131
+    },
+    {
+      "cut": 1335,
+      "wire": 11,
+      "dual_correlation": 0.29715856598378537,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.605740461366698e-12
+      },
+      "candidate_rank": 132
+    },
+    {
+      "cut": 3682,
+      "wire": 42,
+      "dual_correlation": -0.29687966228044754,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.436486540222452e-12
+      },
+      "candidate_rank": 133
+    },
+    {
+      "cut": 4780,
+      "wire": 27,
+      "dual_correlation": -0.2968637688708745,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.776410655211715e-12
+      },
+      "candidate_rank": 134
+    },
+    {
+      "cut": 3784,
+      "wire": 41,
+      "dual_correlation": -0.29685607851140267,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5001507691307084e-12
+      },
+      "candidate_rank": 135
+    },
+    {
+      "cut": 5099,
+      "wire": 37,
+      "dual_correlation": 0.29684787546127267,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.586087782760558e-12
+      },
+      "candidate_rank": 136
+    },
+    {
+      "cut": 2666,
+      "wire": 40,
+      "dual_correlation": -0.2967930175637864,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.582865604582524e-12
+      },
+      "candidate_rank": 137
+    },
+    {
+      "cut": 15122,
+      "wire": 37,
+      "dual_correlation": -0.2967930175637864,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5850983436491465e-12
+      },
+      "candidate_rank": 138
+    },
+    {
+      "cut": 22504,
+      "wire": 7,
+      "dual_correlation": -0.2964141391873202,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.555362911791426e-12
+      },
+      "candidate_rank": 139
+    },
+    {
+      "cut": 6700,
+      "wire": 40,
+      "dual_correlation": -0.2963480020958891,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.480615035965765e-12
+      },
+      "candidate_rank": 140
+    },
+    {
+      "cut": 6958,
+      "wire": 3,
+      "dual_correlation": 0.29480429060535507,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.497264214799554e-12
+      },
+      "candidate_rank": 141
+    },
+    {
+      "cut": 22662,
+      "wire": 40,
+      "dual_correlation": -0.2942208486670735,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.589431708077645e-12
+      },
+      "candidate_rank": 142
+    },
+    {
+      "cut": 6741,
+      "wire": 3,
+      "dual_correlation": 0.29313035569447543,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5407436515833735e-12
+      },
+      "candidate_rank": 143
+    },
+    {
+      "cut": 4263,
+      "wire": 4,
+      "dual_correlation": 0.29260023358186066,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4316825597264575e-12
+      },
+      "candidate_rank": 144
+    },
+    {
+      "cut": 5269,
+      "wire": 27,
+      "dual_correlation": -0.2925151269370862,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.58566879224145e-12
+      },
+      "candidate_rank": 145
+    },
+    {
+      "cut": 6808,
+      "wire": 20,
+      "dual_correlation": 0.29251410155580876,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.430957314513202e-12
+      },
+      "candidate_rank": 146
+    },
+    {
+      "cut": 5895,
+      "wire": 7,
+      "dual_correlation": -0.2924807766647961,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5283442854466405e-12
+      },
+      "candidate_rank": 147
+    },
+    {
+      "cut": 19264,
+      "wire": 0,
+      "dual_correlation": -0.2921870049331228,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.451397682747893e-12
+      },
+      "candidate_rank": 148
+    },
+    {
+      "cut": 3574,
+      "wire": 0,
+      "dual_correlation": 0.29218700493309263,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.451530994222554e-12
+      },
+      "candidate_rank": 149
+    },
+    {
+      "cut": 3575,
+      "wire": 1,
+      "dual_correlation": 0.29218700493309263,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4515309942225314e-12
+      },
+      "candidate_rank": 150
+    },
+    {
+      "cut": 6961,
+      "wire": 3,
+      "dual_correlation": -0.29186657328864324,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.497264214799574e-12
+      },
+      "candidate_rank": 151
+    },
+    {
+      "cut": 16355,
+      "wire": 35,
+      "dual_correlation": 0.29050076544711934,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.688286230942206e-12
+      },
+      "candidate_rank": 152
+    },
+    {
+      "cut": 9951,
+      "wire": 3,
+      "dual_correlation": -0.2901926383777636,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5407436515833694e-12
+      },
+      "candidate_rank": 153
+    },
+    {
+      "cut": 7079,
+      "wire": 38,
+      "dual_correlation": 0.2901270139769698,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.474265021103845e-12
+      },
+      "candidate_rank": 154
+    },
+    {
+      "cut": 13908,
+      "wire": 8,
+      "dual_correlation": 0.2899860240533752,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.426273463406526e-12
+      },
+      "candidate_rank": 155
+    },
+    {
+      "cut": 17630,
+      "wire": 4,
+      "dual_correlation": -0.2896625162651488,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.431682559726501e-12
+      },
+      "candidate_rank": 156
+    },
+    {
+      "cut": 22780,
+      "wire": 6,
+      "dual_correlation": -0.2895651050452095,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.451250481639607e-12
+      },
+      "candidate_rank": 157
+    },
+    {
+      "cut": 19266,
+      "wire": 1,
+      "dual_correlation": -0.28924928761638075,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.451530994222547e-12
+      },
+      "candidate_rank": 158
+    },
+    {
+      "cut": 19268,
+      "wire": 0,
+      "dual_correlation": -0.28924928761638075,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.451530994222537e-12
+      },
+      "candidate_rank": 159
+    },
+    {
+      "cut": 5238,
+      "wire": 4,
+      "dual_correlation": 0.28917904899988534,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.469861378898844e-12
+      },
+      "candidate_rank": 160
+    },
+    {
+      "cut": 16060,
+      "wire": 31,
+      "dual_correlation": -0.28888117574318406,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5771433619732765e-12
+      },
+      "candidate_rank": 161
+    },
+    {
+      "cut": 6133,
+      "wire": 8,
+      "dual_correlation": 0.28851152579804873,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.41898753666519e-12
+      },
+      "candidate_rank": 162
+    },
+    {
+      "cut": 16000,
+      "wire": 34,
+      "dual_correlation": -0.2884658963319263,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.599715543908076e-12
+      },
+      "candidate_rank": 163
+    },
+    {
+      "cut": 7022,
+      "wire": 45,
+      "dual_correlation": 0.2884284699158291,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4932026052749725e-12
+      },
+      "candidate_rank": 164
+    },
+    {
+      "cut": 20833,
+      "wire": 16,
+      "dual_correlation": -0.2879388503630251,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5937762368574164e-12
+      },
+      "candidate_rank": 165
+    },
+    {
+      "cut": 1718,
+      "wire": 34,
+      "dual_correlation": 0.28764661670325137,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.611500645462737e-12
+      },
+      "candidate_rank": 166
+    },
+    {
+      "cut": 16576,
+      "wire": 44,
+      "dual_correlation": 0.2876466167032479,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.59725325188541e-12
+      },
+      "candidate_rank": 167
+    },
+    {
+      "cut": 4938,
+      "wire": 21,
+      "dual_correlation": 0.28742000744426655,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.636882191947428e-12
+      },
+      "candidate_rank": 168
+    },
+    {
+      "cut": 7101,
+      "wire": 38,
+      "dual_correlation": -0.287189296660258,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.474265021103836e-12
+      },
+      "candidate_rank": 169
+    },
+    {
+      "cut": 4471,
+      "wire": 10,
+      "dual_correlation": 0.2871703271068757,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.482261572542318e-12
+      },
+      "candidate_rank": 170
+    },
+    {
+      "cut": 7268,
+      "wire": 1,
+      "dual_correlation": 0.28698883462337854,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.506807078750124e-12
+      },
+      "candidate_rank": 171
+    },
+    {
+      "cut": 7368,
+      "wire": 0,
+      "dual_correlation": 0.28698883462337854,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.55085663803806e-12
+      },
+      "candidate_rank": 172
+    },
+    {
+      "cut": 4247,
+      "wire": 21,
+      "dual_correlation": 0.2869191086975854,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5349947771389325e-12
+      },
+      "candidate_rank": 173
+    },
+    {
+      "cut": 2310,
+      "wire": 27,
+      "dual_correlation": 0.28670429132309244,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.648122445151817e-12
+      },
+      "candidate_rank": 174
+    },
+    {
+      "cut": 3226,
+      "wire": 43,
+      "dual_correlation": -0.28643307797921785,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.585263845323417e-12
+      },
+      "candidate_rank": 175
+    },
+    {
+      "cut": 5310,
+      "wire": 4,
+      "dual_correlation": -0.2862413316831735,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4698613788988484e-12
+      },
+      "candidate_rank": 176
+    },
+    {
+      "cut": 15478,
+      "wire": 29,
+      "dual_correlation": 0.2859455091889273,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.527269015406019e-12
+      },
+      "candidate_rank": 177
+    },
+    {
+      "cut": 22889,
+      "wire": 30,
+      "dual_correlation": 0.28591628582295786,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4497685685525705e-12
+      },
+      "candidate_rank": 178
+    },
+    {
+      "cut": 14287,
+      "wire": 30,
+      "dual_correlation": 0.2857973415965189,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.559195467149777e-12
+      },
+      "candidate_rank": 179
+    },
+    {
+      "cut": 7080,
+      "wire": 45,
+      "dual_correlation": -0.28549075259911727,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.492186824492235e-12
+      },
+      "candidate_rank": 180
+    },
+    {
+      "cut": 4949,
+      "wire": 16,
+      "dual_correlation": 0.28529080325292916,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.556837273803412e-12
+      },
+      "candidate_rank": 181
+    },
+    {
+      "cut": 8065,
+      "wire": 36,
+      "dual_correlation": 0.28528465096532934,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.513617532918315e-12
+      },
+      "candidate_rank": 182
+    },
+    {
+      "cut": 3573,
+      "wire": 39,
+      "dual_correlation": 0.2852446610961091,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.454022379965518e-12
+      },
+      "candidate_rank": 183
+    },
+    {
+      "cut": 19255,
+      "wire": 39,
+      "dual_correlation": 0.2852446610961091,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.454022379965539e-12
+      },
+      "candidate_rank": 184
+    },
+    {
+      "cut": 2507,
+      "wire": 37,
+      "dual_correlation": 0.28498882847115825,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6026046850998054e-12
+      },
+      "candidate_rank": 185
+    },
+    {
+      "cut": 15625,
+      "wire": 38,
+      "dual_correlation": 0.28497088429904677,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.597423125490426e-12
+      },
+      "candidate_rank": 186
+    },
+    {
+      "cut": 5723,
+      "wire": 4,
+      "dual_correlation": -0.2844735743868187,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.555191035861968e-12
+      },
+      "candidate_rank": 187
+    },
+    {
+      "cut": 7352,
+      "wire": 0,
+      "dual_correlation": -0.2840511173066667,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.550856638038071e-12
+      },
+      "candidate_rank": 188
+    },
+    {
+      "cut": 8958,
+      "wire": 0,
+      "dual_correlation": -0.2840511173066667,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.506807078750116e-12
+      },
+      "candidate_rank": 189
+    },
+    {
+      "cut": 5506,
+      "wire": 10,
+      "dual_correlation": -0.2839967720997883,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.485062427750616e-12
+      },
+      "candidate_rank": 190
+    },
+    {
+      "cut": 4143,
+      "wire": 2,
+      "dual_correlation": 0.28370043691492774,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.419576136434053e-12
+      },
+      "candidate_rank": 191
+    },
+    {
+      "cut": 9425,
+      "wire": 39,
+      "dual_correlation": 0.2835332997691907,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4801090774431044e-12
+      },
+      "candidate_rank": 192
+    },
+    {
+      "cut": 1244,
+      "wire": 7,
+      "dual_correlation": -0.282978568506246,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4497685685525996e-12
+      },
+      "candidate_rank": 193
+    },
+    {
+      "cut": 4362,
+      "wire": 2,
+      "dual_correlation": 0.28290986796161455,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.487788727997506e-12
+      },
+      "candidate_rank": 194
+    },
+    {
+      "cut": 6048,
+      "wire": 17,
+      "dual_correlation": 0.28263916730836686,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6569443137781735e-12
+      },
+      "candidate_rank": 195
+    },
+    {
+      "cut": 1625,
+      "wire": 8,
+      "dual_correlation": 0.2825750809794689,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.52215409488793e-12
+      },
+      "candidate_rank": 196
+    },
+    {
+      "cut": 19262,
+      "wire": 39,
+      "dual_correlation": -0.2823069437793972,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4540223799655246e-12
+      },
+      "candidate_rank": 197
+    },
+    {
+      "cut": 754,
+      "wire": 15,
+      "dual_correlation": -0.28118210053453785,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.550904228916692e-12
+      },
+      "candidate_rank": 198
+    },
+    {
+      "cut": 7040,
+      "wire": 8,
+      "dual_correlation": 0.2810908416021892,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.534817614464727e-12
+      },
+      "candidate_rank": 199
+    },
+    {
+      "cut": 917,
+      "wire": 10,
+      "dual_correlation": -0.28108725276778046,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.505011551095138e-12
+      },
+      "candidate_rank": 200
+    },
+    {
+      "cut": 20365,
+      "wire": 38,
+      "dual_correlation": 0.2809611308724708,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.597437336857322e-12
+      },
+      "candidate_rank": 201
+    },
+    {
+      "cut": 20409,
+      "wire": 38,
+      "dual_correlation": 0.2809611308724708,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.594405035438344e-12
+      },
+      "candidate_rank": 202
+    },
+    {
+      "cut": 17912,
+      "wire": 2,
+      "dual_correlation": -0.2807627195982159,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.419576136433981e-12
+      },
+      "candidate_rank": 203
+    },
+    {
+      "cut": 5897,
+      "wire": 5,
+      "dual_correlation": 0.28070478555688366,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.488140026988618e-12
+      },
+      "candidate_rank": 204
+    },
+    {
+      "cut": 5065,
+      "wire": 35,
+      "dual_correlation": 0.27983577493698625,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6252747748009104e-12
+      },
+      "candidate_rank": 205
+    },
+    {
+      "cut": 5948,
+      "wire": 38,
+      "dual_correlation": 0.2798209069086826,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.617263133024732e-12
+      },
+      "candidate_rank": 206
+    },
+    {
+      "cut": 14023,
+      "wire": 26,
+      "dual_correlation": -0.2798050134991424,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5494456081358836e-12
+      },
+      "candidate_rank": 207
+    },
+    {
+      "cut": 1583,
+      "wire": 8,
+      "dual_correlation": -0.279637363662757,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.522154094887929e-12
+      },
+      "candidate_rank": 208
+    },
+    {
+      "cut": 4997,
+      "wire": 5,
+      "dual_correlation": 0.2792630995019558,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.516327875504152e-12
+      },
+      "candidate_rank": 209
+    },
+    {
+      "cut": 2969,
+      "wire": 35,
+      "dual_correlation": -0.27802341355575894,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.594405035438361e-12
+      },
+      "candidate_rank": 210
+    },
+    {
+      "cut": 3000,
+      "wire": 35,
+      "dual_correlation": -0.27802341355575894,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.597437336857317e-12
+      },
+      "candidate_rank": 211
+    },
+    {
+      "cut": 4520,
+      "wire": 18,
+      "dual_correlation": -0.2778106469438131,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.622546421297291e-12
+      },
+      "candidate_rank": 212
+    },
+    {
+      "cut": 5944,
+      "wire": 5,
+      "dual_correlation": -0.2777670682401718,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.487998333777473e-12
+      },
+      "candidate_rank": 213
+    },
+    {
+      "cut": 1667,
+      "wire": 36,
+      "dual_correlation": 0.27707698665055586,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.535076436763389e-12
+      },
+      "candidate_rank": 214
+    },
+    {
+      "cut": 5015,
+      "wire": 35,
+      "dual_correlation": -0.2768980576202744,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.625274774800904e-12
+      },
+      "candidate_rank": 215
+    },
+    {
+      "cut": 5911,
+      "wire": 38,
+      "dual_correlation": -0.2768831895919707,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.617263133024754e-12
+      },
+      "candidate_rank": 216
+    },
+    {
+      "cut": 4133,
+      "wire": 44,
+      "dual_correlation": 0.2766396615421449,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4264928863416556e-12
+      },
+      "candidate_rank": 217
+    },
+    {
+      "cut": 5047,
+      "wire": 5,
+      "dual_correlation": -0.27632538218524394,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.516327875504154e-12
+      },
+      "candidate_rank": 218
+    },
+    {
+      "cut": 23443,
+      "wire": 45,
+      "dual_correlation": 0.2761638846363959,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.56026855213427e-12
+      },
+      "candidate_rank": 219
+    },
+    {
+      "cut": 14769,
+      "wire": 32,
+      "dual_correlation": 0.27581730576971836,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.544988069421311e-12
+      },
+      "candidate_rank": 220
+    },
+    {
+      "cut": 3805,
+      "wire": 39,
+      "dual_correlation": 0.2752917978727477,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.397320740812514e-12
+      },
+      "candidate_rank": 221
+    },
+    {
+      "cut": 6688,
+      "wire": 6,
+      "dual_correlation": 0.27439920348382296,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.481289489739681e-12
+      },
+      "candidate_rank": 222
+    },
+    {
+      "cut": 6550,
+      "wire": 6,
+      "dual_correlation": 0.27411671094603585,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.531942070660711e-12
+      },
+      "candidate_rank": 223
+    },
+    {
+      "cut": 2069,
+      "wire": 35,
+      "dual_correlation": 0.27374039602277545,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.562907880342714e-12
+      },
+      "candidate_rank": 224
+    },
+    {
+      "cut": 4611,
+      "wire": 21,
+      "dual_correlation": -0.27369374117531176,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5080587101216155e-12
+      },
+      "candidate_rank": 225
+    },
+    {
+      "cut": 2357,
+      "wire": 37,
+      "dual_correlation": 0.27342098975948337,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.547549797457681e-12
+      },
+      "candidate_rank": 226
+    },
+    {
+      "cut": 15069,
+      "wire": 26,
+      "dual_correlation": 0.2733892029403692,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.586230884487159e-12
+      },
+      "candidate_rank": 227
+    },
+    {
+      "cut": 15222,
+      "wire": 27,
+      "dual_correlation": 0.2733892029403692,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.581260694739578e-12
+      },
+      "candidate_rank": 228
+    },
+    {
+      "cut": 779,
+      "wire": 16,
+      "dual_correlation": -0.2732261673196841,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.558657827112286e-12
+      },
+      "candidate_rank": 229
+    },
+    {
+      "cut": 5303,
+      "wire": 28,
+      "dual_correlation": 0.2729329082786271,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5432167303471505e-12
+      },
+      "candidate_rank": 230
+    },
+    {
+      "cut": 15133,
+      "wire": 37,
+      "dual_correlation": -0.27288830419372523,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.616456575744886e-12
+      },
+      "candidate_rank": 231
+    },
+    {
+      "cut": 2838,
+      "wire": 35,
+      "dual_correlation": 0.27288830419369164,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.609572938856797e-12
+      },
+      "candidate_rank": 232
+    },
+    {
+      "cut": 4303,
+      "wire": 4,
+      "dual_correlation": 0.27288574074055544,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.415424089315316e-12
+      },
+      "candidate_rank": 233
+    },
+    {
+      "cut": 4596,
+      "wire": 32,
+      "dual_correlation": -0.27287958845300647,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.530696855614485e-12
+      },
+      "candidate_rank": 234
+    },
+    {
+      "cut": 4595,
+      "wire": 32,
+      "dual_correlation": 0.27287958845297633,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.53069685561451e-12
+      },
+      "candidate_rank": 235
+    },
+    {
+      "cut": 3651,
+      "wire": 41,
+      "dual_correlation": 0.27269809596952743,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.448400362351952e-12
+      },
+      "candidate_rank": 236
+    },
+    {
+      "cut": 5736,
+      "wire": 17,
+      "dual_correlation": 0.27262888273432956,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.55165105034799e-12
+      },
+      "candidate_rank": 237
+    },
+    {
+      "cut": 13364,
+      "wire": 16,
+      "dual_correlation": -0.27250173545777845,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.604688582382331e-12
+      },
+      "candidate_rank": 238
+    },
+    {
+      "cut": 3094,
+      "wire": 36,
+      "dual_correlation": -0.27236023284361477,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.424279497878921e-12
+      },
+      "candidate_rank": 239
+    },
+    {
+      "cut": 19609,
+      "wire": 45,
+      "dual_correlation": 0.27235715669977045,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.647218657544547e-12
+      },
+      "candidate_rank": 240
+    },
+    {
+      "cut": 18755,
+      "wire": 39,
+      "dual_correlation": -0.2723540805560359,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.3973207408124925e-12
+      },
+      "candidate_rank": 241
+    },
+    {
+      "cut": 18248,
+      "wire": 40,
+      "dual_correlation": 0.2721884814821336,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.469115672181288e-12
+      },
+      "candidate_rank": 242
+    },
+    {
+      "cut": 9945,
+      "wire": 5,
+      "dual_correlation": -0.27146148616711113,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.481289489739699e-12
+      },
+      "candidate_rank": 243
+    },
+    {
+      "cut": 4973,
+      "wire": 7,
+      "dual_correlation": -0.271330750056152,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.541250612177494e-12
+      },
+      "candidate_rank": 244
+    },
+    {
+      "cut": 6547,
+      "wire": 6,
+      "dual_correlation": -0.27117899362932396,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.531942070660685e-12
+      },
+      "candidate_rank": 245
+    },
+    {
+      "cut": 15532,
+      "wire": 20,
+      "dual_correlation": -0.27117848093867813,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.593732206339274e-12
+      },
+      "candidate_rank": 246
+    },
+    {
+      "cut": 1665,
+      "wire": 16,
+      "dual_correlation": 0.271178480938648,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.535849960222134e-12
+      },
+      "candidate_rank": 247
+    },
+    {
+      "cut": 3064,
+      "wire": 30,
+      "dual_correlation": -0.27115694793217016,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4341169124287254e-12
+      },
+      "candidate_rank": 248
+    },
+    {
+      "cut": 13167,
+      "wire": 33,
+      "dual_correlation": -0.27046481558008645,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4987112917782385e-12
+      },
+      "candidate_rank": 249
+    },
+    {
+      "cut": 5001,
+      "wire": 38,
+      "dual_correlation": 0.2704612267456329,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.455279914549601e-12
+      },
+      "candidate_rank": 250
+    },
+    {
+      "cut": 19804,
+      "wire": 26,
+      "dual_correlation": 0.27031510991575897,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.584795152141217e-12
+      },
+      "candidate_rank": 251
+    },
+    {
+      "cut": 1221,
+      "wire": 26,
+      "dual_correlation": 0.27029408959989115,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.458414974145467e-12
+      },
+      "candidate_rank": 252
+    },
+    {
+      "cut": 12839,
+      "wire": 35,
+      "dual_correlation": -0.26999519096191527,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.543216730347189e-12
+      },
+      "candidate_rank": 253
+    },
+    {
+      "cut": 16459,
+      "wire": 44,
+      "dual_correlation": 0.26996699297716936,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5223691874309726e-12
+      },
+      "candidate_rank": 254
+    },
+    {
+      "cut": 17432,
+      "wire": 4,
+      "dual_correlation": -0.2699480234238436,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.415424089315313e-12
+      },
+      "candidate_rank": 255
+    },
+    {
+      "cut": 4521,
+      "wire": 32,
+      "dual_correlation": -0.2699418711362645,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.486262081949483e-12
+      },
+      "candidate_rank": 256
+    },
+    {
+      "cut": 2006,
+      "wire": 35,
+      "dual_correlation": -0.26992546503604053,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.613685528661573e-12
+      },
+      "candidate_rank": 257
+    },
+    {
+      "cut": 19039,
+      "wire": 41,
+      "dual_correlation": -0.2697603786528156,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.448400362351958e-12
+      },
+      "candidate_rank": 258
+    },
+    {
+      "cut": 5085,
+      "wire": 6,
+      "dual_correlation": 0.26969475425194206,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.422338495186984e-12
+      },
+      "candidate_rank": 259
+    },
+    {
+      "cut": 3232,
+      "wire": 32,
+      "dual_correlation": 0.26943533279259957,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.532845707000515e-12
+      },
+      "candidate_rank": 260
+    },
+    {
+      "cut": 488,
+      "wire": 15,
+      "dual_correlation": 0.2694343074113377,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5781957551085475e-12
+      },
+      "candidate_rank": 261
+    },
+    {
+      "cut": 548,
+      "wire": 15,
+      "dual_correlation": 0.2694343074113377,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5781957551085475e-12
+      },
+      "candidate_rank": 262
+    },
+    {
+      "cut": 567,
+      "wire": 15,
+      "dual_correlation": 0.2694343074113377,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.578195755108553e-12
+      },
+      "candidate_rank": 263
+    },
+    {
+      "cut": 3395,
+      "wire": 45,
+      "dual_correlation": -0.26941943938305857,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.647218657544553e-12
+      },
+      "candidate_rank": 264
+    },
+    {
+      "cut": 1316,
+      "wire": 5,
+      "dual_correlation": -0.26893751018972584,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4345236693148786e-12
+      },
+      "candidate_rank": 265
+    },
+    {
+      "cut": 2443,
+      "wire": 37,
+      "dual_correlation": 0.26869090599610784,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.618021080088448e-12
+      },
+      "candidate_rank": 266
+    },
+    {
+      "cut": 5664,
+      "wire": 39,
+      "dual_correlation": -0.2679618599186024,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.445239924541168e-12
+      },
+      "candidate_rank": 267
+    },
+    {
+      "cut": 16567,
+      "wire": 32,
+      "dual_correlation": 0.2679321238619427,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.54617247317593e-12
+      },
+      "candidate_rank": 268
+    },
+    {
+      "cut": 5051,
+      "wire": 38,
+      "dual_correlation": -0.267523509428921,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.455279914549619e-12
+      },
+      "candidate_rank": 269
+    },
+    {
+      "cut": 3281,
+      "wire": 29,
+      "dual_correlation": -0.26737739259904714,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.582558056864191e-12
+      },
+      "candidate_rank": 270
+    },
+    {
+      "cut": 1307,
+      "wire": 15,
+      "dual_correlation": 0.2669908238630322,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4226542883002665e-12
+      },
+      "candidate_rank": 271
+    },
+    {
+      "cut": 2361,
+      "wire": 27,
+      "dual_correlation": 0.2669574989720622,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.561941658859891e-12
+      },
+      "candidate_rank": 272
+    },
+    {
+      "cut": 19883,
+      "wire": 17,
+      "dual_correlation": -0.2667678034385187,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.52292543627225e-12
+      },
+      "candidate_rank": 273
+    },
+    {
+      "cut": 6639,
+      "wire": 15,
+      "dual_correlation": 0.2665452957045261,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4868644432071405e-12
+      },
+      "candidate_rank": 274
+    },
+    {
+      "cut": 5210,
+      "wire": 38,
+      "dual_correlation": 0.26647198094433416,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.484981611913822e-12
+      },
+      "candidate_rank": 275
+    },
+    {
+      "cut": 10747,
+      "wire": 0,
+      "dual_correlation": -0.2663735443431274,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.412934561917488e-12
+      },
+      "candidate_rank": 276
+    },
+    {
+      "cut": 1188,
+      "wire": 10,
+      "dual_correlation": 0.26637251896186565,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.451122045095828e-12
+      },
+      "candidate_rank": 277
+    },
+    {
+      "cut": 6886,
+      "wire": 6,
+      "dual_correlation": 0.2662751077419308,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.58520452840469e-12
+      },
+      "candidate_rank": 278
+    },
+    {
+      "cut": 20260,
+      "wire": 17,
+      "dual_correlation": -0.2661171990275153,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.473884295566246e-12
+      },
+      "candidate_rank": 279
+    },
+    {
+      "cut": 22655,
+      "wire": 30,
+      "dual_correlation": -0.2656783358472362,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6133064142262506e-12
+      },
+      "candidate_rank": 280
+    },
+    {
+      "cut": 914,
+      "wire": 32,
+      "dual_correlation": 0.26566859472523446,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5604306507284764e-12
+      },
+      "candidate_rank": 281
+    },
+    {
+      "cut": 23256,
+      "wire": 7,
+      "dual_correlation": 0.26566859472523446,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.503392929262836e-12
+      },
+      "candidate_rank": 282
+    },
+    {
+      "cut": 7018,
+      "wire": 45,
+      "dual_correlation": -0.2651128380810138,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.453636053018375e-12
+      },
+      "candidate_rank": 283
+    },
+    {
+      "cut": 6477,
+      "wire": 41,
+      "dual_correlation": 0.26505746749285075,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4941043098481765e-12
+      },
+      "candidate_rank": 284
+    },
+    {
+      "cut": 16449,
+      "wire": 16,
+      "dual_correlation": -0.2649944065452344,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.62547895603217e-12
+      },
+      "candidate_rank": 285
+    },
+    {
+      "cut": 4663,
+      "wire": 28,
+      "dual_correlation": 0.2649251933099531,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.490273165087598e-12
+      },
+      "candidate_rank": 286
+    },
+    {
+      "cut": 1588,
+      "wire": 7,
+      "dual_correlation": 0.264811888680503,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.468375354017961e-12
+      },
+      "candidate_rank": 287
+    },
+    {
+      "cut": 6617,
+      "wire": 45,
+      "dual_correlation": 0.26476420845179016,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.45713284409554e-12
+      },
+      "candidate_rank": 288
+    },
+    {
+      "cut": 2223,
+      "wire": 29,
+      "dual_correlation": -0.26456118296186515,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.568032510307222e-12
+      },
+      "candidate_rank": 289
+    },
+    {
+      "cut": 15997,
+      "wire": 34,
+      "dual_correlation": -0.26456118296186515,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5664087526160574e-12
+      },
+      "candidate_rank": 290
+    },
+    {
+      "cut": 16420,
+      "wire": 26,
+      "dual_correlation": -0.26456118296186515,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5692238325269275e-12
+      },
+      "candidate_rank": 291
+    },
+    {
+      "cut": 22792,
+      "wire": 7,
+      "dual_correlation": -0.2644268580165141,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.519489823031782e-12
+      },
+      "candidate_rank": 292
+    },
+    {
+      "cut": 5711,
+      "wire": 7,
+      "dual_correlation": -0.2644248072539705,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.468666403274017e-12
+      },
+      "candidate_rank": 293
+    },
+    {
+      "cut": 14030,
+      "wire": 29,
+      "dual_correlation": 0.26429612190552004,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.407313406567213e-12
+      },
+      "candidate_rank": 294
+    },
+    {
+      "cut": 4125,
+      "wire": 0,
+      "dual_correlation": 0.2639731268078565,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.497010423780114e-12
+      },
+      "candidate_rank": 295
+    },
+    {
+      "cut": 5094,
+      "wire": 21,
+      "dual_correlation": 0.26393877653557923,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5275939725005634e-12
+      },
+      "candidate_rank": 296
+    },
+    {
+      "cut": 15771,
+      "wire": 37,
+      "dual_correlation": 0.2636352636818923,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.686778249905862e-12
+      },
+      "candidate_rank": 297
+    },
+    {
+      "cut": 733,
+      "wire": 15,
+      "dual_correlation": 0.26353580169942986,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5635459304769336e-12
+      },
+      "candidate_rank": 298
+    },
+    {
+      "cut": 13106,
+      "wire": 38,
+      "dual_correlation": -0.26353426362762233,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4849816119138176e-12
+      },
+      "candidate_rank": 299
+    },
+    {
+      "cut": 22933,
+      "wire": 40,
+      "dual_correlation": -0.26343480164515376,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.45112204509584e-12
+      },
+      "candidate_rank": 300
+    },
+    {
+      "cut": 6962,
+      "wire": 6,
+      "dual_correlation": -0.2633373904252189,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.585204528404653e-12
+      },
+      "candidate_rank": 301
+    },
+    {
+      "cut": 4170,
+      "wire": 43,
+      "dual_correlation": -0.2631538471792654,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.456729397557574e-12
+      },
+      "candidate_rank": 302
+    },
+    {
+      "cut": 6846,
+      "wire": 2,
+      "dual_correlation": 0.26251144581832175,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.42149902973423e-12
+      },
+      "candidate_rank": 303
+    },
+    {
+      "cut": 6089,
+      "wire": 43,
+      "dual_correlation": 0.2623786589448423,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.47341945547578e-12
+      },
+      "candidate_rank": 304
+    },
+    {
+      "cut": 15843,
+      "wire": 37,
+      "dual_correlation": -0.262015673977957,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5605699696904324e-12
+      },
+      "candidate_rank": 305
+    },
+    {
+      "cut": 4700,
+      "wire": 28,
+      "dual_correlation": -0.26198747599324124,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.490273165087575e-12
+      },
+      "candidate_rank": 306
+    },
+    {
+      "cut": 4701,
+      "wire": 28,
+      "dual_correlation": 0.2619874759932111,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4902731650876275e-12
+      },
+      "candidate_rank": 307
+    },
+    {
+      "cut": 22469,
+      "wire": 30,
+      "dual_correlation": -0.26187417136379115,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.468375354017956e-12
+      },
+      "candidate_rank": 308
+    },
+    {
+      "cut": 6693,
+      "wire": 45,
+      "dual_correlation": -0.2618264911350783,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.457132844095538e-12
+      },
+      "candidate_rank": 309
+    },
+    {
+      "cut": 22668,
+      "wire": 36,
+      "dual_correlation": 0.2617193387931159,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.594034324108438e-12
+      },
+      "candidate_rank": 310
+    },
+    {
+      "cut": 2290,
+      "wire": 41,
+      "dual_correlation": -0.26163987174533937,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.61525003941354e-12
+      },
+      "candidate_rank": 311
+    },
+    {
+      "cut": 1419,
+      "wire": 35,
+      "dual_correlation": 0.2611271811141248,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.425988366334537e-12
+      },
+      "candidate_rank": 312
+    },
+    {
+      "cut": 2043,
+      "wire": 29,
+      "dual_correlation": 0.2610841151010971,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.575312059927796e-12
+      },
+      "candidate_rank": 313
+    },
+    {
+      "cut": 5100,
+      "wire": 7,
+      "dual_correlation": 0.26102874451290364,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.50314517580132e-12
+      },
+      "candidate_rank": 314
+    },
+    {
+      "cut": 4260,
+      "wire": 21,
+      "dual_correlation": 0.2609098002865015,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4230646932653675e-12
+      },
+      "candidate_rank": 315
+    },
+    {
+      "cut": 5935,
+      "wire": 0,
+      "dual_correlation": 0.2601689623244123,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.459980692510456e-12
+      },
+      "candidate_rank": 316
+    },
+    {
+      "cut": 3758,
+      "wire": 45,
+      "dual_correlation": 0.2600028505598921,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5148175696459775e-12
+      },
+      "candidate_rank": 317
+    },
+    {
+      "cut": 5039,
+      "wire": 10,
+      "dual_correlation": -0.25993620077784657,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4295372070670895e-12
+      },
+      "candidate_rank": 318
+    },
+    {
+      "cut": 16356,
+      "wire": 9,
+      "dual_correlation": 0.25984750529867573,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.509069953477965e-12
+      },
+      "candidate_rank": 319
+    },
+    {
+      "cut": 7382,
+      "wire": 43,
+      "dual_correlation": 0.2596696016495857,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.461563752646384e-12
+      },
+      "candidate_rank": 320
+    },
+    {
+      "cut": 16025,
+      "wire": 31,
+      "dual_correlation": -0.2596050026301162,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5297925839328394e-12
+      },
+      "candidate_rank": 321
+    },
+    {
+      "cut": 6874,
+      "wire": 2,
+      "dual_correlation": -0.2595737285016099,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4214990297342696e-12
+      },
+      "candidate_rank": 322
+    },
+    {
+      "cut": 3478,
+      "wire": 21,
+      "dual_correlation": -0.25949477414440913,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.453005972423468e-12
+      },
+      "candidate_rank": 323
+    },
+    {
+      "cut": 6139,
+      "wire": 43,
+      "dual_correlation": -0.2594409416281304,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.473419455475782e-12
+      },
+      "candidate_rank": 324
+    },
+    {
+      "cut": 3470,
+      "wire": 41,
+      "dual_correlation": -0.25938608373062394,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.405023717853077e-12
+      },
+      "candidate_rank": 325
+    },
+    {
+      "cut": 4751,
+      "wire": 28,
+      "dual_correlation": -0.25904975867649926,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.490273165087543e-12
+      },
+      "candidate_rank": 326
+    },
+    {
+      "cut": 16095,
+      "wire": 26,
+      "dual_correlation": -0.25904719522338865,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.602126432983488e-12
+      },
+      "candidate_rank": 327
+    },
+    {
+      "cut": 2065,
+      "wire": 31,
+      "dual_correlation": 0.25902412414493464,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.59993995772544e-12
+      },
+      "candidate_rank": 328
+    },
+    {
+      "cut": 1407,
+      "wire": 8,
+      "dual_correlation": -0.25878162147640404,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.594034324108445e-12
+      },
+      "candidate_rank": 329
+    },
+    {
+      "cut": 1203,
+      "wire": 17,
+      "dual_correlation": 0.2587580377073575,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.433851494701538e-12
+      },
+      "candidate_rank": 330
+    },
+    {
+      "cut": 3195,
+      "wire": 31,
+      "dual_correlation": 0.25867908335014644,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.639293177076139e-12
+      },
+      "candidate_rank": 331
+    },
+    {
+      "cut": 4986,
+      "wire": 7,
+      "dual_correlation": 0.2586508853654307,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.582607902313584e-12
+      },
+      "candidate_rank": 332
+    },
+    {
+      "cut": 4637,
+      "wire": 16,
+      "dual_correlation": -0.2586093574243358,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.496052022152089e-12
+      },
+      "candidate_rank": 333
+    },
+    {
+      "cut": 3789,
+      "wire": 21,
+      "dual_correlation": 0.25858115943960813,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.556851096097457e-12
+      },
+      "candidate_rank": 334
+    },
+    {
+      "cut": 4060,
+      "wire": 3,
+      "dual_correlation": 0.25837864664029925,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.447172304724254e-12
+      },
+      "candidate_rank": 335
+    },
+    {
+      "cut": 3949,
+      "wire": 40,
+      "dual_correlation": 0.25832225067086295,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.407449344192049e-12
+      },
+      "candidate_rank": 336
+    },
+    {
+      "cut": 1334,
+      "wire": 27,
+      "dual_correlation": -0.258161265812676,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4525402415119585e-12
+      },
+      "candidate_rank": 337
+    },
+    {
+      "cut": 2801,
+      "wire": 42,
+      "dual_correlation": -0.25814639778438175,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.577627497722461e-12
+      },
+      "candidate_rank": 338
+    },
+    {
+      "cut": 1385,
+      "wire": 2,
+      "dual_correlation": 0.25809820486503554,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.520129004090257e-12
+      },
+      "candidate_rank": 339
+    },
+    {
+      "cut": 5147,
+      "wire": 32,
+      "dual_correlation": 0.2578126361834525,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.470598993458347e-12
+      },
+      "candidate_rank": 340
+    },
+    {
+      "cut": 7114,
+      "wire": 39,
+      "dual_correlation": 0.2573701841687042,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4863963773833915e-12
+      },
+      "candidate_rank": 341
+    },
+    {
+      "cut": 5985,
+      "wire": 0,
+      "dual_correlation": -0.2572312450077004,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.459980692510476e-12
+      },
+      "candidate_rank": 342
+    },
+    {
+      "cut": 1084,
+      "wire": 11,
+      "dual_correlation": 0.2571471637441671,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.483201290748743e-12
+      },
+      "candidate_rank": 343
+    },
+    {
+      "cut": 1992,
+      "wire": 35,
+      "dual_correlation": 0.2569097879819337,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.500721499079265e-12
+      },
+      "candidate_rank": 344
+    },
+    {
+      "cut": 1081,
+      "wire": 8,
+      "dual_correlation": 0.2568600569906814,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4506585698817625e-12
+      },
+      "candidate_rank": 345
+    },
+    {
+      "cut": 1608,
+      "wire": 3,
+      "dual_correlation": 0.256782128014732,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4449630615158685e-12
+      },
+      "candidate_rank": 346
+    },
+    {
+      "cut": 5255,
+      "wire": 38,
+      "dual_correlation": 0.2567662346051671,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.538464872125461e-12
+      },
+      "candidate_rank": 347
+    },
+    {
+      "cut": 8842,
+      "wire": 43,
+      "dual_correlation": -0.2567318843328738,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.455720750937443e-12
+      },
+      "candidate_rank": 348
+    },
+    {
+      "cut": 16293,
+      "wire": 33,
+      "dual_correlation": -0.25668369141359354,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5619664720380574e-12
+      },
+      "candidate_rank": 349
+    },
+    {
+      "cut": 15079,
+      "wire": 17,
+      "dual_correlation": -0.25666728531337424,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.524390477154752e-12
+      },
+      "candidate_rank": 350
+    },
+    {
+      "cut": 1976,
+      "wire": 32,
+      "dual_correlation": 0.25661242741580603,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5699827657089864e-12
+      },
+      "candidate_rank": 351
+    },
+    {
+      "cut": 1499,
+      "wire": 1,
+      "dual_correlation": 0.256378127797339,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.431494993147405e-12
+      },
+      "candidate_rank": 352
+    },
+    {
+      "cut": 16306,
+      "wire": 28,
+      "dual_correlation": 0.2561279347693447,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.512803764859775e-12
+      },
+      "candidate_rank": 353
+    },
+    {
+      "cut": 2074,
+      "wire": 31,
+      "dual_correlation": -0.2560864068282228,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.59993995772542e-12
+      },
+      "candidate_rank": 354
+    },
+    {
+      "cut": 15856,
+      "wire": 27,
+      "dual_correlation": 0.2560864068281892,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5953509457128375e-12
+      },
+      "candidate_rank": 355
+    },
+    {
+      "cut": 14006,
+      "wire": 27,
+      "dual_correlation": 0.25605000579340037,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.554957457593927e-12
+      },
+      "candidate_rank": 356
+    },
+    {
+      "cut": 3630,
+      "wire": 44,
+      "dual_correlation": 0.25604026467139823,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4864738870006355e-12
+      },
+      "candidate_rank": 357
+    },
+    {
+      "cut": 725,
+      "wire": 13,
+      "dual_correlation": 0.25588235595698416,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4806973839576e-12
+      },
+      "candidate_rank": 358
+    },
+    {
+      "cut": 1024,
+      "wire": 12,
+      "dual_correlation": 0.2557864828089679,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.529259525307983e-12
+      },
+      "candidate_rank": 359
+    },
+    {
+      "cut": 3772,
+      "wire": 35,
+      "dual_correlation": -0.2557254726238497,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4395519753061456e-12
+      },
+      "candidate_rank": 360
+    },
+    {
+      "cut": 3955,
+      "wire": 3,
+      "dual_correlation": 0.2556003761098679,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.468006287270754e-12
+      },
+      "candidate_rank": 361
+    },
+    {
+      "cut": 18321,
+      "wire": 3,
+      "dual_correlation": 0.2556003761098679,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.466566978522028e-12
+      },
+      "candidate_rank": 362
+    },
+    {
+      "cut": 5697,
+      "wire": 7,
+      "dual_correlation": -0.25548502071786805,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.465644353877651e-12
+      },
+      "candidate_rank": 363
+    },
+    {
+      "cut": 18255,
+      "wire": 40,
+      "dual_correlation": -0.2553845333541511,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.407449344192038e-12
+      },
+      "candidate_rank": 364
+    },
+    {
+      "cut": 4929,
+      "wire": 38,
+      "dual_correlation": -0.2552368784523466,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.535917797710475e-12
+      },
+      "candidate_rank": 365
+    },
+    {
+      "cut": 15168,
+      "wire": 38,
+      "dual_correlation": 0.2551856093891857,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.571158996284253e-12
+      },
+      "candidate_rank": 366
+    },
+    {
+      "cut": 2825,
+      "wire": 26,
+      "dual_correlation": -0.2551835586267005,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.537810503198691e-12
+      },
+      "candidate_rank": 367
+    },
+    {
+      "cut": 4789,
+      "wire": 7,
+      "dual_correlation": -0.25512767534792213,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.457029406097138e-12
+      },
+      "candidate_rank": 368
+    },
+    {
+      "cut": 13175,
+      "wire": 28,
+      "dual_correlation": -0.2548749188667407,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.470598993458399e-12
+      },
+      "candidate_rank": 369
+    },
+    {
+      "cut": 18802,
+      "wire": 43,
+      "dual_correlation": 0.2548108325378014,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.580511433108909e-12
+      },
+      "candidate_rank": 370
+    },
+    {
+      "cut": 4322,
+      "wire": 44,
+      "dual_correlation": -0.2546165227885655,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.497319575446365e-12
+      },
+      "candidate_rank": 371
+    },
+    {
+      "cut": 2731,
+      "wire": 42,
+      "dual_correlation": -0.25448835013079735,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.645121625526846e-12
+      },
+      "candidate_rank": 372
+    },
+    {
+      "cut": 12082,
+      "wire": 2,
+      "dual_correlation": 0.2544401572114341,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.434022288631007e-12
+      },
+      "candidate_rank": 373
+    },
+    {
+      "cut": 9264,
+      "wire": 39,
+      "dual_correlation": -0.25443246685199233,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.485910533174306e-12
+      },
+      "candidate_rank": 374
+    },
+    {
+      "cut": 23062,
+      "wire": 43,
+      "dual_correlation": -0.25420944642745524,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.460166135126818e-12
+      },
+      "candidate_rank": 375
+    },
+    {
+      "cut": 6895,
+      "wire": 45,
+      "dual_correlation": -0.25403154277841006,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4892954531107335e-12
+      },
+      "candidate_rank": 376
+    },
+    {
+      "cut": 23077,
+      "wire": 36,
+      "dual_correlation": -0.2539223396739695,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.444220714094163e-12
+      },
+      "candidate_rank": 377
+    },
+    {
+      "cut": 22465,
+      "wire": 3,
+      "dual_correlation": -0.25384441069802016,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.44496306151588e-12
+      },
+      "candidate_rank": 378
+    },
+    {
+      "cut": 2153,
+      "wire": 29,
+      "dual_correlation": -0.25367471009909415,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.643462421617257e-12
+      },
+      "candidate_rank": 379
+    },
+    {
+      "cut": 2440,
+      "wire": 27,
+      "dual_correlation": -0.25365779130827054,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.515465789485951e-12
+      },
+      "candidate_rank": 380
+    },
+    {
+      "cut": 15572,
+      "wire": 20,
+      "dual_correlation": 0.2536577913082404,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.533241641070169e-12
+      },
+      "candidate_rank": 381
+    },
+    {
+      "cut": 19205,
+      "wire": 45,
+      "dual_correlation": 0.25320918700597633,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.534633808222899e-12
+      },
+      "candidate_rank": 382
+    },
+    {
+      "cut": 4847,
+      "wire": 27,
+      "dual_correlation": 0.2532061108621511,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.482591489162838e-12
+      },
+      "candidate_rank": 383
+    },
+    {
+      "cut": 2377,
+      "wire": 26,
+      "dual_correlation": 0.25319021745260273,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.513589109400389e-12
+      },
+      "candidate_rank": 384
+    },
+    {
+      "cut": 2828,
+      "wire": 40,
+      "dual_correlation": 0.25319021745260273,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.512803764859773e-12
+      },
+      "candidate_rank": 385
+    },
+    {
+      "cut": 2576,
+      "wire": 45,
+      "dual_correlation": -0.25314868951147734,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.573714995604363e-12
+      },
+      "candidate_rank": 386
+    },
+    {
+      "cut": 4898,
+      "wire": 27,
+      "dual_correlation": -0.25311228847668854,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5498435960012445e-12
+      },
+      "candidate_rank": 387
+    },
+    {
+      "cut": 19265,
+      "wire": 1,
+      "dual_correlation": -0.25310254735468635,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4864738870006226e-12
+      },
+      "candidate_rank": 388
+    },
+    {
+      "cut": 3634,
+      "wire": 38,
+      "dual_correlation": 0.2531025473546562,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4873015585259094e-12
+      },
+      "candidate_rank": 389
+    },
+    {
+      "cut": 720,
+      "wire": 36,
+      "dual_correlation": -0.25294463864027233,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.468598339253957e-12
+      },
+      "candidate_rank": 390
+    },
+    {
+      "cut": 3714,
+      "wire": 39,
+      "dual_correlation": 0.25291336451174157,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.490781133746068e-12
+      },
+      "candidate_rank": 391
+    },
+    {
+      "cut": 23145,
+      "wire": 12,
+      "dual_correlation": -0.252848765492256,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.487926964007971e-12
+      },
+      "candidate_rank": 392
+    },
+    {
+      "cut": 15200,
+      "wire": 38,
+      "dual_correlation": 0.25283851167959215,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5632479985237455e-12
+      },
+      "candidate_rank": 393
+    },
+    {
+      "cut": 15298,
+      "wire": 20,
+      "dual_correlation": 0.25283851167959215,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5293439451403e-12
+      },
+      "candidate_rank": 394
+    },
+    {
+      "cut": 18328,
+      "wire": 3,
+      "dual_correlation": -0.252662658793156,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.468006287270761e-12
+      },
+      "candidate_rank": 395
+    },
+    {
+      "cut": 7211,
+      "wire": 40,
+      "dual_correlation": 0.2526154912550296,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4296854428737276e-12
+      },
+      "candidate_rank": 396
+    },
+    {
+      "cut": 5984,
+      "wire": 39,
+      "dual_correlation": 0.25258319174527477,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.502819864027419e-12
+      },
+      "candidate_rank": 397
+    },
+    {
+      "cut": 6478,
+      "wire": 21,
+      "dual_correlation": 0.2524760394033482,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.47975395146379e-12
+      },
+      "candidate_rank": 398
+    },
+    {
+      "cut": 4103,
+      "wire": 28,
+      "dual_correlation": 0.252283267726006,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4555880302773845e-12
+      },
+      "candidate_rank": 399
+    },
+    {
+      "cut": 4642,
+      "wire": 31,
+      "dual_correlation": 0.2522443032380412,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.523026479711029e-12
+      },
+      "candidate_rank": 400
+    },
+    {
+      "cut": 3404,
+      "wire": 41,
+      "dual_correlation": 0.25194079038436984,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.458126278827472e-12
+      },
+      "candidate_rank": 401
+    },
+    {
+      "cut": 19611,
+      "wire": 41,
+      "dual_correlation": 0.25194079038436984,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4543787271642634e-12
+      },
+      "candidate_rank": 402
+    },
+    {
+      "cut": 10168,
+      "wire": 39,
+      "dual_correlation": -0.2517121303628963,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.403236036373937e-12
+      },
+      "candidate_rank": 403
+    },
+    {
+      "cut": 5674,
+      "wire": 2,
+      "dual_correlation": -0.25150243989472226,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4340222886310336e-12
+      },
+      "candidate_rank": 404
+    },
+    {
+      "cut": 6251,
+      "wire": 0,
+      "dual_correlation": 0.2513814449057612,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.413501237155232e-12
+      },
+      "candidate_rank": 405
+    },
+    {
+      "cut": 4251,
+      "wire": 26,
+      "dual_correlation": -0.25094104365357295,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.469076857161627e-12
+      },
+      "candidate_rank": 406
+    },
+    {
+      "cut": 20904,
+      "wire": 38,
+      "dual_correlation": 0.25073648009171773,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.513137447555219e-12
+      },
+      "candidate_rank": 407
+    },
+    {
+      "cut": 1017,
+      "wire": 31,
+      "dual_correlation": -0.2503032565083797,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.494183252103673e-12
+      },
+      "candidate_rank": 408
+    },
+    {
+      "cut": 3568,
+      "wire": 45,
+      "dual_correlation": -0.25027146968926445,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.509819950800845e-12
+      },
+      "candidate_rank": 409
+    },
+    {
+      "cut": 4897,
+      "wire": 27,
+      "dual_correlation": -0.2502683935454393,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.482591489162836e-12
+      },
+      "candidate_rank": 410
+    },
+    {
+      "cut": 15139,
+      "wire": 20,
+      "dual_correlation": 0.2502294290574403,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.538766173808321e-12
+      },
+      "candidate_rank": 411
+    },
+    {
+      "cut": 15379,
+      "wire": 20,
+      "dual_correlation": 0.25021148488532885,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.478860672850331e-12
+      },
+      "candidate_rank": 412
+    },
+    {
+      "cut": 1387,
+      "wire": 4,
+      "dual_correlation": 0.2501520127721078,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.454606746874134e-12
+      },
+      "candidate_rank": 413
+    },
+    {
+      "cut": 18988,
+      "wire": 39,
+      "dual_correlation": -0.24997564719502968,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.489104987126564e-12
+      },
+      "candidate_rank": 414
+    },
+    {
+      "cut": 4633,
+      "wire": 7,
+      "dual_correlation": 0.24991258624736506,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.555487862720835e-12
+      },
+      "candidate_rank": 415
+    },
+    {
+      "cut": 5390,
+      "wire": 3,
+      "dual_correlation": 0.24986798216243,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4709359284954354e-12
+      },
+      "candidate_rank": 416
+    },
+    {
+      "cut": 793,
+      "wire": 17,
+      "dual_correlation": 0.24982235269627143,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.573156433508187e-12
+      },
+      "candidate_rank": 417
+    },
+    {
+      "cut": 15711,
+      "wire": 31,
+      "dual_correlation": -0.2498192765525251,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.568678164801119e-12
+      },
+      "candidate_rank": 418
+    },
+    {
+      "cut": 4517,
+      "wire": 32,
+      "dual_correlation": 0.2497941547115557,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.551704995818571e-12
+      },
+      "candidate_rank": 419
+    },
+    {
+      "cut": 5148,
+      "wire": 28,
+      "dual_correlation": 0.2497941547115557,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.523165369849689e-12
+      },
+      "candidate_rank": 420
+    },
+    {
+      "cut": 3578,
+      "wire": 2,
+      "dual_correlation": 0.24978954049587507,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.465371861534302e-12
+      },
+      "candidate_rank": 421
+    },
+    {
+      "cut": 9109,
+      "wire": 40,
+      "dual_correlation": -0.24967777393831775,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.429059666279445e-12
+      },
+      "candidate_rank": 422
+    },
+    {
+      "cut": 11401,
+      "wire": 39,
+      "dual_correlation": -0.24964547442856289,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.50281986402746e-12
+      },
+      "candidate_rank": 423
+    },
+    {
+      "cut": 1544,
+      "wire": 4,
+      "dual_correlation": 0.24962547949389527,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.459100244724084e-12
+      },
+      "candidate_rank": 424
+    },
+    {
+      "cut": 4355,
+      "wire": 1,
+      "dual_correlation": 0.2495977941998138,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.384217144303024e-12
+      },
+      "candidate_rank": 425
+    },
+    {
+      "cut": 4694,
+      "wire": 31,
+      "dual_correlation": -0.24930658592132934,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.523026479711051e-12
+      },
+      "candidate_rank": 426
+    },
+    {
+      "cut": 4695,
+      "wire": 31,
+      "dual_correlation": 0.2493065859212992,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.523026479711058e-12
+      },
+      "candidate_rank": 427
+    },
+    {
+      "cut": 4788,
+      "wire": 7,
+      "dual_correlation": 0.24909176854680443,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5557192847023135e-12
+      },
+      "candidate_rank": 428
+    },
+    {
+      "cut": 5488,
+      "wire": 35,
+      "dual_correlation": 0.24902819490856595,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.503408385223562e-12
+      },
+      "candidate_rank": 429
+    },
+    {
+      "cut": 3408,
+      "wire": 41,
+      "dual_correlation": -0.24900307306765798,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.449658928984598e-12
+      },
+      "candidate_rank": 430
+    },
+    {
+      "cut": 20637,
+      "wire": 16,
+      "dual_correlation": -0.24895846898272134,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.651641554078381e-12
+      },
+      "candidate_rank": 431
+    },
+    {
+      "cut": 4055,
+      "wire": 43,
+      "dual_correlation": -0.24885388009397327,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.510955080233782e-12
+      },
+      "candidate_rank": 432
+    },
+    {
+      "cut": 1427,
+      "wire": 31,
+      "dual_correlation": 0.24877748918993534,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.41563166836694e-12
+      },
+      "candidate_rank": 433
+    },
+    {
+      "cut": 6137,
+      "wire": 40,
+      "dual_correlation": 0.2485765144624792,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.422019879129918e-12
+      },
+      "candidate_rank": 434
+    },
+    {
+      "cut": 6301,
+      "wire": 0,
+      "dual_correlation": -0.2484437275890493,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4135012371552345e-12
+      },
+      "candidate_rank": 435
+    },
+    {
+      "cut": 3549,
+      "wire": 44,
+      "dual_correlation": 0.24835144327536277,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4567974210401845e-12
+      },
+      "candidate_rank": 436
+    },
+    {
+      "cut": 3782,
+      "wire": 44,
+      "dual_correlation": 0.24833042295948438,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.523567819208764e-12
+      },
+      "candidate_rank": 437
+    },
+    {
+      "cut": 9939,
+      "wire": 3,
+      "dual_correlation": 0.2482745396806912,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.510812222711478e-12
+      },
+      "candidate_rank": 438
+    },
+    {
+      "cut": 15566,
+      "wire": 37,
+      "dual_correlation": 0.2477592855963325,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.533241641070046e-12
+      },
+      "candidate_rank": 439
+    },
+    {
+      "cut": 10111,
+      "wire": 45,
+      "dual_correlation": 0.24761009262265446,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.447026188386189e-12
+      },
+      "candidate_rank": 440
+    },
+    {
+      "cut": 4828,
+      "wire": 44,
+      "dual_correlation": -0.24727376756861696,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.523050280463233e-12
+      },
+      "candidate_rank": 441
+    },
+    {
+      "cut": 1736,
+      "wire": 35,
+      "dual_correlation": 0.24689796533597227,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.522976381008154e-12
+      },
+      "candidate_rank": 442
+    },
+    {
+      "cut": 2863,
+      "wire": 29,
+      "dual_correlation": 0.24689796533597227,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.522977890443077e-12
+      },
+      "candidate_rank": 443
+    },
+    {
+      "cut": 23365,
+      "wire": 45,
+      "dual_correlation": -0.24688463537955957,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.573156433508185e-12
+      },
+      "candidate_rank": 444
+    },
+    {
+      "cut": 879,
+      "wire": 16,
+      "dual_correlation": -0.24685643739484384,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.551610720643662e-12
+      },
+      "candidate_rank": 445
+    },
+    {
+      "cut": 5151,
+      "wire": 28,
+      "dual_correlation": -0.24685643739484384,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.523165369849698e-12
+      },
+      "candidate_rank": 446
+    },
+    {
+      "cut": 3577,
+      "wire": 2,
+      "dual_correlation": -0.2468518231791632,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.454305898126493e-12
+      },
+      "candidate_rank": 447
+    },
+    {
+      "cut": 22525,
+      "wire": 4,
+      "dual_correlation": -0.2466877621771834,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.459100244724089e-12
+      },
+      "candidate_rank": 448
+    },
+    {
+      "cut": 14075,
+      "wire": 33,
+      "dual_correlation": 0.24667750836454888,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.453701402071659e-12
+      },
+      "candidate_rank": 449
+    },
+    {
+      "cut": 17316,
+      "wire": 5,
+      "dual_correlation": 0.24662162508573282,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.463972001315151e-12
+      },
+      "candidate_rank": 450
+    },
+    {
+      "cut": 15508,
+      "wire": 26,
+      "dual_correlation": -0.24654779763488402,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.563645404548918e-12
+      },
+      "candidate_rank": 451
+    },
+    {
+      "cut": 4745,
+      "wire": 31,
+      "dual_correlation": -0.24636886860458734,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.513526374818354e-12
+      },
+      "candidate_rank": 452
+    },
+    {
+      "cut": 1330,
+      "wire": 26,
+      "dual_correlation": -0.24635553864815388,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.431450649789436e-12
+      },
+      "candidate_rank": 453
+    },
+    {
+      "cut": 5462,
+      "wire": 35,
+      "dual_correlation": -0.2460904775918541,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.503408385223488e-12
+      },
+      "candidate_rank": 454
+    },
+    {
+      "cut": 20636,
+      "wire": 16,
+      "dual_correlation": -0.24602075166597934,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.635398299013757e-12
+      },
+      "candidate_rank": 455
+    },
+    {
+      "cut": 6084,
+      "wire": 27,
+      "dual_correlation": 0.24601613745028167,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4893237063965285e-12
+      },
+      "candidate_rank": 456
+    },
+    {
+      "cut": 211,
+      "wire": 3,
+      "dual_correlation": 0.2459781983436082,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.421403977883424e-12
+      },
+      "candidate_rank": 457
+    },
+    {
+      "cut": 3262,
+      "wire": 31,
+      "dual_correlation": 0.2458705333110524,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.689661027227925e-12
+      },
+      "candidate_rank": 458
+    },
+    {
+      "cut": 5194,
+      "wire": 10,
+      "dual_correlation": 0.24577209670981398,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.439085997821084e-12
+      },
+      "candidate_rank": 459
+    },
+    {
+      "cut": 728,
+      "wire": 15,
+      "dual_correlation": 0.2457444114157722,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.484522468884186e-12
+      },
+      "candidate_rank": 460
+    },
+    {
+      "cut": 6116,
+      "wire": 40,
+      "dual_correlation": -0.24563879714576733,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.415238470533319e-12
+      },
+      "candidate_rank": 461
+    },
+    {
+      "cut": 7373,
+      "wire": 45,
+      "dual_correlation": 0.2456270052612403,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4575026833803354e-12
+      },
+      "candidate_rank": 462
+    },
+    {
+      "cut": 18786,
+      "wire": 42,
+      "dual_correlation": 0.2456085483985226,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.418293912020236e-12
+      },
+      "candidate_rank": 463
+    },
+    {
+      "cut": 6043,
+      "wire": 21,
+      "dual_correlation": -0.24556496969487995,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4174006684035505e-12
+      },
+      "candidate_rank": 464
+    },
+    {
+      "cut": 6774,
+      "wire": 40,
+      "dual_correlation": 0.24523582230960647,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.444401011463074e-12
+      },
+      "candidate_rank": 465
+    },
+    {
+      "cut": 2773,
+      "wire": 42,
+      "dual_correlation": -0.24486309622077618,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5151932222341945e-12
+      },
+      "candidate_rank": 466
+    },
+    {
+      "cut": 5055,
+      "wire": 27,
+      "dual_correlation": 0.24482361904211444,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.480327040155985e-12
+      },
+      "candidate_rank": 467
+    },
+    {
+      "cut": 2803,
+      "wire": 42,
+      "dual_correlation": 0.2447861926260467,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.518049309277579e-12
+      },
+      "candidate_rank": 468
+    },
+    {
+      "cut": 5848,
+      "wire": 26,
+      "dual_correlation": 0.244785167244774,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.470908673488654e-12
+      },
+      "candidate_rank": 469
+    },
+    {
+      "cut": 22688,
+      "wire": 4,
+      "dual_correlation": 0.24464827884628415,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.46791334904771e-12
+      },
+      "candidate_rank": 470
+    },
+    {
+      "cut": 5553,
+      "wire": 3,
+      "dual_correlation": -0.24464007579618313,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.449469963387435e-12
+      },
+      "candidate_rank": 471
+    },
+    {
+      "cut": 1426,
+      "wire": 31,
+      "dual_correlation": 0.2445262584760758,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.431064482956761e-12
+      },
+      "candidate_rank": 472
+    },
+    {
+      "cut": 8715,
+      "wire": 38,
+      "dual_correlation": 0.24424991822584524,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.459272620700933e-12
+      },
+      "candidate_rank": 473
+    },
+    {
+      "cut": 4814,
+      "wire": 19,
+      "dual_correlation": 0.2440520196422031,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.49412897846008e-12
+      },
+      "candidate_rank": 474
+    },
+    {
+      "cut": 9682,
+      "wire": 3,
+      "dual_correlation": 0.24374440526349148,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.403299841517568e-12
+      },
+      "candidate_rank": 475
+    },
+    {
+      "cut": 18751,
+      "wire": 42,
+      "dual_correlation": 0.2437438925728484,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.412240406055487e-12
+      },
+      "candidate_rank": 476
+    },
+    {
+      "cut": 4906,
+      "wire": 33,
+      "dual_correlation": -0.24373979104783702,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.441604475943834e-12
+      },
+      "candidate_rank": 477
+    },
+    {
+      "cut": 4387,
+      "wire": 5,
+      "dual_correlation": -0.24368390776902096,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.455857522289123e-12
+      },
+      "candidate_rank": 478
+    },
+    {
+      "cut": 3548,
+      "wire": 43,
+      "dual_correlation": 0.24366750166876439,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.395804537147849e-12
+      },
+      "candidate_rank": 479
+    },
+    {
+      "cut": 19372,
+      "wire": 43,
+      "dual_correlation": 0.24366750166876439,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.39580453714784e-12
+      },
+      "candidate_rank": 480
+    },
+    {
+      "cut": 2071,
+      "wire": 33,
+      "dual_correlation": 0.243587009239688,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.546533978452036e-12
+      },
+      "candidate_rank": 481
+    },
+    {
+      "cut": 4084,
+      "wire": 45,
+      "dual_correlation": 0.24325119687626967,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.394338791152319e-12
+      },
+      "candidate_rank": 482
+    },
+    {
+      "cut": 15988,
+      "wire": 18,
+      "dual_correlation": 0.24310149121193886,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.523535314232534e-12
+      },
+      "candidate_rank": 483
+    },
+    {
+      "cut": 6087,
+      "wire": 27,
+      "dual_correlation": -0.24307842013356984,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.48932370639653e-12
+      },
+      "candidate_rank": 484
+    },
+    {
+      "cut": 0,
+      "wire": 3,
+      "dual_correlation": -0.24304048102689635,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.414999904535628e-12
+      },
+      "candidate_rank": 485
+    },
+    {
+      "cut": 214,
+      "wire": 3,
+      "dual_correlation": -0.24304048102689635,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.414999904535651e-12
+      },
+      "candidate_rank": 486
+    },
+    {
+      "cut": 215,
+      "wire": 3,
+      "dual_correlation": -0.24304048102689635,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.414999904535628e-12
+      },
+      "candidate_rank": 487
+    },
+    {
+      "cut": 23517,
+      "wire": 15,
+      "dual_correlation": -0.24280669409906033,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.484522468884006e-12
+      },
+      "candidate_rank": 488
+    },
+    {
+      "cut": 3365,
+      "wire": 43,
+      "dual_correlation": -0.24273748086384345,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.568673742182983e-12
+      },
+      "candidate_rank": 489
+    },
+    {
+      "cut": 7357,
+      "wire": 45,
+      "dual_correlation": -0.24268928794452843,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4575026833803354e-12
+      },
+      "candidate_rank": 490
+    },
+    {
+      "cut": 16191,
+      "wire": 34,
+      "dual_correlation": -0.24268416103819584,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.575699694949258e-12
+      },
+      "candidate_rank": 491
+    },
+    {
+      "cut": 3740,
+      "wire": 42,
+      "dual_correlation": -0.24267083108181076,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.418293912020233e-12
+      },
+      "candidate_rank": 492
+    },
+    {
+      "cut": 22776,
+      "wire": 5,
+      "dual_correlation": -0.24264160771582555,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.40087810855598e-12
+      },
+      "candidate_rank": 493
+    },
+    {
+      "cut": 3997,
+      "wire": 44,
+      "dual_correlation": 0.24239807966599136,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.411899231465924e-12
+      },
+      "candidate_rank": 494
+    },
+    {
+      "cut": 6299,
+      "wire": 39,
+      "dual_correlation": 0.2422858004177124,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.406708704837534e-12
+      },
+      "candidate_rank": 495
+    },
+    {
+      "cut": 4082,
+      "wire": 21,
+      "dual_correlation": -0.2422437597859965,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.3987862947927154e-12
+      },
+      "candidate_rank": 496
+    },
+    {
+      "cut": 3256,
+      "wire": 36,
+      "dual_correlation": -0.24211353636566613,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.407537799801805e-12
+      },
+      "candidate_rank": 497
+    },
+    {
+      "cut": 5005,
+      "wire": 27,
+      "dual_correlation": -0.24188590172540259,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.479288152590694e-12
+      },
+      "candidate_rank": 498
+    },
+    {
+      "cut": 2802,
+      "wire": 42,
+      "dual_correlation": -0.24184847530933484,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.541736696919407e-12
+      },
+      "candidate_rank": 499
+    },
+    {
+      "cut": 11832,
+      "wire": 26,
+      "dual_correlation": -0.24184744992806215,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.470908673488644e-12
+      },
+      "candidate_rank": 500
+    },
+    {
+      "cut": 4099,
+      "wire": 21,
+      "dual_correlation": -0.24172645493911818,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.3928970884055195e-12
+      },
+      "candidate_rank": 501
+    },
+    {
+      "cut": 1403,
+      "wire": 4,
+      "dual_correlation": -0.2417105615295723,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.467913349047789e-12
+      },
+      "candidate_rank": 502
+    },
+    {
+      "cut": 6467,
+      "wire": 6,
+      "dual_correlation": 0.2416674955164908,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.601608054958555e-12
+      },
+      "candidate_rank": 503
+    },
+    {
+      "cut": 8443,
+      "wire": 18,
+      "dual_correlation": 0.24164852596315184,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.555908923565267e-12
+      },
+      "candidate_rank": 504
+    },
+    {
+      "cut": 20830,
+      "wire": 10,
+      "dual_correlation": -0.2415905919218473,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.489995197917223e-12
+      },
+      "candidate_rank": 505
+    },
+    {
+      "cut": 9861,
+      "wire": 42,
+      "dual_correlation": 0.24141166289154842,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4297224304293885e-12
+      },
+      "candidate_rank": 506
+    },
+    {
+      "cut": 2369,
+      "wire": 27,
+      "dual_correlation": -0.24134450041887928,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.53720617176056e-12
+      },
+      "candidate_rank": 507
+    },
+    {
+      "cut": 16299,
+      "wire": 28,
+      "dual_correlation": 0.24134450041884914,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.564032666667337e-12
+      },
+      "candidate_rank": 508
+    },
+    {
+      "cut": 4907,
+      "wire": 35,
+      "dual_correlation": 0.24110302313154128,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.470531431329027e-12
+      },
+      "candidate_rank": 509
+    },
+    {
+      "cut": 6558,
+      "wire": 43,
+      "dual_correlation": 0.24094050020149652,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.437799805052151e-12
+      },
+      "candidate_rank": 510
+    },
+    {
+      "cut": 6877,
+      "wire": 3,
+      "dual_correlation": -0.24080668794677962,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.392752900433454e-12
+      },
+      "candidate_rank": 511
+    },
+    {
+      "cut": 3777,
+      "wire": 42,
+      "dual_correlation": -0.24080617525613654,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.412240406055499e-12
+      },
+      "candidate_rank": 512
+    },
+    {
+      "cut": 3552,
+      "wire": 43,
+      "dual_correlation": -0.24072978435205253,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.395804537147815e-12
+      },
+      "candidate_rank": 513
+    },
+    {
+      "cut": 16580,
+      "wire": 21,
+      "dual_correlation": 0.24064108887287589,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.546108638110166e-12
+      },
+      "candidate_rank": 514
+    },
+    {
+      "cut": 2285,
+      "wire": 31,
+      "dual_correlation": 0.24063134775083453,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.532337920547643e-12
+      },
+      "candidate_rank": 515
+    },
+    {
+      "cut": 17904,
+      "wire": 45,
+      "dual_correlation": -0.2403134795595578,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.394338791152307e-12
+      },
+      "candidate_rank": 516
+    },
+    {
+      "cut": 19412,
+      "wire": 40,
+      "dual_correlation": 0.24026579933082184,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.456002195278011e-12
+      },
+      "candidate_rank": 517
+    },
+    {
+      "cut": 1836,
+      "wire": 35,
+      "dual_correlation": 0.24016377389520033,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.506268989906903e-12
+      },
+      "candidate_rank": 518
+    },
+    {
+      "cut": 2968,
+      "wire": 28,
+      "dual_correlation": 0.2400268854966705,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6255854321396245e-12
+      },
+      "candidate_rank": 519
+    },
+    {
+      "cut": 2997,
+      "wire": 28,
+      "dual_correlation": 0.2400268854966705,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.625585432139625e-12
+      },
+      "candidate_rank": 520
+    },
+    {
+      "cut": 7315,
+      "wire": 45,
+      "dual_correlation": -0.2398617991134656,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.421057481073378e-12
+      },
+      "candidate_rank": 521
+    },
+    {
+      "cut": 3981,
+      "wire": 32,
+      "dual_correlation": 0.23979412395010336,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.457061899133217e-12
+      },
+      "candidate_rank": 522
+    },
+    {
+      "cut": 6249,
+      "wire": 39,
+      "dual_correlation": -0.23934808310100053,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4067087048375375e-12
+      },
+      "candidate_rank": 523
+    },
+    {
+      "cut": 4397,
+      "wire": 7,
+      "dual_correlation": 0.23913172765462,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.492108015920356e-12
+      },
+      "candidate_rank": 524
+    },
+    {
+      "cut": 4398,
+      "wire": 8,
+      "dual_correlation": 0.23913172765462,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.49210801592038e-12
+      },
+      "candidate_rank": 525
+    },
+    {
+      "cut": 1068,
+      "wire": 14,
+      "dual_correlation": 0.23908456011656673,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5028549299821956e-12
+      },
+      "candidate_rank": 526
+    },
+    {
+      "cut": 6094,
+      "wire": 1,
+      "dual_correlation": 0.23904918446301682,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.422477611920033e-12
+      },
+      "candidate_rank": 527
+    },
+    {
+      "cut": 4668,
+      "wire": 21,
+      "dual_correlation": -0.23896459050887137,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.562762677809328e-12
+      },
+      "candidate_rank": 528
+    },
+    {
+      "cut": 3125,
+      "wire": 30,
+      "dual_correlation": 0.23888819960482968,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.475402975596296e-12
+      },
+      "candidate_rank": 529
+    },
+    {
+      "cut": 10497,
+      "wire": 6,
+      "dual_correlation": -0.23872977819977895,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.588143919350806e-12
+      },
+      "candidate_rank": 530
+    },
+    {
+      "cut": 4957,
+      "wire": 29,
+      "dual_correlation": -0.2386728695397038,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5120178330675655e-12
+      },
+      "candidate_rank": 531
+    },
+    {
+      "cut": 11795,
+      "wire": 5,
+      "dual_correlation": 0.2386723568490652,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.375371778298525e-12
+      },
+      "candidate_rank": 532
+    },
+    {
+      "cut": 13366,
+      "wire": 32,
+      "dual_correlation": 0.23863903195804814,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.482767366932799e-12
+      },
+      "candidate_rank": 533
+    },
+    {
+      "cut": 4857,
+      "wire": 35,
+      "dual_correlation": -0.23816530581482942,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.470531431329027e-12
+      },
+      "candidate_rank": 534
+    },
+    {
+      "cut": 3045,
+      "wire": 43,
+      "dual_correlation": 0.23814787433334528,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.515362976988649e-12
+      },
+      "candidate_rank": 535
+    },
+    {
+      "cut": 20885,
+      "wire": 34,
+      "dual_correlation": -0.23812890478000381,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.499521260475254e-12
+      },
+      "candidate_rank": 536
+    },
+    {
+      "cut": 6401,
+      "wire": 41,
+      "dual_correlation": 0.23812685401746544,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.422778155473756e-12
+      },
+      "candidate_rank": 537
+    },
+    {
+      "cut": 6594,
+      "wire": 43,
+      "dual_correlation": -0.23800278288478466,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.437799805052113e-12
+      },
+      "candidate_rank": 538
+    },
+    {
+      "cut": 13978,
+      "wire": 6,
+      "dual_correlation": 0.23794228539022783,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4564919700223765e-12
+      },
+      "candidate_rank": 539
+    },
+    {
+      "cut": 15387,
+      "wire": 35,
+      "dual_correlation": 0.23772798070642334,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.516864392383493e-12
+      },
+      "candidate_rank": 540
+    },
+    {
+      "cut": 1195,
+      "wire": 15,
+      "dual_correlation": -0.23753982324481118,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.456924527771294e-12
+      },
+      "candidate_rank": 541
+    },
+    {
+      "cut": 4338,
+      "wire": 43,
+      "dual_correlation": 0.2374711227001727,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.3753957690332745e-12
+      },
+      "candidate_rank": 542
+    },
+    {
+      "cut": 15735,
+      "wire": 7,
+      "dual_correlation": 0.237401396774349,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6198602273673955e-12
+      },
+      "candidate_rank": 543
+    },
+    {
+      "cut": 16546,
+      "wire": 16,
+      "dual_correlation": 0.23740139677434552,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.666709076803093e-12
+      },
+      "candidate_rank": 544
+    },
+    {
+      "cut": 17755,
+      "wire": 30,
+      "dual_correlation": 0.2372501530381599,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.512069401416634e-12
+      },
+      "candidate_rank": 545
+    },
+    {
+      "cut": 17757,
+      "wire": 6,
+      "dual_correlation": 0.2372501530381599,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5120694014166455e-12
+      },
+      "candidate_rank": 546
+    },
+    {
+      "cut": 3038,
+      "wire": 44,
+      "dual_correlation": -0.23724451344118958,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.500907280445574e-12
+      },
+      "candidate_rank": 547
+    },
+    {
+      "cut": 15527,
+      "wire": 38,
+      "dual_correlation": -0.23719529514065865,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5084722204256424e-12
+      },
+      "candidate_rank": 548
+    },
+    {
+      "cut": 5744,
+      "wire": 38,
+      "dual_correlation": 0.23711018849587734,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.411408836985745e-12
+      },
+      "candidate_rank": 549
+    },
+    {
+      "cut": 20364,
+      "wire": 20,
+      "dual_correlation": -0.23708916817995868,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.625585432139626e-12
+      },
+      "candidate_rank": 550
+    },
+    {
+      "cut": 20412,
+      "wire": 20,
+      "dual_correlation": -0.23708916817995868,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6255854321396205e-12
+      },
+      "candidate_rank": 551
+    },
+    {
+      "cut": 15865,
+      "wire": 27,
+      "dual_correlation": -0.23696919857228835,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.533204199224663e-12
+      },
+      "candidate_rank": 552
+    },
+    {
+      "cut": 20689,
+      "wire": 38,
+      "dual_correlation": -0.23696919857228835,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.537810611472063e-12
+      },
+      "candidate_rank": 553
+    },
+    {
+      "cut": 6130,
+      "wire": 10,
+      "dual_correlation": -0.23657647754880007,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.368885671506969e-12
+      },
+      "candidate_rank": 554
+    },
+    {
+      "cut": 10652,
+      "wire": 9,
+      "dual_correlation": 0.23651854350745458,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.3768452104585416e-12
+      },
+      "candidate_rank": 555
+    },
+    {
+      "cut": 16147,
+      "wire": 31,
+      "dual_correlation": 0.23645907139418657,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.645140142306785e-12
+      },
+      "candidate_rank": 556
+    },
+    {
+      "cut": 13641,
+      "wire": 26,
+      "dual_correlation": 0.23628424388898678,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.482269549362118e-12
+      },
+      "candidate_rank": 557
+    },
+    {
+      "cut": 11748,
+      "wire": 2,
+      "dual_correlation": 0.23622938599143775,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.427177228780992e-12
+      },
+      "candidate_rank": 558
+    },
+    {
+      "cut": 4390,
+      "wire": 6,
+      "dual_correlation": 0.236194010337878,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.492108015920369e-12
+      },
+      "candidate_rank": 559
+    },
+    {
+      "cut": 4402,
+      "wire": 7,
+      "dual_correlation": 0.236194010337878,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.492549006050277e-12
+      },
+      "candidate_rank": 560
+    },
+    {
+      "cut": 17317,
+      "wire": 6,
+      "dual_correlation": 0.236194010337878,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.492549006050266e-12
+      },
+      "candidate_rank": 561
+    },
+    {
+      "cut": 1059,
+      "wire": 14,
+      "dual_correlation": -0.23614684279985487,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.502854929982194e-12
+      },
+      "candidate_rank": 562
+    },
+    {
+      "cut": 13368,
+      "wire": 32,
+      "dual_correlation": -0.23614171589354155,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.544738568029164e-12
+      },
+      "candidate_rank": 563
+    },
+    {
+      "cut": 6032,
+      "wire": 1,
+      "dual_correlation": -0.23611146714630496,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4181474664750215e-12
+      },
+      "candidate_rank": 564
+    },
+    {
+      "cut": 2746,
+      "wire": 42,
+      "dual_correlation": 0.2359550965037345,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.532330169315863e-12
+      },
+      "candidate_rank": 565
+    },
+    {
+      "cut": 5838,
+      "wire": 5,
+      "dual_correlation": -0.23573463953235335,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.37537177829852e-12
+      },
+      "candidate_rank": 566
+    },
+    {
+      "cut": 13866,
+      "wire": 7,
+      "dual_correlation": 0.23568490854112698,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4770780533529045e-12
+      },
+      "candidate_rank": 567
+    },
+    {
+      "cut": 6521,
+      "wire": 21,
+      "dual_correlation": 0.23560697956517918,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4047433120513526e-12
+      },
+      "candidate_rank": 568
+    },
+    {
+      "cut": 20884,
+      "wire": 34,
+      "dual_correlation": -0.23519118746326184,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.545724450705659e-12
+      },
+      "candidate_rank": 569
+    },
+    {
+      "cut": 6446,
+      "wire": 41,
+      "dual_correlation": -0.2351891367007536,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.42277815547376e-12
+      },
+      "candidate_rank": 570
+    },
+    {
+      "cut": 2706,
+      "wire": 40,
+      "dual_correlation": -0.2351424818533275,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.589653608314067e-12
+      },
+      "candidate_rank": 571
+    },
+    {
+      "cut": 2530,
+      "wire": 38,
+      "dual_correlation": 0.23511941077487,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.572652295364511e-12
+      },
+      "candidate_rank": 572
+    },
+    {
+      "cut": 3118,
+      "wire": 35,
+      "dual_correlation": 0.23481692330249118,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.506164866543508e-12
+      },
+      "candidate_rank": 573
+    },
+    {
+      "cut": 18795,
+      "wire": 40,
+      "dual_correlation": 0.23481025832427446,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4371047059993e-12
+      },
+      "candidate_rank": 574
+    },
+    {
+      "cut": 7169,
+      "wire": 44,
+      "dual_correlation": -0.23472668975142394,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.461957776100069e-12
+      },
+      "candidate_rank": 575
+    },
+    {
+      "cut": 17309,
+      "wire": 43,
+      "dual_correlation": -0.23453340538346085,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.3753957690332785e-12
+      },
+      "candidate_rank": 576
+    },
+    {
+      "cut": 16553,
+      "wire": 28,
+      "dual_correlation": -0.23446367945763366,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.6667090768032075e-12
+      },
+      "candidate_rank": 577
+    },
+    {
+      "cut": 5168,
+      "wire": 31,
+      "dual_correlation": 0.23436934438145504,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.556561090479029e-12
+      },
+      "candidate_rank": 578
+    },
+    {
+      "cut": 4191,
+      "wire": 6,
+      "dual_correlation": -0.23431243572144805,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.507928464281355e-12
+      },
+      "candidate_rank": 579
+    },
+    {
+      "cut": 4192,
+      "wire": 7,
+      "dual_correlation": -0.23431243572144805,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5079284642813145e-12
+      },
+      "candidate_rank": 580
+    },
+    {
+      "cut": 4272,
+      "wire": 38,
+      "dual_correlation": -0.23431243572144805,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.507928464281335e-12
+      },
+      "candidate_rank": 581
+    },
+    {
+      "cut": 17753,
+      "wire": 6,
+      "dual_correlation": 0.2343124357214179,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.484409969988176e-12
+      },
+      "candidate_rank": 582
+    },
+    {
+      "cut": 17754,
+      "wire": 30,
+      "dual_correlation": 0.2343124357214179,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4844099699881904e-12
+      },
+      "candidate_rank": 583
+    },
+    {
+      "cut": 15283,
+      "wire": 29,
+      "dual_correlation": -0.2342165625733813,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.5666096190090634e-12
+      },
+      "candidate_rank": 584
+    },
+    {
+      "cut": 2608,
+      "wire": 39,
+      "dual_correlation": 0.2340084101770923,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.529647809525941e-12
+      },
+      "candidate_rank": 585
+    },
+    {
+      "cut": 16595,
+      "wire": 9,
+      "dual_correlation": -0.23390587205090613,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.562885702249652e-12
+      },
+      "candidate_rank": 586
+    },
+    {
+      "cut": 4781,
+      "wire": 21,
+      "dual_correlation": -0.2338848517350056,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.556020640345875e-12
+      },
+      "candidate_rank": 587
+    },
+    {
+      "cut": 3360,
+      "wire": 39,
+      "dual_correlation": 0.23387100908796032,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.576601516651027e-12
+      },
+      "candidate_rank": 588
+    },
+    {
+      "cut": 6382,
+      "wire": 5,
+      "dual_correlation": 0.2338438364844869,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.461910830842185e-12
+      },
+      "candidate_rank": 589
+    },
+    {
+      "cut": 4240,
+      "wire": 44,
+      "dual_correlation": 0.23379256742139784,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.559240485380303e-12
+      },
+      "candidate_rank": 590
+    },
+    {
+      "cut": 16222,
+      "wire": 35,
+      "dual_correlation": -0.23352135407747818,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.609800452143847e-12
+      },
+      "candidate_rank": 591
+    },
+    {
+      "cut": 3253,
+      "wire": 33,
+      "dual_correlation": 0.23341830326059865,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.533907738286802e-12
+      },
+      "candidate_rank": 592
+    },
+    {
+      "cut": 5058,
+      "wire": 26,
+      "dual_correlation": -0.23334652657227495,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.447468840714491e-12
+      },
+      "candidate_rank": 593
+    },
+    {
+      "cut": 3565,
+      "wire": 43,
+      "dual_correlation": -0.23331063822806597,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.38313129482889e-12
+      },
+      "candidate_rank": 594
+    },
+    {
+      "cut": 4394,
+      "wire": 6,
+      "dual_correlation": -0.23325629302116616,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.489190113391019e-12
+      },
+      "candidate_rank": 595
+    },
+    {
+      "cut": 17318,
+      "wire": 30,
+      "dual_correlation": -0.23325629302116616,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.489190113391024e-12
+      },
+      "candidate_rank": 596
+    },
+    {
+      "cut": 4348,
+      "wire": 0,
+      "dual_correlation": -0.23324398844600674,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.401098315000673e-12
+      },
+      "candidate_rank": 597
+    },
+    {
+      "cut": 900,
+      "wire": 8,
+      "dual_correlation": 0.23314247570104135,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.44179413452723e-12
+      },
+      "candidate_rank": 598
+    },
+    {
+      "cut": 5048,
+      "wire": 5,
+      "dual_correlation": 0.23303737412161074,
+      "fit": {
+        "status": "COARSE_BOUND",
+        "upper_margin_turns": 6.4293646472311945e-12
+      },
+      "candidate_rank": 599
+    }
+  ],
+  "profit_margin_threshold_turns": 1.802838344122121e-11,
+  "full_results": [],
+  "improving_candidates": [],
+  "seconds": 20.111768818998826,
+  "scope": "One new generic rotation on an actually generated intermediate wire value, all unconditional tape locations; dual-ranked bounded subset, all 3133452 inputs for shortlisted fits; existing33angles refit within +-1e-5turns. No new arithmetic or qubits assumed. Predicted changes below 1e-3 cost are numerical ties, not accepted gains.",
+  "minimum_cost_difference_for_candidate": 0.001,
+  "receipt_note": "Coarse screening fit coefficients omitted; all full-domain fit coefficients retained. Reproduce from the named score8 source and arguments in the report."
+}

@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "benchmark_improvement": false,
+  "identity": "g<=f; alpha*f+beta*g=(alpha+beta)*f-beta*(f XOR g)",
+  "f": "a",
+  "g": "a*b",
+  "relocated_feature": "a XOR (a*b)",
+  "exact_all_branch_cases": 48,
+  "native_receipts": [
+    {
+      "name": "source",
+      "seed": 620261115,
+      "shots": 512,
+      "phase_failures": 0,
+      "input_restore_failures": 0,
+      "dirty_scratch_failures": 0,
+      "measured_mean_toffoli": 4.0
+    },
+    {
+      "name": "source",
+      "seed": 620261116,
+      "shots": 512,
+      "phase_failures": 0,
+      "input_restore_failures": 0,
+      "dirty_scratch_failures": 0,
+      "measured_mean_toffoli": 4.0
+    },
+    {
+      "name": "candidate",
+      "seed": 620261115,
+      "shots": 512,
+      "phase_failures": 0,
+      "input_restore_failures": 0,
+      "dirty_scratch_failures": 0,
+      "measured_mean_toffoli": 3.0
+    },
+    {
+      "name": "candidate",
+      "seed": 620261116,
+      "shots": 512,
+      "phase_failures": 0,
+      "input_restore_failures": 0,
+      "dirty_scratch_failures": 0,
+      "measured_mean_toffoli": 3.0
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score6_invsqrt/positive/source.kmb",
+      "sha256": "fb5553f368b4dac6130cee7b0352593df0ab424746136d6ba12aa2c88cac361b",
+      "Q": 24,
+      "static_toffoli": 4
+    },
+    {
+      "path": "/workspace/scratch/3815fb5fae06/score6_invsqrt/positive/candidate.kmb",
+      "sha256": "a4e1d00e290a692f5b9d9c7d7d2e46116a43d9d73c3a47269b165969e40f14ed",
+      "Q": 24,
+      "static_toffoli": 3
+    }
+  ],
+  "Q_before": 24,
+  "Q_after": 24,
+  "static_toffoli_before": 4,
+  "static_toffoli_after": 3,
+  "generic_rotations_before": 2,
+  "generic_rotations_after": 2,
+  "phase_preserved_including_global": true,
+  "script_sha256": "8703eebc7e92d7db0aac2c04a0139f839266e8b5d51636581d3013ba72dcd6fe",
+  "official_helpers_sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a"
+}

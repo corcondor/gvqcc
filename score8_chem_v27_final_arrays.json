@@ -1,0 +1,26 @@
+{
+  "source_npz": "/workspace/scratch/3815fb5fae06/score8_v27_chemistry/submission.npz",
+  "source_sha256": "4df35abdeec320a3f1c10f6f533e73550e50bb45d95e666deaa01062810a3559",
+  "verified_npz": "/workspace/scratch/3815fb5fae06/score8_chem_v27_schur_full/submission.npz",
+  "verified_npz_sha256": "da30619d4a668d663adc9f7f0462cfd52ba8684cc5523980f5119dc3ef90302e",
+  "patch_file": "score8_chem_v27_identity_patch.npz",
+  "patch_sha256": "056b9c04f4260bbb7d099650e93916c7e5e6b876b18d16827f0c3d1060262188",
+  "H2_I_raw_sha256": "0ce85c16084e3c8284d357527d03b1b4475b52f9d6b5d36ccecc0d2b7fccb704",
+  "actual_changed_arrays": [
+    "H2_I"
+  ],
+  "array_equality_to_public": {
+    "U": true,
+    "W": true,
+    "H2_I": false,
+    "H1_I": true,
+    "Hsym_lower": true,
+    "tree_edges": true,
+    "angle_words": true
+  },
+  "H2_I_change_norm": 0.012855806193044796,
+  "actual_word_raw_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "declared_word_differences": 473,
+  "numpy_version": "2.3.5",
+  "word_recovery": "Independent local native recovery of all 1220 addresses and all 15 public loaders; identical to the previously exported actual 8caf7416 table"
+}

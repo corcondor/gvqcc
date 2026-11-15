@@ -1,0 +1,582 @@
+{
+  "status": "NUMERICAL_FAIL",
+  "source": "/workspace/scratch/3815fb5fae06/score3_c43_transport/candidate_00.npz",
+  "source_sha256": "1590d3f005eeffa560c7d6cb9b5a1aae09d7b4f460cc854a15224b1c6d6a799b",
+  "script_sha256": "d681f088bb2d6e5f13b15b493bdb522a930750c04af5583a84f45514093bc721",
+  "candidate": "/workspace/scratch/3815fb5fae06/score3_c43_transport00_block/candidate.npz",
+  "candidate_sha256": "5d276dfe4cc06ae439a5268b22218994d11b845ea805b60f97fb5b1c55e3a6c0",
+  "initial": {
+    "event": "initial",
+    "error2": 0.02112059781628619,
+    "changed_words": 1,
+    "changes": [
+      {
+        "address": 1145,
+        "column": 35,
+        "old": 59,
+        "value": 61
+      }
+    ],
+    "estimated_T": 14658,
+    "estimated_Q": 427,
+    "added_task_toffoli": 8,
+    "lambda_break_even_user_log": 47.12989554166571,
+    "gradient_check": {
+      "finite_difference": -0.00017713452926670925,
+      "analytic": -0.00017713438271477587,
+      "scaled_error": 1.465519333763033e-10
+    },
+    "orthogonality_error": 4.134470543704083e-13,
+    "preparation_seconds": 12.627360598999076
+  },
+  "official_numeric_metrics": {
+    "error_1": 0.031551486722000324,
+    "error_2": 0.021120477706335742,
+    "Lambda": 294.1610307141352,
+    "E_SOS": -22144.373851430715,
+    "E_gap": 4.100501430715667,
+    "lambda_eff": 48.944880657990296,
+    "gap_in_domain": true
+  },
+  "changed_words": 1,
+  "changes": [
+    {
+      "address": 1145,
+      "column": 35,
+      "old": 59,
+      "value": 61
+    }
+  ],
+  "unchanged_tree": true,
+  "integer_words_fixed_during_refit": true,
+  "W_shape": [
+    8,
+    143,
+    43
+  ],
+  "natural_d_preserved_during_W_refit": true,
+  "identity_refit": {
+    "attempted": false
+  },
+  "patch_estimate": {
+    "added_ccx_per_pass": 4,
+    "added_official_toffoli_both_passes": 8,
+    "maximum_loader_qubits": 128,
+    "chemistry_accuracy_tested": false,
+    "loader_exact_proof_run": false,
+    "score_improvement_claimed": false,
+    "loaders": [
+      {
+        "batch": 0,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 1,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 2,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 3,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 4,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 5,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 6,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 7,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 2,
+          "addresses": 1,
+          "groups": [
+            {
+              "high_address": 71,
+              "output_rank": 1,
+              "affine_constant_direction": "0x0",
+              "high_indicator_ccx": 1,
+              "added_ccx": 2
+            }
+          ],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 2,
+        "addresses": [
+          {
+            "address": 1145,
+            "mode": "tag_preserving_differential_exact_proof_required",
+            "delta_previous": 0,
+            "delta_current": 6
+          }
+        ]
+      },
+      {
+        "batch": 8,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 2,
+          "addresses": 1,
+          "groups": [
+            {
+              "high_address": 71,
+              "output_rank": 1,
+              "affine_constant_direction": "0x0",
+              "high_indicator_ccx": 1,
+              "added_ccx": 2
+            }
+          ],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 2,
+        "addresses": [
+          {
+            "address": 1145,
+            "mode": "tag_preserving_differential_exact_proof_required",
+            "delta_previous": 6,
+            "delta_current": 0
+          }
+        ]
+      },
+      {
+        "batch": 9,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 10,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 11,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 12,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 13,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      },
+      {
+        "batch": 14,
+        "pre": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "post": {
+          "addresses": 0,
+          "trie_ccx": 0,
+          "shear_ccx": 0,
+          "total_ccx": 0,
+          "variable_order": [],
+          "maximum_patch_scratch": 0
+        },
+        "feature": {
+          "added_ccx": 0,
+          "addresses": 0,
+          "groups": [],
+          "free_feature_components": 0,
+          "profile": "baseline4033; checked again by the circuit builder"
+        },
+        "added_ccx_per_pass": 0,
+        "addresses": []
+      }
+    ]
+  },
+  "unpatched_resource": {
+    "B": 143,
+    "num_vectors": 1220,
+    "T": 14650,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 315,
+    "inner_toffoli": 4019,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.5296034763715318,
+    "lambda_break_even_user_log": 47.15563200339495,
+    "lambda_break_even_reproduced": 47.1563310773384,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  "estimated_T": 14658,
+  "estimated_Q": 427,
+  "conditional_cost": 306344343.9124189,
+  "lambda_break_even_user_log": 47.12989554166571,
+  "conditional_score_improvement": false,
+  "comparison_scope": "User logged lambda 46.905894137 at 14728T/427Q; source NPZ unavailable.",
+  "gradient_check_scaled_error": 1.465519333763033e-10,
+  "official_error2_mismatch": 9.367506770274758e-17,
+  "calls": 361,
+  "method": "block",
+  "block_cycles": 358,
+  "block_updates": 2864,
+  "termination": "W refit time budget reached",
+  "W_refit_seconds": 30.03387245400154,
+  "seconds": 44.33105690799857,
+  "trace": [
+    {
+      "calls": 4,
+      "best_error2": 0.021120542343770563,
+      "seconds": 0.08367938000083086
+    },
+    {
+      "calls": 118,
+      "best_error2": 0.021120479583189508,
+      "seconds": 10.094160950000514
+    },
+    {
+      "calls": 239,
+      "best_error2": 0.0211204780604203,
+      "seconds": 20.126645890999498
+    }
+  ],
+  "peak_rss_mib": 1041.06640625,
+  "full_circuit_verified": false
+}

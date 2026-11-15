@@ -1,0 +1,51 @@
+{
+  "scope": "Consecutive CCX pairs separated only by unconditional X/CX/SWAP, length<=257, same output direction transported by affine frame, target absent from second controls",
+  "eligible": 6,
+  "pairs": [
+    {
+      "first": 8190,
+      "second": 8193,
+      "start_target": 21,
+      "end_target": 21,
+      "span": 4
+    },
+    {
+      "first": 8257,
+      "second": 8258,
+      "start_target": 21,
+      "end_target": 21,
+      "span": 2
+    },
+    {
+      "first": 13861,
+      "second": 13877,
+      "start_target": 7,
+      "end_target": 7,
+      "span": 17
+    },
+    {
+      "first": 19830,
+      "second": 19837,
+      "start_target": 41,
+      "end_target": 41,
+      "span": 8
+    },
+    {
+      "first": 20690,
+      "second": 20724,
+      "start_target": 45,
+      "end_target": 45,
+      "span": 35
+    },
+    {
+      "first": 20768,
+      "second": 20798,
+      "start_target": 8,
+      "end_target": 8,
+      "span": 31
+    }
+  ],
+  "rejected": {
+    "target_direction_differs": 426
+  }
+}

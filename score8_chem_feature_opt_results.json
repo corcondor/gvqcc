@@ -1,0 +1,775 @@
+{
+  "baseline": {
+    "lambda_eff_smooth": 46.906470398465125,
+    "Lambda_smooth": 282.9631054929985,
+    "gap": 3.914898000100038,
+    "gap_lower_bound": 3.914898000100038,
+    "eigen_trace_bias_bound": 0.0,
+    "error1": 0.01999890416235329,
+    "error2": 0.019999999800000015
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "proposal": {
+        "mask_id": 371550,
+        "batch": 13,
+        "angle": 69,
+        "groups": [
+          60
+        ],
+        "proxy": 5.504575047306453e-05
+      },
+      "initial_metrics": {
+        "lambda_eff_smooth": 46.906630158163104,
+        "Lambda_smooth": 282.96313197622476,
+        "gap": 3.914924483326331,
+        "gap_lower_bound": 3.914924483326331,
+        "eigen_trace_bias_bound": 0.0,
+        "error1": 0.020006176242742243,
+        "error2": 0.02000016369303225
+      },
+      "official_numeric_metrics": {
+        "error_1": 0.019999997942822857,
+        "error_2": 0.019999998002822716,
+        "Lambda": 282.9652505796482,
+        "E_SOS": -22144.188248002065,
+        "E_gap": 3.9148980020654562,
+        "lambda_eff": 46.90664944258816,
+        "gap_in_domain": true
+      },
+      "numeric_pass": true,
+      "improved": false,
+      "changed_words": 16,
+      "path": "/workspace/scratch/3815fb5fae06/score8_chem_feature_opt/candidate_00.npz",
+      "sha256": "d347756ff9e784176de389937817adde70a6a0edaca804c918416e9434d0081d",
+      "trace": [
+        {
+          "outer": 0,
+          "metrics": {
+            "lambda_eff_smooth": 46.906630158163104,
+            "Lambda_smooth": 282.96313197622476,
+            "gap": 3.914924483326331,
+            "gap_lower_bound": 3.914924483326331,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.020006176242742243,
+            "error2": 0.02000016369303225
+          },
+          "seconds": 0.14351957400504034,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 1,
+          "metrics": {
+            "lambda_eff_smooth": 46.906630158163104,
+            "Lambda_smooth": 282.96313197622476,
+            "gap": 3.914924483326331,
+            "gap_lower_bound": 3.914924483326331,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.020006176242742243,
+            "error2": 0.02000016369303225
+          },
+          "seconds": 0.2995852790045319,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 2,
+          "metrics": {
+            "lambda_eff_smooth": 46.906630158163104,
+            "Lambda_smooth": 282.96313197622476,
+            "gap": 3.914924483326331,
+            "gap_lower_bound": 3.914924483326331,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.020006176242742243,
+            "error2": 0.02000016369303225
+          },
+          "seconds": 0.4409259110034327,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 3,
+          "metrics": {
+            "lambda_eff_smooth": 46.906630158163104,
+            "Lambda_smooth": 282.96313197622476,
+            "gap": 3.914924483326331,
+            "gap_lower_bound": 3.914924483326331,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.020006176242742243,
+            "error2": 0.02000016369303225
+          },
+          "seconds": 0.672746766002092,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        }
+      ],
+      "full_circuit_verified": false,
+      "seconds": 3.1927140230036457
+    },
+    {
+      "index": 1,
+      "proposal": {
+        "mask_id": 124731,
+        "batch": 5,
+        "angle": 29,
+        "groups": [
+          42
+        ],
+        "proxy": 0.00017913311028458693
+      },
+      "initial_metrics": {
+        "lambda_eff_smooth": 46.90672965124452,
+        "Lambda_smooth": 282.9631484691507,
+        "gap": 3.9149409762522964,
+        "gap_lower_bound": 3.9149409762522964,
+        "eigen_trace_bias_bound": 0.0,
+        "error1": 0.02002898357529961,
+        "error2": 0.020000232731751378
+      },
+      "official_numeric_metrics": {
+        "error_1": 0.019999997999998707,
+        "error_2": 0.019999998,
+        "Lambda": 282.96626269341186,
+        "E_SOS": -22144.188248002,
+        "E_gap": 3.9148980019999726,
+        "lambda_eff": 46.906733914626926,
+        "gap_in_domain": true
+      },
+      "numeric_pass": true,
+      "improved": false,
+      "changed_words": 16,
+      "path": "/workspace/scratch/3815fb5fae06/score8_chem_feature_opt/candidate_01.npz",
+      "sha256": "9a4f182e624d3df1b9560ad56344b790931b9a3ba4544fd774f4ee9106c03de9",
+      "trace": [
+        {
+          "outer": 0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90672965124452,
+            "Lambda_smooth": 282.9631484691507,
+            "gap": 3.9149409762522964,
+            "gap_lower_bound": 3.9149409762522964,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02002898357529961,
+            "error2": 0.020000232731751378
+          },
+          "seconds": 0.13794001399946865,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 1,
+          "metrics": {
+            "lambda_eff_smooth": 46.90672965124452,
+            "Lambda_smooth": 282.9631484691507,
+            "gap": 3.9149409762522964,
+            "gap_lower_bound": 3.9149409762522964,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02002898357529961,
+            "error2": 0.020000232731751378
+          },
+          "seconds": 0.2822910109971417,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 2,
+          "metrics": {
+            "lambda_eff_smooth": 46.90672965124452,
+            "Lambda_smooth": 282.9631484691507,
+            "gap": 3.9149409762522964,
+            "gap_lower_bound": 3.9149409762522964,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02002898357529961,
+            "error2": 0.020000232731751378
+          },
+          "seconds": 0.4290407340013189,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 3,
+          "metrics": {
+            "lambda_eff_smooth": 46.90647174831286,
+            "Lambda_smooth": 282.9631255179237,
+            "gap": 3.914897946062979,
+            "gap_lower_bound": 3.914897946062979,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.019996781241323005,
+            "error2": 0.020000262397305107
+          },
+          "seconds": 16.10061592100101,
+          "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+        }
+      ],
+      "full_circuit_verified": false,
+      "seconds": 19.26220046999515
+    },
+    {
+      "index": 2,
+      "proposal": {
+        "mask_id": 278013,
+        "batch": 10,
+        "angle": 52,
+        "groups": [
+          60
+        ],
+        "proxy": 0.00018438932632531494
+      },
+      "initial_metrics": {
+        "lambda_eff_smooth": 46.90667261738228,
+        "Lambda_smooth": 282.9631390146673,
+        "gap": 3.914931521768949,
+        "gap_lower_bound": 3.914931521768949,
+        "eigen_trace_bias_bound": 0.0,
+        "error1": 0.02000351055021122,
+        "error2": 0.020000462274699447
+      },
+      "official_numeric_metrics": {
+        "error_1": 0.02000001192885738,
+        "error_2": 0.020000045839758455,
+        "Lambda": 282.96657429479535,
+        "E_SOS": -22144.188427530244,
+        "E_gap": 3.9150775302441616,
+        "lambda_eff": 46.907827935171056,
+        "gap_in_domain": true
+      },
+      "numeric_pass": false,
+      "improved": false,
+      "changed_words": 16,
+      "path": "/workspace/scratch/3815fb5fae06/score8_chem_feature_opt/candidate_02.npz",
+      "sha256": "3d007e5c4cfb624d88edaf7cb5a9da2c29fdc5fca332024600beb3190cbd3c92",
+      "trace": [
+        {
+          "outer": 0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90667261738228,
+            "Lambda_smooth": 282.9631390146673,
+            "gap": 3.914931521768949,
+            "gap_lower_bound": 3.914931521768949,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02000351055021122,
+            "error2": 0.020000462274699447
+          },
+          "seconds": 0.3083664130026591,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 1,
+          "metrics": {
+            "lambda_eff_smooth": 46.90667261738228,
+            "Lambda_smooth": 282.9631390146673,
+            "gap": 3.914931521768949,
+            "gap_lower_bound": 3.914931521768949,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02000351055021122,
+            "error2": 0.020000462274699447
+          },
+          "seconds": 0.5172070050030015,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 2,
+          "metrics": {
+            "lambda_eff_smooth": 46.90667261738228,
+            "Lambda_smooth": 282.9631390146673,
+            "gap": 3.914931521768949,
+            "gap_lower_bound": 3.914931521768949,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02000351055021122,
+            "error2": 0.020000462274699447
+          },
+          "seconds": 0.8142045299973688,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 3,
+          "metrics": {
+            "lambda_eff_smooth": 46.90667261738228,
+            "Lambda_smooth": 282.9631390146673,
+            "gap": 3.914931521768949,
+            "gap_lower_bound": 3.914931521768949,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02000351055021122,
+            "error2": 0.020000462274699447
+          },
+          "seconds": 1.2122683959969436,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        }
+      ],
+      "full_circuit_verified": false,
+      "seconds": 7.555535426996357
+    },
+    {
+      "index": 3,
+      "proposal": {
+        "mask_id": 371548,
+        "batch": 13,
+        "angle": 65,
+        "groups": [
+          56
+        ],
+        "proxy": 0.0002265595606005317
+      },
+      "initial_metrics": {
+        "lambda_eff_smooth": 46.9061719160283,
+        "Lambda_smooth": 282.96305601405936,
+        "gap": 3.914848521160934,
+        "gap_lower_bound": 3.914848521160934,
+        "eigen_trace_bias_bound": 0.0,
+        "error1": 0.02000429633085665,
+        "error2": 0.020000617874266317
+      },
+      "official_numeric_metrics": {
+        "error_1": 0.020000807455501913,
+        "error_2": 0.02000006982717518,
+        "Lambda": 282.9671840996697,
+        "E_SOS": -22144.18849940963,
+        "E_gap": 3.915149409629521,
+        "lambda_eff": 46.90830643548088,
+        "gap_in_domain": true
+      },
+      "numeric_pass": false,
+      "improved": false,
+      "changed_words": 16,
+      "path": "/workspace/scratch/3815fb5fae06/score8_chem_feature_opt/candidate_03.npz",
+      "sha256": "eca3e6bec4b31f954b9476657a0ea84e70e540c2f04a210514ae790cf3a3bc90",
+      "trace": [
+        {
+          "outer": 0,
+          "metrics": {
+            "lambda_eff_smooth": 46.9064623660387,
+            "Lambda_smooth": 282.9630287728457,
+            "gap": 3.9148977262362905,
+            "gap_lower_bound": 3.9148977262362905,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.020000389435499068,
+            "error2": 0.020000580880937056
+          },
+          "seconds": 4.154846770994482,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 1,
+          "metrics": {
+            "lambda_eff_smooth": 46.906458112590705,
+            "Lambda_smooth": 282.96295502857714,
+            "gap": 3.91489804584819,
+            "gap_lower_bound": 3.91489804584819,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.019999943291237623,
+            "error2": 0.020000590842064306
+          },
+          "seconds": 9.020212147996062,
+          "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+        },
+        {
+          "outer": 2,
+          "metrics": {
+            "lambda_eff_smooth": 46.906458112590705,
+            "Lambda_smooth": 282.96295502857714,
+            "gap": 3.91489804584819,
+            "gap_lower_bound": 3.91489804584819,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.019999943291237623,
+            "error2": 0.020000590842064306
+          },
+          "seconds": 9.16848611900059,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 3,
+          "metrics": {
+            "lambda_eff_smooth": 46.906458112590705,
+            "Lambda_smooth": 282.96295502857714,
+            "gap": 3.91489804584819,
+            "gap_lower_bound": 3.91489804584819,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.019999943291237623,
+            "error2": 0.020000590842064306
+          },
+          "seconds": 9.312987753997731,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        }
+      ],
+      "full_circuit_verified": false,
+      "seconds": 14.109198335994733
+    },
+    {
+      "index": 4,
+      "proposal": {
+        "mask_id": 155913,
+        "batch": 6,
+        "angle": 34,
+        "groups": [
+          53
+        ],
+        "proxy": 0.00022983204428671562
+      },
+      "initial_metrics": {
+        "lambda_eff_smooth": 46.90703893451936,
+        "Lambda_smooth": 282.9631997391255,
+        "gap": 3.9149922462270297,
+        "gap_lower_bound": 3.9149922462270297,
+        "eigen_trace_bias_bound": 0.0,
+        "error1": 0.02002801146794602,
+        "error2": 0.020001524140293093
+      },
+      "official_numeric_metrics": {
+        "error_1": 0.02000651944430174,
+        "error_2": 0.020000610971110798,
+        "Lambda": 282.96944367109626,
+        "E_SOS": -22144.18889814125,
+        "E_gap": 3.915548141249019,
+        "lambda_eff": 46.91086698353401,
+        "gap_in_domain": true
+      },
+      "numeric_pass": false,
+      "improved": false,
+      "changed_words": 16,
+      "path": "/workspace/scratch/3815fb5fae06/score8_chem_feature_opt/candidate_04.npz",
+      "sha256": "5ae7a081e6dc94c8ded591a445e200c6cfd2ab4c0206fe72d179ac6c677ed339",
+      "trace": [
+        {
+          "outer": 0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90703893451936,
+            "Lambda_smooth": 282.9631997391255,
+            "gap": 3.9149922462270297,
+            "gap_lower_bound": 3.9149922462270297,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02002801146794602,
+            "error2": 0.020001524140293093
+          },
+          "seconds": 0.13226180600031512,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 1,
+          "metrics": {
+            "lambda_eff_smooth": 46.90703893451936,
+            "Lambda_smooth": 282.9631997391255,
+            "gap": 3.9149922462270297,
+            "gap_lower_bound": 3.9149922462270297,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02002801146794602,
+            "error2": 0.020001524140293093
+          },
+          "seconds": 0.26923997099947883,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 2,
+          "metrics": {
+            "lambda_eff_smooth": 46.90703893451936,
+            "Lambda_smooth": 282.9631997391255,
+            "gap": 3.9149922462270297,
+            "gap_lower_bound": 3.9149922462270297,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02002801146794602,
+            "error2": 0.020001524140293093
+          },
+          "seconds": 0.41238726300070994,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 3,
+          "metrics": {
+            "lambda_eff_smooth": 46.906476248567394,
+            "Lambda_smooth": 282.9631787408737,
+            "gap": 3.914897955841411,
+            "gap_lower_bound": 3.914897955841411,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.01999677882864686,
+            "error2": 0.020001606142897296
+          },
+          "seconds": 6.916405579002458,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        }
+      ],
+      "full_circuit_verified": false,
+      "seconds": 13.647742394998204
+    },
+    {
+      "index": 5,
+      "proposal": {
+        "mask_id": 309187,
+        "batch": 11,
+        "angle": 55,
+        "groups": [
+          50
+        ],
+        "proxy": 0.0002299899594387282
+      },
+      "initial_metrics": {
+        "lambda_eff_smooth": 46.90663390692872,
+        "Lambda_smooth": 282.9631325976554,
+        "gap": 3.9149251047570033,
+        "gap_lower_bound": 3.9149251047570033,
+        "eigen_trace_bias_bound": 0.0,
+        "error1": 0.019979341681286785,
+        "error2": 0.02000063732815765
+      },
+      "official_numeric_metrics": {
+        "error_1": 0.020001036552554915,
+        "error_2": 0.02000007075990691,
+        "Lambda": 282.969129338571,
+        "E_SOS": -22144.188423633273,
+        "E_gap": 3.9150736332740053,
+        "lambda_eff": 46.908018003897,
+        "gap_in_domain": true
+      },
+      "numeric_pass": false,
+      "improved": false,
+      "changed_words": 16,
+      "path": "/workspace/scratch/3815fb5fae06/score8_chem_feature_opt/candidate_05.npz",
+      "sha256": "154ffc204de05c669d9e04c3827176e4f6c10515c2f48d270583ec6ed6f0f111",
+      "trace": [
+        {
+          "outer": 0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90663390692872,
+            "Lambda_smooth": 282.9631325976554,
+            "gap": 3.9149251047570033,
+            "gap_lower_bound": 3.9149251047570033,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.019979341681286785,
+            "error2": 0.02000063732815765
+          },
+          "seconds": 0.15525974599586334,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 1,
+          "metrics": {
+            "lambda_eff_smooth": 46.90663390692872,
+            "Lambda_smooth": 282.9631325976554,
+            "gap": 3.9149251047570033,
+            "gap_lower_bound": 3.9149251047570033,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.019979341681286785,
+            "error2": 0.02000063732815765
+          },
+          "seconds": 0.3114148469976499,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 2,
+          "metrics": {
+            "lambda_eff_smooth": 46.90663390692872,
+            "Lambda_smooth": 282.9631325976554,
+            "gap": 3.9149251047570033,
+            "gap_lower_bound": 3.9149251047570033,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.019979341681286785,
+            "error2": 0.02000063732815765
+          },
+          "seconds": 0.44509560400183545,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 3,
+          "metrics": {
+            "lambda_eff_smooth": 46.90663390692872,
+            "Lambda_smooth": 282.9631325976554,
+            "gap": 3.9149251047570033,
+            "gap_lower_bound": 3.9149251047570033,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.019979341681286785,
+            "error2": 0.02000063732815765
+          },
+          "seconds": 0.5779963579989271,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        }
+      ],
+      "full_circuit_verified": false,
+      "seconds": 5.908232294001209
+    },
+    {
+      "index": 6,
+      "proposal": {
+        "mask_id": 372792,
+        "batch": 13,
+        "angle": 69,
+        "groups": [
+          58,
+          76
+        ],
+        "proxy": 0.0002331632780839037
+      },
+      "initial_metrics": {
+        "lambda_eff_smooth": 46.9066939468431,
+        "Lambda_smooth": 282.96314255044337,
+        "gap": 3.9149350575448807,
+        "gap_lower_bound": 3.9149350575448807,
+        "eigen_trace_bias_bound": 0.0,
+        "error1": 0.02002057286994916,
+        "error2": 0.02000049640409656
+      },
+      "official_numeric_metrics": {
+        "error_1": 0.020000778606192236,
+        "error_2": 0.020000046031000477,
+        "Lambda": 282.96766200064275,
+        "E_SOS": -22144.188429587502,
+        "E_gap": 3.915079587502987,
+        "lambda_eff": 46.907930957012375,
+        "gap_in_domain": true
+      },
+      "numeric_pass": false,
+      "improved": false,
+      "changed_words": 20,
+      "path": "/workspace/scratch/3815fb5fae06/score8_chem_feature_opt/candidate_06.npz",
+      "sha256": "4cadd247b44fa0291c8e01ead137edda0e0758377b331fe20de99beca7af327e",
+      "trace": [
+        {
+          "outer": 0,
+          "metrics": {
+            "lambda_eff_smooth": 46.9066939468431,
+            "Lambda_smooth": 282.96314255044337,
+            "gap": 3.9149350575448807,
+            "gap_lower_bound": 3.9149350575448807,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02002057286994916,
+            "error2": 0.02000049640409656
+          },
+          "seconds": 0.15184352100186516,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 1,
+          "metrics": {
+            "lambda_eff_smooth": 46.9066939468431,
+            "Lambda_smooth": 282.96314255044337,
+            "gap": 3.9149350575448807,
+            "gap_lower_bound": 3.9149350575448807,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02002057286994916,
+            "error2": 0.02000049640409656
+          },
+          "seconds": 0.2945185760036111,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 2,
+          "metrics": {
+            "lambda_eff_smooth": 46.9066939468431,
+            "Lambda_smooth": 282.96314255044337,
+            "gap": 3.9149350575448807,
+            "gap_lower_bound": 3.9149350575448807,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02002057286994916,
+            "error2": 0.02000049640409656
+          },
+          "seconds": 0.48201295000035316,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 3,
+          "metrics": {
+            "lambda_eff_smooth": 46.906477960995645,
+            "Lambda_smooth": 282.963198819555,
+            "gap": 3.914897961998008,
+            "gap_lower_bound": 3.914897961998008,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.019997231445699825,
+            "error2": 0.020000531686796216
+          },
+          "seconds": 8.341961646998243,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        }
+      ],
+      "full_circuit_verified": false,
+      "seconds": 12.649234426004114
+    },
+    {
+      "index": 7,
+      "proposal": {
+        "mask_id": 124739,
+        "batch": 5,
+        "angle": 29,
+        "groups": [
+          61
+        ],
+        "proxy": 0.00027279366231379155
+      },
+      "initial_metrics": {
+        "lambda_eff_smooth": 46.90624106705055,
+        "Lambda_smooth": 282.96306747708246,
+        "gap": 3.9148599841840905,
+        "gap_lower_bound": 3.9148599841840905,
+        "eigen_trace_bias_bound": 0.0,
+        "error1": 0.020008467774279986,
+        "error2": 0.020000740510256975
+      },
+      "official_numeric_metrics": {
+        "error_1": 0.020001480816738602,
+        "error_2": 0.02000010014625618,
+        "Lambda": 282.96748608861066,
+        "E_SOS": -22144.18853246551,
+        "E_gap": 3.915182465509133,
+        "lambda_eff": 46.90852828589302,
+        "gap_in_domain": true
+      },
+      "numeric_pass": false,
+      "improved": false,
+      "changed_words": 16,
+      "path": "/workspace/scratch/3815fb5fae06/score8_chem_feature_opt/candidate_07.npz",
+      "sha256": "fda8c80995e3aa2f42bedd33905e350804a217256cb48394e332dac4934bd11d",
+      "trace": [
+        {
+          "outer": 0,
+          "metrics": {
+            "lambda_eff_smooth": 46.90644998665777,
+            "Lambda_smooth": 282.96286529012986,
+            "gap": 3.91489793890662,
+            "gap_lower_bound": 3.91489793890662,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02000123869197651,
+            "error2": 0.020000707109615653
+          },
+          "seconds": 3.9246405529993353,
+          "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+        },
+        {
+          "outer": 1,
+          "metrics": {
+            "lambda_eff_smooth": 46.906448568680574,
+            "Lambda_smooth": 282.96284410753987,
+            "gap": 3.9148979977330782,
+            "gap_lower_bound": 3.9148979977330782,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.019999902933839325,
+            "error2": 0.020000708075847456
+          },
+          "seconds": 5.964553034995333,
+          "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        {
+          "outer": 2,
+          "metrics": {
+            "lambda_eff_smooth": 46.90644625553373,
+            "Lambda_smooth": 282.96281647233235,
+            "gap": 3.914897996613263,
+            "gap_lower_bound": 3.914897996613263,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.02000002389521463,
+            "error2": 0.020000709378797832
+          },
+          "seconds": 11.383623942994745,
+          "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+        },
+        {
+          "outer": 3,
+          "metrics": {
+            "lambda_eff_smooth": 46.90644613060059,
+            "Lambda_smooth": 282.9628147121951,
+            "gap": 3.9148980003064935,
+            "gap_lower_bound": 3.9148980003064935,
+            "eigen_trace_bias_bound": 0.0,
+            "error1": 0.019999903400206978,
+            "error2": 0.020000708338159208
+          },
+          "seconds": 17.470132335998642,
+          "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+        }
+      ],
+      "full_circuit_verified": false,
+      "seconds": 22.310888211999554
+    }
+  ],
+  "total_seconds": 116.63968679299433
+}

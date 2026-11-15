@@ -1,0 +1,86 @@
+{
+  "legal_inputs": 3133452,
+  "scope": "left parity arbitrary over the 10 stated control and held-difference wires; right parity and affine remainder use every retained live wire",
+  "records": [
+    {
+      "name": "feature_j2",
+      "start": 8189,
+      "phase": 8195,
+      "end": 8203,
+      "left_wires": [
+        22,
+        23,
+        24,
+        25,
+        7,
+        34,
+        19,
+        20,
+        44,
+        43
+      ],
+      "identity": null,
+      "seconds": 2.8476150930000586
+    },
+    {
+      "name": "feature_j6",
+      "start": 8257,
+      "phase": 8259,
+      "end": 8265,
+      "left_wires": [
+        22,
+        23,
+        24,
+        25,
+        7,
+        40,
+        19,
+        20,
+        44,
+        9
+      ],
+      "identity": null,
+      "seconds": 2.8557692489994224
+    },
+    {
+      "name": "feature_j4",
+      "start": 8293,
+      "phase": 8301,
+      "end": 8313,
+      "left_wires": [
+        22,
+        23,
+        24,
+        25,
+        7,
+        8,
+        19,
+        20,
+        41,
+        40
+      ],
+      "identity": null,
+      "seconds": 1.6520572020017426
+    },
+    {
+      "name": "feature_j5",
+      "start": 8314,
+      "phase": 8317,
+      "end": 8325,
+      "left_wires": [
+        22,
+        23,
+        24,
+        25,
+        7,
+        41,
+        19,
+        20,
+        8,
+        40
+      ],
+      "identity": null,
+      "seconds": 1.646582582998235
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "source": "/workspace/scratch/7f542e06b7cf/dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+  "source_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "baseline": "/workspace/scratch/7f542e06b7cf/dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+  "script_sha256": "d80544f149a822a727dc2fb1647fad32006d9c95bd4b5499f02a700cc863d5bc",
+  "smooth": 1e-06,
+  "objective_weight": 1,
+  "gap_equality": false,
+  "offset_coordinates": true,
+  "whiten_weights": true,
+  "fast_model": true,
+  "initial_lag": "0.02,2.0,0.0595",
+  "gradient_scaled_error": 0.00012351521518350062,
+  "gradient_checks": [
+    {
+      "event": "gradient_check",
+      "step": 1e-06,
+      "finite_difference": [
+        1.0535359749042073,
+        0.8410121900004341,
+        -0.0157008072099174,
+        -19.37286242537084
+      ],
+      "analytic": [
+        1.0534898577151788,
+        0.8408886747852506,
+        -0.015700806388643115,
+        -19.372936379328124
+      ],
+      "scaled_error": 0.00012351521518350062,
+      "assignment_changes": 0
+    }
+  ],
+  "trace": [
+    {
+      "outer": 0,
+      "penalty": 50.0,
+      "metrics": {
+        "lambda_eff_smooth": 46.90547920552283,
+        "Lambda_smooth": 282.9512635393696,
+        "gap": 3.9148975240667596,
+        "error1": 0.019940870652565012,
+        "error2": 0.020004719496773366
+      },
+      "constraints": [
+        -0.005902205849584452,
+        0.0004740063084731627,
+        4.9593324025209995e-05
+      ],
+      "lag": [
+        0.0,
+        2.023700315423658,
+        0.0619796662012605
+      ],
+      "calls": 575,
+      "seconds": 45.921579948000726,
+      "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "outer": 1,
+      "penalty": 250.0,
+      "metrics": {
+        "lambda_eff_smooth": 46.905406068766624,
+        "Lambda_smooth": 282.9503270857584,
+        "gap": 3.9148983684326595,
+        "error1": 0.0199147889178848,
+        "error2": 0.020004399817936915
+      },
+      "constraints": [
+        -0.008500972893169312,
+        0.0004420310727479837,
+        -3.484326596137066e-05
+      ],
+      "lag": [
+        0.0,
+        2.134208083610654,
+        0.05326884971091783
+      ],
+      "calls": 523,
+      "seconds": 80.53349190899826,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "outer": 2,
+      "penalty": 1250.0,
+      "metrics": {
+        "lambda_eff_smooth": 46.90544479609267,
+        "Lambda_smooth": 282.9508110332518,
+        "gap": 3.9148980885993296,
+        "error1": 0.019999997946340466,
+        "error2": 0.020004006507272964
+      },
+      "constraints": [
+        1.794636646179626e-06,
+        0.000402691661930632,
+        -6.859932977221206e-06
+      ],
+      "lag": [
+        0.0022432958077245324,
+        2.637572661023944,
+        0.044693933489391324
+      ],
+      "calls": 328,
+      "seconds": 100.99086675899889,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    }
+  ],
+  "candidates": [
+    {
+      "name": "latest",
+      "path": "/workspace/scratch/3815fb5fae06/score_chemistry_polish_c44_whiten_descent/latest.npz",
+      "sha256": "e948a371153687a2b6b2688e97ca3e345b86b5b01dd4010318a9c21d06bab472",
+      "official_numeric_metrics": {
+        "error_1": 0.01999999794634038,
+        "error_2": 0.02000400650727304,
+        "Lambda": 282.9489852408358,
+        "E_SOS": -22144.1882480886,
+        "E_gap": 3.914898088602058,
+        "lambda_eff": 46.905292408622074,
+        "gap_in_domain": true
+      },
+      "official_numeric_thresholds_pass": false,
+      "exact_angle_words_unchanged": true,
+      "full_circuit_verified": false
+    }
+  ],
+  "seconds": 103.30063246300051,
+  "evaluation_seconds": 92.79003338607072,
+  "calls": 2201,
+  "peak_rss_mib": 1013.73828125
+}

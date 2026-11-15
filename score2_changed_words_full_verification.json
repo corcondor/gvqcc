@@ -1,0 +1,196 @@
+{
+  "created_utc": "2026-11-14T21:43:23.736377+00:00",
+  "status": "PASS_AND_LOWER_MATCHED_COST",
+  "script_sha256": "c680e718e30fc8bb538f82e84dec6a06bc7292457f812260473f4b6385464e2f",
+  "verifier": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dfthcsos/verify.py",
+  "verifier_sha256": "ca84ca08e6e9280922cda3b539d4776ae58990b2b03b5619a53d65de67df9d2b",
+  "candidate_source": "/workspace/scratch/3815fb5fae06/score2_angle_zero_gain_family/candidate_numeric.npz",
+  "candidate_sha256": "734378cb3b5f6cc2fde04d241932b4685d72a83f4c4626c8dcc927ac8ebb4112",
+  "baseline_source": "/workspace/scratch/7f542e06b7cf/dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+  "baseline_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "baseline_receipt": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score2_pyzx_full_verification.json",
+  "baseline_receipt_sha256": "6f55c1ebd627bb48793f97ce76a4da912d0ecb16e3c0205a8e540a0405e4a17c",
+  "kaggle_submission_performed": false,
+  "observed_public_score": null,
+  "comparison_baseline_result": {
+    "status": "PASS",
+    "score": 294988786.87084424,
+    "lambda_eff": 46.90658950862355,
+    "toffoli_count": 14728.0,
+    "num_qubits": 427,
+    "brot": 8,
+    "batch_size": 5,
+    "num_circuits": 15,
+    "reaction_depth": 167,
+    "num_ops": 410454,
+    "verified_shots": 78080,
+    "submission_sha256": "7ff3f4c85bd1341f1e13b008364fe951e6911ae846b2169ca173afdcd4e5c631",
+    "resources": {
+      "brot": 8,
+      "keep_bits": 10,
+      "angles_toffoli_per_pass": 4033.0,
+      "angles_toffoli": 8066.0,
+      "angles_qubits": 128,
+      "angles_selection_qubits": 11,
+      "angles_persistent_qubits": 40,
+      "angles_temporary_qubits": 77,
+      "outer_state_prep_toffoli": 317,
+      "inner_state_prep_toffoli": 4095,
+      "givens_rotations_toffoli": 2250,
+      "outer_state_prep_persistent_qubits": 40,
+      "outer_state_prep_temporary_qubits": 90,
+      "outer_state_prep_qubits": 130,
+      "inner_state_prep_persistent_qubits": 44,
+      "inner_state_prep_temporary_qubits": 303,
+      "inner_state_prep_qubits": 347,
+      "heuristic_persistent_qubits": 84,
+      "heuristic_temporary_qubits": 303,
+      "heuristic_toffoli": 6662,
+      "heuristic_qubits": 387,
+      "persistent_qubits": 124,
+      "temporary_qubits": 303,
+      "toffoli": 14728.0,
+      "qubits": 427,
+      "angles_within_cap": true
+    },
+    "metrics": {
+      "error_1": 0.01999999799999866,
+      "error_2": 0.019999998499405293,
+      "Lambda": 282.9645325169254,
+      "E_SOS": -22144.1882480015,
+      "E_gap": 3.9148980015015695,
+      "lambda_eff": 46.90658950862355,
+      "gap_in_domain": true
+    }
+  },
+  "comparison_provenance": "SHA-bound complete official baseline PASS",
+  "changed_word_count": 16,
+  "tree_edges_unchanged": true,
+  "W_unchanged": true,
+  "H2_I_unchanged": false,
+  "factorization": {
+    "path": "/workspace/scratch/3815fb5fae06/score2_angle_zero_gain_verified/submission.npz",
+    "sha256": "734378cb3b5f6cc2fde04d241932b4685d72a83f4c4626c8dcc927ac8ebb4112",
+    "candidate_copied_byte_for_byte": true
+  },
+  "loaders": [
+    {
+      "name": "angle_k_0.kmb",
+      "sha256": "71735b23037e8a64d16e39b3347d440b36bdf8813613ec70c36a85bfd362d7c2"
+    },
+    {
+      "name": "angle_k_1.kmb",
+      "sha256": "e63f9de0a60ff79fc6f817056a1f95f5efed9ae82955cf56b11492e5ff28d70b"
+    },
+    {
+      "name": "angle_k_2.kmb",
+      "sha256": "e32afaf5d4b04756d20f15ecfbf08d6db325b57cbcb877428cb7fd61f13fcebb"
+    },
+    {
+      "name": "angle_k_3.kmb",
+      "sha256": "a932bc25467908c2189aadadd5f997ea88200b44d9401741c2b492fc1c2ebaa0"
+    },
+    {
+      "name": "angle_k_4.kmb",
+      "sha256": "dc70bda726f221813b502fc2d26acdd21882d1e30177f4264974880eb68cb2c2"
+    },
+    {
+      "name": "angle_k_5.kmb",
+      "sha256": "dbef059b4cd3030d2b249df4d09653efb54f8b803faa2d459f4e418394120fe2"
+    },
+    {
+      "name": "angle_k_6.kmb",
+      "sha256": "11cb19cb7e9d628f1416ef0e03f6d9d767726e42df839885e9224b029444f383"
+    },
+    {
+      "name": "angle_k_7.kmb",
+      "sha256": "e3a11ed9c462603f6f0734fe61fc0e4e924fa6bb4a6702574391f28f507a264b"
+    },
+    {
+      "name": "angle_k_8.kmb",
+      "sha256": "0fdcfe1906582661c40d0cd510df7efa2c115f287f9ad859223967d98150b0b2"
+    },
+    {
+      "name": "angle_k_9.kmb",
+      "sha256": "bf258cf1749029279c8d841a6fe23999a29c26e520171fdc06e68dd9f36d4960"
+    },
+    {
+      "name": "angle_k_10.kmb",
+      "sha256": "41026614f8f39eab84f3dcc701d9abd73ee80c09dc5111a39c7330106e892f60"
+    },
+    {
+      "name": "angle_k_11.kmb",
+      "sha256": "18fa8cd8125a1eccb959be27956ce7e871599909193052ab4a2ad1a5d0d6b01d"
+    },
+    {
+      "name": "angle_k_12.kmb",
+      "sha256": "62d6cd9855bcad70917a56527c0f03b912fba8bb14a2bfd91748a345f0a6fc72"
+    },
+    {
+      "name": "angle_k_13.kmb",
+      "sha256": "09a2faee4582e786548640ce4552bcc812e73667bd6784b37e0bbb5b817b8189"
+    },
+    {
+      "name": "angle_k_14.kmb",
+      "sha256": "a582eb78249c7ba5f58881b2753e2900a5a5be61eda719d2a24aff1fdad5f073"
+    }
+  ],
+  "official_result": {
+    "status": "PASS",
+    "score": 294988090.85952884,
+    "lambda_eff": 46.9064788348674,
+    "toffoli_count": 14728.0,
+    "num_qubits": 427,
+    "brot": 8,
+    "batch_size": 5,
+    "num_circuits": 15,
+    "reaction_depth": 167,
+    "num_ops": 611497,
+    "verified_shots": 78080,
+    "submission_sha256": "9184d9814e57613439601242c8ed3421cd10e18a5ae7ea2bb758cac81cdf9f1b",
+    "resources": {
+      "brot": 8,
+      "keep_bits": 10,
+      "angles_toffoli_per_pass": 4033.0,
+      "angles_toffoli": 8066.0,
+      "angles_qubits": 128,
+      "angles_selection_qubits": 11,
+      "angles_persistent_qubits": 40,
+      "angles_temporary_qubits": 77,
+      "outer_state_prep_toffoli": 317,
+      "inner_state_prep_toffoli": 4095,
+      "givens_rotations_toffoli": 2250,
+      "outer_state_prep_persistent_qubits": 40,
+      "outer_state_prep_temporary_qubits": 90,
+      "outer_state_prep_qubits": 130,
+      "inner_state_prep_persistent_qubits": 44,
+      "inner_state_prep_temporary_qubits": 303,
+      "inner_state_prep_qubits": 347,
+      "heuristic_persistent_qubits": 84,
+      "heuristic_temporary_qubits": 303,
+      "heuristic_toffoli": 6662,
+      "heuristic_qubits": 387,
+      "persistent_qubits": 124,
+      "temporary_qubits": 303,
+      "toffoli": 14728.0,
+      "qubits": 427,
+      "angles_within_cap": true
+    },
+    "metrics": {
+      "error_1": 0.019999979999561098,
+      "error_2": 0.019999998499405293,
+      "Lambda": 282.9632051555301,
+      "E_SOS": -22144.18824802,
+      "E_gap": 3.9148980200006918,
+      "lambda_eff": 46.9064788348674,
+      "gap_in_domain": true
+    }
+  },
+  "comparison_roundoff_tolerance": 1.9073486328125e-06,
+  "local_cost_reduction": 696.0113154053688,
+  "local_cost_reduction_percent": 0.00023594500753176817,
+  "lower_than_matched_baseline": true,
+  "same_cost_within_roundoff": false,
+  "lambda_below_user_log_46_905894137": false,
+  "seconds": 21.090200723003363
+}

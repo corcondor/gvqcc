@@ -1,0 +1,736 @@
+{
+  "status": "PASS",
+  "source_sha256": "5eb45850e7ceab2048698c59275f9ac3c24cc048276870d8f05c03b28c65ef90",
+  "scanner_source_sha256": {
+    "score7_dqi_phase_commute.cpp": "d342de07b6e1fb4a30f031a48aa8fe5a49965dbb8c0b24b15a67b01b9dc23247",
+    "score7_dqi_phase_return.cpp": "ee80ce56b5a253eee01e9a76f188019c88d213c784982a7e4089648296f900a6",
+    "score7_dqi_phase_delta.cpp": "8c358f3ad66d9f1c9774d98b2919459fb74020f14c12d1e4720823b65d911dfd"
+  },
+  "scanner_binary_sha256": {
+    "direct": "9cbaa9987551d06777588b1633ee24996650229266ca4ed96aa171eee25200dc",
+    "control_return": "85da858e927601d81122e5d411396577ed83b3b87ff09fd172a939e0aa465fc0",
+    "delta": "5f0068beff2291293742e2c51903965f53b9707d466353d64c837f5543cfef90"
+  },
+  "fixture_count": 12,
+  "independent_basis_phase_columns": 88,
+  "independent_algebra_columns": 32,
+  "fixtures": [
+    {
+      "name": "z_crossing",
+      "kmb_sha256": "14347ff61327b5055f33c75d57519052583d2ae2e0c30905070dbb57ebcd516a",
+      "direct_candidates": 1,
+      "control_return_pairs": 1,
+      "delta_survivors": 1,
+      "independent_value_and_phase_columns": 8,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 3,
+        "qubits": 3,
+        "ccx": 2,
+        "ccz": 0,
+        "diagonal": 1,
+        "physical_pairs": 1,
+        "eligible_pairs": 1,
+        "phase_pairs": 1,
+        "phase_crossings": 1,
+        "boundary_rejections": 0,
+        "control_write_rejections": 0,
+        "target_use_rejections": 0,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 0,
+        "nonimproving_correction_rejections": 0,
+        "unknown_barriers": 0,
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "first": 0,
+            "second": 2,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "condition": -1,
+            "crossed_phases": 1,
+            "delta_toffoli": -2,
+            "corrections": [
+              {
+                "before_source_op": 1,
+                "condition": -1,
+                "qubits": [
+                  0,
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 1,
+        "propagation_steps": 2,
+        "surviving_count": 1,
+        "intervals": [
+          {
+            "first": 0,
+            "second": 2,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "status": "VALUE_DELTA_CLOSED_REQUIRES_PHASE_AND_ENDPOINT_PROOF",
+            "witness_op": 2,
+            "affected_phase_ops": [
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "cz_crossing",
+      "kmb_sha256": "ec07cac11d39893b6193531a6877a2b015b84aba7fd68c1cda32d9b30bb0026c",
+      "direct_candidates": 1,
+      "control_return_pairs": 1,
+      "delta_survivors": 1,
+      "independent_value_and_phase_columns": 16,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 3,
+        "qubits": 4,
+        "ccx": 2,
+        "ccz": 0,
+        "diagonal": 1,
+        "physical_pairs": 1,
+        "eligible_pairs": 1,
+        "phase_pairs": 1,
+        "phase_crossings": 1,
+        "boundary_rejections": 0,
+        "control_write_rejections": 0,
+        "target_use_rejections": 0,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 0,
+        "nonimproving_correction_rejections": 0,
+        "unknown_barriers": 0,
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "first": 0,
+            "second": 2,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "condition": -1,
+            "crossed_phases": 1,
+            "delta_toffoli": -1,
+            "corrections": [
+              {
+                "before_source_op": 1,
+                "condition": -1,
+                "qubits": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 1,
+        "propagation_steps": 2,
+        "surviving_count": 1,
+        "intervals": [
+          {
+            "first": 0,
+            "second": 2,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "status": "VALUE_DELTA_CLOSED_REQUIRES_PHASE_AND_ENDPOINT_PROOF",
+            "witness_op": 2,
+            "affected_phase_ops": [
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ccz_overlap",
+      "kmb_sha256": "90944cb7ba8022027a92c73ca2217209e5806d9f5ae0476abc33798ca92841f1",
+      "direct_candidates": 1,
+      "control_return_pairs": 1,
+      "delta_survivors": 1,
+      "independent_value_and_phase_columns": 16,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 3,
+        "qubits": 4,
+        "ccx": 2,
+        "ccz": 1,
+        "diagonal": 1,
+        "physical_pairs": 1,
+        "eligible_pairs": 1,
+        "phase_pairs": 1,
+        "phase_crossings": 1,
+        "boundary_rejections": 0,
+        "control_write_rejections": 0,
+        "target_use_rejections": 0,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 0,
+        "nonimproving_correction_rejections": 0,
+        "unknown_barriers": 0,
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "first": 0,
+            "second": 2,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "condition": -1,
+            "crossed_phases": 1,
+            "delta_toffoli": -1,
+            "corrections": [
+              {
+                "before_source_op": 1,
+                "condition": -1,
+                "qubits": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 1,
+        "propagation_steps": 2,
+        "surviving_count": 1,
+        "intervals": [
+          {
+            "first": 0,
+            "second": 2,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "status": "VALUE_DELTA_CLOSED_REQUIRES_PHASE_AND_ENDPOINT_PROOF",
+            "witness_op": 2,
+            "affected_phase_ops": [
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "quartic_correction",
+      "kmb_sha256": "9c58b6e40b484c098ddf75e75e80bb4735d8bc0a67451dcaee4ddc837b5d1d51",
+      "direct_candidates": 0,
+      "control_return_pairs": 1,
+      "delta_survivors": 1,
+      "independent_value_and_phase_columns": 0,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 3,
+        "qubits": 5,
+        "ccx": 2,
+        "ccz": 1,
+        "diagonal": 1,
+        "physical_pairs": 1,
+        "eligible_pairs": 1,
+        "phase_pairs": 1,
+        "phase_crossings": 1,
+        "boundary_rejections": 0,
+        "control_write_rejections": 0,
+        "target_use_rejections": 0,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 1,
+        "nonimproving_correction_rejections": 0,
+        "unknown_barriers": 0,
+        "candidate_count": 0,
+        "candidates": []
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 1,
+        "propagation_steps": 2,
+        "surviving_count": 1,
+        "intervals": [
+          {
+            "first": 0,
+            "second": 2,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "status": "VALUE_DELTA_CLOSED_REQUIRES_PHASE_AND_ENDPOINT_PROOF",
+            "witness_op": 2,
+            "affected_phase_ops": [
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "cancelled_corrections",
+      "kmb_sha256": "9f8062f50bcb0e56930820e4410ab5f47e108de047bf5b1eae4e3a6c51d4a9cb",
+      "direct_candidates": 1,
+      "control_return_pairs": 1,
+      "delta_survivors": 1,
+      "independent_value_and_phase_columns": 16,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 4,
+        "qubits": 4,
+        "ccx": 2,
+        "ccz": 0,
+        "diagonal": 2,
+        "physical_pairs": 1,
+        "eligible_pairs": 1,
+        "phase_pairs": 1,
+        "phase_crossings": 2,
+        "boundary_rejections": 0,
+        "control_write_rejections": 0,
+        "target_use_rejections": 0,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 0,
+        "nonimproving_correction_rejections": 0,
+        "unknown_barriers": 0,
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "first": 0,
+            "second": 3,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "condition": -1,
+            "crossed_phases": 2,
+            "delta_toffoli": -2,
+            "corrections": []
+          }
+        ]
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 1,
+        "propagation_steps": 3,
+        "surviving_count": 1,
+        "intervals": [
+          {
+            "first": 0,
+            "second": 3,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "status": "VALUE_DELTA_CLOSED_REQUIRES_PHASE_AND_ENDPOINT_PROOF",
+            "witness_op": 3,
+            "affected_phase_ops": [
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "restored_controls",
+      "kmb_sha256": "4af6eddfa60bee87d9ef96461387be34a03ba203627f11b537d7d3381970d94a",
+      "direct_candidates": 0,
+      "control_return_pairs": 1,
+      "delta_survivors": 1,
+      "independent_value_and_phase_columns": 0,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 5,
+        "qubits": 4,
+        "ccx": 2,
+        "ccz": 0,
+        "diagonal": 1,
+        "physical_pairs": 1,
+        "eligible_pairs": 0,
+        "phase_pairs": 0,
+        "phase_crossings": 0,
+        "boundary_rejections": 0,
+        "control_write_rejections": 1,
+        "target_use_rejections": 0,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 0,
+        "nonimproving_correction_rejections": 0,
+        "unknown_barriers": 0,
+        "candidate_count": 0,
+        "candidates": []
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 1,
+        "propagation_steps": 4,
+        "surviving_count": 1,
+        "intervals": [
+          {
+            "first": 0,
+            "second": 4,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "status": "VALUE_DELTA_CLOSED_REQUIRES_PHASE_AND_ENDPOINT_PROOF",
+            "witness_op": 4,
+            "affected_phase_ops": [
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "linear_fanout_return",
+      "kmb_sha256": "19c2a038bc52c671fe3ad3f0d686bd8c4cfc465803ef8a8a72d319fc5e1cf520",
+      "direct_candidates": 0,
+      "control_return_pairs": 1,
+      "delta_survivors": 1,
+      "independent_value_and_phase_columns": 0,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 5,
+        "qubits": 4,
+        "ccx": 2,
+        "ccz": 0,
+        "diagonal": 1,
+        "physical_pairs": 1,
+        "eligible_pairs": 0,
+        "phase_pairs": 0,
+        "phase_crossings": 0,
+        "boundary_rejections": 0,
+        "control_write_rejections": 0,
+        "target_use_rejections": 1,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 0,
+        "nonimproving_correction_rejections": 0,
+        "unknown_barriers": 0,
+        "candidate_count": 0,
+        "candidates": []
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 1,
+        "propagation_steps": 4,
+        "surviving_count": 1,
+        "intervals": [
+          {
+            "first": 0,
+            "second": 4,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "status": "VALUE_DELTA_CLOSED_REQUIRES_PHASE_AND_ENDPOINT_PROOF",
+            "witness_op": 4,
+            "affected_phase_ops": [
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "nonlinear_fanout",
+      "kmb_sha256": "ebe293fe642c0b2c483edb99af815bcec783faf95072f87aa8a7296299f5b632",
+      "direct_candidates": 0,
+      "control_return_pairs": 1,
+      "delta_survivors": 0,
+      "independent_value_and_phase_columns": 0,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 3,
+        "qubits": 5,
+        "ccx": 3,
+        "ccz": 0,
+        "diagonal": 0,
+        "physical_pairs": 1,
+        "eligible_pairs": 0,
+        "phase_pairs": 0,
+        "phase_crossings": 0,
+        "boundary_rejections": 0,
+        "control_write_rejections": 0,
+        "target_use_rejections": 1,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 0,
+        "nonimproving_correction_rejections": 0,
+        "unknown_barriers": 0,
+        "candidate_count": 0,
+        "candidates": []
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 1,
+        "propagation_steps": 1,
+        "surviving_count": 0,
+        "intervals": [
+          {
+            "first": 0,
+            "second": 2,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "status": "nonlinear_control_delta",
+            "witness_op": 1,
+            "affected_phase_ops": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "fredkin_fanout",
+      "kmb_sha256": "be9370e98802a214e391079040635ddefbdc4ae2b1a9c70e1fb52dcc3e2e0099",
+      "direct_candidates": 0,
+      "control_return_pairs": 1,
+      "delta_survivors": 0,
+      "independent_value_and_phase_columns": 0,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 3,
+        "qubits": 5,
+        "ccx": 2,
+        "ccz": 0,
+        "diagonal": 0,
+        "physical_pairs": 1,
+        "eligible_pairs": 0,
+        "phase_pairs": 0,
+        "phase_crossings": 0,
+        "boundary_rejections": 0,
+        "control_write_rejections": 0,
+        "target_use_rejections": 1,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 0,
+        "nonimproving_correction_rejections": 0,
+        "unknown_barriers": 0,
+        "candidate_count": 0,
+        "candidates": []
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 1,
+        "propagation_steps": 1,
+        "surviving_count": 0,
+        "intervals": [
+          {
+            "first": 0,
+            "second": 2,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "status": "fredkin_nonlinear_delta",
+            "witness_op": 1,
+            "affected_phase_ops": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "control_changed",
+      "kmb_sha256": "43d713aa6a672ee62070548bd5a4a1ff9c90fb8e9f17c3ec45a32c3924687203",
+      "direct_candidates": 0,
+      "control_return_pairs": 0,
+      "delta_survivors": 0,
+      "independent_value_and_phase_columns": 0,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 3,
+        "qubits": 4,
+        "ccx": 2,
+        "ccz": 0,
+        "diagonal": 0,
+        "physical_pairs": 1,
+        "eligible_pairs": 0,
+        "phase_pairs": 0,
+        "phase_crossings": 0,
+        "boundary_rejections": 0,
+        "control_write_rejections": 1,
+        "target_use_rejections": 0,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 0,
+        "nonimproving_correction_rejections": 0,
+        "unknown_barriers": 0,
+        "candidate_count": 0,
+        "candidates": []
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 0,
+        "propagation_steps": 0,
+        "surviving_count": 0,
+        "intervals": []
+      }
+    },
+    {
+      "name": "phase_guard",
+      "kmb_sha256": "80953906a0c136961f1827b45b48a7f4249b14c703d0bd2897bd654285257a15",
+      "direct_candidates": 1,
+      "control_return_pairs": 1,
+      "delta_survivors": 1,
+      "independent_value_and_phase_columns": 32,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 3,
+        "qubits": 4,
+        "ccx": 2,
+        "ccz": 0,
+        "diagonal": 1,
+        "physical_pairs": 1,
+        "eligible_pairs": 1,
+        "phase_pairs": 1,
+        "phase_crossings": 1,
+        "boundary_rejections": 0,
+        "control_write_rejections": 0,
+        "target_use_rejections": 0,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 0,
+        "nonimproving_correction_rejections": 0,
+        "unknown_barriers": 0,
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "first": 0,
+            "second": 2,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "condition": -1,
+            "crossed_phases": 1,
+            "delta_toffoli": -1,
+            "corrections": [
+              {
+                "before_source_op": 1,
+                "condition": 0,
+                "qubits": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 1,
+        "propagation_steps": 2,
+        "surviving_count": 1,
+        "intervals": [
+          {
+            "first": 0,
+            "second": 2,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "status": "VALUE_DELTA_CLOSED_REQUIRES_PHASE_AND_ENDPOINT_PROOF",
+            "witness_op": 2,
+            "affected_phase_ops": [
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "guard_changed",
+      "kmb_sha256": "7efe4b2f34b1a805424e6011194d300659833c799b472c214ba4ef01049262fc",
+      "direct_candidates": 0,
+      "control_return_pairs": 1,
+      "delta_survivors": 1,
+      "independent_value_and_phase_columns": 0,
+      "direct": {
+        "schema": "score7-phase-commute-v1",
+        "status": "EXACT_STRUCTURAL_DISCOVERY",
+        "operations": 5,
+        "qubits": 4,
+        "ccx": 2,
+        "ccz": 0,
+        "diagonal": 2,
+        "physical_pairs": 1,
+        "eligible_pairs": 1,
+        "phase_pairs": 1,
+        "phase_crossings": 2,
+        "boundary_rejections": 0,
+        "control_write_rejections": 0,
+        "target_use_rejections": 0,
+        "explicit_guard_rejections": 0,
+        "quartic_rejections": 0,
+        "nonimproving_correction_rejections": 1,
+        "unknown_barriers": 0,
+        "candidate_count": 0,
+        "candidates": []
+      },
+      "delta": {
+        "schema": "score7-phase-delta-v1",
+        "interval_count": 1,
+        "propagation_steps": 4,
+        "surviving_count": 1,
+        "intervals": [
+          {
+            "first": 0,
+            "second": 4,
+            "qubits": [
+              0,
+              1,
+              2
+            ],
+            "status": "VALUE_DELTA_CLOSED_REQUIRES_PHASE_AND_ENDPOINT_PROOF",
+            "witness_op": 4,
+            "affected_phase_ops": [
+              1,
+              3
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "benchmark_rewrite_or_score_gain": null
+}

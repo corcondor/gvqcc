@@ -1,0 +1,43 @@
+{
+  "schema": "gvqcc-score5-pinned-patch-chain-v1",
+  "default_target": "score5_6a",
+  "accepted_external_dqi_sha256": [
+    "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+    "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+    "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02"
+  ],
+  "targets": {
+    "score5_6a": {
+      "sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02",
+      "bytes": 522343147,
+      "official_receipt_sha256": "9aeb36196eb05df6961625d4f519aea8fea39f856cdaf1a61dece14a363caf1f"
+    }
+  },
+  "stages": [
+    {
+      "label": "projective_norm",
+      "input_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+      "input_bytes": 522345615,
+      "output_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+      "output_bytes": 522343027,
+      "patch_sha256": "2b93a8dbc99461c097ecd89cdbe48ad5adfae0e86ed522221b349b520226caa5"
+    },
+    {
+      "label": "fanout16",
+      "input_sha256": "ebfb770f6fc8abc7f48287a0fa4ee6404a2e32a9facdd38449b4f7b73be05d0e",
+      "input_bytes": 522343027,
+      "output_sha256": "98ad7b39a630a4152c54b39fbb14dece22fcaf34b00410ab8a45629db87e0b6f",
+      "output_bytes": 522343107,
+      "patch_sha256": "976fcc337c8770f918fa494f6391ec3a0f78b75d3c4110a90a0102a039939cf4"
+    },
+    {
+      "label": "fanin8",
+      "input_sha256": "98ad7b39a630a4152c54b39fbb14dece22fcaf34b00410ab8a45629db87e0b6f",
+      "input_bytes": 522343107,
+      "output_sha256": "6a998c4688dc22b33f52e41be46c5e51f7ea927fab40d9141bc5e99ebf6a2e02",
+      "output_bytes": 522343147,
+      "patch_sha256": "a984effc2318c3f9283944947271e987e6ba641426a17d740fc995d6cf038cee"
+    }
+  ],
+  "scope": "Only pinned DQI variants are accepted. Other17 portfolio member payloads are preserved and hash checked, not replaced or scientifically requalified."
+}

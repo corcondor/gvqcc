@@ -1,0 +1,253 @@
+{
+  "header": {
+    "version": 2,
+    "num_qubits": 889,
+    "num_bits": 208087,
+    "num_registers": 4165,
+    "num_ops": 58869058,
+    "num_ops_with_3_target_qubits": 382918,
+    "num_ops_with_2_target_qubits": 32212259,
+    "num_ops_with_1_target_qubits": 274744,
+    "num_ops_with_1_target_bit": 24701619,
+    "num_ops_with_1_condition_bit": 25239591,
+    "num_ops_with_angle": 0,
+    "num_info_tags": 0,
+    "num_info_tag_chars": 0
+  },
+  "max_quantum_id": 888,
+  "max_classical_id": 208086,
+  "raw_kmb_sha256": "5a60d66233198be8ce05d9710bd35a7d2d6700bbced87560d405651070ae8194",
+  "registers": {
+    "totals": {
+      "count": 4165,
+      "target_entries": 49980,
+      "quantum_target_entries": 840,
+      "classical_target_entries": 49140,
+      "name_bytes": 19565,
+      "payload_bytes": 252805
+    },
+    "summaries": [],
+    "summaries_omitted": 4165,
+    "counts_are_entries_not_unique_ids": true
+  },
+  "opcode_histogram": {
+    "POP_CONDITION": 684543,
+    "Z": 21,
+    "X": 107226,
+    "R": 48012,
+    "CZ": 1837,
+    "CX": 31269675,
+    "SWAP": 378664,
+    "CCZ": 7000,
+    "CCX": 363678,
+    "CSWAP": 12240,
+    "BIT_STORE0": 672820,
+    "BIT_STORE1": 8140,
+    "BIT_INVERT": 4043,
+    "HMR": 71568,
+    "PUSH_CONDITION": 684543,
+    "Z_IF": 47485,
+    "X_IF": 432,
+    "CZ_IF": 537135,
+    "CX_IF": 24948,
+    "BIT_STORE0_IF": 1907019,
+    "BIT_STORE1_IF": 50448,
+    "BIT_INVERT_IF": 21987581
+  },
+  "opcode_histogram_hex": {
+    "0x01": 684543,
+    "0x10": 21,
+    "0x11": 107226,
+    "0x12": 48012,
+    "0x20": 1837,
+    "0x21": 31269675,
+    "0x22": 378664,
+    "0x30": 7000,
+    "0x31": 363678,
+    "0x32": 12240,
+    "0x40": 672820,
+    "0x41": 8140,
+    "0x42": 4043,
+    "0x50": 71568,
+    "0x81": 684543,
+    "0x90": 47485,
+    "0x91": 432,
+    "0xa0": 537135,
+    "0xa1": 24948,
+    "0xc0": 1907019,
+    "0xc1": 50448,
+    "0xc2": 21987581
+  },
+  "raw_gate_families": {
+    "CCX": {
+      "without_explicit_condition": 363678,
+      "with_explicit_condition": 0,
+      "total": 363678
+    },
+    "CCZ": {
+      "without_explicit_condition": 7000,
+      "with_explicit_condition": 0,
+      "total": 7000
+    },
+    "CSWAP": {
+      "without_explicit_condition": 12240,
+      "with_explicit_condition": 0,
+      "total": 12240
+    },
+    "CX": {
+      "without_explicit_condition": 31269675,
+      "with_explicit_condition": 24948,
+      "total": 31294623
+    },
+    "HMR": {
+      "without_explicit_condition": 71568,
+      "with_explicit_condition": 0,
+      "total": 71568
+    },
+    "Z_POW": {
+      "without_explicit_condition": 0,
+      "with_explicit_condition": 0,
+      "total": 0
+    }
+  },
+  "storage": {
+    "header_bytes": 104,
+    "packet_count": 4176,
+    "packet_header_bytes_total": 66816,
+    "packet_payload_bytes_total": 522278775,
+    "packet_bytes_total": 522345591,
+    "operation_packets": [
+      {
+        "type": 1,
+        "name": "OPERATION_TYPES",
+        "header_offset": 319549,
+        "payload_offset": 319565,
+        "payload_bytes": 58869058
+      },
+      {
+        "type": 2,
+        "name": "QUBIT0_DATA_FOR_3_TARGET_QUBIT_GATES",
+        "header_offset": 59188623,
+        "payload_offset": 59188639,
+        "payload_bytes": 1531672,
+        "entries": 382918,
+        "max_id": 888
+      },
+      {
+        "type": 3,
+        "name": "QUBIT1_DATA_FOR_3_TARGET_QUBIT_GATES",
+        "header_offset": 60720311,
+        "payload_offset": 60720327,
+        "payload_bytes": 1531672,
+        "entries": 382918,
+        "max_id": 888
+      },
+      {
+        "type": 4,
+        "name": "QUBIT2_DATA_FOR_3_TARGET_QUBIT_GATES",
+        "header_offset": 62251999,
+        "payload_offset": 62252015,
+        "payload_bytes": 1531672,
+        "entries": 382918,
+        "max_id": 888
+      },
+      {
+        "type": 5,
+        "name": "QUBIT0_DATA_FOR_2_TARGET_QUBIT_GATES",
+        "header_offset": 63783687,
+        "payload_offset": 63783703,
+        "payload_bytes": 128849036,
+        "entries": 32212259,
+        "max_id": 888
+      },
+      {
+        "type": 6,
+        "name": "QUBIT1_DATA_FOR_2_TARGET_QUBIT_GATES",
+        "header_offset": 192632739,
+        "payload_offset": 192632755,
+        "payload_bytes": 128849036,
+        "entries": 32212259,
+        "max_id": 888
+      },
+      {
+        "type": 7,
+        "name": "QUBIT0_DATA_FOR_1_TARGET_QUBIT_GATES",
+        "header_offset": 321481791,
+        "payload_offset": 321481807,
+        "payload_bytes": 1098976,
+        "entries": 274744,
+        "max_id": 888
+      },
+      {
+        "type": 8,
+        "name": "BIT0_DATA_FOR_1_TARGET_BIT_GATES",
+        "header_offset": 322580783,
+        "payload_offset": 322580799,
+        "payload_bytes": 98806476,
+        "entries": 24701619,
+        "max_id": 208086
+      },
+      {
+        "type": 9,
+        "name": "BIT0_DATA_FOR_1_CONDITION_BIT_GATES",
+        "header_offset": 421387275,
+        "payload_offset": 421387291,
+        "payload_bytes": 100958364,
+        "entries": 25239591,
+        "max_id": 208086
+      },
+      {
+        "type": 10,
+        "name": "ANGLE_DATA_FOR_ROTATION_GATES",
+        "header_offset": 522345655,
+        "payload_offset": 522345671,
+        "payload_bytes": 0,
+        "entries": 0
+      },
+      {
+        "type": 11,
+        "name": "INFO_TAG_DATA",
+        "header_offset": 522345671,
+        "payload_offset": 522345687,
+        "payload_bytes": 8
+      }
+    ]
+  },
+  "source": {
+    "path": "/workspace/scratch/3815fb5fae06/score4_dqi_fanout16/dqi.kmb",
+    "container": "file",
+    "member": null,
+    "kmb_bytes": 522345695,
+    "container_bytes": 522345695
+  },
+  "schema": "kmb-stream-profile-v1",
+  "format_specification": "https://github.com/quantumlib/Qualtran/blob/main/docs/kickmix/kickmix_binary_format.md",
+  "validation": {
+    "binary_layout": "passed",
+    "disjoint_gate_targets": {
+      "two_qubit_operations": 32212259,
+      "three_qubit_operations": 382918,
+      "additional_uncompressed_bytes_read": 262293088
+    },
+    "semantic_circuit_correctness": "not_checked",
+    "condition_stack_semantics": "not_checked",
+    "competition_verifier": "not_run",
+    "qubit_liveness": "not_computed"
+  },
+  "interpretation": [
+    "Opcode counts are stored instructions, not average executed gate counts.",
+    "An operation without an explicit condition can still be inside a condition scope.",
+    "Register entries can alias; their sum is not the number of unique qubits.",
+    "num_qubits is the maximum referenced ID plus one, not simultaneous live qubits.",
+    "No official Toffoli-equivalent cost, task score, or cancellation proof is computed.",
+    "The SHA-256 is for raw KMB bytes, not an official normalized circuit hash."
+  ],
+  "performance": {
+    "elapsed_seconds": 10.813739,
+    "process_peak_rss_mib": 610.57,
+    "chunk_bytes": 1048576,
+    "register_summary_limit": 0,
+    "memory_scaling": "O(chunk_bytes + capped register summaries + ZIP directory metadata)",
+    "input_files_modified": false
+  }
+}

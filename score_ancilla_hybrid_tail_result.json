@@ -1,0 +1,499 @@
+{
+  "status": "PASS_ISOLATED_HYBRID_CONTROLLER",
+  "scope": "Native phase/value check for the hybrid tail state machine.\n\nPairs satisfy the exact admitted seam invariant: zero(raw numerator)=f_j,\nzero(raw denominator)=f_(j-1), with no adjacent true flags. Normalization\nby a unit preserves zero(v); a reversible placeholder occupies 24 helpers\nat each arithmetic seam. This checks the controller and phase accounting,\nnot the full field arithmetic integration or the whole decoder's Q/T.\n",
+  "source_sha256": {
+    "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_hybrid_tail_check.py": "3ccf8e685910e0641612a7faf0cfc677d2e0387e8775862f8f1868267fdd0636",
+    "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_hybrid_tail.py": "2283373df5d6c8374c2e5186b451283653435053e32ff49833ac27decf61519a",
+    "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/after_c5/converter_width/tail_phase_defer/rolling_tail_deferred.py": "d305f4accc27986db5364d73ecf82b1bb35e36964e8536404e1bc7c561d5b419",
+    "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/after_c5/extractor_width/rolling_tail_early.py": "52d5eaed848f40095056d806cd69fd1f90681c857fadb14d6b3cbf9223f82d00",
+    "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_ancilla_prefix_phase.py": "b2c74331914d1009a7b77d2bfd7c07256585843b0de1b3fedf66167c4b1fe57c"
+  },
+  "rows": [
+    {
+      "name": "original",
+      "metrics": {
+        "Q": 865,
+        "T": 1984,
+        "operations": 9912,
+        "data_qubits": 840,
+        "widths": [
+          {
+            "index": 18,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 19,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 20,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 21,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 22,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 23,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 24,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 25,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 26,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 27,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 28,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 29,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 30,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 31,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 32,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 33,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 34,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 34,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 33,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 32,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 31,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 30,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 29,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 28,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 27,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 26,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 25,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 24,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 23,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 22,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 21,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 20,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 19,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 18,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          }
+        ]
+      },
+      "runs": [
+        {
+          "seed": 17011,
+          "cases": 4181,
+          "data_errors": {},
+          "phase_errors": 0,
+          "scratch_errors": false,
+          "observed_mean_T": 1797.1026070318105
+        },
+        {
+          "seed": 17021,
+          "cases": 4181,
+          "data_errors": {},
+          "phase_errors": 0,
+          "scratch_errors": false,
+          "observed_mean_T": 1796.4764410428127
+        },
+        {
+          "seed": 17027,
+          "cases": 4181,
+          "data_errors": {},
+          "phase_errors": 0,
+          "scratch_errors": false,
+          "observed_mean_T": 1796.8026787849797
+        }
+      ]
+    },
+    {
+      "name": "hybrid",
+      "metrics": {
+        "Q": 865,
+        "T": 1984,
+        "operations": 9915,
+        "data_qubits": 840,
+        "widths": [
+          {
+            "index": 18,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 19,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 20,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 21,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 22,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 23,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 24,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 25,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 26,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 27,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 28,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 29,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 30,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 31,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 32,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 33,
+            "direction": "forward",
+            "live_controller_qubits": 0,
+            "allocated_peak_at_probe": 864
+          },
+          {
+            "index": 34,
+            "direction": "forward",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 34,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 33,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 32,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 31,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 30,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 29,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 28,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 27,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 26,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 25,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 24,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 23,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 22,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 21,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 20,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 19,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          },
+          {
+            "index": 18,
+            "direction": "reverse",
+            "live_controller_qubits": 1,
+            "allocated_peak_at_probe": 865
+          }
+        ]
+      },
+      "runs": [
+        {
+          "seed": 17011,
+          "cases": 4181,
+          "data_errors": {},
+          "phase_errors": 0,
+          "scratch_errors": false,
+          "observed_mean_T": 1797.1026070318105
+        },
+        {
+          "seed": 17021,
+          "cases": 4181,
+          "data_errors": {},
+          "phase_errors": 0,
+          "scratch_errors": false,
+          "observed_mean_T": 1796.4764410428127
+        },
+        {
+          "seed": 17027,
+          "cases": 4181,
+          "data_errors": {},
+          "phase_errors": 0,
+          "scratch_errors": false,
+          "observed_mean_T": 1796.8026787849797
+        }
+      ]
+    }
+  ],
+  "static_T_delta": 0,
+  "forward_arithmetic_stages_freed_of_flag": 16,
+  "whole_decoder_candidate": false,
+  "global_Q_reduction_established": false
+}

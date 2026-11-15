@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "fast_six_input_replay_matches_prior_complete_enumeration": true,
+  "fast_four_AND_positive_control": "PASS",
+  "five_AND_three_output_positive_control": "PASS",
+  "relocated_one_AND_positive_control_all_legal_inputs": "PASS",
+  "legal_inputs": 3133452,
+  "note": "Positive controls test the implementation; they are not improved benchmark candidates."
+}
