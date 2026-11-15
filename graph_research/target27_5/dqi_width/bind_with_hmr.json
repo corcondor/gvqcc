@@ -1,0 +1,50 @@
+{
+  "source_sha256": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "binding_intervals": {
+    "chart_prefix": [
+      [
+        17097498,
+        17126975
+      ]
+    ],
+    "chart_return": [
+      [
+        54178104,
+        54213322
+      ]
+    ],
+    "paired_divide_prefix": [
+      [
+        26456257,
+        26463194
+      ],
+      [
+        26975317,
+        26982254
+      ],
+      [
+        26985016,
+        26991953
+      ]
+    ],
+    "paired_divide_closing": []
+  },
+  "hot_coverage": {
+    "889": {
+      "hot_operation_count": 9677538,
+      "hot_operations_in_portions_eligible_for_local_substitution": 16393
+    },
+    "886": {
+      "hot_operation_count": 13635685,
+      "hot_operations_in_portions_eligible_for_local_substitution": 24043
+    },
+    "883": {
+      "hot_operation_count": 13808359,
+      "hot_operations_in_portions_eligible_for_local_substitution": 25762
+    },
+    "881": {
+      "hot_operation_count": 13866576,
+      "hot_operations_in_portions_eligible_for_local_substitution": 27049
+    }
+  }
+}

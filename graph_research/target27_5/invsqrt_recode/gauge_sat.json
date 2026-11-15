@@ -1,0 +1,68 @@
+{
+  "source": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "cases": [
+    {
+      "start": 632,
+      "stop": 7630,
+      "decode_required": false,
+      "available_affine_dependencies": 6,
+      "result": "SAT",
+      "start_mask": [
+        24
+      ],
+      "finish_mask": [
+        24
+      ]
+    },
+    {
+      "start": 632,
+      "stop": 7630,
+      "decode_required": true,
+      "available_affine_dependencies": 6,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "start": 632,
+      "stop": 7644,
+      "decode_required": false,
+      "available_affine_dependencies": 5,
+      "result": "SAT",
+      "start_mask": [
+        22
+      ],
+      "finish_mask": [
+        22
+      ]
+    },
+    {
+      "start": 632,
+      "stop": 7644,
+      "decode_required": true,
+      "available_affine_dependencies": 5,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "start": 8400,
+      "stop": 23638,
+      "decode_required": false,
+      "available_affine_dependencies": 20,
+      "result": "SAT",
+      "start_mask": [
+        24
+      ],
+      "finish_mask": [
+        24
+      ]
+    },
+    {
+      "start": 8400,
+      "stop": 23638,
+      "decode_required": true,
+      "available_affine_dependencies": 20,
+      "result": "UNSAT",
+      "reason": null
+    }
+  ]
+}

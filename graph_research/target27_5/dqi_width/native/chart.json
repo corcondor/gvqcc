@@ -1,0 +1,38 @@
+[
+  {
+    "label": "prefix",
+    "seed": 147,
+    "shots": 1536,
+    "Q": 877,
+    "value_errors": 0,
+    "phase_errors": null,
+    "mean_T": 714.0
+  },
+  {
+    "label": "pair",
+    "seed": 147,
+    "shots": 1536,
+    "Q": 877,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "mean_T": 1440.828125
+  },
+  {
+    "label": "prefix",
+    "seed": 1147,
+    "shots": 1536,
+    "Q": 877,
+    "value_errors": 0,
+    "phase_errors": null,
+    "mean_T": 714.0
+  },
+  {
+    "label": "pair",
+    "seed": 1147,
+    "shots": 1536,
+    "Q": 877,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "mean_T": 1440.8020833333333
+  }
+]

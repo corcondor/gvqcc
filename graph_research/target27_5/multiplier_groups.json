@@ -1,0 +1,23 @@
+{
+  "baseline": "e4e110436080b8538f50511dc7064185e1708c2bd386ea0e36322d7791311355",
+  "counts": {
+    "GF12": {
+      "matches": 3823,
+      "affine_gap": 2353,
+      "independent_forward": 2344,
+      "independent_reverse": 2353,
+      "cross_independent_2": 2344,
+      "cross_independent_3": 2022,
+      "cross_independent_4": 1772,
+      "cross_independent_5": 1551
+    },
+    "GF24": {
+      "matches": 1376,
+      "affine_gap": 1166,
+      "independent_forward": 0,
+      "independent_reverse": 46
+    }
+  },
+  "selected": [],
+  "static_saving": 0
+}

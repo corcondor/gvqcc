@@ -1,0 +1,49 @@
+{
+  "status": "PROJECTED_GRAM_SEARCH_COMPLETE",
+  "lipschitz_upper_bound": 7.9759016945842625,
+  "npz_sha256": "fa44644b0c54a69eba5b5740366a4bb3acacbc84eeb6ae97b467f698964a6344",
+  "results": [
+    {
+      "rank": 143,
+      "initial_error2": 0.01999999990374677,
+      "final_error2": 0.016927500206894645,
+      "iterations": 244,
+      "accepted": 244,
+      "seconds": 22.059281335008563
+    },
+    {
+      "rank": 40,
+      "initial_error2": 0.04100357079717095,
+      "final_error2": 0.02753287421837903,
+      "iterations": 201,
+      "accepted": 201,
+      "seconds": 25.811978637997527,
+      "official_metrics": {
+        "error_1": 0.023057649882799756,
+        "error_2": 0.027532874218379067,
+        "Lambda": 472.7167358253588,
+        "E_SOS": -22144.3701250006,
+        "E_gap": 4.096775000602065,
+        "lambda_eff": 62.10027895255804,
+        "gap_in_domain": true
+      }
+    },
+    {
+      "rank": 43,
+      "initial_error2": 0.03410052267427253,
+      "final_error2": 0.021131649309568692,
+      "iterations": 156,
+      "accepted": 156,
+      "seconds": 24.28229809900222,
+      "official_metrics": {
+        "error_1": 0.021258329827163108,
+        "error_2": 0.021131649309568717,
+        "Lambda": 475.7465159287649,
+        "E_SOS": -22144.36577733272,
+        "E_gap": 4.092427332721854,
+        "lambda_eff": 62.26691038581031,
+        "gap_in_domain": true
+      }
+    }
+  ]
+}

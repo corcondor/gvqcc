@@ -1,0 +1,78 @@
+{
+  "gauge_park_paired-prefix": {
+    "Q": 61,
+    "T": 149,
+    "length": 6949,
+    "trials": [
+      {
+        "shots": 4096,
+        "seed": 871,
+        "errors": 0,
+        "mean_T": 149.0
+      },
+      {
+        "shots": 4096,
+        "seed": 874,
+        "errors": 0,
+        "mean_T": 149.0
+      }
+    ]
+  },
+  "gauge_park_paired-paired": {
+    "Q": 61,
+    "T": 334,
+    "length": 33910,
+    "trials": [
+      {
+        "shots": 4096,
+        "seed": 871,
+        "errors": 0,
+        "mean_T": 299.0
+      },
+      {
+        "shots": 4096,
+        "seed": 874,
+        "errors": 0,
+        "mean_T": 299.0
+      }
+    ]
+  },
+  "paired_divide-prefix": {
+    "Q": 49,
+    "T": 216,
+    "length": 7704,
+    "trials": [
+      {
+        "shots": 4096,
+        "seed": 871,
+        "errors": 0,
+        "mean_T": 216.0
+      },
+      {
+        "shots": 4096,
+        "seed": 874,
+        "errors": 0,
+        "mean_T": 216.0
+      }
+    ]
+  },
+  "paired_divide-paired": {
+    "Q": 49,
+    "T": 473,
+    "length": 18335,
+    "trials": [
+      {
+        "shots": 4096,
+        "seed": 871,
+        "errors": 0,
+        "mean_T": 472.9296875
+      },
+      {
+        "shots": 4096,
+        "seed": 874,
+        "errors": 0,
+        "mean_T": 472.93359375
+      }
+    ]
+  }
+}

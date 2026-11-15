@@ -1,0 +1,477 @@
+{
+  "status": "SIMULTANEOUS_BANK_STORAGE_BOUND",
+  "actual_words_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "addresses": 1216,
+  "layout_max_qubits": 128,
+  "rows": [
+    {
+      "batch": 0,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 47,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 1,
+        "min_extra_qubits_for_simultaneous_bank": 78,
+        "min_total_Q": 137
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 47,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 1,
+        "min_extra_qubits_for_simultaneous_bank": 78,
+        "min_total_Q": 137
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 1,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 46,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 2,
+        "min_extra_qubits_for_simultaneous_bank": 77,
+        "min_total_Q": 136
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          5
+        ],
+        "transition_rank": 43,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 5,
+        "min_extra_qubits_for_simultaneous_bank": 74,
+        "min_total_Q": 133
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 2,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 46,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 2,
+        "min_extra_qubits_for_simultaneous_bank": 77,
+        "min_total_Q": 136
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          5
+        ],
+        "transition_rank": 43,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 5,
+        "min_extra_qubits_for_simultaneous_bank": 74,
+        "min_total_Q": 133
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 3,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 46,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 2,
+        "min_extra_qubits_for_simultaneous_bank": 77,
+        "min_total_Q": 136
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          5
+        ],
+        "transition_rank": 43,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 5,
+        "min_extra_qubits_for_simultaneous_bank": 74,
+        "min_total_Q": 133
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 4,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 46,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 2,
+        "min_extra_qubits_for_simultaneous_bank": 77,
+        "min_total_Q": 136
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          5
+        ],
+        "transition_rank": 43,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 5,
+        "min_extra_qubits_for_simultaneous_bank": 74,
+        "min_total_Q": 133
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 5,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 46,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 2,
+        "min_extra_qubits_for_simultaneous_bank": 77,
+        "min_total_Q": 136
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          5
+        ],
+        "transition_rank": 43,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 5,
+        "min_extra_qubits_for_simultaneous_bank": 74,
+        "min_total_Q": 133
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 6,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 46,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 2,
+        "min_extra_qubits_for_simultaneous_bank": 77,
+        "min_total_Q": 136
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          5
+        ],
+        "transition_rank": 43,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 5,
+        "min_extra_qubits_for_simultaneous_bank": 74,
+        "min_total_Q": 133
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 7,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 46,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 2,
+        "min_extra_qubits_for_simultaneous_bank": 77,
+        "min_total_Q": 136
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          5
+        ],
+        "transition_rank": 43,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 5,
+        "min_extra_qubits_for_simultaneous_bank": 74,
+        "min_total_Q": 133
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 8,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 46,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 2,
+        "min_extra_qubits_for_simultaneous_bank": 77,
+        "min_total_Q": 136
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          5
+        ],
+        "transition_rank": 43,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 5,
+        "min_extra_qubits_for_simultaneous_bank": 74,
+        "min_total_Q": 133
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 9,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 46,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 2,
+        "min_extra_qubits_for_simultaneous_bank": 77,
+        "min_total_Q": 136
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          5
+        ],
+        "transition_rank": 43,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 5,
+        "min_extra_qubits_for_simultaneous_bank": 74,
+        "min_total_Q": 133
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 10,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 46,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 2,
+        "min_extra_qubits_for_simultaneous_bank": 77,
+        "min_total_Q": 136
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          5
+        ],
+        "transition_rank": 43,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 5,
+        "min_extra_qubits_for_simultaneous_bank": 74,
+        "min_total_Q": 133
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 11,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 46,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 2,
+        "min_extra_qubits_for_simultaneous_bank": 77,
+        "min_total_Q": 136
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          5
+        ],
+        "transition_rank": 43,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 5,
+        "min_extra_qubits_for_simultaneous_bank": 74,
+        "min_total_Q": 133
+      },
+      "all_slot_assignments_tested": 720
+    },
+    {
+      "batch": 12,
+      "natural": {
+        "slot_permutation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "transition_rank": 47,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 1,
+        "min_extra_qubits_for_simultaneous_bank": 78,
+        "min_total_Q": 137
+      },
+      "optimistic_slot_assignment": {
+        "slot_permutation": [
+          3,
+          0,
+          1,
+          2,
+          4,
+          5
+        ],
+        "transition_rank": 44,
+        "high_cofactor_rank": 75,
+        "low_cofactor_rank": 15,
+        "stable_output_parity_dimension": 4,
+        "min_extra_qubits_for_simultaneous_bank": 75,
+        "min_total_Q": 134
+      },
+      "all_slot_assignments_tested": 720
+    }
+  ],
+  "scope": "Fixed six-word batches and 4/7 partition. All inter-slot matching permutations granted without checking the Givens order. Lower bounds for simultaneously resident independently spanning pure high and pure low feature banks, with address selections preserved and input endpoint dependence removed from borrowed output parities. Does not bound time multiplexing, new partition, or different nonlinear control functions."
+}

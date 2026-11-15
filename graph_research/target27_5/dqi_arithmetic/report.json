@@ -1,0 +1,109 @@
+{
+  "gf24_mixed_generation": {
+    "representation": "GF4096[t]/(t^2+t+2048)",
+    "interpolation": "P1 over GF8, 9 rational places and 3 degree2 places",
+    "site_orbits": 14,
+    "all_3276_site_configurations_classified": true,
+    "basis_embedding_gf8_to_gf64": [
+      0,
+      1,
+      14,
+      15,
+      23,
+      22,
+      25,
+      24
+    ],
+    "basis_embedding_gf8_to_gf24": [
+      0,
+      1,
+      937,
+      936,
+      1198,
+      1199,
+      1799,
+      1798
+    ],
+    "theta": 4096,
+    "rank": 99,
+    "installed_factor_lines": 66
+  },
+  "gf24_mixed_walks": {
+    "starts": 14,
+    "best_rank": 99,
+    "steps": 89600000,
+    "flips": 88945655,
+    "max_visited_rank": 111
+  },
+  "mixed_cubic_phase_walks": [
+    {
+      "width": 15,
+      "initial_rank": 12,
+      "best_rank": 12,
+      "paths": 40,
+      "successful_flips": 7968720,
+      "rank_growth_moves": 1103,
+      "reductions": 139,
+      "seed": 202611153000
+    },
+    {
+      "width": 20,
+      "initial_rank": 18,
+      "best_rank": 18,
+      "paths": 40,
+      "successful_flips": 7968720,
+      "rank_growth_moves": 1592,
+      "reductions": 169,
+      "seed": 202611154000
+    },
+    {
+      "width": 60,
+      "initial_rank": 84,
+      "best_rank": 84,
+      "paths": 16,
+      "successful_flips": 3187488,
+      "rank_growth_moves": 3448,
+      "reductions": 815,
+      "seed": 2026111512000
+    }
+  ],
+  "leaf_independent_cache_cut": {
+    "orthogonal_cut_count": 32640,
+    "plane_pair_checks": 58260615,
+    "potential_pairs": 595,
+    "mixed_pairs": 0,
+    "counts_by_missing_slice_linear_function": [
+      280,
+      301,
+      301,
+      301,
+      301,
+      301,
+      301,
+      301,
+      301,
+      301,
+      301,
+      301,
+      301,
+      301,
+      301,
+      301
+    ],
+    "first_100_mixed_cache_forms": []
+  },
+  "leaf_sequential_first_cut": {
+    "sequential_possible_first_cut": 35,
+    "mixed": 0
+  },
+  "leaf_sequential_pairs": {
+    "pairs_surviving": 2730,
+    "mixed_second_factors": 0
+  },
+  "leaf_caches_mitm": {
+    "orbits": 15,
+    "witnesses": 0,
+    "total_checked_3planes": 95215725
+  },
+  "full_decoder_candidate": null
+}

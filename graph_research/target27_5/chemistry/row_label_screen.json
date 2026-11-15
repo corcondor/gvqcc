@@ -1,0 +1,620 @@
+{
+  "status": "FIXED_TAG_AND_EXISTING_AFFINE_CODE_ROW_PERMUTATIONS",
+  "source_uint8_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "gradient_rank_histogram": {
+    "4": 76
+  },
+  "non_identity_complete_row_choices": 0,
+  "complete_rows": [
+    {
+      "h": 0,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 1,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 2,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 3,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 4,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 5,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 6,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 7,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 8,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 9,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 10,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 11,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 12,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 13,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 14,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 15,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 16,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 17,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 18,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 19,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 20,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 21,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 22,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 23,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 24,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 25,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 26,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 27,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 28,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 29,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 30,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 31,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 32,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 33,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 34,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 35,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 36,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 37,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 38,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 39,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 40,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 41,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 42,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 43,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 44,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 45,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 46,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 47,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 48,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 49,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 50,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 51,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 52,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 53,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 54,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 55,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 56,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 57,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 58,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 59,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 60,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 61,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 62,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 63,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 64,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 65,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 66,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 67,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 68,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 69,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 70,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 71,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 72,
+      "affine_existing_columns": 61,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 73,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 74,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    },
+    {
+      "h": 75,
+      "affine_existing_columns": 60,
+      "gradient_rank": 4,
+      "group_tag_and_affine_preserving_permutations": 1
+    }
+  ],
+  "partial_row_allowed_upper_bound": 6,
+  "partial_row_permutation_results": [
+    {
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "cofactor_high_ranks": [
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75
+      ],
+      "batches_requiring_extra_high_rank": 0
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "cofactor_high_ranks": [
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76
+      ],
+      "batches_requiring_extra_high_rank": 15
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "cofactor_high_ranks": [
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76
+      ],
+      "batches_requiring_extra_high_rank": 15
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "cofactor_high_ranks": [
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76
+      ],
+      "batches_requiring_extra_high_rank": 15
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "cofactor_high_ranks": [
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76
+      ],
+      "batches_requiring_extra_high_rank": 15
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "cofactor_high_ranks": [
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76,
+        76
+      ],
+      "batches_requiring_extra_high_rank": 15
+    }
+  ],
+  "scope": "Relabeling low slots inside each complete high row and group, preserving existing affine bit0 columns and the five borrowed tag functions. Dropping a code, changing tag conventions, or mixing high rows with low coordinates is outside this test."
+}

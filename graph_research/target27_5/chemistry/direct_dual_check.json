@@ -1,0 +1,42 @@
+{
+  "status": "ORIGINAL_TARGET_DIRECT_DUAL_CHECK",
+  "ref_norm_sq": 148.45436357815237,
+  "grouped_dual_overlap_frobenius": 3.599305892310972e-18,
+  "grouped_orthogonal_correction_norm": 1.3320445002222537e-05,
+  "q_orthogonality_error": 1.873883358875479e-11,
+  "fixed_float64_subtraction_reserve": 2e-09,
+  "source_npz_sha256": "fa44644b0c54a69eba5b5740366a4bb3acacbc84eeb6ae97b467f698964a6344",
+  "records": {
+    "312": {
+      "error2_lower_bound": 0.02153830222759625,
+      "top_eigenvalue_norm_sq": 148.45389967768952,
+      "exceeds_tolerance": true
+    },
+    "320": {
+      "error2_lower_bound": 0.02042135782874319,
+      "top_eigenvalue_norm_sq": 148.4539465442968,
+      "exceeds_tolerance": true
+    },
+    "328": {
+      "error2_lower_bound": 0.019483540586228316,
+      "top_eigenvalue_norm_sq": 148.4539839677986,
+      "exceeds_tolerance": false
+    },
+    "336": {
+      "error2_lower_bound": 0.01867787021166441,
+      "top_eigenvalue_norm_sq": 148.45401471331672,
+      "exceeds_tolerance": false
+    },
+    "344": {
+      "error2_lower_bound": 0.018109583161329577,
+      "top_eigenvalue_norm_sq": 148.4540356191501,
+      "exceeds_tolerance": false
+    },
+    "352": {
+      "error2_lower_bound": 0.01774004092198546,
+      "top_eigenvalue_norm_sq": 148.45404886710045,
+      "exceeds_tolerance": false
+    }
+  },
+  "scope": "Float64 necessary bound, not an interval-certified calculation."
+}

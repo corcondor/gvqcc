@@ -1,0 +1,37 @@
+{
+  "C": 40,
+  "records": [
+    {
+      "iteration": 1,
+      "cg_status": 1000,
+      "projected_direction_norm": 0.0062758281007365205,
+      "exact_correction_norm": 0.0001123785932246821,
+      "dual_group_overlap": 8.656115934006596e-19,
+      "energy_gain": 2.2119716931001676e-05,
+      "error2_lower_bound": 0.02041703438149513,
+      "trial_rows": [
+        {
+          "scale": 0.125,
+          "top_rank_energy": 148.45396049233625
+        },
+        {
+          "scale": 0.25,
+          "top_rank_energy": 148.4539542222105
+        },
+        {
+          "scale": 0.5,
+          "top_rank_energy": 148.4539465486382
+        },
+        {
+          "scale": 1.0,
+          "top_rank_energy": 148.45394958757805
+        },
+        {
+          "scale": 2.0,
+          "top_rank_energy": 148.45402505893986
+        }
+      ]
+    }
+  ],
+  "scope": "Numerical necessary condition in exact fixed word grouping. Bound follows from orthogonal dual matrices and PSD rank relaxation."
+}

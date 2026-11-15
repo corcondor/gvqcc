@@ -1,0 +1,113 @@
+{
+  "source": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "cases": [
+    {
+      "a": 15870,
+      "b": 16060,
+      "start": 15869,
+      "stop": 16061,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "a": 16393,
+      "b": 16571,
+      "start": 16392,
+      "stop": 16572,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "a": 2784,
+      "b": 2886,
+      "start": 2783,
+      "stop": 2887,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "a": 16062,
+      "b": 16158,
+      "start": 16061,
+      "stop": 16159,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "a": 15776,
+      "b": 15868,
+      "start": 15775,
+      "stop": 15869,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "a": 16694,
+      "b": 16785,
+      "start": 16693,
+      "stop": 16786,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "a": 15692,
+      "b": 15774,
+      "start": 15691,
+      "stop": 15775,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "a": 16160,
+      "b": 16239,
+      "start": 16159,
+      "stop": 16240,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "a": 2388,
+      "b": 2457,
+      "start": 2387,
+      "stop": 2458,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "a": 2687,
+      "b": 2749,
+      "start": 2686,
+      "stop": 2750,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "a": 14719,
+      "b": 14781,
+      "start": 14718,
+      "stop": 14782,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    },
+    {
+      "a": 16241,
+      "b": 16303,
+      "start": 16240,
+      "stop": 16304,
+      "affine_dependencies": 1,
+      "result": "UNSAT",
+      "reason": null
+    }
+  ]
+}

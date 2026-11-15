@@ -1,0 +1,10 @@
+{
+  "inputs": 3133452,
+  "bits": 25,
+  "decoded_input_mismatches": 0,
+  "decoded_q25_mismatches": 0,
+  "raw_exponent_bits": 3,
+  "mantissa_bits": 22,
+  "special_inputs": 63,
+  "scope": "Injective integer normalization code and exact decoder. No circuit arithmetic or official phase evaluation."
+}

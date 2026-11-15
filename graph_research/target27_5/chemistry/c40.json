@@ -1,0 +1,23 @@
+{
+  "status": "H2_ONLY_PSD_RANK_REDUCED_REFIT",
+  "rank": 40,
+  "before_rank": 44,
+  "source_npz_sha256": "fa44644b0c54a69eba5b5740366a4bb3acacbc84eeb6ae97b467f698964a6344",
+  "actual_words_sha256": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "error_2_start": 0.029757608612841675,
+  "measured_error_2_gradient_direction": 0.0166691494750717,
+  "finite_difference": 0.016669149394132887,
+  "termination": "wall-time limits reached",
+  "calls": 724,
+  "seconds": 51.16636724800628,
+  "official_numeric_metrics": {
+    "error_1": 0.02310933278134537,
+    "error_2": 0.027527857341901718,
+    "Lambda": 472.0224931468346,
+    "E_SOS": -22144.369463932293,
+    "E_gap": 4.09611393229352,
+    "lambda_eff": 62.04947761039583,
+    "gap_in_domain": true
+  },
+  "full_verifier_run": false
+}
