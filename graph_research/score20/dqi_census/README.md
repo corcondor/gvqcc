@@ -68,3 +68,15 @@ python "$DQI_VERIFIER" e4_crt_last_intermediate.kmb --num-shots 1024 --max-worke
 `retire_f_loop.py` is a separate component study that retires an idle witness
 from the raw-window F pass. It passed native tests but was not used in the CRT
 splice.
+
+## Whole synthesis prefix census
+
+All 34 original CRT forward stages were bound to the exact e4 operand stream.
+They contain 4,801,512 of 9,484,383 Q889 operation positions (50.6%). Only
+the degree-34 stage was replaced and verified on the full tape. The scope
+count measures the original stages and is not a prediction of retired peaks.
+
+```sh
+python bind_all_crt.py "$E4" branch_lifetimes.tsv all_crt_bind.json \
+  --dqi-source "$EXTRACTOR" --prior-code "$GVQCC"
+```
