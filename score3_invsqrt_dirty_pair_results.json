@@ -1,0 +1,94 @@
+{
+  "status": "BOUNDED_DIRTY_PAIR_SCAN_COMPLETE",
+  "eligible_windows": 6,
+  "new_windows_tested": 4,
+  "prior_phase_windows_skipped": 2,
+  "records": [
+    {
+      "first": 13861,
+      "second": 13877,
+      "start_target": 7,
+      "end_target": 7,
+      "span": 17,
+      "attempts": [
+        {
+          "status": "NO_MODEL_IN_SEARCHED_LEFT_FAMILY",
+          "cuts": 1,
+          "queries": 2153,
+          "left_parities": 2163,
+          "seconds": 0.0189995,
+          "samples": 512
+        }
+      ],
+      "result": {
+        "status": "NO_MODEL_IN_TESTED_LEFT_FAMILY"
+      }
+    },
+    {
+      "first": 19830,
+      "second": 19837,
+      "start_target": 41,
+      "end_target": 41,
+      "span": 8,
+      "attempts": [
+        {
+          "status": "NO_MODEL_IN_SEARCHED_LEFT_FAMILY",
+          "cuts": 1,
+          "queries": 2127,
+          "left_parities": 2163,
+          "seconds": 0.0134626,
+          "samples": 512
+        }
+      ],
+      "result": {
+        "status": "NO_MODEL_IN_TESTED_LEFT_FAMILY"
+      }
+    },
+    {
+      "first": 20690,
+      "second": 20724,
+      "start_target": 45,
+      "end_target": 45,
+      "span": 35,
+      "attempts": [
+        {
+          "status": "NO_MODEL_IN_SEARCHED_LEFT_FAMILY",
+          "cuts": 1,
+          "queries": 2142,
+          "left_parities": 2163,
+          "seconds": 0.0164749,
+          "samples": 512
+        }
+      ],
+      "result": {
+        "status": "NO_MODEL_IN_TESTED_LEFT_FAMILY"
+      }
+    },
+    {
+      "first": 20768,
+      "second": 20798,
+      "start_target": 8,
+      "end_target": 8,
+      "span": 31,
+      "attempts": [
+        {
+          "status": "NO_MODEL_IN_SEARCHED_LEFT_FAMILY",
+          "cuts": 1,
+          "queries": 2148,
+          "left_parities": 2163,
+          "seconds": 0.0154761,
+          "samples": 512
+        }
+      ],
+      "result": {
+        "status": "NO_MODEL_IN_TESTED_LEFT_FAMILY"
+      }
+    }
+  ],
+  "accepted": 0,
+  "source_sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1",
+  "solver_source_sha256": "e7c7e1ff511ff9e4c90cf4ded21667f9fb84c466facccca93fb1bc91315b5e5e",
+  "scope": "Same transported dirty-target direction; only unconditional X/CX/SWAP between two adjacent CCX; all-live factors excluding the target. Left family includes singles/pairs and existing solver flag-parity extensions; right and affine remainder unrestricted.",
+  "seconds": 6.478731265000533,
+  "script_sha256": "3c01e114bf14217c1827102fade2271b3f404a159cd0ce273a75a0dc181b773b"
+}

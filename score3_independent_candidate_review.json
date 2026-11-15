@@ -1,0 +1,173 @@
+{
+  "gauge": {
+    "build_receipt": {
+      "bytes": 5544,
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_gauge_sort_build.json",
+      "sha256": "6c5aa137c11241196cbbe877cc193a09bcb21bc60bad0c45d7ef668d5e520a59"
+    },
+    "candidate_binary": {
+      "bytes": 522345615,
+      "path": "/workspace/scratch/3815fb5fae06/score3_gauge_sort_family/dqi_ccx480_gauge_sort4096.kmb",
+      "sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1"
+    },
+    "comparator_induction_step_truth_table_pass": true,
+    "comparator_instructions": 81,
+    "comparator_width": 13,
+    "concrete_defects": [],
+    "counter_bits": 12,
+    "existing_full_width_phase_compensation_ast_equal": true,
+    "integration_review": "Classical input masks are copied into private storage; all selector storage is allocated beyond reserved original bit IDs. The selected 12-bit label is copied to the original fixed pivot. All 12 bits enter both mask shifts and the existing phase compensation. The suffix reverses shifts/scaling before closing the original gauge. The splice code checks complete old boundaries and copies the original body.",
+    "manifest": {
+      "bytes": 1988,
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_gauge_sort_manifest.json",
+      "sha256": "7c444f3818f8aa04ff9bf751b48ac65ac073fa01dc73a00847e2e3b81f7c7b01"
+    },
+    "maximum_run_count": 4026,
+    "mode_invariant": "Sorted input includes one virtual zero, so initial winner 0/count1 is valid. Each prefix increments the exact run count and replaces the winner only on strict improvement. Thus the last run is handled and ties keep the least numerical label. Twelve bits cover all reachable counts.",
+    "native_receipt": {
+      "bytes": 5720,
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_gauge_sort_native.json",
+      "sha256": "f40864c4027dc5de02136abcc64ad1e6c972630a75a0d17192d652adafe38d57"
+    },
+    "reviewed_proof": {
+      "bytes": 7220,
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_gauge_sort_proof.md",
+      "sha256": "ed2ec0c2f67ed297ae80247adae2d772ae9bc2f0edd8407ce9dbd0bf4bbce3a8"
+    },
+    "scope": "Read-only algorithm/integration source audit and actual file-hash binding to existing native/build receipts. Native fixtures were not rerun; full decoder correctness, runtime Toffoli mean, failure ratio, and Public Score require the separate official runner.",
+    "selector_additional_qubits": 0,
+    "selector_is_all_classical": true,
+    "selector_toffoli_like": 0,
+    "sentinel": 4096,
+    "sentinel_scan_excluded": true,
+    "sentinel_words": 70,
+    "sorting_network": "Recursive ascending Batcher odd-even merge; indices and recurrence reviewed.",
+    "source": {
+      "bytes": 19407,
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_gauge_sort.py",
+      "sha256": "435870acd0698f6b5214622b225cff81085847d6b0571a1b98afe5bcf69a3e2a"
+    },
+    "status": "PASS_NO_CONCRETE_DEFECT_FOUND",
+    "valid_words": 4026
+  },
+  "invsqrt": {
+    "all_other_original_instructions_unchanged": true,
+    "boundary_condition_stack_depth": 0,
+    "cache_absent_from_original_interval": true,
+    "candidate_binary": {
+      "bytes": 198626,
+      "path": "/workspace/scratch/3815fb5fae06/score3_invsqrt_cache_run/candidate.kmb",
+      "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a"
+    },
+    "candidate_text": {
+      "bytes": 258469,
+      "path": "/workspace/scratch/3815fb5fae06/score3_invsqrt_cache_run/candidate.kmx",
+      "sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8"
+    },
+    "control_mutations": [
+      {
+        "affine_forms": {
+          "10": 6,
+          "11": 4
+        },
+        "instruction": "CX q11 q10",
+        "source_line": 3323
+      },
+      {
+        "affine_forms": {
+          "10": 7,
+          "11": 4
+        },
+        "instruction": "X q10",
+        "source_line": 3327
+      },
+      {
+        "affine_forms": {
+          "10": 6,
+          "11": 4
+        },
+        "instruction": "X q10",
+        "source_line": 3347
+      },
+      {
+        "affine_forms": {
+          "10": 6,
+          "11": 5
+        },
+        "instruction": "X q11",
+        "source_line": 3350
+      },
+      {
+        "affine_forms": {
+          "10": 6,
+          "11": 4
+        },
+        "instruction": "X q11",
+        "source_line": 3379
+      },
+      {
+        "affine_forms": {
+          "10": 2,
+          "11": 4
+        },
+        "instruction": "CX q11 q10",
+        "source_line": 3423
+      }
+    ],
+    "controls_return_as_formal_independent_variables": true,
+    "exact_expected_toffoli_reduction": 1,
+    "exact_literal_patch": true,
+    "fresh_classical_bit": 387,
+    "generator": {
+      "bytes": 7141,
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_product_cache.py",
+      "sha256": "15a3a6fdae1f036e3793285154aae25b1e5b89aaccc8f3b04559b4c422f88e17"
+    },
+    "instruction_delta": {
+      "CCX": -1,
+      "CX": 3,
+      "CZ": 1,
+      "HMR": 1
+    },
+    "instrument_identity": "Copying dirty target before and after the retained CCX gives cache=a*b. All original operations ignore the cache, and a,b return formally. The replacement CX therefore equals the removed CCX. For each fresh HMR outcome m, its phase (-1)^(m*a*b) is canceled by the conditioned CZ. The added branch has norm 1/sqrt(2), independent of data. Thus each old instrument branch is preserved, including entangled inputs; tracing the fresh classical output gives the same channel.",
+    "local_boolean_phase_assignments": 32,
+    "native_receipt": {
+      "bytes": 1848,
+      "path": "/workspace/scratch/3815fb5fae06/score3_invsqrt_cache_run/native.json",
+      "sha256": "18da374a16836ac447aec88e5475b1e1f0c21dd153f63e137d523972509dd135"
+    },
+    "phase_rotations_byte_identical": true,
+    "producer_report": {
+      "bytes": 4169,
+      "path": "/workspace/scratch/3815fb5fae06/score3_invsqrt_cache_run/report.json",
+      "sha256": "5cd32d8c261ac72d5391db9c4327e9c80b88b05d6f943635896766b0b51f2360"
+    },
+    "qubits": 46,
+    "scope": "Independent local all-branch identity and binary binding; no official full-input verification rerun.",
+    "source": {
+      "bytes": 258420,
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/invsqrt_structural_e46.kmx",
+      "sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1"
+    },
+    "source_binary": {
+      "bytes": 198590,
+      "path": "/workspace/scratch/7f542e06b7cf/dqi_inputs/invsqrt_e46d90c36d1b.kmb",
+      "sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6"
+    },
+    "static_toffoli_like_after": 1550,
+    "static_toffoli_like_before": 1551,
+    "status": "PASS",
+    "zero_cache_established_by": {
+      "instruction": "HMR q21 b61",
+      "source_line": 3316
+    }
+  },
+  "official_full_runs_performed_by_this_review": false,
+  "public_score_claimed": false,
+  "reviewer_script": {
+    "bytes": 12954,
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_independent_candidate_review.py",
+    "sha256": "84cab64748c1bb5a0b971e7b667a3cd3ef734060899a95222db66c8128dc279f"
+  },
+  "status": "FOCUSED_INDEPENDENT_REVIEW_PASS"
+}

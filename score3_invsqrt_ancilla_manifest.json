@@ -1,0 +1,229 @@
+{
+  "status": "ACCEPTED_CCX_MINUS_ONE_Q46_FULL_OFFICIAL_PASS",
+  "candidate": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache.kmb",
+    "bytes": 198626,
+    "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a"
+  },
+  "source": {
+    "path": "/workspace/scratch/7f542e06b7cf/dqi_inputs/invsqrt_e46d90c36d1b.kmb",
+    "bytes": 198590,
+    "sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6"
+  },
+  "static_toffoli_before": 1551,
+  "static_toffoli_after": 1550,
+  "qubits_before": 46,
+  "qubits_after": 46,
+  "expected_unconditional_toffoli_reduction": 1,
+  "original_rotations_unchanged": true,
+  "all_valid_inputs_exact_value_pass": 3133452,
+  "local_coherent_identity_all_measurement_branches": true,
+  "native_candidate_executions": 4162,
+  "full_official_verified": true,
+  "artifacts": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_product_cache.py",
+      "bytes": 7141,
+      "sha256": "15a3a6fdae1f036e3793285154aae25b1e5b89aaccc8f3b04559b4c422f88e17"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache_proof.py",
+      "bytes": 4568,
+      "sha256": "bca2c2d55d1f4f0aa945765a558385beb66ca3196154f2dd9d8f4a085948d045"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache.kmx",
+      "bytes": 258469,
+      "sha256": "d431f212c7da02418429c2883dcdf4e3a90c9124ab2409c999efe0a5c7c037a8"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache.kmb",
+      "bytes": 198626,
+      "sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache_profile.json",
+      "bytes": 4169,
+      "sha256": "5cd32d8c261ac72d5391db9c4327e9c80b88b05d6f943635896766b0b51f2360"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache_formal.json",
+      "bytes": 1799,
+      "sha256": "af83ecacc106b8fc1580fb6ab573e31d5f9796d2f7c9a11ee496abb29b5440f0"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_cache_native.json",
+      "bytes": 1848,
+      "sha256": "18da374a16836ac447aec88e5475b1e1f0c21dd153f63e137d523972509dd135"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_dirty_pair.py",
+      "bytes": 7501,
+      "sha256": "3c01e114bf14217c1827102fade2271b3f404a159cd0ce273a75a0dc181b773b"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_pair_profile.json",
+      "bytes": 1011,
+      "sha256": "1d933fc50ed35a875430db6a5c50f0fe25436b10dcaaa9bf597ba00b982da041"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_dirty_pair_results.json",
+      "bytes": 2523,
+      "sha256": "f538664f086d5d257a6a6e19a32eaaffb8531a061545b19c487457f2b22280ad"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_pack_h0.py",
+      "bytes": 7158,
+      "sha256": "3d17161070a91ec32ed14b6cd49c16fea750a1dc9db216b0b8af061fa8a64e1d"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_h0_pack.kmx",
+      "bytes": 258640,
+      "sha256": "de89856f41bc7c16585e2e1f12623e397593a730050aa4c628146dc1eaa693f1"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_h0_pack.kmb",
+      "bytes": 198779,
+      "sha256": "ea9541940edd12da5ada3191ea2ffd6a93f5555bc103c4e977153e611d99d1dc"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_h0_pack_proof.json",
+      "bytes": 1907,
+      "sha256": "7ba046b6a4caa66a990664e148d583ae5313d49527f78aff987a153e93846bad"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_h0_native_check.py",
+      "bytes": 2923,
+      "sha256": "21ac7e1d6fc3faf22b62f62cd4c576ecf190f8253c1430ef7ff717880fd00362"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_h0_native.json",
+      "bytes": 1845,
+      "sha256": "00c4b8614ef1c193157a22b63e8cc953be3852ccb7398ea692627bbef02c8d12"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_flag_pack_scan.py",
+      "bytes": 6592,
+      "sha256": "af75609df9ad332139314d25352afed03c6ba0165dee77ff77c7e44d69df054d"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_flag_pack_scan.json",
+      "bytes": 400736,
+      "sha256": "44defaf5680566ae05a33d1e413fe7ccb5ed8a76b58276b44df4e0adc05793a5"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_flag_quadratic.py",
+      "bytes": 5147,
+      "sha256": "eeef2fbc018adf19a8ae53155f4009962fb989fbece863a3e83a9cdf1b43161c"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_flag_quadratic.json",
+      "bytes": 1178,
+      "sha256": "384ba80505f5592407fa4a9273f6bba446dedd0560108281a1f70289be0568c8"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_remaining_peaks.json",
+      "bytes": 1725,
+      "sha256": "b9f9f92a346251e02d88af0b790f7bcb0ab68384484bdeaed082bfac970b6420"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_ancilla_report.md",
+      "bytes": 7620,
+      "sha256": "93e4fb92f45fce1182d37efc25fdb1aa49dd7f565f4fcb527646421e79ec0ec0"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_full_verification.json",
+      "bytes": 1370,
+      "sha256": "546961b969cf58f64093b4a98d9a1a603044c16118572eaa0ee76f78eb1c0b53"
+    }
+  ],
+  "read_only_dependencies": [
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_invsqrt_retire.py",
+      "bytes": 8079,
+      "sha256": "a2f701f5ed8fb2152e88a4b4ec2b4d29897e50459378db7f0e73100d9162dfd6"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score_invsqrt_retire.json",
+      "bytes": 570017,
+      "sha256": "8ee012a7666a6954ab4e332ebf0fae8a54677140e0f7fef103f50a428862eb71"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score2_invsqrt_relocate_oneand.cpp",
+      "bytes": 4028,
+      "sha256": "e7c7e1ff511ff9e4c90cf4ded21667f9fb84c466facccca93fb1bc91315b5e5e"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/invsqrt_structural_e46.kmx",
+      "bytes": 258420,
+      "sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/dqi_inputs/invsqrt_e46d90c36d1b.kmb",
+      "bytes": 198590,
+      "sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6"
+    },
+    {
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/invsqrt/verify_submission_invsqrt.py",
+      "bytes": 17210,
+      "sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a"
+    }
+  ],
+  "headline": "Accepted: one unconditional CCX removed, Q46 unchanged, full official PASS",
+  "full_official_verified_shots": 200540928,
+  "official_receipt": {
+    "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_invsqrt_full_verification.json",
+    "bytes": 1370,
+    "sha256": "546961b969cf58f64093b4a98d9a1a603044c16118572eaa0ee76f78eb1c0b53"
+  },
+  "official_result": {
+    "status": "PASS",
+    "score": 78673.55534364567,
+    "toffoli_equivalent": 1710.2946813836015,
+    "toffoli_count": 1478.7506100300882,
+    "max_toffoli_count": 1550,
+    "t_count": 1.0,
+    "rotation_count": 33.0,
+    "rotation_eps": 6.003064377662461e-13,
+    "num_qubits": 46,
+    "reaction_depth": 1336,
+    "num_ops": 23881,
+    "verified_shots": 200540928,
+    "worst_error_over_tolerance": 0.9986660009092673,
+    "worst_x": 159,
+    "circuit_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+    "verifier_path": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/invsqrt/verify_submission_invsqrt.py",
+    "verifier_sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a",
+    "kickmix_binary_sha256": "d965e0ad42e7e3a147d4b28d6971a517f772dd79795cfc364be2fe9ffe3a7b80",
+    "kickmix_distribution_version": "1.0.0",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "source_file_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+    "seed": null,
+    "salt": "",
+    "max_workers": 4,
+    "batch_size": 256,
+    "verification_scope": "full official domain, default 64 shots per x",
+    "runner_sha256": "dea141999ed4379d13d75a936c8a4dddfc5d3ce0944204364cc1a154a4ed2ad8",
+    "verify_seconds": 321.7510380169988,
+    "parent_peak_rss_kib": 516724,
+    "largest_child_peak_rss_kib": 127124
+  },
+  "baseline_comparison": {
+    "source_sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6",
+    "cost": 78719.52914734723,
+    "mean_toffoli": 1479.7500405453395,
+    "effective_toffoli": 1711.2941118988529,
+    "qubits": 46
+  },
+  "improvement": {
+    "expected_toffoli_reduction_exact": 1,
+    "expected_cost_reduction_exact": 46,
+    "observed_mean_toffoli_reduction": 0.9994305152513334,
+    "observed_cost_reduction": 45.973803701563156,
+    "observed_cost_reduction_percent": 0.05840203085502377,
+    "finite_sampling_explanation": "Extra HMR shifts the RNG stream. Expected reduction is exactly one unconditional CCX; finite measured means need not differ by exactly one."
+  },
+  "h0_packing_in_accepted_candidate": false,
+  "candidate_bytes_unchanged": true,
+  "public_score_result_claimed": false
+}

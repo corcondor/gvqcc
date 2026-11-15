@@ -1,0 +1,174 @@
+{
+  "status": "NUMERICAL_FAIL",
+  "B_original": 143,
+  "B_new": 142,
+  "R": 8,
+  "C": 44,
+  "N": 76,
+  "num_vectors": 1212,
+  "source": "/workspace/scratch/7f542e06b7cf/dqi_inputs/chemistry_4033/submission_asterios_full.npz",
+  "source_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "script_sha256": "5a3fb29e4b044c26f41b0485d07e1eaad358f96b83134251689dddf82c6ecd00",
+  "initial_candidate": "/workspace/scratch/3815fb5fae06/score3_chemistry_b142/initial_ls.npz",
+  "initial_metrics": {
+    "error_1": 1.4570353739619315,
+    "error_2": 0.2724300022709046,
+    "Lambda": 299.96824408285255,
+    "E_SOS": -22151.169940804048,
+    "E_gap": 10.896590804048174,
+    "lambda_eff": 80.11570837737447,
+    "gap_in_domain": true
+  },
+  "candidate": "/workspace/scratch/3815fb5fae06/score3_chemistry_b142/candidate.npz",
+  "candidate_sha256": "bbf3a33b593a7c1c8a68ff00996256754e4e2e213da9dc2322c2d32d333081e5",
+  "official_numeric_metrics": {
+    "error_1": 2.524239216036309,
+    "error_2": 0.08456422683360898,
+    "Lambda": 402.3398683882568,
+    "E_SOS": -22159.252915294517,
+    "E_gap": 18.97956529451767,
+    "lambda_eff": 122.1157144128317,
+    "gap_in_domain": true
+  },
+  "numerical_pass": false,
+  "two_body_pass": false,
+  "resources": {
+    "B": 142,
+    "num_vectors": 1212,
+    "T": 14726,
+    "Q": 427,
+    "ANGLE_toffoli_per_pass": 4033,
+    "outer_toffoli": 317,
+    "inner_toffoli": 4093,
+    "givens_toffoli": 2250,
+    "outer_qubits": {
+      "persistent": 40,
+      "temporary": 90,
+      "qrom_temp": 83,
+      "qrom_persistent": 29,
+      "uniform_temp": 7,
+      "uniform_persistent": 11
+    },
+    "inner_qubits": {
+      "persistent": 44,
+      "temporary": 303,
+      "uniform_persistant": 10,
+      "uniform_temporary": 6,
+      "persistent_for_qroam": 34,
+      "temporary_for_qroam": 297
+    },
+    "same_lambda_cost_reduction_percent": 0.013579576317224173,
+    "lambda_break_even_user_log": 46.91226462377672,
+    "lambda_break_even_reproduced": 46.91296008984161,
+    "cost_scope": "Conditional on unchanged 4033/pass original ANGLE family valid on this prefix; new full verification is separate."
+  },
+  "comparison_cost_with_original_loader_prefix": 767863856.4593146,
+  "comparison_user_cost_from_logged_lambda": 294984413.77883726,
+  "lower_than_user_log_cost_if_full_pass": false,
+  "prefix_word_equality": true,
+  "tree_edges_unchanged": true,
+  "natural_d_max_change": 0.0,
+  "orthogonality_error": 2.7777780076121417e-13,
+  "ls_normal_equation_error": 8.499641365320094e-15,
+  "gradient_scaled_error": 2.0598219041201844e-09,
+  "full_circuit_verified": false,
+  "scope": "Finite local error2 minimization after prefix/group-boundary change; no infeasibility proof. Retained original family would require full prefix verifier check.",
+  "calls": 5130,
+  "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+  "seconds_refit": 137.2794831609972,
+  "seconds_total": 152.24728314399908,
+  "peak_rss_mib": 1070.1875,
+  "trace": [
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 368,
+      "best_error2": 0.08510100901905794,
+      "seconds_refit": 10.009356815997307
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 745,
+      "best_error2": 0.08471518760762045,
+      "seconds_refit": 20.032033313000284
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 1111,
+      "best_error2": 0.0846827533619052,
+      "seconds_refit": 30.04756032699879
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 1483,
+      "best_error2": 0.08457444696143217,
+      "seconds_refit": 40.05323327599763
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 1865,
+      "best_error2": 0.08457212893517344,
+      "seconds_refit": 50.07591226399745
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 2233,
+      "best_error2": 0.08457198437703232,
+      "seconds_refit": 60.07926251100071
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 2615,
+      "best_error2": 0.0845719169571205,
+      "seconds_refit": 70.09287032700013
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 3002,
+      "best_error2": 0.0845717683185989,
+      "seconds_refit": 80.10579962200063
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 3382,
+      "best_error2": 0.08456787641310957,
+      "seconds_refit": 90.12271415799842
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 3768,
+      "best_error2": 0.08456438834300557,
+      "seconds_refit": 100.13924609899914
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 4148,
+      "best_error2": 0.08456424232761094,
+      "seconds_refit": 110.14040163100071
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 4530,
+      "best_error2": 0.08456422799074484,
+      "seconds_refit": 120.14217008099877
+    },
+    {
+      "event": "refit",
+      "B": 142,
+      "calls": 4914,
+      "best_error2": 0.08456422692552658,
+      "seconds_refit": 130.15136043999883
+    }
+  ]
+}

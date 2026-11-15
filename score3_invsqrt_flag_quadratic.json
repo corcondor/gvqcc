@@ -1,0 +1,39 @@
+{
+  "status": "THREE_SCOPED_PROBES_COMPLETE",
+  "cases": [
+    {
+      "target": 36,
+      "start": 15023,
+      "end": 17277,
+      "common_affine_rank": 25,
+      "restricted_inputs": 16383,
+      "quadratic_features": 301,
+      "restricted_rank": 277,
+      "status": "NO_QUADRATIC_SHARED_CORRECTION"
+    },
+    {
+      "target": 30,
+      "start": 15029,
+      "end": 17296,
+      "common_affine_rank": 22,
+      "restricted_inputs": 16383,
+      "quadratic_features": 232,
+      "restricted_rank": 211,
+      "status": "NO_QUADRATIC_SHARED_CORRECTION"
+    },
+    {
+      "target": 6,
+      "start": 15029,
+      "end": 17295,
+      "common_affine_rank": 22,
+      "restricted_inputs": 16383,
+      "quadratic_features": 232,
+      "restricted_rank": 211,
+      "status": "NO_QUADRATIC_SHARED_CORRECTION"
+    }
+  ],
+  "source_sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1",
+  "scope": "Quadratic polynomial of the affine intersection of endpoint functions; scoped constructive packing test, not a Q45 impossibility proof",
+  "seconds": 1.5124373199978436,
+  "script_sha256": "eeef2fbc018adf19a8ae53155f4009962fb989fbece863a3e83a9cdf1b43161c"
+}

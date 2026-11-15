@@ -1,0 +1,25 @@
+{
+  "invsqrt": {
+    "baseline_cost": 78719.52914734723,
+    "candidate_cost": 78673.55534364567,
+    "cost_reduction": 45.973803701563156,
+    "cost_reduction_percent": 0.05840203085502038,
+    "mean_toffoli_reduction": 0.9994305152513334
+  },
+  "dqi": {
+    "baseline_cost": 359753461767.22644,
+    "candidate_cost": 359734745778.9876,
+    "cost_reduction": 18715988.238830566,
+    "cost_reduction_percent": 0.005202448406438354,
+    "mean_toffoli_reduction": 19.879365234344732,
+    "repetition_factor": 1.1912604648115832
+  },
+  "matched_local_score_multiplier": 1.0002120947396507,
+  "matched_local_score_improvement_percent": 0.021209473965067005,
+  "comparison_scope": "Pinned local reference costs with the chemistry component held identical; this is not an observed Kaggle Public Score. Default hash-derived verifier samples differ between candidates.",
+  "candidate_archive_sha256": "5a3011d3f208a0bae3b1e1bfb9b763ac8c7201f4de35a74d772699949b971882",
+  "observed_public_best_before_submission": 27.30683,
+  "observed_public_latest_before_submission": 27.27654,
+  "candidate_submitted": false,
+  "candidate_public_score": null
+}

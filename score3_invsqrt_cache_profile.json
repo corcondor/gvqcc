@@ -1,0 +1,158 @@
+{
+  "status": "EXACT_PRODUCT_CACHE_CANDIDATE_PASS",
+  "source_sha256": "69872bf5557a94e4a7425c9470b7a0451958e18276f2be178b5b0ee27dddb1b1",
+  "legal_inputs": 3133452,
+  "unconditional_ccx": 1280,
+  "distinct_products": 721,
+  "repeated_nonzero_product_groups": 497,
+  "natural_candidates": 1,
+  "natural_top": [
+    {
+      "kind": "NATURAL_CLEAN_IDLE_WIRE",
+      "cache": 21,
+      "uses": [
+        {
+          "index": 3321,
+          "left": 10,
+          "right": 11,
+          "target": 13,
+          "nonzero": true
+        },
+        {
+          "index": 3423,
+          "left": 10,
+          "right": 11,
+          "target": 13,
+          "nonzero": true
+        }
+      ],
+      "saved_ccx": 1,
+      "added_ccx": 0,
+      "net_saved_ccx": 1,
+      "first": 3321,
+      "last": 3423,
+      "digest": "617abfd3a2c76a3fe56fb4a9de82439490fdc8884d09d06bdb94be6871a86624"
+    }
+  ],
+  "h0_repeated_products": [
+    {
+      "kind": "H0_PACKED_CACHE",
+      "cache": 0,
+      "uses": [
+        {
+          "index": 3321,
+          "left": 10,
+          "right": 11,
+          "target": 13,
+          "nonzero": true
+        },
+        {
+          "index": 3423,
+          "left": 10,
+          "right": 11,
+          "target": 13,
+          "nonzero": true
+        }
+      ],
+      "saved_ccx": 1,
+      "added_ccx": 2,
+      "net_saved_ccx": -1,
+      "first": 3321,
+      "last": 3423,
+      "digest": "617abfd3a2c76a3fe56fb4a9de82439490fdc8884d09d06bdb94be6871a86624"
+    },
+    {
+      "kind": "H0_PACKED_CACHE",
+      "cache": 0,
+      "uses": [
+        {
+          "index": 2904,
+          "left": 27,
+          "right": 42,
+          "target": 37,
+          "nonzero": true
+        },
+        {
+          "index": 3268,
+          "left": 27,
+          "right": 42,
+          "target": 37,
+          "nonzero": true
+        }
+      ],
+      "saved_ccx": 1,
+      "added_ccx": 2,
+      "net_saved_ccx": -1,
+      "first": 2904,
+      "last": 3268,
+      "digest": "ed55b77bdb9d16e981333305320af52f3b38f6abd96c53f836c12223b792e030"
+    },
+    {
+      "kind": "H0_PACKED_CACHE",
+      "cache": 0,
+      "uses": [
+        {
+          "index": 2899,
+          "left": 27,
+          "right": 37,
+          "target": 38,
+          "nonzero": true
+        },
+        {
+          "index": 3274,
+          "left": 27,
+          "right": 37,
+          "target": 38,
+          "nonzero": true
+        }
+      ],
+      "saved_ccx": 1,
+      "added_ccx": 2,
+      "net_saved_ccx": -1,
+      "first": 2899,
+      "last": 3274,
+      "digest": "5360a5863751a4583765af19a6f9d894a61184f4dac3f2146ee3a1a05eadf8fd"
+    }
+  ],
+  "seconds": 141.57090641399918,
+  "scope": "Full valid-input product equality at depth-zero CCX. Cache must be zero at entry and entirely unreferenced by every original instruction through final use. Only one cache plan is built; no global optimality claim.",
+  "plan": {
+    "kind": "NATURAL_CLEAN_IDLE_WIRE",
+    "cache": 21,
+    "uses": [
+      {
+        "index": 3321,
+        "left": 10,
+        "right": 11,
+        "target": 13,
+        "nonzero": true
+      },
+      {
+        "index": 3423,
+        "left": 10,
+        "right": 11,
+        "target": 13,
+        "nonzero": true
+      }
+    ],
+    "saved_ccx": 1,
+    "added_ccx": 0,
+    "net_saved_ccx": 1,
+    "first": 3321,
+    "last": 3423,
+    "digest": "617abfd3a2c76a3fe56fb4a9de82439490fdc8884d09d06bdb94be6871a86624"
+  },
+  "candidate_kmx": "/workspace/scratch/3815fb5fae06/score3_invsqrt_cache_run/candidate.kmx",
+  "candidate_kmb": "/workspace/scratch/3815fb5fae06/score3_invsqrt_cache_run/candidate.kmb",
+  "candidate_sha256": "684106f101730ca193627229920a0501bef9ea10ccfb34aa453fcf63edadb50a",
+  "candidate_qubits": 46,
+  "removed_unconditional_ccx": 1,
+  "proof": {
+    "all_3133452_inputs_gatewise_equal_except_idle_cache": true,
+    "original_measurement_predicates_unchanged": true,
+    "fresh_measurement_phase": "cache = final_original_control_a AND final_original_control_b; HMR sign canceled by conditioned CZ",
+    "all_measurement_branches": true,
+    "full_official_run": false
+  },
+  "script_sha256": "15a3a6fdae1f036e3793285154aae25b1e5b89aaccc8f3b04559b4c422f88e17"
+}
