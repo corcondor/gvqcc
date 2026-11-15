@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-15",
+  "bibliographic_entry_count": 171,
+  "groups": {
+    "shallow": 62,
+    "magic": 53,
+    "graphene": 56
+  },
+  "main_versions": {
+    "v1": 55,
+    "v2": 61,
+    "union": 62,
+    "v1_only": "v1[55], arXiv:2404.14493"
+  },
+  "known_cross_parent_duplicate_pairs": [
+    [
+      38,
+      1
+    ],
+    [
+      19,
+      17
+    ],
+    [
+      13,
+      25
+    ],
+    [
+      16,
+      26
+    ],
+    [
+      36,
+      27
+    ]
+  ],
+  "counts_by_group": {
+    "shallow": {
+      "main_text_complete": 26,
+      "full_extracted_text_complete": 34,
+      "partial_preview_only": 1,
+      "text_complete_figures_unread": 1
+    },
+    "magic": {
+      "full_extracted_text_complete": 53
+    },
+    "graphene": {
+      "main_text_complete": 48,
+      "full_extracted_text_complete": 5,
+      "main_prose_complete_with_embedded_source_gaps": 3
+    }
+  },
+  "counts_total": {
+    "main_text_complete": 74,
+    "full_extracted_text_complete": 92,
+    "partial_preview_only": 1,
+    "text_complete_figures_unread": 1,
+    "main_prose_complete_with_embedded_source_gaps": 3
+  },
+  "status_definitions": {
+    "full_extracted_text_complete": "取得した本文・付録の抽出テキストを全読",
+    "main_text_complete": "本文の全節を読解（付録等に未読あり）",
+    "main_prose_complete_with_embedded_source_gaps": "本文文章の全節を読解（埋め込み表・数式に取得欠落）",
+    "main_results_reviewed": "主要結果・アルゴリズムを読解（未読節あり）",
+    "selected_sections": "本文の該当節を読解（未読節あり）",
+    "partial_preview_only": "公開previewのみ読解",
+    "text_complete_figures_unread": "全文テキスト読解・回路画像未取得",
+    "bibliography_only": "書誌のみ"
+  },
+  "limits": "本文取得を読了と数えない。全件を同じ深さで通読したという主張ではない。図画像・全証明・全実験の独立検算ではない。",
+  "public_access_gap": "主論文[14] Kitaev 1997 は8頁のうち公開preview2頁のみ。主論文[43]は質問と全回答テキストを読了したが回路画像4枚は未取得。",
+  "known_embedded_source_gaps": "graphene[31]はTable 1の表セル、[32]は画像化された数式、[47]はHTMLで欠けた数式に未取得箇所がある。文章の全節読解と区別した。",
+  "raw_source_distribution": "原著全文の再配布を含めず、書誌、一次URL、実読範囲、独自の分析・適用判断を保存。"
+}
