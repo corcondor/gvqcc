@@ -1,0 +1,54 @@
+name: Verify branch-phase DAG candidate
+on:
+  push:
+    branches: [research/branch-phase-dag-20261116]
+    paths:
+      - graph_research/branch_phase_dag/**
+      - .github/workflows/branch_phase_dag.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned native simulator
+        run: python -m pip install kickmix==1.0.0 numpy==2.3.5
+      - name: Build and match independently verified binary
+        run: |
+          python graph_research/branch_phase_dag/build.py --source score3_invsqrt_cache.kmx --out results/branch_phase/invsqrt --native
+      - name: Download hash-pinned unmodified verifier
+        run: |
+          python - <<'PY'
+          import urllib.request, hashlib
+          from pathlib import Path
+          url='https://raw.githubusercontent.com/Inzainos/quantum-circuit-compilation/4277c767440df9efb8a90860ae2ce47028e46ba9/verifiers/invsqrt/verify_submission_invsqrt.py'
+          data=urllib.request.urlopen(url,timeout=60).read()
+          expected='ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a'
+          assert hashlib.sha256(data).hexdigest()==expected
+          Path('results/branch_phase/verify_submission_invsqrt.py').write_bytes(data)
+          PY
+      - name: All legal inputs, one measurement sample each
+        run: |
+          set -o pipefail
+          python results/branch_phase/verify_submission_invsqrt.py results/branch_phase/invsqrt.kmb --shots-per-x 1 --max-workers 2 | tee results/branch_phase/official_one.json
+      - name: Official default 64 samples per input
+        run: |
+          set -o pipefail
+          python results/branch_phase/verify_submission_invsqrt.py results/branch_phase/invsqrt.kmb --max-workers 2 | tee results/branch_phase/official_full.json
+      - name: Preserve results without submitting to Kaggle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: branch-phase-dag-verification
+          path: results/branch_phase/
+          if-no-files-found: warn
+          retention-days: 14
