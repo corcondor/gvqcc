@@ -31,9 +31,16 @@ The subsequent interactive Run All completed in 31.842 seconds in
 `exact_zip_bytes_reproduced=true`, 63,552,631 bytes, all eighteen member
 SHA256/CRC checks passing, and final ZIP SHA256
 `5a3011d3f208a0bae3b1e1bfb9b763ac8c7201f4de35a74d772699949b971882`.
-Save & Run All version 2 was then started with the input already attached.
-This records successful Kaggle packaging; competition submission was not
-yet observed in this record.
+Save & Run All version 2 then completed successfully in 45.9 seconds with
+the input already attached. The full ZIP was submitted through the signed-in
+Kaggle notebook-output submission UI. A new **Pending** row was observed at
+2026-11-15 01:53:10 UTC for
+[notebook version 2 / scriptVersionId 369722797](https://www.kaggle.com/code/geocpuresearch/gvqcc-score3-exact4096-invsqrt-cache?scriptVersionId=369722797).
+The submitted ZIP has the exact final hash above and all eighteen member
+SHA256/CRC checks passed. The submission ID was not exposed by the UI.
+Public Score is not yet available; no Public Score improvement is claimed.
+The observed submission record is
+[`results/2026-11-15/kaggle_score3_cache_submission_369722797.json`](results/2026-11-15/kaggle_score3_cache_submission_369722797.json).
 
 The notebook version number is `1`; its scriptVersionId is `369719696`.
 The SDK handle uses `/versions/1`, not the scriptVersionId. The behavior and
