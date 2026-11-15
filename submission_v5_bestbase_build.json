@@ -1,0 +1,107 @@
+{
+  "source_notebook": "https://www.kaggle.com/code/geocpuresearch/gvqcc-verified-480ccx-gauge128?scriptVersionId=369627280",
+  "source_notebook_version": 1,
+  "baseline_npz_sha256": "809063291b8af401b4075db850afb216b6cfca398468ed2e47e4c0623eb3fae5",
+  "candidate_npz_sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+  "payload_sha256": "5cec5b9381caf156a01b6f4cc2a09fb15eacab6eabd76f0ace4e9240fae5bb00",
+  "payload_uncompressed_sha256": "8e3bf38fe87c264621620ff5edfeaef8e42d12ef11ee5d6c8354dd55b6faa439",
+  "payload_members": [
+    "angle_k_0.kmb",
+    "angle_k_1.kmb",
+    "angle_k_10.kmb",
+    "angle_k_11.kmb",
+    "angle_k_12.kmb",
+    "angle_k_13.kmb",
+    "angle_k_14.kmb",
+    "angle_k_2.kmb",
+    "angle_k_3.kmb",
+    "angle_k_4.kmb",
+    "angle_k_5.kmb",
+    "angle_k_6.kmb",
+    "angle_k_7.kmb",
+    "angle_k_8.kmb",
+    "angle_k_9.kmb",
+    "H2_I.npy",
+    "npz_chunks/H2_I.npy",
+    "npz_chunks/angle_words.npy",
+    "npz_tail.bin",
+    "npz_recipe.json"
+  ],
+  "loaders": {
+    "angle_k_0.kmb": "39a74c931c745143d46ac3c3d7f76a84cc09982f0c7a9b2784e35e8cf0533b45",
+    "angle_k_1.kmb": "753b1424a819fadcac324155a7cae1841f0ee977ce873f29c7e364c55cdd4f37",
+    "angle_k_2.kmb": "487adc39d32a904021985241f80881fd90542fa35c0a379034fc88cc9ccfc337",
+    "angle_k_3.kmb": "8e01cc596c3cbfd372f2b6d009e3b49c29ae9448eaf0d9f21f50d088d2404d6a",
+    "angle_k_4.kmb": "f9b6e68a119dc2b819c21812a136f3ae76eddb36d8964d1847bab68f880b3330",
+    "angle_k_5.kmb": "a17d6c663f66b3e8d9487b0b19f77075f5647ff240d258b6b7d37cb58997cd6c",
+    "angle_k_6.kmb": "387f1a6095132fb6114682c8cc102a36cc93426860fa57b1fd972b65d4e88561",
+    "angle_k_7.kmb": "146cb20a99a8c6005539df2b0c9f0eb11b33a71ab10d66480f51fd5590e53711",
+    "angle_k_8.kmb": "0be2c2ec69d681f352c7e89fc94ed161f45b448110c9e617fe86181f72de646e",
+    "angle_k_9.kmb": "3e31f13446a8a3c72bff3ac6c123d15f9c8b86039f505fe7b5510d7245246c99",
+    "angle_k_10.kmb": "656d5eb283c54a2b934fdcf38fc56d7b3cc7b0607e7731c26eb15b574e74f5eb",
+    "angle_k_11.kmb": "d4eeedc38481610804ec2708e2fc02323b63d9f37487cec6cb9b42ed7c94c033",
+    "angle_k_12.kmb": "61275eda03641d1a7b4052b36fa1df4383918f8986172e73a7f8dcaa817d0308",
+    "angle_k_13.kmb": "a4e43c2b183cf64de805701517fd0b56333dde662889579b824b4ee1ff0c3a72",
+    "angle_k_14.kmb": "3b21fe0767295c6bd40c41e0c40ca1aeff02e54216ada02849c238ab66b70159"
+  },
+  "unchanged_members": {
+    "dqi.kmb": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+    "invsqrt.kmb": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6"
+  },
+  "official_pins": {
+    "kickmix/LICENSE.txt": [
+      "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    ],
+    "kickmix/kickmix.so": [
+      "c66b3216c4029e0cdfd09054306aa0feadf53ab2f50c1164e37f752874e5005e"
+    ],
+    "verifiers/LICENSE.txt": [
+      "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    ],
+    "verifiers/dfthcsos/FeMoCo76o113e.fcidump": [
+      "e5a48af746fd075026dec9e8f5df2d363802a121e8c53af9a0b984bde695e1bd"
+    ],
+    "verifiers/dfthcsos/FeMoCo76o113e.fixed_shifts.npz": [
+      "7b7facf63fe35a9d9d3d00787ffdb700c863fa845fe4724d7f7c54778151cd87"
+    ],
+    "verifiers/dfthcsos/SCORING_README.md": [
+      "c2228569f96e58e118419bc32be2be9e33d6abffb8117cb0b91e1fc25b2a0230",
+      "304d546013312b2daf500942897c4d8b18bfe4a6658f4bf4653b40c12591721b"
+    ],
+    "verifiers/dfthcsos/__init__.py": [
+      "81915e324cc0cade67f52a54b7a51991fd96abaea94d1f8a4d423dae20e57348",
+      "955dea287e134b6df33c17f8108004401355fa6d616fc3310f831e5be0d02ca4"
+    ],
+    "verifiers/dfthcsos/scoreinfra/__init__.py": [
+      "be90e0d503d5c20dcac0102af638b9a4ccad0341daa5baa5d49216a259e4516f",
+      "0f5c35338873edab56b2118f2e879a96c16f72812282e8f9000d43ff338f36d2"
+    ],
+    "verifiers/dfthcsos/scoreinfra/circuits.py": [
+      "fc027b52fdcebe14404f403a089122485d097ed65d03e6d989623d620b1ab68c",
+      "98601c25aa5f57ff7024c545f8773badc43ad2e6b586e6400bc2158c2bd01b86"
+    ],
+    "verifiers/dfthcsos/scoreinfra/costs_prepare.py": [
+      "7f1e190c42fc5325f3e6689fbbef51f95b0cb12f1c828cda92b6c088e72206da",
+      "ec44b99b1fbe6b4081d54e0c84a34bb2de893beabbb6d05efaad439d5061b04a"
+    ],
+    "verifiers/dfthcsos/scoreinfra/dfthc_math.py": [
+      "ae82898d47a7a86b96378fb906e0f8a9f46003065cf19c7c09952a123b5b5af8",
+      "f95361cc4af30959afff905b674427af1a2645df0a948b7e2374bfc0f3e2696d"
+    ],
+    "verifiers/dfthcsos/scoreinfra/reference.py": [
+      "a2d5a63191d655729e29f0fde1e85fe4630bf896a91a63bb894d8d7daf71ed39",
+      "54ef543f91a5ebf75209a7390d2112e664e804ca6114ec710321552276e178ec"
+    ],
+    "verifiers/dfthcsos/verify.py": [
+      "0775be7a528922367caebe9e4d051d6199811f1aefeaa4b793eaaa4621b8ec9d",
+      "ca84ca08e6e9280922cda3b539d4776ae58990b2b03b5619a53d65de67df9d2b"
+    ]
+  },
+  "expected_lambda_eff": 46.906472675810164,
+  "base_dqi_sha256": [
+    "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+    "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3"
+  ],
+  "dqi_bytes": 455584321,
+  "dqi_dataset": "https://www.kaggle.com/datasets/manwithacat/vqcc-apache-public-circuits"
+}

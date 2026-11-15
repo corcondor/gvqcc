@@ -1,0 +1,30 @@
+{
+  "status": "PASS_EXACT_JOINT_TENSOR",
+  "dimensions": [
+    12,
+    24,
+    24
+  ],
+  "padded_dimensions": [
+    24,
+    24,
+    24
+  ],
+  "basis_pair_checks": 576,
+  "operation": "(a,b,c,z1,z2) -> (a,b,c,z1 XOR a*b,z2 XOR a*c)",
+  "arbitrary_accumulators": true,
+  "rank_of_current_decomposition": 84,
+  "distinct_factor_counts": [
+    42,
+    84,
+    84
+  ],
+  "paired_factor_ranks": {
+    "(0, 1)": 84,
+    "(0, 2)": 84,
+    "(1, 2)": 84
+  },
+  "direct_repeated_AND_forms": 0,
+  "scope": "Identifies the combined shared-a map; does not prove minimum rank.",
+  "input_sha256": "ae00aa911b43a49b178ab7c0d51c6dc0a018d8137a3cffc9c9b4a1dc3b13ff4b"
+}

@@ -1,0 +1,55 @@
+{
+  "status": "EXACT_SOURCE_MATCH_AND_SHARED_INPUT_TARGETS_FOUND; NO_NEW_CCX_REDUCTION",
+  "source_sha256": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+  "matched_gf12_blocks": 3823,
+  "matched_gf24_inner_blocks": 1376,
+  "shared_operand_adjacent_qualified_windows": 193,
+  "disjoint_qualified_windows": 141,
+  "joint84_best_rank": 84,
+  "gf8_joint12_best_rank": 12,
+  "new_CCX_reduction": 0,
+  "production_circuit_modified": false,
+  "files": {
+    "symmetry_dqi_20261115_gf8_joint12_depth3.json": {
+      "bytes": 605,
+      "sha256": "c0a84e91529f286ce19eb32cea60666b7673e881fb365712af532e2f82fb9997"
+    },
+    "symmetry_dqi_20261115_gf8_joint12_input.txt": {
+      "bytes": 87,
+      "sha256": "8446959c7d46f19571ce207d024f302cf28792bc04d1a5a6e7d5e3abc0913077"
+    },
+    "symmetry_dqi_20261115_joint84_certificate.json": {
+      "bytes": 651,
+      "sha256": "01a5220db460d8296da4689d1492bda13870a22551dbc6c613b0b84a093b777d"
+    },
+    "symmetry_dqi_20261115_joint84_depth6.json": {
+      "bytes": 2150,
+      "sha256": "10ce92aa654f620bd206b9eb9f53ef1927583f81194e5098172dbbf7d3880d6b"
+    },
+    "symmetry_dqi_20261115_joint84_input.txt": {
+      "bytes": 1451,
+      "sha256": "ae00aa911b43a49b178ab7c0d51c6dc0a018d8137a3cffc9c9b4a1dc3b13ff4b"
+    },
+    "symmetry_dqi_20261115_joint84_placements.json": {
+      "bytes": 185922,
+      "sha256": "fc116ab8782db512a7442da23485931857b0fb62d3e3916b9ac9705e9d2ceb9c"
+    },
+    "symmetry_dqi_20261115_joint84_search.json": {
+      "bytes": 2056,
+      "sha256": "b9b65be6c3911582d74f67c81e4d49089c0b5b95fadcf081537a6b966d76b2f9"
+    },
+    "symmetry_dqi_20261115_report.md": {
+      "bytes": 7792,
+      "sha256": "968f82a335ce9db76459dc1c640a92568910e474f261ee615264904c9bde3445"
+    },
+    "symmetry_dqi_20261115_scan.json.gz": {
+      "bytes": 239299,
+      "sha256": "e6734becbce21226e7aa350d636f258bfa36b6e12bcf7c4b4cd11441329c1504"
+    },
+    "symmetry_dqi_20261115_scan.py": {
+      "bytes": 5589,
+      "sha256": "d70a34150e4936fe127ab1f5650c4a50030f9cd95bd33af1dcc164e1c6270909"
+    }
+  },
+  "regenerable_full_scan_sha256": "cdd86afc9d17a059dae5cb947fe3335c05a674a4be2874b7dc7debf6cdf79b83"
+}

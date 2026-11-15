@@ -1,0 +1,166 @@
+{
+  "status": "READY_FOR_KAGGLE_SCORING",
+  "submission_performed": false,
+  "observed_public_score": null,
+  "source_notebook": "https://www.kaggle.com/code/geocpuresearch/gvqcc-verified-480ccx-gauge128?scriptVersionId=369627280",
+  "source_zip": "/workspace/scratch/7f542e06b7cf/deliverables/submission_v2_full.zip",
+  "source_zip_sha256": "fbc5b37a1cfda9ac5e5277e0b16fb6c2d7b99d691a1bd3f4ce8a992ca2d9892f",
+  "dqi_source": "/workspace/scratch/7f542e06b7cf/dqi_inputs/821bf8d157c0.kmb",
+  "dqi_sha256": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+  "dqi_bytes": 455584321,
+  "dqi_dataset": "https://www.kaggle.com/datasets/manwithacat/vqcc-apache-public-circuits",
+  "submission_zip": "/workspace/scratch/7f542e06b7cf/submission_v5_bestbase/submission.zip",
+  "submission_zip_sha256": "84d373c032b1e5d852a358db29fd830cc65f4889235c1e8ac03316dad7350032",
+  "submission_zip_bytes": 49229452,
+  "worker": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/submission_v5_bestbase_worker.py",
+  "worker_sha256": "733e2fd16c66af249a4b774546e12900d9deac31fa7c87b491ec94d3e4548ca2",
+  "worker_bytes": 578707,
+  "payload_sha256": "5cec5b9381caf156a01b6f4cc2a09fb15eacab6eabd76f0ace4e9240fae5bb00",
+  "members": [
+    {
+      "member": "dfthcsos/angle_k_0.kmb",
+      "sha256": "39a74c931c745143d46ac3c3d7f76a84cc09982f0c7a9b2784e35e8cf0533b45",
+      "bytes": 263985
+    },
+    {
+      "member": "dfthcsos/angle_k_1.kmb",
+      "sha256": "753b1424a819fadcac324155a7cae1841f0ee977ce873f29c7e364c55cdd4f37",
+      "bytes": 287256
+    },
+    {
+      "member": "dfthcsos/angle_k_10.kmb",
+      "sha256": "656d5eb283c54a2b934fdcf38fc56d7b3cc7b0607e7731c26eb15b574e74f5eb",
+      "bytes": 232220
+    },
+    {
+      "member": "dfthcsos/angle_k_11.kmb",
+      "sha256": "d4eeedc38481610804ec2708e2fc02323b63d9f37487cec6cb9b42ed7c94c033",
+      "bytes": 236911
+    },
+    {
+      "member": "dfthcsos/angle_k_12.kmb",
+      "sha256": "61275eda03641d1a7b4052b36fa1df4383918f8986172e73a7f8dcaa817d0308",
+      "bytes": 220654
+    },
+    {
+      "member": "dfthcsos/angle_k_13.kmb",
+      "sha256": "a4e43c2b183cf64de805701517fd0b56333dde662889579b824b4ee1ff0c3a72",
+      "bytes": 227643
+    },
+    {
+      "member": "dfthcsos/angle_k_14.kmb",
+      "sha256": "3b21fe0767295c6bd40c41e0c40ca1aeff02e54216ada02849c238ab66b70159",
+      "bytes": 219161
+    },
+    {
+      "member": "dfthcsos/angle_k_2.kmb",
+      "sha256": "487adc39d32a904021985241f80881fd90542fa35c0a379034fc88cc9ccfc337",
+      "bytes": 297819
+    },
+    {
+      "member": "dfthcsos/angle_k_3.kmb",
+      "sha256": "8e01cc596c3cbfd372f2b6d009e3b49c29ae9448eaf0d9f21f50d088d2404d6a",
+      "bytes": 308938
+    },
+    {
+      "member": "dfthcsos/angle_k_4.kmb",
+      "sha256": "f9b6e68a119dc2b819c21812a136f3ae76eddb36d8964d1847bab68f880b3330",
+      "bytes": 246511
+    },
+    {
+      "member": "dfthcsos/angle_k_5.kmb",
+      "sha256": "a17d6c663f66b3e8d9487b0b19f77075f5647ff240d258b6b7d37cb58997cd6c",
+      "bytes": 237798
+    },
+    {
+      "member": "dfthcsos/angle_k_6.kmb",
+      "sha256": "387f1a6095132fb6114682c8cc102a36cc93426860fa57b1fd972b65d4e88561",
+      "bytes": 227186
+    },
+    {
+      "member": "dfthcsos/angle_k_7.kmb",
+      "sha256": "146cb20a99a8c6005539df2b0c9f0eb11b33a71ab10d66480f51fd5590e53711",
+      "bytes": 231189
+    },
+    {
+      "member": "dfthcsos/angle_k_8.kmb",
+      "sha256": "0be2c2ec69d681f352c7e89fc94ed161f45b448110c9e617fe86181f72de646e",
+      "bytes": 230215
+    },
+    {
+      "member": "dfthcsos/angle_k_9.kmb",
+      "sha256": "3e31f13446a8a3c72bff3ac6c123d15f9c8b86039f505fe7b5510d7245246c99",
+      "bytes": 236811
+    },
+    {
+      "member": "dfthcsos/submission.npz",
+      "sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+      "bytes": 1153807
+    },
+    {
+      "member": "dqi.kmb",
+      "sha256": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+      "bytes": 455584321
+    },
+    {
+      "member": "invsqrt.kmb",
+      "sha256": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6",
+      "bytes": 198590
+    }
+  ],
+  "chemistry_verification": {
+    "status": "PASS",
+    "score": 294988052.12610483,
+    "lambda_eff": 46.906472675810164,
+    "toffoli_count": 14728.0,
+    "num_qubits": 427,
+    "brot": 8,
+    "batch_size": 5,
+    "num_circuits": 15,
+    "reaction_depth": 167,
+    "num_ops": 408788,
+    "verified_shots": 78080,
+    "submission_sha256": "142af563255af76b2d2097fb5e8cbc61340c583ea70dadeddf7858de501faf84",
+    "resources": {
+      "brot": 8,
+      "keep_bits": 10,
+      "angles_toffoli_per_pass": 4033.0,
+      "angles_toffoli": 8066.0,
+      "angles_qubits": 128,
+      "angles_selection_qubits": 11,
+      "angles_persistent_qubits": 40,
+      "angles_temporary_qubits": 77,
+      "outer_state_prep_toffoli": 317,
+      "inner_state_prep_toffoli": 4095,
+      "givens_rotations_toffoli": 2250,
+      "outer_state_prep_persistent_qubits": 40,
+      "outer_state_prep_temporary_qubits": 90,
+      "outer_state_prep_qubits": 130,
+      "inner_state_prep_persistent_qubits": 44,
+      "inner_state_prep_temporary_qubits": 303,
+      "inner_state_prep_qubits": 347,
+      "heuristic_persistent_qubits": 84,
+      "heuristic_temporary_qubits": 303,
+      "heuristic_toffoli": 6662,
+      "heuristic_qubits": 387,
+      "persistent_qubits": 124,
+      "temporary_qubits": 303,
+      "toffoli": 14728.0,
+      "qubits": 427,
+      "angles_within_cap": true
+    },
+    "metrics": {
+      "error_1": 0.01999998000005401,
+      "error_2": 0.0199999936269957,
+      "Lambda": 282.96313136058893,
+      "E_SOS": -22144.18824802,
+      "E_gap": 3.9148980200006918,
+      "lambda_eff": 46.906472675810164,
+      "gap_in_domain": true
+    }
+  },
+  "verification_receipt": "/workspace/scratch/7f542e06b7cf/submission_v5_score2/verified/verification.json",
+  "verification_receipt_sha256": "b4081f5ea028fbde10718e2d5657b6d1419d5bc18966a4f94a85528dc6d4ef0d",
+  "unchanged_tasks": "Exact pinned DQI821 and inverse e46 bytes retained. No new DQI/inverse quantum verification run for packaging.",
+  "score_note": "Contains public DQI821, inverse e46, new matched score2 chemistry. No claim of exact identity to historic27.30683 portfolio or of exceeding that score before Kaggle scoring."
+}

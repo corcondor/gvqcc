@@ -1,0 +1,283 @@
+{
+  "status": "BUILT_PINNED_WORKER_NOT_EXECUTED_ON_KAGGLE",
+  "worker": "score3_submit_worker.py",
+  "worker_sha256": "1948c54cb653a7763984cac57bf2435245b12d43f56c064c3ee854aa65b77ff1",
+  "worker_bytes": 229297,
+  "payload_bytes": 155808,
+  "payload_files": 60,
+  "build": {
+    "candidate_dqi_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+    "baseline_dqi_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+    "score2_zip_sha256": "dfacbef6f0e0c6856cca66a8497740eb1ac88d46dfb08884d02ce6637d91565f",
+    "source_notebooks": [
+      "https://www.kaggle.com/code/geocpuresearch/gvqcc-verified-480ccx-gauge128?scriptVersionId=369627280",
+      "https://www.kaggle.com/code/geocpuresearch/gvqcc-821-score2-verified?scriptVersionId=369715705"
+    ],
+    "kaggle_engine_sha256": "c66b3216c4029e0cdfd09054306aa0feadf53ab2f50c1164e37f752874e5005e",
+    "official_dqi_verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+    "qualification_sha256": "e98986fc57fcc920b6275f26fdd9b9db4f9f72604a24802b5a21cf85e05df714",
+    "payload_sha256": "103456423dce99b9aa81671fd883abc2a35209036ebdfcec3f56951197e3d395",
+    "payload_files": {
+      "NOTICE.md": {
+        "sha256": "c9a02fff09f24c2b6967f78dc56201c5696dbd8bab7e4ff136ccb8b2ba39c800",
+        "bytes": 1423
+      },
+      "own/dqi_ccx_peephole.py": {
+        "sha256": "13a7b05b7722468369d9132ef2b5f538c1698936167a662b5546915e715d9f69",
+        "bytes": 17467
+      },
+      "own/dqi_gauge_expand.py": {
+        "sha256": "40b3cfc5f46a7c5bb248abe2cd652669b1a2b4dce0927f1b81d29e8df72f5578",
+        "bytes": 10381
+      },
+      "own/kmb_profile.py": {
+        "sha256": "7e7d90fde91384b8c35e45103df09d3fed8400a3ca4544f9b5870a4ee0d83ede",
+        "bytes": 24020
+      },
+      "own/kmb_splice.py": {
+        "sha256": "5833acf32fa9b25907ac92c531eba7c0dc51e132951ad0c4ce55282a0c19888f",
+        "bytes": 6090
+      },
+      "own/score3_gauge_sort.py": {
+        "sha256": "435870acd0698f6b5214622b225cff81085847d6b0571a1b98afe5bcf69a3e2a",
+        "bytes": 19407
+      },
+      "qualification/score3_full_20261115_verification.json": {
+        "sha256": "e98986fc57fcc920b6275f26fdd9b9db4f9f72604a24802b5a21cf85e05df714",
+        "bytes": 1882
+      },
+      "reference/gauge_pieces.json": {
+        "sha256": "604005774f7c808b77677b60217b65be93c8f1e5b0695dcc21f0b0d826af93c3",
+        "bytes": 2043
+      },
+      "reference/score3_gauge_sort_build.json": {
+        "sha256": "6c5aa137c11241196cbbe877cc193a09bcb21bc60bad0c45d7ef668d5e520a59",
+        "bytes": 5544
+      },
+      "reference/score3_gauge_sort_native.json": {
+        "sha256": "f40864c4027dc5de02136abcc64ad1e6c972630a75a0d17192d652adafe38d57",
+        "bytes": 5720
+      },
+      "reference/score3_gauge_sort_proof.md": {
+        "sha256": "0c8a1ab4cca50f70dbd08e667dc1e9401c83cd440925183c9a5b6b0280c613fe",
+        "bytes": 8312
+      },
+      "syed/src/controller_work/after_c5/arithmetic_t/projective_finish_infinity3.py": {
+        "sha256": "77594ca9ce843028de409474fe9ecac733c0c5f84da5b5573b96f6e02eaddbf8",
+        "bytes": 5877
+      },
+      "syed/src/controller_work/after_c5/arithmetic_t/unit_jet_tensor.py": {
+        "sha256": "370b0099892ba9cec432c956ea8e9a34576d0760dc0f6f196b5d0c940193ab17",
+        "bytes": 8893
+      },
+      "syed/src/controller_work/after_v3/k24/adaptive_gauge/adaptive_gauge64.py": {
+        "sha256": "3299627d63c20cf1223dc782cc6d48728f328a237d420f76f2d9260811bc7e5d",
+        "bytes": 19487
+      },
+      "syed/src/controller_work/after_v3/scan/zero_mask_scan.py": {
+        "sha256": "cacf6f97a639ff6b89d500e9cb9e2d427819ba461635cd6407a573d1668b53f1",
+        "bytes": 3684
+      },
+      "syed/src/controller_work/night_c27/arithmetic/c27_paths.py": {
+        "sha256": "09a22e041d6dc7e12fc5e5efb8bd8b0fd2bf1d088efb6ff47cfcfb03a11fe1d5",
+        "bytes": 567
+      },
+      "syed/src/controller_work/night_c27/arithmetic/gf24_arithmetic.py": {
+        "sha256": "0864e9455bf464c6e1501bbeb0bc1f9596fb81c9829c7df5ae5eab07bd4fb0f0",
+        "bytes": 14213
+      },
+      "syed/src/controller_work/night_c27/arithmetic/phase_inverse12.py": {
+        "sha256": "5d803160a953d9156b7c2cfd6a9afc791dbb27d24d4b6745e294e31b6b68a3c2",
+        "bytes": 4452
+      },
+      "syed/src/controller_work/night_c27/mask_gauge/mask_gauge_blocked.py": {
+        "sha256": "0583bb931d91bb660108f815bb110d3885b713616b0b928bb3b385b22740a722",
+        "bytes": 10162
+      },
+      "syed/src/controller_work/night_c27/synthesis/additive_fft_phase_scan.py": {
+        "sha256": "cfbbfd64870a09e0cdd9ec15cccc5f07b0b0267d16fd404451282a8df6c1376a",
+        "bytes": 7120
+      },
+      "syed/src/controller_work/night_c27/synthesis/fused_crt_synthesis.py": {
+        "sha256": "706d3555240ba60c088bbf50ae2ff9ce0f957b474f9175e917fde99a28cae240",
+        "bytes": 5086
+      },
+      "syed/src/controller_work/night_c27/synthesis/projective_finish.py": {
+        "sha256": "96ea7459a7b242f1112807ee9d7321f1f32de9d95a2a16e0484277d211d5713a",
+        "bytes": 3684
+      },
+      "syed/src/controller_work/night_c27/synthesis/public_geometry.py": {
+        "sha256": "a6e410dd457679005c364d91ad191471086daf9f82ade0c9763d4ca13c016cf7",
+        "bytes": 1851
+      },
+      "syed/src/controller_work/night_c27/synthesis/quadratic_phase_scan.py": {
+        "sha256": "05c6db0470cd7d1e5fbdfc928eaaee9a2c2b4f21f223f1d885db2b6ed3dcd9cf",
+        "bytes": 2796
+      },
+      "syed/src/controller_work/night_converter/night_reference.py": {
+        "sha256": "c13598616973c1cc0ee310f2e204e5d4913e5b33aa98b3dbb9dae7c27e98d6b0",
+        "bytes": 2811
+      },
+      "syed/src/controller_work/night_root/extension24_tensor.py": {
+        "sha256": "330cdeba5965e03fa397b07f7200539925112a815793704791173d144e74c09d",
+        "bytes": 6210
+      },
+      "syed/src/controller_work/night_schedule/fixed_modular_finish.py": {
+        "sha256": "f851998fd6562eedf2f7225e869b5413cef03de1cd42d2fa6bd2c4e305540ab4",
+        "bytes": 6284
+      },
+      "syed/src/controller_work/night_schedule/modular_quadratic_direct.py": {
+        "sha256": "34749a359f131b63c3d18601f51cc6589b2d179c49ebb0212d4d513c23201abc",
+        "bytes": 7687
+      },
+      "syed/src/controller_work/night_schedule/scan10.py": {
+        "sha256": "14a4e8e90dcc3b5f4b0dc3cc4ad5e306ebe55c87ca4185bc583f1ed9311f8b21",
+        "bytes": 2694
+      },
+      "syed/src/controller_work/research_audit/even_forney_classical.py": {
+        "sha256": "fd1125a24b87a7947ffc36249ab6a3edc19b91a09d26668b9c87a83719e57ac3",
+        "bytes": 6341
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/coherent_border.py": {
+        "sha256": "05e11f5133a18edb74b5cc2dfa6b9adebb0b1cb96b82553252af03bd40e8c631",
+        "bytes": 2530
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/compact_dual_scale.py": {
+        "sha256": "a5356c1fd7e1831bde05b2f0cf249048030ba4f2fd1dfefcfdf9ac8c0cf51aa9",
+        "bytes": 827
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/compact_inverse.py": {
+        "sha256": "3a0cb9ca02e51a6c55ccc8000448f45fb2f59d55c8f0d35c99344a731fb89b11",
+        "bytes": 7153
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/confluent_reference.py": {
+        "sha256": "b30d1215306fc85a14e565fe602b2b21cf83e8fb670fe16ff186ad4db9b82458",
+        "bytes": 10897
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/cubic_inverse130.py": {
+        "sha256": "b71110b9699fb4beb229fa725fd8a7126ac676e58f328344caffabbc4c96b27a",
+        "bytes": 13485
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/deferred_fold.py": {
+        "sha256": "ed666db7eca6ab1fcacd49f32fe9101fac0a1c9a010d35b2b05cb0bf84c153e3",
+        "bytes": 1287
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/dual_scale.py": {
+        "sha256": "4251f6f8eed639505cdcdedc5b3ad18729fe067e4a4fdae29a799503e48009e3",
+        "bytes": 4644
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/field_tensor.py": {
+        "sha256": "5ff27ee0ee83d5a171430506c2f2abe0956f205ce25e31256cc6f2e04657575f",
+        "bytes": 5956
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/inplace_scan.py": {
+        "sha256": "8f8294bf0252b392cf1395371dd0164db65d35b760f9a759567e27386f3deba0",
+        "bytes": 8959
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/inverse_phase27.py": {
+        "sha256": "b0c5695638f727381c5f6888fdaac7b12b24df8a3695d307addc930ecc9bc93f",
+        "bytes": 9478
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/low_cached_arithmetic.py": {
+        "sha256": "c64cca88f70e41a4d9e1a2f08506112d4f585cbf3a15e796d93a5105e24b12aa",
+        "bytes": 2193
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/low_pipeline.py": {
+        "sha256": "c1fc2a06ab83a6ec3213611f45b783f758c93a297d806940ca0f2fdad862a6e3",
+        "bytes": 11071
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/low_space_inverse.py": {
+        "sha256": "3d3b6861f9cc23fd1568131dae5ed82cea380fc1ba1ec0a99bedd5698d794133",
+        "bytes": 7379
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/lowspace_field.py": {
+        "sha256": "63f7a406ba812963575a6c94f8409bb53539ca9e7d87e4d2f0bedb86550f9661",
+        "bytes": 9865
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/lowspace_field130.py": {
+        "sha256": "e5e24c094c54a58f255257c30ba00027e431bc6cecebc11b0196a60ae203b82c",
+        "bytes": 3507
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/mask_gauge135.py": {
+        "sha256": "8ccf4ef6589f54f5abab89dc21b791aef1991a1451cec0183ac4bcf35439caa5",
+        "bytes": 5904
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/monic_forney.py": {
+        "sha256": "98646104740f851ca9646b1cf830fb32bbb1e633ee8d9f94d14bc625588b3e5f",
+        "bytes": 7273
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/narrow_field130.py": {
+        "sha256": "f021152bc598f334d854bfba13b9f228cd6a0b751010dde10c9341203bd49bf6",
+        "bytes": 7071
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/norm_cached_field.py": {
+        "sha256": "8af6411be244568e48c2b4ae61f43b0ca491fa997a708139ce7e25eb13c7818b",
+        "bytes": 8588
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/normal_fold.py": {
+        "sha256": "0c8bcb75f4a4a4ebcf7cfbc7d3f9d0085daed6c24cc5f31c718b00cbdff60046",
+        "bytes": 5892
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/normal_pipeline.py": {
+        "sha256": "233c322ef97a41f93b32a2d9e472b97c9925d74659e6d9e452d6872b0be499a9",
+        "bytes": 9715
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/normalization.py": {
+        "sha256": "bbf24f658e2afdd0fc0d55a35b87d2111669fc3a89a3e12c98562ae47a8d81b2",
+        "bytes": 4646
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/projective_carry.py": {
+        "sha256": "6e4f714443c18133d82e06b5a33161caa46c9303f5a665b0ad815f306a3ada7a",
+        "bytes": 10680
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/quantum_reciprocal.py": {
+        "sha256": "8e791a49445eb9acadd08cc5f8c8ac4fb6faf7917ffb55d0723b835621b8f301",
+        "bytes": 9423
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/scalar_inverse_phase.py": {
+        "sha256": "d1549c918b98501276c692427d611da204e61c3f20501b53b7b0ab4fd873e06a",
+        "bytes": 8405
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/tower_inverse.py": {
+        "sha256": "4b3956a1e02a0e61c2daf983c9a556a5997774d012267bd4ca17c94a8463027e",
+        "bytes": 17188
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/unit_toeplitz.py": {
+        "sha256": "8938463326f67101577c6d651400db7e8e99d4ad225710fe6bcfda40421e193d",
+        "bytes": 6339
+      },
+      "syed/src/controller_work/work/round2/milestone152/source/zero_erasure.py": {
+        "sha256": "e0730bb7b4a15e4ab95ac0ebb8ea6c36f7b1d55587a981b58604c4f8ab962362",
+        "bytes": 1483
+      },
+      "third_party/Qualtran_Apache_2.0.txt": {
+        "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac",
+        "bytes": 11359
+      },
+      "third_party/Syed_DQI_Apache_2.0.txt": {
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      }
+    },
+    "portfolio_members": {
+      "dfthcsos/angle_k_0.kmb": "39a74c931c745143d46ac3c3d7f76a84cc09982f0c7a9b2784e35e8cf0533b45",
+      "dfthcsos/angle_k_1.kmb": "753b1424a819fadcac324155a7cae1841f0ee977ce873f29c7e364c55cdd4f37",
+      "dfthcsos/angle_k_10.kmb": "656d5eb283c54a2b934fdcf38fc56d7b3cc7b0607e7731c26eb15b574e74f5eb",
+      "dfthcsos/angle_k_11.kmb": "d4eeedc38481610804ec2708e2fc02323b63d9f37487cec6cb9b42ed7c94c033",
+      "dfthcsos/angle_k_12.kmb": "61275eda03641d1a7b4052b36fa1df4383918f8986172e73a7f8dcaa817d0308",
+      "dfthcsos/angle_k_13.kmb": "a4e43c2b183cf64de805701517fd0b56333dde662889579b824b4ee1ff0c3a72",
+      "dfthcsos/angle_k_14.kmb": "3b21fe0767295c6bd40c41e0c40ca1aeff02e54216ada02849c238ab66b70159",
+      "dfthcsos/angle_k_2.kmb": "487adc39d32a904021985241f80881fd90542fa35c0a379034fc88cc9ccfc337",
+      "dfthcsos/angle_k_3.kmb": "8e01cc596c3cbfd372f2b6d009e3b49c29ae9448eaf0d9f21f50d088d2404d6a",
+      "dfthcsos/angle_k_4.kmb": "f9b6e68a119dc2b819c21812a136f3ae76eddb36d8964d1847bab68f880b3330",
+      "dfthcsos/angle_k_5.kmb": "a17d6c663f66b3e8d9487b0b19f77075f5647ff240d258b6b7d37cb58997cd6c",
+      "dfthcsos/angle_k_6.kmb": "387f1a6095132fb6114682c8cc102a36cc93426860fa57b1fd972b65d4e88561",
+      "dfthcsos/angle_k_7.kmb": "146cb20a99a8c6005539df2b0c9f0eb11b33a71ab10d66480f51fd5590e53711",
+      "dfthcsos/angle_k_8.kmb": "0be2c2ec69d681f352c7e89fc94ed161f45b448110c9e617fe86181f72de646e",
+      "dfthcsos/angle_k_9.kmb": "3e31f13446a8a3c72bff3ac6c123d15f9c8b86039f505fe7b5510d7245246c99",
+      "dfthcsos/submission.npz": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+      "dqi.kmb": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+      "invsqrt.kmb": "e46d90c36d1beb3ce7731a3e0b5c3659b3cda7f5f290b73c6c34513d96c005b6"
+    }
+  }
+}

@@ -1,0 +1,1172 @@
+{
+  "status": "EXACT_ZERO_TAG_REFERENCE_FAMILY_PASS_BUT_COST_REGRESSION",
+  "source_sha256": "5f8dd37ac194b09b5ba870c4150a487b6665775375d9abc864d38b32a2cb7357",
+  "compiler": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dfthcsos/example_submission/angle_k_reference_circuit.py",
+  "compiler_sha256": "aa32268dae7ad46cabd9fe3b620880cdd92909a32b6ca51c4b22da155e14ec7f",
+  "existing_optimized_loader_ccx_per_pass": 4033,
+  "families": {
+    "original": {
+      "rows": [
+        {
+          "batch": 0,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25378,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 1,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25587,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 2,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25317,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 3,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25503,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 4,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25658,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 5,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25631,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 6,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25756,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 7,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25225,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 8,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25616,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 9,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25332,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 10,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25491,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 11,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25400,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 12,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25635,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 13,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25603,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        },
+        {
+          "batch": 14,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25081,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          }
+        }
+      ],
+      "total_ccx_per_pass": 18270,
+      "total_cx_per_pass": 382213,
+      "max_qubits": 61,
+      "anf_zero_padded_completion": [
+        {
+          "batch": 0,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 40948
+        },
+        {
+          "batch": 1,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 40982
+        },
+        {
+          "batch": 2,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 41088
+        },
+        {
+          "batch": 3,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 41278
+        },
+        {
+          "batch": 4,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37642
+        },
+        {
+          "batch": 5,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37600
+        },
+        {
+          "batch": 6,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37454
+        },
+        {
+          "batch": 7,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37792
+        },
+        {
+          "batch": 8,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37280
+        },
+        {
+          "batch": 9,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37638
+        },
+        {
+          "batch": 10,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37476
+        },
+        {
+          "batch": 11,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37762
+        },
+        {
+          "batch": 12,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37720
+        },
+        {
+          "batch": 13,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37612
+        },
+        {
+          "batch": 14,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37836
+        }
+      ]
+    },
+    "zero_tag": {
+      "rows": [
+        {
+          "batch": 0,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25363,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k0/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25363,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k0/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25363,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 1,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25524,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k1/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25524,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k1/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25524,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 2,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25325,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k2/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25325,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k2/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25325,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 3,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25539,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k3/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25539,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k3/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25539,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 4,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25663,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k4/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25663,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k4/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25663,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 5,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25496,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k5/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25496,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k5/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25496,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 6,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25613,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k6/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25613,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k6/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25613,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 7,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25305,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k7/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25305,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k7/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25305,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 8,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25673,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k8/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25673,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k8/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25673,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 9,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25330,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k9/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25330,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k9/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25330,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 10,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25527,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k10/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25527,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k10/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25527,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 11,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25425,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k11/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25425,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k11/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25425,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 12,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25578,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k12/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25578,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k12/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25578,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 13,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25707,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k13/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25707,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k13/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25707,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        },
+        {
+          "batch": 14,
+          "qubits": 61,
+          "gate_counts": {
+            "CCX": 1218,
+            "CX": 25177,
+            "HMR": 1218,
+            "CZ": 1218,
+            "X": 2438
+          },
+          "proofs": [
+            {
+              "label": "zero/k14/forward",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25177,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            },
+            {
+              "label": "zero/k14/reverse",
+              "status": "EXACT_PASS",
+              "addresses": 1220,
+              "output_bits_checked": 40,
+              "HMR_formal_variables_cancelled": 1218,
+              "R_zero_inputs_checked": 1218,
+              "selection_restored": true,
+              "workspace_zero": true,
+              "output_equals_expected_batch": true,
+              "measurement_phase_identically_zero": true,
+              "gate_counts": {
+                "X": 2438,
+                "R": 1218,
+                "CCX": 1218,
+                "CX": 25177,
+                "HMR": 1218,
+                "CZ": 1218
+              }
+            }
+          ]
+        }
+      ],
+      "total_ccx_per_pass": 18270,
+      "total_cx_per_pass": 382245,
+      "max_qubits": 61,
+      "anf_zero_padded_completion": [
+        {
+          "batch": 0,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 40858
+        },
+        {
+          "batch": 1,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 41140
+        },
+        {
+          "batch": 2,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 40904
+        },
+        {
+          "batch": 3,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 41256
+        },
+        {
+          "batch": 4,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37622
+        },
+        {
+          "batch": 5,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37714
+        },
+        {
+          "batch": 6,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37498
+        },
+        {
+          "batch": 7,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37684
+        },
+        {
+          "batch": 8,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37334
+        },
+        {
+          "batch": 9,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37554
+        },
+        {
+          "batch": 10,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37450
+        },
+        {
+          "batch": 11,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37962
+        },
+        {
+          "batch": 12,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37702
+        },
+        {
+          "batch": 13,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37666
+        },
+        {
+          "batch": 14,
+          "nonzero_anf_coefficients": 2048,
+          "nonlinear_monomial_coefficients": 2036,
+          "coefficient_bit_weight": 37860
+        }
+      ]
+    }
+  },
+  "exact_zero_tag_transition_cases": 36600,
+  "seconds": 3.8521926600005827,
+  "peak_rss_mib": 47.15234375,
+  "scope": "Actual in-memory reference compiler and exact all-address forward/reverse/phase proof. No full chemistry verifier, candidate files, or remote changes.",
+  "interpretation": "The general reference compiler does not exploit the available gauge to reduce its AND count. ANF numbers use one zero-padded completion and are descriptive only, neither a lower bound nor optimized Toffoli counts."
+}

@@ -1,0 +1,45 @@
+{
+  "status": "COMPLETE_NEW_INITIAL_FAMILY_SEARCH; NO_RANK_REDUCTION",
+  "target_modulus": 4179,
+  "initial_rank": 42,
+  "best_rank": 42,
+  "initial_starts": 20,
+  "paths": 400,
+  "steps": 400000000,
+  "successful_flips": 398674763,
+  "successful_plus": 14962890,
+  "driver_seconds": 105.73169,
+  "files": {
+    "symmetry_dqi_mixed42_20261115.py": {
+      "bytes": 6782,
+      "sha256": "a45ddd775d1dc6ab02411642b70e60dec4a94ccc09e1b90b73e482a443409231"
+    },
+    "symmetry_dqi_mixed42_20261115_search.py": {
+      "bytes": 3491,
+      "sha256": "44abc357b64fe7689544a5c999d77ba96c190bdedb8f2f19af69be94e36a4521"
+    },
+    "symmetry_dqi_mixed42_20261115_inputs.json": {
+      "bytes": 66288,
+      "sha256": "442290d45fcc8cdaf3af5eefa39138ed297b6af06e30c6c2d56ca4bc4960daca"
+    },
+    "symmetry_dqi_mixed42_20261115_search.json": {
+      "bytes": 10481,
+      "sha256": "a4f1a12529f897ddbb60470212db399c3781d2dc520e153e4e5c7c7b1dcac2dc"
+    },
+    "symmetry_dqi_mixed42_20261115_breadth.json": {
+      "bytes": 86355,
+      "sha256": "737d4c9f3c9a200e55f352debecb872754fb3d59b3910966c3073c315572088c"
+    },
+    "symmetry_dqi_mixed42_20261115_report.md": {
+      "bytes": 5886,
+      "sha256": "b6e2ee869bd6f5ceba3982cf5d97f9b7ce045a9ca9f90c45431bbb294221dda6"
+    }
+  },
+  "production_circuit_modified": false,
+  "source_DQI_sha256": "821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3",
+  "basis_orbit_witness": {
+    "installed_input_factor_lines": 28,
+    "new_input_factor_lines": 23
+  },
+  "scope": "Exact alternate starting decompositions and bounded search, not minimum-rank proof; no score improvement claimed."
+}

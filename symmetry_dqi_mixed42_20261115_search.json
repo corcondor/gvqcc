@@ -1,0 +1,548 @@
+{
+  "status": "COMPLETE",
+  "target": "GF(2^12) multiplication, exact DQI821 coordinate system",
+  "original_rank": 42,
+  "best_rank": 42,
+  "initial_family": "GF4 degree6 mixed rational/quadratic places",
+  "new_family_factor_lines": 23,
+  "installed_GF8_family_factor_lines": 28,
+  "time_budget_seconds": 165,
+  "records": [
+    {
+      "initial_record": 0,
+      "quadratic_orbits": [
+        0,
+        1,
+        2
+      ],
+      "input_sha256": "81e9b2c393c39c14b9243f931aa8d780421bb7c15d12b9bfa55109d6698bf531",
+      "command": [
+        "/workspace/scratch/7f542e06b7cf/symmetry_dqi_joint_depth",
+        "/workspace/scratch/7f542e06b7cf/symmetry_dqi_mixed42_runs/input_00.txt",
+        "/workspace/scratch/7f542e06b7cf/gvqcc_repo/symmetry_dqi_mixed42_20261115_orbit0.json",
+        "128",
+        "1000000",
+        "1000",
+        "8",
+        "202611150001"
+      ],
+      "stdout": "degree=12 initial=42 best=42 max=50 flips=127511841 plus=4705776 seconds=41.0395",
+      "result": {
+        "status": "COMPLETE",
+        "degree": 12,
+        "initial_rank": 42,
+        "best_rank": 42,
+        "max_visited_rank": 50,
+        "seed": 202611150001,
+        "attempts_completed": 128,
+        "path_limit": 1000000,
+        "burst_interval": 1000,
+        "max_growth": 8,
+        "reduce_interval": 1000,
+        "steps_completed": 128000000,
+        "successful_flips": 127511841,
+        "plus_moves": 4705776,
+        "failed_plus_calls": 0,
+        "successful_reductions": 27289,
+        "stalled_at_cap": 0,
+        "exact_basis_pair_checks": 18576,
+        "elapsed_seconds": 41.0395,
+        "rank_histogram": {
+          "42": 967151,
+          "43": 79592193,
+          "44": 17203445,
+          "45": 6919264,
+          "46": 5152063,
+          "47": 4524456,
+          "48": 4248412,
+          "49": 4293687,
+          "50": 5099329
+        },
+        "best_terms": [
+          [
+            1,
+            1,
+            1075
+          ],
+          [
+            3136,
+            3136,
+            265
+          ],
+          [
+            3137,
+            3137,
+            1338
+          ],
+          [
+            1087,
+            1087,
+            3647
+          ],
+          [
+            3008,
+            3008,
+            1580
+          ],
+          [
+            4095,
+            4095,
+            2067
+          ],
+          [
+            3821,
+            3821,
+            3916
+          ],
+          [
+            3958,
+            3958,
+            3289
+          ],
+          [
+            411,
+            411,
+            917
+          ],
+          [
+            859,
+            859,
+            239
+          ],
+          [
+            2806,
+            2806,
+            2391
+          ],
+          [
+            2477,
+            2477,
+            2488
+          ],
+          [
+            1568,
+            1568,
+            2150
+          ],
+          [
+            2048,
+            2048,
+            530
+          ],
+          [
+            3616,
+            3616,
+            2676
+          ],
+          [
+            2065,
+            2065,
+            1774
+          ],
+          [
+            2092,
+            2092,
+            2794
+          ],
+          [
+            61,
+            61,
+            3076
+          ],
+          [
+            30,
+            30,
+            1960
+          ],
+          [
+            1032,
+            1032,
+            3553
+          ],
+          [
+            1046,
+            1046,
+            2633
+          ],
+          [
+            2063,
+            2063,
+            3239
+          ],
+          [
+            3108,
+            3108,
+            3394
+          ],
+          [
+            1067,
+            1067,
+            485
+          ],
+          [
+            1397,
+            1397,
+            2096
+          ],
+          [
+            3250,
+            3250,
+            1589
+          ],
+          [
+            2503,
+            2503,
+            3589
+          ],
+          [
+            2454,
+            2454,
+            1044
+          ],
+          [
+            1544,
+            1544,
+            2075
+          ],
+          [
+            3998,
+            3998,
+            3087
+          ],
+          [
+            3299,
+            3299,
+            1087
+          ],
+          [
+            2746,
+            2746,
+            545
+          ],
+          [
+            1625,
+            1625,
+            1566
+          ],
+          [
+            4017,
+            4017,
+            826
+          ],
+          [
+            3850,
+            3850,
+            1992
+          ],
+          [
+            187,
+            187,
+            1266
+          ],
+          [
+            210,
+            210,
+            278
+          ],
+          [
+            286,
+            286,
+            696
+          ],
+          [
+            460,
+            460,
+            942
+          ],
+          [
+            3939,
+            3939,
+            148
+          ],
+          [
+            3604,
+            3604,
+            1758
+          ],
+          [
+            375,
+            375,
+            1610
+          ]
+        ]
+      },
+      "independent_best_basis_checks": 144
+    },
+    {
+      "initial_record": 2,
+      "quadratic_orbits": [
+        0,
+        1,
+        4
+      ],
+      "input_sha256": "d005c75a0ae094d005392f0f0031366d887c45b2c993781f0b3b65337fa5f70f",
+      "command": [
+        "/workspace/scratch/7f542e06b7cf/symmetry_dqi_joint_depth",
+        "/workspace/scratch/7f542e06b7cf/symmetry_dqi_mixed42_runs/input_02.txt",
+        "/workspace/scratch/7f542e06b7cf/gvqcc_repo/symmetry_dqi_mixed42_20261115_orbit2.json",
+        "128",
+        "1000000",
+        "1000",
+        "8",
+        "202611150002"
+      ],
+      "stdout": "degree=12 initial=42 best=42 max=50 flips=127503117 plus=4774555 seconds=33.9892",
+      "result": {
+        "status": "COMPLETE",
+        "degree": 12,
+        "initial_rank": 42,
+        "best_rank": 42,
+        "max_visited_rank": 50,
+        "seed": 202611150002,
+        "attempts_completed": 128,
+        "path_limit": 1000000,
+        "burst_interval": 1000,
+        "max_growth": 8,
+        "reduce_interval": 1000,
+        "steps_completed": 128000000,
+        "successful_flips": 127503117,
+        "plus_moves": 4774555,
+        "failed_plus_calls": 0,
+        "successful_reductions": 27727,
+        "stalled_at_cap": 0,
+        "exact_basis_pair_checks": 18576,
+        "elapsed_seconds": 33.9892,
+        "rank_histogram": {
+          "42": 984300,
+          "43": 79776310,
+          "44": 16742013,
+          "45": 6928903,
+          "46": 5183961,
+          "47": 4580746,
+          "48": 4300689,
+          "49": 4335661,
+          "50": 5167417
+        },
+        "best_terms": [
+          [
+            1,
+            1,
+            1949
+          ],
+          [
+            3136,
+            3136,
+            31
+          ],
+          [
+            3137,
+            3137,
+            1922
+          ],
+          [
+            1087,
+            1087,
+            2765
+          ],
+          [
+            3008,
+            3008,
+            1302
+          ],
+          [
+            4095,
+            4095,
+            4059
+          ],
+          [
+            3821,
+            3821,
+            2858
+          ],
+          [
+            3958,
+            3958,
+            2365
+          ],
+          [
+            411,
+            411,
+            535
+          ],
+          [
+            859,
+            859,
+            123
+          ],
+          [
+            2806,
+            2806,
+            3977
+          ],
+          [
+            2477,
+            2477,
+            4082
+          ],
+          [
+            1568,
+            1568,
+            3898
+          ],
+          [
+            2048,
+            2048,
+            62
+          ],
+          [
+            3616,
+            3616,
+            3844
+          ],
+          [
+            2065,
+            2065,
+            648
+          ],
+          [
+            2092,
+            2092,
+            3854
+          ],
+          [
+            61,
+            61,
+            3462
+          ],
+          [
+            30,
+            30,
+            1296
+          ],
+          [
+            1032,
+            1032,
+            3663
+          ],
+          [
+            1046,
+            1046,
+            2911
+          ],
+          [
+            2063,
+            2063,
+            2519
+          ],
+          [
+            3108,
+            3108,
+            2590
+          ],
+          [
+            1067,
+            1067,
+            969
+          ],
+          [
+            1397,
+            1397,
+            2826
+          ],
+          [
+            3250,
+            3250,
+            509
+          ],
+          [
+            2503,
+            2503,
+            2807
+          ],
+          [
+            2454,
+            2454,
+            1978
+          ],
+          [
+            1544,
+            1544,
+            2317
+          ],
+          [
+            3998,
+            3998,
+            3767
+          ],
+          [
+            3299,
+            3299,
+            1469
+          ],
+          [
+            2746,
+            2746,
+            1607
+          ],
+          [
+            1625,
+            1625,
+            1018
+          ],
+          [
+            1577,
+            1577,
+            1392
+          ],
+          [
+            1862,
+            1862,
+            1884
+          ],
+          [
+            367,
+            367,
+            556
+          ],
+          [
+            716,
+            716,
+            278
+          ],
+          [
+            3742,
+            3742,
+            696
+          ],
+          [
+            3154,
+            3154,
+            942
+          ],
+          [
+            1253,
+            1253,
+            1758
+          ],
+          [
+            2520,
+            2520,
+            1610
+          ],
+          [
+            3389,
+            3389,
+            148
+          ]
+        ]
+      },
+      "independent_best_basis_checks": 144
+    }
+  ],
+  "seconds": 75.05152959500265,
+  "production_circuit_modified": false,
+  "scope": "Finite constructive search, not a minimum-rank proof. Different initial family established by invariant line count.",
+  "initial_starts_searched": 2,
+  "initial_starts_available": 20,
+  "PGL2_scope": "Classification of evaluation-site sets only; equivalence of full fixed-coordinate decompositions is not asserted"
+}

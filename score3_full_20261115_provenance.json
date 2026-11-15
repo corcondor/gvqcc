@@ -1,0 +1,42 @@
+{
+  "status": "OFFICIAL_FULL_DECODER_PASS",
+  "outputs": {
+    "score3_full_20261115_verification.json": {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_full_20261115_verification.json",
+      "sha256": "e98986fc57fcc920b6275f26fdd9b9db4f9f72604a24802b5a21cf85e05df714",
+      "bytes": 1882
+    },
+    "score3_full_20261115_smoke1536.json": {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_full_20261115_smoke1536.json",
+      "sha256": "0b46c1d96ce75930302bb811feb4fbd0c8c69c67fae6664711eb74d96cdc377c",
+      "bytes": 1870
+    },
+    "score3_full_20261115_comparison.json": {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_full_20261115_comparison.json",
+      "sha256": "9f93aba6ad5984d267469ec3119b8ad4652293e4f61ccb5551402189ee9f70a8",
+      "bytes": 11528
+    },
+    "score3_full_20261115_command.json": {
+      "path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/score3_full_20261115_command.json",
+      "sha256": "823b9669c733726b80f3adcc95ba03274ba738f2b70cca9e2b3b3c4df9811db1",
+      "bytes": 738
+    }
+  },
+  "run_directory": "/workspace/scratch/7f542e06b7cf/score3_full_20261115_012222",
+  "source_files": {
+    "score3_gauge_sort.py": "435870acd0698f6b5214622b225cff81085847d6b0571a1b98afe5bcf69a3e2a",
+    "score3_gauge_sort_manifest.json": "3f26541221942fd0f90f96b37582d08e8bfb01bd0a717aa170af92e936ac3ce7",
+    "score3_gauge_sort_build.json": "6c5aa137c11241196cbbe877cc193a09bcb21bc60bad0c45d7ef668d5e520a59",
+    "score3_gauge_sort_native.json": "f40864c4027dc5de02136abcc64ad1e6c972630a75a0d17192d652adafe38d57",
+    "score3_gauge_sort_proof.md": "0c8a1ab4cca50f70dbd08e667dc1e9401c83cd440925183c9a5b6b0280c613fe",
+    "verify_dqi_candidate.py": "0c3c97abececaa1ed0ac7e62fa0995cf7f24d514ca57baf1dafc03cb3282f6b7"
+  },
+  "candidate_sha256": "9a82f54226707185fa8a7f59a293e6af8ab7d59bff04a4d92919e4178d7d82f1",
+  "source_candidate_modified": false,
+  "official_verifier_modified": false,
+  "candidate_full_runs": 1,
+  "seed": null,
+  "salt": "",
+  "log2_delta": -128.0,
+  "kaggle_submission_performed": false
+}

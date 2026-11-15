@@ -1,0 +1,148 @@
+{
+  "status": "READ_ONLY_BOUNDED_AUDIT_NO_IMMEDIATE_REPLACEMENT_FOUND",
+  "recorded_at_utc": "2026-11-15T01:38:37.204447+00:00",
+  "sources": [
+    {
+      "label": "linear_square",
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/night_c27/arithmetic/phase_inverse12.py",
+      "relative_to_workspace": "official_sources/Syed_v12/source/dqi_source/src/controller_work/night_c27/arithmetic/phase_inverse12.py",
+      "sha256": "5d803160a953d9156b7c2cfd6a9afc791dbb27d24d4b6745e294e31b6b68a3c2",
+      "inspected_symbols": [
+        "fixed_inverse_trace12",
+        "xor_linear(builder, word, B, squares)",
+        "accumulate_product(builder, a, B, C, Base.gf16_kernel())"
+      ]
+    },
+    {
+      "label": "norm_specialization",
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/tower_inverse.py",
+      "relative_to_workspace": "official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/tower_inverse.py",
+      "sha256": "4b3956a1e02a0e61c2daf983c9a556a5997774d012267bd4ca17c94a8463027e",
+      "inspected_symbols": [
+        "norm_columns",
+        "init_norm",
+        "erase_norm"
+      ]
+    },
+    {
+      "label": "gf24_inverse",
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/night_c27/arithmetic/gf24_arithmetic.py",
+      "relative_to_workspace": "official_sources/Syed_v12/source/dqi_source/src/controller_work/night_c27/arithmetic/gf24_arithmetic.py",
+      "sha256": "0864e9455bf464c6e1501bbeb0bc1f9596fb81c9829c7df5ae5eab07bd4fb0f0",
+      "inspected_symbols": [
+        "inverse_deferred",
+        "inverse_closed",
+        "phase_affine_quotient"
+      ]
+    },
+    {
+      "label": "gf12_nested_inverse",
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/night_schedule/modular_quadratic_direct.py",
+      "relative_to_workspace": "official_sources/Syed_v12/source/dqi_source/src/controller_work/night_schedule/modular_quadratic_direct.py",
+      "sha256": "34749a359f131b63c3d18601f51cc6589b2d179c49ebb0212d4d513c23201abc",
+      "inspected_symbols": [
+        "inverse_twelve_deferred"
+      ]
+    },
+    {
+      "label": "gf16_joint_polynomials",
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/inverse_phase27.py",
+      "relative_to_workspace": "official_sources/Syed_v12/source/dqi_source/src/controller_work/work/round2/milestone152/source/inverse_phase27.py",
+      "sha256": "b0c5695638f727381c5f6888fdaac7b12b24df8a3695d307addc930ecc9bc93f",
+      "inspected_symbols": [
+        "JOINT_GATES",
+        "JOINT_OUTPUTS",
+        "_joint_init"
+      ]
+    },
+    {
+      "label": "official_chien_constants",
+      "path": "/workspace/scratch/7f542e06b7cf/official_sources/Inzainos/verifiers/dqi/dqi_reference_circuit.py",
+      "relative_to_workspace": "official_sources/Inzainos/verifiers/dqi/dqi_reference_circuit.py",
+      "sha256": "2b8e1b80a806157c333a7e308eaf2499ee09de499efbc05875202c327959959e",
+      "inspected_symbols": [
+        "_chien_search_and_forney_mbuc",
+        "step_multipliers",
+        "builder.gf2_imul(step, target=reg_b[k], field=gf)"
+      ]
+    }
+  ],
+  "ast_scan": {
+    "root": "/workspace/scratch/7f542e06b7cf/official_sources/Syed_v12/source/dqi_source/src/controller_work",
+    "glob": "**/*.py",
+    "parse_failures": "Skipped by the reproduction script; no skipped-file count recorded",
+    "api_names": [
+      "xor_product",
+      "accumulate_product",
+      "product",
+      "ixor_gf2_mul",
+      "gf2_mul",
+      "init_gf2_mul"
+    ],
+    "operand_argument_offsets": {
+      "ixor_gf2_mul": 0,
+      "gf2_mul": 0,
+      "init_gf2_mul": 0,
+      "xor_product": 1,
+      "accumulate_product": 1,
+      "product": 1
+    },
+    "quantum_product_calls_examined": 269,
+    "identical_operand_ast_count": 0,
+    "same_operand_calls": [],
+    "comparison": "ast.dump(left) == ast.dump(right), not alias or semantic equality"
+  },
+  "correlated_operand_check": {
+    "call": "phase_inverse12.fixed_inverse_trace12: accumulate_product(builder, a, B, C, Base.gf16_kernel())",
+    "field": "km.GF2Field(4)",
+    "bc_inputs_enumerated": 256,
+    "a_values_per_bc": 16,
+    "joint_B_plus_b_squared_plus_c_squared_image": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "distinct_reachable_a_B_pairs": 256,
+    "full_operand_domain_size": 256,
+    "conclusion": "All pairs occur; the a^2 contribution to B alone does not give a restricted multiplication domain."
+  },
+  "already_specialized": [
+    "Frobenius squaring uses xor_linear",
+    "GF24 norm uses one GF12 bilinear product plus linear square terms",
+    "GF12 inverse recurses through quadratic-tower norm",
+    "Official reference Chien constant multiplications use gf2_imul"
+  ],
+  "limitations": [
+    "No proof that all experimental source files are active in the submitted binary.",
+    "No submitted-binary/source identity established here.",
+    "AST equality does not detect semantic aliases or relations between distinct registers.",
+    "No whole-call-graph or universal optimality proof.",
+    "The full-domain pair check does not rule out fused optimization of the larger (a,b,c) network.",
+    "No new circuit, verification, Toffoli reduction or score gain."
+  ],
+  "reproduction": {
+    "report": "symmetry_dqi_20261115_correlated_operands.md",
+    "ast_python": "python",
+    "finite_field_python": "/workspace/scratch/7f542e06b7cf/kickmix_venv/bin/python",
+    "code_blocks": "Both complete read-only reproduction snippets are included in the report."
+  },
+  "mutations": {
+    "source_files_modified": false,
+    "existing_five_chemistry_artifacts_modified": false,
+    "blob_plan_modified": false,
+    "remote_state_modified": false
+  }
+}

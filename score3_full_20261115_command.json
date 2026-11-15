@@ -1,0 +1,20 @@
+{
+  "python": "kickmix_venv/bin/python",
+  "wrapper": "gvqcc_repo/verify_dqi_candidate.py",
+  "candidate": "/workspace/scratch/3815fb5fae06/score3_gauge_sort_family/dqi_ccx480_gauge_sort4096.kmb",
+  "verifier": "official_sources/Inzainos/verifiers/dqi/verify_submission_dqi.py",
+  "full_shots": 102400,
+  "seed": null,
+  "salt": "",
+  "log2_delta": -128.0,
+  "confidence_parameter": "official default, not overridden",
+  "batch_size": 256,
+  "max_workers": 1,
+  "progress_every": 25,
+  "environment": {
+    "MALLOC_ARENA_MAX": "2",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "smoke_gate": "1536-shot PASS, zero value and phase errors, unchanged confidence; 1024 cannot meet official confidence with zero errors"
+}
