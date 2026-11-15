@@ -1,0 +1,277 @@
+{
+  "batches": [
+    {
+      "batch": 0,
+      "num_qubits": 128,
+      "original_ops": 45407,
+      "ops": 23147,
+      "toffoli": 291,
+      "blocks": [
+        {
+          "original_lines": 21701,
+          "compiled_lines": 10574,
+          "CCX": 106,
+          "start": 1596,
+          "end": 23297
+        },
+        {
+          "original_lines": 12446,
+          "compiled_lines": 6063,
+          "CCX": 60,
+          "start": 23303,
+          "end": 35749
+        },
+        {
+          "original_lines": 9504,
+          "compiled_lines": 4754,
+          "CCX": 46,
+          "start": 35753,
+          "end": 45257
+        }
+      ],
+      "sha256": "aa3c5ccfe6021bdc7d50329b3b67aff7b562c77d61fd3f46904e75d05817965c"
+    },
+    {
+      "batch": 1,
+      "num_qubits": 125,
+      "original_ops": 46543,
+      "ops": 22684,
+      "toffoli": 286,
+      "blocks": [
+        {
+          "original_lines": 46141,
+          "compiled_lines": 22282,
+          "CCX": 212,
+          "start": 258,
+          "end": 46399
+        }
+      ],
+      "sha256": "c751d787ab98b112b14c83387f332a2e3ae5bbd5202e74a23de4f3625cd8d6d4"
+    },
+    {
+      "batch": 2,
+      "num_qubits": 125,
+      "original_ops": 46342,
+      "ops": 22757,
+      "toffoli": 286,
+      "blocks": [
+        {
+          "original_lines": 45940,
+          "compiled_lines": 22355,
+          "CCX": 212,
+          "start": 258,
+          "end": 46198
+        }
+      ],
+      "sha256": "9804101c1abe096fe0a82620eb2bcca3931653e80f266bc0cf820ff3d11acb23"
+    },
+    {
+      "batch": 3,
+      "num_qubits": 125,
+      "original_ops": 46585,
+      "ops": 22679,
+      "toffoli": 286,
+      "blocks": [
+        {
+          "original_lines": 46183,
+          "compiled_lines": 22277,
+          "CCX": 212,
+          "start": 258,
+          "end": 46441
+        }
+      ],
+      "sha256": "0752f8fd613f24a030006f81dccd9b9b3574b58ebdb3a06ede594649b5a75e70"
+    },
+    {
+      "batch": 4,
+      "num_qubits": 125,
+      "original_ops": 38440,
+      "ops": 19789,
+      "toffoli": 263,
+      "blocks": [
+        {
+          "original_lines": 38038,
+          "compiled_lines": 19387,
+          "CCX": 189,
+          "start": 258,
+          "end": 38296
+        }
+      ],
+      "sha256": "8fdee7cddd73aaf74ee6f9cfdeef52e4ea38644980873e39a91358ca388ab50f"
+    },
+    {
+      "batch": 5,
+      "num_qubits": 125,
+      "original_ops": 38821,
+      "ops": 19926,
+      "toffoli": 263,
+      "blocks": [
+        {
+          "original_lines": 38419,
+          "compiled_lines": 19524,
+          "CCX": 189,
+          "start": 258,
+          "end": 38677
+        }
+      ],
+      "sha256": "afb8594a2a49f257f893fa768ef32ef943eedd8c65c5f817ef96309f2b483f81"
+    },
+    {
+      "batch": 6,
+      "num_qubits": 125,
+      "original_ops": 38452,
+      "ops": 19515,
+      "toffoli": 261,
+      "blocks": [
+        {
+          "original_lines": 38050,
+          "compiled_lines": 19113,
+          "CCX": 187,
+          "start": 258,
+          "end": 38308
+        }
+      ],
+      "sha256": "a5331736b42d936573e0c15bfbdb373c6952751f8e301a37b50538f7682c258d"
+    },
+    {
+      "batch": 7,
+      "num_qubits": 125,
+      "original_ops": 38710,
+      "ops": 19862,
+      "toffoli": 263,
+      "blocks": [
+        {
+          "original_lines": 38308,
+          "compiled_lines": 19460,
+          "CCX": 189,
+          "start": 258,
+          "end": 38566
+        }
+      ],
+      "sha256": "4402c9ca4a848b62117a93ed8ad13fb98d44980e03afd3c88477fe163f7889e5"
+    },
+    {
+      "batch": 8,
+      "num_qubits": 125,
+      "original_ops": 38320,
+      "ops": 19567,
+      "toffoli": 261,
+      "blocks": [
+        {
+          "original_lines": 37918,
+          "compiled_lines": 19165,
+          "CCX": 187,
+          "start": 258,
+          "end": 38176
+        }
+      ],
+      "sha256": "ee5de7d5af0f95f39c83fd132f12d23ae976b50f8c27850ea24f678bb3897b9a"
+    },
+    {
+      "batch": 9,
+      "num_qubits": 125,
+      "original_ops": 39152,
+      "ops": 19774,
+      "toffoli": 263,
+      "blocks": [
+        {
+          "original_lines": 38750,
+          "compiled_lines": 19372,
+          "CCX": 189,
+          "start": 258,
+          "end": 39008
+        }
+      ],
+      "sha256": "4c5e054fe89c133c8aae834d36d487145f39bfbf6ddb15bafe9e1771ffc67fe0"
+    },
+    {
+      "batch": 10,
+      "num_qubits": 125,
+      "original_ops": 38453,
+      "ops": 19721,
+      "toffoli": 261,
+      "blocks": [
+        {
+          "original_lines": 38051,
+          "compiled_lines": 19319,
+          "CCX": 187,
+          "start": 258,
+          "end": 38309
+        }
+      ],
+      "sha256": "c5c1c96b809ded56c24d745f303d41ad6430ad07e3bd35adb677eab709de805b"
+    },
+    {
+      "batch": 11,
+      "num_qubits": 125,
+      "original_ops": 38745,
+      "ops": 19726,
+      "toffoli": 263,
+      "blocks": [
+        {
+          "original_lines": 38343,
+          "compiled_lines": 19324,
+          "CCX": 189,
+          "start": 258,
+          "end": 38601
+        }
+      ],
+      "sha256": "53c800988c6b75b6ad3f230f7e39df52cc2b5fbcdcc2eb5658f361e9c39b97fe"
+    },
+    {
+      "batch": 12,
+      "num_qubits": 125,
+      "original_ops": 38550,
+      "ops": 19642,
+      "toffoli": 261,
+      "blocks": [
+        {
+          "original_lines": 38148,
+          "compiled_lines": 19240,
+          "CCX": 187,
+          "start": 258,
+          "end": 38406
+        }
+      ],
+      "sha256": "0c5c7f2975054724d7dfb8211ff124c3e0fa227542ca5f5d5ec037d3b1df2337"
+    },
+    {
+      "batch": 13,
+      "num_qubits": 125,
+      "original_ops": 38071,
+      "ops": 19434,
+      "toffoli": 261,
+      "blocks": [
+        {
+          "original_lines": 37669,
+          "compiled_lines": 19032,
+          "CCX": 187,
+          "start": 258,
+          "end": 37927
+        }
+      ],
+      "sha256": "f89b706f45bccebf78a9cd080f3f83d7ea0caad14394d4c7170fe86285e43965"
+    },
+    {
+      "batch": 14,
+      "num_qubits": 125,
+      "original_ops": 38988,
+      "ops": 19411,
+      "toffoli": 261,
+      "blocks": [
+        {
+          "original_lines": 38586,
+          "compiled_lines": 19009,
+          "CCX": 187,
+          "start": 258,
+          "end": 38844
+        }
+      ],
+      "sha256": "4ce88742184df5a929868219aba7ce3d265ddb7c595cbbb769b1bb7b8d9da3ac"
+    }
+  ],
+  "original_ops": 609579,
+  "candidate_ops": 307634,
+  "toffoli_per_pass": 4030,
+  "proof": "gatewise identity outside rewritten blocks; each replaced block has identical affine map and vector-valued product list on arbitrary entry bits."
+}

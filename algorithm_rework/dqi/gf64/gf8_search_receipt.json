@@ -1,0 +1,10 @@
+{
+  "status": "NO_DECOMPOSITION_IN_SCOPED_GATE_FAMILY",
+  "target_hex": "0xdf7e46e73e6e2",
+  "before_depth": 3,
+  "after_depth": 4,
+  "distinct_prefix_states": 1428540,
+  "backward_states_visited": 463815875,
+  "absolute_depth_bound": 7,
+  "wall_time_s": 24.115
+}

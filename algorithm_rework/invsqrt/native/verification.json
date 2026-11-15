@@ -1,0 +1,28 @@
+[
+  {
+    "tested": 3133452,
+    "wrong_output": 0,
+    "wrong_inputs": 0,
+    "dirty_workspace": 0,
+    "bad_phase": 0,
+    "measurement_seed": 42571,
+    "toffoli_like": 468,
+    "operations": 2938,
+    "qubits": 97,
+    "product_output_bits": 31,
+    "truncation": 0
+  },
+  {
+    "tested": 3133452,
+    "wrong_output": 0,
+    "wrong_inputs": 0,
+    "dirty_workspace": 0,
+    "bad_phase": 0,
+    "measurement_seed": 42571,
+    "toffoli_like": 312,
+    "operations": 1924,
+    "qubits": 85,
+    "product_output_bits": 19,
+    "truncation": 12
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "batch": 0,
+    "start": 1596,
+    "end": 23297,
+    "terms": 106,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 0,
+    "start": 23303,
+    "end": 35749,
+    "terms": 60,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 0,
+    "start": 35753,
+    "end": 45257,
+    "terms": 46,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 1,
+    "start": 258,
+    "end": 46399,
+    "terms": 212,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 2,
+    "start": 258,
+    "end": 46198,
+    "terms": 212,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 3,
+    "start": 258,
+    "end": 46441,
+    "terms": 212,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 4,
+    "start": 258,
+    "end": 38296,
+    "terms": 189,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 5,
+    "start": 258,
+    "end": 38677,
+    "terms": 189,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 6,
+    "start": 258,
+    "end": 38308,
+    "terms": 187,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 7,
+    "start": 258,
+    "end": 38566,
+    "terms": 189,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 8,
+    "start": 258,
+    "end": 38176,
+    "terms": 187,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 9,
+    "start": 258,
+    "end": 39008,
+    "terms": 189,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 10,
+    "start": 258,
+    "end": 38309,
+    "terms": 187,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 11,
+    "start": 258,
+    "end": 38601,
+    "terms": 189,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 12,
+    "start": 258,
+    "end": 38406,
+    "terms": 187,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 13,
+    "start": 258,
+    "end": 37927,
+    "terms": 187,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  },
+  {
+    "batch": 14,
+    "start": 258,
+    "end": 38844,
+    "terms": 187,
+    "shared_factors": 0,
+    "max_group": 0,
+    "rank_reductions": []
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "timing_scope": "native forward and reverse ANGLE, 78080 inputs, identical integer angles and CCX",
+  "excluded_warmup_cycles": 1,
+  "timing_seconds": {
+    "base": [
+      5.581685324999853,
+      5.564409632002935
+    ],
+    "candidate": [
+      3.6107025829987833,
+      3.680873454999528
+    ]
+  },
+  "timing_medians": {
+    "base": 5.573047478501394,
+    "candidate": 3.6457880189991556
+  },
+  "angle_fingerprint": "8caf7416de79102103757e3ab7ab4b6bbebfad9b1bf1ecd564c20eb948dbfcea",
+  "stats": {
+    "base": {
+      "ops": {
+        "CX": 601940,
+        "R": 1115,
+        "CCX": 4030,
+        "X": 264,
+        "HMR": 1115,
+        "CZ": 1115
+      },
+      "count": 609579,
+      "max_q": 128
+    },
+    "candidate": {
+      "ops": {
+        "CX": 299995,
+        "R": 1115,
+        "CCX": 4030,
+        "X": 264,
+        "HMR": 1115,
+        "CZ": 1115
+      },
+      "count": 307634,
+      "max_q": 128
+    }
+  }
+}
