@@ -1,0 +1,137 @@
+[
+  {
+    "file": "angle_k_0.kmb",
+    "sha256": "1f8e3ebb7eb6ea63658b8f65a028fc590992b693f40b3f3a4f47bdee4ca6f9a2",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 79,
+    "qubits": 128,
+    "toffoli_per_pass": 291
+  },
+  {
+    "file": "angle_k_1.kmb",
+    "sha256": "d2481510982de8089e49a9dae6f25542a0dd0b99402d40b55deafad373fdd38f",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 100,
+    "qubits": 128,
+    "toffoli_per_pass": 312
+  },
+  {
+    "file": "angle_k_2.kmb",
+    "sha256": "5bc11cfc5c2a24297203c65a434201a3c57a296300600873b840053a2702aa55",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 96,
+    "qubits": 128,
+    "toffoli_per_pass": 308
+  },
+  {
+    "file": "angle_k_3.kmb",
+    "sha256": "b9868580ebd15b51d2b802df49acfbb188cdd1e0b6a3a7af801ced2b6c17303f",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 99,
+    "qubits": 128,
+    "toffoli_per_pass": 311
+  },
+  {
+    "file": "angle_k_4.kmb",
+    "sha256": "e18ca962265d41c9bae9c0486718529bc5de761bb8e409a3c994d9e06071d250",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 88,
+    "qubits": 128,
+    "toffoli_per_pass": 277
+  },
+  {
+    "file": "angle_k_5.kmb",
+    "sha256": "2b2b45bd1aa35d346a0eef14a9337e73676d55ca4459d754bbcf52bad94a7e1a",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 87,
+    "qubits": 128,
+    "toffoli_per_pass": 276
+  },
+  {
+    "file": "angle_k_6.kmb",
+    "sha256": "071d0ac2069056bc31dbe3146d4e0f98b9db6e533017707886add0e184f3ffbf",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 88,
+    "qubits": 128,
+    "toffoli_per_pass": 275
+  },
+  {
+    "file": "angle_k_7.kmb",
+    "sha256": "c41b9a33e1de88bfa2d0d7fc4ac46fc084a4fbdde79c9a782f9ec5c7ae6b339d",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 87,
+    "qubits": 128,
+    "toffoli_per_pass": 276
+  },
+  {
+    "file": "angle_k_8.kmb",
+    "sha256": "e777c6fc960d194203f232627a7e4c8a4d0fee66676952f1e670e6df53ad2f09",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 89,
+    "qubits": 128,
+    "toffoli_per_pass": 276
+  },
+  {
+    "file": "angle_k_9.kmb",
+    "sha256": "f236dddccc096643d18b75e4820a517f1be95dd7c229aed1dbcc32941b159016",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 91,
+    "qubits": 128,
+    "toffoli_per_pass": 280
+  },
+  {
+    "file": "angle_k_10.kmb",
+    "sha256": "68cec0dc2608da2d85b9d8b4b63227899b24b7b81e32620b14900c96a91bfbdd",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 85,
+    "qubits": 128,
+    "toffoli_per_pass": 272
+  },
+  {
+    "file": "angle_k_11.kmb",
+    "sha256": "7b0fb0ce32ff00d5628d4b65b262d45a0e92c47449b822eb7921ceb2784fc50b",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 87,
+    "qubits": 128,
+    "toffoli_per_pass": 276
+  },
+  {
+    "file": "angle_k_12.kmb",
+    "sha256": "ac7d79bd4830ec9c1da774bf5163bfcb4120aef0e3298ccbfda11e2ad03c1639",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 85,
+    "qubits": 128,
+    "toffoli_per_pass": 272
+  },
+  {
+    "file": "angle_k_13.kmb",
+    "sha256": "b36fbbae1d027350eb02f8021106b2538157a47bdd3b5aee53436d7056c55fe5",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 82,
+    "qubits": 128,
+    "toffoli_per_pass": 269
+  },
+  {
+    "file": "angle_k_14.kmb",
+    "sha256": "9fcb91e3c4885883eb86c0650e14216cca67a957df396591c8f2e86812ea458f",
+    "addresses": 1220,
+    "arbitrary_word_bits": 40,
+    "certified_hmr_branches": 83,
+    "qubits": 128,
+    "toffoli_per_pass": 270
+  }
+]

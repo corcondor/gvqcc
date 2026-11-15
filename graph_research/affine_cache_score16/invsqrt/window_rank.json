@@ -1,0 +1,844 @@
+{
+  "queries": {
+    "2": 557,
+    "3": 377,
+    "4": 306,
+    "5": 261,
+    "6": 228,
+    "7": 198,
+    "8": 171,
+    "9": 148,
+    "10": 128,
+    "11": 110,
+    "12": 99
+  },
+  "samples": 3424,
+  "hits": [
+    {
+      "start": 267,
+      "end": 366,
+      "depth": 0,
+      "paid": 7,
+      "rank": 6
+    },
+    {
+      "start": 267,
+      "end": 375,
+      "depth": 0,
+      "paid": 8,
+      "rank": 7
+    },
+    {
+      "start": 267,
+      "end": 384,
+      "depth": 0,
+      "paid": 9,
+      "rank": 7
+    },
+    {
+      "start": 286,
+      "end": 384,
+      "depth": 0,
+      "paid": 8,
+      "rank": 7
+    },
+    {
+      "start": 305,
+      "end": 384,
+      "depth": 0,
+      "paid": 7,
+      "rank": 6
+    },
+    {
+      "start": 267,
+      "end": 393,
+      "depth": 0,
+      "paid": 10,
+      "rank": 8
+    },
+    {
+      "start": 286,
+      "end": 393,
+      "depth": 0,
+      "paid": 9,
+      "rank": 8
+    },
+    {
+      "start": 305,
+      "end": 393,
+      "depth": 0,
+      "paid": 8,
+      "rank": 7
+    },
+    {
+      "start": 267,
+      "end": 400,
+      "depth": 0,
+      "paid": 11,
+      "rank": 9
+    },
+    {
+      "start": 286,
+      "end": 400,
+      "depth": 0,
+      "paid": 10,
+      "rank": 9
+    },
+    {
+      "start": 305,
+      "end": 400,
+      "depth": 0,
+      "paid": 9,
+      "rank": 8
+    },
+    {
+      "start": 267,
+      "end": 405,
+      "depth": 0,
+      "paid": 12,
+      "rank": 9
+    },
+    {
+      "start": 286,
+      "end": 405,
+      "depth": 0,
+      "paid": 11,
+      "rank": 9
+    },
+    {
+      "start": 305,
+      "end": 405,
+      "depth": 0,
+      "paid": 10,
+      "rank": 9
+    },
+    {
+      "start": 286,
+      "end": 409,
+      "depth": 0,
+      "paid": 12,
+      "rank": 9
+    },
+    {
+      "start": 305,
+      "end": 409,
+      "depth": 0,
+      "paid": 11,
+      "rank": 9
+    },
+    {
+      "start": 324,
+      "end": 409,
+      "depth": 0,
+      "paid": 10,
+      "rank": 9
+    },
+    {
+      "start": 343,
+      "end": 409,
+      "depth": 0,
+      "paid": 9,
+      "rank": 8
+    },
+    {
+      "start": 357,
+      "end": 409,
+      "depth": 0,
+      "paid": 8,
+      "rank": 7
+    },
+    {
+      "start": 305,
+      "end": 412,
+      "depth": 0,
+      "paid": 12,
+      "rank": 9
+    },
+    {
+      "start": 324,
+      "end": 412,
+      "depth": 0,
+      "paid": 11,
+      "rank": 9
+    },
+    {
+      "start": 343,
+      "end": 412,
+      "depth": 0,
+      "paid": 10,
+      "rank": 8
+    },
+    {
+      "start": 357,
+      "end": 412,
+      "depth": 0,
+      "paid": 9,
+      "rank": 7
+    },
+    {
+      "start": 366,
+      "end": 412,
+      "depth": 0,
+      "paid": 8,
+      "rank": 7
+    },
+    {
+      "start": 324,
+      "end": 415,
+      "depth": 0,
+      "paid": 12,
+      "rank": 10
+    },
+    {
+      "start": 343,
+      "end": 415,
+      "depth": 0,
+      "paid": 11,
+      "rank": 9
+    },
+    {
+      "start": 357,
+      "end": 415,
+      "depth": 0,
+      "paid": 10,
+      "rank": 8
+    },
+    {
+      "start": 366,
+      "end": 415,
+      "depth": 0,
+      "paid": 9,
+      "rank": 8
+    },
+    {
+      "start": 343,
+      "end": 418,
+      "depth": 0,
+      "paid": 12,
+      "rank": 10
+    },
+    {
+      "start": 357,
+      "end": 418,
+      "depth": 0,
+      "paid": 11,
+      "rank": 9
+    },
+    {
+      "start": 366,
+      "end": 418,
+      "depth": 0,
+      "paid": 10,
+      "rank": 9
+    },
+    {
+      "start": 357,
+      "end": 420,
+      "depth": 0,
+      "paid": 12,
+      "rank": 9
+    },
+    {
+      "start": 366,
+      "end": 420,
+      "depth": 0,
+      "paid": 11,
+      "rank": 9
+    },
+    {
+      "start": 375,
+      "end": 420,
+      "depth": 0,
+      "paid": 10,
+      "rank": 9
+    },
+    {
+      "start": 366,
+      "end": 430,
+      "depth": 0,
+      "paid": 12,
+      "rank": 10
+    },
+    {
+      "start": 375,
+      "end": 430,
+      "depth": 0,
+      "paid": 11,
+      "rank": 10
+    },
+    {
+      "start": 375,
+      "end": 449,
+      "depth": 0,
+      "paid": 12,
+      "rank": 11
+    },
+    {
+      "start": 409,
+      "end": 529,
+      "depth": 0,
+      "paid": 12,
+      "rank": 11
+    },
+    {
+      "start": 412,
+      "end": 529,
+      "depth": 0,
+      "paid": 11,
+      "rank": 10
+    },
+    {
+      "start": 415,
+      "end": 529,
+      "depth": 0,
+      "paid": 10,
+      "rank": 9
+    },
+    {
+      "start": 418,
+      "end": 529,
+      "depth": 0,
+      "paid": 9,
+      "rank": 8
+    },
+    {
+      "start": 420,
+      "end": 529,
+      "depth": 0,
+      "paid": 8,
+      "rank": 7
+    },
+    {
+      "start": 430,
+      "end": 529,
+      "depth": 0,
+      "paid": 7,
+      "rank": 6
+    },
+    {
+      "start": 412,
+      "end": 538,
+      "depth": 0,
+      "paid": 12,
+      "rank": 11
+    },
+    {
+      "start": 415,
+      "end": 538,
+      "depth": 0,
+      "paid": 11,
+      "rank": 10
+    },
+    {
+      "start": 418,
+      "end": 538,
+      "depth": 0,
+      "paid": 10,
+      "rank": 9
+    },
+    {
+      "start": 420,
+      "end": 538,
+      "depth": 0,
+      "paid": 9,
+      "rank": 8
+    },
+    {
+      "start": 430,
+      "end": 538,
+      "depth": 0,
+      "paid": 8,
+      "rank": 7
+    },
+    {
+      "start": 415,
+      "end": 547,
+      "depth": 0,
+      "paid": 12,
+      "rank": 10
+    },
+    {
+      "start": 418,
+      "end": 547,
+      "depth": 0,
+      "paid": 11,
+      "rank": 9
+    },
+    {
+      "start": 420,
+      "end": 547,
+      "depth": 0,
+      "paid": 10,
+      "rank": 8
+    },
+    {
+      "start": 430,
+      "end": 547,
+      "depth": 0,
+      "paid": 9,
+      "rank": 7
+    },
+    {
+      "start": 449,
+      "end": 547,
+      "depth": 0,
+      "paid": 8,
+      "rank": 7
+    },
+    {
+      "start": 468,
+      "end": 547,
+      "depth": 0,
+      "paid": 7,
+      "rank": 6
+    },
+    {
+      "start": 418,
+      "end": 554,
+      "depth": 0,
+      "paid": 12,
+      "rank": 10
+    },
+    {
+      "start": 420,
+      "end": 554,
+      "depth": 0,
+      "paid": 11,
+      "rank": 9
+    },
+    {
+      "start": 430,
+      "end": 554,
+      "depth": 0,
+      "paid": 10,
+      "rank": 8
+    },
+    {
+      "start": 449,
+      "end": 554,
+      "depth": 0,
+      "paid": 9,
+      "rank": 8
+    },
+    {
+      "start": 468,
+      "end": 554,
+      "depth": 0,
+      "paid": 8,
+      "rank": 7
+    },
+    {
+      "start": 420,
+      "end": 559,
+      "depth": 0,
+      "paid": 12,
+      "rank": 9
+    },
+    {
+      "start": 430,
+      "end": 559,
+      "depth": 0,
+      "paid": 11,
+      "rank": 8
+    },
+    {
+      "start": 449,
+      "end": 559,
+      "depth": 0,
+      "paid": 10,
+      "rank": 8
+    },
+    {
+      "start": 468,
+      "end": 559,
+      "depth": 0,
+      "paid": 9,
+      "rank": 8
+    },
+    {
+      "start": 430,
+      "end": 563,
+      "depth": 0,
+      "paid": 12,
+      "rank": 8
+    },
+    {
+      "start": 449,
+      "end": 563,
+      "depth": 0,
+      "paid": 11,
+      "rank": 8
+    },
+    {
+      "start": 468,
+      "end": 563,
+      "depth": 0,
+      "paid": 10,
+      "rank": 8
+    },
+    {
+      "start": 487,
+      "end": 563,
+      "depth": 0,
+      "paid": 9,
+      "rank": 8
+    },
+    {
+      "start": 506,
+      "end": 563,
+      "depth": 0,
+      "paid": 8,
+      "rank": 7
+    },
+    {
+      "start": 520,
+      "end": 563,
+      "depth": 0,
+      "paid": 7,
+      "rank": 6
+    },
+    {
+      "start": 449,
+      "end": 566,
+      "depth": 0,
+      "paid": 12,
+      "rank": 8
+    },
+    {
+      "start": 468,
+      "end": 566,
+      "depth": 0,
+      "paid": 11,
+      "rank": 8
+    },
+    {
+      "start": 487,
+      "end": 566,
+      "depth": 0,
+      "paid": 10,
+      "rank": 8
+    },
+    {
+      "start": 506,
+      "end": 566,
+      "depth": 0,
+      "paid": 9,
+      "rank": 7
+    },
+    {
+      "start": 520,
+      "end": 566,
+      "depth": 0,
+      "paid": 8,
+      "rank": 6
+    },
+    {
+      "start": 529,
+      "end": 566,
+      "depth": 0,
+      "paid": 7,
+      "rank": 6
+    },
+    {
+      "start": 468,
+      "end": 569,
+      "depth": 0,
+      "paid": 12,
+      "rank": 9
+    },
+    {
+      "start": 487,
+      "end": 569,
+      "depth": 0,
+      "paid": 11,
+      "rank": 9
+    },
+    {
+      "start": 506,
+      "end": 569,
+      "depth": 0,
+      "paid": 10,
+      "rank": 8
+    },
+    {
+      "start": 520,
+      "end": 569,
+      "depth": 0,
+      "paid": 9,
+      "rank": 7
+    },
+    {
+      "start": 529,
+      "end": 569,
+      "depth": 0,
+      "paid": 8,
+      "rank": 7
+    },
+    {
+      "start": 487,
+      "end": 572,
+      "depth": 0,
+      "paid": 12,
+      "rank": 9
+    },
+    {
+      "start": 506,
+      "end": 572,
+      "depth": 0,
+      "paid": 11,
+      "rank": 9
+    },
+    {
+      "start": 520,
+      "end": 572,
+      "depth": 0,
+      "paid": 10,
+      "rank": 8
+    },
+    {
+      "start": 529,
+      "end": 572,
+      "depth": 0,
+      "paid": 9,
+      "rank": 8
+    },
+    {
+      "start": 8194,
+      "end": 8197,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1
+    },
+    {
+      "start": 8261,
+      "end": 8262,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1
+    },
+    {
+      "start": 13843,
+      "end": 13881,
+      "depth": 0,
+      "paid": 4,
+      "rank": 3
+    },
+    {
+      "start": 13848,
+      "end": 13881,
+      "depth": 0,
+      "paid": 3,
+      "rank": 2
+    },
+    {
+      "start": 13865,
+      "end": 13881,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1
+    },
+    {
+      "start": 19824,
+      "end": 19841,
+      "depth": 0,
+      "paid": 3,
+      "rank": 2
+    },
+    {
+      "start": 19834,
+      "end": 19841,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1
+    },
+    {
+      "start": 19824,
+      "end": 19849,
+      "depth": 0,
+      "paid": 4,
+      "rank": 3
+    },
+    {
+      "start": 19834,
+      "end": 19849,
+      "depth": 0,
+      "paid": 3,
+      "rank": 2
+    },
+    {
+      "start": 19824,
+      "end": 19856,
+      "depth": 0,
+      "paid": 5,
+      "rank": 4
+    },
+    {
+      "start": 19834,
+      "end": 19856,
+      "depth": 0,
+      "paid": 4,
+      "rank": 3
+    },
+    {
+      "start": 19824,
+      "end": 19876,
+      "depth": 0,
+      "paid": 6,
+      "rank": 5
+    },
+    {
+      "start": 19834,
+      "end": 19876,
+      "depth": 0,
+      "paid": 5,
+      "rank": 4
+    },
+    {
+      "start": 20612,
+      "end": 20728,
+      "depth": 0,
+      "paid": 4,
+      "rank": 3
+    },
+    {
+      "start": 20648,
+      "end": 20728,
+      "depth": 0,
+      "paid": 3,
+      "rank": 2
+    },
+    {
+      "start": 20694,
+      "end": 20728,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1
+    },
+    {
+      "start": 20612,
+      "end": 20772,
+      "depth": 0,
+      "paid": 5,
+      "rank": 4
+    },
+    {
+      "start": 20648,
+      "end": 20772,
+      "depth": 0,
+      "paid": 4,
+      "rank": 3
+    },
+    {
+      "start": 20694,
+      "end": 20772,
+      "depth": 0,
+      "paid": 3,
+      "rank": 2
+    },
+    {
+      "start": 20612,
+      "end": 20802,
+      "depth": 0,
+      "paid": 6,
+      "rank": 4
+    },
+    {
+      "start": 20648,
+      "end": 20802,
+      "depth": 0,
+      "paid": 5,
+      "rank": 3
+    },
+    {
+      "start": 20694,
+      "end": 20802,
+      "depth": 0,
+      "paid": 4,
+      "rank": 2
+    },
+    {
+      "start": 20728,
+      "end": 20802,
+      "depth": 0,
+      "paid": 3,
+      "rank": 2
+    },
+    {
+      "start": 20772,
+      "end": 20802,
+      "depth": 0,
+      "paid": 2,
+      "rank": 1
+    },
+    {
+      "start": 20612,
+      "end": 20852,
+      "depth": 0,
+      "paid": 7,
+      "rank": 5
+    },
+    {
+      "start": 20648,
+      "end": 20852,
+      "depth": 0,
+      "paid": 6,
+      "rank": 4
+    },
+    {
+      "start": 20694,
+      "end": 20852,
+      "depth": 0,
+      "paid": 5,
+      "rank": 3
+    },
+    {
+      "start": 20728,
+      "end": 20852,
+      "depth": 0,
+      "paid": 4,
+      "rank": 3
+    },
+    {
+      "start": 20772,
+      "end": 20852,
+      "depth": 0,
+      "paid": 3,
+      "rank": 2
+    },
+    {
+      "start": 20612,
+      "end": 20909,
+      "depth": 0,
+      "paid": 8,
+      "rank": 6
+    },
+    {
+      "start": 20648,
+      "end": 20909,
+      "depth": 0,
+      "paid": 7,
+      "rank": 5
+    },
+    {
+      "start": 20694,
+      "end": 20909,
+      "depth": 0,
+      "paid": 6,
+      "rank": 4
+    },
+    {
+      "start": 20728,
+      "end": 20909,
+      "depth": 0,
+      "paid": 5,
+      "rank": 4
+    },
+    {
+      "start": 20772,
+      "end": 20909,
+      "depth": 0,
+      "paid": 4,
+      "rank": 3
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "expanded_cross_terms": [
+    [
+      3,
+      "DELETE"
+    ]
+  ],
+  "phase_after_anded_variables": [
+    [
+      3,
+      "Z0"
+    ]
+  ],
+  "conditional_swap_of_equal_inputs": [
+    [
+      3,
+      "DELETE"
+    ]
+  ],
+  "dependent_join_at_scope_exit": [
+    [
+      4,
+      "CX0"
+    ]
+  ],
+  "non_equivalent_join": [],
+  "independent_abi_inputs": []
+}
