@@ -1,0 +1,43 @@
+name: Assemble newer public 28.107 candidate (unsubmitted)
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'research/frontier_20261116/frontier_latest_public_candidate.py'
+      - 'research/frontier_20261116/public_from_pinned_sources.py'
+      - '.github/workflows/frontier_latest_public_candidate.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build-candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      FRONTIER_AUDIT_DIR: /tmp/gvqcc-latest-public
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Check deterministic scripts compile
+        run: python3 -m py_compile research/frontier_20261116/{public_from_pinned_sources,frontier_latest_public_candidate}.py
+      - name: Build pinned public C44 source portfolio
+        run: |
+          python3 -u research/frontier_20261116/public_from_pinned_sources.py \
+            --output /tmp/gvqcc-latest-public/source_public.zip
+      - name: Download archive v131 circuits and assemble candidate
+        run: |
+          python3 -u research/frontier_20261116/frontier_latest_public_candidate.py \
+            --baseline-zip /tmp/gvqcc-latest-public/source_public.zip \
+            --work-dir /tmp/gvqcc-latest-public/latest
+      - name: Upload SHA-verified unsubmitted candidate and provenance
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: newer-public-frontier-candidate-not-officially-reverified
+          path: |
+            /tmp/gvqcc-latest-public/latest/submission_latest_public_candidate.zip
+            /tmp/gvqcc-latest-public/latest/submission_latest_public_candidate.json
+            /tmp/gvqcc-latest-public/source_public.json
+          if-no-files-found: warn
+          retention-days: 7
