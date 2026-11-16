@@ -1,0 +1,32 @@
+name: C43-C42 frontier cost and provenance tests
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "research/frontier_20261116/**"
+      - ".github/workflows/c43_c42_frontier.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install small deterministic test dependencies
+        run: |
+          python3 -m pip install --disable-pip-version-check numpy scipy
+      - name: Unit and provenance checks (not full circuit verification)
+        run: |
+          python3 -m unittest discover -s research/frontier_20261116 -p "test_*.py" -v
+          python3 research/frontier_20261116/frontier_score_gate.py --target 28.3 > /tmp/c43_c42_cost.json
+          python3 -m py_compile research/frontier_20261116/*.py
+      - name: Save cost scenarios
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: c43-c42-conditional-cost-audit
+          path: /tmp/c43_c42_cost.json
+          if-no-files-found: error
