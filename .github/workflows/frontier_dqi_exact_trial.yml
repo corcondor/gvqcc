@@ -6,6 +6,7 @@ on:
     paths:
       - 'research/frontier_20261116/frontier_dqi_exact_trial.py'
       - 'research/frontier_20261116/test_frontier_dqi_exact_trial.py'
+      - 'research/frontier_20261116/public_from_masumhuq.py'
       - '.github/workflows/frontier_dqi_exact_trial.yml'
 
 permissions:
@@ -24,13 +25,9 @@ jobs:
         run: python3 -m pip install --disable-pip-version-check kickmix==1.0.0 numpy==2.5.4
       - name: Run local trial tests
         run: python3 -m unittest discover -s research/frontier_20261116 -p 'test_frontier_dqi_exact_trial.py' -v
-      - name: Fetch exact public components (no Kaggle credentials)
-        run: python3 -u research/frontier_20261116/public_frontier_probe.py
-      - name: Assemble source-pinned public 18-member ZIP
+      - name: Reconstruct 18 pinned components from fixed public dataset
         run: |
-          python3 -u research/frontier_20261116/build_public_frontier.py \
-            --source /tmp/gvqcc-frontier-dqi/maoxin123_v27_pull.json \
-            --mirror /tmp/gvqcc-frontier-dqi/maoxin123_qcc-frontier-dqi-chem-mirror_download.zip \
+          python3 -u research/frontier_20261116/public_from_masumhuq.py \
             --output /tmp/gvqcc-frontier-dqi/submission_public_28_09.zip
       - name: Prove exact CCX rewrites and run full official DQI verifier if changed
         run: |
