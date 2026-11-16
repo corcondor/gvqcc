@@ -1,0 +1,85 @@
+name: Assemble newer public 28.107 candidate (unsubmitted)
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'research/frontier_20261116/frontier_latest_public_candidate.py'
+      - 'research/frontier_20261116/public_from_pinned_sources.py'
+      - '.github/workflows/frontier_latest_public_candidate.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build-candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      FRONTIER_AUDIT_DIR: /tmp/gvqcc-latest-public
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Check deterministic scripts compile
+        run: python3 -m py_compile research/frontier_20261116/{public_from_pinned_sources,frontier_latest_public_candidate}.py
+      - name: Build pinned public C44 source portfolio
+        run: |
+          python3 -u research/frontier_20261116/public_from_pinned_sources.py \
+            --output /tmp/gvqcc-latest-public/source_public.zip
+      - name: Download archive v131 circuits and assemble candidate
+        run: |
+          python3 -u research/frontier_20261116/frontier_latest_public_candidate.py \
+            --baseline-zip /tmp/gvqcc-latest-public/source_public.zip \
+            --work-dir /tmp/gvqcc-latest-public/latest
+      - name: Install pinned official-verifier runtime
+        run: python3 -m pip install --disable-pip-version-check kickmix==1.0.0 numpy==2.5.4
+      - name: Download unchanged official DQI verifier with SHA pin
+        run: |
+          python3 - <<'PY'
+          import hashlib, pathlib, sys, urllib.request
+          sys.path.insert(0, 'research/frontier_20261116')
+          from frontier_dqi_exact_trial import VERIFIER_URL, VERIFIER_SHA
+          p = pathlib.Path('/tmp/gvqcc-latest-public/verify_submission_dqi.py')
+          with urllib.request.urlopen(VERIFIER_URL, timeout=120) as source, p.open('xb') as target:
+              target.write(source.read())
+          assert hashlib.sha256(p.read_bytes()).hexdigest() == VERIFIER_SHA
+          print('Official DQI verifier SHA verified:', VERIFIER_SHA)
+          PY
+      - name: Independently run unchanged official 102400-shot DQI verifier
+        run: |
+          python3 -u verify_dqi_candidate.py \
+            /tmp/gvqcc-latest-public/latest/dqi.kmb \
+            --verifier /tmp/gvqcc-latest-public/verify_submission_dqi.py \
+            --output /tmp/gvqcc-latest-public/latest/dqi_full102400.json \
+            --progress-every 20
+      - name: Record independent DQI PASS and cost alongside public manifest
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          root = pathlib.Path('/tmp/gvqcc-latest-public/latest')
+          p = root / 'submission_latest_public_candidate.json'
+          j = json.loads(p.read_text())
+          r = json.loads((root / 'dqi_full102400.json').read_text())
+          assert r['status'] == 'PASS' and r['verified_shots'] == 102400
+          assert r['circuit_sha256'] == j['component_sources']['dqi']['sha256']
+          j['independent_official_dqi_default'] = {
+              'status': r['status'], 'score': r['score'],
+              'verified_shots': r['verified_shots'],
+              'circuit_sha256': r['circuit_sha256'],
+              'value_errors': r.get('value_errors'),
+              'phase_errors': r.get('phase_errors'),
+          }
+          p.write_text(json.dumps(j, indent=2) + chr(10))
+          print(json.dumps(j['independent_official_dqi_default'], indent=2))
+          PY
+      - name: Upload SHA-verified unsubmitted candidate and provenance
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: newer-public-frontier-candidate-not-officially-reverified
+          path: |
+            /tmp/gvqcc-latest-public/latest/submission_latest_public_candidate.zip
+            /tmp/gvqcc-latest-public/latest/submission_latest_public_candidate.json
+            /tmp/gvqcc-latest-public/latest/dqi_full102400.json
+            /tmp/gvqcc-latest-public/source_public.json
+          if-no-files-found: warn
+          retention-days: 7

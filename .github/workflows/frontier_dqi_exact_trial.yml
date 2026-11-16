@@ -1,0 +1,50 @@
+name: Exact DQI rewrite trial on pinned public 28.09
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'research/frontier_20261116/frontier_dqi_exact_trial.py'
+      - 'research/frontier_20261116/test_frontier_dqi_exact_trial.py'
+      - 'research/frontier_20261116/public_from_pinned_sources.py'
+      - '.github/workflows/frontier_dqi_exact_trial.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  trial:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 28
+    env:
+      FRONTIER_AUDIT_DIR: /tmp/gvqcc-frontier-dqi
+    steps:
+      - name: Check out candidate branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install pinned native engine
+        run: python3 -m pip install --disable-pip-version-check kickmix==1.0.0 numpy==2.5.4
+      - name: Run local trial tests
+        run: python3 -m unittest discover -s research/frontier_20261116 -p 'test_frontier_dqi_exact_trial.py' -v
+      - name: Build 18 SHA-pinned public components from archive and mirror
+        run: |
+          python3 -u research/frontier_20261116/public_from_pinned_sources.py \
+            --output /tmp/gvqcc-frontier-dqi/submission_public_28_09.zip
+      - name: Prove exact CCX rewrites and run full official DQI verifier if changed
+        run: |
+          python3 -u research/frontier_20261116/frontier_dqi_exact_trial.py \
+            --baseline-zip /tmp/gvqcc-frontier-dqi/submission_public_28_09.zip \
+            --work-dir /tmp/gvqcc-frontier-dqi/exact-trial \
+            --scan-seconds 400 --verify
+      - name: Save actual result, candidate only if official DQI PASS and cheaper
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: frontier-dqi-exact-trial
+          path: |
+            /tmp/gvqcc-frontier-dqi/exact-trial/trial.json
+            /tmp/gvqcc-frontier-dqi/exact-trial/same_control.json
+            /tmp/gvqcc-frontier-dqi/exact-trial/input_factor.json
+            /tmp/gvqcc-frontier-dqi/exact-trial/dqi_full102400.json
+            /tmp/gvqcc-frontier-dqi/exact-trial/submission_candidate.zip
+          if-no-files-found: warn
+          retention-days: 7
