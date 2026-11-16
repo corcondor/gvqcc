@@ -1,0 +1,31 @@
+name: Probe and reproduce public 28.09 inputs
+
+on:
+  pull_request:
+    paths:
+      - 'research/frontier_20261116/public_frontier_probe.py'
+      - '.github/workflows/frontier_public_reproduce.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  kaggle-public-provenance:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    env:
+      FRONTIER_AUDIT_DIR: /tmp/gvqcc-public-frontier
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Check source parsing, exact input hashes and public datasets
+        run: |
+          python3 -u research/frontier_20261116/public_frontier_probe.py
+      - name: Persist bounded evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: public-frontier-probe-report
+          path: /tmp/gvqcc-public-frontier/probe.json
+          if-no-files-found: warn
+          retention-days: 7
