@@ -71,7 +71,7 @@ def find_row(rows, task, prefix):
 
 
 def get_cost(row):
-    for key in ("score", "cost", "verified_score", "verifier_score", "verifier_cost"):
+    for key in ("local_task_score", "score", "cost", "verified_score", "verifier_score", "verifier_cost"):
         try:
             v = float(row.get(key, ""))
         except (TypeError, ValueError):
@@ -131,6 +131,12 @@ def build(baseline, manifest, circuits, output):
         stage.unlink(missing_ok=True)
         raise
     inv_cost, dqi_cost = checked["invsqrt"]["manifest_cost"], checked["dqi"]["manifest_cost"]
+    try:
+        dqi_expected = float(checked["dqi"]["manifest_row"].get("dqi_expected_cost", ""))
+    except (TypeError, ValueError):
+        dqi_expected = None
+    if dqi_expected is not None and not math.isfinite(dqi_expected):
+        dqi_expected = None
     report = {
         "status": "PUBLIC_SOURCE_HASHED_NOT_INDEPENDENTLY_REVERIFIED",
         "source_note": SOURCE_NOTE, "archive_manifest_sha256": sha(manifest),
@@ -141,6 +147,9 @@ def build(baseline, manifest, circuits, output):
         "chemistry_cost_author_reported": CHEM_COST,
         "gm_if_manifest_costs_reproduce": gm(inv_cost, dqi_cost, CHEM_COST)
         if inv_cost is not None and dqi_cost is not None else None,
+        "dqi_48draw_expected_cost_author_reported": dqi_expected,
+        "gm_48draw_expected_if_manifest_costs_reproduce": gm(inv_cost, dqi_expected, CHEM_COST)
+        if inv_cost is not None and dqi_expected is not None else None,
         "official_all_three_verified": False, "kaggle_submitted": False,
     }
     output.with_suffix(".json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n")
