@@ -68,7 +68,7 @@ jobs:
               'value_errors': r.get('value_errors'),
               'phase_errors': r.get('phase_errors'),
           }
-          p.write_text(json.dumps(j, indent=2) + '\\n')
+          p.write_text(json.dumps(j, indent=2) + chr(10))
           print(json.dumps(j['independent_official_dqi_default'], indent=2))
           PY
       - name: Upload SHA-verified unsubmitted candidate and provenance
