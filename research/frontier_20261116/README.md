@@ -9,6 +9,26 @@ Goal: attempt a genuine **C=43 or 42** FeMoCo factorization under the unchanged 
 * `frontier_score_gate.py`: Quantifies C rank cost and DQI Q/Toffoli cost exchange; never infers feasibility from a hypothetical rank reduction.
 * `test_frontier.py`: Deterministic tests for numeric bounds, Gram projection and source parsing.
 
+
+## Actual 2026-11-16 execution: public source and E2-only stage
+
+- Public source is now downloaded by \`.github/workflows/frontier_public_reproduce.yml\` on GitHub Actions. \`public_frontier_probe.py\` matches all fifteen KMBs, original chemistry NPZ and the 44-qubit invsqrt SHA against the public notebook; \`build_public_frontier.py\` reconstructs a real 18-member submission-form ZIP and checks every member. See that workflow's artifact: \`verified-hash-public-28-09-candidate\`. This archive reuses the public author's previously scored components; it is **not** a new official Kaggle submission or a claim that the new archive was reverified.
+- New \`rank_e2_lbfgs.py\` separates the C43/C42 two-body feasibility problem from one-body/lambda work. The exact fixed-angle two-body error only depends on \`W Wᵀ\`; the analytic gradient is \`4(A+K)W\`. This allows L-BFGS to minimize the hard 20 mHa constraint before the expensive PyTorch joint search. A C43/C42 two-body-only checkpoint is **not** an accepted chemistry submission: it must pass one-body and gap checks after full refit and then 78,080 native shots.
+
+\`\`\`bash
+OPENBLAS_NUM_THREADS=1 python research/frontier_20261116/rank_e2_lbfgs.py \
+  --base-npz /path/to/public/submission.npz \
+  --output-dir /kaggle/working/e2_feasibility \
+  --ranks 43 42 --seeds 4 --iterations 800 --seconds 500
+
+python research/frontier_20261116/rank43_42_joint_gpu.py \
+  --base-npz /path/to/public/submission.npz \
+  --angle-dir /path/to/public/angle-circuits \
+  --warmstart-dir /kaggle/working/e2_feasibility \
+  --output-dir /kaggle/working/full_joint_run \
+  --ranks 43 42 --device cuda --steps 1200 --seeds 4
+\`\`\`
+
 ## Official acceptance and reproducibility
 
 The chemical reference cost is `lambda_eff * T * Q`. Decreasing C decreases the **state preparation model**, not the number of calls or Toffolis in the ANGLE KMBs. The current pinned 4025-CCX-pass family is T=14712 at C44, T=14634 at C43, T=14555 at C42, Q=427 in this model; actual full verifier resources must agree.
