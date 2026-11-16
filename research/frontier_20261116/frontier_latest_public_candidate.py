@@ -52,7 +52,7 @@ def download(url, path, limit):
 
 def manifest_rows(path):
     raw = path.read_bytes()
-    if raw[:4] == b"PK\\x03\\x04":
+    if raw[:2] == b"PK":
         with zipfile.ZipFile(path) as z:
             names = [n for n in z.namelist() if n.endswith("manifest.csv")]
             if len(names) != 1:
