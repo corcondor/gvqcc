@@ -1,0 +1,50 @@
+name: Verify v7 DQI regression
+on:
+  push:
+    branches: [verify/dqi-v7-60600-20261117]
+    paths: ['dqi-regression-ci/**', '.github/workflows/verify_dqi_v7_regression.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verification:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {name: v7-default, variant: v7, salt: ""}
+          - {name: v7-notebook-verification, variant: v7, salt: notebook-verification}
+          - {name: replacement-default, variant: replacement, salt: ""}
+          - {name: replacement-notebook-verification, variant: replacement, salt: notebook-verification}
+          - {name: replacement-matched-v7-default, variant: replacement, salt: "", matched: true}
+          - {name: replacement-extra-1, variant: replacement, salt: gvqcc-dqi-regression-1}
+          - {name: replacement-extra-2, variant: replacement, salt: gvqcc-dqi-regression-2}
+          - {name: replacement-extra-3, variant: replacement, salt: gvqcc-dqi-regression-3}
+          - {name: replacement-extra-4, variant: replacement, salt: gvqcc-dqi-regression-4}
+          - {name: replacement-extra-5, variant: replacement, salt: gvqcc-dqi-regression-5}
+          - {name: replacement-extra-6, variant: replacement, salt: gvqcc-dqi-regression-6}
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - run: python3 -m pip install --disable-pip-version-check kickmix==1.0.0 numpy==2.5.4 scipy
+      - name: Run official verifier
+        env:
+          VARIANT: ${{ matrix.variant }}
+          SALT: ${{ matrix.salt }}
+          MATCHED: ${{ matrix.matched }}
+          CHECK_NAME: ${{ matrix.name }}
+        run: |
+          flags=()
+          if [[ "$MATCHED" == true ]]; then flags+=(--matched-v7-default); fi
+          python3 -u dqi-regression-ci/verify.py "dqi-regression-ci/$VARIANT.zip" --variant "$VARIANT" --salt "$SALT" "${flags[@]}" --out "$RUNNER_TEMP/$CHECK_NAME.json"
+      - name: Save result
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: ${{ matrix.name }}
+          path: ${{ runner.temp }}/${{ matrix.name }}.json
+          if-no-files-found: error
+          retention-days: 14
