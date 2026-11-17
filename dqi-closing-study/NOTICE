@@ -1,0 +1,49 @@
+VQCC dqi 61c8348d
+A derived work, redistributed under the Apache License, Version 2.0 (see LICENSE).
+
+==== NOTICE of the original builder, carried with every redistribution as it requires ====
+
+VQCC own-circuit portfolio
+Copyright 2026 Syed Asad Ali. Licensed under the Apache License, Version 2.0.
+
+Credits: Syed Asad Ali, working with a team of AI agents (GPT-6 Astra Pro, Gemini 4 Argon,
+Fable 5.2, Mythos 5.2 and Opus 5.5), with Claude Science supporting the research.
+
+Lineage notice (Apache-2.0, Section 4(d): this NOTICE must be carried by every redistribution):
+- The 46-qubit inverse-square-root generator, the 889-qubit DQI decoder generator (v12 and
+  later), and all circuits built from them are the original work of Syed Asad Ali
+  (Kaggle: syed3000; dataset syed3000/vqcc-own-circuit-portfolio).
+- This version contains: invsqrt.kmb (44-qubit inverse square root, from that generator line),
+  dqi.kmb (890-qubit DQI decoder, from that decoder line), and the chemistry files
+  dfthcsos__angle_k_0..14.kmb and dfthcsos__submission.npz (our own loader compiler and word tables).
+- Any redistribution of these files, or of works derived from them at any number of steps
+  removed, must include this NOTICE (or its full attribution text) in a readable place, and
+  must name "Syed Asad Ali" as the original builder in its credit or lineage line, before
+  any later contributors.
+- Improvements by others are welcome; please credit them after the original builder.
+
+==== Later contributors, after the original builder ====
+
+- Hayato Hikawa (Kaggle: hayatohikawa; qcc-c8-milestone-portfolio) and Akmal Xodarev (Kaggle: busyaprime; the
+  product-chain caching idea), as credited in the public packages this file is built from.
+- boristown (Kaggle: boristown; notebook qcc-gap-3-residue-repair-and-c43-native-compiler): control merging, cached
+  controlled swaps, measured flag uncomputations and 37 product-cache chains, as in the public file d54d3387.
+- Balram Srinivasan (Kaggle: balramsrinivasan; notebook vqcc-28-10-gf24-closings-in-syed-v13-dqi, Apache-2.0): the
+  GF(2^24) closing gadget that keeps the norm and inverts it through GF(2^6), as in the public file 66b4f18b.
+
+==== Changes made in this file (Kaggle: grantprater, working with Claude; 2026-11-16) ====
+
+- The 41 closings of 66b4f18b taken into d54d3387 (both are patches of one parent), their new classical bits renumbered.
+- The same closing written at the 8 further closings of the circuit, on each site's own wires.
+- 49 measured uncomputations, one inside each closing.
+
+dqi.kmb sha256: 61c8348d6e85bb0259c4b89f14be9a2834c77bf8a680cf79959bf5e1089cf5de
+
+==== Files in this dataset ====
+
+- dqi.kmb: the derived file described above.
+- dqi_d54d3387.kmb.xz and dqi_66b4f18b.kmb.xz: the public files of boristown and of Balram Srinivasan named above,
+  unchanged and xz-compressed; both are works derived from the original builder's decoder and are carried under this
+  same NOTICE.
+- vqcc_ir.py, vqcc_stream_diff.py, vqcc_measure_out.py: tools written for this work (Kaggle: grantprater, working
+  with Claude), Apache-2.0.

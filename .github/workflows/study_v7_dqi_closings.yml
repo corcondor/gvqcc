@@ -1,0 +1,28 @@
+name: Study remaining GF24 closings on exact v7
+on:
+  push:
+    branches: [verify/dqi-v7-60600-20261117]
+    paths: ['dqi-closing-study/**', '.github/workflows/study_v7_dqi_closings.yml']
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - run: python3 -m pip install --disable-pip-version-check kickmix==1.0.0 numpy==2.5.4 scipy
+      - run: python3 -u dqi-closing-study/run.py "$RUNNER_TEMP/closing-study"
+      - if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: v7-closing-study
+          path: |
+            ${{ runner.temp }}/closing-study/transplant.log
+            ${{ runner.temp }}/closing-study/result.json
+            ${{ runner.temp }}/closing-study/dqi_only.zip
+          if-no-files-found: warn
+          retention-days: 14
