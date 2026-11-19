@@ -58,11 +58,15 @@
     "predicted_chemistry_cost_from_fixed_resources": 297382353.0328865,
     "previous_archived_official_shots": 78080,
     "previous_archived_pass": true,
-    "candidate_official_native_pass": null,
-    "candidate_physics_pass": true,
+    "candidate_official_native_pass": false,
+    "candidate_physics_pass": false,
     "component_16files_zip_sha256": "e2db9ec637a621130f8df30750e614bbe5ffee6d300992b4d124e86dd9ab79d9",
     "component_zip_kind": "CHEMISTRY_ONLY; NOT_FULL_CONTEST_SUBMISSION",
-    "note": "Native Kickmix for Python3.12 unavailable on Python3.13 runtime; physics computed independently using official scoreinfra."
+    "note": "REJECTED: E_gap=3.9097475051385118 <= strict verifier floor 3.914898; earlier 'candidate_physics_pass:true' was missing required score floor. H1_I and Hsym_lower are overwritten by load_fixed_shifts(), so beta reoptimization cannot be submitted.",
+    "candidate_gap": 3.9097475051385118,
+    "official_gap_floor_exclusive": 3.914898,
+    "candidate_passes_strict_physics": false,
+    "predicted_chemistry_cost_from_fixed_resources_is_valid": false
   },
   "main_score_updated": false,
   "kaggle_new_submission": false,
@@ -71,5 +75,7 @@
     "research/dqi_pair_input_subspace_scan.py",
     "research/chemistry_h2_constrained_refit.py",
     "research/2026-11-20_dqi_subspace_and_chemistry_refit.md"
-  ]
+  ],
+  "corrected_2026_11_20": true,
+  "new_accepted_score_improvement": 0
 }
