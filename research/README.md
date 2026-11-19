@@ -8,6 +8,9 @@
 
 - [会話・Kaggle・成果物のアーカイブ](archive/README.md): 取得可能な会話本文、ノートブック・提出の版、ZIPと検証原票の索引。
 
+- [2026-11-20 GF(2)入力部分空間と化学H2再学習](2026-11-20_dqi_subspace_and_chemistry_refit.md): DQI 2651組の3族分類、共有入力211組、化学H2係数によるλ_eff 46.920883857→46.898706508の物理式改善、既知の失敗・検証範囲・採否理由。
+- [部分空間スキャナ](dqi_pair_input_subspace_scan.py) / [化学H2再学習コード](chemistry_h2_constrained_refit.py) / [機械可読実験台帳](2026-11-20_dqi_subspaces_chemistry_refit_receipt.json): 再現・親SHA・成果物SHA・公式検証未実行の区別。
+
 ## 継続するときのルール
 
 1. **原票優先**。親・候補SHA、実KMB、検証器、使用した入力/マスク/seed/salt、時間、元の費用と実行平均を実験記録に保存する。会話中の数字だけで「再現済み」にしない。
