@@ -1,0 +1,80 @@
+{
+  "schema": "gvqcc-dqi-motif-audit-summary-v1",
+  "date_jst": "2026-11-20",
+  "scope": "read_only_static_analysis_not_a_score_update",
+  "input": {
+    "archive": "submission(8).zip",
+    "member": "dqi.kmb",
+    "sha256": "80151bfc87d5c8ca858654e487f093aeb336790dd183f963126ecbee1054b7c2",
+    "qubits": 890,
+    "instructions": 59293427,
+    "ccx": 360687
+  },
+  "scanner": {
+    "source": "research/dqi_kernel_motif_audit.py",
+    "full_template_gates": 1293,
+    "ccx_per_template": 42,
+    "cx_per_template": 1251,
+    "wires": 36,
+    "total_exact_templates": 4053,
+    "matched_skeletons": 4053,
+    "nonoverlapping_ccx": 170226,
+    "fraction_of_all_ccx": 0.4719493632983723,
+    "adjacent_in_ccx_stream": 3464,
+    "cx_only": 2661,
+    "contains_hmr": 478,
+    "other": 325,
+    "source_result_sha256": "045e3750841b44279cd5fcf3b35be4cf53e7bfdee0eb1685434ff8d086b92873"
+  },
+  "degree_analysis": {
+    "source": "research/dqi_pair_degree_audit.py",
+    "cx_only_pairs_checked": 2661,
+    "bilinear_pairs": 2651,
+    "nonlinear_dependency_pairs": 10,
+    "second_ccx_dependent_on_first_product": 420,
+    "source_result_sha256": "3c44f8ab8b3fb9f9e72be3e8ddb7ff674e994c43f30dcf5ea6f6b392177793b1"
+  },
+  "tensor_analysis": {
+    "source": "research/dqi_pair_tensor_scan.py",
+    "pairs_checked": 2661,
+    "bilinear": 2651,
+    "nonlinear": 10,
+    "bilinear_pairs_all_84_distinct_output_directions": 2606,
+    "bilinear_pairs_42_distinct_output_directions": 45,
+    "total_unique_output_directions_across_pairs": 220794,
+    "identical_product_and_direction_duplicates": 0,
+    "same_output_direction_one_factor_merge": 0,
+    "same_input_product_different_output_direction": 0,
+    "source_result_sha256": "ac62e81dfea78c11a7800641579e07131b0f728c0a7f0df6a7945e0e349b3f65"
+  },
+  "boundary_probe": {
+    "first_block_entry_group_a": [
+      0,
+      11
+    ],
+    "first_block_entry_group_b": [
+      12,
+      23
+    ],
+    "first_block_entry_group_t": [
+      840,
+      851
+    ],
+    "returned_source_bits_group_a": 10,
+    "returned_source_bits_group_b": 0,
+    "target_linear_identity_bits": 5,
+    "note": "The exact 1293-gate segment is not a standalone field-multiplier contract. Surrounding linear changes must be included."
+  },
+  "actionable_hypotheses": [
+    "multioutput tensor rank-84 resynthesis over 2651 bilinear adjacent motif pairs",
+    "search at least three-term factor transformations over 45 repeated-output-direction groups",
+    "phase-correct trace/Forney co-synthesis on 478 HMR-separated adjacent pairs",
+    "include predecessor/successor CX and scratch lifetime in any replacement"
+  ],
+  "not_proven": [
+    "any CCX reduction",
+    "verifier pass of a modified circuit",
+    "new Kaggle submission",
+    "composite score gain"
+  ]
+}
