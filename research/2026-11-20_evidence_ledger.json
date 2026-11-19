@@ -1,0 +1,297 @@
+{
+  "schema": "gvqcc-cross-session-evidence-ledger-v1",
+  "as_of_jst": "2026-11-20",
+  "scope": "Reconciled available conversation history, Library reports and GitHub repository materials; not all session artifacts accessible",
+  "note": "Recorded historical data is not a new verifier run; local numerical score is not leaderboard or strict adoptability",
+  "strict_admission": {
+    "required": [
+      "same_final_submission_18_member_sha256_pinned",
+      "dqi_fixed9_no_value_or_phase_or_ancilla_or_public_memory_errors",
+      "additional_rare_cases_zero_remainders_degree_gap3_double_zero_weights_0_to_35_and_multiple_mbuc_masks",
+      "dqi_official_default_102400_zero_value_phase",
+      "dqi_official_notebook_verification_102400_zero_value_phase",
+      "invsqrt_all_3133452_inputs_with_rotation_error_phase_and_scratch",
+      "chemistry_15_loaders_1220_addresses_all_initial_40_target_XOR_scratch_phase",
+      "chemistry_official_78080_and_both_errors_below_0p02",
+      "full_package_crc_sha_and_result_provenance"
+    ],
+    "independence": "A local kernel PASS and/or random-panel PASS does not discharge other gates"
+  },
+  "references": {
+    "invsqrt": 2076774.233715282,
+    "dqi": 24439463583672.93,
+    "chemistry": 3355599588.3155375,
+    "formula": "((ref_inv/c_inv)*(ref_dqi/c_dqi_default)*(ref_chem/c_chem))**(1/3)"
+  },
+  "snapshots": [
+    {
+      "id": "initial-public-20261114",
+      "status": "PUBLIC_SCORE_REPORTED",
+      "score": 27.30683,
+      "dqi_qubits": 889,
+      "source": "corcondor/gvqcc README.md and Kaggle initial results",
+      "adopted_for_strict_gate": null
+    },
+    {
+      "id": "dqi-v2-20261115",
+      "status": "LOCAL_DQI_ZERO_ZERO_PUBLIC_SCORE_LOWER",
+      "score": 27.27654,
+      "score_kind": "KAGGLE_PUBLIC",
+      "dqi_qubits": 889,
+      "dqi_avg_toffoli": 382115.5671582031,
+      "observed_local_dqi_value_errors": 0,
+      "observed_local_dqi_phase_errors": 0,
+      "source": "corcondor/gvqcc README.md, dqi_combined_v2_report.md",
+      "adopted_for_strict_gate": false,
+      "notes": "480 CCX improvement on paired sample did not yield Public score gain; precise Kaggle reason unproven"
+    },
+    {
+      "id": "round43-20261119",
+      "status": "NUMERIC_ONLY_FIXED_COUNTEREXAMPLES_FAIL",
+      "score": 28.31933595161014,
+      "dqi_qubits": 890,
+      "dqi_static_toffoli": 365420,
+      "costs": {
+        "invsqrt": 73870.22470522957,
+        "dqi": 344543332541.8192,
+        "chemistry": 294637907.83320564
+      },
+      "hash_dqi": "258f39e04fb31571aa2346f9dd790f190bd832ce433d1d19948124bab0791e68",
+      "fixed9_passed": 0,
+      "source": "gvqcc_round43_scorecard_20261119.json / gvqcc_round46_report_20261119_ja.md",
+      "adopted_for_strict_gate": false
+    },
+    {
+      "id": "round44-20261119",
+      "status": "NUMERIC_ONLY_FIXED_COUNTEREXAMPLES_FAIL",
+      "score": 28.321035838481226,
+      "dqi_qubits": 890,
+      "dqi_static_toffoli": 365684,
+      "dqi_avg_toffoli": 365072.3184375,
+      "costs": {
+        "invsqrt": 73870.22470522957,
+        "dqi": 344481295665.3204,
+        "chemistry": 294637907.83320564
+      },
+      "hash_dqi": "7a09de03b44023f395a425088a4e4d819cc98eba48fa9126d321eedc323d06a2",
+      "fixed9_passed": 0,
+      "source": "gvqcc_round44_scorecard_20261119.json",
+      "adopted_for_strict_gate": false
+    },
+    {
+      "id": "round48-hierarchy16-20261119",
+      "status": "BEST_RECORDED_LOCAL_NUMERIC_BUT_NOT_STRICT",
+      "score": 28.32145634974874,
+      "score_kind": "LOCAL_OFFICIAL_DEFAULT_REAGGREGATED",
+      "dqi_qubits": 890,
+      "dqi_static_toffoli": 365668,
+      "dqi_avg_toffoli": 365056.0579199219,
+      "costs": {
+        "invsqrt": 73870.22470522957,
+        "dqi": 344465952282.9805,
+        "chemistry": 294637907.186498
+      },
+      "hash_dqi": "669edf233ee8f64f3f2f5e29701256c89207ccb244d1313c2c4fec092649458e",
+      "observed_default_dqi_value_errors": 0,
+      "observed_default_dqi_phase_errors": 0,
+      "fixed9_passed": 0,
+      "chemistry_arbitrary_target_proven": false,
+      "source": "gvqcc_round48_hierarchy16_scorecard_20261119.json / gvqcc_integration_report_20261120_ja.md",
+      "adopted_for_strict_gate": false
+    },
+    {
+      "id": "repair-v15-20261119",
+      "status": "FIXED_COUNTEREXAMPLES_AND_TWO_PANELS_PASS_HIGH_COST",
+      "score": 26.69266644620627,
+      "dqi_qubits": 922,
+      "dqi_static_toffoli": 403285,
+      "source": "gvqcc_round44_repair_v15_report_20261119_ja.md",
+      "adopted_for_strict_gate": false
+    },
+    {
+      "id": "intermediate-914q-20261119",
+      "status": "INTERMEDIATE_636_PASS_BUT_LATER_LOW_WEIGHT_ERRORS",
+      "dqi_qubits": 914,
+      "dqi_static_toffoli": 388674,
+      "intermediate_weight_0_to_35_tried": 636,
+      "intermediate_failures": 0,
+      "additional_cases": 108,
+      "additional_value_failures": 54,
+      "fail_weight_examples": [
+        1,
+        3,
+        15
+      ],
+      "source": "gvqcc_integration_report_20261120_ja.md / prior_latest/optimization_report_20261119.md",
+      "adopted_for_strict_gate": false
+    },
+    {
+      "id": "repair-v11-20261120",
+      "status": "MULTI_PANEL_CLEAN_RECORDED_UNIVERSAL_PROOF_FALSE_HIGH_COST",
+      "score": 20.274036887539708,
+      "dqi_qubits": 1351,
+      "dqi_static_toffoli": 428257,
+      "dqi_local_cost": 929274613205.7172,
+      "hash_dqi": "0157faa195a44882d69824572ec03da55121aac07e4ea62ef33455cfda4ffb25",
+      "package_sha256": "88320180b85564524761b7b7ec70d36db91f7ccf883612c8ce929ae114409864",
+      "source": "gvqcc_execution_report_20261119_ja.md / gvqcc_submission_manifest_20261119.json",
+      "adopted_for_strict_gate": false
+    },
+    {
+      "id": "submission8-baseline-20261120",
+      "status": "OFFICIAL_LOCAL_BASELINE_KNOWN_COUNTEREXAMPLES",
+      "score": 28.29513348453076,
+      "dqi_qubits": 890,
+      "dqi_static_toffoli": 366755,
+      "package_sha256": "3c1ba9eb7a6dc61b6db8c8018ddd30e5882fcfd9c155feb3014f3d3f1cd31dd2",
+      "package_members": 18,
+      "zip_crc": "PASS",
+      "source": "current attachment / gvqcc_scorecard_20261120.json",
+      "adopted_for_strict_gate": false
+    },
+    {
+      "id": "submission8-reintegrated-20261120",
+      "status": "NUMERIC_REINTEGRATION_NOT_ADOPTED",
+      "score": 28.32145632897568,
+      "dqi_qubits": 890,
+      "hash_dqi": "669edf233ee8f64f3f2f5e29701256c89207ccb244d1313c2c4fec092649458e",
+      "fixed9_passed": 0,
+      "chemistry_arbitrary_target_probe_errors": 16414,
+      "chemistry_arbitrary_target_probe_total": 18300,
+      "source": "gvqcc_integration_report_20261120_ja.md / gvqcc_scorecard_20261120.json",
+      "adopted_for_strict_gate": false
+    }
+  ],
+  "experiments": [
+    {
+      "id": "dqi-joint-dual-norm-phase-42",
+      "class": "joint-bilinear-resynthesis",
+      "result": "42T nonlinear joint norm and cross coefficient, replacing 45T independent; 58T complete trace phase kernel with 16T inverse trace",
+      "proof_scope": "component symbolic and native",
+      "status": "PROVEN_LOCAL_BUT_GLOBAL_INTEGRATION_NOT_ADOPTED",
+      "source": "gvqcc_fusion_analysis_20261119_ja.md"
+    },
+    {
+      "id": "dqi-58T-120-calls",
+      "class": "phase-kernel-fusion",
+      "result": "65->58 T at 120 repair call sites, static -840 T, Q1020 global candidate score 24.9315 and 10 default value errors",
+      "status": "REJECTED_GLOBAL_COST_AND_VALUE_ERRORS",
+      "source": "gvqcc_fusion_analysis_20261119_ja.md"
+    },
+    {
+      "id": "gf4096-42-to-41-40-39",
+      "class": "tensor-rank-strassen-GL-flip",
+      "result": "best rank 42 through reported search; no general lower bound",
+      "status": "OPEN_UNPROVEN",
+      "source": "gvqcc_round46_report_20261119_ja.md; gvqcc_integration_report_20261120_ja.md"
+    },
+    {
+      "id": "dqirepair-guard-gap-hankel",
+      "class": "global-decoder",
+      "result": "Hasse, Hankel, gap-3 and zero paths can repair cases, but expensive Q/T and new rare exceptions; do not inherit pass from intermediate",
+      "status": "PARTIAL_SUCCESS_COST_OR_COUNTEREXAMPLES",
+      "source": "gvqcc_execution_report_20261119_ja.md; gvqcc_round44_repair_v15_report_20261119_ja.md"
+    },
+    {
+      "id": "dqi-gf24-two-block",
+      "class": "field-extension-restructure",
+      "result": "local 852->828T; decoder forward+reverse 117810->119340T",
+      "status": "REJECTED_GLOBAL_COST",
+      "source": "prior session Round24"
+    },
+    {
+      "id": "dqi-peephole-affine-SSA",
+      "class": "local-scan",
+      "result": "No new reduction within scanned CCX pairing/affine/constant rules on attached and Round48 DQI",
+      "status": "NEGATIVE_ONLY_IN_TESTED_RULES",
+      "source": "gvqcc_integration_report_20261120_ja.md; current session compact scan"
+    },
+    {
+      "id": "invsqrt-one-less-CCX",
+      "class": "joint-rotation-cost",
+      "result": "1540T cost73901.17855 is worse than1541T cost73870.22471 due to tighter eps",
+      "status": "REJECTED_GLOBAL_COST",
+      "source": "gvqcc_integration_report_20261120_ja.md"
+    },
+    {
+      "id": "invsqrt-70-AND",
+      "class": "measurement-causal-rewrite",
+      "result": "14-input component exact truth + HMR phase, but embedded Q45 > baseline Q44",
+      "status": "PROVEN_LOCAL_NOT_EMBEDDABLE_AT_BASELINE_WIDTH",
+      "source": "gvqcc_round44_repair_v15_report_20261119_ja.md"
+    },
+    {
+      "id": "chem-arbitrary-xor-14850",
+      "class": "strict-chemistry-contract",
+      "result": "Historical strict family 14888->14860->14858->14850 T with official chemistry verification; low 14706 T fails arbitrary dirty target",
+      "status": "COMPONENT_APPROACH_PROVEN_HISTORY_NOT_COMBINED_WITH_BEST_DQI",
+      "source": "gvqcc_round46_report_20261119_ja.md; gvqcc_round44_repair_v15_report_20261119_ja.md; chemistry_14850_evidence_round48.zip"
+    },
+    {
+      "id": "chem-c43-discrete",
+      "class": "continuous-and-discrete-co-optimization",
+      "result": "continuous e2 0.01962639 possible, quantized e2 0.02135072 fails; new C43 benchmark e1 20.756/e2 21.342 mHa",
+      "status": "REJECTED_PHYSICAL_ERROR",
+      "source": "gvqcc_integration_report_20261120_ja.md; prior C43 notes"
+    },
+    {
+      "id": "chem-j4-19-loader",
+      "class": "batch-tradeoff",
+      "result": "5197 CCX/pass after joint compaction, boundary about4170 CCX/pass",
+      "status": "REJECTED_GLOBAL_COST",
+      "source": "prior sessions Nov15"
+    },
+    {
+      "id": "chem-inner-prep-Q303",
+      "class": "objective-interface",
+      "result": "Inner Q303 is fixed by scoreinfra and not directly replaceable through ANGLE submissions",
+      "status": "NOT_AN_EDITABLE_CIRCUIT_RESOURCE",
+      "source": "corcondor/gvqcc outcome_chem303_audit.md"
+    }
+  ],
+  "next_experiments": [
+    {
+      "priority": 1,
+      "id": "dqi-joint-strict-repair",
+      "objective": "Use explicit counterexample fixtures and co-synthesize syndrome+flags+trace+repair at Q<=890 if possible",
+      "validation": "fixed9+multiple MBUC+weights0..35+double-zero+both full panels",
+      "not_yet_verified": true
+    },
+    {
+      "priority": 2,
+      "id": "dqi-qubit-pebbling",
+      "objective": "Generate full live-range/liveness constraints with measurement-causal phase, reschedule or recompute to reduce Q",
+      "validation": "full end-to-end Q/T tradeoff and independent phase proof",
+      "not_yet_verified": true
+    },
+    {
+      "priority": 3,
+      "id": "dqi-multioutput-bilinear",
+      "objective": "Reformulate joint GF mult, norm, trace and Forney for SAT/SMT tensor rank rather than single 42T primitive",
+      "validation": "all tensor coefficients+actual HMR KMB",
+      "not_yet_verified": true
+    },
+    {
+      "priority": 4,
+      "id": "invsqrt-43q-joint",
+      "objective": "Joint width scheduling, phase approximation and Toffoli; 44->43Q at stable cost would materially improve score",
+      "validation": "all 3133452 inputs /64 native /eps /scratch",
+      "not_yet_verified": true
+    },
+    {
+      "priority": 5,
+      "id": "chem-strict-joint-optimization",
+      "objective": "Use 14850T arbitrary-target loader as source, jointly refit angle words, W, H2_I, C/J/B, QROM",
+      "validation": "all1220x15 symbolic XOR and 78080 official, error1/2<=0.02",
+      "not_yet_verified": true
+    },
+    {
+      "priority": 6,
+      "id": "ml-guided-proof-search",
+      "objective": "Train candidate-prioritization on positive and negative experiments; search algorithm only",
+      "validation": "proof+official verifier independent of model",
+      "not_yet_verified": true
+    }
+  ],
+  "warning": "Do not sum reductions from incompatible candidates or parent hashes; archive candidate status as soon as a new counterexample is observed."
+}
