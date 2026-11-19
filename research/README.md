@@ -13,6 +13,9 @@
 
 **2026-11-20 厳密採点仕様訂正**: [化学H2係数再学習](2026-11-20_dqi_subspace_and_chemistry_refit.md)で報告された λ_eff 46.898706508 は E_gap=3.9097475 が公式の厳密下限 3.914898 に届かず **不採用**。`H1_I`/`Hsym_lower` は公式Verifierで固定値に上書きされるため、この変更での救済は不可。E_gap、Λの上下限、20mHa、KMB契約を同時に満たす前にはスコア向上として記録しない。現時点でこの再学習による有効スコア更新は0。
 
+- [2026-11-20 スコア厳密追試と縮約陰性結果](2026-11-20_scoremax_strict_counterexamples.md): 固定S/βによる再採点、H2改善候補のE_gap下限違反、zero-eigen/zero-H2の局所KKT、ANGLE+invsqrtの3〜6 CCX計7,878窓を整理。
+- [化学採点の固定シフト・厳密floorガード](chemistry_fixed_shift_score_gate.py): `H1_I`/`Hsym_lower` の提出値上書きを再現し、Lambda>49とE_gap>3.914898を必ず判定する読取専用CLI。
+
 ## 継続するときのルール
 
 1. **原票優先**。親・候補SHA、実KMB、検証器、使用した入力/マスク/seed/salt、時間、元の費用と実行平均を実験記録に保存する。会話中の数字だけで「再現済み」にしない。
