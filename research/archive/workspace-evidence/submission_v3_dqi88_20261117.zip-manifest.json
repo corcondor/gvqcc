@@ -1,0 +1,100 @@
+{
+  "file": "submission_v3_dqi88_20261117.zip",
+  "bytes": 52487081,
+  "sha256": "4dc43840ab52ca13b7d58c70b0c0995cb65aa7b0342eb3afdbd861e841b9e164",
+  "crc": "PASS (all members read)",
+  "members": [
+    {
+      "path": "dfthcsos/angle_k_0.kmb",
+      "bytes": 415169,
+      "sha256": "aed6aa7cde8cefae06376546c276208a667a1a402ebfe9e57cb33881868ab089"
+    },
+    {
+      "path": "dfthcsos/angle_k_1.kmb",
+      "bytes": 421737,
+      "sha256": "72b79b56514e657650ed3258d90e7a533568ade86db407990a34bfb4380b6e60"
+    },
+    {
+      "path": "dfthcsos/angle_k_10.kmb",
+      "bytes": 357811,
+      "sha256": "2926a709c9d0ed2824073bef29347d2beee6282e1e08aff5b982512e345f6220"
+    },
+    {
+      "path": "dfthcsos/angle_k_11.kmb",
+      "bytes": 354943,
+      "sha256": "7aed38f94ef86b504f985dcee98ed33dd6b341114147c55d0407b88495a1015d"
+    },
+    {
+      "path": "dfthcsos/angle_k_12.kmb",
+      "bytes": 353554,
+      "sha256": "d73ee72ed6661082acd273d3bbf4d3511330d688bec8e64e6a8d647a975b9655"
+    },
+    {
+      "path": "dfthcsos/angle_k_13.kmb",
+      "bytes": 353477,
+      "sha256": "38b56f2fc07b7bd5a378c7d25650f62a430fe42d5595d6184d5ae930b258bec3"
+    },
+    {
+      "path": "dfthcsos/angle_k_14.kmb",
+      "bytes": 362314,
+      "sha256": "ab06b98fc22fce8a33b591db9caf73e93d407342a6c0f3d2e2e1416dffffdfd7"
+    },
+    {
+      "path": "dfthcsos/angle_k_2.kmb",
+      "bytes": 371346,
+      "sha256": "42ea507daa22d0464e16d8f8d8f091e684d025998a32b574fee34672414b18ad"
+    },
+    {
+      "path": "dfthcsos/angle_k_3.kmb",
+      "bytes": 368418,
+      "sha256": "423968d4ab8219b164a27284c4b889b67a864ead9322b7703599fc839d7d8035"
+    },
+    {
+      "path": "dfthcsos/angle_k_4.kmb",
+      "bytes": 356845,
+      "sha256": "cf7c413468b0fe51cfb7ff457b1f9ab76dc80df01dbfba87cd190c9686078d68"
+    },
+    {
+      "path": "dfthcsos/angle_k_5.kmb",
+      "bytes": 354694,
+      "sha256": "8c8a6281407052dbc2bfaa2a90d7cc34f936b406ad83b11a3a0586f2d32f1896"
+    },
+    {
+      "path": "dfthcsos/angle_k_6.kmb",
+      "bytes": 350902,
+      "sha256": "593ae2e3256bd03aae2d5b6f236aa5fcf8b7d1009a3003ff18ee93e73e9d24bf"
+    },
+    {
+      "path": "dfthcsos/angle_k_7.kmb",
+      "bytes": 352494,
+      "sha256": "122cab8fe93f811109d8637d99ddabdd2160d729601163971a9bcfe1e50a6467"
+    },
+    {
+      "path": "dfthcsos/angle_k_8.kmb",
+      "bytes": 357510,
+      "sha256": "9c5ced81d9a7378b763603f0bdd61322369e1bc3c72628a224b0445486e48663"
+    },
+    {
+      "path": "dfthcsos/angle_k_9.kmb",
+      "bytes": 354915,
+      "sha256": "611fe155e4e060d0cca795236b0f1abd6e41225b7bbca135cfaec8da5a4334f9"
+    },
+    {
+      "path": "dfthcsos/submission.npz",
+      "bytes": 1387741,
+      "sha256": "bac346142d351ef11137209e955307982352e1b8915fe5667f521e507ccdafe8"
+    },
+    {
+      "path": "dqi.kmb",
+      "bytes": 469934580,
+      "sha256": "1d32e73becb03345cdbf042862e0403e963654db690780b770e14cc943c41196"
+    },
+    {
+      "path": "invsqrt.kmb",
+      "bytes": 179768,
+      "sha256": "f2cdab0b7afc2e76aca12451113ef618e6f7e575a35a29f58264602dafb48726"
+    }
+  ],
+  "library_catalog_match": "filename and size; Library copy not downloaded for hash comparison",
+  "library_url": "https://chatgpt.com/library?file_id=libfile_fde3_f-32910d86497c8191976d732bcda42e4b_e9171c3d17a08191be76d9438ecb9078&account_id=personal"
+}
