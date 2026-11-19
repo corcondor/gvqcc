@@ -42,6 +42,17 @@ def scan(path,limit=None):
     bit=mask&-mask;j=bit.bit_length()-1;dirs[j]|=1<<w;mask^=bit
   triples=list(zip(terms,dirs))
   count_directions=len(set(dirs));cnt['direction_uniques_total']+=count_directions
+  basis={}
+  for vector in dirs:
+   while vector:
+    hi=vector.bit_length()-1
+    if hi in basis:vector^=basis[hi]
+    else:
+     basis[hi]=vector
+     break
+  rank=len(basis)
+  cnt[f'output_linear_rank_{rank}']+=1
+  cnt[f'outputs_{count_directions}_rank_{rank}']+=1
   if count_directions<84:cnt['repeated_direction_pairs']+=1
   same_full=0;factor_same_output=0;product_shared_diff_out=0
   for j,(pr,d) in enumerate(triples):
