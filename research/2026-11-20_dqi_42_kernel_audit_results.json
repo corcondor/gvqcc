@@ -45,7 +45,10 @@
     "identical_product_and_direction_duplicates": 0,
     "same_output_direction_one_factor_merge": 0,
     "same_input_product_different_output_direction": 0,
-    "source_result_sha256": "ac62e81dfea78c11a7800641579e07131b0f728c0a7f0df6a7945e0e349b3f65"
+    "source_result_sha256": "pending_v2",
+    "output_linear_rank_12_pairs": 45,
+    "output_linear_rank_24_pairs": 2606,
+    "summary": "45 pairs: 84 product terms in 12-dimensional GF2 exit space; 2606 pairs: 84 terms in 24-dimensional exit space. Exact rank calculated via binary Gaussian elimination."
   },
   "boundary_probe": {
     "first_block_entry_group_a": [
