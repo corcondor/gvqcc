@@ -1,0 +1,789 @@
+{
+  "sha256": "669edf233ee8f64f3f2f5e29701256c89207ccb244d1313c2c4fec092649458e",
+  "scope": "Cut-local linear forms, all entry wires independent; detector verifies motif spans and full-window opcode contract",
+  "classes": [
+    {
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "intersection_ranks": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_input_intersection": 0,
+      "count": 45
+    }
+  ],
+  "cases": [
+    {
+      "first_start": 28082576,
+      "second_start": 28083894,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 28085212,
+      "second_start": 28086530,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 28097390,
+      "second_start": 28098708,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 28098708,
+      "second_start": 28100026,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 28101344,
+      "second_start": 28102662,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 28102662,
+      "second_start": 28103980,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29676135,
+      "second_start": 29677453,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29677453,
+      "second_start": 29678771,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29678771,
+      "second_start": 29680089,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29680089,
+      "second_start": 29681407,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29681407,
+      "second_start": 29682725,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29682725,
+      "second_start": 29684043,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29684043,
+      "second_start": 29685361,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29685361,
+      "second_start": 29686679,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29686679,
+      "second_start": 29687997,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29687997,
+      "second_start": 29689315,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29689315,
+      "second_start": 29690633,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29690633,
+      "second_start": 29691951,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29691951,
+      "second_start": 29693269,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29693269,
+      "second_start": 29694587,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29694587,
+      "second_start": 29695905,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 29695905,
+      "second_start": 29697223,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36192314,
+      "second_start": 36193632,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36266658,
+      "second_start": 36267976,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36267976,
+      "second_start": 36269294,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36269294,
+      "second_start": 36270612,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36270612,
+      "second_start": 36271930,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36271930,
+      "second_start": 36273248,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36273248,
+      "second_start": 36274566,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36274566,
+      "second_start": 36275884,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36275884,
+      "second_start": 36277202,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36277202,
+      "second_start": 36278520,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36278520,
+      "second_start": 36279838,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36279838,
+      "second_start": 36281156,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36281156,
+      "second_start": 36282474,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36282474,
+      "second_start": 36283792,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36283792,
+      "second_start": 36285110,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36285110,
+      "second_start": 36286428,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 36286428,
+      "second_start": 36287746,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 37857681,
+      "second_start": 37858999,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 37858999,
+      "second_start": 37860317,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 37861635,
+      "second_start": 37862953,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 37862953,
+      "second_start": 37864271,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 37877328,
+      "second_start": 37878646,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    },
+    {
+      "first_start": 37879964,
+      "second_start": 37881282,
+      "operand_ranks": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "operand_pair_intersection_ranks": {
+        "0-2": 0,
+        "0-3": 0,
+        "1-2": 0,
+        "1-3": 0
+      },
+      "full_input_intersection_rank": 0
+    }
+  ]
+}

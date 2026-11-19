@@ -1,0 +1,546 @@
+{
+  "sha256": "669edf233ee8f64f3f2f5e29701256c89207ccb244d1313c2c4fec092649458e",
+  "scope": "All input wires independent, exact commutative Boolean ANF",
+  "cases": [
+    {
+      "first_start": 27940405,
+      "second_start": 27941723,
+      "active_wires": 60,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 84,
+        "2": 899,
+        "3": 7560
+      },
+      "second_kernel_control_degrees": [
+        [
+          2,
+          1
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 27981374,
+      "second_start": 27982692,
+      "active_wires": 60,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 84,
+        "2": 899,
+        "3": 7560
+      },
+      "second_kernel_control_degrees": [
+        [
+          2,
+          1
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 28009926,
+      "second_start": 28011244,
+      "active_wires": 60,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 84,
+        "2": 899,
+        "3": 7560
+      },
+      "second_kernel_control_degrees": [
+        [
+          2,
+          1
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 28790121,
+      "second_start": 28791473,
+      "active_wires": 72,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 138,
+        "3": 9938,
+        "2": 2223
+      },
+      "second_kernel_control_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 28817363,
+      "second_start": 28818715,
+      "active_wires": 72,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 138,
+        "3": 9938,
+        "2": 2223
+      },
+      "second_kernel_control_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 29239425,
+      "second_start": 29240790,
+      "active_wires": 72,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 148,
+        "3": 10152,
+        "2": 2325
+      },
+      "second_kernel_control_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 29274093,
+      "second_start": 29275458,
+      "active_wires": 72,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 148,
+        "3": 10152,
+        "2": 2325
+      },
+      "second_kernel_control_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 29697223,
+      "second_start": 29698541,
+      "active_wires": 60,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 84,
+        "2": 899,
+        "3": 7560
+      },
+      "second_kernel_control_degrees": [
+        [
+          2,
+          1
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 36188560,
+      "second_start": 36189878,
+      "active_wires": 60,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 84,
+        "2": 899,
+        "3": 7560
+      },
+      "second_kernel_control_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 36193632,
+      "second_start": 36194950,
+      "active_wires": 60,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 84,
+        "2": 899,
+        "3": 7560
+      },
+      "second_kernel_control_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 36591435,
+      "second_start": 36592800,
+      "active_wires": 72,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 148,
+        "3": 10152,
+        "2": 2325
+      },
+      "second_kernel_control_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 36626103,
+      "second_start": 36627468,
+      "active_wires": 72,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "2": 2325,
+        "1": 148,
+        "3": 10152
+      },
+      "second_kernel_control_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 37067186,
+      "second_start": 37068538,
+      "active_wires": 72,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 138,
+        "3": 9938,
+        "2": 2223
+      },
+      "second_kernel_control_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 37094428,
+      "second_start": 37095780,
+      "active_wires": 72,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 138,
+        "3": 9938,
+        "2": 2223
+      },
+      "second_kernel_control_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 37853807,
+      "second_start": 37855125,
+      "active_wires": 60,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 84,
+        "2": 899,
+        "3": 7560
+      },
+      "second_kernel_control_degrees": [
+        [
+          2,
+          1
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 37885072,
+      "second_start": 37886390,
+      "active_wires": 60,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 84,
+        "2": 899,
+        "3": 7560
+      },
+      "second_kernel_control_degrees": [
+        [
+          2,
+          1
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 37903920,
+      "second_start": 37905238,
+      "active_wires": 60,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "1": 84,
+        "2": 899,
+        "3": 7560
+      },
+      "second_kernel_control_degrees": [
+        [
+          2,
+          1
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    },
+    {
+      "first_start": 45389049,
+      "second_start": 45390367,
+      "active_wires": 60,
+      "dependent_ccx": 42,
+      "exit_anf_monomial_histogram": {
+        "2": 899,
+        "1": 84,
+        "3": 7560
+      },
+      "second_kernel_control_degrees": [
+        [
+          1,
+          2
+        ]
+      ],
+      "control_span": {
+        "operand_ranks": [
+          12,
+          12,
+          12,
+          12
+        ],
+        "linear_second_with_first_intersection": [
+          0,
+          0
+        ],
+        "linear_second_with_first_combined_intersection": 0
+      }
+    }
+  ]
+}
