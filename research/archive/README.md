@@ -4,6 +4,7 @@
 
 | 探す内容 | 入口 |
 |---|---|
+| 多段 XOR–AND の論文・過去の成功例・再合成計画 | [多段XAG研究ノート](multistage-xag.md) |
 | 会話本文、日付、元メッセージ、取得できなかった箇所 | [チャット索引](conversations/README.md) / [取得範囲 JSON](conversations/coverage.json) |
 | Kaggleのノートブック・版番号・提出・出力の履歴 | [Kaggle索引](kaggle/README.md) / [版・結果 TSV](kaggle/notebook-submission-index.tsv) |
 | 評価ZIP、再現コード、反例、検証票、スコアカード | [成果物索引](artifacts/README.md) / [Library一覧 TSV](artifacts/library_inventory.tsv) / [検証票の抜粋](artifacts/receipt_extracts.jsonl) |
