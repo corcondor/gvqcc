@@ -1,0 +1,75 @@
+{
+  "schema": "gvqcc-2026-11-20-multitrack-audit-v1",
+  "base_submissions_zip_sha256": "3c1ba9eb7a6dc61b6db8c8018ddd30e5882fcfd9c155feb3014f3d3f1cd31dd2",
+  "dqi_kmb_sha256": "80151bfc87d5c8ca858654e487f093aeb336790dd183f963126ecbee1054b7c2",
+  "dqi": {
+    "motifs": 4053,
+    "adjacent_42ccx_pairs": 3464,
+    "cx_only_pairs": 2661,
+    "quadratic_pairs": 2651,
+    "higher_degree": 10,
+    "cases": [
+      {
+        "input_rank": 48,
+        "output_rank": 24,
+        "count": 2395
+      },
+      {
+        "input_rank": 48,
+        "output_rank": 12,
+        "count": 45
+      },
+      {
+        "input_rank": 36,
+        "output_rank": 24,
+        "count": 211
+      }
+    ],
+    "shared_input_orientations": {
+      "x_x": 175,
+      "y_y": 12,
+      "x_y": 2,
+      "y_x": 22
+    },
+    "plus_flip_84_to_83": {
+      "representative_cases": 3,
+      "seeds_per_case": 2,
+      "transitions_per_seed": 30000,
+      "successful": 0
+    },
+    "full_circuit_equivalence_verified": false
+  },
+  "chemistry": {
+    "source_npz_sha256": "3144fc1d41977562e98849d23b944e833aa5e3a278e0d7856b512d93511360fe",
+    "candidate_npz_sha256": "ea68c5d6a741e9dd5ef77ba98fe05d570bd646c4974b441ecddda8e599854047",
+    "changed_fields": [
+      "H2_I"
+    ],
+    "angle_kmb_changed": 0,
+    "theta_words_changed": false,
+    "toffoli": 14850,
+    "qubits": 427,
+    "original_lambda_eff": 46.920883857008455,
+    "candidate_lambda_eff": 46.898706508155165,
+    "original_error1": 0.019999999900001078,
+    "candidate_error1": 0.013594686025966817,
+    "original_error2": 0.01999999989999995,
+    "candidate_error2": 0.019999999899999794,
+    "predicted_chemistry_cost_from_fixed_resources": 297382353.0328865,
+    "previous_archived_official_shots": 78080,
+    "previous_archived_pass": true,
+    "candidate_official_native_pass": null,
+    "candidate_physics_pass": true,
+    "component_16files_zip_sha256": "e2db9ec637a621130f8df30750e614bbe5ffee6d300992b4d124e86dd9ab79d9",
+    "component_zip_kind": "CHEMISTRY_ONLY; NOT_FULL_CONTEST_SUBMISSION",
+    "note": "Native Kickmix for Python3.12 unavailable on Python3.13 runtime; physics computed independently using official scoreinfra."
+  },
+  "main_score_updated": false,
+  "kaggle_new_submission": false,
+  "target": 28.5,
+  "sources": [
+    "research/dqi_pair_input_subspace_scan.py",
+    "research/chemistry_h2_constrained_refit.py",
+    "research/2026-11-20_dqi_subspace_and_chemistry_refit.md"
+  ]
+}
