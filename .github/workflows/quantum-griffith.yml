@@ -81,6 +81,12 @@ jobs:
           python -m quantum_griffith --case random --inputs 4 --outputs 3 --seed 21 \
             --policy --policy-steps 200 --policy-batch 16 --policy-depth 3 \
             | tee random_multioutput_policy_report.json
+      - name: Matched depth-3 classical beam control (32-wide)
+        run: |
+          set -euo pipefail
+          python -m quantum_griffith --case random --inputs 4 --outputs 3 --seed 21 \
+            --affine-depth 3 --beam 32 --joint \
+            | tee classical_depth3_beam32_report.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -92,3 +98,4 @@ jobs:
             quantum_policy_report.json
             affine_policy_report.json
             random_multioutput_policy_report.json
+            classical_depth3_beam32_report.json
