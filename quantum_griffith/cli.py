@@ -65,6 +65,11 @@ def main(argv=None):
     parser.add_argument("--train-steps", type=int, default=400)
     parser.add_argument("--train-restarts", type=int, default=3)
     parser.add_argument("--train-gates", type=int, default=12)
+    parser.add_argument("--policy", action="store_true",
+                        help="Train PyTorch REINFORCE on exact reversible resource costs")
+    parser.add_argument("--policy-steps", type=int, default=140)
+    parser.add_argument("--policy-batch", type=int, default=12)
+    parser.add_argument("--policy-depth", type=int, default=2)
     args = parser.parse_args(argv)
 
     tables = example(args.case, args.inputs, args.outputs, args.seed)
@@ -115,6 +120,20 @@ def main(argv=None):
             steps=args.train_steps, restarts=args.train_restarts, seed=args.seed,
         )
         report["training"] = learned.as_dict()
+    if args.policy:
+        from .policy import learn_affine_policy
+        policy_result = learn_affine_policy(
+            tables, args.inputs, depth=args.policy_depth,
+            steps=args.policy_steps, batch_size=args.policy_batch, seed=args.seed
+        )
+        report["pytorch_quantum_policy"] = policy_result.as_dict()
+        if (policy_result.circuit.resources().ccx,
+            policy_result.circuit.n_ancillas,
+            policy_result.circuit.resources().cx) < (
+            winner.resources().ccx, winner.n_ancillas, winner.resources().cx
+        ):
+            winner = policy_result.circuit
+            report["winner"] = "reinforce-exact-quantum-cost"
     if args.emit:
         args.emit.write_text(
             json.dumps(winner.to_json(), indent=2) + "\n",
