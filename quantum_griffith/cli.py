@@ -31,6 +31,12 @@ def example(name: str, n: int, outputs: int, seed: int):
                 for x in range(16)
             ),
         )
+    if name == "output-mix":
+        if n != 3:
+            raise ValueError("output-mix requires --inputs 3")
+        first = tuple(((x & 1) & ((x >> 1) & 1)) for x in range(8))
+        second = tuple((((x >> 1) & 1) & ((x >> 2) & 1)) for x in range(8))
+        return (tuple(a ^ b for a, b in zip(first, second)), first, second)
     if name == "random":
         rng = random.Random(seed)
         return tuple(
@@ -42,7 +48,7 @@ def example(name: str, n: int, outputs: int, seed: int):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--case", choices=["affine-product", "shared-cubic", "random"],
+    parser.add_argument("--case", choices=["affine-product", "shared-cubic", "output-mix", "random"],
                         default="affine-product")
     parser.add_argument("--inputs", type=int, default=4)
     parser.add_argument("--outputs", type=int, default=2)
