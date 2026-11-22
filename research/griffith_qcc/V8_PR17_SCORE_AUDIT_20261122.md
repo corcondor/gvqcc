@@ -35,3 +35,10 @@ It requires the original published V8 reference, existing H2-only 18-file ZIP an
 An actual competitive improvement requires **fewer real KMB CCX / lower peak Q**, a proven full 15-bank reversible phase/workspace schedule, and native KickMix 78,016-shot chemistry plus DQI/invsqrt verification. The local Griffith four-bit one-AND witness is a useful algebraic result but cannot be counted as a 15-bank Toffoli saving.
 
 **No Kaggle submission or native KickMix score was performed in this session.**
+
+## Quantified target (other components and chemistry Q / lambda fixed)
+
+Using the published baseline chemistry T=13,250 and 3,375 ANGLE Toffolis per pass (called twice), the aggregate-score geometric mean requires:
+- **33.5:** total chemistry T <= 12,821.85; thus ANGLE < **3,161 T/pass** (at least 215 T/pass saving).
+- **34.0:** total chemistry T <= 12,264.46; thus ANGLE < **2,883 T/pass** (at least 493 T/pass saving).
+- Merely finding a 1-AND local cut is not enough. Cross-bank persistent state and exact phase/workspace schedule determine whether real cost decreases.
