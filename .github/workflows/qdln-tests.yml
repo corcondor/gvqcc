@@ -1,0 +1,24 @@
+name: QDLN exact synthesis tests
+on:
+  push:
+    branches:
+      - research/qdln-quantum-cost-aware
+    paths:
+      - research/qdln/**
+      - .github/workflows/qdln-tests.yml
+  pull_request:
+    paths:
+      - research/qdln/**
+      - .github/workflows/qdln-tests.yml
+  workflow_dispatch:
+
+jobs:
+  exact-boolean-and-clean-oracle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Exact 4-input GF(2) and reversible oracle tests
+        run: python research/qdln/test_qdln.py
