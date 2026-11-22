@@ -38,6 +38,12 @@ jobs:
               --output "ci_output/$mode.npz" \
               --report "ci_output/$mode.json"
           done
+      - name: Execute full-column W/H2 orthogonal search on tracked historical FeMoCo data
+        run: |
+          python research/claude_handoff_20261123/src/orthogonal_w_h2_ci.py \
+            --source chemistry_discrete_v3_best_compact.npz \
+            --report ci_output/historical_W_H2_orthogonal.json \
+            --candidate ci_output/historical_W_H2_orthogonal.npz
       - name: Verify results and inspect original V8 evidence
         run: |
           python - <<'PY'
