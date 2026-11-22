@@ -18,6 +18,10 @@ jobs:
         run: python3 -m pip install --disable-pip-version-check kickmix==1.0.0 numpy==2.5.4
       - name: Test binary parser and conservative analysis
         run: python3 -m unittest discover -p 'test_*.py' -v
+      - name: Verify joint angle-word and generic KMX research contracts
+        run: |
+          python3 research/test_joint_word_feedback.py
+          python3 research/test_generic_angle_loader.py
       - name: Check exhaustive and symbolic Boolean analysis
         run: |
           python3 test_boolean_block_analyze.py
