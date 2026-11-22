@@ -1,0 +1,19 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: comparisons_v2.csv>
+index,source,method,Q_peak,CCX,CX,X,slots
+0,C45_B129_JACOBI_OPTIMIZED.npz,split-basis,101,38550,322359,990,15
+1,C45_B129_JACOBI_OPTIMIZED.npz,split-anf,100,38850,324452,960,15
+2,C45_B129_JACOBI_OPTIMIZED.npz,split-minterm,113,41250,324965,1440,15
+3,C45_B129_JACOBI_OPTIMIZED.npz,flat-minterm,82,51870,324965,9930,15
+4,c45_B130_postangle_PSD_physical_pass.npz,split-basis,101,38820,324578,990,15
+5,c45_B130_postangle_PSD_physical_pass.npz,split-anf,100,38850,324288,960,15
+6,c45_B130_postangle_PSD_physical_pass.npz,split-minterm,113,41520,327245,1440,15
+7,c45_B130_postangle_PSD_physical_pass.npz,flat-minterm,82,52140,327245,9930,15
+8,c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz,split-basis,101,38820,324582,990,15
+9,c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz,split-anf,100,38850,324292,960,15
+10,c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz,split-minterm,113,41520,327245,1440,15
+11,c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz,flat-minterm,82,52140,327245,9930,15
+12,c46_public_v8.npz,split-basis,101,38010,301176,990,15
+13,c46_public_v8.npz,split-anf,100,38370,303851,960,15
+14,c46_public_v8.npz,split-minterm,113,40680,320340,1440,15
+15,c46_public_v8.npz,flat-minterm,82,51150,320340,9840,15
