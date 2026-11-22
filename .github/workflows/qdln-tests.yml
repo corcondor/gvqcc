@@ -24,3 +24,5 @@ jobs:
         run: python research/qdln/test_qdln.py
       - name: Native KMB symbolic recovery and exact polar-rank certificates
         run: python research/qdln/test_native_warmstart.py
+      - name: Exact GF2 variable-projection gate indispensability tests
+        run: python research/qdln/exact_projection.py
