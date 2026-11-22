@@ -5,7 +5,7 @@ import unittest
 
 from quantum_griffith.logic_dag import LogicDAG, LogicGate, lower_logic_dag
 from quantum_griffith.reversible import Circuit, Gate, verify_oracle
-from quantum_griffith.synthesis import anf_terms, synthesize, search_affine
+from quantum_griffith.synthesis import anf_terms, synthesize, search_affine, search_joint_affine
 
 
 def make_table(n, f):
@@ -83,6 +83,31 @@ class AnfAndOracleTests(unittest.TestCase):
         self.assertEqual(learned_basis.circuit.resources().ccx, 1)
         self.assertTrue(learned_basis.basis_cnots)
         verify_oracle(learned_basis.circuit, (table,))
+
+    def test_joint_output_basis_reduces_nonlinear_cost(self):
+        # f=(q1 XOR q2, q1, q2), where q1=x0*x1, q2=x1*x2.
+        # One output-basis row can eliminate q1, then another eliminates q2
+        # from f0, reducing four CCX to two, with exact y-conjugation.
+        q1 = make_table(3, lambda x: (x & 1) & (x >> 1 & 1))
+        q2 = make_table(3, lambda x: (x >> 1 & 1) & (x >> 2 & 1))
+        mixed = tuple(a ^ b for a, b in zip(q1, q2))
+        tables = (mixed, q1, q2)
+        baseline = synthesize(tables, 3, method="baseline").circuit
+        result = search_joint_affine(tables, 3, max_depth=2, beam_width=24)
+        self.assertEqual(baseline.resources().ccx, 4)
+        self.assertLessEqual(result.circuit.resources().ccx, 2)
+        self.assertTrue(result.output_basis_cnots)
+        self.assertEqual(result.circuit.n_ancillas, 0)
+        verify_oracle(result.circuit, tables, all_y=True)
+
+    def test_joint_search_random_multioutput_equivalence(self):
+        rng = random.Random(2981)
+        for _ in range(8):
+            tables = tuple(
+                tuple(rng.randrange(2) for _ in range(8)) for _ in range(3)
+            )
+            result = search_joint_affine(tables, 3, max_depth=2, beam_width=10)
+            verify_oracle(result.circuit, tables, all_y=True)
 
     def test_budget_limits(self):
         table = make_table(3, lambda x: ((x & 1) & (x >> 1 & 1) & (x >> 2 & 1)))
