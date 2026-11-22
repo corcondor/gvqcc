@@ -42,6 +42,10 @@ jobs:
           python3 research/multiangle_v4/test_independent_verifier.py -v
           python3 research/multiangle_v4/test_native_c46.py -v
           python3 -m py_compile research/multiangle_v4/*.py
+      - name: Prove v5 group-matroid basis and native real-C46 conversions
+        run: |
+          python3 research/multiangle_v5/test_high_group_basis.py -v
+          python3 -m py_compile research/multiangle_v5/*.py
       - name: Check exhaustive and symbolic Boolean analysis
         run: |
           python3 test_boolean_block_analyze.py

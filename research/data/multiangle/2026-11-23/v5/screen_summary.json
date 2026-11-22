@@ -1,0 +1,36 @@
+{
+  "screen_count": 24,
+  "seeds": [
+    {
+      "seed": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "best_run": "C45_B129_JACOBI_OPTIMIZED_fixed-upper_s8",
+      "min_CCX": 10589,
+      "min_CX_at_CCX": 469133,
+      "Q": 127
+    },
+    {
+      "seed": "c45_B130_postangle_PSD_physical_pass.npz",
+      "best_run": "c45_B130_postangle_PSD_physical_pass_fixed-upper_s8",
+      "min_CCX": 10708,
+      "min_CX_at_CCX": 472072,
+      "Q": 127
+    },
+    {
+      "seed": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+      "best_run": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only_fixed-upper_s8",
+      "min_CCX": 10708,
+      "min_CX_at_CCX": 472108,
+      "Q": 127
+    },
+    {
+      "seed": "c46_public_v8.npz",
+      "best_run": "c46_public_v8_fixed-upper_s8",
+      "min_CCX": 9301,
+      "min_CX_at_CCX": 416990,
+      "Q": 127
+    }
+  ],
+  "code_sha256": "6dedb3df9a7157ddff8af0fdc3c13468059132f22b6293ed67fc22cae069499c",
+  "source_receipt": "group_screen_24.jsonl",
+  "tiers": "synthesized-and-symbolically-proved, not full native verifier"
+}

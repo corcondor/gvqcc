@@ -1,0 +1,13 @@
+{
+  "records": 15,
+  "input": "c46_public_v8.npz",
+  "axis": "fixed-upper",
+  "max_support": 8,
+  "global_mode": "canonical",
+  "tiebreak": "sparse",
+  "CCX": 9301,
+  "CX": 416990,
+  "Q": 127,
+  "low_cost_gain": 642,
+  "official_KickMix": false
+}
