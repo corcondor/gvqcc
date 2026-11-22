@@ -86,3 +86,9 @@ OPENBLAS_NUM_THREADS=1 python research/patterns/run_official_batch.py \
 - 既存の `manwithacat` の `price_words` / padded-row / replan と重なる部分は先行手法とし、新規性を主張しない。
 
 **次の具体的な不足:** P1–P5を実KMBへ変換する多出力XAG・生存期間・HMR対応の合成器。代理ランクはその入力を選別するだけで、今回の実験では競技スコアを改善していない。
+
+## 追加：履歴検索とCSV
+
+- [163件を表形式にしたCSV](pattern_catalog_20261123.csv)（UTF-8、LF改行）。元データの真実の所在はJSONL台帳で、CSVは再生成可能な派生物。
+- [フィルタ付き検索CLI](query_pattern_ledger.py): `python research/patterns/query_pattern_ledger.py research/patterns/ledger_20261123.jsonl --family within_rank_row_permutation --rank-le 0 --top 10`
+- 前バージョンと同じ実験IDの再実行はスキップする。新コード・新ソースはVERSIONおよび入力SHAで区別する。
