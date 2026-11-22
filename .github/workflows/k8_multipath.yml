@@ -1,0 +1,26 @@
+name: GVQCC k8 public 211T multipath
+on:
+  push:
+    branches:
+      - experiments/k8-multipath-20261123
+    paths:
+      - experiments/k8_multipath/**
+      - .github/workflows/k8_multipath.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fetch-and-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download signed public k8 (no Kaggle account or submission)
+        run: python3 experiments/k8_multipath/get_public_211.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-211-k8-sha-pinned
+          path: experiments/k8_multipath/artifacts/
+          if-no-files-found: error
+          retention-days: 7
