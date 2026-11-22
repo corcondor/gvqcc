@@ -39,3 +39,20 @@ A wider real native 5-10 CCX joint-quadratic window screen across all 15 banks f
 **Still unachieved:** fewer real paid ANGLE CCX than the newer public V9 3,372/pass, full official default/notebook two-salt KickMix PASS for the 18-member combined ZIP, and a meaningful verified overall-score gain. Main branch and prior submissions were not overwritten.
 
 The result is an actual 18-file research candidate with independent physical PASS and a mathematically rigorous reason to abandon the fixed-P0 38->37 search, **not** a large verified score increase.
+
+
+## Second merged 18-file candidate: latest W/H2 physical donor, same exact KMB rewrite
+
+After the H2-only candidate above, a **separate, already-developed numerical optimizer** independently created a fixed-angle joint W/H2 donor (no native cost change). Rather than rerun the failed 38->37 gate search, we retrieved that donor, confirmed only array keys `W` and `H2_I` differ from the public V8 reference and all fifteen original ANGLE KMB members are exactly preserved, and reassembled it with the 15 formally equivalent native CX-rewritten KMBs.
+
+- Source V8 ZIP SHA256: `b621fecf887173c70d5b187729fcb62ba4a4dbd79ba72c60b7a0713afbebca9c`
+- Prior joint W/H2 donor ZIP SHA256: `30161b355af06fb8a4f770e0e87f86f51466f1b40bab04d24964cc5c881282a3`
+- **New research-only complete 18-file ZIP SHA256: `270a50232f7f25a69557dee6c59fdd58dd497242eebd61d873adafb9b3eb115b`**, 88,113,501 bytes, all member CRC/SHA verified
+- Independent full FeMoCo packed implementations both PASS: `error_1=0.019999999975789`, `error_2=0.01999999997500444`, `lambda_eff=46.918063968226534`, `E_gap=3.9148980001154996`.
+- Exactly **3,375 paid ANGLE CCX**, 128Q max, **381,676 CX**, as before; DQI and invsqrt KMB copied byte-for-byte from the donor.
+- Conditional score computed from author-reported V8 33.13521306472598 if identical native cost and official acceptance are maintained: **33.13521309573479**, estimated difference **+0.000000031009**. It does not exceed the newer public frontier.
+- **Official new score: NONE**. The native KickMix default/notebook two-panel verifier is not present/executed. Do not promote this candidate as a verified result, and do not attribute the coefficient improvement to the neural XAG compiler.
+
+The source in `experiments/assemble_18file_native_candidate.py` was updated to allow physically validated fixed-angle donors with changed `W` and/or `H2_I` while requiring **every other numerical array and every original native ANGLE KMB to be identical**, then applying the proven CX rewrites. The reproducibility run was completed locally; the ZIP is retained as a conversation file artifact rather than pushed as an 88MB GitHub source file.
+
+Remaining performance blocker: **finding any lower paid CCX native KMB**, not packaging, training, or formal safety proof.
