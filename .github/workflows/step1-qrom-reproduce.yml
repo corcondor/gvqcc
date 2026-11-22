@@ -44,6 +44,22 @@ jobs:
             --qrom-plan external/kickmix-engine/target/release/qrom-plan \
             --banks 8 --counts 240,270,300 --seeds 2 --trials 6 --samples 12 \
             --out outputs/step1-k8
+      - name: Step1 all 15 banks: diagnostic real KMB synthesis (NOT Step2)
+        continue-on-error: true
+        shell: bash
+        run: |
+          python experiments/oss_chained_angle/run_step1.py \
+            --qrom-plan external/kickmix-engine/target/release/qrom-plan \
+            --banks all --counts 170,175,180,210,240 --seeds 2 --trials 6 --samples 12 \
+            --out outputs/step1-all15
+      - name: Save all-bank actual candidate cost and verification diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gvqcc-step1-all15-real-KMB-audit
+          path: outputs/step1-all15/
+          if-no-files-found: warn
+          retention-days: 14
       - name: Always save raw generated KMBs, plans and exact receipts
         if: always()
         uses: actions/upload-artifact@v4
