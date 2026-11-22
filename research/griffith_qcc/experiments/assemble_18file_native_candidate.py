@@ -1,6 +1,6 @@
 """Assemble an unchanged-physics-IR 18-member GVQCC research candidate.
 
-Combines a PRE-EXISTING fixed-angle H2-only coefficient update and current
+Combines a PRE-EXISTING fixed-angle fixed-angle H2-only or joint W/H2 coefficient update and current
 formally verified CNOT-only KMB rewrites. This is a provenance-aware assembler
 and checker, not a novel physical optimizer or official KickMix verifier.
 The original baseline and the donor archives are never overwritten.
@@ -76,9 +76,10 @@ def assemble(*, original_v8: Path, donor_18: Path,
         if set(baseline)!=set(candidate):
             raise ValueError("NPZ keys were added or removed")
         changed=[k for k in baseline if not np.array_equal(baseline[k],candidate[k])]
-        if changed!=["H2_I"]:
+        if not changed or not set(changed).issubset({"W", "H2_I"}):
             raise ValueError(
-                "Only H2_I may change. Changed keys: "+repr(changed)
+                "Only W and H2_I may change, with every angle/gauge and "
+                "all other arrays byte-for-byte equivalent. Changed: "+repr(changed)
             )
         before=evaluate_factorization(oldp,physics_reference)
         after=evaluate_factorization(candidatep,physics_reference)
@@ -91,7 +92,7 @@ def assemble(*, original_v8: Path, donor_18: Path,
             name=f"dfthcsos/angle_k_{k}.kmb"
             old=parent.read(name)
             if donor.read(name)!=old:
-                raise ValueError("H2 donor modified the ANGLE circuit: "+name)
+                raise ValueError("Numeric donor modified the ANGLE circuit: "+name)
             a=work/f"old_{k}.kmb"
             a.write_bytes(old)
             b=optimized_angles/f"angle_k_{k}.kmb"
@@ -159,7 +160,7 @@ def assemble(*, original_v8: Path, donor_18: Path,
             "official_new_score":None,
             "conditional_score_if_all_official_conditions_hold":expected_score,
             "important_warning":(
-                "This recycles a prior H2-only physical change; improvements "
+                "This recycles a prior H2-only or coupled W/H2 physical change; improvements "
                 "are tiny and not a novel scoring result. Original and changed "
                 "KMBs are formally exactly equal, but this tool does not "
                 "execute native official two-panel KickMix verification."
