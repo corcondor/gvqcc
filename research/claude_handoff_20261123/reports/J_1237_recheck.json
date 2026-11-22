@@ -1,0 +1,169 @@
+{
+  "source_npz": "candidates/J_C45_joint/submission.npz",
+  "source_sha256": "ba3c8e42153d29886c4f2f13f9163306007ff1b14ade7c34370d5dc03290e9c8",
+  "Naddresses": 1237,
+  "seeds": [
+    {
+      "seed": -1,
+      "mode": "clean",
+      "total_toFFoli_per_pass": 4429,
+      "results": [
+        {
+          "bank": 0,
+          "Toffoli": 304,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "e13be02670624d75f7c22122c1cbdf9415c37e179f5ae8474b8fdab8eca5250e"
+        },
+        {
+          "bank": 1,
+          "Toffoli": 284,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "468578512e9479a2699cf960bfb2275d42c4e49a29cee7a0b45f43caefb5b31e"
+        },
+        {
+          "bank": 2,
+          "Toffoli": 288,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "419423023c06b94e828e73694d2e8165dc00dca06c4b5cfa628d289343c23d9d"
+        },
+        {
+          "bank": 3,
+          "Toffoli": 288,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "8134f3a93a9399bac657535d8dab18e3e66d44f7fd02b6d60e61b853e9ca2b19"
+        },
+        {
+          "bank": 4,
+          "Toffoli": 291,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "27bb505699ddcde837e696521dc23def719948664fec34fd6e9654061ad1d6f0"
+        },
+        {
+          "bank": 5,
+          "Toffoli": 292,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "e2ea27759b8b1b069d8929ca8b1f60b68456ecd71d25b023a7ddee9f7cee63a7"
+        },
+        {
+          "bank": 6,
+          "Toffoli": 282,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "0ff3f719b90046a7f2c43dc9ec8e073c1306860636a90ad822a5530c6c1a43c0"
+        },
+        {
+          "bank": 7,
+          "Toffoli": 292,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "67585e58ca633943c63083d19629bf1594266d63816da546d69b8ff6ef2da0a7"
+        },
+        {
+          "bank": 8,
+          "Toffoli": 294,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "68081683bb716c89e989072f0af4d16b8ec637456e60538af1e3afff174c1fc7"
+        },
+        {
+          "bank": 9,
+          "Toffoli": 302,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "7089399b5384e27c34e69bb1dc11889912b4c09cc7c3dad2494993dcbbf69149"
+        },
+        {
+          "bank": 10,
+          "Toffoli": 303,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "165ce8667658b2574848bfa19b87b21266962705d846966a8684cb2b9bd2fc33"
+        },
+        {
+          "bank": 11,
+          "Toffoli": 303,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "2de219f6be7097ebf3bec9b41f41f6042891f7a219fa3f98826694b8b6ab02f4"
+        },
+        {
+          "bank": 12,
+          "Toffoli": 300,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "ed7fa3205813eba7dc74a0471f7f8189af888f06bc4012c39193fd3efcfab2b5"
+        },
+        {
+          "bank": 13,
+          "Toffoli": 303,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "d1fe8d2aa867d9630becfd0eb5ff3394a43a1fba1e3960dde9dede65ad07716b"
+        },
+        {
+          "bank": 14,
+          "Toffoli": 303,
+          "Q": 127,
+          "HMR": 81,
+          "phase_error_coefficients": 0,
+          "value_error_bits": 0,
+          "clean_scratch": true,
+          "sha256": "fa75a5b31862377058ccd43c8a383908de4d2e0a785f3d5f60d656e0fd541d51"
+        }
+      ],
+      "seconds": 0.35
+    }
+  ],
+  "all_tests_pass": true,
+  "native_KickMix": false,
+  "warning": "Basis-state and HMR-phase algebra for clean and randomized dirty initial words; not full formal proof over arbitrary dirty words or official execution",
+  "elapsed": 0.3498952590002773
+}
