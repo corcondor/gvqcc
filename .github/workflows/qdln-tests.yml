@@ -26,3 +26,5 @@ jobs:
         run: python research/qdln/test_native_warmstart.py
       - name: Exact GF2 variable-projection gate indispensability tests
         run: python research/qdln/exact_projection.py
+      - name: Validate native HMR and PyTorch training source parses
+        run: python -m py_compile research/qdln/post_hmr_screen.py research/qdln/post_hmr_pytorch.py
