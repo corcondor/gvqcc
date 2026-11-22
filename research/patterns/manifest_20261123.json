@@ -1,0 +1,63 @@
+{
+  "schema": "gvqcc.pattern.snapshot.v1",
+  "created_jst": "2026-11-23",
+  "file_hashes": {
+    "structural_pattern_library.py": {
+      "sha256": "d3e8536e8157eb39963d555aa29500317074ea99c2e2d6ad3b224ab05d9b41e6",
+      "bytes": 18759
+    },
+    "test_structural_pattern_library.py": {
+      "sha256": "54e7845d76b2848aede9b37ffa70796a4ca26a96339f074305077e14e8c29818",
+      "bytes": 4038
+    },
+    "ledger.jsonl": {
+      "sha256": "64bfb2c064952c603f76f6f3aaed2e9f0940b8e43945b9dcf2157a277cf603cd",
+      "bytes": 111318
+    },
+    "summary.json": {
+      "sha256": "090a39a214c92345a12edc25bb84517aea03a74905b90c884750c9eb9237a458",
+      "bytes": 26229
+    },
+    "run_official_batch.py": {
+      "sha256": "7deeaa77f0061fcce50d68d944406063f2c86ebc4f0882fb97166f03b4ea3fa2",
+      "bytes": 2787
+    },
+    "crosscheck_cases.json": {
+      "sha256": "e3605b495004c8ca019da34faf74e89e2b4a685127fef5de8a94d3b9cffb0938",
+      "bytes": 1518
+    },
+    "official_crosschecks.jsonl": {
+      "sha256": "c4831125d3c3a6b8ae3d43fbcc9d13d3e3c86eaec1e3419f8e75106170c676f5",
+      "bytes": 6888
+    },
+    "README_JA.md": {
+      "sha256": "5f85ab3a70916017500de098becce2c027ccbe2f911be9ec7f735f52ebddd6fa",
+      "bytes": 7270
+    }
+  },
+  "seed_input_sha256": {
+    "c45_original.npz": "1c1f067ce2d2ed1d469ae3d245befecc99de83bae821eda5b6eb3fda4125f9e7",
+    "candidate_R18_C23_split2.npz": "af6ab24c4fb6ffd010c440dd3f804f47deb004b60c609d76cab34e149bfd60e5",
+    "c45_B129_JACOBI_OPTIMIZED.npz": "4e67df12c9a115121c42dabfe04becaa50217938e3f466777dc715efc9921307",
+    "c46_public_v8.npz": "2ab7f2d01a02450eb2c47577097ef4bb27a1411b40ead88b6237f100bc9f4d61"
+  },
+  "independent_physical_module_sha256": "de55e273fa49d8918953e59651f1ebf82b38ea258d21243caf92e04586cb7829",
+  "independent_reference_sha256": "735282d9aa49bb3529e33e761ea501d1f796431221f684512de74d269b17562f",
+  "records": {
+    "pattern_jsonl": 163,
+    "by_pattern": {
+      "seed_baseline": 4,
+      "null_givens": 20,
+      "chained_word_run": 20,
+      "within_rank_row_permutation": 24,
+      "linear_output_basis": 19,
+      "invalid_address_padding": 76
+    },
+    "physics_numeric_records": 64,
+    "official_scoreinfra_crosschecks": 7,
+    "official_numeric_pass": 4
+  },
+  "native_kickmix_verified": false,
+  "actual_kmb_generated": false,
+  "official_score_update": false
+}
