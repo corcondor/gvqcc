@@ -11,6 +11,7 @@ An **independent experimental quantum extension inspired by [Griffith](https://g
 * **Joint input/output affine basis search**: conjugate the output register by an invertible matrix B to synthesize B f(x), then undo B, preserving the oracle for every initial y. This can cancel nonlinear terms across outputs.
 * **Learned two-input LUT DAG lowering** with liveness pruning and Boolean CSE. Any two-input Boolean function is decomposed into affine operations plus at most one CCX to compute its output. Shared temporary nodes are uncomputed in reverse.
 * Optional **PyTorch differentiable LUT architecture search**: gate truth tables, input wiring and output references are learnable via STE / Gumbel. Exact hard evaluation is a required acceptance test, not a soft-score proxy.
+* **Teacher-guided initialization**: a guaranteed-exact ANF/affine Boolean DAG can seed a learned architecture. The report identifies whether an exact circuit was inherited from the teacher versus actually improved by the NN; teacher correctness is never presented as a neural discovery.
 * Exhaustive equivalence tests and GitHub Actions CI. The fallback ANF compiler is exact even when an NN candidate fails training.
 
 **This is a quantum *circuit-design learner*, not a claim of quantum advantage or a trained model executing inference on quantum hardware.** There are no approximate relative-phase Toffolis in this prototype. An arbitrary superposition inherits the correct oracle because every emitted gate is a phase-free permutation; after uncompute the work register returns to its initial |0> state.
@@ -73,6 +74,22 @@ deduced from a differentiable loss.
 | Classical GF(2) basis search | Yes |
 | Learned wiring and 16 Boolean gate types | Experimental, optional |
 | Strict GVQCC/Kaggle simulator and score | **Not integrated** |
+
+## Import hard Boolean nets exported by Griffith
+
+The strict adapter reads Griffith's `magicdelta-ir` JSON of serial 1/2-input `lut_layer` and optional `lut_flat` blocks. Terminal `group_sum` is intentionally bypassed: the resulting oracle computes the **bits before classification**, not class logits or an argmax decision.
+
+~~~python
+import json
+from quantum_griffith import from_griffith_ir, lower_logic_dag
+
+with open("small_griffith_export.json", encoding="utf-8") as f:
+    graph = from_griffith_ir(json.load(f))
+quantum = lower_logic_dag(graph, verify=True)
+print(quantum.resources())
+~~~
+
+This path is currently for **small** networks: full truth-table verification costs exponential time in the number of input bits. Large networks with sidecar .npz arrays or LUT4/LUT6 must first be lowered/handled explicitly; the adapter does not silently approximate unsupported nodes.
 
 ## Important limitations and next research tasks
 
