@@ -42,10 +42,10 @@ C46で**片道CCXだけ**を見るとsplit-basisが38,010で最良。ただし`Q
 
 ## 実験データの蓄積方法
 
-- `results/experiments.jsonl`：**append-only**、1行＝1構造×1方式×1バンク。実験IDは`SHA256(元NPZ SHA、方式名、バンク番号、生成器版)`、同じ入力を再実行しても重複挿入しない。各行にはCCX/CX/X、Q、対象アドレス数、検証結果、KMXサンプルのSHA（k0/k1）を記録。
-- `results/comparisons.csv`：各種の15バンク費用、QとQ×CCXを横比較する表。
-- `results/summary.json`：全比較の機械可読サマリー。
-- `results/*k0.kmx`、`*k1.kmx`：実際に構成したKMXのサンプル。GitHubへ巨大な全回路のバイナリをコミットせず、**コードとSHAで再現可能**にする。
+- `results_v2/experiments.jsonl`：**append-only**、1行＝1構造×1方式×1バンク。実験IDは`SHA256(元NPZ SHA、方式名、バンク番号、生成器版)`、同じ入力を再実行しても重複挿入しない。各行にはCCX/CX/X、Q、対象アドレス数、検証結果、KMXサンプルのSHA（k0/k1）を記録。
+- `results_v2/comparisons.csv`：各種の15バンク費用、QとQ×CCXを横比較する表。
+- `results_v2/summary.json`：全比較の機械可読サマリー。
+- `all_kmx/<seed>/<method>/angle_k_*.kmx`：構成した全240本の実KMX。全SHAは`all_kmx/all_kmx_manifest.json`に記録。GitHubへ巨大な全回路ファイルを直接コミットせず、ローカルZIPと生成コードで再現可能にする。
 
 実験NPZのSHA：
 
@@ -76,3 +76,12 @@ OPENBLAS_NUM_THREADS=1 python research/multi_angle_synthesis.py \
 2. 128Q制約以外の全化学資源関数への統合。全体Q=405をそのまま仮定して費用を出していない。
 3. R18 B127 C23は**2362選択アドレス**で11bit最大2048を超えるため本方式の対象外。12bitアドレスに変える場合、公式の選択・線数制約を確認する必要がある。
 4. HMR測定消去、マトロイドパリティ、共通高位キャッシュと積の多出力時間再利用。公開3,357Tの要点をこの4方式だけで実装したとは言えない。
+
+
+## 再現性監査：v1からv2への切替
+
+最初の240件台帳(v1)を登録した後、KMXのREGISTER宣言の出力順を修正した。このため**v1の一部sample_kmx_sha256は、修正後の生成器で再生成したファイルとバイト一致しない**。ゲート計数と論理動作には変化がないが、バイトハッシュまで同じと言えないことを検出したので、v1は過去の実験記録としてGitHubに保存し、現行版を **v2台帳** として別保存した。
+
+v2は実行コードSHA-256を実験IDに含み、旧版と混ざらない。現行生成器で4種×4構造×15バンク=240本のKMXを全て再出力し、台帳のQ/CCX/CX、k0/k1のKMX SHA、さらに全240本のmanifest SHAを一致させた。
+
+利用方法：作成済み研究ZIPを展開し `bash REPRODUCE.sh` で同じ結果240件を再計算。`bash REPRODUCE.sh --full-kmx` で全KMXの再生成と240本のSHA照合も可能（後者は計算量が大きい）。GitHubには `research/multi_angle_synthesis.py` と `research/export_all_kmx.py` のコード、`research/data/multiangle/2026-11-23/v2/` に現行台帳と表を置く。元の実験種NPZはローカルZIPに同梱するが、公開リポジトリには大容量原データを再配布しない。
