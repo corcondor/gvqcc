@@ -1,0 +1,157 @@
+{
+  "schema": "gvqcc.multiangle.summary.v1",
+  "algorithms": [
+    "flat-minterm",
+    "split-minterm",
+    "split-anf",
+    "split-basis"
+  ],
+  "groups": [
+    {
+      "source": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "method": "split-basis",
+      "Q_peak": 101,
+      "CCX": 38550,
+      "CX": 322359,
+      "X": 990,
+      "slots": 15
+    },
+    {
+      "source": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "method": "split-anf",
+      "Q_peak": 100,
+      "CCX": 38850,
+      "CX": 324452,
+      "X": 960,
+      "slots": 15
+    },
+    {
+      "source": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "method": "split-minterm",
+      "Q_peak": 113,
+      "CCX": 41250,
+      "CX": 324965,
+      "X": 1440,
+      "slots": 15
+    },
+    {
+      "source": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "method": "flat-minterm",
+      "Q_peak": 82,
+      "CCX": 51870,
+      "CX": 324965,
+      "X": 9930,
+      "slots": 15
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass.npz",
+      "method": "split-basis",
+      "Q_peak": 101,
+      "CCX": 38820,
+      "CX": 324578,
+      "X": 990,
+      "slots": 15
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass.npz",
+      "method": "split-anf",
+      "Q_peak": 100,
+      "CCX": 38850,
+      "CX": 324288,
+      "X": 960,
+      "slots": 15
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass.npz",
+      "method": "split-minterm",
+      "Q_peak": 113,
+      "CCX": 41520,
+      "CX": 327245,
+      "X": 1440,
+      "slots": 15
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass.npz",
+      "method": "flat-minterm",
+      "Q_peak": 82,
+      "CCX": 52140,
+      "CX": 327245,
+      "X": 9930,
+      "slots": 15
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+      "method": "split-basis",
+      "Q_peak": 101,
+      "CCX": 38820,
+      "CX": 324582,
+      "X": 990,
+      "slots": 15
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+      "method": "split-anf",
+      "Q_peak": 100,
+      "CCX": 38850,
+      "CX": 324292,
+      "X": 960,
+      "slots": 15
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+      "method": "split-minterm",
+      "Q_peak": 113,
+      "CCX": 41520,
+      "CX": 327245,
+      "X": 1440,
+      "slots": 15
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+      "method": "flat-minterm",
+      "Q_peak": 82,
+      "CCX": 52140,
+      "CX": 327245,
+      "X": 9930,
+      "slots": 15
+    },
+    {
+      "source": "c46_public_v8.npz",
+      "method": "split-basis",
+      "Q_peak": 101,
+      "CCX": 38010,
+      "CX": 301176,
+      "X": 990,
+      "slots": 15
+    },
+    {
+      "source": "c46_public_v8.npz",
+      "method": "split-anf",
+      "Q_peak": 100,
+      "CCX": 38370,
+      "CX": 303851,
+      "X": 960,
+      "slots": 15
+    },
+    {
+      "source": "c46_public_v8.npz",
+      "method": "split-minterm",
+      "Q_peak": 113,
+      "CCX": 40680,
+      "CX": 320340,
+      "X": 1440,
+      "slots": 15
+    },
+    {
+      "source": "c46_public_v8.npz",
+      "method": "flat-minterm",
+      "Q_peak": 82,
+      "CCX": 51150,
+      "CX": 320340,
+      "X": 9840,
+      "slots": 15
+    }
+  ],
+  "evidence": "Exact bitparallel XOR; KMX emitted only for slot0+1; not native KickMix",
+  "records": 240
+}
