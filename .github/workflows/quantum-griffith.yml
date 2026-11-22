@@ -52,10 +52,36 @@ jobs:
       - name: Install and verify pinned PyTorch CPU
         run: bash quantum_griffith/install-pytorch-cpu.sh
       - name: Train learned gates and wiring (affine-product)
-        run: >
-          python -m quantum_griffith --case affine-product --inputs 4
-          --train --train-steps 400 --train-gates 12 --train-restarts 3
+        run: |
+          set -euo pipefail
+          python -m quantum_griffith --case affine-product --inputs 4 \
+            --train --train-steps 400 --train-gates 12 --train-restarts 3 \
+            | tee affine_train_report.json
       - name: Train learned gates and wiring (multi-output)
-        run: >
-          python -m quantum_griffith --case output-mix --inputs 3
-          --train --train-steps 300 --train-gates 14 --train-restarts 3 --joint
+        run: |
+          set -euo pipefail
+          python -m quantum_griffith --case output-mix --inputs 3 \
+            --train --train-steps 300 --train-gates 14 --train-restarts 3 --joint \
+            | tee multioutput_train_report.json
+      - name: PyTorch policy gradient on actual compiled quantum costs
+        run: |
+          set -euo pipefail
+          python -m quantum_griffith --case output-mix --inputs 3 \
+            --policy --policy-steps 160 --policy-batch 12 --policy-depth 2 --joint \
+            | tee quantum_policy_report.json
+      - name: PyTorch policy gradient on affine-product
+        run: |
+          set -euo pipefail
+          python -m quantum_griffith --case affine-product --inputs 4 \
+            --policy --policy-steps 160 --policy-batch 12 --policy-depth 2 \
+            | tee affine_policy_report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quantum-griffith-pytorch-results
+          if-no-files-found: warn
+          path: |
+            affine_train_report.json
+            multioutput_train_report.json
+            quantum_policy_report.json
+            affine_policy_report.json
