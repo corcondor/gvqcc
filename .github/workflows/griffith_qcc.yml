@@ -23,6 +23,11 @@ jobs:
           python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
           python -m pip install -e "research/griffith_qcc[chem]"
           python -c "import torch; print('PyTorch version:',torch.__version__); assert torch.__version__.startswith('2.5.1')"
+      - name: Check 18-file assembler and tensor lower-bound CLI parse
+        run: |
+          python -m py_compile research/griffith_qcc/experiments/assemble_18file_native_candidate.py
+          python -m py_compile research/griffith_qcc/native_kmb/tensor_obstruction.py
+          python -m py_compile research/griffith_qcc/native_kmb/smt_splice.py
       - name: Run exact validation tests
         working-directory: research/griffith_qcc
         run: python -m unittest discover -s tests -v
