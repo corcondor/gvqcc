@@ -86,10 +86,11 @@ def kmsim_check(kmx,delta,k,words):
     active=set(sq)|{x for w in wq for x in w}
     scratch=[q for q in range(Q) if q not in active]
     out=[]
-    for mode,seed in [("zero",0),("previous",11),("random",29)]:
+    for mode,seed in [("zero",0),("previous",11),("current",19),("random",29)]:
         rng=np.random.default_rng(seed+k)
         if mode=="zero":initial=np.zeros((1219,5),np.uint8)
         elif mode=="previous":initial=(words[:,5*(k-1):5*k].copy() if k else np.zeros((1219,5),np.uint8))
+        elif mode=="current":initial=words[:,5*k:5*k+5].copy()
         else:initial=rng.integers(0,128,(1219,5),dtype=np.uint8)
         initial|=((initial>>6)&1)<<7
         s=kmsim.Sim(ops,Q,B,1219,seed+k)
@@ -121,9 +122,10 @@ def symbolic_hmr(ops,regs,names,delta,k,words):
     nq=kmsim.sizes(ops,regs)[0]
     active_qubits=set(selq)|{q for w in wq for q in w}
     rows=[]
-    for mode in ("zero","previous","random"):
+    for mode in ("zero","previous","current","random"):
         if mode=="zero":initial=np.zeros((N,5),np.uint8)
         elif mode=="previous":initial=(words[:,5*(k-1):5*k].copy() if k else np.zeros((N,5),np.uint8))
+        elif mode=="current":initial=words[:,5*k:5*k+5].copy()
         else:initial=np.random.default_rng(9222+k).integers(0,128,(N,5),dtype=np.uint8)
         initial|=((initial>>6)&1)<<7
         qs=[0]*nq
