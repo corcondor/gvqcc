@@ -48,3 +48,7 @@
 ## 2026-11-23 ANGLE multiple compiler families
 
 Four distinct constructive 7-bit/J5 ANGLE compiler families, 240 all-address-proved circuits, per-file SHA registry, and complete negative-results ledger are stored in [the Japanese experiment memo](2026-11-23_multiangle_results.md) and [v2 experiment archive](data/multiangle/2026-11-23/v2/README.md). Reusable code: [compiler](multi_angle_synthesis.py), [KMX exporter](export_all_kmx.py), [tests](test_multi_angle_synthesis.py). **No competitive KMB or new official score**. The research remains on draft PR #18.
+
+## 2026-11-23: multiangle v3 35-pattern 2100-circuit study
+
+Constructed 35 ANGLE synthesis variants across 4 actual 7-bit angle tables and all 15 banks (2100 KMX in a separately hashed bundle). See [source and methodology](multiangle_v3/README_JA.md), [v3 data registry](data/multiangle/2026-11-23/v3/README.md), and [full Japanese report](multiangle_v3/REPORT_JA.md). New: 3/5/6-bit low address partitions with GF(2) multi-output basis, structural HMR + conditional CZ cleanup, affine low-coordinate variants, and exhaustive 462-way low6-wire selection for C46. All-address symbolic checks PASS; native real-input KickMix verification and new official score **not performed**. The result remains on Draft PR #18.
