@@ -44,3 +44,7 @@
 - 提出ZIPの18ファイルハッシュとKaggleに実際に提出したか
 
 既存の研究資料はルートREADMEと、research_anthropic_dqi.md、research_chemistry_qrom.md、research_dqi_ibm_microsoft.md、chemistry_affine_loader_v3_report.mdを参照。今回の横断ノートはこれらの代替ではなく、検索可能な入口として整備したものです。
+
+## 2026-11-23 ANGLE multiple compiler families
+
+Four distinct constructive 7-bit/J5 ANGLE compiler families, 240 all-address-proved circuits, per-file SHA registry, and complete negative-results ledger are stored in [the Japanese experiment memo](2026-11-23_multiangle_results.md) and [v2 experiment archive](data/multiangle/2026-11-23/v2/README.md). Reusable code: [compiler](multi_angle_synthesis.py), [KMX exporter](export_all_kmx.py), [tests](test_multi_angle_synthesis.py). **No competitive KMB or new official score**. The research remains on draft PR #18.
