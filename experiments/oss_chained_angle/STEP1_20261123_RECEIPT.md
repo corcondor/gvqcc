@@ -87,3 +87,14 @@ Checks: `kmsim.py` **45 of 45** (15 banks × 3 input classes; all 1219 addresses
 Artifact: https://github.com/corcondor/gvqcc/actions/runs/45062135473/artifacts
 
 **Important causal diagnosis:** The public k8 KMB maps the *reachable previous-bank word* to the next value (0 errors) but is not an arbitrary-target XOR oracle: 11,597 wrong output bits on zero target, 17,355 on random targets over 1219 addresses. The regenerated `tensorqrom` version computes the strictly more demanding independent XOR mapping on all three initial target cases; therefore neither 265T nor 211T is directly comparable as evidence of suboptimality at an identical input contract. The public construction has 82 temporary nonlinear scratch targets / 129 output-target CCX; the produced 265T circuit has a different cache/word schedule. Closing Step1 requires reachable-state-aware synthesis or faithful reconstruction of the public structure.
+
+
+## Final Step1 four-state regression (current HEAD)
+
+Workflow: https://github.com/corcondor/gvqcc/actions/runs/45062428603 (source commit `dcf6a220d47e959aaa4afd911117a85751f2ae41`).
+
+A significant validation-contract bug was corrected before this run: the previous label `previous` originally initialized the target to `delta = B_k XOR B[k-1]` rather than the **actual** incoming `B[k-1]`. The new `run_step1.py` explicitly derives `previous = B[k-1]` (zero for k0) and `current = B[k]`, tests both **forward and reverse reachable input states**, and retains zero/random as stronger independent-XOR checks.
+
+**Final re-run:** 15 KMBs, actual 4,202T total, all Q=119, k8=265T; `kmsim` **60/60** and GF(2) HMR coefficient proof **60/60** PASS across 1,219 addresses. Each check covers zero, real previous, real current, random input targets; output, preserved selection, clean work bits and measured-phase correction all match. The correct strict cost gate rejects all-bank and k8 baseline reproduction.
+
+No Step2 word perturbation, don't-care search or official competition score was attempted. A new generator that genuinely exploits the prior batch state is required before the strict public baseline gate can be cleared.
