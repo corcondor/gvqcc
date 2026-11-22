@@ -27,3 +27,5 @@ jobs:
         run: python -m unittest discover -s quantum_griffith/tests -v
       - name: Demonstrate affine reversible optimization
         run: python -m quantum_griffith --case affine-product --inputs 4 --affine-depth 2 --beam 12
+      - name: Demonstrate joint output basis optimization
+        run: python -m quantum_griffith --case output-mix --inputs 3 --joint --affine-depth 2 --beam 24
