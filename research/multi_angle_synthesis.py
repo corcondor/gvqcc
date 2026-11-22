@@ -368,6 +368,7 @@ def prove(c: Circuit, delta: np.ndarray, dirty_seed: int = 7) -> dict:
 
 def run(seeds: list[Path], out: Path, methods: list[str], emit_samples: bool=True):
     out.mkdir(parents=True,exist_ok=True)
+    compiler_sha=sha256(Path(__file__))
     ledger=out/'experiments.jsonl'
     seen=set()
     if ledger.exists():
@@ -380,11 +381,12 @@ def run(seeds: list[Path], out: Path, methods: list[str], emit_samples: bool=Tru
         source_hash=sha256(fp)
         for method in methods:
             for slot in range(15):
-                key=hashlib.sha256(f'{source_hash}|{method}|{slot}|multi-v1'.encode()).hexdigest()
+                key=hashlib.sha256(f'{source_hash}|{method}|{slot}|multi-v2|{compiler_sha}'.encode()).hexdigest()
                 if key in seen: continue
                 c,stat=synthesize(words,slot,method)
                 proof=prove(c,delta_table(words,slot))
-                rec=dict(schema='gvqcc.multiangle.v1',experiment_id=key,
+                rec=dict(schema='gvqcc.multiangle.v2',experiment_id=key,
+                         compiler_sha256=compiler_sha,
                          source=fp.name,source_sha256=source_hash,
                          **stat,**proof,official_kickmix_pass=False,
                          new_score=None)
@@ -409,7 +411,8 @@ def run(seeds: list[Path], out: Path, methods: list[str], emit_samples: bool=Tru
         bucket['Q_peak']=max(bucket['Q_peak'],rec['qubits'])
         for field in ('CCX','CX','X'): bucket[field]+=rec.get(field,0)
         bucket['slots']+=1
-    summary=dict(schema='gvqcc.multiangle.summary.v1',algorithms=list(ALGORITHMS),
+    summary=dict(schema='gvqcc.multiangle.summary.v2',compiler_sha256=compiler_sha,
+                 algorithms=list(ALGORITHMS),
                  groups=sorted(totals.values(),key=lambda r:(r['source'],r['CCX'])),
                  evidence='Exact bitparallel XOR; KMX emitted only for slot0+1; not native KickMix',
                  records=len(all_records))
