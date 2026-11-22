@@ -75,6 +75,12 @@ jobs:
           python -m quantum_griffith --case affine-product --inputs 4 \
             --policy --policy-steps 160 --policy-batch 12 --policy-depth 2 \
             | tee affine_policy_report.json
+      - name: Harder unseen random multi-output quantum cost search
+        run: |
+          set -euo pipefail
+          python -m quantum_griffith --case random --inputs 4 --outputs 3 --seed 21 \
+            --policy --policy-steps 200 --policy-batch 16 --policy-depth 3 \
+            | tee random_multioutput_policy_report.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -85,3 +91,4 @@ jobs:
             multioutput_train_report.json
             quantum_policy_report.json
             affine_policy_report.json
+            random_multioutput_policy_report.json
