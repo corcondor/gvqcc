@@ -1,4 +1,4 @@
-name: Quantum Griffith exact-oracle tests
+name: Quantum Griffith - PyTorch learning and exact oracle verification
 
 on:
   push:
@@ -17,31 +17,45 @@ permissions:
 
 jobs:
   exact-oracles:
+    name: Exact oracles and all PyTorch tests (no skips)
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Exhaustive logical and reversible oracle tests
+      - name: Install and verify pinned PyTorch CPU
+        run: bash quantum_griffith/install-pytorch-cpu.sh
+      - name: All tests with PyTorch installed
         run: python -m unittest discover -s quantum_griffith/tests -v
-      - name: Demonstrate affine reversible optimization
+      - name: Demonstrate affine synthesis
         run: python -m quantum_griffith --case affine-product --inputs 4 --affine-depth 2 --beam 12
-      - name: Demonstrate joint output basis optimization
+      - name: Demonstrate joint input/output basis search
         run: python -m quantum_griffith --case output-mix --inputs 3 --joint --affine-depth 2 --beam 24
 
-
-  differentiable-learner:
+  trained-neural-search:
+    name: Actual multi-restart PyTorch learning (not only a smoke test)
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
+    env:
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install CPU-only PyTorch for optional NN test
-        run: python -m pip install --quiet torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
-      - name: Check hard collapse and straight-through gradients
-        run: python -m unittest quantum_griffith.tests.test_core.OptionalPyTorchTests quantum_griffith.tests.test_teacher.OptionalTorchSeedTests -v
-      - name: Run short learned-LUT candidate experiment
-        run: python -m quantum_griffith --case affine-product --inputs 4 --train --train-steps 60 --train-gates 6 --train-restarts 1
+      - name: Install and verify pinned PyTorch CPU
+        run: bash quantum_griffith/install-pytorch-cpu.sh
+      - name: Train learned gates and wiring (affine-product)
+        run: >
+          python -m quantum_griffith --case affine-product --inputs 4
+          --train --train-steps 400 --train-gates 12 --train-restarts 3
+      - name: Train learned gates and wiring (multi-output)
+        run: >
+          python -m quantum_griffith --case output-mix --inputs 3
+          --train --train-steps 300 --train-gates 14 --train-restarts 3 --joint
