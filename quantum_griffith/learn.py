@@ -164,9 +164,9 @@ def fit_truth_tables(tables: tuple[tuple[int, ...], ...], n_inputs: int, *,
             optimizer.zero_grad()
             tau = max(0.45, 1.5 * (1 - step / steps))
             predicted = network(x, tau=tau, mode="ste", gumbel=True)
-            task_loss = F.binary_cross_entropy(
-                predicted.clamp(1e-6, 1 - 1e-6), desired
-            )
+            # Straight-through hard values are exactly 0/1; clamped BCE
+            # would zero the gradient at mistakes. MSE retains a gradient.
+            task_loss = F.mse_loss(predicted, desired)
             loss = task_loss + cost_weight * network.expected_ccx_proxy()
             loss.backward()
             optimizer.step()
