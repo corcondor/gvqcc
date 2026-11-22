@@ -1,0 +1,600 @@
+{
+  "experiment": "quantum-griffith-exact-cost-pytorch",
+  "date_jst": "2026-11-22",
+  "git_commit": "214eea4c6b0420de7da7e6be9bec489f28cf82a6",
+  "run_url": "https://github.com/corcondor/gvqcc/actions/runs/45009541754",
+  "job_id": 137168578951,
+  "environment": {
+    "python": "3.11",
+    "torch": "2.5.1+cpu",
+    "numpy": "1.26.4",
+    "hardware": "GitHub Actions ubuntu-latest CPU",
+    "tests": "27 passed, no skipped tests",
+    "note": "Results are quantum-Griffith prototype evaluations, not official Kaggle/KickMix scores."
+  },
+  "definitions": {
+    "policy": "PyTorch REINFORCE over sequences of invertible input/output GF(2) CNOT basis changes; reward from synthesized X/CX/CCX cost proxy",
+    "random": "same number of randomly sampled reversible-basis action sequences as REINFORCE",
+    "strict_validation": "verify_oracle on all basis states of x,y with clean ancillas and X/CX/CCX phase-safe permutations",
+    "caveat": "Only one seeded 4x3 random fixture; no multi-seed or held-out generalization claim."
+  },
+  "experiments": {
+    "affine-product_lut_training": {
+      "baseline": {
+        "ancillas": 0,
+        "ccx": 4,
+        "cx": 0,
+        "depth": 4,
+        "qubits": 5,
+        "t7_estimate": 28,
+        "x": 0
+      },
+      "basis_cnots": [
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "case": "affine-product",
+      "method": "affine-anf-baseline",
+      "n_inputs": 4,
+      "n_outputs": 1,
+      "official_kaggle_scoring": false,
+      "optimized": {
+        "ancillas": 0,
+        "ccx": 1,
+        "cx": 4,
+        "depth": 3,
+        "qubits": 5,
+        "t7_estimate": 7,
+        "x": 0
+      },
+      "shared": {
+        "ancillas": 0,
+        "ccx": 4,
+        "cx": 0,
+        "depth": 4,
+        "qubits": 5,
+        "t7_estimate": 28,
+        "x": 0
+      },
+      "training": {
+        "affine_or_shared": {
+          "ancillas": 0,
+          "ccx": 1,
+          "cx": 4,
+          "depth": 3,
+          "qubits": 5,
+          "t7_estimate": 7,
+          "x": 0
+        },
+        "baseline": {
+          "ancillas": 0,
+          "ccx": 4,
+          "cx": 0,
+          "depth": 4,
+          "qubits": 5,
+          "t7_estimate": 28,
+          "x": 0
+        },
+        "best_classical_errors": 0,
+        "exact_hard_candidate_found_after_training": true,
+        "exact_teacher_seeded": true,
+        "learned": {
+          "ancillas": 2,
+          "ccx": 1,
+          "cx": 8,
+          "depth": 5,
+          "qubits": 7,
+          "t7_estimate": 7,
+          "x": 0
+        },
+        "restarts": 3,
+        "steps": 400,
+        "strict_improvement_over_teacher": false,
+        "teacher": {
+          "ancillas": 2,
+          "ccx": 1,
+          "cx": 8,
+          "depth": 5,
+          "qubits": 7,
+          "t7_estimate": 7,
+          "x": 0
+        }
+      },
+      "truth_tables_le_index": [
+        "0x660"
+      ],
+      "validation": {
+        "basis_cases_checked": 32,
+        "phase_safe_by_gate_alphabet": 1
+      }
+    },
+    "output-mix_lut_training": {
+      "baseline": {
+        "ancillas": 0,
+        "ccx": 4,
+        "cx": 0,
+        "depth": 4,
+        "qubits": 6,
+        "t7_estimate": 28,
+        "x": 0
+      },
+      "basis_cnots": [],
+      "case": "output-mix",
+      "joint": {
+        "input_basis_cnots": [],
+        "method": "joint-affine-anf-baseline",
+        "output_basis_cnots": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "resources": {
+          "ancillas": 0,
+          "ccx": 2,
+          "cx": 4,
+          "depth": 5,
+          "qubits": 6,
+          "t7_estimate": 14,
+          "x": 0
+        }
+      },
+      "joint_validation": {
+        "basis_cases_checked": 64,
+        "phase_safe_by_gate_alphabet": 1
+      },
+      "method": "anf-baseline",
+      "n_inputs": 3,
+      "n_outputs": 3,
+      "official_kaggle_scoring": false,
+      "optimized": {
+        "ancillas": 0,
+        "ccx": 4,
+        "cx": 0,
+        "depth": 4,
+        "qubits": 6,
+        "t7_estimate": 28,
+        "x": 0
+      },
+      "shared": {
+        "ancillas": 0,
+        "ccx": 4,
+        "cx": 0,
+        "depth": 4,
+        "qubits": 6,
+        "t7_estimate": 28,
+        "x": 0
+      },
+      "training": {
+        "affine_or_shared": {
+          "ancillas": 0,
+          "ccx": 4,
+          "cx": 0,
+          "depth": 4,
+          "qubits": 6,
+          "t7_estimate": 28,
+          "x": 0
+        },
+        "baseline": {
+          "ancillas": 0,
+          "ccx": 4,
+          "cx": 0,
+          "depth": 4,
+          "qubits": 6,
+          "t7_estimate": 28,
+          "x": 0
+        },
+        "best_classical_errors": 0,
+        "exact_hard_candidate_found_after_training": true,
+        "exact_teacher_seeded": true,
+        "learned": {
+          "ancillas": 2,
+          "ccx": 4,
+          "cx": 4,
+          "depth": 6,
+          "qubits": 8,
+          "t7_estimate": 28,
+          "x": 0
+        },
+        "restarts": 3,
+        "steps": 300,
+        "strict_improvement_over_teacher": false,
+        "teacher": {
+          "ancillas": 2,
+          "ccx": 4,
+          "cx": 4,
+          "depth": 6,
+          "qubits": 8,
+          "t7_estimate": 28,
+          "x": 0
+        }
+      },
+      "truth_tables_le_index": [
+        "0x48",
+        "0x88",
+        "0xc0"
+      ],
+      "validation": {
+        "basis_cases_checked": 64,
+        "phase_safe_by_gate_alphabet": 1
+      },
+      "winner": "joint-affine-anf-baseline"
+    },
+    "output-mix_policy": {
+      "baseline": {
+        "ancillas": 0,
+        "ccx": 4,
+        "cx": 0,
+        "depth": 4,
+        "qubits": 6,
+        "t7_estimate": 28,
+        "x": 0
+      },
+      "basis_cnots": [],
+      "case": "output-mix",
+      "joint": {
+        "input_basis_cnots": [],
+        "method": "joint-affine-anf-baseline",
+        "output_basis_cnots": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "resources": {
+          "ancillas": 0,
+          "ccx": 2,
+          "cx": 4,
+          "depth": 5,
+          "qubits": 6,
+          "t7_estimate": 14,
+          "x": 0
+        }
+      },
+      "joint_validation": {
+        "basis_cases_checked": 64,
+        "phase_safe_by_gate_alphabet": 1
+      },
+      "method": "anf-baseline",
+      "n_inputs": 3,
+      "n_outputs": 3,
+      "official_kaggle_scoring": false,
+      "optimized": {
+        "ancillas": 0,
+        "ccx": 4,
+        "cx": 0,
+        "depth": 4,
+        "qubits": 6,
+        "t7_estimate": 28,
+        "x": 0
+      },
+      "pytorch_quantum_policy": {
+        "baseline": {
+          "ancillas": 0,
+          "ccx": 4,
+          "cx": 0,
+          "depth": 4,
+          "qubits": 6,
+          "t7_estimate": 28,
+          "x": 0
+        },
+        "best_actions": [
+          [
+            "output",
+            1,
+            0
+          ],
+          [
+            "output",
+            0,
+            2
+          ]
+        ],
+        "distinct_evaluated_action_sequences": 169,
+        "final_entropy": 0.05612686276435852,
+        "input_basis_cnots": [],
+        "method": "reinforce-exact-quantum-cost",
+        "output_basis_cnots": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "policy_beats_equal_budget_random": false,
+        "policy_best": {
+          "ancillas": 0,
+          "ccx": 2,
+          "cx": 4,
+          "depth": 5,
+          "qubits": 6,
+          "t7_estimate": 14,
+          "x": 0
+        },
+        "policy_found_improvement_over_baseline": true,
+        "random_best": {
+          "ancillas": 0,
+          "ccx": 2,
+          "cx": 4,
+          "depth": 5,
+          "qubits": 6,
+          "t7_estimate": 14,
+          "x": 0
+        },
+        "random_episodes": 1920,
+        "strict_validation": true,
+        "training_episodes": 1920
+      },
+      "shared": {
+        "ancillas": 0,
+        "ccx": 4,
+        "cx": 0,
+        "depth": 4,
+        "qubits": 6,
+        "t7_estimate": 28,
+        "x": 0
+      },
+      "truth_tables_le_index": [
+        "0x48",
+        "0x88",
+        "0xc0"
+      ],
+      "validation": {
+        "basis_cases_checked": 64,
+        "phase_safe_by_gate_alphabet": 1
+      },
+      "winner": "joint-affine-anf-baseline"
+    },
+    "affine-product_policy": {
+      "baseline": {
+        "ancillas": 0,
+        "ccx": 4,
+        "cx": 0,
+        "depth": 4,
+        "qubits": 5,
+        "t7_estimate": 28,
+        "x": 0
+      },
+      "basis_cnots": [
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "case": "affine-product",
+      "method": "affine-anf-baseline",
+      "n_inputs": 4,
+      "n_outputs": 1,
+      "official_kaggle_scoring": false,
+      "optimized": {
+        "ancillas": 0,
+        "ccx": 1,
+        "cx": 4,
+        "depth": 3,
+        "qubits": 5,
+        "t7_estimate": 7,
+        "x": 0
+      },
+      "pytorch_quantum_policy": {
+        "baseline": {
+          "ancillas": 0,
+          "ccx": 4,
+          "cx": 0,
+          "depth": 4,
+          "qubits": 5,
+          "t7_estimate": 28,
+          "x": 0
+        },
+        "best_actions": [
+          [
+            "input",
+            0,
+            1
+          ],
+          [
+            "input",
+            3,
+            2
+          ]
+        ],
+        "distinct_evaluated_action_sequences": 169,
+        "final_entropy": 0.0603194460272789,
+        "input_basis_cnots": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "method": "reinforce-exact-quantum-cost",
+        "output_basis_cnots": [],
+        "policy_beats_equal_budget_random": false,
+        "policy_best": {
+          "ancillas": 0,
+          "ccx": 1,
+          "cx": 4,
+          "depth": 3,
+          "qubits": 5,
+          "t7_estimate": 7,
+          "x": 0
+        },
+        "policy_found_improvement_over_baseline": true,
+        "random_best": {
+          "ancillas": 0,
+          "ccx": 1,
+          "cx": 4,
+          "depth": 3,
+          "qubits": 5,
+          "t7_estimate": 7,
+          "x": 0
+        },
+        "random_episodes": 1920,
+        "strict_validation": true,
+        "training_episodes": 1920
+      },
+      "shared": {
+        "ancillas": 0,
+        "ccx": 4,
+        "cx": 0,
+        "depth": 4,
+        "qubits": 5,
+        "t7_estimate": 28,
+        "x": 0
+      },
+      "truth_tables_le_index": [
+        "0x660"
+      ],
+      "validation": {
+        "basis_cases_checked": 32,
+        "phase_safe_by_gate_alphabet": 1
+      }
+    },
+    "random-4x3_seed21_policy": {
+      "baseline": {
+        "ancillas": 2,
+        "ccx": 45,
+        "cx": 7,
+        "depth": 49,
+        "qubits": 9,
+        "t7_estimate": 315,
+        "x": 0
+      },
+      "basis_cnots": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "random",
+      "method": "affine-shared-prefix-dag",
+      "n_inputs": 4,
+      "n_outputs": 3,
+      "official_kaggle_scoring": false,
+      "optimized": {
+        "ancillas": 3,
+        "ccx": 16,
+        "cx": 15,
+        "depth": 26,
+        "qubits": 10,
+        "t7_estimate": 112,
+        "x": 0
+      },
+      "pytorch_quantum_policy": {
+        "baseline": {
+          "ancillas": 5,
+          "ccx": 28,
+          "cx": 16,
+          "depth": 38,
+          "qubits": 12,
+          "t7_estimate": 196,
+          "x": 0
+        },
+        "best_actions": [
+          [
+            "input",
+            1,
+            2
+          ],
+          [
+            "input",
+            0,
+            1
+          ],
+          [
+            "input",
+            2,
+            3
+          ]
+        ],
+        "distinct_evaluated_action_sequences": 2892,
+        "final_entropy": 0.38459765911102295,
+        "input_basis_cnots": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "method": "reinforce-exact-quantum-cost",
+        "output_basis_cnots": [],
+        "policy_beats_equal_budget_random": true,
+        "policy_best": {
+          "ancillas": 3,
+          "ccx": 14,
+          "cx": 14,
+          "depth": 22,
+          "qubits": 10,
+          "t7_estimate": 98,
+          "x": 0
+        },
+        "policy_found_improvement_over_baseline": true,
+        "random_best": {
+          "ancillas": 3,
+          "ccx": 15,
+          "cx": 14,
+          "depth": 22,
+          "qubits": 10,
+          "t7_estimate": 105,
+          "x": 0
+        },
+        "random_episodes": 3200,
+        "strict_validation": true,
+        "training_episodes": 3200
+      },
+      "shared": {
+        "ancillas": 5,
+        "ccx": 28,
+        "cx": 16,
+        "depth": 38,
+        "qubits": 12,
+        "t7_estimate": 196,
+        "x": 0
+      },
+      "truth_tables_le_index": [
+        "0x185e",
+        "0x82dc",
+        "0xc08e"
+      ],
+      "validation": {
+        "basis_cases_checked": 128,
+        "phase_safe_by_gate_alphabet": 1
+      },
+      "winner": "reinforce-exact-quantum-cost"
+    }
+  }
+}
