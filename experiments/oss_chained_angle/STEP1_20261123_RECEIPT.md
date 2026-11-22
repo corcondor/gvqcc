@@ -55,3 +55,35 @@ Exit code 3 means strict baseline reproduction not attained even if all generate
 Use the original public k8/15 loaders' actual **reachability-dependent input-word controls** and nonlinear helper-node DAG as the recovery target. Extract and replay the exact *reachable* state mapping and HMR cleanup, rather than forcing a single-step arbitrary-word XOR interface. Any attempt that changes this structure must reconstruct full KMB with Q≤128 and independent full forward/backward reachable-state verification. No Step2 word/angle perturbations until baseline gate passes.
 
 All numeric results above are actual source/KMB runs; no claimed official submission or score.
+
+
+## Follow-up Step1 rerun: 15 banks 4,202T (still NOT reproduced)
+
+[GitHub Actions run #45062135473](https://github.com/corcondor/gvqcc/actions/runs/45062135473) reused the unchanged V8 words and pinned Rust binary, but included **single-slot annihilator ranks** as explicit structured counts. It emitted and verified all 15 KMBs; this supersedes the initial 5,145T only for **best cost** (the 5,145T zero-relation result remains a valid separate baseline).
+
+| k | Published T | New actual T | Q | Delta T |
+|---:|---:|---:|---:|---:|
+| 0 | 245 | 305 | 119 | +60 |
+| 1 | 240 | 303 | 119 | +63 |
+| 2 | 217 | 270 | 119 | +53 |
+| 3 | 217 | 268 | 119 | +51 |
+| 4 | 217 | 272 | 119 | +55 |
+| 5 | 240 | 303 | 119 | +63 |
+| 6 | 217 | 270 | 119 | +53 |
+| 7 | 240 | 303 | 119 | +63 |
+| 8 | 211 | **265** | **119** | **+54** |
+| 9 | 217 | 270 | 119 | +53 |
+| 10 | 217 | 272 | 119 | +55 |
+| 11 | 240 | 303 | 119 | +63 |
+| 12 | 217 | 271 | 119 | +54 |
+| 13 | 211 | 265 | 119 | +54 |
+| 14 | 211 | 262 | 119 | +51 |
+| **sum** | **3357** | **4202** | **119 each** | **+845** |
+
+K8 uses 167 independent single-slot relations and 185 paired products: cache 80 + 185 = **265 real Toffolis**, compared with the Rust planner's 274 cost (its 89-cache fixed offset). The k8 zero-relation candidate was 263 products + 80 = 343. This change drops **78 real T** on k8, **943 T** across the family relative to the previous zero-relation construction.
+
+Checks: `kmsim.py` **45 of 45** (15 banks × 3 input classes; all 1219 addresses), independent bit-parallel HMR coefficient proof **45 of 45**, scratch/selection preserved, 128Q cap **15 of 15**. The generation/validation runs finished; the CI job's strict baseline gate correctly concludes **failure**. It does not start Step2.
+
+Artifact: https://github.com/corcondor/gvqcc/actions/runs/45062135473/artifacts
+
+**Important causal diagnosis:** The public k8 KMB maps the *reachable previous-bank word* to the next value (0 errors) but is not an arbitrary-target XOR oracle: 11,597 wrong output bits on zero target, 17,355 on random targets over 1219 addresses. The regenerated `tensorqrom` version computes the strictly more demanding independent XOR mapping on all three initial target cases; therefore neither 265T nor 211T is directly comparable as evidence of suboptimality at an identical input contract. The public construction has 82 temporary nonlinear scratch targets / 129 output-target CCX; the produced 265T circuit has a different cache/word schedule. Closing Step1 requires reachable-state-aware synthesis or faithful reconstruction of the public structure.
