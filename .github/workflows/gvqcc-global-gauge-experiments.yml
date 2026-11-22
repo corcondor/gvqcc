@@ -1,0 +1,63 @@
+name: GVQCC global-gauge research / reproducible CPU experiments
+
+on:
+  push:
+    branches:
+      - research/claude-handoff-global-angle-20261123
+  pull_request:
+    paths:
+      - 'research/claude_handoff_20261123/**'
+      - '.github/workflows/gvqcc-global-gauge-experiments.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  algebra-and-synthesis-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install NumPy
+        run: python -m pip install --disable-pip-version-check numpy==2.3.5
+      - name: Compile research source
+        run: |
+          python -m compileall -q research/claude_handoff_20261123/src
+          python -m py_compile research/claude_handoff_20261123/gauge_constraint_full_audit.py
+      - name: Execute three exact GF(2) affine-gauge experiments
+        run: |
+          set -euo pipefail
+          mkdir -p ci_output
+          for mode in all_flip zero_top_bit address_bit6; do
+            python research/claude_handoff_20261123/src/gauge5_exact.py \
+              --mode "$mode" --synthetic-rows 512 \
+              --output "ci_output/$mode.npz" \
+              --report "ci_output/$mode.json"
+          done
+      - name: Verify results and inspect original V8 evidence
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          root=pathlib.Path("ci_output")
+          reports=[json.loads(p.read_text()) for p in root.glob("*.json")]
+          assert len(reports)==3
+          assert all(x["input_kind"]=="synthetic_fixture_NOT_FE_MOCO" for x in reports)
+          assert all(x["affine_GF2_rank"]==70 and x["free_dimensions_per_row"]==5 for x in reports)
+          assert all(x["max_abs_vector_difference"]<1e-13 for x in reports)
+          evidence=json.loads(pathlib.Path("research/claude_handoff_20261123/reports/gauge_constraint_full_audit_C46.json").read_text())
+          assert evidence["rows"]==1219 and evidence["rank_histogram"].get("70")==1219
+          print("PASS 3 synthetic gauge tests, independent existing V8 rank receipt")
+          print("IMPORTANT: V8 .npz and native KickMix are absent in GitHub checkout.")
+          print("This CI success is NOT an officially verified score improvement.")
+          PY
+      - name: Upload test data and receipts
+        uses: actions/upload-artifact@v4
+        with:
+          name: gvqcc-gauge5-synthetic-and-rank-receipts
+          path: ci_output/
+          retention-days: 14
+          if-no-files-found: error
