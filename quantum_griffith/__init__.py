@@ -8,6 +8,7 @@ from .reversible import Circuit, Gate, ResourceCost, verify_oracle
 from .synthesis import (anf_terms, synthesize, search_affine, search_joint_affine,
                         SynthesisResult, JointSynthesisResult)
 from .logic_dag import LogicGate, LogicDAG, lower_logic_dag
+from .teacher import make_teacher
 from .griffith_adapter import (from_griffith_ir, load_griffith_ir,
                               compile_griffith_ir, UnsupportedGriffithIR)
 
@@ -17,5 +18,5 @@ __all__ = [
     "SynthesisResult", "JointSynthesisResult",
     "LogicGate", "LogicDAG", "lower_logic_dag",
     "from_griffith_ir", "load_griffith_ir", "compile_griffith_ir",
-    "UnsupportedGriffithIR",
+    "UnsupportedGriffithIR", "make_teacher",
 ]
