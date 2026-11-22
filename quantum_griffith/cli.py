@@ -6,7 +6,7 @@ import random
 from pathlib import Path
 
 from .reversible import verify_oracle
-from .synthesis import search_affine, synthesize
+from .synthesis import search_affine, search_joint_affine, synthesize
 
 
 def example(name: str, n: int, outputs: int, seed: int):
@@ -50,6 +50,8 @@ def main(argv=None):
     parser.add_argument("--affine-depth", type=int, default=2)
     parser.add_argument("--beam", type=int, default=12)
     parser.add_argument("--ancilla-limit", type=int, default=None)
+    parser.add_argument("--joint", action="store_true",
+                        help="Also search invertible input AND output GF(2) bases")
     parser.add_argument("--emit", type=Path, default=None,
                         help="Save winning quantum circuit as JSON")
     parser.add_argument("--train", action="store_true",
@@ -83,6 +85,23 @@ def main(argv=None):
         "validation": validation,
         "official_kaggle_scoring": False,
     }
+    winner = optimized.circuit
+    if args.joint:
+        joint = search_joint_affine(
+            tables, args.inputs, max_depth=args.affine_depth, beam_width=args.beam,
+            max_ancillas=args.ancilla_limit
+        )
+        report["joint"] = joint.as_dict()
+        report["joint_validation"] = verify_oracle(joint.circuit, tables)
+        old_cost = optimized.circuit.resources()
+        new_cost = joint.circuit.resources()
+        if (new_cost.ccx, new_cost.ancillas, new_cost.cx, new_cost.depth) < (
+            old_cost.ccx, old_cost.ancillas, old_cost.cx, old_cost.depth
+        ):
+            winner = joint.circuit
+            report["winner"] = joint.method
+        else:
+            report["winner"] = optimized.method
     if args.train:
         from .learn import fit_truth_tables
         learned = fit_truth_tables(
@@ -92,7 +111,7 @@ def main(argv=None):
         report["training"] = learned.as_dict()
     if args.emit:
         args.emit.write_text(
-            json.dumps(optimized.circuit.to_json(), indent=2) + "\n",
+            json.dumps(winner.to_json(), indent=2) + "\n",
             encoding="utf-8"
         )
     print(json.dumps(report, indent=2, sort_keys=True))
