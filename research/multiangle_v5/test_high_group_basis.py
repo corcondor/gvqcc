@@ -9,8 +9,8 @@ import unittest
 from pathlib import Path
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
-for folder in ('gvqcc_multiform','gvqcc_multiform_v3','gvqcc_multiform_v4','gvqcc_multiform_v5'):
- sys.path.insert(0,str(ROOT/folder))
+for local,hosted in [('gvqcc_multiform','gvqcc_multiform'),('gvqcc_multiform_v3','multiangle_v3'),('gvqcc_multiform_v4','multiangle_v4'),('gvqcc_multiform_v5','multiangle_v5')]:
+ sys.path.insert(0,str(ROOT/(local if (ROOT/local).exists() else hosted)))
 from high_group_basis import (inverse_rows,group_candidates,select_basis,verify_group,
       compile_group,cf_cost)
 from global_20_basis import factor_selector

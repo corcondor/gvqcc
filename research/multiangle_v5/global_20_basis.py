@@ -19,8 +19,8 @@ from collections import Counter
 from pathlib import Path
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
-for d in ('gvqcc_multiform','gvqcc_multiform_v3','gvqcc_multiform_v4','gvqcc_multiform_v5'):
- sys.path.insert(0,str(ROOT/d))
+for local,hosted in [('gvqcc_multiform','gvqcc_multiform'),('gvqcc_multiform_v3','multiangle_v3'),('gvqcc_multiform_v4','multiangle_v4'),('gvqcc_multiform_v5','multiangle_v5')]:
+ sys.path.insert(0,str(ROOT/(local if (ROOT/local).exists() else hosted)))
 from multi_angle_synthesis import Circuit,TARGETS,delta_table,word_masks,rank_output_basis,emit_fanout
 from partition_patterns import high_flags,monomial_cache,mobius
 from global_cofactor import discover_global

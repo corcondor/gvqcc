@@ -14,8 +14,9 @@ import numpy as np
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from high_group_basis import (inverse_rows,cf_cost,group_candidates,group_candidates as can, xor_coeff)
 ROOT=Path(__file__).resolve().parents[1]
-for x in ('gvqcc_multiform','gvqcc_multiform_v3','gvqcc_multiform_v4'):
- sys.path.insert(0,str(ROOT/x))
+for local,hosted in [('gvqcc_multiform','gvqcc_multiform'),('gvqcc_multiform_v3','multiangle_v3'),('gvqcc_multiform_v4','multiangle_v4')]:
+ d=ROOT/(local if (ROOT/local).exists() else hosted)
+ sys.path.insert(0,str(d))
 from multi_angle_synthesis import delta_table,word_masks,rank_output_basis
 from partition_patterns import mobius
 from global_cofactor import discover_global

@@ -28,8 +28,10 @@ from typing import Sequence
 
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
-for x in ('gvqcc_multiform', 'gvqcc_multiform_v3', 'gvqcc_multiform_v4'):
-    sys.path.insert(0, str(ROOT / x))
+for local, hosted in [('gvqcc_multiform', 'gvqcc_multiform'),
+                      ('gvqcc_multiform_v3', 'multiangle_v3'),
+                      ('gvqcc_multiform_v4', 'multiangle_v4')]:
+    sys.path.insert(0, str(ROOT / (local if (ROOT / local).exists() else hosted)))
 from multi_angle_synthesis import Circuit, TARGETS, delta_table, word_masks, rank_output_basis, emit_fanout
 from partition_patterns import high_flags, monomial_cache, mobius, convert_hmr
 from global_cofactor import discover_global
