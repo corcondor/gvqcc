@@ -8,6 +8,7 @@ An **independent experimental quantum extension inspired by [Griffith](https://g
 * Exact **algebraic normal form (ANF)** compilation using the Boolean Möbius transform.
 * Shared **XAG-like product-prefix DAG**: intermediate AND products are reused across multiple monomials and outputs; compute/uncompute returns every ancilla to zero.
 * Cost-guided **invertible GF(2) affine basis search** using CNOT moves and an exact inverse. This changes the polynomial representation *without changing the logical function*.
+* **Joint input/output affine basis search**: conjugate the output register by an invertible matrix B to synthesize B f(x), then undo B, preserving the oracle for every initial y. This can cancel nonlinear terms across outputs.
 * **Learned two-input LUT DAG lowering** with liveness pruning and Boolean CSE. Any two-input Boolean function is decomposed into affine operations plus at most one CCX to compute its output. Shared temporary nodes are uncomputed in reverse.
 * Optional **PyTorch differentiable LUT architecture search**: gate truth tables, input wiring and output references are learnable via STE / Gumbel. Exact hard evaluation is a required acceptance test, not a soft-score proxy.
 * Exhaustive equivalence tests and GitHub Actions CI. The fallback ANF compiler is exact even when an NN candidate fails training.
@@ -22,6 +23,7 @@ From the root of the GVQCC repository:
 python -m unittest discover -s quantum_griffith/tests -v
 python -m quantum_griffith --case affine-product --inputs 4
 python -m quantum_griffith --case shared-cubic --inputs 4
+python -m quantum_griffith --case output-mix --inputs 3 --joint
 python -m quantum_griffith --case random --inputs 4 --outputs 3 --seed 21
 python -m quantum_griffith --case affine-product --emit /tmp/circuit.json
 ~~~
