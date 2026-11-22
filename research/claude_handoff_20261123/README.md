@@ -11,6 +11,11 @@
 
 These archives are **not independently hosted on GitHub by merely naming them here**. Request the ZIPs from the project owner if missing. This branch will contain extracted executable source, reports and a handoff.
 
+
+## CRITICAL RESEARCH RETRACTION (2026-11-23): 9T invsqrt rewrite is UNSAFE
+
+A later branch-aware HMR check found a counterexample to the previously claimed exhaustive phase equivalence for `invsqrt_nonlocal_9T`. The original T triples at ops 32662/32663/32665 and 34341/34342/34344 are under classical condition b743; the replacement S insertions at ops 8145/8344 are unconditional. The previous test ignored this scope. Branch 0 has 1,300,770 phase mismatches and branch 1 has 749,964; **x=0 is a witness**. This 9T candidate must NOT be submitted, scored, or handed off as valid. Full details in `GVQCC_20261123_temporal_products_DQI_liveness_BRANCH_PHASE_COUNTEREXAMPLE_RESEARCH_NOT_OFFICIAL.zip` (research archive). The older public 3T→2S control passes the tested 2 global HMR branches but is not an independent score gain. The files mentioned above are historical negative controls. No valid 9T score improvement is established.
+
 ## Evidence and failures (from the included study's README / scorecard)
 
 - Baseline: public C46 V8 ANGLE family, 15 KMB, 3357 CCX per one-way loader pass, 128Q (loader width). Combined score still UNVERIFIED for changed candidates.
@@ -23,7 +28,7 @@ These archives are **not independently hosted on GitHub by merely naming them he
 - **C:** changed AND basis with **zero** net CCX savings. Single-product deletion in existing loaders was negative in prior research; do not retry identical local fusion as a primary strategy.
 - **D+F+G ROM variants:** 61,080 -> 36,210 -> 18,105 -> 9,003 ROM CCX, still worse than 3357 baseline. ROM width 56–118Q depending on approach. Note the 18,105 variant uses HMR-based measured uncomputation; phase checks are LOCAL.
 - 900Q DQI naive first/last-use live intervals overlap across all 900 qubits. This does NOT rule out nonlocal schedule rewrites, rematerialization or HMR resets.
-- 37Q invsqrt nonlocal phase rewrite: nine T-phase removals with four S insertions reported after exhaustive equivalence checking; original and candidate share CCX/Q. Not an official score improvement.
+- 37Q invsqrt nonlocal phase rewrite: the attempted nine-T/four-S edit was falsified by phase-condition branch analysis; **unsafe, do not reuse**, despite earlier unconditioned tests.
 
 ## Implementation request for Claude
 
