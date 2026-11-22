@@ -62,3 +62,21 @@ Exactly **2,961** pairs of CCX with only unconditional CX between them were scre
 No native verified CCX reduction. No changed real-angle KMB contains fewer paid gates. Official KickMix verifier and two-salt competition scoring were not executed for these circuits; given identical lambda_eff, Q and T, official score *would not* improve from this CNOT-only transformation. The goal is to pass the native 128-wire and HMR cut contract with a genuine multi-product factorization that saves paid CCX, then compare against the newer V9 3,372T reference, before claiming a score gain.
 
 This work closes the original physical-KMB serialization and full 15-bank validation plumbing gap, but NOT the nonlinear synthesis or competition-score gap.
+
+
+## Post-HMR exact nonlinear splice safety
+
+Added native_kmb/smt_splice.py: any X/CX/CCX-only gate segment, even after a prior HMR, is eligible for replacement only after Z3 proves UNSAT for every possible initial physical-wire assignment that would produce a changed final output. Phase-free gate equality extends this proof to arbitrary superpositions and unchanged HMR phase transcripts. Invalid candidates, SMT UNKNOWN, or unchanged paid CCX are rejected. Tests include a *synthetic* 128Q CCX-CX-CCX to CX-CCX identity (2 paid gates -> 1) and SAT-negative controls. CI passed Python 3.11 and 3.12 with PyTorch and Z3. **No corresponding cheaper native V8 replacement candidate was found.**
+
+## Measured real 3/4 paid-gate window screen
+
+Full formal 128-wire input analysis across all fifteen original V8 KMBs:
+
+| Consecutive CCX separated only by CX | Tested | Quadratic | Nonlinear-output dimension equals original count | Lower-dimensional | Nonquadratic excluded |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 3 | 2,765 | 2,445 | 2,444 | 1 | 320 |
+| 4 | 2,731 | 2,371 | 2,367 | 4 | 360 |
+
+The five lower-dimensional cases were screened for the availability of a spanning family of polar rank-2 quadratic forms; none passed that restricted 3->2 or 4->3 resynthesis requirement. This does not rule out longer windows, causal nonlinear recomputation, reachable-support factorization, or different HMR schedules. Detailed cut indices are in experiments/real_native_3_4_product_cut_screen_20261122.json.
+
+**Real native Toffoli saving = 0, official scoring not run, full 18-file submission not generated.** This is a working and formally checked integration/safety pipeline, not a score record.
