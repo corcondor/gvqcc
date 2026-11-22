@@ -8,8 +8,8 @@ from pathlib import Path
 import sys
 import unittest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "research" / "griffith_qcc"))
-from reversible_blocks import (
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from griffith_qcc.reversible_blocks import (
     add_three_mod, csa_three, and_fanout, and_clean_cache, simulate, costs
 )
 
