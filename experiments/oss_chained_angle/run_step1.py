@@ -75,7 +75,7 @@ def plan_search(qrom,words,k,work,counts,seed_count,trials,samples):
         attempts.append(item)
     return best,attempts
 
-def kmsim_check(kmx,delta,k):
+def kmsim_check(kmx,delta,k,words):
     ops,regs=kmsim.parse(kmx)
     names=kmsim.register_names(kmx)
     Q,B=kmsim.sizes(ops,regs)
@@ -89,7 +89,7 @@ def kmsim_check(kmx,delta,k):
     for mode,seed in [("zero",0),("previous",11),("random",29)]:
         rng=np.random.default_rng(seed+k)
         if mode=="zero":initial=np.zeros((1219,5),np.uint8)
-        elif mode=="previous":initial=delta[:1219].copy()
+        elif mode=="previous":initial=(words[:,5*(k-1):5*k].copy() if k else np.zeros((1219,5),np.uint8))
         else:initial=rng.integers(0,128,(1219,5),dtype=np.uint8)
         initial|=((initial>>6)&1)<<7
         s=kmsim.Sim(ops,Q,B,1219,seed+k)
@@ -110,7 +110,7 @@ def kmsim_check(kmx,delta,k):
                         pass_all=bool(selok and not(errors or dirty or phases or resets))))
     return out,ops,regs,names
 
-def symbolic_hmr(ops,regs,names,delta,k):
+def symbolic_hmr(ops,regs,names,delta,k,words):
     # Strict proof of every HMR measurement *branch* for the tensorqrom DEL_AND
     # instruction subset; a supported measurement result may not control a
     # change of a quantum bit, only Z/CZ phase correction.
@@ -123,7 +123,7 @@ def symbolic_hmr(ops,regs,names,delta,k):
     rows=[]
     for mode in ("zero","previous","random"):
         if mode=="zero":initial=np.zeros((N,5),np.uint8)
-        elif mode=="previous":initial=delta[:N].copy()
+        elif mode=="previous":initial=(words[:,5*(k-1):5*k].copy() if k else np.zeros((N,5),np.uint8))
         else:initial=np.random.default_rng(9222+k).integers(0,128,(N,5),dtype=np.uint8)
         initial|=((initial>>6)&1)<<7
         qs=[0]*nq
@@ -198,8 +198,8 @@ def main():
                 row.update(real_T=T,real_Q=Q,T_delta=T-PUBLIC[k],
                            KMB_SHA256=hashlib.sha256(kmb.read_bytes()).hexdigest(),KMB=str(kmb),
                            within_128Q=Q<=128)
-                rr,ops,regs,names=kmsim_check(kmx,delta,k);row["kmsim"]=rr
-                ph=symbolic_hmr(ops,regs,names,delta,k);row["symbolic_hmr"]=ph
+                rr,ops,regs,names=kmsim_check(kmx,delta,k,w);row["kmsim"]=rr
+                ph=symbolic_hmr(ops,regs,names,delta,k,w);row["symbolic_hmr"]=ph
                 row["pass_logic"]=all(x["pass_all"] for x in rr+ph)
                 row["pass_reproduce"]=row["pass_logic"] and Q<=128 and T==PUBLIC[k]
             else:row["reason"]="No valid qrom-plan produced"
