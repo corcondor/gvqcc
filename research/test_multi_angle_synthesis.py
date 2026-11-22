@@ -34,6 +34,11 @@ class TestMultiAngle(unittest.TestCase):
             blob=io.BytesIO(('\n'.join(c.kmx_lines())+'\n').encode())
             circuit=km.Circuit.from_file(blob,format='kmx')
             self.assertEqual(circuit.num_qubits,stats['qubits'])
+            native=io.BytesIO()
+            circuit.to_file(native,format='kmb')
+            native.seek(0)
+            recovered=km.Circuit.from_file(native,format='kmb')
+            self.assertEqual(recovered.num_qubits,stats['qubits'])
 
     def test_mobius_and_rank_basis(self):
         rng=np.random.default_rng(3)
