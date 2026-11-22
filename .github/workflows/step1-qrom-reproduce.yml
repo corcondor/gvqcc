@@ -44,7 +44,7 @@ jobs:
             --qrom-plan external/kickmix-engine/target/release/qrom-plan \
             --banks 8 --counts 240,270,300 --seeds 2 --trials 6 --samples 12 \
             --out outputs/step1-k8
-      - name: Step1 all 15 banks: diagnostic real KMB synthesis (NOT Step2)
+      - name: 'Step1 all 15 banks - diagnostic real KMB synthesis (NOT Step2)'
         continue-on-error: true
         shell: bash
         run: |
