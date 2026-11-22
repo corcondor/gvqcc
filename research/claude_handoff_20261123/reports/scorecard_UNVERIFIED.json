@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-23",
+  "run_class": "RESEARCH_UNVERIFIED",
+  "native_KickMix_executed": false,
+  "reference_scores": {
+    "user_previous_33p13521306472748": 33.13521306472748,
+    "public_33p17023": 33.17023
+  },
+  "new_official_verified_score": null,
+  "new_official_verified_improvements": 0,
+  "required_independent_official_improvements": 3,
+  "candidates": {
+    "G_global_fold": {
+      "angle_words_changed": 52591,
+      "all_banks_generated": true,
+      "total_one_pass_T": 4615,
+      "max_loader_Q": 126,
+      "phase_value_workspace_local_pass": true,
+      "physical_feasible_independent_model": true,
+      "official_KickMix": false,
+      "score_gain": null,
+      "status": "higher T than 3357"
+    },
+    "H_global_dp": {
+      "angle_words_changed": 57590,
+      "tested_banks": 5,
+      "tested_bank_T": 1592,
+      "published_comparison_T_same_banks": 1136,
+      "phase_value_workspace_local_pass": true,
+      "official_KickMix": false,
+      "score_gain": null,
+      "status": "noncompetitive / incomplete 15-banks"
+    },
+    "S6_coset": {
+      "tested_banks": 3,
+      "tested_bank_T": 859,
+      "backend_matched_baseline_T": 840,
+      "official_KickMix": false,
+      "score_gain": null,
+      "status": "negative in 3-bank synthesis"
+    },
+    "I_affine_3357": {
+      "angle_words_changed": 33673,
+      "total_one_pass_T": 3357,
+      "max_loader_Q": 128,
+      "added_CX": 292,
+      "added_X": 18,
+      "physical": {
+        "shape": [
+          9,
+          127,
+          46
+        ],
+        "brot": 7,
+        "error_1": 0.019999999949999778,
+        "error_2": 0.019999999950593973,
+        "Lambda": 283.10203295585535,
+        "E_gap": 3.914898000013636,
+        "lambda_eff": 46.918064099948054,
+        "gap_in_domain": true,
+        "admissible": true,
+        "lambda1": 12.885217540884732,
+        "lambda2": 270.2168154149706,
+        "e_sos": -22144.188248000013
+      },
+      "all_15_banks_local_clean_phase_value_workspace": true,
+      "arbitrary_dirty_word_contract": false,
+      "official_KickMix": false,
+      "score_gain": null,
+      "status": "nonlocal equivalent reparameterization with no measured T gain"
+    },
+    "J_C45_joint": {
+      "angle_words_changed": 30976,
+      "total_one_pass_T": 4429,
+      "max_loader_Q": 127,
+      "added_CX": 143,
+      "added_X": 0,
+      "physical": {
+        "shape": [
+          9,
+          129,
+          45
+        ],
+        "brot": 7,
+        "error_1": 0.019733110563811548,
+        "error_2": 0.01999761702061786,
+        "Lambda": 291.638532756446,
+        "E_gap": 4.1177853928966215,
+        "lambda_eff": 48.83496312928514,
+        "gap_in_domain": true,
+        "admissible": true,
+        "lambda1": 12.87115742016379,
+        "lambda2": 278.7673753362822,
+        "e_sos": -22144.391135392896
+      },
+      "all_15_banks_local_clean_phase_value_workspace": true,
+      "arbitrary_dirty_word_contract": false,
+      "official_KickMix": false,
+      "score_gain": null,
+      "status": "physical lambda slightly lower; chemistry cost still worse than C46"
+    }
+  },
+  "limitations": [
+    "No native KickMix/official Kaggle verifier installed; cannot promote local tests to official score.",
+    "Public V8 backend and conjugated version fail randomized dirty word input for bank1, as documented. Only clean sequential initial-word-zero path was proven for I/J.",
+    "Physical errors are reproduced by independent FeMoCo numpy/scipy model, not official validator.",
+    "H and S6 are partial-bank negative tests; their full 15-bank cost cannot be imputed."
+  ]
+}
