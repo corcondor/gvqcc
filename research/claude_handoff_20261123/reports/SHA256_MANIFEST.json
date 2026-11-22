@@ -1,0 +1,680 @@
+{
+  "sha256_method": "file bytes as stored before zip compression",
+  "items": {
+    "README_JA.md": {
+      "source_relative_path": "README_JA.md",
+      "size": 5949,
+      "sha256": "6db1483ba1a9568d13d83cf56bf12ef9ac9560022209e12cf80d81034b0d3c22"
+    },
+    "REPRODUCE.sh": {
+      "source_relative_path": "REPRODUCE.sh",
+      "size": 968,
+      "sha256": "54ce16a3ca39fdca0f858e956acb255e332235b4a38bbb6f7a79d0a0795d97d1"
+    },
+    "candidates/G_global_fold/circuits/angle_k_0.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_0.kmb",
+      "size": 334664,
+      "sha256": "ed0504338fec865354c3538af48f5408563c096856b30ea6bb1108dbc29636d3"
+    },
+    "candidates/G_global_fold/circuits/angle_k_1.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_1.kmb",
+      "size": 362017,
+      "sha256": "852393b6c47da8d193c75681dae7d4724bd2b06cc7915b18c7f7c0cd2c754355"
+    },
+    "candidates/G_global_fold/circuits/angle_k_10.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_10.kmb",
+      "size": 392794,
+      "sha256": "6b9edf8ef131b525279df5dcf81b5dc7174f1325adc1ca725cdc6c5845b1955f"
+    },
+    "candidates/G_global_fold/circuits/angle_k_11.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_11.kmb",
+      "size": 402352,
+      "sha256": "240428df28078d1cb56d2fee23abe2806161f4ec6e5b9ef38342199698625c42"
+    },
+    "candidates/G_global_fold/circuits/angle_k_12.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_12.kmb",
+      "size": 395084,
+      "sha256": "6e30574eb41bc94abe0165577d6669e6e75a255b0b1acb0fb33d0cb724952cf9"
+    },
+    "candidates/G_global_fold/circuits/angle_k_13.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_13.kmb",
+      "size": 373263,
+      "sha256": "f8fec1d17d76bcd89119fd58345a59a7da0fff3e0a298e3d2f5e8c162eae8670"
+    },
+    "candidates/G_global_fold/circuits/angle_k_14.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_14.kmb",
+      "size": 380143,
+      "sha256": "8df86b8b9e87cb0e5df7d20b5def82a4319e3fda80e81d1747d5f5fa82cd0f4f"
+    },
+    "candidates/G_global_fold/circuits/angle_k_2.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_2.kmb",
+      "size": 320801,
+      "sha256": "585797e30a1aca29a4344ddeadf67feb614c6ba4b3cc172170011baa9cb36d23"
+    },
+    "candidates/G_global_fold/circuits/angle_k_3.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_3.kmb",
+      "size": 369144,
+      "sha256": "79da40425dcbccc51c820ba4cfe9fcaebb5f1f78ba989adee51efee73a23cf5e"
+    },
+    "candidates/G_global_fold/circuits/angle_k_4.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_4.kmb",
+      "size": 354698,
+      "sha256": "71cb92682c344b98280b3c9840fe8b5e7d8541a5b445119b5607fffa8a3efc45"
+    },
+    "candidates/G_global_fold/circuits/angle_k_5.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_5.kmb",
+      "size": 398671,
+      "sha256": "b9160063d28aebee66f92308703e488ddaebf6122dcd079e817ee17d4434251f"
+    },
+    "candidates/G_global_fold/circuits/angle_k_6.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_6.kmb",
+      "size": 375505,
+      "sha256": "d889c3236aae90a724de61d62011bde3707d5bc6d761414803014484011a79d6"
+    },
+    "candidates/G_global_fold/circuits/angle_k_7.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_7.kmb",
+      "size": 404816,
+      "sha256": "06b0d3e7bc6df88b15e11bcd1b67320645a099580cb71970e874fcc0f11fab90"
+    },
+    "candidates/G_global_fold/circuits/angle_k_8.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_8.kmb",
+      "size": 382502,
+      "sha256": "dc9cc4a130aa4d8d60e0a5948ab1896e114015a8a46e0eeb1ac254542919bd76"
+    },
+    "candidates/G_global_fold/circuits/angle_k_9.kmb": {
+      "source_relative_path": "compiled_foldvalue_15/angle_k_9.kmb",
+      "size": 392572,
+      "sha256": "3c02e8c4a54a2ce206e0b18426bd3a97aeb3aaeac797c0115dc73d8a8b2f3e55"
+    },
+    "candidates/G_global_fold/fold_value.npz": {
+      "source_relative_path": "gauges/fold_value.npz",
+      "size": 1109987,
+      "sha256": "c1201853b5e60d13ed39e09b2d87f3e702d8cf5ee676bf4f868f898d8b311b21"
+    },
+    "candidates/G_global_fold/verify_full.json": {
+      "source_relative_path": "compiled_foldvalue_15/verify_full.json",
+      "size": 6972,
+      "sha256": "43204cf22f5c01c3f72f78b58b39944a1473a5e56fb05604f01c77fdc86b7fbd"
+    },
+    "candidates/H_global_dp/bitplane_6.npz": {
+      "source_relative_path": "dp_gauges/bitplane_6.npz",
+      "size": 1098496,
+      "sha256": "c63b228db844f30b9b7d9219cd9d6a73003b49965e3a12ae15e74d133f752b86"
+    },
+    "candidates/H_global_dp/circuits/angle_k_0.kmb": {
+      "source_relative_path": "compiled_dp6_0_4/angle_k_0.kmb",
+      "size": 404763,
+      "sha256": "6b8b85a7beb9d3ed94bb8fc5542002647abdc1489d43e464bf393d5c33c80f25"
+    },
+    "candidates/H_global_dp/circuits/angle_k_1.kmb": {
+      "source_relative_path": "compiled_dp6_0_4/angle_k_1.kmb",
+      "size": 409510,
+      "sha256": "904df8f318c43d106e6f560c457b9d3395ee514de6991e0a8c0a69bb4adf184f"
+    },
+    "candidates/H_global_dp/circuits/angle_k_2.kmb": {
+      "source_relative_path": "compiled_dp6_0_4/angle_k_2.kmb",
+      "size": 377757,
+      "sha256": "488b86db6e7ced7e5f927d4f2540e9bebcb25fb62661c26d5753f972515551ce"
+    },
+    "candidates/H_global_dp/circuits/angle_k_3.kmb": {
+      "source_relative_path": "compiled_dp6_0_4/angle_k_3.kmb",
+      "size": 381027,
+      "sha256": "d8c4853c68466bb800bc4b3d6d8c9169eb132cd8e3f470ef8e402934a4dd966a"
+    },
+    "candidates/H_global_dp/circuits/angle_k_4.kmb": {
+      "source_relative_path": "compiled_dp6_0_4/angle_k_4.kmb",
+      "size": 374730,
+      "sha256": "eb9298caac9032d833c07e200eab332e84fa4a5ccfd33001be97dbf7d0240902"
+    },
+    "candidates/H_global_dp/verify_exact.json": {
+      "source_relative_path": "compiled_dp6_0_4/verify_exact.json",
+      "size": 2787,
+      "sha256": "eb256994d98ef8f3ab169bbf14625669fc706ea7fdb417aff62aa31bc04ba245"
+    },
+    "candidates/I_affine_3357/build_receipt.json": {
+      "source_relative_path": "affine_zeroT_wide/build_receipt.json",
+      "size": 11069,
+      "sha256": "c17fbc9450ccf4537c26647cc4f70946caf5f14f202a8842a591fbb6bae4715d"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_0.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_0.kmb",
+      "size": 502083,
+      "sha256": "84c30761ca83ab91d7f2a77bf6e907cb0c560d5b95de69e5ca753e28b18e039f"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_1.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_1.kmb",
+      "size": 495470,
+      "sha256": "d8b32fc04cfc3d3a1d0e23d797f7957c9abca9bbbabea6d046e53e3f40344008"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_10.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_10.kmb",
+      "size": 275523,
+      "sha256": "d3898e9cc2d880f651c807002cd5c13fe83b13c4af23115860c15c092956a18c"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_11.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_11.kmb",
+      "size": 495314,
+      "sha256": "5c30d3be88466c3fca12c2d1f74634ed33c6010ef775dbe051a20d1084a5f67b"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_12.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_12.kmb",
+      "size": 281088,
+      "sha256": "5c08e1b1f6e1a173c2e21b5d05b7939bb9e86acbf5057e74e3028725d2591eb6"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_13.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_13.kmb",
+      "size": 267556,
+      "sha256": "fbfb048aa13b152b811dae73426f0a5295ef59a46c92ee8bf199e7212e74add6"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_14.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_14.kmb",
+      "size": 275309,
+      "sha256": "f699b6630cac89650d2c81ee1c7ca1bba347bf93255eb833832872ee08ecee60"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_2.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_2.kmb",
+      "size": 281481,
+      "sha256": "c4b848698365d29edcc414752dcd477c89b83bb7460c361e5465121bc14f7f25"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_3.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_3.kmb",
+      "size": 279252,
+      "sha256": "d9d3742b9c9c6a0177b04829977eadd564b481b9230abc8525c5e0a286e182f7"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_4.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_4.kmb",
+      "size": 284188,
+      "sha256": "fdd8481b5db040c04930046651070271121a806803680c015d30b5e1537b48d1"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_5.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_5.kmb",
+      "size": 494517,
+      "sha256": "8eb78c2dd6889aff9ce0e55085b5f1ae0f2544fdf10b81ab78fba591d435fd12"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_6.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_6.kmb",
+      "size": 280237,
+      "sha256": "1e439a78127ed0b45a74e50f9ee630528b1dcb7644a7d4195b7ddc4f1220b85a"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_7.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_7.kmb",
+      "size": 494412,
+      "sha256": "93b1264911f5e0f42f20dc6dcd3425fc19befd9e7188c57c93c901400f256543"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_8.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_8.kmb",
+      "size": 265944,
+      "sha256": "66bb4b8c1ba6d004f851e482956d95c697fa1dde39655288266038412ed07f4c"
+    },
+    "candidates/I_affine_3357/circuits/angle_k_9.kmb": {
+      "source_relative_path": "affine_zeroT_wide/circuits/angle_k_9.kmb",
+      "size": 279463,
+      "sha256": "3c6709455f8a835de047b23e0330b4fc78bd919c540b4fe6d729d4f87e89e468"
+    },
+    "candidates/I_affine_3357/submission.npz": {
+      "source_relative_path": "affine_zeroT_wide/submission.npz",
+      "size": 1118543,
+      "sha256": "cd663b4949bd5e5ed970137900e30eff78460b80b8956c6802a1d540830a0a46"
+    },
+    "candidates/I_affine_3357/verify_all_clean.json": {
+      "source_relative_path": "affine_zeroT_wide/verify_all_clean.json",
+      "size": 5157,
+      "sha256": "a4ccca5443d0742bafa562de5396367f42fd84527b4b64a59575a70efa93f57e"
+    },
+    "candidates/J_C45_joint/build_receipt.json": {
+      "source_relative_path": "c45_joint_affine_C_gauge/build_receipt.json",
+      "size": 10906,
+      "sha256": "60e2fd0e002863b760976fe2e44061c2b2dccd5c46b15762b3acbb8f1c5077ad"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_0.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_0.kmb",
+      "size": 367893,
+      "sha256": "e13be02670624d75f7c22122c1cbdf9415c37e179f5ae8474b8fdab8eca5250e"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_1.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_1.kmb",
+      "size": 357674,
+      "sha256": "468578512e9479a2699cf960bfb2275d42c4e49a29cee7a0b45f43caefb5b31e"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_10.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_10.kmb",
+      "size": 378547,
+      "sha256": "165ce8667658b2574848bfa19b87b21266962705d846966a8684cb2b9bd2fc33"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_11.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_11.kmb",
+      "size": 375854,
+      "sha256": "2de219f6be7097ebf3bec9b41f41f6042891f7a219fa3f98826694b8b6ab02f4"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_12.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_12.kmb",
+      "size": 371142,
+      "sha256": "ed7fa3205813eba7dc74a0471f7f8189af888f06bc4012c39193fd3efcfab2b5"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_13.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_13.kmb",
+      "size": 374734,
+      "sha256": "d1fe8d2aa867d9630becfd0eb5ff3394a43a1fba1e3960dde9dede65ad07716b"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_14.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_14.kmb",
+      "size": 378984,
+      "sha256": "fa75a5b31862377058ccd43c8a383908de4d2e0a785f3d5f60d656e0fd541d51"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_2.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_2.kmb",
+      "size": 359912,
+      "sha256": "419423023c06b94e828e73694d2e8165dc00dca06c4b5cfa628d289343c23d9d"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_3.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_3.kmb",
+      "size": 365442,
+      "sha256": "8134f3a93a9399bac657535d8dab18e3e66d44f7fd02b6d60e61b853e9ca2b19"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_4.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_4.kmb",
+      "size": 366432,
+      "sha256": "27bb505699ddcde837e696521dc23def719948664fec34fd6e9654061ad1d6f0"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_5.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_5.kmb",
+      "size": 364768,
+      "sha256": "e2ea27759b8b1b069d8929ca8b1f60b68456ecd71d25b023a7ddee9f7cee63a7"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_6.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_6.kmb",
+      "size": 359149,
+      "sha256": "0ff3f719b90046a7f2c43dc9ec8e073c1306860636a90ad822a5530c6c1a43c0"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_7.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_7.kmb",
+      "size": 364994,
+      "sha256": "67585e58ca633943c63083d19629bf1594266d63816da546d69b8ff6ef2da0a7"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_8.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_8.kmb",
+      "size": 368382,
+      "sha256": "68081683bb716c89e989072f0af4d16b8ec637456e60538af1e3afff174c1fc7"
+    },
+    "candidates/J_C45_joint/circuits/angle_k_9.kmb": {
+      "source_relative_path": "c45_joint_affine_C_gauge/circuits/angle_k_9.kmb",
+      "size": 372436,
+      "sha256": "7089399b5384e27c34e69bb1dc11889912b4c09cc7c3dad2494993dcbbf69149"
+    },
+    "candidates/J_C45_joint/submission.npz": {
+      "source_relative_path": "c45_joint_affine_C_gauge/submission.npz",
+      "size": 1201480,
+      "sha256": "ba3c8e42153d29886c4f2f13f9163306007ff1b14ade7c34370d5dc03290e9c8"
+    },
+    "candidates/J_C45_joint/verify_all.json": {
+      "source_relative_path": "c45_joint_affine_C_gauge/verify_all.json",
+      "size": 5158,
+      "sha256": "5a0a3c74dbc8171aa98dcd0da0f74b370a6e8b3fa22c5236330950eb703b9d87"
+    },
+    "candidates/S6_coset/circuits/angle_k_0.kmb": {
+      "source_relative_path": "compiled_s6_fixed2_first3/angle_k_0.kmb",
+      "size": 369290,
+      "sha256": "55dce955e1da5f215a9e90c7405f1b4f5e7b72f1ef31dba479715e4d9a014717"
+    },
+    "candidates/S6_coset/circuits/angle_k_1.kmb": {
+      "source_relative_path": "compiled_s6_fixed2_first3/angle_k_1.kmb",
+      "size": 355592,
+      "sha256": "598dea2cc7ab2e5194c7a9e2e2febaa4150b92a4e3981828b2024c037c6fd32f"
+    },
+    "candidates/S6_coset/circuits/angle_k_2.kmb": {
+      "source_relative_path": "compiled_s6_fixed2_first3/angle_k_2.kmb",
+      "size": 317498,
+      "sha256": "936749ff6e885d2d26a3ab1ba910c4cdb588eb47ff92a90c1ee5f297664aa840"
+    },
+    "candidates/S6_coset/signed6_fixed_2.npz": {
+      "source_relative_path": "signed6_cosets/signed6_fixed_2.npz",
+      "size": 1117433,
+      "sha256": "0e8755ea40cfa374426e014150baa12ff5ded4185372ba7a70a4851b56495367"
+    },
+    "candidates/S6_coset/verify_exact.json": {
+      "source_relative_path": "compiled_s6_fixed2_first3/verify_exact.json",
+      "size": 1968,
+      "sha256": "99aef4363a15b4853b069cc6fc8ee0bc55d4b65b3ee16018474aac6650703c00"
+    },
+    "experiments/C45_W_H2_orthogonal_candidate.npz": {
+      "source_relative_path": "c45_gauge/C45_B129_JACOBI_OPTIMIZED_C_ORTHOGONAL_GAUGE_6_42.npz",
+      "size": 1197068,
+      "sha256": "7f4852bd25773a3f108751a6df7d2dd8eb65d7800d693ee77ed6ca52d1cbd52a"
+    },
+    "experiments/C45_W_H2_orthogonal_report.json": {
+      "source_relative_path": "c45_gauge/orthogonal_gauge_result.json",
+      "size": 4004,
+      "sha256": "8785e31593c91c7344fda36fd9a571d9a74cc7fc28b1d77da6ee92bab7838ac0"
+    },
+    "experiments/C46_W_H2_orthogonal_report.json": {
+      "source_relative_path": "c46_gauge/orthogonal_gauge_result.json",
+      "size": 2350,
+      "sha256": "d3cdc3583430c2c9864d665c91ab0cc19663b48641d82522ff418aff699086b1"
+    },
+    "experiments/G_global_fold_search_report.json": {
+      "source_relative_path": "gauges/landscape_report.json",
+      "size": 84467,
+      "sha256": "16970a4d284732e6c43b1dff69a89c1e285c0788a68095fd2c916717ac31d291"
+    },
+    "experiments/H_gauge_dp_report.json": {
+      "source_relative_path": "dp_gauges/dp_report.json",
+      "size": 10202,
+      "sha256": "ed9cc84e2499ce8a1cadc81b91605b7996456fb6348b8fe150db8c1c83d8283e"
+    },
+    "experiments/R_B_90_global_reindex_report.json": {
+      "source_relative_path": "reindexed/reindex_results.json",
+      "size": 101027,
+      "sha256": "ea93ca45946acbbd5a30a9609696ae018c7cd688a6f3af5052da156cab9714b1"
+    },
+    "experiments/S6_coset_report.json": {
+      "source_relative_path": "signed6_cosets/coset_report.json",
+      "size": 27005,
+      "sha256": "a47008d5bea4241a9dc52f9161e5260e696c10a025a90fafac14489e2d79b6ab"
+    },
+    "experiments/reference_3357_dirty_initial_failure.log": {
+      "source_relative_path": "baseline_reference_3357/dirty_original_failure.log",
+      "size": 373,
+      "sha256": "aeb9504450dc250c6381dbe99eec167bccfeb40f176f820d32f4db07875b2975"
+    },
+    "experiments/reference_3357_full_validation.json": {
+      "source_relative_path": "independent_full_3357_exact.json",
+      "size": 6284,
+      "sha256": "987b4c693592aec78ea5d35198e69a93e9bcb39203ba5a9b80dcc98fc07ef44d"
+    },
+    "experiments/reproduce_run_log.txt": {
+      "source_relative_path": "reproduce_run_log.txt",
+      "size": 1760,
+      "sha256": "7eac7ce9df671f44d01ec5ab10e8e46d2dce84ef6ded07c3b58a78fb425a4b8d"
+    },
+    "experiments/tree_topological_48_report.json": {
+      "source_relative_path": "joint_topo/joint_toposort_results.json",
+      "size": 65227,
+      "sha256": "da28b1c7ed50a6be16377eb47dd44e7604e85becf75810807375ed55d324e5d8"
+    },
+    "inputs/C45_B129_JACOBI_OPTIMIZED.npz": {
+      "source_relative_path": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "size": 1197077,
+      "sha256": "4e67df12c9a115121c42dabfe04becaa50217938e3f466777dc715efc9921307"
+    },
+    "inputs/V8_C46_ORIGINAL.npz": {
+      "source_relative_path": "V8_C46_ORIGINAL.npz",
+      "size": 1864776,
+      "sha256": "d4d39b2e2516ed7c51a936e863cf0567e558a0db8ded24e435f507d76bfb78d7"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_0.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_0.kmb",
+      "size": 367884,
+      "sha256": "80a633ac2dbb8bf861352c72857c98628ba4940ca8c81fd0377e74dd57616b56"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_1.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_1.kmb",
+      "size": 357611,
+      "sha256": "b17bf2d4ba35555f44a6438c7ab37d91d44efc3b918706082c53b241b9c382ca"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_10.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_10.kmb",
+      "size": 378484,
+      "sha256": "305befa1bf742f4acb70b64804b8396418f871fadc590e64a5862991812e8426"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_11.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_11.kmb",
+      "size": 375755,
+      "sha256": "59045331ab82d8ca9e6701b7c3cb7ffb116eef8835691235a96157478bb58e41"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_12.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_12.kmb",
+      "size": 371061,
+      "sha256": "8b2eb2c039389c1ffb2372df636f0538062d39177ac48fb7b4d2fda9bea6c986"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_13.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_13.kmb",
+      "size": 374653,
+      "sha256": "dab2a200a12baf98daa23f209fa8dca4891ea09f1d02c6cd652d3a91535eb0a9"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_14.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_14.kmb",
+      "size": 378912,
+      "sha256": "9fa06454b93beca2294691f81a7b161586cefd4770a6061b4a95df06f0f1ab2b"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_2.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_2.kmb",
+      "size": 359822,
+      "sha256": "1a3e84d7cb450709b5167c50c9bfe3356cfd9f0e4e46d33bf56324ed7837b5b9"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_3.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_3.kmb",
+      "size": 365343,
+      "sha256": "23e2b07bd211da315c40c872268e5a4efbb9aa965726e1b71414a4fca27c83c1"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_4.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_4.kmb",
+      "size": 366333,
+      "sha256": "13590c43f40e5777f2d392bbe69686e45637f8a189da83d0f733ba6da92eb5fc"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_5.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_5.kmb",
+      "size": 364669,
+      "sha256": "d2d8708320df15b113b5787361269185a2740d5cd822f3af0ff9c52ab4f8b20a"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_6.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_6.kmb",
+      "size": 359014,
+      "sha256": "11994953c2af7ea3bd0052210ba067a1ffa6ae0904ab08939a47422ba7466379"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_7.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_7.kmb",
+      "size": 364859,
+      "sha256": "9e60af9b87528395803034196b3cb3c66792cad5b5f8f5c6d82a764b6e9e227c"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_8.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_8.kmb",
+      "size": 368274,
+      "sha256": "d057e9758db6855c31353846fae77d2e4f94a336fcfd6290337510e6157c11bc"
+    },
+    "inputs/c45_bestseed/candidate_angle_k_9.kmb": {
+      "source_relative_path": "c45_bestseed_public/candidate_angle_k_9.kmb",
+      "size": 372382,
+      "sha256": "1693e0f6cf39224f2f95efa1a45ed3fbf2015789e58032fd51432ce8e9dd250d"
+    },
+    "inputs/public3357/candidate_angle_k_0.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_0.kmb",
+      "size": 501906,
+      "sha256": "f2004c1f1d12f4a0028252aa3febd713856d246ff21134ca91a92348c4bf2994"
+    },
+    "inputs/public3357/candidate_angle_k_1.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_1.kmb",
+      "size": 495144,
+      "sha256": "55d06dd8ca615a9347d1f5e7f56995dbfc98271a9e7dcd41afcfa1471322e1ab"
+    },
+    "inputs/public3357/candidate_angle_k_10.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_10.kmb",
+      "size": 275433,
+      "sha256": "6821f925554fec08153670bcc9ff83dc893d8cde72003727139c754b4ebbbbd9"
+    },
+    "inputs/public3357/candidate_angle_k_11.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_11.kmb",
+      "size": 495152,
+      "sha256": "6d8ca06817049162d67d89aaf1ae0fd88acbb7ee984c4c28d222cd14e512ffda"
+    },
+    "inputs/public3357/candidate_angle_k_12.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_12.kmb",
+      "size": 280926,
+      "sha256": "ddde7ec28d025883a9a789f4d313696d61797f26ab20016033362736cdf8bc72"
+    },
+    "inputs/public3357/candidate_angle_k_13.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_13.kmb",
+      "size": 267412,
+      "sha256": "acaee97f692c612dddcac3bc1978f3f58348504fba3881bdd4a6b440aa2ed7e6"
+    },
+    "inputs/public3357/candidate_angle_k_14.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_14.kmb",
+      "size": 275201,
+      "sha256": "5cef55cf6208b2cfd4f52a13b63241b4ce7b5196f9dddfe0349e484030db07cd"
+    },
+    "inputs/public3357/candidate_angle_k_2.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_2.kmb",
+      "size": 281142,
+      "sha256": "ad15e5f7a198103af1fba6af7f36048948395853464b5876191844c8f2c4a539"
+    },
+    "inputs/public3357/candidate_angle_k_3.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_3.kmb",
+      "size": 278967,
+      "sha256": "5ded23f357ebfa0ed1fe639f1cffd92d31957fb3845509d70abbb37c0bac5773"
+    },
+    "inputs/public3357/candidate_angle_k_4.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_4.kmb",
+      "size": 284075,
+      "sha256": "c083539bde81b2b88f377fde85ac3b1ded11d1b2bcda246c59ec6a80597205fd"
+    },
+    "inputs/public3357/candidate_angle_k_5.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_5.kmb",
+      "size": 494427,
+      "sha256": "6596b8f24e9fe2591ae5a9cfd63d3f4ed10d1b740cab1799b91eed55d1350da5"
+    },
+    "inputs/public3357/candidate_angle_k_6.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_6.kmb",
+      "size": 280016,
+      "sha256": "5ea8a2182ae7c70bb6b7f095970b9abe7dde84d8ca4c6940713a75a70655a0cd"
+    },
+    "inputs/public3357/candidate_angle_k_7.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_7.kmb",
+      "size": 494173,
+      "sha256": "f76cbba9b71e0f0601b2e906dd4c698438c1d8be7e65bb858c7f1626f3710c6e"
+    },
+    "inputs/public3357/candidate_angle_k_8.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_8.kmb",
+      "size": 265777,
+      "sha256": "227472385bffce8eb08c31ee93d635755901b29107bb32177885e1b7e212f898"
+    },
+    "inputs/public3357/candidate_angle_k_9.kmb": {
+      "source_relative_path": "public3357/candidate_angle_k_9.kmb",
+      "size": 279368,
+      "sha256": "62a3c1d1fb44df40a57df87b0907402fed4e581ec0dfe7f7647b92e75e0d4b3d"
+    },
+    "scorecard_UNVERIFIED.json": {
+      "source_relative_path": "scorecard_UNVERIFIED.json",
+      "size": 3593,
+      "sha256": "ae56b7853d485175ef20baf3fdf83a204c1d31d84e6df91fcbc32806a1bb3b19"
+    },
+    "src/affine_sign_zero_t_gauge.py": {
+      "source_relative_path": "affine_sign_zero_t_gauge.py",
+      "size": 6813,
+      "sha256": "7b05bd04001eae9aa2698865d3628ba3d236d702c0301186a0c6654427e1bc3b"
+    },
+    "src/axis_old/src/angle_full_truth.py": {
+      "source_relative_path": "axis_old/src/angle_full_truth.py",
+      "size": 734,
+      "sha256": "f211481d7fa887c4fe1efb9b42bf2c190e1b69160ed3488d398ce9eb0f84a3cf"
+    },
+    "src/axis_old/src/chemistry_j_scheduler.py": {
+      "source_relative_path": "axis_old/src/chemistry_j_scheduler.py",
+      "size": 5607,
+      "sha256": "112c4f6623f28a05187c20cab46bb09eeea6016cc69d5cd1732028d0d1ddbc2e"
+    },
+    "src/axis_old/src/compile_angle_signed_core.py": {
+      "source_relative_path": "axis_old/src/compile_angle_signed_core.py",
+      "size": 7302,
+      "sha256": "d892bc292e65e6c8b30397d04db5f2b3993277a6b9c83fc77a44bf003ba09bc6"
+    },
+    "src/axis_old/src/qhdl_kmb.py": {
+      "source_relative_path": "axis_old/src/qhdl_kmb.py",
+      "size": 14567,
+      "sha256": "58588e63d97db8ae2ea9023dce853b9c38abf3b81ca0d827fd655cfee71b30e4"
+    },
+    "src/axis_old/src/tensorqrom.py": {
+      "source_relative_path": "axis_old/src/tensorqrom.py",
+      "size": 31084,
+      "sha256": "e6bbcaf1ad7ad025f2105f0233aa9e232a211d1d76bac867da9282b21d4ed017"
+    },
+    "src/c46_to_c45_sameKMB.py": {
+      "source_relative_path": "c46_to_c45_sameKMB.py",
+      "size": 3819,
+      "sha256": "65df0be70be012facd13580a536f1bae47312aeeec2c6ecb999123eb69323784"
+    },
+    "src/compile_best_seed.py": {
+      "source_relative_path": "compile_best_seed.py",
+      "size": 2548,
+      "sha256": "af37e8d1d5a25bf3ec45756fb186c2b7c517d48a2de68062fe0d8753df765577"
+    },
+    "src/compile_experiments.py": {
+      "source_relative_path": "compile_experiments.py",
+      "size": 2895,
+      "sha256": "52a39679dca4f1f8b477ce623b04dd6421316cc8baeb0c3842f51a935ef37bd4"
+    },
+    "src/compile_gauge_partial.py": {
+      "source_relative_path": "compile_gauge_partial.py",
+      "size": 2948,
+      "sha256": "ad3a9873c029c30e2ca38d6035e8391db7d8eb1cad2f7022b26dfb097d31d37f"
+    },
+    "src/givens_gauge_global.py": {
+      "source_relative_path": "givens_gauge_global.py",
+      "size": 6762,
+      "sha256": "1a31224af42230f188f7310815d3a615dada8793cdf5e867660375390b5ace33"
+    },
+    "src/givens_gauge_tree_dp.py": {
+      "source_relative_path": "givens_gauge_tree_dp.py",
+      "size": 5427,
+      "sha256": "79aba29d1b0238b8a053cc164da94d6ce49a28093b11ec9b3ca32dd1c8c35c88"
+    },
+    "src/global_reindex_search.py": {
+      "source_relative_path": "global_reindex_search.py",
+      "size": 4770,
+      "sha256": "638415911543f9eb0b00649c2b264bb637723199ce20d182a9dbc37cfebcd2b7"
+    },
+    "src/highbit_gauge_dp.py": {
+      "source_relative_path": "highbit_gauge_dp.py",
+      "size": 5148,
+      "sha256": "b0a0ad2706e8d867cdb790fbd68ab1f68c2c460c6eb2fa7481843e2a50ff7cd6"
+    },
+    "src/joint_gauge_search.py": {
+      "source_relative_path": "joint_gauge_search.py",
+      "size": 3742,
+      "sha256": "6a8ca821fd140066093a29dff76ac457ff2f389bbe7bdd431d2bbe302dfb0f2a"
+    },
+    "src/joint_toposort_dp.py": {
+      "source_relative_path": "joint_toposort_dp.py",
+      "size": 2986,
+      "sha256": "9282c388ce55a2709240fc3cb11c062f3a1d88eeea3aba01bb784ba2e5c8a898"
+    },
+    "src/longtrain/data/chem_gpu_inputs.npz": {
+      "source_relative_path": "chem_gpu_inputs.npz",
+      "size": 36199502,
+      "sha256": "735282d9aa49bb3529e33e761ea501d1f796431221f684512de74d269b17562f"
+    },
+    "src/longtrain/physical_verify.py": {
+      "source_relative_path": "longtrain/physical_verify.py",
+      "size": 3410,
+      "sha256": "de55e273fa49d8918953e59651f1ebf82b38ea258d21243caf92e04586cb7829"
+    },
+    "src/make_bundle.py": {
+      "source_relative_path": "make_bundle.py",
+      "size": 8812,
+      "sha256": "b8c2590bf74f52d03d0ce79853f57f4b6f87cb59b57e0420887a45b8f29456e9"
+    },
+    "src/qhdl_kmb.py": {
+      "source_relative_path": "qhdl_kmb.py",
+      "size": 14567,
+      "sha256": "58588e63d97db8ae2ea9023dce853b9c38abf3b81ca0d827fd655cfee71b30e4"
+    },
+    "src/signed6_constraint_rank.py": {
+      "source_relative_path": "signed6_constraint_rank.py",
+      "size": 2071,
+      "sha256": "76149146a730bbf2db39a78375afb287674efd2c74437d4c42c2b6e742e1f907"
+    },
+    "src/signed6_coset_gauge.py": {
+      "source_relative_path": "signed6_coset_gauge.py",
+      "size": 5551,
+      "sha256": "2eb6bd1b0d500e21dc07a7aae4ea13b14f1475ead7f99181867a8f3b6f393e0f"
+    },
+    "src/verify_affine_zero_t.py": {
+      "source_relative_path": "verify_affine_zero_t.py",
+      "size": 4517,
+      "sha256": "7ac64fe7da135a1e85a31edce2aef2f4fbea343594ca240e4d288c5e3e86ee01"
+    },
+    "src/verify_exact_ir.py": {
+      "source_relative_path": "verify_exact_ir.py",
+      "size": 4591,
+      "sha256": "6b273c3282cc9c348ea9ec3f46906d35da412e4983bbccb616d65356fe8fd430"
+    }
+  }
+}
