@@ -1,0 +1,20 @@
+{
+  "schema": "gvqcc.v6.cross20.rankr.v1",
+  "verified_kmx": 15,
+  "source": "c46_public_v8.npz",
+  "CCX_per_pass": 9253,
+  "CX_per_pass": 415759,
+  "HMR_per_pass": 9242,
+  "CZ_per_pass": 9253,
+  "Q_peak": 127,
+  "compared_prior_v5": 9301,
+  "baseline_precalc_CCX": 1095,
+  "high_selector_CCX": 311,
+  "low_basis_paid_CCX": 7847,
+  "exchanges": 24,
+  "exchange_savings": 48,
+  "cross_group_exchanges": 21,
+  "tested_all_addresses": true,
+  "native_KickMix_FULL_VERIFIER": false,
+  "official_score": null
+}
