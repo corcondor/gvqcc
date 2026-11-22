@@ -98,47 +98,80 @@ def _lower_gate(a: int, b: int, tt: int, target: int) -> list[Gate]:
     return out
 
 
-def lower_logic_dag(graph: LogicDAG, *, verify: bool = True) -> Circuit:
-    """Compile learned hard gate choices to a clean (x,y,work) quantum oracle.
+def lower_logic_dag(graph: LogicDAG, *, verify: bool = True,
+                    fuse_output_sinks: bool = True) -> Circuit:
+    """Compile a learned hard Boolean DAG into a clean quantum oracle.
 
-    Live-node pruning and global common-subexpression elimination happen before
-    lowering. X/CX/CCX are exact and self-inverse. No relative-phase rewrites.
+    Direct output fusion writes a sink gate's f(a,b) straight into its
+    output y bit via XOR. Since y is an arbitrary *target*, not a fresh
+    ancilla, the gate is not uncomputed. Every *internal* live gate is
+    uncomputed in reverse. This can halve CCX count for terminal ANDs.
     """
     live = _uses(graph)
-    out_base = graph.n_inputs
-    first_work = graph.n_inputs + len(graph.outputs)
+    n = graph.n_inputs
+    first_work = n + len(graph.outputs)
+    output_refs: dict[int, list[int]] = {}
+    for out, ref in enumerate(graph.outputs):
+        output_refs.setdefault(ref, []).append(out)
+    internal_users: set[int] = set()
+    for index in live:
+        g = graph.gates[index]
+        for ref in (g.a, g.b):
+            if ref >= n:
+                internal_users.add(ref)
+    possible_sinks: dict[int, int] = {}
+    if fuse_output_sinks:
+        for index in live:
+            ref = n + index
+            if ref not in internal_users and len(output_refs.get(ref, ())) == 1:
+                possible_sinks[index] = output_refs[ref][0]
+
     wire_for_node: dict[int, int] = {}
     dedup: dict[tuple, int] = {}
+    forward: list[Gate] = []
     computes: list[Gate] = []
-    live_count = 0
+    fused_nodes: set[int] = set()
+    work_count = 0
     for index, g in enumerate(graph.gates):
         if index not in live:
             continue
-        a = g.a if g.a < graph.n_inputs else wire_for_node[g.a]
-        b = g.b if g.b < graph.n_inputs else wire_for_node[g.b]
+        a = g.a if g.a < n else wire_for_node[g.a]
+        b = g.b if g.b < n else wire_for_node[g.b]
         tt = g.tt
         if a > b:
             a, b = b, a
             tt = _swap_tt(tt)
-        # Same inputs but different rows of the truth table collapse to unary.
         if a == b:
             identity = ("unary", a, tt & 1, (tt >> 3) & 1)
         else:
             identity = ("binary", a, b, tt)
         if identity in dedup:
-            wire_for_node[graph.n_inputs + index] = dedup[identity]
+            wire_for_node[n + index] = dedup[identity]
             continue
-        dest = first_work + live_count
-        live_count += 1
-        wire_for_node[graph.n_inputs + index] = dest
+        if index in possible_sinks:
+            # No descendants and exactly one output use. Its dirty y target
+            # must NOT enter CSE, as it may hold arbitrary initial y.
+            dest = n + possible_sinks[index]
+            fused_nodes.add(index)
+            wire_for_node[n + index] = dest
+            forward.extend(_lower_gate(a, b, tt, dest))
+            continue
+        dest = first_work + work_count
+        work_count += 1
+        wire_for_node[n + index] = dest
         dedup[identity] = dest
-        computes.extend(_lower_gate(a, b, tt, dest))
+        actions = _lower_gate(a, b, tt, dest)
+        computes.extend(actions)
+        forward.extend(actions)
+
     copies = []
     for out, ref in enumerate(graph.outputs):
-        source = ref if ref < graph.n_inputs else wire_for_node[ref]
-        copies.append(Gate("cx", (source, out_base + out)))
-    circuit = Circuit(graph.n_inputs, len(graph.outputs), live_count,
-                      tuple(computes + copies + list(reversed(computes))))
+        if ref >= n and (ref - n) in fused_nodes:
+            continue
+        source = ref if ref < n else wire_for_node[ref]
+        copies.append(Gate("cx", (source, n + out)))
+    circuit = Circuit(n, len(graph.outputs), work_count,
+                      tuple(forward + copies + list(reversed(computes))))
     if verify:
         verify_oracle(circuit, graph.truth_tables())
     return circuit
