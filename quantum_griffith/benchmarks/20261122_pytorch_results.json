@@ -596,5 +596,222 @@
       },
       "winner": "reinforce-exact-quantum-cost"
     }
+  },
+  "control_run": {
+    "git_commit": "80a54c2faeadc2e0b7c487834b99f62cbad40a7f",
+    "run_url": "https://github.com/corcondor/gvqcc/actions/runs/45009692337",
+    "random_4x3_policy": {
+      "baseline": {
+        "ancillas": 2,
+        "ccx": 45,
+        "cx": 7,
+        "depth": 49,
+        "qubits": 9,
+        "t7_estimate": 315,
+        "x": 0
+      },
+      "basis_cnots": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "case": "random",
+      "method": "affine-shared-prefix-dag",
+      "n_inputs": 4,
+      "n_outputs": 3,
+      "official_kaggle_scoring": false,
+      "optimized": {
+        "ancillas": 3,
+        "ccx": 16,
+        "cx": 15,
+        "depth": 26,
+        "qubits": 10,
+        "t7_estimate": 112,
+        "x": 0
+      },
+      "pytorch_quantum_policy": {
+        "baseline": {
+          "ancillas": 5,
+          "ccx": 28,
+          "cx": 16,
+          "depth": 38,
+          "qubits": 12,
+          "t7_estimate": 196,
+          "x": 0
+        },
+        "best_actions": [
+          [
+            "input",
+            1,
+            2
+          ],
+          [
+            "input",
+            0,
+            1
+          ],
+          [
+            "input",
+            2,
+            3
+          ]
+        ],
+        "distinct_evaluated_action_sequences": 2892,
+        "final_entropy": 0.38459765911102295,
+        "input_basis_cnots": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "method": "reinforce-exact-quantum-cost",
+        "output_basis_cnots": [],
+        "policy_beats_equal_budget_random": true,
+        "policy_best": {
+          "ancillas": 3,
+          "ccx": 14,
+          "cx": 14,
+          "depth": 22,
+          "qubits": 10,
+          "t7_estimate": 98,
+          "x": 0
+        },
+        "policy_found_improvement_over_baseline": true,
+        "random_best": {
+          "ancillas": 3,
+          "ccx": 15,
+          "cx": 14,
+          "depth": 22,
+          "qubits": 10,
+          "t7_estimate": 105,
+          "x": 0
+        },
+        "random_episodes": 3200,
+        "strict_validation": true,
+        "training_episodes": 3200
+      },
+      "shared": {
+        "ancillas": 5,
+        "ccx": 28,
+        "cx": 16,
+        "depth": 38,
+        "qubits": 12,
+        "t7_estimate": 196,
+        "x": 0
+      },
+      "truth_tables_le_index": [
+        "0x185e",
+        "0x82dc",
+        "0xc08e"
+      ],
+      "validation": {
+        "basis_cases_checked": 128,
+        "phase_safe_by_gate_alphabet": 1
+      },
+      "winner": "reinforce-exact-quantum-cost"
+    },
+    "matched_depth3_beam32": {
+      "baseline": {
+        "ancillas": 2,
+        "ccx": 45,
+        "cx": 7,
+        "depth": 49,
+        "qubits": 9,
+        "t7_estimate": 315,
+        "x": 0
+      },
+      "basis_cnots": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "case": "random",
+      "joint": {
+        "input_basis_cnots": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "method": "joint-affine-shared-prefix-dag",
+        "output_basis_cnots": [],
+        "resources": {
+          "ancillas": 3,
+          "ccx": 14,
+          "cx": 14,
+          "depth": 22,
+          "qubits": 10,
+          "t7_estimate": 98,
+          "x": 0
+        }
+      },
+      "joint_validation": {
+        "basis_cases_checked": 128,
+        "phase_safe_by_gate_alphabet": 1
+      },
+      "method": "affine-shared-prefix-dag",
+      "n_inputs": 4,
+      "n_outputs": 3,
+      "official_kaggle_scoring": false,
+      "optimized": {
+        "ancillas": 3,
+        "ccx": 14,
+        "cx": 14,
+        "depth": 22,
+        "qubits": 10,
+        "t7_estimate": 98,
+        "x": 0
+      },
+      "shared": {
+        "ancillas": 5,
+        "ccx": 28,
+        "cx": 16,
+        "depth": 38,
+        "qubits": 12,
+        "t7_estimate": 196,
+        "x": 0
+      },
+      "truth_tables_le_index": [
+        "0x185e",
+        "0x82dc",
+        "0xc08e"
+      ],
+      "validation": {
+        "basis_cases_checked": 128,
+        "phase_safe_by_gate_alphabet": 1
+      },
+      "winner": "affine-shared-prefix-dag"
+    },
+    "note": "With matched depth=3, classical beam_width=32 reaches the same 14 CCX as PyTorch policy. Policy beats random sampling (15 CCX) at equal 3200 episodes on this single fixture; there is no evidence of superiority over classical beam under matched depth."
   }
 }
