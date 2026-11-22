@@ -52,3 +52,7 @@ Four distinct constructive 7-bit/J5 ANGLE compiler families, 240 all-address-pro
 ## 2026-11-23: multiangle v3 35-pattern 2100-circuit study
 
 Constructed 35 ANGLE synthesis variants across 4 actual 7-bit angle tables and all 15 banks (2100 KMX in a separately hashed bundle). See [source and methodology](multiangle_v3/README_JA.md), [v3 data registry](data/multiangle/2026-11-23/v3/README.md), and [full Japanese report](multiangle_v3/REPORT_JA.md). New: 3/5/6-bit low address partitions with GF(2) multi-output basis, structural HMR + conditional CZ cleanup, affine low-coordinate variants, and exhaustive 462-way low6-wire selection for C46. All-address symbolic checks PASS; native real-input KickMix verification and new official score **not performed**. The result remains on Draft PR #18.
+
+## 2026-11-23: v4 mathematically constrained cross-high ANF synthesis
+
+[Full Japanese mathematical report](multiangle_v4/REPORT_JA.md), [generator sources](multiangle_v4/), [independent 780-circuit evidence](data/multiangle/2026-11-23/v4/README.md). Three structural classes: global high-invariant parity factors, disjoint high-selector pair matching, and arbitrary high-selector pairs with two-CZ HMR correction. C46 generic KMX cost 10,038 → 9,607 CCX/one pass, 127Q; other C45 candidates improve 12–25 CCX; no official KickMix score. 780 constructed KMX but only 150 distinct byte hashes, recorded explicitly. Official FeMoCo numerical scoreinfra checks pass on the unchanged input tables. Native real C46 KMX parser + KMB roundtrip exercised in PR CI.

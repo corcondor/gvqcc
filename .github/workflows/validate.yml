@@ -33,6 +33,15 @@ jobs:
           python3 research/multiangle_v3/test_new_patterns.py -v
           python3 research/multiangle_v3/test_partition_and_permutation.py -v
           python3 -m py_compile research/multiangle_v3/*.py
+      - name: Validate v4 global cofactors, pairing and native real-C46 KMX
+        run: |
+          python3 -m pip install --disable-pip-version-check networkx==3.4.2
+          python3 research/multiangle_v4/test_global_cofactor.py -v
+          python3 research/multiangle_v4/test_high_pair.py -v
+          python3 research/multiangle_v4/test_high_pair_general.py -v
+          python3 research/multiangle_v4/test_independent_verifier.py -v
+          python3 research/multiangle_v4/test_native_c46.py -v
+          python3 -m py_compile research/multiangle_v4/*.py
       - name: Check exhaustive and symbolic Boolean analysis
         run: |
           python3 test_boolean_block_analyze.py

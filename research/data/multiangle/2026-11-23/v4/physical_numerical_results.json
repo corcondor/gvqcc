@@ -1,0 +1,70 @@
+[
+  {
+    "source": "/mnt/data/gvqcc_multiform/seeds/c46_public_v8.npz",
+    "shape_corrected_file": "/mnt/data/gvqcc_multiform_v4/physical/official_fe_results_0_c46_public_v8_SHAPE_CORRECTED.npz",
+    "corrected_sha256": "2ab7f2d01a02450eb2c47577097ef4bb27a1411b40ead88b6237f100bc9f4d61",
+    "full_official_numeric": {
+      "error_1": 0.019999995984563305,
+      "error_2": 0.01999999994992971,
+      "Lambda": 283.1020397172572,
+      "E_SOS": -22144.18824850712,
+      "E_gap": 3.914898507118778,
+      "lambda_eff": 46.91806768166931,
+      "gap_in_domain": true
+    },
+    "physical_numeric_pass": true,
+    "kickmix_verified": false,
+    "seconds": 1.2384968329988624
+  },
+  {
+    "source": "/mnt/data/gvqcc_multiform/seeds/C45_B129_JACOBI_OPTIMIZED.npz",
+    "shape_corrected_file": "/mnt/data/gvqcc_multiform_v4/physical/official_fe_results_1_C45_B129_JACOBI_OPTIMIZED_SHAPE_CORRECTED.npz",
+    "corrected_sha256": "4e67df12c9a115121c42dabfe04becaa50217938e3f466777dc715efc9921307",
+    "full_official_numeric": {
+      "error_1": 0.019733105065835883,
+      "error_2": 0.0199976170202418,
+      "Lambda": 291.6526586515824,
+      "E_SOS": -22144.3911359,
+      "E_gap": 4.117785900001763,
+      "lambda_eff": 48.836157202105625,
+      "gap_in_domain": true
+    },
+    "physical_numeric_pass": true,
+    "kickmix_verified": false,
+    "seconds": 1.263319327001227
+  },
+  {
+    "source": "/mnt/data/gvqcc_multiform/seeds/c45_B130_postangle_PSD_physical_pass.npz",
+    "shape_corrected_file": "/mnt/data/gvqcc_multiform_v4/physical/official_fe_results_2_c45_B130_postangle_PSD_physical_pass_SHAPE_CORRECTED.npz",
+    "corrected_sha256": "1c1f067ce2d2ed1d469ae3d245befecc99de83bae821eda5b6eb3fda4125f9e7",
+    "full_official_numeric": {
+      "error_1": 0.01927442430750381,
+      "error_2": 0.01999036619137446,
+      "Lambda": 304.4135128893839,
+      "E_SOS": -22144.392266783227,
+      "E_gap": 4.118916783227178,
+      "lambda_eff": 49.90733792835781,
+      "gap_in_domain": true
+    },
+    "physical_numeric_pass": true,
+    "kickmix_verified": false,
+    "seconds": 1.2379564559996652
+  },
+  {
+    "source": "/mnt/data/gvqcc_multiform/seeds/c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+    "shape_corrected_file": "/mnt/data/gvqcc_multiform_v4/physical/official_fe_results_3_c45_B130_postangle_PSD_physical_pass_coupled_numeric_only_SHAPE_CORRECTED.npz",
+    "corrected_sha256": "d4ce27280884d36a7bebc0e28a8e17026009a9adecfb6e5618eac23e01b14a87",
+    "full_official_numeric": {
+      "error_1": 0.019287093503461226,
+      "error_2": 0.019990500657777993,
+      "Lambda": 304.4134606121197,
+      "E_SOS": -22144.392214505962,
+      "E_gap": 4.118864505962847,
+      "lambda_eff": 49.907019058311604,
+      "gap_in_domain": true
+    },
+    "physical_numeric_pass": true,
+    "kickmix_verified": false,
+    "seconds": 1.2397304930000246
+  }
+]
