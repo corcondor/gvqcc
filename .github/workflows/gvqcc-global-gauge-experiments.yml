@@ -44,6 +44,33 @@ jobs:
             --source chemistry_discrete_v3_best_compact.npz \
             --report ci_output/historical_W_H2_orthogonal.json \
             --candidate ci_output/historical_W_H2_orthogonal.npz
+      - name: Reconstitute pinned PUBLIC V8 1219x75 angle table and Givens tree
+        run: |
+          python - <<'PY'
+          import json, hashlib, zlib, base64
+          from pathlib import Path
+          import numpy as np
+          fixture=json.loads(Path("research/claude_handoff_20261123/fixtures/V8_C46_angles_edges_b85.json").read_text())
+          raw=zlib.decompress(base64.b85decode(fixture["payload"]))
+          assert hashlib.sha256(raw).hexdigest()==fixture["raw_sha256"]
+          m=int(np.prod(fixture["shape_words"]))
+          words=np.frombuffer(raw[:m],dtype=np.uint8).reshape(fixture["shape_words"]).copy()
+          edges=np.frombuffer(raw[m:],dtype=np.uint8).reshape(fixture["shape_edges"]).copy()
+          assert words.shape==(1219,75) and edges.shape==(75,2)
+          np.savez_compressed("ci_output/public_V8_C46_angle_tree_only.npz",angle_words=words,tree_edges=edges)
+          print("PASS public V8 exact angle+edges payload SHA256", fixture["raw_sha256"])
+          print("Original full source NPZ SHA256",fixture["source_npz_sha256"])
+          PY
+      - name: Execute three physical-angle GAUGE transforms on real public V8 rows
+        run: |
+          set -euo pipefail
+          for mode in all_flip zero_top_bit address_bit6; do
+            python research/claude_handoff_20261123/src/gauge5_exact.py \
+              --source ci_output/public_V8_C46_angle_tree_only.npz \
+              --mode "$mode" \
+              --output "ci_output/public_V8_$mode.npz" \
+              --report "ci_output/public_V8_$mode.json"
+          done
       - name: Verify results and inspect original V8 evidence
         run: |
           python - <<'PY'
@@ -58,6 +85,13 @@ jobs:
           assert all(x["input_kind"]=="synthetic_fixture_NOT_FE_MOCO" for x in reports)
           assert all(x["affine_GF2_rank"]==70 and x["free_dimensions_per_row"]==5 for x in reports)
           assert all(x["max_abs_vector_difference"]<1e-13 for x in reports)
+          public=[json.loads((root/("public_V8_"+mode+".json")).read_text()) for mode in ("all_flip","zero_top_bit","address_bit6")]
+          assert all(x["input_kind"]=="real_input" and x["rows"]==1219 for x in public)
+          assert all(x["affine_GF2_rank"]==70 and x["free_dimensions_per_row"]==5 for x in public)
+          assert all(x["max_abs_vector_difference"]<1e-13 and x["changed_words"]>0 for x in public)
+          assert all(x["native_kickmix_verified"] is False for x in public)
+          print("PASS real pinned public V8 1219x75 sign-gauge tests, 3 changed full ANGLE tables")
+          print("Does not imply original score or physical energy CI proof: V8 other tensors are not present.")
           evidence=json.loads(pathlib.Path("research/claude_handoff_20261123/reports/gauge_constraint_full_audit_C46.json").read_text())
           assert evidence["rows"]==1219 and evidence["rank_histogram"].get("70")==1219
           print("PASS 3 synthetic gauge tests, independent existing V8 rank receipt")
