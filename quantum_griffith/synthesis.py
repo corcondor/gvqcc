@@ -294,3 +294,118 @@ def search_affine(tables: Sequence[Sequence[int]], n_inputs: int, *,
     if verify:
         verify_oracle(best.circuit, targets)
     return best
+
+
+@dataclass(frozen=True)
+class JointSynthesisResult:
+    """A fully conjugated oracle: input basis A and output basis B."""
+    circuit: Circuit
+    method: str
+    input_basis_cnots: tuple[tuple[int, int], ...]
+    output_basis_cnots: tuple[tuple[int, int], ...]
+
+    def as_dict(self) -> dict:
+        return {
+            "method": self.method,
+            "input_basis_cnots": [list(g) for g in self.input_basis_cnots],
+            "output_basis_cnots": [list(g) for g in self.output_basis_cnots],
+            "resources": self.circuit.resources().as_dict(),
+        }
+
+
+def _mix_outputs(tables: Tables, rows: tuple[int, ...]) -> Tables:
+    """Apply an invertible output GF(2) basis B to the function vector."""
+    length = len(tables[0])
+    return tuple(
+        tuple(
+            sum(tables[k][x] for k in range(len(tables)) if (row >> k) & 1) % 2
+            for x in range(length)
+        )
+        for row in rows
+    )
+
+
+def _wrap_joint(core: SynthesisResult, n_inputs: int,
+                input_moves: tuple[tuple[int, int], ...],
+                output_moves: tuple[tuple[int, int], ...]) -> JointSynthesisResult:
+    # x <- A*x, y <- B*y, y <- y XOR (B*f(A^-1*x)),
+    # y <- B^-1*y, x <- A^-1*x.
+    # As both transforms are exact CNOTs, all y values and all phases agree.
+    pre_x = tuple(Gate("cx", move) for move in input_moves)
+    pre_y = tuple(Gate("cx", (n_inputs + c, n_inputs + t))
+                  for c, t in output_moves)
+    circuit = Circuit(
+        n_inputs, core.circuit.n_outputs, core.circuit.n_ancillas,
+        pre_x + pre_y + core.circuit.gates + tuple(reversed(pre_y)) + tuple(reversed(pre_x))
+    )
+    return JointSynthesisResult(circuit, "joint-affine-" + core.method,
+                                input_moves, output_moves)
+
+
+def search_joint_affine(tables: Sequence[Sequence[int]], n_inputs: int, *,
+                        max_depth: int = 2, beam_width: int = 24,
+                        max_ancillas: int | None = None,
+                        verify: bool = True) -> JointSynthesisResult:
+    """Search joint input/output GF(2) bases with exact conjugation.
+
+    Output encoding is an important overlooked degree of freedom. Since the
+    output register may contain arbitrary y initially, one cannot simply
+    optimize f by taking linear combinations of its components: one must
+    conjugate the output register with the same invertible transform.
+    """
+    targets = _validate(tables, n_inputs)
+    if not 0 <= max_depth <= 5 or beam_width < 1:
+        raise ValueError("Invalid joint search parameters")
+    nout = len(targets)
+    ident_x = tuple(1 << i for i in range(n_inputs))
+    ident_y = tuple(1 << i for i in range(nout))
+    first = synthesize(targets, n_inputs, max_ancillas=max_ancillas)
+    best = _wrap_joint(first, n_inputs, (), ())
+    visited = {(ident_x, ident_y)}
+    frontier = [(ident_x, ident_y, (), ())]
+    for _depth in range(max_depth):
+        proposed = []
+        for rows_x, rows_y, path_x, path_y in frontier:
+            for group in ("input", "output"):
+                nbits = n_inputs if group == "input" else nout
+                for control in range(nbits):
+                    for target in range(nbits):
+                        if control == target:
+                            continue
+                        new_x, new_y = rows_x, rows_y
+                        new_path_x, new_path_y = path_x, path_y
+                        if group == "input":
+                            tmp = list(rows_x)
+                            tmp[target] ^= tmp[control]
+                            new_x = tuple(tmp)
+                            new_path_x = path_x + ((control, target),)
+                        else:
+                            tmp = list(rows_y)
+                            tmp[target] ^= tmp[control]
+                            new_y = tuple(tmp)
+                            new_path_y = path_y + ((control, target),)
+                        state = (new_x, new_y)
+                        if state in visited:
+                            continue
+                        visited.add(state)
+                        transformed = _mix_outputs(
+                            _map_tables(targets, n_inputs, new_x), new_y
+                        )
+                        try:
+                            core = synthesize(
+                                transformed, n_inputs, max_ancillas=max_ancillas
+                            )
+                        except ValueError:
+                            continue
+                        candidate = _wrap_joint(core, n_inputs, new_path_x, new_path_y)
+                        merit = _score(candidate.circuit)
+                        proposed.append((merit, new_x, new_y, new_path_x, new_path_y))
+                        if merit < _score(best.circuit):
+                            best = candidate
+        proposed.sort(key=lambda z: (z[0], z[1], z[2]))
+        frontier = [(x, y, px, py) for _, x, y, px, py in proposed[:beam_width]]
+        if not frontier:
+            break
+    if verify:
+        verify_oracle(best.circuit, targets)
+    return best
