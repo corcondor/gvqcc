@@ -1,0 +1,120 @@
+{
+  "schema": "qdln-real-angle-low4-v1",
+  "source": "goodpjw2008 V8 public 3375-Toffoli chemistry family",
+  "task": "dfthcsos",
+  "source_version": 8,
+  "scope": "one local 16-address slice; NOT a replacement for whole 15-loader circuit",
+  "batch": 2,
+  "high_address_row": 58,
+  "lowbits": 4,
+  "target_bits": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      4,
+      0
+    ]
+  ],
+  "truth_tables": [
+    23205,
+    36873,
+    36873,
+    13107,
+    42405,
+    36174,
+    36174,
+    42330,
+    39321
+  ],
+  "naive_shared_anf": {
+    "ANDs": 6,
+    "clean_oracle_CCX": 12
+  },
+  "qdln": {
+    "ANDs": 2,
+    "nonlinear_products": [
+      [
+        3,
+        12
+      ],
+      [
+        5,
+        10
+      ]
+    ],
+    "outputs_from_products": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      3,
+      3,
+      0,
+      0
+    ],
+    "affine_corrections": [
+      29,
+      31,
+      31,
+      18,
+      21,
+      11,
+      11,
+      13,
+      19
+    ],
+    "clean_oracle_CCX": 4,
+    "qubits": 15,
+    "CX": 75,
+    "X": 6,
+    "complete_basis_minimal": true
+  },
+  "tests": {
+    "all_16_input_patterns": true,
+    "all_512_initial_target_patterns": true,
+    "clean_scratch": true,
+    "inputs_restored": true,
+    "output_exact": true,
+    "neural_learned_in_steps": 31,
+    "soft_training_loss": 0.042994868010282516
+  },
+  "whole_loader": {
+    "baseline_3375_per_pass": true,
+    "kmb_replaced": false,
+    "new_kmb_verified": false,
+    "new_global_Toffoli_gain": 0,
+    "official_score_gain_confirmed": false
+  },
+  "status": "LOCAL_EXACT_CERTIFICATE_NOT_INTEGRATED"
+}
