@@ -49,7 +49,11 @@ jobs:
           python - <<'PY'
           import json, pathlib
           root=pathlib.Path("ci_output")
-          reports=[json.loads(p.read_text()) for p in root.glob("*.json")]
+          reports=[json.loads((root/(mode+".json")).read_text()) for mode in ("all_flip","zero_top_bit","address_bit6")]
+          historical=json.loads((root/"historical_W_H2_orthogonal.json").read_text())
+          assert historical["physical_contraction_invariant_maxdiff"]<1e-8
+          assert historical["gram_invariant_maxdiff"]<1e-8
+          assert historical["official_KickMix_verified"] is False
           assert len(reports)==3
           assert all(x["input_kind"]=="synthetic_fixture_NOT_FE_MOCO" for x in reports)
           assert all(x["affine_GF2_rank"]==70 and x["free_dimensions_per_row"]==5 for x in reports)
