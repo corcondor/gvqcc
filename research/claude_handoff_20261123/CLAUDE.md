@@ -21,6 +21,11 @@ Expected **LOCAL** results: I 1219 addresses x15 banks with 3357 Toffoli, Q128, 
 
 All original research data (source files, 56 experimental KMB, angle-table NPZ, model physical data, negative experiments and SHA256_MANIFEST) is preserved *byte-for-byte* inside the 136-file nested ZIP.
 
+
+## Mandatory safety notice — invalid inverse-square-root 9T patch (2026-11-23)
+
+DO NOT reuse the experimental `invsqrt_nonlocal_9T` KMB from prior research bundles. HMR branch-aware differential phase checking falsified its earlier “exhaustive equivalence” claim: removed T were guarded by b743, inserted S unconditional. All-HMR0 has 383 mismatches in the first 1024 inputs (including x=0), with earlier full-domain branch mismatch counts 1,300,770 and 749,964. Source and exact regression evidence: `automation_run01_report.md` and research ZIP SHA256 `d049b3c8cd99edf4a006584399dd878fb5474e5f2e6ecea9a322362288f1f7d1`. The previous 9T improvement claim has been RETRACTED, not a new candidate.
+
 ## Development request (not satisfied yet)
 
 1. Replace ANF-rank proxy with **actual compiled Toffoli plus width and physical-error feedback** in the joint 75-angle/FeMoCo/R/B/C/J search.
