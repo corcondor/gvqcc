@@ -17,6 +17,7 @@ import torch.nn.functional as F
 from .logic_dag import LogicDAG, LogicGate, lower_logic_dag
 from .synthesis import synthesize, search_affine
 from .reversible import Circuit
+from .teacher import make_teacher
 
 
 def _st(logits: torch.Tensor, tau: float, *, hard: bool, gumbel: bool) -> torch.Tensor:
@@ -97,6 +98,35 @@ class LearnableLogicDAG(nn.Module):
         """
         return 2 * (F.softmax(self.gate_logits, dim=-1) @ self.nonlinear).sum()
 
+    def initialize_from_teacher(self, teacher: LogicDAG, *, strength: float = 4.0) -> None:
+        """Copy an EXACT, externally constructed teacher into hard LUT choices.
+
+        The seed's correctness must never be counted as a neural discovery.
+        The goal of subsequent training is to improve on its hard CCX cost.
+        """
+        if teacher.n_inputs != self.n_inputs or len(teacher.outputs) != self.n_outputs:
+            raise ValueError("Teacher dimensions do not match network")
+        if len(teacher.gates) > self.n_gates or strength <= 0:
+            raise ValueError("Teacher requires more gates than available capacity")
+        with torch.no_grad():
+            self.gate_logits.fill_(-strength)
+            for i in range(self.n_gates):
+                if i < len(teacher.gates):
+                    gate = teacher.gates[i]
+                    a, b, tt = gate.a, gate.b, gate.tt
+                else:
+                    a, b, tt = 0, 0, 0xA  # dormant input-0 pass-through
+                self.gate_logits[i, tt] = strength
+                self.edge_a[i].fill_(-strength)
+                self.edge_b[i].fill_(-strength)
+                self.edge_a[i][a] = strength
+                self.edge_b[i][b] = strength
+            self.readout_logits.fill_(-strength)
+            for j, ref in enumerate(teacher.outputs):
+                self.readout_logits[j, ref] = strength
+        if self.hard_graph().truth_tables() != teacher.truth_tables():
+            raise AssertionError("Teacher hard initialization changed the function")
+
     def hard_graph(self) -> LogicDAG:
         gates = tuple(
             LogicGate(
@@ -119,10 +149,22 @@ class TrainingReport:
     optimized_circuit: Circuit
     steps: int
     restarts: int
+    seeded_teacher_circuit: Circuit | None = None
 
     def as_dict(self) -> dict:
         return {
-            "exact_neural_candidate_found": self.best_learned_circuit is not None,
+            "exact_hard_candidate_found_after_training": self.best_learned_circuit is not None,
+            "exact_teacher_seeded": self.seeded_teacher_circuit is not None,
+            "teacher": None if self.seeded_teacher_circuit is None else
+                       self.seeded_teacher_circuit.resources().as_dict(),
+            "strict_improvement_over_teacher": (
+                self.best_learned_circuit is not None and
+                self.seeded_teacher_circuit is not None and
+                (self.best_learned_circuit.resources().ccx,
+                 self.best_learned_circuit.n_ancillas) <
+                (self.seeded_teacher_circuit.resources().ccx,
+                 self.seeded_teacher_circuit.n_ancillas)
+            ),
             "best_classical_errors": self.best_classical_errors,
             "baseline": self.baseline_circuit.resources().as_dict(),
             "affine_or_shared": self.optimized_circuit.resources().as_dict(),
@@ -136,7 +178,8 @@ class TrainingReport:
 def fit_truth_tables(tables: tuple[tuple[int, ...], ...], n_inputs: int, *,
                      gates: int = 12, steps: int = 400, restarts: int = 3,
                      lr: float = 0.04, cost_weight: float = 0.002,
-                     seed: int = 20261122) -> TrainingReport:
+                     seed: int = 20261122,
+                     warm_start: bool = True) -> TrainingReport:
     """Train with continuous relaxation; accept only *exact* discrete oracles.
 
     This experimental small-network learner is an optional candidate generator.
@@ -153,12 +196,19 @@ def fit_truth_tables(tables: tuple[tuple[int, ...], ...], n_inputs: int, *,
     )
     baseline = synthesize(tables, n_inputs, method="baseline").circuit
     optimized = search_affine(tables, n_inputs, max_depth=2, beam_width=12).circuit
+    teacher = make_teacher(tables, n_inputs, affine=True) if warm_start else None
+    teacher_circuit = None
+    if teacher is not None and len(teacher.gates) <= gates:
+        teacher_circuit = lower_logic_dag(teacher, verify=True)
     best_errors = desired.numel() + 1
     best_graph = None
     best_circuit = None
     for restart in range(restarts):
         torch.manual_seed(seed + restart)
         network = LearnableLogicDAG(n_inputs, gates, len(tables))
+        if restart == 0 and teacher_circuit is not None:
+            network.initialize_from_teacher(teacher)
+            best_errors = 0  # inherited exactness from teacher; not learned
         optimizer = torch.optim.Adam(network.parameters(), lr=lr)
         for step in range(steps):
             optimizer.zero_grad()
@@ -188,4 +238,4 @@ def fit_truth_tables(tables: tuple[tuple[int, ...], ...], n_inputs: int, *,
                      candidate.width < best_circuit.width)):
                     best_graph, best_circuit = graph, candidate
     return TrainingReport(best_graph, best_circuit, best_errors,
-                          baseline, optimized, steps, restarts)
+                          baseline, optimized, steps, restarts, teacher_circuit)
