@@ -1,0 +1,24 @@
+name: GVQCC public V8 all 15 ANGLE banks
+on:
+  push:
+    branches: [experiments/k8-multipath-20261123]
+    paths:
+      - experiments/k8_multipath/fetch_public_v8_15.py
+      - .github/workflows/k8_v8_family.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: SHA-pinned extract of public 15 loaders
+        run: python3 experiments/k8_multipath/fetch_public_v8_15.py
+      - name: Upload 15 KMBs and receipts
+        uses: actions/upload-artifact@v4
+        with:
+          name: maoxin-v8-3357-public-all-banks
+          path: experiments/k8_multipath/public_v8/*
+          retention-days: 5
