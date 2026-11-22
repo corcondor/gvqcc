@@ -1,0 +1,176 @@
+{
+  "date": "2026-11-23",
+  "meaning": "Actual KMB generated and independently exhaustive classical/phase certificate on each source; full official KickMix was not executed",
+  "baseline_source": "public V8 C46 chemistry KMB (not the same as the later public score 33.14394)",
+  "baseline_15_KMB_T": 3375,
+  "baseline_KMB_Q": 128,
+  "baseline_chemistry_physics": {
+    "shape": [
+      9,
+      127,
+      46
+    ],
+    "brot": 7,
+    "error_1": 0.019999999949999916,
+    "error_2": 0.019999999949929688,
+    "Lambda": 283.10203295585535,
+    "E_gap": 3.914898000013636,
+    "lambda_eff": 46.918064099948054,
+    "gap_in_domain": true,
+    "admissible": true,
+    "lambda1": 12.88521754088474,
+    "lambda2": 270.2168154149706,
+    "e_sos": -22144.188248000013
+  },
+  "candidate_C45_B129_physics": {
+    "shape": [
+      9,
+      129,
+      45
+    ],
+    "brot": 7,
+    "error_1": 0.019733110563811454,
+    "error_2": 0.01999761702024188,
+    "Lambda": 291.6526518901805,
+    "E_gap": 4.1177853928966215,
+    "lambda_eff": 48.83615364628898,
+    "gap_in_domain": true,
+    "admissible": true,
+    "lambda1": 12.87115742016378,
+    "lambda2": 278.7814944700167,
+    "e_sos": -22144.391135392896
+  },
+  "candidate_C45_KMB_variants": [
+    {
+      "name": "c45_peroutput_15",
+      "J": 5,
+      "banks": 15,
+      "Toffoli_per_pass": 5415,
+      "max_KMB_Q": 127,
+      "all_selection_addresses_exact": true,
+      "arbitrary_dirty_words_exact": true,
+      "all_measurement_branches_phase_exact": true,
+      "IR_proof_SHA256": "355377bb35d1fd3cca00abb04b158b862d382ba468ddd0b159bfbdb4ed8604b3",
+      "official_KickMix_executed": false
+    },
+    {
+      "name": "c45_shared_15",
+      "J": 5,
+      "banks": 15,
+      "Toffoli_per_pass": 4651,
+      "max_KMB_Q": 127,
+      "all_selection_addresses_exact": true,
+      "arbitrary_dirty_words_exact": true,
+      "all_measurement_branches_phase_exact": true,
+      "IR_proof_SHA256": "d19ec59148acdd98aefb206f8b7b73399b01a30242f10e6a0123cf4fc3888492",
+      "official_KickMix_executed": false
+    },
+    {
+      "name": "c45_signed6resid_15",
+      "J": 5,
+      "banks": 15,
+      "Toffoli_per_pass": 4495,
+      "max_KMB_Q": 127,
+      "all_selection_addresses_exact": true,
+      "arbitrary_dirty_words_exact": true,
+      "all_measurement_branches_phase_exact": true,
+      "IR_proof_SHA256": "7d5ef47b0b99c173cecc93d9233de886ff4638628387672388174c427a7e026b",
+      "official_KickMix_executed": false
+    },
+    {
+      "name": "c45_bestseed_15",
+      "J": 5,
+      "banks": 15,
+      "Toffoli_per_pass": 4429,
+      "max_KMB_Q": 127,
+      "all_selection_addresses_exact": true,
+      "arbitrary_dirty_words_exact": true,
+      "all_measurement_branches_phase_exact": true,
+      "IR_proof_SHA256": "3dfca498eb83feabfeb19d44bce5dc7935f9e9a702ec0bf2ca8f8eb9dc49a3e4",
+      "official_KickMix_executed": false
+    },
+    {
+      "name": "c45_low6_15",
+      "J": 5,
+      "banks": 15,
+      "Toffoli_per_pass": 6315,
+      "max_KMB_Q": 117,
+      "all_selection_addresses_exact": true,
+      "arbitrary_dirty_words_exact": true,
+      "all_measurement_branches_phase_exact": true,
+      "IR_proof_SHA256": "415ec0950ac94f6ef28524da9840c4068542c3ad18443e956d9ead9b0ab45325",
+      "official_KickMix_executed": false
+    },
+    {
+      "name": "c45_low5_15",
+      "J": 5,
+      "banks": 15,
+      "Toffoli_per_pass": 9262,
+      "max_KMB_Q": 104,
+      "all_selection_addresses_exact": true,
+      "arbitrary_dirty_words_exact": true,
+      "all_measurement_branches_phase_exact": true,
+      "IR_proof_SHA256": "9ba8b8f5fba9d8c62ac2a7e92b92a819f34522a0c6a650d2b05cd84c3152f9d3",
+      "official_KickMix_executed": false
+    },
+    {
+      "name": "c45_J4_19",
+      "J": 4,
+      "banks": 19,
+      "Toffoli_per_pass": 5795,
+      "max_KMB_Q": 120,
+      "all_selection_addresses_exact": true,
+      "arbitrary_dirty_words_exact": true,
+      "all_measurement_branches_phase_exact": true,
+      "IR_proof_SHA256": "91bdec1552fcc628afd78c7328d68fa9543d7bd250d32b1c9e65ce453ae9ba1d",
+      "official_KickMix_executed": false
+    },
+    {
+      "name": "c45_J3_25",
+      "J": 3,
+      "banks": 25,
+      "Toffoli_per_pass": 6225,
+      "max_KMB_Q": 113,
+      "all_selection_addresses_exact": true,
+      "arbitrary_dirty_words_exact": true,
+      "all_measurement_branches_phase_exact": true,
+      "IR_proof_SHA256": "ef2ecc934f06928fb0c8b8f16953e5223b91a4b8e29cad19c5bbdd1c35396f0e",
+      "official_KickMix_executed": false
+    }
+  ],
+  "candidate_sameKMB_C45_optimizer": {
+    "shape": [
+      9,
+      127,
+      45
+    ],
+    "brot": 7,
+    "error_1": 0.0199999999499999,
+    "error_2": 0.020447589303555978,
+    "Lambda": 305.1149871857696,
+    "E_gap": 3.914898000013636,
+    "lambda_eff": 48.7202389142849,
+    "gap_in_domain": true,
+    "admissible": false,
+    "lambda1": 12.885217540884733,
+    "lambda2": 292.22976964488487,
+    "e_sos": -22144.188248000013
+  },
+  "candidate_ensemble_best_T": 4429,
+  "candidate_best_label": "c45_bestseed_15",
+  "num_synthesized_new_circuits": 134,
+  "candidate_best_score_verified": false,
+  "reason_score_not_verified": [
+    "No end-to-end official KickMix compatible runtime in current Python 3.13 environment",
+    "C45 costs more than the public C46 circuits under measured Toffoli counts",
+    "KMB tests cover exact standalone loader semantics; official complete integrated circuit and Kaggle scoring not run"
+  ],
+  "public_scores_NOT_LAB_VERIFIED": [
+    "33.14394"
+  ],
+  "warnings": [
+    "C45 B129 angle_words shape=(1237,75), V8 C46 angle_words shape=(1219,75), KMBs cannot be reused for the C45 B129 candidate",
+    "Do not infer full-chemistry Q from standalone loader maximum Q",
+    "Physical_PASS != integrated circuit PASS"
+  ]
+}
