@@ -5,11 +5,13 @@ No upstream source code is copied. All circuits are exact X/CX/CCX
 permutations with clean work qubits; no phase-relative substitutions.
 """
 from .reversible import Circuit, Gate, ResourceCost, verify_oracle
-from .synthesis import anf_terms, synthesize, search_affine, SynthesisResult
+from .synthesis import (anf_terms, synthesize, search_affine, search_joint_affine,
+                        SynthesisResult, JointSynthesisResult)
 from .logic_dag import LogicGate, LogicDAG, lower_logic_dag
 
 __all__ = [
     "Circuit", "Gate", "ResourceCost", "verify_oracle",
-    "anf_terms", "synthesize", "search_affine", "SynthesisResult",
+    "anf_terms", "synthesize", "search_affine", "search_joint_affine",
+    "SynthesisResult", "JointSynthesisResult",
     "LogicGate", "LogicDAG", "lower_logic_dag",
 ]
