@@ -118,7 +118,7 @@ def symbolic_hmr(ops,regs,names,delta,k):
     selq=regs[names["selection"]];wq=[regs[names[f"word_{j}"]] for j in range(5)]
     addr=np.arange(N,dtype=np.uint16)
     selbits=[sum(((a>>i)&1)<<a for a in range(N)) for i in range(11)]
-    nq=1+max(q for x in regs.values() for q in x)
+    nq=kmsim.sizes(ops,regs)[0]
     active_qubits=set(selq)|{q for w in wq for q in w}
     rows=[]
     for mode in ("zero","previous","random"):
