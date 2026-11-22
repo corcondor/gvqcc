@@ -22,3 +22,5 @@ jobs:
           python-version: '3.13'
       - name: Exact 4-input GF(2) and reversible oracle tests
         run: python research/qdln/test_qdln.py
+      - name: Native KMB symbolic recovery and exact polar-rank certificates
+        run: python research/qdln/test_native_warmstart.py
