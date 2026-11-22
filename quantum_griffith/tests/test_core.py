@@ -131,7 +131,17 @@ class LogicDagTests(unittest.TestCase):
             circuit = lower_logic_dag(graph)
             verify_oracle(circuit, graph.truth_tables())
             nonlinear = (tt.bit_count() % 2) == 1
-            self.assertEqual(circuit.resources().ccx, 2 if nonlinear else 0)
+            self.assertEqual(circuit.resources().ccx, 1 if nonlinear else 0)
+
+    def test_sink_fusion_has_half_the_ccx_without_extra_work(self):
+        graph = LogicDAG(2, (LogicGate(0, 1, 0x8),), (2,))
+        unfused = lower_logic_dag(graph, fuse_output_sinks=False)
+        fused = lower_logic_dag(graph, fuse_output_sinks=True)
+        self.assertEqual(unfused.resources().ccx, 2)
+        self.assertEqual(fused.resources().ccx, 1)
+        self.assertEqual(unfused.n_ancillas, 1)
+        self.assertEqual(fused.n_ancillas, 0)
+        verify_oracle(fused, graph.truth_tables(), all_y=True)
 
     def test_liveness_and_cse(self):
         # Duplicate copies of AND; one dead gate; output XOR.
@@ -142,7 +152,7 @@ class LogicDagTests(unittest.TestCase):
             LogicGate(2, 3, 0b0110),  # XOR duplicate outputs: zero
         ), (2, 3, 5))
         circuit = lower_logic_dag(graph)
-        self.assertEqual(circuit.n_ancillas, 2)
+        self.assertEqual(circuit.n_ancillas, 1)
         self.assertEqual(circuit.resources().ccx, 2)
         verify_oracle(circuit, graph.truth_tables())
 
@@ -163,7 +173,7 @@ class LogicDagTests(unittest.TestCase):
         circuit = lower_logic_dag(graph)
         # The swapped g shares the identical function with one of the
         # other outputs, and truly distinct functions are not merged.
-        self.assertEqual(circuit.n_ancillas, 2)
+        self.assertEqual(circuit.n_ancillas, 0)
         verify_oracle(circuit, graph.truth_tables())
 
     def test_graph_rejects_forward_reference(self):
