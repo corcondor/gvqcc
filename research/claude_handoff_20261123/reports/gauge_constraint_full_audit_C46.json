@@ -1,0 +1,99 @@
+{
+  "kind": "exact_GF2_row_by_row_sign_frame_constraints",
+  "source_file_sha256": "d4d39b2e2516ed7c51a936e863cf0567e558a0db8ded24e435f507d76bfb78d7",
+  "rows": 1219,
+  "angles_per_row": 75,
+  "variables": 74,
+  "inter_bank_constraints_per_row": 70,
+  "existing_signed6_invariant_mismatches": 0,
+  "rank_histogram": {
+    "70": 1219
+  },
+  "nullity_histogram": {
+    "4": 1219
+  },
+  "first_8_certificates": [
+    {
+      "address": 0,
+      "rank": 70,
+      "basis_hex": [
+        "0x3b5ad77bbdda69f8431",
+        "0x14110805c8c10782a2",
+        "0x2420812828622111a84",
+        "0x49d6f49db211a2f6e8"
+      ]
+    },
+    {
+      "address": 1,
+      "rank": 70,
+      "basis_hex": [
+        "0x3b5ad77bbdda69f8431",
+        "0x14110805c8c10782a2",
+        "0x2420812828622111a84",
+        "0x49d6f49db211a2f6e8"
+      ]
+    },
+    {
+      "address": 2,
+      "rank": 70,
+      "basis_hex": [
+        "0x3b5ad77bbdda69f8431",
+        "0x14110805c8c10782a2",
+        "0x2420812828622111a84",
+        "0x49d6f49db211a2f6e8"
+      ]
+    },
+    {
+      "address": 3,
+      "rank": 70,
+      "basis_hex": [
+        "0x3b5ad77bbdda69f8431",
+        "0x14110805c8c10782a2",
+        "0x2420812828622111a84",
+        "0x49d6f49db211a2f6e8"
+      ]
+    },
+    {
+      "address": 4,
+      "rank": 70,
+      "basis_hex": [
+        "0x3b5ad77bbdda69f8431",
+        "0x14110805c8c10782a2",
+        "0x2420812828622111a84",
+        "0x49d6f49db211a2f6e8"
+      ]
+    },
+    {
+      "address": 5,
+      "rank": 70,
+      "basis_hex": [
+        "0x3b5ad77bbdda69f8431",
+        "0x14110805c8c10782a2",
+        "0x2420812828622111a84",
+        "0x49d6f49db211a2f6e8"
+      ]
+    },
+    {
+      "address": 6,
+      "rank": 70,
+      "basis_hex": [
+        "0x3b5ad77bbdda69f8431",
+        "0x14110805c8c10782a2",
+        "0x2420812828622111a84",
+        "0x49d6f49db211a2f6e8"
+      ]
+    },
+    {
+      "address": 7,
+      "rank": 70,
+      "basis_hex": [
+        "0x3b5ad77bbdda69f8431",
+        "0x14110805c8c10782a2",
+        "0x2420812828622111a84",
+        "0x49d6f49db211a2f6e8"
+      ]
+    }
+  ],
+  "official_kickmix_executed": false,
+  "scored_improvement": false
+}
