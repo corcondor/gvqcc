@@ -26,6 +26,8 @@ jobs:
         run: |
           python3 research/test_multi_angle_synthesis.py -v
           python3 -m py_compile research/multi_angle_synthesis.py
+      - name: Verify pattern library mathematical contracts
+        run: python3 research/patterns/test_structural_pattern_library.py
       - name: Check exhaustive and symbolic Boolean analysis
         run: |
           python3 test_boolean_block_analyze.py
