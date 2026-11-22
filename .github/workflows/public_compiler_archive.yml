@@ -23,7 +23,7 @@ jobs:
       - name: Test Claude-authored qrom-plan Rust implementation
         run: cargo test --manifest-path /tmp/engine/Cargo.toml -p qrom-plan -- --nocapture
       - name: Test published reversible AND construction
-        run: python3 -m unittest discover -s /tmp/tools/tools/dfthc-refit -p test_chained_and.py -v
+        run: python3 -m pip install -q numpy && python3 -m unittest discover -s /tmp/tools/tools/dfthc-refit -p test_chained_and.py -v
       - name: Save source versions and run metadata
         if: always()
         run: |
