@@ -16,6 +16,15 @@
 - [2026-11-20 スコア厳密追試と縮約陰性結果](2026-11-20_scoremax_strict_counterexamples.md): 固定S/βによる再採点、H2改善候補のE_gap下限違反、zero-eigen/zero-H2の局所KKT、ANGLE+invsqrtの3〜6 CCX計7,878窓を整理。
 - [化学採点の固定シフト・厳密floorガード](chemistry_fixed_shift_score_gate.py): `H1_I`/`Hsym_lower` の提出値上書きを再現し、Lambda>49とE_gap>3.914898を必ず判定する読取専用CLI。
 
+
+## 2026-11-23: 構造パターン台帳（追記）
+
+- [ANGLE/FeMoCo 5系統の構造パターン](patterns/README_JA.md): ゼロ振幅Givens、連続バンク・ワード更新、辞書行置換、出力GF(2)基底、無効アドレス補完。
+- [決定的ID付き163件の台帳](patterns/ledger_20261123.jsonl) / [4構造の集計](patterns/summary_20261123.json) / [7件の固定シフト公式数値クロスチェック](patterns/official_crosschecks_20261123.jsonl)。
+- [実行可能な探索コード](patterns/structural_pattern_library.py) / [7つの単体テスト](patterns/test_structural_pattern_library.py) / [全SHA-256固定](patterns/manifest_20261123.json)。
+- **現時点の区別:** 独立FeMoCo数値評価64/64 PASSでも、保存済み公式scoreinfraでの代表7件は4 PASS・3 FAIL（公開C46とR18/C23は基準から境界違反）。**新規KMB・公式KickMix PASS・スコア更新はない**。
+- 同一変換の重複再実験はIDで排除し、陰性結果を保持する。別セッションではこの台帳を最初に照合する。
+
 ## 継続するときのルール
 
 1. **原票優先**。親・候補SHA、実KMB、検証器、使用した入力/マスク/seed/salt、時間、元の費用と実行平均を実験記録に保存する。会話中の数字だけで「再現済み」にしない。
