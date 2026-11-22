@@ -59,5 +59,16 @@
   },
   "native_kickmix_verified": false,
   "actual_kmb_generated": false,
-  "official_score_update": false
+  "official_score_update": false,
+  "derived_files": {
+    "pattern_catalog_20261123.csv": {
+      "sha256": "13cb4d12b2e21ed64bd7cff6c96e69f66559f0ea08b28053508ef009e54cd8a6",
+      "bytes": 59072,
+      "newline": "LF",
+      "source": "ledger_20261123.jsonl"
+    },
+    "query_pattern_ledger.py": {
+      "sha256": "9977e801bfd442172bee7ef8191b24a0efb3e49dbab1ca4a631946f5f59a4ebb"
+    }
+  }
 }
