@@ -1,0 +1,23 @@
+{
+  "source_sha256": "86847766ad03141306d992313ed2c79091f65daf8b10c2c6bff73b8bcb5d82d8",
+  "output_sha256": "86847766ad03141306d992313ed2c79091f65daf8b10c2c6bff73b8bcb5d82d8",
+  "initial_rank_proxy": 7373,
+  "best_rank_proxy": 7373,
+  "initial_helper_lut4": [
+    "0x8888",
+    "0xa0a0",
+    "0xc0c0",
+    "0xaa00",
+    "0xcc00"
+  ],
+  "best_helper_lut4": [
+    "0x8888",
+    "0xa0a0",
+    "0xc0c0",
+    "0xaa00",
+    "0xcc00"
+  ],
+  "steps_executed": 300,
+  "all_15_banks": true,
+  "note": "rank proxy, NOT Toffoli count or official score"
+}

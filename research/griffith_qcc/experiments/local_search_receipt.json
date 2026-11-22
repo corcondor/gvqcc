@@ -1,0 +1,78 @@
+{
+  "input_sha256": "d4d39b2e2516ed7c51a936e863cf0567e558a0db8ded24e435f507d76bfb78d7",
+  "input_rows": 1219,
+  "helper_contract": {
+    "addresses": 1219,
+    "banks": 15,
+    "helper_positions": 5,
+    "helper_time_invariance_violations": 0,
+    "helper_low_address_violations": 0,
+    "low_affine_rank": 5,
+    "low_helper_augmented_rank": 10,
+    "helper_tt_hex": [
+      "0x8888",
+      "0xa0a0",
+      "0xc0c0",
+      "0xaa00",
+      "0xcc00"
+    ],
+    "usable_in_six_extra_AND_cache": true
+  },
+  "scope": "EXACT_LOCAL_4BIT_NOT_A_V8_15BANK_KMB_PATCH",
+  "official_kickmix_ran": false,
+  "official_score_improvement": null,
+  "single_v8_output": {
+    "bank": 4,
+    "bit": 8,
+    "high_address_block": 0,
+    "truth_table": "0x533a",
+    "anf_nonlinear_monomials": 5,
+    "learner_status": "EXACT",
+    "learner_hard_exact_trials": 4,
+    "exact_kmx_proof": {
+      "basis_phase_workspace_cases": 64,
+      "hmr_branches": 2,
+      "hmr_count": 1,
+      "num_qubits": 8
+    },
+    "learned_xag": "XAG(inputs=4, products=(AndProduct(left=Affine(mask=11, constant=1), right=Affine(mask=7, constant=1)),), outputs=(Affine(mask=18, constant=1),))",
+    "resources": {
+      "qubits": 8,
+      "ccx_static": 1,
+      "hmr": 1,
+      "measurement_conditional_cz": 1,
+      "note": "component-level only; not an official KickMix score"
+    }
+  },
+  "cross_bank_two_outputs": {
+    "high_address_block": 3,
+    "banks": [
+      13,
+      14
+    ],
+    "local_bits": [
+      8,
+      4
+    ],
+    "packed_truth_tables": [
+      "0x606",
+      "0xf906"
+    ],
+    "naive_anf_nonlinear_monomials": 4,
+    "exact_shared_products": 1,
+    "exact_kmx_proof": {
+      "basis_phase_workspace_cases": 96,
+      "hmr_branches": 2,
+      "hmr_count": 1,
+      "num_qubits": 9
+    },
+    "resource_estimate": {
+      "qubits": 9,
+      "ccx_static": 1,
+      "hmr": 1,
+      "measurement_conditional_cz": 1,
+      "note": "component-level only; not an official KickMix score"
+    },
+    "warning": "Cross-bank sharing requires persistent circuit state not yet proven in the original 128Q loaders."
+  }
+}

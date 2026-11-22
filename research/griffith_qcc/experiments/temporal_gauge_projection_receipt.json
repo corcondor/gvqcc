@@ -1,0 +1,10 @@
+{
+  "source": "v8_joint_physical_parent.npz",
+  "parent_source": "public_v8_parent.npz",
+  "angle_word_edits": 32,
+  "rows_changed": 7,
+  "global_negative_rows": 0,
+  "all_tags_equal_desired": true,
+  "output_sha256": "86847766ad03141306d992313ed2c79091f65daf8b10c2c6bff73b8bcb5d82d8",
+  "official_kickmix_scored": false
+}
