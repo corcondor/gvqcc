@@ -71,6 +71,37 @@ jobs:
               --output "ci_output/public_V8_$mode.npz" \
               --report "ci_output/public_V8_$mode.json"
           done
+      - name: Compile real 3-bank baseline and two global sign-gauge KMB families
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+        run: |
+          set -euo pipefail
+          for name in baseline all_flip address_bit6; do
+            if [ "$name" = baseline ]; then src=ci_output/public_V8_C46_angle_tree_only.npz; else src="ci_output/public_V8_$name.npz"; fi
+            python research/claude_handoff_20261123/src/compile_gauge_partial.py \
+              --source "$src" --out "ci_output/real_kmb_$name" \
+              --mode signed6resid --J 5 --banks 3 --lowbits 4 --trials 1
+            python research/claude_handoff_20261123/src/verify_exact_ir.py \
+              --source "$src" --circuits "ci_output/real_kmb_$name" --J 5 --banks 3 \
+              --out "ci_output/verify_real_kmb_$name.json"
+          done
+      - name: Compare actual KMB costs, refusing regressions as records
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          base=pathlib.Path("ci_output")
+          rows={}
+          for name in ("baseline","all_flip","address_bit6"):
+              j=json.loads((base/("verify_real_kmb_"+name+".json")).read_text())
+              assert j["all_pass"] and j["banks"]==3
+              assert all(z["phase_all_measurement_branches"] and z["workspace_clean"] for z in j["bank_results"])
+              rows[name]={"T":j["total_pass_T"],"maxQ":j["maxQ"],
+                          "sha256":[v["sha256"] for v in j["bank_results"]]}
+          (base/"real_first3_cost_comparison.json").write_text(json.dumps(
+            {"comparison":rows,"native_kickmix":False,"official_score":None},indent=2)+"\\n")
+          print(json.dumps(rows,indent=2))
+          PY
       - name: Verify results and inspect original V8 evidence
         run: |
           python - <<'PY'
