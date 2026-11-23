@@ -60,3 +60,50 @@ python experiments/oss_chained_angle/bridge.py \
 まず既存公開3,357Tを再合成せず保持。別バックエンド `qrom-plan` の `check-plan` で使える公開planを入力として、元KMBを再現する。その後同じplanとangle_wordsで `replan`, `screen`, `batch` を回し、`tensorqrom` emitterでKMBへ落とし、Q/T/正確性を比較する。`chained_and` はこのモデルのhard partに局所適用する。最初から全35出力SATを解くより実装到達性が高いが、**改善が起こるとは未証明**。
 
 外部ソースには各著作権・ライセンスと変更記録を維持すること。各ライブラリのAPIはpinしたcommitで確認し、更新時は再検証すること。
+
+## 到達関係に基づく多出力CCX後処理 (2026-11-23)
+
+`reachable_multioutput.py` を既存の `run_step1.py` と接続した。
+`--reachable-relations` を指定すると、実際に生成されたKMXに対し、
+そのバンクの **forward B[k-1]→B[k] と reverse B[k]→B[k-1] の双方**の
+全1,219アドレスに基づく合成後処理を実施する。元のKMBは上書きしない。
+
+- 対象は測定のない区間・出力データから制御へ流れる依存のない区間だけ。
+- 検索には到達状態での任意個の積のGF(2)依存、2積→1積、
+  異なる出力方向 (w_3=w_1\oplus w_2) の3積→2積を含む。
+- 新しい積は実際の物理制御線のアフィン結合として作成できる場合のみ許す。
+  線形補正もKMX中のX/CXとして出力し、別の量子ビットは追加しない。
+- 出力する場合は、区間出入口の全量子ビット状態を
+  2×1,219状態のpacked GF(2)で完全比較してから保存。
+- `run_step1.py` は新KMXをKickMix native KMBへ変換した上で、
+  `kmsim.py` と既存の全HMR形式的位相検査をforward/reverseの両方で通す。
+  128Q制限、実T減少、公開Tとの比較を行い、すべて成立するまで
+  `pass_reproduce` として採用しない。
+- `test_reachable_multioutput.py` には、3→2積、旧5タグ関係の
+  到達条件、既存積の線形化、非合法関係の誤適用防止という4つの全数回帰試験がある。
+
+### V8への旧タグ関係の移植制約
+
+旧4,033T系の5タグの式 (s_j=a_i a_l) は、このV8バンクの不変量として**仮定しない**。
+V8 fixture はbit6をbit7にコピーするsigned-gaugeなので、
+旧定義 (z_{8j+6}\oplus z_{8j+7}) は到達入力上恒等的に0。
+後処理は具体的なforward/reverse入力の真理値を抽出し、その上の
+関係だけで合成するため、この取り違えを防止する。
+
+### 実行
+
+```bash
+python experiments/oss_chained_angle/test_reachable_multioutput.py
+python experiments/oss_chained_angle/run_step1.py \
+  --qrom-plan external/kickmix-engine/target/release/qrom-plan \
+  --banks 8 --counts 167,168,169,170,175,180,240 \
+  --seeds 4 --trials 12 --samples 24 \
+  --reachable-relations --out outputs/step1-k8-relational
+```
+
+候補は `k8/angle_k_8_reachable.kmx` と
+`k8/angle_k_8_reachable.kmb`（厳密な局所削減が発見された場合のみ）、
+試験原票は `k8/relational_receipt.json` に保存される。
+
+**区間入出力の全数検証だけで正式採用しない。** HMR位相・全回路・費用が
+独立検証されていない候補を新スコアと記録しない。
