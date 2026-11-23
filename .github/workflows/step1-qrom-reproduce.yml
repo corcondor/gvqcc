@@ -31,6 +31,7 @@ jobs:
       - name: Validate imported Python and source fixture
         run: |
           python -m compileall -q experiments/oss_chained_angle/ third_party/manwithacat/kmsim.py
+          python experiments/oss_chained_angle/test_reachable_multioutput.py
           python - <<'PY'
           import kickmix,numpy
           print('KickMix native import works')
@@ -43,7 +44,7 @@ jobs:
           python experiments/oss_chained_angle/run_step1.py \
             --qrom-plan external/kickmix-engine/target/release/qrom-plan \
             --banks 8 --counts 167,168,169,170,175,180,240 --seeds 4 --trials 12 --samples 24 \
-            --out outputs/step1-k8
+            --reachable-relations --out outputs/step1-k8
       - name: 'Step1 all 15 banks - diagnostic real KMB synthesis (NOT Step2)'
         continue-on-error: true
         shell: bash
@@ -75,7 +76,7 @@ jobs:
           x=json.load(open('outputs/step1-k8/receipt.json'))
           for b in x['banks']:
               print('bank',b['k'],'public',b['public_T'],'actual',b.get('real_T'), 'Q', b.get('real_Q'),
-                    'model',b.get('chosen_plan',{}).get('model_T'), 'valid',b.get('pass_logic'),
+                    'model',b.get('chosen_plan',{}).get('model_T'), 'relational',b.get('relational_postpass',{}).get('status'), 'valid',b.get('pass_logic'),
                     'error',b.get('error'))
           if not all(b.get('pass_reproduce') for b in x['banks']):
               raise SystemExit('Step1 k8 not reproduced: this run is NOT clearance for Step2')
