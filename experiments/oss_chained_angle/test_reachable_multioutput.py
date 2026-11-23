@@ -3,6 +3,7 @@
 from itertools import product
 from reachable_multioutput import optimize_text,parse_kmx,apply,pack,insert,reduce
 import unittest
+import random
 
 
 def prepare(lines,inputs,data):
@@ -75,5 +76,35 @@ class RelationalTests(unittest.TestCase):
         new,r=optimize_text(text,init,ones,data)
         self.assertEqual(r['derived_ccx_saving'],0)
         self.assertEqual(text,new)
+
+
+    def test_randomized_full_bijection_regression(self):
+        rng=random.Random(12)
+        changes=0
+        for _ in range(64):
+            data=(6,7)
+            old=[]
+            for __ in range(22):
+                kind=rng.choice(['CCX','CX','CX','X'])
+                if kind=='CCX':
+                    a,b=rng.sample(range(6),2)
+                    old.append(f'CCX q{a} q{b} q{rng.choice(data)}')
+                elif kind=='CX':
+                    if rng.random()<0.4:
+                        a,b=rng.sample(range(6),2)
+                    else:
+                        a,b=rng.choice(range(6)),rng.choice(data)
+                    if rng.random()<0.2:
+                        a,b=rng.sample(data,2)
+                    old.append(f'CX q{a} q{b}')
+                else:
+                    old.append(f'X q{rng.randrange(8)}')
+            states=list(product((0,1),repeat=8))
+            text,init,ones,output_bits=prepare(old,states,data)
+            new,receipt=optimize_text(text,init,ones,output_bits)
+            if receipt['candidate_windows']:
+                changes+=1
+                check(text,new,states)
+        self.assertGreater(changes,0)
 
 if __name__=='__main__':unittest.main(verbosity=2)
