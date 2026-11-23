@@ -9,6 +9,7 @@ sys.path.insert(0,str(HERE))
 sys.path.insert(0,str(HERE.parents[1]/"third_party"/"manwithacat"))
 import tensorqrom as tq
 import kmsim
+from reachable_multioutput import optimize_file
 import kickmix as km
 
 PUBLIC=[245,240,217,217,217,240,217,240,211,217,217,240,217,211,211]
@@ -170,6 +171,7 @@ def main():
     pa.add_argument("--trials",type=int,default=3)
     pa.add_argument("--samples",type=int,default=8)
     pa.add_argument("--out",type=Path,default=Path("outputs/step1"))
+    pa.add_argument("--reachable-relations",action="store_true")
     a=pa.parse_args();t0=time.monotonic()
     out=a.out.resolve();out.mkdir(parents=True,exist_ok=True)
     w,raw_sha=fixture(HERE/"v8_c46_angle_fixture_public.json")
@@ -204,6 +206,47 @@ def main():
                 ph=symbolic_hmr(ops,regs,names,delta,k,w);row["symbolic_hmr"]=ph
                 row["pass_logic"]=all(x["pass_all"] for x in rr+ph)
                 row["pass_reproduce"]=row["pass_logic"] and Q<=128 and T==PUBLIC[k]
+                if a.reachable_relations:
+                    rel_kmx=folder/f"angle_k_{k}_reachable.kmx"
+                    rel_receipt=folder/"relational_receipt.json"
+                    rel=optimize_file(kmx,w,k,rel_kmx,rel_receipt)
+                    row["relational_postpass"]={
+                        "source_T":T,
+                        "windows":rel["windows"],
+                        "candidate_windows":rel["candidate_windows"],
+                        "predicted_ccx_saving":rel["derived_ccx_saving"],
+                        "receipt":str(rel_receipt),
+                        "native_and_phase_pass":False,
+                        "official_score":None,
+                    }
+                    if rel["candidate_windows"]:
+                        try:
+                            improved=km.Circuit.from_file(str(rel_kmx))
+                            improved_kmb=folder/f"angle_k_{k}_reachable.kmb"
+                            improved.to_file(str(improved_kmb),format="kmb")
+                            cand_T=int(improved.operation_statistics().num_toffoli_like)
+                            cand_Q=int(improved.num_qubits)
+                            rel_logic,rel_ops,rel_regs,rel_names=kmsim_check(rel_kmx,delta,k,w)
+                            rel_phase=symbolic_hmr(rel_ops,rel_regs,rel_names,delta,k,w)
+                            relevant=[r for r in rel_logic+rel_phase
+                                      if r["mode"] in {"previous","current"}]
+                            ok=(len(relevant)==4 and all(r["pass_all"] for r in relevant)
+                                and cand_Q<=128 and cand_T<T)
+                            row["relational_postpass"].update({
+                                "real_T":cand_T,"real_Q":cand_Q,
+                                "native_and_phase_pass":bool(ok),
+                                "reachable_checks":relevant,
+                                "kmx":str(rel_kmx),"kmb":str(improved_kmb),
+                                "KMB_SHA256":hashlib.sha256(improved_kmb.read_bytes()).hexdigest(),
+                                "status":"VERIFIED_REACHABLE_GAIN" if ok else "REJECTED",
+                            })
+                            if ok and cand_T<=PUBLIC[k]:
+                                row["pass_reproduce"]=True
+                        except Exception as rel_exc:
+                            row["relational_postpass"]["error"]=str(rel_exc)
+                            row["relational_postpass"]["status"]="REJECTED_EXCEPTION"
+                    else:
+                        row["relational_postpass"]["status"]="NO_SAVING_IN_CLASS"
             else:row["reason"]="No valid qrom-plan produced"
         except Exception as ex:row["error"]=type(ex).__name__+": "+str(ex)
         row["sec"]=round(time.monotonic()-b0,2);report["banks"].append(row)
