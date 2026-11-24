@@ -1,0 +1,80 @@
+{
+  "parent_sha256": "263f25bd324d55cfd7f6b93520a899bed4cdf9ad5bd7a63e64083051701ef5d1",
+  "archive_sha256": "eaacaba78a9c1128403b08039ac8365539cc74cc94b9f8c263f32597bad8d5ab",
+  "candidate_sha256": "bf041c7baea460594002045116a028069dd28e56fc988987bc65caf36c1d6ad2",
+  "source_cut": 7772,
+  "prefix_ops": 5635,
+  "archived_prefix_ops": 7790,
+  "adapter_ops": 35,
+  "restoring_swaps": 30,
+  "clean_hmr_record": 513,
+  "cleared_records": [
+    78869,
+    78870,
+    78871,
+    78872
+  ],
+  "identical_suffix_ops": 53497,
+  "exact_boundary_legal_inputs": 3133452,
+  "independent_prefix_hmr_union": 340,
+  "boundary_checks": {
+    "data": true,
+    "phase": true,
+    "classical": true,
+    "rotations": true,
+    "guard": true
+  },
+  "reference_expected": "22501/16",
+  "prefix_expected": 417,
+  "suffix_expected": "15909/16",
+  "candidate_expected": "22581/16",
+  "serialized_full_cost_audit": {
+    "verification": "PASS",
+    "legal_inputs": 3133452,
+    "hmr_variables": 1280,
+    "instructions": 59167,
+    "static_paid": 1558,
+    "expected_paid": "22581/16",
+    "clean_scratch": true,
+    "terminal_data_equal": true,
+    "rotation_count": 55,
+    "peak_width": 37,
+    "seconds": 27.310647010803223,
+    "scope": "fresh exact expected cost and terminal data; phase/rotation equality by exact boundary and identical certified suffix"
+  },
+  "coverage": 48000,
+  "source_ops": 60766,
+  "full36": false,
+  "official_verifier": false,
+  "official_score_update": false,
+  "source_audit": "BLOCKED; known donor only",
+  "new_algorithm_search": false,
+  "main_modified": false,
+  "submission": false,
+  "rejected": {
+    "source": [
+      7963,
+      10050
+    ],
+    "native": [
+      5825,
+      7756
+    ],
+    "archived_native": [
+      7989,
+      10206
+    ],
+    "expected_local": [
+      287,
+      161
+    ],
+    "restored_events": 119,
+    "retired_events": 1,
+    "relative_phase_terms": 115,
+    "classical_differences": 121,
+    "constant_restores": 119,
+    "suffix_failure": 38274,
+    "verification": "FAIL_SUFFIX",
+    "adopted": false
+  }
+}
