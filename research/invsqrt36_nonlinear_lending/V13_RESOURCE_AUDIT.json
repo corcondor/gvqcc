@@ -1,0 +1,70 @@
+{
+  "parent_pr": 59,
+  "source_coverage": {
+    "cost": 55567,
+    "wide": 55829,
+    "total": 60766
+  },
+  "cost": {
+    "native_sha": "992f7aacd07839389537b22bf13c09cfea25f825911a6e55fd4da87a33a0c925",
+    "header_only_sha": "4b33cdb4ab6315256e67bb09f859daaf5adac531f679cb4ac886872ed313b031",
+    "ops": 40743,
+    "static": 1842,
+    "expected": 1673.4375,
+    "chart_expected": 1527.1875,
+    "q36_expected": 107.5,
+    "other_expected": 38.75,
+    "q36_ops": 1273,
+    "q36_paid": 110,
+    "chart_ops": 37431,
+    "chart_paid": 1683,
+    "other_ops": 2039,
+    "other_paid": 49,
+    "header_before": 1735,
+    "header_after": 1842,
+    "hmr": 1173,
+    "depth_proxy": 23154,
+    "paid_depth_proxy": 1818
+  },
+  "wide": {
+    "native_sha": "ea605794431d64a22de189087a6c637bf73650b19068dff106755a1798576eca",
+    "header_only_sha": "39211bb01098850b2b9e4859d9e82306c0c7d84adfb733abe937136e1c7ab4ef",
+    "ops": 41868,
+    "static": 1871,
+    "expected": 1692.9375,
+    "chart_expected": 1551.1875,
+    "q36_expected": 37,
+    "other_expected": 104.75,
+    "q36_ops": 549,
+    "q36_paid": 37,
+    "chart_ops": 38586,
+    "chart_paid": 1721,
+    "other_ops": 2733,
+    "other_paid": 113,
+    "header_before": 1748,
+    "header_after": 1871,
+    "hmr": 1186,
+    "depth_proxy": 23505,
+    "paid_depth_proxy": 1855,
+    "replay_checks": 40984,
+    "splices": 199,
+    "replay": "PASS"
+  },
+  "all_legal_inputs": 3133452,
+  "header_repair": "only header[5] changed; all op records and sections identical, source public header[5] matches all arity-three operations. Official verifier unrun.",
+  "model": {
+    "S0": 33.17031640530013,
+    "break_even36": 1452.05390236114,
+    "cost_remaining": 221.38359763886,
+    "even_if_q36_direct_free": 113.88359763886,
+    "even_if_outside_all_free": 75.13359763886
+  },
+  "candidate_search": false,
+  "full36": false,
+  "official_score_update": false,
+  "blockers": [
+    "Missing four historical ANGLE source archives; no new candidate search",
+    "No local Lean or official KickMix; no full36 candidate"
+  ],
+  "lean_pr59": "success as reported by workflow runs at parent head"
+}
