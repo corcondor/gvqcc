@@ -1,0 +1,6 @@
+name = "gvqcc_sparse_w"
+version = "0.1.0"
+defaultTargets = ["SparseWCERT"]
+
+[[lean_lib]]
+name = "SparseWCERT"
