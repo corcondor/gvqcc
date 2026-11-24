@@ -14,7 +14,6 @@ phase feedback because both candidate and baseline obtain identical results.
 -/
 set_option maxRecDepth 65536
 set_option maxHeartbeats 0
-set_option sat.timeout 480
 
 namespace GVQCC36
 
@@ -49,7 +48,7 @@ private def evalWire (s:BitVec 37) : Gate → BitVec 37
   | .cz _ _ => s
   | .ccz _ _ _ => s
 
-private def prefixRun (ops:List Gate) (s:BitVec37) : BitVec 37 :=
+private def prefixRun (ops:List Gate) (s:BitVec 37) : BitVec 37 :=
   ops.foldl evalWire s
 
 structure State where
@@ -57,7 +56,7 @@ structure State where
   parity:Bool
   deriving DecidableEq, Repr
 
-private def flip (s:State) (v:BitVec37) : State :=
+private def flip (s:State) (v:BitVec 37) : State :=
   {s with parity:= Bool.xor s.parity (v.getLsbD 0)}
 private def tick (m:Bool) (s:State) (g:Gate) : State :=
   match g with
@@ -71,7 +70,7 @@ private def tick (m:Bool) (s:State) (g:Gate) : State :=
 private def run (ops:List Gate) (m:Bool) (s:State) : State :=
   ops.foldl (tick m) s
 
-private def predicate (s:BitVec37) : BitVec37 :=
+private def predicate (s:BitVec 37) : BitVec 37 :=
   ((~~~(bit s 19)) &&& (~~~((bit s 2) ^^^ (bit s 34)))) &&& 1
 
 -- Computation basis control path (diagonal corrections do not enter the state).
@@ -514,7 +513,7 @@ private def candidateMeasured : List Gate := [
 
 -- Prove the actual 22-bit input domain is inside the borrowing invariant.
 -- This is *not* an assumed precondition on the source's 4,194,304 inputs.
-theorem actual_reachable_invariant (x:BitVec22) :
+theorem actual_reachable_invariant (x:BitVec 22) :
   let s := prefixRun sourcePrefix (x.setWidth 37)
   bit s 22 = predicate s ∧ bit s 36 = 0 := by
   simp only [sourcePrefix, prefixRun, List.foldl_cons, List.foldl_nil,
@@ -524,7 +523,7 @@ theorem actual_reachable_invariant (x:BitVec22) :
 -- A stronger arbitrary-relative-phase and arbitrary-HMR-outcome theorem.
 -- Branch equivalence is maintained for any initial state satisfying the
 -- real invariant, independent of how that state became correlated with x.
-theorem measured_lifetime_exact (s:BitVec37) (p m:Bool)
+theorem measured_lifetime_exact (s:BitVec 37) (p m:Bool)
  (hcache:bit s 22 = predicate s) (hzero:bit s 36 = 0) :
     run sourceMeasured m ⟨s,p⟩ = run candidateMeasured m ⟨s,p⟩ := by
   simp only [sourceMeasured, candidateMeasured, run, List.foldl_cons,
