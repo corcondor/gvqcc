@@ -1,0 +1,265 @@
+{
+  "parent_pr": 31,
+  "parent_sha256": "d7e14b3cc42cebd9fc8df5047fc9f21978981f80841b34b5ea980c4f8fe4989d",
+  "original_source_sha256": "6b59214530108d8c49c648f96c53b963d9b8477f8813db1edcf478bf45f6cf03",
+  "candidate_sha256": "4114a9298f4e1fc8d3a45353ad3c0d3b52b113dfa56774e582d58251b69df5ce",
+  "source_ops": 60766,
+  "covered_source_ops": 53195,
+  "residual_source_ops": 7571,
+  "actual_max_q": 37,
+  "local_max_q": 36,
+  "interval_serialized_parent": [
+    35195,
+    35225
+  ],
+  "old_gates": [
+    [
+      33,
+      19,
+      17
+    ],
+    [
+      33,
+      25,
+      17
+    ],
+    [
+      49,
+      17,
+      29,
+      33
+    ],
+    [
+      33,
+      25,
+      17
+    ],
+    [
+      33,
+      19,
+      17
+    ],
+    [
+      33,
+      21,
+      33
+    ],
+    [
+      33,
+      29,
+      33
+    ],
+    [
+      34,
+      18,
+      33
+    ],
+    [
+      33,
+      18,
+      21
+    ],
+    [
+      34,
+      21,
+      20
+    ],
+    [
+      33,
+      20,
+      18
+    ],
+    [
+      33,
+      20,
+      29
+    ],
+    [
+      33,
+      21,
+      20
+    ],
+    [
+      33,
+      21,
+      29
+    ],
+    [
+      33,
+      29,
+      20
+    ],
+    [
+      33,
+      19,
+      17
+    ],
+    [
+      33,
+      25,
+      17
+    ],
+    [
+      49,
+      17,
+      20,
+      29
+    ],
+    [
+      33,
+      25,
+      17
+    ],
+    [
+      33,
+      19,
+      17
+    ],
+    [
+      34,
+      33,
+      29
+    ],
+    [
+      33,
+      33,
+      21
+    ],
+    [
+      33,
+      21,
+      35
+    ],
+    [
+      33,
+      33,
+      35
+    ],
+    [
+      33,
+      17,
+      35
+    ],
+    [
+      33,
+      18,
+      35
+    ],
+    [
+      33,
+      19,
+      35
+    ],
+    [
+      33,
+      20,
+      35
+    ],
+    [
+      33,
+      21,
+      35
+    ],
+    [
+      33,
+      25,
+      35
+    ]
+  ],
+  "new_gates": [
+    [
+      33,
+      33,
+      20
+    ],
+    [
+      33,
+      29,
+      35
+    ],
+    [
+      34,
+      29,
+      33
+    ],
+    [
+      33,
+      25,
+      35
+    ],
+    [
+      33,
+      21,
+      35
+    ],
+    [
+      34,
+      21,
+      29
+    ],
+    [
+      33,
+      20,
+      35
+    ],
+    [
+      34,
+      20,
+      33
+    ],
+    [
+      33,
+      19,
+      35
+    ],
+    [
+      34,
+      18,
+      29
+    ],
+    [
+      33,
+      17,
+      35
+    ]
+  ],
+  "static_paid": [
+    1879,
+    1877
+  ],
+  "expected_paid": [
+    1705.3125,
+    1703.3125
+  ],
+  "total_ops": [
+    62754,
+    62735
+  ],
+  "legal_inputs": 3133452,
+  "potential_hmr_variables": 1166,
+  "full_composition_checks": 62725,
+  "state_phase_classical_rotations": "PASS",
+  "search": {
+    "cost": {
+      "spans": 3517,
+      "max_span_ops": 2714,
+      "sample_hits": 17,
+      "exact_accepted_overlapping": 2,
+      "selected": 1
+    },
+    "width": {
+      "pure_fallback_spans": 280,
+      "eligible": 0,
+      "new_coverage": 0
+    },
+    "hmr": {
+      "one_hmr_gaps": 23,
+      "sample_hits": 0,
+      "new_coverage": 0
+    }
+  },
+  "lean": "source generated; CI pending",
+  "full_36q": false,
+  "official_verifier": false,
+  "official_score_updated": false
+}
