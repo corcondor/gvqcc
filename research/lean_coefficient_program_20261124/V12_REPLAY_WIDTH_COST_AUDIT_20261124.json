@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-24",
+  "status": "BLOCKED_NEW_SEARCH_HISTORICAL_SOURCE_AUDIT; V12_INDEPENDENT_REPLAY_PASS",
+  "baseline": {
+    "angle_T": 3357,
+    "angle_Q": 128,
+    "bank_8_13_14_T": 211,
+    "source_invsqrt_sha": "6b59214530108d8c49c648f96c53b963d9b8477f8813db1edcf478bf45f6cf03"
+  },
+  "pr59": {
+    "head": "83c23d8e2dbcdca462b36aeb1ba8816f491641e5",
+    "archive_sha256": "e5cd4c05be5e4fb0df129ffd76fbd3a906092e46a4773fc3edd0e2b85579dbcd",
+    "archive_recovered": true,
+    "lean_ci_run": 45382561913,
+    "lean_ci": "success (local gate-list certificates; not entire circuit)",
+    "cost": {
+      "sha256": "992f7aacd07839389537b22bf13c09cfea25f825911a6e55fd4da87a33a0c925",
+      "ops": 40743,
+      "static_paid": 1842,
+      "expected_paid": 1673.4375,
+      "Q": 37,
+      "checks": 39792,
+      "splices": 250,
+      "HMR": 1173,
+      "gaps": 95,
+      "q36_gaps": 94,
+      "q36_ops": 1273,
+      "q36_paid_static": 110,
+      "q36_paid_expected": 107.5,
+      "gap_expected_paid": 146.25,
+      "chart_expected_paid": 1527.1875,
+      "remaining_after_optimistic_delete_all_gap_paid": 75.13359763886
+    },
+    "wide": {
+      "sha256": "ea605794431d64a22de189087a6c637bf73650b19068dff106755a1798576eca",
+      "ops": 41868,
+      "static_paid": 1871,
+      "expected_paid": 1692.9375,
+      "Q": 37,
+      "checks": 40984,
+      "splices": 199,
+      "HMR": 1186,
+      "gaps": 91,
+      "q36_gaps": 91,
+      "q36_ops": 549,
+      "q36_paid_static": 37,
+      "q36_paid_expected": 37,
+      "gap_expected_paid": 141.75,
+      "chart_expected_paid": 1551.1875,
+      "remaining_after_optimistic_delete_all_gap_paid": 99.13359763886
+    },
+    "all_legal_inputs": 3133452,
+    "replay": "fresh PASS from pinned PR57 parent bytes; no official verification"
+  },
+  "budget": {
+    "full36_break_even_expected_paid": 1452.05390236114,
+    "cost_additional_reduction_strictly_greater_than": 221.38359763886,
+    "wide_additional_reduction_strictly_greater_than": 240.88359763886,
+    "note": "Gap deletion is optimistic accounting, not a feasible circuit or general lower bound. Source-to-chart interval audit timed out; no claim."
+  },
+  "new_search": {
+    "local": 0,
+    "cold_start": 0,
+    "reason": "Original cloud_hub, joint_gauge_gate_cold_shear, directional_word_conjugation, rank_pursuit_HMR_erasure ZIPs not found in exact title search or inspected library pages; source-level exclusion incomplete. V12 archive recovered via metadata listing. No new candidate generated."
+  },
+  "new_native": false,
+  "official_verifier": false,
+  "score_update": false,
+  "main_modified": false,
+  "kaggle_submission": false
+}
