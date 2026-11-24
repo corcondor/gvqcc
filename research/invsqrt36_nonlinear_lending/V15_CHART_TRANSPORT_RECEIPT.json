@@ -1,0 +1,281 @@
+{
+  "parents": {
+    "cost_pr": 61,
+    "donor_pr": 63,
+    "cost_sha256": "6ccc979036cd824e8a588615f6b9760ff95799574e202e4451a0b5ec211a426c",
+    "donor_sha256": "bc688108596a21e8a48fdd1b172b40e60b4fb4b405594c938709904cc1b25135"
+  },
+  "candidate_sha256": "7be22729aae992f2f3fa408eba736300cf8cacc92ed5475e2a9707950cb153ff",
+  "source": [
+    41304,
+    42060
+  ],
+  "cost_native": [
+    25037,
+    25724
+  ],
+  "donor_native": [
+    26785,
+    27426
+  ],
+  "old_ops": 687,
+  "new_ops": 655,
+  "entry_physical_to_donor": [
+    22,
+    18,
+    10,
+    28,
+    6,
+    35,
+    32,
+    17,
+    19,
+    30,
+    31,
+    21,
+    14,
+    11,
+    3,
+    9,
+    12,
+    7,
+    16,
+    23,
+    2,
+    1,
+    33,
+    20,
+    13,
+    24,
+    4,
+    27,
+    8,
+    0,
+    25,
+    5,
+    29,
+    15,
+    34,
+    26,
+    36
+  ],
+  "exit_physical_to_donor": [
+    15,
+    18,
+    10,
+    16,
+    11,
+    30,
+    32,
+    27,
+    19,
+    23,
+    31,
+    17,
+    14,
+    25,
+    3,
+    9,
+    12,
+    7,
+    21,
+    28,
+    2,
+    1,
+    33,
+    6,
+    13,
+    20,
+    4,
+    24,
+    8,
+    0,
+    22,
+    5,
+    29,
+    35,
+    34,
+    26,
+    36
+  ],
+  "restoration_swaps": [
+    [
+      4,
+      23
+    ],
+    [
+      13,
+      4
+    ],
+    [
+      33,
+      0
+    ],
+    [
+      18,
+      3
+    ],
+    [
+      7,
+      11
+    ],
+    [
+      13,
+      25
+    ],
+    [
+      7,
+      18
+    ],
+    [
+      33,
+      30
+    ],
+    [
+      19,
+      9
+    ],
+    [
+      13,
+      27
+    ],
+    [
+      33,
+      13
+    ],
+    [
+      33,
+      7
+    ],
+    [
+      33,
+      19
+    ],
+    [
+      33,
+      5
+    ]
+  ],
+  "old_paid_positions": [
+    194,
+    208,
+    223,
+    236,
+    254,
+    271,
+    289,
+    306,
+    307,
+    328,
+    382,
+    409,
+    581,
+    597,
+    610,
+    623,
+    639,
+    656,
+    672
+  ],
+  "new_paid_positions": [
+    186,
+    193,
+    203,
+    220,
+    233,
+    243,
+    265,
+    277,
+    279,
+    361,
+    389,
+    556,
+    563,
+    575,
+    583,
+    601,
+    611,
+    623
+  ],
+  "old_hmr_positions": [
+    33,
+    60,
+    85,
+    106,
+    134,
+    166,
+    188,
+    408,
+    431,
+    453,
+    477,
+    502,
+    527,
+    551,
+    572
+  ],
+  "new_hmr_positions": [
+    33,
+    58,
+    83,
+    102,
+    128,
+    158,
+    180,
+    388,
+    412,
+    432,
+    454,
+    477,
+    500,
+    524,
+    545
+  ],
+  "local_expected_before": 19,
+  "local_expected_after": 18,
+  "ops_before": 40079,
+  "ops_after": 40047,
+  "static_before": 1833,
+  "static_after": 1832,
+  "expected_before": "26703/16",
+  "expected_after": "26687/16",
+  "depth_before": 23141,
+  "depth_after": 23113,
+  "paid_depth_before": 1809,
+  "paid_depth_after": 1808,
+  "all_legal_inputs": 3133452,
+  "hmr_variables": 1173,
+  "exact_checks": 39393,
+  "splice_checks": {
+    "data": true,
+    "phase": true,
+    "classical": true,
+    "rotations": true,
+    "guard": true
+  },
+  "exact_seconds": 13.689229965209961,
+  "source_coverage": 55567,
+  "total_source_ops": 60766,
+  "peak_width": 37,
+  "local_max_wire": 35,
+  "full36": false,
+  "official_verifier": false,
+  "verification": "PASS",
+  "new_algorithm_search": false,
+  "known_pattern_donors_screened": 26,
+  "known_pattern_matches": [
+    0,
+    0,
+    0
+  ],
+  "common_chart_pairs": 97,
+  "cheaper_donor_charts": 1,
+  "blocked_original_archives": [
+    "GVQCC_cloud_hub_20261124_NO_GAIN.zip",
+    "GVQCC_joint_gauge_gate_cold_shear_20261124_NO_GAIN.zip",
+    "GVQCC_directional_word_conjugation_20261124_NO_GAIN.zip",
+    "GVQCC_rank_pursuit_HMR_erasure_20261124_NO_GAIN.zip"
+  ],
+  "lean_ci": "pending",
+  "header_arity3_repaired": true
+}
