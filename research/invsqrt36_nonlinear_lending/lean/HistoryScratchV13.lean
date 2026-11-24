@@ -34,8 +34,7 @@ def step (a b c d m : Bool) (s : State) : Gate → State
   | .swap u v =>
     let v' := bit s.wires u ^^^ bit s.wires v
     {s with wires := toggle (toggle s.wires u v') v v'}
-  | .hmr u => {s with wires := clearWire s.wires u,
-    phase := Bool.xor s.phase (m && (bit s.wires u).getLsbD 0)}
+  | .hmr u => ⟨clearWire s.wires u, Bool.xor s.phase (m && (bit s.wires u).getLsbD 0), s.rotations⟩
   | .cz u v g => {s with phase := Bool.xor s.phase (enabled a b c d g && (bit s.wires u &&& bit s.wires v).getLsbD 0)}
   | .ccz u v w g => {s with phase := Bool.xor s.phase (enabled a b c d g && (bit s.wires u &&& bit s.wires v &&& bit s.wires w).getLsbD 0)}
   | .rot q => {s with rotations := s.rotations ++ [(bit s.wires q).getLsbD 0]}
@@ -53,7 +52,7 @@ theorem delayedScratch (p u v m d : Bool) :
     let measured := (p,false,Bool.xor d (m && u))
     let swapped := (measured.2.1,measured.1,measured.2.2)
     (Bool.xor swapped.1 v,swapped.2.1,swapped.2.2) = orig := by
-  bv_decide
+  cases p <;> cases u <;> cases v <;> cases m <;> cases d <;> decide
 
 -- Versioned phase potential; two complementary guards form an exact partition.
 theorem complementaryHistory (p g : Bool) :
@@ -63,7 +62,8 @@ theorem dirtyCubic (a b c d t : Bool) :
     let t' := Bool.xor t (d' && c)
     let d'' := Bool.xor d' (a && b)
     let t'' := Bool.xor t' (d'' && c)
-    (d'',t'') = (d,Bool.xor t (a && b && c)) := by bv_decide
+    (d'',t'') = (d,Bool.xor t (a && b && c)) := by
+  cases a <;> cases b <;> cases c <;> cases d <;> cases t <;> decide
 
 def old_15408 : List Gate := [.cx 12 7, .cx 32 7, .ccx 17 7 26, .cx 32 7, .cx 12 7, .cx 29 7, .ccx 32 7 26, .cx 29 7, .cx 7 26, .cx 17 26, .cx 32 26, .ccx 7 17 0, .ccx 0 32 26, .ccx 7 17 0, .ccx 0 32 26, .ccx 12 17 0, .ccx 0 32 26, .ccx 12 17 0, .ccx 0 32 26]
 def new_15408 : List Gate := [.cx 29 7, .ccx 32 7 26, .cx 29 7, .cx 7 26, .cx 32 26, .cx 12 7, .x 32, .x 7, .ccx 17 32 0, .ccx 0 7 26, .ccx 17 32 0, .ccx 0 7 26, .x 7, .x 32, .cx 12 7]
@@ -105,7 +105,7 @@ theorem resource_16798 : old_16798.all (wireOK 36) = true ∧ new_16798.all (wir
 -- q36=0 on entry; the BDD replay verifies the reachable decoder premise.
 def old_gap : List Gate := [.swap 26 36, .ccx 29 32 26, .cx 23 26, .cx 32 29, .cx 32 12, .cx 23 29, .cx 23 12, .cx 17 12, .cx 3 12, .hmr 23, .swap 23 36]
 def gap_prefix : List Gate := [.cx 32 29, .cx 32 12, .cx 23 29, .cx 23 12, .cx 17 12, .cx 3 12, .hmr 23, .swap 26 23]
-def new_gap : List Gate := gap_prefix ++ new_15408
+def new_gap : List Gate := [.cx 32 29, .cx 32 12, .cx 23 29, .cx 23 12, .cx 17 12, .cx 3 12, .hmr 23, .swap 26 23, .cx 29 7, .ccx 32 7 26, .cx 29 7, .cx 7 26, .cx 32 26, .cx 12 7, .x 32, .x 7, .ccx 17 32 0, .ccx 0 7 26, .ccx 17 32 0, .ccx 0 7 26, .x 7, .x 32, .cx 12 7]
 
 def decode26 (s : BitVec 37) : BitVec 37 :=
   let a := bit s 17
@@ -121,8 +121,7 @@ theorem actual_gap (s : BitVec 37) (p m : Bool)
       decode26 (run gap_prefix false false false false m ⟨s,p,[]⟩).wires) :
     run old_gap false false false false m ⟨s,p,[]⟩ =
       run new_gap false false false false m ⟨s,p,[]⟩ := by
-  simp only [old_gap, new_gap, gap_prefix, new_15408, decode26, run,
-    List.append_cons, List.nil_append, List.foldl_cons, List.foldl_nil, step,
+  simp only [old_gap, new_gap, gap_prefix, decode26, run, List.foldl_cons, List.foldl_nil, step,
     bit, toggle, clearWire, enabled, State.mk.injEq] at *
   bv_decide
 
@@ -135,12 +134,12 @@ theorem gap_resources :
 -- Guard IDs: 1=457, 2=837, 3=460, 4=458. One HMR event 467, one rotation.
 -- The actual classical register/guard stack is separately compared by BDD.
 def history_scaffold : List Gate := [.cx 23 2, .cx 24 2, .cx 28 2, .cx 33 2, .ccz 26 31 2 2, .cx 33 2, .cx 28 2, .cx 24 2, .cx 23 2, .ccx 0 15 27, .cz 29 27 3, .cz 29 27 4, .cz 29 27 1, .cx 15 27, .cx 8 27, .x 27, .cz 27 29 2, .cz 27 25 2, .cz 27 5 2, .rot 27, .x 27, .cz 28 27 2, .cz 24 27 2, .cz 33 27 2, .cz 23 27 2, .cz 25 27 2, .cz 2 27 2, .hmr 27, .ccx 26 31 27]
-def old_history : List Gate := [.ccz 26 31 29 1] ++ history_scaffold
-def new_history : List Gate := history_scaffold ++ [.cz 27 29 1]
+def old_history : List Gate := [.ccz 26 31 29 1, .cx 23 2, .cx 24 2, .cx 28 2, .cx 33 2, .ccz 26 31 2 2, .cx 33 2, .cx 28 2, .cx 24 2, .cx 23 2, .ccx 0 15 27, .cz 29 27 3, .cz 29 27 4, .cz 29 27 1, .cx 15 27, .cx 8 27, .x 27, .cz 27 29 2, .cz 27 25 2, .cz 27 5 2, .rot 27, .x 27, .cz 28 27 2, .cz 24 27 2, .cz 33 27 2, .cz 23 27 2, .cz 25 27 2, .cz 2 27 2, .hmr 27, .ccx 26 31 27]
+def new_history : List Gate := [.cx 23 2, .cx 24 2, .cx 28 2, .cx 33 2, .ccz 26 31 2 2, .cx 33 2, .cx 28 2, .cx 24 2, .cx 23 2, .ccx 0 15 27, .cz 29 27 3, .cz 29 27 4, .cz 29 27 1, .cx 15 27, .cx 8 27, .x 27, .cz 27 29 2, .cz 27 25 2, .cz 27 5 2, .rot 27, .x 27, .cz 28 27 2, .cz 24 27 2, .cz 33 27 2, .cz 23 27 2, .cz 25 27 2, .cz 2 27 2, .hmr 27, .ccx 26 31 27, .cz 27 29 1]
 theorem actual_history (s : BitVec 37) (p a b c d m : Bool) :
     run old_history a b c d m ⟨s,p,[]⟩ =
       run new_history a b c d m ⟨s,p,[]⟩ := by
-  simp only [old_history, new_history, history_scaffold, run, List.append_cons, List.nil_append,
+  simp only [old_history, new_history, run,
     List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, State.mk.injEq]
   bv_decide
 theorem history_resources :
