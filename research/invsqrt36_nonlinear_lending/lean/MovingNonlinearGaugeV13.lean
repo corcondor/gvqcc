@@ -74,8 +74,7 @@ def new_25112 : List Gate := [.cx 34 11, .cx 34 10, .cx 34 8, .cx 34 2, .cx 29 2
 theorem eq_25112 (s : BitVec 37) (p g m0 m1 r0 r1 : Bool) :
     run old_25112 g false m1 ⟨clearWire s 36,p,r0,r1⟩ =
     run new_25112 g false m1 ⟨clearWire s 36,p,r0,r1⟩ := by
-  simp only [old_25112, new_25112, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq]
-  bv_decide
+  simp [old_25112, new_25112, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq] <;> bv_decide
 theorem res_25112 :
     old_25112.all (wireOK 37) = true ∧ new_25112.all (wireOK 36) = true ∧
     paid old_25112 = 2 ∧ paid new_25112 = 3 ∧
@@ -87,8 +86,7 @@ def new_26189 : List Gate := [.cx 34 5, .cx 34 2, .cx 30 2, .cx 16 2, .cx 15 5, 
 theorem eq_26189 (s : BitVec 37) (p g m0 m1 r0 r1 : Bool) :
     run old_26189 g false m1 ⟨clearWire s 36,p,r0,r1⟩ =
     run new_26189 g false m1 ⟨clearWire s 36,p,r0,r1⟩ := by
-  simp only [old_26189, new_26189, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq]
-  bv_decide
+  simp [old_26189, new_26189, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq] <;> bv_decide
 theorem res_26189 :
     old_26189.all (wireOK 37) = true ∧ new_26189.all (wireOK 36) = true ∧
     paid old_26189 = 2 ∧ paid new_26189 = 3 ∧
@@ -100,8 +98,7 @@ def new_27227 : List Gate := [.cx 3 2, .cx 3 6, .cx 16 3, .ccx 16 29 3, .cx 3 6,
 theorem eq_27227 (s : BitVec 37) (p g m0 m1 r0 r1 : Bool) :
     run old_27227 g false m1 ⟨clearWire s 36,p,r0,r1⟩ =
     run new_27227 g false m1 ⟨clearWire s 36,p,r0,r1⟩ := by
-  simp only [old_27227, new_27227, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq]
-  bv_decide
+  simp [old_27227, new_27227, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq] <;> bv_decide
 theorem res_27227 :
     old_27227.all (wireOK 37) = true ∧ new_27227.all (wireOK 36) = true ∧
     paid old_27227 = 2 ∧ paid new_27227 = 3 ∧
@@ -113,8 +110,7 @@ def new_27754 : List Gate := [.cx 34 13, .cx 34 2, .cx 29 2, .cx 21 13, .cx 20 2
 theorem eq_27754 (s : BitVec 37) (p g m0 m1 r0 r1 : Bool) :
     run old_27754 g false m1 ⟨clearWire s 36,p,r0,r1⟩ =
     run new_27754 g false m1 ⟨clearWire s 36,p,r0,r1⟩ := by
-  simp only [old_27754, new_27754, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq]
-  bv_decide
+  simp [old_27754, new_27754, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq] <;> bv_decide
 theorem res_27754 :
     old_27754.all (wireOK 37) = true ∧ new_27754.all (wireOK 36) = true ∧
     paid old_27754 = 2 ∧ paid new_27754 = 3 ∧
@@ -126,8 +122,7 @@ def new_21386 : List Gate := [.ccx 3 29 30, .cx 34 6, .cx 15 6, .cx 12 6, .cx 7 
 theorem eq_21386 (s : BitVec 37) (p g m0 m1 r0 r1 : Bool) :
     run old_21386 g m0 m1 ⟨clearWire s 36,p,r0,r1⟩ =
     run new_21386 g m0 m1 ⟨clearWire s 36,p,r0,r1⟩ := by
-  simp only [old_21386, new_21386, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq]
-  bv_decide
+  simp [old_21386, new_21386, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq] <;> bv_decide
 theorem res_21386 :
     old_21386.all (wireOK 37) = true ∧ new_21386.all (wireOK 36) = true ∧
     paid old_21386 = 2 ∧ paid new_21386 = 3 ∧
@@ -139,8 +134,7 @@ def new_28272 : List Gate := [.cx 34 16, .cx 34 2, .cx 29 2, .cx 27 2, .cx 3 2, 
 theorem eq_28272 (s : BitVec 37) (p g m0 m1 r0 r1 : Bool) :
     run old_28272 g false m1 ⟨clearWire s 36,p,r0,r1⟩ =
     run new_28272 g false m1 ⟨clearWire s 36,p,r0,r1⟩ := by
-  simp only [old_28272, new_28272, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq]
-  bv_decide
+  simp [old_28272, new_28272, run, List.foldl_cons, List.foldl_nil, step, bit, toggle, clearWire, enabled, store, State.mk.injEq] <;> bv_decide
 theorem res_28272 :
     old_28272.all (wireOK 37) = true ∧ new_28272.all (wireOK 36) = true ∧
     paid old_28272 = 2 ∧ paid new_28272 = 3 ∧
