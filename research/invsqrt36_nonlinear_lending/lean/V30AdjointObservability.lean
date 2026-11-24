@@ -1,4 +1,6 @@
 import Std.Tactic
+set_option maxRecDepth 65536
+set_option maxHeartbeats 0
 namespace GVQCC.V30
 
 def X := Bool.xor
@@ -60,7 +62,7 @@ def oldRepair : List (Nat × Nat × Nat) := [(33,4,15), (33,7,15), (33,8,15), (3
 def newRepair : List (Nat × Nat × Nat) := [(33,13,35), (33,13,32), (33,13,20), (33,13,17), (33,13,15), (33,15,32), (33,15,20), (33,15,17), (33,17,35), (33,17,15), (33,20,35), (33,20,15), (33,33,35), (33,33,15), (33,35,32), (33,35,20), (33,35,17), (34,15,35)]
 theorem native_affine_repair_rows :
     oldRepair.foldl rowStep identity = newRepair.foldl rowStep identity := by native_decide
-theorem native_repair_size : oldRepair.length = 182 ∧ newRepair.length = 18 := by decide
+theorem native_repair_size : oldRepair.length = 182 ∧ newRepair.length = 18 := by native_decide
 theorem compact_native_cost : 166 - 151 = 15 ∧ 9 - 8 = 1 := by decide
 theorem exact_phase_quotient_dimensions : 951 + 10 = 961 := by decide
 end GVQCC.V30
