@@ -1,0 +1,88 @@
+{
+  "source_sha256": "0211ca05bc492b1312dce58a6978a2a527ff25e978e3f1b986c280b50d4f27f2",
+  "banks": 15,
+  "domain_states_per_bank": 2438,
+  "pre_first_HMR_CCX_checked": 2697,
+  "scratch_target_CCX": 1230,
+  "word_target_CCX": 1467,
+  "affine_X_CX_replacements": 0,
+  "null_product": 0,
+  "per_bank": [
+    {
+      "bank": 0,
+      "checked": 109,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 1,
+      "checked": 109,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 2,
+      "checked": 217,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 3,
+      "checked": 217,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 4,
+      "checked": 217,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 5,
+      "checked": 109,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 6,
+      "checked": 217,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 7,
+      "checked": 109,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 8,
+      "checked": 211,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 9,
+      "checked": 217,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 10,
+      "checked": 217,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 11,
+      "checked": 109,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 12,
+      "checked": 217,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 13,
+      "checked": 211,
+      "affine_replacements": 0
+    },
+    {
+      "bank": 14,
+      "checked": 211,
+      "affine_replacements": 0
+    }
+  ],
+  "scope": "Only CCX before first HMR. Exact equivalence across both actual reachable word states (previous and current), with full 128 wire affine span excluding target. No inter-gate or multi-product resynthesis attempted. No paid T reduction."
+}
