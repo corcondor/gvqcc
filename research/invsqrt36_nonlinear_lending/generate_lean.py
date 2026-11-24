@@ -172,7 +172,7 @@ end GVQCC36
 '''
 # If goals too computationally huge, Lean's bv_decide can be switched to
 # a generated layered SAT proof of the same actual gate stream.
-text=head+pre+proof
+text=(head+pre+proof).replace('BitVec37','BitVec 37').replace('BitVec22','BitVec 22').replace('set_option sat.timeout 480\\n','')
 out=Path(__file__).parent/'lean'/'GVQCC36.lean'
 out.parent.mkdir(exist_ok=True)
 out.write_text(text,encoding='utf-8')
