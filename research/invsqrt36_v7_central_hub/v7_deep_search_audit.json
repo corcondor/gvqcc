@@ -1,0 +1,287 @@
+{
+  "phase_compression": {
+    "classical_bit_op_counts": {
+      "Z": 4054,
+      "CZ": 3280,
+      "PUSH_CONDITION": 2271,
+      "HMR": 1278,
+      "BIT_STORE0": 443,
+      "BIT_INVERT": 245,
+      "NEG": 80,
+      "CCZ": 2,
+      "CCX": 2,
+      "CX": 2,
+      "Z_POW": 1
+    },
+    "sample_b_ops": [
+      [
+        21,
+        "HMR q22 b0"
+      ],
+      [
+        22,
+        "PUSH_CONDITION if b0"
+      ],
+      [
+        45,
+        "HMR q22 b0"
+      ],
+      [
+        46,
+        "PUSH_CONDITION if b0"
+      ],
+      [
+        69,
+        "HMR q22 b0"
+      ],
+      [
+        70,
+        "PUSH_CONDITION if b0"
+      ],
+      [
+        93,
+        "HMR q22 b0"
+      ],
+      [
+        94,
+        "PUSH_CONDITION if b0"
+      ],
+      [
+        117,
+        "HMR q22 b0"
+      ],
+      [
+        118,
+        "PUSH_CONDITION if b0"
+      ],
+      [
+        141,
+        "HMR q22 b0"
+      ],
+      [
+        142,
+        "PUSH_CONDITION if b0"
+      ]
+    ],
+    "num_bits_with_phase": 318,
+    "total_unique_monomials": 3075,
+    "deg2_monomials": 2382,
+    "deg3plus_monomials": 2,
+    "shared_deg2_monomials": 312,
+    "shared_deg3plus_monomials": 0,
+    "nonzero_deg2plus_bit_polys": 113,
+    "gf2_rank_deg2plus_bit_polys": 87,
+    "exact_basis_compression_delta": 26,
+    "paid_ctrl_ops": 2
+  },
+  "hotspots": [
+    {
+      "name": "ripple_21_A",
+      "span": [
+        9526,
+        9788
+      ],
+      "ops": 263,
+      "touched_qubits": 23,
+      "CCX": 25,
+      "CCZ": 0,
+      "HMR": 22,
+      "CX": 152,
+      "IF_ops": 29,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "ripple_21_B",
+      "span": [
+        9850,
+        10185
+      ],
+      "ops": 336,
+      "touched_qubits": 21,
+      "CCX": 29,
+      "CCZ": 0,
+      "HMR": 24,
+      "CX": 210,
+      "IF_ops": 31,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "ripple_19",
+      "span": [
+        7706,
+        8032
+      ],
+      "ops": 327,
+      "touched_qubits": 21,
+      "CCX": 23,
+      "CCZ": 0,
+      "HMR": 19,
+      "CX": 183,
+      "IF_ops": 28,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "ripple_16",
+      "span": [
+        13606,
+        13723
+      ],
+      "ops": 118,
+      "touched_qubits": 37,
+      "CCX": 19,
+      "CCZ": 0,
+      "HMR": 1,
+      "CX": 61,
+      "IF_ops": 1,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "row7_0",
+      "span": [
+        8099,
+        8150
+      ],
+      "ops": 52,
+      "touched_qubits": 20,
+      "CCX": 7,
+      "CCZ": 0,
+      "HMR": 6,
+      "CX": 30,
+      "IF_ops": 7,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "row7_1",
+      "span": [
+        8291,
+        8342
+      ],
+      "ops": 52,
+      "touched_qubits": 20,
+      "CCX": 7,
+      "CCZ": 0,
+      "HMR": 6,
+      "CX": 30,
+      "IF_ops": 7,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "row7_2",
+      "span": [
+        8403,
+        8454
+      ],
+      "ops": 52,
+      "touched_qubits": 20,
+      "CCX": 7,
+      "CCZ": 0,
+      "HMR": 6,
+      "CX": 30,
+      "IF_ops": 7,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "row7_3",
+      "span": [
+        8515,
+        8566
+      ],
+      "ops": 52,
+      "touched_qubits": 20,
+      "CCX": 7,
+      "CCZ": 0,
+      "HMR": 6,
+      "CX": 30,
+      "IF_ops": 7,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "row7_4",
+      "span": [
+        8627,
+        8678
+      ],
+      "ops": 52,
+      "touched_qubits": 20,
+      "CCX": 7,
+      "CCZ": 0,
+      "HMR": 6,
+      "CX": 30,
+      "IF_ops": 7,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "row7_5",
+      "span": [
+        8739,
+        8790
+      ],
+      "ops": 52,
+      "touched_qubits": 20,
+      "CCX": 7,
+      "CCZ": 0,
+      "HMR": 6,
+      "CX": 30,
+      "IF_ops": 7,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "row7_6",
+      "span": [
+        8851,
+        8902
+      ],
+      "ops": 52,
+      "touched_qubits": 20,
+      "CCX": 7,
+      "CCZ": 0,
+      "HMR": 6,
+      "CX": 30,
+      "IF_ops": 7,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "row7_7",
+      "span": [
+        8963,
+        9014
+      ],
+      "ops": 52,
+      "touched_qubits": 20,
+      "CCX": 7,
+      "CCZ": 0,
+      "HMR": 6,
+      "CX": 30,
+      "IF_ops": 7,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    },
+    {
+      "name": "tail_plateau",
+      "span": [
+        57893,
+        60664
+      ],
+      "ops": 2772,
+      "touched_qubits": 37,
+      "CCX": 2,
+      "CCZ": 0,
+      "HMR": 1,
+      "CX": 2603,
+      "IF_ops": 2,
+      "pattern_A2_peak1_overhead": 1,
+      "v4_1stage_overhead": 2
+    }
+  ]
+}

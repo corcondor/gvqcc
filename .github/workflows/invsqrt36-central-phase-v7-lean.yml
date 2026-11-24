@@ -1,0 +1,17 @@
+name: Central Phase Hub V7 Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_v7_central_hub/lean/CentralPhaseHubV7.lean'
+      - '.github/workflows/invsqrt36-central-phase-v7-lean.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Check V7 centralized phase-basis & hub theorems
+        run: ~/.elan/bin/lean research/invsqrt36_v7_central_hub/lean/CentralPhaseHubV7.lean
