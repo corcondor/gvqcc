@@ -1,0 +1,71 @@
+{
+  "independent_implementation": true,
+  "model": "KMB GF(2) basis states / classical measurement-register overwrites / conditional CZ phase",
+  "new_research_pair_sha256": "3965d712f3713273a5e46b72333c90a84832d553006920d36d0b324500cdde22",
+  "input": "B12->B13->B14, exactly 1219 forward addresses",
+  "reference_cost": 422,
+  "candidate_cost": 349,
+  "conditional_savings": 73,
+  "candidate_verify": {
+    "n": 1219,
+    "address_err": 0,
+    "word_err": 0,
+    "scratch_err": 0,
+    "phase_err": 0,
+    "nonzero_phase_coefficients": 0,
+    "measurement_count": 91
+  },
+  "reference_verify": {
+    "first_bank_phase_zero": true,
+    "second_bank_phase_zero": true,
+    "scratch_clear_each_bank": true
+  },
+  "negative_control_tests": [
+    {
+      "type": "ccx",
+      "removed_gate_index": 5,
+      "caught": true,
+      "bit_errors": {
+        "address_err": 0,
+        "word_err": 5411,
+        "scratch_err": 0,
+        "phase_err": 3232
+      }
+    },
+    {
+      "type": "ccx",
+      "removed_gate_index": 20111,
+      "caught": true,
+      "bit_errors": {
+        "address_err": 0,
+        "word_err": 1208,
+        "scratch_err": 0,
+        "phase_err": 0
+      }
+    },
+    {
+      "type": "conditional_cz",
+      "removed_gate_index": 29994,
+      "caught": true,
+      "bit_errors": {
+        "address_err": 0,
+        "word_err": 0,
+        "scratch_err": 0,
+        "phase_err": 15
+      }
+    },
+    {
+      "type": "conditional_cz",
+      "removed_gate_index": 61514,
+      "caught": true,
+      "bit_errors": {
+        "address_err": 0,
+        "word_err": 0,
+        "scratch_err": 0,
+        "phase_err": 32
+      }
+    }
+  ],
+  "official_or_submit_ready": false,
+  "warning": "Only forward merged call checked; no independent k13/k14 interface, no backward path, no official KickMix verifier."
+}
