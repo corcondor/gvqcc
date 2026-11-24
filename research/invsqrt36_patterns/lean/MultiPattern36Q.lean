@@ -153,13 +153,15 @@ theorem amortized_beats_v4 (m : Nat) (hm : m ≥ 2) :
 
 /-! ## Pattern C: Conditionally-Clean Ancilla (Khattar-Gidney 2025) & Relative-Phase Cancel (Maslov 2016) -/
 
-/-- When `g = true` guarantees dirty wire `d = false`, toggling `t` by `x && y` via
-    borrowed `d` leaves `d` restored and computes `t ⊕ (g && x && y)`. -/
+/-- Conditionally-clean / dirty-ancilla borrowing (Barenco 1995; Khattar-Gidney 2025):
+    When `g = true` guarantees `d = false`, toggling `t` by `d1 && y` and cancelling `d2 && y`
+    leaves `d` restored and computes `t ⊕ (g && x && y)` for ALL `(g, x, y, d, t)`. -/
 def condCleanBorrow (g x y d t : Bool) : Bool × Bool :=
   let d1 := bx d (g && x)
   let t1 := bx t (d1 && y)
   let d2 := bx d1 (g && x)
-  (d2, t1)
+  let t2 := bx t1 (d2 && y)
+  (d2, t2)
 
 theorem condCleanBorrow_correct (g x y d t : Bool) :
     (g = true → d = false) →
