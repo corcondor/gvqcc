@@ -22,7 +22,8 @@ theorem retained_write (d target : Nat) (s t : Nat → Bool) (v : Bool)
     (h : Agree d s t) : Agree d (xorWrite s target v) (xorWrite t target v) := by
   intro q hq
   by_cases ht : q = target
-  · simp [xorWrite, ht, h q hq]
+  · subst q
+    simp [xorWrite, h target hq]
   · simp [xorWrite, ht, h q hq]
 
 theorem shared_product (d a b target : Nat) (s t : Nat → Bool)
