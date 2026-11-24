@@ -1,0 +1,3069 @@
+{
+  "scope": "Transport between actual phase-derived spectator charts on identical logical states; intervening original instructions NOT included. Degree and nonlinear-output rank are necessary conditions for at most one affine-conjugated CCX; not full KMB proof.",
+  "tested": 180,
+  "adjacent": 36,
+  "eligible": 0,
+  "adjacentEligible": 0,
+  "results": [
+    {
+      "from": 8288,
+      "to": 8400,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        32
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8288,
+      "to": 8400,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        8,
+        7
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8288,
+      "to": 8400,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        32
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8288,
+      "to": 8400,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        8,
+        7
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8288,
+      "to": 8512,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        13
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8512,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        7,
+        6
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8512,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        13
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8512,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        7,
+        6
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        25
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        6,
+        5
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        25
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        6,
+        5
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        26
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        5,
+        4
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        26
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        5,
+        4
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        30
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        4,
+        3
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        30
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        4,
+        3
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        28
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8288,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        9,
+        8
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8512,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        13
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8400,
+      "to": 8512,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        7,
+        6
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8400,
+      "to": 8512,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        13
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8400,
+      "to": 8512,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        7,
+        6
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8400,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        25
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        6,
+        5
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        25
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        6,
+        5
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        26
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        5,
+        4
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        26
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        5,
+        4
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        30
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        4,
+        3
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        30
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        4,
+        3
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        32
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8400,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        8,
+        7
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        25
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8512,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        6,
+        5
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8512,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        25
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8512,
+      "to": 8624,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        6,
+        5
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8512,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        26
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        5,
+        4
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        26
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        5,
+        4
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        30
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        4,
+        3
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        30
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        4,
+        3
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        13
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8512,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        7,
+        6
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        26
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8624,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        5,
+        4
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8624,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        26
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8624,
+      "to": 8736,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        5,
+        4
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8624,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        30
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        4,
+        3
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        30
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        4,
+        3
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        25
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8624,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        6,
+        5
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        26
+      ],
+      "dirTo": [
+        14,
+        30
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8736,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        26
+      ],
+      "dirTo": [
+        14,
+        4,
+        3
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8736,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        5,
+        4
+      ],
+      "dirTo": [
+        14,
+        30
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8736,
+      "to": 8848,
+      "dirFrom": [
+        14,
+        5,
+        4
+      ],
+      "dirTo": [
+        14,
+        4,
+        3
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8736,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        26
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        26
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        5,
+        4
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        5,
+        4
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        26
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        26
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        5,
+        4
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        5,
+        4
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        26
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        26
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        5,
+        4
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        5,
+        4
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        26
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        26
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        5,
+        4
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8736,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        5,
+        4
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        30
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8848,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        30
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8848,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        4,
+        3
+      ],
+      "dirTo": [
+        14,
+        33
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8848,
+      "to": 8960,
+      "dirFrom": [
+        14,
+        4,
+        3
+      ],
+      "dirTo": [
+        14,
+        3,
+        2
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8848,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        30
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        30
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        4,
+        3
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        4,
+        3
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        30
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        30
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        4,
+        3
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        4,
+        3
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        30
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        30
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        4,
+        3
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8848,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        4,
+        3
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8960,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        33
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8960,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        33
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8960,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        3,
+        2
+      ],
+      "dirTo": [
+        14,
+        12
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8960,
+      "to": 9072,
+      "dirFrom": [
+        14,
+        3,
+        2
+      ],
+      "dirTo": [
+        14,
+        2,
+        1
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 8960,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        33
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8960,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        33
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8960,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        3,
+        2
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8960,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        3,
+        2
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8960,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        33
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8960,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        33
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8960,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        3,
+        2
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 8960,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        3,
+        2
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 9072,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        12
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 9072,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        12
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 9072,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        2,
+        1
+      ],
+      "dirTo": [
+        14,
+        11
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 9072,
+      "to": 9184,
+      "dirFrom": [
+        14,
+        2,
+        1
+      ],
+      "dirTo": [
+        14,
+        1,
+        0
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 9072,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        12
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 9072,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        12
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 9072,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        2,
+        1
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 9072,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        2,
+        1
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": false
+    },
+    {
+      "from": 9184,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        11
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 9184,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        11
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 9184,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        1,
+        0
+      ],
+      "dirTo": [
+        14,
+        10
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    },
+    {
+      "from": 9184,
+      "to": 9296,
+      "dirFrom": [
+        14,
+        1,
+        0
+      ],
+      "dirTo": [
+        14,
+        0,
+        31
+      ],
+      "degree": 3,
+      "nonlinearRank": 2,
+      "one_ccx_necessary_test": false,
+      "adjacent": true
+    }
+  ]
+}

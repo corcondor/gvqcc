@@ -1,0 +1,30 @@
+name: Phase-derived shared hub certificates
+on:
+  push:
+    branches: [research/invsqrt36-phase-derived-hub-20261124]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  hub:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Reproduce exact local and transport experiments
+        run: |
+          set -euo pipefail
+          node research/invsqrt36_nonlinear_lending/phase_derived_hub.cjs > /tmp/hub.json
+          diff -u research/invsqrt36_nonlinear_lending/global_remat/phase_derived_hub_receipt.json /tmp/hub.json
+          node research/invsqrt36_nonlinear_lending/phase_chart_transport.cjs > /tmp/transport.json
+          diff -u research/invsqrt36_nonlinear_lending/global_remat/phase_chart_transport_receipt.json /tmp/transport.json
+      - name: Install pinned Lean
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check conditional actual-gate equivalence and cost
+        run: |
+          cd research/invsqrt36_nonlinear_lending/lean
+          lean --version
+          lean PhaseDerivedHub.lean
