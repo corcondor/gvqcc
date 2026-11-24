@@ -61,7 +61,7 @@ theorem central_phase_linear_step_2 (h1 h2 c1 c2 b1 b2 mNew : Bool) :
     factor through a single centralized parity expression controlled on `q`. -/
 theorem shared_wire_hub_factor3 (m1 m2 m3 a1 a2 a3 q : Bool) :
     bx (bx (m1 && a1 && q) (m2 && a2 && q)) (m3 && a3 && q) =
-      (bx (bx (m1 && a1) (m2 && a2)) (m3 && a3)) && q := by
+      ((bx (bx (m1 && a1) (m2 && a2)) (m3 && a3)) && q) := by
   cases m1 <;> cases m2 <;> cases m3 <;>
     cases a1 <;> cases a2 <;> cases a3 <;> cases q <;> decide
 
