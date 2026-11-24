@@ -74,10 +74,14 @@ theorem syndrome_hub_exact_2mon_3bit (b1 b2 b3 p1 p2 : Bool) :
       bx (h && p1) (h && p2) := by
   cases b1 <;> cases b2 <;> cases b3 <;> cases p1 <;> cases p2 <;> decide
 
-/-- Exact net-op saving threshold: for `k >= 2` bits and `M` monomials sharing `S`,
+/-- Exact net-op saving threshold: for `k >= 1` bits and `M` monomials sharing `S`,
     centralization strictly reduces total ops whenever `(k - 1) * M > k + 1`. -/
-theorem syndrome_hub_strict_op_saving (k M : Nat) (h : (k - 1) * M > k + 1) :
+theorem syndrome_hub_strict_op_saving (k M : Nat) (hk : k ≥ 1) (h : (k - 1) * M > k + 1) :
     M + (k + 1) < k * M := by
+  have hmul : (k - 1) * M + M = k * M := by
+    cases k with
+    | zero => omega
+    | succ n => simp [Nat.succ_mul]
   omega
 
 /-! ## 4. Exact Measured V21+V22 Real KMB Resource Bounds -/
