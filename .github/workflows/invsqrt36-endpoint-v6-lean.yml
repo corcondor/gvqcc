@@ -1,0 +1,22 @@
+name: V6 endpoint concrete Lean
+on:
+  push:
+    branches: [research/invsqrt36-v6-endpoint-affine-20261124]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Concrete source and replacement gate-list equivalence
+        run: lean research/invsqrt36_nonlinear_lending/lean/EndpointV6.lean
+      - name: Independent exhaustive nine-wire gate-list replay
+        run: python research/invsqrt36_nonlinear_lending/verify_v6_endpoint.py

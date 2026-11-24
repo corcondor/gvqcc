@@ -1,0 +1,65 @@
+{
+  "method": "exact match of full 30-op gate list from PR38; replace with 11-op list; full BDD rerun; no double counting",
+  "lean_ci": {
+    "commit": "54de71bc6d605ae4642112a33a85bb9b5b322060",
+    "run": 45355951248,
+    "conclusion": "success"
+  },
+  "all_legal_inputs": 3133452,
+  "potential_hmr": 1168,
+  "transfers": [
+    {
+      "pr": 35,
+      "parent_sha256": "6c019efe46799071d79cc2930274a9b0ff09bd9603fcf1d2f74314fdfc04f1be",
+      "interval": [
+        35260,
+        35290
+      ],
+      "source_coverage": 54296,
+      "total_source": 60766,
+      "static_paid": [
+        1895,
+        1893
+      ],
+      "expected_paid": [
+        1712.3125,
+        1710.3125
+      ],
+      "native_ops": [
+        62929,
+        62910
+      ],
+      "checks": 62900,
+      "candidate_sha256": "5c3ab946eed78f2f6ab883e819e99295c56190f0dfe2088677332d32f1a1de36",
+      "bdd": "PASS"
+    },
+    {
+      "pr": 37,
+      "parent_sha256": "2a59cb3511da8d6ea1f6ae6b87e916eee10a1f5652ba3ddd354afc77b61406b2",
+      "interval": [
+        35192,
+        35222
+      ],
+      "source_coverage": 53749,
+      "total_source": 60766,
+      "static_paid": [
+        1893,
+        1891
+      ],
+      "expected_paid": [
+        1710.8125,
+        1708.8125
+      ],
+      "native_ops": [
+        62875,
+        62856
+      ],
+      "checks": 62846,
+      "candidate_sha256": "8018a3d156ce68e83e56bc88f62bb3cb693bcb1a7f92bf0bf14df87cded31bd2",
+      "bdd": "PASS"
+    }
+  ],
+  "full_36q": false,
+  "official_verifier": false,
+  "official_score_updated": false
+}
