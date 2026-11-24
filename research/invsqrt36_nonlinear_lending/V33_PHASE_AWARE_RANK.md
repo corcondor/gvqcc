@@ -1,0 +1,22 @@
+# V33 phase-aware rank and measured-atom reuse
+Research only / NOT SUBMISSION. Pinned V27 source SHA bd91d88909de18643262178477ca813c67dbcb2edc3325a99e66c964d6758258. PR81 V32 parent.
+
+## Reproducible results
+- Broad factor-linear-solve search completed 33/44 bridges before timeout: 423 supports, 62 multi-rank eligible, 16806 factor solves, 581920 projected product columns, 228 solutions, 264 transitions, 30 complete sampled repair paths. 6 proposals/4 BDD PASS (1 V32 duplicate). New E reductions 30664 3→2, 35554 5→4, 38580 3→2. 15255 phase and 29566 data failed.
+- Direct temporal phase-atom transfer at 15255 (407520 observation probes over 3 windows): local paid CCZ8,23,25 replaced by guarded CZ at cut42 after HMR40 and existing CCX(10,21,6)41. Static 6→3, E4.5→3, commands46 unchanged, exact BDD PASS. New individual gains sum4.5 E, not whole savings.
+- Counterexample-guided replay: 6 supports in 5 windows, exact quotient ranks (1,3)x1, (2,3)x3, (1,2)x2; 12 rounds/54 sampled paths, 36 exact data rejects, 18 data-exact paths fail phase, 9 witness rounds. No same-HMR rank>=2 pass. Rank4/5 screen: 489 supports (5–8 deletions), 44 cost-eligible, 16 tried, 110988 projected columns, no full path. Bounded negative results, not infeasibility proofs.
+- 30265 adaptive measurement repair: physical q33=h=q6*q14 exact at entry, constant-inclusive affine rank37. Original HMR event preserved; pay m*h via free conditional CZ, compute k=q21*q24 on freed q33, pay original phases, CX k into q28, HMR(k) with independent fresh record1018, pay n*k, clear scratch, reconstruct h. Original 17 commands/3 paid→17/2; V32 compact donor 26/2→17/2. Local data/phase/rotation/classical/guard exact PASS, 933 prior+2 local independent HMR events. No postselection. Extra HMR variant is not a no-extra-HMR rank2 gain.
+
+| Hybrid | E | static | commands | coverage | groups | full cuts | HMR |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| V32 reselect |1447.3125|1599|54095|45991|299|5264|1276|
+| V33 fixed |1445.3125|1597|54118|45991|299|5264|1276|
+| V33 width |1447.3125|1599|54244|46089|297|5167|1276|
+| V33 adaptive |1446.3125|1598|54120|46004|298|5252|1277|
+All three V33 serialized KMBs independent full BDD PASS, 3,133,452 legal inputs and original plus independent extra history, scratch reset and normalized classical equality. SHA256 fixed abae2be3ad7d2e8fb02eca164bd059a92f1160e7ddb78cbdd74a171a72f0fd54, width b1c3b0b65173dc992a1521896e792357e54f01b0719f9941b16ae0b94b0e25be, adaptive 3882f77be9aceb305fdf8f8088906f740646d2d7125e910abb07b692f15b02df. Full peak37Q; no official score. Frozen hypothetical Q36 fixed33.2144757610, width33.2013502877, adaptive33.2079104304. No main or submission changes.
+
+## Mathematics and literature
+For fixed a, b↦[ab] is linear into additive quotient F/W. Nullspace variants can yield distinct phase representatives even if quotient data is equal. For fixed live guard, degree≤2 phase span invariant under unconditional invertible affine changes; skip redundant temporal cuts. Use independent scratch measurement to recycle a clean slot; requires retained controls and no outstanding coherent use. General 36Q completeness not claimed. Lean 4.35.0 CI PASS for both files, run https://github.com/corcondor/gvqcc/actions/runs/45497140838 at f32d4a8afa79e8778f861c1df1910d1acd5f3e93.
+
+Paper-use audit: PhasePoly (Chen et al., https://arxiv.org/html/2506.20624v1 §§3.1,3.3), versioned cross-block reuse and joint basis/phase objective adapted to guarded product matching; Lee/Riener/De Micheli https://people.eecs.berkeley.edu/~alanmi/publications/2021/tcad21_sim.pdf §VII and Riener et al. https://si2.epfl.ch/~demichel/publications/archive/2019/Riener2020_Chapter_ExactSynthesisOfESOPForms.pdf Algorithm4, counterexample-guided refinement adapted to BDD; eSLIM https://doi.org/10.4230/LIPIcs.SAT.2024.23 sections4–5, multi-output window relation; MBUndo https://arxiv.org/abs/2611.02345, measurement phase correction adapted to a fresh event and exact ABI; Kissinger/van de Wetering https://doi.org/10.1103/PhysRevA.102.022406, related nonlocal phase transport; Yang/Al-Bayaty/Perkowski https://doi.org/10.1103/6vm9-21gr, 2026 AND-XOR decoder structure, abstract only, not implemented. No original SAT/ZX/Rz compiler port claimed.
+Reproduction: companion V33 ZIP (248 files) includes V32 inputs/engine and v33_joint_rank.py, v33_phase_atom.py, v33_cegis.py, v33_high_rank.py, v33_extra_hmr.py, v33_integrate.py, v33_hmr_compiler.py, v33_integrate_hmr.py and receipts. Historical ANGLE archives remain incomplete.
