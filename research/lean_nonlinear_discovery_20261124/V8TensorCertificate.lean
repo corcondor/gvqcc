@@ -246,6 +246,7 @@ def naive128 : List Term := t0 :: t2 :: rest
 def witnessInput : CutInput := fun i => i.val == 3
 def witnessOutput : OutputBit := ⟨2, by decide⟩
 
+set_option maxRecDepth 8192 in
 private theorem real_term_is_live :
     t1.eval witnessInput witnessOutput = true := by decide
 
