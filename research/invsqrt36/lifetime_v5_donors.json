@@ -164,10 +164,39 @@
     },
     {
       "wire": 29,
-      "writes": [],
+      "writes": [
+        50358,
+        50363,
+        50370,
+        50380,
+        50395,
+        50414
+      ],
       "old_paid": 6,
       "new_paid": 5,
-      "entry": [],
+      "entry": [
+        [
+          2
+        ],
+        [
+          6
+        ],
+        [
+          10
+        ],
+        [
+          11
+        ],
+        [
+          18
+        ],
+        [
+          20
+        ],
+        [
+          22
+        ]
+      ],
       "exit": [
         [
           2
@@ -279,8 +308,7 @@
           27,
           34
         ]
-      ],
-      "note": "See full downloadable receipt for exact second donor writes and entry; not replayable from this placeholder."
+      ]
     }
   ]
 }
