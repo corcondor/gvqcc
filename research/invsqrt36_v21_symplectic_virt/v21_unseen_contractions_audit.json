@@ -1,0 +1,127 @@
+{
+  "source_ops": 60767,
+  "top_gate_counts": {
+    "CX": 29974,
+    "CZ": 11881,
+    "Z": 5166,
+    "SWAP": 3119,
+    "X": 2404,
+    "PUSH_CONDITION": 2271,
+    "POP_CONDITION": 2271,
+    "CCX": 1470,
+    "HMR": 1278,
+    "BIT_STORE0": 443,
+    "BIT_INVERT": 245,
+    "NEG": 106,
+    "Z_POW": 55,
+    "CSWAP": 42,
+    "CCZ": 41
+  },
+  "virtual_swap_elimination": {
+    "swaps_removed": 3119,
+    "immediate_adjacent_clifford_cancellations": 1422,
+    "ops_after_swap_and_cancel": 56226,
+    "net_instruction_reduction": 4541
+  },
+  "centralized_phase_syndrome_merging": {
+    "cond_Z_total": 5166,
+    "cond_Z_unique_epoch": 1508,
+    "cond_Z_eliminated": 3658,
+    "cond_CZ_total": 11879,
+    "cond_CZ_unique_epoch": 9922,
+    "cond_CZ_eliminated": 1957,
+    "cond_CCZ_total": 41,
+    "cond_CCZ_unique_epoch": 41,
+    "cond_CCZ_eliminated": 0,
+    "total_phase_ops_eliminated": 5615
+  },
+  "ccx_bilinear_contractions": {
+    "fanout_same_ctrl_pair_groups": 1,
+    "fanout_ccx_saving": 1,
+    "fanout_examples": [
+      [
+        [
+          [
+            0,
+            334
+          ],
+          [
+            1,
+            289
+          ]
+        ],
+        [
+          [
+            14033,
+            26
+          ],
+          [
+            14123,
+            26
+          ]
+        ]
+      ]
+    ],
+    "distributive_same_ctrl_tgt_groups": 0,
+    "distributive_ccx_saving_upper": 0,
+    "distributive_examples": []
+  },
+  "score_projections": [
+    {
+      "scenario": "Baseline 37Q (public)",
+      "qubits": 37,
+      "expected_paid": 1406.3125,
+      "invsqrt_cost_ratio_vs_base": 1.0,
+      "projected_geom_score": 33.17023,
+      "delta_score": 0.0
+    },
+    {
+      "scenario": "PR #68 V18 (37Q diagnostic)",
+      "qubits": 37,
+      "expected_paid": 1411.3125,
+      "invsqrt_cost_ratio_vs_base": 1.003555,
+      "projected_geom_score": 33.13101,
+      "delta_score": -0.03922
+    },
+    {
+      "scenario": "36Q Break-even (PR #70 budget)",
+      "qubits": 36,
+      "expected_paid": 1447.0539,
+      "invsqrt_cost_ratio_vs_base": 1.0,
+      "projected_geom_score": 33.17023,
+      "delta_score": 0.0
+    },
+    {
+      "scenario": "36Q @ PR #68 cost (1411.3125)",
+      "qubits": 36,
+      "expected_paid": 1411.3125,
+      "invsqrt_cost_ratio_vs_base": 0.975301,
+      "projected_geom_score": 33.44791,
+      "delta_score": 0.27768
+    },
+    {
+      "scenario": "36Q @ baseline cost (1406.3125)",
+      "qubits": 36,
+      "expected_paid": 1406.3125,
+      "invsqrt_cost_ratio_vs_base": 0.971845,
+      "projected_geom_score": 33.4875,
+      "delta_score": 0.31727
+    },
+    {
+      "scenario": "36Q + V20/V21 reuse (-30 paid -> 1376.3)",
+      "qubits": 36,
+      "expected_paid": 1376.3125,
+      "invsqrt_cost_ratio_vs_base": 0.951113,
+      "projected_geom_score": 33.72907,
+      "delta_score": 0.55884
+    },
+    {
+      "scenario": "36Q + V20/V21 reuse (-60 paid -> 1346.3)",
+      "qubits": 36,
+      "expected_paid": 1346.3125,
+      "invsqrt_cost_ratio_vs_base": 0.930382,
+      "projected_geom_score": 33.97776,
+      "delta_score": 0.80753
+    }
+  ]
+}

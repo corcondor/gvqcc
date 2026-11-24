@@ -1,0 +1,18 @@
+{
+  "src_kmb": "c:\\Users\\81808\\.openclaw\\gvqcc_v2832\\v3317\\invsqrt.kmb",
+  "out_kmb": "c:\\Users\\81808\\.openclaw\\gvqcc_v2832\\invsqrt_v21_virt_swap_clifford.kmb",
+  "out_sha256": "1fac17aaeb0d5abb1a81a8b565a067dccd3634f4025bd62308582e9621fa3d79",
+  "in_stats": "<km.OperationStatistics num_instructions=60766 num_toffoli_like=1553 num_t_like=10>",
+  "out_stats": "<km.OperationStatistics num_instructions=55988 num_toffoli_like=1553 num_t_like=10>",
+  "in_ops": 60767,
+  "out_ops": 55989,
+  "ops_removed": 4778,
+  "ops_reduction_pct": 7.863,
+  "swaps_virtualized": 2767,
+  "end_restore_swaps": 33,
+  "clifford_ops_cancelled": 2044,
+  "q36_lifetimes_before": 117,
+  "q36_lifetimes_after": 90,
+  "q36_touches_before": 3278,
+  "q36_touches_after": 1952
+}
