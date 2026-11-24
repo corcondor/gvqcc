@@ -8,7 +8,9 @@ def parity : List Bool → Bool
 theorem parity_append (xs ys : List Bool) :
     parity (xs ++ ys) = Bool.xor (parity xs) (parity ys) := by
   induction xs with
-  | nil => cases parity ys <;> rfl
+  | nil =>
+    change parity ys = Bool.xor false (parity ys)
+    cases parity ys <;> rfl
   | cons a xs ih =>
     change Bool.xor a (parity (xs ++ ys)) =
       Bool.xor (Bool.xor a (parity xs)) (parity ys)
@@ -31,7 +33,7 @@ theorem nonlinear_product_delta (a b da db : Bool) :
   cases a <;> cases b <;> cases da <;> cases db <;> decide
 
 theorem hmr_virtual_product (m a b : Bool) :
-    Bool.xor (m && false) (m && (a && b)) = m && (a && b) := by
+    Bool.xor (m && false) (m && (a && b)) = (m && (a && b)) := by
   cases m <;> cases a <;> cases b <;> decide
 
 theorem guarded_transport (m a b u : Bool) :
@@ -60,7 +62,35 @@ def actualTriples : List (Nat × Nat × Nat × Nat) :=
 theorem actual_triple_count : actualTriples.length * 3 = 15 := by decide
 theorem actual_command_counts : 58208 - 1422 = 56786 ∧
     53155 - 95 = 53060 := by decide
-theorem actual_expected_costs : 22501 = 22501 ∧ 22725 = 22725 := by decide
 -- Strict frozen break-even bound E<1452.0539 at Q36; sixteenth-grid max 23232.
 theorem grid_budgets : 23232 - 22501 = 731 ∧ 23232 - 22725 = 507 := by decide
+-- Actual V26 phase-parent [34345,34416), target q8 initially zero.
+-- Projected source target writes: CCX(5,20,8), CX(5,8), CX(22,8),
+-- Z(8), CX(5,8), CX(22,8), CX(5,8), CX(22,8).
+-- Controls q5,q20,q22 unchanged, no other data reads of q8 in this span.
+def original71 (a b c : Bool) : Bool × Bool :=
+  let t0 := a && b
+  let t1 := Bool.xor (Bool.xor t0 a) c
+  let t2 := Bool.xor (Bool.xor t1 a) c
+  let t3 := Bool.xor (Bool.xor t2 a) c
+  (t3,t1)
+
+def deferred71 (a b c : Bool) : Bool × Bool :=
+  let phase := Bool.xor (Bool.xor a c) (a && b)
+  let reconstructed := Bool.xor (Bool.xor a c) (a && b)
+  (reconstructed, phase)
+
+theorem actual_deferred71 (a b c : Bool) :
+    original71 a b c = deferred71 a b c := by
+  cases a <;> cases b <;> cases c <;> decide
+
+-- Concrete 2-op native clean-target producer + guarded Z, [27601,27603).
+theorem actual_deferred_guard (a b m : Bool) :
+    ((a && b), (m && (a && b))) =
+    ((a && b), ((m && a) && b)) := by
+  cases a <;> cases b <;> cases m <;> decide
+
+theorem deferred_resources :
+    53060 - 11 = 53049 ∧ 6388 - 623 = 5765 ∧
+    56786 - 52 = 56734 ∧ 8189 - 670 = 7519 := by decide
 end GVQCC.V26
