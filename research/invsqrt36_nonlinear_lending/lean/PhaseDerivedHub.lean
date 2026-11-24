@@ -29,7 +29,7 @@ private def xorWire (s : BitVec 37) (i : Nat) (v : BitVec 37) : BitVec 37 :=
 private def zeroWire (s : BitVec 37) (i : Nat) : BitVec 37 :=
   s &&& ~~~((1 : BitVec 37) <<< i)
 private def setEvent (s : BitVec 8) (j : Nat) (v : Bool) : BitVec 8 :=
-  (s &&& ~~~((1 : BitVec 8) <<< j)) ||| ((if v then 1 else 0) <<< j)
+  if v then s ||| ((1 : BitVec 8) <<< j) else s &&& ~~~((1 : BitVec 8) <<< j)
 
 private def tick (m0 m1 : Bool) (s : State) : Gate → State
   | .cx a t => { s with wires := xorWire s.wires t (bit s.wires a) }
