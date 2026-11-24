@@ -1,0 +1,25 @@
+name: V17 fixed donor refutation
+on:
+  pull_request:
+    paths:
+      - 'research/lean_coefficient_program_20261124/V17PhaseRefutation.lean'
+      - '.github/workflows/gvqcc-v17-refutation.yml'
+  push:
+    branches: [research/lean-coefficient-program-20261124]
+    paths:
+      - 'research/lean_coefficient_program_20261124/V17PhaseRefutation.lean'
+      - '.github/workflows/gvqcc-v17-refutation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean research/lean_coefficient_program_20261124/V17PhaseRefutation.lean
