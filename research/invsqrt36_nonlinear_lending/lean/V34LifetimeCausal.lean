@@ -81,7 +81,7 @@ theorem carry_not_injective :
     ¬ Function.Injective (fun (p : Bool × Bool × Bool) =>
       carryProjection p.1 p.2.1 p.2.2) := by
   intro h
-  have e := h (a := (false,true,false)) (b := (true,true,true)) carry_collision
+  have e := h (a₁ := (false,true,false)) (a₂ := (true,true,true)) carry_collision
   cases e
 
 -- The same logical carry can nevertheless be embedded in a reversible
