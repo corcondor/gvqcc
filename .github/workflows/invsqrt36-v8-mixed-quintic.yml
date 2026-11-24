@@ -7,19 +7,16 @@ on:
       - 'research/invsqrt36_nonlinear_lending/lean/MixedQuinticV8.lean'
       - '.github/workflows/invsqrt36-v8-mixed-quintic.yml'
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
   lean:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: leanprover/lean-action@v1
-        with:
-          auto-config: false
-          use-github-cache: false
-          build: false
-          test: false
-          lint: false
-      - name: Pinned Lean 4.35.0
+      - name: Install pinned Lean
         run: |
-          elan toolchain install leanprover/lean4:v4.35.0
-          elan run leanprover/lean4:v4.35.0 lean research/invsqrt36_nonlinear_lending/lean/MixedQuinticV8.lean
+          curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Verify V8 local theorems
+        run: lean research/invsqrt36_nonlinear_lending/lean/MixedQuinticV8.lean
