@@ -1,0 +1,20 @@
+# V33 — affine carry orbit / sparse rank-loss projection
+Research only; NOT SUBMISSION. No main merge or Kaggle mutation.
+
+## Verified integrated circuit
+PR81 V32 reselected SHA 006debfefa0a566a9de3a61581b3b34296750cf58c14fdecb7bb1612efc958bd -> V33 SHA 8c3960d02d7c32dadbf307590ed7b8281bdd0aaabfa36dd86d95cce57bbabcb0.
+54,095 -> 54,127 native commands; 1599 -> 1588 static paid; expected 23157/16 -> 22981/16 (=1436.3125), saving 11. 1276 -> 1286 independent HMRs. All changed cuts q36 zero and no use of q36, 5264 full-occupancy cuts unchanged, full peak37Q. Exact local BDD and separate serialized aligned replay over 3,133,452 legal inputs, 54,095 comparisons, all data/phase/classical/guard/rotation equivalence, PASS. Ten rank-loss resets (initial dense 65,530 commands, sparse 54,127) plus single affine update at native36276: q30*q28=q24. Scratch classical record 1018 unused in source and reset after each measurement. No fresh quantum wire. 8 zero-residue resets, 2 nonzero residue resets (4 and 2 linear terms). Existing affine_reset method adapted to the *new chart-generated rank drops*, not a novel general MBU theorem.
+
+## Exact 80-pair audit (different parent)
+PR68 SHA bf041c7baea460594002045116a028069dd28e56fc988987bc65caf36c1d6ad2. All legal x / 1280 HMR histories: 80 source control pairs populate all four points. 77/80 remote controls are exactly (u,1 xor u xor v); 3 remaining have a shared nonconstant affine factor and differ by a term in its annihilator. 7550->21447 shares u=a; 7420->21980 and 7428->22014 share b=1 xor u xor v. No direct removal from the frozen 80. All 20 chains have full edge alphabet; nine length-six have 64/64 patterns and 22/22 degree<=2 monomials independent. 163 exact parity-span queries negative; 1528 temporal cuts, 275277 sampled tests negative (restricted, not global bound). New reachable care-factor search: 80 starts, 35339 transport steps, 255 changed-control sites, 36720 literal-mask probes, 12 rotation barriers, zero proposals. Beam=6, horizon512, single literal times affine factor; negative only for restricted screen.
+
+## Revisit failed searches / lower-cost parent
+V31 zero-budget SHA c7c179797784f51654ff89172b1c0ad332327a31bf353ce4c91f7528a77847d5 remains E=1406.3125. 5219 no-HMR windows, 4 sampled data fits all phase fail. 10976 projection windows including 6857 HMR-bearing, 59 eligible, 12547749 wedge probes, 18 sampled data fits all phase fail. Nine distinct data-only candidates (six intervals) exact BDD data equality PASS but phase FAIL. 1275 unconditional CCX checked by sparse rule; zero candidates. Wide branch 1314 CCX, 11 accepted. Thus no improvement of absolute minimum E, no 80-consumer savings, no complete36Q. Frozen PR43 conditional score: 37Q 32.97129, hypothetical36Q 33.27380 vs parent36Q 33.20135. Not official.
+
+## Paper use
+- Chen, Detecting Affine Equivalence of Boolean Functions and Circuit Transformation, doi:10.1093/comjnl/bxac072 — exact two-control affine orbit classification; direct finite truth-table enumeration, not Chen's general algorithm.
+- Jeon/Huang/Cai, Measurement-Based Uncomputation from an Error Correction Perspective, arXiv:2609.31605 — affine support rank, syndrome phase; apply deterministic all-outcome correction, no postselection; cited in V32 already.
+- Yang/Raun/Tao/Gu, Quasar, PLDI 2026 doi:10.1145/3808254 — complementary representations motivate separate rank, data delta and phase candidates; no e-graph engine imported, no bounded-optimality claim.
+- SAT-Guided Conversion of Boolean Functions into Reversible Quantum Logic, doi:10.3390/quantum8040111 — partial reversible mapping and negative-control search; adapted care-set factor enumeration rather than SAT solver.
+- Amy/Lunderville doi:10.1145/3704873, existing relational phase folding; guard-aware exact comparison.
+Lean source proves generic Boolean laws and conditional native cut identity, not BDD premise extraction or whole KMB semantics. Companion ZIP includes scripts, source parents, receipts and deterministic regeneration. Historical ANGLE archive audit incomplete.
