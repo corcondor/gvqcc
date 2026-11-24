@@ -1,0 +1,22 @@
+# V11 dual phase bridge — research, not submission
+
+Parent PR54 final cost c6b09a2cbe854cb32301114dd02af90df6916d660955997499c4b5fd00b8ec12, wide ac47febddd7b7f1edb1eab5b9dff30d2e415f4c77b00997d2c6e33a4426a5bb4. Match PR55 gate lists by byte sequence and source chart. One accepted donor each, four unmatched total. Exact full paired BDD pass 41792/42746 checks (all 3133452 legal inputs; 1173/1186 independent HMR outcomes). Transfer: cost 41817 ops,1845 static,1675.3125 expected; wide 42772 ops,1877 static,1696.3125 expected.
+
+Dual transport: forward direction v and inverse affine control covectors A,B. P=A B is unchanged during eligible intermediate updates; the state difference is vP, and reset of component j introduces m_j v_j P in the phase ledger. Screen cost 1522 CCX donors/23715 instruction visits, wide 1534/25934. One wide actual splice [22196,22202), CCX->conditional CZ, 42774 ops, 1876 static,1695.3125 expected. Identical 42766 instructions plus one exact splice checked by full compositional replay; native SHA c87c742c21e6b770bf81fc80456669dd734700cb1ccd8aa58da0f4296d327b57. No cost-track hit.
+
+Joint product deletion in windows up to four HMR epochs: 1758/1766 windows, 71869/75635 filtered subset tests, 39/57 sample hits, 7/10 distinct groups (14/20 bounded candidates). Exact-first attempt timed out or was killed; no complete result from this screen. Two candidates per track reached exact state equality but not the capped free-phase fit. This led to grouping conditional diagonal corrections by guard. Full scan of identical compute/uncompute pairs enclosing diagonal gates found three eligible sandwiches per track. Remove both CCX and synthesize their combined phase corrections as parity-controlled CCZ. Actual full compositional BDD replay PASS.
+- Cost final 41827 ops /1843 static /1673.9375 expected, 41764 identical ops + 3 exact splices, depth proxy 24158, SHA 21018cc035bf335795a3cbde8dfa989d737259d54eada3d98d5d8b50b74fc9c8.
+- Wide final 42784 ops /1874 static /1693.9375 expected, 42721 identical ops + 3 exact splices, depth proxy 24214, SHA 5fda7d6d3d24ab657b27f83a1ecd2d81ffd92c402d877ccfff74784b3d9e81ec.
+- Source coverage unchanged 55567 and 55829 of 60766; full circuit still 37Q. No official verifier or score gain. Do not add to PR57 independently.
+
+Backward observable-space quotient: all 94 cost/91 wide residual gaps. Formal row rank screen yielded zero universal strict candidates; sampled quadratic quotient gave two candidates on each track, then exact all-legal-state fit rejected both (rare counterexamples). No new certified width. Normalizing measurement outcomes was rejected for differing classical memory. Zero-syndrome HMR version passed sampled replay but failed exact state equality. Do not repeat identical architecture as a fresh experiment.
+
+Lean file includes five unique actual gate-list identities (7 instances including duplicate batch lists) and resources, arbitrary guards/measurement. CI result to be checked. For the unchanged HMR ID, classical record equivalence follows from using the same arbitrary outcome; full BDD separately compares classical memory. No whole quantum-channel theorem.
+
+Additional reading (related context, not claims of worldwide novelty or reproducing external methods):
+- Improved quantum computation using operator backpropagation (2026), https://www.nature.com/articles/s41534-026-01196-0 (dual observable transport; the present exact Boolean transport is different from hybrid estimation).
+- Maslov, Advantages of using relative-phase Toffoli gates (2016), https://doi.org/10.1103/PhysRevA.93.022311 (compute/uncompute phase relations).
+- Leveraging Different Boolean Function Decompositions to Reduce T-Count in LUT-Based Quantum Circuit Synthesis (2025), https://doi.org/10.1587/transinf.2024EDP7194 (decomposition and phase cancellation).
+- Bartkiewicz and Tulewicz, Context-Verified, Error-Budget-Aware Decomposition Selection for Toffoli Networks (2026), https://arxiv.org/abs/2606.31791 (context-specific certification; no approximation accepted here).
+
+Reproduction archive contains exact parents, new gates, sources, receipts and logs. Incomplete search logs are explicitly marked. Main unchanged.
