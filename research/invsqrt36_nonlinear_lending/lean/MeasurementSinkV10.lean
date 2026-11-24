@@ -90,12 +90,12 @@ def old174 (x0 x1 x3 x5 x7 x9 x11 x13 x15 x17 x19 x20 x21 x22 x23 x24 x25 x26 x2
   let q49 := (Bool.xor q48 (active && x25))
   let q50 := (Bool.xor q49 (active && x24))
   let q51 := (Bool.xor q50 (active && q8))
-  let p52 := (Bool.xor phase ((active && 78869) && q0))
+  let p52 := (Bool.xor phase ((active && m) && q0))
   let q53 := (q0 && (!active))
   let c54 := (if active then m else c78869)
   [q3, q40, q41, x5, q43, x9, x11, q44, q38, x17, x19, x20, q51, q53, q8, x24, x25, x26, x27, x28, x29, q7, q11, q4, q23, c54, p52]
 def new174 (x0 x1 x3 x5 x7 x9 x11 x13 x15 x17 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x32 x33 x34 x35 c78869 active phase m : Bool) : List Bool :=
-  let p0 := (Bool.xor phase ((active && 78869) && x22))
+  let p0 := (Bool.xor phase ((active && m) && x22))
   let q1 := (x22 && (!active))
   let c2 := (if active then m else c78869)
   let p3 := (Bool.xor p0 (((active && c2) && x21) && x0))
@@ -155,8 +155,7 @@ def new174 (x0 x1 x3 x5 x7 x9 x11 x13 x15 x17 x19 x20 x21 x22 x23 x24 x25 x26 x2
 set_option maxHeartbeats 6000000 in
 theorem actual_174_227 (x0 x1 x3 x5 x7 x9 x11 x13 x15 x17 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x32 x33 x34 x35 c78869 active phase m : Bool) :
     old174 x0 x1 x3 x5 x7 x9 x11 x13 x15 x17 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x32 x33 x34 x35 c78869 active phase m = new174 x0 x1 x3 x5 x7 x9 x11 x13 x15 x17 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x32 x33 x34 x35 c78869 active phase m := by
-  simp only [old174, new174]
-  bv_decide
+  simp [old174, new174] <;> bv_decide
 
 -- V9 native [6142,6159), HMR 531, target 33.
 def old6142 (x0 x8 x15 x23 x33 x34 c530 c531 active phase m : Bool) : List Bool :=
@@ -175,12 +174,12 @@ def old6142 (x0 x8 x15 x23 x33 x34 c530 c531 active phase m : Bool) : List Bool 
   let q12 := (Bool.xor q11 (active && q7))
   let q13 := (Bool.xor q6 active)
   let q14 := (Bool.xor q13 (active && q7))
-  let p15 := (Bool.xor p10 ((active && 531) && q4))
+  let p15 := (Bool.xor p10 ((active && m) && q4))
   let q16 := (q4 && (!active))
   let c17 := (if active then m else c531)
   [q14, x8, x15, q12, q16, q7, c530, c17, p15]
 def new6142 (x0 x8 x15 x23 x33 x34 c530 c531 active phase m : Bool) : List Bool :=
-  let p0 := (Bool.xor phase ((active && 531) && x33))
+  let p0 := (Bool.xor phase ((active && m) && x33))
   let q1 := (x33 && (!active))
   let c2 := (if active then m else c531)
   let p3 := (Bool.xor p0 (((active && c2) && x0) && x8))
@@ -203,8 +202,7 @@ def new6142 (x0 x8 x15 x23 x33 x34 c530 c531 active phase m : Bool) : List Bool 
 set_option maxHeartbeats 6000000 in
 theorem actual_6142_6159 (x0 x8 x15 x23 x33 x34 c530 c531 active phase m : Bool) :
     old6142 x0 x8 x15 x23 x33 x34 c530 c531 active phase m = new6142 x0 x8 x15 x23 x33 x34 c530 c531 active phase m := by
-  simp only [old6142, new6142]
-  bv_decide
+  simp [old6142, new6142] <;> bv_decide
 
 -- V9 native [6177,6200), HMR 539, target 33.
 def old6177 (x4 x5 x7 x10 x11 x12 x14 x16 x17 x23 x24 x32 x33 x35 c539 active phase m : Bool) : List Bool :=
@@ -230,12 +228,12 @@ def old6177 (x4 x5 x7 x10 x11 x12 x14 x16 x17 x23 x24 x32 x33 x35 c539 active ph
   let q19 := (Bool.xor q18 (active && x7))
   let q20 := (Bool.xor x23 active)
   let q21 := (Bool.xor q20 (active && x7))
-  let p22 := (Bool.xor phase ((active && 539) && q0))
+  let p22 := (Bool.xor phase ((active && m) && q0))
   let q23 := (q0 && (!active))
   let c24 := (if active then m else c539)
   [q15, q11, x7, q3, q9, q7, q19, q5, x17, q21, q1, q17, q23, q13, c24, p22]
 def new6177 (x4 x5 x7 x10 x11 x12 x14 x16 x17 x23 x24 x32 x33 x35 c539 active phase m : Bool) : List Bool :=
-  let p0 := (Bool.xor phase ((active && 539) && x33))
+  let p0 := (Bool.xor phase ((active && m) && x33))
   let q1 := (x33 && (!active))
   let c2 := (if active then m else c539)
   let p3 := (Bool.xor p0 (((active && c2) && x10) && x24))
@@ -265,8 +263,7 @@ def new6177 (x4 x5 x7 x10 x11 x12 x14 x16 x17 x23 x24 x32 x33 x35 c539 active ph
 set_option maxHeartbeats 6000000 in
 theorem actual_6177_6200 (x4 x5 x7 x10 x11 x12 x14 x16 x17 x23 x24 x32 x33 x35 c539 active phase m : Bool) :
     old6177 x4 x5 x7 x10 x11 x12 x14 x16 x17 x23 x24 x32 x33 x35 c539 active phase m = new6177 x4 x5 x7 x10 x11 x12 x14 x16 x17 x23 x24 x32 x33 x35 c539 active phase m := by
-  simp only [old6177, new6177]
-  bv_decide
+  simp [old6177, new6177] <;> bv_decide
 
 -- V9 native [20449,20460), HMR 795, target 2.
 def old20449 (x2 x8 x10 x14 x27 x28 x33 c795 active phase m : Bool) : List Bool :=
@@ -280,12 +277,12 @@ def old20449 (x2 x8 x10 x14 x27 x28 x33 c795 active phase m : Bool) : List Bool 
   let q7 := (Bool.xor q6 (active && q5))
   let q8 := (Bool.xor q7 (active && q2))
   let q9 := (Bool.xor q2 (active && x28))
-  let p10 := (Bool.xor phase ((active && 795) && q8))
+  let p10 := (Bool.xor phase ((active && m) && q8))
   let q11 := (q8 && (!active))
   let c12 := (if active then m else c795)
   [q11, q5, q4, q9, x27, x28, x33, c12, p10]
 def new20449 (x2 x8 x10 x14 x27 x28 x33 c795 active phase m : Bool) : List Bool :=
-  let p0 := (Bool.xor phase ((active && 795) && x2))
+  let p0 := (Bool.xor phase ((active && m) && x2))
   let q1 := (x2 && (!active))
   let c2 := (if active then m else c795)
   let p3 := (Bool.xor p0 (((active && c2) && x10) && x8))
@@ -303,8 +300,7 @@ def new20449 (x2 x8 x10 x14 x27 x28 x33 c795 active phase m : Bool) : List Bool 
 set_option maxHeartbeats 6000000 in
 theorem actual_20449_20460 (x2 x8 x10 x14 x27 x28 x33 c795 active phase m : Bool) :
     old20449 x2 x8 x10 x14 x27 x28 x33 c795 active phase m = new20449 x2 x8 x10 x14 x27 x28 x33 c795 active phase m := by
-  simp only [old20449, new20449]
-  bv_decide
+  simp [old20449, new20449] <;> bv_decide
 
 -- V9 native [22476,22553), HMR 78893, target 7.
 def old22476 (x0 x3 x4 x5 x6 x7 x11 x12 x13 x15 x17 x19 x23 x25 x30 x33 x34 c257 c258 c259 c419 c9801 c78893 active phase m : Bool) : List Bool :=
@@ -380,12 +376,12 @@ def old22476 (x0 x3 x4 x5 x6 x7 x11 x12 x13 x15 x17 x19 x23 x25 x30 x33 x34 c257
   let q69 := (Bool.xor q65 (active && q66))
   let q70 := (Bool.xor q68 (active && q9))
   let q71 := (Bool.xor q29 (active && q70))
-  let p72 := (Bool.xor p63 ((active && 78893) && q0))
+  let p72 := (Bool.xor p63 ((active && m) && q0))
   let q73 := (q0 && (!active))
   let c74 := (if active then m else c78893)
   [q53, q3, q32, q36, q9, q73, q20, q66, q69, q52, q11, q7, x23, q70, q31, q71, q13, c257, c258, c259, c419, c19, c74, p72]
 def new22476 (x0 x3 x4 x5 x6 x7 x11 x12 x13 x15 x17 x19 x23 x25 x30 x33 x34 c257 c258 c259 c419 c9801 c78893 active phase m : Bool) : List Bool :=
-  let p0 := (Bool.xor phase ((active && 78893) && x7))
+  let p0 := (Bool.xor phase ((active && m) && x7))
   let q1 := (x7 && (!active))
   let c2 := (if active then m else c78893)
   let p3 := (Bool.xor p0 (((active && c2) && x5) && x23))
@@ -465,7 +461,6 @@ def new22476 (x0 x3 x4 x5 x6 x7 x11 x12 x13 x15 x17 x19 x23 x25 x30 x33 x34 c257
 set_option maxHeartbeats 6000000 in
 theorem actual_22476_22553 (x0 x3 x4 x5 x6 x7 x11 x12 x13 x15 x17 x19 x23 x25 x30 x33 x34 c257 c258 c259 c419 c9801 c78893 active phase m : Bool) :
     old22476 x0 x3 x4 x5 x6 x7 x11 x12 x13 x15 x17 x19 x23 x25 x30 x33 x34 c257 c258 c259 c419 c9801 c78893 active phase m = new22476 x0 x3 x4 x5 x6 x7 x11 x12 x13 x15 x17 x19 x23 x25 x30 x33 x34 c257 c258 c259 c419 c9801 c78893 active phase m := by
-  simp only [old22476, new22476]
-  bv_decide
+  simp [old22476, new22476] <;> bv_decide
 
 end GVQCCV10
