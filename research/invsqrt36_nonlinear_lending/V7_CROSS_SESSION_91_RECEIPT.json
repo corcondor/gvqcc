@@ -1,0 +1,88 @@
+{
+  "source_sha256": "6b59214530108d8c49c648f96c53b963d9b8477f8813db1edcf478bf45f6cf03",
+  "peer_pr": 40,
+  "peer_sha": "dc72f3a6bd11c3018568dc6ebe2d4da5e32749cd",
+  "peer_original_covered": 55184,
+  "added": [
+    [
+      24091,
+      24142
+    ],
+    [
+      25709,
+      25759
+    ],
+    [
+      26251,
+      26301
+    ],
+    [
+      26774,
+      26824
+    ],
+    [
+      27285,
+      27335
+    ],
+    [
+      27799,
+      27849
+    ]
+  ],
+  "excluded_overlap": [
+    [
+      34046,
+      34186
+    ]
+  ],
+  "source_covered": 55485,
+  "total_source": 60766,
+  "remaining": 5281,
+  "coverage_percent": 91.30928479741961,
+  "all_legal_inputs": 3133452,
+  "source_to_hybrid": {
+    "checks": 41500,
+    "sha256": "4f6b027a122395c4238fcb4eae007f62dcb0cc903092d5924a51eed5bb354024",
+    "static": 1936,
+    "expected": 1741.8125,
+    "verification": "PASS"
+  },
+  "integrated": {
+    "checks": 62566,
+    "hmr_variables": 1174,
+    "sha256": "97623d3bb9b7fb61aeabd7312e869ab64e49da9c4070d359e79d86688c9161a5",
+    "static": 1900,
+    "expected": 1719.3125,
+    "verification": "PASS",
+    "edits": 11,
+    "missing_donors": []
+  },
+  "neutral": {
+    "coverage": 54597,
+    "static": 1893,
+    "expected": 1710.3125,
+    "sha256": "b3829e46b3a6ce9003b9ddd772d4bedac54de6ac62aab3003692aef75684fd05",
+    "checks": 62950
+  },
+  "wide": {
+    "coverage": 54737,
+    "static": 1896,
+    "expected": 1711.8125,
+    "sha256": "8da8121d49c1792257548e83b5806c2555a439f1b768af9c2f9164c92ff3cb29",
+    "checks": 62935
+  },
+  "lean": {
+    "commit": "63bed0c3c2178ba11e34102415b31a081de20d17",
+    "run": 45359058110,
+    "result": "PASS",
+    "scope": "local gate-list-derived SSA, resource theorem; not complete oracle"
+  },
+  "archive": {
+    "name": "GVQCC_V7_Integrated_91pct_NOT_SUBMISSION.zip",
+    "sha256": "810d4e7672d6cb817515c884af2be2088194b8733124cd728e75338953dbf6bf",
+    "files": 580
+  },
+  "full36": false,
+  "official_verifier": false,
+  "score_update": false
+}

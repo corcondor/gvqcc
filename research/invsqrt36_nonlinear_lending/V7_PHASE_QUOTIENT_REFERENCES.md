@@ -1,0 +1,10 @@
+# Additional V7 literature and technical handoff
+The following sources are read as structural inspiration, not claims that their software was run. Corrected Turan/Peralta link from the initial note.
+- Turan and Peralta, On the Multiplicative Complexity of Cubic Boolean Functions (2021): https://csrc.nist.gov/pubs/other/2021/08/11/on-the-multiplicative-complexity-of-cubic-boolean/final ; https://eprint.iacr.org/2021/1041 . Cubic AND minimization; applicable to factoring independent residual cubic terms. V7 uses its own alternating-form elimination and affine shift, not the entire paper algorithm.
+- Turan, New Bounds on the Multiplicative Complexity of Boolean Functions (2022): https://eprint.iacr.org/2022/1077 . Multiplicative complexity bounds for pruning multi-hub synthesis.
+- Turan, Optimizing implementations of Boolean Functions: https://eprint.iacr.org/2024/133 . Distinguish logical representation and executable cost.
+- Shah, Fiszer, Perkowski, Factorized Boolean representations for efficient quantum synthesis (2026 preprint): https://arxiv.org/abs/2608.27430 . Factorized representations may avoid structures that flat minimization misses. Use explicitly reversible decompositions with cleanup cost.
+- Paradis, Bichsel, Vechev, Reqomp (2024): https://doi.org/10.22331/q-2024-02-19-1258 (already relevant to earlier pebbling work; do not count again). Width-aware uncomputation.
+- A comparison of quantum compilers using a DAG-based or phase polynomial-based intermediate representation (2025): https://doi.org/10.1016/j.jss.2024.112224 . Use phase polynomial representations only where beneficial; CNOT reductions alone are not a GVQCC score gain.
+- NIST reference bibliography: https://csrc.nist.gov/Projects/circuit-complexity/references .
+CI PASS at 63bed0c3c2178ba11e34102415b31a081de20d17, workflow 45359058110 (Install Lean 4.35.0 and Check actual V7 certificate succeeded). Python replay 16,384 arbitrary local assignments. This proves a particular SSA identity and literal cost/width, not a full Lean machine semantics theorem.
