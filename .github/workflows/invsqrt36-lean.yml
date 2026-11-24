@@ -29,6 +29,10 @@ jobs:
         run: |
           cd research/invsqrt36_nonlinear_lending/lean
           lake env lean GlobalRemat.lean
+      - name: Kernel-check generic central-hub pivot and measurement phase algebra
+        run: |
+          cd research/invsqrt36_nonlinear_lending/lean
+          lake env lean RadialHub.lean
       - name: Universal late-materialization regression
         run: |
           python3 -m unittest discover -s research/invsqrt36_nonlinear_lending/global_remat -p 'test_*.py' -v
