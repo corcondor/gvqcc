@@ -20,5 +20,6 @@ jobs:
         run: |
           cd research/invsqrt36_nonlinear_lending/lean
           lean CarryContextBridge.lean
+          lean ActualContextBridge.lean
       - name: Check Python source syntax
         run: python3 -m py_compile research/invsqrt36_nonlinear_lending/global_remat/context_bridge_v4.py
