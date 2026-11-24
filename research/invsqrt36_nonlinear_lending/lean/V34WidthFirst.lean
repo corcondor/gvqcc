@@ -14,12 +14,12 @@ theorem mux_restore (a b s : Bool)
     (hs : a = (Bool.xor a b && s)) :
     (Bool.xor a b && s) = a ∧
     Bool.xor (Bool.xor a b) (Bool.xor a b && s) = b := by
-  cases a <;> cases b <;> cases s <;> simp_all
+  cases a <;> cases b <;> cases s <;> (first | decide | contradiction)
 
 theorem mux_phase (a b s m : Bool)
     (hs : a = (Bool.xor a b && s)) :
     Bool.xor (m && a) (m && Bool.xor a b && s) = false := by
-  cases a <;> cases b <;> cases s <;> cases m <;> simp_all
+  cases a <;> cases b <;> cases s <;> cases m <;> (first | decide | contradiction)
 
 -- The actual V33 window [12373,12706): q15, complemented q29, selector q0.
 -- Reachability hypotheses checked separately using exact BDD.
@@ -28,17 +28,17 @@ theorem actual_mux (q15 q29 q0 m : Bool)
     (hs : q15 = (Bool.xor q15 (!q29) && q0)) :
     Bool.xor (m && q15) (m && Bool.xor q15 (!q29) && q0) = false ∧
     !(Bool.xor (Bool.xor q15 (!q29)) (Bool.xor q15 (!q29) && q0)) = q29 := by
-  cases q15 <;> cases q29 <;> cases q0 <;> cases m <;> simp_all
+  cases q15 <;> cases q29 <;> cases q0 <;> cases m <;> (first | decide | contradiction)
 
 -- Actual V33 interval [31632,32391): q18 = q8*q29 at both endpoints.
 -- Intermediate body never reads/writes q18; the endpoint functions may differ.
 theorem parked_phase (q a b m : Bool) (h : q = (a && b)) :
     Bool.xor (m && q) (m && a && b) = false := by
-  cases q <;> cases a <;> cases b <;> cases m <;> simp_all
+  cases q <;> cases a <;> cases b <;> cases m <;> (first | decide | contradiction)
 
 theorem parked_restore (a b q : Bool) (h : q = (a && b)) :
     Bool.xor false (a && b) = q := by
-  cases a <;> cases b <;> cases q <;> simp_all
+  cases a <;> cases b <;> cases q <;> (first | decide | contradiction)
 
 -- Polar rank-one factorization, including cancellation of the common edge.
 theorem polar_factor (a b c d : Bool) :
