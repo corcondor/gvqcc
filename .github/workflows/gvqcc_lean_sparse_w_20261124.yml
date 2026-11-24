@@ -19,14 +19,10 @@ jobs:
           python-version: "3.12"
       - name: Install NumPy (data reader only)
         run: python -m pip install numpy==2.3.5
-      - name: Recover exact published V8 coefficients as DATA
-        run: |
-          python research/lean_sparse_w_20261124/fetch_public_v8_npz.py \
-            --output research/lean_sparse_w_20261124/data/public_v8_submission.npz
       - name: Generate concrete Lean certificate from SHA-pinned W
         run: |
           python research/lean_sparse_w_20261124/generate_sparse_w_lean.py \
-            --npz research/lean_sparse_w_20261124/data/public_v8_submission.npz \
+            --support-b64 research/lean_sparse_w_20261124/public_v8_W_support_zlib.b64 \
             --lean research/lean_sparse_w_20261124/SparseWCERT.lean
           if grep -En '(^|[[:space:]])(sorry|axiom|native_decide)([[:space:]]|$)' \
               research/lean_sparse_w_20261124/SparseWCERT.lean; then exit 1; fi
