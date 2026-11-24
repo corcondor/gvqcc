@@ -61,9 +61,11 @@ theorem concrete_7754 (s : BitVec 37) (phase event : Bool)
     (hz : bit s 36 = 0)
     (hc : (bit s 33 ^^^ bit s 35) &&& (ctx7754 s ^^^ bit s 33) = 0) :
     run src7754 (s,phase,event) = lift (run dst7754 (s,phase,event)) := by
-  unfold src7754 dst7754 ctx7754 at *
-  simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear] at *
-  bv_decide
+  apply Prod.ext
+  · unfold src7754 dst7754 ctx7754 at *
+    simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear, Prod.fst, Prod.snd] at *
+    bv_decide
+  · rfl
 
 theorem resource_7754 :
     src7754.all (wireOK 37) = true ∧ dst7754.all (wireOK 36) = true ∧
@@ -78,9 +80,11 @@ theorem concrete_7912 (s : BitVec 37) (phase event : Bool)
     (hz : bit s 36 = 0)
     (hc : (bit s 12 ^^^ bit s 35) &&& (ctx7912 s ^^^ bit s 12) = 0) :
     run src7912 (s,phase,event) = lift (run dst7912 (s,phase,event)) := by
-  unfold src7912 dst7912 ctx7912 at *
-  simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear] at *
-  bv_decide
+  apply Prod.ext
+  · unfold src7912 dst7912 ctx7912 at *
+    simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear, Prod.fst, Prod.snd] at *
+    bv_decide
+  · rfl
 
 theorem resource_7912 :
     src7912.all (wireOK 37) = true ∧ dst7912.all (wireOK 36) = true ∧
@@ -95,9 +99,11 @@ theorem concrete_8096 (s : BitVec 37) (phase event : Bool)
     (hz : bit s 36 = 0)
     (hc : (bit s 11 ^^^ bit s 35) &&& (ctx8096 s ^^^ bit s 11) = 0) :
     run src8096 (s,phase,event) = lift (run dst8096 (s,phase,event)) := by
-  unfold src8096 dst8096 ctx8096 at *
-  simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear] at *
-  bv_decide
+  apply Prod.ext
+  · unfold src8096 dst8096 ctx8096 at *
+    simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear, Prod.fst, Prod.snd] at *
+    bv_decide
+  · rfl
 
 theorem resource_8096 :
     src8096.all (wireOK 37) = true ∧ dst8096.all (wireOK 36) = true ∧
@@ -112,9 +118,11 @@ theorem concrete_9735 (s : BitVec 37) (phase event : Bool)
     (hz : bit s 36 = 0)
     (hc : (bit s 29 ^^^ bit s 35) &&& (ctx9735 s ^^^ bit s 29) = 0) :
     run src9735 (s,phase,event) = lift (run dst9735 (s,phase,event)) := by
-  unfold src9735 dst9735 ctx9735 at *
-  simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear] at *
-  bv_decide
+  apply Prod.ext
+  · unfold src9735 dst9735 ctx9735 at *
+    simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear, Prod.fst, Prod.snd] at *
+    bv_decide
+  · rfl
 
 theorem resource_9735 :
     src9735.all (wireOK 37) = true ∧ dst9735.all (wireOK 36) = true ∧
@@ -129,9 +137,11 @@ theorem concrete_10041 (s : BitVec 37) (phase event : Bool)
     (hz : bit s 36 = 0)
     (hc : (bit s 29 ^^^ bit s 35) &&& (ctx10041 s ^^^ bit s 29) = 0) :
     run src10041 (s,phase,event) = lift (run dst10041 (s,phase,event)) := by
-  unfold src10041 dst10041 ctx10041 at *
-  simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear] at *
-  bv_decide
+  apply Prod.ext
+  · unfold src10041 dst10041 ctx10041 at *
+    simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear, Prod.fst, Prod.snd] at *
+    bv_decide
+  · rfl
 
 theorem resource_10041 :
     src10041.all (wireOK 37) = true ∧ dst10041.all (wireOK 36) = true ∧
@@ -146,9 +156,11 @@ theorem concrete_10114 (s : BitVec 37) (phase event : Bool)
     (hz : bit s 36 = 0)
     (hc : (bit s 29 ^^^ bit s 35) &&& (ctx10114 s ^^^ bit s 29) = 0) :
     run src10114 (s,phase,event) = lift (run dst10114 (s,phase,event)) := by
-  unfold src10114 dst10114 ctx10114 at *
-  simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear] at *
-  bv_decide
+  apply Prod.ext
+  · unfold src10114 dst10114 ctx10114 at *
+    simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear, Prod.fst, Prod.snd] at *
+    bv_decide
+  · rfl
 
 theorem resource_10114 :
     src10114.all (wireOK 37) = true ∧ dst10114.all (wireOK 36) = true ∧
@@ -163,9 +175,11 @@ theorem concrete_10175 (s : BitVec 37) (phase event : Bool)
     (hz : bit s 36 = 0)
     (hc : (bit s 29 ^^^ bit s 35) &&& (ctx10175 s ^^^ bit s 29) = 0) :
     run src10175 (s,phase,event) = lift (run dst10175 (s,phase,event)) := by
-  unfold src10175 dst10175 ctx10175 at *
-  simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear] at *
-  bv_decide
+  apply Prod.ext
+  · unfold src10175 dst10175 ctx10175 at *
+    simp only [run, List.foldl_cons, List.foldl_nil, step, lift, bit, toggle, clear, Prod.fst, Prod.snd] at *
+    bv_decide
+  · rfl
 
 theorem resource_10175 :
     src10175.all (wireOK 37) = true ∧ dst10175.all (wireOK 36) = true ∧
