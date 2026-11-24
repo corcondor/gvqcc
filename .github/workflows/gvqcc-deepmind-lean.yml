@@ -1,0 +1,26 @@
+name: GVQCC DeepMind Lean proofs
+on:
+  pull_request:
+    paths:
+      - 'research/deepmind512/**'
+      - '.github/workflows/gvqcc-deepmind-lean.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: research/deepmind512/lean
+          build: true
+          test: false
+          lint: false
+          mk_all-check: false
+          use-mathlib-cache: false
+          use-github-cache: false
