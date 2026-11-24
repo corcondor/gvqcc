@@ -1,0 +1,85 @@
+name: GVQCC nonlinear 210T macro discovery (GH CPU)
+on:
+  push:
+    branches:
+      - research/lean-nonlinear-frames-20261124
+    paths:
+      - research/lean_nonlinear_discovery_20261124/macro/**
+      - .github/workflows/gvqcc_macro_discovery_20261124.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  nonlinear-search:
+    name: novel macro synthesis seed ${{ matrix.seed }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    strategy:
+      fail-fast: false
+      matrix:
+        seed: [20261124, 20261125, 20261126]
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      PYTHONHASHSEED: "0"
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install numerical dependency
+        run: python -m pip install --disable-pip-version-check numpy==2.3.5
+      - name: Acquire public 211T KMB, SHA pinned
+        shell: bash
+        run: |
+          mkdir -p research/lean_nonlinear_discovery_20261124/macro/data
+          gh run download 45047992163 \
+            --repo corcondor/gvqcc \
+            --name public-211-k8-sha-pinned \
+            --dir research/lean_nonlinear_discovery_20261124/macro/data
+          find research/lean_nonlinear_discovery_20261124/macro/data -maxdepth 5 -type f -print
+          test "$(find research/lean_nonlinear_discovery_20261124/macro/data -name '*.kmb' | wc -l)" -eq 1
+      - name: Acquire public V8 words from pinned commit
+        run: |
+          curl --fail --location --retry 3 --silent --show-error \
+            https://raw.githubusercontent.com/corcondor/gvqcc/dcf6a220d47e959aaa4afd911117a85751f2ae41/experiments/oss_chained_angle/v8_c46_angle_fixture_public.json \
+            --output research/lean_nonlinear_discovery_20261124/macro/data/fixture.json
+      - name: Compile and check exact KMB source
+        run: |
+          python -m py_compile research/lean_nonlinear_discovery_20261124/macro/*.py
+          python - <<'PY'
+          import sys, pathlib, hashlib
+          root=pathlib.Path('research/lean_nonlinear_discovery_20261124/macro')
+          sys.path.insert(0,str(root))
+          from native_kmb import NativeKMB
+          files=list((root/'data').rglob('*.kmb'))
+          assert len(files)==1,files
+          raw=files[0].read_bytes()
+          assert hashlib.sha256(raw).hexdigest()=='227472385bffce8eb08c31ee93d635755901b29107bb32177885e1b7e212f898'
+          circ=NativeKMB.parse(raw)
+          assert circ.stats()['T']==211 and circ.stats()['Q']==128
+          assert circ.to_bytes()==raw
+          print('KMB original roundtrip and SHA pin PASS')
+          PY
+      - name: Run two distinct macro architectures
+        shell: bash
+        run: |
+          ROOT=research/lean_nonlinear_discovery_20261124/macro
+          KMB=$(find "$ROOT/data" -name '*.kmb' -print -quit)
+          mkdir -p "$ROOT/results/${{ matrix.seed }}"
+          python "$ROOT/macro_global_search.py" \
+            --kmb "$KMB" \
+            --fixture "$ROOT/data/fixture.json" \
+            --out "$ROOT/results/${{ matrix.seed }}" \
+            --one 4000 --two 450 --seed "${{ matrix.seed }}"
+          test -s "$ROOT/results/${{ matrix.seed }}/receipt.json"
+      - name: Upload audited results, not a Kaggle submission
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gvqcc-nonlinear-macro-search-${{ matrix.seed }}
+          path: research/lean_nonlinear_discovery_20261124/macro/results/${{ matrix.seed }}/
+          if-no-files-found: warn
+          retention-days: 30
