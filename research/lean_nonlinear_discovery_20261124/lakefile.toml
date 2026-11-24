@@ -1,6 +1,9 @@
 name = "gvqcc_lean_relational"
 version = "0.1.0"
-defaultTargets = ["GVQCCRelational"]
+defaultTargets = ["GVQCCRelational", "V8TensorCertificate"]
 
 [[lean_lib]]
 name = "GVQCCRelational"
+
+[[lean_lib]]
+name = "V8TensorCertificate"
