@@ -1,0 +1,98 @@
+{
+  "source_sha256": "6b59214530108d8c49c648f96c53b963d9b8477f8813db1edcf478bf45f6cf03",
+  "source_ops": 60766,
+  "legal_inputs": 3133452,
+  "peer_prs": [
+    39,
+    40,
+    41,
+    42,
+    43
+  ],
+  "peer_parent": {
+    "pr": 41,
+    "sha256": "97623d3bb9b7fb61aeabd7312e869ab64e49da9c4070d359e79d86688c9161a5",
+    "ops": 63113,
+    "static_paid": 1900,
+    "expected_paid": 1719.3125,
+    "coverage": 55485
+  },
+  "donor": {
+    "pr": 43,
+    "matches": 1333,
+    "accepted": 1326,
+    "ops": 50070,
+    "static_paid": 1894,
+    "expected_paid": 1718.3125,
+    "checks": 38727,
+    "sha256": "de03e36029e62496d7e9985708f0dfc85202a100ca37ccb40bbaf6fa323cd47b"
+  },
+  "mixed": {
+    "windows": 6293,
+    "trials": 24872,
+    "positive": 1789,
+    "accepted": 551,
+    "nonlinear_scaffold": 208,
+    "transpose": 54,
+    "fresh_classical": 140,
+    "ops": 47216,
+    "static_paid": 1894,
+    "expected_paid": 1718.3125,
+    "coverage": 55485,
+    "checks": 35571,
+    "hmr_variables": 1174,
+    "sha256": "5063b55f7261ff01ae1979f81271b6681853a2bcccf498fffb1a642765a625c0"
+  },
+  "quintic": {
+    "depth": 5,
+    "beam_width": 12,
+    "shear_trials": 17738,
+    "native_trials": 976,
+    "ranges": [
+      [
+        24732,
+        24816
+      ],
+      [
+        26344,
+        26426
+      ],
+      [
+        27381,
+        27471
+      ],
+      [
+        27897,
+        27985
+      ]
+    ],
+    "added_coverage": 344,
+    "added_static_paid": 20
+  },
+  "wide": {
+    "ops": 47094,
+    "static_paid": 1914,
+    "expected_paid": 1727.3125,
+    "coverage": 55829,
+    "remaining": 4937,
+    "checks": 46869,
+    "hmr_variables": 1186,
+    "sha256": "88932661d90e2f253a7845d550f657b2c26a062adfa54b05438c64ae8adea0be"
+  },
+  "verification": "Each serialized step independently replayed using exact full legal domain BDD with arbitrary HMR outcomes",
+  "lean_scope": "three concrete phase identities, local resource counts, generic nested-hub and shared-guard laws; not whole-circuit proof",
+  "full36": false,
+  "official_verifier": false,
+  "submission": false,
+  "score_model": {
+    "S0": 33.17031640530013,
+    "C0": 60927.54794503887,
+    "K": 240.37798500105055,
+    "break_even_E36": 1452.05390236114,
+    "mixed_37": 31.306294642922467,
+    "mixed_hypothetical_36": 31.59352439946565,
+    "wide_37": 31.258491169171606,
+    "wide_hypothetical_36": 31.545282337236532,
+    "condition": "PR43 conditional cost model, not official score"
+  }
+}
