@@ -1,4 +1,4 @@
-name = "gvqcc-verified-candidates"
+name = "GVQCC"
 version = "0.1.0"
 defaultTargets = ["GVQCC"]
 
