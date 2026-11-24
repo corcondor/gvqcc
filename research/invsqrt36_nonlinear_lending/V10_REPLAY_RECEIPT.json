@@ -1,0 +1,135 @@
+{
+  "date_jst": "2026-11-24",
+  "parent_pr": 50,
+  "parent_commit": "ae05f754f11b583b1fa36416c4e9b43734e3db78",
+  "method": "SHA-pinned byte roundtrip; share only literally identical instructions; independently replay every changed slice; compare quantum Boolean state, classical registers, active guard and stack, phase and rotation controls; exact rational expectation; final input and scratch state restored",
+  "scope": "transitive equivalence to independently verified PR45/PR44, not a fresh official verifier or original-reference full comparison",
+  "legal_inputs": 3133452,
+  "cost": {
+    "parent_pr": 45,
+    "parent_sha256": "f7abc033dbed5477d5685225d9bf5fe262ceb888189ebcc3266ce23f9d15fd6d",
+    "candidate_sha256": "67ba0273bc086f25ab91cbb1b287cff7d16aaec2addaa4d59a63a08c6a61fd79",
+    "shared_instructions": 42585,
+    "splices": 10,
+    "hmr": 1174,
+    "ops": [
+      42599,
+      42624
+    ],
+    "paid": [
+      1875,
+      1865
+    ],
+    "expected_paid": [
+      1704.3125,
+      1694.3125
+    ],
+    "expected_fraction": [
+      "27269/16",
+      "27109/16"
+    ],
+    "source_coverage": 55485,
+    "source_ops": 60766,
+    "peak_q": 37,
+    "depth_proxy": [
+      25014,
+      25028
+    ],
+    "paid_depth_proxy": [
+      1853,
+      1843
+    ],
+    "seconds": 13.780406475067139,
+    "status": "PASS"
+  },
+  "wide": {
+    "parent_pr": 44,
+    "parent_sha256": "88932661d90e2f253a7845d550f657b2c26a062adfa54b05438c64ae8adea0be",
+    "candidate_sha256": "c1d706a1f0f1533bc02565f9f95e1220f79ab0208577f48c2152089bfe5d5d26",
+    "shared_instructions": 47090,
+    "splices": 1,
+    "hmr": 1186,
+    "ops": [
+      47094,
+      47095
+    ],
+    "paid": [
+      1914,
+      1913
+    ],
+    "expected_paid": [
+      1727.3125,
+      1726.3125
+    ],
+    "expected_fraction": [
+      "27637/16",
+      "27621/16"
+    ],
+    "source_coverage": 55829,
+    "source_ops": 60766,
+    "peak_q": 37,
+    "depth_proxy": [
+      28015,
+      28017
+    ],
+    "paid_depth_proxy": [
+      1899,
+      1898
+    ],
+    "seconds": 16.12261199951172,
+    "status": "PASS"
+  },
+  "lean": {
+    "pr49": "https://github.com/corcondor/gvqcc/actions/runs/45372598416",
+    "pr50": "https://github.com/corcondor/gvqcc/actions/runs/45372833808",
+    "conclusion": "success",
+    "scope": "existing candidate-local proofs; no new full-circuit Lean theorem"
+  },
+  "score_model": {
+    "baseline": 33.17031640530013,
+    "reference_cost": 60927.54794503887,
+    "rotation_cost_assumption": 240.37798500105055,
+    "formula": "baseline*(reference_cost/(Q*(expected_paid+rotation_cost_assumption)))^(1/3)",
+    "current37q": 31.4352154281589,
+    "hypothetical36q": 31.72362801027053,
+    "break_even_36q_expected_paid": 1452.0539023611402,
+    "required_reduction_strictly_greater_than": 242.25859763885978,
+    "official": false
+  },
+  "blocked": {
+    "status": "INCOMPLETE_HISTORICAL_SOURCE_AUDIT",
+    "source": "PR23 SOURCE_AUDIT_BLOCKED_20261124_1740.json",
+    "missing": [
+      "GVQCC_directional_word_conjugation_20261124_NO_GAIN.zip",
+      "GVQCC_joint_gauge_gate_cold_shear_20261124_NO_GAIN.zip",
+      "GVQCC_rank_pursuit_HMR_erasure_20261124_NO_GAIN.zip",
+      "GVQCC_cloud_hub_20261124_NO_GAIN.zip"
+    ],
+    "new_exact_title_library_query": "0 results",
+    "prior_conversation_recovery": "names/links only, no source IDs",
+    "new_local_search": 0,
+    "new_cold_search": 0,
+    "new_native_candidate": 0
+  },
+  "bibliography": [
+    {
+      "title": "Hybrid Path-Sums for Hybrid Quantum Programs",
+      "url": "https://arxiv.org/abs/2604.24578",
+      "possible_use": "specify hybrid semantics and compositional equivalence, not yet implemented"
+    },
+    {
+      "title": "Equivalence Checking of Quantum Circuits via Path-Sum and Weighted Model Counting",
+      "url": "https://arxiv.org/abs/2604.24504",
+      "possible_use": "hybrid exact verifier; applicability to HMR must be established"
+    },
+    {
+      "title": "Qrisp Implementation and Resource Analysis of a T-Count-Optimised Non-Restoring Quantum Square-Root Circuit",
+      "url": "https://arxiv.org/abs/2507.12603",
+      "possible_use": "arithmetic architecture reference only; integer sqrt is not reciprocal sqrt, T count is not native paid count; check prior experiments before use"
+    }
+  ],
+  "official_verifier": false,
+  "score_updated": false,
+  "main_modified": false,
+  "kaggle_submission": false
+}
