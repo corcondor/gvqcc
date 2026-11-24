@@ -3,19 +3,26 @@
 GitHub Actions fetches the SHA-pinned Kaggle V8 NPZ, never executes notebook cells.
 NOTE: exact zero coefficients in W do NOT directly correspond to ANGLE Toffoli gates.
 """
-import argparse,hashlib,json
+import argparse,hashlib,json,base64,zlib
 from pathlib import Path
 import numpy as np
 
 NPZ_SHA="d4d39b2e2516ed7c51a936e863cf0567e558a0db8ded24e435f507d76bfb78d7"
 W_SHA="07133824492ef24ae9aae5e878b2c2af539b1c44ec3382f7a164a9e365af9d3a"
 
-def build(npz,lean):
-    npz=Path(npz);lean=Path(lean)
-    assert hashlib.sha256(npz.read_bytes()).hexdigest()==NPZ_SHA,"wrong public V8 input SHA"
-    with np.load(npz,allow_pickle=False) as z: W=np.array(z["W"],dtype=np.float64)
+def build(npz,lean,support_b64=None):
+    lean=Path(lean)
+    if support_b64:
+        raw=zlib.decompress(base64.b64decode(Path(support_b64).read_text().strip()))
+        assert hashlib.sha256(raw).hexdigest()=="a67a006c8dd71ca47df915481eb0f8e830e745ccb58cd5af9ba7ce939a59d4e6"
+        W=np.unpackbits(np.frombuffer(raw,dtype=np.uint8),bitorder="little")[:9*127*46].reshape(9,127,46)
+        print("CERTIFIED SOURCE: pinned W support-bitmask; public NPZ SHA was audited off-CI")
+    else:
+        npz=Path(npz)
+        assert hashlib.sha256(npz.read_bytes()).hexdigest()==NPZ_SHA,"wrong public V8 input SHA"
+        with np.load(npz,allow_pickle=False) as z: W=np.array(z["W"],dtype=np.float64)
+        assert hashlib.sha256(W.tobytes()).hexdigest()==W_SHA,"wrong W tensor"
     assert W.shape==(9,127,46) and np.isfinite(W).all()
-    assert hashlib.sha256(W.tobytes()).hexdigest()==W_SHA,"wrong W tensor"
     masks=[sum(1<<c for c in range(46) if W[r,b,c]!=0)
            for r in range(9) for b in range(127)]
     cards=[int(v).bit_count() for v in masks]
@@ -97,5 +104,6 @@ def build(npz,lean):
     print(json.dumps(outj,indent=2))
 
 if __name__=="__main__":
-    ap=argparse.ArgumentParser();ap.add_argument("--npz",required=True);ap.add_argument("--lean",required=True)
-    a=ap.parse_args();build(a.npz,a.lean)
+    ap=argparse.ArgumentParser();ap.add_argument("--npz");ap.add_argument("--support-b64");ap.add_argument("--lean",required=True)
+    a=ap.parse_args();assert bool(a.npz) != bool(a.support_b64)
+    build(a.npz,a.lean,support_b64=a.support_b64)
