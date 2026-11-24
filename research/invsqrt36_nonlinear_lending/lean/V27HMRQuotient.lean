@@ -32,29 +32,29 @@ theorem joint_absorption (m n a b p1 p2 p3 : Bool)
   rw [parity_append, h]
   cases m <;> cases n <;> cases a <;> cases b <;> decide
 
-def prefix (prev : Bool) : List Bool → List Bool
+def prefixBits (prev : Bool) : List Bool → List Bool
   | [] => []
   | m :: ms =>
     let n := Bool.xor m prev
-    n :: prefix n ms
+    n :: prefixBits n ms
 
 def recover (prev : Bool) : List Bool → List Bool
   | [] => []
   | n :: ns => Bool.xor n prev :: recover n ns
 
 theorem recover_prefix (ms : List Bool) (prev : Bool) :
-    recover prev (prefix prev ms) = ms := by
+    recover prev (prefixBits prev ms) = ms := by
   induction ms generalizing prev with
   | nil => rfl
   | cons m ms ih =>
-    cases prev <;> cases m <;> simp [prefix, recover, ih]
+    cases prev <;> cases m <;> simp [prefixBits, recover, ih]
 
 theorem prefix_recover (ns : List Bool) (prev : Bool) :
-    prefix prev (recover prev ns) = ns := by
+    prefixBits prev (recover prev ns) = ns := by
   induction ns generalizing prev with
   | nil => rfl
   | cons n ns ih =>
-    cases prev <;> cases n <;> simp [prefix, recover, ih]
+    cases prev <;> cases n <;> simp [prefixBits, recover, ih]
 
 def headCarry : List (Bool × Bool) → Bool
   | [] => false
@@ -76,7 +76,8 @@ theorem carry_phase_telescoping (xs : List (Bool × Bool)) (prev : Bool) :
   | nil => cases prev <;> rfl
   | cons v xs ih =>
     rcases v with ⟨n,c⟩
-    simp only [oldPhase, headCarry, carryPhase]
+    change Bool.xor (Bool.xor n prev && c) (oldPhase n xs) =
+      Bool.xor (prev && c) (Bool.xor (n && Bool.xor c (headCarry xs)) (carryPhase xs))
     rw [ih n]
     cases hc : headCarry xs <;> cases hp : carryPhase xs <;>
       cases prev <;> cases n <;> cases c <;> rfl
