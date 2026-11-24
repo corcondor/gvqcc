@@ -1,0 +1,128 @@
+{
+  "date_jst": "2026-11-24",
+  "status": "BLOCKED_PRE_SEARCH_HISTORICAL_SOURCE_AUDIT",
+  "baseline": {
+    "zip_sha256": "0211ca05bc492b1312dce58a6978a2a527ff25e978e3f1b986c280b50d4f27f2",
+    "T": 3357,
+    "Q": 128,
+    "banks": [
+      245,
+      240,
+      217,
+      217,
+      217,
+      240,
+      217,
+      240,
+      211,
+      217,
+      217,
+      240,
+      217,
+      211,
+      211
+    ]
+  },
+  "review": {
+    "main_read": true,
+    "pr_metadata_and_comments": [
+      11,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "pr14": "404; absent from retrieved PR list",
+    "pr22_head": "d760eade24984a021ef5df5b7d6da7a805f345dd",
+    "pr23_head": "c32c2708d27ebd98cbfc0d7b0743b58d42c753c1",
+    "pr23_negative_records_read": [
+      "COLD_AFFINE_REJECTED",
+      "RADIAL_HUB",
+      "CLOUD_HUB_REJECTED",
+      "JOINT_GAUGE_GATE_COLD_SHEAR",
+      "DIRECTIONAL_WORD_CONJUGATION",
+      "RANK_PURSUIT_HMR_ERASURE",
+      "THREE_AXIS_GLOBAL_CHART_PHASE",
+      "QAOA_MULTIHUB",
+      "DUAL_FRAME_CUBIC_HUB",
+      "DEEP_DAVIO_QAOA32"
+    ],
+    "source_archives_recovered": [
+      "GVQCC_coefficient_redesign_20261124_NO_GAIN.zip",
+      "GVQCC_deep_davio_QAOA32_20261124_NO_GAIN.zip",
+      "GVQCC_shared_cofactor_hub_20261124_NO_GAIN.zip",
+      "GVQCC_central_QAOA_Lean_CPU_NO_GAIN_20261124.zip",
+      "GVQCC_CentralHub_Radial_QAOA_DeepMind_20261124.zip",
+      "GVQCC_GLOBAL_ARCHITECTURE_REDO_20261124.zip",
+      "GVQCC_PR19_joint_special_twostate_NO_GAIN.zip",
+      "GVQCC_dual_frame_cubic_hub_20261124_NO_GAIN.zip"
+    ],
+    "missing_source_archives_after_library_search_and_listing": [
+      "GVQCC_directional_word_conjugation_20261124_NO_GAIN.zip",
+      "GVQCC_joint_gauge_gate_cold_shear_20261124_NO_GAIN.zip",
+      "GVQCC_rank_pursuit_HMR_erasure_20261124_NO_GAIN.zip",
+      "GVQCC_cloud_hub_20261124_NO_GAIN.zip"
+    ],
+    "notes": "GitHub markdown records accessible, but archived executable sources not recovered; no claim of full code-level audit. Prior source retrieval incomplete, not a mathematical obstruction."
+  },
+  "read_only_baseline_audit": {
+    "inactive_givens_entries_7bit": 2400,
+    "by_bank": [
+      5,
+      67,
+      56,
+      214,
+      191,
+      60,
+      110,
+      131,
+      190,
+      222,
+      187,
+      240,
+      195,
+      247,
+      285
+    ],
+    "method": "integer quadrant zero propagation on original 7-bit tree; sin=0 iff word mod64=0; cos=0 iff mod64=32. This is only data inspection. Older main chemistry_gauge_v4_dontcare_report and chemistry_dontcare_v4_report already cover 8-bit zero-parent freedom and fixed-history deletion/suffix intersection; do not repeat this family as novel."
+  },
+  "pr28": {
+    "head": "49263f69b474b686fd92969b03c3374d188ebddd",
+    "workflow_run": 45348622484,
+    "conclusion": "success",
+    "scope": "existing 16 local normalized-HMR carry obligations; not full 36Q or score improvement"
+  },
+  "exploration": {
+    "cold_start_candidates": 0,
+    "local_candidates": 0,
+    "new_native_kmb": 0,
+    "new_lean_proofs": 0,
+    "cold_start_budget_fraction": null,
+    "scope": "Pre-search admission blocked by requested complete prior-source audit; no optimization search started."
+  },
+  "environment": {
+    "python": "3.13.5",
+    "lean_local": false,
+    "kickmix_local": false,
+    "official_verification": "not run"
+  },
+  "score": {
+    "verified_improvement": false,
+    "official_score": null
+  },
+  "main_modified": false,
+  "kaggle_submission": false,
+  "next_admission": "Recover missing source archives and compare actual implementation before testing distinct global hypotheses; do not repeat fixed-history zero-parent deletion, same donor conjugation, same shear, fixed-factor rank pursuit, or same cloud decoder. No new negative exclusion beyond already established families."
+}
