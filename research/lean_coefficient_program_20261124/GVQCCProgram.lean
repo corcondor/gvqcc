@@ -142,15 +142,14 @@ def project {α β : Type} (f : α → β) (s : State α) : State β :=
 def step {α : Type} (A : Algebra α) (g : Gate) (s : State α) : State α :=
   let wireVal := rd A.zero s.q
   match g with
-  | .x t => {s with q := addAt A s.q t A.one}
-  | .cx a t => {s with q := addAt A s.q t (wireVal a)}
-  | .ccx a b t => {s with q := addAt A s.q t (A.mul (wireVal a) (wireVal b))}
-  | .hmr t j => {s with q := wr s.q t A.zero,
-                       eventPhase := addAt A s.eventPhase j (wireVal t)}
-  | .z t => {s with constantPhase := A.add s.constantPhase (wireVal t)}
-  | .cz a b => {s with constantPhase := A.add s.constantPhase (A.mul (wireVal a) (wireVal b))}
-  | .zIf t j => {s with eventPhase := addAt A s.eventPhase j (wireVal t)}
-  | .czIf a b j => {s with eventPhase := addAt A s.eventPhase j (A.mul (wireVal a) (wireVal b))}
+  | .x t => ⟨addAt A s.q t A.one, s.constantPhase, s.eventPhase⟩
+  | .cx a t => ⟨addAt A s.q t (wireVal a), s.constantPhase, s.eventPhase⟩
+  | .ccx a b t => ⟨addAt A s.q t (A.mul (wireVal a) (wireVal b)), s.constantPhase, s.eventPhase⟩
+  | .hmr t j => ⟨wr s.q t A.zero, s.constantPhase, addAt A s.eventPhase j (wireVal t)⟩
+  | .z t => ⟨s.q, A.add s.constantPhase (wireVal t), s.eventPhase⟩
+  | .cz a b => ⟨s.q, A.add s.constantPhase (A.mul (wireVal a) (wireVal b)), s.eventPhase⟩
+  | .zIf t j => ⟨s.q, s.constantPhase, addAt A s.eventPhase j (wireVal t)⟩
+  | .czIf a b j => ⟨s.q, s.constantPhase, addAt A s.eventPhase j (A.mul (wireVal a) (wireVal b))⟩
 
 theorem step_map {α β : Type} {A : Algebra α} {B : Algebra β}
     {f : α → β} (h : Morph A B f) (g : Gate) (s : State α) :
