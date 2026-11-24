@@ -16,6 +16,6 @@ jobs:
           lint: false
           build: true
           use-mathlib-cache: false
-      - name: Reject unfinished proofs and unsupported axioms
+      - name: Reject unfinished proofs and unsupported axioms in both modules
         run: |
-          if grep -En '(^|[[:space:]])(sorry|axiom|native_decide)([[:space:]]|$)' research/lean_nonlinear_discovery_20261124/GVQCCRelational.lean; then exit 1; fi
+          if grep -En '(^|[[:space:]])(sorry|axiom|native_decide)([[:space:]]|$)' research/lean_nonlinear_discovery_20261124/GVQCCRelational.lean research/lean_nonlinear_discovery_20261124/V8TensorCertificate.lean; then exit 1; fi
