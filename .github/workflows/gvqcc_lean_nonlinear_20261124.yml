@@ -1,0 +1,21 @@
+name: GVQCC Lean nonlinear frame certificate
+on:
+  push:
+    branches:
+      - research/lean-nonlinear-frames-20261124
+  workflow_dispatch:
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: research/lean_nonlinear_discovery_20261124
+          test: false
+          lint: false
+          build: true
+          use-mathlib-cache: false
+      - name: Reject unfinished proofs and unsupported axioms
+        run: |
+          if grep -En '(^|[[:space:]])(sorry|axiom|native_decide)([[:space:]]|$)' research/lean_nonlinear_discovery_20261124/GVQCCRelational.lean; then exit 1; fi
