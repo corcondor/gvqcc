@@ -26,3 +26,6 @@ Conditional model: cost Q*(expected_paid+240.37798500105055), other tasks fixed.
 - Qiskit ElidePermutations (established virtual-permutation technique): https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.transpiler.passes.ElidePermutations ; https://github.com/Qiskit/qiskit.
 - Qubit reuse implementation https://github.com/qiskit-community/qiskit-qubit-reuse (Apache-2.0).
 The novelty here is applying cross-measurement permutation frames to the existing GVQCC physical-chart ABI, not inventing permutation elision itself. Complete sources, donor gates, serialized KMBs and receipts in separate research archive.
+
+## Negative result: Davio loan screen
+All 95 residual source gaps (5,281 source ops). 2,248 decoder queries, 1,337,560 product pairs screened; no additional verified chart. Candidate byte-identical to parent. Restricted family of affine-plus-one-product decoders, not an impossibility proof. V8 remains a 37Q hybrid. New measured eight peer91 replacements certified conditionally in `lean/PeerV8.lean`; independent BDD verifies their reachability premises. No official verifier or leaderboard run.
