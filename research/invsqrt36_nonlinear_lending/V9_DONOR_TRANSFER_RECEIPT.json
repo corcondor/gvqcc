@@ -1,0 +1,285 @@
+{
+  "parent_pr": 45,
+  "donor_pr": 46,
+  "parent_sha256": "f7abc033dbed5477d5685225d9bf5fe262ceb888189ebcc3266ce23f9d15fd6d",
+  "donor_parent_sha256": "a5199593e674dbd8e50a03aecd6dc00d44aa7213c899cd7e84c2664e86cd47d5",
+  "candidate_sha256": "d205327bbee109130120fb4bd57dea2ff1978e172c99f5db1c683bba7e426d62",
+  "archive_sha256": "2e0fa99753287e121d5a6e317f707646daa55bdcbab914aa486b794019694fbe",
+  "ops_before": 42599,
+  "ops_after": 42622,
+  "paid_before": 1875,
+  "paid_after": 1867,
+  "expected_before": 1704.3125,
+  "expected_after": 1696.3125,
+  "all_legal_inputs": 3133452,
+  "hmr_variables": 1174,
+  "checks": 42599,
+  "verification": "PASS",
+  "source_coverage": 55485,
+  "total_source_ops": 60766,
+  "full_36q": false,
+  "official_verifier": false,
+  "new_search": false,
+  "lean_ci": "pending",
+  "selected": [
+    {
+      "donor_native": 5882,
+      "target_native": 5867,
+      "hmr_event": 339,
+      "old": [
+        49,
+        16,
+        33,
+        3
+      ],
+      "new": [
+        [
+          33,
+          11,
+          3
+        ],
+        [
+          33,
+          12,
+          3
+        ],
+        [
+          33,
+          24,
+          3
+        ],
+        [
+          33,
+          33,
+          3
+        ]
+      ]
+    },
+    {
+      "donor_native": 6079,
+      "target_native": 6026,
+      "hmr_event": 346,
+      "old": [
+        49,
+        24,
+        16,
+        3
+      ],
+      "new": [
+        [
+          33,
+          10,
+          3
+        ],
+        [
+          33,
+          16,
+          3
+        ],
+        [
+          33,
+          33,
+          3
+        ],
+        [
+          33,
+          12,
+          3
+        ]
+      ]
+    },
+    {
+      "donor_native": 7916,
+      "target_native": 7851,
+      "hmr_event": 370,
+      "old": [
+        49,
+        19,
+        7,
+        3
+      ],
+      "new": [
+        [
+          17,
+          3
+        ],
+        [
+          33,
+          19,
+          3
+        ],
+        [
+          33,
+          10,
+          3
+        ],
+        [
+          33,
+          7,
+          3
+        ],
+        [
+          33,
+          13,
+          3
+        ],
+        [
+          33,
+          33,
+          3
+        ]
+      ]
+    },
+    {
+      "donor_native": 8179,
+      "target_native": 8105,
+      "hmr_event": 373,
+      "old": [
+        49,
+        25,
+        6,
+        34
+      ],
+      "new": [
+        [
+          33,
+          3,
+          34
+        ],
+        [
+          33,
+          6,
+          34
+        ],
+        [
+          33,
+          20,
+          34
+        ],
+        [
+          33,
+          33,
+          34
+        ]
+      ]
+    },
+    {
+      "donor_native": 8251,
+      "target_native": 8174,
+      "hmr_event": 376,
+      "old": [
+        49,
+        31,
+        20,
+        8
+      ],
+      "new": [
+        [
+          33,
+          20,
+          8
+        ],
+        [
+          33,
+          34,
+          8
+        ],
+        [
+          33,
+          3,
+          8
+        ],
+        [
+          33,
+          33,
+          8
+        ]
+      ]
+    },
+    {
+      "donor_native": 8311,
+      "target_native": 8233,
+      "hmr_event": 379,
+      "old": [
+        49,
+        9,
+        34,
+        15
+      ],
+      "new": [
+        [
+          33,
+          34,
+          15
+        ],
+        [
+          33,
+          8,
+          15
+        ],
+        [
+          33,
+          33,
+          15
+        ],
+        [
+          33,
+          3,
+          15
+        ]
+      ]
+    },
+    {
+      "donor_native": 10293,
+      "target_native": 9664,
+      "hmr_event": 402,
+      "old": [
+        49,
+        26,
+        27,
+        30
+      ],
+      "new": [
+        [
+          33,
+          33,
+          30
+        ]
+      ]
+    },
+    {
+      "donor_native": 15846,
+      "target_native": 13598,
+      "hmr_event": 456,
+      "old": [
+        49,
+        4,
+        0,
+        29
+      ],
+      "new": [
+        [
+          33,
+          27,
+          29
+        ],
+        [
+          33,
+          4,
+          29
+        ],
+        [
+          33,
+          19,
+          29
+        ],
+        [
+          33,
+          3,
+          29
+        ]
+      ]
+    }
+  ],
+  "audit": "Previous ANGLE missing archive blocks new discovery. Exact donor-only transfer, no fresh search. No official score gain."
+}
