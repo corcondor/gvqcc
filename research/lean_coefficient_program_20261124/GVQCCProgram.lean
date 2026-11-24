@@ -62,14 +62,18 @@ theorem wr_map {α β : Type} (f : α → β) (xs : List α) (i : Nat) (v : α) 
     | zero => rfl
     | succ i => simp [wr, ih]
 
+theorem rd_morph {α β : Type} {A : Algebra α} {B : Algebra β}
+    {f : α → β} (h : Morph A B f) (xs : List α) (i : Nat) :
+    f (rd A.zero xs i) = rd B.zero (xs.map f) i := by
+  rw [← h.zero, rd_map]
+
 def addAt {α : Type} (A : Algebra α) (xs : List α) (i : Nat) (v : α) :=
   wr xs i (A.add (rd A.zero xs i) v)
 
 theorem addAt_map {α β : Type} {A : Algebra α} {B : Algebra β}
     {f : α → β} (h : Morph A B f) (xs : List α) (i : Nat) (v : α) :
     (addAt A xs i v).map f = addAt B (xs.map f) i (f v) := by
-  simp only [addAt, wr_map, h.add]
-  rw [← h.zero, rd_map]
+  simp only [addAt, wr_map, h.add, rd_morph h]
 
 /- Arbitrary nonlinear expressions used in coordinate encodings. The
    search may choose different expression DAGs and different frames at
@@ -96,8 +100,7 @@ theorem expr_map {α β : Type} {A : Algebra α} {B : Algebra β}
   | zero => exact h.zero
   | one => exact h.one
   | wire i =>
-    simp only [evalExpr]
-    rw [← h.zero, rd_map]
+    exact rd_morph h q i
   | xor a b ia ib => simp [evalExpr, h.add, ia, ib]
   | and a b ia ib => simp [evalExpr, h.mul, ia, ib]
 
@@ -109,7 +112,9 @@ theorem frame_map {α β : Type} {A : Algebra α} {B : Algebra β}
     (encode A q frame).map f = encode B (q.map f) frame := by
   induction frame with
   | nil => rfl
-  | cons e es ih => simp [encode, expr_map h, ih, List.map_map, Function.comp_def]
+  | cons e es ih =>
+    simp only [encode, List.map_cons] at ih ⊢
+    rw [expr_map h, ih]
 
 inductive Gate where
   | x (t : Nat)
@@ -135,17 +140,17 @@ def project {α β : Type} (f : α → β) (s : State α) : State β :=
    Reset uses the PRE-measurement value. No conditional data gates are
    accepted by this language. The native exporter must check that scope. -/
 def step {α : Type} (A : Algebra α) (g : Gate) (s : State α) : State α :=
-  let at := rd A.zero s.q
+  let wireVal := rd A.zero s.q
   match g with
   | .x t => {s with q := addAt A s.q t A.one}
-  | .cx a t => {s with q := addAt A s.q t (at a)}
-  | .ccx a b t => {s with q := addAt A s.q t (A.mul (at a) (at b))}
+  | .cx a t => {s with q := addAt A s.q t (wireVal a)}
+  | .ccx a b t => {s with q := addAt A s.q t (A.mul (wireVal a) (wireVal b))}
   | .hmr t j => {s with q := wr s.q t A.zero,
-                       eventPhase := addAt A s.eventPhase j (at t)}
-  | .z t => {s with constantPhase := A.add s.constantPhase (at t)}
-  | .cz a b => {s with constantPhase := A.add s.constantPhase (A.mul (at a) (at b))}
-  | .zIf t j => {s with eventPhase := addAt A s.eventPhase j (at t)}
-  | .czIf a b j => {s with eventPhase := addAt A s.eventPhase j (A.mul (at a) (at b))}
+                       eventPhase := addAt A s.eventPhase j (wireVal t)}
+  | .z t => {s with constantPhase := A.add s.constantPhase (wireVal t)}
+  | .cz a b => {s with constantPhase := A.add s.constantPhase (A.mul (wireVal a) (wireVal b))}
+  | .zIf t j => {s with eventPhase := addAt A s.eventPhase j (wireVal t)}
+  | .czIf a b j => {s with eventPhase := addAt A s.eventPhase j (A.mul (wireVal a) (wireVal b))}
 
 theorem step_map {α β : Type} {A : Algebra α} {B : Algebra β}
     {f : α → β} (h : Morph A B f) (g : Gate) (s : State α) :
@@ -154,7 +159,7 @@ theorem step_map {α β : Type} {A : Algebra α} {B : Algebra β}
   | mk q c p =>
     cases g <;>
       simp [step, project, addAt_map h, wr_map, h.zero, h.one, h.add, h.mul,
-        ← h.zero, rd_map]
+        rd_morph h]
 
 def run {α : Type} (A : Algebra α) : List Gate → State α → State α
   | [], s => s
@@ -193,12 +198,12 @@ theorem paid_append (p q : List Gate) : paid (p ++ q) = paid p + paid q := by
   | cons g gs ih => cases g <;> simp [paid, ih, Nat.add_assoc]
 
 def validGate (n next : Nat) : Gate → Bool
-  | .x t | .z t => t < n
-  | .cx a t | .cz a t => a < n && t < n && a != t
-  | .ccx a b t => a < n && b < n && t < n && a != b && a != t && b != t
-  | .hmr t j => t < n && j == next
-  | .zIf t j => t < n && j < next
-  | .czIf a b j => a < n && b < n && a != b && j < next
+  | .x t | .z t => decide (t < n)
+  | .cx a t | .cz a t => decide (a < n) && decide (t < n) && a != t
+  | .ccx a b t => decide (a < n) && decide (b < n) && decide (t < n) && a != b && a != t && b != t
+  | .hmr t j => decide (t < n) && j == next
+  | .zIf t j => decide (t < n) && decide (j < next)
+  | .czIf a b j => decide (a < n) && decide (b < n) && a != b && decide (j < next)
 
 def events : List Gate → Nat
   | [] => 0
@@ -220,6 +225,19 @@ def Accepted (n full budget : Nat) (initial target : List Nat) (gs : List Gate) 
   wellFormedFrom n 0 gs = true ∧ paid gs ≤ budget ∧
   run (packed full) gs (startState initial (events gs)) =
     startState target (events gs)
+
+instance acceptedDecidable (n full budget : Nat) (initial target : List Nat) (gs : List Gate) :
+    Decidable (Accepted n full budget initial target gs) := by
+  unfold Accepted
+  infer_instance
+
+def check (n full budget : Nat) (initial target : List Nat) (gs : List Gate) : Bool :=
+  decide (Accepted n full budget initial target gs)
+
+theorem check_sound (n full budget : Nat) (initial target : List Nat) (gs : List Gate)
+    (h : check n full budget initial target gs = true) :
+    Accepted n full budget initial target gs := by
+  exact of_decide_eq_true h
 
 def phaseParity (m : Nat → Bool) (j : Nat) : List Bool → Bool
   | [] => false
@@ -250,7 +268,7 @@ theorem all_branches (n full budget row : Nat) (initial target : List Nat)
     s.q = target.map (fun x => x.testBit row) ∧ branchPhase m s = false := by
   have hrun := h.2.2.2.2.2
   have hproj := congrArg (project (fun x : Nat => x.testBit row)) hrun
-  rw [run_map (rowMorph full row hrow), project_start, project_start] at hproj
+  simp only [run_map (rowMorph full row hrow), project_start] at hproj
   dsimp
   rw [hproj]
   simp [branchPhase, parity_zero]
