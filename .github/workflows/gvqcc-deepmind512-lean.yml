@@ -1,0 +1,34 @@
+name: GVQCC DeepMind-style Lean proof check
+
+on:
+  pull_request:
+    paths:
+      - "research/deepmind512/**"
+      - ".github/workflows/gvqcc-deepmind512-lean.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lean-proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Lean 4.35.0 kernel check (not native KickMix validation)
+        uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee
+        with:
+          lake-package-directory: research/deepmind512/lean
+          auto-config: false
+          build: true
+          test: false
+          lint: false
+          mk_all-check: false
+          use-mathlib-cache: false
+      - name: Inspect theorem count
+        run: |
+          test "$(grep -c '^theorem ' research/deepmind512/lean/GVQCC.lean)" -eq 588
+          if grep -Eq '\bsorry\b|\badmit\b' research/deepmind512/lean/GVQCC.lean; then
+            echo 'Unproved theorem placeholder detected'; exit 1
+          fi
