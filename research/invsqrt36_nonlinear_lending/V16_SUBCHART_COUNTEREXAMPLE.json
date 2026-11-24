@@ -1,0 +1,76 @@
+{
+  "parent_pr": 65,
+  "base_sha256": "7be22729aae992f2f3fa408eba736300cf8cacc92ed5475e2a9707950cb153ff",
+  "baseline": {
+    "static_paid": 1832,
+    "expected_paid": 1667.9375,
+    "ops": 40047,
+    "source_coverage": 55567,
+    "total_source": 60766,
+    "peak_width": 37
+  },
+  "verified_archives": 8,
+  "unique_contained_archived_donors": 294,
+  "matched_sample_endpoints": 153,
+  "sample_legal_inputs": 768,
+  "positive_static_pairs": 13,
+  "all_legal_inputs": 3133452,
+  "prior_hmr_variables": 421,
+  "initial_exact_splices_pass": 0,
+  "exact_zero_history_endpoint_remap": {
+    "matched": 13,
+    "entry_coordinate_changes": [
+      [
+        4,
+        0,
+        26
+      ],
+      [
+        10,
+        26,
+        0
+      ]
+    ],
+    "data_pass": 13,
+    "phase_pass": 0,
+    "classical_pass": 0,
+    "rotations_pass": 13,
+    "guard_pass": 13
+  },
+  "counterexample": {
+    "source_range": [
+      16448,
+      16501
+    ],
+    "native_range": [
+      10625,
+      10678
+    ],
+    "legal_x": 2,
+    "prior_hmr_ones_zero_based": [
+      392
+    ],
+    "other_prior_hmr_zero": true,
+    "entry_q": 42198059321,
+    "c805": false,
+    "c837": true,
+    "old_exit_q": 42732833081,
+    "new_exit_q": 42732833081,
+    "old_phase": false,
+    "new_phase": true,
+    "old_ops": 53,
+    "rejected_ops": 86,
+    "old_local_expected": 0.5,
+    "rejected_expected": 0
+  },
+  "new_algorithm_search": false,
+  "official_verifier": false,
+  "official_score_update": false,
+  "main_modified": false,
+  "lean_status": "pending",
+  "references": [
+    "https://arxiv.org/abs/2106.01658",
+    "https://arxiv.org/abs/2106.01099",
+    "https://doi.org/10.1145/3808314"
+  ]
+}
