@@ -1,0 +1,25 @@
+name: Actual carry Lean certificates
+on:
+  push:
+    branches: [research/invsqrt36-actual-carry-certificates-20261124]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  actual-carry:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Install pinned Lean
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check actual local equivalence, schedule and cost
+        run: |
+          set -euo pipefail
+          cd research/invsqrt36_nonlinear_lending/lean
+          lean --version
+          lean ActualCarry.lean
+          echo "All sixteen local normalized equivalence and resource certificates elaborated."
