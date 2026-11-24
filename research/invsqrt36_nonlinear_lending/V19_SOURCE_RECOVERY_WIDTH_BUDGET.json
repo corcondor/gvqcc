@@ -1,0 +1,74 @@
+{
+  "main": "b92037d41781022d0012cd459ade7278667adcd8",
+  "pr22": "d760eade24984a021ef5df5b7d6da7a805f345dd",
+  "pr23": "45b6c890809408e4b771cec860aa048b540b8809",
+  "pr68": "16d95d8763bb63b52b777262d315048e2f0f99cf",
+  "pr69": "80e930966fbc00d46d34a4c2908f1da399e6ddf7",
+  "missing": [
+    {
+      "filename": "GVQCC_cloud_hub_20261124_NO_GAIN.zip",
+      "sha256": "13e77e9aff70cd7d3b2149f7782391b6760de60f34841d49a97c9e9f2892799f",
+      "record": "CLOUD_HUB_REJECTED_20261124.md",
+      "scope": "ANGLE",
+      "status": "unrecovered"
+    },
+    {
+      "filename": "GVQCC_directional_word_conjugation_20261124_NO_GAIN.zip",
+      "sha256": "4e7d74fb37f20b55a762931622c7572139411379b5f9d2a119b69e4f01867c90",
+      "record": "DIRECTIONAL_WORD_CONJUGATION_20261124.md",
+      "scope": "ANGLE",
+      "status": "unrecovered"
+    },
+    {
+      "filename": "GVQCC_joint_gauge_gate_cold_shear_20261124_NO_GAIN.zip",
+      "sha256": "21baa7ba9327ad3d90be9cd842262e4fd6165d13592f3cea6ef5b60c78e633b1",
+      "record": "JOINT_GAUGE_GATE_COLD_SHEAR_20261124.md",
+      "scope": "ANGLE",
+      "status": "unrecovered"
+    },
+    {
+      "filename": "GVQCC_rank_pursuit_HMR_erasure_20261124_NO_GAIN.zip",
+      "sha256": "4eced6520b15a89e829922fabcd32c9224bca5e4d65654bc47fe4423606173d6",
+      "record": "RANK_PURSUIT_HMR_ERASURE_20261124.md",
+      "scope": "ANGLE",
+      "status": "unrecovered"
+    }
+  ],
+  "searched": [
+    "prior conversations",
+    "Library exact title and project folders",
+    "Google Drive research archive source/log/native folders",
+    "main/PR22/PR23 recursive trees and PR23 comments",
+    "five recovered successor ZIP member listings",
+    "GitHub releases"
+  ],
+  "actions_artifacts_endpoint": "generic fetch endpoint denied; not evidence of absence",
+  "pr68_archive_sha256": "a7534bfa9c5e926517d5ebba0b870ec6d27582c0b4db4fdc1b8c57add8e91c04",
+  "pr68_native_sha256": "bf041c7baea460594002045116a028069dd28e56fc988987bc65caf36c1d6ad2",
+  "prefix_replay": "PASS",
+  "exact_cost_terminal_replay": "PASS",
+  "legal_inputs": 3133452,
+  "hmr_variables": 1280,
+  "ops": 59167,
+  "static_paid": 1558,
+  "expected_paid": "22581/16",
+  "q36_direct_ops": 2024,
+  "q36_direct_expected": "305/2",
+  "q36_lifetimes": 306,
+  "q36_lifetime_ops": 13126,
+  "q36_lifetime_expected": "3455/8",
+  "outside_lifetime_expected": "15671/16",
+  "swap_only": 83,
+  "swap_clifford_only": 108,
+  "zero_direct_paid_lifetimes": 171,
+  "all_individual_37_functions_nonzero_at_some_cut": 306,
+  "meaning": "non-identically-zero Boolean functions, not simultaneous ones or information-theoretic lower bound",
+  "budget_grid_units": 651,
+  "conditional_extra_budget": 40.74140236114022,
+  "script_sha256": "5bb36c583fcfc03913dad5185f4214aa8c227fa21fd722f52f1e4cc5af20070b",
+  "full_lifetime_receipt_sha256": "02c7fde6435b5e66d872910a1054ab0801899795c073648aab964ed8efda04d0",
+  "reproduction_archive_sha256": "b088be90c3bde9ccaf2de1dcf1a79c8f0dd94639a596aeb5981213fa4c2e4611",
+  "new_search": false,
+  "official_verifier": false,
+  "peak_width": 37
+}
