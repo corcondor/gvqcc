@@ -1,4 +1,6 @@
 import Init
+set_option maxRecDepth 8192
+set_option maxHeartbeats 2000000
 /-! V5 algebraic and concrete coefficient certificates.
 The reachability hypotheses, KMB instruction semantics, and global phase ledger
 are checked separately by the exact symbolic trace; this is not a full
