@@ -1,0 +1,21 @@
+{
+  "src_kmb": "c:\\Users\\81808\\.openclaw\\gvqcc_v2832\\invsqrt_v21_virt_swap_clifford.kmb",
+  "out_kmb": "c:\\Users\\81808\\.openclaw\\gvqcc_v2832\\invsqrt_v22_central_syndrome.kmb",
+  "out_sha256": "b9bb7a3ef49e8e9e99d755aaa9d467bfac711427b308fcb17758865de0717f16",
+  "v21_ops": 55989,
+  "v22_ops": 55299,
+  "delta_vs_v21": 690,
+  "delta_vs_60766_orig": 5467,
+  "wider_clifford_cancelled": 402,
+  "syndrome_stats": {
+    "runs_processed": 1026,
+    "dup_phase_cancelled": 116,
+    "syndrome_hubs_created": 27,
+    "quantum_phase_ops_before": 6281,
+    "quantum_phase_ops_after": 5854,
+    "classical_xor_ops_added": 139,
+    "net_ops_saved_by_syndrome": 288,
+    "abel_telescoping_pairs_detected": 36
+  },
+  "out_stats": "<km.OperationStatistics num_instructions=55298 num_toffoli_like=1553 num_t_like=10>"
+}

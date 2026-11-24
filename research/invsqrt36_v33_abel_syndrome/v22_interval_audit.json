@@ -1,0 +1,136 @@
+{
+  "total_ops": 55989,
+  "total_intervals": 1315,
+  "exact_interval_chromatic_number": 37,
+  "ops_at_live_37": 11545,
+  "ops_at_live_36": 14252,
+  "q36_total_lifetimes": 90,
+  "q36_recolorable_at_zero_cost": 0,
+  "q36_zero_paid_lifetimes": 2,
+  "q36_blocking_peak37_lifetimes": 90,
+  "min_color36_intervals_after_optimal_recolor": 91,
+  "top_10_shortest_blocking_q36": [
+    {
+      "span": [
+        7697,
+        7701
+      ],
+      "len": 4,
+      "paid_touches": 1,
+      "touches": 4,
+      "max_live": 37
+    },
+    {
+      "span": [
+        55985,
+        55989
+      ],
+      "len": 4,
+      "paid_touches": 0,
+      "touches": 3,
+      "max_live": 37
+    },
+    {
+      "span": [
+        7881,
+        7888
+      ],
+      "len": 7,
+      "paid_touches": 2,
+      "touches": 5,
+      "max_live": 37
+    },
+    {
+      "span": [
+        8067,
+        8074
+      ],
+      "len": 7,
+      "paid_touches": 2,
+      "touches": 5,
+      "max_live": 37
+    },
+    {
+      "span": [
+        8177,
+        8184
+      ],
+      "len": 7,
+      "paid_touches": 2,
+      "touches": 5,
+      "max_live": 37
+    },
+    {
+      "span": [
+        8287,
+        8294
+      ],
+      "len": 7,
+      "paid_touches": 2,
+      "touches": 5,
+      "max_live": 37
+    },
+    {
+      "span": [
+        8397,
+        8404
+      ],
+      "len": 7,
+      "paid_touches": 2,
+      "touches": 5,
+      "max_live": 37
+    },
+    {
+      "span": [
+        8507,
+        8514
+      ],
+      "len": 7,
+      "paid_touches": 2,
+      "touches": 5,
+      "max_live": 37
+    },
+    {
+      "span": [
+        8617,
+        8624
+      ],
+      "len": 7,
+      "paid_touches": 2,
+      "touches": 5,
+      "max_live": 37
+    },
+    {
+      "span": [
+        8727,
+        8734
+      ],
+      "len": 7,
+      "paid_touches": 2,
+      "touches": 5,
+      "max_live": 37
+    }
+  ],
+  "top_10_zero_paid_blocking_q36": [
+    {
+      "span": [
+        52591,
+        55852
+      ],
+      "len": 3261,
+      "paid_touches": 0,
+      "touches": 99,
+      "max_live": 37
+    },
+    {
+      "span": [
+        55985,
+        55989
+      ],
+      "len": 4,
+      "paid_touches": 0,
+      "touches": 3,
+      "max_live": 37
+    }
+  ]
+}
