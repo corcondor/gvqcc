@@ -1,0 +1,105 @@
+{
+  "base_pr": 41,
+  "base_commit": "07927e0d6a33104352adfa7c65366134cd3bb59c",
+  "base_sha256": "97623d3bb9b7fb61aeabd7312e869ab64e49da9c4070d359e79d86688c9161a5",
+  "peer_graft_sha256": "75236f5a9e15860d614cfa4c08ad2c4c432747f8e5c5ef3ed98750f76c7f36d8",
+  "candidate_sha256": "90df96a92f9bde49121a0b3ddde1a524946da2f66e476e63a81aa1b83b7305b6",
+  "coverage": {
+    "source": 60766,
+    "covered": 55485,
+    "remaining": 5281,
+    "percent": 91.30928479741961,
+    "peak": 37,
+    "full_36q": false
+  },
+  "native_ops": [
+    63113,
+    50104,
+    46568
+  ],
+  "static_paid": [
+    1900,
+    1892,
+    1892
+  ],
+  "expected_paid": [
+    1719.3125,
+    1716.3125,
+    1716.3125
+  ],
+  "graft": {
+    "pr42": 1,
+    "pr43": 1325,
+    "checks": 38675,
+    "verification": "PASS"
+  },
+  "frame": {
+    "absorbed_swaps": 2994,
+    "restored_swaps": 704,
+    "cancelled_pairs": 623,
+    "paid_pairs": 0,
+    "max_commutation_distance": 11008,
+    "checks": 50104,
+    "phase_checks": 18610,
+    "rotation_checks": 55,
+    "verification": "PASS"
+  },
+  "legal_inputs": 3133452,
+  "hmr_variables": 1174,
+  "depth": {
+    "wire_classical_dependency": [
+      37232,
+      28319,
+      26729
+    ],
+    "weighted_paid_dependency": [
+      1888,
+      1879,
+      1874
+    ],
+    "q36_touches": [
+      774,
+      686,
+      1449
+    ],
+    "metric": "conservative serialized dependency metric, not actual hardware depth"
+  },
+  "negative": {
+    "clean_zero_slot": {
+      "gaps": 95,
+      "success": 0,
+      "all_37_nonzero_functions": 95
+    },
+    "guard_capture": {
+      "paid_scanned": 1892,
+      "pairs": 0
+    }
+  },
+  "score_model": {
+    "baseline": 33.17031640530013,
+    "baseline_cost": 60927.54794503887,
+    "K": 240.37798500105055,
+    "estimated_37Q": 31.31695742088882,
+    "hypothetical_36Q": 31.604285006547663,
+    "break_even_36Q": 1452.0539023611402,
+    "additional_expected_paid_reduction": 264.2585976388598,
+    "official": false
+  },
+  "lean": {
+    "actual_epoch": [
+      24827,
+      24839
+    ],
+    "new_epoch": [
+      22383,
+      22393
+    ],
+    "ci": "PENDING",
+    "scope": "only actual local gate list; not whole circuit"
+  },
+  "official_verifier": false,
+  "main_changed": false,
+  "kaggle_submission": false,
+  "angle_search": "BLOCKED historical audit",
+  "source_archive": "GVQCC_V8_GlobalFrame_91pct_NOT_SUBMISSION.zip"
+}
