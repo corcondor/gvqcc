@@ -27,6 +27,7 @@ structure Basis where
   deriving Repr, DecidableEq
 
 def init (l : List Bool) : Basis := ⟨l.toArray, false⟩
+def initPhase (l : List Bool) (p : Bool) : Basis := ⟨l.toArray, p⟩
 def readBit (s : Basis) (i : Nat) : Bool := s.bits[i]!
 def toggle (s : Basis) (i : Nat) (v : Bool) : Basis :=
   {s with bits := s.bits.set! i (Bool.xor (readBit s i) v)}
@@ -88,5 +89,23 @@ theorem phase_folding_exact (a b c d : Bool) :
 
 theorem phase_folding_saved_nonclifford : nonCliffordCost oldPhase = nonCliffordCost newPhase + 1 := by
   decide
+
+
+-- X-basis measurement of |f⟩ gives relative sign (-1)^(m∧f) in
+-- branch m; it is canceled by a *classically conditional* Z on `c` and
+-- CZ on `a,b` when f=c XOR (a AND b).
+-- This theorem checks the phase exponent only; it is not a proof of the
+-- stochastic HMR/reset instruction or an entire modified ANGLE circuit.
+def hmrPhase (outcome value : Bool) : Bool := outcome && value
+
+theorem hmr_affine_product_feedback (m a b c : Bool) :
+  Bool.xor (hmrPhase m (Bool.xor c (a && b)))
+    (Bool.xor (hmrPhase m c) (hmrPhase m (a && b))) = false := by
+  cases m <;> cases a <;> cases b <;> cases c <;> decide
+
+theorem phase_folding_any_incoming_sign (p a b c d : Bool) :
+    run oldPhase (initPhase [a,b,c,d] p) =
+    run newPhase (initPhase [a,b,c,d] p) := by
+  cases p <;> cases a <;> cases b <;> cases c <;> cases d <;> decide
 
 end GVQCCLean

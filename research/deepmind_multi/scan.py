@@ -222,15 +222,16 @@ def lean_source(hit):
     def expr(op):
         name=op['op'];args=' '.join(str(windex[i]) for i in op['q']);return f'Gate.{name} {args}'
     old=', '.join(expr(o) for o in hit['before']);new=', '.join(expr(o) for o in hit['after'])
-    names=[f'x{i}' for i in range(n)];var=' '.join(names)
-    cases=' <;> '.join('cases '+x for x in names)+' <;> decide'
+    names=[f'x{i}' for i in range(n)];var=' '.join(['sign']+names)
+    cases=' <;> '.join('cases '+x for x in ['sign']+names)+' <;> decide'
     return f'''import GVQCCMicro
 namespace GVQCCLean
 private def original : List Gate := [{old}]
 private def candidate : List Gate := [{new}]
 -- Full arbitrary-input state AND phase equivalence (not just legal addresses).
 theorem candidate_exact ({var} : Bool) :
-  run original (init [{', '.join(names)}]) = run candidate (init [{', '.join(names)}]) := by
+  run original (initPhase [{', '.join(names)}] sign) =
+  run candidate (initPhase [{', '.join(names)}] sign) := by
   {cases}
 
 theorem candidate_cost_reduction : nonCliffordCost original = nonCliffordCost candidate + {hit['saved_nonclifford']} := by

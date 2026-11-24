@@ -38,6 +38,7 @@ class ExactTests(unittest.TestCase):
             h=hits[0];self.assertEqual(h['saved_nonclifford'],expected)
             self.assertIn('theorem candidate_exact',lean_source(h))
             self.assertIn('candidate_cost_reduction',lean_source(h))
+            self.assertIn('initPhase', lean_source(h))
     def test_cross_target(self):
         self.find_saved([op('ccx',0,1,2),op('ccx',0,1,3)],1)
     def test_shared_factor(self):

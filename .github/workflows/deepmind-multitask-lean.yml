@@ -21,3 +21,20 @@ jobs:
           lake build
       - name: Exhaustive small-KMB Python tests
         run: python3 -m unittest discover -s research/deepmind_multi -p 'test_*.py' -v
+      - name: Compile automatically generated Lean candidate proof
+        run: |
+          python3 - <<'PYCODE'
+          import pathlib,sys
+          sys.path.insert(0, 'research/deepmind_multi')
+          from test_scan import fixture,op
+          from scan import KMB,find,lean_source
+          p=pathlib.Path('/tmp/gvqcc_lean_input.kmb')
+          p.write_bytes(fixture([op('ccx',0,1,2),op('cz',2,3),op('ccx',0,1,2)]))
+          k=KMB(p)
+          try: hits=find(k,10)['hits']
+          finally:k.close()
+          h=next(x for x in hits if x['rule']=='phase_echo')
+          pathlib.Path('research/deepmind_multi/lean/GeneratedCertificate.lean').write_text(lean_source(h))
+          PYCODE
+          cd research/deepmind_multi/lean
+          lake env lean GeneratedCertificate.lean
