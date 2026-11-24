@@ -39,6 +39,7 @@ def build(npz,lean,support_b64=None):
       "import Init",
       "namespace GVQCC.SparseW",
       "set_option maxRecDepth 16384",
+      "set_option maxHeartbeats 1500000",
       "def supportRows : Array Nat := #["]
     for i in range(0,1143,8):
         out.append("  "+", ".join(f"0x{v:012x}" for v in masks[i:i+8])+("," if i+8<1143 else ""))
