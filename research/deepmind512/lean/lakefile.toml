@@ -1,0 +1,6 @@
+name = "gvqcc-verified-candidates"
+version = "0.1.0"
+defaultTargets = ["GVQCC"]
+
+[[lean_lib]]
+name = "GVQCC"
