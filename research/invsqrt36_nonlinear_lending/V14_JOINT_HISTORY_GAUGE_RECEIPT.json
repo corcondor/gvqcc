@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-24",
+  "kind": "known donor composition only",
+  "parent": {
+    "pr": 59,
+    "sha256": "ea605794431d64a22de189087a6c637bf73650b19068dff106755a1798576eca"
+  },
+  "donors": {
+    "pr61": "00e8787a5075155e6fd8fdd15b5753c074028181",
+    "pr62": "3ef250897e545da1ecaa81b516cb75abdc06d241"
+  },
+  "all_legal_inputs": 3133452,
+  "original_hmr_variables": 1186,
+  "removed_events": 5,
+  "source_total": 60766,
+  "wide": {
+    "sha256": "5938ec61a11358b8cf03b4ba6003c7bfcbeccacc0e91ceffd39a6748185b4f81",
+    "ops": 41118,
+    "paid": 1882,
+    "expected": 1710.4375,
+    "coverage": 56184,
+    "checks": 40724,
+    "seconds": 30.056484699249268,
+    "phase_ledger": 0,
+    "final_classical_equal": true,
+    "pr61_splices": 816,
+    "pr62_splices": 29,
+    "overlaps": 0,
+    "q36_direct": 529,
+    "peakQ": 37,
+    "depth": 23535,
+    "paid_depth": 1868,
+    "verification": "PASS"
+  },
+  "economy": {
+    "sha256": "bc688108596a21e8a48fdd1b172b40e60b4fb4b405594c938709904cc1b25135",
+    "ops": 41071,
+    "paid": 1866,
+    "expected": 1694.4375,
+    "coverage": 56059,
+    "checks": 40772,
+    "seconds": 30.614827632904053,
+    "phase_ledger": 0,
+    "final_classical_equal": true,
+    "pr61_splices": 812,
+    "pr62_splices": 29,
+    "overlaps": 0,
+    "q36_direct": 537,
+    "peakQ": 37,
+    "depth": 23497,
+    "paid_depth": 1852,
+    "verification": "PASS"
+  },
+  "new_source_ranges": [
+    [
+      21386,
+      21431
+    ],
+    [
+      22829,
+      22859
+    ],
+    [
+      23357,
+      23391
+    ],
+    [
+      24492,
+      24524
+    ],
+    [
+      24953,
+      24982
+    ],
+    [
+      25112,
+      25155
+    ],
+    [
+      26189,
+      26233
+    ],
+    [
+      27227,
+      27267
+    ],
+    [
+      27754,
+      27783
+    ],
+    [
+      28272,
+      28301
+    ]
+  ],
+  "cost_best_peer": {
+    "pr": 61,
+    "ops": 40079,
+    "paid": 1833,
+    "expected": 1668.9375,
+    "coverage": 55567
+  },
+  "full36_break_even_expected": 1452.05390236114,
+  "conditional_score_at36": {
+    "cost_peer": 31.86354674828376,
+    "economy": 31.722944820420818,
+    "wide": 31.635979289674093
+  },
+  "official_verifier": false,
+  "official_score_update": false,
+  "main_modified": false,
+  "submitted": false,
+  "lean": "PR60,61,62 CI completed success; V14 concrete resource and arithmetic lemma CI pending. Whole semantics verified by BDD separately.",
+  "new_discovery_search": false,
+  "historical_audit": "Four missing historical ANGLE source archives still blocked; no local/cold-start exploration. Known donor integration permitted. Arithmetic relation hypothesis not native circuit.",
+  "source_sha256": "3ea88d67b05fda1abc6f55d1a2b9209600d82328923070c0dff0bd978f101222"
+}
