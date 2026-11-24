@@ -1,0 +1,67 @@
+{
+  "date_jst": "2026-11-24",
+  "status": "BLOCKED_PRE_SEARCH_HISTORICAL_SOURCE_AUDIT",
+  "baseline": {
+    "T": 3357,
+    "Q": 128,
+    "k8": 211,
+    "k13": 211,
+    "k14": 211
+  },
+  "review": {
+    "main_tree": "b92037d41781022d0012cd459ade7278667adcd8",
+    "pr22_head": "d760eade24984a021ef5df5b7d6da7a805f345dd",
+    "pr23_head_before_record": "e6722e49c6c4c77e2427c7472036c1c8ff5ac41f",
+    "pr_metadata_through": 40,
+    "pr29_to_38_conversation_comments_read": true,
+    "pr39_40_reports_read": true,
+    "full_historical_code_audit_complete": false,
+    "missing_archives": [
+      "GVQCC_directional_word_conjugation_20261124_NO_GAIN.zip",
+      "GVQCC_joint_gauge_gate_cold_shear_20261124_NO_GAIN.zip",
+      "GVQCC_rank_pursuit_HMR_erasure_20261124_NO_GAIN.zip",
+      "GVQCC_cloud_hub_20261124_NO_GAIN.zip"
+    ],
+    "recovery_attempts": [
+      "exact title library/conversation search: no hits",
+      "recent library list: no exact missing archives",
+      "prior conversation/context lookup: no matching archive location",
+      "container git ls-remote: DNS unavailable"
+    ],
+    "note": "Existing 1633 audit confirms missing executable archives. PR23 Markdown reports are available but are not the missing full source; PR22 tree does not contain COEFFICIENT_REDESIGN_20261124.md under that name; earlier audit recovered its ZIP. No assertion that all PR sources/comments were read."
+  },
+  "cross_session": {
+    "pr39": {
+      "head": "c780bc76e7c1596c7df73d07cca51ed7a333f299",
+      "conditioned_polynomials": 935,
+      "rank": 892,
+      "shared_epoch_monomials": 910,
+      "not_native_cost_saving": true
+    },
+    "pr40": {
+      "head": "dc72f3a6bd11c3018568dc6ebe2d4da5e32749cd",
+      "source_ops": 60766,
+      "covered": 55184,
+      "remaining": 5582,
+      "union_phase_static": 1889,
+      "union_phase_expected": 1710.8125,
+      "coverage_diagnostic_static_before_reoptimization": 1936,
+      "coverage_diagnostic_expected_before_reoptimization": 1741.8125,
+      "actual_Q": 37,
+      "official_score": null,
+      "note": "Use exact sequence matching and whole history revalidation; no addition of overlapping savings. Compare latest receipt before repeating any guarded/phase/carry searches."
+    }
+  },
+  "exploration": {
+    "cold_start": 0,
+    "local": 0,
+    "new_native_kmb": 0,
+    "new_lean_proofs": 0,
+    "cold_start_budget_fraction": null,
+    "scope": "No optimization admitted due to incomplete mandatory source audit."
+  },
+  "official_verification": "not run",
+  "score_update": false,
+  "main_modified": false,
+  "kaggle_submission": false
+}
