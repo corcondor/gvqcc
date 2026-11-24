@@ -1,0 +1,59 @@
+{
+  "source_sha256": "6b59214530108d8c49c648f96c53b963d9b8477f8813db1edcf478bf45f6cf03",
+  "source_interval": [
+    8288,
+    9358
+  ],
+  "source_ops": 1070,
+  "source_paid": 89,
+  "partial_q": 36,
+  "partial_ops": 2205,
+  "partial_paid": 159,
+  "closed_pr28_paid": 159,
+  "paid_gain_vs_closed_pr28": 0,
+  "gap_count": 9,
+  "each_gap_paid": 2,
+  "all_legal_inputs": 3133452,
+  "independent_potential_hmr": 1278,
+  "retained_region_events": 20,
+  "zero_whole_trace_phase_coefficients": 60,
+  "entry_relation_checks": 10,
+  "region_comparison": {
+    "state": true,
+    "classical": true,
+    "phase": true,
+    "rotations": true
+  },
+  "partial_sha256": "1176cec19c88f8be0e95395380b7986ab7286f5d6bc91404106a86853282b464",
+  "diagnostic_sha256": "919a3296ac23bf98432780959a98ebf2ecce23376a0460dbcba79650ec5e41de",
+  "diagnostic_q": 37,
+  "diagnostic_paid": 1623,
+  "full_36q": false,
+  "integrated_v4": false,
+  "official_verifier": false,
+  "official_score": null,
+  "search": {
+    "joint_delayed_inverse_maj_subsets": 17190,
+    "shared_quadratic_context_groups": 305,
+    "shared_quadratic_context_with_parity_groups": 305,
+    "joint_open_delta_beam": 21240,
+    "joint_open_delta_binary": 1024,
+    "joint_gate_mutations": 100269,
+    "positive_paid_reduction_candidates": 0
+  },
+  "scope": "Exact BDD acceptance for contiguous partial and 60 original phase coefficients; direct gap ANF identity on arbitrary 35 encoded input bits; joint search failures restricted to specific sampled classes. ANGLE historical audit blocked per PR23. No official gain. No whole-program Lean equivalence.",
+  "lean": {
+    "file": "lean/JointHubTransport.lean",
+    "gap_obligations": 9,
+    "resource_obligations": 9,
+    "phase_hub_fix": "cbff4997f195b702cd270e78c7bc5b5727a9e3d5",
+    "ci": "not yet checked"
+  },
+  "exclude_repeat": [
+    "single-common quadratic context with stage-specific affine parts and stable spectators, including fixed parity shift variant",
+    "same delayed inverse-MAJ subset with affine recovery test",
+    "same open decoder omission / 8 affine replacement masks over ten fixed PR30 charts",
+    "same two-shear direct gap factorization (cost-neutral)",
+    "same fixed gate mutation search and objective"
+  ]
+}
