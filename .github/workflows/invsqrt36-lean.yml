@@ -25,3 +25,10 @@ jobs:
       - name: Local Python truth-functional loan regression
         run: |
           python3 -m unittest discover -s research/invsqrt36_nonlinear_lending -p 'test_*.py' -v
+      - name: Compile whole-subprogram rematerialization Boolean proof
+        run: |
+          cd research/invsqrt36_nonlinear_lending/lean
+          lake env lean GlobalRemat.lean
+      - name: Universal late-materialization regression
+        run: |
+          python3 -m unittest discover -s research/invsqrt36_nonlinear_lending/global_remat -p 'test_*.py' -v
