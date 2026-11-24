@@ -231,8 +231,11 @@ theorem original129_eq_changed130 (x : CutInput) (j : OutputBit) :
     (two_terms_to_three x j)
  simpa only [Bool.xor_assoc] using h
 
+set_option maxRecDepth 8192 in
 theorem original_count : original129.length = 129 := by decide
+set_option maxRecDepth 8192 in
 theorem changed_count : changed130.length = 130 := by decide
+set_option maxRecDepth 8192 in
 theorem change_is_plus_one :
     changed130.length = original129.length + 1 := by decide
 
