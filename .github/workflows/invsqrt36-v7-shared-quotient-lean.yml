@@ -1,0 +1,20 @@
+name: V7 shared quotient Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_nonlinear_lending/lean/SharedQuotientV7.lean'
+      - '.github/workflows/invsqrt36-v7-shared-quotient-lean.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Prove concrete native gate equality and resource bounds
+        run: |
+          lean --version
+          lean research/invsqrt36_nonlinear_lending/lean/SharedQuotientV7.lean
