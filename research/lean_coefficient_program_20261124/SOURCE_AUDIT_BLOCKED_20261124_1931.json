@@ -1,0 +1,116 @@
+{
+  "date_jst": "2026-11-24",
+  "status": "BLOCKED_PRE_SEARCH_HISTORICAL_SOURCE_AUDIT",
+  "baseline": {
+    "ANGLE_T": 3357,
+    "ANGLE_Q": 128,
+    "k8": 211,
+    "k13": 211,
+    "k14": 211,
+    "zip_sha256": "0211ca05bc492b1312dce58a6978a2a527ff25e978e3f1b986c280b50d4f27f2"
+  },
+  "review": {
+    "main": "b92037d41781022d0012cd459ade7278667adcd8",
+    "pr22": "d760eade24984a021ef5df5b7d6da7a805f345dd",
+    "pr23_before_receipt": "2d357423ca66008c0c4332862aead853ad526073",
+    "metadata_through_pr": 55,
+    "read_latest_reports": [
+      53,
+      54,
+      55
+    ],
+    "comment_threads_read": [
+      22,
+      23,
+      51,
+      52,
+      53,
+      54,
+      55
+    ],
+    "full_historical_source_audit": false,
+    "missing_original_archives": [
+      [
+        "GVQCC_cloud_hub_20261124_NO_GAIN.zip",
+        "13e77e9aff70cd7d3b2149f7782391b6760de60f34841d49a97c9e9f2892799f"
+      ],
+      [
+        "GVQCC_joint_gauge_gate_cold_shear_20261124_NO_GAIN.zip",
+        "21baa7ba9327ad3d90be9cd842262e4fd6165d13592f3cea6ef5b60c78e633b1"
+      ],
+      [
+        "GVQCC_directional_word_conjugation_20261124_NO_GAIN.zip",
+        "4e7d74fb37f20b55a762931622c7572139411379b5f9d2a119b69e4f01867c90"
+      ],
+      [
+        "GVQCC_rank_pursuit_HMR_erasure_20261124_NO_GAIN.zip",
+        "4eced6520b15a89e829922fabcd32c9224bca5e4d65654bc47fe4423606173d6"
+      ]
+    ],
+    "recovery": "Exact-title and short semantic search; paginated recent ZIP library listing (102 items returned, Drive recursive listing unsupported); prior conversation search recovered original sandbox paths but not file IDs; paths absent in current runtime. Markdown records read but not substitutes for code. No claim of full audit."
+  },
+  "peer_frontier": {
+    "pr53": {
+      "head": "4553c673dcf422b7c4462183292be9b877bba1d9",
+      "cost": [
+        41816,
+        1852,
+        1682.3125
+      ],
+      "lean_ci": 45374684238,
+      "ci": "success",
+      "exclusions": "invariant vector layer rank-basis and exact affine words, persistent two-product multi-gap carrier loan screen (609 clusters, zero sample hits)"
+    },
+    "pr54": {
+      "head": "d2699ed4affb6b2997028e30fc02000b13c3c0e1",
+      "integrated_cost": {
+        "ops": 41812,
+        "static_paid": 1846,
+        "expected_paid": 1676.3125,
+        "source_coverage": 55567,
+        "total_source": 60766,
+        "peakQ": 37,
+        "depth_proxy": 24155,
+        "hmr": 1173,
+        "sha256": "c6b09a2cbe854cb32301114dd02af90df6916d660955997499c4b5fd00b8ec12"
+      },
+      "integrated_wide": {
+        "ops": 42767,
+        "static_paid": 1878,
+        "expected_paid": 1697.3125,
+        "source_coverage": 55829,
+        "peakQ": 37
+      },
+      "lean_ci": 45375696846,
+      "ci": "success on fixed five-span theorem source; not end-to-end or integrated affine-word certificate",
+      "prior_ci_failure": 45375376735,
+      "fix": "HMR outcome Bool rather than numeric register identifier; simplify List Bool equality before bv_decide",
+      "remaining_expected_paid_saving_at_hypothetical_full36Q": 224.25859764,
+      "reported_not_independently_replayed": true
+    },
+    "pr55": {
+      "head": "33a46ac6a934a86d6e56849ae8ea4647ea13df76",
+      "cost": [
+        42151,
+        1860,
+        1690.3125
+      ],
+      "lean_ci": 45375497870,
+      "ci": "success",
+      "exclusions": "same moving-frame vector shear, decomposable polar atom catalog, same depth-31 nonlinear word cap/seed changes"
+    },
+    "note": "No arithmetic addition of overlapping PR53/54/55 gains. All are research invsqrt candidates, not official score improvement."
+  },
+  "exploration": {
+    "cold_start": 0,
+    "local": 0,
+    "new_native": 0,
+    "new_lean": 0,
+    "cold_start_budget_fraction": null,
+    "reason": "mandatory source audit incomplete"
+  },
+  "official_verification": "not run",
+  "score_update": false,
+  "main_modified": false,
+  "kaggle_submission": false
+}
