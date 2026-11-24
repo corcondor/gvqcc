@@ -239,4 +239,33 @@ set_option maxRecDepth 8192 in
 theorem change_is_plus_one :
     changed130.length = original129.length + 1 := by decide
 
+/-- A deliberately invalid 128-term candidate: deleting actual original term 1.
+    This formal counterexample is over arbitrary cut-state assignments; it
+    does NOT certify an error on the restricted reachable subset. -/
+def naive128 : List Term := t0 :: t2 :: rest
+def witnessInput : CutInput := fun i => i.val == 3
+def witnessOutput : OutputBit := ⟨2, by decide⟩
+
+private theorem real_term_is_live :
+    t1.eval witnessInput witnessOutput = true := by decide
+
+theorem naive128_is_not_equivalent :
+    evalTerms original129 witnessInput witnessOutput ≠
+      evalTerms naive128 witnessInput witnessOutput := by
+  change
+    Bool.xor (t0.eval witnessInput witnessOutput)
+      (Bool.xor (t1.eval witnessInput witnessOutput)
+        (Bool.xor (t2.eval witnessInput witnessOutput)
+          (evalTerms rest witnessInput witnessOutput))) ≠
+    Bool.xor (t0.eval witnessInput witnessOutput)
+      (Bool.xor (t2.eval witnessInput witnessOutput)
+        (evalTerms rest witnessInput witnessOutput))
+  rw [real_term_is_live]
+  cases t0.eval witnessInput witnessOutput <;>
+    cases t2.eval witnessInput witnessOutput <;>
+    cases evalTerms rest witnessInput witnessOutput <;> decide
+
+set_option maxRecDepth 8192 in
+theorem naive_count : naive128.length = 128 := by decide
+
 end GVQCC.RealV8
