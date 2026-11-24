@@ -1,0 +1,9 @@
+name = "gvqcc_micro"
+version = "0.1.0"
+defaultTargets = ["GVQCCMicro", "ProofFixtures"]
+
+[[lean_lib]]
+name = "GVQCCMicro"
+
+[[lean_lib]]
+name = "ProofFixtures"

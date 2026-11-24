@@ -1,0 +1,23 @@
+name: GVQCC - three-task Lean micro-certificates
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean-and-local-kmb:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install Lean 4.35.0 via elan
+        run: |
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check Lean gate and phase theorems
+        run: |
+          cd research/deepmind_multi/lean
+          lake build
+      - name: Exhaustive small-KMB Python tests
+        run: python3 -m unittest discover -s research/deepmind_multi -p 'test_*.py' -v
