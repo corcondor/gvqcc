@@ -1,0 +1,20 @@
+name: V55 radix4 global tensor Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_nonlinear_lending/lean/V55Radix4.lean'
+      - '.github/workflows/invsqrt-v55-radix4.yml'
+  push:
+    branches: [research/invsqrt-v55-radix4-global-tensor-20261125]
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/invsqrt36_nonlinear_lending/lean/V55Radix4.lean
+      - run: python3 -m pip install numpy
+      - run: python3 research/invsqrt36_nonlinear_lending/v55_radix4_core.py
