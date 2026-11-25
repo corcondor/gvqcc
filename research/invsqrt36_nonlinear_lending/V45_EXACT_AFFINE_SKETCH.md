@@ -1,0 +1,22 @@
+# V45: exact affine-sketch retirement and measured inverse
+
+Research-only diagnostic, NOT SUBMISSION. PR94 source SHA256 2a4689fc1316ff43ff61002149e2a9e6f9b54239ba4e9c121f282423a17aeabd. V44 zero-history observation DAG (743 AND ancestors, first 38 rotations including the global constant). Do not physically postselect HMR outcomes. The previous modular-phase audit motivates the graph, but has not been turned into a whole native candidate here.
+
+## Main results and failures
+
+- Original V44 heuristic stopped after 26 or 33 processed graph nodes in its sampled trials. Initial new quadratic screen gave 594 false-positive formulas. Full-domain kernel refinement gave real relations, but the sampled affine frame itself had a rare-input failure. The first native emission attempt rejected the missing rotation control (15 legal rows). The low-row-augmented sample still failed at node32. These runs are rejected; do not use them as width proofs.
+- Corrected method: exact elimination of 121 prefix atom/constant/input masks produces 119 pivot witness rows. Restriction to those positions is injective on the entire linear span. Add these to the sample; affine dependence is then exact on this prefix. Exact refinement of the quadratic kernel over the full 3,133,452 legal inputs; arbitrary complementary directions via polar radicals, and sparse cubic dirty-borrowed updates.
+- 63/743 graph nodes processed, 23 exact retirements (22 quadratic, one cubic), maximum physical width36. The 81st atom retirement required cubic terms; 18,675 probes, 301 sampled fits, 40 exact fits, one selected. Node83 arbitrary direction passes; node86 remains blocked: 127 direction probes, 45,815 sparse cubic probes, 100 selector-cofactor trials, no accepted decoder. This is not a proof of general 36Q impossibility.
+- Native 36Q roundtrip, one nonconstant rotation (source rotation index1 only), 15,131 instructions, 256 CCX, forward 7,566 ops / 128 CCX. Exact full-domain serialized replay and 171 frame checks PASS; source inputs restored, all work wires zero. SHA256 58ef5b1837dfce2084c09955a8bc5a0a0988621a6df4777f379c4c73bfb08046.
+- Measurement-assisted rewrite: 23 forward erasures and 37 inverse clean-product erasures replaced by HMR and conditional quadratic phase corrections. 15,248 ops, 153 unconditional CCX, one guarded CCZ, expected paid 153.5 under uniform independent HMR; 60 independent records, every phase coefficient identically zero across all legal inputs. Serialized input restoration/rotation control PASS. SHA256 e88d76e9948f513124b1962dae846b6df4f4746235991ee1fff03b97b46fa816. Saves 102.5 expected paid vs the *diagnostic roundtrip*, NOT vs source PR94; expensive affine frames make this diagnostic unsuitable for score claims.
+- Alternative native-prefix inversion audit through the 38th source rotation: 567 active HMRs in zero-history data trace. 187 exactly reconstructible by quadratic/affine/zero expressions, 380 inconsistent already on legal-input samples in that coordinate class. Selected decoders cost 262 CCX by factorization (not a compiled cost result). Local inversion alone cannot reconstruct the remaining 380. This motivates cross-time phase debt, not a general width obstruction.
+
+## References
+
+Meuli et al., Xor-And-Inverter Graphs for Quantum Compilation (2022), https://doi.org/10.1038/s41534-021-00514-y — XAG pebbling model.
+Zhang, Li, Ying, A Divide-And-Conquer Pebbling Strategy for Oracle Synthesis in Quantum Computing (2025), https://doi.org/10.1109/TCAD.2025.3570608 — space-constrained recomputation motivation; not their algorithm implemented.
+Paradis et al., Reqomp (2024), https://doi.org/10.22331/q-2024-02-19-1258 — lifetime/space trade-off.
+Amy & Ross, The phase/state duality in reversible circuit design (2021), https://arxiv.org/abs/2105.13410 — measurement-assisted erasure: implemented conditional phase correction of the polynomial, not full paper synthesis.
+Yang et al., Minimization of AND-XOR Expressions with Decoders for Quantum Circuits (2026), https://arxiv.org/abs/2601.02515 — selector/cofactor search inspiration, bounded screen only.
+
+Lean source checks generic triangular witness injectivity, cubic borrowing, cofactor/phase and Abel identities. Native checks are independent packed replay, not a full Lean proof of the oracle. Reproduction archive includes actual planner, emitters, rejected trials, source PR102 archive and source PR94, native outputs, exact receipts. No complete 36Q invsqrt, no official verifier, no score update, no main or Kaggle changes.
