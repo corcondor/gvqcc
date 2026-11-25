@@ -35,9 +35,9 @@ theorem ladder_correct (xs : List (Bool × Bool)) (c : Bool) :
 theorem reverse_chart (a b c : Bool) :
     x (x (a && b) c) ((!b) && a) = x a c := by
   cases a <;> cases b <;> cases c <;> decide
-theorem reverse_phase (a c m : Bool) : x (m && a) (m && x a c) = m && c := by
+theorem reverse_phase (a c m : Bool) : x (m && a) (m && x a c) = (m && c) := by
   cases a <;> cases c <;> cases m <;> decide
-theorem clean_presample (m c : Bool) : x (m && false) (m && c) = m && c := by
+theorem clean_presample (m c : Bool) : x (m && false) (m && c) = (m && c) := by
   cases m <;> cases c <;> decide
 theorem dirty_bridge (a b d t v : Bool) :
     x (x d (a && b)) (a && b) = d ∧
