@@ -1,0 +1,17 @@
+name: V56 Wallace Carry & Tensor Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_v56_wallace_carry/lean/V56WallaceCarryTensor.lean'
+      - '.github/workflows/invsqrt36-v56-wallace-carry-lean.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Check V56 multi-stage Wallace carry & Booth-2 theorems
+        run: ~/.elan/bin/lean research/invsqrt36_v56_wallace_carry/lean/V56WallaceCarryTensor.lean
