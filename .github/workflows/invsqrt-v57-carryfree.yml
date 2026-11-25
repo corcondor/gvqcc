@@ -1,0 +1,19 @@
+name: V57 carry-free algebra
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt-v57/**'
+      - '.github/workflows/invsqrt-v57-carryfree.yml'
+  push:
+    branches: [research/invsqrt-v57-carryfree-interval-tensor-20261125]
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/invsqrt-v57/V57CarryFree.lean
+      - run: python3 research/invsqrt-v57/core.py
