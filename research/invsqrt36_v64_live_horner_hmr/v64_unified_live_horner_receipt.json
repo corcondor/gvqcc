@@ -1,0 +1,82 @@
+{
+  "engine1_w6d4": {
+    "schoolbook": {
+      "ccx": 32,
+      "hmr": 14,
+      "ops": 202,
+      "pass": true,
+      "sha": "d0f461fdae604de5b0e3b67f5fc14a9e19a790768bcd344c9d60c1c21b26d2af"
+    },
+    "booth2": {
+      "ccx": 43,
+      "hmr": 11,
+      "ops": 230,
+      "pass": true,
+      "sha": "7f60d8b4b9bfdc89b04085a7116973ce17c821fdc8b1ef03f4d82d65f53deffe"
+    }
+  },
+  "engine1_w17d16_pr147_scale": {
+    "schoolbook": {
+      "ccx": 288,
+      "hmr": 136,
+      "ops": 2168,
+      "sha": "475b1f6d25feee62aca56fef09cc083f47048a19580b83a7ef916abe569209dd"
+    },
+    "booth2": {
+      "ccx": 321,
+      "hmr": 80,
+      "ops": 1907,
+      "sha": "79612722f6e7e464a77b6eda0fc4d95dc89a0ab6f53398d415da371ee4217681"
+    },
+    "ccx_saved": -33,
+    "ops_saved": 261
+  },
+  "engine2_sign_gauge_abel_qrom": [
+    {
+      "coeff": "C0",
+      "bits": 33,
+      "raw_hw": 366,
+      "raw_rank": 24,
+      "abel_diff_hw": 340,
+      "sign_gauge_plus_abel_hw": 300,
+      "hw_reduction_pct": 18.03
+    },
+    {
+      "coeff": "C1",
+      "bits": 29,
+      "raw_hw": 350,
+      "raw_rank": 24,
+      "abel_diff_hw": 268,
+      "sign_gauge_plus_abel_hw": 260,
+      "hw_reduction_pct": 25.71
+    },
+    {
+      "coeff": "C2",
+      "bits": 26,
+      "raw_hw": 256,
+      "raw_rank": 20,
+      "abel_diff_hw": 237,
+      "sign_gauge_plus_abel_hw": 211,
+      "hw_reduction_pct": 17.58
+    },
+    {
+      "coeff": "C3",
+      "bits": 23,
+      "raw_hw": 289,
+      "raw_rank": 19,
+      "abel_diff_hw": 183,
+      "sign_gauge_plus_abel_hw": 163,
+      "hw_reduction_pct": 43.6
+    },
+    {
+      "coeff": "C4",
+      "bits": 19,
+      "raw_hw": 101,
+      "raw_rank": 13,
+      "abel_diff_hw": 107,
+      "sign_gauge_plus_abel_hw": 98,
+      "hw_reduction_pct": 2.97
+    }
+  ],
+  "engine2_total_hw_reduction_pct": 24.23
+}

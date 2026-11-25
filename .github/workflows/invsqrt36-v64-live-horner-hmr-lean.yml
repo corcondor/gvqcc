@@ -1,0 +1,17 @@
+name: V64 Live Horner HMR & Sign-Gauge Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_v64_live_horner_hmr/lean/V64UnifiedDiffGauge.lean'
+      - '.github/workflows/invsqrt36-v64-live-horner-hmr-lean.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Check V64 controlled-add HMR transport & sign-gauge theorems
+        run: ~/.elan/bin/lean research/invsqrt36_v64_live_horner_hmr/lean/V64UnifiedDiffGauge.lean
