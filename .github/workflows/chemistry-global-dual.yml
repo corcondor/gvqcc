@@ -1,0 +1,16 @@
+name: Chemistry global dual tensor certificate
+on: [pull_request, workflow_dispatch]
+jobs:
+  finite-certificates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install numpy numba
+      - run: python research/chemistry_global_dual_tensor_20261126/joint_tensor_core.py
+      - name: Lean local identities
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          "$HOME/.elan/bin/lean" research/chemistry_global_dual_tensor_20261126/DualTensor.lean
