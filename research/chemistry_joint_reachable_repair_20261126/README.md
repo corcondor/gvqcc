@@ -1,0 +1,11 @@
+# Joint reachable-angle and moment repair (research only)
+
+Parent PR149. This is a new executed CPU experiment, not a competitive full compiler.
+- Four H1 coordinate runs: 4,535,970 candidate evaluations, exact locked difference bitplanes preserved, independent packed e1 22.387821821 -> 20.976783567 mHa (projected input), 24.801360903 -> 22.539058038 mHa (PSD input); H2/weights unchanged.
+- 16-row affine/null code optimization: 271,930 candidates, 25 accepted moves, e1 20.900592210 mHa. H1 repair via alpha=Wz with analytic H1 derivative; rank-C PSD factorization constrained to preserve alpha, rescaled gap. 24 sweeps e1 19.999599999, e2 20.056430640 mHa, lambda_eff 47.401986930.
+- Orthogonal gauge of W and offsets, 1350 nonmonotone proposals, maintains WW^T, Wz and ||z||^2; independently checked lambda_eff 47.239021976, e1/e2/gap unchanged. Further H1 code-preserving optimization e1 19.930143842 mHa (1,058,159 candidates), e2 20.056430640. No physical PASS. At Q405, fixed nonloader cost, this lambda requires at least 45 CCX/pass savings relative to 3357, whereas the bank10 hypothetical target is 6. No native loader savings measured.
+- Exact fixed-null additive syndrome projection with predecessor/current bank choice, H1 allowed, 27 variants. Bank4/6/10 individual rank4 targets all reached. Protected bank6 current-only 330 changes, e1 24.125612681/e2 20.217967275 mHa -> both-bank 266 changes (75 predecessor, 15 H1), e1 21.777983030/e2 20.100997064, lambda_eff 46.925265685. Existing protected neighboring light rank<=4 monomials not worsened. Unprotected bank4/10 improve physical fit but worsen neighboring rank5 counts; rejected.
+- Offset-only GN insufficient; sparse/dense trust-region runs interrupted without final checkpoints; no adoption.
+- Full joint objective must include actual native loader cost, not rank proxy. No full physical acceptance or score gain; no Kaggle or main change.
+
+59-file executable reproduction archive GVQCC_Chemistry_JointRepair_RESEARCH_ONLY.zip, 64,387,417 bytes, SHA256 08c1e6b3cbc72b31aadb6d0ccc74515f48f5a5556faee1fc98375b482af4343d, supplied in research chat. Packed reference, sources, NPZ checkpoints, logs and independent receipt included. Relocation not independently retested. NOT SUBMISSION.
