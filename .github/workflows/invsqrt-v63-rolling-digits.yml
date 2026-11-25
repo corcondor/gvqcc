@@ -1,0 +1,15 @@
+name: V63 rolling digit certificates
+on:
+  push:
+    branches: [research/invsqrt-v63-rolling-digits-20261126]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python research/invsqrt36_nonlinear_lending/v63_rolling_core.py
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/invsqrt36_nonlinear_lending/lean/V63RollingDigits.lean
