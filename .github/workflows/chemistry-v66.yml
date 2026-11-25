@@ -1,0 +1,16 @@
+name: V66 Chemistry persistent transport
+on:
+  pull_request:
+    paths: ['research/chemistry-v66/**', '.github/workflows/chemistry-v66.yml']
+  push:
+    branches: [research/chemistry-v66-persistent-global-20261126]
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/chemistry-v66/Transport.lean
