@@ -1,0 +1,19 @@
+name: V54 conditional multioutput Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_nonlinear_lending/lean/V54ConditionalMultioutput.lean'
+      - '.github/workflows/invsqrt-v54-conditional-multioutput.yml'
+  push:
+    branches: [research/invsqrt-v54-conditional-multioutput-20261125]
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/invsqrt36_nonlinear_lending/lean/V54ConditionalMultioutput.lean
+      - run: python3 research/invsqrt36_nonlinear_lending/v54_conditional_core.py
