@@ -1,0 +1,16 @@
+name: V55 local Lean identities
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36/V55/**'
+      - '.github/workflows/v55-transport.yml'
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean research/invsqrt36/V55/Transport.lean
