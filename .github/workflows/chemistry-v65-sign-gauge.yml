@@ -1,0 +1,15 @@
+name: Chemistry V65 sign-gauge Lean
+on:
+  pull_request:
+    paths: ['research/chemistry-v65/**', '.github/workflows/chemistry-v65-sign-gauge.yml']
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/chemistry-v65/SignGauge.lean

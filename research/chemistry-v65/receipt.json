@@ -1,0 +1,50 @@
+{
+  "scope": "research only; no newly compiled loader, official verifier or score gain",
+  "fixed_C46": {
+    "gradient_evaluations": 1449,
+    "error1_mHa": 19.999499902414154,
+    "error2_mHa": 19.999499900117037,
+    "lambda_eff": 46.919969992951756,
+    "baseline_lambda_eff": 46.918063256608406
+  },
+  "bank10": {
+    "gradient_evaluations": 1007,
+    "error1_mHa": 20.904468,
+    "error2_mHa": 20.466025,
+    "accepted": false
+  },
+  "sign_gauge": {
+    "addresses": 1219,
+    "angle_words_changed": 22780,
+    "rank4_banks": [
+      2,
+      3,
+      4,
+      6,
+      8,
+      13,
+      14
+    ],
+    "baseline_rank4_banks": [
+      8,
+      13,
+      14
+    ],
+    "full_blocks": 76,
+    "max_projective_error": 1.0218730115027566e-15,
+    "orders": 12,
+    "actual_native_saving": 0
+  },
+  "native_deletion_kernel": {
+    "candidates": 1812,
+    "rank": 1812,
+    "nullity": 0
+  },
+  "conditional_estimate_if_48T_saved": {
+    "Q": 405,
+    "T": 13166,
+    "chem_cost": 250188071.59551713,
+    "score": 33.21012226322128,
+    "verified": false
+  }
+}
