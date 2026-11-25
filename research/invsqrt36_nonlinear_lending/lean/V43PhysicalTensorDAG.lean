@@ -34,7 +34,8 @@ def widthOK (used : List Nat) : Bool :=
 theorem width_append (a b : List Nat)
     (ha : widthOK a = true) (hb : widthOK b = true) :
     widthOK (a ++ b) = true := by
-  simp [widthOK, List.all_append, ha, hb] at *
+  simp [widthOK, List.all_append] at *
+  exact ⟨ha, hb⟩
 
 theorem resource_arithmetic :
     2736 - 2665 = 71 ∧ 2620 - 2557 = 63 ∧
