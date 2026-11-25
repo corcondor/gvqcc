@@ -19,6 +19,6 @@ theorem inverse13 : (13*197 : Nat)%512=1 := by decide
 theorem exclusive_sum (a b : Bool) (h : (a && b) = false) :
     (if a then (1 : Nat) else 0) + (if b then 1 else 0) =
       (if bx a b then 1 else 0) := by
-  cases a <;> cases b <;> decide
+  cases a <;> cases b <;> simp_all [bx, Bool.xor]
 theorem retained_count : (List.range 17).foldl (fun s i => s + ((List.range 13).filter (fun j => decide (11 ≤ i+j))).length) 0 = 155 := by decide
 end GVQCC.V64AffineTour

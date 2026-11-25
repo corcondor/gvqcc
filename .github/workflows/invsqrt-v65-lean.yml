@@ -1,0 +1,19 @@
+name: V65 fused successor Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt-v65/**'
+      - 'research/invsqrt-v64-affine/**'
+      - '.github/workflows/invsqrt-v65-lean.yml'
+  push:
+    branches: [research/invsqrt-v65-fused-successor-20261126]
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/invsqrt-v64-affine/V64AffineTour.lean
+      - run: lean +leanprover/lean4:v4.35.0 research/invsqrt-v65/Identities.lean
