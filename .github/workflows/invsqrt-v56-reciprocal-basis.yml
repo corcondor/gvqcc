@@ -1,0 +1,16 @@
+name: V56 reciprocal conditional basis
+on:
+  pull_request:
+  push:
+    branches: [research/invsqrt-v56-reciprocal-conditional-basis-20261125]
+jobs:
+  local-identities:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/invsqrt36_nonlinear_lending/lean/ConditionalReciprocalBasis.lean
+      - run: python research/invsqrt36_nonlinear_lending/v56_reciprocal_basis_core.py
