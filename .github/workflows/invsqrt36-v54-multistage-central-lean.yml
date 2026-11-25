@@ -1,0 +1,17 @@
+name: Multi-Stage Central V54 Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_v54_multistage_central/lean/MultiStageCentralV54.lean'
+      - '.github/workflows/invsqrt36-v54-multistage-central-lean.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Check V54 multi-stage centralization & global nonlinear coordinate theorems
+        run: ~/.elan/bin/lean research/invsqrt36_v54_multistage_central/lean/MultiStageCentralV54.lean
