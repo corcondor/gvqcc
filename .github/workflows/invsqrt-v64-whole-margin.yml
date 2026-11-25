@@ -1,0 +1,17 @@
+name: V64 whole margin local algebra
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt_v64_whole_margin_20261126/**'
+      - '.github/workflows/invsqrt-v64-whole-margin.yml'
+  workflow_dispatch:
+jobs:
+  local:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 research/invsqrt_v64_whole_margin_20261126/span_core.py
+      - name: Lean local algebra
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          "$HOME/.elan/bin/lean" research/invsqrt_v64_whole_margin_20261126/GlobalTransport.lean
