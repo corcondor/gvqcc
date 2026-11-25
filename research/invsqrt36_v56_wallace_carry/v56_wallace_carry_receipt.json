@@ -1,0 +1,81 @@
+{
+  "part1_native_kmb": [
+    {
+      "n_rot_in": 7,
+      "n_rot_out": 3,
+      "rot_saved": 4,
+      "Q_total": 11,
+      "ccx": 4,
+      "hmr": 4,
+      "total_ops": 67,
+      "toffoli_like": 4,
+      "exhaustive_2^n_pass": true,
+      "net_toffoli_equiv_gain_at_7per_rot": 24.0,
+      "kmb_sha256": "cdaa261ad76fccf41a05c985cc5ca34cb4da59175226bb0ccbc819d442166c00",
+      "out_kmb": "c:\\Users\\81808\\.openclaw\\gvqcc_v2832\\v56_multistage_carry_n7.kmb"
+    },
+    {
+      "n_rot_in": 15,
+      "n_rot_out": 4,
+      "rot_saved": 11,
+      "Q_total": 26,
+      "ccx": 11,
+      "hmr": 11,
+      "total_ops": 180,
+      "toffoli_like": 11,
+      "exhaustive_2^n_pass": true,
+      "net_toffoli_equiv_gain_at_7per_rot": 66.0,
+      "kmb_sha256": "9171ad08090f3901520b79dafca866c7c6082c94d0f697c1065eb4717d75e358",
+      "out_kmb": "c:\\Users\\81808\\.openclaw\\gvqcc_v2832\\v56_multistage_carry_n15.kmb"
+    }
+  ],
+  "part2_pr132_quartic": {
+    "verified_sha256": "51e4370ddd9b1029b69163eca604697c2b0130da63e9c49b774c6a61d47d9477",
+    "total_partial_products": 969,
+    "stages": [
+      {
+        "stage_j": 3,
+        "av_bits": 18,
+        "partial_products": 153,
+        "wallace_3to2": 137,
+        "wallace_cpa": 22,
+        "wallace_total_ccx": 312,
+        "gidney_cadd_ccx": 306,
+        "booth2_cadd_ccx": 214
+      },
+      {
+        "stage_j": 2,
+        "av_bits": 22,
+        "partial_products": 221,
+        "wallace_3to2": 201,
+        "wallace_cpa": 25,
+        "wallace_total_ccx": 447,
+        "gidney_cadd_ccx": 442,
+        "booth2_cadd_ccx": 286
+      },
+      {
+        "stage_j": 1,
+        "av_bits": 25,
+        "partial_products": 272,
+        "wallace_3to2": 249,
+        "wallace_cpa": 28,
+        "wallace_total_ccx": 549,
+        "gidney_cadd_ccx": 544,
+        "booth2_cadd_ccx": 340
+      },
+      {
+        "stage_j": 0,
+        "av_bits": 28,
+        "partial_products": 323,
+        "wallace_3to2": 297,
+        "wallace_cpa": 32,
+        "wallace_total_ccx": 652,
+        "gidney_cadd_ccx": 646,
+        "booth2_cadd_ccx": 394
+      }
+    ],
+    "total_wallace_ccx_all4": 1960,
+    "total_gidney_cadd_ccx_all4": 1938,
+    "total_booth2_cadd_ccx_all4": 1234
+  }
+}
