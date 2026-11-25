@@ -1,0 +1,37 @@
+{
+  "module1_normalizer": {
+    "Q": 34,
+    "ccx_fwd": 98,
+    "hmr_fwd": 32,
+    "ops": 338,
+    "sha256": "e6fe33107bb4e4d508ed864fe5021ac2234a24d7f7541f5c4ed7999a9c8dc889"
+  },
+  "module2_b6_3x2": {
+    "B": 6,
+    "anc": 4,
+    "rots": 6,
+    "ccx": 7,
+    "hmr": 7,
+    "ops": 111,
+    "exhaustive_4096_pass": true,
+    "sha256": "8d549d91df0de43f7b714765839ebfbf934528a3a23491392ce4b565ef8ed931"
+  },
+  "module2_b32_3x11": {
+    "B": 32,
+    "anc": 13,
+    "rots": 32,
+    "ccx": 51,
+    "hmr": 51,
+    "ops": 865,
+    "sha256": "ed650e9658ccb2d54663898b0444656b372979ba27f04b0e4a068af204efeaa7"
+  },
+  "module2_b32_4x8": {
+    "B": 32,
+    "anc": 11,
+    "rots": 32,
+    "ccx": 52,
+    "hmr": 52,
+    "ops": 878,
+    "sha256": "c3fb2a48b11a96af2c619991d93cb4bd725d3be02efe4ad216b1e0a4252cc176"
+  }
+}
