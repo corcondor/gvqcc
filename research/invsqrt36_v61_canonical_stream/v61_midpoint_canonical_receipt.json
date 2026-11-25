@@ -1,0 +1,182 @@
+{
+  "part1_midpoint_symmetry": [
+    {
+      "sub_bits": 4,
+      "n_seg": 48,
+      "t_bits": 16,
+      "deg": 3,
+      "frac_bits": 32,
+      "out_bits": 35,
+      "violations": 0,
+      "max_err_over_tol": 0.755944,
+      "total_partial_products": 696,
+      "booth2_total_ccx": 816,
+      "n_generic_rot": 32,
+      "stages": [
+        {
+          "stage_j": 2,
+          "av_bits": 19,
+          "pp": 168,
+          "booth2_ccx": 208
+        },
+        {
+          "stage_j": 1,
+          "av_bits": 23,
+          "pp": 232,
+          "booth2_ccx": 272
+        },
+        {
+          "stage_j": 0,
+          "av_bits": 27,
+          "pp": 296,
+          "booth2_ccx": 336
+        }
+      ]
+    },
+    {
+      "sub_bits": 4,
+      "n_seg": 48,
+      "t_bits": 16,
+      "deg": 3,
+      "frac_bits": 33,
+      "out_bits": 35,
+      "violations": 0,
+      "max_err_over_tol": 0.750525,
+      "total_partial_products": 744,
+      "booth2_total_ccx": 864,
+      "n_generic_rot": 32,
+      "stages": [
+        {
+          "stage_j": 2,
+          "av_bits": 20,
+          "pp": 184,
+          "booth2_ccx": 224
+        },
+        {
+          "stage_j": 1,
+          "av_bits": 24,
+          "pp": 248,
+          "booth2_ccx": 288
+        },
+        {
+          "stage_j": 0,
+          "av_bits": 28,
+          "pp": 312,
+          "booth2_ccx": 352
+        }
+      ]
+    },
+    {
+      "sub_bits": 6,
+      "n_seg": 192,
+      "t_bits": 14,
+      "deg": 2,
+      "frac_bits": 32,
+      "out_bits": 35,
+      "violations": 0,
+      "max_err_over_tol": 0.86177,
+      "total_partial_products": 406,
+      "booth2_total_ccx": 476,
+      "n_generic_rot": 32,
+      "stages": [
+        {
+          "stage_j": 1,
+          "av_bits": 19,
+          "pp": 161,
+          "booth2_ccx": 196
+        },
+        {
+          "stage_j": 0,
+          "av_bits": 25,
+          "pp": 245,
+          "booth2_ccx": 280
+        }
+      ]
+    },
+    {
+      "sub_bits": 6,
+      "n_seg": 192,
+      "t_bits": 14,
+      "deg": 2,
+      "frac_bits": 33,
+      "out_bits": 35,
+      "violations": 0,
+      "max_err_over_tol": 0.859751,
+      "total_partial_products": 434,
+      "booth2_total_ccx": 504,
+      "n_generic_rot": 32,
+      "stages": [
+        {
+          "stage_j": 1,
+          "av_bits": 20,
+          "pp": 175,
+          "booth2_ccx": 210
+        },
+        {
+          "stage_j": 0,
+          "av_bits": 26,
+          "pp": 259,
+          "booth2_ccx": 294
+        }
+      ]
+    },
+    {
+      "sub_bits": 3,
+      "n_seg": 24,
+      "t_bits": 17,
+      "deg": 4,
+      "frac_bits": 32,
+      "out_bits": 34,
+      "violations": 0,
+      "max_err_over_tol": 0.932115,
+      "total_partial_products": 969,
+      "booth2_total_ccx": 1234,
+      "n_generic_rot": 31,
+      "stages": [
+        {
+          "stage_j": 3,
+          "av_bits": 18,
+          "pp": 153,
+          "booth2_ccx": 214
+        },
+        {
+          "stage_j": 2,
+          "av_bits": 22,
+          "pp": 221,
+          "booth2_ccx": 286
+        },
+        {
+          "stage_j": 1,
+          "av_bits": 25,
+          "pp": 272,
+          "booth2_ccx": 340
+        },
+        {
+          "stage_j": 0,
+          "av_bits": 28,
+          "pp": 323,
+          "booth2_ccx": 394
+        }
+      ]
+    }
+  ],
+  "part2_canonical_stream_kmb": [
+    {
+      "B": 6,
+      "rots": 6,
+      "ccx": 5,
+      "hmr": 5,
+      "ops": 95,
+      "exhaustive_4096_pass": true,
+      "sha256": "a0ac8ef0bb14e9cdc078815c082ecf18cc01d1d708f8b58dfdf32d69f81cc988"
+    },
+    {
+      "B": 31,
+      "rots": 31,
+      "ccx": 30,
+      "hmr": 30,
+      "ops": 595,
+      "sha256": "9e36cb564d58879e6e3c313486b3e29e45c952ad9986825f6e06f67a6470c76a"
+    }
+  ]
+}

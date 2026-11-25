@@ -1,0 +1,17 @@
+name: V61 Canonical Stream & Midpoint Symmetry Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_v61_canonical_stream/lean/V61CanonicalStream.lean'
+      - '.github/workflows/invsqrt36-v61-canonical-stream-lean.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Check V61 midpoint symmetry & canonical bit-serial stream theorems
+        run: ~/.elan/bin/lean research/invsqrt36_v61_canonical_stream/lean/V61CanonicalStream.lean
