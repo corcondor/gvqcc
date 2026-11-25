@@ -1,0 +1,21 @@
+name: V55 sub36 coset local certificates
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_nonlinear_lending/lean/V55SignedCoset.lean'
+      - 'research/invsqrt36_nonlinear_lending/v55_coset_core.py'
+      - '.github/workflows/invsqrt-v55-coset.yml'
+  push:
+    branches: [research/invsqrt-v55-sub36-signed-coset-20261125]
+jobs:
+  certificates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python exact expansion regression
+        run: python research/invsqrt36_nonlinear_lending/v55_coset_core.py
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/invsqrt36_nonlinear_lending/lean/V55SignedCoset.lean
