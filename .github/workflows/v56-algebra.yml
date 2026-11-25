@@ -1,0 +1,17 @@
+name: V56 algebra
+on:
+  push:
+    paths: ['research/invsqrt-v56/**', '.github/workflows/v56-algebra.yml']
+  pull_request:
+    paths: ['research/invsqrt-v56/**', '.github/workflows/v56-algebra.yml']
+jobs:
+  identities:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Verify identities
+        run: lean research/invsqrt-v56/Identities.lean
