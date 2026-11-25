@@ -1,0 +1,76 @@
+{
+  "research_only": true,
+  "goal": "competitive whole 36Q invsqrt",
+  "tasks": [
+    {
+      "id": "P0-A",
+      "task": "competitive whole 36Q",
+      "status": "open",
+      "donors": "PR114/PR116",
+      "acceptance": "whole native KMB, official verification and lower cost"
+    },
+    {
+      "id": "P0-B",
+      "task": "32/33 rotation bounded-space evaluator",
+      "status": "open",
+      "donors": "PR116/V51",
+      "acceptance": "physical 36Q full circuit, integer tolerance plus rotation synthesis, viable cost"
+    },
+    {
+      "id": "P0-C",
+      "task": "global carry/chart/phase compiler",
+      "status": "open",
+      "donors": "PR100/102/107/114",
+      "acceptance": "multi-stage 36Q native path, verified paid budget"
+    },
+    {
+      "id": "P0-D",
+      "task": "80 remote non-linear recomputations",
+      "status": "open",
+      "donors": "PR71 lineage",
+      "acceptance": "pinned per-product ledger, actual paid savings"
+    },
+    {
+      "id": "P1-A",
+      "task": "node92+ mixed cubic transport",
+      "status": "open",
+      "donors": "PR112/115",
+      "acceptance": "verified larger roundtrip, cheaper decoder"
+    },
+    {
+      "id": "P1-B",
+      "task": "joint phase adjoint and hidden symmetry",
+      "status": "open",
+      "donors": "PR92/103/109/113/115/V51",
+      "acceptance": "exact history-aware phase ledger"
+    },
+    {
+      "id": "P1-C",
+      "task": "care-set multi-output predicate compilation",
+      "status": "open",
+      "donors": "PR116/V51",
+      "acceptance": "reduce expensive sparse repair, real emitted cost"
+    },
+    {
+      "id": "P2-A",
+      "task": "finite Fourier predictor and exact repair",
+      "status": "partial",
+      "donors": "PR92/114/116/V51",
+      "acceptance": "separate classical and quantum costs"
+    },
+    {
+      "id": "P2-B",
+      "task": "finite bilinear macro contraction",
+      "status": "partial",
+      "donors": "PR112/116/V51",
+      "acceptance": "actual finite tensor identities plus native schedule"
+    },
+    {
+      "id": "P2-C",
+      "task": "Lean whole-circuit proof",
+      "status": "partial",
+      "donors": "PR114/V51",
+      "acceptance": "semantic certificate checker, local proof vs global proof"
+    }
+  ]
+}
