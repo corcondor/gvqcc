@@ -1,0 +1,16 @@
+name: chemistry weighted syndrome
+on:
+  pull_request:
+    paths:
+      - 'research/chemistry_weighted_syndrome_20261126/**'
+      - '.github/workflows/chemistry-weighted-syndrome.yml'
+jobs:
+  algebra:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 research/chemistry_weighted_syndrome_20261126/rank_witness.py
+      - name: Check Lean local identities
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          "$HOME/.elan/bin/lean" research/chemistry_weighted_syndrome_20261126/ProtectedRank.lean
