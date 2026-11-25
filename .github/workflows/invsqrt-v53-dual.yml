@@ -1,0 +1,19 @@
+name: V53 dual arithmetic certificates
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_nonlinear_lending/lean/V53Dual.lean'
+      - '.github/workflows/invsqrt-v53-dual.yml'
+  push:
+    branches: [research/invsqrt-v53-dual-certificates-20261125]
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/invsqrt36_nonlinear_lending/lean/V53Dual.lean
+      - run: python3 research/invsqrt36_nonlinear_lending/v53_check_dual.py
