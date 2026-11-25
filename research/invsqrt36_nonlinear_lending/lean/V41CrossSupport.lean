@@ -13,7 +13,9 @@ theorem xor_assoc (a b c : Bool) :
 theorem eval_append (xs ys : List Bool) :
     evalPhase (xs ++ ys) = bx (evalPhase xs) (evalPhase ys) := by
   induction xs with
-  | nil => cases evalPhase ys <;> decide
+  | nil =>
+    change evalPhase ys = bx false (evalPhase ys)
+    cases h : evalPhase ys <;> simp [h, bx]
   | cons a xs ih =>
     simp only [List.cons_append, evalPhase, ih]
     exact (xor_assoc a (evalPhase xs) (evalPhase ys)).symm
@@ -39,10 +41,10 @@ theorem reset_debt (m t a b r : Bool)
 
 -- Phase debt telescopes under transported writes.
 theorem carry_phase (m x y : Bool) :
-    bx (m && x) (m && bx x y) = m && y := by
+    bx (m && x) (m && bx x y) = (m && y) := by
   cases m <;> cases x <;> cases y <;> decide
 
-theorem direct_record (m r : Bool) :
+theorem direct_record (m : Bool) :
     (if m then true else false) = m := by
   cases m <;> decide
 
