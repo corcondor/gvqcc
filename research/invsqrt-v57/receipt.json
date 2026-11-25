@@ -1,0 +1,63 @@
+{
+  "research_only": true,
+  "scope": "partial KMBs, mathematical full-phase models; no official verification",
+  "native": [
+    {
+      "Q": 34,
+      "kind": "prefix counter",
+      "ccx": 2222,
+      "guarded_ccz": 404,
+      "expected_paid": 2424,
+      "ops": 24288,
+      "weighted_outputs": 57,
+      "sha256": "ac78bc8f6c552c81ff5d120ada0c24e6593295cc984d5937852797b0884288af"
+    },
+    {
+      "Q": 31,
+      "kind": "exclusive support",
+      "ccx": 372,
+      "guarded_ccz": 31,
+      "expected_paid": 387.5,
+      "ops": 2142,
+      "weighted_outputs": 105,
+      "sha256": "06f3f42ae673ae5604755a6d01872343b7b32cbc1f47b23a3f66d676a55a5b59"
+    },
+    {
+      "Q": 30,
+      "kind": "two-stage guard0",
+      "ccx": 1237,
+      "guarded_ccz": 83,
+      "expected_paid": 1278.5,
+      "ops": 8614,
+      "weighted_outputs": 742,
+      "independent_HMR": 1037,
+      "sha256": "0834bc10c1a5364ef0a81b7bb8d9959924ab5461d8571f01aebd373ce279aa92"
+    },
+    {
+      "Q": 30,
+      "kind": "two-stage guard2",
+      "ccx": 1437,
+      "guarded_ccz": 83,
+      "expected_paid": 1478.5,
+      "ops": 9414,
+      "weighted_outputs": 932,
+      "independent_HMR": 1237,
+      "sha256": "1b61ce8d4bc7b4cf533c8f3e0a7c34ce89dd1b8a5735cbf08ba5bd76643cef95"
+    }
+  ],
+  "verified_legal_inputs": 3133452,
+  "interval_tensor": {
+    "initial": {
+      "atoms": 384,
+      "distinct_weights": 8985
+    },
+    "final": {
+      "atoms": 315,
+      "distinct_weights": 3552,
+      "absolute_margin": 50014667,
+      "exchanges_tested": 180,
+      "exchanges_adopted": 70,
+      "phase_code_sha256": "a138845a4b6522a9a98c773b91a7feebe6746c0c8aa507120ebcfaaf162b2777"
+    }
+  }
+}
