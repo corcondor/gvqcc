@@ -121,4 +121,28 @@ theorem sub36q_pareto_budgets :
     28 * 217598 ≤ 37 * 164669 ∧
     30 * 203091 ≤ 37 * 164669 := by decide
 
+/-! ## 6. General Marginal Width-Tax Theorem & Proof That 37Q Is Too Big -/
+
+/-- Universal Marginal Width-Tax Theorem (applies to ANY quantum circuit under `Score = Q * C`):
+    Adding `k` ancilla qubits to a width-`Q`, cost-`C` circuit to save `dC` gates strictly
+    WORSENS the `Q * C` score whenever `(Q + k) * dC < k * C` (equivalently `dC < k/(Q+k) * C`). -/
+theorem marginal_width_tax_suboptimal (Q k C dC : Nat) (h : dC ≤ C)
+    (htax : (Q + k) * dC < k * C) :
+    Q * C < (Q + k) * (C - dC) := by
+  have hsub : (Q + k) * (C - dC) + (Q + k) * dC = (Q + k) * C := by
+    rw [← Nat.mul_add, Nat.sub_add_cancel h]
+  have hdist : (Q + k) * C = Q * C + k * C := Nat.add_mul Q k C
+  omega
+
+/-- Concrete specialization to `invsqrt` (scaled x100):
+    1. A single 37th qubit (`36Q -> 37Q`) is strictly wasteful unless it saves `>= 44.51` Toffoli-equiv.
+    2. Adding 5 ancillas (`32Q -> 37Q`) at `C_32 = 1384.79` is strictly wasteful unless they save
+       `>= 187.14` Toffoli-equiv; in the `deg=3, S=32` streaming model they save only `72.00`
+       Toffolis, so `32Q` (`44,313.13`) strictly beats `37Q` (`48,573.06` and baseline `60,927.56`). -/
+theorem invsqrt_37q_strictly_suboptimal :
+    37 * 4450 < 1 * 164669 ∧
+    37 * 18713 < 5 * 138479 ∧
+    32 * 138479 < 37 * 131279 ∧
+    32 * 138479 < 37 * 164669 := by decide
+
 end GVQCC.MultiStageCentralV54
