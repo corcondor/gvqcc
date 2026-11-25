@@ -1,0 +1,17 @@
+# V54 exact nonlinear quotient and piecewise physical 36Q contraction
+
+**RESEARCH ONLY — NOT SUBMISSION. No competitive whole-circuit 36Q result.**
+
+Pinned PR92 KMB SHA256: cf1ba95ab89d6c745f13a0629f8638afd0e3e62b8c8168b6bd9362d8dd130d2b. This is the source underlying the V53 30 overrank audit, not its repaired 32-rotation hybrid.
+
+- Exact audit: all 30 rank-38 (constant included) boundaries have history-independent quantum data, with 26 common nonconstant coordinates. Full domain: 3,133,452 inputs.
+- Exhaustive 2,047 nonzero directions of the 11-dimensional complement: 26 unconditional exact quadratic decoders (16 rank-one, 10 rank-two); full-domain kernel refinement and verification.
+- Cofactor gluing: 3 additional verified decoders; exceptional populations 1,044,495 / 261,120 / 3. Cut 14458 fails 187 selected cofactor directions; this is not a lower bound for all nonlinear decoders.
+- Persistent nonlinear chart: retain 36 functions including common 26 at cut 14429, reconstruct logical coordinates and propagate 29 original operations symbolically. All 37 output functions match cut 14458 on the full legal domain. This is not physical transport by itself.
+- Native physical macro [14372,14516): two selectors q3/q31, four branches, each remaining 34-coordinate exit map rank34. Reconstruct no intermediate overrank state; jointly synthesize guarded quadratic phase, exact 128-bit weighted phase, and exit map. Physical width36; 144->354 operations, static paid gates 5->23, parameterized rotations 3->29. Fragment requires measurement record 462 generated earlier at a clean line, and a cut-specific ABI. Fragment SHA 1b415c465c2303a1841b71667ef1e6cf6d1f61d6f78554f043df8aa1626c34ca.
+- Integrated hybrid presamples record 462 on clean q22 at circuit entry, absorbs source exit SWAP, and retains all unchanged operations. Exact compositional whole replay and final restoration PASS on 3,133,452 inputs and 1,276 independent HMR bits. SHA c883c444caa49a201078abc6f4860e0902759c755c78597fd6cb854c0218a70a. Width37, 51,527 ops, 1,494 CCX, 1,616 static paid (CCX/CCZ/CSWAP), 81 parameterized rotations. Source: 51,317 ops, 1,489 CCX, 1,598 static paid, 55 parameterized rotations. 130/3,509 conservative all-individually-nonzero source cuts fall in the replaced interval including exit swap. No whole-width improvement, no competitive cost improvement; rejected as a candidate.
+- Negative workspace result: macro entry exact quadratic kernel dimension1, no individual-coordinate decoder. Selector branches1/2 have exact quadratic kernel dimension3 each, with no unit derivative on a radical direction. This restricted result is not a lower bound for arbitrary representations or schedules.
+
+The complete reproducibility ZIP (delivered in chat) contains source and both native KMBs, exact BDD/parser, scripts, failure logs, all cut maps and receipts. SHA256 d6954ec9b1dc9de44432044f2cc94796d62093d749e0593ed6066eb5ad2e85a7. No official verifier, no main or Kaggle mutation. The local Lean lemmas are separate from numerical/native verification and do not prove the whole oracle. No claim to implement OpenAI's asymptotic Fourier or matrix multiplication algorithms.
+
+Next research gate: eliminate the branch-constant rotation controls without expanding 3 to 29 rotations, then jointly schedule nonlinear charts across ALL remaining global pressure regions. A cutwise decoder is not an implementation of the physical transition. Keep P0-A/C and P1-A open.

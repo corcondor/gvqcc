@@ -1,0 +1,20 @@
+name: V54 local Lean certificate
+on:
+  pull_request:
+    branches:
+      - research/invsqrt36-v53-history-gauge-20261125
+    paths:
+      - 'research/invsqrt36/V54/**'
+      - '.github/workflows/v54-quotient.yml'
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.20.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check local identities
+        run: lean research/invsqrt36/V54/Quotient.lean
