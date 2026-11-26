@@ -15,9 +15,10 @@
 | **V70 (`k = 0` at `242` + `k = 1, 5, 7, 11` at `233`)** | **3,275** | **247,953,623.68** | **13,050** | **46.914266** | **PASS (default + fresh salt)** |
 | **V71 (`3,275` + Commutation-Fused Boyar-Peralta / Sparsity-PMH)** | **3,275** | **247,953,623.68** | **13,050** | **46.914266** | **PASS (`num_ops = 344,306`, `reaction_depth = 1,307`)** |
 | **V72 (`k = 0` at `242` + ALL 4 heads `k = 1, 5, 7, 11` at `232` + V71 compression)** | **3,271** | **247,801,621.46** | **13,042** | **46.914266** | **PASS (default + fresh salt, `num_ops = 347,778`)** |
-| **V74 (`3,271` + Joint `CCX/CZ` Commutation Transport + Difference-Equation Affine Opt)** | **3,271** | **247,801,621.46** | **13,042** | **46.914266** | **PASS (default + fresh salt, `num_ops = 341,472`, `reaction_depth = 1,409`!)** |
+| **V74 (`3,271` + Joint `CCX/CZ` Commutation Transport + Difference-Equation Affine Opt)** | **3,271** | **247,801,621.46** | **13,042** | **46.914266** | **PASS (default + fresh salt, `num_ops = 341,472`, `reaction_depth = 1,409`)** |
+| **V75 (WORLD FIRST `231`-CCX head `k = 5` via `min dim(R) = 143` at `e = 30`)** | **3,270** | **247,763,620.91** | **13,040** | **46.914266** | **PASS (default + fresh salt, `reaction_depth = 1,405`!)** |
 
-*(Per-loader `CCX` of V74 `3,271`: `242, 232, 213, 212, 213, 232, 213, 232, 205, 212, 212, 232, 209, 206, 206` = **3,271**; chemistry `score` = **`247,801,621.46`** (`-494,007` below `3,284`, `-1,444,222` below public best!), `num_ops` = **`341,472`** (`-57,780` below PR #180's `399,252`, `-48.84%` vs `3,284`).)*
+*(Per-loader `CCX` of V75 `3,270`: `242, 232, 213, 212, 213,` **`231`**`, 213, 232, 205, 212, 212, 232, 209, 206, 206` = **3,270**; breaks the `91 + 2 = 93 > 92` obstruction by selecting a valid `e = 30` early-chip set minimizing `dim(R) = 143` so `dim(K ∩ R) = 93 + 143 - 146 = 90`, `90 + 2 = 92 <= 92`! `k = 7, 11, 1` at `231` are running now toward `3,267 = 247,649,619`.)*
 
 ## What Is Included
 
