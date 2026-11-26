@@ -1,0 +1,20 @@
+{
+  "portable_layout": "port31/ and synthesis/ beside each other",
+  "relocation_check": "copied inputs and source to an independent directory; ran reachable_carry.py while current working directory was /tmp",
+  "identical_native_sha256": "073977d70d70a602b7afc7f18a36fb2e50acea5f20d787849b0b621c843ba684",
+  "native_regenerated_after_relocation": true,
+  "full_legal_replay_after_relocation": "PASS",
+  "legal_inputs": 3133452,
+  "scope": "V61 B35 first coherent Horner stage only; not full invsqrt and not completed31R",
+  "recommended_exclusions": [
+    "**/__pycache__/**",
+    "**/*.pyc",
+    "port31/sources/reference.npz",
+    "port31/phase_code.npy",
+    "port31/gidney_increment_original.py"
+  ],
+  "optional_exclusions": [
+    "**/*.log"
+  ],
+  "port31_payload_with_exclusions_bytes": 2984829
+}

@@ -1,0 +1,379 @@
+{
+  "date_japan": "2026-11-26",
+  "whole_circuit_candidates": [
+    {
+      "name": "V79_baseline",
+      "kmb": "recovered/V79/runs/tree36.kmb",
+      "Q": 36,
+      "CCX": 1267,
+      "generic_rotations": 7747,
+      "instructions": 53942,
+      "official_local_cost": 2298148.0759806475,
+      "equivalence_domain": "full_cube",
+      "sha256": "e81cbe79c7b6ac2aef27ff5539d458ff2726e3b0c9bb01f26e17fdcae4cd347c",
+      "official_local_status": "PASS",
+      "verified_shots": 3133452,
+      "shots_per_x": 1,
+      "worst_error_ratio": 0.9693725729055966,
+      "worst_x": 14359,
+      "independent_receipt": "recovered/V79/runs/tree36.receipt.json",
+      "official_receipt": "phaseopt/baseline.official_all_inputs.json",
+      "delta_vs_V79": {
+        "CCX": 0,
+        "generic_rotations": 0,
+        "instructions": 0,
+        "official_local_cost": 0.0
+      },
+      "relative_change_percent_vs_V79": {
+        "CCX": 0.0,
+        "generic_rotations": 0.0,
+        "instructions": 0.0,
+        "official_local_cost": 0.0
+      }
+    },
+    {
+      "name": "fullcube_ccx",
+      "kmb": "phaseopt/ccx_min36.kmb",
+      "Q": 36,
+      "CCX": 1230,
+      "generic_rotations": 7747,
+      "instructions": 48854,
+      "official_local_cost": 2296816.0759806475,
+      "equivalence_domain": "full_cube",
+      "sha256": "73099701c1d825fe4e7188334984253c03704102b3e7a7b06a5e40a92c8ae7c0",
+      "official_local_status": "PASS",
+      "verified_shots": 3133452,
+      "shots_per_x": 1,
+      "worst_error_ratio": 0.9693725729055966,
+      "worst_x": 14359,
+      "independent_receipt": "phaseopt/ccx_min36.receipt.json",
+      "official_receipt": "phaseopt/ccx_min36.official_all_inputs.json",
+      "delta_vs_V79": {
+        "CCX": -37,
+        "generic_rotations": 0,
+        "instructions": -5088,
+        "official_local_cost": -1332.0
+      },
+      "relative_change_percent_vs_V79": {
+        "CCX": -2.920284135753748,
+        "generic_rotations": 0.0,
+        "instructions": -9.432353268325233,
+        "official_local_cost": -0.05795971173143677
+      }
+    },
+    {
+      "name": "fullcube_balanced",
+      "kmb": "phaseopt/balanced30_36.kmb",
+      "Q": 36,
+      "CCX": 1259,
+      "generic_rotations": 7722,
+      "instructions": 48917,
+      "official_local_cost": 2290409.530792142,
+      "equivalence_domain": "full_cube",
+      "sha256": "0ca77f7e2e10c25a123352230ea3b46b48442d7947f0ffb8f26c094dd7ac7b1a",
+      "official_local_status": "PASS",
+      "verified_shots": 3133452,
+      "shots_per_x": 1,
+      "worst_error_ratio": 0.9693725729055966,
+      "worst_x": 14359,
+      "independent_receipt": "phaseopt/balanced30_36.receipt.json",
+      "official_receipt": "phaseopt/balanced30_36.official_all_inputs.json",
+      "delta_vs_V79": {
+        "CCX": -8,
+        "generic_rotations": -25,
+        "instructions": -5025,
+        "official_local_cost": -7738.545188505668
+      },
+      "relative_change_percent_vs_V79": {
+        "CCX": -0.6314127861089203,
+        "generic_rotations": -0.32270556344391466,
+        "instructions": -9.315561158281117,
+        "official_local_cost": -0.3367296158757527
+      }
+    },
+    {
+      "name": "fullcube_cost",
+      "kmb": "phaseopt/cost_min36.kmb",
+      "Q": 36,
+      "CCX": 1590,
+      "generic_rotations": 7631,
+      "instructions": 50010,
+      "official_local_cost": 2275210.530423717,
+      "equivalence_domain": "full_cube",
+      "sha256": "0f78a2f76ebaeb14361d14904882b692a59fa27bde6e4a80b7103e8589434b05",
+      "official_local_status": "PASS",
+      "verified_shots": 3133452,
+      "shots_per_x": 1,
+      "worst_error_ratio": 0.9693725729055966,
+      "worst_x": 14359,
+      "independent_receipt": "phaseopt/cost_min36.receipt.json",
+      "official_receipt": "phaseopt/cost_min36.official_all_inputs.json",
+      "delta_vs_V79": {
+        "CCX": 323,
+        "generic_rotations": -116,
+        "instructions": -3932,
+        "official_local_cost": -22937.54555693036
+      },
+      "relative_change_percent_vs_V79": {
+        "CCX": 25.493291239147588,
+        "generic_rotations": -1.497353814379765,
+        "instructions": -7.289310741166433,
+        "official_local_cost": -0.9980882344642894
+      }
+    },
+    {
+      "name": "legal_ccx",
+      "kmb": "theory/care/ccx_min36_care.kmb",
+      "Q": 36,
+      "CCX": 1218,
+      "generic_rotations": 7747,
+      "instructions": 48866,
+      "official_local_cost": 2296384.0759806475,
+      "equivalence_domain": "legal_1_to_3133452",
+      "sha256": "2f784425163a2d51a94932f5d57495f5ac5c62064328008c8066ebd965cccd2e",
+      "official_local_status": "PASS",
+      "verified_shots": 3133452,
+      "shots_per_x": 1,
+      "worst_error_ratio": 0.9693725729055966,
+      "worst_x": 14359,
+      "independent_receipt": "theory/care/ccx_min36_care.receipt.json",
+      "official_receipt": "theory/care/ccx_min36_care.official_all_inputs.json",
+      "delta_vs_V79": {
+        "CCX": -49,
+        "generic_rotations": 0,
+        "instructions": -5076,
+        "official_local_cost": -1764.0
+      },
+      "relative_change_percent_vs_V79": {
+        "CCX": -3.8674033149171283,
+        "generic_rotations": 0.0,
+        "instructions": -9.410107152126358,
+        "official_local_cost": -0.07675745607677031
+      }
+    },
+    {
+      "name": "legal_balanced",
+      "kmb": "theory/care/balanced30_36_care.kmb",
+      "Q": 36,
+      "CCX": 1247,
+      "generic_rotations": 7722,
+      "instructions": 48929,
+      "official_local_cost": 2289977.530792142,
+      "equivalence_domain": "legal_1_to_3133452",
+      "sha256": "2a40aba2851944efc29cd652f15ece96f848c1852680bb4addd81d8742bc2746",
+      "official_local_status": "PASS",
+      "verified_shots": 3133452,
+      "shots_per_x": 1,
+      "worst_error_ratio": 0.9693725729055966,
+      "worst_x": 14359,
+      "independent_receipt": "theory/care/balanced30_36_care.receipt.json",
+      "official_receipt": "theory/care/balanced30_36_care.official_all_inputs.json",
+      "delta_vs_V79": {
+        "CCX": -20,
+        "generic_rotations": -25,
+        "instructions": -5013,
+        "official_local_cost": -8170.545188505668
+      },
+      "relative_change_percent_vs_V79": {
+        "CCX": -1.5785319652723007,
+        "generic_rotations": -0.32270556344391466,
+        "instructions": -9.29331504208224,
+        "official_local_cost": -0.3555273602210862
+      }
+    },
+    {
+      "name": "legal_cost",
+      "kmb": "theory/care/cost_min36_care.kmb",
+      "Q": 36,
+      "CCX": 1578,
+      "generic_rotations": 7631,
+      "instructions": 50022,
+      "official_local_cost": 2274778.530423717,
+      "equivalence_domain": "legal_1_to_3133452",
+      "sha256": "0442422d3d1e323cce7c90efae6bb70972c06f9118ba8c9310638026f6792d83",
+      "official_local_status": "PASS",
+      "verified_shots": 3133452,
+      "shots_per_x": 1,
+      "worst_error_ratio": 0.9693725729055966,
+      "worst_x": 14359,
+      "independent_receipt": "theory/care/cost_min36_care.receipt.json",
+      "official_receipt": "theory/care/cost_min36_care.official_all_inputs.json",
+      "delta_vs_V79": {
+        "CCX": 311,
+        "generic_rotations": -116,
+        "instructions": -3920,
+        "official_local_cost": -23369.54555693036
+      },
+      "relative_change_percent_vs_V79": {
+        "CCX": 24.546172059984215,
+        "generic_rotations": -1.497353814379765,
+        "instructions": -7.267064624967556,
+        "official_local_cost": -1.016885978809623
+      }
+    }
+  ],
+  "first_horner_partial": {
+    "scope": "coherent first normalized Horner stage chart using V61 B35 coefficients only; not the full inverse-square-root oracle and not a completed 31-generic-rotation port",
+    "Q": 36,
+    "ccx": 1239,
+    "instructions": 9898,
+    "hmr": 945,
+    "rotations": 0,
+    "forward_ccx": 442,
+    "inverse_ccx": 442,
+    "forward_instructions": 2250,
+    "snapshot": 4916,
+    "original_snapshot": 2666,
+    "stages": {
+      "low": {
+        "ccx": 354,
+        "ops": 1855
+      },
+      "carry": {
+        "ccx": 44,
+        "ops": 296
+      },
+      "high": {
+        "ccx": 44,
+        "ops": 99
+      }
+    },
+    "sha256": "073977d70d70a602b7afc7f18a36fb2e50acea5f20d787849b0b621c843ba684",
+    "verification": {
+      "legal_inputs": 3133452,
+      "serialized_native_replay": "PASS",
+      "encoded_Horner_word": "PASS",
+      "decoder_uses_physical_word_and_retained_address": "PASS",
+      "rounding_residue_retained": "PASS",
+      "all_independent_HMR_phase_coefficients": "PASS",
+      "all_input_and_work_restoration": "PASS",
+      "decoded_word_sha256": "1c05552f7be2b134e85c73d91903cb038c68043e8e76d70984ff89a900462408",
+      "encoding_signed_min": -638358,
+      "encoding_signed_max": 4095
+    },
+    "seconds": 2.0093040466308594,
+    "official_kickmix_binary_parser": "PASS (KickMix1.0.0; binary parser only, not full oracle score)",
+    "official_parser_version": "1.0.0",
+    "expected_paid": 1244.0,
+    "guarded_ccz": 10
+  },
+  "rotation_spec_audit": {
+    "legal_inputs": 3133452,
+    "full_native31R_oracle": false,
+    "V55_B34_retained_products_exact": {
+      "B": 34,
+      "generic_rotation_spec": 31,
+      "bad": 0,
+      "max_ratio": 0.9137239685366245,
+      "min_slack": 54096592,
+      "phase_hash": "e923815fb27e1bcc99b23b0a4801c0023b787c96de6240e185a9bf86a245c3df",
+      "code_hash": "51e4370ddd9b1029b69163eca604697c2b0130da63e9c49b774c6a61d47d9477"
+    },
+    "truth_table_interval_screen": {
+      "extension": "repeat endpoint code outside legal domain",
+      "bit_transitions": [
+        1414226,
+        1829815,
+        1783365,
+        1438823,
+        1063956,
+        749072,
+        511356,
+        341880,
+        225166,
+        146816,
+        94970,
+        61035,
+        39098,
+        24927,
+        15849,
+        10061,
+        6379,
+        4037,
+        2552,
+        1609,
+        1012,
+        639,
+        401,
+        260,
+        167,
+        103,
+        63,
+        39,
+        25,
+        17,
+        7,
+        5,
+        3,
+        1
+      ],
+      "scope": "Boolean representation complexity screen; not a native circuit cost or lower bound"
+    },
+    "V61_coefficient_new_ordinary_model": {
+      "donor_phase_hash": "6bd733d6a3161b4e5fd33573fcf270eea50727ca6ae82db3ebca1dbf0b956851",
+      "definition": "midpoint only for truncated input k<17; exact ordinary product then stage rounding to z; coefficients unchanged",
+      "historical_V61_phase_identity_claimed": false,
+      "results": [
+        {
+          "B": 34,
+          "generic_rotation_spec": 31,
+          "bad": 5703,
+          "max_ratio": 1.183388941130763,
+          "min_slack": -131794957,
+          "phase_hash": "1c25d6269003de62fe58f962a2754dbf35f7d21db2f5518971e74255284f4101",
+          "code_hash": "d7f56ae6f2dda6c2437638d3df4cd085370729f563d829f196762301936caf8b"
+        },
+        {
+          "B": 35,
+          "generic_rotation_spec": 32,
+          "bad": 0,
+          "max_ratio": 0.8052260016914815,
+          "min_slack": 139425161,
+          "phase_hash": "c52165e3d7686f0f585230bdef7fe81724405ab82c951da32068c1540c872544",
+          "code_hash": "ddd4453662d14c4df377ce18619c9926e11fd1992e997841ebe17001d4d505c7"
+        }
+      ]
+    },
+    "new_ordinary_B34_C0_refit": {
+      "offsets": [
+        -4,
+        -8,
+        -4,
+        4,
+        -4,
+        -4,
+        -4,
+        0,
+        4,
+        0,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -4,
+        -8,
+        -4,
+        0,
+        -4,
+        -4,
+        -4
+      ],
+      "grid": "24 independent C0 offsets from -256 to256 step4; 3096 exact segment trials",
+      "B": 34,
+      "generic_rotation_spec": 31,
+      "bad": 5064,
+      "max_ratio": 1.183388941130763,
+      "min_slack": -131794957,
+      "phase_hash": "a320e3268ccff1261634a6aefcfef57514538d080aec8f59b018f3ecaf552d40",
+      "code_hash": "f8161196617d13c07298cf8f83f33a603b77b239b07ae8d4e38d7de00086c972"
+    }
+  },
+  "complete_31_rotation_native_oracle": false,
+  "physical_hardware_run": false,
+  "kaggle_submission": false,
+  "new_lean_build": false,
+  "default_64_shots_per_x_completed": false
+}

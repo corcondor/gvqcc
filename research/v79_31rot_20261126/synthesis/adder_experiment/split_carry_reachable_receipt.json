@@ -1,0 +1,45 @@
+{
+  "scope": "coherent first normalized Horner stage chart using V61 B35 coefficients only; not the full inverse-square-root oracle and not a completed 31-generic-rotation port",
+  "Q": 36,
+  "ccx": 1239,
+  "instructions": 9898,
+  "hmr": 945,
+  "rotations": 0,
+  "forward_ccx": 442,
+  "inverse_ccx": 442,
+  "forward_instructions": 2250,
+  "snapshot": 4916,
+  "original_snapshot": 2666,
+  "stages": {
+    "low": {
+      "ccx": 354,
+      "ops": 1855
+    },
+    "carry": {
+      "ccx": 44,
+      "ops": 296
+    },
+    "high": {
+      "ccx": 44,
+      "ops": 99
+    }
+  },
+  "sha256": "073977d70d70a602b7afc7f18a36fb2e50acea5f20d787849b0b621c843ba684",
+  "verification": {
+    "legal_inputs": 3133452,
+    "serialized_native_replay": "PASS",
+    "encoded_Horner_word": "PASS",
+    "decoder_uses_physical_word_and_retained_address": "PASS",
+    "rounding_residue_retained": "PASS",
+    "all_independent_HMR_phase_coefficients": "PASS",
+    "all_input_and_work_restoration": "PASS",
+    "decoded_word_sha256": "1c05552f7be2b134e85c73d91903cb038c68043e8e76d70984ff89a900462408",
+    "encoding_signed_min": -638358,
+    "encoding_signed_max": 4095
+  },
+  "seconds": 2.0093040466308594,
+  "official_kickmix_binary_parser": "PASS (KickMix1.0.0; binary parser only, not full oracle score)",
+  "official_parser_version": "1.0.0",
+  "expected_paid": 1244.0,
+  "guarded_ccz": 10
+}
