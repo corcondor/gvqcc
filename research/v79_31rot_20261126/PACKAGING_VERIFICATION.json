@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "packaged final candidates; independent all-legal replay and actual KickMix loader",
+  "candidate_sha256": [
+    "2a40aba2851944efc29cd652f15ece96f848c1852680bb4addd81d8742bc2746",
+    "2f784425163a2d51a94932f5d57495f5ac5c62064328008c8066ebd965cccd2e",
+    "0442422d3d1e323cce7c90efae6bb70972c06f9118ba8c9310638026f6792d83"
+  ],
+  "checked_inputs_each": 3133452,
+  "manifest_files": 352,
+  "source_files_mutated": false
+}

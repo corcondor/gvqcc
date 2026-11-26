@@ -1,0 +1,515 @@
+[
+  {
+    "source": "/workspace/scratch/cf46ce7f46e6/phaseopt/ccx_min36.kmb",
+    "candidate": "/workspace/scratch/cf46ce7f46e6/theory/care/ccx_min36_care.kmb",
+    "examples": [
+      {
+        "x": 0,
+        "excluded_from_legal_domain": true,
+        "source": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": []
+        },
+        "candidate": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": [
+            {
+              "hmr_instruction": 8006,
+              "correction_instruction": 8007,
+              "measured_bit": 1,
+              "correction_bit": 0
+            }
+          ]
+        },
+        "one_outcome_witness": {
+          "hmr_instruction": 8006,
+          "outcome": 1,
+          "all_other_measurement_outcomes": 0,
+          "relative_phase_change_u128": "170141183460469231731687303715884105728"
+        }
+      },
+      {
+        "x": 3145728,
+        "excluded_from_legal_domain": true,
+        "source": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": []
+        },
+        "candidate": {
+          "phase_all_measurement_outcomes_zero_u128": "567283502619583005353833569600929792",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": [
+            {
+              "hmr_instruction": 11023,
+              "correction_instruction": 11024,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 14516,
+              "correction_instruction": 14517,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 18674,
+              "correction_instruction": 18675,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 22780,
+              "correction_instruction": 22781,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 27462,
+              "correction_instruction": 27463,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 32333,
+              "correction_instruction": 32334,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 40836,
+              "correction_instruction": 40837,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 46666,
+              "correction_instruction": 46667,
+              "measured_bit": 1,
+              "correction_bit": 0
+            }
+          ]
+        },
+        "one_outcome_witness": {
+          "hmr_instruction": 11023,
+          "outcome": 1,
+          "all_other_measurement_outcomes": 0,
+          "relative_phase_change_u128": "170141183460469231731687303715884105728"
+        }
+      },
+      {
+        "x": 3670016,
+        "excluded_from_legal_domain": true,
+        "source": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": []
+        },
+        "candidate": {
+          "phase_all_measurement_outcomes_zero_u128": "481496905215587999723141856667631616",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": [
+            {
+              "hmr_instruction": 11023,
+              "correction_instruction": 11024,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 14516,
+              "correction_instruction": 14517,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 18674,
+              "correction_instruction": 18675,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 22780,
+              "correction_instruction": 22781,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 27462,
+              "correction_instruction": 27463,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 32333,
+              "correction_instruction": 32334,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 43372,
+              "correction_instruction": 43373,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 46666,
+              "correction_instruction": 46667,
+              "measured_bit": 1,
+              "correction_bit": 0
+            }
+          ]
+        },
+        "one_outcome_witness": {
+          "hmr_instruction": 11023,
+          "outcome": 1,
+          "all_other_measurement_outcomes": 0,
+          "relative_phase_change_u128": "170141183460469231731687303715884105728"
+        }
+      }
+    ]
+  },
+  {
+    "source": "/workspace/scratch/cf46ce7f46e6/phaseopt/balanced30_36.kmb",
+    "candidate": "/workspace/scratch/cf46ce7f46e6/theory/care/balanced30_36_care.kmb",
+    "examples": [
+      {
+        "x": 0,
+        "excluded_from_legal_domain": true,
+        "source": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": []
+        },
+        "candidate": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": [
+            {
+              "hmr_instruction": 8041,
+              "correction_instruction": 8042,
+              "measured_bit": 1,
+              "correction_bit": 0
+            }
+          ]
+        },
+        "one_outcome_witness": {
+          "hmr_instruction": 8041,
+          "outcome": 1,
+          "all_other_measurement_outcomes": 0,
+          "relative_phase_change_u128": "170141183460469231731687303715884105728"
+        }
+      },
+      {
+        "x": 3145728,
+        "excluded_from_legal_domain": true,
+        "source": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": []
+        },
+        "candidate": {
+          "phase_all_measurement_outcomes_zero_u128": "567283502619583005353833569600929792",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": [
+            {
+              "hmr_instruction": 11058,
+              "correction_instruction": 11059,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 14555,
+              "correction_instruction": 14556,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 18712,
+              "correction_instruction": 18713,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 22813,
+              "correction_instruction": 22814,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 27511,
+              "correction_instruction": 27512,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 32362,
+              "correction_instruction": 32363,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 40866,
+              "correction_instruction": 40867,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 46764,
+              "correction_instruction": 46765,
+              "measured_bit": 1,
+              "correction_bit": 0
+            }
+          ]
+        },
+        "one_outcome_witness": {
+          "hmr_instruction": 11058,
+          "outcome": 1,
+          "all_other_measurement_outcomes": 0,
+          "relative_phase_change_u128": "170141183460469231731687303715884105728"
+        }
+      },
+      {
+        "x": 3670016,
+        "excluded_from_legal_domain": true,
+        "source": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": []
+        },
+        "candidate": {
+          "phase_all_measurement_outcomes_zero_u128": "481496905215587999723141856667631616",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": [
+            {
+              "hmr_instruction": 11058,
+              "correction_instruction": 11059,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 14555,
+              "correction_instruction": 14556,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 18712,
+              "correction_instruction": 18713,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 22813,
+              "correction_instruction": 22814,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 27511,
+              "correction_instruction": 27512,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 32362,
+              "correction_instruction": 32363,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 43406,
+              "correction_instruction": 43407,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 46764,
+              "correction_instruction": 46765,
+              "measured_bit": 1,
+              "correction_bit": 0
+            }
+          ]
+        },
+        "one_outcome_witness": {
+          "hmr_instruction": 11058,
+          "outcome": 1,
+          "all_other_measurement_outcomes": 0,
+          "relative_phase_change_u128": "170141183460469231731687303715884105728"
+        }
+      }
+    ]
+  },
+  {
+    "source": "/workspace/scratch/cf46ce7f46e6/phaseopt/cost_min36.kmb",
+    "candidate": "/workspace/scratch/cf46ce7f46e6/theory/care/cost_min36_care.kmb",
+    "examples": [
+      {
+        "x": 0,
+        "excluded_from_legal_domain": true,
+        "source": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": []
+        },
+        "candidate": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": [
+            {
+              "hmr_instruction": 8347,
+              "correction_instruction": 8348,
+              "measured_bit": 1,
+              "correction_bit": 0
+            }
+          ]
+        },
+        "one_outcome_witness": {
+          "hmr_instruction": 8347,
+          "outcome": 1,
+          "all_other_measurement_outcomes": 0,
+          "relative_phase_change_u128": "170141183460469231731687303715884105728"
+        }
+      },
+      {
+        "x": 3145728,
+        "excluded_from_legal_domain": true,
+        "source": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": []
+        },
+        "candidate": {
+          "phase_all_measurement_outcomes_zero_u128": "567283502619583005353833569600929792",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": [
+            {
+              "hmr_instruction": 11400,
+              "correction_instruction": 11401,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 14931,
+              "correction_instruction": 14932,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 19141,
+              "correction_instruction": 19142,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 23291,
+              "correction_instruction": 23292,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 28015,
+              "correction_instruction": 28016,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 32967,
+              "correction_instruction": 32968,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 41687,
+              "correction_instruction": 41688,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 47979,
+              "correction_instruction": 47980,
+              "measured_bit": 1,
+              "correction_bit": 0
+            }
+          ]
+        },
+        "one_outcome_witness": {
+          "hmr_instruction": 11400,
+          "outcome": 1,
+          "all_other_measurement_outcomes": 0,
+          "relative_phase_change_u128": "170141183460469231731687303715884105728"
+        }
+      },
+      {
+        "x": 3670016,
+        "excluded_from_legal_domain": true,
+        "source": {
+          "phase_all_measurement_outcomes_zero_u128": "0",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": []
+        },
+        "candidate": {
+          "phase_all_measurement_outcomes_zero_u128": "481496905215587999723141856667631616",
+          "input_and_work_restored": true,
+          "nonzero_hmr_phase_debts": [
+            {
+              "hmr_instruction": 11400,
+              "correction_instruction": 11401,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 14931,
+              "correction_instruction": 14932,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 19141,
+              "correction_instruction": 19142,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 23291,
+              "correction_instruction": 23292,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 28015,
+              "correction_instruction": 28016,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 32967,
+              "correction_instruction": 32968,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 44361,
+              "correction_instruction": 44362,
+              "measured_bit": 1,
+              "correction_bit": 0
+            },
+            {
+              "hmr_instruction": 47979,
+              "correction_instruction": 47980,
+              "measured_bit": 1,
+              "correction_bit": 0
+            }
+          ]
+        },
+        "one_outcome_witness": {
+          "hmr_instruction": 11400,
+          "outcome": 1,
+          "all_other_measurement_outcomes": 0,
+          "relative_phase_change_u128": "170141183460469231731687303715884105728"
+        }
+      }
+    ]
+  }
+]

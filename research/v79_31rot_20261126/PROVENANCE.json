@@ -1,0 +1,21 @@
+{
+  "original_v79_archive_sha256": "a1439ab581e4f6140577f293b47678eacb5427e456ec3fa63217a8cf5d4d157a",
+  "original_v55_archive_sha256": "08d7db394dbdfca24ad4fe35f7855f2e45661a12e47a6da21105c0fffec155af",
+  "parent_repository": "https://github.com/corcondor/gvqcc",
+  "parent_branch": "research/v79-width-parametric-transport",
+  "parent_commit": "45d56c097aa99e698d5408ff2552ebe9398f1846",
+  "official_verifier_source": "https://github.com/Inzainos/quantum-circuit-compilation",
+  "official_verifier_commit": "4277c767440df9efb8a90860ae2ce47028e46ba9",
+  "official_verifier_file": "verifiers/invsqrt/verify_submission_invsqrt.py",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "kickmix": "1.0.0",
+  "notes": [
+    "The official public verifier snapshot was run locally, not on Kaggle.",
+    "The initial 64-shot-per-input attempts for baseline and intermediate joint36 were interrupted and are not completion evidence.",
+    "All legal-only candidates have concrete out-of-domain HMR phase counterexamples.",
+    "B35 first-stage arithmetic is a partial circuit and has zero phase rotations.",
+    "Donor source is retained for provenance; use documented reproduction entry points."
+  ]
+}
