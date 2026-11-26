@@ -3,7 +3,7 @@ import shutil
 import sys
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\81808\.openclaw\gvqcc")
+ROOT = Path(r"<ROOT>")
 sys.path.insert(0, str(ROOT / "w_push19" / "theirs"))
 import v71_compress as V  # noqa: E402
 
