@@ -7,10 +7,10 @@
   "brot": 7,
   "batch_size": 5,
   "num_circuits": 15,
-  "reaction_depth": 1535,
-  "num_ops": 399252,
+  "reaction_depth": 1477,
+  "num_ops": 364126,
   "verified_shots": 78016,
-  "submission_sha256": "bd8ec63a73429d687355af2271978de8d3a1ba7181e0bd163c47cbfc86665afc",
+  "submission_sha256": "31a284f86b059134d22caaaea8057175e575b521c04e0de63c70b05287141a93",
   "resources": {
     "brot": 7,
     "keep_bits": 10,

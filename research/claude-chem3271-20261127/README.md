@@ -7,20 +7,29 @@
 
 | artifact | official verifier (unchanged) | numbers |
 |---|---|---|
-| `family_3271.zip` — 15 angle loaders + `submission.npz` | dfthcsos PASS, default and a fresh salt, 78,016 shots each | **cost 247,801,621.46**, 3,271 loader Toffolis/pass, T 13,042, 405 qubits, lambda_eff 46.914266, 399,252 instructions |
+| `family_3271.zip` — 15 angle loaders + `submission.npz` | dfthcsos PASS, default and a fresh salt, 78,016 shots each | **cost 247,801,621.46**, 3,271 loader Toffolis/pass, T 13,042, 405 qubits, lambda_eff 46.914266, **364,126 instructions** |
 | `invsqrt_C1.zip` — `invsqrt.kmb` | invsqrt PASS, 200,540,928 shots | **cost 60,865.16** (b806: 60,918.318), 37 qubits, mean Toffoli 1404.625 |
 
 With the DQI circuit used before (4b572141, not included) the local combined score is 33.32778.
 
 ## What changed
-- **Loaders.** Base: the public goodpjw2008 loaders (3,306/pass) as shortened to 3,275 in
-  [PR #179](https://github.com/corcondor/gvqcc/pull/179). Banks 1, 5, 7, 11 replaced by our group-start construction at
-  **232** Toffolis (were 233), compressed with the affine-block resynthesis from PR #179
-  (`src/compress_new_heads.py` imports that script). Bank 0 is our 242 loader. Table (`submission.npz`) is unchanged
+- **Loaders.** Base: V71 of [PR #179](https://github.com/corcondor/gvqcc/pull/179) (family_3275_344306, public
+  goodpjw2008 loaders 3,306 shortened to 3,275). Banks 1, 5, 7, 11 replaced by our group-start construction at
+  **232** Toffolis (were 233), compressed with V71's commute-and-fuse resynthesis (`src/compress_new_heads.py`
+  imports that script; it cuts our heads from about 54k to 45k instructions). Bank 0 is our 242 loader. Table (`submission.npz`) is unchanged
   from PR #179. Exact check on all 1,219 addresses and every measurement outcome, forward and reverse: PASS
   (`verification/xcheck_3271.txt`).
 - **invsqrt.** On top of b806, a measured flag's correction is paid by Clifford terms plus one CCZ on live values
   (certificate tools in `src/invsqrt_certificate/`); data and phase identical on all 3,133,452 inputs.
+
+## Theory notes: how low can these heads go?
+- The head loaders have 144 full columns, **13 columns with 4 care values and 3 with 5**. Each relation column removes
+  one cached function: Toffolis = 95 products + (computed dimension - 10); 13 relations give dimension 147 and 232.
+- With the 3 five-value columns as extra relations the floor for 95-product covers is **229** per head (dimension 144):
+  3,259 per pass, chemistry about 247,345,615 if every head reached it.
+- Existence of the extra relations is cheap (`fivecols.py` fixes them by random cover moves); the bottleneck is the
+  128-qubit schedule (phase-1 window search). The polarisation identity Q(z+d)+Q(z)=Q(d)+B(z,d) (fixing d makes the
+  relation linear in z) is a complementary way to choose relation supports that schedule better.
 
 ## Notes from the experiments (for other sessions)
 - Head loaders with 13 relation columns give 232 on the first seed in about 5 minutes per head on a Kaggle CPU kernel.
