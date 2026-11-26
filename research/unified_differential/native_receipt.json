@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-26",
+  "status": "RESEARCH_ONLY_NOT_SUBMISSION",
+  "parents": {
+    "all": "GVQCC_V74_AllTasks_WholeCircuit_NOT_SUBMISSION.zip",
+    "spectral36": "GVQCC_V71_NonlinearBasisTransport_NOT_SUBMISSION.zip"
+  },
+  "native": {
+    "invsqrt25": {
+      "width": 25,
+      "ops": [
+        62079,
+        61260
+      ],
+      "ccx": [
+        5116,
+        5007
+      ],
+      "generic_rotations": 7777,
+      "formula_cost": [
+        1698370.489146,
+        1695645.4891464112
+      ],
+      "cube": 4194304,
+      "legal": 3133452,
+      "hmr": 2711,
+      "sha256": "ec8a26555a7f50f6cd1502d863288772db3f6caf5d9b2008be83efb7c3028523"
+    },
+    "invsqrt36": {
+      "width": 36,
+      "ops": [
+        52545,
+        50906
+      ],
+      "ccx": [
+        1358,
+        1358
+      ],
+      "generic_rotations": 7850,
+      "formula_cost": [
+        2332126.5622262387,
+        2332126.5622262387
+      ],
+      "cube": 4194304,
+      "legal": 3133452,
+      "hmr": 1259,
+      "sha256": "c760d77508fa1475f6bc54c5fd7313949b29f67eb61648ad57b802fa28093271"
+    },
+    "dqi": {
+      "width": 900,
+      "ops": [
+        69577739,
+        68820952,
+        68799061
+      ],
+      "static_three_wire_paid": [
+        318950,
+        318950
+      ],
+      "ccx": [
+        312234,
+        312234
+      ],
+      "random_paired_inputs": 256,
+      "per_shot_paid_identical": true,
+      "physical_scratch_identical": true,
+      "sha256": "03911fe9a9469d0f37359135442c42895611a039a023a8f5a65ec89e64e996be"
+    },
+    "chemistry": {
+      "width": 128,
+      "banks": 15,
+      "ops": [
+        371111,
+        369838
+      ],
+      "ccx_per_pass": [
+        3357,
+        3357
+      ],
+      "legal_transitions": 36570,
+      "hmr_coefficients": 3086,
+      "npz_unchanged_sha256": "2e1897dd362dd80a56575441a58f6b068b40b966834cc8238e37a86748e2c8d4",
+      "rank_model": [
+        4170,
+        3865
+      ],
+      "rank_model_adopted": false
+    }
+  },
+  "phase_pair_queries": 660,
+  "phase_fusions": 0,
+  "official_verifier": false,
+  "lean_compiled": false,
+  "kaggle_submission": false,
+  "archive": {
+    "filename": "GVQCC_DiscreteDifferential_AllTasks_NOT_SUBMISSION.zip",
+    "bytes": 104812485,
+    "sha256": "5c78cbacd548b7f6830abf4bf1b10cb5c05dee91accc2118f041352188cf2dce"
+  }
+}
