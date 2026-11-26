@@ -1,0 +1,15 @@
+name: V71 dependent carrier local proofs
+on:
+  push:
+    branches: [research/invsqrt-v71-dependent-carrier-20261126]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python research/invsqrt_v71_dependent_carrier/check_identities.py
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/invsqrt_v71_dependent_carrier/DependentCarrier.lean
