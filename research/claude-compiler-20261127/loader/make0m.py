@@ -54,7 +54,11 @@ try:
 except Stop:
     pass
 del B.phase1, B.place_anchors
-B.keep_always = [v for v, _ in B.live[:NQ]]
+if os.environ.get('KEEPSEED'):
+    _rk = random.Random(int(os.environ['KEEPSEED']))
+    B.keep_always = [v for v, _ in _rk.sample(B.live[:int(os.environ.get('KEEPPOOL', '24'))], NQ)]
+else:
+    B.keep_always = [v for v, _ in B.live[:NQ]]
 print(f'snapshot after the search and lift ({time.time() - t0:.0f}s); keeping the first {NQ} products; '
       f'recorded factors {len(B.factors)}', flush=True)
 snap = copy.deepcopy(B)
@@ -85,10 +89,15 @@ def attempt(trial):
     o = first + mid + last
     B.rng = random.Random(trial)
     B.last_count = last_count
-    import greedy_order
-    o = greedy_order.reorder(B, o, e + EXTRA, trial)
+    if os.environ.get('ORDER', 'greedy') == 'beam':
+        import beam_order
+        o = beam_order.reorder(B, o, e + EXTRA, trial)
+    else:
+        import greedy_order
+        o = greedy_order.reorder(B, o, e + EXTRA, trial)
     B.anchors = list(anchors)
     B.prefer_closable = trial % 2 == 1
+    B.final_mode = int(os.environ.get("FINALMODE", "0"))
     B.run_rest(o, verbose=False)
     return B
 
@@ -103,7 +112,7 @@ for trial in range(first_trial, first_trial + trials):
     sp = B.spec()
     cost = sp.toffoli_like
     print(f'trial {trial}: closed  CCX {sp.toffoli}  cond-CCZ {B.n_ccz}  spills {B.n_spill}  remat {B.n_remat}'
-          f'  mean Toffoli {cost} ({time.time() - t0:.0f}s)', flush=True)
+          f'  mean Toffoli {cost} peeled {B.n_peel} ({time.time() - t0:.0f}s)', flush=True)
     if best is None or cost < best[0]:
         best = (cost, trial, B, sp)
         sp.save(f'spec5_k{k}{tag}_r{nrel}_s{seed}_q{NQ}a{NANCH}.json')

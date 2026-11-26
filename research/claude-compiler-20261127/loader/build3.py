@@ -3,6 +3,7 @@
 #      since the measurement bit is 1 on half of the shots);
 #  (2) nothing releasable (all live values still needed) -> spill one needed value (measure it now) and
 #      rematerialise it later from its factors (one more Toffoli).
+import os
 import random
 from common import *
 from gf2 import *
@@ -29,6 +30,8 @@ class Builder3(Builder2):
         self.allow_ccz = True
         self.cubic_for = {}        # released value -> cubic terms chosen when it entered the closure
         self.n_remat_final = 0
+        self.n_peel = 0
+        self.final_mode = 0
 
     # record the factor values of every cache product so it can be recomputed
     def ev_compute(self, L, M, kind='S'):
@@ -399,8 +402,26 @@ class Builder3(Builder2):
             inter = intersect_vecs(Z, list(clo.piv.values()), self.ny)
             cand = [v for v in inter if Sech.reduce(v)]
             if not cand:
-                m = self.remat_step(S, Sech, Z, clo)
-                if m is not None:
+                # final_mode 0: CCZ only; 1: free releases first; 2: one-term CCZ, then free releases
+                mode = self.final_mode
+                v = None
+                if mode == 2 and self.allow_ccz:
+                    v = self.cubic_step(S, Sech, Z, clo, max_terms=1)
+                if v is None and mode >= 1 and self.peel_step(added, Sech):
+                    elems = self.L_elems()
+                    ce = self.span_basis(elems)
+                    Z = [v for v, _ in elems]
+                    full = Ech(Z).n
+                    continue
+                if v is None and self.allow_ccz:
+                    v = self.cubic_step(S, Sech, Z, clo)
+                if v is not None:
+                    v = self.best_gain(v, S, Sech, Z, clo)
+                    cand = [v]
+                else:
+                    m = self.remat_step(S, Sech, Z, clo)
+                    if m is None:
+                        raise RuntimeError(f'closure stuck (cubic) at {Sech.n} of {full}')
                     # recompute one value from the closure order; it joins the live set and the closure
                     for (a, _) in S:
                         clo.add(a & m[0])
@@ -413,12 +434,6 @@ class Builder3(Builder2):
                     Z = [v for v, _ in elems]
                     full = Ech(Z).n
                     continue
-                if not self.allow_ccz:
-                    raise RuntimeError(f'closure stuck at {Sech.n} of {full}')
-                v = self.cubic_step(S, Sech, Z, clo)
-                if v is None:
-                    raise RuntimeError(f'closure stuck (cubic) at {Sech.n} of {full}')
-                cand = [v]
             self.rng.shuffle(cand)
             cnt = 0
             for v in cand:
@@ -439,6 +454,74 @@ class Builder3(Builder2):
         while self.live:
             rel = self.live[-1]
             self.release(rel, self.live[:-1])
+
+    def peel_step(self, added, Sech):
+        """release, right now and for free, a live value outside the closure whose phase is quadratic in the other
+        live values (a legal first erasure from the top; no extra gate)."""
+        elems = self.L_elems()
+        ce = self.span_basis(elems)
+        vals = [v for v, _ in self.live]
+        cands = [v for v in vals if Sech.reduce(v)]
+        for _ in range(40):
+            if len(vals) < 2:
+                break
+            a, b = self.rng.sample(vals, 2)
+            if Sech.reduce(a ^ b):
+                cands.append(a ^ b)
+        self.rng.shuffle(cands)
+        target = Ech([v for v, _ in elems]).n - 1
+        for x in cands[:60]:
+            ech = Ech([v for v, _ in self.free] + [v for v, _ in added])
+            if not ech.reduce(x):
+                continue
+            kept = list(added)
+            pool = list(self.live)
+            self.rng.shuffle(pool)
+            for v, f in pool:
+                if ech.n >= target:
+                    break
+                e2 = ech.copy()
+                if e2.add(v) and e2.reduce(x):
+                    ech = e2
+                    kept.append((v, f))
+            if ech.n != target or not self.expressible(x, self.free + kept):
+                continue
+            fx = self.express(elems, ce, x)
+            self.release((x, fx), kept)
+            self.n_peel += 1
+            return True
+        return False
+
+    def reach(self, clo2, Sech, m):
+        """how many earlier products would become computable from the closure once m is added (progress)."""
+        s2 = Sech.copy()
+        s2.add(m)
+        return sum(1 for u, w in self.factors.values()
+                   if not s2.reduce(u) and not s2.reduce(w) and s2.reduce(u & w))
+
+    def gain_of(self, v, S, Sech, Z, clo):
+        c2 = clo.copy()
+        for (a, _) in S:
+            c2.add(a & v)
+        c2.add(v)
+        s2 = Sech.copy()
+        s2.add(v)
+        return sum(1 for x in intersect_vecs(Z, list(c2.piv.values()), self.ny) if s2.add(x))
+
+    def best_gain(self, first, S, Sech, Z, clo):
+        """among several values reachable with as few cubic terms, take the one that opens the closure furthest."""
+        best = (self.gain_of(first, S, Sech, Z, clo), -len(self.cubic_for[first]), first)
+        tries = int(os.environ.get('CUBTRIES', '24'))
+        for _ in range(tries):
+            v = self.cubic_step(S, Sech, Z, clo)
+            if v is None:
+                break
+            if len(self.cubic_for[v]) > len(self.cubic_for[best[2]]):
+                continue
+            key = (self.gain_of(v, S, Sech, Z, clo), -len(self.cubic_for[v]), v)
+            if key[:2] > best[:2]:
+                best = key
+        return best[2]
 
     def remat_step(self, S, Sech, Z, clo):
         """one product of values already in span(S), preferably one the loader computed before, whose arrival lets
@@ -478,9 +561,9 @@ class Builder3(Builder2):
             s2 = Sech.copy()
             s2.add(m)
             gain = sum(1 for v in inter if s2.add(v))
-            if gain and (best is None or gain > best[0]):
-                best = (gain, m, u, w)
-        if best is None:
+            if best is None or gain > best[0][0] or (gain == best[0][0] and self.reach(c2, Sech, m) > best[0][1]):
+                best = ((gain, self.reach(c2, Sech, m)), m, u, w)
+        if best is None or (not best[0][0] and (self.n_remat_final >= 6 or not best[0][1])):
             return None
         _, m, u, w = best
         fu = self.express(elems, sb, u)
@@ -492,7 +575,7 @@ class Builder3(Builder2):
         self.n_remat_final += 1
         return (m, sym)
 
-    def cubic_step(self, S, Sech, Z, clo):
+    def cubic_step(self, S, Sech, Z, clo, max_terms=3):
         """a live value v outside S with v = quadratic(S) + (1, 2 or 3 cubic terms of S); fewest terms first."""
         piv = clo.piv
         wc = CombEch()          # span of the live values modulo the quadratic closure
@@ -531,7 +614,7 @@ class Builder3(Builder2):
                 combos = (rt, [t])
             elif key in seen and seen[key][0] != rt:
                 combos = (rt ^ seen[key][0], [seen[key][1], t])
-            if combos:
+            if combos and len(combos[1]) <= max_terms:
                 v = lift(combos[0])
                 if v is not None and Sech.reduce(v):
                     self.cubic_for[v] = [(S[a], S[b], S[c]) for a, b, c in combos[1]]
@@ -539,7 +622,7 @@ class Builder3(Builder2):
             seen.setdefault(key, (rt, t))
             items.append((key, rt, t))
         # three terms
-        for i in range(min(len(items), 1500)):
+        for i in range(min(len(items), 1500) if max_terms >= 3 else 0):
             ki, ri, ti = items[i]
             for j in range(i + 1, len(items)):
                 kj, rj, tj = items[j]
