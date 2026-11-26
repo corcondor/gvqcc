@@ -1,0 +1,12 @@
+# V77: conditionally clean basis exchange and phase echo (research only)
+Refs #163, #165, #162, #160, #157, #20. The full executable native compiler and circuits are in the companion research ZIP. No official score/submission claim.
+
+The 25Q V74 complete inverse-square-root oracle is transformed to 24Q by an integer dirty-carrier phase echo and by replacing multi-control prefix synthesis with the marked-position conditional-clean ladder of Khattar and Gidney, Quantum 9, 1752 (2025), https://doi.org/10.22331/q-2025-05-21-1752, theorem 5.1 and section 5.2. Independent implementation. The exact echo is (s xor f*p)-s=(1-2s)f*p; the global parity compensation is included in the physical oracle. 78 conditional-clean ladders save 1579 CCX against the first 24Q construction.
+
+V74 -> V77: Q 25->24; CCX 5116->4647; operations 62079->59874; rotations 7777 unchanged; formula cost 1698370.4891464112->1619179.6695805548; worst exact margin 138112178 unchanged. Independent serialized native replay of all 4194304 basis inputs, 3133452 legal inputs, 2021 HMR coefficients; all pass. SHA256 b5577e7031ee51e6e68fa6b7bf5f7481f71907f0b92fb534c72b84dec6886a8c. Still noncompetitive versus prior low-rotation solutions. No official KickMix run.
+
+Chemistry: new shared-factor kernel, solving multiplication by each proposed factor over the entire current 99-dimensional space, modulo the cache plus nonlinear generator span, rather than a fixed partner list. 3612 first-factor probes across 10 light banks; maximum projected kernel dimension 1. No valid paid reduction. All 15 unchanged banks independently replayed forward/reverse (36570 transitions, 3086 HMR coefficients). No cost gain.
+
+DQI: derive phase from trace-dual classical-mask Fourier coefficients and locator recurrence, without enumerating decoded roots. Full-size classical exact model passes 52 tests including weights 0..35. Naive modular Horner costs up to 143325 field products, so no claim of a lower-cost physical DQI or 899Q KMB. Need fast low-workspace modular reduction for a native competitor.
+
+Lean covers local laws only, not entire circuits; CI configured. Python exhaustive checks of five identities (60 assignments) and marked ladder (8188 cases) passed locally. No main or Kaggle change.
