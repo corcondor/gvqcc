@@ -1,0 +1,28 @@
+name: V91 native temporal hybrid
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'research/v91-hybrid/**'
+      - '.github/workflows/v91-native-hybrid.yml'
+permissions:
+  contents: read
+jobs:
+  native-hybrid:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install numpy
+      - run: python research/v91-hybrid/hybrid.py --out /tmp/v91-result
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v91-native-hybrid
+          path: |
+            /tmp/v91-result/receipt.json
+            /tmp/v91-result/candidate/
+          if-no-files-found: warn
