@@ -53,7 +53,7 @@ theorem paired_rank2_bilinear_identity (a1 a2 b1 b2 m M : Bool) :
     For every valid segment index `s < 24`, bits `a3 = (s / 8) % 2` and `a4 = (s / 16) % 2`
     cannot both be `1`, so `a3 && a4 = false` identically. -/
 theorem dont_care_24seg_high_vanishes (s : Nat) (hs : s < 24) :
-    !(((s / 8) % 2 == 1) && ((s / 16) % 2 == 1)) = true := by
+    ¬ ((s / 8) % 2 = 1 ∧ (s / 16) % 2 = 1) := by
   omega
 
 /-- Spanning-forest (MST-hub) CNOT fan-out reconstruction identity over `Bool`. -/
