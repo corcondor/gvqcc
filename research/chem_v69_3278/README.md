@@ -16,9 +16,10 @@
 | **V71 (`3,275` + Commutation-Fused Boyar-Peralta / Sparsity-PMH)** | **3,275** | **247,953,623.68** | **13,050** | **46.914266** | **PASS (`num_ops = 344,306`, `reaction_depth = 1,307`)** |
 | **V72 (`k = 0` at `242` + ALL 4 heads `k = 1, 5, 7, 11` at `232` + V71 compression)** | **3,271** | **247,801,621.46** | **13,042** | **46.914266** | **PASS (default + fresh salt, `num_ops = 347,778`)** |
 | **V74 (`3,271` + Joint `CCX/CZ` Commutation Transport + Difference-Equation Affine Opt)** | **3,271** | **247,801,621.46** | **13,042** | **46.914266** | **PASS (default + fresh salt, `num_ops = 341,472`, `reaction_depth = 1,409`)** |
-| **V75 (WORLD FIRST `231`-CCX head `k = 5` via `min dim(R) = 143` at `e = 30`)** | **3,270** | **247,763,620.91** | **13,040** | **46.914266** | **PASS (default + fresh salt, `reaction_depth = 1,405`!)** |
+| **V75 (WORLD FIRST `231`-CCX head `k = 5` via `min dim(R) = 143` at `e = 30`)** | **3,270** | **247,763,620.91** | **13,040** | **46.914266** | **PASS (default + fresh salt)** |
+| **V75 COMPLETE (ALL 4 HEADS `k = 1, 5, 7, 11` AT `231` CCX — 4/4 `seed=1` CLEAN SWEEP!!)** | **3,267** | **247,649,619.24** | **13,034** | **46.914266** | **PASS (default + fresh salt, 78,016 shots each!)** |
 
-*(Per-loader `CCX` of V75 `3,270`: `242, 232, 213, 212, 213,` **`231`**`, 213, 232, 205, 212, 212, 232, 209, 206, 206` = **3,270**; breaks the `91 + 2 = 93 > 92` obstruction by selecting a valid `e = 30` early-chip set minimizing `dim(R) = 143` so `dim(K ∩ R) = 93 + 143 - 146 = 90`, `90 + 2 = 92 <= 92`! `k = 7, 11, 1` at `231` are running now toward `3,267 = 247,649,619`.)*
+*(Per-loader `CCX` of V75 COMPLETE `3,267`: `242,` **`231`**`, 213, 212, 213,` **`231`**`, 213,` **`231`**`, 205, 212, 212,` **`231`**`, 209, 206, 206` = **3,267**; chemistry `score` = **`247,649,619.24`** (`-152,002` below `3,271`, `-646,009` below `3,284`, `-1,596,224` below public best!), breaking the `91 + 2 = 93 > 92` obstruction via `min dim(R) <= 143` at `e = 30` (`4/4` first-try `seed=1` PASS on `k = 1, 5, 7, 11`). Uncompressed `num_ops = 385,721` — ready for V103/V74 ops compression down to `~314,000` ops!)*
 
 ## What Is Included
 
