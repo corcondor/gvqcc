@@ -44,8 +44,8 @@ def parse(path):
     it={k:iter(x[0] for x in struct.iter_unpack("<I",sec[k])) for k in range(2,10)}
     ops=[]
     for op in sec[1]:
-        assert op in (17,33,49,80,144,160),op
-        r=[next(it[k]) for k in {1:[7],2:[5,6],3:[2,3,4]}[(op>>4)&3]]
+        assert op in (17,33,49,80,0,16,32,48,128,144,160,176),op
+        r=[next(it[k]) for k in {0:[],1:[7],2:[5,6],3:[2,3,4]}[(op>>4)&3]]
         b=next(it[8]) if op&64 else next(it[9]) if op&128 else None
         ops.append((op,r,b))
     assert len(ops)==h[4]
@@ -58,21 +58,23 @@ def replay(C,words):
     q=[0]*qn
     for i,z in enumerate(sel):q[z]=nd.A[i]
     for z,v in zip(wq,words):q[z]=v
-    debts={}
+    debts=[];bitvar={};phase=0
     for op,r,b in ops:
         if op==17:q[r[0]]^=FULL
         elif op==33:q[r[1]]^=q[r[0]]
         elif op==49:q[r[2]]^=q[r[0]]&q[r[1]]
         elif op==80:
-            assert not debts.get(b,0),("measurement reuse",b)
-            debts[b]=q[r[0]];q[r[0]]=0
-        elif op==144:debts[b]^=q[r[0]]
-        elif op==160:debts[b]^=q[r[0]]&q[r[1]]
+            bitvar[b]=len(debts);debts.append(q[r[0]]);q[r[0]]=0
+        else:
+            m=FULL
+            for z in r:m&=q[z]
+            if op&128:debts[bitvar[b]]^=m
+            else:phase^=m
     assert all(q[z]==nd.A[i] for i,z in enumerate(sel))
     assert not any(q[z] for z in range(qn) if z not in sel and z not in wq)
-    assert not any(debts.values()),"measurement phase"
+    assert not any(debts) and phase==0,"measurement phase"
     return [q[z] for z in wq]
-def count(C):return sum(op==49 for op,r,b in C[2])
+def count(C):return sum((op&127) in (48,49) for op,r,b in C[2])
 def word_rows(w,k):
     return nd.words(w,k)
 def verify_group(C,W,ks):
