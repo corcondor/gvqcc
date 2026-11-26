@@ -11,7 +11,7 @@ forms in abstract Boolean symbols. New nonlinear products receive fresh
 symbols; repeated products are canonicalized using the 2D homogeneous
 factor space and Boolean affine corrections. For example,
 `a*(a+b) = a*b+a`. A CCX is replaced only if its exact abstract product is
-the XOR of at most two other live wires and a constant. This preserves the
+the XOR of at most 32 linear terms from other live wires and a constant. Fixed-factor Gaussian bases also derive products such as a*(b+c) from a*b and a*c; the live-row Gaussian solve is attempted after the one/two-wire fast path. This preserves the
 computational-basis action on the reachable subspace, hence also on its
 linear span. Conditional writes and branch joins conservatively forget
 information. HMR/R reset value tracking; all original phase and measurement
@@ -22,8 +22,7 @@ The workflow downloads the hash-pinned original KMB, scans every instruction,
 writes a new complete KMB only when at least one CCX is removed, checks the
 serialized layout and resource counts, then runs the unmodified official
 102400-shot verifier. The candidate and receipt are uploaded as CI artifacts.
-No successful reduction or official verifier result is asserted before the
-workflow completes. No score/seed/salt search or submission.
+Initial run [45792856195](https://github.com/corcondor/gvqcc/actions/runs/45792856195): all 364,174 CCX scanned, 2,742 canonical product hits, zero reductions in the one/two-wire pass, 20.80 s. No candidate was written. The extended fixed-factor/live-span pass is separate; no successful reduction or official verifier result is asserted before its workflow completes. No score/seed/salt search or submission.
 
 Reproduce from repository root:
 ```sh
