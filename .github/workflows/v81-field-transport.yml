@@ -1,0 +1,25 @@
+name: V81 finite field transport
+on:
+  pull_request:
+    paths:
+      - 'research/v81/**'
+      - '.github/workflows/v81-field-transport.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: research/v81/lean
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Install pinned mathlib and check proofs
+        run: |
+          lake update
+          lake exe cache get
+          lake build
+          lake env lean FieldTransport.lean
