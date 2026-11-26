@@ -1,0 +1,34 @@
+name: V85 pinned public chemistry source receipt
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/v85-source-donor.yml'
+      - 'research/v85-source-donor/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pinned-public-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Download the published source payload at its pinned commit
+        run: |
+          set -eux
+          mkdir -p donor
+          root=https://raw.githubusercontent.com/Acceleratorer/quantum-circuit-compilation-clean/89538d3c5f92974b426ba74a435cab9f9d7c7121/experiments/exp-074
+          curl -fLsS --retry 3 "$root/module/build_chemistry.py" -o donor/build_chemistry.py
+          curl -fLsS --retry 3 "$root/module/payload/v20_loader_programs.b85" -o donor/v20_loader_programs.b85
+          curl -fLsS --retry 3 "$root/module/payload/chemistry_weights.b85" -o donor/chemistry_weights.b85
+          curl -fLsS --retry 3 "$root/NOTICE.md" -o donor/NOTICE.md
+          curl -fLsS --retry 3 "$root/source.json" -o donor/source.json
+          cd donor
+          sha256sum * | tee SHA256SUMS
+          echo 'ebc25b69b55299313a82b0f32fb460741c4e9a00a366fdf0097915ea94717f0a  v20_loader_programs.b85' | sha256sum -c -
+          echo '4c91ad004ed90595fdc83bae462a88da9fcbf5952ce5c47be9aa9da702d82808  chemistry_weights.b85' | sha256sum -c -
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v85-pinned-public-source
+          path: donor/
+          retention-days: 7
