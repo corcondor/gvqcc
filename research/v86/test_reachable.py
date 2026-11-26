@@ -36,6 +36,25 @@ class Tests(unittest.TestCase):
             a,b,z = [(x>>i)&1 for i in range(3)]
             self.assertEqual(z ^ (a & (a^b)), z ^ (a&b) ^ a)
 
+    def test_bilinear_span(self):
+        d = Domain(7, [0,1,2,6])
+        d.step(0x31,0,1,3)
+        d.step(0x31,0,2,4)
+        d.step(0x21,1,2)
+        rep, kind = d.step(0x31,0,2,6)
+        self.assertEqual(kind, "dependent")
+        self.assertEqual(rep[0], 0)
+        self.assertEqual(set(rep[1]), {3,4})
+        # A cached product distributed across three live rows.
+        d = Domain(7, [0,1,2,3])
+        d.step(0x31,0,1,4)
+        d.step(0x21,2,4)
+        d.step(0x21,3,4)
+        rep, kind = d.step(0x31,0,1,5)
+        self.assertEqual(kind, "cached")
+        self.assertEqual(rep[0], 0)
+        self.assertEqual(set(rep[1]), {2,3,4})
+
     def test_branch_join_and_compaction(self):
         d = Domain(6, [0,1])
         d.step(0x31,0,1,2)
