@@ -1,0 +1,4 @@
+qubits 900 bits 691866 ops 69782188 CCX 312254 CCZ 6718
+released by a second identical CCX: 0
+AND gadgets 52885  pure released 41697  never read 0  read only under extra conditions 0 (movable 0)
+estimated mean Toffoli saved (coin bits only, movable): 0.00
