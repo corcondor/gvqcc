@@ -19,8 +19,11 @@ jobs:
       - run: python -m pip install numpy
       - name: Build all 15 serialized native circuits and independently replay
         run: |
+          set -euo pipefail
           mkdir -p out
           python -u research/v87/native.py --out out --seeds 3 2>&1 | tee out/run.log
+          test -s out/receipt.json
+          test "$(find out/candidate -name 'angle_k_*.kmb' | wc -l)" -eq 15
       - uses: actions/upload-artifact@v4
         if: always()
         with:
