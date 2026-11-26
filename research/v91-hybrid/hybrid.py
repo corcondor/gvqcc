@@ -141,6 +141,57 @@ def solve_group(W,care,ks,selected,P):
             for b in range(7):assert not ((running[7*s+b]^word_rows(W,k)[7*s+b])&care[5*k+s])
         nd.store(ww,k,running)
     return new,ww
+
+def load_v19(out):
+    # Pinned public exp-072 source. Embedded loader bytes also self-check SHA256.
+    old_url,old_pins=nd.DONOR,nd.PINS
+    try:
+        nd.DONOR=old_url.replace("exp-074","exp-072")
+        nd.PINS={}
+        out.mkdir(exist_ok=True,parents=True)
+        p=out/"module/payload/loader_programs.b85";p.parent.mkdir(exist_ok=True,parents=True)
+        p.write_bytes(nd.get(nd.DONOR+"module/payload/loader_programs.b85"))
+        return nd.donor(out)
+    finally:nd.DONOR,nd.PINS=old_url,old_pins
+
+def direct_hybrid(C,W,care,source_options,out,files):
+    # Dynamic program over exact reachable 35-word bit functions.
+    # Unlike fixed-boundary fit, dead words can flow through every next bank.
+    # No changes to active angles, phases, address, or work restoration.
+    states={tuple([0]*35):(0,[],[],[])};rows=[]
+    for k in range(15):
+        opts=[("175",C[k],files[k])]
+        for label,P,build in source_options:
+            if k not in P:continue
+            p=P[k]
+            if isinstance(p,bytes):continue
+            fp=out/f"direct_{label}_{k}.kmb"
+            nd.write_kmb(fp,build(p,nd.SEL,nd.WQ));opts.append((label,parse(fp),fp))
+        nxt={};reject=collections.Counter()
+        for prev,(cost,route,cs,ws) in states.items():
+            for label,c,fp in opts:
+                try:
+                    r=replay(c,list(prev))
+                    assert replay(c,r)==list(prev),"reverse"
+                    for j in range(5):
+                        for b in range(7):
+                            assert not ((r[7*j+b]^word_rows(W,k)[7*j+b])&care[5*k+j]),"active word"
+                except (AssertionError,KeyError) as ex:reject[label+":"+str(ex)]+=1;continue
+                key=tuple(r);v=cost+count(c)
+                if key not in nxt or v<nxt[key][0]:nxt[key]=(v,route+[label],cs+[fp],ws+[r])
+        assert nxt,("no path",k)
+        # Exact if state count <=256; otherwise fail rather than truncate.
+        assert len(nxt)<=256,("state limit",k,len(nxt))
+        states=nxt;rows.append({"bank":k,"reachable_states":len(states),"cost_min":min(x[0] for x in states.values()),"rejections":dict(reject)})
+        print("DIRECT",rows[-1],flush=True)
+    cost,route,paths,ws=min(states.values(),key=lambda v:v[0])
+    ww=W.copy()
+    for k,r in enumerate(ws):nd.store(ww,k,r)
+    D={k:parse(p) for k,p in enumerate(paths)}
+    verify_group(D,ww,list(range(15)))
+    return cost,route,paths,D,ww,rows
+
+
 def main():
     ap=argparse.ArgumentParser();ap.add_argument("--out",type=pathlib.Path,required=True);a=ap.parse_args()
     out=a.out;out.mkdir(exist_ok=True,parents=True)
@@ -157,6 +208,7 @@ def main():
     care=care_masks(W,E);verify_group(C,W,list(range(15)))
     before=sum(map(count,C.values()));assert before==3312,before
     P,build,_=nd.donor(out)
+    P19,build19,_=load_v19(out/'v19')
     target=out/"candidate";target.mkdir(exist_ok=True)
     files={k:ref/f"angle_k_{k}.kmb" for k in C};record=[]
     for ks in ([2,3,4],[6],[8,9,10],[12,13,14]):
@@ -180,6 +232,12 @@ def main():
         if chosen:
             C,W,newfiles=chosen;files.update(newfiles)
         print("group",ks,base,best,flush=True)
+    # Test exact dynamically reached dead-word charts instead of requiring fixed boundaries.
+    direct=direct_hybrid(C,W,care,[("19",P19,build19),("20",P,build)],out,files)
+    print("DIRECT BEST",direct[0],direct[1],flush=True)
+    record.append({"direct_dynamic":direct[0],"route":direct[1],"states":direct[5]})
+    if direct[0]<sum(map(count,C.values())):
+        _,_,paths,C,W,_=direct;files=dict(enumerate(paths))
     # Stronger global gate: all legal addresses, both transitions, phase and workspace.
     verify_group(C,W,list(range(15)))
     orig=arrays["angle_words"]
