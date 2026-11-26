@@ -23,3 +23,19 @@ jobs:
           lake exe cache get
           lake build
           lake env lean FieldTransport.lean
+  native:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: research/v81
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild and check native KMB
+        run: |
+          python3 field_scan.py
+          g++ -O3 -std=c++17 emit_opt.cpp -o emit_opt
+          g++ -O3 -std=c++17 check_scan.cpp -o check_scan
+          python3 fixture.py
+          ./emit_opt additive additive851_opt.kmb
+          ./check_scan additive851_opt.kmb fixture.bin
+          echo 'ec3f2adcae920dcafcba0810d12e0a9b09b56df7a0feb4678159108067a3f252  additive851_opt.kmb' | sha256sum -c -
