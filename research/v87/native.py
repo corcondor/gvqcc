@@ -37,7 +37,7 @@ def donor(out):
     f=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=="build_chemistry")
     nodes=f.body
     start=next(i for i,n in enumerate(nodes) if isinstance(n,ast.Assign) and any(isinstance(t,ast.Tuple) and any(isinstance(a,ast.Name) and a.id=="NV" for a in t.elts) for t in n.targets))
-    stop=next(i for i,n in enumerate(nodes) if isinstance(n,ast.Assign) and any(isinstance(t,ast.Tuple) and any(isinstance(a,ast.Name) and a.id=="W_OLD" for a in t.elts) for t in n.targets))
+    stop=next(i for i,n in enumerate(nodes) if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=="W_OLD" for t in n.targets))
     body=nodes[start:stop]
     # take() uses nonlocal pos; preserve function scope.
     wrapper=ast.parse("def extracted():\n    pass\n").body[0]
