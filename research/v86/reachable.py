@@ -5,7 +5,7 @@ Input ABI: arbitrary S registers, arbitrary classical inputs, all other qubits
 zero. Track affine forms in independent *abstract* Boolean symbols. Each new
 nonlinear product is a fresh symbol, with exact canonical reuse identities.
 Unknown guards and branch joins overapproximate, never assume a sampled state.
-Only replace CCX by an equivalent XOR of <=2 live controls and a constant.
+Only replace CCX by an equivalent XOR of <=32 live controls and a constant.
 All other instructions (including phase, HMR, conditions) are copied verbatim.
 """
 import argparse
@@ -29,6 +29,7 @@ class Domain:
         self.limit = limit
         self.epoch = 0
         self.cache = {}
+        self.factor_bases = {}
         self.stack = []
         self.stats = Counter()
         for i in inputs:
@@ -62,6 +63,7 @@ class Domain:
         self.rows = rows
         self.n = n
         self.cache.clear()
+        self.factor_bases.clear()
         self.epoch += 1
         self.stats["compactions"] += 1
 
@@ -86,6 +88,36 @@ class Domain:
             if epoch != self.epoch or self.rows[i] != before[i]:
                 self.rows[i] = self.fresh()
 
+    def factor_basis(self, u):
+        # Multiplication by a fixed homogeneous Boolean form is linear.
+        # Include u*u=u; all basis values are exact product expressions.
+        return self.factor_bases.setdefault(u, {u.bit_length()-1: (u, u)})
+
+    def factor_lookup(self, u, v):
+        basis = self.factor_basis(u)
+        out = 0
+        while v:
+            entry = basis.get(v.bit_length()-1)
+            if entry is None:
+                return None
+            r, p = entry
+            v ^= r
+            out ^= p
+        return out
+
+    def factor_insert(self, u, v, value):
+        basis = self.factor_basis(u)
+        while v:
+            k = v.bit_length()-1
+            if k not in basis:
+                basis[k] = (v, value)
+                return
+            r, p = basis[k]
+            v ^= r
+            value ^= p
+        # Two expressions may agree on the concrete state but not in the
+        # overapproximation. Keep the existing basis; never assert equality.
+
     def product(self, a, b):
         # Boolean affine offsets and GL(2,F2) canonicalization of the
         # homogeneous factors: u*(u+v) = u*v+u, u*u = u.
@@ -101,8 +133,22 @@ class Domain:
         key = (p, q)
         if key in self.cache:
             return out ^ self.cache[key], "cached"
-        self.cache[key] = self.fresh()
-        return out ^ self.cache[key], "new"
+        value = self.factor_lookup(p, q)
+        if value is None:
+            value = self.factor_lookup(q, p)
+        if value is None:
+            value = self.factor_lookup(p ^ q, p)
+            if value is not None:
+                value ^= p
+        kind = "dependent"
+        if value is None:
+            value = self.fresh()
+            self.cache[key] = value
+            kind = "new"
+        self.factor_insert(p, q, value)
+        self.factor_insert(q, p, value)
+        self.factor_insert(p ^ q, p, value ^ p)
+        return out ^ value, kind
 
     def representation(self, p, target, a, b, kind):
         # Return (constant, controls), never use target as a control.
@@ -129,7 +175,31 @@ class Domain:
                 j = lookup.get(r ^ p ^ c)
                 if j is not None and i != j:
                     return c, (i, j)
-        return None
+        # Exact live-row span, not only one- or two-wire matches.
+        basis = {0: (1, 1)}
+        for i, r in enumerate(self.rows):
+            if i == target:
+                continue
+            code = 1 << (i+1)
+            while r:
+                k = r.bit_length()-1
+                if k not in basis:
+                    basis[k] = (r, code)
+                    break
+                rr, cc = basis[k]
+                r ^= rr
+                code ^= cc
+        r, code = p, 0
+        while r:
+            entry = basis.get(r.bit_length()-1)
+            if entry is None:
+                return None
+            rr, cc = entry
+            r ^= rr
+            code ^= cc
+        if code.bit_count() > 32:
+            return None
+        return code & 1, tuple(i for i in range(len(self.rows)) if code >> (i+1) & 1)
 
     def step(self, t, a=-1, b=-1, c=-1):
         if self.n > self.limit:
