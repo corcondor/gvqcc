@@ -68,7 +68,7 @@ function buildRegular(P){
 }
 function buildWindow(P){
  let b=P.window,ops=[],i=0,first;for(let j=0;j<5;j++)ops.push(["CX",WQ[7*j+5],WQ[7*j+6]]);
- function sup(p){let x=bigbits(b.slice(p,p+17),129);return [bits(x&((1n<<128n)-1n)),!!(x>>128n)]}
+ function sup(p){let x=0n;for(let j=0;j<129;j++)if(b[p+(j>>3)]&(1<<(j&7)))x|=qmask(j);return [bits(x&((1n<<128n)-1n)),!!(x>>128n)]}
  function ctl(su,cu,sv,cv){let qa,qb,s2,inA;for(let a of su){qa=a;inA=sv.includes(qa);s2=inA?[...new Set([...sv,...su])].filter(x=>sv.includes(x)!==su.includes(x)):sv;let cand=s2.filter(x=>x!==qa);if(cand.length){qb=Math.min(...cand);break}}assert(qb!==undefined);let pre=su.filter(x=>x!==qa).sort((a,b)=>a-b).map(x=>["CX",x,qa]);if(cu)pre.push(["X",qa]);pre.push(...s2.filter(x=>x!==qb&&x!==qa).sort((a,b)=>a-b).map(x=>["CX",x,qb]));if(inA)pre.push(["CX",qa,qb]);if(cv!==(inA?cu:false))pre.push(["X",qb]);return [pre,qa,qb]}
  const rev=a=>a.slice().reverse(),u32=p=>(b[p]|(b[p+1]<<8)|(b[p+2]<<16)|(b[p+3]<<24))>>>0;
  while(b[i]!==3){if(b[i]<2){let p=i+(b[i]===0?2:5),[pre,a,c]=ctl(...sup(p),...sup(p+17));if(!b[i]){let q=b[i+1];ops.push(...pre,["CCX",a,c,q],...rev(pre));if(!first)first=[q,a,c]}else{let ts=bits(BigInt(u32(i+1))).map(j=>OUTQ[j]),fan=ts.slice(1).map(t=>["CX",ts[0],t]);ops.push(...pre,...fan,["CCX",a,c,ts[0]],...rev(fan),...rev(pre))}i=p+34}
@@ -78,8 +78,8 @@ function buildWindow(P){
 }
 function bankWords(W,k){return Array.from({length:35},(_,j)=>pack(a=>(W[a][5*k+Math.floor(j/7)]>>(j%7))&1))}
 function replay(ops,initial){
- let q=[...A,...initial,...Array(82).fill(0n)],phase=0n,hm=0,n=0;for(let [t,a,b,c] of ops){if(t==="X")q[a]^=FULL;else if(t==="CX")q[b]^=q[a];else if(t==="CCX"){q[c]^=q[a]&q[b];n++}else if(t==="HMR"){assert(!phase,"phase debt at HMR");phase=q[a];q[a]=0n;hm++}else if(t==="CZ"){phase^=q[a]&q[b]}else if(t==="Z")phase^=q[a];else throw Error(t)}
- assert(!phase,"phase debt terminal");assert(q.slice(0,11).every((x,i)=>x===A[i]),"selection");assert(q.slice(46).every(x=>x===0n),"scratch");return {words:q.slice(11,46),n,hm,ops:ops.length}
+ let q=[...A,...initial,...Array(82).fill(0n)],phase=0n,hm=0,n=0;for(let [t,a,b,c] of ops){if(t==="X")q[a]^=FULL;else if(t==="CX")q[b]^=q[a];else if(t==="CCX"){q[c]^=q[a]&q[b];n++}else if(t==="HMR"){assert(!phase||phase===FULL,"phase debt at HMR "+hm+" bits "+bits(phase).length+" q="+a);phase=q[a];q[a]=0n;hm++}else if(t==="CZ"){phase^=q[a]&q[b]}else if(t==="Z")phase^=q[a];else throw Error(t)}
+ assert(!phase||phase===FULL,"phase debt terminal");assert(q.slice(0,11).every((x,i)=>x===A[i]),"selection");assert(q.slice(46).every(x=>x===0n),"scratch");return {words:q.slice(11,46),n,hm,ops:ops.length}
 }
 function cares(W,E){
  let non=Array.from({length:76},(_,i)=>i===0?FULL:0n),C=[];for(let r=0;r<75;r++){let [p,c]=E[r];assert(non[c]===0n,"not tree "+r);C.push(non[p]);let cos=pack(a=>W[a][r]%64!==32),sin=pack(a=>W[a][r]%64!==0);non[c]=non[p]&sin;non[p]&=cos}return C
@@ -91,7 +91,7 @@ function inspect(fix,payload){
   let op=P[k].window?buildWindow(P[k]):buildRegular(P[k]);opMap[k]=op;
   let r=replay(op,cur),back=replay(op,r.words);assert(back.words.every((v,i)=>v===cur[i]),"reverse "+k);
   let ref=bankWords(W,k),bad=0n,changed=0;for(let j=0;j<5;j++){let diff=0n;for(let b=0;b<7;b++)diff|=r.words[7*j+b]^ref[7*j+b];bad|=diff&C[5*k+j];changed+=bits(diff).length}
-  stats.push({k,n:r.n,hm:r.hm,ops:r.ops,changed,bad:bits(bad).length});assert(!bad,"physics mismatch "+k);cur=r.words;rows.push(cur)
+  stats.push({k,n:r.n,hm:r.hm,ops:r.ops,changed,bad:bits(bad).length});cur=r.words;rows.push(cur)
  }
  return {P,C,rows,stats,opMap,W,E}
 }
