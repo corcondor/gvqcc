@@ -1,0 +1,20 @@
+{
+  "raw": {
+    "pass_24_of_24": true,
+    "ccx": 18,
+    "hmr": 18,
+    "cx": 1264,
+    "total_ops": 1397,
+    "sha256": "5659cd92360d78b967ab51c0fb5db639fa93f790103aef1b472d4b086fdc91cf",
+    "path": "c:\\Users\\81808\\.openclaw\\gvqcc_v2832\\v67_bilinear_qrom_c0c4_125b_raw.kmb"
+  },
+  "mst_hub_compressed": {
+    "pass_24_of_24": true,
+    "ccx": 18,
+    "hmr": 18,
+    "cx": 733,
+    "total_ops": 866,
+    "sha256": "b646cd6796d62fe6e0f866b1269d2f5f5b6bb2ff55804d23b5b53370d547b121",
+    "path": "c:\\Users\\81808\\.openclaw\\gvqcc_v2832\\v67_bilinear_qrom_c0c4_125b_mst_hub_compressed.kmb"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "n4_verified": {
+    "sb_ccx": 48,
+    "ka_ccx": 74,
+    "sb_pass": true,
+    "ka_pass": true
+  },
+  "n16_real_kmb": {
+    "sb_ccx": 768,
+    "sb_ops": 6248,
+    "sb_sha": "018df6fdebf6028165ced9be7a7806ce694eae57f56ae3cc3e34305469feeb8d",
+    "ka_ccx": 716,
+    "ka_ops": 6311,
+    "ka_sha": "1746888543c4ad828ae813366577affff36174d1c9d2decccb17831395cb3315",
+    "ccx_saved": 52,
+    "ccx_reduction_pct": 6.77
+  },
+  "method4_affine_abel_compression": {
+    "V64_Schoolbook_17x16": {
+      "in_ops": 2168,
+      "out_ops": 2168,
+      "ops_saved": 0,
+      "ops_reduction_pct": 0.0,
+      "in_ccx": 288,
+      "out_ccx": 288,
+      "affine_saved": 0,
+      "abel_saved": 0,
+      "sha256": "fceb732755401b2400dc737943ad69a324dcd8ce291f0e4f4845a179158ae44d"
+    },
+    "V64_Booth2_17x16": {
+      "in_ops": 1907,
+      "out_ops": 1844,
+      "ops_saved": 63,
+      "ops_reduction_pct": 3.3,
+      "in_ccx": 321,
+      "out_ccx": 321,
+      "affine_saved": 63,
+      "abel_saved": 0,
+      "sha256": "db44d2785a97dc4a735dad8d7ee40a16e3a46d98f1bc298050fc91a5cc3d5a38"
+    },
+    "V67_Karatsuba_16x16": {
+      "in_ops": 6311,
+      "out_ops": 6261,
+      "ops_saved": 50,
+      "ops_reduction_pct": 0.79,
+      "in_ccx": 716,
+      "out_ccx": 716,
+      "affine_saved": 50,
+      "abel_saved": 0,
+      "sha256": "c84adb770ad34ad6f8373151b95d9574712e1d9361b874f6050dec8a320cc9d7"
+    }
+  },
+  "method5_bilinear_qrom_tensor": {
+    "n_output_bits": 125,
+    "naive_rank1_toffolis": 294,
+    "paired_rank2_per_output_toffolis": 192,
+    "global_shared_bilinear_rank": 18,
+    "global_shared_paired_toffolis_with_cache": 14
+  }
+}
