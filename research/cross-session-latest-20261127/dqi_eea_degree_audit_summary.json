@@ -1,0 +1,159 @@
+{
+  "status": "INDEPENDENT_CLASSICAL_REFERENCE_ONLY",
+  "native_first_divergence_identified": false,
+  "new_w33_source": "user-reported, no new fixture bytes available",
+  "new_w33": {
+    "weight": 33,
+    "degree_transition": [
+      37,
+      32
+    ],
+    "syndrome_bit_errors": 423,
+    "wrong_words": 70,
+    "dirty_ancilla_bits": 0,
+    "independent_decoder": "reported PASS, not independently rechecked here"
+  },
+  "controls": {
+    "corpus_sha256": "6b6b99e4c8cfabd63000199eb294f377b36e369b2b1e9c9cbc4d977c888ffa80",
+    "samples": 64,
+    "weight_counts": {
+      "32": 5,
+      "28": 5,
+      "27": 7,
+      "26": 6,
+      "29": 9,
+      "30": 7,
+      "31": 8,
+      "33": 5,
+      "35": 2,
+      "25": 2,
+      "34": 8
+    },
+    "degree_formula_matched": 64,
+    "weight33_same_37_to_32_indices": [
+      10,
+      29,
+      31,
+      47,
+      61
+    ],
+    "degree_jumps_ge_3": 62
+  },
+  "saved_cases": [
+    {
+      "name": "inherited_batch345_shot195.npz",
+      "fixture_sha256": "f5939fed434226f0624b6ce084f451b59e9c9387d1f4b0e967a9b663ab89baef",
+      "weight": 32,
+      "wrong_bits": null,
+      "wrong_words": null,
+      "reference_decoder": {
+        "positions": true,
+        "magnitudes": true
+      },
+      "last_transition": {
+        "dividend_degree": 39,
+        "divisor_degree": 38,
+        "quotient_degree": 1,
+        "next_remainder_degree": 31,
+        "degree_drop_divisor_to_remainder": 7
+      },
+      "confluent_residual": null
+    },
+    {
+      "name": "v110_default_batch158_shot179.npz",
+      "fixture_sha256": "3da8921f2c99d7434ee4732c9d5b1f3550c4b102931689ebf6211f88ae07c93c",
+      "weight": 34,
+      "wrong_bits": 428,
+      "wrong_words": 70,
+      "reference_decoder": {
+        "positions": true,
+        "magnitudes": true
+      },
+      "last_transition": {
+        "dividend_degree": 37,
+        "divisor_degree": 36,
+        "quotient_degree": 1,
+        "next_remainder_degree": 33,
+        "degree_drop_divisor_to_remainder": 3
+      },
+      "confluent_residual": {
+        "changed_blocks": [
+          {
+            "kappa": 4054,
+            "input": [
+              2998,
+              3021,
+              3878,
+              86
+            ],
+            "output": [
+              76,
+              2159,
+              580,
+              2588
+            ],
+            "delta": [
+              3066,
+              930,
+              3426,
+              2634
+            ]
+          }
+        ],
+        "changed_block_count": 1,
+        "infinity_coordinates_equal": true,
+        "delta_double_node_recurrence_matches": [
+          4054
+        ]
+      }
+    },
+    {
+      "name": "v110_default_batch261_shot223.npz",
+      "fixture_sha256": "4809bee01b7b0d25263b9b72c93038e4d8b8ce9ae9e2e34450dd250d1df861c4",
+      "weight": 27,
+      "wrong_bits": 420,
+      "wrong_words": 70,
+      "reference_decoder": {
+        "positions": true,
+        "magnitudes": true
+      },
+      "last_transition": {
+        "dividend_degree": 44,
+        "divisor_degree": 43,
+        "quotient_degree": 1,
+        "next_remainder_degree": 26,
+        "degree_drop_divisor_to_remainder": 17
+      },
+      "confluent_residual": {
+        "changed_blocks": [
+          {
+            "kappa": 3257,
+            "input": [
+              223,
+              3230,
+              340,
+              740
+            ],
+            "output": [
+              3593,
+              3025,
+              3537,
+              2660
+            ],
+            "delta": [
+              3798,
+              1871,
+              3205,
+              2176
+            ]
+          }
+        ],
+        "changed_block_count": 1,
+        "infinity_coordinates_equal": true,
+        "delta_double_node_recurrence_matches": [
+          3257
+        ]
+      }
+    }
+  ]
+}
