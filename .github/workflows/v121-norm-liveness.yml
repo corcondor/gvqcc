@@ -1,0 +1,33 @@
+name: V121 norm liveness strict Lean audit
+on:
+  pull_request:
+    paths:
+      - 'research/v121_norm_liveness/**'
+      - '.github/workflows/v121-norm-liveness.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Kernel and axiom audit
+        working-directory: research/v119_terminal_pole
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true ../v121_norm_liveness/NormLiveness.lean | tee v121-axioms.txt
+          test "$(grep -c 'GVQCC.V121.*axiom' v121-axioms.txt)" -eq 8
+          ! grep -E 'sorryAx|ofReduceBool' v121-axioms.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v121-axioms
+          path: research/v119_terminal_pole/v121-axioms.txt
