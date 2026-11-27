@@ -23,10 +23,13 @@ theorem twoStep_exact (q₁ q₂ h₁ h₂ t₁ t₂ n d l : F)
     calc
       _ = n^2+h₁^2*d^2+2*n*h₁*d := by ring
       _ = _ := by rw [hc,zero_mul,zero_mul,zero_mul,add_zero]
-  simp only [step,twoStep,hs]
-  congr 1
-  · ring
-  · congr 1 <;> ring
+  apply Prod.ext
+  · rfl
+  · apply Prod.ext
+    · simp only [step,twoStep]
+      ring
+    · simp only [step,twoStep,hs]
+      ring
 
 /-- Pulling a linear phase functional back through a shared product sum. -/
 theorem phase_pullback (L : F →+ ZMod 2) (n d a b : F) :
