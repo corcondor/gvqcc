@@ -35,8 +35,8 @@ private theorem add_self_mod (x n : Int) : (x+n) % n = x % n := by
 private theorem mod_signed (x n : Int) (hl : -n <= x) (hu : x < n) :
     x % n = if 0 <= x then x else x+n := by
   by_cases h : 0 <= x
-  · simpa only [if_pos h] using (Int.emod_eq_of_lt h hu)
-  · rw [if_neg h]
+  · simpa only [ite_eq_left h] using (Int.emod_eq_of_lt h hu)
+  · rw [ite_eq_right h]
     calc
       x % n = (x+n) % n := (add_self_mod x n).symm
       _ = x+n := Int.emod_eq_of_lt (by omega) (by omega)
@@ -44,8 +44,8 @@ private theorem mod_signed (x n : Int) (hl : -n <= x) (hu : x < n) :
 private theorem mod_unsigned (x n : Int) (hl : 0 <= x) (hu : x < 2*n) :
     x % n = if x < n then x else x-n := by
   by_cases h : x < n
-  · simpa only [if_pos h] using (Int.emod_eq_of_lt hl h)
-  · rw [if_neg h]
+  · simpa only [ite_eq_left h] using (Int.emod_eq_of_lt hl h)
+  · rw [ite_eq_right h]
     have he := add_self_mod (x-n) n
     have hh : x-n+n = x := by omega
     rw [hh] at he
@@ -74,7 +74,7 @@ theorem row25_sign_relation (v h r : Int)
   by_cases hq : 0 <= 125+h-6*v <;>
     by_cases hv32 : v < 32 <;>
     by_cases hr256 : r < 256 <;>
-    simp [hq, hv32, hr256] at hr' ⊢ <;> omega
+    simp [hq] at hr' <;> simp [hv32, hr256] <;> omega
 
 private theorem xor_bridge (P Q A B : Prop)
     [Decidable P] [Decidable Q] [Decidable A] [Decidable B]
