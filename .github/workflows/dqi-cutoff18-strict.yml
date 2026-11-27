@@ -31,7 +31,9 @@ jobs:
           test "$(grep -c 'GVQCC.RollingCutoff.*axiom' rolling.log)" -eq 6
           lake env lean -DwarningAsError=true AffinePadding.lean | tee padding.log
           test "$(grep -c 'GVQCC.Padding.*axiom' padding.log)" -eq 11
-          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log
+          lake env lean -DwarningAsError=true BranchCollision.lean | tee collision.log
+          test "$(grep -c 'GVQCC.BranchCollision.*axiom' collision.log)" -eq 6
+          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -40,3 +42,4 @@ jobs:
             research/dqi_cutoff18_strict/proof.log
             research/dqi_cutoff18_strict/rolling.log
             research/dqi_cutoff18_strict/padding.log
+            research/dqi_cutoff18_strict/collision.log
