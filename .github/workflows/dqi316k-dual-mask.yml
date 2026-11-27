@@ -1,0 +1,28 @@
+name: DQI 316K dual-mask identity
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_direct_dual_fft/**'
+      - 'research/dqi_cutoff18_strict/DualMask316.lean'
+      - '.github/workflows/dqi316k-dual-mask.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true DualMask316.lean | tee DualMask316.log
+          ! grep -E 'sorryAx|ofReduceBool' DualMask316.log
