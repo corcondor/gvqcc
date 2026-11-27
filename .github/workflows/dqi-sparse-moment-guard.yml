@@ -1,0 +1,38 @@
+name: DQI exact sparse moment guard
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/SparseSyndromeGuard.lean'
+      - 'research/dqi_cutoff18_strict/syndrome_guard.py'
+      - 'research/dqi_cutoff18_strict/test_syndrome_guard.py'
+      - '.github/workflows/dqi-sparse-moment-guard.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean-and-reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Compile original theorem then new Lean proof, strict
+        working-directory: research/dqi_cutoff18_strict
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true -o InvariantPad.olean InvariantPad.lean
+          LEAN_PATH=. lake env lean -DwarningAsError=true SparseSyndromeGuard.lean | tee sparse-axioms.txt
+          ! grep -Eq 'sorryAx|ofReduceBool' sparse-axioms.txt
+      - name: Exact GF4096 reference tests
+        working-directory: research/dqi_cutoff18_strict
+        run: python3 test_syndrome_guard.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dqi-sparse-axioms
+          path: research/dqi_cutoff18_strict/sparse-axioms.txt
