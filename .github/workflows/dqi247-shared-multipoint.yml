@@ -1,0 +1,26 @@
+name: DQI 247 shared multipoint proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_joint_crt/GroupedGuard247.lean'
+      - 'research/dqi316k_joint_crt/MultipointGuard247.lean'
+      - '.github/workflows/dqi247-shared-multipoint.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          cd research/dqi316k_joint_crt
+          lean -DwarningAsError=true GroupedGuard247.lean | tee grouped.log
+          lean -DwarningAsError=true MultipointGuard247.lean | tee multi.log
+          test "$(cat grouped.log multi.log | grep -c axiom)" -eq 15
+          ! grep -E 'sorryAx|ofReduceBool' grouped.log multi.log
