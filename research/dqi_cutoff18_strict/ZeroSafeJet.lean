@@ -50,7 +50,9 @@ theorem shared_post_inverse (q a b : F) (hq : q ≠ 0) :
     ((q*a)/q, (a+q*b-(q*a)/q)/q) = (a,b) := by
   have ha : q*a/q = a := by field_simp
   rw [ha]
-  have hb : (a+q*b-a)/q = b := by field_simp <;> ring
+  have hb : (a+q*b-a)/q = b := by
+    field_simp
+    ring
   rw [hb]
 
 end GVQCC.ZeroSafeJet
