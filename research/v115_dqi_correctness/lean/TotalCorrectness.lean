@@ -469,3 +469,108 @@ end GVQCC.V115.Spec
 #print axioms GVQCC.V115.Spec.moment_kernel_roots
 #print axioms GVQCC.V115.Spec.hankel_kernel_trivial
 #print axioms GVQCC.V115.Spec.decoder_phase_refinement
+
+namespace GVQCC.V115.PolynomialCharts
+open Polynomial
+open scoped BigOperators
+variable {F : Type*} [Field F]
+
+/-- Distinct quadratic interpolation nodes are pairwise coprime, even
+    without an irreducibility assumption. -/
+def quad (k : F) : Polynomial F := X^2 + X + C k
+
+theorem quad_coprime (a b : F) (hab : a ≠ b) :
+    IsCoprime (quad a) (quad b) := by
+  refine ⟨C ((a-b)⁻¹), -C ((a-b)⁻¹), ?_⟩
+  calc
+    C ((a-b)⁻¹) * quad a + -C ((a-b)⁻¹) * quad b =
+      C ((a-b)⁻¹) * (quad a - quad b) := by ring
+    _ = C ((a-b)⁻¹) * C (a-b) := by
+      rw [map_sub]
+      unfold quad
+      ring
+    _ = 1 := by rw [← map_mul, inv_mul_cancel₀ (sub_ne_zero.mpr hab), map_one]
+
+theorem coprime_node_product (a : F) (S : Finset F) (ha : a ∉ S) :
+    IsCoprime (quad a) (∏ b ∈ S, quad b) := by
+  classical
+  induction S using Finset.induction_on with
+  | empty => simp
+  | @insert b S hb ih =>
+    rw [Finset.prod_insert hb]
+    have hab : a ≠ b := by
+      intro h
+      apply ha
+      simp [h]
+    have has : a ∉ S := by
+      intro h
+      exact ha (Finset.mem_insert_of_mem h)
+    exact (quad_coprime a b hab).mul_right (ih has)
+
+theorem all_nodes_product_dvd (S : Finset F) (N : Polynomial F)
+    (h : ∀ k ∈ S, quad k ∣ N) :
+    (∏ k ∈ S, quad k) ∣ N := by
+  classical
+  induction S using Finset.induction_on with
+  | empty => simp
+  | @insert k S hk ih =>
+    rw [Finset.prod_insert hk]
+    exact (coprime_node_product k S hk).mul_dvd
+      (h k (Finset.mem_insert_self k S))
+      (ih (fun j hj => h j (Finset.mem_insert_of_mem hj)))
+
+theorem quad_degree (a : F) : (quad a).natDegree = 2 := by
+  have h : (X + C a : Polynomial F).natDegree ≤ 1 := by
+    have h' := Polynomial.natDegree_add_le (X : Polynomial F) (C a)
+    simpa using h'
+  have hl : (X + C a : Polynomial F).natDegree < (X^2 : Polynomial F).natDegree := by
+    simp
+    omega
+  have he := Polynomial.natDegree_add_eq_left_of_natDegree_lt hl
+  simpa [quad, add_assoc] using he
+
+/-- The actual polynomial saturation result, rather than assuming that
+    the product of all distinct nodes divides N. The multiplicity bound
+    on the remaining slot schedule is still a separate obligation. -/
+theorem all_poles_saturate (S : Finset F) (N : Polynomial F) (m : ℕ)
+    (hn : N ≠ 0) (hslots : m ≤ 2*S.card) (hcap : N.natDegree ≤ m)
+    (h : ∀ k ∈ S, quad k ∣ N) : N.natDegree = m := by
+  classical
+  have hp := all_nodes_product_dvd S N h
+  have hnon : ∀ k ∈ S, quad k ≠ 0 := by
+    intro k _
+    intro he
+    have hd := quad_degree k
+    rw [he, Polynomial.natDegree_zero] at hd
+    omega
+  have hdeg : (∏ k ∈ S, quad k).natDegree = 2*S.card := by
+    rw [Polynomial.natDegree_prod S quad hnon]
+    simp [quad_degree, Nat.mul_comm]
+  have hle := Polynomial.natDegree_le_of_dvd hp hn
+  omega
+
+/-- Derive the actual finite-pivot degree bounds from a polynomial identity,
+    not from the numerical degree bound as a hypothesis. -/
+theorem finite_polynomial_budget (m : ℕ) (N D A g h : Polynomial F)
+    (hm : 0 < m) (hn : N.natDegree ≤ m) (hd : D.natDegree ≤ m+1)
+    (hg : g.natDegree = 2) (hh : h.natDegree ≤ 1)
+    (he : D = g*A + h*N) : A.natDegree ≤ m-1 := by
+  by_cases ha : A = 0
+  · simp [ha]
+  have hg0 : g ≠ 0 := by
+    intro hz
+    rw [hz, Polynomial.natDegree_zero] at hg
+    omega
+  have hmul := Polynomial.natDegree_mul hg0 ha
+  have hidentity : g*A = D - h*N := by rw [he]; ring
+  have hsub := Polynomial.natDegree_sub_le D (h*N)
+  rw [← hidentity, hmul, hg] at hsub
+  have hprod := Polynomial.natDegree_mul_le (p := h) (q := N)
+  have hmax : max D.natDegree (h*N).natDegree ≤ m+1 := max_le hd (by omega)
+  omega
+
+end GVQCC.V115.PolynomialCharts
+#print axioms GVQCC.V115.PolynomialCharts.quad_coprime
+#print axioms GVQCC.V115.PolynomialCharts.all_nodes_product_dvd
+#print axioms GVQCC.V115.PolynomialCharts.all_poles_saturate
+#print axioms GVQCC.V115.PolynomialCharts.finite_polynomial_budget
