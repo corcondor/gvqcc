@@ -4,7 +4,6 @@ namespace GVQCC.ProjectivePivot316
 
 variable {F : Type*} [Field F] [DecidableEq F]
 
-omit [DecidableEq F] in
 /-- Total residue permutation. Axes are exchanged; on the torus the
 second coordinate is scaled by the inverse of the first. -/
 def pivot (n d : F) : F × F :=
@@ -45,8 +44,9 @@ theorem sentinel (n d : F) (hd : d ≠ 0) :
   · have hh : d/n ≠ 0 := div_ne_zero hd hn
     simp [pivot,hn,hd,hh]
 
-/-- The missing flag cannot be dropped when the denominator is zero.
+/- The missing flag cannot be dropped when the denominator is zero.
 Both axes produce the same output of the old zero-safe ratio formula. -/
+omit [DecidableEq F] in
 theorem old_ratio_collision (d : F) (hd : d ≠ 0) :
     (d, (0:F)/d) = (d, d/(0:F)) ∧ ((d, (0:F)) ≠ (0,d)) := by
   constructor
@@ -57,7 +57,6 @@ theorem old_ratio_collision (d : F) (hd : d ≠ 0) :
 section PolynomialStep
 variable {R : Type*} [CommRing R] [DecidableEq R]
 
-omit [DecidableEq R] in
 /-- Recover the polynomial pair from its reduced chart and stored h.
 In the singular branch h=0, divide the numerator; otherwise divide
 D+hN and exchange the roles of the reduced pair. -/
@@ -72,9 +71,10 @@ theorem regular_recover (g h a n d : R) (hh : h ≠ 0)
 theorem singular_recover (g a n d : R) (he : n=g*a) :
     recover g 0 a d = (n,d) := by simp [recover,he]
 
-/-- In either admissible chart the new denominator remains nonzero
+/- In either admissible chart the new denominator remains nonzero
 under the SAME residue evaluation. This justifies the zero sentinel
 on repeated nodes, not on an arbitrary next distinct node. -/
+omit [DecidableEq R] in
 theorem repeated_denominator (ev : R →+* F) (n d : R)
     (hd : ev d ≠ 0) :
     ev (if ev n = 0 then d else n) ≠ 0 := by
@@ -82,8 +82,8 @@ theorem repeated_denominator (ev : R →+* F) (n d : R)
   · simp [hn,hd]
   · simp [hn]
 
+/- If N and D are coprime, both residues cannot be zero. -/
 omit [DecidableEq R] [DecidableEq F] in
-/-- If N and D are coprime, both residues cannot be zero. -/
 theorem not_both_zero (ev : R →+* F) (n d : R)
     (h : ∃ a b : R, a*n+b*d=1) :
     ¬ (ev n=0 ∧ ev d=0) := by
@@ -92,8 +92,8 @@ theorem not_both_zero (ev : R →+* F) (n d : R)
   have he := congrArg ev hab
   simp [hn,hd] at he
 
+/- Division after the ordinary chart shear preserves the Bezout witness. -/
 omit [DecidableEq R] in
-/-- Division after the ordinary chart shear preserves the Bezout witness. -/
 theorem bezout_regular (g h q n d : R)
     (he : d+h*n=g*q) (hc : ∃ a b : R, a*n+b*d=1) :
     ∃ a b : R, a*n+b*q=1 := by
@@ -101,8 +101,8 @@ theorem bezout_regular (g h q n d : R)
   refine ⟨a-b*h,b*g,?_⟩
   linear_combination hab - b*he
 
+/- Exact division on a singular axis preserves the Bezout witness. -/
 omit [DecidableEq R] in
-/-- Exact division on a singular axis preserves the Bezout witness. -/
 theorem bezout_singular (g q n d : R)
     (he : n=g*q) (hc : ∃ a b : R, a*n+b*d=1) :
     ∃ a b : R, a*q+b*d=1 := by
