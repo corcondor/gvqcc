@@ -1,6 +1,7 @@
 import Mathlib
 namespace GVQCC.InverseWidth28
 variable {F : Type*} [Field F]
+open scoped Classical
 
 noncomputable def scale0 (n a : F) : F := by
   classical
