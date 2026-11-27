@@ -47,3 +47,6 @@ with 204800 zero errors in official-sampling native runs (not unmodified
 official verifier). #204 898Q/475630 static paid/51177773 ops, 4096 same
 distribution mean paid 416636.97119140625. These are distinct branches;
 savings are not additive. Neither is a new official leaderboard score.
+
+## Verified Lean CI
+[Run 46029459552](https://github.com/corcondor/gvqcc/actions/runs/46029459552) on commit `0a4aaaab521f548124bbfaff69921c691a4eb781` completed SUCCESS with warnings as errors. Five corrected V122 statements and nine V123 statements audited, only standard `propext` and `Quot.sound` where required; no `sorryAx` or compiler axiom. The exact scope is bounded arithmetic, RREF gate map and inverse, local measurement-debt laws, four abstract policy branches and exact expected count. Whole physical circuit refinement remains open.
