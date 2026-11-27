@@ -477,7 +477,7 @@ variable {F : Type*} [Field F]
 
 /-- Distinct quadratic interpolation nodes are pairwise coprime, even
     without an irreducibility assumption. -/
-def quad (k : F) : Polynomial F := X^2 + X + C k
+noncomputable def quad (k : F) : Polynomial F := X^2 + X + C k
 
 theorem quad_coprime (a b : F) (hab : a ≠ b) :
     IsCoprime (quad a) (quad b) := by
@@ -495,7 +495,9 @@ theorem coprime_node_product (a : F) (S : Finset F) (ha : a ∉ S) :
     IsCoprime (quad a) (∏ b ∈ S, quad b) := by
   classical
   induction S using Finset.induction_on with
-  | empty => simp
+  | empty =>
+    rw [Finset.prod_empty]
+    exact ⟨0, 1, by simp⟩
   | @insert b S hb ih =>
     rw [Finset.prod_insert hb]
     have hab : a ≠ b := by
@@ -521,11 +523,9 @@ theorem all_nodes_product_dvd (S : Finset F) (N : Polynomial F)
 
 theorem quad_degree (a : F) : (quad a).natDegree = 2 := by
   have h : (X + C a : Polynomial F).natDegree ≤ 1 := by
-    have h' := Polynomial.natDegree_add_le (X : Polynomial F) (C a)
-    simpa using h'
+    exact (Polynomial.natDegree_add_le (X : Polynomial F) (C a)).trans (by simp)
   have hl : (X + C a : Polynomial F).natDegree < (X^2 : Polynomial F).natDegree := by
     simp
-    omega
   have he := Polynomial.natDegree_add_eq_left_of_natDegree_lt hl
   simpa [quad, add_assoc] using he
 
@@ -538,8 +538,7 @@ theorem all_poles_saturate (S : Finset F) (N : Polynomial F) (m : ℕ)
   classical
   have hp := all_nodes_product_dvd S N h
   have hnon : ∀ k ∈ S, quad k ≠ 0 := by
-    intro k _
-    intro he
+    intro k _ he
     have hd := quad_degree k
     rw [he, Polynomial.natDegree_zero] at hd
     omega
