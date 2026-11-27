@@ -12,7 +12,8 @@ def guardPoly (p q a c d : F) : F := q * d^2 + p * c * d - p^2 * a
 theorem guard_factor (p q a c d : F) (hq : q ≠ 0) (hd : d ≠ 0) :
     guardPoly p q a c d = q * d^2 * slope p q ((c - p * (a/d))/d) := by
   unfold guardPoly slope
-  field_simp [hq, hd] <;> ring
+  field_simp [hq, hd]
+  ring
 
 theorem guard_iff (p q a c d : F) (hq : q ≠ 0) (hd : d ≠ 0) :
     guardPoly p q a c d = 0 ↔ slope p q ((c - p * (a/d))/d) = 0 := by
@@ -41,7 +42,8 @@ theorem ratio_recover (u v d p : F) (hd : d ≠ 0) :
   constructor
   · exact mul_div_cancel_right₀ u hd
   · rw [mul_div_cancel_right₀ u hd]
-    field_simp [hd] <;> ring
+    field_simp [hd]
+    ring
 
 theorem shear_identity (p q u v d : F) :
     d + p*(v*d+p*u)/q = slope p q v*d + p^2*u/q := by
@@ -52,8 +54,8 @@ theorem recover_low (C u v : F) (hC : C ≠ 0) (hu : u ≠ 0) :
     C/(C/u) = u ∧ C*(v*(C/u)^2/C)/(C/u)^2 = v := by
   have hx : C/u ≠ 0 := div_ne_zero hC hu
   constructor
-  · field_simp [hC, hu] <;> ring
-  · field_simp [hC, hx] <;> ring
+  · field_simp [hC, hu]
+  · field_simp [hC, hx]
 
 def forward (p q C u v d : F) : F × F × F :=
   (C/u, v*(C/u)^2/C, slope p q v*d + p^2*u/q)
@@ -110,7 +112,8 @@ theorem hybrid_roundtrip (p q C u v d : F) (hC : C ≠ 0) (hu : u ≠ 0) :
   · simp [hf]
   · have hD : (slope p q v*d + p^2*u/q - p^2*u/q)/slope p q v = d := by
       rw [add_sub_cancel_right, mul_comm (slope p q v) d, mul_div_cancel_right₀ d hf]
-    simp [hf,hD]
+    simp only [if_neg hf]
+    exact congrArg (fun z : F => (u,v,z)) hD
 
 theorem hmr_cancel (m f phase : Bool) :
     Bool.xor (Bool.xor phase (m && f)) (m && f) = phase := by
