@@ -55,6 +55,7 @@ theorem tensor_contract (s : Finset I) (t : Finset J) (r : Finset R)
       apply Finset.sum_congr rfl
       intro k _
       simp only [Finset.sum_mul, Finset.mul_sum]
+      exact Finset.sum_comm
 
 /-- Reversal of the low block turns the middle product into a usual
 convolution of the low input and dual output. -/
