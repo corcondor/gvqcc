@@ -65,8 +65,8 @@ theorem product_difference (a b da db : Bool) :
 
 /-- Zero and all one-hot measurement histories do not certify adaptive phase. -/
 theorem onehot_insufficient :
-    (false && false = false) ∧ (true && false = false) ∧
-    (false && true = false) ∧ (true && true = true) := by decide
+    ((false && false) = false) ∧ ((true && false) = false) ∧
+    ((false && true) = false) ∧ ((true && true) = true) := by decide
 
 /-- A phase-only change leaves the restoration error unchanged. -/
 theorem phase_only_preserves_value_error (actual expected phase correction : Bool) :
