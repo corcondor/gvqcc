@@ -1,0 +1,35 @@
+name: DQI fixed projective strict proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/FixedProjective.lean'
+      - '.github/workflows/dqi-fixed-projective.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Strict kernel and axiom audit
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true FixedProjective.lean | tee fixed-projective.log
+          test "$(grep -c 'GVQCC.FixedProjective.*axiom' fixed-projective.log)" -eq 14
+          ! grep -E 'sorryAx|ofReduceBool' fixed-projective.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fixed-projective-axioms
+          path: research/dqi_cutoff18_strict/fixed-projective.log
