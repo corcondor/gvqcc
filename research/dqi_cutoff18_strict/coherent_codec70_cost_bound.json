@@ -1,0 +1,16 @@
+{
+  "source_kernel": "GVQCC_V127_INFINITY_CF_RESEARCH_NOT_SUBMISSION/dyadic_inverse_70.kmb",
+  "kernel_stats": {
+    "X": 428,
+    "CX": 1669621,
+    "SWAP": 25448,
+    "CSWAP": 2313,
+    "CCX": 64576
+  },
+  "complete70_potential_stages": 630,
+  "first_stage_controlled_paid_excluding_guard": 1895736,
+  "lower_bound_full70_codec_paid": 1895736,
+  "scope": "generic coherent lifting in emit_coherent_codec.py; no complete70tape emitted; not a bound for other implementations",
+  "full_native_oracle": false,
+  "submission_performed": false
+}

@@ -1,0 +1,32 @@
+{
+  "scope": "one fixed native circuit; no input-dependent external chart choice",
+  "official_verifier_run": false,
+  "whole_domain_proof": false,
+  "submitted": false,
+  "files_sha256": {
+    "circuit": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+    "cases": "ea5e22c1cc60dbe6fa5542b565818b787f4f63a8c29f1a9b418d79e9de6398fb",
+    "verifier": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+  },
+  "panel": "all",
+  "cases": 622,
+  "seeds": [
+    12680,
+    12681
+  ],
+  "qubits": 900,
+  "operations": 69782188,
+  "static_paid": 318972,
+  "shots": 1244,
+  "value_errors": 904,
+  "phase_errors": 5,
+  "raw_phase_mismatches": 474,
+  "dirty_errors": 0,
+  "mask_restore_errors": 0,
+  "paid_sum": 393264980,
+  "mean_paid": 316129.40514469455,
+  "elapsed_seconds": 12.89373682900009,
+  "pass": false,
+  "failed_shots": 909,
+  "detail_source": "Native rerun; full per-shot details retained locally; fixture and source hashes identify exact reproduction."
+}
