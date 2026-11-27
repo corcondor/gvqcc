@@ -47,7 +47,9 @@ jobs:
           test "$(grep -c 'GVQCC.SharedChart316.*axiom' sharedchart.log)" -eq 8
           lake env lean -DwarningAsError=true InvariantPad.lean | tee invariantpad.log
           test "$(grep -c 'GVQCC.InvariantPad.*axiom' invariantpad.log)" -eq 22
-          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log parser.log rootcause.log firstpole.log allchart.log sharedchart.log invariantpad.log
+          lake env lean -DwarningAsError=true ProjectivePivot316.lean | tee projective.log
+          test "$(grep -c 'GVQCC.ProjectivePivot316.*axiom' projective.log)" -eq 7
+          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log parser.log rootcause.log firstpole.log allchart.log sharedchart.log invariantpad.log projective.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -64,3 +66,4 @@ jobs:
             research/dqi_cutoff18_strict/allchart.log
             research/dqi_cutoff18_strict/sharedchart.log
             research/dqi_cutoff18_strict/invariantpad.log
+            research/dqi_cutoff18_strict/projective.log
