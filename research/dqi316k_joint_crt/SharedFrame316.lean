@@ -31,11 +31,11 @@ theorem cnot_involution (a b : Bool) : x a (x a b) = b := by
   cases a <;> cases b <;> decide
 
 theorem complement_product (a b : Bool) :
-    (!a) && b = x b (a && b) := by
+    ((!a) && b) = x b (a && b) := by
   cases a <;> cases b <;> decide
 
 theorem distribute_product (a b c : Bool) :
-    a && x b c = x (a && b) (a && c) := by
+    (a && x b c) = x (a && b) (a && c) := by
   cases a <;> cases b <;> cases c <;> decide
 
 /-- Exact active/inactive scope merge used by the abstract interpreter. -/
