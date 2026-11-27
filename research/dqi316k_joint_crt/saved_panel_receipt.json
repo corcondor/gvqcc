@@ -1,0 +1,86 @@
+{
+  "fixture_sha256": "ea5e22c1cc60dbe6fa5542b565818b787f4f63a8c29f1a9b418d79e9de6398fb",
+  "fixture_rows": 622,
+  "allpole_ids": [
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    618,
+    619,
+    620,
+    621
+  ],
+  "seeds": [
+    681,
+    937
+  ],
+  "errors_order": [
+    "value",
+    "mask",
+    "dirty",
+    "phase"
+  ],
+  "results": [
+    {
+      "label": "donor_allpole",
+      "sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+      "Q": 900,
+      "ops": 69782188,
+      "shots": 40,
+      "allpole_shots": 40,
+      "errors": [
+        40,
+        0,
+        0,
+        26
+      ],
+      "allpole_errors": [
+        40,
+        0,
+        0,
+        26
+      ],
+      "any_errors": 40,
+      "allpole_any_errors": 40,
+      "mean_paid": 316176.8,
+      "scope": "true DQI contract on allpole rows only"
+    },
+    {
+      "label": "new_chart_all_622",
+      "sha256": "f99e60190524fe0121ee5216d4a94195d49cfd31d9f6fe5eeaf06faa81e1bccc",
+      "Q": 880,
+      "ops": 17917828,
+      "shots": 1244,
+      "allpole_shots": 40,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "allpole_errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "any_errors": 0,
+      "allpole_any_errors": 0,
+      "mean_paid": 223579,
+      "scope": "chart contract"
+    }
+  ]
+}

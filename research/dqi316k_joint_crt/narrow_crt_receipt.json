@@ -1,0 +1,59 @@
+{
+  "scope": "special all-pole locator codec only; no full DQI",
+  "irreducible_norm_checks": 73728,
+  "phase_basis_checks": 144,
+  "results": [
+    {
+      "name": "pooled_fwd",
+      "Q": 882,
+      "ops": 244921,
+      "paid": 7020,
+      "sha256": "9565792709871363cdf52828fdac0db0a9ede9e678a9812a53f2b5997d12f3da",
+      "shots": 692,
+      "errors": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pooled_rev",
+      "Q": 882,
+      "ops": 244921,
+      "paid": 7020,
+      "sha256": "24a2b8ddad7b13eb6eb2979d17d11e3dfea41c5888562c04502d5ea75ecd6680",
+      "shots": 692,
+      "errors": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "narrow_fwd",
+      "Q": 879,
+      "ops": 245353,
+      "paid": 7020,
+      "sha256": "d8611df35668cb6a37c584253fff974de6854484a4c971d38a9f37b68f60919b",
+      "shots": 692,
+      "errors": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "narrow_rev",
+      "Q": 879,
+      "ops": 245353,
+      "paid": 7020,
+      "sha256": "ee3057df956ec0a9925faf36197879ea32738232dc1037eb0ea7e328a872f8f3",
+      "shots": 692,
+      "errors": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

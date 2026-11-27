@@ -1,0 +1,55 @@
+name: DQI 316K cross-session joint strict audit
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_joint_crt/**'
+      - 'research/dqi_cutoff18_strict/**'
+      - '.github/workflows/dqi316k-joint-crt.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Kernel and axiom audit
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true -o InvariantPad.olean InvariantPad.lean > /dev/null
+          lake env bash -c 'export LEAN_PATH="$PWD:${LEAN_PATH:-}"; set -euo pipefail; for entry in EarlyHMR:8 TensorRank:6 ZeroSafeFieldFrame:6 HermiteProjection:10 AllPoleChart:6 AdaptivePairCRT:16 TowerPhase:10 JointCRTHMR:10 GuardedPhase316:12; do f="${entry%:*}"; n="${entry#*:}"; lean -DwarningAsError=true "$f.lean" | tee "$f.log"; test "$(grep -c "GVQCC.*axiom" "$f.log")" -eq "$n"; ! grep -E "sorryAx|ofReduceBool" "$f.log"; done'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: joint-crt-axioms
+          path: research/dqi_cutoff18_strict/*.log
+  native-local:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi316k_joint_crt
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install kickmix==1.0.0 numpy==2.2.6
+      - run: python history.py && python joint_crt.py && python narrow_crt.py && python g_guarded.py && python joint_phase.py --count 16 --cases 16 && python joint_rank15.py --count 4095 --cases 96
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: joint-crt-native
+          path: |
+            research/dqi316k_joint_crt/*.json
+            research/dqi316k_joint_crt/*.kmb

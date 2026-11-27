@@ -1,0 +1,22 @@
+{
+  "scope": "guarded G allpole phase oracle, identity outside chart, not full DQI",
+  "scan_points": 16,
+  "Q": 881,
+  "ops": 524259,
+  "static_paid": 16462,
+  "sha256": "9cff873197072bd1d54ce217ef5866edc522761e757a7c03099d559a51677124",
+  "inputs": 36,
+  "allpole_inputs": 16,
+  "shots": 72,
+  "errors": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "expected_phase_counts": [
+    59,
+    13
+  ],
+  "mean_paid": 16462.0
+}

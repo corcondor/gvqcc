@@ -1,0 +1,25 @@
+{
+  "scope": "guarded G allpole oracle, identity complement, not full DQI",
+  "scan_points": 4095,
+  "Q": 880,
+  "ops": 17917828,
+  "static_paid": 223579,
+  "sha256": "f99e60190524fe0121ee5216d4a94195d49cfd31d9f6fe5eeaf06faa81e1bccc",
+  "gf64_rank": 15,
+  "tensor_basis_checks": 36,
+  "public_abi_registers": 4165,
+  "inputs": 216,
+  "allpole_inputs": 96,
+  "shots": 432,
+  "errors": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "expected_phase_counts": [
+    348,
+    84
+  ],
+  "mean_paid": 223579
+}

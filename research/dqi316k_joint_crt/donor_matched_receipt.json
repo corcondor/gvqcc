@@ -1,0 +1,94 @@
+{
+  "scope": "matched legal G all-pole stratum only, not official distribution",
+  "sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+  "Q": 900,
+  "ops": 69782188,
+  "static_paid": 318972,
+  "shots": 192,
+  "errors": [
+    192,
+    0,
+    0,
+    96
+  ],
+  "union": 192,
+  "mean_paid": 305073.6145833333,
+  "expected_phase_counts": [
+    108,
+    84
+  ],
+  "batches": [
+    {
+      "seed": 681,
+      "st": 0,
+      "errors": [
+        32,
+        0,
+        0,
+        12
+      ],
+      "union": 32,
+      "shots": 32
+    },
+    {
+      "seed": 681,
+      "st": 32,
+      "errors": [
+        32,
+        0,
+        0,
+        18
+      ],
+      "union": 32,
+      "shots": 32
+    },
+    {
+      "seed": 681,
+      "st": 64,
+      "errors": [
+        32,
+        0,
+        0,
+        18
+      ],
+      "union": 32,
+      "shots": 32
+    },
+    {
+      "seed": 937,
+      "st": 0,
+      "errors": [
+        32,
+        0,
+        0,
+        16
+      ],
+      "union": 32,
+      "shots": 32
+    },
+    {
+      "seed": 937,
+      "st": 32,
+      "errors": [
+        32,
+        0,
+        0,
+        17
+      ],
+      "union": 32,
+      "shots": 32
+    },
+    {
+      "seed": 937,
+      "st": 64,
+      "errors": [
+        32,
+        0,
+        0,
+        15
+      ],
+      "union": 32,
+      "shots": 32
+    }
+  ]
+}
