@@ -1,0 +1,20 @@
+name: DQI physical pivot lemmas
+on:
+  push:
+    branches:
+      - research/dqi-v110-phase-witness-repair-20261128
+    paths:
+      - 'research/dqi_v110_phase_witness_port/phase246/PhysicalPivot.lean'
+      - '.github/workflows/dqi-physical-pivot.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          "$HOME/.elan/bin/lean" -DwarningAsError=true research/dqi_v110_phase_witness_port/phase246/PhysicalPivot.lean
