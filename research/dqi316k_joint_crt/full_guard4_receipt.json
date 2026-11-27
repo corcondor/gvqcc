@@ -1,0 +1,147 @@
+{
+  "scope": "full #238 physical replacement of both scans with #241 four-product specialization; local native KickMix, not Vercel or submission",
+  "sha256": "5e351d784ca2a9a0e8a721fd837f0b16bcebec30904430550ed2691ab07c9ca0",
+  "parent_sha256": "55af83723f9368f66680cc640a6e5c394f4c4c040184c8001f095a0d7f9b66c9",
+  "Q": 901,
+  "ops": 195046655,
+  "static_paid": 3674138,
+  "old_static_paid": 3690518,
+  "seams": [
+    {
+      "parent_range": [
+        602590,
+        18059898
+      ],
+      "old_ops": 17457308,
+      "old_paid": 208845,
+      "new_ops": 17821763,
+      "new_paid": 200655,
+      "physical_Q_wires": 466,
+      "new_private_bits": 24
+    },
+    {
+      "parent_range": [
+        19712388,
+        37169696
+      ],
+      "old_ops": 17457308,
+      "old_paid": 208845,
+      "new_ops": 17821763,
+      "new_paid": 200655,
+      "physical_Q_wires": 466,
+      "new_private_bits": 24
+    }
+  ],
+  "errors_order": [
+    "value",
+    "phase",
+    "dirty",
+    "mask"
+  ],
+  "panels": [
+    {
+      "panel": "saved",
+      "seed": 64571,
+      "shots": 622,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 3671304.5418006433
+    },
+    {
+      "panel": "saved",
+      "seed": 64572,
+      "shots": 622,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 3671304.266881029
+    },
+    {
+      "panel": "cross",
+      "seed": 64571,
+      "shots": 169,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 3671295.3668639055
+    },
+    {
+      "panel": "cross",
+      "seed": 64572,
+      "shots": 169,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 3671325.023668639
+    },
+    {
+      "panel": "fresh",
+      "seed": 64571,
+      "shots": 288,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 3660387.263888889
+    },
+    {
+      "panel": "fresh",
+      "seed": 64572,
+      "shots": 288,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 3660424.534722222
+    },
+    {
+      "panel": "cross_inverse_frob4",
+      "seed": 64571,
+      "shots": 169,
+      "errors": [
+        58,
+        26,
+        0,
+        0
+      ],
+      "union": 59,
+      "mean_paid": 3671295.301775148
+    },
+    {
+      "panel": "cross_inverse_frob4",
+      "seed": 64572,
+      "shots": 169,
+      "errors": [
+        58,
+        32,
+        0,
+        0
+      ],
+      "union": 60,
+      "mean_paid": 3671324.9585798816
+    }
+  ]
+}
