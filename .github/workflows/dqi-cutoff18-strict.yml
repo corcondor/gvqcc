@@ -40,7 +40,7 @@ jobs:
           lake env lean -DwarningAsError=true RootCause316.lean | tee rootcause.log
           test "$(grep -c 'GVQCC.RootCause316.*axiom' rootcause.log)" -eq 6
           lake env lean -DwarningAsError=true FirstPole316.lean | tee firstpole.log
-          test "$(grep -c 'GVQCC.FirstPole316.*axiom' firstpole.log)" -eq 7
+          test "$(grep -c 'GVQCC.FirstPole316.*axiom' firstpole.log)" -eq 8
           ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log parser.log rootcause.log firstpole.log
       - uses: actions/upload-artifact@v4
         if: always()
