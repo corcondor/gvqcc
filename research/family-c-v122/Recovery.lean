@@ -44,10 +44,10 @@ theorem row22_mux (a b u d e f z : Bool) :
 
 /-- The first temporary is restored before X-measurement. -/
 theorem first_temp_restore (e d b f : Bool) :
-    bx (bx (bx (bx (e && !d) (!b)) f) f) (!b) = e && !d := by
+    bx (bx (bx (bx (e && !d) (!b)) f) f) (!b) = (e && !d) := by
   cases e <;> cases d <;> cases b <;> cases f <;> decide
 
-theorem hmr_product (a b t m : Bool) (h : t = a && b) :
+theorem hmr_product (a b t m : Bool) (h : t = (a && b)) :
     bx (m && t) (m && (a && b)) = false := by
   subst t
   cases a <;> cases b <;> cases m <;> decide
