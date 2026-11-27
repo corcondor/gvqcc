@@ -1,7 +1,7 @@
 import InvariantPad
 namespace GVQCC.SparseSyndromeGuard
 open scoped BigOperators
-variable {F : Type*} [Field F]
+variable {F : Type*} [Field F] [DecidableEq F]
 
 /-- Exact 70-moment uniqueness on nonzero-root supports. The DQI moments
     begin at exponent k+1, unlike the base lemma in InvariantPad.lean. -/
