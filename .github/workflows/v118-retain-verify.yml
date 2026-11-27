@@ -1,0 +1,73 @@
+name: V118 retained-product native DQI validation
+on:
+  pull_request:
+    paths:
+      - 'research/v118_full_rewrite/retain_exact.cpp'
+      - '.github/workflows/v118-retain-verify.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  reconstruct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch verified immutable parent artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh run download 46012487275 -n dqi-fused510-native -D parent -R "${GITHUB_REPOSITORY}"
+          find parent -type f -printf '%p %s\n'
+          P=$(find parent -name dqi.kmb -print -quit)
+          test -n "$P"
+          echo "5f263701fa455a429c06a75f8d994e9ec1465cff69467d7a81ef00b3a68b30a8  $P" | sha256sum -c -
+          mkdir -p candidate
+          g++ -O3 -std=c++17 research/v118_full_rewrite/retain_exact.cpp -o retain
+          ./retain "$P" pass1.kmb candidate/edits1.tsv 96 20000
+          ./retain pass1.kmb pass2.kmb candidate/edits2.tsv 160 100000
+          ./retain pass2.kmb candidate/dqi.kmb candidate/edits3.tsv 64 5000
+          echo "80281ca28c345d8222b3b18a7fabbf7fffb033c20ddc4050e00e3220ac31ecae  candidate/dqi.kmb" | sha256sum -c -
+          V=$(find parent -name verify_submission_dqi.py -print -quit)
+          test -n "$V"
+          cp "$V" candidate/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v118-retained-dqi
+          path: candidate
+  verify:
+    needs: reconstruct
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        salt: ["", "cf-fused510-independent-20261127"]
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - uses: actions/download-artifact@v4
+        with:
+          name: v118-retained-dqi
+          path: candidate
+      - name: Unmodified official verifier 102400 shots
+        env:
+          SALT: ${{ matrix.salt }}
+        run: |
+          set -euo pipefail
+          python candidate/verify_submission_dqi.py candidate/dqi.kmb --num-shots 102400 --batch-size 256 --max-workers 2 --salt "$SALT" | tee receipt.json
+          python - <<'PY'
+          import json
+          r=json.load(open("receipt.json"))
+          assert r["status"]=="PASS" and r["verified_shots"]==102400 and r["value_errors"]==r["phase_errors"]==0, r
+          assert r["num_qubits"]==900 and r["max_toffoli_count"]==462538
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v118-receipt-${{ strategy.job-index }}
+          path: receipt.json
