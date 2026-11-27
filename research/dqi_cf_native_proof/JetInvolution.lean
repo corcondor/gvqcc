@@ -17,6 +17,7 @@ theorem safe_cancel (z o : A) (m : A → A → A) (inv : A → A)
   · have hn' := hn x hx
     simp [safe, hx, hn', hi, hm x hx]
 
+omit [DecidableEq A] in
 theorem square_cancel (o : A) (m : A → A → A)
     (assoc : ∀ a b c, m (m a b) c = m a (m b c))
     (left : ∀ a, m o a = a) (right : ∀ a, m a o = a)
