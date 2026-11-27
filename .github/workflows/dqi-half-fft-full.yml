@@ -1,0 +1,46 @@
+name: DQI weighted half FFT full integration
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_half_fft_full/**'
+      - 'research/dqi_cutoff18_strict/WeightedHalfFFT.lean'
+      - '.github/workflows/dqi-half-fft-full.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true WeightedHalfFFT.lean | tee weighted_fft.log
+          test "$(grep -c 'GVQCC.WeightedHalfFFT.*axiom' weighted_fft.log)" -eq 4
+          ! grep -E 'sorryAx|ofReduceBool' weighted_fft.log
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - run: bash research/dqi316k_half_fft_full/reproduce.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: half-fft-whole-native
+          path: |
+            /tmp/fusion/patch/full_fft.kmb
+            /tmp/fusion/patch/full_fft*.json
+            /tmp/fusion/patch/*.log
