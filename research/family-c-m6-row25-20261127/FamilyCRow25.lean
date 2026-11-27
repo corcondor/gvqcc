@@ -71,10 +71,27 @@ theorem row25_sign_relation (v h r : Int)
   have hrmod := mod_unsigned r 256 hr0 (by omega)
   have hvmod := mod_unsigned v 32 hv0 (by omega)
   rw [hrmod, hvmod]
-  by_cases hq : 0 <= 125+h-6*v <;>
-    by_cases hv32 : v < 32 <;>
-    by_cases hr256 : r < 256 <;>
-    simp [hq] at hr' <;> simp [hv32, hr256] <;> omega
+  by_cases hq : 0 <= 125+h-6*v
+  · rw [ite_eq_left hq] at hr'
+    by_cases hv32 : v < 32
+    · rw [ite_eq_left hv32]
+      by_cases hr256 : r < 256
+      · rw [ite_eq_left hr256]; omega
+      · rw [ite_eq_right hr256]; omega
+    · rw [ite_eq_right hv32]
+      by_cases hr256 : r < 256
+      · rw [ite_eq_left hr256]; omega
+      · rw [ite_eq_right hr256]; omega
+  · rw [ite_eq_right hq] at hr'
+    by_cases hv32 : v < 32
+    · rw [ite_eq_left hv32]
+      by_cases hr256 : r < 256
+      · rw [ite_eq_left hr256]; omega
+      · rw [ite_eq_right hr256]; omega
+    · rw [ite_eq_right hv32]
+      by_cases hr256 : r < 256
+      · rw [ite_eq_left hr256]; omega
+      · rw [ite_eq_right hr256]; omega
 
 private theorem xor_bridge (P Q A B : Prop)
     [Decidable P] [Decidable Q] [Decidable A] [Decidable B]
@@ -134,6 +151,77 @@ theorem ladder_anchor (s v0 vi t : Bool) (ha : t = true -> s = v0) :
     have H := ha rfl
     rw [H]
 
+-- Row 24: z = floor(R25/2^24), h = floor(U/2^17).
+-- hprev is the sign guard at the previous subtraction; it excludes wraparound.
+theorem row24_bounds (v h z w : Int)
+    (hv0 : 0 <= v) (hv1 : v < 64)
+    (hh0 : -8 <= h) (hh1 : h <= 7)
+    (hz : z = 250+h-12*v)
+    (hprev : 0 <= z+2*(129+2*v))
+    (hw : w = if z < 0 then z+(129+2*v) else z-(129+2*v)) :
+    -256 <= w /\ w < 256 := by
+  by_cases hs : z < 0
+  · rw [ite_eq_left hs] at hw
+    omega
+  · rw [ite_eq_right hs] at hw
+    omega
+
+-- The digit consumed by row 24 can be transported into the POST-row chart.
+-- The post-row bit8 of w mod 512 is the new signed remainder's sign.
+theorem row24_sign_transport (v h z w : Int)
+    (hv0 : 0 <= v) (hv1 : v < 64)
+    (hh0 : -8 <= h) (hh1 : h <= 7)
+    (hz : z = 250+h-12*v)
+    (hprev : 0 <= z+2*(129+2*v))
+    (hw : w = if z < 0 then z+(129+2*v) else z-(129+2*v)) :
+    decide (z < 0) =
+      bx (decide (32 <= v))
+        (decide (w % 512 < 256) && decide (16 <= v % 32)) := by
+  have HB := row24_bounds v h z w hv0 hv1 hh0 hh1 hz hprev hw
+  have hwmod := mod_signed w 512 (by omega) (by omega)
+  have hsign : (w % 512 < 256) <-> 0 <= w := by
+    rw [hwmod]
+    by_cases hp : 0 <= w
+    · rw [ite_eq_left hp]
+      omega
+    · rw [ite_eq_right hp]
+      omega
+  have hvmod := mod_unsigned v 32 hv0 (by omega)
+  apply xor_bridge
+  rw [hsign, hvmod]
+  by_cases hv32 : v < 32
+  · rw [ite_eq_left hv32]
+    by_cases hs : z < 0
+    · rw [ite_eq_left hs] at hw
+      omega
+    · rw [ite_eq_right hs] at hw
+      omega
+  · rw [ite_eq_right hv32]
+    by_cases hs : z < 0
+    · rw [ite_eq_left hs] at hw
+      omega
+    · rw [ite_eq_right hs] at hw
+      omega
+
+-- Without hprev the post-row sign can wrap, giving the wrong reconstructed digit.
+theorem row24_guard_counterexample :
+    let v : Int := 63
+    let h : Int := -6
+    let z := 250+h-12*v
+    let w := z+(129+2*v)
+    decide (z < 0) !=
+      bx (decide (32 <= v))
+        (decide (w % 512 < 256) && decide (16 <= v % 32)) := by decide
+
+-- If the transported digit relation holds, post-row HMR correction is Clifford:
+-- Z(v5), Z(v4), CZ(p,v4), all conditional on classical measurement m.
+theorem hmr_post_clifford (s p v5 v4 m : Bool)
+    (hs : s = bx v5 ((!p) && v4)) :
+    bx (m && s)
+      (bx (m && v5) (bx (m && v4) (m && (p && v4)))) = false := by
+  subst s
+  cases p <;> cases v5 <;> cases v4 <;> cases m <;> decide
+
 end GVQCC.FamilyCRow25
 
 #print axioms GVQCC.FamilyCRow25.copy_after_update
@@ -149,3 +237,7 @@ end GVQCC.FamilyCRow25
 #print axioms GVQCC.FamilyCRow25.ladder_first
 #print axioms GVQCC.FamilyCRow25.ladder_step
 #print axioms GVQCC.FamilyCRow25.ladder_anchor
+#print axioms GVQCC.FamilyCRow25.row24_bounds
+#print axioms GVQCC.FamilyCRow25.row24_sign_transport
+#print axioms GVQCC.FamilyCRow25.row24_guard_counterexample
+#print axioms GVQCC.FamilyCRow25.hmr_post_clifford
