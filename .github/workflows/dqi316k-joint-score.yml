@@ -1,0 +1,22 @@
+name: 316K joint composition proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_joint_crt/JointBudget316.lean'
+      - 'research/dqi316k_joint_crt/Guard4.lean'
+      - 'research/dqi316k_joint_hmr/ConditionalHMR.lean'
+      - '.github/workflows/dqi316k-joint-score.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          export PATH="$HOME/.elan/bin:$PATH"
+          set -euo pipefail
+          for f in research/dqi316k_joint_crt/JointBudget316.lean research/dqi316k_joint_crt/Guard4.lean research/dqi316k_joint_hmr/ConditionalHMR.lean; do
+            lean -DwarningAsError=true "$f" | tee -a joint-axioms.txt
+          done
+          ! grep -E 'sorryAx|ofReduceBool|native_decide' joint-axioms.txt
