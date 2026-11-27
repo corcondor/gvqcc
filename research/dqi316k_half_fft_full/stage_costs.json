@@ -1,0 +1,57 @@
+[
+  {
+    "stage": "mask_projection",
+    "ops": 2388213,
+    "paid": 0
+  },
+  {
+    "stage": "initial",
+    "ops": 255758,
+    "paid": 0
+  },
+  {
+    "stage": "extract",
+    "ops": 4692967,
+    "paid": 62668
+  },
+  {
+    "stage": "synthesis",
+    "ops": 5665729,
+    "paid": 39058
+  },
+  {
+    "stage": "half_degree_convert",
+    "ops": 5413118,
+    "paid": 60254
+  },
+  {
+    "stage": "additive_fft_scan",
+    "ops": 3889821,
+    "paid": 44275
+  },
+  {
+    "stage": "unconvert",
+    "ops": 5500138,
+    "paid": 75121
+  },
+  {
+    "stage": "unsynthesis",
+    "ops": 6161801,
+    "paid": 65346
+  },
+  {
+    "stage": "unextract",
+    "ops": 8249415,
+    "paid": 126287
+  },
+  {
+    "stage": "uninitial",
+    "ops": 255668,
+    "paid": 0
+  },
+  {
+    "stage": "restore_masks",
+    "ops": 94186,
+    "paid": 0
+  }
+]
