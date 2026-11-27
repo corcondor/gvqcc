@@ -13,11 +13,11 @@ theorem guarded_xor_cancel (t a b guard : Bool) :
   cases t <;> cases a <;> cases b <;> cases guard <;> decide
 
 theorem hmr_dead_write (t a b m : Bool) :
-    m && (t ^^ (a && b)) = ((m && t) ^^ (m && a && b)) := by
+    (m && (t ^^ (a && b))) = ((m && t) ^^ (m && a && b)) := by
   cases t <;> cases a <;> cases b <;> cases m <;> decide
 
 theorem hmr_guarded_dead_write (t a b m guard : Bool) :
-    m && (t ^^ (guard && a && b)) =
+    (m && (t ^^ (guard && a && b))) =
       ((m && t) ^^ (m && guard && a && b)) := by
   cases t <;> cases a <;> cases b <;> cases m <;> cases guard <;> decide
 
