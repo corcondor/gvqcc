@@ -61,5 +61,5 @@ assert old in s;s=s.replace(old,'le(i,n);batch_scale(p,2*n-1,rev?lead:C,rev?C:le
 a=s.index('void smallprod(');s=s[:a]+'extern vector<array<int,3>> rank6;\nvoid product(int a,int b,int t,const vector<array<int,3>>& terms);\n'+s[a:]
 s=s.replace('void smallprod(int a,int b,int t,int n){','void smallprod(int a,int b,int t,int n){if(n==6){product(a,b,t,rank6);return;}')
 p.write_text(s)
-p=Path("build.py");s=p.read_text().replace('HM=49152','HM=49992');p.write_text(s)
-p=Path("finalize.py");s=p.read_text().replace('49153','49993');p.write_text(s)
+p=Path("build.py");s=p.read_text().replace('HM=49152','HM=49980');p.write_text(s)
+p=Path("finalize.py");s=p.read_text().replace('49153','49981');p.write_text(s)
