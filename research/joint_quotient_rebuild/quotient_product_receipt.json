@@ -1,0 +1,19 @@
+{
+  "sha256": "cf3fef592a0968cdec23073d03c84b1014e73a81f6927f97a592bafc2ffda991",
+  "npz_sha256": "dcc713f35fcbe66ea80225b81363a8801893a9dbbf1ebf52f89b1b6ebfd06988",
+  "bank": 6,
+  "start": 8991,
+  "end": 9150,
+  "rank_C": 129,
+  "rank_U_over_C": 2,
+  "candidate_factors": 10302,
+  "factors_with_innovation": 0,
+  "quotient_directions": [],
+  "witnesses": {},
+  "formal_polar_ranks": [
+    4,
+    4,
+    4
+  ],
+  "scope": "both legal directions, all 1219 addresses each; enumerated left factors, exact right-factor search"
+}

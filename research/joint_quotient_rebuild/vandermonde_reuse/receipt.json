@@ -1,0 +1,64 @@
+{
+  "scope": "supplied monic degree17 candidate P and 52 moments; not full DQI",
+  "classical_cases": 466,
+  "native_cases": 530,
+  "baseline": {
+    "q": 876,
+    "paid": 17968,
+    "ops": 829789
+  },
+  "results": [
+    {
+      "variant": "transpose",
+      "prefix": {
+        "q": 829,
+        "paid": 7476,
+        "ops": 390412,
+        "sha256": "bf54a0271417b36f3f72ebbf2bd36b5180b7291c9d7c62af116dcc08222ef309"
+      },
+      "guard": {
+        "q": 876,
+        "paid": 15784,
+        "ops": 785577,
+        "sha256": "939f75d54f1b625f27b8d5b6d322c03232169c06803816ea2592541f6632fb57"
+      }
+    },
+    {
+      "variant": "tower",
+      "prefix": {
+        "q": 829,
+        "paid": 6765,
+        "ops": 1368077,
+        "sha256": "b71ce1dc0c36d61205b20d988f509d0058fe3595d12b408680d62ca5064489ee"
+      },
+      "guard": {
+        "q": 875,
+        "paid": 14321,
+        "ops": 2740179,
+        "sha256": "16899070a08d0c257eee22ef7c7d7cbc40259dca58bd96009e20f4136d198da3"
+      }
+    },
+    {
+      "variant": "central",
+      "prefix": {
+        "q": 829,
+        "paid": 6765,
+        "ops": 813437,
+        "sha256": "f22cb1375ef45a5a9e2169981442c2a87f3bad803d86be721e52803119060f70"
+      },
+      "guard": {
+        "q": 875,
+        "paid": 14321,
+        "ops": 1630899,
+        "sha256": "e735e20490ec9ab25a1b1520044a4560bf874cd01939bb664f7487a0a6589fc7"
+      }
+    }
+  ],
+  "shots_per_variant": 2120,
+  "errors_per_variant": [
+    0,
+    0,
+    0
+  ],
+  "full_dqi": false
+}

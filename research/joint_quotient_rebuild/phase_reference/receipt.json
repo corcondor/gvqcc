@@ -1,0 +1,38 @@
+{
+  "status": "REJECTED_NOT_SUBMISSION",
+  "parent": "2c8ea3ad0cbf316b6392fb7ffd2fb04d3059633d8d66281228abe13b496c4e60",
+  "candidate": "2d1ec613eb13a5a37ba1f868ccd7182fa793a5f4868221ddc7a07f85bd9ce442",
+  "Q": 900,
+  "B": 692769,
+  "ops": 121342788,
+  "static_paid": 319366,
+  "unoptimized_420_ops": 151086061,
+  "guard": {
+    "full840_extra_paid": 1622,
+    "first420_extra_paid": 782
+  },
+  "local_reference_mirror_ops": 51058471,
+  "rebases": 10438,
+  "tests": {
+    "random_zero": 256,
+    "ordinary_high": 256,
+    "boundary_w35": 64,
+    "boundary_zero": 64,
+    "errors_in_those_panels": 0,
+    "stratified72": {
+      "parent": {
+        "value": 34,
+        "phase": 19,
+        "phase_on_restored_values": 2,
+        "mean_paid": 316065.02777777775
+      },
+      "candidate": {
+        "value": 34,
+        "phase": 17,
+        "phase_on_restored_values": 0,
+        "mean_paid": 316424.2638888889
+      }
+    }
+  },
+  "full_repair": false
+}

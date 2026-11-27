@@ -1,0 +1,26 @@
+name: Phase witness local laws
+on:
+  pull_request:
+    paths:
+      - 'research/joint_quotient_rebuild/phase_witness/**'
+      - '.github/workflows/phase-witness-local.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Strict proof
+        working-directory: research/joint_quotient_rebuild/phase_witness
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true PhaseWitness.lean | tee axioms.txt
+          test "$(grep -c 'GVQCC.PhaseWitness.*axiom' axioms.txt)" -eq 5
+          ! grep -Eq 'sorryAx|ofReduceBool' axioms.txt

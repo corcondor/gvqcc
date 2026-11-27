@@ -37,6 +37,13 @@ jobs:
           test "$(grep -c 'GVQCC.InfinityCF.*axiom' infinity.log)" -eq 14
           lake env lean -DwarningAsError=true ParserStability.lean | tee parser.log
           test "$(grep -c 'GVQCC.ParserStability.*axiom' parser.log)" -eq 9
+          lake env lean -DwarningAsError=true ZeroSafeJet.lean | tee zero_safe_jet.log
+          test "$(grep -c 'GVQCC.ZeroSafeJet.*axiom' zero_safe_jet.log)" -eq 7
+          lake env lean -DwarningAsError=true AdaptivePivot316.lean | tee adaptive_pivot.log
+          test "$(grep -c 'GVQCC.AdaptivePivot316.*axiom' adaptive_pivot.log)" -eq 8
+          lake env lean -DwarningAsError=true PoleRank.lean | tee pole_rank.log
+          test "$(grep -c 'GVQCC.PoleRank.*axiom' pole_rank.log)" -eq 10
+          ! grep -E 'sorryAx|ofReduceBool' zero_safe_jet.log adaptive_pivot.log pole_rank.log
           ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log parser.log
       - uses: actions/upload-artifact@v4
         if: always()
@@ -49,3 +56,6 @@ jobs:
             research/dqi_cutoff18_strict/collision.log
             research/dqi_cutoff18_strict/infinity.log
             research/dqi_cutoff18_strict/parser.log
+            research/dqi_cutoff18_strict/zero_safe_jet.log
+            research/dqi_cutoff18_strict/adaptive_pivot.log
+            research/dqi_cutoff18_strict/pole_rank.log
