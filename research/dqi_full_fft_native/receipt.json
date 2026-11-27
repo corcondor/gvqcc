@@ -1,0 +1,43 @@
+{
+  "scope": "New complete 898Q 410K-lineage native oracle; not 316K repair; not submission",
+  "parent_sha256": "915c7b7ceb570ff56c0a67e0ce3a873db364a54806a303c5008bc605fdb00179",
+  "candidate_sha256": "6a8d9f42498c077305169f40eb67528e36adb362db875301daf61659bd693c04",
+  "Q": 898,
+  "ops_before": 49882814,
+  "ops_after": 29968560,
+  "static_paid_before": 433306,
+  "static_paid_after": 433306,
+  "matched_4096_mean_before": 410930.2468261719,
+  "matched_4096_mean_after": 410930.2468261719,
+  "stress": {
+    "saved": 1244,
+    "cross": 338,
+    "fresh": 576,
+    "cross_inverse_frob4": 338,
+    "union_errors": 0
+  },
+  "local_unmodified_official_verifier": {
+    "seed": 20261127,
+    "verified_shots": 102400,
+    "status": "PASS",
+    "value_errors": 0,
+    "phase_errors": 0,
+    "mean_paid": 410929.52953125,
+    "score": 394754194234.838,
+    "reaction_depth": 51913
+  },
+  "direct316": {
+    "parent_sha256": "9230ad7e864cd9114796d15609753b35e50023fd312874b933125a84de9052d4",
+    "candidate_sha256": "5bd267f61425f9d4c2be2c33d452757842db446540e7476668ed26239db81d05",
+    "Q": 900,
+    "ops": 66781442,
+    "static_paid_before": 318952,
+    "static_paid_after": 318894,
+    "stress_shots": 2496,
+    "union_errors": 1493,
+    "accepted": false
+  },
+  "new_vercel_run": false,
+  "new_lean_verification": false,
+  "kaggle_submission": false
+}
