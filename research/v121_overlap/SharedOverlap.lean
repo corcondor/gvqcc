@@ -65,4 +65,35 @@ theorem costs_shared (n : Nat) (h : 2 ≤ n) : 1 < n := by omega
 #print axioms costs_pair
 #print axioms costs_shared
 
+/-- An offset survives a target-only XOR update, independently of the
+guard and the original wire's value. Reads, reset, measurement and swaps
+are excluded by the physical interval certificate. -/
+theorem offset_write (x p z guard : Bool) :
+    bx (bx x p) (guard && z) = bx (bx x (guard && z)) p := by
+  cases x <;> cases p <;> cases z <;> cases guard <;> decide
+
+def applyWrites (x : Bool) (xs : List Bool) :=
+  xs.foldl bx x
+
+theorem offset_many_writes (x p : Bool) (xs : List Bool) :
+    applyWrites (bx x p) xs = bx (applyWrites x xs) p := by
+  induction xs generalizing x with
+  | nil => rfl
+  | cons a rest ih =>
+    change applyWrites (bx (bx x p) a) rest =
+      bx (applyWrites (bx x a) rest) p
+    have h : bx (bx x p) a = bx (bx x a) p := by
+      cases x <;> cases p <;> cases a <;> decide
+    rw [h, ih]
+
+theorem offset_zero_end (x p : Bool) (xs : List Bool)
+    (h : applyWrites x xs = false) :
+    applyWrites (bx x p) xs = p := by
+  rw [offset_many_writes, h]
+  cases p <;> decide
+
+#print axioms offset_write
+#print axioms offset_many_writes
+#print axioms offset_zero_end
+
 end GVQCC.SharedOverlap
