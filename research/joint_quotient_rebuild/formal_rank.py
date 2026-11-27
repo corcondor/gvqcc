@@ -54,7 +54,7 @@ def audit(ops,start,end,n):
         pol=[mon[j] for j in range(len(mon)) if x>>j&1]
         pr=polar_rank(pol,n);ranks.append(pr)
         if pr==2:low.append(s)
-    return {'start':start,'end':end,'ccx':original,'degree':degree,'innovation_rank':r,'polar_rank_histogram':dict(collections.Counter(ranks)),'rank2_direction_span':len(basis(low)),'two_ccx_impossible_on_full_cube':r>2 or (r==2 and len(basis(low))<2),'certified':True}
+    return {'start':start,'end':end,'ccx':original,'degree':degree,'innovation_rank':r,'polar_rank_histogram':dict(collections.Counter(ranks)),'rank2_direction_span':len(basis(low)),'two_ccx_impossible_on_full_cube':r>2 or (r==2 and not low),'certified':True}
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('bank',type=Path);p.add_argument('windows',type=Path);p.add_argument('--out',type=Path,required=True);p.add_argument('--vendor',type=Path,required=True);a=p.parse_args();sys.path.insert(0,str(a.vendor));from native_kmb import NativeKMB
