@@ -24,7 +24,9 @@ def delta (k : K) : A k := x k ^ 2 + x k + ia k k
 
 theorem two_map {R S : Type*} [CommRing R] [CommRing S]
     (h : (2 : R) = 0) (f : R →+* S) : (2 : S) = 0 := by
-  simpa using congrArg (fun t : R => f t) h
+  have hh : (1 : R) + 1 = 0 := by rw [one_add_one_eq_two, h]
+  have hh' := congrArg (fun t : R => f t) hh
+  simpa only [map_add, map_one, map_zero, one_add_one_eq_two] using hh'
 
 theorem twice {R : Type*} [CommRing R] (h : (2 : R) = 0) (a : R) :
     a + a = 0 := by
@@ -39,15 +41,19 @@ theorem shift {R : Type*} [CommRing R] (h : (2 : R) = 0) (a b c : R) :
     _ = _ := by rw [h]; ring
 
 theorem delta_nil (k : K) : delta k ^ 2 = 0 := by
-  simpa only [delta, g, x, ia, eval₂_add, eval₂_pow, eval₂_X, eval₂_C]
-    using AdjoinRoot.eval₂_root (g k ^ 2)
+  have hr := AdjoinRoot.eval₂_root (g k ^ 2)
+  change (g k ^ 2).eval₂ (ia k) (x k) = 0 at hr
+  simpa only [delta, g, eval₂_add, eval₂_pow, eval₂_X, eval₂_C] using hr
 
 theorem y_root (k : K) : y k ^ 2 + y k + ib k k = 0 := by
-  simpa only [g, y, ib, eval₂_add, eval₂_pow, eval₂_X, eval₂_C]
-    using AdjoinRoot.eval₂_root (g k)
+  have hr := AdjoinRoot.eval₂_root (g k)
+  change (g k).eval₂ (ib k) (y k) = 0 at hr
+  simpa only [g, eval₂_add, eval₂_pow, eval₂_X, eval₂_C] using hr
 
 theorem e_nil (k : K) : e k ^ 2 = 0 := by
-  simpa only [ep, e, eval₂_pow, eval₂_X] using AdjoinRoot.eval₂_root (ep k)
+  have hr := AdjoinRoot.eval₂_root (ep k)
+  change (ep k).eval₂ (idu k) (e k) = 0 at hr
+  simpa only [ep, eval₂_pow, eval₂_X] using hr
 
 theorem yd_root (k : K) : yd k ^ 2 + yd k + id0 k k = 0 := by
   simpa only [yd, id0, RingHom.comp_apply, map_add, map_pow, map_zero]
