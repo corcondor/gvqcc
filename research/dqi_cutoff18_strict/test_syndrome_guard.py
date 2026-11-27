@@ -31,3 +31,21 @@ def main():
 
 if __name__=="__main__":
     main()
+
+def test_sharp_37():
+    # 37 distinct nonzero roots; barycentric null-vector of the first
+    # 36 Vandermonde rows. Split the 37-term null-vector into 35+2.
+    roots=[power(2,i) for i in range(37)]
+    weights=[]
+    for i,x in enumerate(roots):
+        den=x
+        for j,y in enumerate(roots):
+            if i!=j: den=mul(den,x^y)
+        weights.append(inv(den))
+    old=Certificate(tuple(roots[:35]),tuple(weights[:35])).moments()
+    cand=Certificate(tuple(roots[35:]),tuple(weights[35:])).moments()
+    assert old[:36]==cand[:36] and old[36]!=cand[36]
+    print("SHARP: first 36 DQI moments coincide, moment 37 differs")
+
+if __name__=="__main__":
+    test_sharp_37()
