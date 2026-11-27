@@ -62,6 +62,41 @@ theorem cubic_chart_reconstruct (a b x n0 n1 k : F) :
     a*x^3+(a+b)*x^2+n1*x+n0 =
       (a*x+b)*(x^2+x+k)+(n1-a*k-b)*x+(n0-b*k) := by ring
 
+
+/-- Two distinct quadratic nodes: a normalized cubic over the old quadratic
+can be extracted at the new node using only multiplication by constants.
+The displayed subtraction is XOR in characteristic two. -/
+theorem alternate_node_coefficients
+    (k kp a b n0 n1 h0 h1 x : F)
+    (hh0 : h0 * (k-kp) = n0-b*kp)
+    (hh1 : h1 * (k-kp) = n1-a*kp-b) :
+    a*x^3+(a+b)*x^2+n1*x+n0 =
+      (h1*x+h0)*(x^2+x+k) +
+      ((a-h1)*x+(b-h0))*(x^2+x+kp) := by
+  calc
+    _ = a*x^3+(a+b)*x^2+
+        (h1*(k-kp)+a*kp+b)*x+(h0*(k-kp)+b*kp) := by
+      rw [hh0, hh1]
+      ring
+    _ = _ := by ring
+
+theorem alternate_node_extract
+    (k kp a b n0 n1 x : F) (hk : k ≠ kp) :
+    let h0 := (n0-b*kp)/(k-kp)
+    let h1 := (n1-a*kp-b)/(k-kp)
+    a*x^3+(a+b)*x^2+n1*x+n0 =
+      (h1*x+h0)*(x^2+x+k) +
+      ((a-h1)*x+(b-h0))*(x^2+x+kp) := by
+  dsimp
+  apply alternate_node_coefficients
+  · exact div_mul_cancel₀ _ (sub_ne_zero.mpr hk)
+  · exact div_mul_cancel₀ _ (sub_ne_zero.mpr hk)
+
+theorem alternate_head_recovery (d n v : F) (hd : d ≠ 0) :
+    ((n-v)/d)*d+v = n := by
+  rw [div_mul_cancel₀ _ hd]
+  ring
+
 section Transport
 variable {R : Type*} [CommRing R]
 def lift (h g : R) (p : R × R) : R × R := (h*p.1+g*p.2,p.1)
@@ -90,3 +125,7 @@ end GVQCC.V120
 #print axioms GVQCC.V120.cubic_chart_reconstruct
 #print axioms GVQCC.V120.lift_scale
 #print axioms GVQCC.V120.lift_injective
+
+#print axioms GVQCC.V120.alternate_node_coefficients
+#print axioms GVQCC.V120.alternate_node_extract
+#print axioms GVQCC.V120.alternate_head_recovery
