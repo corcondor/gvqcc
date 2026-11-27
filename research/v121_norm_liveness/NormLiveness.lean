@@ -10,14 +10,14 @@ theorem norm_inv (s : F →+* F) (x : F) :
     norm s x⁻¹ = (norm s x)⁻¹ := by
   by_cases hx : x = 0
   · simp [norm,hx]
-  · have hs : s x ≠ 0 := map_ne_zero s hx
+  · have hs : s x ≠ 0 := (map_ne_zero s).mpr hx
     simp only [norm, map_inv₀]
     field_simp
 theorem old_word_from_inverse_and_norm (s : F →+* F) (x : F) :
     s (x⁻¹) * norm s x = x := by
   by_cases hx : x = 0
   · simp [norm,hx]
-  · have hs : s x ≠ 0 := map_ne_zero s hx
+  · have hs : s x ≠ 0 := (map_ne_zero s).mpr hx
     rw [map_inv₀,norm]
     field_simp
 theorem erase_cached_norm (s : F →+* F) (x : F) :
@@ -34,7 +34,7 @@ theorem norm_zero_iff (s : F →+* F) (x : F) :
   constructor
   · intro h
     by_contra hx
-    exact (mul_ne_zero hx (map_ne_zero s hx)) h
+    exact (mul_ne_zero hx ((map_ne_zero s).mpr hx)) h
   · intro hx
     simp [norm,hx]
 theorem phase_repay (m d p : Bool) :
