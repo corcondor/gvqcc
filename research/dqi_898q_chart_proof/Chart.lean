@@ -112,7 +112,7 @@ theorem hybrid_roundtrip (p q C u v d : F) (hC : C ≠ 0) (hu : u ≠ 0) :
   · simp [hf]
   · have hD : (slope p q v*d + p^2*u/q - p^2*u/q)/slope p q v = d := by
       rw [add_sub_cancel_right, mul_comm (slope p q v) d, mul_div_cancel_right₀ d hf]
-    simp only [if_neg hf]
+    simp only [ite_eq_right hf]
     exact congrArg (fun z : F => (u,v,z)) hD
 
 theorem hmr_cancel (m f phase : Bool) :
