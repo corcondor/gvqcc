@@ -26,6 +26,31 @@ theorem row25_word_formula (u v : Int) :
     (17179869184 + 128*u - 3*(129+2*v)*33554432) / 33554432 =
       125 + u / 262144 - 6*v := by omega
 
+-- Normalize the bounded remainders explicitly; omega's linear relaxation
+-- alone does not enforce the required integral quotient cases.
+private theorem add_self_mod (x n : Int) : (x+n) % n = x % n := by
+  rw [Int.add_emod]
+  simp
+
+private theorem mod_signed (x n : Int) (hl : -n <= x) (hu : x < n) :
+    x % n = if 0 <= x then x else x+n := by
+  by_cases h : 0 <= x
+  · simpa only [if_pos h] using (Int.emod_eq_of_lt h hu)
+  · rw [if_neg h]
+    calc
+      x % n = (x+n) % n := (add_self_mod x n).symm
+      _ = x+n := Int.emod_eq_of_lt (by omega) (by omega)
+
+private theorem mod_unsigned (x n : Int) (hl : 0 <= x) (hu : x < 2*n) :
+    x % n = if x < n then x else x-n := by
+  by_cases h : x < n
+  · simpa only [if_pos h] using (Int.emod_eq_of_lt hl h)
+  · rw [if_neg h]
+    have he := add_self_mod (x-n) n
+    have hh : x-n+n = x := by omega
+    rw [hh] at he
+    exact he.trans (Int.emod_eq_of_lt (by omega) (by omega))
+
 -- An independently useful, exact bounded arithmetic theorem.
 -- r is the residue modulo 512; bit8 is r >= 256,
 -- bit7 is r % 256 >= 128, v5 is v >= 32, v4 is v % 32 >= 16.
@@ -36,13 +61,27 @@ theorem row25_sign_relation (v h r : Int)
     (256 <= r) <->
       ((32 <= v /\ Not (128 <= r % 256 /\ 16 <= v % 32)) \/
        (Not (32 <= v) /\ (128 <= r % 256 /\ 16 <= v % 32))) := by
-  by_cases hv16 : v < 16
-  · omega
-  · by_cases hv32 : v < 32
-    · omega
-    · by_cases hv48 : v < 48
-      · omega
-      · omega
+  have hr0 : 0 <= r := by
+    rw [hr]
+    exact Int.emod_nonneg _ (by decide)
+  have hr1 : r < 512 := by
+    rw [hr]
+    exact Int.emod_lt_of_pos _ (by decide)
+  have hr' := hr.trans (mod_signed (125+h-6*v) 512 (by omega) (by omega))
+  have hrmod := mod_unsigned r 256 hr0 (by omega)
+  have hvmod := mod_unsigned v 32 hv0 (by omega)
+  rw [hrmod, hvmod]
+  by_cases hq : 0 <= 125+h-6*v <;>
+    by_cases hv32 : v < 32 <;>
+    by_cases hr256 : r < 256 <;>
+    simp [hq, hv32, hr256] at hr' ⊢ <;> omega
+
+private theorem xor_bridge (P Q A B : Prop)
+    [Decidable P] [Decidable Q] [Decidable A] [Decidable B]
+    (H : P <-> ((Q /\ Not (A /\ B)) \/ (Not Q /\ (A /\ B)))) :
+    decide P = bx (decide Q) (decide A && decide B) := by
+  by_cases p : P <;> by_cases q : Q <;> by_cases a : A <;> by_cases b : B <;>
+    simp_all [bx, Bool.xor]
 
 -- Boolean bridge between the integer certificate and the gate predicate.
 theorem row25_bool_relation (v h r : Int)
@@ -52,10 +91,7 @@ theorem row25_bool_relation (v h r : Int)
     decide (256 <= r) =
       bx (decide (32 <= v))
         (decide (128 <= r % 256) && decide (16 <= v % 32)) := by
-  have H := row25_sign_relation v h r hv0 hv1 hh0 hh1 hr
-  by_cases p : 256 <= r <;> by_cases q : 32 <= v <;>
-    by_cases a : 128 <= r % 256 <;> by_cases b : 16 <= v % 32 <;>
-    simp_all [bx, Bool.xor]
+  exact xor_bridge _ _ _ _ (row25_sign_relation v h r hv0 hv1 hh0 hh1 hr)
 
 -- Reversible clearing and reconstruction, when the relation is true at this cut.
 theorem clear_top (r8 r7 v5 v4 : Bool)
