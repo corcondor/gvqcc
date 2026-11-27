@@ -56,7 +56,7 @@ theorem mask_xor (f a b : Bool) :
   cases f <;> cases a <;> cases b <;> decide
 
 theorem masked_group_product (f a b h : Bool) :
-    (Bool.xor (f && a) (f && b)) && h = f && ((Bool.xor a b) && h) := by
+    Bool.and (Bool.xor (Bool.and f a) (Bool.and f b)) h = Bool.and f (Bool.and (Bool.xor a b) h) := by
   cases f <;> cases a <;> cases b <;> cases h <;> decide
 
 /-- The dirty coordinate is unchanged by retaining and then removing an
