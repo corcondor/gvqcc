@@ -1,0 +1,128 @@
+{
+  "scope": "actual Vercel native complete #247 + #256; NOT SUBMISSION; rejected by 316000/error-zero acceptance gate",
+  "session": "sbx_xO02qDDffxwowJ4AJA3h2cCHVLAE",
+  "command": "cmd_2168d16cae9044328d1350a99812",
+  "parent": {
+    "sha256": "8b9d09f87692f59baaeb399d96650db9389835f23be5c2ab93be4d86259bc6ab",
+    "Q": 900,
+    "static_paid": 318333,
+    "ops": 66696654
+  },
+  "candidate": {
+    "sha256": "81081a88c27b708322f0724a09197814a18646a4a9969984ab9cf76a6e6cd7fa",
+    "Q": 900,
+    "static_paid": 318333,
+    "ops": 69534364
+  },
+  "errors_order": [
+    "value",
+    "raw_phase",
+    "dirty",
+    "mask"
+  ],
+  "matched_panels": [
+    {
+      "name": "zero",
+      "shots": 144,
+      "parent_errors": [
+        68,
+        36,
+        0,
+        0
+      ],
+      "parent_union": 70,
+      "parent_mean_paid": 271857.44444444444,
+      "new_errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_union": 0,
+      "new_mean_paid": 0
+    },
+    {
+      "name": "dual",
+      "shots": 144,
+      "parent_errors": [
+        68,
+        32,
+        0,
+        0
+      ],
+      "parent_union": 70,
+      "parent_mean_paid": 271857.44444444444,
+      "new_errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_union": 0,
+      "new_mean_paid": 0
+    },
+    {
+      "name": "dense",
+      "shots": 144,
+      "parent_errors": [
+        68,
+        30,
+        0,
+        0
+      ],
+      "parent_union": 70,
+      "parent_mean_paid": 316064.7638888889,
+      "new_errors": [
+        68,
+        30,
+        0,
+        0
+      ],
+      "new_union": 70,
+      "new_mean_paid": 316064.7638888889
+    },
+    {
+      "name": "distribution",
+      "shots": 2048,
+      "parent_errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "parent_union": 0,
+      "parent_mean_paid": 316126.84765625,
+      "new_errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_union": 0,
+      "new_mean_paid": 316126.84765625
+    }
+  ],
+  "negative_searches": [
+    {
+      "method": "classical dependent control transport",
+      "command": "cmd_63356e322c644f2299964dc141f8",
+      "paid_saved": 0
+    },
+    {
+      "method": "adjacent affine quadratic pairs",
+      "command": "cmd_0e272054c9244598910d2ba31812",
+      "paid_saved": 0
+    },
+    {
+      "method": "commuting affine quadratic planes",
+      "command": "cmd_ecbcd2888b3a43818e91aae76eb9",
+      "paid_saved": 0
+    },
+    {
+      "method": "cubic phase planes",
+      "command": "cmd_daf1c99f82a642ba8a9ebd86df73",
+      "paid_saved": 0
+    }
+  ],
+  "note": "Transcribed aggregate values from actual logs. Sandbox expired before raw JSON retrieval. No new 102400-shot score."
+}
