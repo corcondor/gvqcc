@@ -75,7 +75,7 @@ theorem crt_representative_unique {F : Type*} [Field F]
 theorem scaled_amplitude {F : Type*} [Field F] (x M d c : F)
     (hx : x≠0) (hm : M≠0) (hd : d≠0) (hc : c≠0) :
     (x*M*(d/c))⁻¹ = c/(x*M*d) := by
-  field_simp [hx, hm, hd, hc] <;> ring
+  field_simp [hx, hm, hd, hc]
 
 /-- Let a=F_l, b=F_(l+1). Valid ranks for a history of consumed length l
 occupy [a+b-1,a+2b-1). A one-slot macro is in the first subinterval. -/
