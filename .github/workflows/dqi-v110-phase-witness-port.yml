@@ -21,8 +21,11 @@ jobs:
         run: |
           set -euo pipefail
           lean -DwarningAsError=true PhaseWitness.lean | tee axioms.txt
-          test "$(grep -c 'GVQCC.PhaseWitness.*axiom' axioms.txt)" -eq 5
+          test "$(grep -c 'GVQCC.PhaseWitness.*axiom' axioms.txt)" -eq 7
           ! grep -Eq 'sorryAx|ofReduceBool' axioms.txt
+      - name: Check exact guard fixture
+        working-directory: research/dqi_v110_phase_witness_port
+        run: python3 guard_audit.py
       - name: Build patched emitter
         working-directory: research/dqi_v110_phase_witness_port
         run: g++ -O3 -std=c++20 shadow_affine.cpp -o shadow_affine
