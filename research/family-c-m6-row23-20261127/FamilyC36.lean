@@ -112,7 +112,7 @@ theorem row22_recovery :
 -- Multiplicative circuit for the 4-input term using one clean product
 -- and a dirty triple. Factor identity is independent of the clean line.
 theorem four_factor (a b c d : Bool) :
-    (a && b) && (c && d) = ((a && b) && c) && d := by
+    ((a && b) && (c && d)) = (((a && b) && c) && d) := by
   cases a <;> cases b <;> cases c <;> cases d <;> decide
 
 end GVQCC.FamilyC36
