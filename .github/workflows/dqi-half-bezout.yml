@@ -1,0 +1,58 @@
+name: DQI half Bezout magnitude
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_half_bezout/**'
+      - 'research/dqi_cutoff18_strict/HalfBezoutMagnitude.lean'
+      - '.github/workflows/dqi-half-bezout.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true HalfBezoutMagnitude.lean | tee half.log
+          test "$(grep -c 'GVQCC.HalfBezoutMagnitude.*axiom' half.log)" -eq 4
+          ! grep -E 'sorryAx|ofReduceBool' half.log
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi316k_half_bezout
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - run: |
+          curl -fsSL https://raw.githubusercontent.com/corcondor/gvqcc/d442f72507472f5d4e1bce77a07f08ab1da2b16f/research/v81/field_scan.py -o field_scan.py
+          curl -fsSL https://raw.githubusercontent.com/corcondor/gvqcc/d442f72507472f5d4e1bce77a07f08ab1da2b16f/research/v81/emit_opt.cpp -o emit_opt.cpp
+          curl -fsSL https://raw.githubusercontent.com/corcondor/gvqcc/a52fe81aa92f19b907e3c85813e49998523e1eae/research/dqi316k_joint_crt/crt882.py -o crt882.py
+          python field_scan.py
+          python build_half.py
+          g++ -O3 -std=c++17 half_magnitude.cpp -o half_magnitude
+          ./half_magnitude forward forward.kmb
+          ./half_magnitude half half.kmb
+          python finalize_kmb.py
+          python verify_half.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: half-bezout-native
+          path: |
+            research/dqi316k_half_bezout/*.kmb
+            research/dqi316k_half_bezout/*.json
