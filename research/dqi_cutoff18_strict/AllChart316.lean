@@ -46,8 +46,8 @@ n ≤ 128; the concrete coefficient implementation is audited independently. -/
 theorem reciprocal_power {R : Type*} [CommMonoid R] (u : R) (h : u^128=1) :
     u^(3*5*17 : ℕ)*u=1 := by
   calc
-    _ = u^256 := by rw [← pow_succ]; rfl
-    _ = (u^128)^2 := by rw [← pow_mul]; rfl
+    _ = u^256 := by rw [← pow_succ]
+    _ = (u^128)^2 := by rw [← pow_mul]
     _ = 1 := by rw [h,one_pow]
 
 /-- The total denominator degree for low-vs-legal rational alias exclusion. -/
