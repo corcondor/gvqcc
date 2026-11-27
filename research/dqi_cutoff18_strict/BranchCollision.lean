@@ -50,7 +50,7 @@ theorem tagged_roundtrip (pad1 pad2 : A) (T : A ≃ A) (tag : Fin 3) (x : A) :
   by_cases h0 : tag = 0
   · simp [encode, decode, h0]
   · by_cases h1 : tag = 1
-    · simp [encode, decode, h0, h1]
+    · simp [encode, decode, h1]
     · simp [encode, decode, h0, h1]
 
 theorem tag_phase_repay (tag m phase : Bool) :
