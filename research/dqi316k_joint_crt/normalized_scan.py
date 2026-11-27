@@ -62,7 +62,7 @@ def main():
  a=argparse.ArgumentParser();a.add_argument('--count',type=int,default=16);args=a.parse_args()
  rng=random.Random(20261128);cases=[]
  for w in range(36):
-  n=min(w,args.count,4)
+  n=max(w-(4095-args.count),min(w,args.count,4))
   loc=rng.sample(range(args.count),n)+rng.sample(range(args.count,4095),w-n)
   xs=[C.exp[i] for i in loc];es=[rng.randrange(1,4096) for _ in xs];p=pack(C.moment(xs,es))
   want=dict(zip(xs,es))
@@ -77,12 +77,13 @@ def main():
   qin=np.asarray([[(v>>j)&1 for v in p for j in range(12)] for p,_ in cases],dtype=bool).T.copy()
   mask=np.asarray([[rng.randrange(4096) for _ in range(args.count)] for _ in cases],dtype=np.uint16)
   mb=((mask[:,:,None]>>np.arange(12))&1).reshape(n,-1).T.astype(bool)
-  qi=[q for i in range(70) for q in c.get_quantum_register(f'S{i}')]
-  ci=[v for i in range(args.count) for v in c.get_classical_register(f'E{i}')]
+  qi=km.array([km.q(i) for i in range(840)])
+  ci=km.array([km.b(i) for i in range(12*args.count)])
   s.write_across_shots(qi,qin);s.write_across_shots(ci,mb);s.do(c)
   phase=np.asarray([sum((int(mask[i,k])&want.get(C.exp[k],0)).bit_count() for k in range(args.count))%2 for i,(_,want) in enumerate(cases)],dtype=bool)
   assert np.array_equal(s.read_across_shots(qi),qin)
   assert np.array_equal(s.read_across_shots(ci),mb)
-  assert np.array_equal(s.phase_across_shots(),phase)
+  assert not s.read_across_shots(km.array([km.q(i) for i in range(840,c.num_qubits)])).any()
+  assert np.array_equal(s.read_phase_flipped_across_shots(),phase)
  print('native phase PASS',flush=True)
 if __name__=='__main__':main()
