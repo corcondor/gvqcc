@@ -1,0 +1,362 @@
+[
+  {
+    "w": 0,
+    "expected_roots": 0,
+    "actual_roots": 0,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 2849,
+    "N_nonzero": false
+  },
+  {
+    "w": 1,
+    "expected_roots": 1,
+    "actual_roots": 1,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 2538,
+    "N_nonzero": true
+  },
+  {
+    "w": 2,
+    "expected_roots": 2,
+    "actual_roots": 2,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3003,
+    "N_nonzero": true
+  },
+  {
+    "w": 3,
+    "expected_roots": 3,
+    "actual_roots": 3,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 2180,
+    "N_nonzero": true
+  },
+  {
+    "w": 4,
+    "expected_roots": 4,
+    "actual_roots": 4,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 2461,
+    "N_nonzero": true
+  },
+  {
+    "w": 5,
+    "expected_roots": 5,
+    "actual_roots": 5,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3344,
+    "N_nonzero": true
+  },
+  {
+    "w": 6,
+    "expected_roots": 6,
+    "actual_roots": 6,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 2132,
+    "N_nonzero": true
+  },
+  {
+    "w": 7,
+    "expected_roots": 7,
+    "actual_roots": 7,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 102,
+    "N_nonzero": true
+  },
+  {
+    "w": 8,
+    "expected_roots": 8,
+    "actual_roots": 8,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 1138,
+    "N_nonzero": true
+  },
+  {
+    "w": 9,
+    "expected_roots": 9,
+    "actual_roots": 9,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 2883,
+    "N_nonzero": true
+  },
+  {
+    "w": 10,
+    "expected_roots": 10,
+    "actual_roots": 10,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3938,
+    "N_nonzero": true
+  },
+  {
+    "w": 11,
+    "expected_roots": 11,
+    "actual_roots": 11,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 1668,
+    "N_nonzero": true
+  },
+  {
+    "w": 12,
+    "expected_roots": 12,
+    "actual_roots": 12,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 2000,
+    "N_nonzero": true
+  },
+  {
+    "w": 13,
+    "expected_roots": 13,
+    "actual_roots": 13,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 43,
+    "N_nonzero": true
+  },
+  {
+    "w": 14,
+    "expected_roots": 14,
+    "actual_roots": 14,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3602,
+    "N_nonzero": true
+  },
+  {
+    "w": 15,
+    "expected_roots": 15,
+    "actual_roots": 15,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3798,
+    "N_nonzero": true
+  },
+  {
+    "w": 16,
+    "expected_roots": 16,
+    "actual_roots": 16,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3249,
+    "N_nonzero": true
+  },
+  {
+    "w": 17,
+    "expected_roots": 17,
+    "actual_roots": 17,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3582,
+    "N_nonzero": true
+  },
+  {
+    "w": 18,
+    "expected_roots": 18,
+    "actual_roots": 18,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 4037,
+    "N_nonzero": true
+  },
+  {
+    "w": 19,
+    "expected_roots": 19,
+    "actual_roots": 19,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 1077,
+    "N_nonzero": true
+  },
+  {
+    "w": 20,
+    "expected_roots": 20,
+    "actual_roots": 20,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 849,
+    "N_nonzero": true
+  },
+  {
+    "w": 21,
+    "expected_roots": 21,
+    "actual_roots": 21,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 1900,
+    "N_nonzero": true
+  },
+  {
+    "w": 22,
+    "expected_roots": 22,
+    "actual_roots": 22,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 2879,
+    "N_nonzero": true
+  },
+  {
+    "w": 23,
+    "expected_roots": 23,
+    "actual_roots": 23,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3436,
+    "N_nonzero": true
+  },
+  {
+    "w": 24,
+    "expected_roots": 24,
+    "actual_roots": 24,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3024,
+    "N_nonzero": true
+  },
+  {
+    "w": 25,
+    "expected_roots": 25,
+    "actual_roots": 25,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 2025,
+    "N_nonzero": true
+  },
+  {
+    "w": 26,
+    "expected_roots": 26,
+    "actual_roots": 26,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 464,
+    "N_nonzero": true
+  },
+  {
+    "w": 27,
+    "expected_roots": 27,
+    "actual_roots": 27,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3399,
+    "N_nonzero": true
+  },
+  {
+    "w": 28,
+    "expected_roots": 28,
+    "actual_roots": 28,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 1483,
+    "N_nonzero": true
+  },
+  {
+    "w": 29,
+    "expected_roots": 29,
+    "actual_roots": 29,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3952,
+    "N_nonzero": true
+  },
+  {
+    "w": 30,
+    "expected_roots": 30,
+    "actual_roots": 30,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 1920,
+    "N_nonzero": true
+  },
+  {
+    "w": 31,
+    "expected_roots": 31,
+    "actual_roots": 31,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3120,
+    "N_nonzero": true
+  },
+  {
+    "w": 32,
+    "expected_roots": 32,
+    "actual_roots": 32,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3085,
+    "N_nonzero": true
+  },
+  {
+    "w": 33,
+    "expected_roots": 33,
+    "actual_roots": 33,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 3072,
+    "N_nonzero": true
+  },
+  {
+    "w": 34,
+    "expected_roots": 34,
+    "actual_roots": 34,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 1525,
+    "N_nonzero": true
+  },
+  {
+    "w": 35,
+    "expected_roots": 35,
+    "actual_roots": 35,
+    "miss": 0,
+    "extra": 0,
+    "D_nonzero": true,
+    "D_lead": 1026,
+    "N_nonzero": true
+  }
+]
