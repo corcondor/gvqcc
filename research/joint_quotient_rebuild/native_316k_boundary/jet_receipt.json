@@ -1,0 +1,102 @@
+{
+  "parent": "2c8ea3ad0cbf316b6392fb7ffd2fb04d3059633d8d66281228abe13b496c4e60",
+  "original_ops": 62086097,
+  "original_Q": 900,
+  "original_static_CCX": 311868,
+  "original_static_CCZ": 6716,
+  "model": {
+    "jet_inverse_roundtrip": 4096,
+    "first_16_head_oracle_matches": 128,
+    "zero_fiber_checks": 69632
+  },
+  "native_prefix": [
+    {
+      "cut": 22609000,
+      "maps": 446,
+      "static_paid": 23437,
+      "seeds": [
+        17,
+        431
+      ],
+      "lanes": 64,
+      "bad": [
+        8,
+        43
+      ],
+      "mean_paid": [
+        23435.515625,
+        23435.421875
+      ]
+    },
+    {
+      "cut": 25378500,
+      "maps": 384,
+      "static_paid": 40252,
+      "seeds": [
+        17,
+        431
+      ],
+      "lanes": 64,
+      "bad": [
+        6,
+        8,
+        14,
+        41,
+        43,
+        49
+      ],
+      "mean_paid": [
+        40250.078125,
+        40249.78125
+      ]
+    }
+  ],
+  "first_observed_cut": 22605434,
+  "head_failures": [
+    {
+      "weight": 6,
+      "head": 10
+    },
+    {
+      "weight": 8,
+      "head": 10
+    },
+    {
+      "weight": 14,
+      "head": 16
+    }
+  ],
+  "historical_kernels": {
+    "safe": {
+      "forward_paid": 290,
+      "roundtrip_paid": 686,
+      "Q": 97,
+      "roundtrip_ops": 50324
+    },
+    "pro": {
+      "forward_paid": 269,
+      "roundtrip_paid": 658,
+      "Q": 91,
+      "roundtrip_ops": 53894
+    },
+    "kept_norm": {
+      "forward_paid": 269,
+      "roundtrip_static": 893,
+      "roundtrip_mean": [
+        644.94140625,
+        644.95703125
+      ],
+      "Q": 97,
+      "roundtrip_ops": 63945
+    },
+    "shots_per_seed": 1024,
+    "seeds": [
+      17,
+      431
+    ],
+    "value_errors": 0,
+    "dirty_ancillas": 0,
+    "roundtrip_phase_errors": 0
+  },
+  "native_full_repaired": false
+}
