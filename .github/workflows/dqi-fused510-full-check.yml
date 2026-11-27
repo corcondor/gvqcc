@@ -1,0 +1,96 @@
+name: DQI fused510 full validation
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/dqi-fused510-full-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install kickmix==1.0.0 numpy==2.2.6
+      - name: Pinned donor
+        run: |
+          set -euo pipefail
+          git init upstream
+          git -C upstream remote add origin https://github.com/maxoubvd/google-quantum-ai.git
+          git -C upstream sparse-checkout init --cone
+          git -C upstream sparse-checkout set third_party/thembones-milestone-generators-v2/dqi google-verifiable-quantum-circuit-compilation/verifiers/dqi
+          git -C upstream fetch --depth=1 --filter=blob:none origin a9effc375527bf0b6962c178530d353eb70a3fcb
+          git -C upstream checkout --detach FETCH_HEAD
+          test "$(git -C upstream rev-parse HEAD)" = a9effc375527bf0b6962c178530d353eb70a3fcb
+      - name: Build and compare real converters and full candidate
+        run: |
+          set -euo pipefail
+          mkdir -p results
+          python -u research/dqi_cf_fusion_20261127/public_converter.py upstream ref results/ref 2>&1 | tee results/ref.log
+          python -u research/dqi_cf_fusion_20261127/public_converter.py upstream fused510 results/fused510 --full 2>&1 | tee results/fused510.log
+          python - <<'PY'
+          import pathlib,json,numpy as np
+          p=pathlib.Path('results')
+          fs=sorted((p/'ref').glob('*.npz'))
+          assert len(fs)==8
+          total=0
+          for f in fs:
+              x=np.load(f); y=np.load(p/'fused510'/f.name)
+              assert np.array_equal(x['A'],y['A']) and np.array_equal(x['B'],y['B']), f
+              total+=len(x['A'])
+          assert total==256
+          r=json.loads((p/'fused510/receipt.json').read_text())
+          assert sum(v['clean'] for v in r['runs']['round']['cases'])==256
+          assert all(v['phase_errors']==v['dirty']==0 for v in r['runs']['round']['cases'])
+          assert r['transport42_stats']['transported12']>0 and r['transport42_stats']['fallback']==0
+          assert r['full_public_kit']['Q']==900
+          print('Forward and roundtrip gate passed:', total, r['full_public_kit'])
+          PY
+          cp upstream/google-verifiable-quantum-circuit-compilation/verifiers/dqi/verify_submission_dqi.py results/verify_submission_dqi.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dqi-fused510-native
+          path: |
+            results/fused510/dqi.kmb
+            results/fused510/receipt.json
+            results/verify_submission_dqi.py
+            results/ref/receipt.json
+            results/*.log
+  official:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        salt: ["", "cf-fused510-independent-20261127"]
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install kickmix==1.0.0 numpy==2.2.6
+      - uses: actions/download-artifact@v4
+        with:
+          name: dqi-fused510-native
+          path: results
+      - name: Unmodified official 102400-shot verifier
+        env:
+          SALT: ${{ matrix.salt }}
+        run: |
+          set -euo pipefail
+          python results/verify_submission_dqi.py results/fused510/dqi.kmb --num-shots 102400 --batch-size 256 --max-workers 2 --salt "$SALT" | tee receipt.json
+          python - <<'PY'
+          import json
+          r=json.load(open('receipt.json'))
+          assert r['status']=='PASS' and r['verified_shots']==102400
+          assert r['value_errors']==r['phase_errors']==0, r
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: receipt-${{ strategy.job-index }}
+          path: receipt.json
