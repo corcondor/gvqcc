@@ -3,6 +3,7 @@ All 34 head slots are used, with explicit finite/infinity/terminal records.
 """
 from field_reference import mul,div,prod,trim,add,evalp,divrem,LOG,EXP,NODES
 from checked_decoder import syndromes,decode,decode_eea
+from hankel_decoder import decode_hankel,rational_from_syndrome,syndrome_from_rational
 import random,json
 ORDER=[3169,3257]+[k for k in NODES if k not in [3169,3257]]
 SLOTS=[k for k in ORDER for _ in range(2)]
@@ -83,6 +84,14 @@ def forced_all(seed):
     assert all(es) and physical(xs,es)==(target,d)
     assert all(not rem(target,k) for k in ORDER)
     return xs,es
+def forced_zero_prefix(w,seed):
+    rng=random.Random(seed);xs=rng.sample(range(1,4096),w)
+    d=product([x,1] for x in xs)
+    es=[div(1,mul(x,evalp(exact(d,[x,1]),x))) for x in xs]
+    s=syndromes(dict(zip((LOG[x] for x in xs),es)))
+    assert s[:w-1]==[0]*(w-1) and s[w-1]==1
+    return xs,es
+
 def regression():
     assert len(set(ORDER))==17
     assert all(evalp(g(k),x) for k in ORDER for x in range(4096))
@@ -93,19 +102,33 @@ def regression():
     rng=random.Random(20261127)
     for w in range(36):
         for _ in range(10):cases.append(('stratified',rng.sample(range(1,4096),w),[rng.randrange(1,4096) for _ in range(w)]))
-    stats={};bad_fixed=[];tails={};inf_cases=0;inf_steps=0
+    for w in range(2,36):cases.append(('zero_prefix',*forced_zero_prefix(w,20261127+w)))
+    stats={};bad_fixed=[];tails={};inf_cases=0;inf_steps=0;native_bridge=0;original_bad=0
     for kind,xs,es in cases:
-        n,d=physical(xs,es);p,q,hist=pack(n,d)
-        assert unpack(p,q,hist)==(n,d)
-        assert len(hist)==34 and degree(p)<=0 and degree(q)<=1
         errs=dict(zip((LOG[x] for x in xs),es));s=syndromes(errs)
-        assert decode(s)==decode_eea(s)==errs
+        assert decode(s)==decode_eea(s)==decode_hankel(s)==errs
+        n,d=rational_from_syndrome(s,U)
+        assert (n,d)==physical(xs,es)
+        p,q,hist=pack(n,d)
+        assert unpack(p,q,hist)==(n,d)
+        assert syndrome_from_rational(*unpack(p,q,hist),U)==s
+        native_bridge+=1
+        assert len(hist)==34 and degree(p)<=0 and degree(q)<=1
         old=fixed_zero(n,d)
-        if old[0]>0 or old[1]>1:bad_fixed.append({'kind':kind,'w':len(xs),'tail':old})
+        if old[0]>0 or old[1]>1:
+            bad_fixed.append({'kind':kind,'w':len(xs),'tail':old})
+            original_bad+=kind!='zero_prefix'
         num=sum(t[0]=='INFINITY' for t in hist);inf_cases+=bool(num);inf_steps+=num
         if kind=='forced_all':assert hist[0][0]=='INFINITY'
         stats[kind]=stats.get(kind,0)+1
         key=str((degree(p),degree(q)));tails[key]=tails.get(key,0)+1
-    assert len(bad_fixed)==25
-    return {'classical_cases':len(cases),'breakdown':stats,'adaptive_exact':len(cases),'bm_and_eea_exact':len(cases),'all_tail_degree_valid':len(cases),'tail_distribution':tails,'fixed_scheme_tail_overflow':len(bad_fixed),'infinity_cases':inf_cases,'infinity_steps':inf_steps,'native_repair':False}
+    assert original_bad==25
+    assert native_bridge==len(cases)
+    try:
+        decode_hankel([0]*69+[1])
+    except ValueError:
+        pass
+    else:
+        raise AssertionError('malformed syndrome accepted')
+    return {'classical_cases':len(cases),'breakdown':stats,'adaptive_exact':len(cases),'bm_eea_hankel_exact':len(cases),'syndrome_only_codec_roundtrip':native_bridge,'malformed_syndrome_rejected':True,'all_tail_degree_valid':len(cases),'tail_distribution':tails,'fixed_scheme_tail_overflow':len(bad_fixed),'infinity_cases':inf_cases,'infinity_steps':inf_steps,'native_repair':False}
 if __name__=='__main__':print(json.dumps(regression(),indent=2))
