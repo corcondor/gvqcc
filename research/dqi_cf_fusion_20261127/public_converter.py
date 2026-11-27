@@ -57,14 +57,22 @@ def install(kit, tools, mode):
         P = importlib.import_module('dqi_z2_pdr')
         print('PDR install',P.install(km,types.SimpleNamespace(decode=decode)),flush=True)
         fix = importlib.import_module('dqi_int_pdrfix')
-        if mode == 'fused':
+        if mode in ('fused','fused510'):
             from apply_coefficient_fusion import rewrite
             orig = pathlib.Path(fix.__file__).read_text()
             new = rewrite(orig)
             exec(compile(new,fix.__file__+':fusion','exec'),fix.__dict__)
         if mode in ('fixed','fused'):
             install_route_fix(fix,P)
+        if mode == 'fused510':
+            import cf_route
+            cf_route.P = P
+            fix._route_rest = cf_route._route_rest
         print('PDRFIX install',fix.install(km,types.SimpleNamespace(decode=decode)),flush=True)
+        if mode == 'fused510':
+            from transport42_lean import install_for_pdr
+            stats = install_for_pdr(P)
+            decode.__globals__['_transport42_stats'] = stats
     # Do not use loader_prune unless all dynamic wrapper scopes retain dependencies.
     # Its pruning may remove the external references needed in these experiments.
     return decode
@@ -133,12 +141,15 @@ def run(kit,tools,mode,out,full=False):
             print(mode,direction,result[-1],flush=True)
         report['runs'][direction]={'Q':circ.num_qubits,'peak':peak,'ops':len(circ),
              'static_paid':circ.operation_statistics().num_toffoli_like,'cases':result}
-        if direction=='round' and mode in ('fixed','fused'):
+        if direction=='round' and mode in ('fixed','fused','fused510'):
             path=out/'converter_round.kmb';circ.to_file(str(path),format='kmb')
             report['runs'][direction]['sha256']=filehash(path)
         (out/'receipt.json').write_text(json.dumps(report,indent=2)+'\n')
         del circ,Areg,Breg
         gc.collect()
+    if mode == 'fused510':
+        report['transport42_stats'] = decode.__globals__['_transport42_stats']
+        (out/'receipt.json').write_text(json.dumps(report,indent=2)+'\n')
     if full:
         # NOT the private 344k chain; reconstruct the public kit full oracle.
         b=km.CircuitBuilder()
@@ -161,7 +172,7 @@ def run(kit,tools,mode,out,full=False):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('upstream',type=pathlib.Path)
-    p.add_argument('mode',choices=['ref','old','fixed','fused'])
+    p.add_argument('mode',choices=['ref','old','fixed','fused','fused510'])
     p.add_argument('out',type=pathlib.Path)
     p.add_argument('--full',action='store_true')
     a=p.parse_args()
