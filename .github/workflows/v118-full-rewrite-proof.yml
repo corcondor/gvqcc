@@ -20,3 +20,6 @@ jobs:
           ~/.elan/bin/lean -DwarningAsError=true research/v118_full_rewrite/FullRewrite.lean | tee proof.log
           test "$(grep -c 'GVQCC.FullRewrite.*axiom' proof.log)" -eq 18
           ! grep -E 'sorryAx|Lean.ofReduceBool' proof.log
+          ~/.elan/bin/lean -DwarningAsError=true research/v118_full_rewrite/LiveSpan.lean | tee span.log
+          test "$(grep -c 'GVQCC.LiveSpan.*axiom' span.log)" -eq 7
+          ! grep -E 'sorryAx|Lean.ofReduceBool' span.log
