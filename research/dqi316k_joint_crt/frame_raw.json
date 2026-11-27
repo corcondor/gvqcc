@@ -1,0 +1,113 @@
+{
+  "scope": "full 316K source rebuild, exact D16 shared affine-frame replacement",
+  "Q": 900,
+  "ops": 69694650,
+  "static_paid": 318972,
+  "sha256": "f62753f8a936e3fbbd9ba8d790abaea6aed55973f471c7f67a10cf14410b22ef",
+  "sites": [
+    {
+      "site": "field_1_wiring_84.json",
+      "old_ops": 30226,
+      "new_ops": 4887,
+      "paid": 84,
+      "inputs": 36,
+      "outputs": 318,
+      "output_rank": null,
+      "central": false,
+      "greedy": true,
+      "seed": 1,
+      "exact_anf": true
+    },
+    {
+      "site": "field_1_wiring_70.json",
+      "old_ops": 6286,
+      "new_ops": 2075,
+      "paid": 70,
+      "inputs": 36,
+      "outputs": 24,
+      "output_rank": null,
+      "central": false,
+      "greedy": false,
+      "seed": 0,
+      "exact_anf": true
+    },
+    {
+      "site": "field_2_wiring_84.json",
+      "old_ops": 36674,
+      "new_ops": 6623,
+      "paid": 84,
+      "inputs": 36,
+      "outputs": 351,
+      "output_rank": null,
+      "central": false,
+      "greedy": true,
+      "seed": 1,
+      "exact_anf": true
+    },
+    {
+      "site": "field_2_wiring_70.json",
+      "old_ops": 6286,
+      "new_ops": 2075,
+      "paid": 70,
+      "inputs": 36,
+      "outputs": 24,
+      "output_rank": null,
+      "central": false,
+      "greedy": false,
+      "seed": 0,
+      "exact_anf": true
+    },
+    {
+      "site": "field_3_wiring_84.json",
+      "old_ops": 10198,
+      "new_ops": 2868,
+      "paid": 84,
+      "inputs": 36,
+      "outputs": 48,
+      "output_rank": null,
+      "central": false,
+      "greedy": true,
+      "seed": 1,
+      "exact_anf": true
+    },
+    {
+      "site": "field_3_wiring_70.json",
+      "old_ops": 6286,
+      "new_ops": 2075,
+      "paid": 70,
+      "inputs": 36,
+      "outputs": 24,
+      "output_rank": null,
+      "central": false,
+      "greedy": false,
+      "seed": 0,
+      "exact_anf": true
+    },
+    {
+      "site": "field_4_wiring_84.json",
+      "old_ops": 10834,
+      "new_ops": 2860,
+      "paid": 84,
+      "inputs": 36,
+      "outputs": 57,
+      "output_rank": null,
+      "central": false,
+      "greedy": true,
+      "seed": 2,
+      "exact_anf": true
+    },
+    {
+      "site": "field_4_wiring_70.json",
+      "old_ops": 6286,
+      "new_ops": 2075,
+      "paid": 70,
+      "inputs": 36,
+      "outputs": 24,
+      "output_rank": null,
+      "central": false,
+      "greedy": false,
+      "seed": 0,
+      "exact_anf": true
+    }
+  ]
+}

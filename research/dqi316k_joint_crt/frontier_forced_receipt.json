@@ -1,0 +1,37 @@
+{
+  "forced": true,
+  "shots": 1024,
+  "sha256": [
+    "1b738200420995367bed19bf6b8a2bba198a9f17f92ce2fae1d3edaaf561258f",
+    "8b9d09f87692f59baaeb399d96650db9389835f23be5c2ab93be4d86259bc6ab"
+  ],
+  "Q": 900,
+  "old": {
+    "value": 488,
+    "raw_phase": 257,
+    "ancilla": 0,
+    "mask": 0,
+    "union": 499,
+    "T": 316121.6220703125,
+    "eps": 0.6847811628527565,
+    "R": null,
+    "cost": null
+  },
+  "new": {
+    "value": 488,
+    "raw_phase": 257,
+    "ancilla": 0,
+    "mask": 0,
+    "union": 499,
+    "T": 316121.6220703125,
+    "eps": 0.6847811628527565,
+    "R": null,
+    "cost": null
+  },
+  "paired_bit_diffs": [
+    0,
+    0,
+    0,
+    0
+  ]
+}
