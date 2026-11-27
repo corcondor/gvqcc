@@ -1,0 +1,30 @@
+name: Family C V122 shared recovery Lean audit
+on:
+  pull_request:
+    paths:
+      - 'research/family-c-v122/**'
+      - '.github/workflows/family-c-v122-lean.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check proofs and axioms
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/family-c-v122/Recovery.lean | tee v122-audit.log
+          ! grep -E 'sorryAx|Lean.ofReduceBool' v122-audit.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: family-c-v122-audit
+          path: v122-audit.log
+          if-no-files-found: warn
