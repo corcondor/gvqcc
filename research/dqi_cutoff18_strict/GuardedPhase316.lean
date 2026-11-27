@@ -68,7 +68,7 @@ theorem nested_gated_inverse (z c n d m : F)
       (if active then z⁻¹ else 0) := by
   cases active
   · simp
-  · simp only [Bool.true_eq, if_true]
+  · simp only [ite_true]
     rw [inverse_from_norm n d m h2 hn,inverse_from_norm z c n h1 hz]
 
 /-- Rolling Chien evaluation preserves each coefficient contribution. -/
