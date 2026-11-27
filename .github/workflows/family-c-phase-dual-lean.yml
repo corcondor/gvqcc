@@ -1,0 +1,45 @@
+name: Family-C exact phase-dual pruning Lean proof
+on:
+  pull_request:
+    paths:
+      - 'research/family-c-dual-pruning-20261127/**'
+      - '.github/workflows/family-c-phase-dual-lean.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Verify Farkas and column-pruning lemmas in pinned mathlib
+        run: |
+          set -euo pipefail
+          cd research/family-c-dual-pruning-20261127
+          cat > lakefile.toml <<'EOF'
+          name = "family_c_phase_dual"
+          version = "0.1.0"
+          defaultTargets = ["DualPruning"]
+          [[require]]
+          name = "mathlib"
+          git = "https://github.com/leanprover-community/mathlib4.git"
+          rev = "v4.35.0"
+          [[lean_lib]]
+          name = "DualPruning"
+          EOF
+          echo 'leanprover/lean4:v4.35.0' > lean-toolchain
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true DualPruning.lean | tee dual-axioms.log
+          ! grep -E 'sorryAx|Lean.ofReduceBool|Lean.trustCompiler' dual-axioms.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: family-c-phase-dual-axioms
+          path: research/family-c-dual-pruning-20261127/dual-axioms.log
+          if-no-files-found: warn
