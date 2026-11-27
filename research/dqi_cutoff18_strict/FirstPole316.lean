@@ -8,8 +8,12 @@ theorem selected_nonzero {F : Type*} [Field F] [DecidableEq F]
     (s p q : F) (hpq : p ≠ q) :
     s - (if s = p then q else p) ≠ 0 := by
   by_cases h : s = p
-  · simp [h, hpq]
-  · simp [h]
+  · have hs : (if s = p then q else p) = q := by simp [h]
+    rw [hs, h]
+    exact sub_ne_zero.mpr hpq
+  · have hs : (if s = p then q else p) = p := by simp [h]
+    rw [hs]
+    exact sub_ne_zero.mpr h
 
 theorem add_eq_sub_char_two {F : Type*} [Field F] [CharP F 2]
     (a b : F) : a + b = a - b := by
