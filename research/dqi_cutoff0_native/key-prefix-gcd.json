@@ -1,0 +1,254 @@
+[
+  {
+    "w": 0,
+    "degree_D": 35,
+    "degree_N": -1,
+    "degree_gcd": 35,
+    "expected_padding": 35
+  },
+  {
+    "w": 1,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 34,
+    "expected_padding": 34
+  },
+  {
+    "w": 2,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 33,
+    "expected_padding": 33
+  },
+  {
+    "w": 3,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 32,
+    "expected_padding": 32
+  },
+  {
+    "w": 4,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 31,
+    "expected_padding": 31
+  },
+  {
+    "w": 5,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 30,
+    "expected_padding": 30
+  },
+  {
+    "w": 6,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 29,
+    "expected_padding": 29
+  },
+  {
+    "w": 7,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 28,
+    "expected_padding": 28
+  },
+  {
+    "w": 8,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 27,
+    "expected_padding": 27
+  },
+  {
+    "w": 9,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 26,
+    "expected_padding": 26
+  },
+  {
+    "w": 10,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 25,
+    "expected_padding": 25
+  },
+  {
+    "w": 11,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 24,
+    "expected_padding": 24
+  },
+  {
+    "w": 12,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 23,
+    "expected_padding": 23
+  },
+  {
+    "w": 13,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 22,
+    "expected_padding": 22
+  },
+  {
+    "w": 14,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 21,
+    "expected_padding": 21
+  },
+  {
+    "w": 15,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 20,
+    "expected_padding": 20
+  },
+  {
+    "w": 16,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 19,
+    "expected_padding": 19
+  },
+  {
+    "w": 17,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 18,
+    "expected_padding": 18
+  },
+  {
+    "w": 18,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 17,
+    "expected_padding": 17
+  },
+  {
+    "w": 19,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 16,
+    "expected_padding": 16
+  },
+  {
+    "w": 20,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 15,
+    "expected_padding": 15
+  },
+  {
+    "w": 21,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 14,
+    "expected_padding": 14
+  },
+  {
+    "w": 22,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 13,
+    "expected_padding": 13
+  },
+  {
+    "w": 23,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 12,
+    "expected_padding": 12
+  },
+  {
+    "w": 24,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 11,
+    "expected_padding": 11
+  },
+  {
+    "w": 25,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 10,
+    "expected_padding": 10
+  },
+  {
+    "w": 26,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 9,
+    "expected_padding": 9
+  },
+  {
+    "w": 27,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 8,
+    "expected_padding": 8
+  },
+  {
+    "w": 28,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 7,
+    "expected_padding": 7
+  },
+  {
+    "w": 29,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 6,
+    "expected_padding": 6
+  },
+  {
+    "w": 30,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 5,
+    "expected_padding": 5
+  },
+  {
+    "w": 31,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 4,
+    "expected_padding": 4
+  },
+  {
+    "w": 32,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 3,
+    "expected_padding": 3
+  },
+  {
+    "w": 33,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 2,
+    "expected_padding": 2
+  },
+  {
+    "w": 34,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 1,
+    "expected_padding": 1
+  },
+  {
+    "w": 35,
+    "degree_D": 35,
+    "degree_N": 34,
+    "degree_gcd": 0,
+    "expected_padding": 0
+  }
+]
