@@ -1,0 +1,67 @@
+{
+  "scope": "316K lineage direct whole KMB; exact dual-mask subspace repair only; NOT SUBMISSION",
+  "session": "sbx_yj7MMvoJiGX7VORsw1YX4BlfoFCk",
+  "parent": {
+    "sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+    "Q": 900,
+    "ops": 69782188,
+    "static_paid": 318972,
+    "panels": {
+      "zero": [
+        144,
+        70,
+        271857.44444444444
+      ],
+      "dual": [
+        144,
+        70,
+        271857.44444444444
+      ],
+      "dense": [
+        144,
+        70,
+        316064.7638888889
+      ],
+      "distribution": [
+        2048,
+        0,
+        316126.84765625
+      ]
+    }
+  },
+  "candidate": {
+    "sha256": "b8aa76ba449042184fc2e9952c73cdf1e38abb118bf6799af6e8ba8b2a9ec2f4",
+    "Q": 900,
+    "ops": 69619210,
+    "static_paid": 318952,
+    "panels": {
+      "zero": [
+        144,
+        0,
+        0
+      ],
+      "dual": [
+        144,
+        0,
+        0
+      ],
+      "dense": [
+        144,
+        70,
+        316064.7638888889
+      ],
+      "distribution": [
+        2048,
+        0,
+        316126.84765625
+      ]
+    }
+  },
+  "panel_columns": [
+    "shots",
+    "union_errors",
+    "mean_paid"
+  ],
+  "ordinary_score_improved": false,
+  "official": false
+}
