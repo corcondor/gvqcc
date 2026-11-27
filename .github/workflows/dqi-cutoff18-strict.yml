@@ -1,4 +1,4 @@
-name: DQI cutoff18 strict repair algebra
+name: DQI 316k affine padding strict repair algebra
 on:
   pull_request:
     paths:
@@ -29,7 +29,9 @@ jobs:
           test "$(grep -c 'GVQCC.CutoffRepair.*axiom' proof.log)" -eq 8
           lake env lean -DwarningAsError=true RollingCutoff.lean | tee rolling.log
           test "$(grep -c 'GVQCC.RollingCutoff.*axiom' rolling.log)" -eq 6
-          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log
+          lake env lean -DwarningAsError=true AffinePadding.lean | tee padding.log
+          test "$(grep -c 'GVQCC.Padding.*axiom' padding.log)" -eq 8
+          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -37,3 +39,4 @@ jobs:
           path: |
             research/dqi_cutoff18_strict/proof.log
             research/dqi_cutoff18_strict/rolling.log
+            research/dqi_cutoff18_strict/padding.log
