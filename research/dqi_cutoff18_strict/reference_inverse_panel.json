@@ -1,0 +1,31 @@
+{
+  "scope": "one fixed native circuit; no input-dependent external chart choice",
+  "official_verifier_run": false,
+  "whole_domain_proof": false,
+  "submitted": false,
+  "files_sha256": {
+    "circuit": "3b5948dd59ac064f56e92ae6143bd4dccf4aa17a912dc2f76862885e2600217f",
+    "cases": "ea5e22c1cc60dbe6fa5542b565818b787f4f63a8c29f1a9b418d79e9de6398fb",
+    "verifier": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+  },
+  "panel": "high-inverse",
+  "cases": 45,
+  "seeds": [
+    12680,
+    12681
+  ],
+  "qubits": 898,
+  "operations": 50198040,
+  "static_paid": 433351,
+  "shots": 90,
+  "value_errors": 0,
+  "phase_errors": 0,
+  "raw_phase_mismatches": 0,
+  "dirty_errors": 0,
+  "mask_restore_errors": 0,
+  "paid_sum": 36987459,
+  "failures": [],
+  "mean_paid": 410971.76666666666,
+  "elapsed_seconds": 3.4255627410000216,
+  "pass": true
+}

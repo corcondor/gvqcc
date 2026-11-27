@@ -1,0 +1,664 @@
+{
+  "scope": "one fixed native circuit; no input-dependent external chart choice",
+  "official_verifier_run": false,
+  "whole_domain_proof": false,
+  "submitted": false,
+  "files_sha256": {
+    "circuit": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+    "cases": "ea5e22c1cc60dbe6fa5542b565818b787f4f63a8c29f1a9b418d79e9de6398fb",
+    "verifier": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+    "prefix": "df0b7f15e394c7d955eea7a05f95ff7fa8004ead38c6171c503bd307552f3475",
+    "suffix": "1b1d901921e72d7db5eba59d03edcafc68e6ebe54248dd9521cacca7cea755c3"
+  },
+  "panel": "high-inverse",
+  "cases": 45,
+  "seeds": [
+    12680,
+    12681
+  ],
+  "qubits": 900,
+  "operations": 69987542,
+  "static_paid": 318972,
+  "shots": 90,
+  "value_errors": 90,
+  "phase_errors": 0,
+  "raw_phase_mismatches": 43,
+  "dirty_errors": 0,
+  "mask_restore_errors": 0,
+  "paid_sum": 28454916,
+  "failures": [
+    {
+      "case_id": 577,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 578,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 579,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 580,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 581,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 582,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 583,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 584,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 585,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 586,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 587,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 588,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 589,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 590,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 591,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 592,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 593,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 594,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 595,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 596,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 597,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 598,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 599,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 600,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 601,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 602,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 603,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 604,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 605,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 606,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 607,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 608,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 609,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 610,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 611,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 612,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 613,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 614,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 615,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 616,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 617,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 618,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 619,
+      "seed": 12680,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 620,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 621,
+      "seed": 12680,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 577,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 578,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 579,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 580,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 581,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 582,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 583,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 584,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 585,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 586,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 587,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 588,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 589,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 590,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 591,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 592,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 593,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 594,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 595,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 596,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 597,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 598,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 599,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 600,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 601,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 602,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 603,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 604,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 605,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 606,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 607,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 608,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 609,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 610,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 611,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 612,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 613,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 614,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 615,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 616,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 617,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 618,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 619,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    },
+    {
+      "case_id": 620,
+      "seed": 12681,
+      "value": true,
+      "phase": true,
+      "mask": false
+    },
+    {
+      "case_id": 621,
+      "seed": 12681,
+      "value": true,
+      "phase": false,
+      "mask": false
+    }
+  ],
+  "mean_paid": 316165.73333333334,
+  "elapsed_seconds": 9.857128582000087,
+  "pass": false
+}

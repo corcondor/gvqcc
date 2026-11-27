@@ -1,0 +1,57 @@
+{
+  "classical": {
+    "legal_cases": 737,
+    "root_magnitude_checks": 12662,
+    "additional_position_checks": 2948,
+    "supplied_mask_phase_checks": 667,
+    "errors": 0,
+    "seconds": 23.55470292000018,
+    "scope": "70-word classical continuants vs independent Hankel decoder; not native oracle"
+  },
+  "native": [
+    {
+      "degree": 1,
+      "native_shots": 256,
+      "value_dirty_phase_errors": [
+        0,
+        0,
+        0
+      ],
+      "qubits": 97,
+      "ops": 1760,
+      "paid": 198,
+      "sha256": "f125b7b625097f5c9bb1111ab0c94aac8b25ffc54771b9df4d3a3839d4833aa0",
+      "scope": "one controlled quotient transition on arbitrary states; not DQI oracle"
+    },
+    {
+      "degree": 7,
+      "native_shots": 256,
+      "value_dirty_phase_errors": [
+        0,
+        0,
+        0
+      ],
+      "qubits": 169,
+      "ops": 2944,
+      "paid": 198,
+      "sha256": "7af173936d296d66a77c56f274da32584465d5328d31bbb961035c4d8524112d",
+      "scope": "one controlled quotient transition on arbitrary states; not DQI oracle"
+    },
+    {
+      "degree": 35,
+      "native_shots": 256,
+      "value_dirty_phase_errors": [
+        0,
+        0,
+        0
+      ],
+      "qubits": 505,
+      "ops": 9006,
+      "paid": 198,
+      "sha256": "516bfdc9aa20e99829629718cab758c4b376e61293ab18e05892f1554614052e",
+      "scope": "one controlled quotient transition on arbitrary states; not DQI oracle"
+    }
+  ],
+  "submission_performed": false,
+  "full_native_oracle": false
+}
