@@ -11,6 +11,7 @@ def emit_controlled(b,x,s,t,F,dirty,helper):
     x,s,t=map(list,(x,s,t));data=x+s+t+[F,dirty,helper]
     assert len(x)==len(s)==len(t)==12 and len(set(map(str,data)))==39
     entry=b.num_allocated_qubits;out=list(b.alloc_qubits(11));m=list(b.alloc_bits(11));parity=b.alloc_bits(1)[0]
+    b.bit_store(parity,False)
     w=x+s+t+out+[dirty];ref=[0]*48;ref[12]=ref[24]=1
     scalar=lambda i:12<=i<36
     def split(a,c):
