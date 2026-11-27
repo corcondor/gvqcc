@@ -118,6 +118,35 @@ theorem carry_phase_repay (a b m p : Bool) :
     Bool.xor (Bool.xor p (m && a && b)) (m && a && b) = p := by
   cases a <;> cases b <;> cases m <;> cases p <;> decide
 
+
+/-- A common scaling of all locators gives a diagonal syndrome map. -/
+theorem rotation_moment (s : Finset F) (a : F → F) (c : F) (k : ℕ) :
+    (∑ x ∈ s, a x * (c*x)^k) =
+      c^k * (∑ x ∈ s, a x * x^k) := by
+  rw [Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro x hx
+  rw [mul_pow]
+  ring
+
+/-- A fixed bijective chart change cannot remove the entire exceptional set. -/
+theorem fixed_chart_preserves_totality {A : Type*} (T : A ≃ A) (good : A → Prop) :
+    (∀ x, good (T x)) ↔ (∀ x, good x) := by
+  constructor
+  · intro h x
+    obtain ⟨y,hy⟩ := T.surjective x
+    rw [←hy]
+    exact h y
+  · intro h x
+    exact h (T x)
+
+/-- Difference updates between two linear frames in characteristic two. -/
+theorem transport_shear (u v t x : F) (h : (2:F)=0) :
+    (x+u*t)+(u+v)*t=x+v*t := by
+  calc
+    (x+u*t)+(u+v)*t=x+v*t+2*u*t := by ring
+    _=x+v*t := by rw [h,zero_mul,zero_mul,add_zero]
+
 end GVQCC.Padding
 #print axioms GVQCC.Padding.low_degree_obstruction
 #print axioms GVQCC.Padding.moments52_injective
@@ -127,3 +156,7 @@ end GVQCC.Padding
 #print axioms GVQCC.Padding.affine_padding_phase
 #print axioms GVQCC.Padding.shear_involution
 #print axioms GVQCC.Padding.carry_phase_repay
+
+#print axioms GVQCC.Padding.rotation_moment
+#print axioms GVQCC.Padding.fixed_chart_preserves_totality
+#print axioms GVQCC.Padding.transport_shear
