@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'research/dqi316k_joint_crt/ScopeConst.lean'
+      - 'research/dqi316k_joint_crt/NormalizedScan.lean'
       - '.github/workflows/dqi316k-scope-constants.yml'
   workflow_dispatch:
 permissions:
@@ -21,4 +22,5 @@ jobs:
         run: |
           set -o pipefail
           lean -DwarningAsError=true research/dqi316k_joint_crt/ScopeConst.lean | tee scope-axioms.txt
+          lean -DwarningAsError=true research/dqi316k_joint_crt/NormalizedScan.lean | tee -a scope-axioms.txt
           ! grep -E 'sorryAx|ofReduceBool|native_decide' scope-axioms.txt
