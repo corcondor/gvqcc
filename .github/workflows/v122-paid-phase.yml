@@ -1,0 +1,30 @@
+name: V122 898Q paid phase proof
+on:
+  pull_request:
+    paths:
+      - 'research/v122_898q/**'
+      - '.github/workflows/v122-paid-phase.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Kernel and axiom audit
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/v122_898q/PaidPhase.lean | tee v122-axioms.txt
+          test "$(grep -c 'GVQCC.V122.*axiom' v122-axioms.txt)" -eq 8
+          ! grep -E 'sorryAx|ofReduceBool' v122-axioms.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v122-axioms
+          path: v122-axioms.txt
