@@ -1,6 +1,7 @@
 """Paired full native DQI zero/one-hot mask probe.
 Usage: PYTHONPATH=<KickMix 1.0.0>:<official verifier dir> python phase_probe.py file.kmb receipt.json.
 Same syndrome and seed. Matching seeds alone do not certify identical internal HMR trajectories.
+Check absolute phases independently; paired XOR is diagnostic only. Exit 1 on any mismatch.
 """
 import sys, json, hashlib, pathlib
 import numpy as np
@@ -26,12 +27,18 @@ def run(bits):
     s.use_same_registers_as(c);s.write_across_shots(q,A);s.write_across_shots(b,bits);s.do(c)
     return (s.read_across_shots(q),s.read_across_shots(b),s.read_across_shots(anc),np.asarray(s.read_phase_flipped_across_shots(),dtype=bool),s.operation_statistics().num_toffoli_like)
 a0,m0,d0,p0,t0=run(Z);a1,m1,d1,p1,t1=run(B)
-actual=p0^p1;ve0=(a0!=A).any(0);ve1=(a1!=A).any(0);me0=(m0!=Z).any(0);me1=(m1!=B).any(0);de0=d0.any(0);de1=d1.any(0)
-res.update(zero_phase_errors=int(p0.sum()),mask_phase_difference_errors=int((actual!=E).sum()),output_value_mask_dependence=int((a0!=a1).any(0).sum()),zero_mask_restore_errors=int(ve0.sum()),onehot_restore_errors=int(ve1.sum()),zero_mask_dirty=int(de0.sum()),onehot_dirty=int(de1.sum()),mask_restore_errors=int(me0.sum()+me1.sum()),paired_paid=[int(t0),int(t1)])
+actual=p0^p1;pe1=(p1!=E);ve0=(a0!=A).any(0);ve1=(a1!=A).any(0);me0=(m0!=Z).any(0);me1=(m1!=B).any(0);de0=d0.any(0);de1=d1.any(0)
+res.update(zero_phase_errors=int(p0.sum()),onehot_raw_phase_errors=int(pe1.sum()),mask_phase_difference_errors=int((actual!=E).sum()),output_value_mask_dependence=int((a0!=a1).any(0).sum()),zero_mask_restore_errors=int(ve0.sum()),onehot_restore_errors=int(ve1.sum()),zero_mask_dirty=int(de0.sum()),onehot_dirty=int(de1.sum()),mask_restore_errors=int(me0.sum()+me1.sum()),paired_paid=[int(t0),int(t1)])
 for w,j in sorted(set((r[0],r[1]) for r in L)):
     ii=[i for i,r in enumerate(L) if r[:2]==(w,j)]
     guess=sum(int(actual[i])<<L[i][2] for i in ii);truth=L[ii[0]][3]
     bits=a0[:,ii[0]].astype('int64').reshape(70,12);syndrome_out=(bits*(1<<np.arange(12))).sum(1).tolist()
     res['cases'].append(dict(weight=w,position=j,expected_magnitude=truth,phase_difference_word=guess,zero_mask_phase_errors=int(p0[ii].sum()),value_errors=int(ve0[ii].sum()),output_syndrome=syndrome_out,initial_syndrome=S[ii[0]].tolist()))
+required=('zero_phase_errors','onehot_raw_phase_errors','mask_phase_difference_errors',
+          'output_value_mask_dependence','zero_mask_restore_errors','onehot_restore_errors',
+          'zero_mask_dirty','onehot_dirty','mask_restore_errors')
+res['pass']=all(res[k]==0 for k in required)
+O.parent.mkdir(parents=True,exist_ok=True)
 O.write_text(json.dumps(res,indent=2)+'\n')
 print({k:v for k,v in res.items() if k!='cases'})
+raise SystemExit(0 if res['pass'] else 1)
