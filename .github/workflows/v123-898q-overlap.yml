@@ -18,7 +18,7 @@ jobs:
           set -euo pipefail
           ~/.elan/bin/lean --version
           ~/.elan/bin/lean -DwarningAsError=true research/v123_898q/Overlap.lean | tee axioms.txt
-          test "$(grep -c 'GVQCC.V123.*axiom' axioms.txt)" -eq 13
+          test "$(grep -c 'GVQCC.V123.*axiom' axioms.txt)" -eq 16
           ! grep -E 'sorryAx|ofReduceBool|trustCompiler' axioms.txt
       - uses: actions/upload-artifact@v4
         if: always()
