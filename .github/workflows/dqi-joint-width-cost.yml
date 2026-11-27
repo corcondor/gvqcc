@@ -1,0 +1,30 @@
+name: DQI joint width-cost local proofs
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_no_copy_reverse/JointWidth.lean'
+      - '.github/workflows/dqi-joint-width-cost.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Strict kernel and axiom audit
+        working-directory: research/dqi_no_copy_reverse
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true JointWidth.lean | tee joint-width-axioms.txt
+          test "$(grep -c 'GVQCC.JointWidth.*axiom' joint-width-axioms.txt)" -eq 5
+          ! grep -Eq 'sorryAx|ofReduceBool' joint-width-axioms.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: joint-width-axioms
+          path: research/dqi_no_copy_reverse/joint-width-axioms.txt
