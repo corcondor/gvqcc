@@ -1,0 +1,48 @@
+name: Packed continued fraction reference and Lean
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_half_bezout/packed_cf.py'
+      - 'research/dqi_cutoff18_strict/PackedContinuedFraction.lean'
+      - '.github/workflows/dqi-packed-cf.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  word-reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: research/dqi316k_half_bezout
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install numpy==2.2.6 kickmix==1.0.0
+      - run: |
+          curl -fsSL https://raw.githubusercontent.com/corcondor/gvqcc/d442f72507472f5d4e1bce77a07f08ab1da2b16f/research/v81/field_scan.py -o field_scan.py
+          python packed_cf.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: packed-cf-word-receipt
+          path: research/dqi316k_half_bezout/packed_cf_receipt.json
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true PackedContinuedFraction.lean | tee packed.log
+          test "$(grep -c 'GVQCC.PackedContinuedFraction.*axiom' packed.log)" -eq 6
+          ! grep -E 'sorryAx|ofReduceBool' packed.log
