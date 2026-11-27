@@ -24,9 +24,10 @@ def delta (k : K) : A k := x k ^ 2 + x k + ia k k
 
 theorem two_map {R S : Type*} [CommRing R] [CommRing S]
     (h : (2 : R) = 0) (f : R →+* S) : (2 : S) = 0 := by
-  have hh : (1 : R) + 1 = 0 := by rw [one_add_one_eq_two, h]
-  have hh' := congrArg (fun t : R => f t) hh
-  simpa only [map_add, map_one, map_zero, one_add_one_eq_two] using hh'
+  calc
+    (2 : S) = 1 + 1 := (one_add_one_eq_two).symm
+    _ = f ((1 : R) + 1) := by simp only [map_add, map_one]
+    _ = 0 := by rw [one_add_one_eq_two, h, map_zero]
 
 theorem twice {R : Type*} [CommRing R] (h : (2 : R) = 0) (a : R) :
     a + a = 0 := by
