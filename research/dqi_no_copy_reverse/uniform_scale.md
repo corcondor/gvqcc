@@ -1,0 +1,9 @@
+# Uniform 11-clean-Q scalar multiplication: NOT SUBMISSION
+
+Stacked on PR #218. Fixed GF(2^12) modulus 0x1053, supplied s and its nonzero inverse t. Source tensor: symmetry_dqi_mixed42_20261115_inputs.json at c0a9cb416d656d3e41ee314cec7145eb2c699e54.
+
+No input-dependent chart selection, no inversion synthesis, no new dirty allocation. Fixed pivot (k,e,ell)=(0,665,3105), zero-based k. Let y=v*a+f, a=c*y+g over GF(2), where v and c are scalar and reciprocal linear coordinates. Then y=a+f+(1+v)*(c*f+g). The dirty commutator transports the finite difference of f through the existing 41-product schedule; the last old coordinate used for g can be measured instead of uncomputed and its phase repaid with the inverse row. Cost: 41+5+11+2=59 CCX, eleven clean qubits, one borrowed arbitrary live wire restored, eleven HMR bits. A no-borrow fixed alternative costs 95 CCX.
+
+Independent local verification: all 4095 nonzero scalars, all 4096 data words, both borrowed initial bit values via exact affine-x simulation (33,546,240 tuples); all eleven measurement phase coefficients identically zero. 1536 singleton pivot candidates searched. Native KickMix 1.0.0 local forward and roundtrip tests, seeds 17 and 42, 8190 shots per test, 32,760 per variant, zero errors. Native 59 variant 48Q including 36 data, 11 clean and one borrowed; 2220 instructions including marks. 95 variant 47Q and 2423 instructions. This is not a lower bound, not a measured whole-DQI improvement, and not a proof of the whole circuit. Converter integration requires s*t=1 and an available distinct borrowed live wire (or 95 variant). At the converter width peak 885+11=896, the local construction meets the allocation budget. Ordinary 42-CCX out-of-place multiplication remains cheaper when width permits.
+
+UniformScale.lean contains five local Boolean lemmas only. Compilation and CI must be checked separately. No Kaggle submission or main merge.

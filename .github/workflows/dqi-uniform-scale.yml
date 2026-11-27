@@ -1,0 +1,32 @@
+name: DQI uniform scale proofs
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_no_copy_reverse/UniformScale.lean'
+      - '.github/workflows/dqi-uniform-scale.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Strict kernel and axiom audit
+        working-directory: research/dqi_no_copy_reverse
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true UniformScale.lean | tee uniform-axioms.txt
+          test "$(grep -c 'GVQCC.UniformScale.*axiom' uniform-axioms.txt)" -eq 5
+          ! grep -Eq 'sorryAx|ofReduceBool' uniform-axioms.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: uniform-scale-axioms
+          path: research/dqi_no_copy_reverse/uniform-axioms.txt
