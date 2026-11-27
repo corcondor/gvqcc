@@ -1,0 +1,24 @@
+name: V117 bridge Lean audit
+on:
+  pull_request:
+    paths:
+      - 'research/v117-bridge/**'
+      - '.github/workflows/v117-bridge.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Check and audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          ~/.elan/bin/lean --version
+          ~/.elan/bin/lean -DwarningAsError=true research/v117-bridge/Bridge.lean | tee axioms.txt
+          test "$(grep -c 'GVQCC.V117.*axiom' axioms.txt)" -eq 6
+          ! grep -E 'sorryAx|Lean.ofReduceBool' axioms.txt
