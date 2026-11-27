@@ -61,6 +61,16 @@ theorem hmr_repay (p m x : Bool) :
     (p ^^ (m && x)) ^^ (m && x) = p := by
   cases p <;> cases m <;> cases x <;> decide
 
+/-- The nonzero reciprocal jet comparison can use one bilinear
+    residual instead of another field division. -/
+theorem cross_jet (v t a ap tp : F) (ht : t ≠ 0) :
+    v = (a*tp+ap*t)/t^2 ↔ v*t^2 = a*tp+ap*t := by
+  constructor
+  · intro h
+    exact (div_eq_iff (pow_ne_zero 2 ht)).mp h.symm |>.symm
+  · intro h
+    exact ((div_eq_iff (pow_ne_zero 2 ht)).mpr h.symm).symm
+
 end GVQCC.HermiteProjection
 #print axioms GVQCC.HermiteProjection.quadratic_component
 #print axioms GVQCC.HermiteProjection.single_jet_product
@@ -71,3 +81,5 @@ end GVQCC.HermiteProjection
 #print axioms GVQCC.HermiteProjection.observed_unchanged
 #print axioms GVQCC.HermiteProjection.xor_repair_involution
 #print axioms GVQCC.HermiteProjection.hmr_repay
+
+#print axioms GVQCC.HermiteProjection.cross_jet
