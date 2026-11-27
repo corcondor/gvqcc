@@ -27,9 +27,13 @@ jobs:
           lake exe cache get
           lake env lean -DwarningAsError=true CutoffRepair.lean | tee proof.log
           test "$(grep -c 'GVQCC.CutoffRepair.*axiom' proof.log)" -eq 8
-          ! grep -E 'sorryAx|ofReduceBool' proof.log
+          lake env lean -DwarningAsError=true RollingCutoff.lean | tee rolling.log
+          test "$(grep -c 'GVQCC.RollingCutoff.*axiom' rolling.log)" -eq 6
+          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: cutoff18-axioms
-          path: research/dqi_cutoff18_strict/proof.log
+          path: |
+            research/dqi_cutoff18_strict/proof.log
+            research/dqi_cutoff18_strict/rolling.log
