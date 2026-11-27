@@ -11,7 +11,7 @@ gA=m2||m3||m4||m5 and gB=m3||m4||m5.
 Uniform independent X-measurement bits give 330/32=10.3125 expected
 paid per replaced inverse row versus donor 11. Sixteen rows save 11.
 Two-slot occupancy and the 512 combinations of abstract carry/debt
-values are addressed in SharedGhost.lean; actual CI must be checked.
+values are addressed in SharedGhost.lean; [Lean CI run 46009422859](https://github.com/corcondor/gvqcc/actions/runs/46009422859) succeeded on commit 4cb74e7f16124bd3d247de8001c6d17ae5673259. All eight local theorems passed; seven are axiom-free, expected_numerator depends only on propext. No sorryAx or Lean.ofReduceBool. This is not whole-circuit refinement.
 
 ## Locally executed full isolated-MAIN KMB
 All 3,133,452 arithmetic HO reference inputs:
