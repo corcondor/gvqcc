@@ -74,8 +74,8 @@ def terms99 : List (Nat × Nat) :=
 
 theorem rank42_count : terms42.length = 42 := by decide
 theorem rank99_count : terms99.length = 99 := by decide
-theorem field42_coefficients : basisCheck 12 gf12 terms42 = true := by native_decide
-theorem residue3257_coefficients : basisCheck 24 (gf24 3257) terms99 = true := by native_decide
+theorem field42_coefficients : basisCheck 12 gf12 terms42 = true := by decide
+theorem residue3257_coefficients : basisCheck 24 (gf24 3257) terms99 = true := by decide
 
 #print axioms ccx_difference
 #print axioms paired_cross
