@@ -1,0 +1,33 @@
+name: DQI 316k inverse width 28 local laws
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/InverseWidth28.lean'
+      - '.github/workflows/dqi-inverse-width28.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Strict kernel and axiom audit
+        working-directory: research/dqi_cutoff18_strict
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true InverseWidth28.lean | tee width28-axioms.txt
+          test "$(grep -c 'GVQCC.InverseWidth28.*axiom' width28-axioms.txt)" -eq 8
+          ! grep -Eq 'sorryAx|ofReduceBool' width28-axioms.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: width28-axioms
+          path: research/dqi_cutoff18_strict/width28-axioms.txt
