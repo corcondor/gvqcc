@@ -2,13 +2,13 @@ namespace GVQCC.PolyFrame
 
 inductive Expr where
   | constant (b : Bool)
-  | variable (i : Nat)
+  | coord (i : Nat)
   | add (a b : Expr)
   | mul (a b : Expr)
 
 def eval (rho : Nat → Bool) : Expr → Bool
   | .constant b => b
-  | .variable i => rho i
+  | .coord i => rho i
   | .add a b => Bool.xor (eval rho a) (eval rho b)
   | .mul a b => eval rho a && eval rho b
 
@@ -17,7 +17,7 @@ def setVal (rho : Nat → Bool) (i : Nat) (b : Bool) : Nat → Bool :=
 
 def subst (i : Nat) (r : Expr) : Expr → Expr
   | .constant b => .constant b
-  | .variable j => if j = i then r else .variable j
+  | .coord j => if j = i then r else .coord j
   | .add a b => .add (subst i r a) (subst i r b)
   | .mul a b => .mul (subst i r a) (subst i r b)
 
@@ -25,7 +25,7 @@ theorem eval_subst (rho : Nat → Bool) (i : Nat) (r e : Expr) :
     eval rho (subst i r e) = eval (setVal rho i (eval rho r)) e := by
   induction e with
   | constant b => rfl
-  | variable j => by_cases h : j = i <;> simp [subst, eval, setVal, h]
+  | coord j => by_cases h : j = i <;> simp [subst, eval, setVal, h]
   | add a b ha hb => simp [subst, eval, ha, hb]
   | mul a b ha hb => simp [subst, eval, ha, hb]
 
@@ -41,15 +41,15 @@ expression, not only affine or quadratic expressions. The concrete compiler
 must separately establish the value of delta at the cut. -/
 theorem transport_eval (rho : Nat → Bool) (i : Nat) (delta : Bool) (e : Expr) :
     eval (setVal rho i (Bool.xor (rho i) delta))
-      (subst i (.add (.variable i) (.constant delta)) e) = eval rho e := by
+      (subst i (.add (.coord i) (.constant delta)) e) = eval rho e := by
   rw [eval_subst]
   have h : setVal (setVal rho i (Bool.xor (rho i) delta)) i
       (eval (setVal rho i (Bool.xor (rho i) delta))
-        (.add (.variable i) (.constant delta))) = rho := by
+        (.add (.coord i) (.constant delta))) = rho := by
     funext j
     by_cases hj : j = i
     · subst j
-      simp [setVal, eval, xor_twice]
+      simp [setVal, eval]
     · simp [setVal, hj]
   rw [h]
 
