@@ -72,3 +72,33 @@ def mask_phase(c,mask):
     assert len(logs)==4095
     return sum((mask[logs[x]]&a).bit_count()&1
                for x,a in zip(c.roots,c.magnitudes))&1
+
+def certify_promised_input_rank2_first37(S):
+    """Rank<=2 guard on ORIGINAL input promised <=35-sparse (NOT on corrupt Y).
+
+    Uses 35/36/37 moments for rank 0/1/2 respectively. Mathematical
+    correctness follows from the imported 35+r Vandermonde uniqueness.
+    """
+    if len(S)!=70 or any(not 0<=v<4096 for v in S):
+        raise ValueError("70 GF4096 source words required")
+    if all(v==0 for v in S[:35]): return Certificate((),())
+    if S[0]:
+        x=mul(S[1],inv(S[0]))
+        if x:
+            a=mul(S[0],inv(x))
+            if a and all(S[i+1]==mul(x,S[i]) for i in range(35)):
+                return Certificate((x,),(a,))
+    s0,s1,s2,s3=S[:4]
+    D=mul(s0,s2)^mul(s1,s1)
+    if not D:return None
+    u=mul(mul(s0,s3)^mul(s1,s2),inv(D))
+    v=mul(mul(s1,s3)^mul(s2,s2),inv(D))
+    if not all(S[i+2]==(mul(u,S[i+1])^mul(v,S[i])) for i in range(35)):
+        return None
+    roots=[x for x in range(1,4096) if (mul(x,x)^mul(u,x)^v)==0]
+    if len(roots)!=2:return None
+    x,z=roots
+    A=mul(s1^mul(z,s0),inv(x^z));B=s0^A
+    if not A or not B:return None
+    c=Certificate((x,z),(mul(A,inv(x)),mul(B,inv(z))))
+    return c if c.moments()[:37]==S[:37] else None
