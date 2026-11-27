@@ -23,3 +23,6 @@ jobs:
           ~/.elan/bin/lean -DwarningAsError=true research/v118_full_rewrite/LiveSpan.lean | tee span.log
           test "$(grep -c 'GVQCC.LiveSpan.*axiom' span.log)" -eq 7
           ! grep -E 'sorryAx|Lean.ofReduceBool' span.log
+          ~/.elan/bin/lean -DwarningAsError=true research/v118_full_rewrite/SyndromeCollision.lean | tee collision.log
+          test "$(grep -c 'axiom' collision.log)" -eq 6
+          ! grep -E 'sorryAx|Lean.ofReduceBool' collision.log
