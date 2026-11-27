@@ -7,10 +7,11 @@ This is a first-chart guarantee only, not a proof of all decoder branches. -/
 theorem selected_nonzero {F : Type*} [Field F] [DecidableEq F]
     (s p q : F) (hpq : p ≠ q) :
     s - (if s = p then q else p) ≠ 0 := by
-  by_cases h : s = p
-  · rw [if_pos h, h]
+  split
+  · rename_i h
+    rw [h]
     exact sub_ne_zero.mpr hpq
-  · rw [if_neg h]
+  · rename_i h
     exact sub_ne_zero.mpr h
 
 theorem add_eq_sub_char_two {F : Type*} [Field F] [CharP F 2]
