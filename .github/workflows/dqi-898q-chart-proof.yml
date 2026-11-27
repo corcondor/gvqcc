@@ -1,0 +1,33 @@
+name: DQI 898Q slot33 chart proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_898q_chart_proof/**'
+      - '.github/workflows/dqi-898q-chart-proof.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Kernel and axiom audit
+        working-directory: research/dqi_898q_chart_proof
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true Chart.lean | tee axioms.txt
+          test "$(grep -c 'depends on axioms\|does not depend on any axioms' axioms.txt)" -eq 12
+          if grep -Eq 'sorryAx|ofReduceBool' axioms.txt; then exit 1; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dqi-898q-chart-axioms
+          path: research/dqi_898q_chart_proof/axioms.txt
