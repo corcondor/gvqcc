@@ -1,5 +1,7 @@
 # GVQCC — DQI 回路の解析・計算
 
+> **現在のDQI研究は316k系統のみ。** 900Q以下・平均有料ゲート316,000未満・全回路のエラー0を同時に満たすこと。別系統への切り替えは禁止。詳細は [必須開発方針（AGENTS.md）](AGENTS.md) を参照してください。
+
 [Google Quantum AI — Verifiable Quantum Circuit Compilation](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/) の DQI 課題に向けた、回路解析と有限体演算の検証コードです。
 
 大きい KMB 回路を全展開せずに調べる監査ツール、共有積を式に起こす解析器、有限体演算の検証コードをまとめています。2026-11-14には、実際の公開 `821bf8d157c0` 回路を改良し、公式DQI検証コードの102,400ショット検証まで実施しました。大きい回路ファイルは再現スクリプトで取得・生成します。
