@@ -48,7 +48,7 @@ jobs:
           lake env lean -DwarningAsError=true InvariantPad.lean | tee invariantpad.log
           test "$(grep -c 'GVQCC.InvariantPad.*axiom' invariantpad.log)" -eq 22
           lake env lean -DwarningAsError=true ProjectivePivot316.lean | tee projective.log
-          test "$(grep -c 'GVQCC.ProjectivePivot316.*axiom' projective.log)" -eq 7
+          test "$(grep -c 'GVQCC.ProjectivePivot316.*axiom' projective.log)" -eq 14
           ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log parser.log rootcause.log firstpole.log allchart.log sharedchart.log invariantpad.log projective.log
       - uses: actions/upload-artifact@v4
         if: always()
