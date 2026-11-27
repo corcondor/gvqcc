@@ -1,0 +1,14 @@
+# 896Q joint paid-cost experiment — research, NOT SUBMISSION
+
+Parent #220, comparison #219. Generated the full DQI with hard cap 896, NOREPLAY_NODES=16,15 and the virtual controlled scale. Raw 61,868,138 operations / 444,574 static paid. No-R nodes completed 849→848→847 live. Direct cancellation, retained exact/dirty/offset/affine products, pair sink, peer exact direct, quotient masked-bank transport, controlled-swap phase conjugation, guard commute, early HMR and hop-preserve produced the following **accepted** native KMB.
+
+- SHA-256: 091745a593d6f0968b1a35f0dc10e91cee34169b21e686f5f58b5f7aeaad8577
+- Q=896, ops=50,430,705, static paid=442,395; CCX=403,169, CCZ=21,657, CSWAP=17,569.
+- 4,096 fixed official-distribution inputs: mean paid 419430.7946777344. 256 forced-weight/position-52 and 1,728 matched-syndrome shots additionally passed. Total 6,080 shots: zero observed value, phase, dirty-ancilla errors.
+- #219 width milestone: 421343.3684082031 mean, 444265 static, 404915 CCX, 50,782,387 ops. Joint candidate saves 1912.57373046875 mean paid, 1870 static paid, 1746 CCX, 351682 ops at the same Q.
+- #219 897Q comparison 413543.8308105469 mean: assuming equal repetition factors, Q²T break-even for 896Q is 414467.43483518425 mean paid. Gap 4963.359842550126; Q²T remains 1.1975270975206564% worse.
+- 102400-shot official verifier and separate 8192-shot attempt both exited 137 under 4 GB memory cgroup with OOM-kill increments; no official verifier receipt, no official score or reaction-depth result. Independent checker uses official sampler but is NOT the unmodified verifier.
+- Two-payload masked bank: 10 fixed coordinates plus one streamed quotient representative; 97 paid, 1056 ops, 11 clean extra qubits; 65,536 native local forward/roundtrip shots with zero errors. Exact operand-matched replacement at five full-KMB sites. The count 97 is also achieved by #219, while the joint-frame transport uses fewer operations than the independent 2028-op tensor-parity implementation.
+- Two exact 24-CSWAP conjugation sandwiches reduced 96 paid without new qubits. Five local Boolean identities are supplied in JointWidth.lean; CI is separate from whole-circuit correctness.
+- **Rejected** transplant of #219's 171-paid controlled reciprocal loan into #220-lineage controlled scale: 400 value / 27 phase errors on 4,352 shots. In 256 prefix shots, F=1: 134 with xy=1; F=0: 122, of which 22 had xy≠1. Cannot unconditionally erase and reconstruct inverse coordinate when F=0. No rejected circuit used for the accepted result. This is a context-specific failure, not a claim against #219's own complete circuit.
+- No Kaggle submission, no main merge, no all-domain formal proof. Complete KMB, local tapes, exact splicing scripts, logs and receipts are delivered separately in research ZIP (not committed as a large binary).
