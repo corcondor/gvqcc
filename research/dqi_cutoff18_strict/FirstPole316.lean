@@ -8,10 +8,8 @@ theorem selected_nonzero {F : Type*} [Field F] [DecidableEq F]
     (s p q : F) (hpq : p ≠ q) :
     s - (if s = p then q else p) ≠ 0 := by
   by_cases h : s = p
-  · rw [if_pos h, h]
-    exact sub_ne_zero.mpr hpq
-  · rw [if_neg h]
-    exact sub_ne_zero.mpr h
+  · simp [h, hpq]
+  · simp [h]
 
 theorem add_eq_sub_char_two {F : Type*} [Field F] [CharP F 2]
     (a b : F) : a + b = a - b := by
@@ -34,7 +32,7 @@ theorem pole_contribution {F : Type*} [Field F] (e x z u q : F)
     (hu : u = (x+z)*q) (hx : x+z ≠ 0) :
     e*x*u/(x+z) = e*x*q := by
   rw [hu]
-  field_simp [hx] <;> ring
+  field_simp [hx]
 
 /-- Apply the selected constant translation twice after syndrome restoration. -/
 theorem pad_undo {F : Type*} [Field F] [CharP F 2] (s p : F) :
@@ -54,6 +52,22 @@ This does not by itself establish that the parent decoder works on every chart. 
 theorem support_budget (w v : ℕ) (hw : w ≤ 17) (hv : v ≤ 35) :
     w+18+v ≤ 70 := by omega
 
+/-- For a nonzero norm, cross multiplication gives the exact second-chart
+predicate without computing a field inverse. The extension representation
+and the physical selector still require their own validation. -/
+theorem second_pole_norm_test {F : Type*} [Field F]
+    (n v b u : F) (hn : n ≠ 0) :
+    n*v = b*u^2 ↔ v = (b/n)*u^2 := by
+  have h : n*((b/n)*u^2) = b*u^2 := by
+    calc
+      _ = ((b/n)*n)*u^2 := by ring
+      _ = b*u^2 := by rw [div_mul_cancel₀ _ hn]
+  constructor
+  · intro hv
+    exact mul_left_cancel₀ hn (hv.trans h.symm)
+  · intro hv
+    exact (congrArg (fun x => n*x) hv).trans h
+
 end GVQCC.FirstPole316
 #print axioms GVQCC.FirstPole316.selected_nonzero
 #print axioms GVQCC.FirstPole316.add_eq_sub_char_two
@@ -62,3 +76,4 @@ end GVQCC.FirstPole316
 #print axioms GVQCC.FirstPole316.pad_undo
 #print axioms GVQCC.FirstPole316.phase_select
 #print axioms GVQCC.FirstPole316.support_budget
+#print axioms GVQCC.FirstPole316.second_pole_norm_test
