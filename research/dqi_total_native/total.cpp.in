@@ -1,0 +1,167 @@
+// Total syndrome-input DQI rebuild, no frozen decoder or host chart selector.
+// Generated KMB is correctness-first; static/mean paid must be measured.
+W w;
+constexpr int H=840, FL=875, C=876, T=888;
+const int codes[]={__CODES__};
+using V=vector<int>;using L=vector<G>;
+void cc(int a,int b,int t){assert(a!=b&&a!=t&&b!=t);w.add({49,a,b,t});}
+void xorword(int a,int b,int n=12){assert(a!=b);for(int j=0;j<n;j++)w.cx(a+j,b+j);}
+void sw(int a,int b,int n=12){for(int j=0;j<n;j++)w.sw(a+j,b+j);}
+void cs(int a,int b){if(a==b)return;w.cx(a,b);cc(FL,b,a);w.cx(a,b);}
+void csword(int a,int b){for(int j=0;j<12;j++)cs(a+j,b+j);}
+void mc(V pos,V neg,int target){
+ for(int a:neg)w.x(a);pos.insert(pos.end(),neg.begin(),neg.end());
+ int n=pos.size();assert(set<int>(pos.begin(),pos.end()).size()==pos.size());assert(find(pos.begin(),pos.end(),target)==pos.end());
+ if(!n)w.x(target);else if(n==1)w.cx(pos[0],target);else if(n==2)cc(pos[0],pos[1],target);
+ else{
+  V d;for(int q=0;d.size()<size_t(n-2);q++)if(q!=target&&find(pos.begin(),pos.end(),q)==pos.end())d.push_back(q);
+  auto ladder=[&](bool first){if(first)cc(pos[0],pos[1],d[0]);for(int j=1;j<n-2;j++)cc(d[j-1],pos[j+1],d[j]);cc(d.back(),pos.back(),target);for(int j=n-3;j>=1;j--)cc(d[j-1],pos[j+1],d[j]);if(first)cc(pos[0],pos[1],d[0]);};
+  ladder(true);ladder(false);
+ }
+ for(int a:neg)w.x(a);
+}
+V active(int i){return i?V{H+i-1}:V{};}
+void term(int i){V neg;for(int k=i;k<35;k++)neg.push_back(H+k);mc(active(i),neg,FL);}
+void le(int i,int k){if(k<=0)return;k=min(k,35-i);auto a=active(i);V z;for(int j=0;j<k;j++)z.push_back(H+i+j);mc(a,{},FL);mc(a,z,FL);}
+void ge(int i,int k){auto a=active(i);V z;for(int j=0;j<k-1;j++)z.push_back(H+i+j);mc(a,z,FL);term(i);}
+void exact(int i,int k){auto a=active(i);a.push_back(H+i+k-1);V z;for(int j=0;j<k-1;j++)z.push_back(H+i+j);mc(a,z,FL);}
+void kbit(int i,int b,int offset){for(int k=1;k<=35-i;k++)if(((k+offset)>>b)&1)exact(i,k);}
+void cperm(int p,V order){V a(order.size()),pos(order.size());iota(a.begin(),a.end(),0);iota(pos.begin(),pos.end(),0);
+ for(int j=0;j<int(order.size());j++){int k=pos[order[j]];if(j!=k){csword(p+12*j,p+12*k);int u=a[j];swap(a[j],a[k]);pos[u]=k;pos[order[j]]=j;}}}
+void rot(int i,int p,int n,int offset,int sign){if(n<=1)return;
+ for(int b=0;(1<<b)<=35-i;b++){kbit(i,b,offset);int s=(sign*(1<<b)%n+n)%n;V order(n);for(int j=0;j<n;j++)order[j]=(j+s)%n;cperm(p,order);kbit(i,b,offset);}}
+void mark(int i,bool reverse){
+ int p=24*i,n=35-i;
+ auto first=[&](int j){auto a=active(i);if(j)a.push_back(H+i+j-1);V z;for(int k=0;k<12;k++)z.push_back(p+12*j+k);mc(a,z,H+i+j);};
+ auto diff=[&](int j){auto a=active(i);if(j)a.push_back(H+i+j-1);mc(a,{},H+i+j);};
+ if(!reverse){for(int j=0;j<n;j++)first(j);for(int j=n-1;j>=0;j--)diff(j);}
+ else{for(int j=0;j<n;j++)diff(j);for(int j=n-1;j>=0;j--)first(j);}
+}
+int gm(int a,int b,int n,int mod){int r=0;while(b){if(b&1)r^=a;b>>=1;a<<=1;if(a&(1<<n))a^=mod;}return r;}
+int gp(int a,int e,int n,int mod){int r=1;for(;e;e>>=1,a=gm(a,a,n,mod))if(e&1)r=gm(r,a,n,mod);return r;}
+int fm(int a,int b,int n){return n==12?mul(a,b):gm(a,b,n,n==6?0x43:0xb);}
+int fp(int a,int d,int n){return n==12?power(a,d):gp(a,d,n,n==6?0x43:0xb);}
+V basis12,basis6;int kap6,kap3;
+L elimination(const V& cols){int n=cols.size();V row(n);for(int i=0;i<n;i++)for(int j=0;j<n;j++)if(cols[i]>>j&1)row[j]|=1<<i;
+ L g;for(int i=0;i<n;i++){int r=i;while(r<n&&!(row[r]>>i&1))r++;assert(r<n);if(r!=i){swap(row[r],row[i]);g.push_back({34,r,i});}for(int j=0;j<n;j++)if(j!=i&&(row[j]>>i&1)){row[j]^=row[i];g.push_back({33,i,j});}}
+ for(int i=0;i<n;i++)assert(row[i]==1<<i);return g;}
+void apply(const L& g,int p,bool inverse){if(inverse){for(auto v:g)w.add({v.t,v.a+p,v.b+p});}else for(auto it=g.rbegin();it!=g.rend();it++)w.add({it->t,it->a+p,it->b+p});}
+void frame(int p,const V& cols,bool inverse){apply(elimination(cols),p,inverse);}
+void lx(int a,int t,const V& cols,bool guarded=false){assert(a!=t);for(int i=0;i<int(cols.size());i++)for(int j=0;j<int(cols.size());j++)if(cols[i]>>j&1){if(guarded)cc(FL,a+i,t+j);else w.cx(a+i,t+j);}}
+V frobcols(int n,int e,int k=1){V col(n);for(int i=0;i<n;i++)col[i]=fm(fp(1<<i,e,n),k,n);return col;}
+void smallprod(int a,int b,int t,int n){
+ static const vector<array<int,3>> base={{1,1,7},{2,2,14},{4,4,28},{3,3,2},{5,5,4},{6,6,8}};
+ vector<array<int,3>> terms;
+ if(n==3)terms=base;else{assert(n==6);for(auto [p,q,v]:base){terms.push_back({p,q,v^(v<<3)});terms.push_back({p<<3,q<<3,(v<<3)^(v<<6)});terms.push_back({p^(p<<3),q^(q<<3),v<<3});}}
+ for(auto [p,q,v]:terms){int mod=n==3?0xb:0x43;while(v>=(1<<n)){int d=31-__builtin_clz((unsigned)v);v^=mod<<(d-n);}if(!v)continue;int A=__builtin_ctz((unsigned)p),B=__builtin_ctz((unsigned)q),Z=__builtin_ctz((unsigned)v);
+  for(int j=0;j<n;j++){if(j!=A&&(p>>j&1))w.cx(a+j,a+A);if(j!=B&&(q>>j&1))w.cx(b+j,b+B);if(j!=Z&&(v>>j&1))w.cx(t+Z,t+j);}
+  cc(a+A,b+B,t+Z);
+  for(int j=n-1;j>=0;j--){if(j!=Z&&(v>>j&1))w.cx(t+Z,t+j);if(j!=B&&(q>>j&1))w.cx(b+j,b+B);if(j!=A&&(p>>j&1))w.cx(a+j,a+A);}
+ }
+}
+void init_towers(){
+ int g=0;for(int x=2;x<4096;x++)if((power(x,6)^x^1)==0){g=x;break;}assert(g);V sub(64),bas(6);bas[0]=1;for(int j=1;j<6;j++)bas[j]=mul(bas[j-1],g);
+ for(int j=0;j<64;j++)for(int k=0;k<6;k++)if(j>>k&1)sub[j]^=bas[k];assert(set<int>(sub.begin(),sub.end()).size()==64);
+ int beta=0;for(int x=1;x<4096;x++)if((power(x,64)^x)==1){beta=x;break;}assert(beta);kap6=find(sub.begin(),sub.end(),mul(beta,beta)^beta)-sub.begin();assert(kap6<64);basis12=bas;for(int x:bas)basis12.push_back(mul(beta,x));
+ int b3=0;for(int x=2;x<64;x++)if((gp(x,3,6,0x43)^x^1)==0){b3=x;break;}assert(b3);V b(3);b[0]=1;b[1]=b3;b[2]=gm(b3,b3,6,0x43);V s(8);for(int j=0;j<8;j++)for(int k=0;k<3;k++)if(j>>k&1)s[j]^=b[k];
+ int z=0;for(int x=1;x<64;x++)if((gp(x,8,6,0x43)^x)==1){z=x;break;}assert(z);kap3=find(s.begin(),s.end(),gm(z,z,6,0x43)^z)-s.begin();assert(kap3<8);basis6=b;for(int x:b)basis6.push_back(gm(z,x,6,0x43));
+ // Conditional rank circuit relies on the complete linear skeleton being the identity.
+ uint64_t rows[36];for(int i=0;i<36;i++)rows[i]=uint64_t(1)<<i;int paid=0;for(int c:codes){if(c<4096)rows[(c/64)%64]^=rows[c%64];else paid++;}
+ for(int i=0;i<36;i++)assert(rows[i]==(uint64_t(1)<<i));assert(paid==42);
+}
+void inv3(int q){
+ auto edge=[&](int a,int b){int j=__builtin_ctz((unsigned)(a^b));V p,z;for(int k=0;k<3;k++)if(k!=j)((a>>k&1)?p:z).push_back(q+k);mc(p,z,q+j);};
+ for(int a=1;a<8;a++){int b=gp(a,6,3,0xb);if(a>=b)continue;V path{a};int x=a;for(int j=0;j<3;j++)if((a^b)>>j&1){x^=1<<j;path.push_back(x);}for(int j=1;j<int(path.size());j++)edge(path[j-1],path[j]);for(int j=int(path.size())-2;j>=1;j--)edge(path[j-1],path[j]);}
+}
+void norm(int a,int b,int z,int n,int k){lx(a,z,frobcols(n,2));lx(b,z,frobcols(n,2,k));smallprod(a,b,z,n);}
+void inv6(int q,int work){
+ int a=q,b=q+3,n=work,tmp=work+3;frame(q,basis6,true);norm(a,b,n,3,kap3);inv3(n);xorword(b,a,3);
+ for(int r:{a,b}){smallprod(r,n,tmp,3);sw(r,tmp,3);inv3(n);smallprod(r,n,tmp,3);inv3(n);}
+ norm(a,b,n,3,kap3);frame(q,basis6,false);
+}
+void invout(int x,int y,int work){
+ int a=x,b=x+6,v=y,z=y+6,n=work,tmp=work+6;
+ frame(x,basis12,true);frame(y,basis12,true);norm(a,b,n,6,kap6);inv6(n,tmp);xorword(b,a,6);smallprod(a,n,v,6);smallprod(b,n,z,6);xorword(b,a,6);inv6(n,tmp);norm(a,b,n,6,kap6);frame(y,basis12,false);frame(x,basis12,false);
+}
+void mx(int a,int b,int t,bool guarded=false){
+ assert(a!=b&&a!=t&&b!=t);int q[36];for(int j=0;j<12;j++){q[j]=a+j;q[12+j]=b+j;q[24+j]=t+j;}
+ for(int c:codes){int x=q[c%64],y=q[(c/64)%64];if(c<4096)w.cx(x,y);else{int z=q[c/4096-1];if(!guarded)cc(x,y,z);else{
+  // Borrow arbitrary history bit; exactly four Toffolis, restored for both values.
+  int d=H;cc(x,y,d);cc(FL,d,z);cc(x,y,d);cc(FL,d,z);
+ }}}
+}
+void maskedmx(int a,int b,int t,int temp){assert(a!=b&&a!=t&&b!=t&&temp!=a&&temp!=b&&temp!=t);
+ for(int j=0;j<12;j++)cc(FL,a+j,temp+j);mx(temp,b,t);for(int j=0;j<12;j++)cc(FL,a+j,temp+j);}
+void scaling(int y,int mult,int inverse){mx(y,mult,T,true);csword(y,T);mx(y,inverse,T,true);}
+void swap_pivot(int i,int p){le(i,35-i);csword(p,C);le(i,35-i);}
+void scale_series(int i,int p,int n,bool rev){for(int r=1;r<n;r++){le(i,n-r);scaling(p+12*r,rev?p:C,rev?C:p);le(i,n-r);}}
+void unit_power(int i,int p,int n,int d,bool rev){
+ const auto cols=frobcols(12,d);const auto el=elimination(cols);
+ for(int z=d;z<n;z++){int r=rev?z:n-1-(z-d);le(i,n-r);
+  for(int j=1;j<=r/d;j++){int a=p+12*(r-d*j),b=p+12*j,t=p+12*r;
+   if(r==d*j)lx(b,t,cols,true);
+   else if(a==b){lx(b,T,cols);mx(a,T,t,true);lx(b,T,cols);}
+   else{apply(el,b,false);maskedmx(a,b,t,T);apply(el,b,true);}
+  }
+  le(i,n-r);
+ }
+}
+void reciprocal(int i,bool rev){
+ int p=24*i,n=70-2*i;rot(i,p,n,-1,1);
+ invout(p,C,T);
+ if(rev){swap_pivot(i,p);scale_series(i,p,n,true);for(int d:{16,4,2})unit_power(i,p,n,d,true);scale_series(i,p,n,true);}
+ else{scale_series(i,p,n,false);for(int d:{2,4,16})unit_power(i,p,n,d,false);scale_series(i,p,n,false);swap_pivot(i,p);}
+ invout(p,C,T);rot(i,p,n,-1,-1);
+}
+void first_order(int i,bool rev){
+ int p=24*i,n=35-i;
+ auto middle=[&](){for(int j=1;j<n;j++){le(i,j);csword(p+12*j,p+12*(2*n-1-j));le(i,j);}};
+ if(!rev){rot(i,p,2*n,0,1);middle();}else{middle();rot(i,p,2*n,0,-1);}
+}
+void last_order(int i,bool rev){
+ int p=24*i,n=35-i;
+ auto flip=[&](){le(i,n);for(int j=0;j<n/2;j++){csword(p+12*j,p+12*(n-1-j));csword(p+12*(n+j),p+12*(2*n-1-j));}le(i,n);};
+ if(!rev){rot(i,p+12*n,n,0,-1);flip();}else{flip();rot(i,p+12*n,n,0,1);}
+}
+void shear(int i,int l){
+ int n=35-i,p=24*i,b=p,a=p+12*n,lead=p+12*(2*n-1);ge(i,l<=1?1:l);int q=l?b+12*(l-1):lead;
+ for(int t=0;t<n-l;t++)if(a+12*t!=lead)maskedmx(q,a+12*t,b+12*(l+t),C);
+ ge(i,l<=1?1:l);
+}
+void pack_scale(int i,bool rev){
+ int p=24*i,n=35-i,lead=p+12*(2*n-1);invout(lead,C,T);
+ if(rev)swap_pivot(i,lead);
+ le(i,n);for(int y=p;y<lead;y+=12)scaling(y,rev?lead:C,rev?C:lead);le(i,n);
+ if(!rev)swap_pivot(i,lead);invout(lead,C,T);
+}
+void pack(int i,bool rev){
+ int n=35-i;
+ if(!rev){first_order(i,false);for(int l=n;l>=0;l--)shear(i,l);pack_scale(i,false);last_order(i,false);}
+ else{last_order(i,true);pack_scale(i,true);for(int l=0;l<=n;l++)shear(i,l);first_order(i,true);}
+}
+const int K[]={3134,3169,3257,3302,3384,3431,3519,3552,3592,3633,3671,3727,3792,3854,3921,3977,4054};
+V polyprod(V a,V b){V c(a.size()+b.size()-1);for(int i=0;i<int(a.size());i++)for(int j=0;j<int(b.size());j++)c[i+j]^=mul(a[i],b[j]);return c;}
+void padding(int i){V p=(35-i)%2?V{0,1}:V{1};for(int j=0;j<(35-i)/2;j++)p=polyprod(p,{K[j],1,1});assert(p.size()==size_t(36-i)&&p.back()==1);term(i);for(int j=0;j<int(p.size())-1;j++)for(int b=0;b<12;b++)if(p[j]>>b&1)w.cx(FL,24*i+12*j+b);term(i);}
+void prefix(bool rev){
+ if(!rev){for(int i=0;i<35;i++){mark(i,false);reciprocal(i,false);cerr<<"recip "<<i<<" "<<w.cc<<" "<<w.c[1].size()<<endl;}for(int i=0;i<=35;i++)padding(i);for(int i=34;i>=0;i--){pack(i,false);cerr<<"pack "<<i<<" "<<w.cc<<" "<<w.c[1].size()<<endl;}}
+ else{for(int i=0;i<35;i++)pack(i,true);for(int i=35;i>=0;i--)padding(i);for(int i=34;i>=0;i--){reciprocal(i,true);mark(i,true);}}
+}
+void phase(int count){
+ V zeros(12);iota(zeros.begin(),zeros.end(),0);L sc[35];for(int j=1;j<35;j++)sc[j]=elimination(frobcols(12,1,ex[j]));
+ for(int l=0;l<count;l++){
+  int c=power(ex[l],35);
+  for(int j=3;j<35;j+=2)xorword(12*j,12);w.constant(12,c);
+  for(int j=2;j<35;j+=2)xorword(12*j,0);xorword(12,0);
+  for(int j=1;j<35;j++)xorword(420+12*j,420);
+  mc({},zeros,FL);invout(12,0,T);mx(420,0,C);for(int b=0;b<12;b++)w.add({160,FL,C+b,-1,0,I(l*12+b)});mx(420,0,C);invout(12,0,T);mc({},zeros,FL);
+  for(int j=1;j<35;j++)xorword(420+12*j,420);xorword(12,0);for(int j=2;j<35;j+=2)xorword(12*j,0);w.constant(12,c);for(int j=3;j<35;j+=2)xorword(12*j,12);
+  for(int j=1;j<35;j++){apply(sc[j],12*j,false);apply(sc[j],420+12*j,false);}
+ }
+ // Full cycle has identity cumulative scaling. Partial scan only for build diagnosis.
+ if(count!=4095)for(int j=1;j<35;j++){L e=elimination(frobcols(12,1,power(ex[j],count)));apply(e,12*j,true);apply(e,420+12*j,true);}
+}
+int main(int argc,char**argv){
+ int x=1;for(int i=0;i<M;i++){ex[i]=ex[i+M]=x;lg[x]=i;x<<=1;if(x&F)x^=0x1053;}assert(x==1);init_towers();
+ string mode=argv[1];if(mode=="prefix")prefix(false);else if(mode=="inverse")prefix(true);else{prefix(false);cerr<<"PREFIX COMPLETE "<<w.cc<<" "<<w.c[1].size()<<endl;if(mode=="full")phase(4095);else assert(mode=="roundtrip");cerr<<"SCAN COMPLETE "<<w.cc<<" "<<w.c[1].size()<<endl;prefix(true);}
+ w.save(argv[2]);
+}
