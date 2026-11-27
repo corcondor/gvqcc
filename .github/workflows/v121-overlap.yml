@@ -1,0 +1,27 @@
+name: V121 overlap strict Lean
+on:
+  pull_request:
+    paths:
+      - 'research/v121_overlap/**'
+      - '.github/workflows/v121-overlap.yml'
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Compile and audit
+        run: |
+          set -euo pipefail
+          ~/.elan/bin/lean --version
+          ~/.elan/bin/lean -DwarningAsError=true research/v121_overlap/SharedOverlap.lean | tee overlap-axioms.txt
+          test "$(grep -c 'GVQCC.SharedOverlap.*axiom' overlap-axioms.txt)" -eq 14
+          ! grep -E 'sorryAx|ofReduceBool|trustCompiler' overlap-axioms.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: overlap-axioms
+          path: overlap-axioms.txt

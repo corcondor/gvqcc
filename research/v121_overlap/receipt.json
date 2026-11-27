@@ -1,0 +1,80 @@
+{
+  "status": "NOT_SUBMISSION",
+  "parent": "f7a14e0669fcbab7a22a784e11ebb8f9ff6f82bb229c659845d7df1a19cddd9c",
+  "candidate": "7a27e88f2450ec59fdbf107803ab7ea2b2ba9b9473d68451de910368d17883f7",
+  "qubits": [
+    900,
+    900
+  ],
+  "static_paid": [
+    459862,
+    459673
+  ],
+  "ops": [
+    63215097,
+    63215662
+  ],
+  "passes": [
+    {
+      "method": "common factor",
+      "saved": 1
+    },
+    {
+      "method": "retention cap128 period100000",
+      "saved": 126
+    },
+    {
+      "method": "retention cap128 period500000",
+      "saved": 34
+    },
+    {
+      "method": "retention cap192 period2000000",
+      "saved": 27
+    },
+    {
+      "method": "floating offset through target-only XOR writes",
+      "saved": 1
+    }
+  ],
+  "paired": {
+    "shots": 512,
+    "paid_saving_min": 189,
+    "paid_saving_max": 189,
+    "named_states_equal": true,
+    "phase_equal": true,
+    "clean_workspace": true,
+    "reset_equal": true,
+    "original_hmr_outcomes_coupled": true,
+    "extra_hmr_outcomes_independent": true,
+    "ordinary_phase_errors": [
+      0,
+      0
+    ],
+    "adversarial_phase_errors": [
+      32,
+      32
+    ]
+  },
+  "kickmix": {
+    "ordinary_mean_paid": [
+      400534.03125,
+      400354.3125
+    ],
+    "ordinary_errors": 0,
+    "adversarial_phase_errors": 32
+  },
+  "lean": {
+    "run": 46026628446,
+    "commit": "e601cc78a7922e326ce2c8554727f9461cf3d744",
+    "status": "success",
+    "audited": 14,
+    "sorryAx": false
+  },
+  "rejected_searches": [
+    "phase overlap",
+    "two-wire span",
+    "guarded retention"
+  ],
+  "full_legal_correctness": false,
+  "official_score": false
+}
