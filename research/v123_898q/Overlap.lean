@@ -84,4 +84,31 @@ theorem cost_fanout (n : Nat) (hn : 1 < n) : 1 < n := hn
 #print axioms phase_writes
 #print axioms phase_product_linear
 #print axioms cost_fanout
+-- More general sharing: p and a*b need not be equal, only differ by
+-- an affine function of the current two controls. No extra paid correction.
+def correction (a b l r c : Bool) := bx (l && a) (bx (r && b) c)
+
+theorem affine_target (a b l r c t : Bool) :
+    bx (bx t (bx (a && b) (correction a b l r c)))
+       (correction a b l r c) = bx t (a && b) := by
+  cases a <;> cases b <;> cases l <;> cases r <;> cases c <;> cases t <;> decide
+
+theorem affine_phase (a b l r c m : Bool) :
+    bx (m && bx (a && b) (correction a b l r c))
+       (bx (m && a && b)
+          (bx (m && l && a) (bx (m && r && b) (m && c)))) = false := by
+  cases a <;> cases b <;> cases l <;> cases r <;> cases c <;> cases m <;> decide
+
+theorem affine_shared (a b l r c p t m : Bool)
+    (h : p = bx (a && b) (correction a b l r c)) :
+    (bx (bx t p) (correction a b l r c),
+     bx (m && p) (bx (m && a && b)
+          (bx (m && l && a) (bx (m && r && b) (m && c))))) =
+    (bx t (a && b), false) := by
+  rw [h, affine_target, affine_phase]
+
+#print axioms affine_target
+#print axioms affine_phase
+#print axioms affine_shared
+
 end GVQCC.V123
