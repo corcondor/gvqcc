@@ -5,6 +5,7 @@ variable {F : Type*} [Field F] [DecidableEq F]
 
 /-- Exact 70-moment uniqueness on nonzero-root supports. The DQI moments
     begin at exponent k+1, unlike the base lemma in InvariantPad.lean. -/
+omit [DecidableEq F] in
 theorem nonzero_support_moments_injective (s : Finset F) (a : F → F)
     (hs : s.card ≤ 70) (hx : ∀ x ∈ s, x ≠ 0)
     (hmom : ∀ k : ℕ, k < 70 →
@@ -27,6 +28,7 @@ theorem nonzero_support_moments_injective (s : Finset F) (a : F → F)
   exact (mul_eq_zero.mp (hz x hxs)).resolve_right (hx x hxs)
 
 /-- Two supported legal syndromes have union support of size at most 70. -/
+omit [Field F] in
 theorem union_card_le_70 (s t : Finset F)
     (hs : s.card ≤ 35) (ht : t.card ≤ 35) : (s ∪ t).card ≤ 70 := by
   calc
