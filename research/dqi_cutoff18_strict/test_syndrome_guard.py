@@ -49,3 +49,28 @@ def test_sharp_37():
 
 if __name__=="__main__":
     test_sharp_37()
+
+def test_rank2_37_recurrence():
+    from syndrome_guard import certify_promised_input_rank2_first37
+    r=random.Random(326723)
+    for rank in (0,1,2,3,4,17,35):
+        for _ in range(25):
+            roots=tuple(r.sample(range(1,4096),rank))
+            c=Certificate(roots,tuple(r.randrange(1,4096) for _ in roots))
+            z=certify_promised_input_rank2_first37(c.moments())
+            if rank<=2:
+                assert z is not None and z.moments()==c.moments()
+            else: assert z is None
+    roots=[power(2,i) for i in range(37)]
+    weights=[]
+    for i,x in enumerate(roots):
+        den=x
+        for j,y in enumerate(roots):
+            if i!=j:den=mul(den,x^y)
+        weights.append(inv(den))
+    original=Certificate(tuple(roots[:35]),tuple(weights[:35])).moments()
+    assert certify_promised_input_rank2_first37(original) is None
+    print("PASS: exact 37-moment legal-input rank<=2 recurrence")
+
+if __name__=="__main__":
+    test_rank2_37_recurrence()
