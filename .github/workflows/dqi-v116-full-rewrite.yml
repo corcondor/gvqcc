@@ -1,0 +1,89 @@
+name: DQI full native exact rewrite validation
+on:
+  pull_request:
+    paths:
+      - 'research/v116_strict_audit/exact_scan.cpp'
+      - 'research/v116_strict_audit/emit_rewrite.py'
+      - '.github/workflows/dqi-v116-full-rewrite.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install numpy==2.2.6 kickmix==1.0.0
+      - uses: actions/download-artifact@v4
+        with:
+          name: dqi-fused510-native
+          run-id: 46012487275
+          github-token: ${{ github.token }}
+          path: native
+      - uses: actions/download-artifact@v4
+        with:
+          name: pinned-public-dqi-source
+          run-id: 46010445718
+          github-token: ${{ github.token }}
+          path: donor
+      - name: Rebuild exact native candidate and verify SHA-256
+        run: |
+          set -euo pipefail
+          echo 'e6347dcb03c8998cc070e77f13bb82f811dae6d6c98e19b809f21597e1055e8b  donor/public-dqi-source.tar.gz' | sha256sum -c
+          tar -xzf donor/public-dqi-source.tar.gz -C donor
+          g++ -O3 -std=c++17 -shared -fPIC research/v116_strict_audit/exact_scan.cpp -o exact_scan.so
+          PYTHONPATH="$PWD/donor/third_party/thembones-milestone-generators-v2/dqi/tools" python research/v116_strict_audit/emit_rewrite.py native exact_scan.so
+          python - <<'PY'
+          import kickmix as km
+          c=km.Circuit.from_file('native/fused510_rewrite.kmb')
+          s=c.operation_statistics()
+          assert c.num_qubits==900 and s.num_instructions==51877874 and s.num_toffoli_like==462907
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v116-rewritten-full-native
+          path: |
+            native/fused510_rewrite.kmb
+            native/rewrite_receipt.json
+            native/deadwrite.txt
+            native/verify_submission_dqi.py
+  official:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        salt: ["", "cf-fused510-independent-20261127"]
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install numpy==2.2.6 kickmix==1.0.0
+      - uses: actions/download-artifact@v4
+        with:
+          name: v116-rewritten-full-native
+          path: native
+      - name: Unmodified official verifier, full fixed-salt run
+        env:
+          SALT: ${{ matrix.salt }}
+        run: |
+          set -euo pipefail
+          python native/verify_submission_dqi.py native/fused510_rewrite.kmb --num-shots 102400 --batch-size 256 --max-workers 2 --salt "$SALT" | tee receipt.json
+          python - <<'PY'
+          import json
+          r=json.load(open('receipt.json'))
+          assert r['status']=='PASS' and r['verified_shots']==102400
+          assert r['value_errors']==r['phase_errors']==0
+          assert r['circuit_sha256']=='a50bf1ab908d344cb02c267b3af7d986da22d453e19448eee4e13af1c3d19cf5'
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v116-rewrite-official-${{ strategy.job-index }}
+          path: receipt.json
