@@ -1,7 +1,10 @@
 name: DQI guarded inverse four-product proof
 on:
-  push:
-    branches: [research/dqi316k-guard4-phase-20261128]
+  pull_request:
+    paths:
+      - 'research/dqi316k_joint_crt/guard4.py'
+      - 'research/dqi316k_joint_crt/Guard4.lean'
+      - '.github/workflows/dqi-316k-guard4.yml'
   workflow_dispatch:
 jobs:
   lean:
