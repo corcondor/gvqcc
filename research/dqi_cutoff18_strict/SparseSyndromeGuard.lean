@@ -1,11 +1,10 @@
 import InvariantPad
 namespace GVQCC.SparseSyndromeGuard
 open scoped BigOperators
-variable {F : Type*} [Field F] [DecidableEq F]
+variable {F : Type*} [Field F]
 
 /-- Exact 70-moment uniqueness on nonzero-root supports. The DQI moments
     begin at exponent k+1, unlike the base lemma in InvariantPad.lean. -/
-omit [DecidableEq F] in
 theorem nonzero_support_moments_injective (s : Finset F) (a : F → F)
     (hs : s.card ≤ 70) (hx : ∀ x ∈ s, x ≠ 0)
     (hmom : ∀ k : ℕ, k < 70 →
@@ -28,8 +27,7 @@ theorem nonzero_support_moments_injective (s : Finset F) (a : F → F)
   exact (mul_eq_zero.mp (hz x hxs)).resolve_right (hx x hxs)
 
 /-- Two supported legal syndromes have union support of size at most 70. -/
-omit [Field F] in
-theorem union_card_le_70 (s t : Finset F)
+theorem union_card_le_70 {α : Type*} [DecidableEq α] (s t : Finset α)
     (hs : s.card ≤ 35) (ht : t.card ≤ 35) : (s ∪ t).card ≤ 70 := by
   calc
     (s ∪ t).card ≤ s.card + t.card := Finset.card_union_le s t
@@ -38,7 +36,7 @@ theorem union_card_le_70 (s t : Finset F)
 /-- A 70-word agreement certificate forces the original two sparse
     input syndromes to coincide. An arbitrary corrupt output has no such
     certificate unless ORIGINAL input equality is separately checked. -/
-theorem sparse_difference_zero (s t : Finset F) (a b : F → F)
+theorem sparse_difference_zero [DecidableEq F] (s t : Finset F) (a b : F → F)
     (hs : s.card ≤ 35) (ht : t.card ≤ 35)
     (hnz : ∀ x ∈ s ∪ t, x ≠ 0)
     (hmom : ∀ k : ℕ, k < 70 →
@@ -62,7 +60,7 @@ theorem finite_difference_product (a b da db : Bool) :
     candidate has at most r, just 35+r ORIGINAL input moments suffice.
     This is a tighter proof obligation than verifying all 70 words.
     It does NOT justify comparing to a corrupted donor output instead. -/
-theorem sparse_35_vs_r_unique (s t : Finset F) (a b : F → F) (r : ℕ)
+theorem sparse_35_vs_r_unique [DecidableEq F] (s t : Finset F) (a b : F → F) (r : ℕ)
     (hs : s.card ≤ 35) (ht : t.card ≤ r)
     (hnz : ∀ x ∈ s ∪ t, x ≠ 0)
     (hmom : ∀ k : ℕ, k < 35 + r →
