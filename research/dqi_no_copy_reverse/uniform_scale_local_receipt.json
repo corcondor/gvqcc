@@ -1,0 +1,42 @@
+{
+  "scope": "local only",
+  "modulus": "0x1053",
+  "best": {
+    "k": 0,
+    "e": 665,
+    "ell": 3105
+  },
+  "symbolic": {
+    "scalar_cases": 4095,
+    "x_values": 4096,
+    "borrowed_values": 2,
+    "tuples": 33546240,
+    "phase_coefficients": 11,
+    "errors": 0
+  },
+  "native": [
+    {
+      "ccx": 59,
+      "Q": 48,
+      "cleanQ": 11,
+      "borrowedQ": 1,
+      "shots": 32760,
+      "errors": 0,
+      "instructions": 2220
+    },
+    {
+      "ccx": 95,
+      "Q": 47,
+      "cleanQ": 11,
+      "borrowedQ": 0,
+      "shots": 32760,
+      "errors": 0,
+      "instructions": 2423
+    }
+  ],
+  "seeds": [
+    17,
+    42
+  ],
+  "whole_dqi_claim": false
+}
