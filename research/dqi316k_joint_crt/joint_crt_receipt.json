@@ -1,0 +1,49 @@
+{
+  "scope": "all-pole locator codec only, arbitrary-data reversible map; no full DQI oracle or score",
+  "kickmix": "1.0.0",
+  "allpole_locators": 128,
+  "inputs": 346,
+  "results": [
+    {
+      "name": "baseline",
+      "Q": 882,
+      "ops": 260239,
+      "paid": 9288,
+      "sha256": "2ea9890dab6f1faac374df4d411cf279082ae23e08a2b84f72561e8af10c5bbb",
+      "shots": 346,
+      "errors": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "joint_forward",
+      "Q": 882,
+      "ops": 277087,
+      "paid": 7020,
+      "sha256": "71823059c15e67186bf80bc018e55722ef084c9c69e8cae078d71fbce8ae63a0",
+      "shots": 692,
+      "errors": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "joint_reverse",
+      "Q": 882,
+      "ops": 277087,
+      "paid": 7020,
+      "sha256": "9b10722c7cf072d9ba3a25bcf2786add91d45d3cb938ee9d3fc8fe7ff819bf38",
+      "shots": 692,
+      "errors": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "hmr_product_clears": 36,
+  "hmr_norm_clears": 18
+}
