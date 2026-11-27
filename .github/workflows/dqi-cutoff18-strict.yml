@@ -39,7 +39,9 @@ jobs:
           test "$(grep -c 'GVQCC.ParserStability.*axiom' parser.log)" -eq 9
           lake env lean -DwarningAsError=true RootCause316.lean | tee rootcause.log
           test "$(grep -c 'GVQCC.RootCause316.*axiom' rootcause.log)" -eq 6
-          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log parser.log rootcause.log
+          lake env lean -DwarningAsError=true FirstPole316.lean | tee firstpole.log
+          test "$(grep -c 'GVQCC.FirstPole316.*axiom' firstpole.log)" -eq 7
+          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log parser.log rootcause.log firstpole.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -52,3 +54,4 @@ jobs:
             research/dqi_cutoff18_strict/infinity.log
             research/dqi_cutoff18_strict/parser.log
             research/dqi_cutoff18_strict/rootcause.log
+            research/dqi_cutoff18_strict/firstpole.log
