@@ -202,7 +202,8 @@ theorem scaled_pad_invariant {A B : Type*} [AddCommGroup A] [AddCommGroup B]
 coordinate. This does not provide a cheap decoder of the original coordinate. -/
 theorem orbit_normalize (x y p q t : F) (hp : p ≠ 0) :
     (y+t*q)-(q/p)*(x+t*p) = y-(q/p)*x := by
-  field_simp [hp] <;> ring
+  field_simp [hp]
+  ring
 
 /-- If the first residual vanishes, the second test uses just the affine
 difference (sum in characteristic two). -/
@@ -234,3 +235,37 @@ end GVQCC.InvariantPad
 #print axioms GVQCC.InvariantPad.conditional_second
 #print axioms GVQCC.InvariantPad.hmr_xor_debt
 #print axioms GVQCC.InvariantPad.clean_tag_roundtrip
+
+
+namespace GVQCC.InvariantPad
+open Polynomial
+variable {F : Type*} [Field F]
+
+/-- Given the exact canonical magnitude interpolant at a fixed pad root,
+recovering the scalar is multiplication by a fixed nonzero inverse. -/
+theorem canonical_scale (v : Polynomial F) (z e t : F)
+    (he : e ≠ 0) (hv : v.eval z = t*e) :
+    v.eval z / e = t := by
+  rw [hv, mul_div_cancel_right₀ t he]
+
+/-- Padding is visible in the canonical locator at a root of the pad.
+The base-support locator has no root there by the disjoint-support hypothesis. -/
+theorem padded_locator_root (f p : Polynomial F) (z : F)
+    (hf : f.eval z = 0) : (f*p).eval z = 0 := by simp [hf]
+
+/-- The recovery interface is correct on both known padded and unpadded
+canonical states; this is not a theorem that a physical tape exposes that ABI. -/
+theorem canonical_conditional (p v : Polynomial F) (z e t : F)
+    (he : e ≠ 0)
+    (h : (p.eval z = 0 ∧ v.eval z = t*e) ∨
+         (p.eval z ≠ 0 ∧ t = 0)) :
+    (if p.eval z = 0 then v.eval z / e else 0) = t := by
+  classical
+  rcases h with ⟨hp,hv⟩ | ⟨hp,ht⟩
+  · simp [hp, canonical_scale v z e t he hv]
+  · simp [hp,ht]
+
+end GVQCC.InvariantPad
+#print axioms GVQCC.InvariantPad.canonical_scale
+#print axioms GVQCC.InvariantPad.padded_locator_root
+#print axioms GVQCC.InvariantPad.canonical_conditional
