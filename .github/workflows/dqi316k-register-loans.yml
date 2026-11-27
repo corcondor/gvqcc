@@ -1,0 +1,30 @@
+name: DQI 316k affine register loan Lean audit
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_register_loans/**'
+      - '.github/workflows/dqi316k-register-loans.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Kernel and axiom audit
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi316k_register_loans/RegisterLoan.lean | tee loan-axioms.txt
+          test "$(grep -c 'GVQCC.RegisterLoan.*axiom' loan-axioms.txt)" -eq 9
+          ! grep -E 'sorryAx|ofReduceBool' loan-axioms.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: loan-axioms
+          path: loan-axioms.txt
