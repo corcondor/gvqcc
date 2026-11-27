@@ -39,7 +39,9 @@ theorem square_node [CharP F 2] (x k : F) :
 
 theorem zero_mask (bits : List Bool) :
     (bits.map (fun b => b && false)).foldl Bool.xor false = false := by
-  simp
+  induction bits with
+  | nil => rfl
+  | cons b bs ih => cases b <;> exact ih
 
 end GVQCC.RootCause316
 #print axioms GVQCC.RootCause316.filtered_exponential
