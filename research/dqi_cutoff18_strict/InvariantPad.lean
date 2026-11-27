@@ -69,8 +69,7 @@ theorem tagfree_involution {A B : Type*} [AddCommGroup A] [AddCommGroup B]
   cases h : g (L s) with
   | false => simp [padBy, h]
   | true =>
-    have hh : g (L (s+p)) = true := by rw [selector_unchanged L g s p hp, h]
-    simp [padBy, h, hh, add_assoc, h2]
+    simp [padBy, h, hp, add_assoc, h2]
 
 /-- Filtered moments have the same support when the filter has no root in it. -/
 theorem filter_nonzero (a x : F) (p : Polynomial F)
