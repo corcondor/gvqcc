@@ -248,3 +248,93 @@ end GVQCC.V115
 #print axioms GVQCC.V115.dqi70_unique
 #print axioms GVQCC.V115.certified_phase
 #print axioms GVQCC.V115.hmr_debt_cancel
+
+namespace GVQCC.V115.Adaptive
+
+open Polynomial
+
+/-- The all-zero finite-chart case is not an exceptional failure: the degree
+    of the numerator saturates the remaining degree budget.  The divisibility
+    premise is the product of the distinct remaining irreducible quadratics;
+    that premise must be proved by the concrete chart implementation. -/
+theorem saturated_degree {F : Type*} [Field F]
+    (P N : Polynomial F) (m : ℕ)
+    (hn : N ≠ 0) (hdiv : P ∣ N)
+    (hl : m ≤ P.natDegree) (hu : N.natDegree ≤ m) :
+    N.natDegree = m := by
+  have h := Polynomial.natDegree_le_of_dvd hdiv hn
+  omega
+
+theorem finite_budget (m dn dd dh dr : ℕ)
+    (hm : 0 < m) (hn : dn ≤ m) (hd : dd ≤ m+1)
+    (hh : dh ≤ 1)
+    (hr : dr = 0 ∨ dr+2 ≤ max dd (dh+dn)) :
+    dr ≤ m-1 := by
+  have hmax : max dd (dh+dn) ≤ m+1 := max_le hd (by omega)
+  omega
+
+theorem infinity_budget (m dn dd dq dr : ℕ)
+    (hm : 0 < m) (hn : dn = m) (hd : dd ≤ m+1)
+    (hq : dq = 0 ∨ dq+dn ≤ dd)
+    (hr : dr = 0 ∨ dr < dn) :
+    dq ≤ 1 ∧ dr ≤ m-1 := by
+  omega
+
+inductive Pivot (R : Type*) where
+  | finite (g h : R)
+  | infinity (q : R)
+  | stop
+
+variable {R : Type*} [CommRing R]
+
+def restore : Pivot R → R × R → R × R
+  | .finite g h, (a,b) => (b, g*a+h*b)
+  | .infinity q, (a,b) => (b, a+q*b)
+  | .stop, s => s
+
+/-- Exact algebraic contract of each forward pivot, including the stop case.
+    Coefficients are in characteristic two for the DQI specialization. -/
+def ValidStep : Pivot R → R × R → R × R → Prop
+  | .finite g h, (n,d), (a,b) => b=n ∧ d=g*a+h*n
+  | .infinity q, (n,d), (a,b) => b=n ∧ d=a+q*n
+  | .stop, s,t => t=s
+
+theorem adaptive_step_inverse (p : Pivot R) (s t : R × R)
+    (hs : ValidStep p s t) : restore p t = s := by
+  rcases s with ⟨n,d⟩
+  rcases t with ⟨a,b⟩
+  cases p with
+  | finite g h =>
+    change b=n ∧ d=g*a+h*n at hs
+    rcases hs with ⟨hb,hd⟩
+    simp [restore, hb, hd]
+  | infinity q =>
+    change b=n ∧ d=a+q*n at hs
+    rcases hs with ⟨hb,hd⟩
+    simp [restore, hb, hd]
+  | stop =>
+    exact hs
+
+inductive ValidTrace : List (Pivot R) → R × R → R × R → Prop
+  | nil (s : R × R) : ValidTrace [] s s
+  | cons {p ps s t u} : ValidStep p s t →
+      ValidTrace ps t u → ValidTrace (p::ps) s u
+
+def recover : List (Pivot R) → R × R → R × R
+  | [], s => s
+  | p::ps, s => restore p (recover ps s)
+
+theorem adaptive_trace_inverse (ps : List (Pivot R)) (s t : R × R)
+    (h : ValidTrace ps s t) : recover ps t = s := by
+  induction h with
+  | nil s => rfl
+  | cons hstep htrace ih =>
+    simp only [recover, ih]
+    exact adaptive_step_inverse _ _ _ hstep
+
+end GVQCC.V115.Adaptive
+
+#print axioms GVQCC.V115.Adaptive.saturated_degree
+#print axioms GVQCC.V115.Adaptive.finite_budget
+#print axioms GVQCC.V115.Adaptive.infinity_budget
+#print axioms GVQCC.V115.Adaptive.adaptive_trace_inverse
