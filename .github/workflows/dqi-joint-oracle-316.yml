@@ -1,0 +1,38 @@
+name: DQI 316k joint oracle refinement
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/**'
+      - '.github/workflows/dqi-joint-oracle-316.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Explicit import and kernel/axiom audit
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          LEAN_PATH=".:$(lake env printenv LEAN_PATH)" lake env lean -DwarningAsError=true -o InvariantPad.olean InvariantPad.lean | tee joint-invariant.log
+          LEAN_PATH=".:$(lake env printenv LEAN_PATH)" lake env lean -DwarningAsError=true -o DQIRefinement316.olean DQIRefinement316.lean | tee joint-contract.log
+          LEAN_PATH=".:$(lake env printenv LEAN_PATH)" lake env lean -DwarningAsError=true JointOracle316.lean | tee joint-new.log
+          test "$(grep -c 'GVQCC.DQIRefinement316.*axiom' joint-contract.log)" -eq 7
+          test "$(grep -c 'GVQCC.JointOracle316.*axiom' joint-new.log)" -eq 9
+          ! grep -E 'sorryAx|ofReduceBool' joint-invariant.log joint-contract.log joint-new.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: joint-316-axioms
+          path: research/dqi_cutoff18_strict/joint-*.log
