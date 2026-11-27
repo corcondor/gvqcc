@@ -24,7 +24,7 @@ jobs:
           lake update
           lake exe cache get
           lake env lean -DwarningAsError=true HermiteProjection.lean | tee hermite-axioms.txt
-          test "$(grep -c 'GVQCC.HermiteProjection.*axiom' hermite-axioms.txt)" -eq 9
+          test "$(grep -c 'GVQCC.HermiteProjection.*axiom' hermite-axioms.txt)" -eq 10
           ! grep -Eq 'sorryAx|ofReduceBool' hermite-axioms.txt
       - uses: actions/upload-artifact@v4
         if: always()
