@@ -1,0 +1,71 @@
+{
+  "status": "NOT_SUBMISSION",
+  "hashes": {
+    "parent": "5b5eac5ff5c5cb3926284bc468941ebb451874bde69f558a178301c1289b0fb9",
+    "a": "43ad482a02e7b2d35cdde6ba0de6709061cbedc3ddee111169345b2c204e5dcd",
+    "b": "990361dad10941f4aa708dbf376b1f9d1fe96585a9cae7b120db493fc91a9d1c",
+    "c": "befc6309415314249ad367a704912306db8d89b178bd11dfc2c3a912e52eded6",
+    "e": "2a459ef806c0a3ba7bb8df34f49972e1bfdfcb08c1ed61127d7ea46d416445aa",
+    "g": "f204acd73f3276b56214696e959920437491d80a920aa4f8447106578f987207",
+    "final": "07be4ad5eee17ae1ba7afb9dad357863dca54180335bc68bee1ae377134de837"
+  },
+  "qubits": [
+    898,
+    898
+  ],
+  "static_paid": [
+    476630,
+    475930,
+    475708,
+    475696,
+    475656,
+    475630,
+    475630
+  ],
+  "ops": [
+    62140479,
+    51177773
+  ],
+  "stage_savings": [
+    700,
+    222,
+    12,
+    40,
+    26,
+    0
+  ],
+  "affine_nonzero_corrections": 7,
+  "paired": {
+    "shots": 512,
+    "saving_each": 1000,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "dirty_errors": 0,
+    "original_hmr_masks_equal": true
+  },
+  "native_matched": {
+    "shots": 1728,
+    "errors": 0
+  },
+  "native_distribution_and_balanced": {
+    "shots": 4352,
+    "errors": 0,
+    "official_distribution_shots": 4096,
+    "mean_paid_before": 417638.2360839844,
+    "mean_paid_after": 416636.97119140625
+  },
+  "lean": {
+    "run": 46028018679,
+    "commit": "b18b5006028104e67d879b22bdf540703127d383",
+    "status": "success",
+    "audited": 16,
+    "sorryAx": false
+  },
+  "other_trials": {
+    "live_linearization_saved": 0,
+    "peer_203_reprocessed_static_paid": 475666
+  },
+  "full_legal_correctness": false,
+  "official_verifier": false,
+  "score_claim": false
+}
