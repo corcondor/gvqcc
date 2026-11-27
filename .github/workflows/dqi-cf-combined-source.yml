@@ -1,0 +1,26 @@
+name: DQI CF combined public source
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cf_native_proof/**'
+      - '.github/workflows/dqi-cf-combined-source.yml'
+jobs:
+  combined:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch pinned source and independent fusion
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/cf-chain
+          curl -fsSL https://raw.githubusercontent.com/maxoubvd/google-quantum-ai/a9effc375527bf0b6962c178530d353eb70a3fcb/third_party/thembones-milestone-generators-v2/dqi/tools/dqi_int_pdrfix.py -o /tmp/cf-chain/base.py
+          curl -fsSL https://raw.githubusercontent.com/corcondor/gvqcc/9e94829db342428ac8e76c5b2cefe93ac84b0b62/research/dqi_cf_fusion_20261127/apply_coefficient_fusion.py -o /tmp/cf-chain/fusion.py
+          python research/dqi_cf_native_proof/cf_route.py --help
+          python research/dqi_cf_native_proof/cf_route.py /tmp/cf-chain/base.py /tmp/cf-chain/route.py
+          python /tmp/cf-chain/fusion.py /tmp/cf-chain/route.py /tmp/cf-chain/dqi_int_pdrfix.py
+          python -m py_compile /tmp/cf-chain/dqi_int_pdrfix.py
+          sha256sum /tmp/cf-chain/{base,route,dqi_int_pdrfix}.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: combined-pdrfix-source
+          path: /tmp/cf-chain/dqi_int_pdrfix.py
