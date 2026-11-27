@@ -36,7 +36,7 @@ theorem regular_budget {F : Type*} [Field F]
     · exact Or.inl hz
     · right
       have hm : (H*N).natDegree ≤ r :=
-        le_trans (Polynomial.natDegree_mul_le _ _) (by omega)
+        le_trans (Polynomial.natDegree_mul_le) (by omega)
       have ha : (D+H*N).natDegree ≤ r :=
         le_trans (Polynomial.natDegree_add_le _ _) (max_le hd hm)
       rw [← he, Polynomial.natDegree_mul hg0 hz, hg] at ha
