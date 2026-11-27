@@ -1,0 +1,6 @@
+{
+  "scope": "exact GF4096 coefficients, not whole tape proof",
+  "distinct_chunks": 74,
+  "checks": 52577,
+  "max_eval_points": 39
+}
