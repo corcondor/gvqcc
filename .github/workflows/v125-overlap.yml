@@ -1,0 +1,22 @@
+name: V125 898Q exact overlap Lean
+on:
+  pull_request:
+    paths:
+      - 'research/v125_overlap/**'
+      - '.github/workflows/v125-overlap.yml'
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Compile and audit
+        run: |
+          set -euo pipefail
+          ~/.elan/bin/lean --version
+          ~/.elan/bin/lean -DwarningAsError=true research/v125_overlap/Transport.lean | tee axioms.txt
+          test "$(grep -c 'GVQCC.V125.*axiom' axioms.txt)" -eq 4
+          ! grep -E 'sorryAx|ofReduceBool|trustCompiler' axioms.txt
