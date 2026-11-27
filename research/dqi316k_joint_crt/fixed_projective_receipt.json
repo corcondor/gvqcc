@@ -1,0 +1,87 @@
+{
+  "scope": "Research components only, not a full DQI or submission. Native measurements from Vercel command outputs; ephemeral sandbox expired before exporting physical tapes/source files.",
+  "vercel": {
+    "project": "gvqcc-score8-compute",
+    "session": "sbx_vEWKVvv4zanUDc50BGzfobzkpijh",
+    "kickmix": "1.0.0"
+  },
+  "reference": {
+    "local_cases": 1250,
+    "all_weights": 288,
+    "forced_single": 216,
+    "all_17": 64,
+    "zero_prefix": 60,
+    "saved_panel": 622,
+    "errors": 0,
+    "vercel_fresh_cases": 628
+  },
+  "rows": [
+    {
+      "name": "packed_projective",
+      "cmd": "cmd_fb86e932994c4707b06bb92ec620",
+      "q": 900,
+      "paid_forward": 16437,
+      "ops_forward": 202632,
+      "sha_forward": "848857f456436b9f1d7c3224e80a0a305729fcce3977314aba270ef82b75da10",
+      "paid_roundtrip": 32874,
+      "ops_roundtrip": 405264,
+      "sha_roundtrip": "c6e35071cd23881288aed0ec6b74c7f205ba13150f2ef7a3c33a4fbf20935c27",
+      "shots_forward": 1024,
+      "shots_reverse_or_roundtrip": 1024,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "ancilla_errors": 0
+    },
+    {
+      "name": "packed_jet",
+      "cmd": "cmd_506cdc5d67fb40a6aaa7f6b6aa51",
+      "q": 900,
+      "paid_forward": 21180,
+      "ops_forward": 292851,
+      "sha_forward": "c04b57da330ef926ba03afc6a2cc764a0dd04427c7ea3f8f358053c719119cc0",
+      "paid_roundtrip": 42360,
+      "ops_roundtrip": 585702,
+      "sha_roundtrip": "cf6efe4fda86c308a7f922b6292773c0cb455a1523a0dfe4e7d317feff0fad19",
+      "shots_forward": 1024,
+      "shots_reverse_or_roundtrip": 1024,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "ancilla_errors": 0
+    },
+    {
+      "name": "shared_norm_jet",
+      "cmd": "cmd_8dd59402dc5a4407929ba120a34e",
+      "q": 900,
+      "paid_forward": 14125,
+      "ops_forward": 244571,
+      "sha_forward": "85ff89b9d08b33b74304cc4c77df1c3649b988ba9476ffccfd781b13c13513e1",
+      "paid_roundtrip": 28250,
+      "ops_roundtrip": 489142,
+      "sha_roundtrip": "95cf9cb0b141c8c56550bfa16604cdb208bec5ea6cb045687be6b32c91d9bce4",
+      "shots_forward": 1024,
+      "shots_reverse_or_roundtrip": 1024,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "ancilla_errors": 0
+    },
+    {
+      "name": "fixed_transport",
+      "cmd": "cmd_e9e4b0a1e6ec4bc09a2aa69a081e",
+      "q": 900,
+      "paid_forward": 15126,
+      "ops_forward": 264490,
+      "sha_forward": "7e841abd5cf0adc667690177a74bc6ef1bfd8b5c8d5cff47f3bc1f55db03ea9c",
+      "paid_reverse": 15126,
+      "ops_reverse": 264524,
+      "sha_reverse": "44ec142c4edd25b040010d1d89a20f5acf97520e9c52d19f589a9a249187d01c",
+      "note": "17 non-selected nodes; supplied head and division orientation; selected node unchanged",
+      "shots_forward": 1024,
+      "shots_reverse_or_roundtrip": 1024,
+      "value_errors": 0,
+      "phase_errors": 0,
+      "ancilla_errors": 0
+    }
+  ],
+  "full_dqi": false,
+  "score": null
+}
