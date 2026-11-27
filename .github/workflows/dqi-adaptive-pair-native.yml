@@ -1,0 +1,35 @@
+name: DQI adaptive pair native CRT
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/adaptive_pair_crt/**'
+      - '.github/workflows/dqi-adaptive-pair-native.yml'
+permissions:
+  contents: read
+jobs:
+  native-crt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - run: python -m pip install kickmix==1.0.0 numpy
+      - name: Run original and extended CRT regressions
+        working-directory: research/dqi_cutoff18_strict/adaptive_pair_crt
+        run: |
+          set -euo pipefail
+          python crt882.py | tee /tmp/crt882.log
+          python legacy_crt.py | tee /tmp/legacy_crt.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dqi-native-crt
+          path: |
+            /tmp/crt882.kmb
+            /tmp/legacy_fwd.kmb
+            /tmp/legacy_rev.kmb
+            /tmp/crt882.log
+            /tmp/legacy_crt.log
+          if-no-files-found: error
