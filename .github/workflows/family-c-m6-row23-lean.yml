@@ -1,0 +1,24 @@
+name: Family-C row23 width audit
+on:
+  pull_request:
+    paths:
+      - 'research/family-c-m6-row23-20261127/**'
+      - '.github/workflows/family-c-m6-row23-lean.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Check Lean and audit axioms
+        shell: bash
+        run: |
+          set -euo pipefail
+          ~/.elan/bin/lean --version
+          ~/.elan/bin/lean -DwarningAsError=true research/family-c-m6-row23-20261127/FamilyCRow23.lean | tee lean-audit.log
+          test "$(grep -c 'GVQCC.FamilyCRow23.*axiom' lean-audit.log)" -eq 10
+          ! grep -E 'sorryAx|Lean.ofReduceBool' lean-audit.log
