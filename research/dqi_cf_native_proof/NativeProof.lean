@@ -10,7 +10,7 @@ theorem xx (a b : Bool) : bx a (bx a b) = b := by
   cases a <;> cases b <;> decide
 theorem xswap (a b c : Bool) : bx a (bx b c) = bx b (bx a c) := by
   cases a <;> cases b <;> cases c <;> decide
-theorem andAssoc (a b c : Bool) : (a && b) && c = (a && (b && c)) := by
+theorem andAssoc (a b c : Bool) : ((a && b) && c) = (a && (b && c)) := by
   cases a <;> cases b <;> cases c <;> decide
 
 abbrev Mon := List Nat
@@ -33,11 +33,11 @@ theorem evalToggle (v : Nat → Bool) (a : Mon) (p : Poly) :
   | cons b bs ih =>
     by_cases h : a = b
     · subst b
-      simp only [toggle, if_pos rfl, pe]
+      simp only [toggle, pe]
       exact (xx (me v a) (pe v bs)).symm
     · by_cases h' : key a < key b
-      · simp only [toggle, if_neg h, if_pos h', pe]
-      · simp only [toggle, if_neg h, if_neg h', pe, ih]
+      · simp only [toggle, ite_eq_right h, ite_eq_left h', pe]
+      · simp only [toggle, ite_eq_right h, ite_eq_right h', pe, ih]
         exact xswap (me v b) (me v a) (pe v bs)
 
 def addP (p : Poly) : Poly → Poly
@@ -117,7 +117,11 @@ def bitStep (g : Gate) (s : List Bool) : List Bool :=
 
 theorem evalStep (v : Nat → Bool) (g : Gate) (s : List Poly) :
     (symStep g s).map (pe v) = bitStep g (s.map (pe v)) := by
-  cases g <;> simp only [symStep, bitStep, writeMap, evalAdd, evalMul, ← readMap]
+  have h (i : Nat) : pe v (readAt [] s i) = readAt false (s.map (pe v)) i :=
+    (readMap (pe v) [] s i).symm
+  cases g with
+  | cx a t => simp only [symStep, bitStep, writeMap, evalAdd, h]
+  | ccx a b t => simp only [symStep, bitStep, writeMap, evalAdd, evalMul, h]
 
 def symRun : List Gate → List Poly → List Poly
   | [], s => s
