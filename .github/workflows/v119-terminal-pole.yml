@@ -25,6 +25,8 @@ jobs:
           lake exe cache get
           lake env lean -DwarningAsError=true TerminalPole.lean | tee proof.log
           test "$(grep -c 'GVQCC.V119.*axiom' proof.log)" -eq 9
+          lake env lean -DwarningAsError=true RollingTail.lean | tee -a proof.log
+          test "$(grep -c 'GVQCC.RollingTail.*axiom' proof.log)" -eq 7
           ! grep -E 'sorryAx|Lean.ofReduceBool' proof.log
       - uses: actions/upload-artifact@v4
         if: always()
