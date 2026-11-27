@@ -1,0 +1,27 @@
+name: V123 898Q overlap strict Lean
+on:
+  pull_request:
+    paths:
+      - 'research/v123_898q/**'
+      - '.github/workflows/v123-898q-overlap.yml'
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Compile and audit
+        run: |
+          set -euo pipefail
+          ~/.elan/bin/lean --version
+          ~/.elan/bin/lean -DwarningAsError=true research/v123_898q/Overlap.lean | tee axioms.txt
+          test "$(grep -c 'GVQCC.V123.*axiom' axioms.txt)" -eq 13
+          ! grep -E 'sorryAx|ofReduceBool|trustCompiler' axioms.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v123-overlap-axioms
+          path: axioms.txt
