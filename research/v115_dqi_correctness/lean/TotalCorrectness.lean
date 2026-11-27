@@ -96,7 +96,7 @@ theorem next_denominator_unit (C : Chart R K) (s : R × R)
   rcases s with ⟨n,d⟩
   by_cases hn : C.res n = 0
   · simpa [step, hn] using bezout_residue C n d hb hn
-  · simpa [step, hn] using hn
+  · simp [step, hn]
 
 def storedValue (h : Head K) : K :=
   match h with
