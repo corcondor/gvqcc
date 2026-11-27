@@ -1,0 +1,12 @@
+Lean 4.35.0 (eb6cafb7290e8bd5f2937522d8d804f58f02bafc), Windows x86_64, source as at 680e34f0244e082917b855a15112973009a85164.
+Command: lean -DwarningAsError=true PhaseWitness.lean
+First line below is the process exit code. The finite-field residual assumptions and the native circuit remain separate obligations.
+
+0
+'GVQCC.PhaseWitness.zero_measurement' does not depend on any axioms
+'GVQCC.PhaseWitness.witness_debt' does not depend on any axioms
+'GVQCC.PhaseWitness.zero_lifetime' does not depend on any axioms
+'GVQCC.PhaseWitness.exact_repay' does not depend on any axioms
+'GVQCC.PhaseWitness.incompatible_witness' does not depend on any axioms
+'GVQCC.PhaseWitness.ccx_pair_through_xor' does not depend on any axioms
+'GVQCC.PhaseWitness.prefix_guard' depends on axioms: [propext, Quot.sound]
