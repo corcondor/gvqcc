@@ -1,0 +1,127 @@
+{
+  "status": "research only; not a score candidate",
+  "parent": {
+    "pr": 247,
+    "sha256": "8b9d09f87692f59baaeb399d96650db9389835f23be5c2ab93be4d86259bc6ab",
+    "Q": 900,
+    "static_paid": 318333,
+    "ops": 66696654,
+    "forced": {
+      "shots": 1024,
+      "value": 488,
+      "raw_phase": 257,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 499,
+      "mean_paid": 316121.6220703125
+    },
+    "standard": {
+      "shots": 102400,
+      "value": 1,
+      "failing_weight": 17
+    }
+  },
+  "fixed": {
+    "sha256": "06cc1aad8f90b98c9418dcc71e4981274016b9074355e903fc738926285cac43",
+    "Q": 900,
+    "static_paid": 5072065,
+    "ops": 174235218,
+    "forced": {
+      "shots": 1024,
+      "value": 0,
+      "raw_phase": 0,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 0,
+      "mean_paid": 5069879.0986328125
+    },
+    "known_standard_failure_replay": {
+      "shots": 4,
+      "value": 0,
+      "raw_phase": 0,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 0
+    },
+    "wrapper": {
+      "Q": 898,
+      "ops": 29097178,
+      "paid": 2376866,
+      "sha256": "a08d9e9f58bafc91d7e34112f6931f5d7e65069730cb5ad4766890cedf9aa5f0",
+      "shots": 144,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "adaptive": {
+    "sha256": "65e7c1c6a7f51327fc54a578c08b4ac0abe990061aad10da2481f67c19a973b0",
+    "Q": 900,
+    "static_paid": 9826681,
+    "ops": 274808787,
+    "panels": {
+      "high_allpole": {
+        "shots": 16,
+        "value": 16,
+        "raw_phase": 9,
+        "ancilla": 0,
+        "mask": 0,
+        "union": 16
+      },
+      "high_first_pole": {
+        "shots": 48,
+        "value": 48,
+        "raw_phase": 20,
+        "ancilla": 0,
+        "mask": 0,
+        "union": 48
+      },
+      "low_pad0_pole": {
+        "shots": 48,
+        "value": 0,
+        "raw_phase": 0,
+        "ancilla": 0,
+        "mask": 0,
+        "union": 0
+      },
+      "random": {
+        "shots": 72,
+        "value": 0,
+        "raw_phase": 0,
+        "ancilla": 0,
+        "mask": 0,
+        "union": 0
+      }
+    },
+    "pre": {
+      "Q": 900,
+      "ops": 58227114,
+      "paid": 4754174,
+      "sha256": "1e1b447119ad9dab24bcbe99ee19bffe320ad297dc45f87a6ed43e14ab1a972c",
+      "shots": 184,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "post": {
+      "Q": 900,
+      "ops": 58227114,
+      "paid": 4754174,
+      "sha256": "ca38bd00c51c11b8f3c3c92d2881ea26fb50dee8f605c81377e41ee00cc7b6cf",
+      "shots": 184,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "note": "Transcribed aggregate results from completed Vercel KickMix logs; sandbox expired before raw JSON transfer. Not proof of universal correctness. No new portfolio score."
+}
