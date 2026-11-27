@@ -50,7 +50,7 @@ void frame(int p,const V& cols,bool inverse){apply(elimination(cols),p,inverse);
 void lx(int a,int t,const V& cols,bool guarded=false){assert(a!=t);for(int i=0;i<int(cols.size());i++)for(int j=0;j<int(cols.size());j++)if(cols[i]>>j&1){if(guarded)cc(FL,a+i,t+j);else w.cx(a+i,t+j);}}
 V frobcols(int n,int e,int k=1){V col(n);for(int i=0;i<n;i++)col[i]=fm(fp(1<<i,e,n),k,n);return col;}
 void smallprod(int a,int b,int t,int n){
- static const vector<array<int,3>> base={{1,1,7},{2,2,28},{4,4,112},{3,3,2},{5,5,4},{6,6,8}};
+ static const vector<array<int,3>> base={{1,1,7},{2,2,14},{4,4,28},{3,3,2},{5,5,4},{6,6,8}};
  vector<array<int,3>> terms;
  if(n==3)terms=base;else{assert(n==6);for(auto [p,q,v]:base){terms.push_back({p,q,v^(v<<3)});terms.push_back({p<<3,q<<3,(v<<3)^(v<<6)});terms.push_back({p^(p<<3),q^(q<<3),v<<3});}}
  for(auto [p,q,v]:terms){int mod=n==3?0xb:0x43;while(v>=(1<<n)){int d=31-__builtin_clz((unsigned)v);v^=mod<<(d-n);}if(!v)continue;int A=__builtin_ctz((unsigned)p),B=__builtin_ctz((unsigned)q),Z=__builtin_ctz((unsigned)v);
