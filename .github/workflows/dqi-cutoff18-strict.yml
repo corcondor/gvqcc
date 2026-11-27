@@ -37,7 +37,9 @@ jobs:
           test "$(grep -c 'GVQCC.InfinityCF.*axiom' infinity.log)" -eq 14
           lake env lean -DwarningAsError=true TransposeTransfer.lean | tee transpose.log
           test "$(grep -c 'GVQCC.V128.*axiom' transpose.log)" -eq 9
-          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log transpose.log
+          lake env lean -DwarningAsError=true TowerPhase.lean | tee tower.log
+          test "$(grep -c 'GVQCC.V129.*axiom' tower.log)" -eq 10
+          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log transpose.log tower.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -49,3 +51,4 @@ jobs:
             research/dqi_cutoff18_strict/collision.log
             research/dqi_cutoff18_strict/infinity.log
             research/dqi_cutoff18_strict/transpose.log
+            research/dqi_cutoff18_strict/tower.log
