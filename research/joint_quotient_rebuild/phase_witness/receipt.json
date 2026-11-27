@@ -1,0 +1,56 @@
+{
+  "scope": "rejected candidate; not official verifier",
+  "parent": "2c8ea3ad0cbf316b6392fb7ffd2fb04d3059633d8d66281228abe13b496c4e60",
+  "candidate": "e45e3a8dacff49063c1cfc9d1a65cd4d4d6c939fd6429b164e228a3ea5bcf615",
+  "zero_hmr": 687,
+  "phase_only_zero_hmr": 372,
+  "removed_phase": 56942,
+  "removed_static_paid": 1,
+  "hmr": 80622,
+  "weights": [
+    0,
+    1,
+    17,
+    18,
+    35
+  ],
+  "phase_single_flip_before": [
+    308,
+    695,
+    112,
+    0,
+    0
+  ],
+  "phase_single_flip_after": [
+    203,
+    639,
+    111,
+    0,
+    0
+  ],
+  "restoration_bits": [
+    0,
+    395,
+    430,
+    0,
+    0
+  ],
+  "paired_native": {
+    "shots": 72,
+    "parent": {
+      "value": 34,
+      "phase": 19,
+      "phase_correct_values": 2,
+      "dirty": 0,
+      "mean_paid": 316065.02777777775
+    },
+    "candidate": {
+      "value": 34,
+      "phase": 19,
+      "phase_correct_values": 2,
+      "dirty": 0,
+      "mean_paid": 316064.5416666667
+    }
+  },
+  "accepted": false
+}
