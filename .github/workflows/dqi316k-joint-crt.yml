@@ -27,7 +27,7 @@ jobs:
           lake update
           lake exe cache get
           lake env lean -DwarningAsError=true -o InvariantPad.olean InvariantPad.lean > /dev/null
-          lake env bash -c 'export LEAN_PATH="$PWD:${LEAN_PATH:-}"; set -euo pipefail; for entry in EarlyHMR:8 TensorRank:6 ZeroSafeFieldFrame:6 HermiteProjection:10 AllPoleChart:6 AdaptivePairCRT:16 TowerPhase:10 JointCRTHMR:10; do f="${entry%:*}"; n="${entry#*:}"; lean -DwarningAsError=true "$f.lean" | tee "$f.log"; test "$(grep -c "GVQCC.*axiom" "$f.log")" -eq "$n"; ! grep -E "sorryAx|ofReduceBool" "$f.log"; done'
+          lake env bash -c 'export LEAN_PATH="$PWD:${LEAN_PATH:-}"; set -euo pipefail; for entry in EarlyHMR:8 TensorRank:6 ZeroSafeFieldFrame:6 HermiteProjection:10 AllPoleChart:6 AdaptivePairCRT:16 TowerPhase:10 JointCRTHMR:10 GuardedPhase316:12; do f="${entry%:*}"; n="${entry#*:}"; lean -DwarningAsError=true "$f.lean" | tee "$f.log"; test "$(grep -c "GVQCC.*axiom" "$f.log")" -eq "$n"; ! grep -E "sorryAx|ofReduceBool" "$f.log"; done'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -45,11 +45,11 @@ jobs:
         with:
           python-version: '3.13'
       - run: python -m pip install kickmix==1.0.0 numpy==2.2.6
-      - run: python history.py && python joint_crt.py && python narrow_crt.py && python g_guarded.py
+      - run: python history.py && python joint_crt.py && python narrow_crt.py && python g_guarded.py && python joint_phase.py --count 16 --cases 16 && python joint_rank15.py --count 4095 --cases 96
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: joint-crt-native
           path: |
-            research/dqi316k_joint_crt/*receipt.json
+            research/dqi316k_joint_crt/*.json
             research/dqi316k_joint_crt/*.kmb
