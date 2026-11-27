@@ -27,7 +27,7 @@ jobs:
           lake update
           lake exe cache get
           lake env lean -DwarningAsError=true -o InvariantPad.olean InvariantPad.lean > /dev/null
-          lake env bash -c 'export LEAN_PATH="$PWD:${LEAN_PATH:-}"; set -euo pipefail; for entry in EarlyHMR:8 TensorRank:6 ZeroSafeFieldFrame:6 HermiteProjection:10 AllPoleChart:6 AdaptivePairCRT:16 TowerPhase:10 JointCRTHMR:10; do f="${entry%:*}"; n="${entry#*:}"; lean -DwarningAsError=true "$f.lean" | tee "$f.log"; test "$(grep -c "GVQCC.*axiom" "$f.log")" -eq "$n"; ! grep -E "sorryAx|ofReduceBool" "$f.log"; done'
+          lake env bash -c 'export LEAN_PATH="$PWD:${LEAN_PATH:-}"; set -euo pipefail; for entry in EarlyHMR:8 TensorRank:6 ZeroSafeFieldFrame:6 HermiteProjection:10 AllPoleChart:6 AdaptivePairCRT:16 TowerPhase:10 JointCRTHMR:10 FullCRTSplice:6; do f="${entry%:*}"; n="${entry#*:}"; lean -DwarningAsError=true "$f.lean" | tee "$f.log"; test "$(grep -c "GVQCC.*axiom" "$f.log")" -eq "$n"; ! grep -E "sorryAx|ofReduceBool" "$f.log"; done'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
