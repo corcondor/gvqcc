@@ -1,0 +1,27 @@
+{
+  "seed": 3011,
+  "pairs": 540,
+  "measurement_sites": 108859,
+  "mismatching_activation": 2471256,
+  "mismatching_draws": 1236285,
+  "mismatching_draws_both_active": 0,
+  "active_sha256": "bc2b5721200891013fc59620134b2670fae3aad4dc31ed9addaf89dd4510541d",
+  "outcome_sha256": "5722ca760194af962d716dfcf5dcd691d33e32ff38130dffc5df44415941f887",
+  "resident_matches": true,
+  "restoration_error_bits": 423,
+  "annihilator": [
+    2890,
+    0,
+    1,
+    0,
+    1
+  ],
+  "recurrence_equations": 66,
+  "field_roots": 0,
+  "phase_words_nonzero": {
+    "2610": 1233,
+    "501": 2450,
+    "0": 3227
+  },
+  "phase_error_bits": 208
+}
