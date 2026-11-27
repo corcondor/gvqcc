@@ -43,7 +43,9 @@ jobs:
           test "$(grep -c 'GVQCC.FirstPole316.*axiom' firstpole.log)" -eq 8
           lake env lean -DwarningAsError=true AllChart316.lean | tee allchart.log
           test "$(grep -c 'GVQCC.AllChart316.*axiom' allchart.log)" -eq 7
-          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log parser.log rootcause.log firstpole.log allchart.log
+          lake env lean -DwarningAsError=true SharedChart316.lean | tee sharedchart.log
+          test "$(grep -c 'GVQCC.SharedChart316.*axiom' sharedchart.log)" -eq 8
+          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log parser.log rootcause.log firstpole.log allchart.log sharedchart.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -58,3 +60,4 @@ jobs:
             research/dqi_cutoff18_strict/rootcause.log
             research/dqi_cutoff18_strict/firstpole.log
             research/dqi_cutoff18_strict/allchart.log
+            research/dqi_cutoff18_strict/sharedchart.log
