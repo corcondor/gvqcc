@@ -84,10 +84,10 @@ theorem update_scale (a r d : Int) (hr : 0 ≤ r) (hu : r < 2097152) :
   unfold update
   by_cases ha : a < 0
   · have hh := (sign_scale a r hr hu).2 ha
-    simp only [if_pos ha, if_pos hh]
+    simp only [ite_eq_left ha, ite_eq_left hh]
     omega
   · have hh : ¬ a*2097152+r < 0 := fun h => ha ((sign_scale a r hr hu).1 h)
-    simp only [if_neg ha, if_neg hh]
+    simp only [ite_eq_right ha, ite_eq_right hh]
     omega
 
 /-- Delayed phase payment uses the same logical value, not its stale wire. -/
