@@ -24,7 +24,6 @@ theorem jet_involution (c : F) (hc : c ≠ 0) (p : F × F) :
   · have hu : c / x ≠ 0 := div_ne_zero hc hx
     have hv : c * (c * y / x ^ 2) / (c / x) ^ 2 = y := by
       field_simp [hc,hx]
-      <;> ring
     simp [jet, hx, hu, scaled_inv_inv c x hc, hv]
 
 theorem jet_zero_chart (c : F) (hc : c ≠ 0) (p : F × F) :
