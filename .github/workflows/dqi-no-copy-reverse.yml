@@ -1,0 +1,33 @@
+name: DQI no-copy reverse chart
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_no_copy_reverse/**'
+      - '.github/workflows/dqi-no-copy-reverse.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Kernel and axiom audit
+        working-directory: research/dqi_no_copy_reverse
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true NoCopy.lean | tee axioms.txt
+          test "$(grep -c 'GVQCC.NoCopy.*axiom' axioms.txt)" -eq 9
+          ! grep -Eq 'sorryAx|ofReduceBool' axioms.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: no-copy-axioms
+          path: research/dqi_no_copy_reverse/axioms.txt
