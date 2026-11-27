@@ -17,3 +17,6 @@ Three strict cap=896 attempts: (1) original scale fixed, then cscale 885+12; (2)
 
 ## Lean
 ReciprocalLoan.lean: 14 local theorems, Lean 4.35.0 strict run https://github.com/corcondor/gvqcc/actions/runs/46047688034 success at f320acaa85d3f314c0c562d612eebb9c2d4fe974. No sorryAx or ofReduceBool. Does not certify the entire native tape. No merge or Kaggle submission.
+
+## Completed fourth attempt: 896Q
+NOREPLAY_NODES=16,15; conditional stream and masked bank applied. All stages ran through. Raw full 896Q: static paid 444701, ops 61864345, mean 421779.3684082031, SHA256 d3be8e2788e1900f68dbd6ab13137d008ae1acd99e3eba7b34d1716b38d1b4e6. Native 7414 shots clean. Exact direct cancellation: removed 11082102 ops, 436 paid, inserted 144 unpaid instructions, output Q896, ops 50782387, static paid 444265, mean 421343.3684082031, SHA256 e8c8cc46ce177afcb2df62c9e1dfda0d6edeac9ff4ecc79de0ac428ec16d2793. Replayed 4096 fixed distribution + 256 forced + 1728 matched + 1334 hybrid/inverse-rotation = 7414 shots again, value/phase/ancilla errors all zero; classical mask restoration checked and clean for 1334. Same error penalty assumption Q²*T is 1.65898% worse than final 897Q, so this is a width milestone, not a competitive score improvement. No official verifier run, full-domain proof, or submission. New binary and reproduction scripts delivered separately as research ZIP.
