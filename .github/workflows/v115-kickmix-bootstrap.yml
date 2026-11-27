@@ -1,0 +1,77 @@
+name: V115 P0 KickMix installation and native smoke
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/v115-kickmix-bootstrap.yml'
+      - 'research/v115_dqi_correctness/INSTALL_FIRST.md'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  install-and-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: P0 download pinned wheels and install offline from wheelhouse
+        run: |
+          set -euo pipefail
+          mkdir -p out/wheels
+          python -VV | tee out/python.txt
+          python -m pip download --index-url https://pypi.org/simple --only-binary=:all: --dest out/wheels 'kickmix==1.0.0' 'numpy==2.2.6'
+          (cd out/wheels && sha256sum *.whl > SHA256SUMS.txt && sha256sum -c SHA256SUMS.txt)
+          python -m pip install --no-index --find-links out/wheels 'kickmix==1.0.0' 'numpy==2.2.6'
+          python -m pip check
+          python -m pip freeze > out/requirements-installed.txt
+          python - <<'PY'
+          import importlib.metadata as md, platform, json
+          import kickmix as km
+          import numpy as np
+          assert md.version("kickmix") == "1.0.0"
+          assert md.version("numpy") == "2.2.6"
+          for name in ("Circuit","CircuitBuilder","Simulator","GF2Field"):
+              assert hasattr(km,name), name
+          print(json.dumps({"status":"IMPORT_PASS","kickmix":md.version("kickmix"),"numpy":np.__version__,"python":platform.python_version(),"platform":platform.platform(),"module":str(km.__file__)},indent=2))
+          PY
+      - name: Preserve installable wheels before circuit work
+        uses: actions/upload-artifact@v4
+        with:
+          name: kickmix-1.0.0-linux-py313-wheelhouse
+          path: |
+            out/wheels/
+            out/python.txt
+            out/requirements-installed.txt
+          if-no-files-found: error
+          retention-days: 30
+      - name: P1 native reference generation and official smoke
+        run: |
+          set -euo pipefail
+          base=https://raw.githubusercontent.com/Inzainos/quantum-circuit-compilation/4277c767440df9efb8a90860ae2ce47028e46ba9/verifiers/dqi
+          curl -fsSL "$base/dqi_reference_circuit.py" -o out/dqi_reference_circuit.py
+          curl -fsSL "$base/verify_submission_dqi.py" -o out/verify_submission_dqi.py
+          (cd out && printf '%s\n' '2b8e1b80a806157c333a7e308eaf2499ee09de499efbc05875202c327959959e  dqi_reference_circuit.py' 'f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65  verify_submission_dqi.py' | sha256sum -c -)
+          python out/dqi_reference_circuit.py out/smoke.kmb --m 15 --n 6 --degree 4
+          sha256sum out/smoke.kmb | tee out/smoke.sha256
+          python out/verify_submission_dqi.py out/smoke.kmb --m 15 --n 6 --degree 4 --num-shots 4096 --batch-size 256 --max-workers 1 > out/smoke.json
+          python - <<'PY'
+          import hashlib,json,pathlib
+          r=json.load(open("out/smoke.json"))
+          assert r["status"]=="PASS" and r["verified_shots"]==4096
+          assert r["value_errors"]==r["phase_errors"]==0
+          assert r["circuit_sha256"]==hashlib.sha256(pathlib.Path("out/smoke.kmb").read_bytes()).hexdigest()
+          print(json.dumps(r,indent=2))
+          print("SMALL_REFERENCE_NATIVE_PASS; NOT FULL-SIZE DQI, NOT SUBMISSION")
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kickmix-native-smoke-receipts
+          path: |
+            out/smoke.*
+            out/python.txt
+            out/requirements-installed.txt
+          if-no-files-found: warn
+          retention-days: 30
