@@ -1,0 +1,35 @@
+name: DQI residual annihilator proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/ResidualFilter.lean'
+      - 'research/dqi_cutoff18_strict/HermiteChart.lean'
+      - '.github/workflows/dqi-residual-filter.yml'
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - run: echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lake update
+      - run: lake exe cache get
+      - name: Compile and audit
+        run: |
+          set -euo pipefail
+          lake env lean -DwarningAsError=true ResidualFilter.lean | tee residual-axioms.txt
+          test "$(grep -c 'GVQCC.ResidualFilter.*axiom' residual-axioms.txt)" -eq 5
+          lake env lean -DwarningAsError=true HermiteChart.lean | tee -a residual-axioms.txt
+          test "$(grep -c 'GVQCC.HermiteChart.*axiom' residual-axioms.txt)" -eq 6
+          ! grep -E 'sorryAx|ofReduceBool|trustCompiler' residual-axioms.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: residual-axioms
+          path: research/dqi_cutoff18_strict/residual-axioms.txt
