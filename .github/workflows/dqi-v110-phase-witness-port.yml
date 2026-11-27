@@ -1,0 +1,28 @@
+name: V110 phase witness port
+on:
+  push:
+    branches:
+      - 'research/dqi-v110-phase-witness-repair-20261128'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Strict proof
+        working-directory: research/dqi_v110_phase_witness_port
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true PhaseWitness.lean | tee axioms.txt
+          test "$(grep -c 'GVQCC.PhaseWitness.*axiom' axioms.txt)" -eq 5
+          ! grep -Eq 'sorryAx|ofReduceBool' axioms.txt
+      - name: Build patched emitter
+        working-directory: research/dqi_v110_phase_witness_port
+        run: g++ -O3 -std=c++20 shadow_affine.cpp -o shadow_affine
