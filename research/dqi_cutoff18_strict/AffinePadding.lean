@@ -104,7 +104,9 @@ theorem affine_padding_phase {A : Type*} [AddCommGroup A]
   have h (x : ZMod 2) : x+x=0 := by
     calc
       x+x = 2*x := by ring
-      _ = 0 := by norm_num
+      _ = 0 := by
+        have h2 : (2 : ZMod 2) = 0 := by decide
+        rw [h2, zero_mul]
   rw [h,add_zero]
 
 theorem shear_involution (p s : F) (h : (2:F)=0) : (p+s)+s=p := by
