@@ -1,4 +1,4 @@
-name: V119 terminal pole strict Lean audit
+name: V120 tagless terminal atlas strict Lean audit
 on:
   pull_request:
     paths:
@@ -25,9 +25,13 @@ jobs:
           lake exe cache get
           lake env lean -DwarningAsError=true TerminalPole.lean | tee proof.log
           test "$(grep -c 'GVQCC.V119.*axiom' proof.log)" -eq 9
-          ! grep -E 'sorryAx|Lean.ofReduceBool' proof.log
+          lake env lean -DwarningAsError=true TerminalAtlas.lean | tee atlas.log
+          test "$(grep -c 'GVQCC.V120.*axiom' atlas.log)" -eq 10
+          ! grep -E 'sorryAx|Lean.ofReduceBool' proof.log atlas.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: v119-proof-log
-          path: research/v119_terminal_pole/proof.log
+          path: |
+            research/v119_terminal_pole/proof.log
+            research/v119_terminal_pole/atlas.log
