@@ -7,11 +7,11 @@ def dot : List (Bool × Bool) → Bool
 theorem dot_append (xs ys : List (Bool × Bool)) :
     dot (xs ++ ys) = bx (dot xs) (dot ys) := by
   induction xs with
-  | nil => cases dot ys <;> rfl
+  | nil => simp [dot, bx]
   | cons p ps ih =>
     rcases p with ⟨a,b⟩
     simp only [List.cons_append,dot,ih]
-    cases a <;> cases b <;> cases dot ps <;> cases dot ys <;> rfl
+    cases a <;> cases b <;> cases dot ps <;> cases dot ys <;> decide
 theorem phase_product (m a b : Bool) :
     bx (m && (a && b)) (m && a && b) = false := by
   cases m <;> cases a <;> cases b <;> decide
