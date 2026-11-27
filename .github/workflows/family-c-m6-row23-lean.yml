@@ -28,3 +28,6 @@ jobs:
           ~/.elan/bin/lean -DwarningAsError=true research/family-c-m6-row23-20261127/Fanout.lean | tee fanout-audit.log
           test "$(grep -c 'GVQCC.MainFanout.*axiom' fanout-audit.log)" -eq 3
           ! grep -E 'sorryAx|Lean.ofReduceBool' fanout-audit.log
+          ~/.elan/bin/lean -DwarningAsError=true research/family-c-m6-row23-20261127/CarryPhase.lean | tee phase-audit.log
+          test "$(grep -c 'GVQCC.CarryPhase.*axiom' phase-audit.log)" -eq 9
+          ! grep -E 'sorryAx|Lean.ofReduceBool' phase-audit.log
