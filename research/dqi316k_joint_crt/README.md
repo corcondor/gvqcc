@@ -39,3 +39,9 @@ Independent local KickMix replay of exact donor SHA-256 4b572141... on the same 
 Lean GuardedPhase316.lean adds exact finite rank-15 basis certificate and algebraic composition identities. Verify strict CI separately; no physical tape refinement proof asserted. Existing proof files retained. Reproduce with Python 3.13, kickmix==1.0.0 and numpy==2.2.6: python joint_rank15.py --count 4095 --cases 96.
 
 Remaining: the 901Q #236 full tape and complete generator not acquired from peer archive; full integration must use a reversible branch dispatch or a proved physical seam, not host selection or measured syndrome. Low/high/complement defects still unresolved. Do not merge or submit.
+
+
+## Saved-panel independent replay
+Retrieved exact CI artifact 15233053080; the serialized public-ABI KMB hash matches Vercel. Public verifier validate_registers passes. Local KickMix 1.0.0 replay on original saved hybrid_cases.npz (SHA-256 ea5e22c1...): all 20 G-allpole rows 602..621, both seeds. Donor: 40/40 value failures, 26 raw phase failures, mean paid 316176.8. New 880Q chart-only oracle: 0/40 failures, paid 223579; all 1244 shots across all 622 rows have zero errors against the chart-only contract (identity complement). Original mask words retained. Not evidence of repair of the complement or #236's full circuit. See saved_panel_receipt.json.
+
+Initial GuardedPhase316 strict CI 46072220081 elaborated all 12 theorem proofs with no prohibited axioms but rejected two linter diagnostics (deprecated if_true and unused Bool.true_eq). Fixed in cafa0c4 using ite_true, without weakening the statement. Re-run 46072526234; inspect actual conclusion.
