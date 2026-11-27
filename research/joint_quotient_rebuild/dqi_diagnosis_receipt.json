@@ -1,0 +1,38 @@
+{
+  "sha256": "2c8ea3ad0cbf316b6392fb7ffd2fb04d3059633d8d66281228abe13b496c4e60",
+  "Q": 900,
+  "ops": 62086097,
+  "ccx": 311868,
+  "ccz": 6716,
+  "hmr_occurrences": 80622,
+  "weights": [
+    0,
+    1,
+    17,
+    18,
+    35
+  ],
+  "baseline_restoration_bit_errors": [
+    0,
+    395,
+    430,
+    0,
+    0
+  ],
+  "onehot_phase_errors": [
+    308,
+    695,
+    112,
+    0,
+    0
+  ],
+  "independent_explicit_histories": 320,
+  "disagreements": 0,
+  "pair_scan": {
+    "ccx": 311868,
+    "ccz": 6716,
+    "eligible_ccx_pairs": 0,
+    "eligible_ccz_pairs": 0
+  },
+  "status": "known incorrect, not submission"
+}
