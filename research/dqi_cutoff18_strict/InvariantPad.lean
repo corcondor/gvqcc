@@ -255,15 +255,16 @@ theorem padded_locator_root (f p : Polynomial F) (z : F)
 
 /-- The recovery interface is correct on both known padded and unpadded
 canonical states; this is not a theorem that a physical tape exposes that ABI. -/
-theorem canonical_conditional (p v : Polynomial F) (z e t : F)
+theorem canonical_conditional [DecidableEq F] (p v : Polynomial F) (z e t : F)
     (he : e ≠ 0)
     (h : (p.eval z = 0 ∧ v.eval z = t*e) ∨
          (p.eval z ≠ 0 ∧ t = 0)) :
     (if p.eval z = 0 then v.eval z / e else 0) = t := by
-  classical
   rcases h with ⟨hp,hv⟩ | ⟨hp,ht⟩
-  · simp [hp, canonical_scale v z e t he hv]
-  · simp [hp,ht]
+  · have hs : (if p.eval z = 0 then v.eval z / e else 0) = v.eval z / e := by simp [hp]
+    exact hs.trans (canonical_scale v z e t he hv)
+  · have hs : (if p.eval z = 0 then v.eval z / e else 0) = 0 := by simp [hp]
+    exact hs.trans ht.symm
 
 end GVQCC.InvariantPad
 #print axioms GVQCC.InvariantPad.canonical_scale
