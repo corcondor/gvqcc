@@ -52,7 +52,7 @@ def main():
     else:seeds=[611,977]
     if len(sys.argv)>3 and sys.argv[3].endswith(".npz"):
         z=np.load(sys.argv[3]);cases += [("saved",-1,s,m,p,"saved") for s,m,p in zip(z['S'],z['M'],z['expected'])]
-    out=dict(scope="complete native raw S -> decoder -> 4095-point rational phase -> inverse; no HMR, no host selection",sha256=hashlib.file_digest(path.open('rb'),'sha256').hexdigest(),Q=c.num_qubits,ops=len(c),static_paid=int(c.operation_statistics().num_toffoli_like),errors_order=["value","mask","dirty","phase"],checks=[],groups={},weights={},shots=0,errors=[0]*4,union=0)
+    out=dict(scope="complete native raw S -> decoder -> 4095-point rational phase -> inverse; HMR with exact repayment, no host selection",sha256=hashlib.file_digest(path.open('rb'),'sha256').hexdigest(),Q=c.num_qubits,ops=len(c),static_paid=int(c.operation_statistics().num_toffoli_like),errors_order=["value","mask","dirty","phase"],checks=[],groups={},weights={},shots=0,errors=[0]*4,union=0)
     start=time.time();paid=0
     for seed in seeds:
         for i in range(0,len(cases),batch):
