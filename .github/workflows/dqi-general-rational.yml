@@ -1,0 +1,54 @@
+name: DQI general rational scan
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_joint_crt/general_*.py'
+      - 'research/dqi316k_joint_crt/general_*.json'
+      - 'research/dqi_cutoff18_strict/GeneralRational316.lean'
+      - '.github/workflows/dqi-general-rational.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true GeneralRational316.lean | tee general.log
+          test "$(grep -c 'GVQCC.GeneralRational316.*axiom' general.log)" -eq 11
+          ! grep -E 'sorryAx|ofReduceBool' general.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: general-lean
+          path: research/dqi_cutoff18_strict/general.log
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi316k_joint_crt
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - run: python general_scan.py --count 4095 --cases 4 && python general_narrow.py --count 4095 --cases 4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: general-rational-native
+          path: |
+            research/dqi316k_joint_crt/general_*.kmb
+            research/dqi316k_joint_crt/general_*.json
