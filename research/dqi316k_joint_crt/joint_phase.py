@@ -119,8 +119,8 @@ def kernel(b,f,d,tag,work,mask,x):
 
 def build(count):
  b=km.CircuitBuilder();b.set_max_qubits(Q)
- reg=list(b.create_quantum_register(840,'data'))+list(b.alloc_qubits(Q-840))
- mask=list(b.create_classical_register(12*count,'mask'))
+ reg=[q for i in range(70) for q in b.create_quantum_register(12,f'S{i}')]+list(b.alloc_qubits(Q-840))
+ mask=[v for i in range(count) for v in b.create_classical_register(12,f'E{i}')]
  tag=reg[840];work=reg[841:]
  parts=G.sections()
  def run(ops):

@@ -64,5 +64,8 @@ def main():
  print('TENSOR',json.dumps(dict(terms=terms,basis_checks=36)),flush=True)
  c=J.build(args.count);path=Path(f'joint_rank15_{args.count}.kmb');c.to_file(str(path),format='kmb');del c
  c=km.Circuit.from_file(str(path));r=dict(scope='guarded G allpole oracle, identity complement, not full DQI',scan_points=args.count,Q=c.num_qubits,ops=len(c),static_paid=int(c.operation_statistics().num_toffoli_like),sha256=hashlib.file_digest(path.open('rb'),'sha256').hexdigest(),gf64_rank=15,tensor_basis_checks=36)
+ assert set(c.register_data)=={f'S{i}' for i in range(70)}|{f'E{i}' for i in range(args.count)}
+ assert all(len(v)==12 for v in c.register_data.values())
+ r['public_abi_registers']=len(c.register_data)
  print(json.dumps(r),flush=True);r.update(J.test(c,args.count,args.cases));print(json.dumps(r),flush=True);path.with_suffix('.json').write_text(json.dumps(r,indent=2)+'\n');assert not any(r['errors'])
 if __name__=='__main__':main()
