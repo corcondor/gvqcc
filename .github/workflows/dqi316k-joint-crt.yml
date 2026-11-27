@@ -53,3 +53,16 @@ jobs:
           path: |
             research/dqi316k_joint_crt/*receipt.json
             research/dqi316k_joint_crt/*.kmb
+
+  pinned-runtime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip download --no-deps --only-binary=:all: kickmix==1.0.0 -d /tmp/runtime
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pinned-kickmix-cp313
+          path: /tmp/runtime/*.whl
+          if-no-files-found: error
