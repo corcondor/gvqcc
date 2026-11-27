@@ -1,0 +1,383 @@
+{
+  "baseline_zip_sha256": "7f9f3fa995bb35fa505d3b844aee5e4ad8d0feb41e58e39f191541980269ab03",
+  "files": {
+    "dfthcsos/angle_k_0.kmb": {
+      "sha256": "0a0b36e1c0e4801a941882848d921481b9198eb182e3186cb03c14de976f86d6",
+      "bytes": 301519,
+      "ops": 33276,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 327,
+        "33": 31884,
+        "34": 18,
+        "49": 241,
+        "80": 146,
+        "128": 29,
+        "144": 172,
+        "160": 458,
+        "176": 1
+      },
+      "paid_static": 242,
+      "old_ops": 33476,
+      "ops_saved": 200
+    },
+    "dfthcsos/angle_k_1.kmb": {
+      "sha256": "d2f15b867d12719ab43a0d8488b3fc610df53e549575732eba22217b565ebd41",
+      "bytes": 312144,
+      "ops": 34361,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 296,
+        "33": 32475,
+        "34": 80,
+        "49": 230,
+        "80": 135,
+        "128": 50,
+        "144": 419,
+        "160": 676
+      },
+      "paid_static": 230,
+      "old_ops": 34631,
+      "ops_saved": 270
+    },
+    "dfthcsos/angle_k_10.kmb": {
+      "sha256": "7880ba7c9ac46b8f5e0395f9d39c367fa30eb4f7ecce22c7bc0d7010ba64609a",
+      "bytes": 122654,
+      "ops": 13447,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 52,
+        "33": 13007,
+        "34": 10,
+        "49": 212,
+        "80": 82,
+        "160": 84
+      },
+      "paid_static": 212,
+      "old_ops": 13464,
+      "ops_saved": 17
+    },
+    "dfthcsos/angle_k_11.kmb": {
+      "sha256": "07753d9550246ab341083ad2fe06dc1f3b7b5d3a9098ae0a81027b51775b003f",
+      "bytes": 310614,
+      "ops": 34219,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 295,
+        "33": 32655,
+        "34": 71,
+        "49": 230,
+        "80": 135,
+        "128": 26,
+        "144": 219,
+        "160": 588
+      },
+      "paid_static": 230,
+      "old_ops": 34431,
+      "ops_saved": 212
+    },
+    "dfthcsos/angle_k_12.kmb": {
+      "sha256": "377164c85aa0bebfaa7e3e6002213f146156435d67b45550da0fba4ceb27f96f",
+      "bytes": 117958,
+      "ops": 12923,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 45,
+        "33": 12493,
+        "34": 9,
+        "49": 209,
+        "80": 82,
+        "160": 85
+      },
+      "paid_static": 209,
+      "old_ops": 12957,
+      "ops_saved": 34
+    },
+    "dfthcsos/angle_k_13.kmb": {
+      "sha256": "1cf112ce2b097cdb513d4d8d8af09a4465e63e343d5377f4fb688ce552ab0e23",
+      "bytes": 115049,
+      "ops": 12598,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 41,
+        "33": 12167,
+        "34": 14,
+        "49": 206,
+        "80": 82,
+        "160": 88
+      },
+      "paid_static": 206,
+      "old_ops": 12613,
+      "ops_saved": 15
+    },
+    "dfthcsos/angle_k_14.kmb": {
+      "sha256": "ce8581be466b1483e99b7443555d5c0c7b01d93079aef2e2755e8e3e73994ccf",
+      "bytes": 115204,
+      "ops": 12621,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 49,
+        "33": 12192,
+        "34": 9,
+        "49": 206,
+        "80": 82,
+        "160": 83
+      },
+      "paid_static": 206,
+      "old_ops": 12623,
+      "ops_saved": 2
+    },
+    "dfthcsos/angle_k_2.kmb": {
+      "sha256": "f729233c598e2f26fab0245f3080ede00462c3d7211ad182278a3a869f0a8b88",
+      "bytes": 117722,
+      "ops": 12887,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 27,
+        "33": 12465,
+        "34": 15,
+        "49": 213,
+        "80": 82,
+        "160": 85
+      },
+      "paid_static": 213,
+      "old_ops": 12890,
+      "ops_saved": 3
+    },
+    "dfthcsos/angle_k_3.kmb": {
+      "sha256": "ce8724080a6c5bf26e90e4db260a4acc5bb6d810c84d18dde2fa6f57cd5f090b",
+      "bytes": 119623,
+      "ops": 13108,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 47,
+        "33": 12674,
+        "34": 9,
+        "49": 212,
+        "80": 82,
+        "160": 84
+      },
+      "paid_static": 212,
+      "old_ops": 13108,
+      "ops_saved": 0
+    },
+    "dfthcsos/angle_k_4.kmb": {
+      "sha256": "8e222ed0cb10b9b27d6c4ce21ff7c6296ec2723a0ebe151a3870f6b7bfa43d15",
+      "bytes": 121523,
+      "ops": 13316,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 40,
+        "33": 12888,
+        "34": 10,
+        "49": 213,
+        "80": 82,
+        "160": 83
+      },
+      "paid_static": 213,
+      "old_ops": 13318,
+      "ops_saved": 2
+    },
+    "dfthcsos/angle_k_5.kmb": {
+      "sha256": "faefa6a60c7797f146010115607cd986322e0d7a11caceade0b3ca9be916ec9b",
+      "bytes": 311699,
+      "ops": 34316,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 312,
+        "33": 32699,
+        "34": 80,
+        "49": 230,
+        "80": 135,
+        "128": 27,
+        "144": 174,
+        "160": 659
+      },
+      "paid_static": 230,
+      "old_ops": 34513,
+      "ops_saved": 197
+    },
+    "dfthcsos/angle_k_6.kmb": {
+      "sha256": "abb84546c6db697e3d8f53d52dca269058826e96a43ab3f5d7d04bc90fb4ef27",
+      "bytes": 115941,
+      "ops": 12690,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 28,
+        "33": 12273,
+        "34": 10,
+        "49": 213,
+        "80": 82,
+        "160": 84
+      },
+      "paid_static": 213,
+      "old_ops": 12713,
+      "ops_saved": 23
+    },
+    "dfthcsos/angle_k_7.kmb": {
+      "sha256": "14d0a7fbc61a32e5bc292b07330e8f918d6ceb3039defc44ae46330343176239",
+      "bytes": 312086,
+      "ops": 34355,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 288,
+        "33": 32665,
+        "34": 38,
+        "49": 230,
+        "80": 135,
+        "128": 40,
+        "144": 302,
+        "160": 657
+      },
+      "paid_static": 230,
+      "old_ops": 34541,
+      "ops_saved": 186
+    },
+    "dfthcsos/angle_k_8.kmb": {
+      "sha256": "0e00cf5467eb19821884a7c46c3220b23734fb068f3e8a34f1c5810a38714fd3",
+      "bytes": 114044,
+      "ops": 12517,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 103,
+        "33": 12032,
+        "34": 13,
+        "49": 205,
+        "80": 82,
+        "160": 82
+      },
+      "paid_static": 205,
+      "old_ops": 12518,
+      "ops_saved": 1
+    },
+    "dfthcsos/angle_k_9.kmb": {
+      "sha256": "002cd6dac72018bbb7232385ea9a11362cd97fe99c2d5d5207e1eca62c889a19",
+      "bytes": 119196,
+      "ops": 13057,
+      "qubits": 128,
+      "classical_bits": 1,
+      "opcode_counts": {
+        "17": 39,
+        "33": 12616,
+        "34": 23,
+        "49": 212,
+        "80": 82,
+        "144": 1,
+        "160": 84
+      },
+      "paid_static": 212,
+      "old_ops": 13061,
+      "ops_saved": 4
+    },
+    "dfthcsos/submission.npz": {
+      "sha256": "dcc713f35fcbe66ea80225b81363a8801893a9dbbf1ebf52f89b1b6ebfd06988",
+      "bytes": 1864916
+    },
+    "dqi.kmb": {
+      "sha256": "733ec803e325a52e1fba323de4898dcd852d606a517e62bb757892a74829886f",
+      "bytes": 560014667,
+      "ops": 61750702,
+      "qubits": 900,
+      "classical_bits": 691868,
+      "opcode_counts": {
+        "0": 32,
+        "1": 554289,
+        "16": 238,
+        "17": 18777,
+        "18": 40741,
+        "32": 9022,
+        "33": 28126491,
+        "34": 86903,
+        "48": 4780,
+        "49": 310383,
+        "50": 70,
+        "64": 3216717,
+        "65": 9973,
+        "66": 282504,
+        "80": 80434,
+        "128": 4378,
+        "129": 554289,
+        "144": 366680,
+        "145": 5592,
+        "160": 2301892,
+        "161": 3175585,
+        "162": 421313,
+        "176": 1936,
+        "177": 1415,
+        "192": 1809737,
+        "193": 2278,
+        "194": 20364065,
+        "208": 188
+      },
+      "paid_static": 318584,
+      "old_ops": 61750728,
+      "ops_saved": 26
+    },
+    "invsqrt.kmb": {
+      "sha256": "cd60b936c9354d85d292a59e52fa954108af0289c3068ad26efd2bd5c96738db",
+      "bytes": 261709,
+      "ops": 27676,
+      "qubits": 37,
+      "classical_bits": 1001,
+      "opcode_counts": {
+        "0": 3,
+        "1": 129,
+        "16": 137,
+        "17": 1014,
+        "19": 38,
+        "32": 227,
+        "33": 15035,
+        "34": 112,
+        "48": 1,
+        "49": 1427,
+        "50": 43,
+        "64": 435,
+        "66": 69,
+        "80": 1237,
+        "128": 97,
+        "129": 129,
+        "144": 3868,
+        "145": 23,
+        "147": 17,
+        "160": 2840,
+        "161": 623,
+        "162": 2,
+        "176": 28,
+        "177": 4,
+        "192": 6,
+        "194": 113,
+        "208": 19
+      },
+      "paid_static": 1503,
+      "old_ops": 27909,
+      "ops_saved": 233
+    }
+  },
+  "total_instructions": 62078069,
+  "total_saved": 1425,
+  "chemistry_instructions": 299691,
+  "invsqrt_instructions": 27676,
+  "dqi_instructions": 61750702,
+  "global_quantum_widths": {
+    "chemistry": 405,
+    "invsqrt": 37,
+    "dqi": 900
+  },
+  "new_paid_saving": 0,
+  "new_width_saving": 0,
+  "new_cost_improvement": false
+}

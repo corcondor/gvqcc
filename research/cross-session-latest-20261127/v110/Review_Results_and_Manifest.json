@@ -1,0 +1,1607 @@
+{
+  "schema": "gvqcc-v110-review-extended-final-v1",
+  "created_jst": "2026-11-27T15:23:37.947114+09:00",
+  "comparison_baseline": "User-provided V110, not other concurrent V111/V112 work",
+  "overview": {
+    "baseline_ops": 62081401,
+    "extended_ops": 62030143,
+    "removed_ops": 51258,
+    "removed_percent": 0.08256579132291167,
+    "chemistry": {
+      "before_ops": 301760,
+      "after_ops": 301675,
+      "qubits": 405,
+      "loader_qubits": 128,
+      "ccx_per_pass": 3262,
+      "expected_paid_per_pass": 3262.5,
+      "expected_cost": 247478615.98392352
+    },
+    "invsqrt": {
+      "before_ops": 28125,
+      "after_ops": 27533,
+      "qubits": 37,
+      "ccx": 1432,
+      "ccz": 29,
+      "cswap": 42,
+      "general_rotations": 33,
+      "hmr_before": 1266,
+      "hmr_after": 1218
+    },
+    "dqi": {
+      "before_ops": 61751516,
+      "after_ops": 61700935,
+      "qubits": 900,
+      "ccx": 311798,
+      "ccz": 6716,
+      "cswap": 70,
+      "static_paid": 318584,
+      "hmr": 80622
+    },
+    "new_expected_cost_improvement": false,
+    "new_complete_width_reduction": false,
+    "dqi_failure_fixed": false,
+    "c45_completed": false,
+    "github_written": false,
+    "competition_submitted": false
+  },
+  "native_files": {
+    "dfthcsos/angle_k_0.kmb": {
+      "bytes": 303719,
+      "sha256": "244dbd953c6af0bd0e08364d821c10a819bf725339d38a7a09fe5b8d18d45fcf",
+      "ops": 33524,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 241,
+      "ccz": 1,
+      "cswap": 0,
+      "static_paid": 242,
+      "hmr": 146,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_1.kmb": {
+      "bytes": 315612,
+      "sha256": "a7a2389dd441f61f8c63a48cd4e0f0bdc4a4a85e5a51e40565737d210c8035a6",
+      "ops": 34753,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 230,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 230,
+      "hmr": 135,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_10.kmb": {
+      "bytes": 123006,
+      "sha256": "ad70e415ee996d7b9df4fab4cb27974482fab849d25c21bcbee47818f3c7481c",
+      "ops": 13487,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 212,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 212,
+      "hmr": 82,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_11.kmb": {
+      "bytes": 313828,
+      "sha256": "9173ce02bc4eed21fd93e59c330ebb64c0c70fd8d3485d12331274562ca0eb00",
+      "ops": 34581,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 230,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 230,
+      "hmr": 135,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_12.kmb": {
+      "bytes": 118369,
+      "sha256": "9a65d986f269a1e3c5562b9f8eb0a4d88a47f7d29a96c155022296de80e9b6b0",
+      "ops": 12970,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 209,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 209,
+      "hmr": 82,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_13.kmb": {
+      "bytes": 115354,
+      "sha256": "9c9a9378154ee9c7a15cede14801a354dee4babb11a877a9d2cb44c82f33d08e",
+      "ops": 12635,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 206,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 206,
+      "hmr": 82,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_14.kmb": {
+      "bytes": 115371,
+      "sha256": "41b21d3adc9b0791f890c6e461b03a532995bcfd13ec55eb22bb45e13cbbb8db",
+      "ops": 12640,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 206,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 206,
+      "hmr": 82,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_2.kmb": {
+      "bytes": 117944,
+      "sha256": "77d256e9b9a0b45cc41a34d95e37cb5a158982c7c6187315b1e225229c02ef59",
+      "ops": 12913,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 213,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 213,
+      "hmr": 82,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_3.kmb": {
+      "bytes": 119836,
+      "sha256": "13fd7e64193e0cd71802878cc11594b3378610124248e87657673b7e0c5656ba",
+      "ops": 13133,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 212,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 212,
+      "hmr": 82,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_4.kmb": {
+      "bytes": 121690,
+      "sha256": "4e1f3865c57722a34af0559ba73cb5bf2635b2ea9a89ec48ed77c8895a4c5660",
+      "ops": 13335,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 213,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 213,
+      "hmr": 82,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_5.kmb": {
+      "bytes": 314886,
+      "sha256": "c550224cfd253f901fa8c77b897912fd3910bf0d1dc69ac25a05985f590ac7f8",
+      "ops": 34675,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 230,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 230,
+      "hmr": 135,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_6.kmb": {
+      "bytes": 116212,
+      "sha256": "08c1f22be648b0915c2534cf25cb8920ffcb79f0d067f9a13a180767b87c0c3e",
+      "ops": 12721,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 213,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 213,
+      "hmr": 82,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_7.kmb": {
+      "bytes": 315164,
+      "sha256": "0d65ff676a4936a93a1ac6504907b1436e52d5941a61fa50867a68ad27e70609",
+      "ops": 34701,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 230,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 230,
+      "hmr": 135,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_8.kmb": {
+      "bytes": 114085,
+      "sha256": "bf753d178ad2db31a5b5f991a72f16dfd67cefe05598f44dcb5ca001a987ca8f",
+      "ops": 12522,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 205,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 205,
+      "hmr": 82,
+      "rotation_ops": 0
+    },
+    "dfthcsos/angle_k_9.kmb": {
+      "bytes": 119436,
+      "sha256": "44b16d4ad178caf2cc5674e6e7ba0b0f8e54df00e7f92c2c45922c1f742a30aa",
+      "ops": 13085,
+      "qubits": 128,
+      "bits": 1,
+      "ccx": 212,
+      "ccz": 0,
+      "cswap": 0,
+      "static_paid": 212,
+      "hmr": 82,
+      "rotation_ops": 0
+    },
+    "dfthcsos/submission.npz": {
+      "bytes": 1864916,
+      "sha256": "dcc713f35fcbe66ea80225b81363a8801893a9dbbf1ebf52f89b1b6ebfd06988"
+    },
+    "dqi.kmb": {
+      "bytes": 559639460,
+      "sha256": "8010980d566e6b16d255bfa7f00b37fb0d00c62978cd8bd3932b1981adc05841",
+      "ops": 61700935,
+      "qubits": 900,
+      "bits": 691866,
+      "ccx": 311798,
+      "ccz": 6716,
+      "cswap": 70,
+      "static_paid": 318584,
+      "hmr": 80622,
+      "rotation_ops": 0
+    },
+    "invsqrt.kmb": {
+      "bytes": 262038,
+      "sha256": "0dd56a108a82391b8d5ebfcb908df0285c961d3cf89b1b1b7dae0ce882ac0e56",
+      "ops": 27533,
+      "qubits": 37,
+      "bits": 1001,
+      "ccx": 1432,
+      "ccz": 29,
+      "cswap": 42,
+      "static_paid": 1503,
+      "hmr": 1218,
+      "rotation_ops": 55
+    }
+  },
+  "validations": {
+    "chemistry": {
+      "unmodified_official": true,
+      "both_salts": [
+        {
+          "status": "PASS",
+          "score": 247478631.81424096,
+          "lambda_eff": 46.914265725252676,
+          "toffoli_count": 13025.000833162429,
+          "num_qubits": 405,
+          "brot": 7,
+          "batch_size": 5,
+          "num_circuits": 15,
+          "reaction_depth": 1448,
+          "num_ops": 301675,
+          "verified_shots": 78016,
+          "submission_sha256": "cc39a16028b5a81e6bab177c2a00cc91959a6e2fc21453955565aba295bf5e0a",
+          "resources": {
+            "brot": 7,
+            "keep_bits": 10,
+            "angles_toffoli_per_pass": 3262.5004165812143,
+            "angles_toffoli": 6525.0008331624285,
+            "angles_qubits": 128,
+            "angles_selection_qubits": 11,
+            "angles_persistent_qubits": 35,
+            "angles_temporary_qubits": 82,
+            "outer_state_prep_toffoli": 337,
+            "inner_state_prep_toffoli": 4213,
+            "givens_rotations_toffoli": 1950,
+            "outer_state_prep_persistent_qubits": 40,
+            "outer_state_prep_temporary_qubits": 90,
+            "outer_state_prep_qubits": 130,
+            "inner_state_prep_persistent_qubits": 43,
+            "inner_state_prep_temporary_qubits": 287,
+            "inner_state_prep_qubits": 330,
+            "heuristic_persistent_qubits": 83,
+            "heuristic_temporary_qubits": 287,
+            "heuristic_toffoli": 6500,
+            "heuristic_qubits": 370,
+            "persistent_qubits": 118,
+            "temporary_qubits": 287,
+            "toffoli": 13025.000833162429,
+            "qubits": 405,
+            "angles_within_cap": true
+          },
+          "metrics": {
+            "error_1": 0.019999999000204622,
+            "error_2": 0.019999999880829268,
+            "Lambda": 283.05651178191243,
+            "E_SOS": -22144.18824802,
+            "E_gap": 3.9148980200006918,
+            "lambda_eff": 46.914265725252676,
+            "gap_in_domain": true
+          }
+        },
+        {
+          "status": "PASS",
+          "score": 247478583.83620197,
+          "lambda_eff": 46.914265725252676,
+          "toffoli_count": 13024.998308039376,
+          "num_qubits": 405,
+          "brot": 7,
+          "batch_size": 5,
+          "num_circuits": 15,
+          "reaction_depth": 1448,
+          "num_ops": 301675,
+          "verified_shots": 78016,
+          "submission_sha256": "cc39a16028b5a81e6bab177c2a00cc91959a6e2fc21453955565aba295bf5e0a",
+          "resources": {
+            "brot": 7,
+            "keep_bits": 10,
+            "angles_toffoli_per_pass": 3262.4991540196884,
+            "angles_toffoli": 6524.998308039377,
+            "angles_qubits": 128,
+            "angles_selection_qubits": 11,
+            "angles_persistent_qubits": 35,
+            "angles_temporary_qubits": 82,
+            "outer_state_prep_toffoli": 337,
+            "inner_state_prep_toffoli": 4213,
+            "givens_rotations_toffoli": 1950,
+            "outer_state_prep_persistent_qubits": 40,
+            "outer_state_prep_temporary_qubits": 90,
+            "outer_state_prep_qubits": 130,
+            "inner_state_prep_persistent_qubits": 43,
+            "inner_state_prep_temporary_qubits": 287,
+            "inner_state_prep_qubits": 330,
+            "heuristic_persistent_qubits": 83,
+            "heuristic_temporary_qubits": 287,
+            "heuristic_toffoli": 6500,
+            "heuristic_qubits": 370,
+            "persistent_qubits": 118,
+            "temporary_qubits": 287,
+            "toffoli": 13024.998308039376,
+            "qubits": 405,
+            "angles_within_cap": true
+          },
+          "metrics": {
+            "error_1": 0.019999999000204622,
+            "error_2": 0.019999999880829268,
+            "Lambda": 283.05651178191243,
+            "E_SOS": -22144.18824802,
+            "E_gap": 3.9148980200006918,
+            "lambda_eff": 46.914265725252676,
+            "gap_in_domain": true
+          }
+        }
+      ],
+      "independent": {
+        "pass_all": true,
+        "npz_sha256": "dcc713f35fcbe66ea80225b81363a8801893a9dbbf1ebf52f89b1b6ebfd06988",
+        "paid_toffoli_per_pass": 3263,
+        "instructions_per_pass": 301675,
+        "qubits": 128,
+        "transitions": 36570,
+        "phase_coefficients": 3012,
+        "phase_address_checks": 3671628,
+        "records": [
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 146,
+            "first_bad_address": null,
+            "k": 0,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "244dbd953c6af0bd0e08364d821c10a819bf725339d38a7a09fe5b8d18d45fcf",
+            "paid_toffoli": 242,
+            "instructions": 33524
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 135,
+            "first_bad_address": null,
+            "k": 1,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "a7a2389dd441f61f8c63a48cd4e0f0bdc4a4a85e5a51e40565737d210c8035a6",
+            "paid_toffoli": 230,
+            "instructions": 34753
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 2,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "77d256e9b9a0b45cc41a34d95e37cb5a158982c7c6187315b1e225229c02ef59",
+            "paid_toffoli": 213,
+            "instructions": 12913
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 3,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "13fd7e64193e0cd71802878cc11594b3378610124248e87657673b7e0c5656ba",
+            "paid_toffoli": 212,
+            "instructions": 13133
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 4,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "4e1f3865c57722a34af0559ba73cb5bf2635b2ea9a89ec48ed77c8895a4c5660",
+            "paid_toffoli": 213,
+            "instructions": 13335
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 135,
+            "first_bad_address": null,
+            "k": 5,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "c550224cfd253f901fa8c77b897912fd3910bf0d1dc69ac25a05985f590ac7f8",
+            "paid_toffoli": 230,
+            "instructions": 34675
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 6,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "08c1f22be648b0915c2534cf25cb8920ffcb79f0d067f9a13a180767b87c0c3e",
+            "paid_toffoli": 213,
+            "instructions": 12721
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 135,
+            "first_bad_address": null,
+            "k": 7,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "0d65ff676a4936a93a1ac6504907b1436e52d5941a61fa50867a68ad27e70609",
+            "paid_toffoli": 230,
+            "instructions": 34701
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 8,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "bf753d178ad2db31a5b5f991a72f16dfd67cefe05598f44dcb5ca001a987ca8f",
+            "paid_toffoli": 205,
+            "instructions": 12522
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 9,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "44b16d4ad178caf2cc5674e6e7ba0b0f8e54df00e7f92c2c45922c1f742a30aa",
+            "paid_toffoli": 212,
+            "instructions": 13085
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 10,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "ad70e415ee996d7b9df4fab4cb27974482fab849d25c21bcbee47818f3c7481c",
+            "paid_toffoli": 212,
+            "instructions": 13487
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 135,
+            "first_bad_address": null,
+            "k": 11,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "9173ce02bc4eed21fd93e59c330ebb64c0c70fd8d3485d12331274562ca0eb00",
+            "paid_toffoli": 230,
+            "instructions": 34581
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 12,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "9a65d986f269a1e3c5562b9f8eb0a4d88a47f7d29a96c155022296de80e9b6b0",
+            "paid_toffoli": 209,
+            "instructions": 12970
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 13,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "9c9a9378154ee9c7a15cede14801a354dee4babb11a877a9d2cb44c82f33d08e",
+            "paid_toffoli": 206,
+            "instructions": 12635
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 14,
+            "direction": 1,
+            "legal_addresses": 1219,
+            "sha256": "41b21d3adc9b0791f890c6e461b03a532995bcfd13ec55eb22bb45e13cbbb8db",
+            "paid_toffoli": 206,
+            "instructions": 12640
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 14,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "41b21d3adc9b0791f890c6e461b03a532995bcfd13ec55eb22bb45e13cbbb8db",
+            "paid_toffoli": 206,
+            "instructions": 12640
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 13,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "9c9a9378154ee9c7a15cede14801a354dee4babb11a877a9d2cb44c82f33d08e",
+            "paid_toffoli": 206,
+            "instructions": 12635
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 12,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "9a65d986f269a1e3c5562b9f8eb0a4d88a47f7d29a96c155022296de80e9b6b0",
+            "paid_toffoli": 209,
+            "instructions": 12970
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 135,
+            "first_bad_address": null,
+            "k": 11,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "9173ce02bc4eed21fd93e59c330ebb64c0c70fd8d3485d12331274562ca0eb00",
+            "paid_toffoli": 230,
+            "instructions": 34581
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 10,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "ad70e415ee996d7b9df4fab4cb27974482fab849d25c21bcbee47818f3c7481c",
+            "paid_toffoli": 212,
+            "instructions": 13487
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 9,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "44b16d4ad178caf2cc5674e6e7ba0b0f8e54df00e7f92c2c45922c1f742a30aa",
+            "paid_toffoli": 212,
+            "instructions": 13085
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 8,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "bf753d178ad2db31a5b5f991a72f16dfd67cefe05598f44dcb5ca001a987ca8f",
+            "paid_toffoli": 205,
+            "instructions": 12522
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 135,
+            "first_bad_address": null,
+            "k": 7,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "0d65ff676a4936a93a1ac6504907b1436e52d5941a61fa50867a68ad27e70609",
+            "paid_toffoli": 230,
+            "instructions": 34701
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 6,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "08c1f22be648b0915c2534cf25cb8920ffcb79f0d067f9a13a180767b87c0c3e",
+            "paid_toffoli": 213,
+            "instructions": 12721
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 135,
+            "first_bad_address": null,
+            "k": 5,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "c550224cfd253f901fa8c77b897912fd3910bf0d1dc69ac25a05985f590ac7f8",
+            "paid_toffoli": 230,
+            "instructions": 34675
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 4,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "4e1f3865c57722a34af0559ba73cb5bf2635b2ea9a89ec48ed77c8895a4c5660",
+            "paid_toffoli": 213,
+            "instructions": 13335
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 3,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "13fd7e64193e0cd71802878cc11594b3378610124248e87657673b7e0c5656ba",
+            "paid_toffoli": 212,
+            "instructions": 13133
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 82,
+            "first_bad_address": null,
+            "k": 2,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "77d256e9b9a0b45cc41a34d95e37cb5a158982c7c6187315b1e225229c02ef59",
+            "paid_toffoli": 213,
+            "instructions": 12913
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 135,
+            "first_bad_address": null,
+            "k": 1,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "a7a2389dd441f61f8c63a48cd4e0f0bdc4a4a85e5a51e40565737d210c8035a6",
+            "paid_toffoli": 230,
+            "instructions": 34753
+          },
+          {
+            "pass_all": true,
+            "selection_bad_addresses": 0,
+            "word_bad_addresses": 0,
+            "scratch_bad_addresses": 0,
+            "phase_bad_addresses": 0,
+            "nonzero_hmr_coefficients": 0,
+            "constant_phase_bad_addresses": 0,
+            "hmr_events": 146,
+            "first_bad_address": null,
+            "k": 0,
+            "direction": -1,
+            "legal_addresses": 1219,
+            "sha256": "244dbd953c6af0bd0e08364d821c10a819bf725339d38a7a09fe5b8d18d45fcf",
+            "paid_toffoli": 242,
+            "instructions": 33524
+          }
+        ],
+        "elapsed_seconds": 0.879340648651123,
+        "official": false,
+        "physical_device": false
+      }
+    },
+    "invsqrt": {
+      "unmodified_official": true,
+      "all_legal_inputs_1shot": {
+        "status": "PASS",
+        "score": 60865.07811317742,
+        "toffoli_equivalent": 1645.0021111669573,
+        "toffoli_count": 1404.6233792635087,
+        "max_toffoli_count": 1503,
+        "t_count": 5.4992828994986995,
+        "rotation_count": 33.0,
+        "rotation_eps": 1.8880574198146154e-13,
+        "num_qubits": 37,
+        "reaction_depth": 1390,
+        "num_ops": 27533,
+        "verified_shots": 3133452,
+        "worst_error_over_tolerance": 0.9994717987127908,
+        "worst_x": 252,
+        "circuit_sha256": "0dd56a108a82391b8d5ebfcb908df0285c961d3cf89b1b1b7dae0ce882ac0e56"
+      },
+      "default_64shots_per_input_executed": false,
+      "exact_expected": {
+        "status": "EXACT_GUARD_EXPECTATIONS",
+        "circuit_sha256": "0dd56a108a82391b8d5ebfcb908df0285c961d3cf89b1b1b7dae0ce882ac0e56",
+        "paid_toffoli_expected": "11237/8",
+        "t_expected": "11/2",
+        "general_rotation_expected": "33",
+        "hmr_expected": "2269/2",
+        "max_guard_support": 5,
+        "probability_cache_size": 192,
+        "phase_margin_units": 36584657,
+        "expected_toffoli_equivalent": 1645.0039111785738,
+        "expected_score": 60865.14471360723,
+        "scope": "All classical guards expanded as Boolean ANF over independent potential HMR outcomes. Initial classical scratch is zero. Coherent branch correctness is checked separately."
+      },
+      "eight_input_certificate": {
+        "status": "PASS_EXACT_EIGHT_INPUT_INFORMATION_OBSTRUCTION",
+        "input_sha256": "0dd56a108a82391b8d5ebfcb908df0285c961d3cf89b1b1b7dae0ce882ac0e56",
+        "held_wires": [
+          26,
+          27,
+          29
+        ],
+        "checks": [
+          {
+            "cut": 5682,
+            "cut_instruction": "CCX q10 q21 q36",
+            "inputs": [
+              64,
+              256,
+              1024,
+              4096,
+              16384,
+              65536,
+              262144,
+              1048576
+            ],
+            "wire_state_words": [
+              103026024552,
+              102891806824,
+              102958915688,
+              102824697960,
+              102489153640,
+              102354935912,
+              102422044776,
+              102287827048
+            ],
+            "other_34_common_word": 102287827048,
+            "held_values": [
+              7,
+              5,
+              6,
+              4,
+              3,
+              1,
+              2,
+              0
+            ],
+            "native_replay": {
+              "native_all_quantum_wires_match": true,
+              "native_all_classical_bits_match": true,
+              "all_classical_bits_common_across_inputs": true,
+              "serialized_HMR": 333,
+              "executed_HMR": 333,
+              "common_existing_HMR_outcome": 0
+            },
+            "directions": [
+              {
+                "direction_mask_on_held": 1,
+                "witness_inputs": [
+                  64,
+                  1024
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 2,
+                "witness_inputs": [
+                  64,
+                  256
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 3,
+                "witness_inputs": [
+                  64,
+                  4096
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 4,
+                "witness_inputs": [
+                  64,
+                  16384
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 5,
+                "witness_inputs": [
+                  64,
+                  262144
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 6,
+                "witness_inputs": [
+                  64,
+                  65536
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 7,
+                "witness_inputs": [
+                  64,
+                  1048576
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              }
+            ]
+          },
+          {
+            "cut": 7693,
+            "cut_instruction": "X q34",
+            "inputs": [
+              64,
+              256,
+              1024,
+              4096,
+              16384,
+              65536,
+              262144,
+              1048576
+            ],
+            "wire_state_words": [
+              68700579453,
+              68566361725,
+              68633470589,
+              68499252861,
+              68163708541,
+              68029490813,
+              68096599677,
+              67962381949
+            ],
+            "other_34_common_word": 67962381949,
+            "held_values": [
+              7,
+              5,
+              6,
+              4,
+              3,
+              1,
+              2,
+              0
+            ],
+            "native_replay": {
+              "native_all_quantum_wires_match": true,
+              "native_all_classical_bits_match": true,
+              "all_classical_bits_common_across_inputs": true,
+              "serialized_HMR": 509,
+              "executed_HMR": 509,
+              "common_existing_HMR_outcome": 0
+            },
+            "directions": [
+              {
+                "direction_mask_on_held": 1,
+                "witness_inputs": [
+                  64,
+                  1024
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 2,
+                "witness_inputs": [
+                  64,
+                  256
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 3,
+                "witness_inputs": [
+                  64,
+                  4096
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 4,
+                "witness_inputs": [
+                  64,
+                  16384
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 5,
+                "witness_inputs": [
+                  64,
+                  262144
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 6,
+                "witness_inputs": [
+                  64,
+                  65536
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              },
+              {
+                "direction_mask_on_held": 7,
+                "witness_inputs": [
+                  64,
+                  1048576
+                ],
+                "different_original_states": true,
+                "identical_36_coordinate_projection": true
+              }
+            ]
+          }
+        ],
+        "seconds": 0.15155524500005413,
+        "theorem": "Eight orthogonal basis encodings differ only on the three held wires. Preserving their distinctions with the other 34 wires unchanged requires dimension at least 8, hence at least 3 qubits. Any projection along a nonzero direction supported on the three held wires has collisions. Any attempted reconstruction from the remaining unchanged data fails on one certified pair.",
+        "scope": "These two fixed circuit boundaries and common existing measurement transcript. Does not rule out changing retained functions elsewhere, moving information into other wires, a different earlier schedule, or a complete 36Q circuit."
+      }
+    },
+    "dqi": {
+      "status": "ALL_102400_INPUTS_AND_OFFICIAL_STATISTICAL_COST_COMPLETE_NATIVE_DEPTH_RESOURCE_BLOCKED_NO_FINAL_VERIFY_RETURN",
+      "statistics": {
+        "status": "ALL_SHOTS_AND_OFFICIAL_COST_FORMULAS_COMPLETE_DEPTH_PENDING",
+        "official_verify_returned": false,
+        "verified_shots": 102400,
+        "value_errors": 2,
+        "phase_errors": 0,
+        "paid_total": 32371568943,
+        "toffoli_count": 316128.6029589844,
+        "empirical_error_rate": 1.953125e-05,
+        "effective_error_rate": 0.0009488155716079551,
+        "repetition_factor": 1.2013880602795501,
+        "num_qubits": 900,
+        "score": 307632434577.3004,
+        "statistical_acceptance_gate": true,
+        "reaction_depth": null,
+        "opcode_count_breakdown_complete": false,
+        "circuit_sha256": "50b687bc142d9fe709e161404e169e7f00ee95edfdc2b6c0753b1c38c62b633a",
+        "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+      },
+      "official_core_returned": false,
+      "entirely_unmodified_official_invocation": false,
+      "finalizer_final_monitor.json": {
+        "returncode": -9,
+        "total_seconds": 15.694946599993273,
+        "observed_peak_rss_kib": 3748140,
+        "minimum_available_kib": 1223204,
+        "utc": "2026-11-27T06:20:57.123141+00:00"
+      },
+      "independent_completed_panel_statistics": {
+        "status": "ALL_SHOTS_AND_OFFICIAL_COST_FORMULAS_COMPLETE",
+        "official_verify_returned_by_this_aggregator": false,
+        "verified_shots": 102400,
+        "value_errors": 2,
+        "phase_errors": 0,
+        "paid_total": 32371568943,
+        "toffoli_count": 316128.6029589844,
+        "empirical_error_rate": 1.953125e-05,
+        "effective_error_rate": 0.0009488155716079551,
+        "repetition_factor": 1.2013880602795501,
+        "num_qubits": 900,
+        "score": 307632434577.3004,
+        "statistical_acceptance_gate": true,
+        "reaction_depth_computed_by_this_aggregator": false,
+        "opcode_count_breakdown_complete": false,
+        "opcode_count_shots": 59392,
+        "failure_batches": [
+          158,
+          261
+        ],
+        "circuit_sha256": "50b687bc142d9fe709e161404e169e7f00ee95edfdc2b6c0753b1c38c62b633a",
+        "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+        "journal_sha256": "2d92c2980c6d42b54ec66911edf1940eaadef5789323575fab202d25312f9610"
+      }
+    },
+    "new_default_failures": [
+      {
+        "status": "CAPTURED_EXACT_DEFAULT_TASK_FAILURES",
+        "complete_verifier_call": false,
+        "circuit_sha256": "50b687bc142d9fe709e161404e169e7f00ee95edfdc2b6c0753b1c38c62b633a",
+        "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+        "batch": 158,
+        "start": 40448,
+        "rng_seed": "47800491032846677365622296637098463393073764781880034374904349233125530871573",
+        "sim_seed": "45747656582208556315366521887874534218018145053484441572195269512345728270183",
+        "paid_total": 80931184,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "matches_full_panel_batch": true,
+        "official_generated_inputs_match_recording_rng": true,
+        "captures": [
+          {
+            "file": "v110_default_batch158_shot179.npz",
+            "sha256": "3da8921f2c99d7434ee4732c9d5b1f3550c4b102931689ebf6211f88ae07c93c",
+            "batch": 158,
+            "shot": 179,
+            "global_shot": 40627,
+            "weight": 34,
+            "value_error": true,
+            "counted_phase_error": false,
+            "raw_phase_mismatch": true,
+            "syndrome_error_bits": 428,
+            "dirty_ancilla_bits": 0
+          }
+        ],
+        "relationship_to_inherited_kappa3257_fixture": "Different circuit-derived default sampling series; same cause has not been established."
+      },
+      {
+        "status": "CAPTURED_EXACT_DEFAULT_TASK_FAILURES",
+        "complete_verifier_call": false,
+        "circuit_sha256": "50b687bc142d9fe709e161404e169e7f00ee95edfdc2b6c0753b1c38c62b633a",
+        "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+        "batch": 261,
+        "start": 66816,
+        "rng_seed": "46911729631994991595396036985526695544536550089759073907627646940353043776754",
+        "sim_seed": "20027545589532508374520198897294892452815536649571865596632527047813800834010",
+        "paid_total": 80933902,
+        "value_errors": 1,
+        "phase_errors": 0,
+        "matches_full_panel_batch": true,
+        "official_generated_inputs_match_recording_rng": true,
+        "captures": [
+          {
+            "file": "v110_default_batch261_shot223.npz",
+            "sha256": "4809bee01b7b0d25263b9b72c93038e4d8b8ce9ae9e2e34450dd250d1df861c4",
+            "batch": 261,
+            "shot": 223,
+            "global_shot": 67039,
+            "weight": 27,
+            "value_error": true,
+            "counted_phase_error": false,
+            "raw_phase_mismatch": true,
+            "syndrome_error_bits": 420,
+            "dirty_ancilla_bits": 0
+          }
+        ],
+        "relationship_to_inherited_kappa3257_fixture": "Different circuit-derived default sampling series; same cause has not been established."
+      }
+    ]
+  },
+  "conditional_cost_frontier": {
+    "status": "CONDITIONAL_COST_FRONTIER_NOT_REALIZED_IMPROVEMENTS",
+    "baseline_mean_paid": 316128.6029589844,
+    "current_expected_invsqrt_T_equiv": 1645.0039111785738,
+    "invsqrt_36Q_strict_extra_T_equiv_budget": 45.694553088293716,
+    "DQI_bounds": [
+      {
+        "errors": 0,
+        "shots": 102400,
+        "epsilon_plus": 0.0008660587301657926,
+        "repetition_factor": 1.1912604648115832,
+        "cost_at_same_paid_900Q": 305039120265.9365
+      },
+      {
+        "errors": 1,
+        "shots": 102400,
+        "epsilon_plus": 0.0009104197583220583,
+        "repetition_factor": 1.1967314991687559,
+        "cost_at_same_paid_900Q": 306440056128.8761
+      },
+      {
+        "errors": 2,
+        "shots": 102400,
+        "epsilon_plus": 0.0009488155716079551,
+        "repetition_factor": 1.2013880602795501,
+        "cost_at_same_paid_900Q": 307632434577.3004
+      }
+    ],
+    "DQI_budgets_relative_to_current_2_error_sample": [
+      {
+        "candidate_observed_errors": 0,
+        "candidate_qubits": 900,
+        "baseline_observed_errors": 2,
+        "baseline_qubits": 900,
+        "strict_extra_mean_paid_budget": 2687.592429358882
+      },
+      {
+        "candidate_observed_errors": 0,
+        "candidate_qubits": 888,
+        "baseline_observed_errors": 2,
+        "baseline_qubits": 900,
+        "strict_extra_mean_paid_budget": 11362.466993431824
+      },
+      {
+        "candidate_observed_errors": 1,
+        "candidate_qubits": 900,
+        "baseline_observed_errors": 2,
+        "baseline_qubits": 900,
+        "strict_extra_mean_paid_budget": 1230.0772224772106
+      },
+      {
+        "candidate_observed_errors": 1,
+        "candidate_qubits": 888,
+        "baseline_observed_errors": 2,
+        "baseline_qubits": 900,
+        "strict_extra_mean_paid_budget": 9865.29331945278
+      },
+      {
+        "candidate_observed_errors": 2,
+        "candidate_qubits": 900,
+        "baseline_observed_errors": 2,
+        "baseline_qubits": 900,
+        "strict_extra_mean_paid_budget": 0.0
+      },
+      {
+        "candidate_observed_errors": 2,
+        "candidate_qubits": 888,
+        "baseline_observed_errors": 2,
+        "baseline_qubits": 900,
+        "strict_extra_mean_paid_budget": 8601.746136027949
+      }
+    ],
+    "scope": "Same 102400-shot size and confidence; hypothetical changed observed errors and width. Not proof that a repair reaches those errors or that samples identify true zero failure. Cost model unchanged official functions."
+  },
+  "proof_archive": {
+    "file": "GVQCC_V110_Review_Math_Code_Proofs_and_Replay.zip",
+    "bytes": 11435315,
+    "sha256": "c9b518842c5cb47d2e509a2cc207ae16714176082c6e48f9f49650eb2ba502b6",
+    "members": 476,
+    "total_uncompressed_bytes": 62736076,
+    "status": "PASS_ZIP_REREAD_AND_SHA256"
+  },
+  "native_archive_checks": [
+    {
+      "file": "GVQCC_V110_Checked_Extended_62030143_AllTasks.zip",
+      "bytes": 74905361,
+      "sha256": "4e75bdf2a7b31c3ae70f91073eb15bd550ab1bd3137852e17581f7af9abd8919",
+      "members": {
+        "dfthcsos/angle_k_0.kmb": {
+          "bytes": 303719,
+          "sha256": "244dbd953c6af0bd0e08364d821c10a819bf725339d38a7a09fe5b8d18d45fcf"
+        },
+        "dfthcsos/angle_k_1.kmb": {
+          "bytes": 315612,
+          "sha256": "a7a2389dd441f61f8c63a48cd4e0f0bdc4a4a85e5a51e40565737d210c8035a6"
+        },
+        "dfthcsos/angle_k_10.kmb": {
+          "bytes": 123006,
+          "sha256": "ad70e415ee996d7b9df4fab4cb27974482fab849d25c21bcbee47818f3c7481c"
+        },
+        "dfthcsos/angle_k_11.kmb": {
+          "bytes": 313828,
+          "sha256": "9173ce02bc4eed21fd93e59c330ebb64c0c70fd8d3485d12331274562ca0eb00"
+        },
+        "dfthcsos/angle_k_12.kmb": {
+          "bytes": 118369,
+          "sha256": "9a65d986f269a1e3c5562b9f8eb0a4d88a47f7d29a96c155022296de80e9b6b0"
+        },
+        "dfthcsos/angle_k_13.kmb": {
+          "bytes": 115354,
+          "sha256": "9c9a9378154ee9c7a15cede14801a354dee4babb11a877a9d2cb44c82f33d08e"
+        },
+        "dfthcsos/angle_k_14.kmb": {
+          "bytes": 115371,
+          "sha256": "41b21d3adc9b0791f890c6e461b03a532995bcfd13ec55eb22bb45e13cbbb8db"
+        },
+        "dfthcsos/angle_k_2.kmb": {
+          "bytes": 117944,
+          "sha256": "77d256e9b9a0b45cc41a34d95e37cb5a158982c7c6187315b1e225229c02ef59"
+        },
+        "dfthcsos/angle_k_3.kmb": {
+          "bytes": 119836,
+          "sha256": "13fd7e64193e0cd71802878cc11594b3378610124248e87657673b7e0c5656ba"
+        },
+        "dfthcsos/angle_k_4.kmb": {
+          "bytes": 121690,
+          "sha256": "4e1f3865c57722a34af0559ba73cb5bf2635b2ea9a89ec48ed77c8895a4c5660"
+        },
+        "dfthcsos/angle_k_5.kmb": {
+          "bytes": 314886,
+          "sha256": "c550224cfd253f901fa8c77b897912fd3910bf0d1dc69ac25a05985f590ac7f8"
+        },
+        "dfthcsos/angle_k_6.kmb": {
+          "bytes": 116212,
+          "sha256": "08c1f22be648b0915c2534cf25cb8920ffcb79f0d067f9a13a180767b87c0c3e"
+        },
+        "dfthcsos/angle_k_7.kmb": {
+          "bytes": 315164,
+          "sha256": "0d65ff676a4936a93a1ac6504907b1436e52d5941a61fa50867a68ad27e70609"
+        },
+        "dfthcsos/angle_k_8.kmb": {
+          "bytes": 114085,
+          "sha256": "bf753d178ad2db31a5b5f991a72f16dfd67cefe05598f44dcb5ca001a987ca8f"
+        },
+        "dfthcsos/angle_k_9.kmb": {
+          "bytes": 119436,
+          "sha256": "44b16d4ad178caf2cc5674e6e7ba0b0f8e54df00e7f92c2c45922c1f742a30aa"
+        },
+        "dfthcsos/submission.npz": {
+          "bytes": 1864916,
+          "sha256": "dcc713f35fcbe66ea80225b81363a8801893a9dbbf1ebf52f89b1b6ebfd06988"
+        },
+        "dqi.kmb": {
+          "bytes": 559639460,
+          "sha256": "8010980d566e6b16d255bfa7f00b37fb0d00c62978cd8bd3932b1981adc05841"
+        },
+        "invsqrt.kmb": {
+          "bytes": 262038,
+          "sha256": "0dd56a108a82391b8d5ebfcb908df0285c961d3cf89b1b1b7dae0ce882ac0e56"
+        }
+      },
+      "status": "PASS_ZIP_REREAD_AND_SHA256",
+      "competition_submission": false
+    },
+    {
+      "file": "GVQCC_V110_Chemistry_3262p5_301675_Both_Salts_PASS.zip",
+      "bytes": 1653176,
+      "sha256": "033089b70275136225039da992f181fa66c1d83a48d7c554a41ce984cdb09556",
+      "members": {
+        "dfthcsos/angle_k_0.kmb": {
+          "bytes": 303719,
+          "sha256": "244dbd953c6af0bd0e08364d821c10a819bf725339d38a7a09fe5b8d18d45fcf"
+        },
+        "dfthcsos/angle_k_1.kmb": {
+          "bytes": 315612,
+          "sha256": "a7a2389dd441f61f8c63a48cd4e0f0bdc4a4a85e5a51e40565737d210c8035a6"
+        },
+        "dfthcsos/angle_k_10.kmb": {
+          "bytes": 123006,
+          "sha256": "ad70e415ee996d7b9df4fab4cb27974482fab849d25c21bcbee47818f3c7481c"
+        },
+        "dfthcsos/angle_k_11.kmb": {
+          "bytes": 313828,
+          "sha256": "9173ce02bc4eed21fd93e59c330ebb64c0c70fd8d3485d12331274562ca0eb00"
+        },
+        "dfthcsos/angle_k_12.kmb": {
+          "bytes": 118369,
+          "sha256": "9a65d986f269a1e3c5562b9f8eb0a4d88a47f7d29a96c155022296de80e9b6b0"
+        },
+        "dfthcsos/angle_k_13.kmb": {
+          "bytes": 115354,
+          "sha256": "9c9a9378154ee9c7a15cede14801a354dee4babb11a877a9d2cb44c82f33d08e"
+        },
+        "dfthcsos/angle_k_14.kmb": {
+          "bytes": 115371,
+          "sha256": "41b21d3adc9b0791f890c6e461b03a532995bcfd13ec55eb22bb45e13cbbb8db"
+        },
+        "dfthcsos/angle_k_2.kmb": {
+          "bytes": 117944,
+          "sha256": "77d256e9b9a0b45cc41a34d95e37cb5a158982c7c6187315b1e225229c02ef59"
+        },
+        "dfthcsos/angle_k_3.kmb": {
+          "bytes": 119836,
+          "sha256": "13fd7e64193e0cd71802878cc11594b3378610124248e87657673b7e0c5656ba"
+        },
+        "dfthcsos/angle_k_4.kmb": {
+          "bytes": 121690,
+          "sha256": "4e1f3865c57722a34af0559ba73cb5bf2635b2ea9a89ec48ed77c8895a4c5660"
+        },
+        "dfthcsos/angle_k_5.kmb": {
+          "bytes": 314886,
+          "sha256": "c550224cfd253f901fa8c77b897912fd3910bf0d1dc69ac25a05985f590ac7f8"
+        },
+        "dfthcsos/angle_k_6.kmb": {
+          "bytes": 116212,
+          "sha256": "08c1f22be648b0915c2534cf25cb8920ffcb79f0d067f9a13a180767b87c0c3e"
+        },
+        "dfthcsos/angle_k_7.kmb": {
+          "bytes": 315164,
+          "sha256": "0d65ff676a4936a93a1ac6504907b1436e52d5941a61fa50867a68ad27e70609"
+        },
+        "dfthcsos/angle_k_8.kmb": {
+          "bytes": 114085,
+          "sha256": "bf753d178ad2db31a5b5f991a72f16dfd67cefe05598f44dcb5ca001a987ca8f"
+        },
+        "dfthcsos/angle_k_9.kmb": {
+          "bytes": 119436,
+          "sha256": "44b16d4ad178caf2cc5674e6e7ba0b0f8e54df00e7f92c2c45922c1f742a30aa"
+        },
+        "dfthcsos/submission.npz": {
+          "bytes": 1864916,
+          "sha256": "dcc713f35fcbe66ea80225b81363a8801893a9dbbf1ebf52f89b1b6ebfd06988"
+        },
+        "validation/default.json": {
+          "bytes": 1556,
+          "sha256": "8324f85b246047f769e44a75de3dc441e17ccc86ebbb4c9cd6e96f5f20931f3f"
+        },
+        "validation/fresh_salt.json": {
+          "bytes": 1555,
+          "sha256": "a5596c4b23e5fc710ebb38d4227a2be69c0aa7c7192851a58a81e5ca5829629a"
+        },
+        "validation/independent_family.json": {
+          "bytes": 15754,
+          "sha256": "221b976aeec83626dc1ad4a61fce3e3384f31f8cec3a3161fa2fc49119a28b95"
+        },
+        "README_JA.md": {
+          "bytes": 440,
+          "sha256": "ab80325f99e56cb9c3e670d60ab6c55518a2f5d0692b4c20c66ba3252d0b8888"
+        }
+      },
+      "status": "PASS_ZIP_REREAD_AND_SHA256",
+      "competition_submission": false
+    },
+    {
+      "file": "GVQCC_V110_InvSqrt_37Q_27533_All_Legal_1shot_PASS.zip",
+      "bytes": 61710,
+      "sha256": "a38d8169fc910e6a7a75ec9bdeb8534772e8200cc34d94959716b52bb1468d56",
+      "members": {
+        "invsqrt.kmb": {
+          "bytes": 262038,
+          "sha256": "0dd56a108a82391b8d5ebfcb908df0285c961d3cf89b1b1b7dae0ce882ac0e56"
+        },
+        "validation/all_legal_1shot.json": {
+          "bytes": 519,
+          "sha256": "450c33813958bcbd4a915fff810bb683e48b1206f3be3ef3c9693ba89eb952f5"
+        },
+        "validation/exact_expected_cost.json": {
+          "bytes": 221191,
+          "sha256": "de450204aab017f294cf778ae9f36e460ffc6dc26c04c391f1656e2759476340"
+        },
+        "validation/eight_input_fiber.json": {
+          "bytes": 5973,
+          "sha256": "e6d2994d619681cac52bc9af70413739999f3792f8efcc303d661b9e3cee3f7a"
+        },
+        "README_JA.md": {
+          "bytes": 503,
+          "sha256": "40ff77d91dd1806eb35b2a73b87df71f62744c851304db6afff2de925d5392c3"
+        }
+      },
+      "status": "PASS_ZIP_REREAD_AND_SHA256",
+      "competition_submission": false
+    }
+  ],
+  "deliverables": {
+    "GVQCC_V110_Checked_Extended_62030143_AllTasks.zip": {
+      "bytes": 74905361,
+      "sha256": "4e75bdf2a7b31c3ae70f91073eb15bd550ab1bd3137852e17581f7af9abd8919"
+    },
+    "GVQCC_V110_Chemistry_3262p5_301675_Both_Salts_PASS.zip": {
+      "bytes": 1653176,
+      "sha256": "033089b70275136225039da992f181fa66c1d83a48d7c554a41ce984cdb09556"
+    },
+    "GVQCC_V110_InvSqrt_37Q_27533_All_Legal_1shot_PASS.zip": {
+      "bytes": 61710,
+      "sha256": "a38d8169fc910e6a7a75ec9bdeb8534772e8200cc34d94959716b52bb1468d56"
+    },
+    "GVQCC_V110_Review_Math_Code_Proofs_and_Replay.zip": {
+      "bytes": 11435315,
+      "sha256": "c9b518842c5cb47d2e509a2cc207ae16714176082c6e48f9f49650eb2ba502b6"
+    },
+    "GVQCC_V110_Review_and_Mathematical_Bottlenecks_JA.md": {
+      "bytes": 33445,
+      "sha256": "bb0daa4fdb74d00a408a7024b0c16684d6d7bf6af7ee64eb64b2a6cbc339d415"
+    }
+  },
+  "scope_notes": [
+    "No 36Q InvSqrt or 888Q DQI complete circuit.",
+    "Native DQI extension exactly preserves the V110 behavior and all paid/HMR events, including known failures.",
+    "DQI 102400-input panel uses the V110 baseline SHA-derived default seed; it is not the extension SHA-derived default panel.",
+    "Counted phase errors exclude shots with value errors. Both newly captured default value failures also have raw phase mismatches.",
+    "InvSqrt sample-cost difference after HMR deletion is not an expected-cost improvement.",
+    "Research local carry prototype and DQI zero-chart kernels are not integrated into the final 18 files.",
+    "Fixed-space closure and fixed-phase-function angle dual do not prove arbitrary-circuit optimality."
+  ]
+}
