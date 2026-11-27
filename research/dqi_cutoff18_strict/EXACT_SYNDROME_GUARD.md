@@ -14,3 +14,21 @@
 **Lean 4.35.0:** CI compiles the existing `InvariantPad.lean` to an OLean before checking `SparseSyndromeGuard.lean`, with warnings as errors and a forbidden-`sorryAx` check. The Lean proof is local mathematics, not KickMix whole-tape refinement. The Python CI reference checker does not execute KickMix. **A future KMB must pass full KickMix and official verifier before approval.**
 
 Next steps: diagnose first incorrect internal update, implement coherent rank-selecting repair that is correct for all weights<=35, prove phase including exact SSA measurement epochs, and only then optimize Q² × expected paid × repetition-factor on the same fixed native distribution. No main-branch merge or Kaggle upload is authorized by this research-only change.
+
+## Sharper selector bound: 35+r source moments
+
+For a promised legal true syndrome of weight<=35 and a rank-r candidate,
+**only the first 35+r ORIGINAL INPUT moments** need to be compared. This
+follows from the already-proved Vandermonde injectivity on a union support of
+at most 35+r nonzero roots. It may save 33 twelve-bit moment comparisons for
+a rank-2 selector (37 instead of 70), or 34 for rank 1 (36 instead of 70).
+This is a mathematically justified optimization of a coherent **input
+certificate**, not a license to compare to corrupt outputs of the old donor.
+
+The bound is **sharp**. The test constructs 37 distinct GF4096 nonzero roots
+x_i and barycentric coefficients c_i = 1/(x_i * product_{j != i}(x_i+x_j)).
+It splits the first 35 terms and the last 2 terms into two legal sparse
+syndromes. Their first 36 moments agree exactly, but moment 37 differs.
+Therefore a 36-moment certificate would be unsound in this worst case.
+No KMB cost saving is claimed until the original coherent selector is modified
+and KickMix-validated.
