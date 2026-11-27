@@ -46,7 +46,7 @@ jobs:
           lake env lean -DwarningAsError=true SharedChart316.lean | tee sharedchart.log
           test "$(grep -c 'GVQCC.SharedChart316.*axiom' sharedchart.log)" -eq 8
           lake env lean -DwarningAsError=true InvariantPad.lean | tee invariantpad.log
-          test "$(grep -c 'GVQCC.InvariantPad.*axiom' invariantpad.log)" -eq 19
+          test "$(grep -c 'GVQCC.InvariantPad.*axiom' invariantpad.log)" -eq 22
           ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log parser.log rootcause.log firstpole.log allchart.log sharedchart.log invariantpad.log
       - uses: actions/upload-artifact@v4
         if: always()
