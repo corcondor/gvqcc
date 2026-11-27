@@ -1,4 +1,4 @@
-name: DQI 316k affine padding strict repair algebra
+name: V128 transposed tensor strict audit
 on:
   pull_request:
     paths:
@@ -35,7 +35,9 @@ jobs:
           test "$(grep -c 'GVQCC.BranchCollision.*axiom' collision.log)" -eq 6
           lake env lean -DwarningAsError=true InfinityCF.lean | tee infinity.log
           test "$(grep -c 'GVQCC.InfinityCF.*axiom' infinity.log)" -eq 14
-          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log
+          lake env lean -DwarningAsError=true TransposeTransfer.lean | tee transpose.log
+          test "$(grep -c 'GVQCC.V128.*axiom' transpose.log)" -eq 9
+          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log transpose.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -46,3 +48,4 @@ jobs:
             research/dqi_cutoff18_strict/padding.log
             research/dqi_cutoff18_strict/collision.log
             research/dqi_cutoff18_strict/infinity.log
+            research/dqi_cutoff18_strict/transpose.log
