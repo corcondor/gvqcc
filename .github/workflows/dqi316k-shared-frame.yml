@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'research/dqi316k_joint_crt/SharedFrame316.lean'
+      - 'research/dqi316k_joint_crt/DisjointPad247.lean'
       - 'research/dqi316k_joint_crt/d16_shared_frame.py'
       - '.github/workflows/dqi316k-shared-frame.yml'
   workflow_dispatch:
@@ -23,3 +24,10 @@ jobs:
           lean -DwarningAsError=true research/dqi316k_joint_crt/SharedFrame316.lean | tee shared-frame.log
           test "$(grep -c 'axiom' shared-frame.log)" -eq 8
           ! grep -E 'sorryAx|ofReduceBool|native_decide' shared-frame.log
+
+      - name: Check disjoint pad invariants
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi316k_joint_crt/DisjointPad247.lean | tee disjoint-pad.log
+          test "$(grep -c 'axiom' disjoint-pad.log)" -eq 4
+          ! grep -E 'sorryAx|ofReduceBool|native_decide' disjoint-pad.log
