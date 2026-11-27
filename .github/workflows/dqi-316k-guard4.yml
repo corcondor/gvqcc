@@ -1,0 +1,41 @@
+name: DQI guarded inverse four-product proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_joint_crt/guard4.py'
+      - 'research/dqi316k_joint_crt/Guard4.lean'
+      - '.github/workflows/dqi-316k-guard4.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lean 4.35.0 strict proof
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          export PATH="$HOME/.elan/bin:$PATH"
+          set -o pipefail
+          lean -DwarningAsError=true research/dqi316k_joint_crt/Guard4.lean | tee guard4-axioms.txt
+          ! grep -E 'sorryAx|Lean.ofReduceBool|native_decide' guard4-axioms.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: guard4-axioms
+          path: guard4-axioms.txt
+  native:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - name: Full chart scan, native KickMix
+        working-directory: research/dqi316k_joint_crt
+        run: python guard4.py --count 4095 --cases 96
+      - uses: actions/upload-artifact@v4
+        with:
+          name: guard4-native
+          path: |
+            research/dqi316k_joint_crt/guard4_4095.kmb
+            research/dqi316k_joint_crt/guard4_4095.json
