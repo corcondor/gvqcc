@@ -1,4 +1,4 @@
-name: DQI no-copy reverse chart
+name: DQI 897Q joint gauge and phase audit
 on:
   pull_request:
     paths:
@@ -25,9 +25,13 @@ jobs:
           lake exe cache get
           lake env lean -DwarningAsError=true NoCopy.lean | tee axioms.txt
           test "$(grep -c 'GVQCC.NoCopy.*axiom' axioms.txt)" -eq 9
-          ! grep -Eq 'sorryAx|ofReduceBool' axioms.txt
+          lake env lean -DwarningAsError=true JointGauge.lean | tee joint-axioms.txt
+          test "$(grep -c 'GVQCC.JointGauge.*axiom' joint-axioms.txt)" -eq 6
+          ! grep -Eq 'sorryAx|ofReduceBool' axioms.txt joint-axioms.txt
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: no-copy-axioms
-          path: research/dqi_no_copy_reverse/axioms.txt
+          path: |
+            research/dqi_no_copy_reverse/axioms.txt
+            research/dqi_no_copy_reverse/joint-axioms.txt
