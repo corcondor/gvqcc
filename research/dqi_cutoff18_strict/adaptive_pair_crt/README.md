@@ -1,0 +1,13 @@
+# Adaptive paired pivots and all-pole CRT (research only)
+
+Stacked on #229, base bb0c8d661c11a7a87bfa2243d792ef6533efffc0. Separate from #233; no cross-donor binary substitution, no submission or merge.
+
+If the first available node i has n=0, d!=0, but a later node j is selected, then at i the next homogeneous pair is (d,0). The next pivot is therefore i and its quotient is exactly zero. Store the index of j in that forced-zero quotient word. A sequence of one-slot ordinary and two-slot jump macros of total consumed length at most 35, including termination, has F_38-1 = 39,088,168 possibilities, fitting in 26 bits. This is a history encoding, not a full physical register allocation; the current adaptive decoder still requires reversible availability management and phase bookkeeping.
+
+For U=G^2*g_extra, M=G*g_extra of degree 36 and N=cG, write U*A=W+N/D. Since gcd(G,D)=1, G divides W. With B=W/G, M*P=B*D+c. Hence the degree<36 representative of B^{-1} mod M is T=D/c, and the magnitude at a nonzero root x of D is 1/(x*M(x)*T'(x)). The first 36 words of the monic M-convolution of the input give B; the last 34 words vanish on this all-pole stratum. The zero-syndrome case must be separate. On other inputs the zero-safe CRT inversion remains a reversible coordinate map, not a correct locator decoder.
+
+Independent local Python reference (extra node kappa=2048): 688 legal inputs, including 288 stratified, 216 forced-one-pole, 120 many-pole, 64 all-pole. All locator and amplitude comparisons exact. 28,656 rank/unrank histories through length 20 exhaustively checked, 4,096 sampled through length 35. Actual max jumps in this fixture is 1; multi-jump legal syndromes are not demonstrated by this panel.
+
+Local emitted X/CX/CCX tape (NOT a KMB or complete DQI oracle), 882 Q, 260,239 ops, 9,288 CCX, 250,951 CX. 346 independent bit-sliced tape forward/inverse comparisons, 128 all-pole locators and magnitudes exact. 18 forced zero CRT residues tested. CRT coordinate map 85,540 -> 44,071 CX one direction; #190's exact 510-op 42-CCX multiplication reused with independent ANF check. Pre-42 version 15,660 CCX. 42 clean workspace lines via lifetime sharing. Tape gzip SHA256 aad44f9d0eb60f23b21846f1fcefecc47121efa9965cef5dde9ab6b4023a1baa. Full tape and generator are in the conversation ZIP, not embedded here.
+
+The local runtime does not have KickMix or Lean installed; the newly added strict Lean CI is required before calling the new statements verified. Neither #229's 1364-case reference nor this test is a 316k whole-circuit repair. In particular the specialized codec does not implement the phase scan, universal chart selection, or HMR repayment.
