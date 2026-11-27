@@ -338,3 +338,134 @@ end GVQCC.V115.Adaptive
 #print axioms GVQCC.V115.Adaptive.finite_budget
 #print axioms GVQCC.V115.Adaptive.infinity_budget
 #print axioms GVQCC.V115.Adaptive.adaptive_trace_inverse
+
+namespace GVQCC.V115.Spec
+
+open scoped BigOperators
+open Polynomial
+
+variable {F : Type*} [Field F]
+
+/-- Actual legal inputs: at most 35 nonzero magnitudes on nonzero field points. -/
+noncomputable def support (D : Finset F) (e : F → F) : Finset F := by
+  classical
+  exact D.filter (fun x => e x ≠ 0)
+
+def Legal (D : Finset F) (e : F → F) : Prop :=
+  (support D e).card ≤ 35 ∧ ∀ x, x ∉ D → e x = 0
+
+def syndrome (D : Finset F) (e : F → F) (j : Fin 70) : F :=
+  ∑ x ∈ D, e x * x^(j.val+1)
+
+theorem support_subset (D : Finset F) (e : F → F) :
+    support D e ⊆ D := by
+  classical
+  exact Finset.filter_subset _ _
+
+theorem outside_support_zero (D : Finset F) (e : F → F) (x : F)
+    (hx : x ∈ D) (h : x ∉ support D e) : e x = 0 := by
+  classical
+  by_contra he
+  exact h (by simp [support, hx, he])
+
+theorem legal_injective (D : Finset F) (hnz : ∀ x ∈ D, x ≠ 0)
+    (a b : F → F) (ha : Legal D a) (hb : Legal D b)
+    (h : syndrome D a = syndrome D b) : a = b := by
+  classical
+  let U := support D a ∪ support D b
+  have hsub : U ⊆ D := Finset.union_subset (support_subset D a) (support_subset D b)
+  have hc : U.card ≤ 70 := by
+    have hle := Finset.card_union_le (support D a) (support D b)
+    have h1 := ha.1
+    have h2 := hb.1
+    change (support D a ∪ support D b).card ≤ 70
+    omega
+  have hza : ∀ x, x ∉ U → a x = 0 := by
+    intro x hx
+    by_cases hd : x ∈ D
+    · apply outside_support_zero D a x hd
+      intro hs
+      exact hx (Finset.mem_union.mpr (Or.inl hs))
+    · exact ha.2 x hd
+  have hzb : ∀ x, x ∉ U → b x = 0 := by
+    intro x hx
+    by_cases hd : x ∈ D
+    · apply outside_support_zero D b x hd
+      intro hs
+      exact hx (Finset.mem_union.mpr (Or.inr hs))
+    · exact hb.2 x hd
+  have hm : ∀ j : ℕ, j < 70 →
+      (∑ x ∈ U, a x*x^(j+1)) = (∑ x ∈ U, b x*x^(j+1)) := by
+    intro j hj
+    have he := congrFun h (⟨j,hj⟩ : Fin 70)
+    change (∑ x ∈ D, a x*x^(j+1)) = (∑ x ∈ D, b x*x^(j+1)) at he
+    have hsa : (∑ x ∈ U, a x*x^(j+1)) = ∑ x ∈ D, a x*x^(j+1) :=
+      Finset.sum_subset hsub (fun x _ hx => by simp [hza x hx])
+    have hsb : (∑ x ∈ U, b x*x^(j+1)) = ∑ x ∈ D, b x*x^(j+1) :=
+      Finset.sum_subset hsub (fun x _ hx => by simp [hzb x hx])
+    exact hsa.trans (he.trans hsb.symm)
+  funext x
+  by_cases hx : x ∈ U
+  · exact GVQCC.V115.dqi70_unique U a b hc (fun y hy => hnz y (hsub hy)) hm x hx
+  · rw [hza x hx, hzb x hx]
+
+/-- Noncomputable specification only: no claim of an efficient implementation. -/
+noncomputable def decodeSpec (D : Finset F) (s : Fin 70 → F) : Option (F → F) := by
+  classical
+  exact if h : ∃ e, Legal D e ∧ syndrome D e = s then some (Classical.choose h) else none
+
+theorem decodeSpec_correct (D : Finset F) (hnz : ∀ x ∈ D, x ≠ 0)
+    (e : F → F) (he : Legal D e) : decodeSpec D (syndrome D e) = some e := by
+  classical
+  have hex : ∃ a, Legal D a ∧ syndrome D a = syndrome D e := ⟨e,he,rfl⟩
+  have hchoose := Classical.choose_spec hex
+  have heq := legal_injective D hnz (Classical.choose hex) e hchoose.1 he hchoose.2
+  simp [decodeSpec, hex, heq]
+
+theorem decoder_refinement (D : Finset F) (hnz : ∀ x ∈ D, x ≠ 0)
+    (dec : (Fin 70 → F) → Option (F → F))
+    (h : ∀ e, Legal D e → ∃ a, dec (syndrome D e) = some a ∧
+      Legal D a ∧ syndrome D a = syndrome D e)
+    (e : F → F) (he : Legal D e) :
+    dec (syndrome D e) = some e := by
+  obtain ⟨a,ha,hal,has⟩ := h e he
+  have heq := legal_injective D hnz a e hal he has
+  rw [ha, heq]
+
+/-- A recurrence kernel in moment form forces a root at every nonzero error.
+    This statement does not assume any leading moment is nonzero. -/
+theorem moment_kernel_roots (S : Finset F) (a : F → F) (p : Polynomial F)
+    (ha : ∀ x ∈ S, a x ≠ 0) (hx : ∀ x ∈ S, x ≠ 0)
+    (hk : ∀ k : ℕ, k < S.card →
+      (∑ x ∈ S, (a x * x * p.eval x) * x^k) = 0) :
+    ∀ x ∈ S, p.eval x = 0 := by
+  intro x hxs
+  have hz := GVQCC.V115.moments_injective S (fun x => a x * x * p.eval x) hk x hxs
+  exact (mul_eq_zero.mp hz).resolve_left (mul_ne_zero (ha x hxs) (hx x hxs))
+
+/-- The square Hankel kernel contains no nonzero degree < w polynomial.
+    In particular leading-zero moments do not justify an early stop. -/
+theorem hankel_kernel_trivial (S : Finset F) (a : F → F) (p : Polynomial F)
+    (ha : ∀ x ∈ S, a x ≠ 0) (hx : ∀ x ∈ S, x ≠ 0)
+    (hp : p.natDegree < S.card)
+    (hk : ∀ k : ℕ, k < S.card →
+      (∑ x ∈ S, (a x * x * p.eval x) * x^k) = 0) : p = 0 :=
+  Polynomial.eq_zero_of_natDegree_lt_card_of_eval_eq_zero' p S
+    (moment_kernel_roots S a p ha hx hk) hp
+
+/-- A checked sparse decoder yields the right *abstract* phase. Physical
+    cleanup and measurement-instrument semantics require separate proofs. -/
+theorem decoder_phase_refinement (D : Finset F) (hnz : ∀ x ∈ D, x ≠ 0)
+    (e a : F → F) (he : Legal D e) (ha : Legal D a)
+    (hs : syndrome D a = syndrome D e) (phase : (F → F) → Bool) :
+    phase a = phase e := by
+  rw [legal_injective D hnz a e ha he hs]
+
+end GVQCC.V115.Spec
+
+#print axioms GVQCC.V115.Spec.legal_injective
+#print axioms GVQCC.V115.Spec.decodeSpec_correct
+#print axioms GVQCC.V115.Spec.decoder_refinement
+#print axioms GVQCC.V115.Spec.moment_kernel_roots
+#print axioms GVQCC.V115.Spec.hankel_kernel_trivial
+#print axioms GVQCC.V115.Spec.decoder_phase_refinement
