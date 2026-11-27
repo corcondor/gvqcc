@@ -41,3 +41,6 @@ measurement phase in the reverse schedule.
 
 Local executable bundle includes upstream source with licenses, emitted
 KMX/KMB, arithmetic and native replay, and receipts.
+
+## Serialized circuit cancellation follow-up
+Conservative commuting involution cancellation independently in forward and inverse sections, never across measurement or classical control boundaries: 1,078 X and 340 CX instructions removed. Actual KickMix 1.0.0 serialized circuit: 36Q, 3492 instructions (forward 1586), static paid 524, mean paid 521.9991536490745 over 3,133,452 arithmetic HO inputs. Value, restoration, ancilla and phase mismatches all zero. SHA-256 8ebd0981ec1358276933fd64372300f87e04a2e3ae9ea1c04498b67cc5d147cf. Isolated compressed MAIN only. The complete 36Q InvSqrt oracle, virtual-bit END consumer, all-history formal proof and official score improvement are not claimed. Initial strict Lean CI printed seven axiom audits but failed on deprecated if_pos/if_neg warnings; replacement lemma names committed, rerun not yet certified at time of this update.
