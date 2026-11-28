@@ -78,7 +78,7 @@ jobs:
       - name: Paired whole DQI verification
         run: |
           set -euo pipefail
-          curl -fLsS 'https://raw.githubusercontent.com/corcondor/gvqcc/dc585b9cd31df6f8151162cb5accfb2774db3811/research/dqi_affine_observer_transport/verify_dqi.py' -o /tmp/paired.py || curl -fLsS 'https://raw.githubusercontent.com/corcondor/gvqcc/932eb4194f662827f9d90257e5981a710318e3da/research/cross_task_live_tensor_20261128/verify_dqi.py' -o /tmp/paired.py
+          curl -fLsS 'https://raw.githubusercontent.com/corcondor/gvqcc/dc585b9cd31df6f8151162cb5accfb2774db3811/research/dqi_affine_observer/verify_dqi.py' -o /tmp/paired.py
           python /tmp/paired.py "$(cat /tmp/parent-path)" /tmp/results/dqi.kmb
           cp /tmp/dual_receipt.json /tmp/results/
           python - <<'PY'
