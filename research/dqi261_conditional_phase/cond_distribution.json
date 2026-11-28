@@ -1,0 +1,15 @@
+{
+  "Q": 900,
+  "ops": 81649776,
+  "sha256": "a7e119f81df82504d0128352c47e258a1e6ebeed3a7f37df34a3f84ca3c972b3",
+  "shots": 1024,
+  "value": 0,
+  "phase": 0,
+  "dirty": 0,
+  "mask": 0,
+  "paid": 547866242,
+  "static_paid": 543848,
+  "scope": "fixed-seed distribution sampling, not official verifier",
+  "mean_paid": 535025.626953125,
+  "pass": true
+}
