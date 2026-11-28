@@ -1,0 +1,37 @@
+name: CRT8 tensor and observer debt proofs
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_crt8_integration/**'
+      - '.github/workflows/crt8-observer-integration.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          set -euo pipefail
+          python3 research/dqi_crt8_integration/check_crt8.py
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true CRT8Concrete.lean | tee crt8_axioms.log
+          test "$(grep -Ec 'depends on axioms|does not depend on any axioms' crt8_axioms.log)" -eq 53
+          python3 - <<'PY'
+          import re
+          s=open('crt8_axioms.log').read()
+          for row in re.findall(r'depends on axioms: \[([^\]]*)\]',s):
+              assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'},row
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: crt8-observer-lean
+          path: |
+            CRT8Concrete.lean
+            crt8_axioms.log
