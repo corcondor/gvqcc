@@ -13,7 +13,7 @@ theorem row_nonzero {I : Type*} [Fintype I]
     ∃ j, B i j ≠ 0 := by
   classical
   by_contra hn
-  push_neg at hn
+  push Not at hn
   let v : I → F := fun k => if k = i then 1 else 0
   have hv : ∀ j, (∑ k, v k * B k j) = 0 := by
     intro j
@@ -24,7 +24,7 @@ theorem row_nonzero {I : Type*} [Fintype I]
       simp [v, hn]
     · simp [v, e]
   have hz := h v hv i
-  simpa [v] using hz
+  simp [v] at hz
 
 theorem nonzero_partner {I : Type*} (B : I → I → F) (i : I)
     (hr : ∃ j, B i j ≠ 0) (hd : B i i = 0) :
@@ -59,13 +59,13 @@ theorem mixed_block_solve (b c x y : F) (hb : b ≠ 0) :
   · rw [cancel, sub_add_cancel]
 
 /-- A source pair has a nonzero local orientation under coprimality. -/
-theorem local_orientation (a b : F) (h : a ≠ 0 ∨ b ≠ 0) :
+theorem local_orientation (a b : F) (h : a ≠ 0 ∨ b ≠ 0) [Decidable (b = 0)] :
     (if b = 0 then a else b) ≠ 0 := by
-  classical
   by_cases hb : b = 0
-  · simp [hb] at h ⊢
-    exact h
-  · simp [hb]
+  · rw [if_pos hb]
+    exact h.resolve_right (fun hn => hn hb)
+  · rw [if_neg hb]
+    exact hb
 
 end Field
 
