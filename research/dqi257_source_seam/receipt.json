@@ -1,0 +1,67 @@
+{
+  "parent": {
+    "sha256": "81081a88c27b708322f0724a09197814a18646a4a9969984ab9cf76a6e6cd7fa",
+    "Q": 900,
+    "ops": 69534364,
+    "static_paid": 318333
+  },
+  "raw": {
+    "shots": 996,
+    "value": 340,
+    "phase": 174,
+    "dirty": 0,
+    "mask": 0
+  },
+  "structured": {
+    "shots": 432,
+    "value": 166,
+    "phase": 89,
+    "dirty": 0,
+    "mask": 0
+  },
+  "ordinary": {
+    "shots": 1024,
+    "value": 0,
+    "phase": 0,
+    "dirty": 0,
+    "mask": 0,
+    "paid": 323723025,
+    "mean_paid": 316135.7666015625
+  },
+  "gauge_transfer": {
+    "sha256": "dc64dba951d3c3e0de73efdcf96628a3f86067d358f13587440189752e47c925",
+    "Q": 900,
+    "ops": 73288071,
+    "static_paid": 318333,
+    "ordinary_shots": 1024,
+    "ordinary_mean_paid": 316135.7666015625,
+    "accepted": false,
+    "reason": "Identical paid count, more instructions, no demonstrated repair"
+  },
+  "return_diagnostic": {
+    "shots": 144,
+    "per_weight": 4,
+    "all_w1_through_17_value_fail": 68,
+    "selected_weights": [
+      3,
+      5,
+      7,
+      9,
+      13,
+      15,
+      17
+    ],
+    "fixed_factor_matches": 28,
+    "factor_degrees": [
+      32,
+      28,
+      24,
+      20,
+      12,
+      8,
+      4
+    ]
+  },
+  "accepted": false,
+  "scope": "Exact native #257 diagnostic and rejected direct gauge transfer. No repaired circuit or score improvement."
+}
