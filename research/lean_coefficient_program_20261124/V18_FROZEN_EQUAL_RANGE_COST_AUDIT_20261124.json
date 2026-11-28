@@ -1,0 +1,186 @@
+{
+  "date": "2026-11-24",
+  "scope": "Read-only cost audit of frozen equal-range chart donors from eight SHA-checked certified historical portfolios; distinct from V16 proper-subchart audit. No new optimization search or new circuit.",
+  "parent_pr": 65,
+  "parent_sha256": "7be22729aae992f2f3fa408eba736300cf8cacc92ed5475e2a9707950cb153ff",
+  "source_sha256": "6b59214530108d8c49c648f96c53b963d9b8477f8813db1edcf478bf45f6cf03",
+  "archives": 8,
+  "distinct_equal_range_bodies": 95,
+  "unconditional_paid_bound_excludes": 75,
+  "exact_cost_replay": 20,
+  "all_legal_inputs": 3133452,
+  "source_hmr_variables": 1278,
+  "independent_donor_hmr_variables": 162,
+  "old_expected_donor_expected": [
+    {
+      "source": [
+        14145,
+        14168
+      ],
+      "old": "1/2",
+      "donor": "1/2"
+    },
+    {
+      "source": [
+        17607,
+        19116
+      ],
+      "old": "67/2",
+      "donor": "67/2"
+    },
+    {
+      "source": [
+        21431,
+        21750
+      ],
+      "old": "15/2",
+      "donor": "15/2"
+    },
+    {
+      "source": [
+        21903,
+        22315
+      ],
+      "old": "10",
+      "donor": "10"
+    },
+    {
+      "source": [
+        22470,
+        22829
+      ],
+      "old": "10",
+      "donor": "10"
+    },
+    {
+      "source": [
+        22994,
+        23357
+      ],
+      "old": "10",
+      "donor": "10"
+    },
+    {
+      "source": [
+        23504,
+        23917
+      ],
+      "old": "10",
+      "donor": "10"
+    },
+    {
+      "source": [
+        24074,
+        24492
+      ],
+      "old": "19/2",
+      "donor": "21/2"
+    },
+    {
+      "source": [
+        24628,
+        24732
+      ],
+      "old": "7/4",
+      "donor": "7/4"
+    },
+    {
+      "source": [
+        24816,
+        24953
+      ],
+      "old": "13/4",
+      "donor": "13/4"
+    },
+    {
+      "source": [
+        25155,
+        25581
+      ],
+      "old": "11",
+      "donor": "11"
+    },
+    {
+      "source": [
+        25690,
+        26126
+      ],
+      "old": "10",
+      "donor": "11"
+    },
+    {
+      "source": [
+        26233,
+        26344
+      ],
+      "old": "5/4",
+      "donor": "5/4"
+    },
+    {
+      "source": [
+        26750,
+        27159
+      ],
+      "old": "19/2",
+      "donor": "11"
+    },
+    {
+      "source": [
+        27267,
+        27381
+      ],
+      "old": "5/4",
+      "donor": "5/4"
+    },
+    {
+      "source": [
+        27783,
+        27897
+      ],
+      "old": "5/4",
+      "donor": "5/4"
+    },
+    {
+      "source": [
+        28301,
+        28660
+      ],
+      "old": "10",
+      "donor": "11"
+    },
+    {
+      "source": [
+        28748,
+        30945
+      ],
+      "old": "6",
+      "donor": "6"
+    },
+    {
+      "source": [
+        31169,
+        32565
+      ],
+      "old": "7/2",
+      "donor": "7/2"
+    },
+    {
+      "source": [
+        34377,
+        34746
+      ],
+      "old": "7",
+      "donor": "7"
+    }
+  ],
+  "lower_expected_count": 0,
+  "multi_chart_donors_at_exact_current_outer_boundaries": 0,
+  "elapsed_s": 25.67651629447937,
+  "new_lean_candidate": false,
+  "official_score_update": false,
+  "adopted": false,
+  "remaining_expected": 1667.9375,
+  "peak_q": 37,
+  "source_coverage": 55567,
+  "notes": "Exact expectation measured at original source entry, not a claim of successful transplantation. Prior PR66 40043 ops has same cost. Do not repeat this frozen equal-range comparison; four historical ANGLE executable archives remain unavailable. No new search."
+}

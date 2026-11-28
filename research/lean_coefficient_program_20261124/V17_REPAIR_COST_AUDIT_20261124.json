@@ -1,0 +1,177 @@
+{
+  "date": "2026-11-24",
+  "scope": "known donor interface repair + read-only source cost audit; no new discovery search",
+  "baseline": {
+    "angle_paid": 3357,
+    "angle_Q": 128,
+    "k8_k13_k14": 211,
+    "original_invsqrt_expected": 1406.3125,
+    "original_static": 1553,
+    "original_ops": 60766,
+    "original_HMR": 1278,
+    "original_sha256": "6b59214530108d8c49c648f96c53b963d9b8477f8813db1edcf478bf45f6cf03"
+  },
+  "parent": {
+    "pr": 66,
+    "sha256": "263f25bd324d55cfd7f6b93520a899bed4cdf9ad5bd7a63e64083051701ef5d1",
+    "ops": 40043,
+    "static_paid": 1832,
+    "expected_paid": 1667.9375,
+    "Q": 37,
+    "source_coverage": 55567
+  },
+  "repair": {
+    "donor_pr": 67,
+    "published_lean_blob": "81072d7e8be7a90311364ca7b72d72e4be36ae6c",
+    "archive_sha_received": "0b24ff39a63ce2fafbab3742b3b5ea2c5c08221062cb79c09694a3f55a5a287f",
+    "archive_sha_reported": "83e528c69289a315ad105118fb8e338aeb699fc4691fe10f0b1c4ab216fe5270",
+    "archive_authenticated": false,
+    "range": [
+      10625,
+      10678
+    ],
+    "source_range": [
+      16448,
+      16501
+    ],
+    "edit": "redirect the two c805-controlled phase operations to the unique old phase guard c837; restore clear c805",
+    "old_ops": 53,
+    "new_ops": 87,
+    "old_local_expected": 0.5,
+    "new_local_expected": 0,
+    "all_legal_inputs": 3133452,
+    "prior_hmr": 421,
+    "data": "PASS",
+    "classical": "PASS",
+    "phase": "FAIL",
+    "rotations": "PASS",
+    "guard": "PASS",
+    "adopted": false,
+    "witness": {
+      "x": 2,
+      "hmr_ones": [
+        392
+      ],
+      "entry_q": 42198059321,
+      "old_exit_q": 42732833081,
+      "new_exit_q": 42732833081,
+      "old_phase": 0,
+      "new_phase": 1,
+      "c805": 0,
+      "c837": 1
+    },
+    "factor": {
+      "A": [
+        7,
+        11,
+        13,
+        14,
+        15,
+        19,
+        31,
+        34
+      ],
+      "B": [
+        0,
+        1,
+        5,
+        8,
+        9,
+        12,
+        15,
+        17,
+        19,
+        20,
+        22,
+        26,
+        27,
+        28,
+        31,
+        33,
+        34
+      ],
+      "delta": "c837*(q21*B XOR q27*q11 XOR q27*(1 XOR q29)*(1 XOR A))",
+      "exact_ANF_monomials": 34,
+      "cubic_terms": 8,
+      "exact_BDD_identity": true,
+      "cubic_factored_term_constant_on_support": false
+    },
+    "exclude": "same fixed failed classical read renaming/clear repair; no inference of general phase synthesis impossibility"
+  },
+  "audit": {
+    "all_legal_inputs": 3133452,
+    "source_HMR": 1278,
+    "chart_cost_basis": "PR61 certified chart receipts adjusted for PR65 -1; PR66 terminal frame preserves cost; native index fields refer to PR61",
+    "cost": {
+      "charts": 97,
+      "source_cost_on_charts": 1260.0625,
+      "chart_cost": 1521.6875,
+      "delta": 261.625,
+      "cheaper": 0,
+      "equal": 66,
+      "expensive": 31
+    },
+    "economy": {
+      "charts": 106,
+      "source_cost_on_charts": 1276.5625,
+      "chart_cost": 1564.6875,
+      "delta": 288.125,
+      "cheaper": 0,
+      "equal": 65,
+      "expensive": 41
+    },
+    "top": [
+      {
+        "source": [
+          7963,
+          10050
+        ],
+        "native": [
+          5825,
+          7756
+        ],
+        "source_expected": 161,
+        "chart_expected": 287,
+        "source_HMR": 141,
+        "chart_HMR": 22,
+        "source_CCX": 161,
+        "chart_CCX": 287,
+        "source_ops": 2087,
+        "chart_ops": 1931,
+        "source_q36_touches": 459,
+        "chart_q36_touches": 0,
+        "delta": 126
+      },
+      {
+        "source": [
+          42201,
+          60766
+        ],
+        "delta": 41.125
+      },
+      {
+        "source": [
+          35044,
+          40314
+        ],
+        "delta": 12.5
+      },
+      {
+        "source": [
+          19268,
+          21386
+        ],
+        "delta": 9
+      }
+    ],
+    "note": "HMR decrease and CCX increase are correlated counts, not established individual causal correspondences. First invocation requested missing wide audit receipt; corrected run completed cost/economy."
+  },
+  "references": [
+    "https://arxiv.org/abs/2605.28439",
+    "https://doi.org/10.1145/3763153",
+    "https://arxiv.org/abs/2609.01037"
+  ],
+  "references_note": "Related research, not implemented or a unique-new-citation count; last arXiv fetch unavailable, publisher author-hosted manuscript checked.",
+  "blocked": "4 original ANGLE archives still unavailable. No new local/cold-start exploration; fixed known donor repair only. No new native accepted. Official KickMix unavailable, no score or main change, no Kaggle submission.",
+  "archive_sha256": "b5b55e9c6014b3457862164ae99f128d4be608d5c2b8fd23f7c8cee52bc384a3"
+}
