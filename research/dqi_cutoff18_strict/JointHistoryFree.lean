@@ -74,7 +74,7 @@ theorem gauge_collinear (a b c d : F) (ha : a≠0)
     (hp : a*d+b*c=0) : d+(b/a)*c=0 := by
   apply (mul_left_cancel₀ ha)
   calc
-    a*(d+(b/a)*c) = a*d+b*c := by field_simp [ha] <;> ring
+    a*(d+(b/a)*c) = a*d+b*c := by field_simp [ha]
     _ = a*0 := by rw [hp,mul_zero]
 end Field
 
