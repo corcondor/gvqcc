@@ -1,0 +1,22 @@
+{
+  "Q": 900,
+  "old_ops": 87067496,
+  "new_ops": 87067496,
+  "old_paid": 317994,
+  "new_paid": 317994,
+  "dead": 0,
+  "linear": 0,
+  "hmr": 0,
+  "active_CCX": 0,
+  "active_CCZ": 0,
+  "active_CSWAP": 0,
+  "forgotten": 8716258,
+  "pair_calls": 305765,
+  "observer_affine": 0,
+  "observer_weighted": 0,
+  "observer_calls": 40116,
+  "input_sha256": "54817e9385f24940585f5a391025152d4a65a36381887ca77b7bab61413ea2ec",
+  "output_sha256": "54817e9385f24940585f5a391025152d4a65a36381887ca77b7bab61413ea2ec",
+  "byte_identical": true,
+  "kickmix_synthetic_paired_shots": 512
+}
