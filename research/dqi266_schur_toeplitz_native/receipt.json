@@ -1,0 +1,44 @@
+{
+  "scope": "Local actual native D,N oracle, not complete S input",
+  "parent_272": {
+    "paid": 788573,
+    "Q": 900,
+    "ops": 18690532,
+    "shots": 216,
+    "errors": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "toeplitz": {
+    "paid": 752117,
+    "Q": 900,
+    "ops": 19690938,
+    "shots": 216,
+    "errors": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "f88ae0303005a38f4be723f36ef914111fceb9d2e494e02ef0feff6f5d45b547"
+  },
+  "central": {
+    "paid": 689329,
+    "Q": 900,
+    "ops": 19417908,
+    "shots": 216,
+    "errors": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "mean_paid": 659299,
+    "sha256": "2c6790c4b673402e00a44953053bc618dca5372cba427a333049dcb61a421470"
+  },
+  "full": false,
+  "official": false
+}

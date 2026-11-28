@@ -1,0 +1,5 @@
+# Full raw-syndrome native integration receipt
+
+Actual original donor-lineage full circuit: 900Q, 66,268,885 operations, 908,958 static paid. 3,074 raw-input test shots (996 raw + 432 structured + 1,024 distribution + 622 archived), zero value/phase/dirty/mask errors. Ordinary mean 908,557.533203125. Cost rejected, not official score.
+
+The exact evaluation-pivot Schur algorithm of #271 remains unlowered. We use #272 coherent coefficient-basis block elimination, integrating #271 Toeplitz shared affine frames and persistent masked evaluation forms. The D,N-input paid count was reduced 788,573 -> 752,117 -> 689,329; regenerate with actual #266 weight polynomial before insertion. Exact shell and donor: https://github.com/corcondor/gvqcc/actions/runs/46117947250/artifacts/15251823618 . Lean six identities and shell build passed: https://github.com/corcondor/gvqcc/actions/runs/46117947250 . No universal proof. The complete local native source archive and full compressed KMB are provided separately in the conversation.
