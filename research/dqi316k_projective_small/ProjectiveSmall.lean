@@ -32,7 +32,8 @@ theorem padded_residue (mul : R → R → R)
     (ha : ∀ a b c, mul (mul a b) c = mul a (mul b c))
     (n d y r : R) (h : n = mul (mul y d) r) :
     mul y n = mul (mul y (mul y d)) r := by
-  rw [h, ha]
+  rw [h]
+  exact (ha y (mul y d) r).symm
 
 /-- The retired quotient is stored in the new constant coefficient:
     c=q*d0. Its inverse is well-defined on the nonzero d0 chart. -/
