@@ -1,0 +1,81 @@
+{
+  "scope": "Exact #257 full direct #279 splice and separate #271/#277 transposed interpolation kernel. No complete repair or score improvement.",
+  "parent": {
+    "sha256": "81081a88c27b708322f0724a09197814a18646a4a9969984ab9cf76a6e6cd7fa",
+    "Q": 900,
+    "ops": 69534364,
+    "static_paid": 318333
+  },
+  "direct": {
+    "sha256": "b40813933df21ab02d908a15f74c81bf31209372efe8a2d48b2c652afcd38263",
+    "Q": 900,
+    "ops": 67549280,
+    "static_paid": 318333,
+    "matched_range": [
+      2837708,
+      7747447
+    ],
+    "old_residual_ops": 4909739,
+    "new_residual_ops": 2924655,
+    "paired_shots_per_circuit": 1790,
+    "paired_bit_differences": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "distribution": {
+      "shots": 1024,
+      "union": 0,
+      "mean_paid": 316135.7666015625
+    },
+    "saved": {
+      "shots": 622,
+      "value": 452,
+      "phase": 230,
+      "dirty": 0,
+      "mask": 0,
+      "union": 454
+    },
+    "dense": {
+      "shots": 144,
+      "union": 71
+    }
+  },
+  "new_kernel": {
+    "Q": 612,
+    "old_word_products": 122,
+    "new_word_products": 108,
+    "old_paid": 5124,
+    "new_paid": 4536,
+    "old_ops": 236710,
+    "new_ops": 214633,
+    "native_shots": 384,
+    "errors": 0,
+    "new_sha256": "2f3d976afbdd27f0b09efd8e6f79d9605de9dfacce15231232751af0d51c33c5"
+  },
+  "fixed_path_converter": {
+    "Q": 882,
+    "old_paid": 70200,
+    "new_paid": 69612,
+    "forward_ops": 1972261,
+    "reverse_ops": 1958937,
+    "native_shots_per_candidate": 352,
+    "errors": [
+      0,
+      0,
+      0
+    ],
+    "coherent_dispatch": false
+  },
+  "residual_probe": {
+    "native_shots": 560,
+    "groups": 140,
+    "w2_to17_groups": 64,
+    "additive_matches": 0,
+    "scope": "same support, nonzero amplitudes u,v,u+v and scaled u; actual native output residual not additive on tested inputs"
+  },
+  "verified_peer_CI": "46121065738",
+  "new_lean_checked": false,
+  "full_accepted": false
+}
