@@ -1,0 +1,63 @@
+{
+  "scope": "Full native #263 successor, physically spliced into hash-verified original 316K prelude; research only",
+  "donor_sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+  "session": "sbx_IE5Rg5QxK99CPp1w9ghy5ZiqScU4",
+  "parent263": {
+    "Q": 900,
+    "core_Q": 890,
+    "ops": 63476208,
+    "static_paid": 389593,
+    "distribution_mean": 388453.0400390625,
+    "stress_mean": 359066.1435742972
+  },
+  "unitzero": {
+    "sha256": "a77c8406028efb39078bab4616206dbd743eb604b3bcaade5993059ee03b004b",
+    "Q": 900,
+    "core_Q": 889,
+    "ops": 63520695,
+    "static_paid": 388879,
+    "distribution_mean": 387911.8310546875,
+    "stress_mean": 244233.04919678715,
+    "stress_shots": 996,
+    "distribution_shots": 1024,
+    "errors": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "final": {
+    "sha256": "071453f46be0f6108a09edd5b7b1e34595d86ddfe49ed0c80f369f0a35f7a349",
+    "Q": 900,
+    "core_Q": 889,
+    "ops": 55521542,
+    "static_paid": 388867,
+    "CCX": 372534,
+    "CCZ": 3229,
+    "CSWAP": 13104,
+    "distribution_mean": 387771.779296875,
+    "stress_mean": 244137.40361445784,
+    "stress_shots": 996,
+    "distribution_shots": 1024,
+    "errors": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "lean": {
+    "version": "4.35.0",
+    "warningAsError": true,
+    "theorems": 15,
+    "sorryAx": false,
+    "native_decision_axioms": false
+  },
+  "limits": [
+    "Not below 316000 ordinary paid",
+    "No all-input proof of half-degree Euclidean gap<=2 or complete marker classification of raw physical decoder",
+    "General fraction-free solver not yet native",
+    "No unchanged official 102400-shot run or submission"
+  ]
+}
