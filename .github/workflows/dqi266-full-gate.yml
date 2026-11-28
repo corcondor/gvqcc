@@ -1,0 +1,67 @@
+name: DQI 266 full verification and gap proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi266_full_gate/**'
+      - 'research/dqi_cutoff18_strict/Gap32.lean'
+      - '.github/workflows/dqi266-full-gate.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  gap-lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: |
+          cd research/dqi266_full_gate
+          python gap32.py
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          cd research/dqi_cutoff18_strict
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true Gap32.lean | tee gap32.log
+          test "$(grep -c 'GVQCC.Gap32.*axiom' gap32.log)" -eq 4
+          ! grep -E 'sorryAx|ofReduceBool' gap32.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gap32-evidence
+          path: |
+            research/dqi266_full_gate/gap32_receipt.json
+            research/dqi_cutoff18_strict/gap32.log
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6 scipy
+      - run: bash research/dqi266_full_gate/rebuild.sh
+      - run: |
+          set +e
+          bash research/dqi266_full_gate/verify_all.sh /tmp/seam/results parent266
+          p=$?
+          bash research/dqi266_full_gate/verify_all.sh /tmp/seam/results gauge266
+          g=$?
+          echo "parent strict exit: $p, gauge strict exit: $g"
+          test "$p" -eq 0 && test "$g" -eq 0
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dqi266-complete-native-regression
+          path: |
+            /tmp/seam/results/*.json
+            /tmp/seam/results/*.log
+            /tmp/seam/results/hashes.txt
+            /tmp/seam/results/*.kmb
