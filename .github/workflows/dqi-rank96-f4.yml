@@ -1,0 +1,49 @@
+name: GF4 rank32 exact binary admission
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_rank96_f4/**'
+      - '.github/workflows/dqi-rank96-f4.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - run: |
+          set -euo pipefail
+          cd research/dqi_rank96_f4
+          python certify.py --native /tmp/f4-native | tee /tmp/f4-native.log
+          if python certify.py --admit /tmp/f4-native/rank96_terms.json; then
+            echo 'Exact all-type low-rank certificate'
+          else
+            test ! -f /tmp/f4-native/rank96_terms.json
+            echo 'No rank96 witness; preserve exact 316094 baseline'
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: f4-native-certificates
+          path: |
+            /tmp/f4-native/
+            /tmp/f4-native.log
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_rank96_f4/FourFieldRank.lean | tee /tmp/f4-lean.log
+          test "$(grep -c 'axiom' /tmp/f4-lean.log)" -eq 3
+          ! grep -E 'sorryAx|ofReduceBool' /tmp/f4-lean.log
