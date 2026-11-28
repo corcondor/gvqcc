@@ -1,0 +1,12 @@
+{
+  "scope": "word-level canonical residue chart, not native decoder",
+  "counts": {
+    "cases": 432,
+    "nontrivial_square_factor": 250,
+    "forced_double_node": 93
+  },
+  "root_values": 7560,
+  "max_half_gcd_degree": 16,
+  "errors": 0,
+  "seconds": 2.4029409885406494
+}

@@ -1,0 +1,58 @@
+{
+  "Q": 899,
+  "ops": 31492625,
+  "static_paid": 471677,
+  "sha256": "8db1fd9d2b03979e355659e8cf2df421c3938e44133a5b760c9e7242d5afe9b9",
+  "panels": {
+    "uniform": {
+      "shots": 288,
+      "value": 0,
+      "phase_raw": 0,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 0,
+      "paid": 112580726,
+      "mean_paid": 390905.2986111111
+    },
+    "constant_numerator": {
+      "shots": 35,
+      "value": 0,
+      "phase_raw": 0,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 0,
+      "paid": 13654156,
+      "mean_paid": 390118.7428571429
+    },
+    "allpole": {
+      "shots": 24,
+      "value": 0,
+      "phase_raw": 0,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 0,
+      "paid": 9378054,
+      "mean_paid": 390752.25
+    },
+    "singlepole": {
+      "shots": 96,
+      "value": 0,
+      "phase_raw": 0,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 0,
+      "paid": 37599988,
+      "mean_paid": 391666.5416666667
+    },
+    "distribution_1024": {
+      "shots": 1024,
+      "value": 0,
+      "phase_raw": 0,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 0,
+      "paid": 422792574,
+      "mean_paid": 412883.373046875
+    }
+  }
+}
