@@ -180,7 +180,8 @@ int main(int argc,char**argv){
  assert(argc==3);Reader r(argv[1]);assert(r.Q==900);Writer w(r,r.B+170);
  vector<Gate> buf;vector<P> pending;L oldPaid=0,newPaid=0;map<int,L> sizes;
  L diagonalScopes=0,scopeTerms=0;
- auto emit=[&](Gate g){w.put(g);if(op(g)==48||op(g)==49||op(g)==50)newPaid++;};
+ U actualBits=r.B;
+ auto emit=[&](Gate g){w.put(g);int k=op(g);if(k==48||k==49||k==50)newPaid++;if((g.op&64)&&k!=6&&k!=7)actualBits=max(actualBits,g.bit+1);if(g.op&128)actualBits=max(actualBits,(g.cond&0x7fffffffu)+1);};
  auto flush=[&](){
    if(buf.empty()){assert(pending.empty());return;}
    auto groups=choose(pending);map<size_t,int> mark;vector<vector<Gate>> synth;
@@ -241,5 +242,5 @@ int main(int argc,char**argv){
  }
  flush();assert(oldPaid-newPaid==saved);cerr<<"{\"Q\":"<<r.Q<<",\"old_paid\":"<<oldPaid<<",\"new_paid\":"<<newPaid<<",\"ccz_seen\":"<<terms<<",\"groups\":"<<groupCount<<",\"old_group_terms\":"<<removed<<",\"saved\":"<<saved<<",\"crossed_HMR\":"<<crossedHMR<<",\"crossed_CCX\":"<<crossedCCX<<",\"diagonal_scopes\":"<<diagonalScopes<<",\"scope_terms\":"<<scopeTerms<<",\"phase_checks\":"<<phaseChecks<<",\"old_ops\":"<<r.counts[0]<<",\"new_ops\":"<<w.ops.size()<<"}\n";
  for(auto [n,c]:sizes)cerr<<"GROUP "<<n<<" "<<c<<"\n";
- if(saved)w.write(argv[2]);else {cerr<<"NO_PAID_IMPROVEMENT\n";return 3;}
+ if(saved){w.bits=actualBits;w.write(argv[2]);}else {cerr<<"NO_PAID_IMPROVEMENT\n";return 3;}
 }
