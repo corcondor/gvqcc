@@ -1,0 +1,1122 @@
+[
+  {
+    "path": "invsqrt_structural_walsh32.kmx",
+    "input_blob": "5bd4231e248ee686063dff184529fb3152bc3202",
+    "base": {
+      "ops": 23878,
+      "paid": 1551,
+      "CCX": 1413,
+      "CCZ": 9,
+      "CSWAP": 129,
+      "HMR": 1278,
+      "rotation": 37,
+      "Q": 46
+    },
+    "final": {
+      "ops": 19816,
+      "paid": 1551,
+      "CCX": 1413,
+      "CCZ": 9,
+      "CSWAP": 129,
+      "HMR": 1278,
+      "rotation": 37,
+      "Q": 46
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 23878,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 37,
+          "Q": 46
+        },
+        "after": {
+          "ops": 19816,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 37,
+          "Q": 46
+        },
+        "cancels": 1089,
+        "fusions": 0,
+        "span": 90,
+        "affineBlocks": 235,
+        "affineSaved": 1884
+      },
+      {
+        "before": {
+          "ops": 19816,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 37,
+          "Q": 46
+        },
+        "after": {
+          "ops": 19816,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 37,
+          "Q": 46
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "invsqrt_structural_walsh34.kmx",
+    "input_blob": "4bb38b5215cebdaa4ba9ae16545922891d82e2d8",
+    "base": {
+      "ops": 23880,
+      "paid": 1551,
+      "CCX": 1413,
+      "CCZ": 9,
+      "CSWAP": 129,
+      "HMR": 1278,
+      "rotation": 39,
+      "Q": 46
+    },
+    "final": {
+      "ops": 19817,
+      "paid": 1551,
+      "CCX": 1413,
+      "CCZ": 9,
+      "CSWAP": 129,
+      "HMR": 1278,
+      "rotation": 39,
+      "Q": 46
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 23880,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 39,
+          "Q": 46
+        },
+        "after": {
+          "ops": 19817,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 39,
+          "Q": 46
+        },
+        "cancels": 1089,
+        "fusions": 0,
+        "span": 90,
+        "affineBlocks": 236,
+        "affineSaved": 1885
+      },
+      {
+        "before": {
+          "ops": 19817,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 39,
+          "Q": 46
+        },
+        "after": {
+          "ops": 19817,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 39,
+          "Q": 46
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "invsqrt_structural_e46.kmx",
+    "input_blob": "e2fdb1fb1d8f4430ec8fe121696f65db31b91e12",
+    "base": {
+      "ops": 23877,
+      "paid": 1551,
+      "CCX": 1413,
+      "CCZ": 9,
+      "CSWAP": 129,
+      "HMR": 1278,
+      "rotation": 38,
+      "Q": 46
+    },
+    "final": {
+      "ops": 19814,
+      "paid": 1551,
+      "CCX": 1413,
+      "CCZ": 9,
+      "CSWAP": 129,
+      "HMR": 1278,
+      "rotation": 38,
+      "Q": 46
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 23877,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 38,
+          "Q": 46
+        },
+        "after": {
+          "ops": 19814,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 38,
+          "Q": 46
+        },
+        "cancels": 1089,
+        "fusions": 0,
+        "span": 90,
+        "affineBlocks": 236,
+        "affineSaved": 1885
+      },
+      {
+        "before": {
+          "ops": 19814,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 38,
+          "Q": 46
+        },
+        "after": {
+          "ops": 19814,
+          "paid": 1551,
+          "CCX": 1413,
+          "CCZ": 9,
+          "CSWAP": 129,
+          "HMR": 1278,
+          "rotation": 38,
+          "Q": 46
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "inverse_v2_actual_eea_product.kmx",
+    "input_blob": "6f2304690ef7e9662b9808929560d4f67628ecb1",
+    "base": {
+      "ops": 6221,
+      "paid": 99,
+      "CCX": 99,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 889
+    },
+    "final": {
+      "ops": 3944,
+      "paid": 99,
+      "CCX": 99,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 889
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 6221,
+          "paid": 99,
+          "CCX": 99,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 889
+        },
+        "after": {
+          "ops": 3944,
+          "paid": 99,
+          "CCX": 99,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 889
+        },
+        "cancels": 1102,
+        "fusions": 0,
+        "span": 509,
+        "affineBlocks": 16,
+        "affineSaved": 73
+      },
+      {
+        "before": {
+          "ops": 3944,
+          "paid": 99,
+          "CCX": 99,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 889
+        },
+        "after": {
+          "ops": 3944,
+          "paid": 99,
+          "CCX": 99,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 889
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "gf12_power_1.kmx",
+    "input_blob": "7f83b5332b3fda2b185fd28e2fcd858e14127d1b",
+    "base": {
+      "ops": 595,
+      "paid": 51,
+      "CCX": 51,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 24
+    },
+    "final": {
+      "ops": 396,
+      "paid": 51,
+      "CCX": 51,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 24
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 595,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 396,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 70,
+        "fusions": 0,
+        "span": 49,
+        "affineBlocks": 12,
+        "affineSaved": 59
+      },
+      {
+        "before": {
+          "ops": 396,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 396,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "gf12_power_2.kmx",
+    "input_blob": "af7e1311b31d89ed86449b4b48d21729d8e80931",
+    "base": {
+      "ops": 625,
+      "paid": 36,
+      "CCX": 36,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 24
+    },
+    "final": {
+      "ops": 467,
+      "paid": 36,
+      "CCX": 36,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 24
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 625,
+          "paid": 36,
+          "CCX": 36,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 467,
+          "paid": 36,
+          "CCX": 36,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 57,
+        "fusions": 0,
+        "span": 134,
+        "affineBlocks": 9,
+        "affineSaved": 44
+      },
+      {
+        "before": {
+          "ops": 467,
+          "paid": 36,
+          "CCX": 36,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 467,
+          "paid": 36,
+          "CCX": 36,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "gf12_power_3.kmx",
+    "input_blob": "3ef05d68b954c412bae273fde418b78511f29589",
+    "base": {
+      "ops": 749,
+      "paid": 35,
+      "CCX": 35,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 24
+    },
+    "final": {
+      "ops": 529,
+      "paid": 34,
+      "CCX": 34,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 24
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 749,
+          "paid": 35,
+          "CCX": 35,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 529,
+          "paid": 34,
+          "CCX": 34,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 80,
+        "fusions": 1,
+        "span": 100,
+        "affineBlocks": 8,
+        "affineSaved": 61
+      },
+      {
+        "before": {
+          "ops": 529,
+          "paid": 34,
+          "CCX": 34,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 529,
+          "paid": 34,
+          "CCX": 34,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "gf12_power_4.kmx",
+    "input_blob": "b0387be69d5f194d282ffd4d3985ab781d3235d7",
+    "base": {
+      "ops": 598,
+      "paid": 27,
+      "CCX": 27,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 24
+    },
+    "final": {
+      "ops": 463,
+      "paid": 27,
+      "CCX": 27,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 24
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 598,
+          "paid": 27,
+          "CCX": 27,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 463,
+          "paid": 27,
+          "CCX": 27,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 43,
+        "fusions": 0,
+        "span": 45,
+        "affineBlocks": 6,
+        "affineSaved": 49
+      },
+      {
+        "before": {
+          "ops": 463,
+          "paid": 27,
+          "CCX": 27,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 463,
+          "paid": 27,
+          "CCX": 27,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "gf12_power_5.kmx",
+    "input_blob": "b90e7c710b02c71aafa1cbf0b30da5a7ca3fc4ef",
+    "base": {
+      "ops": 707,
+      "paid": 51,
+      "CCX": 51,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 24
+    },
+    "final": {
+      "ops": 467,
+      "paid": 51,
+      "CCX": 51,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 0,
+      "rotation": 0,
+      "Q": 24
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 707,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 467,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 74,
+        "fusions": 0,
+        "span": 66,
+        "affineBlocks": 9,
+        "affineSaved": 92
+      },
+      {
+        "before": {
+          "ops": 467,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 467,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 0,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "gf12_power_1_roundtrip.kmx",
+    "input_blob": "cb2c9838b9c8704de726181c0a335b978dc85883",
+    "base": {
+      "ops": 1132,
+      "paid": 51,
+      "CCX": 51,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 12,
+      "rotation": 0,
+      "Q": 24
+    },
+    "final": {
+      "ops": 897,
+      "paid": 51,
+      "CCX": 51,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 12,
+      "rotation": 0,
+      "Q": 24
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 1132,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 897,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 70,
+        "fusions": 0,
+        "span": 49,
+        "affineBlocks": 14,
+        "affineSaved": 95
+      },
+      {
+        "before": {
+          "ops": 897,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 897,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "gf12_power_2_roundtrip.kmx",
+    "input_blob": "6277f297f48d4fccf0b98f33e5bcf9fd803af177",
+    "base": {
+      "ops": 1195,
+      "paid": 36,
+      "CCX": 36,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 12,
+      "rotation": 0,
+      "Q": 24
+    },
+    "final": {
+      "ops": 1006,
+      "paid": 36,
+      "CCX": 36,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 12,
+      "rotation": 0,
+      "Q": 24
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 1195,
+          "paid": 36,
+          "CCX": 36,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 1006,
+          "paid": 36,
+          "CCX": 36,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 57,
+        "fusions": 0,
+        "span": 134,
+        "affineBlocks": 11,
+        "affineSaved": 75
+      },
+      {
+        "before": {
+          "ops": 1006,
+          "paid": 36,
+          "CCX": 36,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 1006,
+          "paid": 36,
+          "CCX": 36,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "gf12_power_3_roundtrip.kmx",
+    "input_blob": "efbcf3dac438eb279d8ced35506d35655b042cdd",
+    "base": {
+      "ops": 1436,
+      "paid": 35,
+      "CCX": 35,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 12,
+      "rotation": 0,
+      "Q": 24
+    },
+    "final": {
+      "ops": 1169,
+      "paid": 34,
+      "CCX": 34,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 12,
+      "rotation": 0,
+      "Q": 24
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 1436,
+          "paid": 35,
+          "CCX": 35,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 1169,
+          "paid": 34,
+          "CCX": 34,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 80,
+        "fusions": 1,
+        "span": 100,
+        "affineBlocks": 10,
+        "affineSaved": 108
+      },
+      {
+        "before": {
+          "ops": 1169,
+          "paid": 34,
+          "CCX": 34,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 1169,
+          "paid": 34,
+          "CCX": 34,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "gf12_power_4_roundtrip.kmx",
+    "input_blob": "43d7e60654d9afddfbe7c4c5ca09a12435f2bf66",
+    "base": {
+      "ops": 1143,
+      "paid": 27,
+      "CCX": 27,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 12,
+      "rotation": 0,
+      "Q": 24
+    },
+    "final": {
+      "ops": 963,
+      "paid": 27,
+      "CCX": 27,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 12,
+      "rotation": 0,
+      "Q": 24
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 1143,
+          "paid": 27,
+          "CCX": 27,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 963,
+          "paid": 27,
+          "CCX": 27,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 43,
+        "fusions": 0,
+        "span": 45,
+        "affineBlocks": 8,
+        "affineSaved": 94
+      },
+      {
+        "before": {
+          "ops": 963,
+          "paid": 27,
+          "CCX": 27,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 963,
+          "paid": 27,
+          "CCX": 27,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  },
+  {
+    "path": "gf12_power_5_roundtrip.kmx",
+    "input_blob": "a62288235e97bf0b32048c1307144a310ffc053a",
+    "base": {
+      "ops": 1318,
+      "paid": 51,
+      "CCX": 51,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 12,
+      "rotation": 0,
+      "Q": 24
+    },
+    "final": {
+      "ops": 1042,
+      "paid": 51,
+      "CCX": 51,
+      "CCZ": 0,
+      "CSWAP": 0,
+      "HMR": 12,
+      "rotation": 0,
+      "Q": 24
+    },
+    "history": [
+      {
+        "before": {
+          "ops": 1318,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 1042,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 74,
+        "fusions": 0,
+        "span": 66,
+        "affineBlocks": 11,
+        "affineSaved": 128
+      },
+      {
+        "before": {
+          "ops": 1042,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "after": {
+          "ops": 1042,
+          "paid": 51,
+          "CCX": 51,
+          "CCZ": 0,
+          "CSWAP": 0,
+          "HMR": 12,
+          "rotation": 0,
+          "Q": 24
+        },
+        "cancels": 0,
+        "fusions": 0,
+        "span": 0,
+        "affineBlocks": 0,
+        "affineSaved": 0
+      }
+    ]
+  }
+]
