@@ -1,0 +1,204 @@
+{
+  "euclid_reference": {
+    "0": {
+      "mean_nontrivial_products": 0.0,
+      "max": 0
+    },
+    "1": {
+      "mean_nontrivial_products": 142.8,
+      "max": 143
+    },
+    "2": {
+      "mean_nontrivial_products": 287.8,
+      "max": 288
+    },
+    "3": {
+      "mean_nontrivial_products": 432.8,
+      "max": 433
+    },
+    "4": {
+      "mean_nontrivial_products": 578.0,
+      "max": 578
+    },
+    "5": {
+      "mean_nontrivial_products": 722.6,
+      "max": 723
+    },
+    "6": {
+      "mean_nontrivial_products": 867.8,
+      "max": 868
+    },
+    "7": {
+      "mean_nontrivial_products": 1012.7,
+      "max": 1013
+    },
+    "8": {
+      "mean_nontrivial_products": 1157.8,
+      "max": 1158
+    },
+    "9": {
+      "mean_nontrivial_products": 1302.2,
+      "max": 1303
+    },
+    "10": {
+      "mean_nontrivial_products": 1447.2,
+      "max": 1448
+    },
+    "11": {
+      "mean_nontrivial_products": 1591.4,
+      "max": 1593
+    },
+    "12": {
+      "mean_nontrivial_products": 1737.4,
+      "max": 1738
+    },
+    "13": {
+      "mean_nontrivial_products": 1882.6,
+      "max": 1883
+    },
+    "14": {
+      "mean_nontrivial_products": 2026.6,
+      "max": 2028
+    },
+    "15": {
+      "mean_nontrivial_products": 2172.8,
+      "max": 2173
+    },
+    "16": {
+      "mean_nontrivial_products": 2317.4,
+      "max": 2318
+    },
+    "17": {
+      "mean_nontrivial_products": 2462.2,
+      "max": 2463
+    },
+    "18": {
+      "mean_nontrivial_products": 2606.9,
+      "max": 2608
+    },
+    "19": {
+      "mean_nontrivial_products": 2752.6,
+      "max": 2753
+    },
+    "20": {
+      "mean_nontrivial_products": 2888.9,
+      "max": 2898
+    },
+    "21": {
+      "mean_nontrivial_products": 3041.4,
+      "max": 3043
+    },
+    "22": {
+      "mean_nontrivial_products": 3178.8,
+      "max": 3188
+    },
+    "23": {
+      "mean_nontrivial_products": 3331.6,
+      "max": 3333
+    },
+    "24": {
+      "mean_nontrivial_products": 3467.8,
+      "max": 3478
+    },
+    "25": {
+      "mean_nontrivial_products": 3621.8,
+      "max": 3623
+    },
+    "26": {
+      "mean_nontrivial_products": 3765.9,
+      "max": 3768
+    },
+    "27": {
+      "mean_nontrivial_products": 3911.6,
+      "max": 3913
+    },
+    "28": {
+      "mean_nontrivial_products": 4055.4,
+      "max": 4058
+    },
+    "29": {
+      "mean_nontrivial_products": 4201.9,
+      "max": 4203
+    },
+    "30": {
+      "mean_nontrivial_products": 4345.6,
+      "max": 4348
+    },
+    "31": {
+      "mean_nontrivial_products": 4491.2,
+      "max": 4493
+    },
+    "32": {
+      "mean_nontrivial_products": 4634.8,
+      "max": 4638
+    },
+    "33": {
+      "mean_nontrivial_products": 4780.8,
+      "max": 4783
+    },
+    "34": {
+      "mean_nontrivial_products": 4924.5,
+      "max": 4928
+    },
+    "35": {
+      "mean_nontrivial_products": 5070.8,
+      "max": 5073
+    }
+  },
+  "native": [
+    {
+      "d": 1,
+      "ops": 280,
+      "Q": 24,
+      "scratch_classical": 23,
+      "paired_cases": 512,
+      "paid": 0,
+      "sha256": "47b91def7be8e3b064dbaff4e4a395f94eaf5ba4e27daef2edf32a23d1f8b794"
+    },
+    {
+      "d": 4,
+      "ops": 712,
+      "Q": 96,
+      "scratch_classical": 23,
+      "paired_cases": 512,
+      "paid": 0,
+      "sha256": "3a7dd8012c0321a266bab06199b033c27beb12f998efb122e709e141a032c247"
+    },
+    {
+      "d": 8,
+      "ops": 1288,
+      "Q": 192,
+      "scratch_classical": 23,
+      "paired_cases": 512,
+      "paid": 0,
+      "sha256": "2ba8f2e2a2b5adbc94ba3f7f57388c087de223ec89c4867573a20ca27ebeee2e"
+    },
+    {
+      "d": 17,
+      "ops": 2584,
+      "Q": 408,
+      "scratch_classical": 23,
+      "paired_cases": 512,
+      "paid": 0,
+      "sha256": "72bd60763e163d353cd86d410da4eda0637893f35991cc99c2442de7df194d4d"
+    },
+    {
+      "d": 24,
+      "ops": 3592,
+      "Q": 576,
+      "scratch_classical": 23,
+      "paired_cases": 512,
+      "paid": 0,
+      "sha256": "1578bbd149c6f57078a5abafb75c93a24f17edc94c936d53541e6871d376d903"
+    },
+    {
+      "d": 35,
+      "ops": 5176,
+      "Q": 840,
+      "scratch_classical": 23,
+      "paired_cases": 512,
+      "paid": 0,
+      "sha256": "86ec334681395d130b6bdefc331c861f25ff96f2f013aa08faeef12ac9599f06"
+    }
+  ]
+}
