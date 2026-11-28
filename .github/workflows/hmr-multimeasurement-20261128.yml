@@ -1,0 +1,25 @@
+name: HMR multi-measurement debt
+on:
+  pull_request:
+    paths:
+      - 'research/hmr_multimeasurement_20261128/**'
+      - '.github/workflows/hmr-multimeasurement-20261128.yml'
+  workflow_dispatch:
+jobs:
+  strict:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          set -euo pipefail
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check all declarations and axioms
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/hmr_multimeasurement_20261128/MultiMeasurementDebt.lean | tee /tmp/debt-lean.log
+          test "$(grep -cE "does not depend on any axioms|depends on axioms" /tmp/debt-lean.log)" -eq 17
+          ! grep -E 'sorryAx|ofReduceBool|unsafe' /tmp/debt-lean.log
+      - name: Compile actual circuit rewriter
+        run: g++ -std=c++17 -O2 -Wall -Wextra research/hmr_multimeasurement_20261128/guard_joint.cpp -o /tmp/guard_joint
