@@ -62,6 +62,44 @@ theorem weighted_injective {K : Type*} [Field K] {r : ℕ}
   have hh : e k * v k = 0 := congrFun h0 k
   exact (mul_eq_zero.mp hh).resolve_left (hnz k)
 
+/-- No assumed Vandermonde separation: distinct poles suffice. -/
+theorem weighted_injective_distinct {K : Type*} [Field K] {r : ℕ}
+    (x e v : Fin r → K) (hx : Function.Injective x)
+    (hnz : ∀ k, e k ≠ 0)
+    (h : ∀ j : Fin r, ∑ k : Fin r, (e k * v k) * x k ^ j.val = 0) :
+    v = 0 := by
+  apply weighted_injective x e v _ hnz h
+  intro b hb
+  exact Matrix.eq_zero_of_forall_pow_sum_mul_pow_eq_zero hx hb
+
+/-- The residual detects missing true poles even when the candidate has
+extra/repeated roots. v k represents its evaluation at the true pole k. -/
+theorem residual_zero_iff {K : Type*} [Field K] {r : ℕ}
+    (x e v : Fin r → K) (hx : Function.Injective x)
+    (hnz : ∀ k, e k ≠ 0) :
+    (∀ j : Fin r, ∑ k : Fin r, (e k * v k) * x k ^ j.val = 0) ↔ v = 0 := by
+  constructor
+  · exact weighted_injective_distinct x e v hx hnz
+  · intro h
+    subst v
+    simp
+
+/-- Two coefficient vectors on a common set of at most 70 distinct poles
+with equal moments must coincide (apply to the union of two supports). -/
+theorem distinct_moments_injective {K : Type*} [Field K] {r : ℕ}
+    (x a b : Fin r → K) (hx : Function.Injective x)
+    (h : ∀ j : Fin r, ∑ k : Fin r, a k * x k ^ j.val =
+        ∑ k : Fin r, b k * x k ^ j.val) :
+    a = b := by
+  have hzero : ∀ j : Fin r, ∑ k : Fin r, (a k - b k) * x k ^ j.val = 0 := by
+    intro j
+    simp_rw [sub_mul, Finset.sum_sub_distrib]
+    exact sub_eq_zero.mpr (h j)
+  have hz : (fun k => a k - b k) = 0 :=
+    Matrix.eq_zero_of_forall_pow_sum_mul_pow_eq_zero hx hzero
+  funext k
+  exact sub_eq_zero.mp (congrFun hz k)
+
 theorem padded_degree_bound (w : ℕ) (h : w < 18) :
     w + 18 ≤ 35 := by omega
 
@@ -83,6 +121,9 @@ theorem repayment_split (m a b : Bool) :
 #print axioms pad_involution
 #print axioms pole_filter
 #print axioms weighted_injective
+#print axioms weighted_injective_distinct
+#print axioms residual_zero_iff
+#print axioms distinct_moments_injective
 #print axioms padded_degree_bound
 #print axioms leaf_cost_nonincrease
 #print axioms repayment_split
