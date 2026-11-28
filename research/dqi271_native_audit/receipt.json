@@ -1,0 +1,114 @@
+{
+  "scope": "fixed full raw-syndrome native KMB with original 316K donor linear shell; correctness research only, REJECTED for cost",
+  "donor_sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+  "base266": {
+    "sha256": "071453f46be0f6108a09edd5b7b1e34595d86ddfe49ed0c80f369f0a35f7a349",
+    "Q": 900,
+    "static_paid": 388867,
+    "ops": 55521542,
+    "official_shots": 102400,
+    "official_errors": 0,
+    "official_mean_paid": 387766.8580566406,
+    "independent_salt_shots": 102400,
+    "independent_salt_errors": 0,
+    "structured_shots": 432,
+    "structured_errors": [
+      96,
+      43,
+      96,
+      0
+    ]
+  },
+  "component": {
+    "sha256": "06037fd020e6cbb18dcf9ecb6800a12492e24a6de5fe376a2c49d14208a6c5cb",
+    "Q": 900,
+    "ops": 18416376,
+    "static_paid": 678685,
+    "parent_paid": 788573,
+    "original_panel": 216,
+    "expanded_panel": 1932,
+    "errors": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "core": {
+    "sha256": "40b3bea1326ca0b307b6eb0e1c8e4115b31d8689f7abdd2e81f72fd672663698",
+    "Q": 900,
+    "ops": 42035314,
+    "static_paid": 898314,
+    "shots": 2334,
+    "errors": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "full": {
+    "sha256": "5a96ccef55851cd3d95cf45f0ffc170962ea76cad95661c3b6b4504cb3dd2789",
+    "Q": 900,
+    "ops": 65266956,
+    "static_paid": 898314,
+    "panels": {
+      "saved_622_raw": {
+        "shots": 622,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_paid": 897911.9115755627
+      },
+      "structured_432_raw": {
+        "shots": 432,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_paid": 584020.5671296297
+      },
+      "gap13_256_raw": {
+        "shots": 256,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_paid": 897918.04296875
+      },
+      "ordinary_1024_raw": {
+        "shots": 1024,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_paid": 897910.1474609375
+      }
+    },
+    "official": {
+      "status": "incomplete",
+      "exit_code": 137,
+      "reason": "local 4GiB cgroup OOM, no report emitted",
+      "independent_salt": "cancelled to avoid repeated OOM"
+    }
+  },
+  "proof": {
+    "schur_run": 46117220610,
+    "packed_allgap_run": 46117294527,
+    "fused_run": 46118637404,
+    "fused_conclusion": "success",
+    "new_lemmas": 5,
+    "full_circuit_proof": false
+  },
+  "accepted": false,
+  "submitted": false
+}
