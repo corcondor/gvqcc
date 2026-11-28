@@ -1,0 +1,55 @@
+name: Multiscale degree70 and dual71 strict audit
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_multiscale_dual/**'
+      - 'research/dqi_cutoff18_strict/MultiscaleDual.lean'
+      - '.github/workflows/dqi-multiscale-dual.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - run: python research/dqi_multiscale_dual/dual71_sdk.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dual71-native
+          path: |
+            research/dqi_multiscale_dual/*.kmb
+            research/dqi_multiscale_dual/dual_receipt.json
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - working-directory: research/dqi_cutoff18_strict
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true MultiscaleDual.lean | tee dual.log
+          python3 - <<'PY'
+          import re
+          s=open('dual.log').read()
+          rows=re.findall(r'depends on axioms: \[([^\]]*)\]',s)
+          assert len(rows)+len(re.findall(r'does not depend on any axioms',s))==8
+          for row in rows:
+              assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'},row
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dual71-lean
+          path: research/dqi_cutoff18_strict/dual.log
