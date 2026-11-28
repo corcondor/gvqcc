@@ -81,4 +81,37 @@ theorem hmr_bilinear_repay (s x y : Bool) :
 #print axioms cursor_xor_inverse
 #print axioms masked_update_involution
 #print axioms hmr_bilinear_repay
+/-- The newly introduced ghost root is the common zero of N and Q.
+    The current anchor was not padded earlier, so an old root has nonzero numerator. -/
+def padChoice (full root : Bool) : Bool := !full && !root
+
+theorem padding_self_tag (full root numzero : Bool)
+    (h : (root && numzero) = false) :
+    ((root || padChoice full root) && (numzero || padChoice full root)) =
+      padChoice full root := by
+  cases full <;> cases root <;> cases numzero <;> simp_all [padChoice]
+
+theorem padding_full_noop (root : Bool) : padChoice true root = false := by
+  cases root <;> rfl
+
+theorem root_tree (a b c d e f : Bool) :
+    (((a && b) && (c && d)) && (e && f)) =
+      (a && b && c && d && e && f) := by
+  cases a <;> cases b <;> cases c <;> cases d <;> cases e <;> cases f <;> rfl
+
+theorem gated_phase (root x y m : Bool) :
+    (((root && x) && y) && m) = (root && (x && (y && m))) := by
+  cases root <;> cases x <;> cases y <;> cases m <;> rfl
+
+theorem retained_hmr_chain (s t x y : Bool) :
+    ((s && (x && y)) ^^ (t && (x && y))) =
+      ((s ^^ t) && x && y) := by
+  cases s <;> cases t <;> cases x <;> cases y <;> rfl
+
+#print axioms padding_self_tag
+#print axioms padding_full_noop
+#print axioms root_tree
+#print axioms gated_phase
+#print axioms retained_hmr_chain
+
 end CoherentCursor
