@@ -48,7 +48,7 @@ theorem debt_cancel (g : Bool) (xs : List (Bool × Bool)) :
 
 theorem inactive_ccx (a b t : Bool) :
     Bool.xor t (false && (a && b)) = t := by
-  cases t <;> decide
+  cases a <;> cases b <;> cases t <;> decide
 
 abbrev Term := Nat × Nat × Nat
 abbrev Group := List Nat × List Term
