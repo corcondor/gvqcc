@@ -1,0 +1,31 @@
+{
+  "scope": "word-level only; not native or full DQI",
+  "base_266": {
+    "mean_paid": 387771.779296875,
+    "static_paid": 388867,
+    "prior_native_shots": 2020
+  },
+  "reference": {
+    "structured": 288,
+    "random": 144,
+    "arbitrary": 128,
+    "alternating": 8,
+    "roots": 7560,
+    "schur_entries": 67168,
+    "pivot_1": 9520,
+    "pivot_2": 36,
+    "errors": 0
+  },
+  "saved_reference": {
+    "cases": 622,
+    "roots": 9887,
+    "schur_entries": 37400,
+    "errors": 0
+  },
+  "source_words": 36,
+  "total_data_words": 71,
+  "vercel_blocker": "402 payment_required; Hobby plan usage limit exceeded",
+  "native_candidate": false,
+  "lean_checked": false,
+  "official_score": false
+}
