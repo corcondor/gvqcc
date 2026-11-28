@@ -62,9 +62,9 @@ theorem mixed_block_solve (b c x y : F) (hb : b ≠ 0) :
 theorem local_orientation (a b : F) (h : a ≠ 0 ∨ b ≠ 0) [Decidable (b = 0)] :
     (if b = 0 then a else b) ≠ 0 := by
   by_cases hb : b = 0
-  · rw [if_pos hb]
+  · simp only [hb, if_true]
     exact h.resolve_right (fun hn => hn hb)
-  · rw [if_neg hb]
+  · simp only [hb, if_false]
     exact hb
 
 end Field
@@ -101,4 +101,29 @@ end Ring
 #print axioms anchor_shear
 #print axioms adjoint_shear
 #print axioms adjoint_repay
+
+section PackedOrientation
+variable {F : Type*} [Field F] [DecidableEq F]
+
+/-- The retired pair stores the local orientation without an extra history bit. -/
+theorem packed_orientation_restore (f : Bool) (a r : F)
+    (ha : a ≠ 0) (hr : f = true → r = 0) :
+    let p := if f then (r,a) else (a,r)
+    (if p.1 = 0 then (true,p.2,p.1) else (false,p.1,p.2)) = (f,a,r) := by
+  cases f
+  · simp [ha]
+  · have hz := hr rfl
+    simp [hz]
+
+theorem oriented_ratio_zero (a : F) : (0:F)/a = 0 := zero_div a
+
+theorem retired_scale_nonzero (a h : F) (ha : a ≠ 0) (hh : h ≠ 0) :
+    a/h ≠ 0 := div_ne_zero ha hh
+
+end PackedOrientation
+
+#print axioms packed_orientation_restore
+#print axioms oriented_ratio_zero
+#print axioms retired_scale_nonzero
+
 end GVQCC.AnchorPivot
