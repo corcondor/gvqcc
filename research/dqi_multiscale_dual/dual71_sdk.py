@@ -29,7 +29,7 @@ def run(d,rng):
             if f>>k&1:b.cx(c[k],z[h])
     for u in range(d):
         for i in range(12):
-            for j in range(12):b.cz(p[12*u+i],s[12*u+j],control=z[i+j])
+            for j in range(12):b.ccz(p[12*u+i],s[12*u+j],z[i+j])
     for a in z:b.bit_store(a,False)
     b.free(z);circ=b.finish_circuit()
     assert circ.num_qubits==24*d and int(circ.operation_statistics().num_toffoli_like)==0
