@@ -1,0 +1,52 @@
+name: Rank99 exact tensor and KickMix
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_rank99_crt/**'
+      - '.github/workflows/rank99-crt.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          cd research/dqi_rank99_crt
+          python check_rank99.py --lean
+          set -o pipefail
+          lean -DwarningAsError=true Rank99Concrete.lean | tee lean.log
+          test "$(grep -c 'GVQCC.Rank99CRT.*axiom' lean.log)" -eq 49
+          ! grep -E 'sorryAx|ofReduceBool|Lean.ofReduce' lean.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rank99-lean
+          path: research/dqi_rank99_crt/*.lean
+  kickmix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - run: |
+          cd research/dqi_rank99_crt
+          python check_rank99.py --native
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rank99-native
+          path: |
+            research/dqi_rank99_crt/*.kmb
+            research/dqi_rank99_crt/native_receipt.json
