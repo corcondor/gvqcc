@@ -1,0 +1,27 @@
+name: Exact 257 frozen source seam
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/dqi257-source-seam.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          set -euo pipefail
+          curl -fsSL --retry 2 'https://www.kaggle.com/api/v1/datasets/download/tonylica/quantum-ai-32-85306-task-generators?datasetVersionNumber=2' -o /tmp/source.zip
+          python -m zipfile -e /tmp/source.zip /tmp/source
+          du -ah /tmp/source/dqi | sort -h | tail -35
+          cd /tmp/source/dqi
+          find . -type f | sort
+          tar -czf /tmp/dqi-source.tar.gz .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pinned-public-dqi-source
+          path: /tmp/dqi-source.tar.gz
+          compression-level: 0
