@@ -1,0 +1,168 @@
+{
+  "schema": "gvqcc-cross-session-2026-11-27-1",
+  "status": "BYTE_PRESERVING_TASK_COMPOSITION_REQUIRES_OFFICIAL_CROSS_REVERIFY",
+  "kaggle_submitted": false,
+  "new_official_score_claim": false,
+  "v3260_verified": false,
+  "claim_33_3465": "conditional estimate only; not verified",
+  "known_dqi_value_failure_fixed": false,
+  "source_archives": {
+    "GVQCC_V112_AllTasks_62078069_Verified_Rewrites_NOT_SUBMITTED.zip": {
+      "sha256": "030588b9ceeb604cc20406ac3c56ad54e89af555a2ce8d3b1c5bc78a0ad6ee39",
+      "size": 75026631
+    },
+    "GVQCC_V110_Checked_Extended_62030143_AllTasks.zip": {
+      "sha256": "4e75bdf2a7b31c3ae70f91073eb15bd550ab1bd3137852e17581f7af9abd8919",
+      "size": 74905361
+    }
+  },
+  "task_origins": {
+    "dfthcsos": "V112",
+    "invsqrt.kmb": "V110_extended",
+    "dqi.kmb": "V110_extended"
+  },
+  "task_metrics": {
+    "chemistry": {
+      "instructions": 299691,
+      "width": 405,
+      "loader_width": 128,
+      "toffoli_per_pass": 3262.5,
+      "official_component_pass": true
+    },
+    "invsqrt": {
+      "instructions": 27533,
+      "width": 37,
+      "official_component_pass": true
+    },
+    "dqi": {
+      "instructions": 61700935,
+      "width": 900,
+      "static_paid": 318584,
+      "known_value_failures": true,
+      "official_final_pass": false
+    }
+  },
+  "total_instructions": 62028159,
+  "component_checksums_verified": true,
+  "output_archive": {
+    "name": "GVQCC_V112xV110_CrossSession_62028159_NOT_SUBMITTED.zip",
+    "sha256": "344f259bbfeab3edff270dd6b191e3a9e4a99c648d1bab357be4c835193d93a6",
+    "bytes": 74943211
+  },
+  "files": {
+    "dfthcsos/angle_k_0.kmb": {
+      "sha256": "0a0b36e1c0e4801a941882848d921481b9198eb182e3186cb03c14de976f86d6",
+      "bytes": 301519,
+      "origin": "V112",
+      "instructions": 33276
+    },
+    "dfthcsos/angle_k_1.kmb": {
+      "sha256": "d2f15b867d12719ab43a0d8488b3fc610df53e549575732eba22217b565ebd41",
+      "bytes": 312144,
+      "origin": "V112",
+      "instructions": 34361
+    },
+    "dfthcsos/angle_k_10.kmb": {
+      "sha256": "7880ba7c9ac46b8f5e0395f9d39c367fa30eb4f7ecce22c7bc0d7010ba64609a",
+      "bytes": 122654,
+      "origin": "V112",
+      "instructions": 13447
+    },
+    "dfthcsos/angle_k_11.kmb": {
+      "sha256": "07753d9550246ab341083ad2fe06dc1f3b7b5d3a9098ae0a81027b51775b003f",
+      "bytes": 310614,
+      "origin": "V112",
+      "instructions": 34219
+    },
+    "dfthcsos/angle_k_12.kmb": {
+      "sha256": "377164c85aa0bebfaa7e3e6002213f146156435d67b45550da0fba4ceb27f96f",
+      "bytes": 117958,
+      "origin": "V112",
+      "instructions": 12923
+    },
+    "dfthcsos/angle_k_13.kmb": {
+      "sha256": "1cf112ce2b097cdb513d4d8d8af09a4465e63e343d5377f4fb688ce552ab0e23",
+      "bytes": 115049,
+      "origin": "V112",
+      "instructions": 12598
+    },
+    "dfthcsos/angle_k_14.kmb": {
+      "sha256": "ce8581be466b1483e99b7443555d5c0c7b01d93079aef2e2755e8e3e73994ccf",
+      "bytes": 115204,
+      "origin": "V112",
+      "instructions": 12621
+    },
+    "dfthcsos/angle_k_2.kmb": {
+      "sha256": "f729233c598e2f26fab0245f3080ede00462c3d7211ad182278a3a869f0a8b88",
+      "bytes": 117722,
+      "origin": "V112",
+      "instructions": 12887
+    },
+    "dfthcsos/angle_k_3.kmb": {
+      "sha256": "ce8724080a6c5bf26e90e4db260a4acc5bb6d810c84d18dde2fa6f57cd5f090b",
+      "bytes": 119623,
+      "origin": "V112",
+      "instructions": 13108
+    },
+    "dfthcsos/angle_k_4.kmb": {
+      "sha256": "8e222ed0cb10b9b27d6c4ce21ff7c6296ec2723a0ebe151a3870f6b7bfa43d15",
+      "bytes": 121523,
+      "origin": "V112",
+      "instructions": 13316
+    },
+    "dfthcsos/angle_k_5.kmb": {
+      "sha256": "faefa6a60c7797f146010115607cd986322e0d7a11caceade0b3ca9be916ec9b",
+      "bytes": 311699,
+      "origin": "V112",
+      "instructions": 34316
+    },
+    "dfthcsos/angle_k_6.kmb": {
+      "sha256": "abb84546c6db697e3d8f53d52dca269058826e96a43ab3f5d7d04bc90fb4ef27",
+      "bytes": 115941,
+      "origin": "V112",
+      "instructions": 12690
+    },
+    "dfthcsos/angle_k_7.kmb": {
+      "sha256": "14d0a7fbc61a32e5bc292b07330e8f918d6ceb3039defc44ae46330343176239",
+      "bytes": 312086,
+      "origin": "V112",
+      "instructions": 34355
+    },
+    "dfthcsos/angle_k_8.kmb": {
+      "sha256": "0e00cf5467eb19821884a7c46c3220b23734fb068f3e8a34f1c5810a38714fd3",
+      "bytes": 114044,
+      "origin": "V112",
+      "instructions": 12517
+    },
+    "dfthcsos/angle_k_9.kmb": {
+      "sha256": "002cd6dac72018bbb7232385ea9a11362cd97fe99c2d5d5207e1eca62c889a19",
+      "bytes": 119196,
+      "origin": "V112",
+      "instructions": 13057
+    },
+    "dfthcsos/submission.npz": {
+      "sha256": "dcc713f35fcbe66ea80225b81363a8801893a9dbbf1ebf52f89b1b6ebfd06988",
+      "bytes": 1864916,
+      "origin": "V112"
+    },
+    "dqi.kmb": {
+      "sha256": "8010980d566e6b16d255bfa7f00b37fb0d00c62978cd8bd3932b1981adc05841",
+      "bytes": 559639460,
+      "origin": "V110_extended",
+      "instructions": 61700935
+    },
+    "invsqrt.kmb": {
+      "sha256": "0dd56a108a82391b8d5ebfcb908df0285c961d3cf89b1b1b7dae0ce882ac0e56",
+      "bytes": 262038,
+      "origin": "V110_extended",
+      "instructions": 27533
+    }
+  },
+  "limitations": [
+    "Each task payload is copied byte-for-byte from the independently checked source archive. No gates are edited.",
+    "Cross-session combined ZIP has CRC/SHA checks; the unchanged official task verifiers were not rerun for this assembled ZIP.",
+    "No new paid-gate savings, Q36 InvSqrt, Q888 DQI, DQI error repair, or new leaderboard score.",
+    "The 3260/pass claim has no matching verified native source; remains excluded.",
+    "Existing expected leaderboard estimate ~33.34224 is not an actual Kaggle submission."
+  ]
+}

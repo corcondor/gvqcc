@@ -1,0 +1,83 @@
+{
+  "status": "COMPLETE_ALL18_INSTRUCTION_REDUCTION_WITH_SEPARATE_WIDTH_RESEARCH",
+  "baseline": "Exact user-supplied V111",
+  "final_total_ops": 62078069,
+  "ops_saved": 1425,
+  "chemistry": {
+    "old_ops": 300857,
+    "new_ops": 299691,
+    "width": 405,
+    "expected_paid_per_pass": 3262.5,
+    "expected_total_toffoli": 13025,
+    "expected_fee": 247478615.98392352,
+    "old_reaction_depth": 1447,
+    "new_reaction_depth": 1443,
+    "official_salts": [
+      "",
+      "v112-central-transport-20261127"
+    ],
+    "shots_per_salt": 78016,
+    "true_paid_saving": 0
+  },
+  "invsqrt": {
+    "old_ops": 27909,
+    "new_ops": 27676,
+    "width": 37,
+    "CCX": 1431,
+    "CCZ": 29,
+    "CSWAP": 43,
+    "rotations": 33,
+    "official": {
+      "status": "PASS",
+      "score": 60865.02647061197,
+      "toffoli_equivalent": 1645.0007154219452,
+      "toffoli_count": 1404.6214411454205,
+      "max_toffoli_count": 1503,
+      "t_count": 5.501452391803034,
+      "rotation_count": 33.0,
+      "rotation_eps": 1.8880574198146154e-13,
+      "num_qubits": 37,
+      "reaction_depth": 1389,
+      "num_ops": 27676,
+      "verified_shots": 3133452,
+      "worst_error_over_tolerance": 0.9994717987127908,
+      "worst_x": 252,
+      "circuit_sha256": "cd60b936c9354d85d292a59e52fa954108af0289c3068ad26efd2bd5c96738db"
+    },
+    "true_paid_saving": 0,
+    "fee_improvement_claim": false,
+    "score_note": "Private HMR removal shifts the pseudorandom stream; sampled score change is not a fee improvement."
+  },
+  "dqi": {
+    "old_ops": 61750728,
+    "new_ops": 61750702,
+    "width": 900,
+    "static_paid": 318584,
+    "paired_inputs": 64,
+    "known_failure_retained": true,
+    "true_paid_saving": 0,
+    "official_final_PASS": false
+  },
+  "research_connector": {
+    "native": "invsqrt/invsqrt_first_chart_connected.kmb",
+    "full_width": 37,
+    "local_width": 36,
+    "extra_ccx": 1,
+    "source_range": [
+      5590,
+      5601
+    ],
+    "source_ops": 27909,
+    "new_ops": 27925,
+    "official_PASS": true,
+    "verified_inputs": 3133452,
+    "shots_each": 1,
+    "fee_delta_against_paired_V111": 37.0,
+    "adopted_in_all18": false
+  },
+  "global_36Q_achieved": false,
+  "global_888Q_achieved": false,
+  "new_expected_fee_reduction": false,
+  "github_updated": false,
+  "competition_submitted": false
+}
