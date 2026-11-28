@@ -1,7 +1,8 @@
 import Mathlib
 
 namespace GVQCC.SharedResidualAlgebra
-open Polynomial BigOperators
+open Polynomial
+open scoped BigOperators
 noncomputable section
 variable {F : Type*} [Field F] [DecidableEq F]
 
@@ -23,7 +24,7 @@ theorem weighted_at_anchor (s : Finset F) (mu : F → F) (a : F)
   rw [weightedPoly, eval_mul, eval_X, he]
   field_simp
 
-theorem weighted_degree (s : Finset F) (mu : F → F) (hs : s.Nonempty) :
+theorem weighted_degree (s : Finset F) (mu : F → F) (_hs : s.Nonempty) :
     (weightedPoly s mu).natDegree ≤ s.card := by
   let q := Lagrange.interpolate s id (fun a : F => mu a / a)
   change (X*q).natDegree ≤ s.card
@@ -94,14 +95,15 @@ theorem weighted_add (s : Finset F) (mu nu : F → F) :
 theorem weighted_scale (s : Finset F) (mu : F → F) (c : F) :
     weightedPoly s (fun x => c * mu x) = C c * weightedPoly s mu := by
   unfold weightedPoly
-  rw [Lagrange.interpolate_apply, Lagrange.interpolate_apply, Finset.mul_sum]
-  simp only [← Finset.mul_sum]
-  rw [← mul_assoc, mul_comm (C c) X, mul_assoc]
-  congr 1
-  rw [Finset.mul_sum]
-  apply Finset.sum_congr rfl
-  intro j _
-  rw [mul_div_assoc, map_mul]
+  rw [Lagrange.interpolate_apply,Lagrange.interpolate_apply]
+  have hh : (∑ j ∈ s, C (c*mu j/j)*Lagrange.basis s id j) =
+      C c*(∑ j ∈ s, C (mu j/j)*Lagrange.basis s id j) := by
+    rw [Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro j _
+    rw [mul_div_assoc, map_mul]
+    ring
+  rw [hh]
   ring
 
 /-- Transposition of a moment/evaluation pairing; this justifies moving
