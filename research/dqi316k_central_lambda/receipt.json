@@ -1,0 +1,118 @@
+{
+  "scope": "Original 316K donor lineage; research only",
+  "donor": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+  "vercel_session": "sbx_JFwlTVrmLkscQqHlOegRY8hd1LnK",
+  "rejected": {
+    "sha256": "68fe49432d91daa8d1ce7c8933fbbd40b29db62028dfc95475148a7df777d91a",
+    "Q": 900,
+    "ops": 62830679,
+    "static_paid": 388603,
+    "distribution_mean": 387639.564453125,
+    "stress": [
+      996,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ordinary": [
+      1024,
+      0,
+      0,
+      0,
+      0
+    ],
+    "structured": [
+      432,
+      96,
+      54,
+      96,
+      0
+    ]
+  },
+  "general": {
+    "sha256": "ddc9d46558baef3b869366a6f88fb5890266002ad49faadfb89a8c5d83b3d37a",
+    "Q": 900,
+    "ops": 80607803,
+    "static_paid": 522659,
+    "distribution_mean": 522192.2275390625,
+    "stress": [
+      996,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ordinary": [
+      1024,
+      0,
+      0,
+      0,
+      0
+    ],
+    "structured": [
+      432,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "gauge": {
+    "sha256": "570e617f6fa751290b20b8d6782184fe597a1ee46dccf74cec02e9ae6d6419ec",
+    "Q": 900,
+    "ops": 84114958,
+    "static_paid": 522659,
+    "distribution_mean": 517014.3955078125,
+    "stress": [
+      996,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ordinary": [
+      1024,
+      0,
+      0,
+      0,
+      0
+    ],
+    "structured": [
+      432,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "columns": [
+    "shots",
+    "value",
+    "raw_phase",
+    "dirty",
+    "mask"
+  ],
+  "tensor": {
+    "old_CX": 1276,
+    "new_CX": 816,
+    "CCX": 42,
+    "lanes": 156,
+    "lean_sha256": "0f38e85e434e2c792fd6e28f722b5279fc13821babdbe53848afa9e1fb195bef"
+  },
+  "lean": {
+    "version": "4.35.0",
+    "theorems": 14,
+    "warningAsError": true,
+    "sorryAx": false,
+    "ofReduceBool": false,
+    "standard_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "full_circuit_proof": false
+  },
+  "official_score": false,
+  "submission": false,
+  "accepted": false
+}
