@@ -1,0 +1,40 @@
+{
+  "first_op": 22801539,
+  "controls": [
+    61,
+    522
+  ],
+  "target": 2,
+  "linear_rank": 840,
+  "zero_wires": 60,
+  "matches": [
+    {
+      "k": 3169,
+      "jet": "value",
+      "rank": 24,
+      "physical": 2,
+      "controls": [
+        true,
+        true
+      ],
+      "wires": [
+        61,
+        522
+      ]
+    },
+    {
+      "k": 3169,
+      "jet": "both",
+      "rank": 48,
+      "physical": 2,
+      "controls": [
+        true,
+        true
+      ],
+      "wires": [
+        61,
+        522
+      ]
+    }
+  ]
+}
