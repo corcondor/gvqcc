@@ -32,14 +32,20 @@ def lagrange(points, x):
 
 
 def shear(b, c, xwords, ywords, blocked):
-    r,s = len(ywords),len(xwords)
+    shear_shared(b, c, [(xwords,ywords)], blocked)
+
+
+def shear_shared(b, c, sectors, blocked):
+    r,s = len(sectors[0][1]),len(sectors[0][0])
+    assert all(len(x)==s and len(y)==r for x,y in sectors)
     assert len(c)==r+s-1
     # Index c[i+j] makes this Hankel. Reverse x order for the Toeplitz
     # off-diagonal in the Euclidean merge.
     if not blocked:
-        for i,y in enumerate(ywords):
-            for j,v in enumerate(xwords):
-                J.arith(b,'prod',c[i+j],v,y,12,C.MOD)
+        for xwords,ywords in sectors:
+            for i,y in enumerate(ywords):
+                for j,v in enumerate(xwords):
+                    J.arith(b,'prod',c[i+j],v,y,12,C.MOD)
         return
     points=list(range(r+s-1))
     for x in points:
@@ -49,11 +55,12 @@ def shear(b, c, xwords, ywords, blocked):
         for i,k in enumerate(gamma):
             if i!=h and k:roll(b,c[i],c[h],k)
         xp,yp = [C.gf_pow(x,j,12,C.MOD) for j in range(s)], [C.gf_pow(x,j,12,C.MOD) for j in range(r)]
-        for j in range(1,s):roll(b,xwords[j],xwords[0],xp[j])
-        for i in range(1,r):roll(b,ywords[0],ywords[i],yp[i])
-        J.arith(b,'prod',c[h],xwords[0],ywords[0],12,C.MOD)
-        for i in range(1,r):roll(b,ywords[0],ywords[i],yp[i])
-        for j in range(1,s):roll(b,xwords[j],xwords[0],xp[j])
+        for xwords,ywords in sectors:
+            for j in range(1,s):roll(b,xwords[j],xwords[0],xp[j])
+            for i in range(1,r):roll(b,ywords[0],ywords[i],yp[i])
+            J.arith(b,'prod',c[h],xwords[0],ywords[0],12,C.MOD)
+            for i in range(1,r):roll(b,ywords[0],ywords[i],yp[i])
+            for j in range(1,s):roll(b,xwords[j],xwords[0],xp[j])
         for i,k in enumerate(gamma):
             if i!=h and k:roll(b,c[i],c[h],k)
         mul_frame(b,c[h],C.inv(gamma[h]))

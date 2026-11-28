@@ -1,0 +1,63 @@
+{
+  "tapes": {
+    "separate_False": {
+      "qubits": 865,
+      "ccx": 8652,
+      "static_paid": 8652,
+      "standalone_t": 0,
+      "instructions": 309420,
+      "sha256": "4f5eb05fcde5e1a648dbe1557d621af17d880fe51cac2d20e5223980fe2a3667"
+    },
+    "separate_True": {
+      "qubits": 865,
+      "ccx": 8652,
+      "static_paid": 8652,
+      "standalone_t": 0,
+      "instructions": 309420,
+      "sha256": "8c09f56d8f525c1c9d5e7cc5d8d238eba12cbfbf6636249fc23136047f26ce88"
+    },
+    "fused_False": {
+      "qubits": 865,
+      "ccx": 5880,
+      "static_paid": 5880,
+      "standalone_t": 0,
+      "instructions": 181008,
+      "sha256": "52861de0e90ed8eabf9d7627b1132b45730902a14606cf9b2a27e689b4f2bf6d"
+    },
+    "fused_True": {
+      "qubits": 865,
+      "ccx": 5880,
+      "static_paid": 5880,
+      "standalone_t": 0,
+      "instructions": 181008,
+      "sha256": "3b5a56e76d8a9f28cfe3fc10af150b611f5706e889f8bf08a024f3378c625e24"
+    },
+    "native_setup_False": {
+      "qubits": 865,
+      "ccx": 9996,
+      "static_paid": 9996,
+      "standalone_t": 0,
+      "instructions": 371084,
+      "sha256": "d74352af0848c50f45699b76cdbcf15fe49c662d5befc585f9c2d78a7e9c9a43"
+    },
+    "native_setup_True": {
+      "qubits": 865,
+      "ccx": 9996,
+      "static_paid": 9996,
+      "standalone_t": 0,
+      "instructions": 371084,
+      "sha256": "da77a0bd2707135545253318a9eaf997252359cc58d7711f8d4d092388d25b77"
+    },
+    "uncorrected_False": {
+      "qubits": 865,
+      "ccx": 4536,
+      "static_paid": 4536,
+      "standalone_t": 0,
+      "instructions": 164688,
+      "sha256": "7ced1dae6c2b83ae573c1e67038e6a6a55c07f5de0e93fc5c764b1f1f2d15b7e"
+    }
+  },
+  "shots_each_direction": 1024,
+  "omitting_correction_error_lanes": 1024,
+  "scope": "Two monic degree-one merges on both sectors. Original F,G frames required, monic scale implicit. Native setup case computes H in place and restores F."
+}
