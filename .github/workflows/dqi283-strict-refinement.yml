@@ -1,0 +1,52 @@
+name: DQI 283 strict transpose refinement
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/**'
+      - '.github/workflows/dqi283-strict-refinement.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  strict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+      - name: Exact theorem and axiom audit
+        run: |
+          set -uo pipefail
+          fail=0
+          for f in SharedResidualFFT TransposedMiddle SharedReciprocal ConcreteFFT279 SharedFFTScan SharedResidualAlgebra HermiteBoundary279 ExactTransposedLagrange SchurReturn283 FrameSplice283; do
+            echo "Checking $f"
+            lake env lean -DwarningAsError=true "$f.lean" > "$f.log" 2>&1 || fail=1
+            cat "$f.log"
+            n=$(grep -c "^'.*axiom" "$f.log" || true)
+            e=$(grep -c '^#print axioms' "$f.lean")
+            test "$n" -eq "$e" || fail=1
+            if grep -E 'sorryAx|ofReduceBool|_native\.bv_decide\.ax' "$f.log"; then fail=1; fi
+            python - "$f.log" <<'PY' || fail=1
+          import re,sys
+          for line in open(sys.argv[1]):
+              if "depends on axioms:" in line:
+                  a=re.search(r"depends on axioms: \[(.*)\]",line)
+                  assert a and set(a.group(1).split(", ")) <= {"propext","Classical.choice","Quot.sound"},line
+          PY
+            echo "AXIOM_ROWS $f $n/$e"
+          done
+          exit "$fail"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: strict-283-theorem-receipts
+          path: research/dqi_cutoff18_strict/*.log
