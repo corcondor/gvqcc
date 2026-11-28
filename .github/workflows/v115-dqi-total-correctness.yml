@@ -1,0 +1,46 @@
+name: V115 DQI specification
+on:
+  pull_request:
+    paths:
+      - 'research/v115_dqi_correctness/**'
+      - '.github/workflows/v115-dqi-total-correctness.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: research/v115_dqi_correctness/lean
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check and print axiom dependencies
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true TotalCorrectness.lean | tee lean-axioms.txt
+          if grep -q 'sorryAx' lean-axioms.txt; then exit 1; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v115-lean-axioms
+          path: research/v115_dqi_correctness/lean/lean-axioms.txt
+  classical:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: research/v115_dqi_correctness
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python regression.py
