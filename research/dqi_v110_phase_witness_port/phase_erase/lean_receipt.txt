@@ -1,0 +1,4 @@
+'Gvqcc.NumeratorErase.conditionalPhaseRepayment' depends on axioms: [propext, Quot.sound]
+'Gvqcc.NumeratorErase.residualPhase' depends on axioms: [propext, Quot.sound]
+'Gvqcc.NumeratorErase.removeMonicTop' depends on axioms: [propext, Quot.sound]
+'Gvqcc.NumeratorErase.monicLowerInvolution' depends on axioms: [propext, Quot.sound]

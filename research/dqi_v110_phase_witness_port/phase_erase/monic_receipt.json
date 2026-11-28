@@ -1,0 +1,62 @@
+[
+  {
+    "selector": "N",
+    "shared": false,
+    "width": 865,
+    "ops": 8670,
+    "stats": {
+      "CX": 7956,
+      "CCX": 714
+    },
+    "mean_paid": 714.0,
+    "sha256": "0570ad06d5c6168dc9b23b901abdcc12528e006ed984f177d650306a3166f943",
+    "shots_each_direction": 1024,
+    "errors": 0,
+    "reverse_errors": 0
+  },
+  {
+    "selector": "N",
+    "shared": true,
+    "width": 865,
+    "ops": 6270,
+    "stats": {
+      "CX": 5556,
+      "CCX": 714
+    },
+    "mean_paid": 714.0,
+    "sha256": "804f648e00bf58782dab773ad8a91b014e4cc37e22c12ca7cae0719cf0988ea4",
+    "shots_each_direction": 1024,
+    "errors": 0,
+    "reverse_errors": 0
+  },
+  {
+    "selector": "DN",
+    "shared": false,
+    "width": 865,
+    "ops": 17340,
+    "stats": {
+      "CX": 15912,
+      "CCX": 1428
+    },
+    "mean_paid": 1428.0,
+    "sha256": "83f2c05bf134d8cd0af6820c9b7c674c4067ecca0033ba7237f3a5f2e296a0ec",
+    "shots_each_direction": 1024,
+    "errors": 0,
+    "reverse_errors": 0
+  },
+  {
+    "selector": "DN",
+    "shared": true,
+    "width": 865,
+    "ops": 10194,
+    "stats": {
+      "CX": 8766,
+      "CCX": 1428
+    },
+    "mean_paid": 1428.0,
+    "sha256": "7754732b78176ad27264f25942eca16daace7f33a3e0d70d89189c9355ba8a03",
+    "shots_each_direction": 1024,
+    "errors": 0,
+    "reverse_errors": 0
+  }
+]

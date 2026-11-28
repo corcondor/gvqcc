@@ -1,0 +1,216 @@
+[
+  {
+    "mode": "undo",
+    "sector": 0,
+    "Q": 889,
+    "ops": 3060,
+    "CCX": 252,
+    "static_paid": 252,
+    "mean_paid": 252.0,
+    "shots": 2048,
+    "errors": 0,
+    "phase_flips": 0,
+    "negative": 0,
+    "negative_errors": 0,
+    "negative_phase_flips": 0,
+    "stats": {
+      "CX": 2808,
+      "CCX": 252
+    },
+    "sha256": "61987197c71642fc5cbc7ff0ee70d815bb01a91ab5edbccdb8b057fb998df598"
+  },
+  {
+    "mode": "undo",
+    "sector": 1,
+    "Q": 889,
+    "ops": 3060,
+    "CCX": 252,
+    "static_paid": 252,
+    "mean_paid": 252.0,
+    "shots": 2048,
+    "errors": 0,
+    "phase_flips": 0,
+    "negative": 0,
+    "negative_errors": 0,
+    "negative_phase_flips": 0,
+    "stats": {
+      "CX": 2808,
+      "CCX": 252
+    },
+    "sha256": "3e9a47b919624f993ca557b738c3921c62d22cf1d6c73cd110bbcf507383b4ac"
+  },
+  {
+    "mode": "school",
+    "sector": 0,
+    "Q": 889,
+    "ops": 1020,
+    "CCX": 0,
+    "static_paid": 0,
+    "mean_paid": 0.0,
+    "shots": 2048,
+    "errors": 0,
+    "phase_flips": 0,
+    "negative": 512,
+    "negative_errors": 0,
+    "negative_phase_flips": 259,
+    "stats": {
+      "BIT_INVERT": 88,
+      "BIT_STORE0": 44,
+      "HMR": 24,
+      "CZ": 864
+    },
+    "sha256": "1873abf8a6e240e4a546a107f005cc5cc35e86162d63e4287556b4d9571e6bd8"
+  },
+  {
+    "mode": "school",
+    "sector": 1,
+    "Q": 889,
+    "ops": 1020,
+    "CCX": 0,
+    "static_paid": 0,
+    "mean_paid": 0.0,
+    "shots": 2048,
+    "errors": 0,
+    "phase_flips": 0,
+    "negative": 512,
+    "negative_errors": 0,
+    "negative_phase_flips": 227,
+    "stats": {
+      "BIT_INVERT": 88,
+      "BIT_STORE0": 44,
+      "HMR": 24,
+      "CZ": 864
+    },
+    "sha256": "aedc1e37ca52e4ec06f5d5d5caac4572e808d78917a58146b4ee3aa812e246a8"
+  },
+  {
+    "mode": "tensor",
+    "sector": 0,
+    "Q": 889,
+    "ops": 5028,
+    "CCX": 0,
+    "static_paid": 0,
+    "mean_paid": 0.0,
+    "shots": 2048,
+    "errors": 0,
+    "phase_flips": 0,
+    "negative": 512,
+    "negative_errors": 0,
+    "negative_phase_flips": 259,
+    "stats": {
+      "BIT_INVERT": 1152,
+      "BIT_STORE0": 144,
+      "HMR": 24,
+      "CX": 3456,
+      "CZ": 252
+    },
+    "sha256": "b2cc5b3bfeb52e281b773098916dcb604598c735894d46080bee768bae277e8d"
+  },
+  {
+    "mode": "tensor",
+    "sector": 1,
+    "Q": 889,
+    "ops": 5028,
+    "CCX": 0,
+    "static_paid": 0,
+    "mean_paid": 0.0,
+    "shots": 2048,
+    "errors": 0,
+    "phase_flips": 0,
+    "negative": 512,
+    "negative_errors": 0,
+    "negative_phase_flips": 227,
+    "stats": {
+      "BIT_INVERT": 1152,
+      "BIT_STORE0": 144,
+      "HMR": 24,
+      "CX": 3456,
+      "CZ": 252
+    },
+    "sha256": "337d5bc2c96b78c65285c0f244ff709b922baad4ec05c3f429697e0b7f8925a8"
+  },
+  {
+    "mode": "kara",
+    "sector": 0,
+    "Q": 889,
+    "ops": 1230,
+    "CCX": 0,
+    "static_paid": 0,
+    "mean_paid": 0.0,
+    "shots": 2048,
+    "errors": 0,
+    "phase_flips": 0,
+    "negative": 512,
+    "negative_errors": 0,
+    "negative_phase_flips": 259,
+    "stats": {
+      "BIT_INVERT": 156,
+      "BIT_STORE0": 90,
+      "HMR": 24,
+      "CX": 96,
+      "CZ": 864
+    },
+    "sha256": "7970dcc8405ede2be03c0dae61e41c2183f05a7f038b090f8ebef529e3b793e8"
+  },
+  {
+    "mode": "kara",
+    "sector": 1,
+    "Q": 889,
+    "ops": 1230,
+    "CCX": 0,
+    "static_paid": 0,
+    "mean_paid": 0.0,
+    "shots": 2048,
+    "errors": 0,
+    "phase_flips": 0,
+    "negative": 512,
+    "negative_errors": 0,
+    "negative_phase_flips": 227,
+    "stats": {
+      "BIT_INVERT": 156,
+      "BIT_STORE0": 90,
+      "HMR": 24,
+      "CX": 96,
+      "CZ": 864
+    },
+    "sha256": "df97e200bfbfe6dcb3f6de23009698f03bf4a1f0cadd81b25ee0b926ac647ec1"
+  },
+  {
+    "mode": "control",
+    "sector": 0,
+    "Q": 889,
+    "ops": 24,
+    "CCX": 0,
+    "static_paid": 0,
+    "mean_paid": 0.0,
+    "shots": 2048,
+    "errors": 0,
+    "phase_flips": 1051,
+    "negative": 512,
+    "negative_errors": 0,
+    "negative_phase_flips": 251,
+    "stats": {
+      "HMR": 24
+    },
+    "sha256": "7d7969271cb46fce8e94a1beca71ac795c82d05196a209c436f070e30a6576f9"
+  },
+  {
+    "mode": "control",
+    "sector": 1,
+    "Q": 889,
+    "ops": 24,
+    "CCX": 0,
+    "static_paid": 0,
+    "mean_paid": 0.0,
+    "shots": 2048,
+    "errors": 0,
+    "phase_flips": 1019,
+    "negative": 512,
+    "negative_errors": 0,
+    "negative_phase_flips": 260,
+    "stats": {
+      "HMR": 24
+    },
+    "sha256": "7d7969271cb46fce8e94a1beca71ac795c82d05196a209c436f070e30a6576f9"
+  }
+]
