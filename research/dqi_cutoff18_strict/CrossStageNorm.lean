@@ -15,6 +15,14 @@ theorem norm64_mul (a h : F) : norm64 (a*h) = norm64 a * norm64 h := by
 theorem norm64_div (a h : F) : norm64 (a/h) = norm64 a / norm64 h := by
   simp [norm64,div_pow]
 
+theorem norm64_fixed (a : F) (h : a^4096 = a) : (norm64 a)^64 = norm64 a := by
+  unfold norm64
+  calc
+    (a^65)^64 = a^4160 := by rw [← pow_mul]
+    _ = a^4096*a^64 := by rw [← pow_add]
+    _ = a*a^64 := by rw [h]
+    _ = a^65 := by rw [← pow_succ']
+
 theorem norm64_ne_zero (a : F) (ha : a ≠ 0) : norm64 a ≠ 0 := by
   exact pow_ne_zero _ ha
 
@@ -27,15 +35,20 @@ theorem invnorm_mul (a h : F) :
 
 theorem invnorm_div (a h : F) :
     invNorm64 (a/h) = invNorm64 a * norm64 h := by
-  simp [invNorm64,norm64_div,div_eq_mul_inv,mul_inv_rev,mul_comm]
+  unfold invNorm64
+  rw [norm64_div, div_eq_mul_inv, mul_inv_rev, inv_inv, mul_comm]
 
 theorem invnorm_repay (a h : F) (hh : h ≠ 0) :
     invNorm64 (a*h)*norm64 h = invNorm64 a := by
-  rw [invnorm_mul, mul_assoc, invNorm64, inv_mul_cancel₀ (norm64_ne_zero h hh),mul_one]
+  rw [invnorm_mul, mul_assoc]
+  change invNorm64 a * ((norm64 h)⁻¹ * norm64 h) = invNorm64 a
+  rw [inv_mul_cancel₀ (norm64_ne_zero h hh), mul_one]
 
 theorem invnorm_repay_reverse (a h : F) (hh : h ≠ 0) :
     invNorm64 (a/h)*invNorm64 h = invNorm64 a := by
-  rw [invnorm_div, mul_assoc, invNorm64, mul_inv_cancel₀ (norm64_ne_zero h hh),mul_one]
+  rw [invnorm_div, mul_assoc]
+  change invNorm64 a * (norm64 h * (norm64 h)⁻¹) = invNorm64 a
+  rw [mul_inv_cancel₀ (norm64_ne_zero h hh), mul_one]
 
 /-- Form the full inverse only while it is needed. The carried norm is
     independent of how the field element was recovered in Schur. -/
@@ -98,7 +111,6 @@ theorem tower_product (u v t k : R) (h2 : (2:R)=0)
 /-- Squared denominators are still accounted for under the same norm. -/
 theorem square_norm (a : R) : (a^2)^65=(a^65)^2 := by
   rw [← pow_mul,← pow_mul]
-  norm_num
 
 end Ring
 
@@ -121,6 +133,7 @@ theorem compact_cost : 3*84-(66+66+15+12+15+6+30+24)=18 ∧ 17*18=306 := by deci
 
 #print axioms norm64_mul
 #print axioms norm64_div
+#print axioms norm64_fixed
 #print axioms norm64_ne_zero
 #print axioms norm64_inverse
 #print axioms invnorm_mul
