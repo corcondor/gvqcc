@@ -13,7 +13,7 @@ theorem word_compare (xs : List (Bool × Bool)) (g : Bool) :
   induction xs generalizing g with
   | nil => rfl
   | cons p ps ih =>
-      simp only [List.foldl_cons, update_exact, ih]
+      simp only [List.foldl_cons, update_exact]
 def exchange (g a b : Bool) : Bool × Bool :=
   let d := Bool.xor a b
   let a' := if g then Bool.xor a d else a
