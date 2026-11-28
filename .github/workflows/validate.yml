@@ -18,6 +18,39 @@ jobs:
         run: python3 -m pip install --disable-pip-version-check kickmix==1.0.0 numpy==2.5.4
       - name: Test binary parser and conservative analysis
         run: python3 -m unittest discover -p 'test_*.py' -v
+      - name: Verify joint angle-word and generic KMX research contracts
+        run: |
+          python3 research/test_joint_word_feedback.py
+          python3 research/test_generic_angle_loader.py
+      - name: Validate multi-angle compilers, including native KMX parser
+        run: |
+          python3 research/test_multi_angle_synthesis.py -v
+          python3 -m py_compile research/multi_angle_synthesis.py
+      - name: Verify pattern library mathematical contracts
+        run: python3 research/patterns/test_structural_pattern_library.py
+      - name: Check v3 HMR, affine, partition, and wire-permutation oracles
+        run: |
+          python3 research/multiangle_v3/test_new_patterns.py -v
+          python3 research/multiangle_v3/test_partition_and_permutation.py -v
+          python3 -m py_compile research/multiangle_v3/*.py
+      - name: Validate v4 global cofactors, pairing and native real-C46 KMX
+        run: |
+          python3 -m pip install --disable-pip-version-check networkx==3.4.2
+          python3 research/multiangle_v4/test_global_cofactor.py -v
+          python3 research/multiangle_v4/test_high_pair.py -v
+          python3 research/multiangle_v4/test_high_pair_general.py -v
+          python3 research/multiangle_v4/test_independent_verifier.py -v
+          python3 research/multiangle_v4/test_native_c46.py -v
+          python3 -m py_compile research/multiangle_v4/*.py
+      - name: Prove v5 group-matroid basis and native real-C46 conversions
+        run: |
+          python3 research/multiangle_v5/test_high_group_basis.py -v
+          python3 -m py_compile research/multiangle_v5/*.py
+      - name: Verify v6 cross-20 rank-r HMR and real native KMX
+        run: |
+          python3 research/multiangle_v6/test_experiment.py
+          python3 research/multiangle_v6/test_native_rank_hmr.py
+          python3 -m py_compile research/multiangle_v6/*.py
       - name: Check exhaustive and symbolic Boolean analysis
         run: |
           python3 test_boolean_block_analyze.py

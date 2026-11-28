@@ -1,0 +1,147 @@
+{
+  "experiment": "2026-11-23-joint-angle-word-feedback",
+  "repository": "corcondor/gvqcc",
+  "scope": "NUMERICAL_PHYSICS_AND_GF2_PROXY_ONLY; NOT A NATIVE QUANTUM CIRCUIT",
+  "source_code": "research/joint_word_feedback.py",
+  "python_environment": "local Python 3.13.5; numpy, scipy; no KickMix native CPython 3.12 wheel",
+  "dependencies": {
+    "reference_numerical_data_sha256": "735282d9aa49bb3529e33e761ea501d1f796431221f684512de74d269b17562f",
+    "reference_source": "prior user-provided chem_gpu_inputs.npz and physical_verify.py",
+    "original_pinned_official_numerical": "dfthcsos.scoreinfra.dfthc_math.evaluate_dfthc_angle_words",
+    "native_verifier_run": false
+  },
+  "experiments": [
+    {
+      "seed": "c46_public_v8.npz",
+      "source_sha256": "2ab7f2d01a02450eb2c47577097ef4bb27a1411b40ead88b6237f100bc9f4d61",
+      "shape": [
+        9,
+        127,
+        46
+      ],
+      "brot": 7,
+      "J": 5,
+      "bit0_mixed_rank_profile": [
+        74,
+        74,
+        1,
+        1,
+        1,
+        75,
+        1,
+        74,
+        1,
+        1,
+        1,
+        75,
+        1,
+        1,
+        1
+      ],
+      "rank_sum": 382,
+      "scan_count": 3375,
+      "improving_rank_moves": 16,
+      "selected_moves": 3,
+      "evaluated_numerical_variants": 6,
+      "passing_physics_variants": 0,
+      "selected": null,
+      "kind": "single-word bit0 and optional local W-ridge"
+    },
+    {
+      "seed": "c45_B130_postangle_PSD_physical_pass.npz",
+      "source_sha256": "1c1f067ce2d2ed1d469ae3d245befecc99de83bae821eda5b6eb3fda4125f9e7",
+      "shape": [
+        9,
+        130,
+        45
+      ],
+      "brot": 7,
+      "J": 5,
+      "bit0_mixed_rank_profile": [
+        75,
+        75,
+        74,
+        75,
+        74,
+        75,
+        75,
+        74,
+        75,
+        75,
+        75,
+        75,
+        75,
+        74,
+        75
+      ],
+      "rank_sum_before": 1121,
+      "scan_count": 3375,
+      "improving_rank_moves": 566,
+      "rank_tie": 2137,
+      "rank_worse": 672,
+      "selected_moves": 30,
+      "one_word_checks": 30,
+      "two_word_checks": 24,
+      "evaluated_numerical_variants": 54,
+      "passing_physics_variants": 54,
+      "selected": {
+        "changes": [
+          {
+            "row": 700,
+            "column": 41,
+            "xor_bit": 0
+          },
+          {
+            "row": 700,
+            "column": 54,
+            "xor_bit": 0
+          }
+        ],
+        "changed_angle_columns_touch_slots": [
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "mixed_rank_sum_after": 1117,
+        "source_npz_sha256": "d4ce27280884d36a7bebc0e28a8e17026009a9adecfb6e5618eac23e01b14a87",
+        "estimated_Toffoli_saving": null,
+        "actual_Toffolis": null,
+        "independent_physics": {
+          "error_1": 0.019287097242517624,
+          "error_2": 0.019990500658610334,
+          "E_gap": 4.118863998857705,
+          "lambda_eff": 49.90701544899494
+        },
+        "official_scoreinfra_numeric": {
+          "error_1": 0.019287093503461226,
+          "error_2": 0.019990500657777993,
+          "Lambda": 304.4134606121197,
+          "E_gap": 4.118864505962847,
+          "lambda_eff": 49.907019058311604,
+          "numeric_gates": "PASS"
+        },
+        "native_KickMix": "NOT_RUN",
+        "output_role": "RESEARCH_NPZ_ONLY"
+      },
+      "official_numeric_base": {
+        "error_1": 0.01927442430750381,
+        "error_2": 0.01999036619137446,
+        "Lambda": 304.4135128893839,
+        "E_gap": 4.118916783227178,
+        "lambda_eff": 49.90733792835781,
+        "numeric_gates": "PASS"
+      }
+    }
+  ],
+  "interpretation": [
+    "GF(2) mixed-bit0 rank is an exact algebraic SCREEN, neither actual paid Toffolis nor even a guaranteed achievable cost.",
+    "C45/B130 physical feasibility is not sufficient. Its coded bit0 structure has much larger rank sum than C46.",
+    "Two-word non-adjacent bit0 changes preserve FeMoCo numerical gates and slightly reduce lambda_eff, but no new ANGLE KMB exists.",
+    "Full simultaneous R/B/C/J/tree/brot/angle-compiler search remains unimplemented."
+  ]
+}

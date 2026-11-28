@@ -1,0 +1,13 @@
+{
+  "records": 15,
+  "input": "c45_B130_postangle_PSD_physical_pass.npz",
+  "axis": "fixed-upper",
+  "max_support": 8,
+  "global_mode": "canonical",
+  "tiebreak": "sparse",
+  "CCX": 10708,
+  "CX": 472072,
+  "Q": 127,
+  "low_cost_gain": 12,
+  "official_KickMix": false
+}

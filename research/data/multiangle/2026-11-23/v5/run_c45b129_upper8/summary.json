@@ -1,0 +1,13 @@
+{
+  "records": 15,
+  "input": "C45_B129_JACOBI_OPTIMIZED.npz",
+  "axis": "fixed-upper",
+  "max_support": 8,
+  "global_mode": "canonical",
+  "tiebreak": "sparse",
+  "CCX": 10589,
+  "CX": 469133,
+  "Q": 127,
+  "low_cost_gain": 24,
+  "official_KickMix": false
+}

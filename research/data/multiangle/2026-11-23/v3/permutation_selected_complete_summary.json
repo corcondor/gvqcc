@@ -1,0 +1,464 @@
+{
+  "schema": "gvqcc.perm6.complete.v1",
+  "records": 360,
+  "groups": [
+    {
+      "source": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "method": "perm6-012345",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "Q_peak": 127,
+      "CCX": 10613,
+      "CX": 467951,
+      "X": 1320,
+      "HMR": 10613,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1347851
+    },
+    {
+      "source": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "method": "perm6-234567",
+      "low_wires": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "Q_peak": 127,
+      "CCX": 10762,
+      "CX": 484971,
+      "X": 1320,
+      "HMR": 10762,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1366774
+    },
+    {
+      "source": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "method": "perm6-012346",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "Q_peak": 127,
+      "CCX": 10767,
+      "CX": 470414,
+      "X": 1320,
+      "HMR": 10767,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1367409
+    },
+    {
+      "source": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "method": "perm6-012347",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "Q_peak": 127,
+      "CCX": 10775,
+      "CX": 470443,
+      "X": 1320,
+      "HMR": 10775,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1368425
+    },
+    {
+      "source": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "method": "perm6-0246810",
+      "low_wires": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "Q_peak": 127,
+      "CCX": 16319,
+      "CX": 560776,
+      "X": 1680,
+      "HMR": 16319,
+      "slots": 15,
+      "Q_times_CCX_proxy": 2072513
+    },
+    {
+      "source": "C45_B129_JACOBI_OPTIMIZED.npz",
+      "method": "perm6-1378910",
+      "low_wires": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10
+      ],
+      "Q_peak": 127,
+      "CCX": 16417,
+      "CX": 746044,
+      "X": 1680,
+      "HMR": 16417,
+      "slots": 15,
+      "Q_times_CCX_proxy": 2084959
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass.npz",
+      "method": "perm6-012345",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "Q_peak": 127,
+      "CCX": 10720,
+      "CX": 470655,
+      "X": 1320,
+      "HMR": 10720,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1361440
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass.npz",
+      "method": "perm6-012346",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "Q_peak": 127,
+      "CCX": 10750,
+      "CX": 469938,
+      "X": 1320,
+      "HMR": 10750,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1365250
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass.npz",
+      "method": "perm6-012347",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "Q_peak": 127,
+      "CCX": 10752,
+      "CX": 470604,
+      "X": 1320,
+      "HMR": 10752,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1365504
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass.npz",
+      "method": "perm6-234567",
+      "low_wires": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "Q_peak": 127,
+      "CCX": 10760,
+      "CX": 484098,
+      "X": 1320,
+      "HMR": 10760,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1366520
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass.npz",
+      "method": "perm6-0246810",
+      "low_wires": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "Q_peak": 127,
+      "CCX": 16327,
+      "CX": 560374,
+      "X": 1680,
+      "HMR": 16327,
+      "slots": 15,
+      "Q_times_CCX_proxy": 2073529
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass.npz",
+      "method": "perm6-1378910",
+      "low_wires": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10
+      ],
+      "Q_peak": 127,
+      "CCX": 16445,
+      "CX": 743994,
+      "X": 1680,
+      "HMR": 16445,
+      "slots": 15,
+      "Q_times_CCX_proxy": 2088515
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+      "method": "perm6-012345",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "Q_peak": 127,
+      "CCX": 10720,
+      "CX": 470691,
+      "X": 1320,
+      "HMR": 10720,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1361440
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+      "method": "perm6-012346",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "Q_peak": 127,
+      "CCX": 10750,
+      "CX": 470010,
+      "X": 1320,
+      "HMR": 10750,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1365250
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+      "method": "perm6-012347",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "Q_peak": 127,
+      "CCX": 10752,
+      "CX": 470624,
+      "X": 1320,
+      "HMR": 10752,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1365504
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+      "method": "perm6-234567",
+      "low_wires": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "Q_peak": 127,
+      "CCX": 10760,
+      "CX": 484094,
+      "X": 1320,
+      "HMR": 10760,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1366520
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+      "method": "perm6-0246810",
+      "low_wires": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "Q_peak": 127,
+      "CCX": 16327,
+      "CX": 560348,
+      "X": 1680,
+      "HMR": 16327,
+      "slots": 15,
+      "Q_times_CCX_proxy": 2073529
+    },
+    {
+      "source": "c45_B130_postangle_PSD_physical_pass_coupled_numeric_only.npz",
+      "method": "perm6-1378910",
+      "low_wires": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10
+      ],
+      "Q_peak": 127,
+      "CCX": 16445,
+      "CX": 744191,
+      "X": 1680,
+      "HMR": 16445,
+      "slots": 15,
+      "Q_times_CCX_proxy": 2088515
+    },
+    {
+      "source": "c46_public_v8.npz",
+      "method": "perm6-012345",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "Q_peak": 127,
+      "CCX": 10038,
+      "CX": 429635,
+      "X": 1268,
+      "HMR": 10038,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1274826
+    },
+    {
+      "source": "c46_public_v8.npz",
+      "method": "perm6-012347",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "Q_peak": 127,
+      "CCX": 10423,
+      "CX": 437755,
+      "X": 1264,
+      "HMR": 10423,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1323721
+    },
+    {
+      "source": "c46_public_v8.npz",
+      "method": "perm6-012346",
+      "low_wires": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "Q_peak": 127,
+      "CCX": 10424,
+      "CX": 437792,
+      "X": 1262,
+      "HMR": 10424,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1323848
+    },
+    {
+      "source": "c46_public_v8.npz",
+      "method": "perm6-234567",
+      "low_wires": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "Q_peak": 127,
+      "CCX": 10426,
+      "CX": 467015,
+      "X": 1312,
+      "HMR": 10426,
+      "slots": 15,
+      "Q_times_CCX_proxy": 1324102
+    },
+    {
+      "source": "c46_public_v8.npz",
+      "method": "perm6-0246810",
+      "low_wires": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "Q_peak": 127,
+      "CCX": 15993,
+      "CX": 544548,
+      "X": 1680,
+      "HMR": 15993,
+      "slots": 15,
+      "Q_times_CCX_proxy": 2031111
+    },
+    {
+      "source": "c46_public_v8.npz",
+      "method": "perm6-1378910",
+      "low_wires": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10
+      ],
+      "Q_peak": 127,
+      "CCX": 16050,
+      "CX": 731741,
+      "X": 1680,
+      "HMR": 16050,
+      "slots": 15,
+      "Q_times_CCX_proxy": 2038350
+    }
+  ],
+  "official_verifier_executed": false,
+  "first_half_from_interrupted_run": "only 180 complete entries, 4 incomplete-tail entries excluded"
+}

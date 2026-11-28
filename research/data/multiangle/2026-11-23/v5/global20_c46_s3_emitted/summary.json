@@ -1,0 +1,12 @@
+{
+  "input": "c46_public_v8.npz",
+  "slots": 15,
+  "CCX": 9606,
+  "CX": 417440,
+  "max_Q": 127,
+  "max_support": 3,
+  "criterion": "pure",
+  "global_mode": "canonical",
+  "schema": "gvqcc.cross20.actual-kmx.v1",
+  "verification": "all addresses symbolic, not official KickMix"
+}

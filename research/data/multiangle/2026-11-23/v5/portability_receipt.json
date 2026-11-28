@@ -1,0 +1,26 @@
+{
+  "compiler_measured_r1_sha256": "6dedb3df9a7157ddff8af0fdc3c13468059132f22b6293ed67fc22cae069499c",
+  "compiler_portable_sha256": "0f7700a399b11a46157d2458ea44cf50a2c8585793fcdc29ce48f209c0d49feb",
+  "exact_C46_KMX_byte_matches_all_15": true,
+  "matches": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "measured_original_total_CCX": 9301,
+  "portable_total_CCX": 9301,
+  "other_changes": "Python module imports only; no numerical/functional changes",
+  "official_native_KickMix_verifier": false
+}
