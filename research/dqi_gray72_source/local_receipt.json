@@ -1,0 +1,30 @@
+{
+  "scope": "Source-level reconstruction; not the historical 316084.668 full circuit.",
+  "matrix_basis_checks": 3476736,
+  "annihilation_checks": 285704,
+  "trace_dual_checks": 49152,
+  "anchor_matrix_checks": 65536,
+  "anchors": 72,
+  "extra_anchors": [
+    31,
+    534,
+    1037,
+    1540,
+    2043,
+    2546,
+    3049,
+    3552
+  ],
+  "gray64_prefix_integers_equal": 746200,
+  "plan_sha256": "aa8698715183cb11f56949e3559db8c418e16ef645c53916afab888975d1901e",
+  "phase_pairings": 576,
+  "synthetic_nonzero_slope_support": {
+    "cases": 128,
+    "8_mean_support": 7.21875,
+    "64_mean_support": 7.71875,
+    "72_mean_support": 7.7421875,
+    "72_vs_64_improved": 3,
+    "72_vs_64_total_support_gain": 3,
+    "72_vs_64_worsened": 0
+  }
+}
