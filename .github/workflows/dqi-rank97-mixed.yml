@@ -1,0 +1,52 @@
+name: Rank97 mixed-control exact tensor and native audit
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_rank97_mixed/**'
+      - '.github/workflows/dqi-rank97-mixed.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_rank97_mixed/MixedQuadratic97.lean | tee proof.log
+          python - <<'PY'
+          import re
+          s=open('proof.log').read()
+          rows=re.findall(r'depends on axioms: \[([^\]]*)\]',s)
+          closed=re.findall(r'does not depend on any axioms',s)
+          assert len(rows)+len(closed)==7
+          for row in rows:
+              assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'}, row
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mixed97-lean
+          path: proof.log
+  kickmix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - run: python research/dqi_rank97_mixed/mixed_search.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mixed97-native
+          path: |
+            research/dqi_rank97_mixed/*.kmb
+            research/dqi_rank97_mixed/receipt.json
