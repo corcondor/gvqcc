@@ -31,7 +31,7 @@ theorem slope_residual (r t c d u : F) (h2 : (2 : F) = 0)
 
 theorem origin_slope (t d u : F) (h2 : (2 : F) = 0)
     (hd : d ≠ 0) : t+d*u=0 ↔ t/d=u := by
-  simpa only [zero_add,add_zero] using
+  simpa only [zero_add,add_zero,zero_mul] using
     (slope_residual (F:=F) 0 t 0 d u h2 (by simpa only [zero_add] using hd))
 
 end Field
