@@ -1,0 +1,35 @@
+name: DQI guarded cubic pool and reciprocal covariance
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/GuardedCubicPool.lean'
+      - 'research/dqi293_guarded_cubic/**'
+      - '.github/workflows/dqi293-guarded-cubic.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true ../dqi_hmr_anf_debt/HMRDebt.lean | tee debt.log
+          lake env lean -DwarningAsError=true GuardedCubicPool.lean | tee pool.log
+          test "$(grep -c 'GVQCC.GuardedCubicPool.*axiom' pool.log)" -eq 15
+          ! grep -E 'sorryAx|ofReduceBool|_native\.bv_decide\.ax' debt.log pool.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: guarded-cubic-axioms
+          path: research/dqi_cutoff18_strict/*.log
