@@ -1,0 +1,69 @@
+{
+  "status": "research only; cost rejected",
+  "scope": "actual full original donor lineage, raw S/M, native KickMix 1.0.0",
+  "donor_sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+  "shell_sha256": "e2c07b6b04dd74c298581090d93e1925df985df0f039440dc644751205e8c037",
+  "core_sha256": "ef3cf1e17de6e45d484d87ab6d566c1cca13baf6fa88545ad585f4bb181bab4a",
+  "sha256": "2345e6eaf811bbfdc9f28d2be2bac7c64fd933020040a74bf8a9f858bc132ef0",
+  "Q": 900,
+  "ops": 66268885,
+  "static_paid": 908958,
+  "component_static_paid": [
+    788573,
+    752117,
+    689329
+  ],
+  "panels": [
+    {
+      "name": "raw",
+      "shots": 996,
+      "paid": 588965776,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "structured",
+      "shots": 432,
+      "paid": 255361204,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "ordinary",
+      "shots": 1024,
+      "paid": 930362914,
+      "mean_paid": 908557.533203125,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "archived_raw",
+      "shots": 622,
+      "paid": 565121662,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "lean_run": 46117947250,
+  "lean_checked": 6,
+  "universal_gate_proof": false,
+  "official_verifier": false,
+  "exact_271_eval_pivot_lowered": false,
+  "notes": "Native coefficient-basis Schur/Sylvester #272 + shared Toeplitz affine frames from #271 + persistent masked-row forms. Physical shell #266 exact; original donor prelude preserved. Full source and receipts supplied in conversation archive. No submission or merge."
+}
