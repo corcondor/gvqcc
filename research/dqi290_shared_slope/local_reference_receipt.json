@@ -1,0 +1,77 @@
+{
+  "parent": {
+    "pr": 279,
+    "sha256": "518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499",
+    "Q": 900,
+    "ops": 67549292,
+    "static_paid": 318333,
+    "matched_mean_paid": 316151.99658203125
+  },
+  "candidate": {
+    "sha256": "2545a84896ba44152eab0db6856a056d23f60869c60fac8e7d1a8788c51e88dd",
+    "Q": 900,
+    "ops": 66786263,
+    "static_paid": 318344,
+    "matched_shots": 2048,
+    "matched_errors": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "matched_mean_paid": 316151.49169921875,
+    "local_reference": {
+      "shots": 102400,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "salt": "",
+      "batch_size": 256,
+      "mean_paid": 316128.67875,
+      "effective_error_rate": 0.0008660587301657926,
+      "formula_cost": 305039193398.27734
+    }
+  },
+  "comparison": {
+    "compact289": {
+      "sha256": "2c0b3c9fa391e09234569fe5d759929e240d89cc48471db6757801768eed9518",
+      "ops": 67262375,
+      "reference_shots": 102400,
+      "reference_errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reference_mean_paid": 316130.385859375,
+      "reference_formula_cost": 305040840623.9224
+    },
+    "two_anchor": {
+      "sha256": "767ed3c03babc2b3eca6451e52b639c887499071837c77df8917d812e94930de",
+      "ops": 69776734,
+      "matched_shots": 2048,
+      "matched_errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "matched_mean_paid": 316150.9814453125
+    },
+    "exclusive_phase_rejected": {
+      "matched_shots": 2048,
+      "matched_errors": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "static_paid": 318333,
+      "matched_mean_paid": 316130.83251953125
+    }
+  },
+  "scope": "Local streaming reference replay; no private competition salt or universal correctness certification. No competition submission. Other portfolio members preserved, not rerun."
+}
