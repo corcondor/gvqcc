@@ -1,0 +1,114 @@
+{
+  "dual247.kmb": {
+    "sha256": "81081a88c27b708322f0724a09197814a18646a4a9969984ab9cf76a6e6cd7fa",
+    "Q": 900,
+    "ops": 69534364,
+    "static_paid": 318333,
+    "panels": {
+      "zero": {
+        "shots": 144,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "union": 0,
+        "paid": 0,
+        "mean_paid": 0.0
+      },
+      "dual": {
+        "shots": 144,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "union": 0,
+        "paid": 0,
+        "mean_paid": 0.0
+      },
+      "dense": {
+        "shots": 144,
+        "errors": [
+          68,
+          30,
+          0,
+          0
+        ],
+        "union": 70,
+        "paid": 45513326,
+        "mean_paid": 316064.7638888889
+      },
+      "distribution": {
+        "shots": 2048,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "union": 0,
+        "paid": 647427784,
+        "mean_paid": 316126.84765625
+      }
+    }
+  },
+  "normalized_scoped2.kmb": {
+    "sha256": "cdec1b075221a9b8b6e62eb984762945f20ddb150633b9facb5fd0be62d6ee8d",
+    "Q": 900,
+    "ops": 69520583,
+    "static_paid": 318333,
+    "panels": {
+      "zero": {
+        "shots": 144,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "union": 0,
+        "paid": 0,
+        "mean_paid": 0.0
+      },
+      "dual": {
+        "shots": 144,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "union": 0,
+        "paid": 0,
+        "mean_paid": 0.0
+      },
+      "dense": {
+        "shots": 144,
+        "errors": [
+          68,
+          34,
+          0,
+          0
+        ],
+        "union": 70,
+        "paid": 45513326,
+        "mean_paid": 316064.7638888889
+      },
+      "distribution": {
+        "shots": 2048,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "union": 0,
+        "paid": 647427784,
+        "mean_paid": 316126.84765625
+      }
+    }
+  }
+}
