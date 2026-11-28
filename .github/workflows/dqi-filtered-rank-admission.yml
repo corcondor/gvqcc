@@ -26,7 +26,14 @@ jobs:
         run: |
           set -euo pipefail
           lake env lean -DwarningAsError=true FilteredRankAdmission.lean | tee filtered-rank.log
-          if grep -q 'sorryAx' filtered-rank.log; then exit 1; fi
+          python3 - <<'PY'
+          import re
+          s=open('filtered-rank.log').read()
+          rows=re.findall(r'depends on axioms: \[([^\]]*)\]',s)
+          assert len(rows)+s.count('does not depend on any axioms')==19
+          for row in rows:
+              assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'}, row
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
