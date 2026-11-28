@@ -1,0 +1,40 @@
+name: Safe Gray72 degree70 gauge and bypass
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/SafeDegreeGauge.lean'
+      - 'research/dqi_cutoff18_strict/FilteredRankAdmission.lean'
+      - 'research/dqi_safe_degree70/**'
+      - '.github/workflows/dqi-safe-degree70.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - working-directory: research/dqi_cutoff18_strict
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true FilteredRankAdmission.lean | tee safe.log
+          lake env lean -DwarningAsError=true SafeDegreeGauge.lean | tee -a safe.log
+          python3 - <<'PY'
+          import re
+          s=open('safe.log').read()
+          rows=re.findall(r'depends on axioms: \[([^\]]*)\]',s)
+          assert len(rows)+s.count('does not depend on any axioms')==28
+          for row in rows:
+              assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'},row
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: safe-gauge-lean
+          path: research/dqi_cutoff18_strict/safe.log
