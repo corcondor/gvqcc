@@ -1,0 +1,64 @@
+{
+  "scope": "Complete original-316K-lineage #261 successor; research, not submission",
+  "parent_sha256": "ea32eaf6068c0e8bcd3fb9a3894bd75695cd844e5def347d3e354cef8b0af41b",
+  "original_donor_sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+  "session": "sbx_Tlsbtbi3DrlxfWSAKx7pKRa59Lzo",
+  "Q": 900,
+  "baseline": {
+    "ops": 81584256,
+    "static_paid": 543848,
+    "CCX": 530921,
+    "CCZ": 11199,
+    "CSWAP": 1728,
+    "stress_mean": 543285.5050200804,
+    "distribution_mean": 543284.54296875,
+    "distribution_shots": 1024,
+    "errors": 0
+  },
+  "conditional": {
+    "sha256": "a7e119f81df82504d0128352c47e258a1e6ebeed3a7f37df34a3f84ca3c972b3",
+    "ops": 81649776,
+    "static_paid": 543848,
+    "stress_mean": 329318.2771084337,
+    "distribution_mean": 535025.626953125,
+    "stress_shots": 996,
+    "distribution_shots": 1024,
+    "errors": 0
+  },
+  "skip": {
+    "sha256": "4e6affc94aee592e971f74a73f57adc88ecf33a397f19cf9ec834fb0dcb34f39",
+    "ops": 81698921,
+    "static_paid": 543848,
+    "stress_mean": 256058.4859437751,
+    "stress_shots": 996,
+    "errors": 0
+  },
+  "unitzero": {
+    "sha256": "54faaeccb23d1ec7e901b2708206aafea3bdea7ea56f46336a9fcbb66dfa7d69",
+    "ops": 81694263,
+    "static_paid": 543134,
+    "CCX": 513827,
+    "CCZ": 27579,
+    "CSWAP": 1728,
+    "stress_mean": 255693.0672690763,
+    "distribution_mean": 534477.8154296875,
+    "stress_shots": 996,
+    "distribution_shots": 1024,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "dirty_errors": 0,
+    "mask_errors": 0
+  },
+  "lean": {
+    "version": "4.35.0",
+    "theorems": 10,
+    "warningAsError": true,
+    "sorryAx": false
+  },
+  "limits": [
+    "Stress panels include zero and sparse masks; not competition score",
+    "Ordinary mean still >316000",
+    "Native fraction-free half-Bezout conversion not implemented",
+    "No full gate-level Lean proof or official verifier run"
+  ]
+}
