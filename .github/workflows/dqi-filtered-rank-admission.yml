@@ -1,0 +1,34 @@
+name: Filtered rank admission lemmas
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/FilteredRankAdmission.lean'
+      - '.github/workflows/dqi-filtered-rank-admission.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch mathlib cache
+        run: lake exe cache get
+      - name: Kernel-check lemmas and audit axioms
+        shell: bash
+        run: |
+          set -euo pipefail
+          lake env lean -DwarningAsError=true FilteredRankAdmission.lean | tee filtered-rank.log
+          if grep -q 'sorryAx' filtered-rank.log; then exit 1; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: filtered-rank-log
+          path: research/dqi_cutoff18_strict/filtered-rank.log
