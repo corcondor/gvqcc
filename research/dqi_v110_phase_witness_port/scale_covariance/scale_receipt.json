@@ -1,0 +1,287 @@
+{
+  "metrics_order": [
+    "total_executed_paid",
+    "value",
+    "raw_phase",
+    "dirty",
+    "mask",
+    "union",
+    "nonzero_recurrence_transport_checked"
+  ],
+  "result257": {
+    "sha": "81081a88c27b708322f0724a09197814a18646a4a9969984ab9cf76a6e6cd7fa",
+    "width": 900,
+    "ops": 69534364,
+    "static_paid": 318333,
+    "lanes": 622,
+    "metrics": {
+      "0": [
+        196656714,
+        452,
+        233,
+        0,
+        0,
+        456,
+        372
+      ],
+      "1": [
+        196656417,
+        407,
+        225,
+        0,
+        0,
+        411,
+        327
+      ],
+      "2": [
+        196656450,
+        407,
+        211,
+        0,
+        0,
+        411,
+        327
+      ]
+    },
+    "transitions": {
+      "0,0,0": 170,
+      ">35,>35,>35": 80,
+      "chart,chart,chart": 174,
+      "35,35,35": 153,
+      "chart,0,0": 25,
+      "35,0,0": 20
+    },
+    "repeated_or_simple_base": [
+      [
+        3,
+        32,
+        18
+      ],
+      [
+        5,
+        28,
+        20
+      ],
+      [
+        7,
+        24,
+        22
+      ],
+      [
+        9,
+        20,
+        24
+      ],
+      [
+        13,
+        12,
+        28
+      ],
+      [
+        15,
+        8,
+        30
+      ],
+      [
+        17,
+        4,
+        32
+      ],
+      [
+        29,
+        2,
+        5
+      ],
+      [
+        32,
+        2,
+        5
+      ],
+      [
+        33,
+        2,
+        5
+      ],
+      [
+        34,
+        2,
+        5
+      ],
+      [
+        35,
+        2,
+        5
+      ]
+    ],
+    "same_factor_multiplicity_in_native_frame": [
+      174,
+      174
+    ],
+    "chart_support_gone_after_outer_unscale": [
+      174,
+      174
+    ],
+    "raw_receipt_sha256": "da482c270982364edf691396fb3bd457a4a4afb816a2f87f42ea88c9fc171284"
+  },
+  "result279": {
+    "sha": "518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499",
+    "width": 900,
+    "ops": 67549292,
+    "static_paid": 318333,
+    "lanes": 622,
+    "metrics": {
+      "0": [
+        196656714,
+        452,
+        233,
+        0,
+        0,
+        456,
+        372
+      ],
+      "1": [
+        196656417,
+        407,
+        225,
+        0,
+        0,
+        411,
+        327
+      ],
+      "2": [
+        196656450,
+        407,
+        211,
+        0,
+        0,
+        411,
+        327
+      ]
+    },
+    "transitions": {
+      "0,0,0": 170,
+      ">35,>35,>35": 80,
+      "chart,chart,chart": 174,
+      "35,35,35": 153,
+      "chart,0,0": 25,
+      "35,0,0": 20
+    },
+    "repeated_or_simple_base": [
+      [
+        3,
+        32,
+        18
+      ],
+      [
+        5,
+        28,
+        20
+      ],
+      [
+        7,
+        24,
+        22
+      ],
+      [
+        9,
+        20,
+        24
+      ],
+      [
+        13,
+        12,
+        28
+      ],
+      [
+        15,
+        8,
+        30
+      ],
+      [
+        17,
+        4,
+        32
+      ],
+      [
+        29,
+        2,
+        5
+      ],
+      [
+        32,
+        2,
+        5
+      ],
+      [
+        33,
+        2,
+        5
+      ],
+      [
+        34,
+        2,
+        5
+      ],
+      [
+        35,
+        2,
+        5
+      ]
+    ],
+    "same_factor_multiplicity_in_native_frame": [
+      174,
+      174
+    ],
+    "chart_support_gone_after_outer_unscale": [
+      174,
+      174
+    ],
+    "raw_receipt_sha256": "e2b678063ca1c1051ae7a3e878466e37892976f03078b0ffbc5267ca740be2c6"
+  },
+  "result_wrapper279": {
+    "sha": "d014eaedd988919981ad971ff6131e6e810d0ff39541b601f417d2183af9aa06",
+    "width": 900,
+    "ops": 67558014,
+    "static_paid": 318333,
+    "lanes": 622,
+    "metrics": {
+      "0": [
+        196656417,
+        407,
+        225,
+        0,
+        0,
+        411,
+        327
+      ]
+    },
+    "transitions": {
+      "0": 215,
+      ">35": 80,
+      "32": 18,
+      "28": 20,
+      "35": 153,
+      "24": 22,
+      "20": 24,
+      "12": 28,
+      "8": 30,
+      "4": 32
+    },
+    "repeated_or_simple_base": [],
+    "same_factor_multiplicity_in_native_frame": [],
+    "chart_support_gone_after_outer_unscale": [],
+    "raw_receipt_sha256": "7ea0bdc96f03f6bff97af0cbbb3ff02c0ac96dd21dc62af9dfad98d7c67a2452"
+  },
+  "wrapper_equivalence": {
+    "shots": 622,
+    "compared": [
+      "all 840 return bits",
+      "phase",
+      "ancilla",
+      "all mask bits",
+      "paid gate totals"
+    ],
+    "discrepancies": 0
+  },
+  "base_receipts_match_by_lane": true
+}
