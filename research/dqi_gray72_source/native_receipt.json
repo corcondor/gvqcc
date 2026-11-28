@@ -1,0 +1,10 @@
+{
+  "cases": 64,
+  "structured": 8,
+  "exact_gauge_triples": 192,
+  "old_support": 465,
+  "gray64_support": 1029,
+  "gray72_support": 1031,
+  "worsened": 0,
+  "emitter": "native selector emitted operations=190290402 classical bits=795683"
+}
