@@ -1,0 +1,34 @@
+name: V123 affine recovery and three-work-line Lean audit
+on:
+  pull_request:
+    paths:
+      - 'research/v123-familyc/**'
+      - 'research/family-c-v122/Recovery.lean'
+      - '.github/workflows/v123-familyc-lean.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Verify predecessor and new certificates
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true -o research/family-c-v122/Recovery.olean research/family-c-v122/Recovery.lean | tee v122-audit.log
+          LEAN_PATH=research/family-c-v122 lean -DwarningAsError=true research/v123-familyc/AffineThree.lean | tee v123-audit.log
+          ! grep -E 'sorryAx|Lean.ofReduceBool' v122-audit.log v123-audit.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v123-lean-audits
+          path: |
+            v122-audit.log
+            v123-audit.log
+          if-no-files-found: warn

@@ -1,0 +1,30 @@
+name: Family C compressed 36Q mathematical certificates
+on:
+  pull_request:
+    paths:
+      - 'research/family-c-m6-compressed36/**'
+      - '.github/workflows/family-c-compressed36-lean.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Verify local arithmetic, not physical refinement
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/family-c-m6-compressed36/Compressed36.lean | tee compressed36-audit.log
+          ! grep -E 'sorryAx|Lean.ofReduceBool' compressed36-audit.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: compressed36-lean-audit
+          path: compressed36-audit.log
+          if-no-files-found: warn
