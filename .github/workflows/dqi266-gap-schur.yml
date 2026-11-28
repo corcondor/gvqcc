@@ -4,6 +4,7 @@ on:
     paths:
       - 'research/dqi266_gap_independent_schur/**'
       - 'research/dqi_cutoff18_strict/GapIndependentSchur.lean'
+      - 'research/dqi_cutoff18_strict/SchurGauge.lean'
       - '.github/workflows/dqi266-gap-schur.yml'
   workflow_dispatch:
 permissions:
@@ -27,3 +28,6 @@ jobs:
           lake env lean -DwarningAsError=true GapIndependentSchur.lean | tee gap_schur.log
           test "$(grep -c 'GVQCC.*axiom' gap_schur.log)" -eq 8
           ! grep -E 'sorryAx|ofReduceBool' gap_schur.log
+          lake env lean -DwarningAsError=true SchurGauge.lean | tee schur_gauge.log
+          test "$(grep -c 'GVQCC.*axiom' schur_gauge.log)" -eq 12
+          ! grep -E 'sorryAx|ofReduceBool' schur_gauge.log
