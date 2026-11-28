@@ -1,0 +1,338 @@
+number	state	title	head_sha	url
+1	closed	DQIの実回路を100.42 Toffoli削減し、全ショット比較とchemistryの限界を記録	e8095c6b3970f33bb948c42f72258a3533a7c00d	https://github.com/corcondor/gvqcc/pull/1
+2	closed	Reduce DQI by 480 CCX with paired validation and research comparisons	9df5fe881d8bb2068261de5d31f4edb36af842b4	https://github.com/corcondor/gvqcc/pull/2
+3	closed	Add compact Kaggle promotion worker and bounded residual scans	1b67f03bb28fa940d0c2e8bc3ba3580660d9910d	https://github.com/corcondor/gvqcc/pull/3
+4	closed	Record submitted 480-CCX candidate and exact chemistry proof	799a5b7d460d9d40a30bf8f9bb2286a9f4057b81	https://github.com/corcondor/gvqcc/pull/4
+5	open	Contract DQI by 9.9M CNOTs with exact tensor routing and full verification	6e5a43933b00b44b919e860c16f2187131aec5cb	https://github.com/corcondor/gvqcc/pull/5
+6	open	Improve verified local score to 27.32784 with matched chemistry	49421c20290c94716c51a1eba5e8b6179ee3a860	https://github.com/corcondor/gvqcc/pull/6
+7	open	研究: 検証器付きANGLE回路進化探索基盤（Score10固定）	e35d0414744a5aa566b94e88509b2ffb0dd4002c	https://github.com/corcondor/gvqcc/pull/7
+8	open	Research: public 28.09 cost audit, own 562 DQI hybrid, and CUDA C43–C41 search	7336193a125fd8f2f606f63647cfeaaaae9b452d	https://github.com/corcondor/gvqcc/pull/8
+9	open	C43/C42 GPU fitting and SHA-pinned 28.09 public circuit composition	5de2a598342e51fb31ce5fbf1978f989d3538b79	https://github.com/corcondor/gvqcc/pull/9
+10	open	VQCC: SHA-verified 28.107 public candidate and exact DQI audit	568f86732f107aa1d90d61b2082e7371bc49d9d5	https://github.com/corcondor/gvqcc/pull/10
+11	closed	research: preserve cross-session GVQCC optimization results, counterexamples and next experiments (2026-11-20)	1eb40151b6c53eb3d47a84b918524d63a9c17ab2	https://github.com/corcondor/gvqcc/pull/11
+12	closed	research: identify 4053 repeated DQI 42-CCX kernels and map 84-product fusion opportunities	b2bef47175c0077f40f9fa8c116f6c58932ddf35	https://github.com/corcondor/gvqcc/pull/12
+13	closed	Research: DQI 42T shared-input subspaces + constrained chemistry refit	95c2fd98c29f8a2eac5c2c9b30fde558a6563c9b	https://github.com/corcondor/gvqcc/pull/13
+15	open	QDLN: differentiable quantum-cost-aware Boolean network and exact XAG micro-oracle	fb3356d4c226c0b5ebcb7ef4cf03822d075286d1	https://github.com/corcondor/gvqcc/pull/15
+16	open	Experiment: Quantum Griffith reversible logic learning and cost-aware synthesis	6fdef95b7797e8c910bade333767c2c87c083aaa	https://github.com/corcondor/gvqcc/pull/16
+17	open	Research: Griffith-inspired joint XAG learning + exact Givens helper-code gauge	6a04efb2ff131e1700726f0c06084d5479a8a842	https://github.com/corcondor/gvqcc/pull/17
+18	open	Research: coupled ANGLE word transitions and FeMoCo numerical feedback	782081d00241417ee49a54e4b318a5ade7fdcfa1	https://github.com/corcondor/gvqcc/pull/18
+19	open	Research: publish executable GVQCC global-angle sources and Claude handoff	1b91c08f59e58e191c410fa9626b8832f14f54eb	https://github.com/corcondor/gvqcc/pull/19
+20	open	Experiment: OSS XAG plus qrom-plan 15-bank real-KMB Step1 baseline audit (gate FAIL)	d7d678635e36221b78f3c576cf91b9083da58542	https://github.com/corcondor/gvqcc/pull/20
+21	closed	WITHDRAWN: limited Lean micro-rewrite prototype (no competitive GVQCC improvement)	ad29b6bd43488a78ca91a8dfd8ac8bf9b86c55e2	https://github.com/corcondor/gvqcc/pull/21
+22	closed	WITHDRAWN: 512-frame/local Lean audit — not a scored optimizer	d760eade24984a021ef5df5b7d6da7a805f345dd	https://github.com/corcondor/gvqcc/pull/22
+23	open	Draft: whole-program Lean contract for nonlinear coefficient discovery	45b6c890809408e4b771cec860aa048b540b8809	https://github.com/corcondor/gvqcc/pull/23
+24	open	Research: actual 36Q invsqrt HMR lifetime by nonlinear register lending + Lean proof	85407be2f996c163f7e13edda273755936e1bb90	https://github.com/corcondor/gvqcc/pull/24
+25	open	Draft: dynamic affine/nonlinear charts for whole invsqrt, actual loan Lean certificate	8aee383ba828a7eb07bf69eb6bd845e4c90b7c67	https://github.com/corcondor/gvqcc/pull/25
+26	open	Draft: measured nonlinear delta and moving quotient direction	d5536b93a939f78fc013073336cc72ed9bada398	https://github.com/corcondor/gvqcc/pull/26
+27	open	Research V3: global phase ledger and operand-carrier arithmetic Pareto compiler	5534b506bf5ae016843739e1cff200ef182af25d	https://github.com/corcondor/gvqcc/pull/27
+28	open	Lean: certify actual 36Q carry segments and resource bounds	49263f69b474b686fd92969b03c3374d188ebddd	https://github.com/corcondor/gvqcc/pull/28
+29	open	Research V4: conditional carry context bridge, 14 fewer paid gates in 36Q regions	f093af5fbc86298a272bf5498f7f799e4c29cd21	https://github.com/corcondor/gvqcc/pull/29
+30	open	Draft: phase-derived 36Q open hub and exact cross-chart transport screening	491ecedbbfbf5d9b18d655d55074dfee620a5ae4	https://github.com/corcondor/gvqcc/pull/30
+31	open	Research V5: adaptive nonlinear atlas and measured affine reconstruction	e63fce27433c57d461de6f20015146c13bb97358	https://github.com/corcondor/gvqcc/pull/31
+32	open	Research V5: shared-lifetime recomposition + virtual HMR (36Q coverage 85.12%, 1755 paid)	564fa7980038033e320975afa6c0c2cae0009081	https://github.com/corcondor/gvqcc/pull/32
+33	open	Direct 36Q hub transport across 10 carry blocks; concrete Lean certificates	297b595285c981d6b3147776d8affc97817f1fac	https://github.com/corcondor/gvqcc/pull/33
+34	open	Research V6: multi-pattern 36Q peak-shaving, amortized context bridge, Lean 4 proofs & 29-paper survey	78badc2d80c975b5959b8809392a0435730373da	https://github.com/corcondor/gvqcc/pull/34
+35	open	Research V6: branch-conditioned 36Q atlas + shared-lifetime donor integration	d449a123dbb62b572761fbaffb01360d95e73b1a	https://github.com/corcondor/gvqcc/pull/35
+36	open	Research V6: scope-aware nonlinear phase hub and cross-session atlas integration	ff420015f0f1b7dfaa56ed2e5d56bba22298b652	https://github.com/corcondor/gvqcc/pull/36
+37	open	V6 joint multi-wire delta synthesis: 11 paid gates removed from PR36	f63db0ee24fb90e2f4a753d407dc05912e3ed175	https://github.com/corcondor/gvqcc/pull/37
+38	open	Draft V6: closed endpoint resynthesis, two CCX eliminated in V5 wide	fc574218c40ec467bf38e67c1cda9b31f40cab96	https://github.com/corcondor/gvqcc/pull/38
+39	open	Research V7: centralized phase-basis compression (935->892, 910 shared monomials), Lean 4 proofs & 42+ paper survey	c780bc76e7c1596c7df73d07cca51ed7a333f299	https://github.com/corcondor/gvqcc/pull/39
+40	open	V7: native phase basis + nested guarded atlas, 90.81% 36Q coverage	dc72f3a6bd11c3018568dc6ebe2d4da5e32749cd	https://github.com/corcondor/gvqcc/pull/40
+41	open	V7: multi-HMR phase quotient and affine-shifted nonlinear hub (90.08% coverage)	07927e0d6a33104352adfa7c65366134cd3bb59c	https://github.com/corcondor/gvqcc/pull/41
+42	open	V7: whole-state shared quotient synthesis, 1900 → 1898 paid gates (native BDD PASS)	582c61baf505a3b1311b3e4835a2be2720afec2a	https://github.com/corcondor/gvqcc/pull/42
+43	open	V7B: rank-hub phase synthesis and actual PR40 integration (research only)	2e5a30bc77cb80e4aa820d029ac5133cc8763699	https://github.com/corcondor/gvqcc/pull/43
+44	open	[V8 research] Mixed-guard transport and two-stage quintic hubs: 91.8754%, 47,094 instructions	31c36b1d3e86368b99c62ab74035297f36562970	https://github.com/corcondor/gvqcc/pull/44
+45	open	V8: global live permutation + nonlocal commuting hub, 1875 paid / 42599 ops	af62e8f38536ab2284cb652b9079ef1f6586c9b9	https://github.com/corcondor/gvqcc/pull/45
+46	open	Research V8: cross-measurement wireframe transport, peer91 integration and affine cofactor certificates	415a2eaf55e409e84590cec359d3a6ad806ecefd	https://github.com/corcondor/gvqcc/pull/46
+47	open	Draft V8: global logical-wire frame and PR42/43 exact integration	53b97694786ce4550456d58fb580ff40bb6b7d9b	https://github.com/corcondor/gvqcc/pull/47
+48	open	V9: semantic transfer of all eight PR46 donors into PR45 (1867 static / 1696.3125 expected)	5fa9c12a9b1c0669358be46d7cb1b2eb4995c903	https://github.com/corcondor/gvqcc/pull/48
+49	open	Draft V9: exact PR45/46 donor transfer, 1867 paid (37Q research only)	364f2bc6a9652612678928dee7cd5b7de0ef6c0d	https://github.com/corcondor/gvqcc/pull/49
+50	open	V9: shared target deltas — integrate PR48, 1865 static / 1694.3125 expected paid	ae05f754f11b583b1fa36416c4e9b43734e3db78	https://github.com/corcondor/gvqcc/pull/50
+51	open	V9: exact global phase syndrome and cofactor integration	8ae3491039b6e0917a0599d8aa82256b594d290b	https://github.com/corcondor/gvqcc/pull/51
+52	open	Draft V10: full exact replay of both PR50 candidates, not a new score	819c3ead389610e8f8c8aed5c17523fe9c4a98b2	https://github.com/corcondor/gvqcc/pull/52
+53	open	V10: vector-rank transvections + exact affine words, 1852 paid / 41,816 native ops	4553c673dcf422b7c4462183292be9b877bba1d9	https://github.com/corcondor/gvqcc/pull/53
+54	open	V10: measurement sink transport and phase-only virtual register	d2699ed4affb6b2997028e30fc02000b13c3c0e1	https://github.com/corcondor/gvqcc/pull/54
+55	open	V10: moving-frame multi-output tensor and shared atom synthesis (native BDD verified)	33a46ac6a934a86d6e56849ae8ea4647ea13df76	https://github.com/corcondor/gvqcc/pull/55
+56	open	Draft: virtual-register boundary potentials and exact restricted audit	5cf394f27d8094dcb3473147ac09bdcb98a4cf22	https://github.com/corcondor/gvqcc/pull/56
+57	open	V11: noncommuting affine-quotient paths + measurement sink + bounded bidirectional words	c172727458d4ee523e0cc3806aed594361c7a69a	https://github.com/corcondor/gvqcc/pull/57
+58	open	V11: dual measurement transport and guarded phase bridges, 1843/1874 static paid	2abfb085d846de46f4e27e6319b25a9ab708cd0a	https://github.com/corcondor/gvqcc/pull/58
+59	open	V12: temporal phase potentials + mixed Clifford words, 1842 paid / 40,743 ops	83c23d8e2dbcdca462b36aeb1ba8816f491641e5	https://github.com/corcondor/gvqcc/pull/59
+60	open	Draft V13: exact 36Q resource partition and header repair, not a scored circuit	24b88b318ea4c32ebb12c4a2eb885e807ac40ce1	https://github.com/corcondor/gvqcc/pull/60
+61	open	V13: history-aware phase potentials + deferred scratch, 92.0811% width coverage	00e8787a5075155e6fd8fdd15b5753c074028181	https://github.com/corcondor/gvqcc/pull/61
+62	open	V13: moving nonlinear gauge and measurement identity transport — six new 36Q bridges	3ef250897e545da1ecaa81b516cb75abdc06d241	https://github.com/corcondor/gvqcc/pull/62
+63	open	Draft V14: exact PR61/62 union, 92.4596% source coverage	d9c607901fc31502a9fb880b51d56510a4d5a583	https://github.com/corcondor/gvqcc/pull/63
+64	open	Draft V14: exact PR61/62 donor join — 41,071 ops or 92.4596% coverage	0e7d62a0c2d8694d90190f6f11887ec39ab4596e	https://github.com/corcondor/gvqcc/pull/64
+65	open	Draft V15: exact cross-chart transfer, 1832 static / 1667.9375 expected	b3dfa1b311eb5642bc3a7d12952d9bd91f83e49a	https://github.com/corcondor/gvqcc/pull/65
+66	open	Draft V16: persistent terminal frame, 40,043 ops (score neutral)	286916267d46183119bacb7652cad0753ebc1b4d	https://github.com/corcondor/gvqcc/pull/66
+67	open	Draft V16: archived subchart transport counterexample — no cost gain	02ab460a013989d6da1ab6f1090250bdd8dedbad	https://github.com/corcondor/gvqcc/pull/67
+68	open	Draft V18: lower-cost verified suffix composition — 1411.3125 expected (37Q diagnostic)	16d95d8763bb63b52b777262d315048e2f0f99cf	https://github.com/corcondor/gvqcc/pull/68
+69	open	Draft V19: exact 115-dimensional HMR phase liability and causal closure	80e930966fbc00d46d34a4c2908f1da399e6ddf7	https://github.com/corcondor/gvqcc/pull/69
+70	open	Draft V19: source recovery audit and exact 306-lifetime width budget	028e182af909e6bfead940f82fa4d3b9a52f66fc	https://github.com/corcondor/gvqcc/pull/70
+71	open	Draft V20: exact 80 long-distance carry product matches and quotient rank	605f81453072109c14f9b21413fab7c7fdea29d6	https://github.com/corcondor/gvqcc/pull/71
+72	open	Draft: carry-cube obstruction and NAND scratch candidate (finite certificate)	905ed4de9cefb3f2448b9dddc85927a178dcb810	https://github.com/corcondor/gvqcc/pull/72
+73	open	V26: global phase observation quotient and deferred nonlinear carriers	2b803013e24db25b7c881e745dc2d45586f74866	https://github.com/corcondor/gvqcc/pull/73
+74	open	V27: interval MBU audit, moving measurement quotient and low-cost lazy frame	6463618bdbf9f227edcfab10563cef2b46edee88	https://github.com/corcondor/gvqcc/pull/74
+75	open	Draft V27: joint HMR-cut quotient and global phase absorption	6f5217485439f483c0ae967a28743af18c4ff426	https://github.com/corcondor/gvqcc/pull/75
+76	open	V28: moving quadratic quotient across HMR, exact 44 bridges	953ac76083cbee2065faff4e11d22eb16475a00f	https://github.com/corcondor/gvqcc/pull/76
+77	open	V29: shared nonlinear delta frame, measured atom reuse and discrete phase transport	93cc08e5eaeb8dffe005273b4855717c2f583a3e	https://github.com/corcondor/gvqcc/pull/77
+78	open	Research V21: real KMB virtual-SWAP+Clifford (-4,778 ops, official 200M-shot PASS), -5,615 centralized phase ops, Lean 4 & 50+ papers	955db2eb1d782204e9ced588f50bb63f89fc796d	https://github.com/corcondor/gvqcc/pull/78
+79	open	V30: adjoint observability quotient, native nonlinear reduction and exact phase obstruction	480208ea1c42391ded3cd793ae96a4ec47cbe3c7	https://github.com/corcondor/gvqcc/pull/79
+80	open	V31: second-order Boolean selector quotient and rank-one shared nonlinear repair	064a5c8068287afd73787bd370ab628d25912e4d	https://github.com/corcondor/gvqcc/pull/80
+81	open	V32: multi-rank quotient repair, exact rank audit and temporal phase cocycle	f203debeb89caea083ea50ebf3dabfd296e99e40	https://github.com/corcondor/gvqcc/pull/81
+82	open	V33: affine-factor linear solves, temporal phase atoms, and adaptive rank-two repair	8c397acc42989c6f6ef707c170b60aeded619c7a	https://github.com/corcondor/gvqcc/pull/82
+83	open	V33: exact carry affine orbit and eleven sparse paid-gate reductions	1d34ef4c235988a2ba736db8a2f78a08e5f89e4d	https://github.com/corcondor/gvqcc/pull/83
+84	open	V34: width-first endpoint exchange and conditionally multiplexed carriers	74fcdcfeef4a2b3850e6db31842d04bf979494db	https://github.com/corcondor/gvqcc/pull/84
+85	open	V34: causal lifetime scheduling, physical slot allocation and forced-overlap certificates	44b5cce328a40bb1ea2466b396ec7d685315b9b8	https://github.com/corcondor/gvqcc/pull/85
+86	open	V35: measurement adjoint and moving XOR frame; 3702 full cuts at fixed cost	07960cc26d75d6c034585de4fc76ceadfb78c9d9	https://github.com/corcondor/gvqcc/pull/86
+87	open	V35: deferred phase debt and multi-chart 36Q parking	87efd5782fa96b7ecdb13a8b504a46837df24861	https://github.com/corcondor/gvqcc/pull/87
+88	open	V36: observable ANF transport and exact private-HMR quotient	fc4050b083e6add566dfb08424423518f1593b01	https://github.com/corcondor/gvqcc/pull/88
+89	open	V36: moving omission graph, virtual writes and pre-sampled HMR events	15b6e3175364fd253ba75c0e38162348476808ef	https://github.com/corcondor/gvqcc/pull/89
+90	open	V36: conditional carry cofactor and 3-stage 36Q fragment	ead127354e04b46df64dcae86458e3e3663253a9	https://github.com/corcondor/gvqcc/pull/90
+91	open	V36: rank-one carry decoder and cross-branch 66-op three-stage 36Q fragment	506e4461b5dd6aa92b9949e839b760e9e917844e	https://github.com/corcondor/gvqcc/pull/91
+92	open	V37: global angle quotient, exact 22Q diagnostic and multi-window delta frames	9952c40688be503e1dd517e9f1be604e681bf12a	https://github.com/corcondor/gvqcc/pull/92
+93	open	Research V33: real KMB centralized syndrome hubs (27 hubs, 55,298 ops [-9.00%], official 200M-shot PASS), Abel summation & Lean 4	c3d8125463d49cda91b42d49e7e0700987880a03	https://github.com/corcondor/gvqcc/pull/93
+94	open	V39: joint affine/nonlinear and care-set synthesis — 41,935 ops, E1445.4375	7415ea5c4cc0acbb8a3c9255aa296400a9c64d29	https://github.com/corcondor/gvqcc/pull/94
+95	open	V37: carry-frontier replay, two paid reductions and 98 fewer full cuts	47583c1f4595c56844eda08fef872d9a951cb094	https://github.com/corcondor/gvqcc/pull/95
+96	open	V37: 119 contiguous 36Q carry exchanges and shared reversible ladder	3d6e92735bdc770f065f55f930bf8519366a19c5	https://github.com/corcondor/gvqcc/pull/96
+97	open	V40: PR94 direct improvements and exact quadratic rank-37 frontier projection	f5f22c3da278a8bc3b9b01c9a27197d5a53aeb00	https://github.com/corcondor/gvqcc/pull/97
+98	open	V40: verified dirty-frame borrowing, pre-sampled events and phase obstruction	8e0d2234192f81bc7a3f67136bb59913871148b7	https://github.com/corcondor/gvqcc/pull/98
+99	open	V40: 173-term phase kernel, multi-boundary parking, 2,935 full cuts	9282bd443df0164215777c84136dda8d896b6edb	https://github.com/corcondor/gvqcc/pull/99
+100	open	V38: 136 contiguous 36Q carry exchanges and exact PR94 cross-parent donor	3a07a754d2606a6540865b36cac4ec48dbe70d51	https://github.com/corcondor/gvqcc/pull/100
+101	open	V41: 37-live piecewise-affine intersection and conditional-clean cubic	d0ab74fcb0b38b5230e685979b87aa47950921c3	https://github.com/corcondor/gvqcc/pull/101
+102	open	V41: exact 36-coordinate projection at all 20 overfull observation frontiers	66d80083e9e162840982fcabeeda1b4756e9932e	https://github.com/corcondor/gvqcc/pull/102
+103	open	V41: cross-support phase kernel, peer reset and direct-record retiming	e52ab6b3acc68a8dd2ff6fef2474c8717010e6f4	https://github.com/corcondor/gvqcc/pull/103
+104	open	V39: observable tensor contraction, shared phase adjoint, 2620 width-pressure cuts	588e45a8ad9ca13c26005a20069f49432a5f01ed	https://github.com/corcondor/gvqcc/pull/104
+105	open	V42: exact finite-field tensor gauge and cross-parent 36Q exchange	e3f66bdd4728a7ee135e255fd1e2e72c535474f4	https://github.com/corcondor/gvqcc/pull/105
+106	open	V43: temporal phase tensor frame and exact common-parent union	0295a1c6ea14a9ac78a743e673bfa82be87e7e0c	https://github.com/corcondor/gvqcc/pull/106
+107	open	V43: strict 36-slot tensor contraction paths and two-stage shared factor	b71a6297d3c9314ccf9591565f175ecebfe86d26	https://github.com/corcondor/gvqcc/pull/107
+108	open	V45: exact affine pivot sketch and measured 36Q inverse prefix	b669c48cd989a7e50c138fc8d10ddf4e96433627	https://github.com/corcondor/gvqcc/pull/108
+109	open	Research V48: exact delayed phase repair of 36-slot V47 route	e21b01679707dcc358f5ccc129f604d71b9a5d14	https://github.com/corcondor/gvqcc/pull/109
+110	open	V46 research: joint affine/phase tensors, 39,688 ops / 2,778 full cuts (37Q)	9fdf97734a6da77da55ee71d05c99b891225e2d7	https://github.com/corcondor/gvqcc/pull/110
+111	open	V47: direct shared cubic tensors, deferred phase and exact block Fourier audit	b1daa740695b47aeb713bfdcb581a0edc2da6612	https://github.com/corcondor/gvqcc/pull/111
+112	open	V47: shared trilinear factors and rolling temporal decoder	2783602cc5c3ac6b9bceed0bcb0da8901364487b	https://github.com/corcondor/gvqcc/pull/112
+113	open	V49: nonlinear phase pullback and private-HMR boundary transport	416b2a751ac0497f6f5970afb923179c3d2436b5	https://github.com/corcondor/gvqcc/pull/113
+114	open	V50: fixed-boundary rank obstructions and cross-parent phase quotient	c4e864b97a94e4d6ba4b8249c8ce3ebf95ec450b	https://github.com/corcondor/gvqcc/pull/114
+115	open	V49: mixed-direction cubic transport through node91 and PR92 sparse full-phase diagnostic	520e6c907b2d13d62c20ecb87d364a684e830314	https://github.com/corcondor/gvqcc/pull/115
+116	open	V49: full 36Q global phase oracle and shared mantissa predictor	c9621b80c5dd73fd8f8805739ea7d318429baf5e	https://github.com/corcondor/gvqcc/pull/116
+117	open	V51: multi-stage centralization, full 36Q diagnostic improvement, research roadmap	e56170c57f961eb17428e28ca5636f65610a5ddf	https://github.com/corcondor/gvqcc/pull/117
+119	open	V52: 22Q ancilla-free phase transport and width-cost sweep (NOT SUBMISSION)	6109275279da1f500cc083856ba19cf3a1395151	https://github.com/corcondor/gvqcc/pull/119
+120	open	V52: shared affine care quotient, 32 rotations, 6729 CCX	5c617dae432e360bcbc25758880117618d54d810	https://github.com/corcondor/gvqcc/pull/120
+121	open	V53: exact dual bounds and cost-first phase-control synthesis	e59bf62fdff1bd613444702746991fc7c8332e85	https://github.com/corcondor/gvqcc/pull/121
+122	open	V53: history-aware common coordinates, conditional clean borrowing, guarded phase pullback	0b03b842406e96aec5ec9d1a1777765e7f5066b1	https://github.com/corcondor/gvqcc/pull/122
+123	open	V54: Deep Affine + Multi-Stage Abel Centralization (-18.02% ops), 22Q-34Q Dyadic Audit, OpenAI Math Analogs & Lean 4.35.0 Proofs	4739ec84115351dd053e1c1647d6870aad193c91	https://github.com/corcondor/gvqcc/pull/123
+124	open	V54: 22Q-first global phase synthesis and balanced 33-rotation route	bb59cee3bc060fdd6f3363dea8c5d4c60542b387	https://github.com/corcondor/gvqcc/pull/124
+125	open	22Q native shared translation gauges: 55,606 → 24,002 CCX (NOT SUBMISSION)	7eac0e9da51fb9ae02a4e0ef283d2a67b8e09523	https://github.com/corcondor/gvqcc/pull/125
+126	open	V54: exact nonlinear quotient and five-boundary physical 36Q macro (research)	9773a0ffbdcccff0ec2599d8df10731ac696af9d	https://github.com/corcondor/gvqcc/pull/126
+127	open	V54: 24Q conditional input lending, 31-rotation signed residual, exact care-fiber obstruction	5155bf58aec0e87d4cce8b63e882337fc93db84e	https://github.com/corcondor/gvqcc/pull/127
+128	open	Sub-36Q shared angle dictionary: native 32Q/34Q/36Q, 5399 rotations (NOT SUBMISSION)	caa238192f333c7cec1ee30e8de89d7d7d345110	https://github.com/corcondor/gvqcc/pull/128
+129	open	V54: strict 22Q tensor transport, 8152 CCX and exact fiber embeddings	22711517a9b9d50d5179495a0b377ba1db6a9a31	https://github.com/corcondor/gvqcc/pull/129
+130	open	V55: exact finite Fourier-control tensor contraction and integer angle carry	bcba2833bcf3908ba25d3948900341353c540463	https://github.com/corcondor/gvqcc/pull/130
+131	open	V55: hard sub-37Q whole-oracle signed cosets, 25–36Q verified	8c6713a9bb09a500e2ddf14cfbcff9056bb13f5b	https://github.com/corcondor/gvqcc/pull/131
+132	open	V55: global radix-4 normalization, multi-output tensor synthesis, 31-rotation truncated Horner specification	13cad34b419651cfdba191a726433d5e9b7cd4aa	https://github.com/corcondor/gvqcc/pull/132
+133	open	Research: strict 32Q/34Q persistent GF(2) tensor transport	19855ac2b9f2ab5655697bf0ccf854eac8ee5470	https://github.com/corcondor/gvqcc/pull/133
+134	open	V55: persistent two-readout chart and exact rotation transport (research)	70d6939768b19363a09416a6aff13329f90672b3	https://github.com/corcondor/gvqcc/pull/134
+135	open	V56: 28–36Q exact whole-oracle carry-save phasing and persistent affine multiplexer	39e24ab526e5d03c94ade355d064e6497a500080	https://github.com/corcondor/gvqcc/pull/135
+136	open	V56: reciprocal conditional basis, full 36Q / 1,805 CCX	05eb81c447ffc57b883d7547b4f26fbd64e7a5bf	https://github.com/corcondor/gvqcc/pull/136
+137	open	V56: exact multilevel weighted carries and shared prefix contraction (not submission)	aef582c407080441d86510cc7c51db54282614a4	https://github.com/corcondor/gvqcc/pull/137
+138	open	V57: bounded carry-free two-stage contraction and exact interval tensor exchange	e6ad2bd0dccc505ca4131065a03c76a9204e2eea	https://github.com/corcondor/gvqcc/pull/138
+139	open	V56: Real Native KMB Multi-Stage Wallace 3:2 Integer Carry (Gidney HMR), Radix-4 Booth-2 Solving PR #132 Multiplier Bottleneck & Lean 4.35.0 Proofs	18e194cd2b010c8ab867fc458be9ae158bc8b0d9	https://github.com/corcondor/gvqcc/pull/139
+140	open	V58: joint coefficient tensor, measured sharing and partial phase consumer	2ff53579dca1c803fc112d01d71fcbca78f15ef5	https://github.com/corcondor/gvqcc/pull/140
+141	open	V59: 23-active packed normalization and 132-CCX native carry transducer (36Q research)	9cc208f1bd7ee5cf102bf1db0cf33d991520a05c	https://github.com/corcondor/gvqcc/pull/141
+142	open	V58: factored carry phase consumer + sub-37Q exact interval transport	ce17a3248fc03cfab5908ac1d57cd237c311e0bb	https://github.com/corcondor/gvqcc/pull/142
+143	open	V59: actual intermediate phase consumers and exact Booth truncation correction	78bad85c15d09a534d07bd1e66039178d4247ded	https://github.com/corcondor/gvqcc/pull/143
+144	open	V60: cross-mask phase and carry digit transport (research only)	9cd3f69c17f6cd69056ed8678aae3ec0d28fe1bd	https://github.com/corcondor/gvqcc/pull/144
+145	open	V60: coefficient-independent counts and exact phase audit (NOT SUBMISSION)	bc56ca76bdfa87aa7f1096e91292faac06338956	https://github.com/corcondor/gvqcc/pull/145
+146	open	V61: Hidden Midpoint Symmetry (deg=2/3, 406/696 pp, 0 violations) + Real Native KMB Canonical Bit-Serial Phase-Streaming Transducer (31 rots, 30 CCX) & Lean 4.35.0	72ea03157bb71896e5365f865fbba36800a01902	https://github.com/corcondor/gvqcc/pull/146
+147	open	V62 live Horner: 36Q E928 and 35Q E1132 partial circuits	95a3f485bd1899ffc2ee71c8bb8b6a88e514e1ea	https://github.com/corcondor/gvqcc/pull/147
+148	open	Chemistry: stationary tensor transport and rank-45 variable projection (research only)	90a5ee8c14f8f4ee46767deb16a4527f48a97c67	https://github.com/corcondor/gvqcc/pull/148
+149	open	Chemistry: weighted syndrome projection and protected H1 rank certificates	b9bec651cef94458f440e72ddcded5c2457449cc	https://github.com/corcondor/gvqcc/pull/149
+150	open	Chemistry: joint reachable-angle and moment repair (research only)	cd76d3180611bb15789c991ba3157167242f2ddf	https://github.com/corcondor/gvqcc/pull/150
+151	open	Chemistry: full 75-bank dual tensor synthesis, 35Q / 22189 CCX (research only)	7bfbc0de25f02a05b0719196bf5cfffdb6bb8417	https://github.com/corcondor/gvqcc/pull/151
+152	open	V63: rolling phase digits from Fourier leaves, verified 32–36Q	462a8f86f2b4121193a6281bf07476135d58da3d	https://github.com/corcondor/gvqcc/pull/152
+153	open	Chemistry: both errors below 20 mHa with gap continuation (NOT SUBMISSION)	b96e65ef5b4240a7fa0a0f12ef8814298ba6bc6c	https://github.com/corcondor/gvqcc/pull/153
+154	open	Chemistry V65: exact global sign gauge and strict two-error refit	44b051ee6ef306029cad2ae52c84a796f9720a1b	https://github.com/corcondor/gvqcc/pull/154
+155	open	V64: Controlled-Add Post-Update Majority HMR Transport (288-CCX 17b x 16-digit MAC Real KMB), PR #154 Sign-Gauge QROM (-24.23%) & Lean 4.35.0 Proofs	6345a2d9e80eb130f1d8458837eafc2182ca1dba	https://github.com/corcondor/gvqcc/pull/155
+156	open	V63 live joint transport: 35Q E760 and shared 8-digit consumer	6ffb41752766217f8b8b91b8411dd3260a9ad87a	https://github.com/corcondor/gvqcc/pull/156
+157	open	Chemistry V66: persistent full-family affine frames, 30.48% fewer instructions (research)	a371b02f4858c4e1e97377018edb57976c2e55ae	https://github.com/corcondor/gvqcc/pull/157
+158	open	V64: 35Q E694 normalized Horner phase and temporal reset transport	f4803384acdcc475a4557cbcf893aa098e919e45	https://github.com/corcondor/gvqcc/pull/158
+159	open	V64: modular affine tour, 35Q eight-digit and 36Q all-digit successor streams	e0b46cf35ba0825e50677aee08ae77dc435bab9b	https://github.com/corcondor/gvqcc/pull/159
+160	open	V64: full 36Q/25Q oracle absolute-margin and subspace transport (research only)	0aab0da39ecccc00d6753f8dee1cc9fd2686c7b1	https://github.com/corcondor/gvqcc/pull/160
+161	open	V65: exact E1605 stream and shared-factor fused low-digit phase	1457c584896c17d130f3acbe5f39a6bdb35cdf49	https://github.com/corcondor/gvqcc/pull/161
+162	open	V68: dynamic nonlinear generator exchange and full 36Q oracle recombination (research only)	bfc10e830c738a07f1415e7c13151b18ab7ca6a8	https://github.com/corcondor/gvqcc/pull/162
+164	open	V71: dependent nonlinear carrier exchange (cost unchanged; research only)	226672a31051897d3baab986d0dc1e7464b9cb03	https://github.com/corcondor/gvqcc/pull/164
+165	open	V76: coupled nonlinear chart and measurement-phase transport (research, not submission)	49657fa9b53a07aed4d745f3aa11bb9d4c69dc77	https://github.com/corcondor/gvqcc/pull/165
+166	open	Discrete differential transport across invsqrt, DQI and DFTHC-SOS (research only)	47017f41a71626bfcdc6d08e9c4771db89cdf41c	https://github.com/corcondor/gvqcc/pull/166
+167	open	V77: complete 24Q phase oracle by conditional-clean nonlinear transport	7dce48a1189c70ac9d6904ce3a8b8ddccaf0f764	https://github.com/corcondor/gvqcc/pull/167
+168	open	Differential reconstruction II: verified terminal phase absorption and full-task audits (research)	ebba329a05ed25a06a232c87e15d4dfcf93c68a9	https://github.com/corcondor/gvqcc/pull/168
+169	open	V78 research: adaptive quotient synthesis, reciprocal lifting, joint Grassmann projection (not submission)	f2a7931cead1bce83f91a185a0a28e32e84536b8	https://github.com/corcondor/gvqcc/pull/169
+170	open	V79: verified complete 23–36Q width sweep and conditional carrier transport	45d56c097aa99e698d5408ff2552ebe9398f1846	https://github.com/corcondor/gvqcc/pull/170
+171	open	V81: mathlib finite-field classification and joint reversible additive FFT scan	d442f72507472f5d4e1bce77a07f08ab1da2b16f	https://github.com/corcondor/gvqcc/pull/171
+172	open	V85: reconstruct public chemistry donor from pinned source	d1f15a5f0697d0a4c5c347a4e9718446b590f709	https://github.com/corcondor/gvqcc/pull/172
+173	open	V86: reachability-aware bilinear CCX synthesis on the actual full DQI KMB	411cdc92ccfc9ed8f31228b592969c4e09747c01	https://github.com/corcondor/gvqcc/pull/173
+174	open	V87: native V20 ANGLE reconstruction and global protected-output quotient synthesis	4f87d627b77f6c825ef35a399a661abc54fa5e1d	https://github.com/corcondor/gvqcc/pull/174
+175	open	Chemistry angle loaders at 3,312 Toffolis per pass (official verifier PASS)	9fd9f20f75f34a4a7e2df1fd27494d65acfd6076	https://github.com/corcondor/gvqcc/pull/175
+176	open	V67: real .kmb Karatsuba 16x16 (-52 CCX), 18-CCX don't-care bilinear QROM (-38% ops), and Lean 4.35.0 proofs	304142599b935fc3913ca20d2082d154186462e2	https://github.com/corcondor/gvqcc/pull/176
+177	open	V91: protected-boundary temporal hybrid of verified 3312T and V20 charts	5eb3937a14582183d3b316b1debd1af343093404	https://github.com/corcondor/gvqcc/pull/177
+178	open	Research: V79 1,218 CCX / 48,866 ops and verified 31-rotation port experiments	36d715e011a80e11bd1c4f6011163823bb5e2261	https://github.com/corcondor/gvqcc/pull/178
+179	open	V68–V75 COMPLETE: chemistry 3,267 Toffolis/pass (ALL 4 heads at 231 CCX, 247,649,619 official PASS both salts)	c33c5bcd9b51e693955476762af45aa98e7047db	https://github.com/corcondor/gvqcc/pull/179
+180	open	Research: chemistry 3,271/pass + invsqrt 1404.625 mean Toffoli (official PASS, not submitted)	08d01e2c18365000dec61e3403f5342452c69855	https://github.com/corcondor/gvqcc/pull/180
+181	open	Research: V112 × V110 cross-session 62,028,159-op native checkpoint (not submitted)	26680bdec8a10dea9e14f1da1802c058157176bd	https://github.com/corcondor/gvqcc/pull/181
+182	open	V115: DQI mathematical specification and repair research — NOT a verified native circuit	615f5c93f4166e804acfaee2a4f0bd44371de3db	https://github.com/corcondor/gvqcc/pull/182
+183	open	Family-C m6 row25: bounded sign identity and HMR proof gate	03ba8369c7705d20bca4d245c180e0e5210e8ca5	https://github.com/corcondor/gvqcc/pull/183
+184	open	Family-C m6 MAIN: Lean-certified local laws, 36Q / 449.5 paid encoded output research	0664dee425a21b43d62b1a103c8e1905083a223c	https://github.com/corcondor/gvqcc/pull/184
+185	open	Family-C m6 compressed 36Q MAIN: 522 expected paid, 3492 native instructions (research only)	26d304199c61773d7e74e9dcbc8daaaedbcb6ee5	https://github.com/corcondor/gvqcc/pull/185
+186	open	DQI CF joint research: 42/99-term tensors, all 17 nodes, kernel-only Lean PASS	10f4695acb8ced3c510e2d8a64f222fbfc634e27	https://github.com/corcondor/gvqcc/pull/186
+187	open	Research: DQI coefficient fusion, 840Q lifted field charts, 36Q MAIN affine transport	46a3b978c61771e65996b7a61fb8fb9b63874252	https://github.com/corcondor/gvqcc/pull/187
+188	open	V117: 36Q MAIN bridge and zero-ancilla 840Q word-frame shear	4f82ed67a5f58210f8a6b5f6106c389a2e772f1a	https://github.com/corcondor/gvqcc/pull/188
+189	open	Family-C 36Q MAIN: shared ghost schedule 449.5→438.5 paid (research only)	563a4a57c81205620065bfcf2200280eb11b6288	https://github.com/corcondor/gvqcc/pull/189
+190	open	DQI CF fused route and serialized 42-CCX symbolic refinement (research)	df7fcff10506f68f28355c073bd546ce198abd5f	https://github.com/corcondor/gvqcc/pull/190
+191	open	Research: Lean dual-certificate obstruction and rotation-column pruning for Family-C	90d40c3ffac160b6e59a2594f2c92629c98ddca4	https://github.com/corcondor/gvqcc/pull/191
+192	open	DQI paid-gate priority: cubic norm cofactor and 42/15-CCX full reference (research)	4f43dc0abe8a027e1051ac5c9a4ab7ab90b9874f	https://github.com/corcondor/gvqcc/pull/192
+193	open	V118: exact full-circuit rewrite of dual-salt PASS DQI	8eda9815e131879d9fdccc910d3c92d1f8448918	https://github.com/corcondor/gvqcc/pull/193
+194	open	DQI V116 strict audit: native rewrite, inherited phase counterexamples (NOT SUBMISSION)	592048d607caf294d1bfe6c785954853b68e3812	https://github.com/corcondor/gvqcc/pull/194
+195	open	V120: isolate terminal repeated-node pole; direct 900Q paid reductions (research)	0ec338685acff1898ee10a32a460712a96ed58e6	https://github.com/corcondor/gvqcc/pull/195
+196	open	V120: tag-free involutive terminal-pole atlas (research, no submission)	4e319ebefe1dd7d324aba4d5ad8c46d10fd9f806	https://github.com/corcondor/gvqcc/pull/196
+197	open	V120 terminal jet involution and zero-paid alternate node transport (NOT SUBMISSION)	1ccc7bcf211e8b71477beb8388051bb97c56052f	https://github.com/corcondor/gvqcc/pull/197
+198	open	V121: joint norm-sharing terminal repair and full V119 commutation rewrite (NOT SUBMISSION)	9fbfb098312c0a6e9297b345827540f161090953	https://github.com/corcondor/gvqcc/pull/198
+199	open	V121: direct 900Q common-factor and overlapping product reuse (research)	e1611b9716d9fbd1c8715de50e726b8cb7195b09	https://github.com/corcondor/gvqcc/pull/199
+200	open	V122: 898Q slot33 cost-first schedule and HMR repayment	3fe522a46ae51846ebb9289a2de80e7c5c4d4ce8	https://github.com/corcondor/gvqcc/pull/200
+201	open	DQI 898Q: slot33 chart inverse, singular collision and self-describing fallback	cd4fb0a9c583df5f1583962473ba44e743a80e04	https://github.com/corcondor/gvqcc/pull/201
+202	open	V122 Family-C 36Q: reversible shared recovery 438.5→431.5 paid (NOT SUBMISSION)	36026fa2c9cc4470886092b396b7ebb3356154b4	https://github.com/corcondor/gvqcc/pull/202
+203	open	V122: 898Q repaired DQI paid-gate and phase-preserving rewrites (research)	e05051303da679ed8a6a8792b8d5bcc547ee0e16	https://github.com/corcondor/gvqcc/pull/203
+204	open	V123: direct 898Q overlap, canonical products and HMR sink (research)	d25ac4a0fdb237a875dc589112716a36f1263197	https://github.com/corcondor/gvqcc/pull/204
+205	open	V124: 898Q DQI structural terminal-chart resynthesis and full native checks (research)	e2ca802133b81381b1b17bb0d4577fcebc756ca9	https://github.com/corcondor/gvqcc/pull/205
+206	open	V123: 36Q MAIN 418.3125 paid, three clean work lines and affine-subspace recovery	41a8df9d8b5b5f49098fc701d21eb051c3b92ea6	https://github.com/corcondor/gvqcc/pull/206
+207	open	DQI: 898Q HMR transport and CCX factoring (92 paid saved; 344k not reached)	6cdc80fda5b6433ff09af10c4e89439385f1413d	https://github.com/corcondor/gvqcc/pull/207
+208	open	DQI cutoff18 failure isolation and width-preserving terminal repair (research)	a037772bc1ae91f84ccb9b6d03a5ca8389e951b5	https://github.com/corcondor/gvqcc/pull/208
+209	open	316k low-weight affine padding and 52-moment selector (NOT SUBMISSION)	3c3ed573c995d280a2dc54b20b5e0c6a9644824b	https://github.com/corcondor/gvqcc/pull/209
+210	open	316k native residual: fixed annihilator filters and conditional sparse recovery	9c70db41b7800a526ebf84f954a60ae020ecdf7e	https://github.com/corcondor/gvqcc/pull/210
+211	open	DQI: 897Q polynomial-coordinate prefix and HMR witness refinement (not submission)	2022cf1f20b190141ea9ace3879628394cdf49f3	https://github.com/corcondor/gvqcc/pull/211
+212	open	V125: 898Q direct additional 30-paid reduction with phase-preserving overlap	8e6f10fe4ec7006388da96c5ca591a07f9d3f298	https://github.com/corcondor/gvqcc/pull/212
+213	open	V128: transposed tensor transfer across DQI and affine frames (research)	4218534c2ce88a6d9b5533c31ffd01a628bf623f	https://github.com/corcondor/gvqcc/pull/213
+214	open	DQI: copy-free reverse extraction via scalar gauge replay (research)	34e72d0ba9f864a77714b6103687d8da8b2e08a0	https://github.com/corcondor/gvqcc/pull/214
+215	open	V127: width-adaptive clean-prefix AND ladder (research only)	fa380a13b845ef8be3ab967cdf5871aae7e4b8da	https://github.com/corcondor/gvqcc/pull/215
+216	open	897Q: PR214 + V127 adaptive ladder and masked phase transport, 413618 mean (research)	2dcf96e1bd6a6c5cdf38afdc727e9e79a477047d	https://github.com/corcondor/gvqcc/pull/216
+217	open	V130: 897Q joint gauge and HMR phase transfer (NOT SUBMISSION)	0f038f235e98bde7722353a1696d9539143d2774	https://github.com/corcondor/gvqcc/pull/217
+218	open	DQI 897Q V127 joint cost and 896Q normalization bottleneck (research)	c0a9cb416d656d3e41ee314cec7145eb2c699e54	https://github.com/corcondor/gvqcc/pull/218
+219	open	DQI 896Q complete native circuit, reciprocal-coordinate loan and 897Q cost refinement (research)	8852022ad53510d7c3fb533f084d84960ed01d0f	https://github.com/corcondor/gvqcc/pull/219
+220	open	DQI research: uniform 11-clean-Q scale via finite-difference transport	ead65c8fdbda296df47ee9e094813a179bc8f9d0	https://github.com/corcondor/gvqcc/pull/220
+221	open	316k repair: reject fixed-rotation counterexamples and prove concrete parser stability	3d10192e82c4b45512fe305cad722dc6c8745e11	https://github.com/corcondor/gvqcc/pull/221
+222	open	316k direct 900Q→898Q local width audit and phase-ladder repartition (research)	d566811722e4465b2204bbe1e8b1dd07a78dde2f	https://github.com/corcondor/gvqcc/pull/222
+223	open	DQI: complete 896Q joint-width/cost candidate, 419430 mean paid (research)	7a65e5f07c79afe3315adabd441e36b98681e499	https://github.com/corcondor/gvqcc/pull/223
+224	open	316k: zero-paid affine register lending and peak coverage (research)	8a33006782b9c5cd9815121bf5b9f05750cc2e4d	https://github.com/corcondor/gvqcc/pull/224
+225	open	316k donor: recover native inverse basis and compress first 30Q block to 28Q (research)	a454504aa968231c62e24358af71d4ac86f14854	https://github.com/corcondor/gvqcc/pull/225
+226	open	316k: early HMR with delayed classical commit and global reuse (research)	053b13fb14ad415a486cfc0bda0fcfa5f6f4b128	https://github.com/corcondor/gvqcc/pull/226
+227	open	316k DQI: independent zero-mask phase and residual root-cause audit	308af18c8de706a0e846b716447ac7df71d5e17a	https://github.com/corcondor/gvqcc/pull/227
+228	open	316k direct tensor-rank scheduling and HMR transpose (research)	8730822824227d438321ecfd86aae579d13700bd	https://github.com/corcondor/gvqcc/pull/228
+229	open	Joint quotient reconstruction: exact product feasibility, 316k phase contract and chemistry bank6	bb0c8d661c11a7a87bfa2243d792ef6533efffc0	https://github.com/corcondor/gvqcc/pull/229
+230	open	316k DQI zero-safe field-frame replacement at 898Q prefix (research)	dbf2aa8f6cdd8d3b156aad9ba2e54b3d57a5a082	https://github.com/corcondor/gvqcc/pull/230
+231	open	316k: tag-free extension padding in a single 900Q oracle (partial repair)	0c32cb3f4a487d7a4f21b9af1c1a527cc4fa4359	https://github.com/corcondor/gvqcc/pull/231
+232	open	DQI 316k: exact 70-moment sparse witness + Lean guard, reject Hankel rank shortcut (research only)	9ba0506cf02866131c555707cb1182101af86c00	https://github.com/corcondor/gvqcc/pull/232
+233	open	316k cross-session Hermite projection recovery: 45 to 35 combined failures (research)	cffd9fd7f6290a32cd798abba110a3ba3deef64d	https://github.com/corcondor/gvqcc/pull/233
+234	open	All-pole 316k DQI: exact projective locator and 898Q chart-only phase oracle (research)	eaaf90902cbea74f1960e80e2f928c3bfaeeb425	https://github.com/corcondor/gvqcc/pull/234
+235	open	316k: paired adaptive pivot history and 882Q all-pole CRT codec (research)	4a6fd1c089e2f96a2bd57c3fcf667d998260322f	https://github.com/corcondor/gvqcc/pull/235
+236	open	316k: integrate low-weight, all-pole and exact single-pole phase charts (research, not submission)	b434350e8a0cfdbdfa622136d87490ba08f6b565	https://github.com/corcondor/gvqcc/pull/236
+237	open	316K joint CRT / HMR: guarded 880Q all-pole phase oracle, 223579 paid (research)	772a661e92d327c9387d98ba60bfc009613c29f5	https://github.com/corcondor/gvqcc/pull/237
+238	open	316K exact full-tape rank-15 scan integration, 626561 paid saved (research)	050ea03ec7b5d1dfed7d58413aa724de5c1ed312	https://github.com/corcondor/gvqcc/pull/238
+239	open	316K direct full-tape commuting reduction and 102400-shot Vercel score replay (research)	a2dcc29ed689440541d9cce00a00a26415cbe25a	https://github.com/corcondor/gvqcc/pull/239
+240	open	316k joint guarded folding and conditional HMR repayment (research only)	4c7f717ff2a1ac04a8010095d9dbddbee8d6eee9	https://github.com/corcondor/gvqcc/pull/240
+241	open	316K guard4 inverse and direct full-tape integration (research, not submission)	a52fe81aa92f19b907e3c85813e49998523e1eae	https://github.com/corcondor/gvqcc/pull/241
+242	open	316K full-tape joint score audit: #239 + #240, #241 component retained	484e5989a1d3dab11652932903eaae3a3a4ae92b	https://github.com/corcondor/gvqcc/pull/242
+243	open	DQI316K: scoped constant propagation on full native tape (research)	310c4bb8da25a3fce0ab609dc609ad1b753bdfe2	https://github.com/corcondor/gvqcc/pull/243
+244	open	316K generic rational phase scan (879Q) and two-region Guard4 native splice (research)	756605477e736183a041d43e91a3606c2ea2c854	https://github.com/corcondor/gvqcc/pull/244
+245	open	Fixed-order degree-balanced projective Hermite repair (900Q components; research only)	3be80b4d3bb32829c0c01073810c81b36e1bd6d9	https://github.com/corcondor/gvqcc/pull/245
+246	open	Research: 851Q half-degree Bezout magnitude frame, 94,017 paid native phase stage	f88814465d71ec05d9585efb78a7da1aca560e8d	https://github.com/corcondor/gvqcc/pull/246
+247	open	316K frontier: exact D16 affine-frame transplant into #243 full tape	945c1a3ea8f34d0fb007dce04833a5a296842590	https://github.com/corcondor/gvqcc/pull/247
+248	open	Packed variable-degree continued-fraction syndrome codec (research, not submission)	ef49d50d9582ea401000abb17c482fe3cbf68276	https://github.com/corcondor/gvqcc/pull/248
+249	open	Full 899Q DQI weighted half-degree / additive FFT integration (research only)	92cf4fcd52e79bedf95d969fe8ef029655f49c67	https://github.com/corcondor/gvqcc/pull/249
+250	open	DQI: unified full 900Q decoder, 1041 native regression executions without error	9eb5280c4d418457b0777fc76752dbe81e017713	https://github.com/corcondor/gvqcc/pull/250
+251	open	Full native 898Q FFT splice: 102400-shot official PASS; 316K repair unresolved	ff20f72d81117d002c5075c819f2b35246b24ff0	https://github.com/corcondor/gvqcc/pull/251
+252	open	Total 900Q native DQI rebuild: 912/912 raw-syndrome checks, correctness baseline	ee12ab7c880e1f7b5e9202e529fc90a1f3896d88	https://github.com/corcondor/gvqcc/pull/252
+253	open	Research: repair #247 low-weight failures and expose remaining high-weight Hermite poles	438f4afce8cbbbe63131ef51db8a3e069bf08db1	https://github.com/corcondor/gvqcc/pull/253
+254	open	Native DQI cutoff-zero and guarded CRT: measured common-factor boundary obstruction	0261aea9b0d3fcad949668e8ad4fe4cfc4042305	https://github.com/corcondor/gvqcc/pull/254
+255	open	Joint full DQI resynthesis: rank15/42, HMR factor pooling, CF inversion; 1936 clean shots	8bf97fdb8218b4f55b759f4630bd751b1dc86e4a	https://github.com/corcondor/gvqcc/pull/255
+256	open	316K-only native dual-mask exact repair: 900Q, zero added paid, Vercel replay	80b614973a956e80fd32846cd54c6e61010a4abf	https://github.com/corcondor/gvqcc/pull/256
+257	open	316K #247 + zero-paid dual-mask repair; strict cost gate not met	4d92f558b8129a9e9ff167073efe0b8a62c1f0f2	https://github.com/corcondor/gvqcc/pull/257
+258	open	Exact 316K #247 guarded whole-tape optimization: shared multipoint, 1.399M / 2.798M paid saved	bc90e2f0253fa3c8fe42c59760f7de7fab16e265	https://github.com/corcondor/gvqcc/pull/258
+259	open	Strict 316K cost gate: shared coefficient transport, distinct CRT reference	44ddc843729bb9257dd99675c8783eb7a620b531	https://github.com/corcondor/gvqcc/pull/259
+260	open	316k #257 native Hermite seam and HMR lifetime audit (rejected candidate)	00c0f09f311f592e5b68b870d4a13fa906e0a30d	https://github.com/corcondor/gvqcc/pull/260
+261	open	Direct 316K Hermite replacement: 900Q, 996/996 full-KMB regression, 21 Lean theorems	bf87158c58b5f183f08798d6d449e42c10177019	https://github.com/corcondor/gvqcc/pull/261
+262	open	#259 native cost reduction and retained-square-factor residue chart (research)	610d6fd58fd5df15367195d277aa1afe168ee35b	https://github.com/corcondor/gvqcc/pull/262
+263	open	Direct 316K lineage: low-rank pad rebase and joint norm full circuits	0dad2941ec2786607f7ba389d94a3734fd9098dc	https://github.com/corcondor/gvqcc/pull/263
+264	open	Full #261 native continuation: -8,806.73 ordinary mean paid, 2,020 clean shots	2916deced346bb4b672ed8fe98d19d0081e6b605	https://github.com/corcondor/gvqcc/pull/264
+265	open	316K direct: packed half-degree Sylvester reference + native dual17, 2020 clean shots	f4ff83b27f5c31f91650ad7395fa69670b334dda	https://github.com/corcondor/gvqcc/pull/265
+266	open	Full #263 rebase: 387771.779 mean paid, 2020 clean shots, 15 Lean theorems	8e6cc269aab60ae533b9a0d62347494387e4197a	https://github.com/corcondor/gvqcc/pull/266
+267	open	316K central lambda schedule and trace-dual gauge, 2452 clean full native shots	b224d1979a55502988c0b0520de252863c7353f3	https://github.com/corcondor/gvqcc/pull/267
+268	open	WIP #262: reproduce inherited official phase error and prove homogeneous pole laws	1a9261744409656f9b9b731c686fe7fa17f40013	https://github.com/corcondor/gvqcc/pull/268
+269	open	#266 gap-independent structured Bezout Schur complement (word-level research)	01a304712520d0aea7c8b072582c3b1b83304ff8	https://github.com/corcondor/gvqcc/pull/269
+270	open	#266 strict full regression, gauge transfer, and universal quadratic-pad gap obstruction	79eed1359ebf4c39bcf7bee913445a60c2f07ecf	https://github.com/corcondor/gvqcc/pull/270
+271	open	#269 packed gauge Schur and Toeplitz: 4178 → 1516 nonlinear words; Lean repair	60827268ff1bf5c02800cbda14688342a70a62aa	https://github.com/corcondor/gvqcc/pull/271
+272	open	Packed all-gap Sylvester lift: native component evidence and Lean check	5cfad07f68b4fc0e7d20ba17cc1a4dde0e5120c1	https://github.com/corcondor/gvqcc/pull/272
+273	open	#271 independent full lowering audit: KickMix runtime and exact scale verification	004c118f3681a8fe992276d9fbb0a0f52be5af06	https://github.com/corcondor/gvqcc/pull/273
+274	open	Native central Schur-Toeplitz reduction 689329 paid; #266 exact key seam	e26a9d56c08c6e05fdf826070a496595026e7f01	https://github.com/corcondor/gvqcc/pull/274
+275	open	Small projective chart transport: 5780 paid roundtrip, explicit fixed-chart counterexample	56ee21fe9fc3b5c066071a57e5f9c0f448e7f3b5	https://github.com/corcondor/gvqcc/pull/275
+276	open	Exact #257 direct repair and strict cost gate	13adbddc3e6e8a5b10813720cd9a9638499c5c56	https://github.com/corcondor/gvqcc/pull/276
+277	open	#271 shared reciprocal and nonmonic seam: 238→170 scales, 12Q interpolation loan	4c0d707d1f8fe0d785b0fb6224d20a1f4c176926	https://github.com/corcondor/gvqcc/pull/277
+278	open	Exact 257 public frozen arithmetic source and direct seam audit	7a8041af3370f3cf550c8932da6ea1239d2ef18a	https://github.com/corcondor/gvqcc/pull/278
+279	open	316K shared coefficient FFT: -1,985,084 instructions on exact frozen donor	b1724c04ea443fbee31bd0a1a39301ff10fa1830	https://github.com/corcondor/gvqcc/pull/279
+280	open	Exact #257 native frame contraction: -266340 instructions; repair gate failed	7e9b4edddaea3c5a5ee051eb28481cf5c14e69ae	https://github.com/corcondor/gvqcc/pull/280
+281	open	Leading coefficient Schur: 1,428 fewer paid gates per fixed converter pass; mixed-pivot identity	49a9129b8b907f6b448d4a6e68889bf6cb03ae53	https://github.com/corcondor/gvqcc/pull/281
+282	open	#279 formal refinement: weighted interpolation, recursive FFT semantics, Hermite and phase contracts	0b3e44105a8d6742bc720eba957bf951e7a43f5a	https://github.com/corcondor/gvqcc/pull/282
+283	open	#257 direct #279 splice; transposed Toeplitz 5124→4536 paid, #277 fixed path refinement	a94532e0e209fe9b0061b94778f3da780e7fff26	https://github.com/corcondor/gvqcc/pull/283
+284	open	#283 refinement: 40 new strict theorems, 130/130 joint Lean audit PASS	126f886a23f9e812c0e142dc9b68633c78a78175	https://github.com/corcondor/gvqcc/pull/284
+285	open	#281 integration: retained tower norms + transposed middle product, -33,660 paid	540a2a84a74922deeeedb94f0c20624e0c550de7	https://github.com/corcondor/gvqcc/pull/285
+286	open	#285: certified local anchor pivots; transposed accumulation repair and GF4096 reference	0141eae39bc889cb1c96c07767ab07a6984a39f5	https://github.com/corcondor/gvqcc/pull/286
+287	open	Cross-stage inverse norm transport: #285 same-width -612 paid, 26 strict Lean theorems	deae8975074d092dd9db7ff0d23e4d082a196b20	https://github.com/corcondor/gvqcc/pull/287
+288	open	#279: local projective gauge and compact affine comparator	78ece227448f86102fd7e1ee12b06200f3f84a93	https://github.com/corcondor/gvqcc/pull/288
+289	open	#279/#288 + #280 joint local reduction: four-anchor exact gauge, reversible frame contraction	c43d2f58d08664cdaf333387def671c9615c72ce	https://github.com/corcondor/gvqcc/pull/289
+290	open	#289 shared slope compact pass and streaming submission-candidate audit	27eda7bde7755d51f8dfa80e9b80db24fa8098d9	https://github.com/corcondor/gvqcc/pull/290
+291	open	#286/#287 fixed confluent anchor + exact #279 zero-paid coordinate covariance	4b0effc4bba721b7078ebb664f14cfe11f6b80ae	https://github.com/corcondor/gvqcc/pull/291
+292	open	Submission audit: pinned official verifier bundle and other-task candidate recovery	ad758bf523cb350b9900caf88d3a638acbd72c96	https://github.com/corcondor/gvqcc/pull/292
+293	open	HMR debt transport: strict phase equivalence and ANF refinement	73e02d32d2a69362d84c7e4ef98f1da266e7f0f5	https://github.com/corcondor/gvqcc/pull/293
+294	open	Joint #291/#292/#293 DQI gauge and tensor transport audit	c94c53a38674697e2f7ed57134b0a88ed2d75a23	https://github.com/corcondor/gvqcc/pull/294
+295	open	Guarded cubic phase pooling (-18 static paid) and zero-safe scalar completion	3a257b43818249a7dffa37b776408f01a70dc9ad	https://github.com/corcondor/gvqcc/pull/295
+296	open	DQI ghost-factor Frobenius projector and dirty-prefix echo (-358 local CCX)	1ecbf4bc8a1d7e0315880c29c8f941adc23a3cac	https://github.com/corcondor/gvqcc/pull/296
+297	open	HMR multi-measurement debt quotient and joint guarded cubic synthesis	31b988089fd14500b083f8a9fb2c10ecc9a22b69	https://github.com/corcondor/gvqcc/pull/297
+298	open	History-free joint Schur gauge: 379960 → 190110 CCX, 704/704 converter solves	f9792720e702cb238992253673683fb0be17e0f2	https://github.com/corcondor/gvqcc/pull/298
+299	open	DQI: guard-span cache for history-free Schur and contextual fusion (research)	cbb355e6c553054f14b1cbc2158459d75cdb0828	https://github.com/corcondor/gvqcc/pull/299
+300	open	Scratch-free joint half-GCD and packed reversible Euclidean division	5304b347556d3bd917df58c92aca2ac2b214bda4	https://github.com/corcondor/gvqcc/pull/300
+301	open	Arbitrary-order confluent dual phase: 153066 → 75138 CCX fixed chart	0804ec00d350c312c9cecbd8a7b876594184a87c	https://github.com/corcondor/gvqcc/pull/301
+302	open	#299 measured-output dual contraction: -558 executed CCX in raw-S prefix	b0d9879c4da4df670d355bf1ec05dd1be17f198e	https://github.com/corcondor/gvqcc/pull/302
+303	open	Adaptive packed half-GCD / balanced Padé: native kernels and 138 strict Lean checks	c427a0bc4361bf558edff8cab6696f04a04f5d11	https://github.com/corcondor/gvqcc/pull/303
+304	open	Retained tower norm and affine CCX reuse across Schur and packed division	bd24043ddae2e35aa8111e1e7b563266af2046ae	https://github.com/corcondor/gvqcc/pull/304
+305	open	Cross-task native affine transfer: 287,662 fewer instructions across 3 benchmarks (research)	9392a6277d1c9d40aa5b31c13df5e4579a530490	https://github.com/corcondor/gvqcc/pull/305
+306	open	Cross-session recovery of lowest-cost complete DQI, chemistry and InvSqrt artifacts	ed19ff69e4fb1ce5a71f0d92d575313a1c71353a	https://github.com/corcondor/gvqcc/pull/306
+307	open	Whole-circuit guarded tensor transport, HMR debt and clean lifetime packing	932eb4194f662827f9d90257e5981a710318e3da	https://github.com/corcondor/gvqcc/pull/307
+308	open	Half-Padé direct public-mask adjoint: eliminate explicit magnitude and joint phase-only product	4504c563799b2337b0d28f1dffd9b0a8b09f5bd6	https://github.com/corcondor/gvqcc/pull/308
+309	open	Reproduce #298 gauge converter (190110 CCX) and #299 guard-span cache (183642 CCX) with Lean audit	8e93e6df96c884fd59b4944eacbcd2552e4aa900	https://github.com/corcondor/gvqcc/pull/309
+310	open	Full 900Q direct mask adjoint with retained inverse norm and 70-anchor residue	e7d8829e18d8c8588c5b0e273b21561b97ec7295	https://github.com/corcondor/gvqcc/pull/310
+311	open	Rank-99 multiplication: independent CRT tensor certificate and strict component tests	65b1be325d376d744d044a577f2eee064bde9ee9	https://github.com/corcondor/gvqcc/pull/311
+312	open	Complete #306 DQI scope and HMR signed-root frames (-270892 ops)	9e33fefbdbdb44de1cf2d0f5146e620dd06cd344	https://github.com/corcondor/gvqcc/pull/312
+313	open	Whole raw-S direct adjoint: rank-15 contraction, guard4, and singular shell audit	1c16984d7d9bcfca35269ca4b9231ccc83254db7	https://github.com/corcondor/gvqcc/pull/313
+314	open	Scope-aware HMR dual quotient: 317994 paid full DQI; first 899Q projection boundary	6d8eaade67a9d3bf98b21aa6cac1d187da3f75e1	https://github.com/corcondor/gvqcc/pull/314
+315	open	Affine-transported CCX observer debt across copies, basis changes and multiple HMRs	dc585b9cd31df6f8151162cb5accfb2774db3811	https://github.com/corcondor/gvqcc/pull/315
+316	open	GF(8) CRT rank-99 tensor and exact observer-debt certificates	da007ca86750be4c6eb5a0f0b057784aa3e36926	https://github.com/corcondor/gvqcc/pull/316
+317	open	Complete DQI quotient fusion: direct adjoint, clean lifetime sharing and packed projection	dc0833bcdc079d07ce2a993189b1d659c2451cbd	https://github.com/corcondor/gvqcc/pull/317
+318	open	Transported 13-bit hole chart and exact whole-tape 100→64 substitution	f421938278504459f7e22eca8d05399de3d549f0	https://github.com/corcondor/gvqcc/pull/318
+319	open	Rank99 multigroup contraction and actual #314/#318 full-tape integration	ceb9e3aca6f5ab330ec706b90fd92486f4af47a3	https://github.com/corcondor/gvqcc/pull/319
+320	open	Asymmetric GF16 output obstruction and 141 exact full-circuit rank99 transfers	5377e5d8804365add221d97e39499684f972fe7e	https://github.com/corcondor/gvqcc/pull/320
+321	open	Rank97 search: mixed-control quadratic synthesis and partial Hermite flags	f0a517fa4286720cd76d8f88204b09b6acb1979c	https://github.com/corcondor/gvqcc/pull/321
+322	open	Rank97 search beyond bilinear banks: mixed control planes and native admission	33642b3a270dcc3debdce1bc907e58f09f798d4b	https://github.com/corcondor/gvqcc/pull/322
+323	open	316094 rank97: exhaustive quotient-coset saturation and full native admission	b1b16dfe06535b99a85a69d04fb2ba6f92f9297e	https://github.com/corcondor/gvqcc/pull/323
+324	open	316094: full-tape shared-right pairs and exhaustive grouped rank neighborhood	ac3af5f7a888c01630764d9db251dcd65a32ac8c	https://github.com/corcondor/gvqcc/pull/324
+325	open	316094 rank97: all-333 CRT8 transfer and live norm pencil quotient	67c150e4e6f8b41698600cacc9704b10875d06f0	https://github.com/corcondor/gvqcc/pull/325
+326	open	Frobenius half-degree Bezout and packed transposed two-RHS return	606bdddbd4cd3f7b5604341fde90252581e426ec	https://github.com/corcondor/gvqcc/pull/326
+327	open	316094 rank96: exact GF4 rank32 route and all-type binary admission	c4957d5c161988dd5a69ad154f16cb54927429aa	https://github.com/corcondor/gvqcc/pull/327
+328	open	GF4 joint-lane and projective quotient search with independent whole-tape transfer	9e9501387b75be3dce7d0c0e4a3b48dc382efe80	https://github.com/corcondor/gvqcc/pull/328
+329	open	In-place Euclidean continuant reversal and Frobenius two-RHS quotient solve	3de79debaa6c77cc21fa4a82bf16d06398cc9a74	https://github.com/corcondor/gvqcc/pull/329
+330	open	Whole-tape nonlinear observer pooling with executed-paid admission	9de2e43f29da4a6286e9db4a4c948399ddafe180	https://github.com/corcondor/gvqcc/pull/330
+331	open	Whole DQI live affine relations and HMR return: serialized circuit rewrites	7e9dde5192369f6e84c6bafab2575ecd3d1ad4a4	https://github.com/corcondor/gvqcc/pull/331
+332	open	316094 full tape: measured adjoint at all 17 certified seams	e5b87460640b0053e6c91ff05b1bbe9352ef7f6b	https://github.com/corcondor/gvqcc/pull/332
+333	open	316089 lineage: interleaved Frobenius return, 10500 → 9954 CCX	f3a8ee75aa207e0f41d836085b18ed7f64367eff	https://github.com/corcondor/gvqcc/pull/333
+334	open	DQI: invariant ghost-annihilator filter and strict admission lemmas	2e567195957982b42925df9ad561807bac611947	https://github.com/corcondor/gvqcc/pull/334
+335	open	316089: residue-preserving singular GCD, sparse rational return, 2254 GF4096 charts	83032947133ae3bf79eb869d3a880509b763f65b	https://github.com/corcondor/gvqcc/pull/335
+336	open	Blocked residual GCD: integrate transposed division and return, 76494 → 43398 local CCX	04aa81efde58ffff3436c54ece2af8e3a853bc51	https://github.com/corcondor/gvqcc/pull/336
+337	open	Multiscale40: degree-70 gauge orbit and zero-paid transposed S71 recurrence	fdd8f0e6130f71f6663c701f3ecf064c38e554e2	https://github.com/corcondor/gvqcc/pull/337
+338	open	Multiscale40: singular Hankel residual and Frobenius diagonal phase adjoint	85f2a95488511555104ccdd83b1ac3f8dfa2264b	https://github.com/corcondor/gvqcc/pull/338
+339	open	Exact Hankel rank and monic locator residual admission (extends #334)	9b8b6cd681e982f7a08dc2de3717e1a9abaff1ad	https://github.com/corcondor/gvqcc/pull/339
+340	open	Reconstruct Gray72 selector from generator source; certify native dual-gauge selection	85471053eaf9b50aec9c715bb281f300806c09dd	https://github.com/corcondor/gvqcc/pull/340
