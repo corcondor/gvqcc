@@ -27,7 +27,12 @@ theorem scaled_pivot (s r x a y : R) (h : s*r=1) :
 
 theorem two_rhs_rectangle (a b c d u v : R) :
     ((a*u+b*v),(c*u+d*v)) =
-      (u*a+v*b,u*c+v*d) := by congr <;> ring
+      (u*a+v*b,u*c+v*d) := by
+  apply Prod.ext
+  · change a*u+b*v = u*a+v*b
+    ring
+  · change c*u+d*v = u*c+v*d
+    ring
 
 theorem residue_lift (a b q r k c s t rho p : R)
     (h2 : (2:R)=0) (hb : b=a*q+r) (hp : p=a*k+c)
