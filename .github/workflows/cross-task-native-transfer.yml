@@ -1,0 +1,19 @@
+name: Cross-task native transfer
+on:
+  pull_request:
+    paths:
+      - 'research/cross_task_native_20261128/**'
+      - '.github/workflows/cross-task-native-transfer.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lean algebra
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          "$HOME/.elan/bin/lean" research/cross_task_native_20261128/Transfer.lean | tee lean.log
+          ! grep -E 'sorryAx|error:' lean.log
+        shell: bash
+      - name: Build native pass
+        run: g++ -std=c++17 -O3 research/cross_task_native_20261128/affine_full.cpp -o affine_full
