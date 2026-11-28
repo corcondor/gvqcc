@@ -1,0 +1,142 @@
+name: Full DQI live-value affine and HMR return
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_live_affine_hmr_full/**'
+      - '.github/workflows/dqi-live-affine-hmr-full.yml'
+  workflow_dispatch:
+    inputs:
+      exact_run_id:
+        description: 'Actions artifact run containing exact #314 or #323 KMB'
+        type: string
+        required: false
+      exact_artifact:
+        description: 'Artifact name from the exact run'
+        type: string
+        required: false
+permissions:
+  contents: read
+  actions: read
+jobs:
+  full:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        donor: [low279, safe317]
+        mode: [unitary, hmr]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        if: matrix.donor == 'low279' && inputs.exact_run_id == ''
+        with:
+          name: exact-257-fft-research
+          run-id: 46121065738
+          github-token: ${{ github.token }}
+          path: /tmp/input
+      - uses: actions/download-artifact@v4
+        if: matrix.donor == 'safe317' && inputs.exact_run_id == ''
+        with:
+          name: full-quotient-fusion-native
+          run-id: 46149545108
+          github-token: ${{ github.token }}
+          path: /tmp/input
+      - uses: actions/download-artifact@v4
+        if: inputs.exact_run_id != ''
+        with:
+          name: ${{ inputs.exact_artifact }}
+          run-id: ${{ inputs.exact_run_id }}
+          github-token: ${{ github.token }}
+          path: /tmp/input
+      - name: Compile and rewrite the entire hash-pinned circuit
+        env:
+          DONOR: ${{ matrix.donor }}
+          MODE: ${{ matrix.mode }}
+          EXACT_RUN: ${{ inputs.exact_run_id }}
+        run: |
+          set -euo pipefail
+          pip install kickmix==1.0.0 numpy==2.2.6 scipy
+          mkdir -p /tmp/results
+          if [ -n "$EXACT_RUN" ]; then
+            f=$(find /tmp/input -type f -name '*.kmb' -print | while read -r path; do
+              hash=$(sha256sum "$path" | cut -d' ' -f1)
+              case "$hash" in
+                994ac1f372211f3599912ab7aeba8063e5332190c904769de853c58bdb600fff|54817e9385f24940585f5a391025152d4a65a36381887ca77b7bab61413ea2ec) echo "$path"; break;;
+              esac
+            done)
+          elif [ "$DONOR" = low279 ]; then
+            f=$(find /tmp/input -name fft257.kmb -print -quit)
+            echo "518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499  $f" | sha256sum -c
+          else
+            f=$(find /tmp/input -name dqi.kmb -print -quit)
+            echo "d3bc9e40b601f68e18c9710dd35b7c9e962d9454f61e02cfa9797c7f91c8f450  $f" | sha256sum -c
+          fi
+          test -n "$f"
+          sha256sum "$f" | tee /tmp/results/parent.sha256
+          echo "$f" > /tmp/parent_path
+          g++ -O3 -std=c++17 research/dqi_live_affine_hmr_full/live.cpp -o /tmp/live
+          /tmp/live "$f" /tmp/results/dqi.kmb "$MODE" pairs | tee /tmp/results/counts.json
+          python - <<'PY'
+          import json,kickmix as km
+          r=json.load(open('/tmp/results/counts.json'))
+          c=km.Circuit.from_file('/tmp/results/dqi.kmb')
+          assert len(c)==r['new_ops'] and c.num_qubits==r['Q']
+          assert int(c.operation_statistics().num_toffoli_like)==r['new_paid']
+          print('NATIVE READBACK OK',r)
+          PY
+      - name: Paired whole-circuit KickMix verification
+        run: |
+          set -euo pipefail
+          curl -fLsS --retry 2 'https://raw.githubusercontent.com/corcondor/gvqcc/dc585b9cd31df6f8151162cb5accfb2774db3811/research/dqi_affine_observer/verify_dqi.py' -o /tmp/paired.py
+          python /tmp/paired.py "$(cat /tmp/parent_path)" /tmp/results/dqi.kmb
+          cp /tmp/dual_receipt.json /tmp/results/
+          python - <<'PY'
+          import json
+          a,b=json.load(open('/tmp/results/dual_receipt.json')).values()
+          d={}
+          for k,v in a['panels'].items():
+              w=b['panels'][k]
+              d[k]={'shots':v['shots'],'before':v['mean_paid'],'after':w['mean_paid'],
+                    'before_errors':v['errors'],'after_errors':w['errors'],
+                    'digest_equal':v['paired_digest']==w['paired_digest']}
+          print('FULL_PAIRED',json.dumps(d),flush=True)
+          json.dump(d,open('/tmp/results/paired_summary.json','w'),indent=2)
+          assert all(v['digest_equal'] for v in d.values())
+          assert all(v['after']<=v['before'] for v in d.values())
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-full-${{ matrix.donor }}-${{ matrix.mode }}
+          path: /tmp/results/
+          compression-level: 3
+  local-and-lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: |
+          set -euo pipefail
+          pip install kickmix==1.0.0 numpy==2.2.6
+          g++ -O3 -std=c++17 research/dqi_live_affine_hmr_full/live.cpp -o /tmp/live
+          python research/dqi_live_affine_hmr_full/check_local.py /tmp/live
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_live_affine_hmr_full/LiveAffineHMR.lean | tee proof.log
+          test "$(grep -Ec 'depends on axioms|does not depend on any axioms' proof.log)" -eq 8
+          ! grep -E 'sorryAx|ofReduceBool|Lean.ofReduce' proof.log
+          python - <<'PY'
+          import re
+          for row in re.findall(r'depends on axioms: \[([^\]]*)\]',open('proof.log').read()):
+              assert {s.strip() for s in row.split(',') if s.strip()} <= {'propext','Classical.choice','Quot.sound'}
+          PY
