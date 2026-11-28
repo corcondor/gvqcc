@@ -14,3 +14,15 @@ Emitted output uncompressed SHA256: 91da349a53c2b2853513560ef2adbc2324101d448630
 These are different measurement seeds from the published 316094.00 paired baseline; not a new official score. Independent C++ full tape replay also passed with its own measurement RNG. Normalized native KickMix CI: 17408 paired checks, no state or phase mismatch, 101 and 67 paid per chart unchanged. Lean 4.35.0 six declarations, all axiom-free. Strict CI success: https://github.com/corcondor/gvqcc/actions/runs/46162602367.
 
 The measured-adjoint rewrite directly transports phase debt without restoring the measured nonlinear output. It does not implement full adaptive Euclidean degree dispatch, and it does not produce any paid improvement or fix existing stress errors. Do not submit or merge as an improved circuit.
+
+## Exact original 316094.00 paired comparator
+
+Recovered the original input generator, saved panel, 256-shot batch schedule and measurement seeds. Ran native KickMix 1.0.0 locally on both exact complete KMB hashes.
+
+| Panel | Shots | Mean paid before/after | Union before/after |
+|---|---:|---:|---:|
+| Distribution | 1024 | 316094.000 | 0 / 0 |
+| Saved622 | 622 | 316091.48713826365 | 411 / 411 |
+| Dense weights | 144 | 316149.6666666667 | 70 / 70 |
+
+All four paired difference counts zero. Same exact 316094 baseline, no paid or score gain. Full native log, verifier, source and receipts delivered in the research archive. No change to main or competition submission.
