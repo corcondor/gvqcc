@@ -1,0 +1,27 @@
+name: DQI CF source adapter
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cf_fusion_20261127/**'
+      - '.github/workflows/dqi-cf-source-adapter.yml'
+permissions:
+  contents: read
+jobs:
+  adapter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check pinned upstream and exact AST splice
+        shell: bash
+        run: |
+          set -euo pipefail
+          tmp=$(mktemp -d)
+          curl --fail --silent --show-error --location 'https://raw.githubusercontent.com/maxoubvd/google-quantum-ai/a9effc375527bf0b6962c178530d353eb70a3fcb/third_party/thembones-milestone-generators-v2/dqi/tools/dqi_int_pdrfix.py' -o "$tmp/pdrfix.py"
+          test "$(git hash-object "$tmp/pdrfix.py")" = 08224a897eb7aaa99a1f28b1b61d439cd4d4dc30
+          python research/dqi_cf_fusion_20261127/apply_coefficient_fusion.py "$tmp/pdrfix.py" "$tmp/fused.py"
+          python -m py_compile "$tmp/fused.py"
+          if python research/dqi_cf_fusion_20261127/apply_coefficient_fusion.py "$tmp/fused.py" "$tmp/twice.py"; then
+            echo "Unexpected repeated rewrite"
+            exit 1
+          fi
+          echo "Source-level adapter only, not native decoder verification"
