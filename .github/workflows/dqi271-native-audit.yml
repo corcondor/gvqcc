@@ -28,3 +28,19 @@ jobs:
         with:
           name: kickmix-cp313-runtime
           path: /tmp/native-runtime/*
+
+  upstream-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - run: |
+          set -euo pipefail
+          mkdir -p /tmp/source-export /tmp/public
+          curl -fLsS --retry 2 https://codeload.github.com/maxoubvd/google-quantum-ai/tar.gz/a9effc375527bf0b6962c178530d353eb70a3fcb | tar -xz --strip-components=1 -C /tmp/public
+          tar -czf /tmp/source-export/dqi-upstream.tar.gz -C /tmp/public generators/dqi/src google-verifiable-quantum-circuit-compilation/verifiers/dqi/verify_submission_dqi.py
+          sha256sum /tmp/source-export/dqi-upstream.tar.gz
+          du -h /tmp/source-export/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dqi-pinned-upstream-source
+          path: /tmp/source-export/dqi-upstream.tar.gz
