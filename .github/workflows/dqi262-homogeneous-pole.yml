@@ -1,0 +1,33 @@
+name: DQI 262 homogeneous pole strict Lean
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/HomogeneousPole262.lean'
+      - '.github/workflows/dqi262-homogeneous-pole.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true HomogeneousPole262.lean | tee homogeneous-pole.log
+          test "$(grep -c 'GVQCC.HomogeneousPole262.*axiom' homogeneous-pole.log)" -eq 5
+          ! grep -E 'sorryAx|ofReduceBool' homogeneous-pole.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: homogeneous-pole259-axioms
+          path: research/dqi_cutoff18_strict/homogeneous-pole.log
