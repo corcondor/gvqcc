@@ -1,0 +1,69 @@
+{
+  "parent": {
+    "sha256": "81081a88c27b708322f0724a09197814a18646a4a9969984ab9cf76a6e6cd7fa",
+    "Q": 900,
+    "ops": 69534364,
+    "CCX": 311617,
+    "CCZ": 6716,
+    "CSWAP": 0,
+    "static_paid": 318333
+  },
+  "candidate": {
+    "sha256": "5edeb26a740231b0083057a134384ed87fb125f320e6a3850d0c817085945e7a",
+    "Q": 900,
+    "ops": 69268024,
+    "CCX": 311509,
+    "CCZ": 6716,
+    "CSWAP": 108,
+    "static_paid": 318333
+  },
+  "matched_panels": {
+    "saved622": {
+      "shots": 622,
+      "errors": [
+        452,
+        229,
+        0,
+        0
+      ],
+      "union": 458,
+      "mean_paid": 316181.54823151126
+    },
+    "structured432": {
+      "shots": 432,
+      "errors": [
+        166,
+        82,
+        0,
+        0
+      ],
+      "union": 171,
+      "mean_paid": 196448.74305555556
+    },
+    "gap13": {
+      "shots": 256,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 316116.08203125
+    },
+    "ordinary1024": {
+      "shots": 1024,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 316172.59765625
+    }
+  },
+  "status": "rejected",
+  "official_verifier": false,
+  "whole_proof": false
+}
