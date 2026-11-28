@@ -1,0 +1,22 @@
+{
+  "reference_sha": "bb676b95f94c923cc5482f6cd8d457ab5ff3e8180c8f7cfd2c9678335d0ba56b",
+  "segment_source_ops": {
+    "begin": 4390,
+    "end_exclusive": 7352
+  },
+  "input_contract": "virtual q34 = 0 at op4390; physical q34 holds virtual q36; q35 unchanged",
+  "output_contract": "physical q34 recovers virtual q34; virtual q36=0 at op7352",
+  "virtual_original_CCX": 146,
+  "remat_CCX": 146,
+  "source_HMR": 126,
+  "emitted_HMR": 126,
+  "inserted_gates": 9,
+  "omitted_original_gates": 1,
+  "source_37Q_opcount": 2962,
+  "candidate_36Q_opcount": 2970,
+  "candidate_sha256": "6b743f7ea7fde6a8291b6c2ef24533bb7dc0073040e00b7c8951b5f05f560bce",
+  "formal_model": "Universal Boolean identity at ops7266..7273, phase preserved by wire isomorphism; not full 36Q oracle",
+  "full_native_verifier_ran": false,
+  "full_36Q_circuit": false,
+  "score_improvement": false
+}

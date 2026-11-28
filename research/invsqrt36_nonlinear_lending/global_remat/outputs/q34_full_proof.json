@@ -1,0 +1,15 @@
+{
+  "cut": 7293,
+  "source_sha256": "bb676b95f94c923cc5482f6cd8d457ab5ff3e8180c8f7cfd2c9678335d0ba56b",
+  "all_inputs": 4194304,
+  "input_qubits": 22,
+  "condition_blocks": 28,
+  "conditional_blocks_identity": true,
+  "no_standalone_conditional_state_changes": true,
+  "formula": "q34 = q33 & (1 XOR q5 XOR q7 XOR q15 XOR q21)",
+  "mismatches": 0,
+  "verified": true,
+  "elapsed_seconds": 0.28,
+  "nontrivial_q34_popcount": 530071,
+  "full_state_bitset_sha256": "c7e572969ca0620365370f1b7cfc686b44dbae3cdaa54fbcd6e88fa568b6ce08"
+}

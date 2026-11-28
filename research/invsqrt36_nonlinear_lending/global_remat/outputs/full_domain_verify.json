@@ -1,0 +1,51 @@
+{
+  "source_sha256": "bb676b95f94c923cc5482f6cd8d457ab5ff3e8180c8f7cfd2c9678335d0ba56b",
+  "candidate_segment_sha256": "6b743f7ea7fde6a8291b6c2ef24533bb7dc0073040e00b7c8951b5f05f560bce",
+  "scope": "actual 2962 source operations / 2970 compiled operations; 36Q chart-based suffix contract",
+  "all_input_basis_states": 4194304,
+  "measurement_recipes": 4,
+  "total_input_transcript_cases": 16777216,
+  "formal_all_branches_proved": false,
+  "compositional_relational_proof": "stable no-q34-use zone, universal one-CCX delayed-materialization identity, bit-exact q36 HMR renaming",
+  "cases": [
+    {
+      "seed": 0,
+      "inputs": 4194304,
+      "hmr_measurements_in_region": 126,
+      "bit_mismatch": 0,
+      "phase_mismatch": 0,
+      "classical_mismatch": 0,
+      "original_q36_zero": true
+    },
+    {
+      "seed": 1,
+      "inputs": 4194304,
+      "hmr_measurements_in_region": 126,
+      "bit_mismatch": 0,
+      "phase_mismatch": 0,
+      "classical_mismatch": 0,
+      "original_q36_zero": true
+    },
+    {
+      "seed": 2,
+      "inputs": 4194304,
+      "hmr_measurements_in_region": 126,
+      "bit_mismatch": 0,
+      "phase_mismatch": 0,
+      "classical_mismatch": 0,
+      "original_q36_zero": true
+    },
+    {
+      "seed": 3,
+      "inputs": 4194304,
+      "hmr_measurements_in_region": 126,
+      "bit_mismatch": 0,
+      "phase_mismatch": 0,
+      "classical_mismatch": 0,
+      "original_q36_zero": true
+    }
+  ],
+  "complete_inv_sqrt_36Q": false,
+  "official_verifier_run": false,
+  "elapsed_s": 4.89
+}
