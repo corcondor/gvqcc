@@ -43,11 +43,11 @@ theorem recovered_cx (a b c d : Bool) :
 
 theorem phase_merge (m a b c : Bool) :
     Bool.xor (m && a) (m && Bool.xor b c) =
-    m && Bool.xor (Bool.xor a b) c := by
+    (m && Bool.xor (Bool.xor a b) c) := by
   cases m <;> cases a <;> cases b <;> cases c <;> rfl
 
 theorem measured_old_word (r x p : Bool) :
-    Bool.xor (r && Bool.xor x p) (r && p) = r && x := by
+    Bool.xor (r && Bool.xor x p) (r && p) = (r && x) := by
   cases r <;> cases x <;> cases p <;> rfl
 
 #print axioms debt_step
