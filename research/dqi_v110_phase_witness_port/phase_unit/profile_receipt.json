@@ -1,0 +1,458 @@
+{
+  "raw_sha256": "7759e19007e3f60abadb1f7d1427d4901340acf1c4d202088e89a1cb796d7387",
+  "cases": 1249,
+  "forward_inverse_sector_pairs": 2498,
+  "profiles": 5,
+  "panels": {
+    "saved": [
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 525,
+        "school_slots": 1105,
+        "merge_blocked_slots": 764,
+        "school_paired_ccx_model": 185640,
+        "merge_blocked_paired_ccx_model": 128352
+      },
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 39,
+        "school_slots": 883,
+        "merge_blocked_slots": 590,
+        "school_paired_ccx_model": 148344,
+        "merge_blocked_paired_ccx_model": 99120
+      },
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 35,
+        "school_slots": 613,
+        "merge_blocked_slots": 397,
+        "school_paired_ccx_model": 102984,
+        "merge_blocked_paired_ccx_model": 66696
+      },
+      {
+        "degrees": [
+          17,
+          16,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 23,
+        "school_slots": 279,
+        "merge_blocked_slots": 184,
+        "school_paired_ccx_model": 46872,
+        "merge_blocked_paired_ccx_model": 30912
+      }
+    ],
+    "cross": [
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 165,
+        "school_slots": 1105,
+        "merge_blocked_slots": 764,
+        "school_paired_ccx_model": 185640,
+        "merge_blocked_paired_ccx_model": 128352
+      },
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 4,
+        "school_slots": 883,
+        "merge_blocked_slots": 590,
+        "school_paired_ccx_model": 148344,
+        "merge_blocked_paired_ccx_model": 99120
+      }
+    ],
+    "fresh": [
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 239,
+        "school_slots": 1105,
+        "merge_blocked_slots": 764,
+        "school_paired_ccx_model": 185640,
+        "merge_blocked_paired_ccx_model": 128352
+      },
+      {
+        "degrees": [
+          17,
+          16,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 16,
+        "school_slots": 279,
+        "merge_blocked_slots": 184,
+        "school_paired_ccx_model": 46872,
+        "merge_blocked_paired_ccx_model": 30912
+      },
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 16,
+        "school_slots": 613,
+        "merge_blocked_slots": 397,
+        "school_paired_ccx_model": 102984,
+        "merge_blocked_paired_ccx_model": 66696
+      },
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 16,
+        "school_slots": 883,
+        "merge_blocked_slots": 590,
+        "school_paired_ccx_model": 148344,
+        "merge_blocked_paired_ccx_model": 99120
+      },
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 1,
+        "school_slots": 1082,
+        "merge_blocked_slots": 741,
+        "school_paired_ccx_model": 181776,
+        "merge_blocked_paired_ccx_model": 124488
+      }
+    ],
+    "cross_inverse_frob4": [
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 165,
+        "school_slots": 1105,
+        "merge_blocked_slots": 764,
+        "school_paired_ccx_model": 185640,
+        "merge_blocked_paired_ccx_model": 128352
+      },
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 4,
+        "school_slots": 883,
+        "merge_blocked_slots": 590,
+        "school_paired_ccx_model": 148344,
+        "merge_blocked_paired_ccx_model": 99120
+      }
+    ],
+    "w33": [
+      {
+        "degrees": [
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "count": 1,
+        "school_slots": 1105,
+        "merge_blocked_slots": 764,
+        "school_paired_ccx_model": 185640,
+        "merge_blocked_paired_ccx_model": 128352
+      }
+    ]
+  },
+  "total_profiles": [
+    {
+      "degrees": [
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "count": 1095,
+      "school_slots": 1105,
+      "merge_blocked_slots": 764,
+      "school_paired_ccx_model": 185640,
+      "merge_blocked_paired_ccx_model": 128352
+    },
+    {
+      "degrees": [
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "count": 63,
+      "school_slots": 883,
+      "merge_blocked_slots": 590,
+      "school_paired_ccx_model": 148344,
+      "merge_blocked_paired_ccx_model": 99120
+    },
+    {
+      "degrees": [
+        17,
+        16,
+        15,
+        14,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "count": 51,
+      "school_slots": 613,
+      "merge_blocked_slots": 397,
+      "school_paired_ccx_model": 102984,
+      "merge_blocked_paired_ccx_model": 66696
+    },
+    {
+      "degrees": [
+        17,
+        16,
+        3,
+        2,
+        1,
+        0
+      ],
+      "count": 39,
+      "school_slots": 279,
+      "merge_blocked_slots": 184,
+      "school_paired_ccx_model": 46872,
+      "merge_blocked_paired_ccx_model": 30912
+    },
+    {
+      "degrees": [
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "count": 1,
+      "school_slots": 1082,
+      "merge_blocked_slots": 741,
+      "school_paired_ccx_model": 181776,
+      "merge_blocked_paired_ccx_model": 124488
+    }
+  ],
+  "exclusions": [
+    "Euclidean control/coefficient generation",
+    "in-place basis frames and temporary wiring",
+    "exact native costs of quantum scaling and cleanup",
+    "other adapter work"
+  ],
+  "static_reference_headroom": 26384
+}

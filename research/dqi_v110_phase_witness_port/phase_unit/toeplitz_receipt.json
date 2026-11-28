@@ -1,0 +1,50 @@
+[
+  {
+    "rows": 8,
+    "cols": 8,
+    "blocked": false,
+    "qubits": 865,
+    "shots_each_direction": 1024,
+    "instructions": 32640,
+    "ccx": 2688,
+    "paid": 2688,
+    "standalone_t": 0,
+    "sha256": "b433b6b4d908c24abd009d79fd06c78c39a8a310579016a335536b9922b0faae"
+  },
+  {
+    "rows": 8,
+    "cols": 8,
+    "blocked": true,
+    "qubits": 865,
+    "shots_each_direction": 1024,
+    "instructions": 58018,
+    "ccx": 630,
+    "paid": 630,
+    "standalone_t": 0,
+    "sha256": "08bec38a7e138a768460ba10983fdac63dce4177c71d5e191c42acfe4ef6d835"
+  },
+  {
+    "rows": 7,
+    "cols": 10,
+    "blocked": false,
+    "qubits": 865,
+    "shots_each_direction": 1024,
+    "instructions": 35700,
+    "ccx": 2940,
+    "paid": 2940,
+    "standalone_t": 0,
+    "sha256": "b3eb001376febf7381b623f3c5494fecfcff35db10e56d3801d898f6c988690b"
+  },
+  {
+    "rows": 7,
+    "cols": 10,
+    "blocked": true,
+    "qubits": 865,
+    "shots_each_direction": 1024,
+    "instructions": 65047,
+    "ccx": 672,
+    "paid": 672,
+    "standalone_t": 0,
+    "sha256": "bb3a2acb2537a721a190f9a66f67d412b81a384e55490682680d6014b11ae287"
+  }
+]

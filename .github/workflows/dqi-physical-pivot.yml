@@ -9,6 +9,7 @@ on:
       - 'research/dqi_v110_phase_witness_port/phase_spectral/SpectralMiddle.lean'
       - 'research/dqi_v110_phase_witness_port/phase_windows/WindowTransport.lean'
       - 'research/dqi_v110_phase_witness_port/phase_erase/NumeratorErase.lean'
+      - 'research/dqi_v110_phase_witness_port/phase_unit/EuclideanUnit.lean'
       - '.github/workflows/dqi-physical-pivot.yml'
   workflow_dispatch:
 permissions:
@@ -26,3 +27,4 @@ jobs:
           "$HOME/.elan/bin/lean" -DwarningAsError=true research/dqi_v110_phase_witness_port/phase_spectral/SpectralMiddle.lean
           "$HOME/.elan/bin/lean" -DwarningAsError=true research/dqi_v110_phase_witness_port/phase_windows/WindowTransport.lean
           "$HOME/.elan/bin/lean" -DwarningAsError=true research/dqi_v110_phase_witness_port/phase_erase/NumeratorErase.lean
+          "$HOME/.elan/bin/lean" -DwarningAsError=true research/dqi_v110_phase_witness_port/phase_unit/EuclideanUnit.lean
