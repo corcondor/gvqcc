@@ -1,0 +1,38 @@
+--- a/research/dqi_cutoff18_strict/AnchorPivot.lean
++++ b/research/dqi_cutoff18_strict/AnchorPivot.lean
+@@ -1,4 +1,7 @@
+-import Mathlib
++import Mathlib.Tactic.Ring
++import Mathlib.Tactic.Push
++import Mathlib.Algebra.BigOperators.Group.Finset.Basic
++import Mathlib.Algebra.Field.Basic
+ namespace GVQCC.AnchorPivot
+ open scoped BigOperators
+ 
+@@ -13,7 +16,7 @@
+     ∃ j, B i j ≠ 0 := by
+   classical
+   by_contra hn
+-  push_neg at hn
++  push Not at hn
+   let v : I → F := fun k => if k = i then 1 else 0
+   have hv : ∀ j, (∑ k, v k * B k j) = 0 := by
+     intro j
+@@ -24,7 +27,7 @@
+       simp [v, hn]
+     · simp [v, e]
+   have hz := h v hv i
+-  simpa [v] using hz
++  simp [v] at hz
+ 
+ theorem nonzero_partner {I : Type*} (B : I → I → F) (i : I)
+     (hr : ∃ j, B i j ≠ 0) (hd : B i i = 0) :
+@@ -59,7 +62,7 @@
+   · rw [cancel, sub_add_cancel]
+ 
+ /-- A source pair has a nonzero local orientation under coprimality. -/
+-theorem local_orientation (a b : F) (h : a ≠ 0 ∨ b ≠ 0) :
++theorem local_orientation [DecidableEq F] (a b : F) (h : a ≠ 0 ∨ b ≠ 0) :
+     (if b = 0 then a else b) ≠ 0 := by
+   classical
+   by_cases hb : b = 0

@@ -1,0 +1,98 @@
+[
+  {
+    "delta": 1,
+    "reverse": false,
+    "shared": false,
+    "qubits": 72,
+    "shots": 1024,
+    "ccx": 84,
+    "paid": 84,
+    "standalone_t": 0,
+    "instructions": 1020,
+    "sha256": "43fc326e6d88bf21dd1e1b2ed4dd2a1f4c7b1cc1edfde57c23058b264ebce1aa"
+  },
+  {
+    "delta": 1,
+    "reverse": false,
+    "shared": true,
+    "qubits": 72,
+    "shots": 1024,
+    "ccx": 84,
+    "paid": 84,
+    "standalone_t": 0,
+    "instructions": 870,
+    "sha256": "e1f824dc14419c5a799f920d2ea19b22e31a03d97c7da626027050ea76651531"
+  },
+  {
+    "delta": 1,
+    "reverse": true,
+    "shared": false,
+    "qubits": 72,
+    "shots": 1024,
+    "ccx": 84,
+    "paid": 84,
+    "standalone_t": 0,
+    "instructions": 1020,
+    "sha256": "43fc326e6d88bf21dd1e1b2ed4dd2a1f4c7b1cc1edfde57c23058b264ebce1aa"
+  },
+  {
+    "delta": 1,
+    "reverse": true,
+    "shared": true,
+    "qubits": 72,
+    "shots": 1024,
+    "ccx": 84,
+    "paid": 84,
+    "standalone_t": 0,
+    "instructions": 870,
+    "sha256": "e1f824dc14419c5a799f920d2ea19b22e31a03d97c7da626027050ea76651531"
+  },
+  {
+    "delta": 1017,
+    "reverse": false,
+    "shared": false,
+    "qubits": 72,
+    "shots": 1024,
+    "ccx": 84,
+    "paid": 84,
+    "standalone_t": 0,
+    "instructions": 1190,
+    "sha256": "0e3ada94c7e741cd2628106d4e55eeaff37671d2249b6be871b7658339078fb9"
+  },
+  {
+    "delta": 1017,
+    "reverse": false,
+    "shared": true,
+    "qubits": 72,
+    "shots": 1024,
+    "ccx": 84,
+    "paid": 84,
+    "standalone_t": 0,
+    "instructions": 1040,
+    "sha256": "c317c18ab6e73df599a3dc2e6a920515b7b9ca58bd74fcbd9ec7afdf8d938f06"
+  },
+  {
+    "delta": 1017,
+    "reverse": true,
+    "shared": false,
+    "qubits": 72,
+    "shots": 1024,
+    "ccx": 84,
+    "paid": 84,
+    "standalone_t": 0,
+    "instructions": 1172,
+    "sha256": "3dbcae871896c3c957420ee893af1b3e73e5cd988da54f01c304f266cf629819"
+  },
+  {
+    "delta": 1017,
+    "reverse": true,
+    "shared": true,
+    "qubits": 72,
+    "shots": 1024,
+    "ccx": 84,
+    "paid": 84,
+    "standalone_t": 0,
+    "instructions": 1022,
+    "sha256": "703a0d74582f042ce79f880af9ffd268727d71c8483ebdf96d8154f2b5d76259"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "mode": "undo",
+    "delta": 1,
+    "width": 96,
+    "paid": 84,
+    "instructions": 894,
+    "good_shots": 1024,
+    "good_phase_flips": 0,
+    "negative_shots": 0,
+    "negative_phase_flips": 0,
+    "sha256": "25f7cf437c633560c30e128b43db290cdbcde61d0aafe2669134a2e5881d4ccd"
+  },
+  {
+    "mode": "production",
+    "delta": 1,
+    "width": 96,
+    "paid": 0,
+    "instructions": 492,
+    "good_shots": 1024,
+    "good_phase_flips": 0,
+    "negative_shots": 0,
+    "negative_phase_flips": 0,
+    "sha256": "a5f70905739ea6b51423b4a8e6a1600c20f091d4e7765e33eab430f526e2a11a"
+  },
+  {
+    "mode": "diagnostic",
+    "delta": 1,
+    "width": 96,
+    "paid": 0,
+    "instructions": 468,
+    "good_shots": 1024,
+    "good_phase_flips": 0,
+    "negative_shots": 256,
+    "negative_phase_flips": 122,
+    "sha256": "7cb0c8d5798641c67a01c6fe3bfb4f60793d42e868f684baf9ac3082e9a40a72"
+  },
+  {
+    "mode": "uncompensated",
+    "delta": 1,
+    "width": 96,
+    "paid": 0,
+    "instructions": 24,
+    "good_shots": 1024,
+    "good_phase_flips": 514,
+    "negative_shots": 256,
+    "negative_phase_flips": 129,
+    "sha256": "49b01ad12a70f1d20fb65d1b2cf9c87bb314ec844eed36baf532ec9978c8dd97"
+  },
+  {
+    "mode": "undo",
+    "delta": 1017,
+    "width": 96,
+    "paid": 84,
+    "instructions": 1062,
+    "good_shots": 1024,
+    "good_phase_flips": 0,
+    "negative_shots": 0,
+    "negative_phase_flips": 0,
+    "sha256": "1ef930b507c26bf7022f7d4bce6cbc59c61a51590f194a7f6ecd93f309a0cd6e"
+  },
+  {
+    "mode": "production",
+    "delta": 1017,
+    "width": 96,
+    "paid": 0,
+    "instructions": 660,
+    "good_shots": 1024,
+    "good_phase_flips": 0,
+    "negative_shots": 0,
+    "negative_phase_flips": 0,
+    "sha256": "58910808dccfe3523ca8920a9a6fa709a784887e49227ca1698b3e4b313e394d"
+  },
+  {
+    "mode": "diagnostic",
+    "delta": 1017,
+    "width": 96,
+    "paid": 0,
+    "instructions": 636,
+    "good_shots": 1024,
+    "good_phase_flips": 0,
+    "negative_shots": 256,
+    "negative_phase_flips": 128,
+    "sha256": "812ada256052c39e9b267cb0ee29748817cfa63628d1af71c7ff218f01132c03"
+  },
+  {
+    "mode": "uncompensated",
+    "delta": 1017,
+    "width": 96,
+    "paid": 0,
+    "instructions": 24,
+    "good_shots": 1024,
+    "good_phase_flips": 488,
+    "negative_shots": 256,
+    "negative_phase_flips": 122,
+    "sha256": "49b01ad12a70f1d20fb65d1b2cf9c87bb314ec844eed36baf532ec9978c8dd97"
+  }
+]
