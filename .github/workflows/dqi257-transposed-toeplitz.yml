@@ -1,0 +1,33 @@
+name: DQI 257 transposed Toeplitz algebra
+on:
+  pull_request:
+    paths:
+      - 'research/dqi257_transposed_toeplitz/**'
+      - 'research/dqi_cutoff18_strict/TransposedMiddle.lean'
+      - 'research/dqi_cutoff18_strict/SharedReciprocal.lean'
+      - '.github/workflows/dqi257-transposed-toeplitz.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          for f in SharedResidualFFT TransposedMiddle SharedReciprocal; do
+            lake env lean -DwarningAsError=true "$f.lean" | tee "$f.log"
+            ! grep -E 'sorryAx|ofReduceBool' "$f.log"
+          done
+          test "$(grep -c 'GVQCC.TransposedMiddle.*axiom' TransposedMiddle.log)" -eq 5
+          test "$(grep -c 'GVQCC.SharedReciprocal.*axiom' SharedReciprocal.log)" -eq 12
