@@ -1,0 +1,33 @@
+name: DQI history-free joint gauge strict proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/JointHistoryFree.lean'
+      - '.github/workflows/dqi-joint-history-free.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true JointHistoryFree.lean | tee joint-history-free.log
+          test "$(grep -Ec 'GVQCC.JointHistoryFree.*axiom' joint-history-free.log)" -eq 14
+          ! grep -E 'sorryAx|ofReduceBool|native_decide' joint-history-free.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: joint-history-free-proof
+          path: research/dqi_cutoff18_strict/joint-history-free.log
