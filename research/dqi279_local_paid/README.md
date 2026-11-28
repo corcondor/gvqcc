@@ -1,0 +1,5 @@
+# Local paid-gate reduction from #279
+
+Keep the exact #279 decoder and coefficient layout. Use the already-supported second public-mask gauge only when its additional phase correction is outweighed by the guard savings. The compact variant uses 1024 candidate slopes, two candidates for full counting, a strict comparison, and an affine comparator/swap. No input syndrome, secret salt or verifier state is used for gauge selection.
+
+On the same 2048 ordinary samples (seed 20261128), parent mean paid 316151.99658203125; full slope search 316148.30126953125; compact 316151.49169921875. All four error and paired-difference counters zero. Compact instructions 67528845 vs parent 67549292, Q=900, static paid 318344 vs 318333. The independent follow-up timed out before completion; candidate 3584 observations had zero errors. No official-score claim; inherited dense failures remain. Twelve new Lean statements are submitted for CI, not yet certified. Reproducer, exact source and binary are provided in the accompanying research archives.
