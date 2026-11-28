@@ -1,0 +1,37 @@
+{
+  "working_parent": {
+    "pr": 257,
+    "sha256": "81081a88c27b708322f0724a09197814a18646a4a9969984ab9cf76a6e6cd7fa",
+    "Q": 900,
+    "ops": 69534364,
+    "static_paid": 318333,
+    "ordinary_mean_paid": 316126.84765625,
+    "ordinary_shots": 2048,
+    "ordinary_errors": 0
+  },
+  "saved": {
+    "shots": 622,
+    "value": 452,
+    "phase": 230,
+    "dirty": 0,
+    "mask": 0,
+    "union": 454,
+    "mean_paid": 316139.615755627,
+    "seed": 64571
+  },
+  "affine_pair_scan": {
+    "examined": 304247,
+    "ccx_pairs": 0,
+    "ccz_folds": 0,
+    "static_paid_saved": 0,
+    "output_sha256": "81081a88c27b708322f0724a09197814a18646a4a9969984ab9cf76a6e6cd7fa"
+  },
+  "active_candidate": null,
+  "excluded_prs": [
+    274,
+    277,
+    267
+  ],
+  "policy": "Keep #257 as sole cost baseline. All larger experimental replacements excluded from active candidates; retain audit history. No candidate promoted without strict zero errors and ordinary mean paid improvement. No deletion of repository history, no submission.",
+  "blocker": "Vercel quota; native test performed locally. Not a new repair or score."
+}
