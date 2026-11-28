@@ -5,7 +5,7 @@ namespace GVQCC.SharedFFTScan
 variable {F : Type} [Field F]
 
 /-- Recursive coefficient bank: the two halves at level n+1 each have 2^n words. -/
-def Bank (F : Type) : Nat → Type
+abbrev Bank (F : Type) : Nat → Type
   | 0 => F
   | n+1 => Bank F n × Bank F n
 
@@ -81,7 +81,7 @@ theorem shear_inactive (n : Nat) (c : F) (a : Bank F n) :
   rw [bank_zero_scale, bank_add_zero]
 
 /-- The offset-dependent normalized subspace value c at each internal node. -/
-def Plan (F : Type) : Nat → Type
+abbrev Plan (F : Type) : Nat → Type
   | 0 => Unit
   | n+1 => F × (Plan F n × Plan F n)
 
@@ -113,7 +113,7 @@ theorem scan_correct (h : (2:F)=0) (n : Nat) (a : Bank F n) (p : Plan F n) :
       simp only [scan, expected, ih, shear_next, shear_cancel h]
 
 theorem scan_restores (h : (2:F)=0) (n : Nat) (a : Bank F n) (p : Plan F n) :
-    (scan n a p).1 = a := by rw [scan_correct h]; rfl
+    (scan n a p).1 = a := by rw [scan_correct h]
 
 theorem scan_inactive (h : (2:F)=0) (n : Nat) (a : Bank F n) (c : F)
     (pl pr : Plan F n) :
@@ -123,7 +123,7 @@ theorem scan_inactive (h : (2:F)=0) (n : Nat) (a : Bank F n) (c : F)
   simp only [expected, shear_inactive]
 
 /-- Independent product-basis semantics along a path. -/
-def Point (F : Type) : Nat → Type
+abbrev Point (F : Type) : Nat → Type
   | 0 => Unit
   | n+1 => F × Point F n
 
@@ -147,7 +147,7 @@ theorem evaluate_scale (n : Nat) (c : F) (a : Bank F n) (p : Point F n) :
       simp only [evaluate, scaleV, ih]
       ring
 
-def Path : Nat → Type
+abbrev Path : Nat → Type
   | 0 => Unit
   | n+1 => Bool × Path n
 
