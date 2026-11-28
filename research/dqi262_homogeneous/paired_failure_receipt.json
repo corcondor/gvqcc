@@ -1,0 +1,68 @@
+{
+  "hash": "8db1fd9d2b03979e355659e8cf2df421c3938e44133a5b760c9e7242d5afe9b9",
+  "shots": 102400,
+  "failures": [
+    {
+      "batch": 157,
+      "indices": [
+        244
+      ],
+      "errors": [
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "mean_paid": 412884.1909667969,
+  "paired": [
+    {
+      "batch": 157,
+      "path": "joint_monotone.kmb",
+      "sha": "8db1fd9d2b03979e355659e8cf2df421c3938e44133a5b760c9e7242d5afe9b9",
+      "errors": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "indices": [
+        244
+      ],
+      "paid": 105698782
+    },
+    {
+      "batch": 157,
+      "path": "joint_alias.kmb",
+      "sha": "7c592390e55b713b190e73ebb18f5f0d04fb230089dc29de940460683bb4695c",
+      "errors": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "indices": [
+        244
+      ],
+      "paid": 105772510
+    },
+    {
+      "batch": 157,
+      "path": "full_fft.kmb",
+      "sha": "4172a26e1bc065904c56faf113701d7bc04844578863adbbde2f6285735915fd",
+      "errors": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "indices": [
+        244
+      ],
+      "paid": 106039774
+    }
+  ]
+}
