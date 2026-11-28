@@ -1,0 +1,22 @@
+name: V122 pole schedule proof
+on:
+  pull_request:
+    paths:
+      - 'research/v122_pole_cost/**'
+      - '.github/workflows/v122-pole-proof.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Strict Lean proof and axiom audit
+        run: |
+          set -euo pipefail
+          ~/.elan/bin/lean --version
+          ~/.elan/bin/lean -DwarningAsError=true research/v122_pole_cost/PoleSchedule.lean | tee proof.log
+          test "$(grep -c 'GVQCC.PoleSchedule.*axiom' proof.log)" -eq 7
+          ! grep -E 'sorryAx|Lean.ofReduceBool' proof.log
