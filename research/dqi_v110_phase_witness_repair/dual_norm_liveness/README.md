@@ -87,3 +87,22 @@ solved, 840Q and 24,276 to 10,500 CCX, 512 matched local samples each
 without errors. No cost for generating the half-degree inverses or
 integrating raw-S is included. Do not credit those component savings
 to the full 316094.000 tape.
+
+## Cost of manufacturing the missing norm
+
+In the depth-one XOR-AND model, a standalone N(a) has 12 output
+bits and every nonzero output functional has alternating rank 24.
+Each AND between two input linear forms adds rank at most two.
+With r such products, output labels therefore form a binary linear
+[r,12,>=12] code. The Griesmer sum is
+12+6+3+2+8=31, so a separate norm producer in that model would take
+at least 31 ANDs. Even the 84-CCX consumer plus this lower bound is
+115, above the original 99. This says nothing about joint synthesis,
+cheaper contextual production, or general nonlinear XOR-AND circuits.
+
+An additional cross-site check finds no simple amortization: across
+the same 4,096 shots, the left norms of the 53 sites have jointly
+independent coefficient spaces (combined rank 636/636, zero
+intersections for all 1,378 pairs). Computing one left norm and
+reusing it as another via a fixed linear map cannot work on this tape.
+Reproduce with `python shared_a.py` after the earlier capture.
