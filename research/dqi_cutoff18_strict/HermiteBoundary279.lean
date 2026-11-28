@@ -4,7 +4,7 @@ namespace GVQCC.HermiteBoundary279
 open Polynomial
 
 section Field
-variable {F : Type*} [Field F]
+variable {F : Type*} [Field F] [DecidableEq F]
 
 /-- A first-order jet is u+epsilon*v modulo epsilon^2. -/
 def jetMul (a b : F × F) : F × F :=
@@ -30,10 +30,9 @@ theorem inv_jet_unit (h : (2:F)=0) (u v : F) (hu : u ≠ 0) :
   apply Prod.ext
   · simp [jetMul, hu]
   · change u*(v/u^2)+v*u⁻¹ = 0
-    field_simp
     calc
-      _ = (2:F)*u*v := by ring
-      _ = 0 := by rw [h, zero_mul, zero_mul]
+      _ = (2:F)*(v/u) := by field_simp <;> ring
+      _ = 0 := by rw [h, zero_mul]
 
 theorem inv_jet_zero (v : F) : invJet 0 v = (0,v) := by simp [invJet]
 
@@ -42,10 +41,10 @@ theorem inv_jet_involutive (u v : F) :
   by_cases hu : u=0
   · subst u
     simp [invJet]
-  · simp only [invJet, if_neg hu, inv_ne_zero hu, inv_inv]
+  · simp only [invJet, if_neg hu, if_neg (inv_ne_zero hu), inv_inv]
     apply Prod.ext
     · rfl
-    · field_simp
+    · field_simp <;> ring
 
 /-- The unguarded inverse jet loses its derivative at u=0, unlike the
     zero-safe completion; hence a proof on units alone cannot certify
@@ -84,13 +83,16 @@ theorem padded_residue_equiv (D N G : Polynomial F) (x e : F)
   have he : e*(G.eval x*(derivative D).eval x) =
       G.eval x*(e*(derivative D).eval x) := by ring
   rw [he]
-  exact mul_right_inj' hg
+  constructor
+  · exact mul_left_cancel₀ hg
+  · intro h
+    rw [h]
 
 theorem padded_root_equiv (D G : Polynomial F) (x : F) (hg : G.eval x ≠ 0) :
     (G*D).eval x = 0 ↔ D.eval x=0 := by
   simp [eval_mul,hg]
 
-theorem dual_jet_factor (h : (2:F)=0) (u v : F) (hu : u≠0) :
+theorem dual_jet_factor (_h : (2:F)=0) (u v : F) (hu : u≠0) :
     (u^2)*(invJet u v).2 = v := by
   rw [invJet,if_neg hu]
   change u^2*(v/u^2)=v
@@ -123,9 +125,9 @@ theorem half_degree_identity (h : (2:R)=0)
 
 theorem half_degree_derivative (h : (2:R)=0) (A B : Polynomial R) :
     derivative (A^2+X*B^2) = B^2 := by
-  rw [pow_two,pow_two,derivative_add,derivative_mul,derivative_mul,derivative_X,one_mul,
-    derivative_mul]
-  have hpoly : (2:Polynomial R)=0 := by exact_mod_cast h
+  simp only [pow_two, derivative_add, derivative_mul, derivative_X, one_mul]
+  have hpoly : (2:Polynomial R)=0 := by
+    simpa using congrArg (C : R →+* Polynomial R) h
   calc
     _ = B*B+(2:Polynomial R)*(A*derivative A+X*B*derivative B) := by ring
     _ = _ := by simp [hpoly]
