@@ -1,0 +1,8 @@
+scan 25000000 hmr 2334 certified 100
+scan 30000000 hmr 8059 certified 157
+scan 40000000 hmr 25804 certified 343
+scan 45000000 hmr 57454 certified 343
+scan 50000000 hmr 60401 certified 344
+scan 55000000 hmr 67347 certified 594
+scan 65000000 hmr 75124 certified 923
+hmrs 80632 symbolic 938 zero 615 eligible 406 zero_eligible 265 removed 13964 added 183 paid_removed 0 Q 900 ops 69520583 paid 318333
