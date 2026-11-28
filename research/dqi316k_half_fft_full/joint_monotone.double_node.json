@@ -1,0 +1,28 @@
+{
+  "Q": 899,
+  "ops": 31492625,
+  "static_paid": 471677,
+  "sha256": "8db1fd9d2b03979e355659e8cf2df421c3938e44133a5b760c9e7242d5afe9b9",
+  "panels": {
+    "double_node": {
+      "shots": 408,
+      "value": 0,
+      "phase_raw": 0,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 0,
+      "paid": 156552216,
+      "mean_paid": 383706.4117647059
+    },
+    "two_distinct_nodes": {
+      "shots": 408,
+      "value": 0,
+      "phase_raw": 0,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 0,
+      "paid": 156419215,
+      "mean_paid": 383380.4289215686
+    }
+  }
+}
