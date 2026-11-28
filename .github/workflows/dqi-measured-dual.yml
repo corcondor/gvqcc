@@ -1,0 +1,35 @@
+name: DQI measured dual contraction strict Lean
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/MeasuredDual299.lean'
+      - '.github/workflows/dqi-measured-dual.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true MeasuredDual299.lean | tee measured-dual.log
+          python - <<'PY'
+          import re
+          s=open('measured-dual.log').read()
+          rows=re.findall(r'depends on axioms: \[([^\]]*)\]',s)
+          closed=re.findall(r'does not depend on any axioms',s)
+          assert len(rows)+len(closed)==9
+          for row in rows:
+              assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'},row
+          PY
