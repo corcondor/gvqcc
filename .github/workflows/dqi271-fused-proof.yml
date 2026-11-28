@@ -1,0 +1,31 @@
+name: DQI 271 fused all-gap proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/FusedAllGap.lean'
+      - '.github/workflows/dqi271-fused-proof.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          cd research/dqi_cutoff18_strict
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true FusedAllGap.lean | tee fused.log
+          test "$(grep -c 'GVQCC.FusedAllGap.*axiom' fused.log)" -eq 5
+          ! grep -E 'sorryAx|ofReduceBool' fused.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fused-allgap-axioms
+          path: research/dqi_cutoff18_strict/fused.log
