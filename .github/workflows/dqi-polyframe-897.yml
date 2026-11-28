@@ -1,0 +1,30 @@
+name: DQI polynomial frame local proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_polyframe_897/**'
+      - '.github/workflows/dqi-polyframe-897.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Kernel check and axiom audit
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_polyframe_897/PolyFrame.lean | tee axioms.txt
+          test "$(grep -c 'GVQCC.PolyFrame.*axiom' axioms.txt)" -eq 10
+          ! grep -Eq 'sorryAx|ofReduceBool' axioms.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: polynomial-frame-axioms
+          path: axioms.txt
