@@ -1,0 +1,30 @@
+name: DQI 271 native runtime export and independent kernel audit
+on:
+  pull_request:
+    paths:
+      - 'research/dqi271_native_audit/**'
+      - '.github/workflows/dqi271-native-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  runtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: |
+          mkdir -p /tmp/native-runtime
+          pip download --only-binary=:all: --no-deps kickmix==1.0.0 -d /tmp/native-runtime
+          pip install /tmp/native-runtime/*.whl numpy==2.2.6
+          python -c 'import kickmix;print(kickmix.__file__)'
+          sha256sum /tmp/native-runtime/*.whl
+          curl -fLsS --retry 2 'https://raw.githubusercontent.com/maxoubvd/google-quantum-ai/a9effc375527bf0b6962c178530d353eb70a3fcb/google-verifiable-quantum-circuit-compilation/verifiers/dqi/verify_submission_dqi.py' -o /tmp/native-runtime/verify_submission_dqi.py
+          sha256sum /tmp/native-runtime/verify_submission_dqi.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kickmix-cp313-runtime
+          path: /tmp/native-runtime/*
