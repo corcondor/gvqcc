@@ -1,0 +1,60 @@
+name: Singular GCD and generalized rational return audit
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_frobenius_packed_return/residue_gcd.py'
+      - 'research/dqi_frobenius_packed_return/general_return.py'
+      - 'research/dqi_cutoff18_strict/SingularGCD.lean'
+      - '.github/workflows/dqi-singular-gcd.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    strategy:
+      fail-fast: false
+      matrix:
+        program: [residue_gcd, general_return]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - run: python research/dqi_frobenius_packed_return/${{ matrix.program }}.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: singular-${{ matrix.program }}
+          path: |
+            research/dqi_frobenius_packed_return/*receipt.json
+            research/dqi_frobenius_packed_return/*.kmb
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - working-directory: research/dqi_cutoff18_strict
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true SingularGCD.lean | tee singular.log
+          python3 - <<'PY'
+          import re
+          s=open('singular.log').read()
+          rows=re.findall(r'depends on axioms: \[([^\]]*)\]',s)
+          assert len(rows)+len(re.findall(r'does not depend on any axioms',s))==8
+          for row in rows:
+              assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'},row
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: singular-lean
+          path: research/dqi_cutoff18_strict/singular.log
