@@ -1,0 +1,28 @@
+name: Packed all-gap algebra proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_packed_allgap/**'
+      - '.github/workflows/dqi-packed-allgap-lean.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Kernel check
+        run: |
+          set -euo pipefail
+          lean --version
+          lean -DwarningAsError=true research/dqi316k_packed_allgap/PackedAllGap.lean | tee lean.log
+          if grep -E 'sorryAx|ofReduceBool' lean.log; then exit 1; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: packed-allgap-lean-log
+          path: lean.log
