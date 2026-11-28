@@ -1,0 +1,30 @@
+name: Family C shared ghost schedule Lean audit
+on:
+  pull_request:
+    paths:
+      - 'research/family-c-shared-ghost/**'
+      - '.github/workflows/family-c-shared-ghost.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check local proofs and axioms
+        run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/family-c-shared-ghost/SharedGhost.lean | tee shared-ghost-audit.log
+          ! grep -E 'sorryAx|Lean.ofReduceBool' shared-ghost-audit.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: shared-ghost-lean-audit
+          path: shared-ghost-audit.log
+          if-no-files-found: warn
