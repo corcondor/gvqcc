@@ -1,0 +1,57 @@
+name: V86 actual DQI reachable bilinear synthesis
+on:
+  pull_request:
+    paths:
+      - 'research/v86/**'
+      - '.github/workflows/v86-reachable-bilinear.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  actual-dqi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Exact small-domain regression
+        run: python research/v86/test_reachable.py
+      - name: Acquire pinned actual competition circuit and verifier
+        run: |
+          mkdir -p out
+          python - <<'PY'
+          from pathlib import Path
+          from reproduce_dqi_candidate import acquire, BASELINE_URL, BASELINE_SHA, VERIFIER_URL, VERIFIER_SHA
+          acquire(None, BASELINE_URL, Path('out/source.kmb'), BASELINE_SHA)
+          acquire(None, VERIFIER_URL, Path('out/verify_submission_dqi.py'), VERIFIER_SHA)
+          PY
+      - name: Rewrite the actual serialized full DQI
+        run: |
+          python -u research/v86/reachable.py out/source.kmb out/candidate.kmb --expected-sha 821bf8d157c03c3e868a0099b0ab1438cfba664ab1bc6fec3210654099b672a3
+      - name: Verify the actual candidate with the unchanged official verifier
+        run: |
+          if [ -f out/candidate.kmb ]; then
+            python -m pip install 'kickmix==1.0.0' numpy
+            python -u verify_dqi_candidate.py out/candidate.kmb --verifier out/verify_submission_dqi.py --output out/official.json
+            python - <<'PY'
+          import json
+          r=json.load(open('out/official.json'))
+          assert r['status']=='PASS' and r['verified_shots']==102400
+          c=json.load(open('out/candidate.json'))
+          assert r['circuit_sha256']==c['output_sha256']
+          PY
+          else
+            echo 'No proved CCX reduction; no candidate or official score claimed.'
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v86-actual-dqi-receipt
+          path: |
+            out/candidate.json
+            out/candidate.kmb
+            out/official.json
+          if-no-files-found: warn
+          retention-days: 7
