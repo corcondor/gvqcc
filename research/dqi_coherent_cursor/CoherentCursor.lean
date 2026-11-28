@@ -41,8 +41,8 @@ theorem tag_injective (z a b h k : α) (hs ks : List α)
     a = b ∧ h = k ∧ hs = ks := by
   have e1 := congrArg (fun x : List (α × α) => x.map Prod.snd) e
   have e2 := congrArg (fun x : List (α × α) => x.map Prod.fst) e
-  rw [tagged_decode, tagged_decode] at e1
-  rw [tag_markers, tag_markers] at e2
+  simp only [tagged_decode] at e1
+  simp only [tag_markers] at e2
   exact ⟨(List.cons.inj e2).1, (List.cons.inj e1).1, (List.cons.inj e1).2⟩
 
 theorem next_bound (h v q : Nat) (hv : v < q-h) :
