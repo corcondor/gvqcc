@@ -1,0 +1,81 @@
+{
+  "status": "RESEARCH_ONLY",
+  "parent_sha256": "3ea4d74c2c4e93cfe8ad3234133e6198c237599395456db2c2e4323af11cdd06",
+  "final_sha256": "85dcdf095bde3d35a2721a214027294ea22119b4c09a2ebb97c2abdd59f650f0",
+  "Q": 900,
+  "ops": 87282662,
+  "old_ops": 87430367,
+  "static_paid": 317994,
+  "CCX": 311200,
+  "CCZ": 6686,
+  "CSWAP": 108,
+  "transfer": {
+    "sites_examined": 333,
+    "field": 329,
+    "dual": 4,
+    "affine_offsets": 54,
+    "homogeneous_coefficient_checks": 575424,
+    "local_anf_checks": 999,
+    "accepted": 141,
+    "independent_physical_anf": 141,
+    "saved_ops": 147705,
+    "saved_ccx": 0
+  },
+  "paired": {
+    "shots": 1790,
+    "output_differences": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "ordinary": {
+      "shots": 1024,
+      "errors": 0,
+      "mean_paid": 316094
+    },
+    "saved": {
+      "shots": 622,
+      "union": 411
+    },
+    "dense": {
+      "shots": 144,
+      "union": 70
+    }
+  },
+  "official_source_memory_adapted": {
+    "status": "PASS",
+    "shots": 102400,
+    "batch": 1024,
+    "salt": "",
+    "value_errors": 0,
+    "phase_errors": 0,
+    "mean_paid": 316126.363828125,
+    "cost": 305036959681.60114,
+    "effective_error_rate": 0.0008660587301657926,
+    "adaptation": [
+      "disk canonical hash",
+      "reaction_depth omitted",
+      "sequential batching"
+    ]
+  },
+  "lean": {
+    "run": 46151385605,
+    "status": "success",
+    "declarations": 37,
+    "forbidden_axioms": 0
+  },
+  "adjacent_gap_audit": {
+    "gaps_at_most_1000": 21,
+    "all_gaps_HMR": 24,
+    "output_rank_erased": 0,
+    "output_rank_retained": 24
+  },
+  "rank97_candidate": false,
+  "limits": [
+    "No paid or score improvement.",
+    "Independent hash-derived sample is not a paired improvement.",
+    "Known saved/dense defects remain. No new 899Q competitive full circuit.",
+    "No submission or private salt."
+  ]
+}
