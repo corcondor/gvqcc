@@ -67,3 +67,45 @@ end GVQCC.HMRDebt
 #print axioms GVQCC.HMRDebt.transport_exact
 #print axioms GVQCC.HMRDebt.independent_opaque_atom
 #print axioms GVQCC.HMRDebt.pairwise_pool
+
+
+namespace GVQCC.HMRGraph
+
+def shear (q : Nat → Bool) (u v : Nat) : Nat → Bool :=
+  fun i => if i = v then Bool.xor (q v) (q u) else q i
+
+theorem shear_twice (q : Nat → Bool) (u v : Nat) (h : u ≠ v) :
+    shear (shear q u v) u v = q := by
+  funext i
+  by_cases hi : i = v
+  · subst i
+    simp only [shear, if_pos rfl, if_neg h]
+    cases q v <;> cases q u <;> decide
+  · simp only [shear, if_neg hi]
+
+theorem graph_edge_transport (u v w : Bool) :
+    (Bool.xor v u && w) = Bool.xor (v && w) (u && w) := by
+  cases u <;> cases v <;> cases w <;> decide
+
+theorem adjacent_edge_transport (u v : Bool) :
+    (u && Bool.xor v u) = Bool.xor (u && v) u := by
+  cases u <;> cases v <;> decide
+
+theorem phase_conjugation (P : (Nat → Bool) → Bool) (q : Nat → Bool)
+    (u v : Nat) (h : u ≠ v) :
+    P (shear (shear q u v) u v) = P q := by
+  rw [shear_twice q u v h]
+
+theorem guarded_phase_conjugation (P : (Nat → Bool) → Bool)
+    (q : Nat → Bool) (g : Bool) (u v : Nat) (h : u ≠ v) :
+    (if g then P (shear (shear q u v) u v) else false) =
+      (if g then P q else false) := by
+  rw [shear_twice q u v h]
+
+end GVQCC.HMRGraph
+
+#print axioms GVQCC.HMRGraph.shear_twice
+#print axioms GVQCC.HMRGraph.graph_edge_transport
+#print axioms GVQCC.HMRGraph.adjacent_edge_transport
+#print axioms GVQCC.HMRGraph.phase_conjugation
+#print axioms GVQCC.HMRGraph.guarded_phase_conjugation
