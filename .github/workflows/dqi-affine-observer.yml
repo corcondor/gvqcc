@@ -1,0 +1,83 @@
+name: Complete tape affine observer transport audit
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_affine_observer/**'
+      - '.github/workflows/dqi-affine-observer.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_affine_observer/AffineObserver.lean | tee proof.log
+          python3 - <<'PY'
+          import re
+          s=open('proof.log').read()
+          rows=re.findall(r'depends on axioms: \[([^\]]*)\]',s)
+          closed=re.findall(r'does not depend on any axioms',s)
+          assert len(rows)+len(closed)==9
+          for row in rows:
+              assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'},row
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: affine-observer-lean
+          path: proof.log
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: |
+          g++ -O3 -std=c++17 research/dqi_affine_observer/transported_observers.cpp -o /tmp/transported_observers
+          pip install kickmix==1.0.0 numpy==2.2.6 scipy
+          python research/dqi_affine_observer/check_local.py /tmp/transported_observers
+      - uses: actions/download-artifact@v4
+        with:
+          name: exact-257-fft-research
+          run-id: 46121065738
+          github-token: ${{ github.token }}
+          path: /tmp/deps
+      - name: Complete pinned donor transport
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/results
+          f=$(find /tmp/deps -name fft257.kmb -print -quit); test -n "$f"
+          echo "518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499  $f" | sha256sum -c
+          /tmp/transported_observers "$f" /tmp/results/dqi.kmb | tee /tmp/results/rewrite.json
+          python research/dqi_affine_observer/verify_dqi.py "$f" /tmp/results/dqi.kmb
+          cp /tmp/dual_receipt.json /tmp/results/
+          python - "$f" <<'PY'
+          import json,sys
+          p=json.load(open('/tmp/results/dual_receipt.json'));a=p[sys.argv[1]];b=p['/tmp/results/dqi.kmb']
+          r=json.load(open('/tmp/results/rewrite.json'))
+          assert a['Q']==b['Q'] and a['static_paid']==r['old_paid'] and b['static_paid']==r['new_paid']
+          for k,v in a['panels'].items():
+              z=b['panels'][k]
+              assert v['paired_digest']==z['paired_digest'],(k,v,z)
+              assert z['mean_paid']<=v['mean_paid'],(k,v,z)
+          print('PAIRED_FULL_KMB',json.dumps({'old':a,'new':b,'rewrite':r}))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: affine-observer-native
+          path: |
+            /tmp/results/*.json
+            /tmp/results/*.tsv
+            /tmp/results/*.kmb
+          compression-level: 3
