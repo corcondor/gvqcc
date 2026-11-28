@@ -1,0 +1,165 @@
+{
+  "parent_sha256": "7be22729aae992f2f3fa408eba736300cf8cacc92ed5475e2a9707950cb153ff",
+  "sha256": "263f25bd324d55cfd7f6b93520a899bed4cdf9ad5bd7a63e64083051701ef5d1",
+  "old_restore": [
+    25678,
+    25692
+  ],
+  "old_swaps": [
+    [
+      4,
+      23
+    ],
+    [
+      13,
+      4
+    ],
+    [
+      33,
+      0
+    ],
+    [
+      18,
+      3
+    ],
+    [
+      7,
+      11
+    ],
+    [
+      13,
+      25
+    ],
+    [
+      7,
+      18
+    ],
+    [
+      33,
+      30
+    ],
+    [
+      19,
+      9
+    ],
+    [
+      13,
+      27
+    ],
+    [
+      33,
+      13
+    ],
+    [
+      33,
+      7
+    ],
+    [
+      33,
+      19
+    ],
+    [
+      33,
+      5
+    ]
+  ],
+  "terminal_restore": [
+    [
+      33,
+      0
+    ],
+    [
+      18,
+      3
+    ],
+    [
+      13,
+      4
+    ],
+    [
+      9,
+      5
+    ],
+    [
+      27,
+      7
+    ],
+    [
+      19,
+      9
+    ],
+    [
+      27,
+      11
+    ],
+    [
+      30,
+      13
+    ],
+    [
+      27,
+      18
+    ],
+    [
+      27,
+      19
+    ]
+  ],
+  "frame": [
+    33,
+    1,
+    2,
+    18,
+    13,
+    9,
+    6,
+    27,
+    8,
+    19,
+    10,
+    7,
+    12,
+    30,
+    14,
+    15,
+    16,
+    17,
+    11,
+    3,
+    20,
+    21,
+    22,
+    4,
+    24,
+    23,
+    26,
+    25,
+    28,
+    29,
+    0,
+    31,
+    32,
+    5,
+    34,
+    35,
+    36
+  ],
+  "ops_before": 40047,
+  "ops_after": 40043,
+  "static_before": 1832,
+  "static_after": 1832,
+  "expected_paid_before": 1667.9375,
+  "expected_paid_after": 1667.9375,
+  "all_legal_inputs": 3133452,
+  "independent_hmr": 1173,
+  "paired_suffix_comparisons": 14355,
+  "shared_prefix_ops": 25678,
+  "phase_classical_rotation_data": "PASS",
+  "verification": "PASS",
+  "seconds": 23.041784048080444,
+  "peakQ": 37,
+  "official_KickMix": false,
+  "score_update": false,
+  "new_search": false,
+  "source_audit": "blocked; four ANGLE originals absent; Google Drive name search returned no matches"
+}

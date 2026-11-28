@@ -1,0 +1,52 @@
+{
+  "candidate_sha256": "bf041c7baea460594002045116a028069dd28e56fc988987bc65caf36c1d6ad2",
+  "native_ops": 59167,
+  "expected_paid": 1411.3125,
+  "peak_width": 37,
+  "legal_inputs": 3133452,
+  "hmr_variables": 1280,
+  "source_span": [
+    7963,
+    10050
+  ],
+  "native_span": [
+    5869,
+    8086
+  ],
+  "restored_group": 119,
+  "exit_quantum_dependence_count": 0,
+  "exit_dependent_classical_records": 120,
+  "exit_phase_rank": 115,
+  "exit_centered_phase_rank": 115,
+  "suffix_phase_rank": 115,
+  "final_group_phase_rank": 0,
+  "final_full_phase_terms": 4,
+  "post_exit_phase_event_incidence": 3873,
+  "post_exit_activation_event_incidence": 3925,
+  "post_exit_rotation_events": 0,
+  "last_consumer": 55653,
+  "unused_post_exit_record_ids": [
+    532,
+    540,
+    655,
+    663
+  ],
+  "last_consumer_records": [
+    673,
+    667,
+    659,
+    651,
+    643,
+    634,
+    633,
+    632
+  ],
+  "elapsed_seconds": 31.764369010925293,
+  "finite_rank_matrix": 115,
+  "extended_rerun": "TIMEOUT; no credit",
+  "new_search": false,
+  "new_native": false,
+  "official_verification": false,
+  "score_update": false,
+  "main_modified": false
+}

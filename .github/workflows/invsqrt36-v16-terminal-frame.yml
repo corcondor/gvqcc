@@ -1,0 +1,21 @@
+name: V16 terminal frame certificate
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_nonlinear_lending/lean/TerminalFrameV16.lean'
+      - '.github/workflows/invsqrt36-v16-terminal-frame.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check actual terminal ABI
+        run: lean research/invsqrt36_nonlinear_lending/lean/TerminalFrameV16.lean

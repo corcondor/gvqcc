@@ -1,0 +1,17 @@
+name: Symplectic Virt V21 Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_v21_symplectic_virt/lean/SymplecticVirtV21.lean'
+      - '.github/workflows/invsqrt36-v21-symplectic-virt-lean.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Check V21 virtual SWAP, Clifford, syndrome & score-budget theorems
+        run: ~/.elan/bin/lean research/invsqrt36_v21_symplectic_virt/lean/SymplecticVirtV21.lean

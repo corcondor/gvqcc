@@ -1,0 +1,17 @@
+name: Carry cube finite certificate
+on:
+  pull_request:
+  push:
+    branches: [research/invsqrt36-carry-cube-nand-20261125]
+jobs:
+  finite-certificate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python reproducibility audit
+        run: python research/invsqrt36_nonlinear_lending/carry_cube_audit.py
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean +leanprover/lean4:v4.35.0 research/invsqrt36_nonlinear_lending/lean/CarryCubeNand.lean

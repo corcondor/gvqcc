@@ -1,0 +1,65 @@
+{
+  "source": "6b59214530108d8c49c648f96c53b963d9b8477f8813db1edcf478bf45f6cf03",
+  "parent": "d449a123dbb62b572761fbaffb01360d95e73b1a",
+  "screened": 13,
+  "accepted": [
+    [
+      24091,
+      24142,
+      0
+    ],
+    [
+      25709,
+      25759,
+      0
+    ],
+    [
+      26251,
+      26301,
+      0
+    ],
+    [
+      26774,
+      26824,
+      0
+    ],
+    [
+      27285,
+      27335,
+      0
+    ],
+    [
+      27799,
+      27849,
+      0
+    ],
+    [
+      34046,
+      34186,
+      3
+    ]
+  ],
+  "shifts": 1024,
+  "one_hub_without_cubic": 0,
+  "legal_inputs": 3133452,
+  "neutral": {
+    "covered": 54597,
+    "remaining": 6169,
+    "static": 1897,
+    "expected": 1714.3125,
+    "checks": 42419,
+    "sha": "190f34407bedc91b403364edee31426a44447e859980aec54b7af4cf1193575a"
+  },
+  "wide": {
+    "covered": 54737,
+    "remaining": 6029,
+    "static": 1900,
+    "expected": 1715.8125,
+    "checks": 42278,
+    "sha": "9335d3535ef0687675352bc502ad46b5d9310cb8a9fdc7a266b30cf929b0a265"
+  },
+  "official_verifier": false,
+  "full36": false,
+  "lean_ci": "pending",
+  "local_exhaustive": 16384
+}
