@@ -1,0 +1,32 @@
+name: DQI rank97 coset certificate
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316094_rank97_cosets/**'
+      - '.github/workflows/dqi316094-rank97-cosets.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi316094_rank97_cosets/Rank97CosetAudit.lean | tee proof.log
+          test "$(grep -Ec 'depends on axioms|does not depend on any axioms' proof.log)" -eq 9
+          python - <<'PY'
+          import re
+          s=open('proof.log').read()
+          for row in re.findall(r'depends on axioms: \[([^\]]*)\]',s):
+              assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'},row
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rank97-coset-proof
+          path: proof.log
