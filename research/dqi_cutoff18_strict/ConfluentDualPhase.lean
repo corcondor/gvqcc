@@ -91,11 +91,11 @@ theorem anti_hankel_factor {r : ℕ} (a : ℕ → R) (i j : Fin r) :
   dsimp
   by_cases h : r-1 ≤ i.val+j.val
   · have h' : r-1-j.val ≤ i.val := by omega
-    rw [if_pos h,if_pos h']
+    rw [ite_eq_left h,ite_eq_left h']
     congr 1
     omega
   · have h' : ¬ r-1-j.val ≤ i.val := by omega
-    rw [if_neg h,if_neg h']
+    rw [ite_eq_right h,ite_eq_right h']
 end Toeplitz
 
 theorem hmr_product_debt (a b m : Bool) :
