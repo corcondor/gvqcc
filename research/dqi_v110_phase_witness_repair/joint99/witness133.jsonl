@@ -1,0 +1,3 @@
+{"arm": "dqi.kmb", "batch": 133, "bad_value_positions": [289], "bad_value_bit_counts": [423], "raw_phase_positions": [], "dirty": 0, "mask": 0, "mean_paid": 316098.94921875}
+{"arm": "joint294.kmb", "batch": 133, "bad_value_positions": [], "bad_value_bit_counts": [], "raw_phase_positions": [], "dirty": 0, "mask": 0, "mean_paid": 316092.578125}
+{"arm": "joint294_pool295.kmb", "batch": 133, "bad_value_positions": [], "bad_value_bit_counts": [], "raw_phase_positions": [], "dirty": 0, "mask": 0, "mean_paid": 316092.578125}

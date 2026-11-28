@@ -1,0 +1,47 @@
+{
+  "dqi": {
+    "n": 102400,
+    "paid": 32371889102,
+    "value": 1,
+    "phase": 1,
+    "dirty": 0,
+    "mask": 0,
+    "union": 1,
+    "official_value": 1,
+    "official_phase": 0,
+    "mean_paid": 316131.72951171873,
+    "eps_upper": 0.0009104197583220583,
+    "reference_formula_dqi_cost": 306443086860.6304,
+    "cost_change_percent": 0.0
+  },
+  "joint294": {
+    "n": 102400,
+    "paid": 32371306852,
+    "value": 0,
+    "phase": 0,
+    "dirty": 0,
+    "mask": 0,
+    "union": 0,
+    "official_value": 0,
+    "official_phase": 0,
+    "mean_paid": 316126.0434765625,
+    "eps_upper": 0.0008660587301657926,
+    "reference_formula_dqi_cost": 305036650567.6586,
+    "cost_change_percent": -0.4589551382542356
+  },
+  "pool295": {
+    "n": 102400,
+    "paid": 32371306852,
+    "value": 0,
+    "phase": 0,
+    "dirty": 0,
+    "mask": 0,
+    "union": 0,
+    "official_value": 0,
+    "official_phase": 0,
+    "mean_paid": 316126.0434765625,
+    "eps_upper": 0.0008660587301657926,
+    "reference_formula_dqi_cost": 305036650567.6586,
+    "cost_change_percent": -0.4589551382542356
+  }
+}

@@ -1,0 +1,7 @@
+'GVQCC.JointFieldPhase.guarded_cubic_transport' does not depend on any axioms
+'GVQCC.JointFieldPhase.moved_guarded_cubic' does not depend on any axioms
+'GVQCC.JointFieldPhase.shear_phase' does not depend on any axioms
+'GVQCC.JointFieldPhase.measured_delta' does not depend on any axioms
+'GVQCC.JointFieldPhase.joint_chart' does not depend on any axioms
+'GVQCC.JointFieldPhase.dual_square_tangent_zero' does not depend on any axioms
+'GVQCC.JointFieldPhase.guard_parity' depends on axioms: [propext, Quot.sound]

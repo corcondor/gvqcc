@@ -1,0 +1,2 @@
+{"arm": "dqi.kmb", "shots": 8192, "Q": 900, "ops": 66786263, "errors": [0, 0, 0, 0, 0], "paid": {"CCX": 2534729666, "CCZ": 54099700, "CSWAP": 884736}, "mean_paid": 316127.2097167969}
+{"arm": "hmr293.kmb", "shots": 8192, "Q": 900, "ops": 66735441, "errors": [0, 0, 0, 0, 0], "paid": {"CCX": 2534729666, "CCZ": 54095584, "CSWAP": 884736}, "mean_paid": 316126.7072753906, "all_output_fields_match": true}

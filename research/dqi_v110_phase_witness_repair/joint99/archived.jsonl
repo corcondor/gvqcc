@@ -1,0 +1,3 @@
+{"arm": "dqi.kmb", "shots": 622, "Q": 900, "ops": 66786263, "errors": [452, 237, 0, 0, 457], "paid": {"CCX": 192434464, "CCZ": 4107662, "CSWAP": 67176}, "mean_paid": 316092.12540192925}
+{"arm": "exact292_graph.kmb", "shots": 622, "Q": 900, "ops": 66735499, "errors": [452, 237, 0, 0, 457], "paid": {"CCX": 192434464, "CCZ": 4107662, "CSWAP": 67176}, "mean_paid": 316092.12540192925, "all_output_fields_match": true}
+{"arm": "hmr293.kmb", "shots": 622, "Q": 900, "ops": 66735441, "errors": [452, 237, 0, 0, 457], "paid": {"CCX": 192434464, "CCZ": 4107345, "CSWAP": 67176}, "mean_paid": 316091.615755627, "all_output_fields_match": true}

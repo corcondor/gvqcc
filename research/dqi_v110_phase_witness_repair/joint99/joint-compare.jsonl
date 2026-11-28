@@ -1,0 +1,4 @@
+{"arm": "joint294.kmb", "shots": 622, "Q": 900, "ops": 87702020, "errors": [407, 203, 0, 0, 412], "paid": {"CCX": 192431174, "CCZ": 4107016, "CSWAP": 67176}, "mean_paid": 316085.79742765275}
+{"arm": "static295.kmb", "shots": 622, "Q": 900, "ops": 67471518, "errors": [407, 209, 0, 0, 412], "paid": {"CCX": 192434414, "CCZ": 4107657, "CSWAP": 67176}, "mean_paid": 316092.036977492, "all_output_fields_match": false}
+{"arm": "joint294.kmb", "shots": 8192, "Q": 900, "ops": 87702020, "errors": [0, 0, 0, 0, 0], "paid": {"CCX": 2534691986, "CCZ": 54091816, "CSWAP": 884736}, "mean_paid": 316121.6477050781}
+{"arm": "static295.kmb", "shots": 8192, "Q": 900, "ops": 67471518, "errors": [0, 0, 0, 0, 0], "paid": {"CCX": 2534734076, "CCZ": 54100141, "CSWAP": 884736}, "mean_paid": 316127.8018798828, "all_output_fields_match": true}
