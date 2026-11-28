@@ -1,0 +1,56 @@
+name: DQI public converter integration
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cf_fusion_20261127/public_converter.py'
+      - 'research/dqi_cf_fusion_20261127/compare_public.py'
+      - '.github/workflows/dqi-public-converter.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  converter:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install pinned native simulator
+        run: python -m pip install kickmix==1.0.0 numpy==2.2.6
+      - name: Checkout pinned public kit and verifier
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init upstream
+          git -C upstream remote add origin https://github.com/maxoubvd/google-quantum-ai.git
+          git -C upstream sparse-checkout init --cone
+          git -C upstream sparse-checkout set third_party/thembones-milestone-generators-v2/dqi google-verifiable-quantum-circuit-compilation/verifiers/dqi
+          git -C upstream fetch --depth=1 --filter=blob:none origin a9effc375527bf0b6962c178530d353eb70a3fcb
+          git -C upstream checkout --detach FETCH_HEAD
+          test "$(git -C upstream rev-parse HEAD)" = a9effc375527bf0b6962c178530d353eb70a3fcb
+          mkdir -p results
+      - name: Build and replay unpaired and repaired real converters
+        shell: bash
+        run: |
+          set -euo pipefail
+          for mode in ref old fixed fused; do
+            python -u research/dqi_cf_fusion_20261127/public_converter.py upstream "$mode" "results/$mode" 2>&1 | tee "results/$mode.log"
+          done
+          python research/dqi_cf_fusion_20261127/compare_public.py results
+      - name: Build complete public-kit fused oracle after forward equivalence gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -u research/dqi_cf_fusion_20261127/public_converter.py upstream fused results/full --full 2>&1 | tee results/full.log
+      - name: Unmodified official verifier smoke (not full 102400 shots)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python upstream/google-verifiable-quantum-circuit-compilation/verifiers/dqi/verify_submission_dqi.py results/full/dqi.kmb --num-shots 4096 --batch-size 256 --max-workers 1 --seed 20261127 | tee results/full/official_smoke.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-kit-native-results
+          path: results

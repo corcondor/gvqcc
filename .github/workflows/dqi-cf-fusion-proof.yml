@@ -1,0 +1,24 @@
+name: DQI coefficient fusion proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cf_fusion_20261127/**'
+      - '.github/workflows/dqi-cf-fusion-proof.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Check proof and axioms
+        shell: bash
+        run: |
+          set -euo pipefail
+          ~/.elan/bin/lean --version
+          ~/.elan/bin/lean -DwarningAsError=true research/dqi_cf_fusion_20261127/CoefficientFusion.lean | tee fusion-audit.log
+          test "$(grep -c 'GVQCC.CoefficientFusion.*axiom' fusion-audit.log)" -eq 10
+          ! grep -E 'sorryAx|Lean.ofReduceBool' fusion-audit.log

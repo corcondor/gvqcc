@@ -1,0 +1,31 @@
+name: DQI pinned public source bundle
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/dqi-public-source-bundle.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Sparse checkout and archive source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init upstream
+          git -C upstream remote add origin https://github.com/maxoubvd/google-quantum-ai.git
+          git -C upstream sparse-checkout init --cone
+          git -C upstream sparse-checkout set third_party/thembones-milestone-generators-v2/dqi google-verifiable-quantum-circuit-compilation/verifiers/dqi
+          git -C upstream fetch --depth=1 --filter=blob:none origin a9effc375527bf0b6962c178530d353eb70a3fcb
+          git -C upstream checkout --detach FETCH_HEAD
+          mkdir export
+          git -C upstream rev-parse HEAD > export/commit.txt
+          tar -czf export/public-dqi-source.tar.gz -C upstream third_party/thembones-milestone-generators-v2/dqi third_party/thembones-milestone-generators-v2/LICENSE third_party/thembones-milestone-generators-v2/NOTICE google-verifiable-quantum-circuit-compilation/verifiers/dqi
+          sha256sum export/public-dqi-source.tar.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pinned-public-dqi-source
+          path: export
