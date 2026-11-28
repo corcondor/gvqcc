@@ -50,3 +50,9 @@ jobs:
           path: |
             research/dqi_rank97_mixed/*.kmb
             research/dqi_rank97_mixed/receipt.json
+  hermite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: node research/dqi_rank97_mixed/hermite_profile.mjs
