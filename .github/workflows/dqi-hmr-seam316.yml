@@ -1,0 +1,33 @@
+name: DQI 316k HMR seam strict proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/HMRSeam316.lean'
+      - '.github/workflows/dqi-hmr-seam316.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true HMRSeam316.lean | tee hmr-seam.log
+          test "$(grep -c 'GVQCC.HMRSeam316.*axiom' hmr-seam.log)" -eq 9
+          ! grep -E 'sorryAx|ofReduceBool' hmr-seam.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hmr-seam316-axioms
+          path: research/dqi_cutoff18_strict/hmr-seam.log
