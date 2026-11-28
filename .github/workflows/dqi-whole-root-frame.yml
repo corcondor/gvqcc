@@ -1,0 +1,39 @@
+name: DQI complete tape signed-root frame
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_whole_root_frame/**'
+      - '.github/workflows/dqi-whole-root-frame.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compile-and-lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          set -euo pipefail
+          cd research/dqi_whole_root_frame
+          g++ -O3 -std=c++17 permute.cpp -o permute
+          g++ -O3 -std=c++17 root_frames.cpp -o root_frames
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_whole_root_frame/WholeRootFrame.lean | tee proof.log
+          python - <<'PY'
+          import re
+          s=open('proof.log').read()
+          rows=re.findall(r'depends on axioms: \[([^\]]*)\]',s)
+          closed=re.findall(r'does not depend on any axioms',s)
+          assert len(rows)+len(closed)==15
+          for row in rows:
+              assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'},row
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: whole-root-frame-axioms
+          path: proof.log
