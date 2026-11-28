@@ -1,0 +1,69 @@
+name: Whole DQI nonlinear observer phase pooling
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_nonlinear_observer_pool/**'
+      - '.github/workflows/dqi-nonlinear-observer-pool.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  whole:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          name: exact-257-fft-research
+          run-id: 46121065738
+          github-token: ${{ github.token }}
+          path: /tmp/input
+      - name: Physically reduce paid gates on the exact accessible complete tape
+        run: |
+          set -euo pipefail
+          pip install kickmix==1.0.0 numpy==2.2.6 scipy
+          mkdir -p /tmp/results
+          f=$(find /tmp/input -name fft257.kmb -print -quit)
+          test -n "$f"
+          echo "518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499  $f" | sha256sum -c
+          echo "$f" >/tmp/parent-path
+          g++ -O3 -std=c++17 research/dqi_nonlinear_observer_pool/pool.cpp -o /tmp/pool
+          /tmp/pool "$f" /tmp/results/dqi.kmb 2>&1 | tee /tmp/results/compile.log
+          sha256sum /tmp/results/dqi.kmb | tee /tmp/results/sha256.txt
+          python - <<'PY'
+          import json,kickmix as km
+          r=json.loads(next(x for x in open('/tmp/results/compile.log') if x.startswith('{')))
+          c=km.Circuit.from_file('/tmp/results/dqi.kmb')
+          assert r['saved']>0 and r['new_paid']==int(c.operation_statistics().num_toffoli_like)
+          assert r['new_ops']==len(c) and r['Q']==c.num_qubits
+          print('PHYSICAL_COUNT',r,flush=True)
+          PY
+      - name: Paired complete circuit verification
+        run: |
+          set -euo pipefail
+          curl -fLsS 'https://raw.githubusercontent.com/corcondor/gvqcc/dc585b9cd31df6f8151162cb5accfb2774db3811/research/dqi_affine_observer/verify_dqi.py' -o /tmp/paired.py
+          python /tmp/paired.py "$(cat /tmp/parent-path)" /tmp/results/dqi.kmb
+          cp /tmp/dual_receipt.json /tmp/results/
+          python - <<'PY'
+          import json
+          a,b=json.load(open('/tmp/dual_receipt.json')).values()
+          for k,v in a['panels'].items():
+              w=b['panels'][k]
+              assert v['shots']==w['shots'] and v['errors']==w['errors'] and v['union']==w['union']
+              assert v['paired_digest']==w['paired_digest']
+              assert w['paid']<=v['paid'],(k,v,w)
+          v=a['panels']['distribution'];w=b['panels']['distribution']
+          print('MEASURED_COMPLETE_DQI',v['mean_paid'],w['mean_paid'],v['mean_paid']-w['mean_paid'],flush=True)
+          assert w['paid']<v['paid'],'No executed paid improvement; reject.'
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nonlinear-observer-pool-full
+          path: /tmp/results/
+          compression-level: 3
