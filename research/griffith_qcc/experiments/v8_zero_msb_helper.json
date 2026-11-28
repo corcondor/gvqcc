@@ -1,0 +1,22 @@
+{
+  "input": "public_v8_temporal_gauge.npz",
+  "helpers": {
+    "addresses": 1219,
+    "banks": 15,
+    "helper_positions": 5,
+    "helper_time_invariance_violations": 42743,
+    "helper_low_address_violations": 3015,
+    "low_affine_rank": 5,
+    "low_helper_augmented_rank": 10,
+    "helper_tt_hex": [
+      "0xc55e",
+      "0x9d59",
+      "0xa2fc",
+      "0xdf43",
+      "0xa49f"
+    ],
+    "usable_in_six_extra_AND_cache": false
+  },
+  "low_block_crossbank_rank": 16,
+  "disclaimer": "No native KickMix score was measured."
+}

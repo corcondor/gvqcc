@@ -1,0 +1,22 @@
+{
+  "input": "public_v8_parent.npz",
+  "helpers": {
+    "addresses": 1219,
+    "banks": 15,
+    "helper_positions": 5,
+    "helper_time_invariance_violations": 0,
+    "helper_low_address_violations": 0,
+    "low_affine_rank": 5,
+    "low_helper_augmented_rank": 10,
+    "helper_tt_hex": [
+      "0x8888",
+      "0xa0a0",
+      "0xc0c0",
+      "0xaa00",
+      "0xcc00"
+    ],
+    "usable_in_six_extra_AND_cache": true
+  },
+  "low_block_crossbank_rank": 16,
+  "disclaimer": "No native KickMix score was measured."
+}

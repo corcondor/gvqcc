@@ -1,0 +1,107 @@
+{
+  "scope": "Goodpjw public V8 15 native ANGLE KMBs, full 128 independent cut-wire GF2 basis, consecutive CCX gates separated ONLY by CX",
+  "result_status": "NO_PAID_CCX_REDUCTION_FOUND_WITH_3_4_CUT_REFACTOR",
+  "source": "original published V8 ANGLE KMB v2, all 15",
+  "triple_windows": {
+    "total": 2765,
+    "quadratic": 2445,
+    "nonlinear_dependent_and_excluded": 320,
+    "nonlinear_output_dimension3": 2444,
+    "nonlinear_output_dimension2": 1
+  },
+  "quadruple_windows": {
+    "total": 2731,
+    "quadratic": 2371,
+    "nonlinear_dependent_and_excluded": 360,
+    "nonlinear_output_dimension4": 2367,
+    "nonlinear_output_dimension3": 4
+  },
+  "ambiguous_quadratic_cuts": [
+    {
+      "bank": 8,
+      "ccx": 3,
+      "first_op": 24523,
+      "last_op_inclusive": 24906,
+      "nonlinear_dim": 2,
+      "rank2_form_span": 0,
+      "nonzero_output_polar_ranks": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "bank": 12,
+      "ccx": 4,
+      "first_op": 24315,
+      "last_op_inclusive": 24952,
+      "nonlinear_dim": 3,
+      "rank2_form_span": 1,
+      "output_polar_ranks": [
+        4,
+        2,
+        6,
+        4,
+        4,
+        6,
+        6
+      ]
+    },
+    {
+      "bank": 6,
+      "ccx": 4,
+      "first_op": 23653,
+      "last_op_inclusive": 24245,
+      "nonlinear_dim": 3,
+      "rank2_form_span": 1,
+      "output_polar_ranks": [
+        4,
+        2,
+        6,
+        4,
+        4,
+        6,
+        6
+      ]
+    },
+    {
+      "bank": 8,
+      "ccx": 4,
+      "first_op": 24320,
+      "last_op_inclusive": 24906,
+      "nonlinear_dim": 3,
+      "rank2_form_span": 1,
+      "output_polar_ranks": [
+        2,
+        4,
+        6,
+        4,
+        6,
+        4,
+        6
+      ]
+    },
+    {
+      "bank": 8,
+      "ccx": 4,
+      "first_op": 24523,
+      "last_op_inclusive": 25112,
+      "nonlinear_dim": 3,
+      "rank2_form_span": 1,
+      "output_polar_ranks": [
+        4,
+        4,
+        4,
+        2,
+        6,
+        6,
+        6
+      ]
+    }
+  ],
+  "interpretation": "For the stated quadratic CX-only cut class, exact GF(2) output nonlinear dimensions are necessary AND lower bounds. All dimension-deficient cuts were checked for a spanning basis of polar rank-2 forms; none possessed a full such basis. This excludes only exact full-input 3->2 and 4->3 rewrites with as many quadratic product generators as output dimension in this fixed-window model. It does not prove an unrestricted nonlinear circuit lower bound, and does not cover 320/360 higher-degree windows, longer cuts, reachable-state-only optimizations, or altered cross-HMR schedules.",
+  "phase_scope": "No phase operations inside tested cuts; output functions checked as formal arbitrary-input GF2 polynomials. No altered KMB produced.",
+  "native_ccx_saved": 0,
+  "official_verifier_run": false,
+  "new_official_score": false
+}

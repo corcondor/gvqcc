@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "griffith-qcc-experimental"
+version = "0.1.0"
+description = "Exact-verified, Griffith-inspired XAG synthesis research for GVQCC"
+requires-python = ">=3.11"
+authors = [{name="GVQCC research"}]
+license = "Apache-2.0"
+
+[project.optional-dependencies]
+train = ["torch>=2.2"]
+chem = ["numpy>=1.26"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,170 @@
+{
+  "source": "Griffith-inspired original joint candidate grid",
+  "full_native_cost_available": false,
+  "competition_score_update": null,
+  "scope": "REAL_PHYSICS_AND_LEARNED_LOCAL_XAG_NOT_FULL_COMPETITION",
+  "candidates": [
+    {
+      "filename": "public_v8_parent.npz",
+      "sha256": "d4d39b2e2516ed7c51a936e863cf0567e558a0db8ded24e435f507d76bfb78d7",
+      "physical": {
+        "error_1": 0.019999999949999993,
+        "error_2": 0.019999999949929688,
+        "Lambda": 283.10203295585535,
+        "E_gap": 3.914898000013636,
+        "lambda_eff": 46.918064099948054,
+        "passes_physical_gates": true,
+        "R": 9,
+        "B": 127,
+        "C": 46,
+        "num_angles": 75,
+        "verification_scope": "INDEPENDENT_NUMERICAL_PHYSICS_NOT_NATIVE_KICKMIX"
+      },
+      "helper_contract": {
+        "addresses": 1219,
+        "banks": 15,
+        "helper_positions": 5,
+        "helper_time_invariance_violations": 0,
+        "helper_low_address_violations": 0,
+        "low_affine_rank": 5,
+        "low_helper_augmented_rank": 10,
+        "helper_tt_hex": [
+          "0x8888",
+          "0xa0a0",
+          "0xc0c0",
+          "0xaa00",
+          "0xcc00"
+        ],
+        "usable_in_six_extra_AND_cache": true
+      },
+      "neural_xag": {
+        "hard_exact": true,
+        "local_products": 1,
+        "hard_exact_restarts": 2
+      },
+      "joint_record": {
+        "name": "public_v8_parent.npz",
+        "physics": {
+          "error_1": 0.019999999949999993,
+          "error_2": 0.019999999949929688,
+          "Lambda": 283.10203295585535,
+          "E_gap": 3.914898000013636,
+          "lambda_eff": 46.918064099948054
+        },
+        "hardware": null,
+        "word_sha256": "d4d39b2e2516ed7c51a936e863cf0567e558a0db8ded24e435f507d76bfb78d7",
+        "compiler_sha256": null,
+        "score_comparable_cost": null,
+        "status": "RESEARCH_ONLY_NOT_SCORABLE"
+      }
+    },
+    {
+      "filename": "v8_joint_physical_parent.npz",
+      "sha256": "963e80979afd92819d13fc61ed62fb2681b44ff3575d618ac906cd339ca99c82",
+      "physical": {
+        "error_1": 0.019991000000019823,
+        "error_2": 0.019999899999197383,
+        "Lambda": 283.05037008820284,
+        "E_gap": 3.914898999999423,
+        "lambda_eff": 46.913759041834915,
+        "passes_physical_gates": true,
+        "R": 9,
+        "B": 127,
+        "C": 46,
+        "num_angles": 75,
+        "verification_scope": "INDEPENDENT_NUMERICAL_PHYSICS_NOT_NATIVE_KICKMIX"
+      },
+      "helper_contract": {
+        "addresses": 1219,
+        "banks": 15,
+        "helper_positions": 5,
+        "helper_time_invariance_violations": 10,
+        "helper_low_address_violations": 0,
+        "low_affine_rank": 5,
+        "low_helper_augmented_rank": 10,
+        "helper_tt_hex": [
+          "0x8888",
+          "0xa0a0",
+          "0xc0c0",
+          "0xaa00",
+          "0xcc00"
+        ],
+        "usable_in_six_extra_AND_cache": false
+      },
+      "neural_xag": {
+        "hard_exact": true,
+        "local_products": 1,
+        "hard_exact_restarts": 2
+      },
+      "joint_record": {
+        "name": "v8_joint_physical_parent.npz",
+        "physics": {
+          "error_1": 0.019991000000019823,
+          "error_2": 0.019999899999197383,
+          "Lambda": 283.05037008820284,
+          "E_gap": 3.914898999999423,
+          "lambda_eff": 46.913759041834915
+        },
+        "hardware": null,
+        "word_sha256": "963e80979afd92819d13fc61ed62fb2681b44ff3575d618ac906cd339ca99c82",
+        "compiler_sha256": null,
+        "score_comparable_cost": null,
+        "status": "RESEARCH_ONLY_NOT_SCORABLE"
+      }
+    },
+    {
+      "filename": "public_v8_temporal_gauge.npz",
+      "sha256": "6071837d9a2c7d85c3d6bdf18e60cc7ac0ef0592ef0cfda514b7df5e4a521673",
+      "physical": {
+        "error_1": 0.019999999949999996,
+        "error_2": 0.019999999949929664,
+        "Lambda": 283.10203295585535,
+        "E_gap": 3.914898000013636,
+        "lambda_eff": 46.918064099948054,
+        "passes_physical_gates": true,
+        "R": 9,
+        "B": 127,
+        "C": 46,
+        "num_angles": 75,
+        "verification_scope": "INDEPENDENT_NUMERICAL_PHYSICS_NOT_NATIVE_KICKMIX"
+      },
+      "helper_contract": {
+        "addresses": 1219,
+        "banks": 15,
+        "helper_positions": 5,
+        "helper_time_invariance_violations": 42743,
+        "helper_low_address_violations": 3015,
+        "low_affine_rank": 5,
+        "low_helper_augmented_rank": 10,
+        "helper_tt_hex": [
+          "0xc55e",
+          "0x9d59",
+          "0xa2fc",
+          "0xdf43",
+          "0xa49f"
+        ],
+        "usable_in_six_extra_AND_cache": false
+      },
+      "neural_xag": {
+        "hard_exact": false,
+        "local_products": null,
+        "hard_exact_restarts": 0
+      },
+      "joint_record": {
+        "name": "public_v8_temporal_gauge.npz",
+        "physics": {
+          "error_1": 0.019999999949999996,
+          "error_2": 0.019999999949929664,
+          "Lambda": 283.10203295585535,
+          "E_gap": 3.914898000013636,
+          "lambda_eff": 46.918064099948054
+        },
+        "hardware": null,
+        "word_sha256": "6071837d9a2c7d85c3d6bdf18e60cc7ac0ef0592ef0cfda514b7df5e4a521673",
+        "compiler_sha256": null,
+        "score_comparable_cost": null,
+        "status": "RESEARCH_ONLY_NOT_SCORABLE"
+      }
+    }
+  ]
+}

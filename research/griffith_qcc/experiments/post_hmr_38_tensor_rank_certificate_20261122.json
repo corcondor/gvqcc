@@ -1,0 +1,148 @@
+{
+  "schema": "gvqcc-v8-restart-38-conditional-exact-lower-bound-v1",
+  "status": "PROVED_RESTRICTED_ARCHITECTURE_NOT_GLOBAL_OPTIMALITY",
+  "source": "Goodpjw2008 V8 128Q real original KMB v2 family",
+  "method": "symbolically propagate real X/CX/CCX through each high-cost restart window; retain first product P0 as independent 129th input, obtain 37 quadratic product factors with 30 output directions; compute 129-by-129x30 GF(2) polar tensor flattening rank; rank 74 gives later AND lower bound 37",
+  "proof": "Every AND of two affine parities contributes polar flattening rank at most 2. Therefore every realization by k such products requires 2*k >=74 and k>=37.",
+  "strict_scope": "The original P0 is actually a nonlinear function of the 128 physical inputs; treating it as an independent source strengthens the equivalence obligation and is NOT a lower bound for alternative circuits that jointly change P0, exploit reachable-state correlations, or move HMR. Not a global 38 paid CCX minimum.",
+  "bank_records": [
+    {
+      "bank": 0,
+      "phase": 66,
+      "sha": "730ceb9f560b7184518333073a65c48af0230bd47d5e58c9504b0fccbf2ff5fc",
+      "begin": 29703,
+      "end": 37924,
+      "nonlin_outputs": 30,
+      "terms_reusing_P0": 44,
+      "paid_ccx_old": 38,
+      "later_ccx": 37,
+      "physical_qubits": 128,
+      "formal_variables_including_independent_P0": 129,
+      "polar_flattening_rank": 74,
+      "necessary_later_AND": 37,
+      "bound_saturated": true,
+      "gate_by_gate_all_2438_legal_states_replayed": true,
+      "real_native_ccx_saved": 0
+    },
+    {
+      "bank": 1,
+      "phase": 63,
+      "sha": "9c102be652dd877f53c37ee227f814b2f5a58949302ace05edbd4a6a88a8a0ca",
+      "begin": 29782,
+      "end": 38195,
+      "nonlin_outputs": 30,
+      "terms_reusing_P0": 42,
+      "paid_ccx_old": 38,
+      "later_ccx": 37,
+      "physical_qubits": 128,
+      "formal_variables_including_independent_P0": 129,
+      "polar_flattening_rank": 74,
+      "necessary_later_AND": 37,
+      "bound_saturated": true,
+      "gate_by_gate_all_2438_legal_states_replayed": true,
+      "real_native_ccx_saved": 0
+    },
+    {
+      "bank": 5,
+      "phase": 63,
+      "sha": "5bc3ea36cbb2b2ddff914c0ed545415874f3f6dec5930385930affa346aa7a80",
+      "begin": 29666,
+      "end": 38176,
+      "nonlin_outputs": 30,
+      "terms_reusing_P0": 44,
+      "paid_ccx_old": 38,
+      "later_ccx": 37,
+      "physical_qubits": 128,
+      "formal_variables_including_independent_P0": 129,
+      "polar_flattening_rank": 74,
+      "necessary_later_AND": 37,
+      "bound_saturated": true,
+      "gate_by_gate_all_2438_legal_states_replayed": true,
+      "real_native_ccx_saved": 0
+    },
+    {
+      "bank": 7,
+      "phase": 63,
+      "sha": "98cbfa1fa2cdb9ca737d146d36ce39ed835de27525903753fc38410f947018b8",
+      "begin": 29849,
+      "end": 38182,
+      "nonlin_outputs": 30,
+      "terms_reusing_P0": 34,
+      "paid_ccx_old": 38,
+      "later_ccx": 37,
+      "physical_qubits": 128,
+      "formal_variables_including_independent_P0": 129,
+      "polar_flattening_rank": 74,
+      "necessary_later_AND": 37,
+      "bound_saturated": true,
+      "gate_by_gate_all_2438_legal_states_replayed": true,
+      "real_native_ccx_saved": 0
+    },
+    {
+      "bank": 11,
+      "phase": 63,
+      "sha": "54356379a3a0530fb056afdca5f43b97522dbb0867a464f9be8e5218a443422e",
+      "begin": 29911,
+      "end": 38437,
+      "nonlin_outputs": 30,
+      "terms_reusing_P0": 39,
+      "paid_ccx_old": 38,
+      "later_ccx": 37,
+      "physical_qubits": 128,
+      "formal_variables_including_independent_P0": 129,
+      "polar_flattening_rank": 74,
+      "necessary_later_AND": 37,
+      "bound_saturated": true,
+      "gate_by_gate_all_2438_legal_states_replayed": true,
+      "real_native_ccx_saved": 0
+    }
+  ],
+  "additional_exploration": {
+    "quadratic_cx_only_windows_length_5": {
+      "total": 2699,
+      "quadratic": 2316,
+      "lower_output_dimension": 12,
+      "matching_rank2_basis": 0
+    },
+    "length_6": {
+      "total": 2668,
+      "quadratic": 2269,
+      "lower_output_dimension": 37,
+      "matching_rank2_basis": 0
+    },
+    "length_7": {
+      "total": 2638,
+      "quadratic": 2221,
+      "lower_output_dimension": 75,
+      "matching_rank2_basis": 0
+    },
+    "length_8": {
+      "total": 2609,
+      "quadratic": 2149,
+      "lower_output_dimension": 133,
+      "matching_rank2_basis": 0
+    },
+    "length_9": {
+      "total": 2580,
+      "quadratic": 2107,
+      "lower_output_dimension": 227,
+      "matching_rank2_basis": 0
+    },
+    "length_10": {
+      "total": 2551,
+      "quadratic": 2066,
+      "lower_output_dimension": 350,
+      "matching_rank2_basis": 0
+    },
+    "note": "Scanned all 15 banks and excluded higher-degree dependent windows. This restricted rank2-form necessary condition rejects simple replacement in low-rank output-space cases; no KMB emitted."
+  },
+  "physical_W_H2_trust_region_screen": {
+    "tested": "fixed angle_words and W/H2 coupled projected gradient, exact FeMoCo reference",
+    "admissible_improvement_found": false,
+    "reference_lambda_eff": 46.918064099948054,
+    "note": "Published sparse solution is near KKT boundary. Orthogonal two-column physical gauge and projected sparse local steps did not improve it; H2-only tiny preexisting candidate was independently checked but is not counted as novel score."
+  },
+  "paid_CCX_reduction": 0,
+  "official_verifier_run": false,
+  "competition_score_improvement": null
+}

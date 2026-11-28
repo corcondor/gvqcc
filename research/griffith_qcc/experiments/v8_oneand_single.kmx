@@ -1,0 +1,48 @@
+APPEND_TO_REGISTER q0 r0
+APPEND_TO_REGISTER q1 r0
+APPEND_TO_REGISTER q2 r0
+APPEND_TO_REGISTER q3 r0
+REGISTER r0 "selection"
+APPEND_TO_REGISTER q4 r1
+REGISTER r1 "target"
+R q6
+R q7
+R q5
+X q6
+CX q0 q6
+CX q1 q6
+CX q3 q6
+X q7
+CX q0 q7
+CX q1 q7
+CX q2 q7
+CCX q6 q7 q5
+CX q2 q7
+CX q1 q7
+CX q0 q7
+X q7
+CX q3 q6
+CX q1 q6
+CX q0 q6
+X q6
+X q4
+CX q1 q4
+CX q5 q4
+X q6
+CX q0 q6
+CX q1 q6
+CX q3 q6
+X q7
+CX q0 q7
+CX q1 q7
+CX q2 q7
+HMR q5 b0
+CZ q6 q7 if b0
+CX q2 q7
+CX q1 q7
+CX q0 q7
+X q7
+CX q3 q6
+CX q1 q6
+CX q0 q6
+X q6

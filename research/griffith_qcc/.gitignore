@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.npz
+*.kmb
+*.kmx
+*.pt
+*.so
+*.jsonl
+build/
+dist/
