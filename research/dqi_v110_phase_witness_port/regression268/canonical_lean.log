@@ -1,0 +1,4 @@
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+'Gvqcc.CanonicalPole.guardResidue' does not depend on any axioms
+'Gvqcc.CanonicalPole.regularInverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gvqcc.CanonicalPole.poleInverse' depends on axioms: [propext]

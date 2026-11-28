@@ -1,0 +1,20 @@
+{
+  "pr268_exact": {
+    "poles": [
+      13
+    ],
+    "zero_regular_heads": 0,
+    "reconstructed_degrees": [
+      31,
+      32
+    ],
+    "exact_up_to_scalar": true
+  },
+  "alternating_repeated_quadratic": {
+    "paths": 256,
+    "steps": 3048,
+    "poles": 1524,
+    "regular_h_zero": 1524
+  },
+  "scope": "Classical coefficient recurrence only; no physical register or gate claims."
+}
