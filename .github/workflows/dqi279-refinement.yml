@@ -5,6 +5,7 @@ on:
       - 'research/dqi_cutoff18_strict/SharedFFTScan.lean'
       - 'research/dqi_cutoff18_strict/SharedResidualAlgebra.lean'
       - 'research/dqi_cutoff18_strict/HermiteBoundary279.lean'
+      - 'research/dqi_cutoff18_strict/ConcreteFFT279.lean'
       - '.github/workflows/dqi279-refinement.yml'
   workflow_dispatch:
 permissions:
@@ -45,3 +46,21 @@ jobs:
         with:
           name: dqi279-formal-proof-logs
           path: research/dqi_cutoff18_strict/*.log
+  concrete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_cutoff18_strict/ConcreteFFT279.lean | tee concrete.log
+          test "$(grep -c 'axiom' concrete.log)" -eq 11
+          ! grep -E 'sorryAx|ofReduceBool|_native\.bv_decide\.ax' concrete.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dqi279-concrete-log
+          path: concrete.log
