@@ -16,7 +16,9 @@ theorem debt_telescope (a : Bool) (xs : List Bool) :
   | nil => cases a <;> decide
   | cons b bs ih =>
     simp only [debt, endpoint, ih b]
-    cases a <;> cases b <;> cases endpoint b bs <;> decide
+    have cancel (x y z : Bool) : ((x ^^ y) ^^ (y ^^ z)) = (x ^^ z) := by
+      cases x <;> cases y <;> cases z <;> decide
+    exact cancel a b (endpoint b bs)
 
 /-- A product gate that is coherently disabled has identity action. -/
 def eff (on a : Bool) := true ^^ (on && (a ^^ true))
