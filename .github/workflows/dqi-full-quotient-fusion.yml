@@ -1,0 +1,131 @@
+name: Complete DQI quotient fusion and actual tape audit
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_full_quotient_fusion/**'
+      - '.github/workflows/dqi-full-quotient-fusion.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  encoded:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -fLsS 'https://raw.githubusercontent.com/corcondor/gvqcc/6d8eaade67a9d3bf98b21aa6cac1d187da3f75e1/research/dqi_scope_dual_quotient/ScopeDualQuotient.lean' -o /tmp/second.lean
+          node research/dqi_full_quotient_fusion/encoded.mjs /tmp/second.lean
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Recover exact source
+        run: |
+          set -euo pipefail
+          pip install kickmix==1.0.0 numpy==2.2.6 scipy
+          mkdir -p /tmp/setup /tmp/results
+          base=https://raw.githubusercontent.com/corcondor/gvqcc
+          ref=e26a9d56c08c6e05fdf826070a496595026e7f01
+          for f in build_shell.sh build_shell.py; do curl -fLsS --retry 2 "$base/$ref/research/dqi266_schur_toeplitz_native/$f" -o "/tmp/setup/$f"; done
+          bash /tmp/setup/build_shell.sh /tmp/setup/original
+          curl -fLsS --retry 2 "$base/772a661e92d327c9387d98ba60bfc009613c29f5/research/dqi316k_joint_crt/joint_rank15.py" -o /tmp/seam/joint_rank15.py
+          curl -fLsS --retry 2 "$base/a52fe81aa92f19b907e3c85813e49998523e1eae/research/dqi316k_joint_crt/guard4.py" -o /tmp/seam/guard4.py
+      - name: Build complete 30-scratch guarded adjoint
+        run: |
+          set -euo pipefail
+          export OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1
+          cd /tmp/public266/generators/dqi/src
+          python "$GITHUB_WORKSPACE/research/dqi_full_quotient_fusion/build.py" --output /tmp/results/dqi.kmb | tee /tmp/results/build.log
+      - name: All-weight and standard distribution replay
+        run: |
+          set -uo pipefail
+          python research/dqi_full_safe_guard4/verify_full.py /tmp/results/dqi.kmb /tmp/results/full.json --distribution 2048
+      - name: Unmodified official source standard-size run
+        if: always()
+        run: |
+          set -euo pipefail
+          test -f /tmp/results/dqi.kmb
+          cd /tmp/setup/original
+          python verify_submission_dqi.py /tmp/results/dqi.kmb --num-shots 102400 --batch-size 256 --max-workers 2 --seed 31420261128 | tee /tmp/results/official.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: full-quotient-fusion-native
+          path: /tmp/results/
+          compression-level: 3
+  tape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        parent: [low279, safe313]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        if: matrix.parent == 'low279'
+        with:
+          name: exact-257-fft-research
+          run-id: 46121065738
+          github-token: ${{ github.token }}
+          path: /tmp/input
+      - uses: actions/download-artifact@v4
+        if: matrix.parent == 'safe313'
+        with:
+          name: raw-s-rank15-guard4-research
+          run-id: 46147277949
+          github-token: ${{ github.token }}
+          path: /tmp/input
+      - name: Whole serialized circuit affine quotient
+        env:
+          PARENT: ${{ matrix.parent }}
+        run: |
+          set -euo pipefail
+          pip install kickmix==1.0.0 numpy==2.2.6 scipy
+          mkdir -p /tmp/results
+          if [ "$PARENT" = low279 ]; then
+            f=$(find /tmp/input -name fft257.kmb -print -quit)
+            test -n "$f"; echo "518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499  $f" | sha256sum -c
+          else
+            f=$(find /tmp/input -name dqi.kmb -print -quit)
+            test -n "$f"; echo "918dc05dd4222435e5824b526774cea4ae13895917e29982aeacf9d62456a5e6  $f" | sha256sum -c
+          fi
+          echo "$f" >/tmp/parent-path
+          g++ -std=c++17 -O3 research/dqi_full_quotient_fusion/affine_quotient.cpp -o /tmp/qpass
+          /tmp/qpass "$f" /tmp/results/rewritten.kmb | tee /tmp/results/counts.json
+          python - <<'PY'
+          import json,kickmix as km
+          p=json.load(open('/tmp/results/counts.json'))
+          c=km.Circuit.from_file('/tmp/results/rewritten.kmb')
+          assert int(c.operation_statistics().num_toffoli_like)==p['new_paid']
+          assert c.num_qubits==p['q'] and len(c)==p['new_ops']
+          PY
+      - name: Paired complete native replay (record inherited failures)
+        run: |
+          set -uo pipefail
+          f=$(cat /tmp/parent-path)
+          python research/dqi_full_safe_guard4/verify_full.py "$f" /tmp/results/parent.json --distribution 2048 || true
+          python research/dqi_full_safe_guard4/verify_full.py /tmp/results/rewritten.kmb /tmp/results/candidate.json --distribution 2048 || true
+          python - <<'PY'
+          import json
+          a=json.load(open('/tmp/results/parent.json'));b=json.load(open('/tmp/results/candidate.json'))
+          assert a['q']==b['q']
+          assert all(k in b['panels'] and v['shots']==b['panels'][k]['shots'] and v['errors']==b['panels'][k]['errors'] for k,v in a['panels'].items())
+          def ids(r):return {(z['mode'],z['seed'],z['index'],tuple(z['errors'])) for z in r['failures']}
+          assert ids(a)==ids(b)
+          print('Paired full results',[(k,v['mean_paid'],b['panels'][k]['mean_paid']) for k,v in a['panels'].items()],flush=True)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: full-quotient-tape-${{ matrix.parent }}
+          path: /tmp/results/
+          compression-level: 3
