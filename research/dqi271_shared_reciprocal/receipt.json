@@ -1,0 +1,116 @@
+{
+  "scope": "research only; reject the full tape, no score or submission",
+  "parents": [
+    220,
+    237,
+    246,
+    251,
+    266,
+    267,
+    271,
+    273,
+    274
+  ],
+  "monic": {
+    "scales": [
+      238,
+      170
+    ],
+    "cache_episodes_before_after": [
+      119,
+      85
+    ],
+    "baseline_native_paid": 73056,
+    "optimized_native_paid": 70200,
+    "coherent_orientation_paid_per_direction": 70654,
+    "orientation_Q_before_interp": 895,
+    "after_interp": 883,
+    "phase_paid": 235325,
+    "phase_sha256": "667e59377f3af34a0352159da1e028da0e90cc47524dbed0a39343cf047be1e2",
+    "phase_admitted_shots": 316,
+    "phase_admitted_errors": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "phase_rejected_shots": 4,
+    "phase_rejected_errors": [
+      4,
+      0,
+      0,
+      2
+    ]
+  },
+  "kernel": {
+    "reciprocal_compute_CCX": 66,
+    "reciprocal_clear_CCX": 36,
+    "scale_CCX": 42,
+    "scalar_input_cases": 4096,
+    "scale_basis_cases_per_direction": 53235,
+    "exact_measurement_coefficients": true
+  },
+  "word": {
+    "coprime_pairs": 297,
+    "rhs_checks": 1188,
+    "errors": 0,
+    "dependency_traces": 191,
+    "cache_episodes_all": [
+      16986,
+      12108
+    ]
+  },
+  "nonmonic": {
+    "native_phase_Q": 883,
+    "native_phase_paid": 241733,
+    "native_phase_ops": 9152236,
+    "native_phase_sha256": "12af42daa4f2e2a539fb31c295d0abdb5e982048f10faffca77b28e096f2e02f",
+    "phase_admitted_shots": 174,
+    "phase_admitted_errors": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "phase_rejected_shots": 2,
+    "phase_rejected_errors": [
+      2,
+      0,
+      0,
+      1
+    ],
+    "captured_actual_prefix": {
+      "cases": 72,
+      "leading_one": 0,
+      "roots_ok": 72,
+      "weighted_ok": 72,
+      "coprime": 72,
+      "reference_phase": 72
+    }
+  },
+  "full": {
+    "donor_sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+    "shell_sha256": "e2c07b6b04dd74c298581090d93e1925df985df0f039440dc644751205e8c037",
+    "Q": 900,
+    "ops": 56023169,
+    "static_paid": 461362,
+    "sha256": "32730215771c6ce987cd4b91e91fd7949db7eb3fe78bf79a5c114fc06ba8c487",
+    "stress": {
+      "shots": 996,
+      "mean_paid": 307315.6686746988,
+      "value": 6,
+      "phase": 3,
+      "dirty": 6,
+      "mask": 0
+    },
+    "distribution": {
+      "shots": 1024,
+      "mean_paid": 460975.8017578125,
+      "value": 6,
+      "phase": 2,
+      "dirty": 6,
+      "mask": 0
+    },
+    "accepted": false
+  }
+}
