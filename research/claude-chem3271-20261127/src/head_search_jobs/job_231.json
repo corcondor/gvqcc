@@ -1,0 +1,1477 @@
+{
+ "words": {
+  "t": "../../w_push18/combo/chem3276/submission.npz"
+ },
+ "p1threads": 2,
+ "workers": 2,
+ "budget_min": 330,
+ "stop_when": [],
+ "extra_files": [
+  [
+   "cov_t_k1.pkl",
+   "cov_t_k1.pkl"
+  ],
+  [
+   "cov_t_k5.pkl",
+   "cov_t_k5.pkl"
+  ],
+  [
+   "cov_t_k7.pkl",
+   "cov_t_k7.pkl"
+  ],
+  [
+   "cov_t_k11.pkl",
+   "cov_t_k11.pkl"
+  ]
+ ],
+ "chains": [
+  [
+   {
+    "name": "five1_1",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     1,
+     "cov_t_k1.pkl",
+     "cov_t_k1_f1.pkl",
+     1,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k1_f1*"
+    ]
+   },
+   {
+    "name": "h231_1_1",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     1,
+     "cov_t_k1_f1.pkl",
+     13,
+     29.5,
+     3111,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_1",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_1_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five1_2",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     1,
+     "cov_t_k1.pkl",
+     "cov_t_k1_f2.pkl",
+     2,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k1_f2*"
+    ]
+   },
+   {
+    "name": "h231_1_2",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     1,
+     "cov_t_k1_f2.pkl",
+     13,
+     29.5,
+     3112,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_1",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_1_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five1_3",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     1,
+     "cov_t_k1.pkl",
+     "cov_t_k1_f3.pkl",
+     3,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k1_f3*"
+    ]
+   },
+   {
+    "name": "h231_1_3",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     1,
+     "cov_t_k1_f3.pkl",
+     13,
+     29.5,
+     3113,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_1",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_1_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five1_4",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     1,
+     "cov_t_k1.pkl",
+     "cov_t_k1_f4.pkl",
+     4,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k1_f4*"
+    ]
+   },
+   {
+    "name": "h231_1_4",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     1,
+     "cov_t_k1_f4.pkl",
+     13,
+     29.5,
+     3114,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_1",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_1_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five1_5",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     1,
+     "cov_t_k1.pkl",
+     "cov_t_k1_f5.pkl",
+     5,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k1_f5*"
+    ]
+   },
+   {
+    "name": "h231_1_5",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     1,
+     "cov_t_k1_f5.pkl",
+     13,
+     29.5,
+     3115,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_1",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_1_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five1_6",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     1,
+     "cov_t_k1.pkl",
+     "cov_t_k1_f6.pkl",
+     6,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k1_f6*"
+    ]
+   },
+   {
+    "name": "h231_1_6",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     1,
+     "cov_t_k1_f6.pkl",
+     13,
+     29.5,
+     3116,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_1",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_1_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five1_7",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     1,
+     "cov_t_k1.pkl",
+     "cov_t_k1_f7.pkl",
+     7,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k1_f7*"
+    ]
+   },
+   {
+    "name": "h231_1_7",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     1,
+     "cov_t_k1_f7.pkl",
+     13,
+     29.5,
+     3117,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_1",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_1_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five1_8",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     1,
+     "cov_t_k1.pkl",
+     "cov_t_k1_f8.pkl",
+     8,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k1_f8*"
+    ]
+   },
+   {
+    "name": "h231_1_8",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     1,
+     "cov_t_k1_f8.pkl",
+     13,
+     29.5,
+     3118,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_1",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_1_n95*.kmb"
+    ]
+   }
+  ],
+  [
+   {
+    "name": "five5_1",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     5,
+     "cov_t_k5.pkl",
+     "cov_t_k5_f1.pkl",
+     1,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k5_f1*"
+    ]
+   },
+   {
+    "name": "h231_5_1",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     5,
+     "cov_t_k5_f1.pkl",
+     13,
+     29.5,
+     3151,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_5",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_5_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five5_2",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     5,
+     "cov_t_k5.pkl",
+     "cov_t_k5_f2.pkl",
+     2,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k5_f2*"
+    ]
+   },
+   {
+    "name": "h231_5_2",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     5,
+     "cov_t_k5_f2.pkl",
+     13,
+     29.5,
+     3152,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_5",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_5_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five5_3",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     5,
+     "cov_t_k5.pkl",
+     "cov_t_k5_f3.pkl",
+     3,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k5_f3*"
+    ]
+   },
+   {
+    "name": "h231_5_3",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     5,
+     "cov_t_k5_f3.pkl",
+     13,
+     29.5,
+     3153,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_5",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_5_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five5_4",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     5,
+     "cov_t_k5.pkl",
+     "cov_t_k5_f4.pkl",
+     4,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k5_f4*"
+    ]
+   },
+   {
+    "name": "h231_5_4",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     5,
+     "cov_t_k5_f4.pkl",
+     13,
+     29.5,
+     3154,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_5",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_5_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five5_5",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     5,
+     "cov_t_k5.pkl",
+     "cov_t_k5_f5.pkl",
+     5,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k5_f5*"
+    ]
+   },
+   {
+    "name": "h231_5_5",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     5,
+     "cov_t_k5_f5.pkl",
+     13,
+     29.5,
+     3155,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_5",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_5_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five5_6",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     5,
+     "cov_t_k5.pkl",
+     "cov_t_k5_f6.pkl",
+     6,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k5_f6*"
+    ]
+   },
+   {
+    "name": "h231_5_6",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     5,
+     "cov_t_k5_f6.pkl",
+     13,
+     29.5,
+     3156,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_5",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_5_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five5_7",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     5,
+     "cov_t_k5.pkl",
+     "cov_t_k5_f7.pkl",
+     7,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k5_f7*"
+    ]
+   },
+   {
+    "name": "h231_5_7",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     5,
+     "cov_t_k5_f7.pkl",
+     13,
+     29.5,
+     3157,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_5",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_5_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five5_8",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     5,
+     "cov_t_k5.pkl",
+     "cov_t_k5_f8.pkl",
+     8,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k5_f8*"
+    ]
+   },
+   {
+    "name": "h231_5_8",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     5,
+     "cov_t_k5_f8.pkl",
+     13,
+     29.5,
+     3158,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_5",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_5_n95*.kmb"
+    ]
+   }
+  ],
+  [
+   {
+    "name": "five7_1",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     7,
+     "cov_t_k7.pkl",
+     "cov_t_k7_f1.pkl",
+     1,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k7_f1*"
+    ]
+   },
+   {
+    "name": "h231_7_1",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     7,
+     "cov_t_k7_f1.pkl",
+     13,
+     29.5,
+     3171,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_7",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_7_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five7_2",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     7,
+     "cov_t_k7.pkl",
+     "cov_t_k7_f2.pkl",
+     2,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k7_f2*"
+    ]
+   },
+   {
+    "name": "h231_7_2",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     7,
+     "cov_t_k7_f2.pkl",
+     13,
+     29.5,
+     3172,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_7",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_7_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five7_3",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     7,
+     "cov_t_k7.pkl",
+     "cov_t_k7_f3.pkl",
+     3,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k7_f3*"
+    ]
+   },
+   {
+    "name": "h231_7_3",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     7,
+     "cov_t_k7_f3.pkl",
+     13,
+     29.5,
+     3173,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_7",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_7_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five7_4",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     7,
+     "cov_t_k7.pkl",
+     "cov_t_k7_f4.pkl",
+     4,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k7_f4*"
+    ]
+   },
+   {
+    "name": "h231_7_4",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     7,
+     "cov_t_k7_f4.pkl",
+     13,
+     29.5,
+     3174,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_7",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_7_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five7_5",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     7,
+     "cov_t_k7.pkl",
+     "cov_t_k7_f5.pkl",
+     5,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k7_f5*"
+    ]
+   },
+   {
+    "name": "h231_7_5",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     7,
+     "cov_t_k7_f5.pkl",
+     13,
+     29.5,
+     3175,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_7",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_7_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five7_6",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     7,
+     "cov_t_k7.pkl",
+     "cov_t_k7_f6.pkl",
+     6,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k7_f6*"
+    ]
+   },
+   {
+    "name": "h231_7_6",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     7,
+     "cov_t_k7_f6.pkl",
+     13,
+     29.5,
+     3176,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_7",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_7_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five7_7",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     7,
+     "cov_t_k7.pkl",
+     "cov_t_k7_f7.pkl",
+     7,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k7_f7*"
+    ]
+   },
+   {
+    "name": "h231_7_7",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     7,
+     "cov_t_k7_f7.pkl",
+     13,
+     29.5,
+     3177,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_7",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_7_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five7_8",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     7,
+     "cov_t_k7.pkl",
+     "cov_t_k7_f8.pkl",
+     8,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k7_f8*"
+    ]
+   },
+   {
+    "name": "h231_7_8",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     7,
+     "cov_t_k7_f8.pkl",
+     13,
+     29.5,
+     3178,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_7",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_7_n95*.kmb"
+    ]
+   }
+  ],
+  [
+   {
+    "name": "five11_1",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     11,
+     "cov_t_k11.pkl",
+     "cov_t_k11_f1.pkl",
+     1,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k11_f1*"
+    ]
+   },
+   {
+    "name": "h231_11_1",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     11,
+     "cov_t_k11_f1.pkl",
+     13,
+     29.5,
+     3211,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_11",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_11_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five11_2",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     11,
+     "cov_t_k11.pkl",
+     "cov_t_k11_f2.pkl",
+     2,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k11_f2*"
+    ]
+   },
+   {
+    "name": "h231_11_2",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     11,
+     "cov_t_k11_f2.pkl",
+     13,
+     29.5,
+     3212,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_11",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_11_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five11_3",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     11,
+     "cov_t_k11.pkl",
+     "cov_t_k11_f3.pkl",
+     3,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k11_f3*"
+    ]
+   },
+   {
+    "name": "h231_11_3",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     11,
+     "cov_t_k11_f3.pkl",
+     13,
+     29.5,
+     3213,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_11",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_11_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five11_4",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     11,
+     "cov_t_k11.pkl",
+     "cov_t_k11_f4.pkl",
+     4,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k11_f4*"
+    ]
+   },
+   {
+    "name": "h231_11_4",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     11,
+     "cov_t_k11_f4.pkl",
+     13,
+     29.5,
+     3214,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_11",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_11_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five11_5",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     11,
+     "cov_t_k11.pkl",
+     "cov_t_k11_f5.pkl",
+     5,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k11_f5*"
+    ]
+   },
+   {
+    "name": "h231_11_5",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     11,
+     "cov_t_k11_f5.pkl",
+     13,
+     29.5,
+     3215,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_11",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_11_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five11_6",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     11,
+     "cov_t_k11.pkl",
+     "cov_t_k11_f6.pkl",
+     6,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k11_f6*"
+    ]
+   },
+   {
+    "name": "h231_11_6",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     11,
+     "cov_t_k11_f6.pkl",
+     13,
+     29.5,
+     3216,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_11",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_11_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five11_7",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     11,
+     "cov_t_k11.pkl",
+     "cov_t_k11_f7.pkl",
+     7,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k11_f7*"
+    ]
+   },
+   {
+    "name": "h231_11_7",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     11,
+     "cov_t_k11_f7.pkl",
+     13,
+     29.5,
+     3217,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_11",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_11_n95*.kmb"
+    ]
+   },
+   {
+    "name": "five11_8",
+    "words": "t",
+    "argv": [
+     "fivecol.py",
+     11,
+     "cov_t_k11.pkl",
+     "cov_t_k11_f8.pkl",
+     8,
+     6000000
+    ],
+    "env": {},
+    "timeout": 1800,
+    "keep": [
+     "cov_t_k11_f8*"
+    ]
+   },
+   {
+    "name": "h231_11_8",
+    "words": "t",
+    "argv": [
+     "make2.py",
+     11,
+     "cov_t_k11_f8.pkl",
+     13,
+     29.5,
+     3218,
+     1800
+    ],
+    "env": {
+     "P1W0": "8",
+     "P1EMAX": "26",
+     "P1PAIRLIM": "180"
+    },
+    "key": "h231_11",
+    "success": [
+     "'status': 'PASS",
+     "emitted",
+     "toffoli 231"
+    ],
+    "timeout": 2400,
+    "keep": [
+     "angle_k_11_n95*.kmb"
+    ]
+   }
+  ]
+ ]
+}

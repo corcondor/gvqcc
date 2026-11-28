@@ -1,0 +1,16 @@
+  phase1: p=25 rank(E)=53 m_start=34 (id b99def57673c)
+  phase1: reusing cached search result
+  lifted free columns; rank of needed high functions 150
+snapshot after the search and lift (0s); keeping the first 5 products; recorded factors 78
+  anchors: 1 sparse closable combinations, supports on the last 22 chips (73510 candidates, min support 22)
+anchors fixed (1; 21s)
+trial 0: closed  CCX 243  cond-CCZ 0  spills 3  remat 3  mean Toffoli 243.0 (26s)
+trial 1: closed  CCX 244  cond-CCZ 0  spills 3  remat 4  mean Toffoli 244.0 (32s)
+trial 2: closed  CCX 244  cond-CCZ 0  spills 3  remat 4  mean Toffoli 244.0 (37s)
+trial 3: closed  CCX 244  cond-CCZ 0  spills 3  remat 4  mean Toffoli 244.0 (44s)
+trial 4: closed  CCX 244  cond-CCZ 0  spills 3  remat 4  mean Toffoli 244.0 (49s)
+trial 5: closed  CCX 244  cond-CCZ 0  spills 3  remat 4  mean Toffoli 244.0 (55s)
+best trial 0 mean Toffoli 243.0 evaluate ok True peak width 128 [] reverse function violations []
+emitted angle_k_0_n95_f10_s501_q5a1r.kmb sha 2cf5731484b27c73 ops 51656
+verify forward: PASS_REACHABLE_EXACT_ALL_ADDRESSES_AND_HMR_SYMBOLS 243 128
+verify reverse: PASS_REACHABLE_EXACT_ALL_ADDRESSES_AND_HMR_SYMBOLS 243 128

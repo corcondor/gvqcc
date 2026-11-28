@@ -1,0 +1,6 @@
+DEAD op 16546 (type 3) never matters in 16384 lanes
+DEAD op 30641 (type 3) never matters in 16384 lanes
+DEAD op 39570 (type 3) never matters in 16384 lanes
+DEAD op 40454 (type 3) never matters in 16384 lanes
+toffoli-class ops 1507, bits 875, lanes 16384, mean executed 1404.6456
+never-matters 4, single-bit sinkable 0 (saves 0.000 mean), OR-pair sinkable 0 (saves 0.000 mean)

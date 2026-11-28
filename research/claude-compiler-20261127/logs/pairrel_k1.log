@@ -1,0 +1,10 @@
+columns 160 full 144 partial by care count [(4, 13), (5, 3)]
+  five-care column 144: cared x (0, 1, 2, 3, 4)
+  five-care column 145: cared x (0, 1, 2, 3, 4)
+  five-care column 146: cared x (0, 1, 2, 3, 4)
+pair (144,145): cared by both [1, 2, 3, 4], by either [0, 1, 2, 3, 4]: support solution space dim 10
+pair (144,146): cared by both [1, 2, 3, 4], by either [0, 1, 2, 3, 4]: support solution space dim 10
+pair (145,146): cared by both [1, 2, 3, 4], by either [0, 1, 2, 3, 4]: support solution space dim 10
+single 144: support solution space dim 10
+single 145: support solution space dim 10
+single 146: support solution space dim 10

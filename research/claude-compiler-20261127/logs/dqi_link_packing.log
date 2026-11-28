@@ -1,0 +1,11 @@
+guard-compatible links: 3305
+extra wires   1: cacheable links    38  per wire    38.0  net T = -672
+extra wires   2: cacheable links    71  per wire    35.5  net T = -1349
+extra wires   3: cacheable links   104  per wire    34.7  net T = -2026
+extra wires   4: cacheable links   137  per wire    34.2  net T = -2703
+extra wires   6: cacheable links   203  per wire    33.8  net T = -4057
+extra wires   8: cacheable links   267  per wire    33.4  net T = -5413
+extra wires  12: cacheable links   386  per wire    32.2  net T = -8134
+extra wires  16: cacheable links   482  per wire    30.1  net T = -10878
+extra wires  24: cacheable links   630  per wire    26.2  net T = -16410
+extra wires  32: cacheable links   760  per wire    23.8  net T = -21960

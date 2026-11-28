@@ -1,0 +1,74 @@
+selection qubits: 0 1 2 3 4 5 6 7 8 9 10
+OLD family:
+  k= 0 qubits_header=128 max_used=128 bits=1 ops=41605 toffoli=242 conditioned_toffoli=0 hmr=147 kinds: CCX=242 CX=39944 CZ if=407 HMR=147 NEG if=2 X=723 Z if=140
+  k= 1 qubits_header=128 max_used=128 bits=1 ops=38020 toffoli=232 conditioned_toffoli=0 hmr=137 kinds: CCX=232 CX=36446 CZ if=432 HMR=137 NEG if=2 X=512 Z if=259
+  k= 2 qubits_header=128 max_used=128 bits=1 ops=13152 toffoli=213 conditioned_toffoli=0 hmr=82 kinds: CCX=213 CX=12748 CZ if=82 HMR=82 X=27
+  k= 3 qubits_header=128 max_used=128 bits=1 ops=13446 toffoli=212 conditioned_toffoli=0 hmr=82 kinds: CCX=212 CX=13021 CZ if=82 HMR=82 X=49
+  k= 4 qubits_header=128 max_used=128 bits=1 ops=13504 toffoli=213 conditioned_toffoli=0 hmr=82 kinds: CCX=213 CX=13082 CZ if=82 HMR=82 X=45
+  k= 5 qubits_header=128 max_used=128 bits=1 ops=53303 toffoli=231 conditioned_toffoli=0 hmr=136 kinds: CCX=231 CX=51660 CZ if=424 HMR=136 NEG if=5 X=715 Z if=132
+  k= 6 qubits_header=128 max_used=128 bits=1 ops=13020 toffoli=213 conditioned_toffoli=0 hmr=82 kinds: CCX=213 CX=12615 CZ if=82 HMR=82 X=28
+  k= 7 qubits_header=128 max_used=128 bits=1 ops=43365 toffoli=232 conditioned_toffoli=0 hmr=137 kinds: CCX=232 CX=41718 CZ if=426 HMR=137 NEG if=34 X=686 Z if=132
+  k= 8 qubits_header=128 max_used=128 bits=1 ops=12778 toffoli=205 conditioned_toffoli=0 hmr=82 kinds: CCX=205 CX=12292 CZ if=82 HMR=82 X=117
+  k= 9 qubits_header=128 max_used=128 bits=1 ops=13404 toffoli=212 conditioned_toffoli=0 hmr=82 kinds: CCX=212 CX=12985 CZ if=82 HMR=82 X=43
+  k=10 qubits_header=128 max_used=128 bits=1 ops=13772 toffoli=212 conditioned_toffoli=0 hmr=82 kinds: CCX=212 CX=13337 CZ if=82 HMR=82 X=59
+  k=11 qubits_header=128 max_used=128 bits=1 ops=43516 toffoli=232 conditioned_toffoli=0 hmr=137 kinds: CCX=232 CX=41884 CZ if=417 HMR=137 NEG if=8 X=705 Z if=133
+  k=12 qubits_header=128 max_used=128 bits=1 ops=13215 toffoli=209 conditioned_toffoli=0 hmr=82 kinds: CCX=209 CX=12796 CZ if=82 HMR=82 X=46
+  k=13 qubits_header=128 max_used=128 bits=1 ops=12769 toffoli=206 conditioned_toffoli=0 hmr=82 kinds: CCX=206 CX=12352 CZ if=82 HMR=82 X=47
+  k=14 qubits_header=128 max_used=128 bits=1 ops=12841 toffoli=206 conditioned_toffoli=0 hmr=82 kinds: CCX=206 CX=12422 CZ if=82 HMR=82 X=49
+  toffoli per pass = 3270, max header qubits = 128
+  k= 0 word_qubit_reads=1624 public_HMR=70 selection_targets=21740
+  k= 1 word_qubit_reads=3434 public_HMR=43 selection_targets=20154
+  k= 2 word_qubit_reads=1866 public_HMR=0 selection_targets=8682
+  k= 3 word_qubit_reads=1951 public_HMR=0 selection_targets=8751
+  k= 4 word_qubit_reads=2008 public_HMR=0 selection_targets=8716
+  k= 5 word_qubit_reads=5939 public_HMR=64 selection_targets=28475
+  k= 6 word_qubit_reads=1708 public_HMR=0 selection_targets=8362
+  k= 7 word_qubit_reads=4075 public_HMR=65 selection_targets=22102
+  k= 8 word_qubit_reads=1693 public_HMR=0 selection_targets=8298
+  k= 9 word_qubit_reads=2003 public_HMR=0 selection_targets=8681
+  k=10 word_qubit_reads=2276 public_HMR=0 selection_targets=8763
+  k=11 word_qubit_reads=4072 public_HMR=65 selection_targets=22257
+  k=12 word_qubit_reads=1897 public_HMR=0 selection_targets=8499
+  k=13 word_qubit_reads=1798 public_HMR=0 selection_targets=8320
+  k=14 word_qubit_reads=1828 public_HMR=0 selection_targets=8466
+NEW family:
+  k= 0 qubits_header=128 max_used=128 bits=1 ops=51408 toffoli=242 conditioned_toffoli=1 hmr=146 kinds: CCX=241 CCZ if=1 CX=49738 CZ if=409 HMR=146 NEG if=31 X=701 Z if=141
+  k= 1 qubits_header=128 max_used=128 bits=1 ops=38020 toffoli=232 conditioned_toffoli=0 hmr=137 kinds: CCX=232 CX=36446 CZ if=432 HMR=137 NEG if=2 X=512 Z if=259
+  k= 2 qubits_header=128 max_used=128 bits=1 ops=13152 toffoli=213 conditioned_toffoli=0 hmr=82 kinds: CCX=213 CX=12748 CZ if=82 HMR=82 X=27
+  k= 3 qubits_header=128 max_used=128 bits=1 ops=13446 toffoli=212 conditioned_toffoli=0 hmr=82 kinds: CCX=212 CX=13021 CZ if=82 HMR=82 X=49
+  k= 4 qubits_header=128 max_used=128 bits=1 ops=13504 toffoli=213 conditioned_toffoli=0 hmr=82 kinds: CCX=213 CX=13082 CZ if=82 HMR=82 X=45
+  k= 5 qubits_header=128 max_used=128 bits=1 ops=53303 toffoli=231 conditioned_toffoli=0 hmr=136 kinds: CCX=231 CX=51660 CZ if=424 HMR=136 NEG if=5 X=715 Z if=132
+  k= 6 qubits_header=128 max_used=128 bits=1 ops=13020 toffoli=213 conditioned_toffoli=0 hmr=82 kinds: CCX=213 CX=12615 CZ if=82 HMR=82 X=28
+  k= 7 qubits_header=128 max_used=128 bits=1 ops=43365 toffoli=232 conditioned_toffoli=0 hmr=137 kinds: CCX=232 CX=41718 CZ if=426 HMR=137 NEG if=34 X=686 Z if=132
+  k= 8 qubits_header=128 max_used=128 bits=1 ops=12778 toffoli=205 conditioned_toffoli=0 hmr=82 kinds: CCX=205 CX=12292 CZ if=82 HMR=82 X=117
+  k= 9 qubits_header=128 max_used=128 bits=1 ops=13404 toffoli=212 conditioned_toffoli=0 hmr=82 kinds: CCX=212 CX=12985 CZ if=82 HMR=82 X=43
+  k=10 qubits_header=128 max_used=128 bits=1 ops=13772 toffoli=212 conditioned_toffoli=0 hmr=82 kinds: CCX=212 CX=13337 CZ if=82 HMR=82 X=59
+  k=11 qubits_header=128 max_used=128 bits=1 ops=43516 toffoli=232 conditioned_toffoli=0 hmr=137 kinds: CCX=232 CX=41884 CZ if=417 HMR=137 NEG if=8 X=705 Z if=133
+  k=12 qubits_header=128 max_used=128 bits=1 ops=13215 toffoli=209 conditioned_toffoli=0 hmr=82 kinds: CCX=209 CX=12796 CZ if=82 HMR=82 X=46
+  k=13 qubits_header=128 max_used=128 bits=1 ops=12769 toffoli=206 conditioned_toffoli=0 hmr=82 kinds: CCX=206 CX=12352 CZ if=82 HMR=82 X=47
+  k=14 qubits_header=128 max_used=128 bits=1 ops=12841 toffoli=206 conditioned_toffoli=0 hmr=82 kinds: CCX=206 CX=12422 CZ if=82 HMR=82 X=49
+  toffoli per pass = 3270, max header qubits = 128
+  k= 0 word_qubit_reads=2899 public_HMR=71 selection_targets=27955
+  k= 1 word_qubit_reads=3434 public_HMR=43 selection_targets=20154
+  k= 2 word_qubit_reads=1866 public_HMR=0 selection_targets=8682
+  k= 3 word_qubit_reads=1951 public_HMR=0 selection_targets=8751
+  k= 4 word_qubit_reads=2008 public_HMR=0 selection_targets=8716
+  k= 5 word_qubit_reads=5939 public_HMR=64 selection_targets=28475
+  k= 6 word_qubit_reads=1708 public_HMR=0 selection_targets=8362
+  k= 7 word_qubit_reads=4075 public_HMR=65 selection_targets=22102
+  k= 8 word_qubit_reads=1693 public_HMR=0 selection_targets=8298
+  k= 9 word_qubit_reads=2003 public_HMR=0 selection_targets=8681
+  k=10 word_qubit_reads=2276 public_HMR=0 selection_targets=8763
+  k=11 word_qubit_reads=4072 public_HMR=65 selection_targets=22257
+  k=12 word_qubit_reads=1897 public_HMR=0 selection_targets=8499
+  k=13 word_qubit_reads=1798 public_HMR=0 selection_targets=8320
+  k=14 word_qubit_reads=1828 public_HMR=0 selection_targets=8466
+OLD: failing (address,circuit) pairs forward=0 reverse=0 over 1219 addresses
+NEW: failing (address,circuit) pairs forward=0 reverse=0 over 1219 addresses
+word table entries compared: 1219 x 75 = 91425 ; differing entries: 0
+nonzero batches in new table: 18285 of 18285
+out-of-range addresses 1219..2047 (829 of them) that are NOT clean in the forward pass, per circuit k:
+  old: 768 768 0 0 0 768 0 768 0 0 0 768 0 0 0
+  new: 768 768 0 0 0 768 0 768 0 0 0 768 0 0 0
+out-of-range addresses whose cumulative batch value differs old vs new, per k: 829 829 829 829 829 829 829 829 829 829 829 829 829 829 829
+VERDICT PASS: both families exact on all addresses/outcomes forward+reverse, identical words
