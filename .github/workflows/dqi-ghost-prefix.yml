@@ -1,0 +1,36 @@
+name: Ghost projector strict local audit
+on:
+  pull_request:
+    paths:
+      - research/dqi_cutoff18_strict/GhostProjectorPrefix.lean
+      - research/dqi_ghost_projector_prefix/**
+      - .github/workflows/dqi-ghost-prefix.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reversible circuit regression
+        run: python3 research/dqi_ghost_projector_prefix/check_prefix.py
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: research/dqi_cutoff18_strict
+          build: false
+          test: false
+      - name: Strict local proof check
+        working-directory: research/dqi_cutoff18_strict
+        run: |
+          set -euo pipefail
+          lake env lean -DwarningAsError=true GhostProjectorPrefix.lean | tee /tmp/ghost-axioms.txt
+          python3 - <<'PY'
+          import re
+          s=open('/tmp/ghost-axioms.txt').read()
+          rows=re.findall(r"depends on axioms: \[([^\]]*)\]",s)
+          closed=re.findall(r"does not depend on any axioms",s)
+          assert len(rows)+len(closed)==10,(rows,closed)
+          for row in rows:
+              assert set(x.strip() for x in row.split(',') if x.strip()) <= {'propext','Classical.choice','Quot.sound'},row
+          PY
