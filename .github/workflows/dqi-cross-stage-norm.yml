@@ -24,7 +24,7 @@ jobs:
           lake update
           lake exe cache get
           lake env lean -DwarningAsError=true CrossStageNorm.lean | tee norm.log
-          test "$(grep -c "^'.*axiom" norm.log)" -eq 25
+          test "$(grep -c "^'.*axiom" norm.log)" -eq 26
           ! grep -E 'sorryAx|ofReduceBool|_native\.bv_decide\.ax' norm.log
           python - <<'PY'
           import re
