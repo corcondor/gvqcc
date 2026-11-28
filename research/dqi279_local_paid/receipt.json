@@ -1,0 +1,74 @@
+{
+  "scope": "Actual local full raw-syndrome #279 splice, research only",
+  "seed": 20261128,
+  "shots_each": 2048,
+  "parent": {
+    "sha256": "518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499",
+    "Q": 900,
+    "ops": 67549292,
+    "static_paid": 318333,
+    "mean": 316151.99658203125,
+    "errors": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "full": {
+    "sha256": "ff9c8bb0ba7def55eab9bc2cb55755ab9bec804613e4618349f128b6d8ecfe95",
+    "Q": 900,
+    "ops": 82842987,
+    "static_paid": 318344,
+    "mean": 316148.30126953125,
+    "errors": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "paired_diffs": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "balanced": {
+    "sha256": "df83a9c75d3c24c511628ea9e50f473b95f5bfc904354be855becd66f0305065",
+    "Q": 900,
+    "ops": 67528845,
+    "static_paid": 318344,
+    "mean": 316151.49169921875,
+    "errors": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "paired_diffs": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sort_region": [
+      13759499,
+      10444726
+    ]
+  },
+  "inverse_basis_checks": 48276,
+  "ordinary_followup": {
+    "seed": 20261129,
+    "planned": 4096,
+    "candidate_completed_before_timeout": 3584,
+    "observed_errors": 0,
+    "completed": false
+  },
+  "limitations": [
+    "Static paid +11; no full official-size/private-salt verification, no claim of official score.",
+    "No source-selected syndrome branch: selection depends only on public mask.",
+    "Inherited forced dense failures not repaired or used as selection criterion.",
+    "Strict Lean proof CI pending."
+  ]
+}
