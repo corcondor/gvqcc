@@ -1,0 +1,43 @@
+name: DQI 257 exact reconstruction and repair gate
+on:
+  pull_request:
+    paths:
+      - 'research/dqi257_direct_repair/**'
+      - '.github/workflows/dqi257-direct-repair.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install kickmix==1.0.0 numpy==2.2.6 scipy
+      - name: Exact donor and exact 257 reconstruction
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 2 'https://www.kaggle.com/api/v1/datasets/download/tonylica/quantum-ai-32-85306-task-generators?datasetVersionNumber=2' -o /tmp/source.zip
+          python -m zipfile -e /tmp/source.zip /tmp/source
+          cd research/dqi316k_joint_crt
+          python d16_shared_frame.py /tmp/frame_raw.kmb
+          echo 'f62753f8a936e3fbbd9ba8d790abaea6aed55973f471c7f67a10cf14410b22ef  /tmp/frame_raw.kmb' | sha256sum -c
+          g++ -O3 -std=c++17 direct_general.cpp -o /tmp/direct
+          g++ -O3 -std=c++17 scope_keep_reset.cpp -o /tmp/scope
+          /tmp/direct /tmp/frame_raw.kmb /tmp/frame_direct.kmb
+          /tmp/scope /tmp/frame_direct.kmb /tmp/frame_joint.kmb
+          echo '8b9d09f87692f59baaeb399d96650db9389835f23be5c2ab93be4d86259bc6ab  /tmp/frame_joint.kmb' | sha256sum -c
+          cd ../dqi316k_direct_dual_fft
+          g++ -O3 -std=c++17 dual_fft_repair.cpp -o /tmp/dual
+          /tmp/dual /tmp/frame_joint.kmb /tmp/dual247.kmb
+          echo '81081a88c27b708322f0724a09197814a18646a4a9969984ab9cf76a6e6cd7fa  /tmp/dual247.kmb' | sha256sum -c
+          zstd -T2 -3 /tmp/dual247.kmb -o /tmp/exact257.kmb.zst
+      - uses: actions/upload-artifact@v4
+        with:
+          name: exact257-kmb
+          path: /tmp/exact257.kmb.zst
+          compression-level: 0
+          if-no-files-found: error
