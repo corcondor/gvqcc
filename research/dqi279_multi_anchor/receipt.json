@@ -1,0 +1,98 @@
+{
+  "scope": "Research only; exact #279 decoder kept. Ordinary native tests; no universal correctness claim.",
+  "baseline": {
+    "sha256": "518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499",
+    "Q": 900,
+    "ops": 67549292,
+    "static_paid": 318333,
+    "mean": 316151.99658203125,
+    "shots": 2048,
+    "errors": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "candidates": {
+    "compact": {
+      "sha256": "2c0b3c9fa391e09234569fe5d759929e240d89cc48471db6757801768eed9518",
+      "Q": 900,
+      "ops": 67262375,
+      "static_paid": 318344,
+      "mean": 316151.49169921875,
+      "shots": 2048,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "one_anchor": {
+      "sha256": "def188d586020c0be7f633a011af8c48487c54a6bbda873f4acbecb44f41c78e",
+      "Q": 900,
+      "ops": 75677977,
+      "static_paid": 318344,
+      "mean": 316148.27978515625,
+      "shots": 2048,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "four_anchor": {
+      "sha256": "765f7936cf214928bcd7583104de5fc1030ca577eec16c6997ca8a8002074384",
+      "Q": 900,
+      "ops": 111337575,
+      "static_paid": 318344,
+      "mean": 316143.47265625,
+      "shots": 2048,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "reference_independent": {
+        "batch": 256,
+        "salt": "",
+        "shots": 4096,
+        "mean": 316118.4616699219,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "frame": {
+    "swap": 133084,
+    "fredkin": 108,
+    "involution": 43,
+    "delta_ops": -266470
+  },
+  "linear": {
+    "matrices": 4024,
+    "old_slope_ops": 482996,
+    "new_slope_ops": 398276
+  },
+  "plan": {
+    "inverse_basis_checks": 386304
+  },
+  "lean": {
+    "parent288_fix": "78ece227448f86102fd7e1ee12b06200f3f84a93",
+    "new_lemmas": 17,
+    "CI_pending": true
+  },
+  "limits": [
+    "Original forced dense failures not repaired; no claim of all-domain zero.",
+    "102400 replay attempted but initial circuit serialization exceeded local memory; independent 4096 using exact file hash and default batch completed.",
+    "No private salt or submission; only average paid reduced; static paid +11.",
+    "#284/#287 algebra proof suites referenced, no unsupported coefficient splice."
+  ]
+}
