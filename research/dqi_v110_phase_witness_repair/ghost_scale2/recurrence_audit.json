@@ -1,0 +1,24 @@
+{
+  "columns": [
+    "old_pass",
+    "scale2_pass",
+    "count"
+  ],
+  "counts": [
+    [
+      false,
+      false,
+      127
+    ],
+    [
+      false,
+      true,
+      30
+    ],
+    [
+      true,
+      true,
+      465
+    ]
+  ]
+}
