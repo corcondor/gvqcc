@@ -1,0 +1,39 @@
+name: Cross-stage inverse norm strict proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/CrossStageNorm.lean'
+      - '.github/workflows/dqi-cross-stage-norm.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true CrossStageNorm.lean | tee norm.log
+          test "$(grep -c "^'.*axiom" norm.log)" -eq 26
+          ! grep -E 'sorryAx|ofReduceBool|_native\.bv_decide\.ax' norm.log
+          python - <<'PY'
+          import re
+          for line in open('norm.log'):
+              if 'depends on axioms:' in line:
+                  assert set(re.search(r'\[(.*)\]',line).group(1).split(', ')) <= {'propext','Classical.choice','Quot.sound'}
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cross-stage-norm-lean
+          path: research/dqi_cutoff18_strict/norm.log
