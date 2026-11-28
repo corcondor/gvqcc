@@ -4,7 +4,10 @@ namespace GVQCC.SharedResidualAlgebra
 open Polynomial
 open scoped BigOperators
 noncomputable section
-variable {F : Type*} [Field F] [DecidableEq F]
+variable {F : Type*} [Field F]
+
+section Interpolation
+variable [DecidableEq F]
 
 /-- The 71 anchor words determine X times an ordinary interpolant.
     There are 72 coefficients, including the forced zero constant. -/
@@ -64,23 +67,6 @@ theorem weighted_interpolation_unique (s : Finset F) (mu : F → F)
     have hn : a ≠ 0 := fun h => h0 (h ▸ hm)
     rw [ha a hm, weighted_at_anchor s mu a hm hn]
 
-/-- Exact row factorization used by prepare_fft.py. The row-coefficient
-    certificate is an explicit hypothesis, rather than an assumed theorem
-    about the binary KMB. -/
-theorem residual_row_factor {I : Type*} (s : Finset I)
-    (coef ell mu : I → F) (rho x m : F)
-    (hc : ∀ j ∈ s, coef j = rho*x*ell j) :
-    rho*m + ∑ j ∈ s, coef j*mu j =
-      rho*(m+x*(∑ j ∈ s, ell j*mu j)) := by
-  calc
-    _ = rho*m + ∑ j ∈ s, (rho*x)*(ell j*mu j) := by
-      congr 1
-      apply Finset.sum_congr rfl
-      intro j hj
-      rw [hc j hj]
-      ring
-    _ = _ := by rw [← Finset.mul_sum, mul_add, mul_assoc]
-
 /-- The full evaluation transform is linear in the supplied anchor data. -/
 theorem weighted_add (s : Finset F) (mu nu : F → F) :
     weightedPoly s (fun x => mu x + nu x) =
@@ -105,6 +91,25 @@ theorem weighted_scale (s : Finset F) (mu : F → F) (c : F) :
     ring
   rw [hh]
   ring
+
+end Interpolation
+
+/-- Exact row factorization used by prepare_fft.py. The row-coefficient
+    certificate is an explicit hypothesis, rather than an assumed theorem
+    about the binary KMB. -/
+theorem residual_row_factor {I : Type*} (s : Finset I)
+    (coef ell mu : I → F) (rho x m : F)
+    (hc : ∀ j ∈ s, coef j = rho*x*ell j) :
+    rho*m + ∑ j ∈ s, coef j*mu j =
+      rho*(m+x*(∑ j ∈ s, ell j*mu j)) := by
+  calc
+    _ = rho*m + ∑ j ∈ s, (rho*x)*(ell j*mu j) := by
+      congr 1
+      apply Finset.sum_congr rfl
+      intro j hj
+      rw [hc j hj]
+      ring
+    _ = _ := by rw [← Finset.mul_sum, mul_add, mul_assoc]
 
 /-- Transposition of a moment/evaluation pairing; this justifies moving
     a public mask in the moment span into a syndrome-linear phase. -/
