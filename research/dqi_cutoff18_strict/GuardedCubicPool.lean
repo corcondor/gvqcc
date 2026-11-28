@@ -86,6 +86,40 @@ theorem scalar_mask_inverse (x m e : F) (hx : x ≠ 0) :
     _ = _ := by rw [inv_mul_cancel₀ hx,one_mul]
 
 end Field
+section Unitized
+variable {F : Type*} [Field F] [DecidableEq F]
+
+/-- Complete a clipped scale to a total permutation without changing its
+action on a nonzero pivot. This is not a proof of the singular-chart phase. -/
+def unitize (d : F) : F := if d=0 then 1 else d
+
+theorem unitize_nonzero (d : F) : unitize d ≠ 0 := by
+  by_cases h : d=0
+  · simp [unitize,h]
+  · simp [unitize,h]
+
+theorem unitize_agrees (d : F) (h : d ≠ 0) : unitize d=d := by
+  simp [unitize,h]
+
+theorem unitized_reciprocal (d : F) :
+    (unitize d)⁻¹ = d⁻¹ + (if d=0 then 1 else 0) := by
+  by_cases h : d=0
+  · simp [unitize,h]
+  · simp [unitize,h]
+
+theorem scale_restore (d v : F) : (v*unitize d)/(unitize d)=v := by
+  exact mul_div_cancel_right₀ v (unitize_nonzero d)
+
+theorem divide_restore (d v : F) : (v/unitize d)*unitize d=v := by
+  exact div_mul_cancel₀ v (unitize_nonzero d)
+
+theorem norm_flag_valid {N : Type*} [Zero N] [DecidableEq N]
+    (n : F → N) (h : ∀ d,n d=0 ↔ d=0) (d : F) :
+    (if n d=0 then (1:F) else 0) = if d=0 then 1 else 0 := by
+  rw [h d]
+
+end Unitized
+
 #print axioms pool_phase
 #print axioms pool_refinement
 #print axioms guard_xor
@@ -95,4 +129,10 @@ end Field
 #print axioms reciprocal_moments
 #print axioms reciprocal_amplitude_twice
 #print axioms scalar_mask_inverse
+#print axioms unitize_nonzero
+#print axioms unitize_agrees
+#print axioms unitized_reciprocal
+#print axioms scale_restore
+#print axioms divide_restore
+#print axioms norm_flag_valid
 end GVQCC.GuardedCubicPool
