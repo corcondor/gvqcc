@@ -1,0 +1,6 @@
+name = "gvqcc-invsqrt36-lending"
+version = "0.1.0"
+defaultTargets = ["GVQCC36"]
+
+[[lean_lib]]
+name = "GVQCC36"

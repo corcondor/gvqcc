@@ -1,0 +1,87 @@
+{
+  "total_push_condition": 2271,
+  "total_pop_condition": 2271,
+  "diag_ops_inside_conditions": {
+    "Z": 5166,
+    "CZ": 11879,
+    "CCZ": 41,
+    "Z_POW": 17
+  },
+  "distinct_active_conditions": 1439,
+  "nonzero_phase_polys_deg1plus": 1439,
+  "gf2_rank_deg1plus": 1410,
+  "compression_delta_deg1plus": 29,
+  "nonzero_phase_polys_deg2plus": 935,
+  "gf2_rank_deg2plus": 892,
+  "compression_delta_deg2plus": 43,
+  "unique_deg2_monomials_epoch_exact": 9830,
+  "shared_deg2_monomials_across_conditions": 910,
+  "max_monomial_reuse_count": 21,
+  "top5_reused_deg2_monomials": [
+    [
+      [
+        [
+          4,
+          232
+        ],
+        [
+          21,
+          490
+        ]
+      ],
+      21
+    ],
+    [
+      [
+        [
+          2,
+          347
+        ],
+        [
+          21,
+          490
+        ]
+      ],
+      17
+    ],
+    [
+      [
+        [
+          14,
+          204
+        ],
+        [
+          21,
+          490
+        ]
+      ],
+      16
+    ],
+    [
+      [
+        [
+          6,
+          264
+        ],
+        [
+          21,
+          490
+        ]
+      ],
+      16
+    ],
+    [
+      [
+        [
+          5,
+          248
+        ],
+        [
+          21,
+          490
+        ]
+      ],
+      14
+    ]
+  ]
+}

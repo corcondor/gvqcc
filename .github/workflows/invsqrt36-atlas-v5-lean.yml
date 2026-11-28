@@ -1,0 +1,20 @@
+name: V5 adaptive atlas Lean
+on:
+  push:
+    branches: [research/invsqrt36-adaptive-atlas-v5-20261124]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check V5 measured reconstruction
+        run: lean research/invsqrt36_nonlinear_lending/lean/AdaptiveAtlasV5.lean

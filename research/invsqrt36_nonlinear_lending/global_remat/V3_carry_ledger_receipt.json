@@ -1,0 +1,60 @@
+{
+  "source_sha256": "6b59214530108d8c49c648f96c53b963d9b8477f8813db1edcf478bf45f6cf03",
+  "legal_inputs": 3133452,
+  "source_ops": 60766,
+  "phase_ledger": {
+    "hmr": 1278,
+    "peak_terms": 425,
+    "observable_history_ops": [
+      7811,
+      8156,
+      32436
+    ]
+  },
+  "ripple": {
+    "accepted_macros": 17,
+    "carrier_assignments": 1826,
+    "source_ops": 970,
+    "added_coverage": 545,
+    "removed_hmr": 109,
+    "additional_paid": 109
+  },
+  "portfolio": {
+    "edges": 63287,
+    "nondominated_points": 196,
+    "candidates": [
+      {
+        "name": "cost-preserving",
+        "covered": 47638,
+        "paid_static": 1553,
+        "expected_paid": 1406.3125,
+        "exact_checks": 46711,
+        "sha256": "eaacaba78a9c1128403b08039ac8365539cc74cc94b9f8c263f32597bad8d5ab"
+      },
+      {
+        "name": "economy",
+        "covered": 50981,
+        "paid_static": 1599,
+        "expected_paid": 1452.3125,
+        "exact_checks": 46468,
+        "sha256": "8feeb4ae0cb6a5adda16855b9ae5650c3f3414a860c0d3ce4a5938ee02448902"
+      },
+      {
+        "name": "wide",
+        "covered": 51712,
+        "paid_static": 1770,
+        "expected_paid": 1623.3125,
+        "exact_checks": 45342,
+        "sha256": "ceef324536f192cd7aaae825bccfdfac99a1d8cd52bfe8053f6962ded4b299ff"
+      }
+    ]
+  },
+  "lean_ci": {
+    "run": 45347738200,
+    "conclusion": "success",
+    "scope": "Boolean identities only"
+  },
+  "full_36q": false,
+  "official_verifier": false,
+  "official_score_gain": null
+}

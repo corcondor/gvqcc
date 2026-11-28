@@ -1,0 +1,25 @@
+name: Carry context bridge V4 Lean certificate
+on:
+  push:
+    branches: [research/invsqrt36-context-bridge-v4-20261124]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Install pinned Lean
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check algebra and cost
+        run: |
+          cd research/invsqrt36_nonlinear_lending/lean
+          lean CarryContextBridge.lean
+          lean ActualContextBridge.lean
+      - name: Check Python source syntax
+        run: python3 -m py_compile research/invsqrt36_nonlinear_lending/global_remat/context_bridge_v4.py

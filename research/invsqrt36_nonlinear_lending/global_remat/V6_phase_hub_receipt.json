@@ -1,0 +1,41 @@
+{
+  "source_sha256": "6b59214530108d8c49c648f96c53b963d9b8477f8813db1edcf478bf45f6cf03",
+  "parent_sha256": "278b26c7a0f463d7b38bd8a9e11195138edec46feca4a0d3d24b2109fd201cc8",
+  "sha256": "b1978632f8e7df632406099a7d0a7f2b0ec133df4b973439998226a8c8ff0c9f",
+  "source_coverage": 53749,
+  "remaining": 7017,
+  "coverage_percent": 88.45242405292433,
+  "parent_static": 1907,
+  "candidate_static": 1904,
+  "parent_expected": 1724.3125,
+  "candidate_expected": 1721.8125,
+  "epochs": [
+    [
+      46514,
+      46729,
+      46514,
+      168,
+      "guard_pool"
+    ],
+    [
+      47442,
+      47503,
+      47395,
+      120,
+      "lifetime"
+    ],
+    [
+      50689,
+      50746,
+      50701,
+      108,
+      "lifetime"
+    ]
+  ],
+  "exact_composition_checks": 62484,
+  "all_legal_inputs": 3133452,
+  "hmr_variables": 1168,
+  "verification": "PASS",
+  "full_36q": false,
+  "official_verifier": false
+}
