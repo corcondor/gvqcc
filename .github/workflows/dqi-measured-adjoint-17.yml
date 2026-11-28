@@ -1,0 +1,56 @@
+name: Measured adjoint 17 seams
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_measured_adjoint_17/**'
+      - '.github/workflows/dqi-measured-adjoint-17.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_measured_adjoint_17/MeasuredAdjoint.lean | tee proof.log
+          test "$(grep -Ec 'depends on axioms|does not depend on any axioms' proof.log)" -eq 6
+          ! grep -E 'sorryAx|ofReduceBool|Lean.ofReduce' proof.log
+          python - <<'PY'
+          import re
+          for row in re.findall(r'depends on axioms: \[([^\]]*)\]',open('proof.log').read()):
+              assert {s.strip() for s in row.split(',') if s.strip()} <= {'propext','Classical.choice','Quot.sound'}
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: measured-adjoint-lean
+          path: proof.log
+  kickmix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - run: python research/dqi_measured_adjoint_17/check_kickmix.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: normalized-seam-native
+          path: |
+            old*.kmb
+            new*.kmb
+            receipt.json
+      - run: |
+          mkdir -p wheelhouse
+          pip download --no-deps --only-binary=:all: kickmix==1.0.0 -d wheelhouse
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kickmix-linux-cp313-wheel
+          path: wheelhouse/*.whl
