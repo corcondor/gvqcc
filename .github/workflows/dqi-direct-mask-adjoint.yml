@@ -1,0 +1,39 @@
+name: Direct mask adjoint strict Lean
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/DirectMaskAdjoint.lean'
+      - '.github/workflows/dqi-direct-mask-adjoint.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true DirectMaskAdjoint.lean | tee direct-mask-adjoint.log
+          test "$(grep -c "^'.*axiom" direct-mask-adjoint.log)" -eq 14
+          python - <<'PY'
+          import re
+          for line in open('direct-mask-adjoint.log'):
+              if 'depends on axioms:' in line:
+                  m=re.search(r'depends on axioms: \[(.*)\]',line)
+                  assert m and set(m.group(1).split(', ')) <= {'propext','Classical.choice','Quot.sound'},line
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: direct-mask-adjoint-axioms
+          path: research/dqi_cutoff18_strict/direct-mask-adjoint.log
