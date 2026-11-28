@@ -1,0 +1,275 @@
+{
+  "salt": "paired-complete-review-v1",
+  "seed_parent_dqi_sha256": "b9f72a7bde001b81e0dc2530618dfa29815038b0bec7a542f75b2e3298d26870",
+  "packed_standard_panel_sha256": {
+    "panel0.bin": "b3f65986ba60482d739e82fe1fe5d3ec680739e6b624b9e684e825b3f525d481",
+    "panel1.bin": "d284eb25113ca8f07e001eaaf67eacaa543102edec5505d293c2d2505256e99a",
+    "panel2.bin": "17b3ab42a5026f94c0d098ef0b1f4c498f5f567cb3868bf5cfc8436175794e1c",
+    "panel3.bin": "1bd9f42452a4a35bd0b4f9bd5ab20cb7ca9cfc53a9a72afa814b2b7cd08ea721"
+  },
+  "archive_panel_n": 622,
+  "archived_kickmix_error_columns": [
+    "value",
+    "raw phase",
+    "dirty Q",
+    "mask",
+    "union",
+    "phase exclusive"
+  ],
+  "scope": "independent paired ordinary replay; full native KickMix on archival stress; older hash-matched other-task receipts; conditional local score, unsubmitted",
+  "arms": {
+    "294": {
+      "ordinary": {
+        "n": 102400,
+        "paid": 32371194220,
+        "value": 0,
+        "phase": 0,
+        "dirty": 0,
+        "mask": 0,
+        "union": 0,
+        "official_value": 0,
+        "official_phase": 0,
+        "mean_paid": 316124.9435546875,
+        "official_formula_dqi_cost": 305035589229.96893,
+        "repetition_factor": 1.1912604648115832
+      },
+      "archived_kickmix": {
+        "sha256": "b9f72a7bde001b81e0dc2530618dfa29815038b0bec7a542f75b2e3298d26870",
+        "width": 900,
+        "ops": 87702020,
+        "static_paid": 318287,
+        "n": 622,
+        "mean_paid": 316128.47588424437,
+        "errors": [
+          407,
+          194,
+          0,
+          0,
+          410,
+          3
+        ]
+      },
+      "chemistry_cost": 247630624.56479988,
+      "invsqrt_cost": 60865.30803388468,
+      "conditional_local_score": 33.33564017311266,
+      "mean_paid_needed_for_33p36": 315432.9357219812,
+      "archive": {
+        "name": "GVQCC_292x294_MATCHED_BEST_RESEARCH_ONLY.zip",
+        "archive_sha256": "dbabc8cd4a4aaa70e89ac100605c0843c290b719a81a2e57dca11bbe3d73135a",
+        "verified_members": 18,
+        "member_hashes": {
+          "dqi.kmb": "b9f72a7bde001b81e0dc2530618dfa29815038b0bec7a542f75b2e3298d26870",
+          "invsqrt.kmb": "2fef265d072fcb1b3b3f136d3bcf2b4b038baf3b5e4ea8b6de484f9747cb97ec",
+          "dfthcsos/angle_k_0.kmb": "e07e3420602b8f62a178b3494a866e8f8d9eac643b9f38351b1385faf9e71475",
+          "dfthcsos/angle_k_1.kmb": "f7ffd4d87e36e96e2d8e7f2c5090b616482b8ed4248abc05f842e3716690d99f",
+          "dfthcsos/angle_k_2.kmb": "ba4a9f30346aaee81c2ad84dc9157bfcba8678ab8d709d17c50820a880ef23fc",
+          "dfthcsos/angle_k_3.kmb": "bd5063c23a53b38ecaaad4f4eefe3c2ffd039279ed0a9d042981675e865a5d10",
+          "dfthcsos/angle_k_4.kmb": "dd795123f77acb861574694a060bf9fa650f6a183f259fb06b853f6d287c2a54",
+          "dfthcsos/angle_k_5.kmb": "f91c7eb4b1f3e915ac735e503f139ec6664cdbab83bb4372713aa4b47d661ca0",
+          "dfthcsos/angle_k_6.kmb": "ba7902631f0a04db26b9c6089e399af27a7b30847ddec22d786e01d18bca9964",
+          "dfthcsos/angle_k_7.kmb": "b4d7feee312cedf2661bab0db0304e3a6ea8aaa35cf333d21e6925566f449fe6",
+          "dfthcsos/angle_k_8.kmb": "2f77c6570406f26bd4f5a90180ae328b4817f224353c2f2610af2d153aceb5fb",
+          "dfthcsos/angle_k_9.kmb": "68f2754e519eff11a621882c2b7f05b2391e0129ac8a2364d2e8e29391840d6b",
+          "dfthcsos/angle_k_10.kmb": "973f3911528d306c9d924d233ee9af2be5e9532ae321b857136b310ee1e850e9",
+          "dfthcsos/angle_k_11.kmb": "69855bbef656482b0c39d5b55d9c7b25eb048ff0dd0d34b7457021e660339a79",
+          "dfthcsos/angle_k_12.kmb": "d5cf366b3af73fd9ae9c696d14b0f302f7ce6f9b7330f8689d30e3ca5b0195d5",
+          "dfthcsos/angle_k_13.kmb": "1cd1fd26c5bfd4b84e2f3bf0f7ed33ec56a3e5c5502863a6d1e1d4714ce2e8ff",
+          "dfthcsos/angle_k_14.kmb": "93dd7e3f1687909191da927801ef01dc69feb8ddc195848b157f0f285bbde161",
+          "dfthcsos/submission.npz": "f1adaabd5c16fe0ff7c789e5b4aa08a42865ae4f0fe6b7ffc6c9376074dd2b3b"
+        }
+      },
+      "static_counts": {
+        "CCX": 311463,
+        "CCZ": 6716,
+        "CSWAP": 108
+      }
+    },
+    "299": {
+      "ordinary": {
+        "n": 102400,
+        "paid": 32371194220,
+        "value": 0,
+        "phase": 0,
+        "dirty": 0,
+        "mask": 0,
+        "union": 0,
+        "official_value": 0,
+        "official_phase": 0,
+        "mean_paid": 316124.9435546875,
+        "official_formula_dqi_cost": 305035589229.96893,
+        "repetition_factor": 1.1912604648115832
+      },
+      "archived_kickmix": {
+        "sha256": "a8b5c62e24e7e44818bd46d75f8fa00a2bb9de64965c8c07912637dd58d7ebea",
+        "width": 900,
+        "ops": 87704819,
+        "static_paid": 317996,
+        "n": 622,
+        "mean_paid": 316128.47588424437,
+        "errors": [
+          407,
+          194,
+          0,
+          0,
+          410,
+          3
+        ]
+      },
+      "chemistry_cost": 247478615.98392352,
+      "invsqrt_cost": 60865.14471360723,
+      "conditional_local_score": 33.34249383959051,
+      "mean_paid_needed_for_33p36": 315627.5307525753,
+      "archive": {
+        "name": "GVQCC_299Joint_V111_V112_Integrated_REVIEW_ONLY.zip",
+        "archive_sha256": "d552bf1f773ca70e34db7d88b8c8754f0a7f70d9e67581e79f4d7487498e3cec",
+        "verified_members": 18,
+        "member_hashes": {
+          "dqi.kmb": "a8b5c62e24e7e44818bd46d75f8fa00a2bb9de64965c8c07912637dd58d7ebea",
+          "invsqrt.kmb": "a545e8cf34f95cfbdaf0db475409e3a56dc4edefe3010cc5fa6cf4af89797e1a",
+          "dfthcsos/angle_k_5.kmb": "de72d86383f3b96ef76d1c9dd37223ba278e84848bd5f19dbe0cc8588fa9e179",
+          "dfthcsos/angle_k_13.kmb": "a58c73e001fd097aba13e88b2f94cc83e0f99d48d6d143e477d2e504f5715360",
+          "dfthcsos/angle_k_4.kmb": "2a882e3146fedd50e401446817bf5b2e10fe2200e3d25bb5442b49872d8e4ec8",
+          "dfthcsos/angle_k_0.kmb": "cd2ff75f233fa815da0c402b5dab5fa5a04ee47459072abfcf8b4934a5b207e1",
+          "dfthcsos/angle_k_1.kmb": "8786dd45c8a254485f3065eaa44b2578ca0329a11a6a31c9c4bb491881c94c00",
+          "dfthcsos/angle_k_9.kmb": "d4336acc5ae966dcb1fae223b6cbdeff4a2b54d5e6b707072ea6df33180d1173",
+          "dfthcsos/angle_k_6.kmb": "cf3fef592a0968cdec23073d03c84b1014e73a81f6927f97a592bafc2ffda991",
+          "dfthcsos/angle_k_3.kmb": "256c3ede721edab28c67e85c3d2a34c1440acf7234740e6cbb67e97954291a8b",
+          "dfthcsos/angle_k_2.kmb": "ee95fc52872377507326f7460fd674a4ed118fb5bfdf331b92a7a524dccb9d90",
+          "dfthcsos/angle_k_8.kmb": "ea1d180e6c657f4346eb1a9a8786b84660904ed169ddc29dbf4b579cfa85d202",
+          "dfthcsos/angle_k_10.kmb": "b32436e194e6e2b413f1e662fb143b593f96e1c47084bae2b4bd3ff2c38d63b4",
+          "dfthcsos/angle_k_12.kmb": "1c08fa318568c5c97461ab24d75b0bffb105fa0d430668fbf15b8c9be4c83be4",
+          "dfthcsos/angle_k_11.kmb": "a26394e1627ea4bb6742b488fc99d6b773abd172d4f922e1e2619b98874227af",
+          "dfthcsos/angle_k_7.kmb": "f2857e3b03185df9d91fda289dae7c0ea9e964cc890a7cbe0f030b452de9b12d",
+          "dfthcsos/angle_k_14.kmb": "d38aeaaca76163dfd96afa74b23e7e055a1f06c73c4ebf650cfda6d9af40e396",
+          "dfthcsos/submission.npz": "dcc713f35fcbe66ea80225b81363a8801893a9dbbf1ebf52f89b1b6ebfd06988"
+        }
+      },
+      "static_counts": {
+        "CCX": 311202,
+        "CCZ": 6686,
+        "CSWAP": 108
+      }
+    },
+    "8": {
+      "ordinary": {
+        "n": 102400,
+        "paid": 32370588208,
+        "value": 0,
+        "phase": 0,
+        "dirty": 0,
+        "mask": 0,
+        "union": 0,
+        "official_value": 0,
+        "official_phase": 0,
+        "mean_paid": 316119.02546875,
+        "official_formula_dqi_cost": 305029878744.70715,
+        "repetition_factor": 1.1912604648115832
+      },
+      "archived_kickmix": {
+        "sha256": "24e9d894b98af548cd22fb7ab82f12a1b7034b81a5ddbddc03571626e48d0ea0",
+        "width": 900,
+        "ops": 158899695,
+        "static_paid": 317996,
+        "n": 622,
+        "mean_paid": 316122.463022508,
+        "errors": [
+          407,
+          189,
+          0,
+          0,
+          410,
+          3
+        ]
+      },
+      "chemistry_cost": 247478615.98392352,
+      "invsqrt_cost": 60865.14471360723,
+      "conditional_local_score": 33.34270190732941,
+      "mean_paid_needed_for_33p36": 315627.53075257543,
+      "archive": {
+        "name": "GVQCC_Integrated_33_3427_RESEARCH_ONLY.zip",
+        "archive_sha256": "a7a635e47bc9561b789141bc5382f4eb0d99bed3dd4d5aefcdfc90f48fe3c6cf",
+        "verified_members": 18,
+        "member_hashes": {
+          "dqi.kmb": "24e9d894b98af548cd22fb7ab82f12a1b7034b81a5ddbddc03571626e48d0ea0",
+          "invsqrt.kmb": "0dd56a108a82391b8d5ebfcb908df0285c961d3cf89b1b1b7dae0ce882ac0e56",
+          "dfthcsos/submission.npz": "dcc713f35fcbe66ea80225b81363a8801893a9dbbf1ebf52f89b1b6ebfd06988",
+          "dfthcsos/angle_k_9.kmb": "d259aeb09d5b5277c6299ac9d3c50fbdd4ef3cfc6d69c94d61274559f2ceae29",
+          "dfthcsos/angle_k_1.kmb": "a3ee35e113164a07b161ca6bc6dde8bece6891d31a36801f5b7e3a17d5803026",
+          "dfthcsos/angle_k_4.kmb": "69b773a69019ddaf1a1576d14b9b4b320c92255e90f33ab71e46d0952e3aa0ee",
+          "dfthcsos/angle_k_7.kmb": "12ea8823f0fec3a7062cd99ccba22929d00e2228d0cbaeb356181b6de846df32",
+          "dfthcsos/angle_k_12.kmb": "377164c85aa0bebfaa7e3e6002213f146156435d67b45550da0fba4ceb27f96f",
+          "dfthcsos/angle_k_8.kmb": "e93aa38f5c174aef0c79e90d48f61fcd85e3fbe374b471abb9ada14eb7a4ca63",
+          "dfthcsos/angle_k_3.kmb": "420f6f27f7f20e3b25845e708935c3b505951a402d7e12d5f237fa7f078fc5a7",
+          "dfthcsos/angle_k_11.kmb": "78701604f9fa8d279e5bcaeff7ccad3dc0e3d6f1b32f18ee072bced9a333429f",
+          "dfthcsos/angle_k_13.kmb": "1cf112ce2b097cdb513d4d8d8af09a4465e63e343d5377f4fb688ce552ab0e23",
+          "dfthcsos/angle_k_14.kmb": "3c8ff2c48ad3c9fb86d4339854b4bb6d5aa0549fd33a564bd5a9942729bcc47e",
+          "dfthcsos/angle_k_5.kmb": "bc0c0019a7ef3d5e9359ea4ad93224e711ba4eec9700063aed9c537528982742",
+          "dfthcsos/angle_k_0.kmb": "3a00d33e05616448bf97cdcdf7c078b15b56888845819472c1896a936c83f8bb",
+          "dfthcsos/angle_k_10.kmb": "7880ba7c9ac46b8f5e0395f9d39c367fa30eb4f7ecce22c7bc0d7010ba64609a",
+          "dfthcsos/angle_k_6.kmb": "abb84546c6db697e3d8f53d52dca269058826e96a43ab3f5d7d04bc90fb4ef27",
+          "dfthcsos/angle_k_2.kmb": "2d962a8a28388bad5dab5f5839667e74b75eef20a67f1a65ece8f349afc18991"
+        }
+      },
+      "static_counts": {
+        "CCX": 311202,
+        "CCZ": 6686,
+        "CSWAP": 108
+      }
+    }
+  },
+  "ordinary_294_299_all_200_batch_rows_equal": true,
+  "archived_case_fail_flags_delta": {
+    "columns": [
+      "value",
+      "raw phase",
+      "dirty Q",
+      "mask",
+      "union"
+    ],
+    "cells": "[old-only,new-only]",
+    "294_to_299": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "299_to_8": [
+      [
+        0,
+        0
+      ],
+      [
+        20,
+        15
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  }
+}
