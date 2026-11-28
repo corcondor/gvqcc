@@ -4,7 +4,7 @@ namespace GVQCC.HermiteBoundary279
 open Polynomial
 
 section Field
-variable {F : Type*} [Field F] [DecidableEq F]
+variable {F : Type*} [Field F]
 
 /-- A first-order jet is u+epsilon*v modulo epsilon^2. -/
 def jetMul (a b : F × F) : F × F :=
@@ -18,6 +18,9 @@ theorem jet_comm (a b : F × F) :
     jetMul a b = jetMul b a := by
   apply Prod.ext <;> simp only [jetMul] <;> ring
 
+section InverseJet
+variable [DecidableEq F]
+
 /-- On nonzero value this is the characteristic-two derivative of inversion.
     At value zero, retain the derivative instead of destroying it. This is
     a reversible completion, not the field inverse of a nonunit jet. -/
@@ -26,7 +29,7 @@ noncomputable def invJet (u v : F) : F × F :=
 
 theorem inv_jet_unit (h : (2:F)=0) (u v : F) (hu : u ≠ 0) :
     jetMul (u,v) (invJet u v) = (1,0) := by
-  rw [invJet, if_neg hu]
+  rw [invJet, ite_eq_right hu]
   apply Prod.ext
   · simp [jetMul, hu]
   · change u*(v/u^2)+v*u⁻¹ = 0
@@ -46,11 +49,13 @@ theorem inv_jet_involutive (u v : F) :
     · rfl
     · field_simp <;> ring
 
+end InverseJet
+
 /-- The unguarded inverse jet loses its derivative at u=0, unlike the
     zero-safe completion; hence a proof on units alone cannot certify
     the whole physical inverse. -/
 theorem clipped_inverse_loses_jet (v : F) :
-    (0 : F, v/(0:F)^2) = (0,0) := by simp
+    ((0 : F), v/(0:F)^2) = ((0:F),0) := by simp
 
 theorem clipped_inverse_noninjective :
     ¬ Function.Injective (fun p : F × F => (p.1⁻¹,p.2/p.1^2)) := by
@@ -92,7 +97,7 @@ theorem padded_root_equiv (D G : Polynomial F) (x : F) (hg : G.eval x ≠ 0) :
     (G*D).eval x = 0 ↔ D.eval x=0 := by
   simp [eval_mul,hg]
 
-theorem dual_jet_factor (_h : (2:F)=0) (u v : F) (hu : u≠0) :
+theorem dual_jet_factor [DecidableEq F] (_h : (2:F)=0) (u v : F) (hu : u≠0) :
     (u^2)*(invJet u v).2 = v := by
   rw [invJet,if_neg hu]
   change u^2*(v/u^2)=v
@@ -127,7 +132,11 @@ theorem half_degree_derivative (h : (2:R)=0) (A B : Polynomial R) :
     derivative (A^2+X*B^2) = B^2 := by
   simp only [pow_two, derivative_add, derivative_mul, derivative_X, one_mul]
   have hpoly : (2:Polynomial R)=0 := by
-    simpa using congrArg (C : R →+* Polynomial R) h
+    calc
+      (2 : Polynomial R) = 1+1 := by ring
+      _ = C (1:R)+C (1:R) := by simp
+      _ = C (1+1:R) := by rw [map_add]
+      _ = 0 := by rw [one_add_one_eq_two,h,map_zero]
   calc
     _ = B*B+(2:Polynomial R)*(A*derivative A+X*B*derivative B) := by ring
     _ = _ := by simp [hpoly]
