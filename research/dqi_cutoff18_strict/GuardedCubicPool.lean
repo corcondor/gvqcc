@@ -117,9 +117,9 @@ theorem norm_flag_valid {N : Type*} [Zero N] [DecidableEq N]
     (n : F → N) (h : ∀ d,n d=0 ↔ d=0) (d : F) :
     (if n d=0 then (1:F) else 0) = if d=0 then 1 else 0 := by
   by_cases hd : d = 0
-  · simp [hd, (h d).2 hd]
+  · rw [if_pos ((h d).2 hd), if_pos hd]
   · have hn : n d ≠ 0 := fun hz => hd ((h d).1 hz)
-    simp [hd, hn]
+    rw [if_neg hn, if_neg hd]
 
 end Unitized
 
