@@ -3,11 +3,11 @@ namespace LiveAffineHMR
 
 def bx := Bool.xor
 
-theorem update_from_live (a b t l : Bool) (h : a && b = l) :
+theorem update_from_live (a b t l : Bool) (h : (a && b) = l) :
     bx t (a && b) = bx t l := by rw [h]
 
-theorem phase_from_live (a b c l : Bool) (h : a && b = l) :
-    (a && b && c) = (l && c) := by rw [h]
+theorem phase_from_live (a b c l : Bool) (h : (a && b) = l) :
+    ((a && b) && c) = (l && c) := by rw [h]
 
 theorem pair_phase (a b c : Bool) :
     (bx a b && c) = bx (a && c) (b && c) := by
@@ -15,11 +15,11 @@ theorem pair_phase (a b c : Bool) :
 
 theorem hmr_return (a b t l m : Bool) (h : bx t (a && b) = l) :
     bx (bx (m && t) (m && a && b)) (m && l) = false := by
-  cases a <;> cases b <;> cases t <;> cases l <;> cases m <;> decide at h ⊢
+  cases a <;> cases b <;> cases t <;> cases l <;> cases m <;> simp_all [bx]
 
 theorem hmr_guard_return (a b t l g m : Bool) (h : g = true → bx t (a && b) = l) :
     bx (bx (g && m && t) (g && m && a && b)) (g && m && l) = false := by
-  cases a <;> cases b <;> cases t <;> cases l <;> cases g <;> cases m <;> decide at h ⊢
+  cases a <;> cases b <;> cases t <;> cases l <;> cases g <;> cases m <;> simp_all [bx]
 
 theorem guarded_update (g a t : Bool) :
     bx t (g && a) = (if g then bx t a else t) := by
