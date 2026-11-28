@@ -12,3 +12,6 @@ The original 316K donor is not replaced, nor claimed repaired.
 - Prior #269 strict CI run 46116350096 failed at reserved identifier `by` (two theorem binders); rename to `byy`, add 12 new Lean statements and strict audit. New Lean run must be checked.
 - Complete Python source, tests and receipts are delivered in the research conversation ZIP; this PR records local measurements and the Lean source, not the complete Python implementation or KMB.
 - Blockers: no local KickMix/Lean, Vercel #269 quota failure and no running sandbox available; raw marker classification, repeated-root input interface, coherent selectors, inverse/scale lowering, physical workspace and official replay remain open.
+
+## Cross-session #270 replay
+Exact four affine support families from #270 (offset/multiplier pairs 2240/999, 704/2987, 1408/1030, 1344/2186); 64 trace-one quadratic constants per support, independently generated weighted numerators. All 256 cases have Euclidean degree sequence 17,17,16,3 and next gap 13. New word tape: 256/256 exact forward/reverse, 8192/8192 physical root amplitudes, 256/256 phase identities. Mean nonlinear words 1533. This is not the full 8192-pad panel from #270, captured native input, or KickMix replay.
