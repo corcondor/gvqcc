@@ -1,0 +1,112 @@
+{
+  "sha256": "ea32eaf6068c0e8bcd3fb9a3894bd75695cd844e5def347d3e354cef8b0af41b",
+  "Q": 900,
+  "ops": 81584256,
+  "static_paid": 543848,
+  "panels": [
+    {
+      "panel": "saved",
+      "seed": 64571,
+      "shots": 622,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 543289.5289389067
+    },
+    {
+      "panel": "saved",
+      "seed": 64572,
+      "shots": 622,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 543291.6430868168
+    },
+    {
+      "panel": "cross",
+      "seed": 64571,
+      "shots": 169,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 543287.4615384615
+    },
+    {
+      "panel": "cross",
+      "seed": 64572,
+      "shots": 169,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 543298.0295857989
+    },
+    {
+      "panel": "fresh",
+      "seed": 64571,
+      "shots": 288,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 543290.6840277778
+    },
+    {
+      "panel": "fresh",
+      "seed": 64572,
+      "shots": 288,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 543298.9409722222
+    },
+    {
+      "panel": "cross_inverse_frob4",
+      "seed": 64571,
+      "shots": 169,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 543287.4615384615
+    },
+    {
+      "panel": "cross_inverse_frob4",
+      "seed": 64572,
+      "shots": 169,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "union": 0,
+      "mean_paid": 543298.0295857989
+    }
+  ]
+}

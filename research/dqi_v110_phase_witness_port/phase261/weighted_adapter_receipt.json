@@ -1,0 +1,56 @@
+{
+  "scope": "measured native #246 fed classical frame from measured #261 native prefix; no physical adapter or shell splice",
+  "sha": "72676a49be105adc303d0c4541b1beba09665aa9421c41f67649d4c064e5c6fa",
+  "panels": {
+    "saved": {
+      "shots": 1244,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "paid": 116943376
+    },
+    "cross": {
+      "shots": 338,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "paid": 31773720
+    },
+    "fresh": {
+      "shots": 576,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "paid": 47663594
+    },
+    "cross_inverse_frob4": {
+      "shots": 338,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "paid": 31773720
+    },
+    "w33": {
+      "shots": 794,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "paid": 38892480
+    }
+  }
+}

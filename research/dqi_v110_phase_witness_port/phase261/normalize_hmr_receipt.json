@@ -1,0 +1,41 @@
+[
+  {
+    "file": "normalize_hmr_forward.kmb",
+    "width": 895,
+    "ops": 55800,
+    "CCX": 3204,
+    "HMR": 840,
+    "static_paid": 3204,
+    "paid": 8003592,
+    "mean_paid": 3204.0,
+    "sha": "c1171d2883b09cf0e9a913946917dd426fbf2c63988d214ba257e59202262d61",
+    "cases": 2498,
+    "errors": 0
+  },
+  {
+    "file": "normalize_hmr_reverse.kmb",
+    "width": 895,
+    "ops": 55800,
+    "CCX": 3204,
+    "HMR": 840,
+    "static_paid": 3204,
+    "paid": 8003592,
+    "mean_paid": 3204.0,
+    "sha": "f2f326643b853a98feb5264248466614ffbdd9537c8885fd015bac5cf77004ce",
+    "cases": 2498,
+    "errors": 0
+  },
+  {
+    "file": "normalize_hmr_roundtrip.kmb",
+    "width": 895,
+    "ops": 108720,
+    "CCX": 6144,
+    "HMR": 1680,
+    "static_paid": 6144,
+    "paid": 15347712,
+    "mean_paid": 6144.0,
+    "sha": "91b30e12bf89dfde35984330ff2483196469997ea041275c74af4e5f77a181de",
+    "cases": 2498,
+    "errors": 0
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "file": "normalization_forward.kmb",
+    "width": 895,
+    "ops": 76800,
+    "CCX": 6144,
+    "sha": "aacd89d5ead5beb7f850e5ac431afc75ae9d998566b417394ba78e89d6dfac2c",
+    "cases": 1249,
+    "errors": 0
+  },
+  {
+    "file": "normalization_roundtrip.kmb",
+    "width": 895,
+    "ops": 153600,
+    "CCX": 12288,
+    "sha": "c41999e385948146453761e5c103eca78c56f3890e851b61155e4b303b63d1fb",
+    "cases": 1249,
+    "errors": 0
+  }
+]

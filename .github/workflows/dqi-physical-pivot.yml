@@ -5,6 +5,7 @@ on:
       - research/dqi-v110-phase-witness-repair-20261128
     paths:
       - 'research/dqi_v110_phase_witness_port/phase246/PhysicalPivot.lean'
+      - 'research/dqi_v110_phase_witness_port/phase261/RawPhaseSeam.lean'
       - '.github/workflows/dqi-physical-pivot.yml'
   workflow_dispatch:
 permissions:
@@ -18,3 +19,4 @@ jobs:
       - run: |
           curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
           "$HOME/.elan/bin/lean" -DwarningAsError=true research/dqi_v110_phase_witness_port/phase246/PhysicalPivot.lean
+          "$HOME/.elan/bin/lean" -DwarningAsError=true research/dqi_v110_phase_witness_port/phase261/RawPhaseSeam.lean
