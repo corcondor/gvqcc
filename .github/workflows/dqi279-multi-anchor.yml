@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - 'research/dqi_cutoff18_strict/MultiAnchor279.lean'
+      - 'research/dqi_cutoff18_strict/SharedSlope290.lean'
+      - 'research/dqi290_shared_slope/**'
       - 'research/dqi_cutoff18_strict/ProjectiveGauge279.lean'
       - 'research/dqi279_multi_anchor/**'
       - '.github/workflows/dqi279-multi-anchor.yml'
@@ -29,7 +31,9 @@ jobs:
           lake env lean -DwarningAsError=true MultiAnchor279.lean | tee multi.log
           test "$(grep -c 'GVQCC.ProjectiveGauge279.*axiom' gauge.log)" -eq 12
           test "$(grep -c 'GVQCC.MultiAnchor279.*axiom' multi.log)" -eq 17
-          ! grep -E 'sorryAx|ofReduceBool' gauge.log multi.log
+          lake env lean -DwarningAsError=true SharedSlope290.lean | tee shared.log
+          test "$(grep -c 'GVQCC.SharedSlope290.*axiom' shared.log)" -eq 7
+          ! grep -E 'sorryAx|ofReduceBool' gauge.log multi.log shared.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -37,3 +41,4 @@ jobs:
           path: |
             research/dqi_cutoff18_strict/gauge.log
             research/dqi_cutoff18_strict/multi.log
+            research/dqi_cutoff18_strict/shared.log
