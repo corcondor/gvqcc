@@ -10,7 +10,8 @@ theorem middle_entry {F T : Type*} [CommSemiring F] [Fintype T]
       if a + j = r - 1 + i then 1 else 0 := by
   have h : (a = r - 1 - j + i) ↔ (a + j = r - 1 + i) := by omega
   simp_rw [mul_assoc, ← pow_add]
-  rw [cert _ hd, h]
+  rw [cert _ hd]
+  simp only [h]
 
 theorem middle_accumulate {F A J T : Type*} [CommSemiring F]
     [Fintype A] [Fintype J] [Fintype T]
@@ -25,6 +26,7 @@ theorem middle_accumulate {F A J T : Type*} [CommSemiring F]
       apply Finset.sum_congr rfl
       intro t _
       simp only [Finset.sum_mul, Finset.mul_sum]
+      rw [Finset.sum_comm]
       apply Finset.sum_congr rfl
       intro a _
       apply Finset.sum_congr rfl
