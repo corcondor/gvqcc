@@ -1,0 +1,47 @@
+name: DQI 266 native Schur integration shell and strict Lean
+on:
+  pull_request:
+    paths:
+      - 'research/dqi266_schur_toeplitz_native/**'
+      - 'research/dqi_cutoff18_strict/CentralSchur.lean'
+      - '.github/workflows/dqi266-schur-native-shell.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          cd research/dqi_cutoff18_strict
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true CentralSchur.lean | tee central-schur.log
+          test "$(grep -Ec 'GVQCC.CentralSchur.*axiom' central-schur.log)" -eq 6
+          ! grep -E 'sorryAx|ofReduceBool' central-schur.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: central-schur-lean
+          path: research/dqi_cutoff18_strict/central-schur.log
+  shell:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6 scipy
+      - run: bash research/dqi266_schur_toeplitz_native/build_shell.sh /tmp/seam/shell
+      - uses: actions/upload-artifact@v4
+        with:
+          name: exact-266-key-shell-and-donor
+          path: /tmp/seam/shell/
+          compression-level: 6
