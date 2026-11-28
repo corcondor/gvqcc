@@ -1,0 +1,64 @@
+{
+  "manifest": {
+    "entries": 136,
+    "hashes_checked": 135,
+    "archive_sha256": "010e22ff40f3841a089591d5c94fe5f52f588ad0971737338232ae147dc7c5d5",
+    "manifest_complete": true
+  },
+  "families": [
+    {
+      "family": "I_affine_3357",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "src/verify_affine_zero_t.py",
+        "--source",
+        "candidates/I_affine_3357/submission.npz",
+        "--circuit_dir",
+        "candidates/I_affine_3357/circuits",
+        "--out",
+        "/mnt/data/gvqcc_claude_recheck_20261123/I_affine_3357_recheck.json",
+        "--seeds",
+        "-1"
+      ],
+      "python_exit_code": 0,
+      "recheck_sha256": "4d58b2fd247b463fcde7ab259947d8c86384bded20b00c8bd3d18140727ac13e",
+      "address_count": 1219,
+      "banks": 15,
+      "toffoli_one_way": 3357,
+      "max_qubits": 128,
+      "value_error_bits": 0,
+      "phase_error_coefficients": 0,
+      "clean_scratch": true,
+      "stdout": "PASS -1 T 3357 15 banks sec 0.31",
+      "official_verification": false
+    },
+    {
+      "family": "J_C45_joint",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "src/verify_affine_zero_t.py",
+        "--source",
+        "candidates/J_C45_joint/submission.npz",
+        "--circuit_dir",
+        "candidates/J_C45_joint/circuits",
+        "--out",
+        "/mnt/data/gvqcc_claude_recheck_20261123/J_C45_joint_recheck.json",
+        "--seeds",
+        "-1"
+      ],
+      "python_exit_code": 0,
+      "recheck_sha256": "ae85240054f058ed3930bc1756221093b4f1f573d3a39cd9cb9c5cbed9a2114f",
+      "address_count": 1237,
+      "banks": 15,
+      "toffoli_one_way": 4429,
+      "max_qubits": 127,
+      "value_error_bits": 0,
+      "phase_error_coefficients": 0,
+      "clean_scratch": true,
+      "stdout": "PASS -1 T 4429 15 banks sec 0.34",
+      "official_verification": false
+    }
+  ],
+  "official_kickmix_executed": false,
+  "warning": "Valid only for local 15-bank sequential-clean phase/value/scratch tests. No global KickMix score."
+}

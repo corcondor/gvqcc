@@ -1,0 +1,138 @@
+name: GVQCC global-gauge research / reproducible CPU experiments
+
+on:
+  push:
+    branches:
+      - research/claude-handoff-global-angle-20261123
+  pull_request:
+    paths:
+      - 'research/claude_handoff_20261123/**'
+      - '.github/workflows/gvqcc-global-gauge-experiments.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  algebra-and-synthesis-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install NumPy
+        run: python -m pip install --disable-pip-version-check numpy==2.3.5
+      - name: Compile research source
+        run: |
+          python -m compileall -q research/claude_handoff_20261123/src
+          python -m py_compile research/claude_handoff_20261123/gauge_constraint_full_audit.py
+      - name: Execute three exact GF(2) affine-gauge experiments
+        run: |
+          set -euo pipefail
+          mkdir -p ci_output
+          for mode in all_flip zero_top_bit address_bit6; do
+            python research/claude_handoff_20261123/src/gauge5_exact.py \
+              --mode "$mode" --synthetic-rows 512 \
+              --output "ci_output/$mode.npz" \
+              --report "ci_output/$mode.json"
+          done
+      - name: Execute full-column W/H2 orthogonal search on tracked historical FeMoCo data
+        run: |
+          python research/claude_handoff_20261123/src/orthogonal_w_h2_ci.py \
+            --source chemistry_discrete_v3_best_compact.npz \
+            --report ci_output/historical_W_H2_orthogonal.json \
+            --candidate ci_output/historical_W_H2_orthogonal.npz
+      - name: Reconstitute pinned PUBLIC V8 1219x75 angle table and Givens tree
+        run: |
+          python - <<'PY'
+          import json, hashlib, zlib, base64
+          from pathlib import Path
+          import numpy as np
+          fixture=json.loads(Path("research/claude_handoff_20261123/fixtures/V8_C46_angles_edges_b85.json").read_text())
+          raw=zlib.decompress(base64.b85decode(fixture["payload"]))
+          assert hashlib.sha256(raw).hexdigest()==fixture["raw_sha256"]
+          m=int(np.prod(fixture["shape_words"]))
+          words=np.frombuffer(raw[:m],dtype=np.uint8).reshape(fixture["shape_words"]).copy()
+          edges=np.frombuffer(raw[m:],dtype=np.uint8).reshape(fixture["shape_edges"]).copy()
+          assert words.shape==(1219,75) and edges.shape==(75,2)
+          np.savez_compressed("ci_output/public_V8_C46_angle_tree_only.npz",angle_words=words,tree_edges=edges)
+          print("PASS public V8 exact angle+edges payload SHA256", fixture["raw_sha256"])
+          print("Original full source NPZ SHA256",fixture["source_npz_sha256"])
+          PY
+      - name: Execute three physical-angle GAUGE transforms on real public V8 rows
+        run: |
+          set -euo pipefail
+          for mode in all_flip zero_top_bit address_bit6; do
+            python research/claude_handoff_20261123/src/gauge5_exact.py \
+              --source ci_output/public_V8_C46_angle_tree_only.npz \
+              --mode "$mode" \
+              --output "ci_output/public_V8_$mode.npz" \
+              --report "ci_output/public_V8_$mode.json"
+          done
+      - name: Compile real 3-bank baseline and two global sign-gauge KMB families
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
+        run: |
+          set -euo pipefail
+          for name in baseline all_flip address_bit6; do
+            if [ "$name" = baseline ]; then src=ci_output/public_V8_C46_angle_tree_only.npz; else src="ci_output/public_V8_$name.npz"; fi
+            python research/claude_handoff_20261123/src/compile_gauge_partial.py \
+              --source "$src" --out "ci_output/real_kmb_$name" \
+              --mode signed6resid --J 5 --banks 3 --lowbits 4 --trials 1
+            python research/claude_handoff_20261123/src/verify_exact_ir.py \
+              --source "$src" --circuits "ci_output/real_kmb_$name" --J 5 --banks 3 \
+              --out "ci_output/verify_real_kmb_$name.json"
+          done
+      - name: Compare actual KMB costs, refusing regressions as records
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          base=pathlib.Path("ci_output")
+          rows={}
+          for name in ("baseline","all_flip","address_bit6"):
+              j=json.loads((base/("verify_real_kmb_"+name+".json")).read_text())
+              assert j["all_pass"] and j["banks"]==3
+              assert all(z["phase_all_measurement_branches"] and z["workspace_clean"] for z in j["bank_results"])
+              rows[name]={"T":j["total_pass_T"],"maxQ":j["maxQ"],
+                          "sha256":[v["sha256"] for v in j["bank_results"]]}
+          (base/"real_first3_cost_comparison.json").write_text(json.dumps(
+            {"comparison":rows,"native_kickmix":False,"official_score":None},indent=2)+"\\n")
+          print(json.dumps(rows,indent=2))
+          PY
+      - name: Verify results and inspect original V8 evidence
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          root=pathlib.Path("ci_output")
+          reports=[json.loads((root/(mode+".json")).read_text()) for mode in ("all_flip","zero_top_bit","address_bit6")]
+          historical=json.loads((root/"historical_W_H2_orthogonal.json").read_text())
+          assert historical["physical_contraction_invariant_maxdiff"]<1e-8
+          assert historical["gram_invariant_maxdiff"]<1e-8
+          assert historical["official_KickMix_verified"] is False
+          assert len(reports)==3
+          assert all(x["input_kind"]=="synthetic_fixture_NOT_FE_MOCO" for x in reports)
+          assert all(x["affine_GF2_rank"]==70 and x["free_dimensions_per_row"]==5 for x in reports)
+          assert all(x["max_abs_vector_difference"]<1e-13 for x in reports)
+          public=[json.loads((root/("public_V8_"+mode+".json")).read_text()) for mode in ("all_flip","zero_top_bit","address_bit6")]
+          assert all(x["input_kind"]=="real_input" and x["rows"]==1219 for x in public)
+          assert all(x["affine_GF2_rank"]==70 and x["free_dimensions_per_row"]==5 for x in public)
+          assert all(x["max_abs_vector_difference"]<1e-13 and x["changed_words"]>0 for x in public)
+          assert all(x["native_kickmix_verified"] is False for x in public)
+          print("PASS real pinned public V8 1219x75 sign-gauge tests, 3 changed full ANGLE tables")
+          print("Does not imply original score or physical energy CI proof: V8 other tensors are not present.")
+          evidence=json.loads(pathlib.Path("research/claude_handoff_20261123/reports/gauge_constraint_full_audit_C46.json").read_text())
+          assert evidence["rows"]==1219 and evidence["rank_histogram"].get("70")==1219
+          print("PASS 3 synthetic gauge tests, independent existing V8 rank receipt")
+          print("IMPORTANT: V8 .npz and native KickMix are absent in GitHub checkout.")
+          print("This CI success is NOT an officially verified score improvement.")
+          PY
+      - name: Upload test data and receipts
+        uses: actions/upload-artifact@v4
+        with:
+          name: gvqcc-gauge5-synthetic-and-rank-receipts
+          path: ci_output/
+          retention-days: 14
+          if-no-files-found: error
