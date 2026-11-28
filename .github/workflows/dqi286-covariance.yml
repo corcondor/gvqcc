@@ -1,0 +1,52 @@
+name: DQI fixed anchor covariance strict proof and source recovery
+on:
+  pull_request:
+    paths:
+      - 'research/dqi286_covariance/**'
+      - 'research/dqi_cutoff18_strict/**'
+      - '.github/workflows/dqi286-covariance.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          for f in SharedResidualFFT LeadingMixedSchur GapIndependentSchur SchurGauge TransposedMiddle AnchorPivot SchurReturn283 FrameSplice283 ExactTransposedLagrange CrossStageNorm ProjectiveGauge279 MultiAnchor279 FixedAnchorCovariance; do
+            lake env lean -DwarningAsError=true "$f.lean" | tee "$f.log"
+            test "$(grep -c 'depends on .*axiom\|does not depend on any axioms' "$f.log")" -eq "$(grep -c '^#print axioms' "$f.lean")"
+            ! grep -E 'sorryAx|ofReduceBool|_native\.bv_decide\.ax' "$f.log"
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: covariance-proof-axioms
+          path: research/dqi_cutoff18_strict/*.log
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - run: |
+          set -euo pipefail
+          curl -fsSL --retry 2 'https://www.kaggle.com/api/v1/datasets/download/tonylica/quantum-ai-32-85306-task-generators?datasetVersionNumber=2' -o /tmp/source.zip
+          echo '2715ee84ce70d59c2e799ee397e11b253e9822e54fbe76fda51a8f274e555496  /tmp/source.zip' | sha256sum -c
+          python -m zipfile -e /tmp/source.zip /tmp/source
+          cd /tmp/source
+          tar -czf /tmp/dqi-pinned-source.tar.gz dqi
+          sha256sum /tmp/dqi-pinned-source.tar.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: exact-279-dqi-generator-source
+          path: /tmp/dqi-pinned-source.tar.gz
