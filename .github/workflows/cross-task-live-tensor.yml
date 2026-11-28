@@ -1,0 +1,127 @@
+name: Complete circuit live tensor transport audit
+on:
+  pull_request:
+    paths:
+      - 'research/cross_task_live_tensor_20261128/**'
+      - '.github/workflows/cross-task-live-tensor.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        task: [invsqrt, chemistry, dqi]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Compile and test exact synthesis
+        run: |
+          g++ -O3 -std=c++17 research/cross_task_live_tensor_20261128/full_transport.cpp -o /tmp/full_transport
+          /tmp/full_transport --selftest
+      - uses: actions/download-artifact@v4
+        if: matrix.task != 'dqi'
+        with:
+          name: verification-dependencies
+          run-id: 46128879677
+          github-token: ${{ github.token }}
+          path: /tmp/deps
+      - uses: actions/download-artifact@v4
+        if: matrix.task == 'dqi'
+        with:
+          name: exact-257-fft-research
+          run-id: 46121065738
+          github-token: ${{ github.token }}
+          path: /tmp/deps
+      - name: Recover complete circuit files
+        env:
+          TASK: ${{ matrix.task }}
+        run: |
+          set -euo pipefail
+          pip install kickmix==1.0.0 numpy==2.2.6 scipy
+          mkdir -p /tmp/original /tmp/candidate /tmp/results /tmp/verifier
+          if [ "$TASK" = invsqrt ]; then
+            unzip -q /tmp/deps/invsqrt_C1.zip -d /tmp/unpacked
+            f=$(find /tmp/unpacked -type f -name invsqrt.kmb -print -quit); test -n "$f"; cp "$f" /tmp/original/
+            echo '2fef265d072fcb1b3b3f136d3bcf2b4b038baf3b5e4ea8b6de484f9747cb97ec  /tmp/original/invsqrt.kmb' | sha256sum -c
+          elif [ "$TASK" = chemistry ]; then
+            unzip -q /tmp/deps/family_32665.zip -d /tmp/unpacked
+            find /tmp/unpacked -type f \( -name '*.kmb' -o -name '*.npz' -o -name '*.npy' \) -exec cp {} /tmp/original/ \;
+            test "$(find /tmp/original -name '*.kmb' | wc -l)" -eq 15
+            test -f /tmp/original/submission.npz
+          else
+            f=$(find /tmp/deps -name fft257.kmb -print -quit); test -n "$f"; mv "$f" /tmp/original/dqi.kmb
+            echo '518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499  /tmp/original/dqi.kmb' | sha256sum -c
+          fi
+          if [ "$TASK" != dqi ]; then tar -xzf /tmp/deps/pinned-verifiers.tar.gz -C /tmp/verifier; fi
+          if [ "$TASK" = chemistry ]; then xz -dk /tmp/verifier/verifiers/dfthcsos/FeMoCo76o113e.fcidump.xz; fi
+      - name: Apply to every circuit; retain exact accompanying data
+        run: |
+          set -euo pipefail
+          for f in /tmp/original/*; do
+            n=$(basename "$f")
+            if [[ "$f" == *.kmb ]]; then /tmp/full_transport "$f" "/tmp/candidate/$n" | tee "/tmp/results/$n.json"
+            else cp "$f" /tmp/candidate/; fi
+          done
+          sha256sum /tmp/original/* /tmp/candidate/* > /tmp/results/sha256.txt
+          python - <<'PY'
+          import glob,json
+          import kickmix as km
+          for f in glob.glob('/tmp/results/*.kmb.json'):
+              r=json.load(open(f)); name=f.split('/')[-1][:-5]
+              for folder,key in [('original','old'),('candidate','new')]:
+                  c=km.Circuit.from_file('/tmp/'+folder+'/'+name)
+                  assert c.num_qubits==r[key+'_q'] and len(c)==r[key+'_ops']
+                  assert int(c.operation_statistics().num_toffoli_like)==r[key+'_paid']
+          PY
+      - name: Matched verification and cost receipts
+        env:
+          TASK: ${{ matrix.task }}
+        run: |
+          set -euo pipefail
+          if [ "$TASK" = invsqrt ]; then
+            cd /tmp/verifier/verifiers/invsqrt
+            for x in original candidate; do python verify_submission_invsqrt.py /tmp/$x/invsqrt.kmb --shots-per-x 1 --batch-size 196 --max-workers 2 --seed 20261128307 | tee /tmp/results/$x.verify.json; done
+          elif [ "$TASK" = chemistry ]; then
+            cd /tmp/verifier/verifiers/dfthcsos
+            for x in original candidate; do python verify.py /tmp/$x --shots-per-address 64 --seed 20261128307 | tee /tmp/results/$x.verify.json; done
+          else
+            python research/cross_task_live_tensor_20261128/verify_dqi.py /tmp/original/dqi.kmb /tmp/candidate/dqi.kmb
+            cp /tmp/dual_receipt.json /tmp/results/
+            python - <<'PY'
+          import json
+          p=json.load(open('/tmp/results/dual_receipt.json')); a=p['/tmp/original/dqi.kmb'];b=p['/tmp/candidate/dqi.kmb']
+          for k,v in a['panels'].items():
+              z=b['panels'][k]
+              assert v['errors']==z['errors'] and v['union']==z['union'],(k,v,z)
+              assert z['mean_paid']<=v['mean_paid'],(k,v,z)
+          print('Paired panel summary; known inherited failures prohibit promotion.')
+          PY
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-tensor-${{ matrix.task }}-research
+          path: |
+            /tmp/results/
+            /tmp/candidate/
+          compression-level: 3
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/cross_task_live_tensor_20261128/LiveTensor.lean | tee /tmp/live-tensor-lean.log
+          test "$(grep -c 'GVQCC.CrossTaskLiveTensor.*axiom' /tmp/live-tensor-lean.log)" -eq 5
+          ! grep -E 'sorryAx|ofReduceBool' /tmp/live-tensor-lean.log
