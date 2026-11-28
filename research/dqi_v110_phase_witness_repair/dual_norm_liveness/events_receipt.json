@@ -1,0 +1,668 @@
+{
+  "209": {
+    "A_defect": 12,
+    "history_rank": 1842,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 65866110,
+        "hi": 65867863,
+        "captured_writes": 99
+      },
+      {
+        "lo": 71104413,
+        "hi": 71105437,
+        "captured_writes": 0
+      }
+    ]
+  },
+  "267": {
+    "A_defect": 12,
+    "history_rank": 2207,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 79688220,
+        "hi": 79717800,
+        "captured_writes": 6057
+      }
+    ]
+  },
+  "268": {
+    "A_defect": 12,
+    "history_rank": 1253,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 79717800,
+        "hi": 79719827,
+        "captured_writes": 99
+      },
+      {
+        "lo": 79868957,
+        "hi": 79869981,
+        "captured_writes": 39
+      }
+    ]
+  },
+  "269": {
+    "A_defect": 12,
+    "history_rank": 2190,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 79869981,
+        "hi": 79899090,
+        "captured_writes": 6042
+      }
+    ]
+  },
+  "270": {
+    "A_defect": 12,
+    "history_rank": 2189,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 79899090,
+        "hi": 79927825,
+        "captured_writes": 6026
+      }
+    ]
+  },
+  "271": {
+    "A_defect": 12,
+    "history_rank": 2181,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 79927825,
+        "hi": 79956405,
+        "captured_writes": 6030
+      }
+    ]
+  },
+  "272": {
+    "A_defect": 12,
+    "history_rank": 2200,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 79956405,
+        "hi": 79985176,
+        "captured_writes": 6034
+      }
+    ]
+  },
+  "273": {
+    "A_defect": 12,
+    "history_rank": 2195,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 79985176,
+        "hi": 80014229,
+        "captured_writes": 6050
+      }
+    ]
+  },
+  "274": {
+    "A_defect": 12,
+    "history_rank": 2192,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 80014229,
+        "hi": 80043033,
+        "captured_writes": 6038
+      }
+    ]
+  },
+  "275": {
+    "A_defect": 12,
+    "history_rank": 2186,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 80043033,
+        "hi": 80072149,
+        "captured_writes": 6050
+      }
+    ]
+  },
+  "276": {
+    "A_defect": 12,
+    "history_rank": 2199,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 80072149,
+        "hi": 80101236,
+        "captured_writes": 6060
+      }
+    ]
+  },
+  "279": {
+    "A_defect": 12,
+    "history_rank": 1192,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 80372999,
+        "hi": 80383988,
+        "captured_writes": 446
+      }
+    ]
+  },
+  "282": {
+    "A_defect": 12,
+    "history_rank": 3529,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 81679154,
+        "hi": 81727414,
+        "captured_writes": 10574
+      }
+    ]
+  },
+  "283": {
+    "A_defect": 12,
+    "history_rank": 3189,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 81727414,
+        "hi": 81826441,
+        "captured_writes": 54656
+      }
+    ]
+  },
+  "284": {
+    "A_defect": 12,
+    "history_rank": 3182,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 81826441,
+        "hi": 81923858,
+        "captured_writes": 52972
+      }
+    ]
+  },
+  "285": {
+    "A_defect": 12,
+    "history_rank": 3178,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 81923858,
+        "hi": 82021072,
+        "captured_writes": 52904
+      }
+    ]
+  },
+  "286": {
+    "A_defect": 12,
+    "history_rank": 3181,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 82021072,
+        "hi": 82117270,
+        "captured_writes": 51964
+      }
+    ]
+  },
+  "287": {
+    "A_defect": 12,
+    "history_rank": 3180,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 82117270,
+        "hi": 82217220,
+        "captured_writes": 55356
+      }
+    ]
+  },
+  "288": {
+    "A_defect": 12,
+    "history_rank": 3177,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 82217220,
+        "hi": 82313689,
+        "captured_writes": 52304
+      }
+    ]
+  },
+  "289": {
+    "A_defect": 12,
+    "history_rank": 3188,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 82313689,
+        "hi": 82410375,
+        "captured_writes": 52368
+      }
+    ]
+  },
+  "290": {
+    "A_defect": 12,
+    "history_rank": 3194,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 82410375,
+        "hi": 82509361,
+        "captured_writes": 54428
+      }
+    ]
+  },
+  "291": {
+    "A_defect": 12,
+    "history_rank": 3161,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 82509361,
+        "hi": 82607025,
+        "captured_writes": 53368
+      }
+    ]
+  },
+  "293": {
+    "A_defect": 12,
+    "history_rank": 1058,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83211814,
+        "hi": 83217253,
+        "captured_writes": 99
+      },
+      {
+        "lo": 83364286,
+        "hi": 83365310,
+        "captured_writes": 37
+      }
+    ]
+  },
+  "294": {
+    "A_defect": 12,
+    "history_rank": 2192,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83365310,
+        "hi": 83395945,
+        "captured_writes": 6056
+      }
+    ]
+  },
+  "295": {
+    "A_defect": 12,
+    "history_rank": 1324,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83395945,
+        "hi": 83397887,
+        "captured_writes": 99
+      },
+      {
+        "lo": 83620393,
+        "hi": 83621417,
+        "captured_writes": 1
+      }
+    ]
+  },
+  "296": {
+    "A_defect": 12,
+    "history_rank": 2187,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83621417,
+        "hi": 83652536,
+        "captured_writes": 6014
+      }
+    ]
+  },
+  "297": {
+    "A_defect": 12,
+    "history_rank": 2172,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83652536,
+        "hi": 83683150,
+        "captured_writes": 5998
+      }
+    ]
+  },
+  "298": {
+    "A_defect": 12,
+    "history_rank": 2188,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83683150,
+        "hi": 83713462,
+        "captured_writes": 6026
+      }
+    ]
+  },
+  "299": {
+    "A_defect": 12,
+    "history_rank": 2185,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83713462,
+        "hi": 83743829,
+        "captured_writes": 6022
+      }
+    ]
+  },
+  "300": {
+    "A_defect": 12,
+    "history_rank": 2201,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83743829,
+        "hi": 83773679,
+        "captured_writes": 6056
+      }
+    ]
+  },
+  "301": {
+    "A_defect": 12,
+    "history_rank": 2202,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83773679,
+        "hi": 83803883,
+        "captured_writes": 6052
+      }
+    ]
+  },
+  "302": {
+    "A_defect": 12,
+    "history_rank": 2217,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83803883,
+        "hi": 83833593,
+        "captured_writes": 6078
+      }
+    ]
+  },
+  "303": {
+    "A_defect": 12,
+    "history_rank": 2194,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83833593,
+        "hi": 83863268,
+        "captured_writes": 6032
+      }
+    ]
+  },
+  "304": {
+    "A_defect": 12,
+    "history_rank": 2173,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83863268,
+        "hi": 83892729,
+        "captured_writes": 6014
+      }
+    ]
+  },
+  "305": {
+    "A_defect": 12,
+    "history_rank": 2187,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83892729,
+        "hi": 83922316,
+        "captured_writes": 6012
+      }
+    ]
+  },
+  "306": {
+    "A_defect": 12,
+    "history_rank": 2189,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83922316,
+        "hi": 83951593,
+        "captured_writes": 6034
+      }
+    ]
+  },
+  "307": {
+    "A_defect": 12,
+    "history_rank": 2191,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83951593,
+        "hi": 83980227,
+        "captured_writes": 6050
+      }
+    ]
+  },
+  "308": {
+    "A_defect": 12,
+    "history_rank": 1649,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 83980227,
+        "hi": 83982335,
+        "captured_writes": 99
+      },
+      {
+        "lo": 84836208,
+        "hi": 84837232,
+        "captured_writes": 18
+      }
+    ]
+  },
+  "309": {
+    "A_defect": 12,
+    "history_rank": 2194,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 84837232,
+        "hi": 84878149,
+        "captured_writes": 6042
+      }
+    ]
+  },
+  "310": {
+    "A_defect": 12,
+    "history_rank": 2188,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 84878149,
+        "hi": 84917841,
+        "captured_writes": 6016
+      }
+    ]
+  },
+  "311": {
+    "A_defect": 12,
+    "history_rank": 2181,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 84917841,
+        "hi": 84956335,
+        "captured_writes": 6030
+      }
+    ]
+  },
+  "312": {
+    "A_defect": 12,
+    "history_rank": 2202,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 84956335,
+        "hi": 84993676,
+        "captured_writes": 6050
+      }
+    ]
+  },
+  "313": {
+    "A_defect": 12,
+    "history_rank": 2197,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 84993676,
+        "hi": 85030080,
+        "captured_writes": 6048
+      }
+    ]
+  },
+  "314": {
+    "A_defect": 12,
+    "history_rank": 2209,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 85030080,
+        "hi": 85065269,
+        "captured_writes": 6060
+      }
+    ]
+  },
+  "315": {
+    "A_defect": 12,
+    "history_rank": 2182,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 85065269,
+        "hi": 85099053,
+        "captured_writes": 6014
+      }
+    ]
+  },
+  "316": {
+    "A_defect": 12,
+    "history_rank": 2215,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 85099053,
+        "hi": 85132048,
+        "captured_writes": 6058
+      }
+    ]
+  },
+  "317": {
+    "A_defect": 12,
+    "history_rank": 2181,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 85132048,
+        "hi": 85163562,
+        "captured_writes": 6018
+      }
+    ]
+  },
+  "318": {
+    "A_defect": 12,
+    "history_rank": 2189,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 85163562,
+        "hi": 85194024,
+        "captured_writes": 6042
+      }
+    ]
+  },
+  "319": {
+    "A_defect": 12,
+    "history_rank": 2156,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 85194024,
+        "hi": 85223197,
+        "captured_writes": 5990
+      }
+    ]
+  },
+  "320": {
+    "A_defect": 12,
+    "history_rank": 2200,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 85223197,
+        "hi": 85251465,
+        "captured_writes": 6056
+      }
+    ]
+  },
+  "321": {
+    "A_defect": 12,
+    "history_rank": 2457,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 85251465,
+        "hi": 85287052,
+        "captured_writes": 6458
+      }
+    ]
+  },
+  "322": {
+    "A_defect": 12,
+    "history_rank": 2185,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 85287052,
+        "hi": 85315726,
+        "captured_writes": 6026
+      }
+    ]
+  },
+  "332": {
+    "A_defect": 12,
+    "history_rank": 1073,
+    "active": 4096,
+    "spans": [
+      {
+        "lo": 86753159,
+        "hi": 86755294,
+        "captured_writes": 99
+      },
+      {
+        "lo": 86884886,
+        "hi": 86885910,
+        "captured_writes": 20
+      }
+    ]
+  }
+}
