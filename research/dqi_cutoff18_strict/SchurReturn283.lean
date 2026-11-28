@@ -192,7 +192,7 @@ theorem pair_update_dot {I : Type*} [Fintype I] (A : I → I → F)
   simp only [pairUpdate, sub_mul, Finset.sum_sub_distrib, div_eq_mul_inv,
     Finset.mul_sum, Finset.sum_mul, add_mul, Finset.sum_add_distrib]
   congr 1
-  rw [← Finset.sum_add_distrib]
+  simp only [← Finset.sum_add_distrib]
   apply Finset.sum_congr rfl
   intro j _
   ring
@@ -229,7 +229,7 @@ theorem pair_system_equiv {I : Type*} [Fintype I]
       have hrow := h3 i
       rw [pair_update_dot] at hrow
       exact ((pair_schur_iff b p q (∑ j,u j*z j) (∑ j,v j*z j)
-        (u i) (v i) (∑ j,A i j*z j) (rhs i) x y hb).mpr ⟨hxy,hrow⟩).2
+        (u i) (v i) (∑ j,A i j*z j) (rhs i) x y hb).mpr ⟨hxy,hrow⟩).2.2
 
 end TwoPivot
 

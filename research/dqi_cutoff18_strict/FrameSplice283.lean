@@ -110,6 +110,7 @@ theorem nonadditive_not_linear {A : Type*} [AddCommGroup A]
   rw [← hL (x+y),map_add,hL x,hL y]
 
 /-- A fixed-support syndrome map is linear in the amplitudes. -/
+omit [Fintype I] in
 theorem syndrome_amplitude_add {F : Type*} [Field F]
     (M : I → J → F) (u v : J → F) (i : I) :
     (∑ j,M i j*(u j+v j)) =

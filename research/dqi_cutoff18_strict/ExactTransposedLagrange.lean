@@ -156,7 +156,7 @@ theorem middle_rank_lower_bound {l r t : Nat} (hl : 0 < l) (hr : 0 < r)
           exact hij
       simp [hiff]
     rw [← recover b, ← recover c, he]
-  have hdim := LinearMap.finrank_le_finrank_of_injective (encode u) hi
+  have hdim := LinearMap.finrank_le_finrank_of_injective hi
   simpa only [Module.finrank_pi, Fintype.card_fin] using hdim
 
 #print axioms monomial_interpolation
