@@ -3,55 +3,55 @@ namespace GVQCC.GapIndependentSchur
 variable {R : Type*} [CommRing R]
 
 /-- The 1-pivot Bezoutian Schur update, with w_x and w_y the divided brackets. -/
-theorem one_pivot (x y t ax bx ay by a b u wx wy : R)
+theorem one_pivot (x y t ax bx ay byy a b u wx wy : R)
     (h2 : (2 : R) = 0)
     (hx : (x+t)*wx = ax*b+bx*a)
-    (hy : (y+t)*wy = ay*b+by*a) :
-    (ax+u*wx*a)*(by+u*wy*b)+(bx+u*wx*b)*(ay+u*wy*a) =
-      ax*by+bx*ay+u*(x+y)*wx*wy := by
+    (hy : (y+t)*wy = ay*b+byy*a) :
+    (ax+u*wx*a)*(byy+u*wy*b)+(bx+u*wx*b)*(ay+u*wy*a) =
+      ax*byy+bx*ay+u*(x+y)*wx*wy := by
   calc
-    _ = ax*by+bx*ay+u*wy*(ax*b+bx*a)+u*wx*(ay*b+by*a)+
+    _ = ax*byy+bx*ay+u*wy*(ax*b+bx*a)+u*wx*(ay*b+byy*a)+
           2*(u*u*wx*wy*a*b) := by ring
-    _ = ax*by+bx*ay+u*(x+y)*wx*wy+
+    _ = ax*byy+bx*ay+u*(x+y)*wx*wy+
           2*(u*t*wx*wy+u*u*wx*wy*a*b) := by
       rw [← hx, ← hy]
       ring
     _ = _ := by rw [h2, zero_mul, add_zero]
 
 /-- A nonsingular alternating 2-pivot has inverse [[0,u],[u,0]], u*k=1. -/
-theorem alternating_pivot (x y t s ax bx ay by a b c d u k wx1 wx2 wy1 wy2 : R)
+theorem alternating_pivot (x y t s ax bx ay byy a b c d u k wx1 wx2 wy1 wy2 : R)
     (h2 : (2 : R) = 0) (hu : u*k = 1)
     (hxp : (x+t)*wx1 = ax*b+bx*a)
     (hxq : (x+s)*wx2 = ax*d+bx*c)
-    (hyp : (y+t)*wy1 = ay*b+by*a)
-    (hyq : (y+s)*wy2 = ay*d+by*c)
+    (hyp : (y+t)*wy1 = ay*b+byy*a)
+    (hyq : (y+s)*wy2 = ay*d+byy*c)
     (hpq : (t+s)*k = a*d+b*c) :
-    (ax+u*(wx2*a+wx1*c))*(by+u*(wy2*b+wy1*d))+
+    (ax+u*(wx2*a+wx1*c))*(byy+u*(wy2*b+wy1*d))+
     (bx+u*(wx2*b+wx1*d))*(ay+u*(wy2*a+wy1*c)) =
-      ax*by+bx*ay+u*(x+y)*(wx1*wy2+wx2*wy1) := by
+      ax*byy+bx*ay+u*(x+y)*(wx1*wy2+wx2*wy1) := by
   have hu2 : u*u*k = u := by
     calc
       u*u*k = u*(u*k) := by ring
       _ = u := by rw [hu, mul_one]
   calc
-    _ = ax*by+bx*ay+
+    _ = ax*byy+bx*ay+
       u*(wy2*(ax*b+bx*a)+wy1*(ax*d+bx*c)+
-         wx2*(ay*b+by*a)+wx1*(ay*d+by*c))+
+         wx2*(ay*b+byy*a)+wx1*(ay*d+byy*c))+
       u*u*(wx1*wy2+wx2*wy1)*(a*d+b*c)+
       2*(u*u*(wx2*wy2*a*b+wx1*wy1*c*d)) := by ring
-    _ = ax*by+bx*ay+u*(x+y+t+s)*(wx1*wy2+wx2*wy1)+
+    _ = ax*byy+bx*ay+u*(x+y+t+s)*(wx1*wy2+wx2*wy1)+
       (u*u*k)*(t+s)*(wx1*wy2+wx2*wy1)+
       2*(u*u*(wx2*wy2*a*b+wx1*wy1*c*d)) := by
       rw [← hxp, ← hxq, ← hyp, ← hyq, ← hpq]
       ring
-    _ = ax*by+bx*ay+u*(x+y)*(wx1*wy2+wx2*wy1)+
+    _ = ax*byy+bx*ay+u*(x+y)*(wx1*wy2+wx2*wy1)+
       2*(u*(t+s)*(wx1*wy2+wx2*wy1)+
          u*u*(wx2*wy2*a*b+wx1*wy1*c*d)) := by
       rw [hu2]
       ring
     _ = _ := by rw [h2, zero_mul, add_zero]
 
-/-- The original 1-pivot divided bracket is unchanged by its own transvection. -/
+/-- The original 1-pivot divided bracket is unchanged byy its own transvection. -/
 theorem one_bracket (a b p q u w : R) (h2 : (2 : R) = 0) :
     (a+u*w*p)*q+(b+u*w*q)*p = a*q+b*p := by
   calc
