@@ -1,0 +1,77 @@
+{
+  "status": "RESEARCH_ONLY",
+  "final_sha256": "3ea4d74c2c4e93cfe8ad3234133e6198c237599395456db2c2e4323af11cdd06",
+  "Q": 900,
+  "ops": 87430367,
+  "CCX": 311200,
+  "CCZ": 6686,
+  "CSWAP": 108,
+  "static_paid": 317994,
+  "paired": {
+    "shots": 1790,
+    "differences": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "distribution": {
+      "shots": 1024,
+      "errors": 0,
+      "mean_paid": 316094
+    },
+    "saved": {
+      "shots": 622,
+      "union": 411
+    },
+    "dense": {
+      "shots": 144,
+      "union": 70
+    }
+  },
+  "official_source_memory_adapted": {
+    "status": "PASS",
+    "shots": 102400,
+    "batch": 1024,
+    "salt": "",
+    "value_errors": 0,
+    "phase_errors": 0,
+    "mean_paid": 316125.67778320314,
+    "cost": 305036297702.4652,
+    "effective_error_rate": 0.0008660587301657926,
+    "repetition_factor": 1.1912604648115832,
+    "adaptation": [
+      "disk canonical hash",
+      "reaction_depth diagnostic omitted",
+      "sequential progress logging"
+    ],
+    "unmodified_parent_cli_exit": 137
+  },
+  "parent314_memory_adapted": {
+    "shots": 102400,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "mean_paid": 316129.03767578123,
+    "cost": 305039539733.2926
+  },
+  "lean": {
+    "run": 46149886435,
+    "status": "success",
+    "declarations": 13
+  },
+  "joint_local_search": {
+    "two_GF16": {
+      "steps": 200000,
+      "best": 18
+    },
+    "three_GF16": {
+      "steps": 200000,
+      "best": 27
+    }
+  },
+  "limits": [
+    "Different canonical hashes derive different samples; no cost improvement inferred from these averages.",
+    "Known stress defects unchanged.",
+    "No new paid savings relative to #314, no complete 899Q tape, no Kaggle submission."
+  ]
+}
