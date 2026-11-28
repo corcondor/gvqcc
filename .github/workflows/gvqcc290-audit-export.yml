@@ -1,0 +1,41 @@
+name: GVQCC 290 verification dependencies and candidate export
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/gvqcc290-audit-export.yml'
+      - 'research/gvqcc290_submission_audit/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          set -euo pipefail
+          mkdir -p /tmp/upstream /tmp/export
+          curl -fLsS --retry 2 https://codeload.github.com/maxoubvd/google-quantum-ai/tar.gz/a9effc375527bf0b6962c178530d353eb70a3fcb | tar -xz --strip-components=1 -C /tmp/upstream
+          cd /tmp/upstream/google-verifiable-quantum-circuit-compilation
+          tar -czf /tmp/export/pinned-verifiers.tar.gz verifiers
+          du -h /tmp/export/*
+      - uses: actions/checkout@v4
+        with:
+          ref: 08d01e2c18365000dec61e3403f5342452c69855
+          path: candidates180
+      - uses: actions/checkout@v4
+        with:
+          ref: c33c5bcd9b51e693955476762af45aa98e7047db
+          path: candidates179
+      - run: |
+          set -euo pipefail
+          cp candidates180/research/claude-chem3271-20261127/{family_3271,invsqrt_C1}.zip /tmp/export/
+          cp candidates180/research/claude-compiler-20261127/{family_32665,family_32695}.zip /tmp/export/
+          cp candidates179/research/chem_v69_3278/family_3267_385721.zip /tmp/export/
+          sha256sum /tmp/export/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verification-dependencies
+          path: /tmp/export/*
+          compression-level: 0
