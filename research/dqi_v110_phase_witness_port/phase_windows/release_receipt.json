@@ -1,0 +1,110 @@
+[
+  {
+    "mode": "forward",
+    "split": false,
+    "declared_Q": 895,
+    "operations": 55800,
+    "CCX": 3204,
+    "static_paid": 3204,
+    "mean_paid": 3204.0,
+    "shots": 2560,
+    "errors": 0,
+    "sha256": "808ce8b29f126266519bcaeb83dfe50b250d04f880b1aa8abe3d73a9db513dae"
+  },
+  {
+    "mode": "reverse",
+    "split": false,
+    "declared_Q": 895,
+    "operations": 55800,
+    "CCX": 3204,
+    "static_paid": 3204,
+    "mean_paid": 3204.0,
+    "shots": 2560,
+    "errors": 0,
+    "sha256": "b249cd27ad8095f9dbf0511087ebecc67c9091ce9ff5cd31a9ab36d05a1f33ae"
+  },
+  {
+    "mode": "roundtrip",
+    "split": false,
+    "declared_Q": 895,
+    "operations": 111600,
+    "CCX": 6408,
+    "static_paid": 6408,
+    "mean_paid": 6408.0,
+    "shots": 2560,
+    "errors": 0,
+    "sha256": "74c9b11d90a752902d404d2197985a2cd08bc1dcb188c33353e2e814409b98bd"
+  },
+  {
+    "mode": "midpoint_probe",
+    "split": false,
+    "declared_Q": 900,
+    "operations": 111670,
+    "CCX": 6408,
+    "static_paid": 6408,
+    "mean_paid": 6408.0,
+    "shots": 2560,
+    "errors": 0,
+    "sha256": "967772834e24cb8cda0f24631f547e2956c18d9a5ee754c612a36233af2693ff"
+  },
+  {
+    "mode": "forward",
+    "split": true,
+    "declared_Q": 895,
+    "operations": 32976,
+    "CCX": 2040,
+    "static_paid": 2040,
+    "mean_paid": 2040.0,
+    "shots": 2560,
+    "errors": 0,
+    "sha256": "314a3324225934f3bba70b48f742c03412dfcf1e6283926d4752ba5e77b03524"
+  },
+  {
+    "mode": "reverse",
+    "split": true,
+    "declared_Q": 895,
+    "operations": 32976,
+    "CCX": 2040,
+    "static_paid": 2040,
+    "mean_paid": 2040.0,
+    "shots": 2560,
+    "errors": 0,
+    "sha256": "6bbc15aeb89fe121d6bbe42c456b4aab756365c3023001cb37310f743ca56017"
+  },
+  {
+    "mode": "roundtrip",
+    "split": true,
+    "declared_Q": 895,
+    "operations": 65952,
+    "CCX": 4080,
+    "static_paid": 4080,
+    "mean_paid": 4080.0,
+    "shots": 2560,
+    "errors": 0,
+    "sha256": "19019202299025f31a6a96af2b0fc4961d9b3a03bbd20b162c4e023679d373b9"
+  },
+  {
+    "mode": "midpoint_probe",
+    "split": true,
+    "declared_Q": 900,
+    "operations": 66022,
+    "CCX": 4080,
+    "static_paid": 4080,
+    "mean_paid": 4080.0,
+    "shots": 2560,
+    "errors": 0,
+    "sha256": "7ec870da38fba74eebc6090ef684c5a4b5780618675fc65b07c8430512cdc7a8"
+  },
+  {
+    "mode": "seam_probe",
+    "split": true,
+    "declared_Q": 900,
+    "operations": 63234,
+    "CCX": 3816,
+    "static_paid": 3816,
+    "mean_paid": 3816.0,
+    "shots": 2560,
+    "errors": 0,
+    "sha256": "db7c4793fa40fbc7d211caa0e7d9d271bc02060d263f138c47e624bdde832023"
+  }
+]

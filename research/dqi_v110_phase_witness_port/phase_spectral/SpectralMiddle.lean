@@ -5,7 +5,7 @@ namespace GVQCC.SpectralMiddle
 -- Low source has degree < m and the kernel has degree < L.
 -- Overflow in cyclic convolution wraps only below m-1.
 theorem no_middle_wrap (m L e j : Nat)
-    (hm : 0 < m) (hml : m ≤ L + 1)
+    (_hm : 0 < m) (_hml : m ≤ L + 1)
     (he : e + 2 ≤ L + m)
     (hj : m ≤ j + 1) (hjL : j < L)
     (hmod : e % L = j) : e = j := by

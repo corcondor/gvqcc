@@ -1,0 +1,98 @@
+[
+  {
+    "kind": "low",
+    "sector": 0,
+    "tests": 512,
+    "errors": 0,
+    "declared_Q": 900,
+    "operations": 109702,
+    "CCX": 1428,
+    "static_paid": 1428,
+    "executed_paid_mean": 1428.0,
+    "sha256": "7ee47137a56fac5c46321e2361b124b1ccb401a092c9197f61d6dd118dd98400"
+  },
+  {
+    "kind": "low",
+    "sector": 1,
+    "tests": 512,
+    "errors": 0,
+    "declared_Q": 900,
+    "operations": 105044,
+    "CCX": 1386,
+    "static_paid": 1386,
+    "executed_paid_mean": 1386.0,
+    "sha256": "63c5ec58c283a4193c460ebbc28a4c5902bdebdc814bb5e9b9264a8b4f4b85f3"
+  },
+  {
+    "kind": "high",
+    "sector": 0,
+    "tests": 512,
+    "errors": 0,
+    "declared_Q": 900,
+    "operations": 111278,
+    "CCX": 1428,
+    "static_paid": 1428,
+    "executed_paid_mean": 1428.0,
+    "sha256": "036c9d9926cb2bc9074864154973aca66a4bf3c006e580b951c50071a81ccab0"
+  },
+  {
+    "kind": "high",
+    "sector": 1,
+    "tests": 512,
+    "errors": 0,
+    "declared_Q": 900,
+    "operations": 103902,
+    "CCX": 1386,
+    "static_paid": 1386,
+    "executed_paid_mean": 1386.0,
+    "sha256": "a947a35b352eba1b152f5568eb8780746baefa62d8f7ef000542cf004c422720"
+  },
+  {
+    "kind": "revq",
+    "sector": 0,
+    "tests": 512,
+    "errors": 0,
+    "declared_Q": 900,
+    "operations": 105044,
+    "CCX": 1386,
+    "static_paid": 1386,
+    "executed_paid_mean": 1386.0,
+    "sha256": "0488760c21d805384df861766ce438c01b5dc8b02e15bab814014ce56342659e"
+  },
+  {
+    "kind": "revq",
+    "sector": 1,
+    "tests": 512,
+    "errors": 0,
+    "declared_Q": 900,
+    "operations": 96305,
+    "CCX": 1302,
+    "static_paid": 1302,
+    "executed_paid_mean": 1302.0,
+    "sha256": "22388364a7160ab39ef136c0c3912c566be803bf1ff4460aaa929451e605c122"
+  },
+  {
+    "kind": "red",
+    "sector": 0,
+    "tests": 512,
+    "errors": 0,
+    "declared_Q": 900,
+    "operations": 105044,
+    "CCX": 1386,
+    "static_paid": 1386,
+    "executed_paid_mean": 1386.0,
+    "sha256": "1bf01aa3539430598e907194e48d01e7f8e93f22c3e1082d2830cbb32b051ea1"
+  },
+  {
+    "kind": "red",
+    "sector": 1,
+    "tests": 512,
+    "errors": 0,
+    "declared_Q": 900,
+    "operations": 99060,
+    "CCX": 1344,
+    "static_paid": 1344,
+    "executed_paid_mean": 1344.0,
+    "sha256": "f5fd7f93ab312fb699a22dc86d919862612220809a58ad77f1c9228bc499c801"
+  }
+]

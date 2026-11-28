@@ -1,0 +1,4 @@
+'Gvqcc.WindowTransport.dirtyOutputShear' depends on axioms: [propext, Quot.sound]
+'Gvqcc.WindowTransport.reverseCoefficient' depends on axioms: [propext, Quot.sound]
+'Gvqcc.WindowTransport.monicOutsideWindow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Gvqcc.WindowTransport.projectiveHalfCoordinate' does not depend on any axioms
