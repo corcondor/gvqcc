@@ -1,0 +1,78 @@
+name: DQI exact 257 shared residual FFT
+on:
+  pull_request:
+    paths:
+      - 'research/dqi257_shared_residual/**'
+      - 'research/dqi_cutoff18_strict/SharedResidualFFT.lean'
+      - '.github/workflows/dqi257-shared-residual.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: |
+          set -euo pipefail
+          pip install kickmix==1.0.0 numpy==2.2.6 scipy
+          curl -fsSL --retry 2 'https://www.kaggle.com/api/v1/datasets/download/tonylica/quantum-ai-32-85306-task-generators?datasetVersionNumber=2' -o /tmp/source.zip
+          python -m zipfile -e /tmp/source.zip /tmp/source
+          J=research/dqi316k_joint_crt
+          D=research/dqi316k_direct_dual_fft
+          mkdir -p /tmp/fft
+          g++ -O3 -std=c++17 "$J/direct_general.cpp" -o /tmp/fft/direct
+          g++ -O3 -std=c++17 "$J/scope_keep_reset.cpp" -o /tmp/fft/scope
+          g++ -O3 -std=c++17 "$D/dual_fft_repair.cpp" -o /tmp/fft/dual
+          python "$J/d16_shared_frame.py" /tmp/fft/base_raw.kmb
+          /tmp/fft/direct /tmp/fft/base_raw.kmb /tmp/fft/base_direct.kmb
+          /tmp/fft/scope /tmp/fft/base_direct.kmb /tmp/fft/base247.kmb
+          echo "8b9d09f87692f59baaeb399d96650db9389835f23be5c2ab93be4d86259bc6ab  /tmp/fft/base247.kmb" | sha256sum -c
+          /tmp/fft/dual /tmp/fft/base247.kmb /tmp/fft/base257.kmb
+          echo "81081a88c27b708322f0724a09197814a18646a4a9969984ab9cf76a6e6cd7fa  /tmp/fft/base257.kmb" | sha256sum -c
+          rm /tmp/fft/base_raw.kmb /tmp/fft/base_direct.kmb /tmp/fft/base247.kmb
+          python research/dqi257_shared_residual/prepare_fft.py /tmp/fft/fft_raw.kmb
+          /tmp/fft/direct /tmp/fft/fft_raw.kmb /tmp/fft/fft_direct.kmb
+          /tmp/fft/scope /tmp/fft/fft_direct.kmb /tmp/fft/fft247.kmb
+          /tmp/fft/dual /tmp/fft/fft247.kmb /tmp/fft/fft257.kmb
+          python "$D/verify_dual.py" /tmp/fft/base257.kmb /tmp/fft/fft257.kmb
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/dual_receipt.json')); a=p['/tmp/fft/base257.kmb']; b=p['/tmp/fft/fft257.kmb']
+          print('matched',a,b)
+          assert b['Q']==a['Q']==900 and b['static_paid']==a['static_paid'] and b['ops']<a['ops']
+          for k,v in a['panels'].items():
+              z=b['panels'][k]
+              assert v['errors']==z['errors'] and v['paid']==z['paid']
+          print('Not a repair: inherited errors are required to be reported.')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: exact-257-fft-research
+          path: |
+            /tmp/dual_receipt.json
+            /tmp/fft/base257.kmb
+            /tmp/fft/fft257.kmb
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true SharedResidualFFT.lean | tee fft.log
+          test "$(grep -c 'GVQCC.SharedResidualFFT.*axiom' fft.log)" -eq 5
+          ! grep -E 'sorryAx|ofReduceBool' fft.log
