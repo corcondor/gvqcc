@@ -1,0 +1,265 @@
+{
+  "scope": "classical S -> D,H, native optimized #246-ABI stage only; no native syndrome bridge",
+  "hashes": {
+    "forward.kmb": "532aee1f775a084d63005fd4135d327896ed45a19540cb40305cd361ebc2962c",
+    "half.kmb": "5718d30c253e1b29b01f2bab597d81994345fbe16ca5f58145cd3e8c77a7931b"
+  },
+  "pivot_comparison": {
+    "pivot_counts": [
+      630,
+      69
+    ],
+    "original_recip": {
+      "scale": 44100,
+      "frobmulxor": 335225,
+      "frobxor": 17221,
+      "inv": 630
+    },
+    "ordered_recip": {
+      "scale": 4830,
+      "frobmulxor": 41956,
+      "frobxor": 1888,
+      "inv": 69
+    }
+  },
+  "panels": {
+    "w33_zero_and_true_support_onehot": {
+      "cases": 397,
+      "weight_hist": {
+        "33": 397
+      },
+      "bm_cf_mismatch": 0,
+      "cf_reverse_mismatch": 0,
+      "half_inverse_mismatch": 0,
+      "rational_reverse_mismatch": 0,
+      "native": {
+        "forward.kmb": {
+          "shots": 794,
+          "word": 0,
+          "mask": 0,
+          "phase": 0,
+          "scratch": 0,
+          "paid_total": 8103564,
+          "mean_paid": 10206.0
+        },
+        "half.kmb": {
+          "shots": 794,
+          "word": 0,
+          "mask": 0,
+          "phase": 0,
+          "scratch": 0,
+          "paid_total": 16215840,
+          "mean_paid": 20422.972292191436
+        }
+      }
+    },
+    "cross_inverse_frob4": {
+      "cases": 169,
+      "weight_hist": {
+        "4": 4,
+        "6": 4,
+        "17": 16,
+        "18": 16,
+        "24": 16,
+        "29": 9,
+        "32": 9,
+        "33": 9,
+        "34": 9,
+        "35": 77
+      },
+      "bm_cf_mismatch": 0,
+      "cf_reverse_mismatch": 0,
+      "half_inverse_mismatch": 0,
+      "rational_reverse_mismatch": 0,
+      "native": {
+        "forward.kmb": {
+          "shots": 338,
+          "word": 0,
+          "mask": 0,
+          "phase": 0,
+          "scratch": 0,
+          "paid_total": 3449628,
+          "mean_paid": 10206.0
+        },
+        "half.kmb": {
+          "shots": 338,
+          "word": 0,
+          "mask": 0,
+          "phase": 0,
+          "scratch": 0,
+          "paid_total": 22120440,
+          "mean_paid": 65445.08875739645
+        }
+      }
+    },
+    "saved": {
+      "cases": 622,
+      "weight_hist": {
+        "0": 8,
+        "1": 15,
+        "2": 17,
+        "3": 18,
+        "4": 19,
+        "5": 20,
+        "6": 21,
+        "7": 22,
+        "8": 23,
+        "9": 24,
+        "10": 25,
+        "11": 26,
+        "12": 27,
+        "13": 28,
+        "14": 29,
+        "15": 30,
+        "16": 31,
+        "17": 32,
+        "18": 9,
+        "19": 9,
+        "20": 9,
+        "21": 9,
+        "22": 9,
+        "23": 9,
+        "24": 9,
+        "25": 9,
+        "26": 9,
+        "27": 9,
+        "28": 9,
+        "29": 14,
+        "30": 9,
+        "31": 9,
+        "32": 14,
+        "33": 14,
+        "34": 14,
+        "35": 34
+      },
+      "bm_cf_mismatch": 0,
+      "cf_reverse_mismatch": 0,
+      "half_inverse_mismatch": 0,
+      "rational_reverse_mismatch": 0,
+      "native": {
+        "forward.kmb": {
+          "shots": 1244,
+          "word": 0,
+          "mask": 0,
+          "phase": 0,
+          "scratch": 0,
+          "paid_total": 12696264,
+          "mean_paid": 10206.0
+        },
+        "half.kmb": {
+          "shots": 1244,
+          "word": 0,
+          "mask": 0,
+          "phase": 0,
+          "scratch": 0,
+          "paid_total": 81414736,
+          "mean_paid": 65445.92926045016
+        }
+      }
+    },
+    "cross": {
+      "cases": 169,
+      "weight_hist": {
+        "4": 4,
+        "6": 4,
+        "17": 16,
+        "18": 16,
+        "24": 16,
+        "29": 9,
+        "32": 9,
+        "33": 9,
+        "34": 9,
+        "35": 77
+      },
+      "bm_cf_mismatch": 0,
+      "cf_reverse_mismatch": 0,
+      "half_inverse_mismatch": 0,
+      "rational_reverse_mismatch": 0,
+      "native": {
+        "forward.kmb": {
+          "shots": 338,
+          "word": 0,
+          "mask": 0,
+          "phase": 0,
+          "scratch": 0,
+          "paid_total": 3449628,
+          "mean_paid": 10206.0
+        },
+        "half.kmb": {
+          "shots": 338,
+          "word": 0,
+          "mask": 0,
+          "phase": 0,
+          "scratch": 0,
+          "paid_total": 22120440,
+          "mean_paid": 65445.08875739645
+        }
+      }
+    },
+    "fresh": {
+      "cases": 288,
+      "weight_hist": {
+        "0": 8,
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8,
+        "11": 8,
+        "12": 8,
+        "13": 8,
+        "14": 8,
+        "15": 8,
+        "16": 8,
+        "17": 8,
+        "18": 8,
+        "19": 8,
+        "20": 8,
+        "21": 8,
+        "22": 8,
+        "23": 8,
+        "24": 8,
+        "25": 8,
+        "26": 8,
+        "27": 8,
+        "28": 8,
+        "29": 8,
+        "30": 8,
+        "31": 8,
+        "32": 8,
+        "33": 8,
+        "34": 8,
+        "35": 8
+      },
+      "bm_cf_mismatch": 0,
+      "cf_reverse_mismatch": 0,
+      "half_inverse_mismatch": 0,
+      "rational_reverse_mismatch": 0,
+      "native": {
+        "forward.kmb": {
+          "shots": 576,
+          "word": 0,
+          "mask": 0,
+          "phase": 0,
+          "scratch": 0,
+          "paid_total": 5878656,
+          "mean_paid": 10206.0
+        },
+        "half.kmb": {
+          "shots": 576,
+          "word": 0,
+          "mask": 0,
+          "phase": 0,
+          "scratch": 0,
+          "paid_total": 31213034,
+          "mean_paid": 54189.29513888889
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "scope": "native half-solved canonical D,H phase; syndrome decoder and two degree-17 modular multiplications not emitted",
+  "classical_cases": 203,
+  "groups": {
+    "random": 144,
+    "constant_numerator": 35,
+    "allpole": 24
+  },
+  "weights": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "results": [
+    {
+      "file": "forward.kmb",
+      "Q": 840,
+      "ops": 446654,
+      "static_paid": 10206,
+      "shots": 406,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mean_paid": 10206.0,
+      "sha256": "532aee1f775a084d63005fd4135d327896ed45a19540cb40305cd361ebc2962c"
+    },
+    {
+      "file": "half.kmb",
+      "Q": 851,
+      "ops": 4165855,
+      "static_paid": 65457,
+      "shots": 406,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mean_paid": 47256.71428571428,
+      "sha256": "5718d30c253e1b29b01f2bab597d81994345fbe16ca5f58145cd3e8c77a7931b"
+    }
+  ]
+}
