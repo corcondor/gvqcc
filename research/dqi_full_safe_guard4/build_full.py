@@ -50,10 +50,10 @@ def phase_half(b,a,y,p,mask,half,w):
     b.bit_store(cb,False);b.free(cb)
 
 def kernel(b,f,d,p,work,mask):
-    assert len(work)==29 and len(set(f+d+p+work))==65
-    chain,n,nn,gw,y=work[:7],work[7:13],work[13:16],work[16:22],work[22:28]
-    w=work[28]
-    B.root7(b,f,chain); r=chain[-1]
+    assert len(work)==33 and len(set(f+d+p+work))==69
+    chain,n,nn,gw,y=work[:11],work[11:17],work[17:20],work[20:26],work[26:32]
+    w=work[32]
+    G.root(b,f,chain); r=chain[-1]
     J.frame(b,d,C.BASIS12,True); a,c=d[:6],d[6:]
     J.norm_compute(b,a,c,n,6,C.K6,C.F6MOD)
     J.frame(b,n,C.BASIS6,True); u,v=n[:3],n[3:]
@@ -72,7 +72,7 @@ def kernel(b,f,d,p,work,mask):
     J.frame(b,n,C.BASIS6)
     J.norm_clear(b,a,c,n,6,C.K6,C.F6MOD)
     J.frame(b,d,C.BASIS12)
-    B.root7(b,f,chain,True)
+    G.unroot(b,f,chain)
 
 def anchor_gauge(b,S,E):
     """R(alpha^j)=traceDual(E_j)/alpha^j for 70 fixed public anchors.
@@ -113,7 +113,7 @@ def configure_fft():
       ('def fft(b,D,N,E):','def fft(b,D,N,E,R):'),
       (' L=[0,1];S=[];NB=[[1]]',' words.append(R)\n L=[0,1];S=[];NB=[[1]]'),
       ('range(1,18):','range(1,70):'),
-      ('b.alloc_qubits(35)','b.alloc_qubits(29)'),
+      ('b.alloc_qubits(35)','b.alloc_qubits(33)'),
       ('if not x:return','if not x or C.log[x] in ANCHORS:return'),
       ('  kernel(b,A,B,P,work,mask)','  residue_mask(b,R[0],x,c,mask)\n  kernel(b,A,B,P,work,mask)'),
       ('dfs(12,0,17);assert count==4095','dfs(12,0,69);assert count==4025'),
@@ -158,13 +158,13 @@ def check_leaf():
     print(json.dumps(dict(denominator_guard_cases=8192,
         phase_binary_coefficients=1179648,rank15_basis_checks=36,
         guard4_cases=16,phase_word_mismatches=0,
-        predicted_leaf_paid=78,leaf_scratch=29)),flush=True)
+        predicted_leaf_paid=78,leaf_scratch=33)),flush=True)
 
 def native_leaf_test():
-    b=km.CircuitBuilder();b.set_max_qubits(65)
+    b=km.CircuitBuilder();b.set_max_qubits(69)
     f=list(b.create_quantum_register(12,'f'));d=list(b.create_quantum_register(12,'d'))
     p=list(b.create_quantum_register(12,'p'));m=list(b.create_classical_register(12,'m'))
-    work=list(b.alloc_qubits(29));kernel(b,f,d,p,work,m);b.free(km.array(work))
+    work=list(b.alloc_qubits(33));kernel(b,f,d,p,work,m);b.free(km.array(work))
     circ=b.finish_circuit()
     import numpy as np
     rng=np.random.default_rng(310312)
@@ -185,7 +185,7 @@ def native_leaf_test():
           shots+=256;paid+=int(s.operation_statistics().num_toffoli_like)
     result=dict(shots=shots,errors=errors.tolist(),q=circ.num_qubits,static_paid=int(circ.operation_statistics().num_toffoli_like),mean_paid=paid/shots)
     print('NATIVE_LEAF',json.dumps(result),flush=True)
-    assert not errors.any() and result['static_paid']==78 and result['q']<=65
+    assert not errors.any() and result['static_paid']==78 and result['q']<=69
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--output',type=Path,required=True);ap.add_argument('--shell',action='store_true');ap.add_argument('--guarded-synthesis',action='store_true')
