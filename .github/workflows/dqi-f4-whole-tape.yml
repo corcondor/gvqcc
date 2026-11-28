@@ -1,0 +1,111 @@
+name: Whole DQI GF4 compiler and joint-lane search
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_rank96_joint_lanes/**'
+      - '.github/workflows/dqi-f4-whole-tape.yml'
+  workflow_dispatch:
+    inputs:
+      exact_run_id:
+        description: 'Optional Actions run containing exact #323 parent artifact'
+        required: false
+        type: string
+      exact_artifact:
+        description: 'Exact parent artifact name (contains a KMB with pinned hash)'
+        required: false
+        type: string
+permissions:
+  contents: read
+  actions: read
+jobs:
+  full:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        if: inputs.exact_run_id == ''
+        with:
+          name: exact-257-fft-research
+          run-id: 46121065738
+          github-token: ${{ github.token }}
+          path: /tmp/parent
+      - uses: actions/download-artifact@v4
+        if: inputs.exact_run_id != ''
+        with:
+          name: ${{ inputs.exact_artifact }}
+          run-id: ${{ inputs.exact_run_id }}
+          github-token: ${{ github.token }}
+          path: /tmp/parent
+      - name: Compile and physically transfer all matched 99-CCX intervals
+        env:
+          EXACT_RUN_ID: ${{ inputs.exact_run_id }}
+        run: |
+          set -euo pipefail
+          pip install kickmix==1.0.0 numpy==2.2.6 scipy
+          mkdir -p /tmp/results
+          if [ -z "$EXACT_RUN_ID" ]; then
+            f=$(find /tmp/parent -name fft257.kmb -print -quit)
+            test -n "$f"
+            echo "518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499  $f" | sha256sum -c
+            echo '#279 comparator only; not exact #323 316094 baseline' | tee /tmp/results/scope.txt
+          else
+            f=$(find /tmp/parent -name '*.kmb' -type f -print | while read -r p; do if echo "54817e9385f24940585f5a391025152d4a65a36381887ca77b7bab61413ea2ec  $p" | sha256sum -c --status; then echo "$p"; break; fi; done)
+            test -n "$f"
+            echo '#323 exact 316094 matched baseline' | tee /tmp/results/scope.txt
+          fi
+          echo "$f" >/tmp/parent-path
+          cd research/dqi_rank96_joint_lanes
+          python export.py /tmp/terms.txt | tee /tmp/results/terms.log
+          g++ -O3 -std=c++17 whole.cpp -o /tmp/whole
+          /tmp/whole "$f" /tmp/results/dqi.kmb /tmp/terms.txt --dry99 | tee /tmp/results/counts.json
+          if /tmp/whole "$f" /tmp/strict.kmb /tmp/terms.txt --strict97; then
+            echo 'Unexpected rank97 output: inspect and independently verify'; exit 1
+          else
+            test ! -f /tmp/strict.kmb
+          fi
+          python - <<'PY'
+          import json,kickmix as km
+          c=km.Circuit.from_file('/tmp/results/dqi.kmb')
+          r=json.load(open('/tmp/results/counts.json'))
+          assert c.num_qubits==r['Q'] and len(c)==r['new_ops']
+          assert r['static_ccx_saved']==0
+          print('NATIVE_READBACK',c.num_qubits,len(c),int(c.operation_statistics().num_toffoli_like),flush=True)
+          PY
+      - name: Paired whole DQI verification
+        run: |
+          set -euo pipefail
+          curl -fLsS 'https://raw.githubusercontent.com/corcondor/gvqcc/dc585b9cd31df6f8151162cb5accfb2774db3811/research/dqi_affine_observer/verify_dqi.py' -o /tmp/paired.py
+          python /tmp/paired.py "$(cat /tmp/parent-path)" /tmp/results/dqi.kmb
+          cp /tmp/dual_receipt.json /tmp/results/
+          python - <<'PY'
+          import json
+          a,b=json.load(open('/tmp/dual_receipt.json')).values()
+          for k,v in a['panels'].items():
+              w=b['panels'][k]
+              assert v['shots']==w['shots'] and v['errors']==w['errors'] and v['union']==w['union'] and v['paid']==w['paid']
+              if 'paired_digest' in v:assert v['paired_digest']==w['paired_digest']
+          print('PAIRED_COMPLETE_EQUIVALENCE')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: f4-full-tape-research
+          path: /tmp/results/
+          compression-level: 3
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_rank96_joint_lanes/F4MixedWhole.lean | tee /tmp/f4-lean.log
+          test "$(grep -c 'axiom' /tmp/f4-lean.log)" -eq 4
+          ! grep -E 'sorryAx|ofReduceBool' /tmp/f4-lean.log
