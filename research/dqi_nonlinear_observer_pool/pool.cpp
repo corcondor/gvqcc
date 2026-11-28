@@ -25,6 +25,7 @@ void push_form(Form &f,Gate g){
  else abort();
 }
 struct P{size_t at;Gate gate;array<Form,3> f;};
+// All moved phases use a snapshot at their original position, including an enclosing scope.
 bool independent(P const&p,U q){for(auto f:p.f)if(f.v[q])return false;return true;}
 bool invariant(P const&p,Gate g){
  int k=op(g);
@@ -95,7 +96,7 @@ vector<Gate> lower(Group const& g,vector<P>const& ps,U base){
  vector<unsigned> wcoords;vector<unsigned> residuals;
  auto phase=[&](int id,int k,U a,U c=0){
    const auto &p=ps[id];
-   if(cond(p.gate))r.push_back(cg(k,a,c,0,base+id));else r.push_back(xg(k,a,c));
+   r.push_back(cg(k,a,c,0,base+id));
  };
  for(int s=0;s<(int)g.ids.size();s++){
   int id=g.ids[s];auto p=ps[id];array<unsigned,3>A;
@@ -118,7 +119,7 @@ vector<Gate> lower(Group const& g,vector<P>const& ps,U base){
  U cbase=base+128,choice=base+144;
  for(int j=2;j<d;j++)r.push_back(bs(cbase+j));
  for(int s=0;s<(int)g.ids.size();s++)for(int j=2;j<d;j++)if(wcoords[s]>>j&1){
-   int id=g.ids[s];if(cond(ps[id].gate))r.push_back(bc(cbase+j,base+id));else {Gate h{};h.op=66;h.bit=cbase+j;r.push_back(h);}
+   int id=g.ids[s];r.push_back(bc(cbase+j,base+id));
  }
  // Dynamic selected parity, same algorithm as narrow_field130, but the
  // coefficients can be XORs of multiple independently measured guards.
@@ -144,24 +145,83 @@ vector<Gate> lower(Group const& g,vector<P>const& ps,U base){
  r.insert(r.end(),f.pre.rbegin(),f.pre.rend());
  return r;
 }
+// Analyze an entire conditional scope on the branch where its guard is true.
+// Each nested scope must itself be diagonal (identity affine value map).
+// Return phase forms in the outer entry coordinates. No HMR, non-affine
+// updates, or inline conditional affine transforms are admitted.
+struct AffineView{
+ map<U,Form> m;
+ Form get(U q)const{auto it=m.find(q);return it==m.end()?Form{unit(q),false}:it->second;}
+ bool identity()const{for(auto &[q,f]:m)if(f.v!=unit(q)||f.c)return false;return true;}
+ void act(Gate g){int k=op(g);if(k==17){auto a=get(g.a);a.c^=1;m[g.a]=a;}
+ else if(k==33){auto a=get(g.a),b=get(g.b);b.v^=a.v;b.c^=a.c;m[g.b]=b;}
+ else if(k==34){auto a=get(g.a),b=get(g.b);m[g.a]=b;m[g.b]=a;}else abort();}
+ Form compose(Form f)const{Form a{{},f.c};for(U q=f.v._Find_first();q<900;q=f.v._Find_next(q)){auto b=get(q);a.v^=b.v;a.c^=b.c;}return a;}
+};
+bool scope_analyze(vector<Gate>const&g,size_t &i,vector<P>&ps,int depth=0){
+ if(depth>32||i>=g.size()||g[i].op!=129)return false;
+ ++i;AffineView a;
+ while(i<g.size()){
+  Gate h=g[i];int k=op(h);
+  if(h.op==1){++i;return a.identity();}
+  if(h.op==129){
+    vector<P> nested;if(!scope_analyze(g,i,nested,depth+1))return false;
+    for(auto p:nested){for(auto&f:p.f)f=a.compose(f);ps.push_back(move(p));}continue;
+  }
+  if(k==17||k==33||k==34){if(cond(h))return false;a.act(h);}
+  else if(k==48){if(h.a==h.b||h.a==h.t||h.b==h.t)return false;
+    ps.push_back({i,h,{{a.get(h.a),a.get(h.b),a.get(h.t)}}});}
+  else if(k!=16&&k!=32&&k!=64&&k!=65&&k!=66)return false;
+  ++i;
+ }
+ return false;
+}
 int main(int argc,char**argv){
  assert(argc==3);Reader r(argv[1]);assert(r.Q==900);Writer w(r,r.B+170);
  vector<Gate> buf;vector<P> pending;L oldPaid=0,newPaid=0;map<int,L> sizes;
+ L diagonalScopes=0,scopeTerms=0;
  auto emit=[&](Gate g){w.put(g);if(op(g)==48||op(g)==49||op(g)==50)newPaid++;};
  auto flush=[&](){
    if(buf.empty()){assert(pending.empty());return;}
    auto groups=choose(pending);map<size_t,int> mark;vector<vector<Gate>> synth;
    for(auto&g:groups){auto z=lower(g,pending,r.B);groupCount++;removed+=g.ids.size();saved+=g.ids.size()-1;sizes[g.ids.size()]++;for(int id:g.ids)mark[pending[id].at]=id;synth.push_back(move(z));}
+   // Initialize at the enclosing scope boundary; guarded subscopes may never
+   // execute. Every moved phase writes a single true bit at its old location.
+   for(auto [i,id]:mark)emit(bs(r.B+id));
    for(size_t i=0;i<buf.size();i++){
      auto it=mark.find(i);if(it==mark.end())emit(buf[i]);
-     else {auto p=pending[it->second];if(cond(p.gate)){emit(bs(r.B+it->second));emit(bc(r.B+it->second,p.gate.cond));}}
+     else {auto p=pending[it->second];auto h=bs(r.B+it->second,true);
+       if(cond(p.gate)){h.op|=128;h.cond=p.gate.cond;}emit(h);}
    }
-   for(auto z:synth)for(auto h:z)emit(h);
-   for(auto [i,id]:mark)if(cond(pending[id].gate))emit(bs(r.B+id));
+   for(auto &z:synth)for(auto h:z)emit(h);
+   for(auto [i,id]:mark)emit(bs(r.B+id));
    buf.clear();pending.clear();
  };
- for(L i=0;i<r.counts[0];i++){
-  Gate g=r.read(i);int k=op(g);if(k==48||k==49||k==50)oldPaid++;
+ deque<Gate> look;L raw=0;
+ auto next=[&](){Gate g;if(!look.empty()){g=look.front();look.pop_front();}
+   else {assert(raw<r.counts[0]);g=r.read(raw++);int k=op(g);if(k==48||k==49||k==50)oldPaid++;}return g;};
+ while(raw<r.counts[0]||!look.empty()){
+  Gate g=next();int k=op(g);
+  if(g.op==129){
+    vector<Gate> block{g};int depth=1;bool has=false;
+    while(depth&&block.size()<8192&&(raw<r.counts[0]||!look.empty())){
+      Gate h=next();block.push_back(h);if(h.op==129)depth++;if(h.op==1)depth--;if(op(h)==48)has=true;
+      // Fast rejection: these gates prevent a diagonal scope. Keep the
+      // partial lookahead and process the original nested scopes normally.
+      int z=op(h);if(z==49||z==50||z==80||z==18)break;
+    }
+    vector<P> p;size_t i=0;
+    if(!depth&&has&&scope_analyze(block,i,p)&&i==block.size()&&p.size()<=64){
+       if(pending.size()+p.size()>64||buf.size()+block.size()>32768)flush();
+       size_t off=buf.size();for(auto h:block)buf.push_back(h);
+       for(auto t:p){t.at+=off;pending.push_back(move(t));terms++;}
+       diagonalScopes++;scopeTerms+=p.size();
+       continue;
+    }
+    flush();emit(g);
+    for(size_t j=block.size();j>1;j--)look.push_front(block[j-1]);
+    continue;
+  }
   if(k==48){
     if(pending.size()>=64||buf.size()>=32768)flush();
     P p{buf.size(),g,{{{unit(g.a),false},{unit(g.b),false},{unit(g.t),false}}}};
@@ -171,8 +231,6 @@ int main(int argc,char**argv){
   if(pending.empty()){assert(buf.empty());emit(g);continue;}
   bool affine=!cond(g)&&(k==17||k==33||k==34);
   bool safe=k==16||k==32||k==64||k==65||k==66;
-  // Classical stores, diagonal phases commute; original guards will be
-  // snapshotted at the old phase location. Scopes are strict boundaries.
   if(affine){for(auto&p:pending)for(auto&f:p.f)push_form(f,g);safe=true;}
   else if(k==17||k==33||k==34||k==49||k==50||k==80||k==18){
     safe=all_of(pending.begin(),pending.end(),[&](P const&p){return invariant(p,g);});
@@ -181,7 +239,7 @@ int main(int argc,char**argv){
   if(!safe){flush();emit(g);continue;}
   buf.push_back(g);if(buf.size()>=32768)flush();
  }
- flush();assert(oldPaid-newPaid==saved);cerr<<"{\"Q\":"<<r.Q<<",\"old_paid\":"<<oldPaid<<",\"new_paid\":"<<newPaid<<",\"ccz_seen\":"<<terms<<",\"groups\":"<<groupCount<<",\"old_group_terms\":"<<removed<<",\"saved\":"<<saved<<",\"crossed_HMR\":"<<crossedHMR<<",\"crossed_CCX\":"<<crossedCCX<<",\"phase_checks\":"<<phaseChecks<<",\"old_ops\":"<<r.counts[0]<<",\"new_ops\":"<<w.ops.size()<<"}\n";
+ flush();assert(oldPaid-newPaid==saved);cerr<<"{\"Q\":"<<r.Q<<",\"old_paid\":"<<oldPaid<<",\"new_paid\":"<<newPaid<<",\"ccz_seen\":"<<terms<<",\"groups\":"<<groupCount<<",\"old_group_terms\":"<<removed<<",\"saved\":"<<saved<<",\"crossed_HMR\":"<<crossedHMR<<",\"crossed_CCX\":"<<crossedCCX<<",\"diagonal_scopes\":"<<diagonalScopes<<",\"scope_terms\":"<<scopeTerms<<",\"phase_checks\":"<<phaseChecks<<",\"old_ops\":"<<r.counts[0]<<",\"new_ops\":"<<w.ops.size()<<"}\n";
  for(auto [n,c]:sizes)cerr<<"GROUP "<<n<<" "<<c<<"\n";
  if(saved)w.write(argv[2]);else {cerr<<"NO_PAID_IMPROVEMENT\n";return 3;}
 }
