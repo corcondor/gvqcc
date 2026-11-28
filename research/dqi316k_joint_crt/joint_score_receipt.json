@@ -1,0 +1,33 @@
+{
+  "scope": "full original 316K lineage; not submission",
+  "vercel_session": "sbx_sfHtTdaz5ha0HsQlhiKoCwlM6r4j",
+  "command": "cmd_3e2e8ab1f905453781aaf8e295bc",
+  "parents": {
+    "direct": "a2dcc29ed689440541d9cce00a00a26415cbe25a",
+    "conditional_hmr": "4c7f717ff2a1ac04a8010095d9dbddbee8d6eee9",
+    "guard4": "a52fe81aa92f19b907e3c85813e49998523e1eae"
+  },
+  "donor_sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+  "sha256": "bfc999c1c34b597fbd3e8dce27195db6c7ecd11b3b30ce79315d13d87dec7fb3",
+  "shots": 102400,
+  "value": 2,
+  "phase": 0,
+  "mask": 0,
+  "Q": 900,
+  "static_paid": 319728,
+  "ops": 105892700,
+  "T": 316429.8843261719,
+  "eps": 0.0009488155716079552,
+  "R": 1.2013880602795501,
+  "score": 307925618805.53265,
+  "comparison": {
+    "sha256": "9230ad7e864cd9114796d15609753b35e50023fd312874b933125a84de9052d4",
+    "T": 316131.6496191406,
+    "score": 305042060052.2295,
+    "shots": 102400,
+    "value": 0,
+    "phase": 0,
+    "mask": 0
+  },
+  "scope_note": "Independent reconstructed DQI score formula with hash-derived random seeds; not official verifier or matched significance test. No new CCX/CCZ folds in fold stage. #241 chart-only source imported separately, NOT physically integrated into this tape."
+}

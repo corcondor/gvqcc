@@ -1,0 +1,26 @@
+name: DQI316K scoped constants Lean
+on:
+  pull_request:
+    paths:
+      - 'research/dqi316k_joint_crt/ScopeConst.lean'
+      - 'research/dqi316k_joint_crt/NormalizedScan.lean'
+      - '.github/workflows/dqi316k-scope-constants.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  strict:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Kernel check
+        shell: bash
+        run: |
+          set -o pipefail
+          lean -DwarningAsError=true research/dqi316k_joint_crt/ScopeConst.lean | tee scope-axioms.txt
+          lean -DwarningAsError=true research/dqi316k_joint_crt/NormalizedScan.lean | tee -a scope-axioms.txt
+          ! grep -E 'sorryAx|ofReduceBool|native_decide' scope-axioms.txt

@@ -1,0 +1,36 @@
+{
+  "scope": "G-based #234 all-pole locator with exact guard, NOT phase oracle",
+  "inputs": 610,
+  "allpole": 128,
+  "known_locators": 128,
+  "results": [
+    {
+      "reverse": false,
+      "Q": 881,
+      "ops": 226948,
+      "paid": 7799,
+      "shots": 1220,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "6f310d98ff7a7b2d674c39bfa3ff8fb3108aa61673c37f83aa3c2b2019069955"
+    },
+    {
+      "reverse": true,
+      "Q": 881,
+      "ops": 226948,
+      "paid": 7799,
+      "shots": 1220,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "397b4022b517f95868054ea2776012741ed84296ce4fb1a40d31f25f1ed70358"
+    }
+  ]
+}

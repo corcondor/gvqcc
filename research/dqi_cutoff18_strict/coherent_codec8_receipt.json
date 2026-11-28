@@ -1,0 +1,36 @@
+{
+  "forward": {
+    "words": 8,
+    "stages": 10,
+    "reverse": false,
+    "ops": 238151,
+    "static_paid": 223659,
+    "max_referenced_qubits_bound": 110,
+    "bytes": 3703062,
+    "sha256": "73b1c3a13fc89a9a40292dfcf45826a61fd30f1eb7e64bd20b70b877b996bd48",
+    "scope": "complete coherent codec tape; not DQI phase oracle",
+    "submission_performed": false
+  },
+  "reverse": {
+    "words": 8,
+    "stages": 10,
+    "reverse": true,
+    "ops": 238151,
+    "static_paid": 223659,
+    "max_referenced_qubits_bound": 110,
+    "bytes": 3703062,
+    "sha256": "af7aef7c79aa7723043bc8dcad0b28db34d3ddae5082bc6cbc9aa0c5bc00fadd",
+    "scope": "complete coherent codec tape; not DQI phase oracle",
+    "submission_performed": false
+  },
+  "native_check": {
+    "native_shots": 304,
+    "value_dirty_phase_errors": [
+      0,
+      0,
+      0
+    ],
+    "test_words": 8,
+    "scope": "codec reference comparison; not oracle proof"
+  }
+}

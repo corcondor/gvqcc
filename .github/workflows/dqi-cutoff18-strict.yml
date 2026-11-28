@@ -1,0 +1,73 @@
+name: DQI 316k affine padding strict repair algebra
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/**'
+      - '.github/workflows/dqi-cutoff18-strict.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Kernel and axiom audit
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true CutoffRepair.lean | tee proof.log
+          test "$(grep -c 'GVQCC.CutoffRepair.*axiom' proof.log)" -eq 8
+          lake env lean -DwarningAsError=true RollingCutoff.lean | tee rolling.log
+          test "$(grep -c 'GVQCC.RollingCutoff.*axiom' rolling.log)" -eq 6
+          lake env lean -DwarningAsError=true AffinePadding.lean | tee padding.log
+          test "$(grep -c 'GVQCC.Padding.*axiom' padding.log)" -eq 11
+          lake env lean -DwarningAsError=true BranchCollision.lean | tee collision.log
+          test "$(grep -c 'GVQCC.BranchCollision.*axiom' collision.log)" -eq 6
+          lake env lean -DwarningAsError=true InfinityCF.lean | tee infinity.log
+          test "$(grep -c 'GVQCC.InfinityCF.*axiom' infinity.log)" -eq 14
+          lake env lean -DwarningAsError=true ParserStability.lean | tee parser.log
+          test "$(grep -c 'GVQCC.ParserStability.*axiom' parser.log)" -eq 9
+          lake env lean -DwarningAsError=true RootCause316.lean | tee rootcause.log
+          test "$(grep -c 'GVQCC.RootCause316.*axiom' rootcause.log)" -eq 6
+          lake env lean -DwarningAsError=true FirstPole316.lean | tee firstpole.log
+          test "$(grep -c 'GVQCC.FirstPole316.*axiom' firstpole.log)" -eq 8
+          lake env lean -DwarningAsError=true AllChart316.lean | tee allchart.log
+          test "$(grep -c 'GVQCC.AllChart316.*axiom' allchart.log)" -eq 7
+          lake env lean -DwarningAsError=true SharedChart316.lean | tee sharedchart.log
+          test "$(grep -c 'GVQCC.SharedChart316.*axiom' sharedchart.log)" -eq 8
+          lake env lean -DwarningAsError=true InvariantPad.lean | tee invariantpad.log
+          test "$(grep -c 'GVQCC.InvariantPad.*axiom' invariantpad.log)" -eq 22
+          lake env lean -DwarningAsError=true ProjectivePivot316.lean | tee projective.log
+          test "$(grep -c 'GVQCC.ProjectivePivot316.*axiom' projective.log)" -eq 14
+          lake env lean -DwarningAsError=true -o InvariantPad.olean InvariantPad.lean > /dev/null
+          lake env bash -c 'export LEAN_PATH="$PWD:${LEAN_PATH:-}"; lean -DwarningAsError=true DQIRefinement316.lean' | tee refinement.log
+          test "$(grep -c 'GVQCC.DQIRefinement316.*axiom' refinement.log)" -eq 7
+          ! grep -E 'sorryAx|ofReduceBool' proof.log rolling.log padding.log collision.log infinity.log parser.log rootcause.log firstpole.log allchart.log sharedchart.log invariantpad.log projective.log refinement.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cutoff18-axioms
+          path: |
+            research/dqi_cutoff18_strict/proof.log
+            research/dqi_cutoff18_strict/rolling.log
+            research/dqi_cutoff18_strict/padding.log
+            research/dqi_cutoff18_strict/collision.log
+            research/dqi_cutoff18_strict/infinity.log
+            research/dqi_cutoff18_strict/parser.log
+            research/dqi_cutoff18_strict/rootcause.log
+            research/dqi_cutoff18_strict/firstpole.log
+            research/dqi_cutoff18_strict/allchart.log
+            research/dqi_cutoff18_strict/sharedchart.log
+            research/dqi_cutoff18_strict/invariantpad.log
+            research/dqi_cutoff18_strict/projective.log
+            research/dqi_cutoff18_strict/refinement.log

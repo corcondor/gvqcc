@@ -1,0 +1,28 @@
+name: V118 full DQI rewrite proof
+on:
+  pull_request:
+    paths:
+      - 'research/v118_full_rewrite/**'
+      - '.github/workflows/v118-full-rewrite-proof.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Strict proof and axiom audit
+        run: |
+          set -euo pipefail
+          ~/.elan/bin/lean --version
+          ~/.elan/bin/lean -DwarningAsError=true research/v118_full_rewrite/FullRewrite.lean | tee proof.log
+          test "$(grep -c 'GVQCC.FullRewrite.*axiom' proof.log)" -eq 18
+          ! grep -E 'sorryAx|Lean.ofReduceBool' proof.log
+          ~/.elan/bin/lean -DwarningAsError=true research/v118_full_rewrite/LiveSpan.lean | tee span.log
+          test "$(grep -c 'GVQCC.LiveSpan.*axiom' span.log)" -eq 7
+          ! grep -E 'sorryAx|Lean.ofReduceBool' span.log
+          ~/.elan/bin/lean -DwarningAsError=true research/v118_full_rewrite/SyndromeCollision.lean | tee collision.log
+          test "$(grep -c 'axiom' collision.log)" -eq 6
+          ! grep -E 'sorryAx|Lean.ofReduceBool' collision.log
