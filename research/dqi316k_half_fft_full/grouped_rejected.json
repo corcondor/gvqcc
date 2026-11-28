@@ -1,0 +1,81 @@
+{
+  "Q": 900,
+  "ops": 31606222,
+  "static_paid": 471131,
+  "sha256": "d160646517b75e924fcce707cd834781106110467cc73ee4bd223efa2b4153cd",
+  "panels": {
+    "uniform": {
+      "shots": 288,
+      "value": 0,
+      "phase_raw": 43,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 43,
+      "paid": 112423050,
+      "mean_paid": 390357.8125
+    },
+    "constant_numerator": {
+      "shots": 35,
+      "value": 0,
+      "phase_raw": 11,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 11,
+      "paid": 13635160,
+      "mean_paid": 389576.0
+    },
+    "allpole": {
+      "shots": 24,
+      "value": 0,
+      "phase_raw": 15,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 15,
+      "paid": 9365185,
+      "mean_paid": 390216.0416666667
+    },
+    "singlepole": {
+      "shots": 96,
+      "value": 0,
+      "phase_raw": 36,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 36,
+      "paid": 37548222,
+      "mean_paid": 391127.3125
+    },
+    "distribution_1024": {
+      "shots": 1024,
+      "value": 0,
+      "phase_raw": 321,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 321,
+      "paid": 422233226,
+      "mean_paid": 412337.134765625
+    }
+  },
+  "double_node": {
+    "double_node": {
+      "shots": 408,
+      "value": 0,
+      "phase_raw": 90,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 90,
+      "paid": 156327320,
+      "mean_paid": 383155.1960784314
+    },
+    "two_distinct_nodes": {
+      "shots": 408,
+      "value": 0,
+      "phase_raw": 84,
+      "ancilla": 0,
+      "mask": 0,
+      "union": 84,
+      "paid": 156194319,
+      "mean_paid": 382829.2132352941
+    }
+  },
+  "rejected": true
+}
