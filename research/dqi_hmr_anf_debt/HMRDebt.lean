@@ -79,9 +79,9 @@ theorem shear_twice (q : Nat → Bool) (u v : Nat) (h : u ≠ v) :
   funext i
   by_cases hi : i = v
   · subst i
-    simp only [shear, if_pos rfl, if_neg h]
+    simp only [shear, ite_eq_right h]
     cases q v <;> cases q u <;> decide
-  · simp only [shear, if_neg hi]
+  · simp only [shear, ite_eq_right hi]
 
 theorem graph_edge_transport (u v w : Bool) :
     (Bool.xor v u && w) = Bool.xor (v && w) (u && w) := by
