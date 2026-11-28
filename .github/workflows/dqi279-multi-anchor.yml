@@ -1,0 +1,39 @@
+name: DQI 279 multi anchor and frame strict proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/MultiAnchor279.lean'
+      - 'research/dqi_cutoff18_strict/ProjectiveGauge279.lean'
+      - 'research/dqi279_multi_anchor/**'
+      - '.github/workflows/dqi279-multi-anchor.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true ProjectiveGauge279.lean | tee gauge.log
+          lake env lean -DwarningAsError=true MultiAnchor279.lean | tee multi.log
+          test "$(grep -c 'GVQCC.ProjectiveGauge279.*axiom' gauge.log)" -eq 12
+          test "$(grep -c 'GVQCC.MultiAnchor279.*axiom' multi.log)" -eq 17
+          ! grep -E 'sorryAx|ofReduceBool' gauge.log multi.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: multi-anchor-axioms
+          path: |
+            research/dqi_cutoff18_strict/gauge.log
+            research/dqi_cutoff18_strict/multi.log
