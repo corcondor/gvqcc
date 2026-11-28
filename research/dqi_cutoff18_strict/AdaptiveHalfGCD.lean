@@ -220,16 +220,16 @@ theorem newton_double_char2 (f g e : R) (h2 : (2:R)=0)
 
 /-- Source indices of Frobenius-power triangular update are lower than target. -/
 theorem triangular_sources (i l k : Nat) (hl : 0<l) (hk : 2≤k)
-    (h : k*l≤i) : l<i ∧ i-k*l<i := by
-  have hm : 2*l≤k*l := Nat.mul_le_mul_right l hk
+    (h : k * l ≤ i) : l < i ∧ i-k*l < i := by
+  have hm : 2 * l ≤ k * l := Nat.mul_le_mul_right l hk
   constructor <;> omega
 
 theorem triangular_update_stable (s t : Nat → R) (i k : Nat)
     (hk : 2≤k) (L : Finset Nat)
-    (hL : ∀ l∈L, 0<l ∧ k*l≤i)
-    (h : ∀ j<i, s j=t j) :
-    (∑ l∈L, s (i-k*l)*(s l)^k) =
-      ∑ l∈L, t (i-k*l)*(t l)^k := by
+    (hL : ∀ l ∈ L, 0 < l ∧ k * l ≤ i)
+    (h : ∀ j < i, s j=t j) :
+    (∑ l ∈ L, s (i - k * l)*(s l)^k) =
+      ∑ l ∈ L, t (i - k * l)*(t l)^k := by
   apply Finset.sum_congr rfl
   intro l hl
   obtain ⟨h₁,h₂⟩ := hL l hl
