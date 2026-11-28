@@ -1,0 +1,80 @@
+{
+  "scope": "Exact 316K donor prefix retained; #261 full rational replacement; all 4095 leaves use new joint norm/Guard4; not submission",
+  "session": "sbx_gp5YKZpCATsjWBycBEdXdUaMZrpU",
+  "parent": {
+    "sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52"
+  },
+  "comparison": {
+    "pr": 261,
+    "Q": 900,
+    "static_paid": 543848,
+    "ops": 81584256,
+    "stress_mean": 543285.5050200804
+  },
+  "core": {
+    "sha256": "0e1d99a9c7ee0fc15c71d42e430bd6b255ae5a0df16ab63bd8a98c2c028ff129",
+    "ops": 56364136,
+    "Q": 900,
+    "static_paid": 527468
+  },
+  "full": {
+    "sha256": "f9b11034891f52e03b467602129467018c3f3eda7d1357b0e7111d1630b2e9eb",
+    "Q": 900,
+    "ops": 79569516,
+    "static_paid": 527468,
+    "stress": {
+      "shots": 996,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mean_paid": 526904.1746987952
+    },
+    "distribution": {
+      "shots": 1024,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mean_paid": 526906.62109375
+    }
+  },
+  "errors_order": [
+    "value",
+    "phase",
+    "dirty",
+    "mask"
+  ],
+  "static_stage": {
+    "key_roundtrip": 220343,
+    "scan": 307125,
+    "per_point": 75
+  },
+  "prefix_profile": {
+    "native_samples": 72,
+    "weighted_rational_mismatches": 0,
+    "observed_max_gap_by_low_weight": [
+      13,
+      13,
+      9,
+      9,
+      5,
+      5
+    ]
+  },
+  "commands": {
+    "build": "cmd_88252685c2d94c9d86fc0b22f826",
+    "verify": "cmd_784dadc55d3c457da7971e7e021c",
+    "distribution": "cmd_687c467eb4bd42ba87f84b54d69d"
+  },
+  "limits": [
+    "316K target not met",
+    "not better than #259 or #251",
+    "not official full verifier",
+    "not universal gate-level proof"
+  ]
+}
