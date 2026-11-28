@@ -47,3 +47,10 @@ jobs:
             old*.kmb
             new*.kmb
             receipt.json
+      - run: |
+          mkdir -p wheelhouse
+          pip download --no-deps --only-binary=:all: kickmix==1.0.0 -d wheelhouse
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kickmix-linux-cp313-wheel
+          path: wheelhouse/*.whl
