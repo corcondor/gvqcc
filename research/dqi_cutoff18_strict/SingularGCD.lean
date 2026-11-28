@@ -21,7 +21,7 @@ theorem common_square_factor (a b h x : R) :
     (h*a)^2+x*(h*b)^2=h^2*(a^2+x*b^2) := by ring
 
 theorem dirty_tail (d y n v t z : R)
-    (h2 : (2:R)=0) (hz : d*z=n+v) (ht : t=d*y+n+v) :
+    (hz : d*z=n+v) (ht : t=d*y+n+v) :
     t=d*(y+z) := by rw [mul_add,hz,ht]; ring
 
 theorem parity_numerator (d a t z : R) (h : d*t=a) :
