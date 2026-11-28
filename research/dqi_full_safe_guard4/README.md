@@ -10,8 +10,8 @@ norm and a GF8 norm. Reuse the exact four-product guarded inverse from #241.
 Pull both final GF64 rank-15 products through the public linear mask and
 materialize a single linear numerator parity at a time; apply CCZ directly,
 not a full inverse output. HMR cleanup repays each norm/product with linear
-and quadratic phase coefficients. Static synthesis model: 11+15+6+4+12+30=78
-paid/leaf, 29 scratch (instead of 35). The 70 fixed anchors use #310's
+and quadratic phase coefficients. Static synthesis model (11 retained conjunctions, rather than the 7-wire recompute ladder): 11+15+6+4+12+30=78
+paid/leaf, 33 scratch (instead of 35). The 70 fixed anchors use #310's
 compensation before the raw-key transform, and the same additive FFT
 evaluates the classical polynomial alongside the quantum coefficients.
 All masks remain classical public data. No fitting to verifier or salt.
