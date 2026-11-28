@@ -60,6 +60,7 @@ jobs:
             echo '518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499  /tmp/original/dqi.kmb' | sha256sum -c
           fi
           if [ "$TASK" != dqi ]; then tar -xzf /tmp/deps/pinned-verifiers.tar.gz -C /tmp/verifier; fi
+          if [ "$TASK" = chemistry ]; then xz -dk /tmp/verifier/verifiers/dfthcsos/FeMoCo76o113e.fcidump.xz; fi
       - name: Apply to every circuit; retain exact accompanying data
         run: |
           set -euo pipefail
