@@ -57,22 +57,29 @@ theorem bilinear_accumulation {I J Z : Type*} [Fintype I] [Fintype J] [Fintype Z
     (h : ∀ a b, T a b = ∑ z, u z a * v z b * w z) :
     (∑ a, ∑ b, c a * p b * T a b) =
       ∑ z, (∑ a, c a * u z a) * (∑ b, p b * v z b) * w z := by
+  symm
   calc
-    _ = ∑ a, ∑ b, ∑ z, (c a * u z a) * (p b * v z b) * w z := by
+    _ = ∑ z, ∑ a, ∑ b, (c a * p b) * (u z a * v z b * w z) := by
       apply Finset.sum_congr rfl
-      intro a ha
+      intro z _
+      simp only [Finset.sum_mul, Finset.mul_sum]
+      rw [Finset.sum_comm]
       apply Finset.sum_congr rfl
-      intro b hb
-      rw [h a b, Finset.mul_sum]
+      intro a _
       apply Finset.sum_congr rfl
-      intro z hz
+      intro b _
       ring
-    _ = ∑ a, ∑ z, ∑ b, (c a * u z a) * (p b * v z b) * w z := by
+    _ = ∑ a, ∑ b, ∑ z, (c a * p b) * (u z a * v z b * w z) := by
+      rw [Finset.sum_comm]
       apply Finset.sum_congr rfl
-      intro a ha
-      exact Finset.sum_comm
-    _ = ∑ z, ∑ a, ∑ b, (c a * u z a) * (p b * v z b) * w z := Finset.sum_comm
-    _ = _ := by simp only [Finset.sum_mul, Finset.mul_sum]
+      intro a _
+      rw [Finset.sum_comm]
+    _ = _ := by
+      apply Finset.sum_congr rfl
+      intro a _
+      apply Finset.sum_congr rfl
+      intro b _
+      rw [← Finset.mul_sum, h]
 
 end Tensor
 
