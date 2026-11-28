@@ -1,0 +1,41 @@
+name: Packed half-GCD strict Lean check
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/PackedHalfGCD.lean'
+      - 'research/dqi_packed_halfgcd/**'
+      - '.github/workflows/dqi-packed-halfgcd.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true PackedHalfGCD.lean | tee packed-hgcd.log
+          test "$(grep -c '^.*GVQCC.PackedHalfGCD.*axiom' packed-hgcd.log)" -eq 16
+          ! grep -E 'sorryAx|ofReduceBool|native_decide' packed-hgcd.log
+          python - <<'PY'
+          import re
+          for line in open('packed-hgcd.log'):
+              if 'depends on axioms:' in line:
+                  a=re.search(r'depends on axioms: \[(.*)\]',line)
+                  assert a and set(a.group(1).split(', ')) <= {'propext','Classical.choice','Quot.sound'},line
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: packed-halfgcd-axioms
+          path: research/dqi_cutoff18_strict/packed-hgcd.log
