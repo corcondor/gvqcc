@@ -1,0 +1,17 @@
+name: Multi-Pattern 36Q V6 Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36_patterns/lean/MultiPattern36Q.lean'
+      - '.github/workflows/invsqrt36-multipattern-lean.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Check multi-pattern 36Q algebra and cost bounds
+        run: ~/.elan/bin/lean research/invsqrt36_patterns/lean/MultiPattern36Q.lean

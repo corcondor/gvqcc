@@ -1,0 +1,17 @@
+name: Shared lifetime V5 Lean
+on:
+  pull_request:
+    paths:
+      - 'research/invsqrt36/lean/SharedLifetimeV5.lean'
+      - '.github/workflows/shared-lifetime-v5-lean.yml'
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+      - name: Check algebra and concrete factor lists
+        run: ~/.elan/bin/lean research/invsqrt36/lean/SharedLifetimeV5.lean
