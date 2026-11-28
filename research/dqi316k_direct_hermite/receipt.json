@@ -1,0 +1,73 @@
+{
+  "parent": {
+    "sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+    "Q": 900,
+    "ops": 69782188,
+    "static_paid": 318972
+  },
+  "splice": {
+    "parent_cut": 19992090,
+    "prefix_z": 4352,
+    "prefix_linear": 3664,
+    "physical_shell_ops": 22409421
+  },
+  "core": {
+    "Q": 900,
+    "ops": 58378876,
+    "paid": 543848,
+    "sha256": "f11930932321178d1d0ff95ac0a405d4a6a08d38cb7a1c760005d3b087ca4f66"
+  },
+  "full": {
+    "Q": 900,
+    "ops": 81584256,
+    "static_paid": 543848,
+    "sha256": "ea32eaf6068c0e8bcd3fb9a3894bd75695cd844e5def347d3e354cef8b0af41b",
+    "shots": 996,
+    "value": 0,
+    "phase": 0,
+    "dirty": 0,
+    "mask": 0,
+    "paid": 541112363,
+    "mean_paid": 543285.5050200804,
+    "pass": true
+  },
+  "groups": {
+    "random": 432,
+    "constant_numerator": 210,
+    "forced_pole": 306,
+    "allpole": 48
+  },
+  "prefix_check": {
+    "cases": 72,
+    "failures": 0
+  },
+  "quick": {
+    "shots": 108,
+    "value": 0,
+    "phase": 0,
+    "dirty": 0,
+    "mask": 0
+  },
+  "lean": {
+    "version": "4.35.0",
+    "direct_theorems": 17,
+    "fft_theorems": 4,
+    "warningAsError": true,
+    "sorryAx": false
+  },
+  "rejected_first_splice": {
+    "ops": 113736320,
+    "static_paid": 543848,
+    "quick_shots": 108,
+    "value": 0,
+    "phase": 40,
+    "dirty": 0,
+    "mask": 0
+  },
+  "limits": [
+    "Not official distribution score",
+    "No universal gate-level proof",
+    "Cost exceeds 316K parent",
+    "No submission or merge"
+  ]
+}
