@@ -4,6 +4,7 @@ on:
     paths:
       - 'research/dqi_multiscale_dual/**'
       - 'research/dqi_cutoff18_strict/MultiscaleDual.lean'
+      - 'research/dqi_cutoff18_strict/HankelResidual.lean'
       - '.github/workflows/dqi-multiscale-dual.yml'
   workflow_dispatch:
 permissions:
@@ -19,6 +20,8 @@ jobs:
           python-version: '3.13'
       - run: pip install kickmix==1.0.0 numpy==2.2.6
       - run: python research/dqi_multiscale_dual/dual71_sdk.py
+      - run: python research/dqi_multiscale_dual/hankel_s71.py --native
+        if: success() || failure()
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -26,6 +29,7 @@ jobs:
           path: |
             research/dqi_multiscale_dual/*.kmb
             research/dqi_multiscale_dual/dual_receipt.json
+            research/dqi_multiscale_dual/hankel_receipt.json
   lean:
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -40,11 +44,12 @@ jobs:
           lake update
           lake exe cache get
           lake env lean -DwarningAsError=true MultiscaleDual.lean | tee dual.log
+          lake env lean -DwarningAsError=true HankelResidual.lean | tee -a dual.log
           python3 - <<'PY'
           import re
           s=open('dual.log').read()
           rows=re.findall(r'depends on axioms: \[([^\]]*)\]',s)
-          assert len(rows)+len(re.findall(r'does not depend on any axioms',s))==8
+          assert len(rows)+len(re.findall(r'does not depend on any axioms',s))==11
           for row in rows:
               assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'},row
           PY
