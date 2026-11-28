@@ -1,0 +1,53 @@
+name: Full raw-S guard4 rank15 adjoint verification
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_full_safe_guard4/**'
+      - '.github/workflows/dqi-full-safe-guard4.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  whole:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Recover pinned raw-S shell dependencies
+        run: |
+          set -euo pipefail
+          pip install kickmix==1.0.0 numpy==2.2.6 scipy
+          mkdir -p /tmp/setup /tmp/results
+          base=https://raw.githubusercontent.com/corcondor/gvqcc
+          ref=e26a9d56c08c6e05fdf826070a496595026e7f01
+          for f in build_shell.sh build_shell.py; do curl -fLsS --retry 2 "$base/$ref/research/dqi266_schur_toeplitz_native/$f" -o "/tmp/setup/$f"; done
+          bash /tmp/setup/build_shell.sh /tmp/setup/original
+          curl -fLsS --retry 2 "$base/772a661e92d327c9387d98ba60bfc009613c29f5/research/dqi316k_joint_crt/joint_rank15.py" -o /tmp/seam/joint_rank15.py
+          curl -fLsS --retry 2 "$base/a52fe81aa92f19b907e3c85813e49998523e1eae/research/dqi316k_joint_crt/guard4.py" -o /tmp/seam/guard4.py
+      - name: Compile complete candidate and independent guarded-shell diagnostic
+        run: |
+          set -euo pipefail
+          export OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1
+          src="$GITHUB_WORKSPACE/research/dqi_full_safe_guard4"
+          cd /tmp/public266/generators/dqi/src
+          python "$src/build_full.py" --output /tmp/results/dqi.kmb | tee /tmp/results/build.log
+          python "$src/build_full.py" --shell --guarded-synthesis --output /tmp/results/guarded_shell.kmb | tee /tmp/results/guarded-shell-build.log
+      - name: Strict full-circuit replay, original and guarded identity shells
+        run: |
+          set -uo pipefail
+          src=research/dqi_full_safe_guard4
+          rc=0
+          python "$src/verify_full.py" /tmp/setup/original/core_shell.kmb /tmp/results/original-shell.json --shell || rc=1
+          python "$src/verify_full.py" /tmp/results/guarded_shell.kmb /tmp/results/guarded-shell.json --shell || rc=1
+          python "$src/verify_full.py" /tmp/results/dqi.kmb /tmp/results/full.json || rc=1
+          exit "$rc"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: raw-s-rank15-guard4-research
+          path: /tmp/results/
+          compression-level: 3
