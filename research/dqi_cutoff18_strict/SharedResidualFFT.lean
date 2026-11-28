@@ -2,9 +2,8 @@ import Mathlib
 namespace GVQCC.SharedResidualFFT
 variable {F : Type*} [Field F]
 theorem shared_residual (rho m x p : F) : rho*m + rho*x*p = rho*(m+x*p) := by ring
-theorem shared_coefficient (rho x a l m : F) (ha : a ≠ 0) :
-    (rho*x*l/a)*m = rho*x*(l*(m/a)) := by
-  field_simp [ha] <;> ring
+theorem shared_coefficient (rho x a l m : F) :
+    (rho*x*l/a)*m = rho*x*(l*(m/a)) := by ring
 theorem shear_restore {R : Type*} [CommRing R] (a b c : R) (h : (2:R)=0) :
     (a+c*b)+c*b=a := by
   calc
