@@ -1,0 +1,29 @@
+name: DQI 266 gap-independent Schur identities
+on:
+  pull_request:
+    paths:
+      - 'research/dqi266_gap_independent_schur/**'
+      - 'research/dqi_cutoff18_strict/GapIndependentSchur.lean'
+      - '.github/workflows/dqi266-gap-schur.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true GapIndependentSchur.lean | tee gap_schur.log
+          test "$(grep -c 'GVQCC.*axiom' gap_schur.log)" -eq 8
+          ! grep -E 'sorryAx|ofReduceBool' gap_schur.log
