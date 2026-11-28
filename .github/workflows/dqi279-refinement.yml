@@ -1,0 +1,66 @@
+name: DQI 279 formal refinement
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/SharedFFTScan.lean'
+      - 'research/dqi_cutoff18_strict/SharedResidualAlgebra.lean'
+      - 'research/dqi_cutoff18_strict/HermiteBoundary279.lean'
+      - 'research/dqi_cutoff18_strict/ConcreteFFT279.lean'
+      - '.github/workflows/dqi279-refinement.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  prove:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Mathlib cache
+        run: |
+          lake update
+          lake exe cache get
+      - name: Strict proofs and dependency audit
+        run: |
+          set -uo pipefail
+          failed=0
+          for f in SharedResidualFFT SharedFFTScan SharedResidualAlgebra HermiteBoundary279; do
+            echo "Checking $f"
+            lake env lean -DwarningAsError=true "$f.lean" > "$f.log" 2>&1 || failed=1
+            cat "$f.log"
+            n=$(grep -c "axiom" "$f.log" || true)
+            expected=$(grep -c '^#print axioms' "$f.lean")
+            test "$n" -eq "$expected" || failed=1
+            if grep -E 'sorryAx|ofReduceBool|_native\.bv_decide\.ax' "$f.log"; then failed=1; fi
+          done
+          exit "$failed"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dqi279-formal-proof-logs
+          path: research/dqi_cutoff18_strict/*.log
+  concrete:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_cutoff18_strict/ConcreteFFT279.lean | tee concrete.log
+          test "$(grep -c 'axiom' concrete.log)" -eq 11
+          ! grep -E 'sorryAx|ofReduceBool|_native\.bv_decide\.ax' concrete.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dqi279-concrete-log
+          path: concrete.log
