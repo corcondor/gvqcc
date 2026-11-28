@@ -1,0 +1,103 @@
+name: Transported hole chart and whole-tape exact substitution
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_transported_hole_chart/**'
+      - '.github/workflows/dqi-transported-hole.yml'
+  workflow_dispatch:
+    inputs:
+      source_run:
+        description: Run ID containing exact #314 KMB (optional)
+        required: false
+      source_artifact:
+        description: Artifact name (optional)
+        required: false
+permissions:
+  contents: read
+  actions: read
+jobs:
+  local:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - run: |
+          set -euo pipefail
+          cd research/dqi_transported_hole_chart
+          node certificate.mjs
+          g++ -std=c++17 -O3 rewrite.cpp -o /tmp/rewrite
+          python native_check.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: transported-chart-local
+          path: |
+            research/dqi_transported_hole_chart/*receipt.json
+            research/dqi_transported_hole_chart/local_certificate.json
+            research/dqi_transported_hole_chart/*.kmb
+            research/dqi_transported_hole_chart/gate_tables.json
+  whole:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.source_artifact || 'exact-257-fft-research' }}
+          run-id: ${{ inputs.source_run || '46121065738' }}
+          github-token: ${{ github.token }}
+          path: /tmp/deps
+      - name: Pin complete donor and rewrite every matching interval
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/results
+          pip install kickmix==1.0.0 numpy==2.2.6 scipy
+          cd research/dqi_transported_hole_chart
+          node certificate.mjs
+          g++ -O3 -std=c++17 rewrite.cpp -o /tmp/rewrite
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          pins={'518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499','994ac1f372211f3599912ab7aeba8063e5332190c904769de853c58bdb600fff'}
+          for p in Path('/tmp/deps').rglob('*.kmb'):
+              h=hashlib.file_digest(p.open('rb'),'sha256').hexdigest()
+              if h in pins:
+                  Path('/tmp/parent_path').write_text(str(p));print('exact parent',h,p);break
+          else:raise SystemExit('No pinned #279 or #314 complete KMB; no substitute allowed')
+          PY
+          /tmp/rewrite "$(cat /tmp/parent_path)" /tmp/results/dqi.kmb /tmp/results/sites.tsv | tee /tmp/results/full_rewrite.json
+          sha256sum "$(cat /tmp/parent_path)" /tmp/results/dqi.kmb > /tmp/results/full_hashes.txt
+          python - <<'PY'
+          import kickmix as km,json
+          r=json.load(open('/tmp/results/full_rewrite.json'))
+          c=km.Circuit.from_file('/tmp/results/dqi.kmb')
+          assert c.num_qubits==r['Q'] and len(c)==r['new_ops']
+          assert int(c.operation_statistics().num_toffoli_like)==r['new_paid']
+          PY
+      - name: Paired full-circuit KickMix replay
+        run: |
+          set -euo pipefail
+          if [ ! -s /tmp/results/sites.tsv ]; then echo 'No exact complete-tape matches; no improvement.'; exit 0; fi
+          curl -fLsS --retry 2 'https://raw.githubusercontent.com/corcondor/gvqcc/932eb4194f662827f9d90257e5981a710318e3da/research/cross_task_live_tensor_20261128/verify_dqi.py' -o /tmp/verify_dqi.py
+          python /tmp/verify_dqi.py "$(cat /tmp/parent_path)" /tmp/results/dqi.kmb
+          cp /tmp/dual_receipt.json /tmp/results/dual_receipt.json
+          python - <<'PY'
+          import json
+          p=json.load(open('/tmp/results/dual_receipt.json'))
+          a,b=p.values()
+          assert a['panels']==b['panels'], (a['panels'],b['panels'])
+          print('All matched panel counts agree; inherited failures prevent promotion.')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: transported-chart-whole-research
+          path: /tmp/results/
+          compression-level: 3
