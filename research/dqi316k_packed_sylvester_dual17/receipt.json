@@ -1,0 +1,52 @@
+{
+  "parent_donor_sha256": "4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52",
+  "full_sha256": "a7688dbac75bcb1dcaffc12972e3ceb9835d1dcf7a32a78f125b76ee0be57dd0",
+  "core_sha256": "d8f476561c5a316e6821e2b0dede2511076f017921ff428b070760247a3885cb",
+  "Q": 900,
+  "ops": 81076476,
+  "static_paid": 523373,
+  "stress": {
+    "shots": 996,
+    "value": 0,
+    "phase": 0,
+    "dirty": 0,
+    "mask": 0,
+    "paid": 520717938,
+    "mean_paid": 522809.1746987952
+  },
+  "ordinary": {
+    "shots": 1024,
+    "value": 0,
+    "phase": 0,
+    "dirty": 0,
+    "mask": 0,
+    "paid": 535357084,
+    "mean_paid": 522809.65234375
+  },
+  "prior_peer": {
+    "sha256": "f9b11034891f52e03b467602129467018c3f3eda7d1357b0e7111d1630b2e9eb",
+    "static_paid": 527468,
+    "ops": 79569516,
+    "ordinary_mean_paid": 526906.62109375,
+    "stress_mean_paid": 526904.1746987952,
+    "stress_shots": 996,
+    "ordinary_shots": 1024
+  },
+  "packed": {
+    "native_prefix_samples": 72,
+    "physical_roots": 1260,
+    "max_rhs_words": 17,
+    "degree_gaps_two_rhs": {
+      "1": 2088,
+      "5": 8,
+      "9": 8,
+      "13": 8
+    },
+    "native_converter": false
+  },
+  "rank17_pairs": 4096,
+  "official_score": false,
+  "lean_new_checked": false,
+  "accepted": false,
+  "notes": "Ordinary verification uses fixed-seed V.sample_shots. Stress panels matched with #261 and peer. Source only, no KMB attached."
+}
