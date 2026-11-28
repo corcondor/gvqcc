@@ -105,6 +105,8 @@ def projected (x : Nat) : Nat :=
   let s := actualSecond x
   s % 1024 + (s / 2048) * 1024
 
+set_option maxRecDepth 100000 in
+set_option maxHeartbeats 0 in
 theorem second_collision :
     (8 : Nat) ≠ 132 ∧ projected 8 = 3144 ∧ projected 132 = 3144 ∧
       (actualSecond 8).testBit 10 = true ∧
