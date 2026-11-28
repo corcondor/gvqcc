@@ -1,0 +1,152 @@
+{
+  "base.kmb": {
+    "Q": 900,
+    "ops": 87067496,
+    "static_paid": 317994,
+    "sha256": "54817e9385f24940585f5a391025152d4a65a36381887ca77b7bab61413ea2ec",
+    "panels": {
+      "distribution": {
+        "shots": 1024,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "union": 0,
+        "paid": 323680256,
+        "mean_paid": 316094.0
+      },
+      "saved622": {
+        "shots": 622,
+        "errors": [
+          407,
+          210,
+          0,
+          0
+        ],
+        "union": 411,
+        "paid": 196608905,
+        "mean_paid": 316091.48713826365
+      },
+      "dense_weights": {
+        "shots": 144,
+        "errors": [
+          68,
+          36,
+          0,
+          0
+        ],
+        "union": 70,
+        "paid": 45525552,
+        "mean_paid": 316149.6666666667
+      }
+    },
+    "paired_differences": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "folded.kmb": {
+    "Q": 900,
+    "ops": 87152062,
+    "static_paid": 317994,
+    "sha256": "890462cfd5e09fc17e83472aff1d5ff27d1729dc6b971932cbb9509bc9ec0ce7",
+    "panels": {
+      "distribution": {
+        "shots": 1024,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "union": 0,
+        "paid": 323680256,
+        "mean_paid": 316094.0
+      },
+      "saved622": {
+        "shots": 622,
+        "errors": [
+          407,
+          210,
+          0,
+          0
+        ],
+        "union": 411,
+        "paid": 196608905,
+        "mean_paid": 316091.48713826365
+      },
+      "dense_weights": {
+        "shots": 144,
+        "errors": [
+          68,
+          36,
+          0,
+          0
+        ],
+        "union": 70,
+        "paid": 45525552,
+        "mean_paid": 316149.6666666667
+      }
+    },
+    "paired_differences": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "exact8transfer.kmb": {
+    "Q": 900,
+    "ops": 158265814,
+    "static_paid": 317994,
+    "sha256": "e8a7ab1fe7132ecc7ecda70e33347e511eea5b4a386433ccbad844e8084e11c8",
+    "panels": {
+      "distribution": {
+        "shots": 1024,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "union": 0,
+        "paid": 323674041,
+        "mean_paid": 316087.9306640625
+      },
+      "saved622": {
+        "shots": 622,
+        "errors": [
+          407,
+          209,
+          0,
+          0
+        ],
+        "union": 411,
+        "paid": 196605165,
+        "mean_paid": 316085.47427652735
+      },
+      "dense_weights": {
+        "shots": 144,
+        "errors": [
+          68,
+          35,
+          0,
+          0
+        ],
+        "union": 70,
+        "paid": 45524694,
+        "mean_paid": 316143.7083333333
+      }
+    },
+    "paired_differences": [
+      0,
+      40,
+      0,
+      0
+    ]
+  }
+}
