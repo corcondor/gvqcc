@@ -1,0 +1,29 @@
+name: Joint gauge tensor strict Lean check
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_joint_gauge_tensor/**'
+      - '.github/workflows/dqi-joint-gauge-tensor.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean --version
+          lean -DwarningAsError=true research/dqi_joint_gauge_tensor/JointGaugeTensor.lean | tee tensor-axioms.log
+          test "$(grep -c 'GVQCC.JointGaugeTensor.*axiom' tensor-axioms.log)" -eq 10
+          ! grep -E 'sorryAx|ofReduceBool|native_decide' tensor-axioms.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tensor-axioms
+          path: tensor-axioms.log
