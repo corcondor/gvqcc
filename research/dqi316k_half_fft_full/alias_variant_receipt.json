@@ -1,0 +1,87 @@
+{
+  "scope": "actual complete weighted DQI native candidate; not exact frozen 316K donor",
+  "session": "sbx_WuqB9zMBDycZe65px0ArgFIsHJlZ",
+  "build_command": "cmd_8b760895fa7844dab87784a897a2",
+  "verify_command": "cmd_80ba8f13ceba4073a28805c6ab2e",
+  "Q": 899,
+  "ops": 42451473,
+  "static_paid": 471965,
+  "sha256": "7c592390e55b713b190e73ebb18f5f0d04fb230089dc29de940460683bb4695c",
+  "panels": [
+    {
+      "name": "uniform",
+      "shots": 288,
+      "paid": 112663670,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mean_paid": 391193.2986111111
+    },
+    {
+      "name": "constant_numerator",
+      "shots": 35,
+      "paid": 13664236,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mean_paid": 390406.7428571429
+    },
+    {
+      "name": "allpole",
+      "shots": 24,
+      "paid": 9384966,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mean_paid": 391040.25
+    },
+    {
+      "name": "singlepole",
+      "shots": 96,
+      "paid": 37627636,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mean_paid": 391954.5416666667
+    },
+    {
+      "name": "distribution_1024",
+      "shots": 1024,
+      "paid": 423087486,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mean_paid": 413171.373046875
+    }
+  ],
+  "errors_order": [
+    "value",
+    "raw_phase",
+    "dirty",
+    "mask"
+  ],
+  "distribution_mean": 413171.373046875,
+  "comparison_parent": {
+    "sha256": "4172a26e1bc065904c56faf113701d7bc04844578863adbbde2f6285735915fd",
+    "distribution_mean": 414215.373046875,
+    "static_paid": 473009,
+    "ops": 42566825
+  },
+  "goal": 316000,
+  "goal_met": false
+}
