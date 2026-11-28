@@ -43,7 +43,7 @@ theorem sylvesterLift (add mul : R → R → R) (zero : R)
       exact cancelCross add zero aa ac az al _ _ _ _
     _ = p := by rw [mc A h, ← ht, ← hp]
 
-theorem alignedIndex (n a j i : Nat) (ha : a ≤ n) (hj : j ≤ a)
+theorem alignedIndex (n a j i : Nat) (ha : a ≤ n) (_hj : j ≤ a)
     (ht : n - a + j ≤ n + i) (hi : a + i ≥ j) :
     a + i - j = n + i - (n - a + j) := by omega
 
