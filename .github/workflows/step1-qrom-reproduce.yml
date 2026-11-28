@@ -1,0 +1,153 @@
+name: GVQCC Step1 qrom-plan tensorqrom real-KMB gate
+on:
+  push:
+    branches: [experiment/oss-chained-xag-20261123]
+    paths:
+      - 'experiments/oss_chained_angle/**'
+      - 'third_party/manwithacat/kmsim.py'
+      - '.github/workflows/step1-qrom-reproduce.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'experiments/oss_chained_angle/**'
+      - '.github/workflows/step1-qrom-reproduce.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  relational-unit:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install unit dependencies
+        run: python -m pip install numpy==2.5.4
+      - name: Verify multi-output quotient rewriting (all input states)
+        run: |
+          python -m compileall -q experiments/oss_chained_angle/
+          python experiments/oss_chained_angle/test_reachable_multioutput.py
+
+  relational-real-k8:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install pinned synthesis engine
+        run: python -m pip install --disable-pip-version-check numpy==2.5.4 kickmix==1.0.0
+      - name: Build pinned actual qrom-plan
+        shell: bash
+        run: |
+          mkdir -p external
+          git clone --filter=blob:none https://github.com/manwithacat/kickmix-engine.git external/kickmix-engine
+          git -C external/kickmix-engine checkout 166b61d2e0a7404ace8acf62a6f269105e6b97f1
+          cargo build --release -p qrom-plan --manifest-path external/kickmix-engine/Cargo.toml
+      - name: Run k8 actual KMX postpass, native KMB compilation and HMR proof
+        shell: bash
+        run: |
+          set +e
+          python experiments/oss_chained_angle/run_step1.py \
+            --qrom-plan external/kickmix-engine/target/release/qrom-plan \
+            --banks 8 --counts 167,168,169,170 --seeds 1 --trials 6 --samples 12 \
+            --reachable-relations --out outputs/relational-k8
+          result=$?
+          if [ "$result" -ne 0 ] && [ "$result" -ne 3 ]; then exit "$result"; fi
+      - name: Check postpass receipt presence without claiming score gain
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          r=json.load(open('outputs/relational-k8/receipt.json'))
+          assert len(r['banks'])==1
+          b=r['banks'][0]
+          print('Real KMB original:',b.get('real_T'), 'Q:',b.get('real_Q'))
+          print('Relational:',b.get('relational_postpass'))
+          assert b.get('real_T') is not None, b.get('error','no real KMB')
+          assert b.get('relational_postpass'), b.get('error','no postpass')
+          PY
+      - name: Upload full actual-KMB and relation audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gvqcc-relational-real-k8
+          path: outputs/relational-k8/
+          if-no-files-found: warn
+          retention-days: 14
+  actual-k8:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install original KickMix and NumPy
+        run: python -m pip install --disable-pip-version-check numpy==2.5.4 kickmix==1.0.0
+      - name: Build real pinned upstream Rust qrom-plan
+        shell: bash
+        run: |
+          mkdir -p external
+          git clone --filter=blob:none https://github.com/manwithacat/kickmix-engine.git external/kickmix-engine
+          git -C external/kickmix-engine checkout 166b61d2e0a7404ace8acf62a6f269105e6b97f1
+          cargo build --release -p qrom-plan --manifest-path external/kickmix-engine/Cargo.toml
+          external/kickmix-engine/target/release/qrom-plan --help || true
+      - name: Validate imported Python and source fixture
+        run: |
+          python -m compileall -q experiments/oss_chained_angle/ third_party/manwithacat/kmsim.py
+          python experiments/oss_chained_angle/test_reachable_multioutput.py
+          python - <<'PY'
+          import kickmix,numpy
+          print('KickMix native import works')
+          PY
+      - name: Step1 k8 real KMB synthesis and independent value HMR verification
+        id: synth
+        continue-on-error: true
+        shell: bash
+        run: |
+          python experiments/oss_chained_angle/run_step1.py \
+            --qrom-plan external/kickmix-engine/target/release/qrom-plan \
+            --banks 8 --counts 167,168,169,170,175,180,240 --seeds 4 --trials 12 --samples 24 \
+            --reachable-relations --out outputs/step1-k8
+      - name: 'Step1 all 15 banks - diagnostic real KMB synthesis (NOT Step2)'
+        continue-on-error: true
+        shell: bash
+        run: |
+          python experiments/oss_chained_angle/run_step1.py \
+            --qrom-plan external/kickmix-engine/target/release/qrom-plan \
+            --banks all --counts 75,76,80,150,152,154,165,167,168,170,175,180,240 --seeds 2 --trials 8 --samples 16 \
+            --out outputs/step1-all15
+      - name: Save all-bank actual candidate cost and verification diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gvqcc-step1-all15-real-KMB-audit
+          path: outputs/step1-all15/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Always save raw generated KMBs, plans and exact receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gvqcc-step1-real-k8-candidate-and-receipt
+          path: outputs/step1-k8/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Strict gate (never start Step2 until reproduction)
+        run: |
+          python - <<'PY'
+          import json
+          x=json.load(open('outputs/step1-k8/receipt.json'))
+          for b in x['banks']:
+              print('bank',b['k'],'public',b['public_T'],'actual',b.get('real_T'), 'Q', b.get('real_Q'),
+                    'model',b.get('chosen_plan',{}).get('model_T'), 'relational',b.get('relational_postpass',{}).get('status'), 'valid',b.get('pass_logic'),
+                    'error',b.get('error'))
+          if not all(b.get('pass_reproduce') for b in x['banks']):
+              raise SystemExit('Step1 k8 not reproduced: this run is NOT clearance for Step2')
+          PY
