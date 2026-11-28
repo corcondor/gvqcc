@@ -1,0 +1,45 @@
+name: Gray72 source reconstruction (not full DQI)
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_gray72_source/**'
+      - '.github/workflows/dqi-gray72-source.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  selector:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: |
+          set -euo pipefail
+          pip install kickmix==1.0.0 numpy==2.2.6 scipy
+          curl -fsSL --retry 2 'https://www.kaggle.com/api/v1/datasets/download/tonylica/quantum-ai-32-85306-task-generators?datasetVersionNumber=2' -o /tmp/source.zip
+          python -m zipfile -e /tmp/source.zip /tmp/source
+          cd research/dqi_gray72_source
+          export OPENBLAS_NUM_THREADS=1
+          python source72.py --selector-dir /tmp/source/dqi --out out
+          echo 'aa8698715183cb11f56949e3559db8c418e16ef645c53916afab888975d1901e  out/plan72.txt' | sha256sum -c
+          g++ -std=c++17 -O3 selector_native.cpp -o selector_native
+          python verify_native.py out/plan72.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gray72-source-audit
+          path: |
+            research/dqi_gray72_source/out/
+            research/dqi_gray72_source/native.log
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: lean research/dqi_gray72_source/GrayLaws.lean
