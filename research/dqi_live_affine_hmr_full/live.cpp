@@ -31,7 +31,7 @@ struct Engine{
     }
     F x(const F&a,const F&b){F z;if(xor_exact(a,b,z))return z;forgotten++;return fresh();}
     F neg(const F&a){return x(a,atom(1));}
-    bool opposite(const F&a,const F&b){F z;return xor_exact(a,b,z)&&z.one();}
+    bool opposite(const F&a,const F&b){if((a.h^b.h)!=mix(1))return false;F z;return xor_exact(a,b,z)&&z.one();}
     F opaque(F a,F b){
         if(b<a)swap(a,b);
         if(products.size()>=200000)products.clear();
@@ -153,11 +153,11 @@ struct Pass{
                 if(op==49){
                     F pr=e.mul(f.at(a),f.at(v));pr=G.reduce(pr);
                     auto r=find(pr,f,t);
-                    if(r.found){xor_out(t,r,g);s.linear++;s.ccx++;rewritten=true;}
+                    if(r.found){xor_out(t,r,g);s.linear++;s.ccx++;rewritten=true;F x=r.constant?e.atom(1):F{};for(U j:r.wires)x=e.x(x,q[j]);q[t]=e.x(q[t],e.mul(h,x));return;}
                     else if(allow_hmr){
                         F y=e.x(f.at(t),pr);y=G.reduce(y);
                         auto z=find(y,f,t);
-                        if(z.found){erase_and_return(g,z);s.hmr++;s.ccx++;rewritten=true;}
+                        if(z.found){erase_and_return(g,z);s.hmr++;s.ccx++;rewritten=true;F x=z.constant?e.atom(1):F{};for(U j:z.wires)x=e.x(x,q[j]);q[t]=e.assign(q[t],x,h);return;}
                     }
                 }else if(op==48){
                     // Any pair of the three controls can be contracted.
