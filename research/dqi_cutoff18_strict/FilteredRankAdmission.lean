@@ -129,3 +129,127 @@ theorem repayment_split (m a b : Bool) :
 #print axioms repayment_split
 
 end GVQCC.FilteredRank
+
+
+namespace GVQCC.ExactHankel
+
+variable {K : Type*} [Field K]
+
+/-- Moments are indexed from zero; for S_(i+1) use w_k = e_k*x_k. -/
+def hankel {r : ℕ} (n : ℕ) (x w : Fin r → K) : Matrix (Fin n) (Fin n) K :=
+  Matrix.of fun i j => ∑ k : Fin r, w k * x k ^ (i.val + j.val)
+
+def vanderRect {r : ℕ} (n : ℕ) (x : Fin r → K) : Matrix (Fin n) (Fin r) K :=
+  Matrix.of fun i k => x k ^ i.val
+
+theorem hankel_factor {r : ℕ} (n : ℕ) (x w : Fin r → K) :
+    hankel n x w = (vanderRect n x * Matrix.diagonal w) * (vanderRect n x).transpose := by
+  classical
+  ext i j
+  rw [Matrix.mul_apply]
+  simp only [hankel, Matrix.of_apply, Matrix.mul_diagonal, Matrix.transpose_apply, vanderRect, pow_add]
+  apply Finset.sum_congr rfl
+  intro k _
+  ring
+
+/-- The leading square minor is nonsingular, even in characteristic two. -/
+theorem hankel_det {r : ℕ} (x w : Fin r → K)
+    (hx : Function.Injective x) (hw : ∀ k, w k ≠ 0) :
+    (hankel r x w).det ≠ 0 := by
+  classical
+  have hv : vanderRect r x = (Matrix.vandermonde x).transpose := rfl
+  have hd : (Matrix.vandermonde x).det ≠ 0 :=
+    Matrix.det_vandermonde_ne_zero_iff.mpr hx
+  have hp : (∏ k : Fin r, w k) ≠ 0 :=
+    Finset.prod_ne_zero_iff.mpr (by intro k _; exact hw k)
+  rw [hankel_factor, hv]
+  simp only [Matrix.det_mul, Matrix.det_transpose, Matrix.det_diagonal]
+  exact mul_ne_zero (mul_ne_zero hd hp) hd
+
+/-- Exact rank, not an assumed Vandermonde separation or a sampled rank.
+For a legal DQI support of r distinct nonzero poles with nonzero amplitudes,
+take n=35 and w_k=e_k*x_k. Covers r=0 and every singular r<35. -/
+theorem hankel_rank_eq_weight {n r : ℕ} (hr : r ≤ n) (x w : Fin r → K)
+    (hx : Function.Injective x) (hw : ∀ k, w k ≠ 0) :
+    (hankel n x w).rank = r := by
+  classical
+  have hu : (hankel n x w).rank ≤ r := by
+    rw [hankel_factor]
+    exact (Matrix.rank_mul_le_left _ _).trans
+      ((Matrix.rank_mul_le_left _ _).trans (Matrix.rank_le_width _))
+  let incl : Fin r → Fin n := fun i => ⟨i.val, lt_of_lt_of_le i.isLt hr⟩
+  have hm : (hankel r x w).rank = r := by
+    simpa using Matrix.rank_of_det_ne_zero (hankel_det x w hx hw)
+  have hl := Matrix.rank_submatrix_le (hankel n x w) incl incl
+  change (hankel r x w).rank ≤ (hankel n x w).rank at hl
+  omega
+
+/-- Actual residual moment sequence on n rows. -/
+def poleResidual {r : ℕ} (n : ℕ) (x w v : Fin r → K) : Fin n → K :=
+  fun i => ∑ k : Fin r, (w k * v k) * x k ^ i.val
+
+theorem poleResidual_zero_iff {n r : ℕ} (hr : r ≤ n) (x w v : Fin r → K)
+    (hx : Function.Injective x) (hw : ∀ k, w k ≠ 0) :
+    (∀ i, poleResidual n x w v i = 0) ↔ v = 0 := by
+  constructor
+  · intro h
+    let incl : Fin r → Fin n := fun i => ⟨i.val, lt_of_lt_of_le i.isLt hr⟩
+    have hz : (fun k => w k * v k) = 0 :=
+      Matrix.eq_zero_of_forall_pow_sum_mul_pow_eq_zero hx (fun j => h (incl j))
+    funext k
+    have hk : w k * v k = 0 := congrFun hz k
+    exact (mul_eq_zero.mp hk).resolve_left (hw k)
+  · intro h
+    subst v
+    simp [poleResidual]
+
+/-- Connect the residual test to the actual Hankel matrix-vector product. -/
+theorem hankel_mulVec_eval {n r : ℕ} (x w : Fin r → K) (p : Fin n → K) (i : Fin n) :
+    (hankel n x w).mulVec p i =
+      poleResidual n x w (fun k => ∑ j : Fin n, p j * x k ^ j.val) i := by
+  classical
+  simp only [Matrix.mulVec, dotProduct, hankel, Matrix.of_apply, poleResidual, pow_add,
+    Finset.sum_mul, Finset.mul_sum]
+  rw [Finset.sum_comm]
+  apply Finset.sum_congr rfl
+  intro k _
+  apply Finset.sum_congr rfl
+  intro j _
+  ring
+
+/-- The true syndrome residual of a monic degree-n locator, not just a
+free abstract evaluation vector. No squarefree assumption on the candidate. -/
+theorem candidate_residual_formula {n r : ℕ} (x w : Fin r → K)
+    (p : Fin n → K) (i : Fin n) :
+    (hankel n x w).mulVec p i + (∑ k : Fin r, w k * x k ^ (i.val + n)) =
+      poleResidual n x w (fun k => (∑ j : Fin n, p j * x k ^ j.val) + x k ^ n) i := by
+  rw [hankel_mulVec_eval]
+  simp only [poleResidual, pow_add, mul_add, add_mul, Finset.sum_add_distrib]
+  congr 1
+  apply Finset.sum_congr rfl
+  intro k _
+  ring
+
+theorem candidate_residual_iff {n r : ℕ} (hr : r ≤ n) (x w : Fin r → K)
+    (p : Fin n → K) (hx : Function.Injective x) (hw : ∀ k, w k ≠ 0) :
+    (∀ i : Fin n, (hankel n x w).mulVec p i +
+       (∑ k : Fin r, w k * x k ^ (i.val + n)) = 0) ↔
+    (∀ k : Fin r, (∑ j : Fin n, p j * x k ^ j.val) + x k ^ n = 0) := by
+  simp_rw [candidate_residual_formula]
+  rw [poleResidual_zero_iff hr x w _ hx hw]
+  constructor
+  · intro h k
+    exact congrFun h k
+  · intro h
+    funext k
+    exact h k
+
+#print axioms hankel_factor
+#print axioms hankel_det
+#print axioms hankel_rank_eq_weight
+#print axioms poleResidual_zero_iff
+#print axioms hankel_mulVec_eval
+#print axioms candidate_residual_formula
+#print axioms candidate_residual_iff
+
+end GVQCC.ExactHankel
