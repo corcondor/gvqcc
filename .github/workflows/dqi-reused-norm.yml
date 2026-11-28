@@ -1,0 +1,33 @@
+name: Retained norm multi-seam local proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/GuardedNormReturn.lean'
+      - '.github/workflows/dqi-reused-norm.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  strict:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Check pinned mathlib and proof axioms
+        working-directory: research/dqi_cutoff18_strict
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true GuardedNormReturn.lean | tee retained.log
+          python3 - <<'PY'
+          import re
+          s=open('retained.log').read()
+          rows=re.findall(r"depends on axioms: \[([^\]]*)\]",s)
+          closed=re.findall(r"does not depend on any axioms",s)
+          assert len(rows)+len(closed)==5,(rows,closed)
+          for row in rows:
+              assert set(x.strip() for x in row.split(',') if x.strip()) <= {'propext','Classical.choice','Quot.sound'},row
+          PY
