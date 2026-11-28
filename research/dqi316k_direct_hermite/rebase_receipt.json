@@ -1,0 +1,91 @@
+{
+  "scope": "Complete physical replacement of nonlinear region after exact original 316K prelude; low-rank padding exchange then existing half-degree Bezout and all-point FFT; experimental",
+  "session": "sbx_gp5YKZpCATsjWBycBEdXdUaMZrpU",
+  "core": {
+    "Q": 890,
+    "ops": 40269960,
+    "static_paid": 389593,
+    "sha256": "bfd399d418d4d9fb863f1348df84010d3b4f84bbb3f88ce18972e787cd9a1564"
+  },
+  "full": {
+    "Q": 900,
+    "ops": 63476208,
+    "static_paid": 389593,
+    "sha256": "a74dbc8482da1d0975f760a97eb5a7e81863cab74fc65891b50009aa61af590b",
+    "stress": {
+      "shots": 996,
+      "paid": 357629879,
+      "mean_paid": 359066.1435742972,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "distribution": {
+      "shots": 1024,
+      "paid": 397775913,
+      "mean_paid": 388453.0400390625,
+      "errors": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "source_sha256": "1c44433f53d0c279733a104a43daa9671d5f1fe19cbce46805f122b7be7260c1",
+  "errors_order": [
+    "value",
+    "raw_phase",
+    "dirty",
+    "mask"
+  ],
+  "padding_profile": {
+    "weights": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "old_max_gap": [
+      13,
+      13,
+      9,
+      9,
+      5,
+      5
+    ],
+    "new_max_gap": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "samples_per_weight": 2,
+    "new_marker": [
+      2072,
+      2897,
+      2206,
+      2218,
+      2616,
+      3281
+    ]
+  },
+  "commands": {
+    "build": "cmd_907ea774a7cb4b46934f26a3946d",
+    "verify": "cmd_7c9b2d4a04204c1aae5e666a4608",
+    "distribution": "cmd_83bc02322fa9405fa94122722070"
+  },
+  "limits": [
+    "No proof all legal raw-key outputs obey marker classification; original pad lists inferred from native profile.",
+    "No proof new Euclidean gaps <=2 for all legal inputs; existing converter can fail outside its domain.",
+    "No saved 622 panel, unchanged official 102400 verifier or private salts.",
+    "Mean not below 316K; no submission."
+  ]
+}
