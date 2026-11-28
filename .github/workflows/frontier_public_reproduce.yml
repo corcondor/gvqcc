@@ -1,0 +1,47 @@
+name: Probe and reproduce public 28.09 inputs
+
+on:
+  pull_request:
+    paths:
+      - 'research/frontier_20261116/public_frontier_probe.py'
+      - '.github/workflows/frontier_public_reproduce.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  kaggle-public-provenance:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    env:
+      FRONTIER_AUDIT_DIR: /tmp/gvqcc-public-frontier
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Check source parsing, exact input hashes and public datasets
+        run: |
+          python3 -u research/frontier_20261116/public_frontier_probe.py
+      - name: Assemble exact public 18-member submission ZIP
+        run: |
+          python3 -u research/frontier_20261116/build_public_frontier.py \
+            --source /tmp/gvqcc-public-frontier/maoxin123_v27_pull.json \
+            --mirror /tmp/gvqcc-public-frontier/maoxin123_qcc-frontier-dqi-chem-mirror_download.zip \
+            --output /tmp/gvqcc-public-frontier/submission_public_28_09.zip
+      - name: Upload SHA-checked public 28.09 candidate
+        if: success()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: verified-hash-public-28-09-candidate
+          path: |
+            /tmp/gvqcc-public-frontier/submission_public_28_09.zip
+            /tmp/gvqcc-public-frontier/submission_public_28_09.json
+          if-no-files-found: error
+          retention-days: 7
+      - name: Persist bounded evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: public-frontier-probe-report
+          path: /tmp/gvqcc-public-frontier/probe.json
+          if-no-files-found: warn
+          retention-days: 7

@@ -1,0 +1,35 @@
+name: Independent verifier audit of reported 22k invsqrt
+
+on:
+  pull_request:
+    paths:
+      - 'research/frontier_20261116/external_invsqrt_independent_probe.py'
+      - '.github/workflows/probe_external_invsqrt.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit-independent:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install official pinned Kickmix
+        run: python3 -m pip install --disable-pip-version-check kickmix==1.0.0 numpy==2.5.4
+      - name: Verify external KMB with original competition verifier
+        run: python3 -u research/frontier_20261116/external_invsqrt_independent_probe.py
+        env:
+          INVSQRT_PROBE_OUT: /tmp/gvqcc-external-invsqrt
+      - name: Save verifier truth, including any rejection
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: independent-external-invsqrt-verifier-audit
+          path: |
+            /tmp/gvqcc-external-invsqrt/external_invsqrt_audit.json
+            /tmp/gvqcc-external-invsqrt/stdout.log
+            /tmp/gvqcc-external-invsqrt/stderr.log
+          if-no-files-found: warn
+          retention-days: 7
