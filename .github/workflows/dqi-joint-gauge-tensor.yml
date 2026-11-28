@@ -20,7 +20,9 @@ jobs:
           set -euo pipefail
           lean --version
           lean -DwarningAsError=true research/dqi_joint_gauge_tensor/JointGaugeTensor.lean | tee tensor-axioms.log
+          lean -DwarningAsError=true research/dqi_joint_gauge_tensor/PolarRank.lean | tee -a tensor-axioms.log
           test "$(grep -c 'GVQCC.JointGaugeTensor.*axiom' tensor-axioms.log)" -eq 10
+          test "$(grep -c 'GVQCC.PolarRank.*axiom' tensor-axioms.log)" -eq 7
           ! grep -E 'sorryAx|ofReduceBool|native_decide' tensor-axioms.log
       - uses: actions/upload-artifact@v4
         if: always()
