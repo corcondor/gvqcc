@@ -33,8 +33,8 @@ theorem pad_involution (F : V →+ W) (p : W → Bool)
   · have h' : p (F (s + g)) = true := by
       rw [filter_shift F g s hg]
       exact h
-    rw [if_pos h, if_pos h', add_assoc, h2, add_zero]
-  · simp only [if_neg h]
+    rw [ite_eq_left h, ite_eq_left h', add_assoc, h2, add_zero]
+  · simp only [ite_eq_right h]
 
 /-- A convolution with fixed coefficients rescales each geometric pole.
 This is an algebraic lemma, not a native decoder correctness theorem. -/
