@@ -1,0 +1,41 @@
+name: Gray128 packed Cartier audit
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_gray72_source/**'
+      - 'research/dqi_cutoff18_strict/PackedCartier.lean'
+      - '.github/workflows/dqi-gray128-cartier.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python research/dqi_gray72_source/packed_cartier.py
+      - run: g++ -std=c++17 -O3 research/dqi_gray72_source/gray128_patch.cpp -o /tmp/gray128_patch
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - working-directory: research/dqi_cutoff18_strict
+        run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true PackedCartier.lean | tee cartier.log
+          python3 - <<'PY'
+          import re
+          s=open('cartier.log').read()
+          rows=re.findall(r'depends on axioms: \[([^\]]*)\]',s)
+          assert len(rows)+len(re.findall(r'does not depend on any axioms',s))==5
+          for row in rows:
+              assert {x.strip() for x in row.split(',') if x.strip()} <= {'propext','Classical.choice','Quot.sound'},row
+          PY
