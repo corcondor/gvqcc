@@ -1,0 +1,50 @@
+name: DQI 285 anchor pivot and transposed proof
+on:
+  pull_request:
+    paths:
+      - 'research/dqi285_anchor_pivot/**'
+      - 'research/dqi_cutoff18_strict/AnchorPivot.lean'
+      - 'research/dqi_cutoff18_strict/TransposedMiddle.lean'
+      - 'research/dqi_cutoff18_strict/GapIndependentSchur.lean'
+      - 'research/dqi_cutoff18_strict/SchurGauge.lean'
+      - '.github/workflows/dqi285-anchor-pivot.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          set -euo pipefail
+          node research/dqi285_anchor_pivot/anchor_audit.js | tee /tmp/anchor.json
+          node -e 'const r=require("/tmp/anchor.json"); if(r.cases!==272||r.rhs!==544||r.roots!==2520||r.phase_checks!==144||r.errors!==0||!r.nonfirst_scalar||!r.pair)process.exit(1)'
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          for f in SharedResidualFFT LeadingMixedSchur GapIndependentSchur SchurGauge TransposedMiddle AnchorPivot; do
+            lake env lean -DwarningAsError=true "$f.lean" | tee "$f.log"
+            test "$(grep -c 'depends on .*axiom\|does not depend on any axioms' "$f.log")" -eq "$(grep -c '^#print axioms' "$f.lean")"
+            ! grep -E 'sorryAx|ofReduceBool|_native\.bv_decide\.ax' "$f.log"
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: anchor-proof-axioms
+          path: research/dqi_cutoff18_strict/*.log
