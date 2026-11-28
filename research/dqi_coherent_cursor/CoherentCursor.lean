@@ -20,7 +20,7 @@ theorem taggedTail_fst (z : α) (hs : List α) :
     (taggedTail z hs).map Prod.fst = List.replicate hs.length z := by
   induction hs with
   | nil => rfl
-  | cons y ys ih => simp [taggedTail, ih]
+  | cons y ys ih => simp [taggedTail, ih, List.replicate_succ]
 
 theorem tagged_decode (z a h : α) (hs : List α) :
     (tagged z a h hs).map Prod.snd = h :: hs := by
