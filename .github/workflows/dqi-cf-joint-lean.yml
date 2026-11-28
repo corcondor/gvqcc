@@ -1,0 +1,30 @@
+name: DQI CF joint Lean
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cf_joint_lean/**'
+      - '.github/workflows/dqi-cf-joint-lean.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lean 4.35.0
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Compile and audit axioms
+        run: |
+          set -euo pipefail
+          lean --version
+          lean -DwarningAsError=true research/dqi_cf_joint_lean/CFJoint.lean | tee lean-axioms.txt
+          if grep -q 'sorryAx' lean-axioms.txt; then exit 1; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cf-joint-lean-axioms
+          path: lean-axioms.txt
