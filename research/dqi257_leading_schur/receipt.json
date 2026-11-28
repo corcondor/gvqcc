@@ -1,0 +1,140 @@
+{
+  "scope": "Research, fixed source-selected word traces and native components; no full coherent solver or score claim",
+  "parent257": {
+    "Q": 900,
+    "ops": 69534364,
+    "paid": 318333,
+    "mean": 316126.84765625
+  },
+  "parent279": {
+    "Q": 900,
+    "ops": 67549292,
+    "paid": 318333,
+    "mean": 316126.84765625,
+    "sha256": "518d634ede9dcf7e78a8e91264db25d544f54bf3c86caee7ebc355f618a66499",
+    "run": 46121065738,
+    "matched_cases": 2480,
+    "dense_union_errors": 70
+  },
+  "leading": {
+    "cases": 236,
+    "rhs": 472,
+    "errors": 0,
+    "scalar_pivots": 2259,
+    "pair_pivots": 152,
+    "mx_old": 140640,
+    "mx_new": 136122,
+    "unit_gap17": {
+      "mx": [
+        1278,
+        1244
+      ],
+      "ix": [
+        136,
+        136
+      ],
+      "sx": [
+        34,
+        34
+      ]
+    }
+  },
+  "mixed": {
+    "cases": 236,
+    "rhs": 472,
+    "errors": 0,
+    "mixed_pivots": 306,
+    "total_scalar_pivots": 2563,
+    "alternating16": {
+      "old_nonlinear": 978,
+      "new_nonlinear": 1490
+    },
+    "accepted": false
+  },
+  "native": {
+    "runtime": "KickMix 1.0.0",
+    "same_source_pairs_per_chart": 32,
+    "seeds": [
+      11,
+      97
+    ],
+    "normal17": {
+      "Q": 870,
+      "old_paid": [
+        69486,
+        69486
+      ],
+      "new_paid": [
+        68058,
+        68058
+      ],
+      "old_ops": [
+        1974887,
+        1962403
+      ],
+      "new_ops": [
+        1898445,
+        1885961
+      ]
+    },
+    "alternating16": {
+      "Q": 822,
+      "old_paid": [
+        42264,
+        41550
+      ],
+      "new_paid": [
+        42264,
+        41550
+      ],
+      "old_ops": [
+        1188502,
+        1167843
+      ],
+      "new_ops": [
+        1182176,
+        1161517
+      ]
+    },
+    "new_shots": 256,
+    "errors": [
+      0,
+      0,
+      0
+    ]
+  },
+  "lean": {
+    "parent_269_271_success": 46117220610,
+    "parent277_success": 46121062570,
+    "parent279_success": 46121065738,
+    "new_statements": 12,
+    "new_verified": false
+  },
+  "nonmonic": {
+    "cases": {
+      "captured274": 72,
+      "synthetic": 108,
+      "gap13": 256
+    },
+    "roots": {
+      "captured274": 1260,
+      "synthetic": 1890,
+      "gap13": 8192
+    },
+    "word_errors": 0,
+    "native": {
+      "paths": 2,
+      "shots": 288,
+      "Q": 882,
+      "paid_per_pass": 70446,
+      "forward_ops": 1979814,
+      "reverse_ops": 1966490,
+      "errors": [
+        0,
+        0,
+        0
+      ]
+    },
+    "note": "Actual previously captured #274 D,N coefficients, different U than synthetic; fixed trace selection, not a new raw-syndrome full circuit"
+  }
+}
