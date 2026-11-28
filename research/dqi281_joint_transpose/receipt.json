@@ -1,0 +1,150 @@
+{
+  "scope": "Matched actual KickMix 1.0.0 D,N coefficient and phase components; not raw S or official score",
+  "parent281": "49a9129b8b907f6b448d4a6e68889bf6cb03ae53",
+  "parent279_full_mean_paid": 316126.84765625,
+  "cache": {
+    "scalar_cases_each": 4096,
+    "measurement_coefficients_exact": true,
+    "paid_compute": 66,
+    "paid_clear_before": 36,
+    "retain6": 21,
+    "retain9": 18
+  },
+  "monic17": {
+    "Q": [
+      870,
+      870,
+      873
+    ],
+    "paid_per_direction": [
+      68058,
+      66783,
+      66528
+    ]
+  },
+  "fixed_captured": {
+    "cases": 72,
+    "paths": 2,
+    "schur_paid": [
+      70446,
+      68292
+    ],
+    "magnitude_paid": [
+      26016,
+      11340
+    ],
+    "magnitude_mulxor": [
+      583,
+      234
+    ],
+    "joint_paid_forward": [
+      96462,
+      79632
+    ],
+    "joint_paid_reverse": [
+      96462,
+      79632
+    ],
+    "joint_ops_forward": [
+      2554260,
+      2357248
+    ],
+    "joint_ops_reverse": [
+      2541776,
+      2351784
+    ],
+    "Q": [
+      882,
+      885
+    ],
+    "fused_shots": 288,
+    "errors": [
+      0,
+      0,
+      0
+    ]
+  },
+  "coherent_phase": {
+    "baseline": {
+      "Q": 883,
+      "ops": 9060778,
+      "paid": 238877,
+      "sha256": "9f2bb1f7a454674ddb7187c16492aaedaa06080fbf7ee8c07974bd8a3079c099",
+      "captured": {
+        "shots": 144,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_paid": 238864.09027777778
+      },
+      "synthetic_weight_distribution": {
+        "shots": 1024,
+        "errors": [
+          10,
+          7,
+          0,
+          0
+        ],
+        "mean_paid": 238865.78515625
+      }
+    },
+    "joint": {
+      "Q": 886,
+      "ops": 8675994,
+      "paid": 205217,
+      "sha256": "63920a227da2377261085b14639c61516c932a272296e933de504e5dcbbac269",
+      "captured": {
+        "shots": 144,
+        "errors": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean_paid": 205204.09027777778
+      },
+      "synthetic_weight_distribution": {
+        "shots": 1024,
+        "errors": [
+          10,
+          5,
+          0,
+          0
+        ],
+        "mean_paid": 205205.78515625,
+        "failed_fixture_indices": [
+          83,
+          137,
+          292,
+          377,
+          420
+        ],
+        "weights": [
+          31,
+          29,
+          31,
+          30,
+          31
+        ],
+        "failure_classes": [
+          "later orientation",
+          "non-first pivot",
+          "non-first pivot",
+          "later orientation",
+          "later orientation"
+        ]
+      }
+    },
+    "accepted": false
+  },
+  "limits": [
+    "No raw syndrome prefix integrated",
+    "No official salt validation or score",
+    "No claim of improvement over #279 full oracle",
+    "Fixed scalar order fails ordinary-weight coefficient fixtures",
+    "Lean CI not yet verified"
+  ]
+}
