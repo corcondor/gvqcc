@@ -18,9 +18,8 @@ theorem quadratic_add (B : V → V → R)
     _ = B p p + B t t := by rw [h2, add_zero]
 
 /-- Quadratic value is independent of the choice of singular-system solution. -/
-omit [AddCommGroup V] [AddCommGroup R] in
-theorem solution_independent (B : V → V → R)
-    (hs : ∀ x y, B x y = B y x) (z z' : V)
+theorem solution_independent {V' R' : Type*} (B : V' → V' → R')
+    (hs : ∀ x y, B x y = B y x) (z z' : V')
     (h : ∀ x, B z x = B z' x) :
     B z z = B z' z' := by
   calc
