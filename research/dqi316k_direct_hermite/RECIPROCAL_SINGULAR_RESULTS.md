@@ -1,0 +1,20 @@
+# #263 structured singularity regression and reciprocal chart
+
+Research only. Vercel native session sbx_xBqBF6gBaLm6xetiuMctL4mvwboF, exact original donor hash 4b5721411adc239f61fc11c773a2358b75dfe7cb15586efae4f0459c77d77e52. All full candidates 900Q, preserve the original prelude and replace its nonlinear region.
+
+- Unit-zero CRT return (#264 change applied to #263): static 388879, ordinary mean 387911.8310546875, 996 stress + 1024 distribution clean. New structured panel: 786 shots, 168 union errors (168 value, 87 phase, 168 dirty, 0 mask). SHA256 4347499e62a01a696a3e941e90b6cad99f59e9a7b15171c9f84fb54ea9e0021a. Rejected.
+- Reciprocal chart: 390579 static, 63470883 ops, ordinary mean 389610.421875. 996 stress + 1024 distribution clean. Same 786 structured shots: 12 union (12 value, 6 phase, 12 dirty, 0 mask), all on multiplicative cosets of size35. SHA256 3c754fcb1f0d12dcbe8b4a563487b6525c0e4e7b14df5cbcfa8425e990d0fe66. Rejected. Build/test command cmd_f2a49e8cec824b5f84aaad4748ac.
+- Coherent binomial exceptional chart: full 900Q (core 896Q), static 402312, 74797422 ops, SHA256 92f636fb52186526d51cfad6b5e0b2d976f9eb3f958b3e063fb3cd102748a058. Same structured 786/786 clean, mean 401341.9694656489; old stress 996/996 clean, mean 369281.5963855422 (many zero masks, not competition estimate). Ordinary distribution only first 256/256 observed clean before sandbox expiry; full mean not obtained. Build/test command cmd_1b2de73078bb4773943ae3a7f65c. No competitive acceptance, universal proof, official verifier or submission.
+
+## Mathematical transformations
+Let f=[D(0)=0]; on the padded domain f implies N(0)=0. Reverse D and N coefficients, conditionally rotate right by one if f=1. This is an involution; D_new(x)=x^(35+f) D_old(1/x), N_new(x)=x^(34+f) N_old(1/x). At nonzero roots e(1/x)=N_new(x)/(U(1/x) D_new'(x)). Transport the phase mask by reciprocal permutation and factor 1/(U(1/x) M(x)). Native profile of 262 supports: old 56 degree-gap>2, reciprocal 4. No universal gap guarantee.
+
+For D=a X^35+b, a,b nonzero, 4095 nonzero points split into 117 cosets of 35 each. At roots xD'=b, so e(1/x)=x*N(x)/(U(1/x)*b). Compute zero-middle-coefficient predicate coherently; compute inv0(b) once; use a single root predicate per coset [a c+b=0] AND exception flag. Apply transposed bilinear phase using classical masks for each numerator coefficient, restore all scratch. No classical measurement of the exception flag.
+
+For reversibility of the generic half converter on this branch, use a dummy source D*=a L+b R with L=A0^2+X B0^2, R=B0^2, A0(0)=0,B0(0)=B0_lead=1. Thus A mod B is independent of b after normalization. Compute the two flag-masked scalar words once and fan out via fixed linear maps, HMR repay. Suppress generic scan phase coherently on exception branch, undo dummy after generic inverse, clear predicate. Seed 263352024 with field-word random coefficients; first candidate had all 17 Euclidean gaps1 and gcd(D*,M)=1 for all 117 possible b/a. This is a finite chart certificate, not universal correctness of generic complement. L and R from native log:
+L=[0,1,140,2893,235,2018,2563,3853,1639,2578,2767,1503,3908,123,517,2571,3116,390,1556,3791,3354,3426,2913,1455,2641,55,2184,2135,2051,3695,131,1433,669,27,3002,1]
+R=[1,0,2893,0,2018,0,3853,0,2578,0,1503,0,123,0,2571,0,390,0,3791,0,3426,0,1455,0,55,0,2135,0,3695,0,1433,0,27,0,1,0].
+
+Structured panel generation: additive cosets of dimensions1..5 with 0..3 extra nonzero points, subspaces minus zero, multiplicative cosets and extras, Frobenius-fourth-power transformed random supports, each random/constant numerator/pole amplitudes. Random seed 202611281453. No prior test-selected physical input branch, predicate is algebraic.
+
+Raw sandbox source export failed before expiry (length check and call limit); this file is a measured receipt and mathematical reconstruction notes, not a byte-reproducible generator archive. Full distribution result, all-domain general-gap converter and Lean proof pending. Cost increased in robust variant; 316K and joint cost/correctness acceptance unmet.
