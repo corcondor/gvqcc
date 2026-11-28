@@ -1,0 +1,166 @@
+{
+  "status": "NO_CCX_REDUCTION",
+  "paper": "https://arxiv.org/abs/2602.15285v2",
+  "implementation": "https://github.com/ZIB-IOL/polytof",
+  "commit": "0dcac107d15adc34dc646242d222f21ae7d32699",
+  "variant": "COMM with VEC_WORDS=2",
+  "parameters": {
+    "path_limit": 200000,
+    "max_attempts": 2000,
+    "pool_size": 16,
+    "threads": 2,
+    "plus_lim": 2000,
+    "plus": true,
+    "verify": true
+  },
+  "rows": [
+    {
+      "batch": 1,
+      "start_rank": 212,
+      "final_rank": 212,
+      "attempts": 2002,
+      "flips": 6855268,
+      "plus_moves": 1178685,
+      "seconds": 1.97826174,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 2,
+      "start_rank": 212,
+      "final_rank": 212,
+      "attempts": 2002,
+      "flips": 6857740,
+      "plus_moves": 1178492,
+      "seconds": 2.030528282,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 3,
+      "start_rank": 212,
+      "final_rank": 212,
+      "attempts": 2002,
+      "flips": 6898950,
+      "plus_moves": 1185786,
+      "seconds": 2.623420928,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 4,
+      "start_rank": 189,
+      "final_rank": 189,
+      "attempts": 2002,
+      "flips": 6198860,
+      "plus_moves": 1066198,
+      "seconds": 1.545621155,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 5,
+      "start_rank": 189,
+      "final_rank": 189,
+      "attempts": 2002,
+      "flips": 6205451,
+      "plus_moves": 1067194,
+      "seconds": 1.800166203,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 6,
+      "start_rank": 187,
+      "final_rank": 187,
+      "attempts": 2002,
+      "flips": 6138662,
+      "plus_moves": 1055831,
+      "seconds": 2.244557855,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 7,
+      "start_rank": 189,
+      "final_rank": 189,
+      "attempts": 2002,
+      "flips": 6220760,
+      "plus_moves": 1068001,
+      "seconds": 2.176471616,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 8,
+      "start_rank": 187,
+      "final_rank": 187,
+      "attempts": 2002,
+      "flips": 6160947,
+      "plus_moves": 1058304,
+      "seconds": 2.310102813,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 9,
+      "start_rank": 189,
+      "final_rank": 189,
+      "attempts": 2002,
+      "flips": 6234440,
+      "plus_moves": 1069207,
+      "seconds": 1.478224639,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 10,
+      "start_rank": 187,
+      "final_rank": 187,
+      "attempts": 2002,
+      "flips": 6130212,
+      "plus_moves": 1051884,
+      "seconds": 1.47709274,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 11,
+      "start_rank": 189,
+      "final_rank": 189,
+      "attempts": 2002,
+      "flips": 6245088,
+      "plus_moves": 1072916,
+      "seconds": 1.541412183,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 12,
+      "start_rank": 188,
+      "final_rank": 188,
+      "attempts": 2002,
+      "flips": 6168099,
+      "plus_moves": 1060380,
+      "seconds": 1.506405841,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 13,
+      "start_rank": 188,
+      "final_rank": 188,
+      "attempts": 2002,
+      "flips": 6202244,
+      "plus_moves": 1066458,
+      "seconds": 1.518211516,
+      "verified_optimizer_candidates": 0
+    },
+    {
+      "batch": 14,
+      "start_rank": 188,
+      "final_rank": 188,
+      "attempts": 2002,
+      "flips": 6200933,
+      "plus_moves": 1064552,
+      "seconds": 1.45602291,
+      "verified_optimizer_candidates": 0
+    }
+  ],
+  "totals": {
+    "attempts": 28028,
+    "flips": 88717654,
+    "plus_moves": 15243888,
+    "seconds": 25.686500421,
+    "verified_optimizer_candidates": 0
+  },
+  "scope": "14 chemistry accumulation cores only; baseline products held fixed as initial decomposition, no whole-circuit optimality claim."
+}

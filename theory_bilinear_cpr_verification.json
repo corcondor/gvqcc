@@ -1,0 +1,93 @@
+{
+  "status": "PASS_EXACT_ARBITRARY_ACCUMULATOR_AND_PHASE",
+  "actual_block_cases": [
+    {
+      "name": "gf24_actual_cpr_local",
+      "CX": 1814,
+      "CCX": 99,
+      "proof": {
+        "status": "PASS",
+        "input_variables": 72,
+        "all_basis_states_covered": 4722366482869645213696,
+        "maximum_output_degree": 2,
+        "phase": "Identical basis permutation; no phase gates on either side."
+      },
+      "source_sha256": "12ab3a442ec5c0fe52854f58e455c5860d985575d19257cc6fd798f37d3dc2e0"
+    },
+    {
+      "name": "gf24_actual_cpr1024_local",
+      "CX": 1673,
+      "CCX": 99,
+      "proof": {
+        "status": "PASS",
+        "input_variables": 72,
+        "all_basis_states_covered": 4722366482869645213696,
+        "maximum_output_degree": 2,
+        "phase": "Identical basis permutation; no phase gates on either side."
+      },
+      "source_sha256": "1b0618d4c6817375f86464d42ab61d77e851a5297156c81662127ff3be9b943b"
+    },
+    {
+      "name": "gf24_actual_symmetric_cpr1024_local",
+      "CX": 1535,
+      "CCX": 99,
+      "proof": {
+        "status": "PASS",
+        "input_variables": 72,
+        "all_basis_states_covered": 4722366482869645213696,
+        "maximum_output_degree": 2,
+        "phase": "Identical basis permutation; no phase gates on either side."
+      },
+      "source_sha256": "b35257089fa8b6301b4bfd5bdcba8a86466abec6a9ffa56d6d80c4163275b8a6"
+    }
+  ],
+  "chosen": {
+    "name": "gf24_actual_symmetric_cpr1024_local",
+    "before_CX": 6122,
+    "after_CX": 1535,
+    "CCX": 99,
+    "removed_CX": 4587,
+    "reduction_percent": 74.9264946096047,
+    "output_path": "/workspace/scratch/7f542e06b7cf/gvqcc_repo/theory_bilinear_actual_cpr.kmx",
+    "output_sha256": "72be931e06208b90080f9d860062981613c97a0398737314f26a98d667318703",
+    "proof": {
+      "status": "PASS",
+      "input_variables": 72,
+      "all_basis_states_covered": 4722366482869645213696,
+      "maximum_output_degree": 2,
+      "phase": "Identical basis permutation; no phase gates on either side."
+    }
+  },
+  "gf12": {
+    "before_CX": 1276,
+    "CCX": 42,
+    "cases": [
+      {
+        "name": "gf12_cpr_local",
+        "CX": 414,
+        "CCX": 42,
+        "proof": {
+          "status": "PASS",
+          "input_variables": 36,
+          "all_basis_states_covered": 68719476736,
+          "maximum_output_degree": 2,
+          "phase": "Identical basis permutation; no phase gates on either side."
+        }
+      },
+      {
+        "name": "gf12_cpr1024_local",
+        "CX": 337,
+        "CCX": 42,
+        "proof": {
+          "status": "PASS",
+          "input_variables": 36,
+          "all_basis_states_covered": 68719476736,
+          "maximum_output_degree": 2,
+          "phase": "Identical basis permutation; no phase gates on either side."
+        }
+      }
+    ]
+  },
+  "elapsed_seconds": 0.44800108699928387,
+  "scope": "Exact standalone block identity. Q and Toffoli unchanged; no Kaggle score improvement claimed."
+}

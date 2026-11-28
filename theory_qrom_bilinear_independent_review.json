@@ -1,0 +1,16 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_DEGREE_TWO_INTERPOLATION",
+  "arbitrary_input_bits": 72,
+  "coefficient_determining_inputs": 2629,
+  "degree_bound_proved_by_gate_structure": 2,
+  "cnot_rule": "Both operands stay inside one of the two input or one output registers.",
+  "ccx_rule": "One control in each input register, target in output register; all operands distinct.",
+  "proof": "Input registers remain linear in their own original variables. Output registers remain degree<=2. Evaluations at 0,e_i,e_i+e_j uniquely determine every Boolean ANF coefficient of degree<=2. All 72 output polynomials agree, so the maps agree for all2^72 inputs, arbitrary superpositions and entanglement. Both gate sets are positive permutation matrices, so no relative phase is introduced.",
+  "before_sha256": "f97f2a437fb9b538d85608ce5ae5393c87e5f8b8dcab750ca8af9eae754b5aac",
+  "after_sha256": "72be931e06208b90080f9d860062981613c97a0398737314f26a98d667318703",
+  "before_CX": 6122,
+  "after_CX": 1535,
+  "before_CCX": 99,
+  "after_CCX": 99,
+  "scope": "Standalone72-wireblock; fullKMBplacement and official scoring are separate checks."
+}

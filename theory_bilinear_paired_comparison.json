@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "verified_shots": 1024,
+  "batch_count": 4,
+  "all_per_batch_fields_equal": true,
+  "compared_fields": [
+    "value_errors",
+    "phase_errors",
+    "toffolis",
+    "output_syndrome_sha256",
+    "output_ancilla_sha256",
+    "output_phase_sha256"
+  ],
+  "baseline_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "candidate_sha256": "3dfa80eb777a55659dcc143466d22427ccf278e198b720f24009cc921747bbcc",
+  "seed_circuit_sha256": "e986d41663fa78ea2ed4ab0a47ebc4d99441ad1660b80e02872e7508cbce92a7",
+  "seed_scope": "Exact input and simulator seeds from selected original 102400-shot verification batches.",
+  "baseline_total_toffolis": 391284932,
+  "candidate_total_toffolis": 391284932,
+  "source_reports": {
+    "theory_bilinear_paired_baseline1024.json": "fbdbaab0b894599ac521da8c52bf68d81a79de5f1013c1ddf76ebc1de2ec66c8",
+    "theory_bilinear_paired_candidate1024.json": "972e9982df883475609f20af596f93d24f814e5f875927be65a3ad325fbf1675"
+  },
+  "scope": "Same-input end-to-end corroboration; formal block identities and exact placements supply the all-input equivalence proof. This is not a runtime benchmark."
+}

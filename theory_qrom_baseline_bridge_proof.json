@@ -1,0 +1,167 @@
+{
+  "status": "EXACT_VERIFIED",
+  "loaders": [
+    {
+      "batch": 1,
+      "source_ccx": 286,
+      "candidate_ccx": 286,
+      "ccx_removed": 0,
+      "source_qubits": 125,
+      "candidate_qubits": 125,
+      "pool_path": "/workspace/scratch/3815fb5fae06/theory_qrom_polytof/data/cpd/comm/9101-00212.npy",
+      "linear_correction_terms": 0,
+      "exact_proofs": [
+        {
+          "label": "k1/forward",
+          "status": "EXACT_PASS",
+          "addresses": 1220,
+          "output_bits_checked": 40,
+          "HMR_formal_variables_cancelled": 74,
+          "R_zero_inputs_checked": 74,
+          "selection_restored": true,
+          "workspace_zero": true,
+          "output_equals_expected_batch": true,
+          "measurement_phase_identically_zero": true,
+          "gate_counts": {
+            "CX": 90284,
+            "R": 74,
+            "CCX": 286,
+            "X": 22,
+            "HMR": 74,
+            "CZ": 74
+          }
+        },
+        {
+          "label": "k1/reverse",
+          "status": "EXACT_PASS",
+          "addresses": 1220,
+          "output_bits_checked": 40,
+          "HMR_formal_variables_cancelled": 74,
+          "R_zero_inputs_checked": 74,
+          "selection_restored": true,
+          "workspace_zero": true,
+          "output_equals_expected_batch": true,
+          "measurement_phase_identically_zero": true,
+          "gate_counts": {
+            "CX": 90284,
+            "R": 74,
+            "CCX": 286,
+            "X": 22,
+            "HMR": 74,
+            "CZ": 74
+          }
+        }
+      ]
+    },
+    {
+      "batch": 6,
+      "source_ccx": 261,
+      "candidate_ccx": 261,
+      "ccx_removed": 0,
+      "source_qubits": 125,
+      "candidate_qubits": 125,
+      "pool_path": "/workspace/scratch/3815fb5fae06/theory_qrom_polytof/data/cpd/comm/9106-00187.npy",
+      "linear_correction_terms": 0,
+      "exact_proofs": [
+        {
+          "label": "k6/forward",
+          "status": "EXACT_PASS",
+          "addresses": 1220,
+          "output_bits_checked": 40,
+          "HMR_formal_variables_cancelled": 74,
+          "R_zero_inputs_checked": 74,
+          "selection_restored": true,
+          "workspace_zero": true,
+          "output_equals_expected_batch": true,
+          "measurement_phase_identically_zero": true,
+          "gate_counts": {
+            "CX": 73794,
+            "R": 74,
+            "CCX": 261,
+            "X": 16,
+            "HMR": 74,
+            "CZ": 74
+          }
+        },
+        {
+          "label": "k6/reverse",
+          "status": "EXACT_PASS",
+          "addresses": 1220,
+          "output_bits_checked": 40,
+          "HMR_formal_variables_cancelled": 74,
+          "R_zero_inputs_checked": 74,
+          "selection_restored": true,
+          "workspace_zero": true,
+          "output_equals_expected_batch": true,
+          "measurement_phase_identically_zero": true,
+          "gate_counts": {
+            "CX": 73794,
+            "R": 74,
+            "CCX": 261,
+            "X": 16,
+            "HMR": 74,
+            "CZ": 74
+          }
+        }
+      ]
+    },
+    {
+      "batch": 14,
+      "source_ccx": 262,
+      "candidate_ccx": 262,
+      "ccx_removed": 0,
+      "source_qubits": 125,
+      "candidate_qubits": 125,
+      "pool_path": "/workspace/scratch/3815fb5fae06/theory_qrom_polytof/data/cpd/comm/9114-00188.npy",
+      "linear_correction_terms": 0,
+      "exact_proofs": [
+        {
+          "label": "k14/forward",
+          "status": "EXACT_PASS",
+          "addresses": 1220,
+          "output_bits_checked": 40,
+          "HMR_formal_variables_cancelled": 74,
+          "R_zero_inputs_checked": 74,
+          "selection_restored": true,
+          "workspace_zero": true,
+          "output_equals_expected_batch": true,
+          "measurement_phase_identically_zero": true,
+          "gate_counts": {
+            "CX": 75831,
+            "R": 74,
+            "CCX": 262,
+            "X": 14,
+            "HMR": 74,
+            "CZ": 74
+          }
+        },
+        {
+          "label": "k14/reverse",
+          "status": "EXACT_PASS",
+          "addresses": 1220,
+          "output_bits_checked": 40,
+          "HMR_formal_variables_cancelled": 74,
+          "R_zero_inputs_checked": 74,
+          "selection_restored": true,
+          "workspace_zero": true,
+          "output_equals_expected_batch": true,
+          "measurement_phase_identically_zero": true,
+          "gate_counts": {
+            "CX": 75831,
+            "R": 74,
+            "CCX": 262,
+            "X": 14,
+            "HMR": 74,
+            "CZ": 74
+          }
+        }
+      ]
+    }
+  ],
+  "total_ccx_removed": 0,
+  "source_files_modified": false,
+  "official_scoring_run": false,
+  "seconds": 2.3606836769995425,
+  "peak_rss_mib": 46.40625,
+  "script_sha256": "db598b7fb44359743c483a77eb993ea8d16c75acff2c7a3b672364bda84aea3b"
+}
