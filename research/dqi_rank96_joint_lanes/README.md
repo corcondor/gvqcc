@@ -1,32 +1,30 @@
 # GF4 whole-tape continuation, research only
 
-Pin the 316094.00 matched #323 complete comparator, 900Q, SHA256
+Exact low-cost comparison remains 316094.00 matched #323 full KMB,
 54817e9385f24940585f5a391025152d4a65a36381887ca77b7bab61413ea2ec.
 No <=97 witness exists in #327. Do not report 96 or 97 without proof.
 
-New direct search on GF64 over GF4: two shared-right lanes, two truncated
-cubic lanes, and three shared-right field lanes. 540000 proposals, best
-10, 10, 15 GF4 products respectively. No shared-input savings; only
-component arithmetic, not a claim about all 21 physical pair ABI maps.
-
-New deterministic symmetric GF4 projective-quotient scan: three-form
-spans of each of the four #327 rank33 dictionaries, and 256 invertible
-multiplication isotopies each. All rank-one candidates reduced modulo the
-exact 33-dimensional symmetric matrix span. Two- and three-column
-same-quotient elimination trials; all best33. No global lower bound and
-not an exhaustive enumeration of all projective GF4 forms. Exact 144
-coefficient equality for every retained witness. Results JSON committed.
-
-New independent native full-tape compiler: extract maximal same-guard
-99-CCX intervals, pull affine frames back, check nonlinear-control
-independence, split left/right by connected components of their linear
-matroid, verify all three 24-dimensional factor maps, synthesize an
-invertible frame on existing physical wires and preserve all affine
-signs. Exact quadratic ANF coefficient comparison and frame replay
-required. --strict97 refuses all present witnesses and writes no output.
---dry99 is integration-only. The default GitHub Actions comparator is the
-hash-pinned exact #279 316K lineage from artifact 46121065738, explicitly
-NOT #323. The manual workflow can use an exact #323 Actions artifact
-once available; it hash-checks the binary. Local container ClientError
-prevents use of the current library KMB. Do not report new 316094 tape or
-score before actual matching evidence. Known inherited errors remain.
+- 540000 proposals on shared-right GF64 two/three lanes and truncated
+  cubic two-lane map; best 10, 15, 10 GF4 products, no gain.
+- Exact projective coset scan over triple spans of four seeds and 1024
+  invertible multiplication isotopies: 242145 candidate-form entries,
+  61870 elimination trials; best33. Not an exhaustive GF4 projective
+  search and not a global rank bound.
+- Mixed-control quadratic search over GF4, rather than GF2: 240000
+  proposals; alternating wedge pooling, proportional output group
+  decomposition and exact coefficient checks, best33. One dual-number
+  witness has six mixed planes and eleven nonzero GF4 square corrections.
+  Squaring is binary-linear, so exact binary expansion costs 99 CCX
+  and can be compiled without new qubits. No <=97 witness.
+- First native all-tape run on exact accessible #279 (NOT #323):
+  333/333 factor maps matched; 299 actual rewrites, 54 affine-sign
+  sites found, 67549292 -> 69355945 instructions, 318333 static paid,
+  900Q, paired full-output digests and paid unchanged. CI 46154876125.
+  The later sparse pivot compiler removes the arbitrary 256-coordinate
+  cap, and accepts generalized 48-bit mixed control pairs and linear
+  repayment. Report its measured full receipts separately.
+- --strict97 refuses existing witnesses; --dry99 is not a score gain.
+  The manual workflow accepts exact #323 KMB from a known Actions
+  artifact only after SHA256 verification. Local container ClientError
+  prevents reading the current library KMB. Do not conflate #279
+  diagnostic with actual #323 316094 full tape. No submission or merge.

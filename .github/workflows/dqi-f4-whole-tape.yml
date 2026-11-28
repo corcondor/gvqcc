@@ -96,3 +96,16 @@ jobs:
           name: f4-full-tape-research
           path: /tmp/results/
           compression-level: 3
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_rank96_joint_lanes/F4MixedWhole.lean | tee /tmp/f4-lean.log
+          test "$(grep -c 'axiom' /tmp/f4-lean.log)" -eq 4
+          ! grep -E 'sorryAx|ofReduceBool' /tmp/f4-lean.log

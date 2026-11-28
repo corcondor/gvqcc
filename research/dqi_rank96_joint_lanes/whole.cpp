@@ -23,11 +23,14 @@ struct Map24{
  V get(U x)const{V v;while(x){int i=__builtin_ctz(x);if(!a[i])throw runtime_error("bad map");x^=a[i];v^=b[i];}return v;}
 };
 struct Rank{array<V,1024> a{};int n=0;bool add(V x){while(x.any()){int i=x._Find_first();if(a[i].any())x^=a[i];else{a[i]=x;n++;return true;}}return false;}};
-struct Candidate{string name;int typ;vector<Term> t;};
+struct MixedTerm{W a,b;U c;};
+struct Candidate{string name;int typ;vector<MixedTerm> t;array<U,48> lin{};};
 vector<Term> orig[2];vector<Candidate> bank;
 void read_terms(string path){
- ifstream f(path);assert(f);int n;f>>n;for(int i=0;i<n;i++){string name;int typ,k;f>>name>>typ>>k;assert(typ==0||typ==1);Candidate c{name,typ,{}};while(k--){Term t;f>>t.a>>t.b>>t.c;assert(t.a&&t.b&&t.c);c.t.push_back(t);}if(name=="original")orig[typ]=c.t;else bank.push_back(c);}
- for(auto c:bank)for(int i=0;i<24;i++)for(int j=0;j<24;j++){U v=0,w=0;for(auto t:orig[c.typ])if((t.a>>i&1)&&(t.b>>j&1))v^=t.c;for(auto t:c.t)if((t.a>>i&1)&&(t.b>>j&1))w^=t.c;assert(v==w);}
+ ifstream f(path);assert(f);int n;f>>n;for(int i=0;i<n;i++){string name;int typ,k;f>>name>>typ>>k;assert(typ==0||typ==1);Candidate c{name,typ,{},{}};while(k--){MixedTerm t;f>>t.a>>t.b>>t.c;assert(t.a&&t.b&&t.c&&t.a<(1ull<<48)&&t.b<(1ull<<48)&&t.a!=t.b);if(name=="original"){assert(t.a<(1ull<<24)&&!(t.b&0xffffffull));orig[typ].push_back({U(t.a),U(t.b>>24),t.c});}else c.t.push_back(t);}
+ for(auto &w:c.lin)f>>w;
+ if(name!="original")bank.push_back(c);}
+ for(auto c:bank){array<U,1176> a{};int k=0;for(int i=0;i<48;i++)for(int j=i;j<48;j++){U v=0,w=0;if(i<24&&j>=24)for(auto t:orig[c.typ])if((t.a>>i&1)&&(t.b>>(j-24)&1))v^=t.c;for(auto t:c.t)if(i==j?((t.a>>i&1)&&(t.b>>i&1)):(((t.a>>i&1)&&(t.b>>j&1))^((t.a>>j&1)&&(t.b>>i&1))))w^=t.c;if(i==j)w^=c.lin[i];assert(v==w);}}
 }
 struct Extract{vector<Phys> p;vector<Gate> affine;};
 optional<Extract> extract(const vector<Gate>&g){
@@ -52,55 +55,70 @@ bool split_sides(vector<Phys>&P){
 }
 struct Frames{vector<int> wires;vector<V> rows;vector<Gate> gates;};
 optional<Frames> make_frame(const Map24&A,const Map24&B,const Map24&C,Gate g){
- vector<V> ar,br,cw,du,rows;V active;
- Rank rank,output;for(int i=0;i<24;i++){ar.push_back(A.get(1u<<i));br.push_back(B.get(1u<<i));cw.push_back(C.get(1u<<i));active|=ar.back()|br.back()|cw.back();if(!output.add(cw.back()))return nullopt;}
- for(auto r:ar){if(!rank.add(r))return nullopt;rows.push_back(r);}
- for(auto r:br){if(!rank.add(r))return nullopt;rows.push_back(r);}
- auto wires=bits(active);if(wires.size()<72||wires.size()>256)return nullopt;
- auto pairmask=[&](const V&x){U k=0;for(int j=0;j<24;j++)if(dot(x,cw[j]))k|=1u<<j;return k;};
- Map24 m;for(int i:wires){U u=pairmask(unit(i));if(!u)continue; // independent rows only
-   U x=u;for(int k=0;k<24;k++)if(x>>k&1){if(m.a[k])x^=m.a[k];else break;}
-   if(x&&!m.add(u,unit(i)))return nullopt;
-   if(m.n==24)break;
+ vector<V> input,output;Rank rank,rr;for(int j=0;j<24;j++){input.push_back(A.get(1u<<j));output.push_back(C.get(1u<<j));}for(int j=0;j<24;j++)input.push_back(B.get(1u<<j));
+ for(auto x:input)if(!rank.add(x))return nullopt;for(auto x:output)if(!rr.add(x))return nullopt;
+ for(auto a:input)for(auto b:output)if(dot(a,b))return nullopt;
+ vector<Gate> ops;vector<V> R=input;vector<pair<int,int>> undo;
+ vector<int> ip;vector<bool> used(Q);
+ // Row-reduce the 48 input forms, while tracking the invertible row operations.
+ for(int i=0;i<48;i++){
+   int p=-1,k=-1;for(int j=0;j<Q&&p<0;j++)if(!used[j])for(int l=i;l<48;l++)if(R[l][j]){p=j;k=l;break;}
+   if(p<0)return nullopt;ip.push_back(p);used[p]=true;
+   if(k!=i){swap(R[k],R[i]);undo.push_back({k,i});undo.push_back({i,k});undo.push_back({k,i});}
+   for(int l=0;l<48;l++)if(l!=i&&R[l][p]){R[l]^=R[i];undo.push_back({i,l});}
  }
- if(m.n!=24)return nullopt;
- for(auto r:rows)if(pairmask(r))return nullopt;
- for(int j=0;j<24;j++){auto v=m.get(1u<<j);if(pairmask(v)!=(1u<<j)||!rank.add(v))return nullopt;du.push_back(v);rows.push_back(v);}
- for(int i:wires){V v=unit(i);U p=pairmask(v);for(int j=0;j<24;j++)if(p>>j&1)v^=du[j];if(rank.add(v))rows.push_back(v);}
- if(rows.size()!=wires.size())return nullopt;
- // Reduce exact frame to identity then reverse the elementary operations.
- vector<V> R=rows;vector<Gate> rev;int n=wires.size();
- auto cx=[&](int i,int j){R[j]^=R[i];rev.push_back(gg(g,33,wires[i],wires[j]));};
- for(int i=0;i<n;i++){int k=i;while(k<n&&!R[k][wires[i]])k++;if(k==n)return nullopt;if(k!=i){swap(R[k],R[i]);rev.push_back(gg(g,34,wires[k],wires[i]));}
- for(int j=0;j<n;j++)if(j!=i&&R[j][wires[i]])cx(i,j);}
- for(int i=0;i<n;i++)assert(R[i]==unit(wires[i]));
- reverse(rev.begin(),rev.end());
- // Independently reapply the emitted frame.
- for(int i=0;i<n;i++)R[i]=unit(wires[i]);array<int,1024> ix{};for(int i=0;i<n;i++)ix[wires[i]]=i;
- for(auto h:rev){if(op(h)==33)R[ix[h.b]]^=R[ix[h.a]];else swap(R[ix[h.a]],R[ix[h.b]]);}
- assert(R==rows);
- return Frames{wires,rows,rev};
+ // RREF input rows are computed into the pivot wires; unselected inputs stay live.
+ for(int i=0;i<48;i++){
+   for(int j=0;j<48;j++)if(R[i][ip[j]]!=(i==j))return nullopt;
+   for(int q:bits(R[i]))if(q!=ip[i])ops.push_back(gg(g,33,q,ip[i]));
+ }
+ for(auto it=undo.rbegin();it!=undo.rend();it++)ops.push_back(gg(g,33,ip[it->first],ip[it->second]));
+ // Choose 24 physical complement wires dual to the output directions.
+ vector<int> opiv;array<U,24> basis{};vector<U> M;
+ for(int i=0;i<Q;i++)if(!used[i]){
+   U x=0;for(int j=0;j<24;j++)if(output[j][i])x|=1u<<j;
+   U y=x;while(y){int k=__builtin_ctz(y);if(basis[k])y^=basis[k];else{basis[k]=y;opiv.push_back(i);M.push_back(x);used[i]=true;break;}}
+   if(M.size()==24)break;
+ }
+ if(M.size()!=24)return nullopt;
+ auto ocx=[&](int i,int j){M[j]^=M[i];ops.push_back(gg(g,33,opiv[i],opiv[j]));};
+ for(int i=0;i<24;i++){int j=i;while(j<24&&!(M[j]>>i&1))j++;if(j==24)return nullopt;if(j!=i){ocx(i,j);ocx(j,i);ocx(i,j);}for(int j=0;j<24;j++)if(j!=i&&(M[j]>>i&1))ocx(i,j);}
+ for(int i=0;i<24;i++)assert(M[i]==(1u<<i));
+ for(int i=0;i<Q;i++)if(!used[i])for(int j=0;j<24;j++)if(output[j][i])ops.push_back(gg(g,33,opiv[j],i));
+ // Independent replay: actual physical row maps and images of all output directions.
+ vector<V> phys(Q),image=output;for(int i=0;i<Q;i++)phys[i]=unit(i);
+ for(auto h:ops){assert(op(h)==33);phys[h.b]^=phys[h.a];for(auto &x:image)if(x[h.a])x.flip(h.b);}
+ for(int i=0;i<48;i++)if(phys[ip[i]]!=input[i])return nullopt;
+ for(int i=0;i<24;i++)if(image[i]!=unit(opiv[i]))return nullopt;
+ vector<int>wires=ip;wires.insert(wires.end(),opiv.begin(),opiv.end());
+ vector<V> outrows;for(int i:wires)outrows.push_back(phys[i]);
+ return Frames{wires,outrows,ops};
 }
 void parity(vector<Gate>&r,Gate g,U m,const vector<int>&w,int offset,int pivot,bool target=false){
  for(int j=0;j<24;j++)if(j!=pivot&&(m>>j&1))r.push_back(gg(g,33,target?w[offset+pivot]:w[offset+j],target?w[offset+j]:w[offset+pivot]));
 }
-bool verify_quadratic(const vector<Phys>&P,const vector<Term>&T,const Map24&A,const Map24&B,const Map24&C){
- // All square-free degree-two coefficients and their full Q-bit output directions.
- // Linear/constant offsets of P are emitted separately, verbatim algebraically.
+V input_form(W x,const Map24&A,const Map24&B){return A.get(U(x&0xffffffull))^B.get(U(x>>24));}
+bool verify_quadratic(const vector<Phys>&P,const Candidate&t,const Map24&A,const Map24&B,const Map24&C){
  map<pair<int,int>,V> d;
  auto push=[&](V a,V b,V c){for(int i:bits(a))for(int j:bits(b))d[minmax(i,j)]^=c;};
  for(auto p:P)push(p.a,p.b,p.c);
- for(auto t:T)push(A.get(t.a),B.get(t.b),C.get(t.c));
+ for(auto r:t.t)push(input_form(r.a,A,B),input_form(r.b,A,B),C.get(r.c));
+ for(int i=0;i<48;i++)if(t.lin[i])for(int j:bits(input_form(1ull<<i,A,B)))d[{j,j}]^=C.get(t.lin[i]);
  return all_of(d.begin(),d.end(),[](auto&x){return x.second.none();});
 }
 optional<vector<Gate>> substitute(const vector<Gate>&g,const Extract&e,const Map24&A,const Map24&B,const Map24&C,int typ,const Candidate&cand){
- if(cand.typ!=typ)return nullopt;
- if(!verify_quadratic(e.p,cand.t,A,B,C))return nullopt;
+ if(cand.typ!=typ||!verify_quadratic(e.p,cand,A,B,C))return nullopt;
  auto f=make_frame(A,B,C,g[0]);if(!f)return nullopt;
  auto&w=f->wires;vector<Gate> r=f->gates;
- for(auto t:cand.t){int a=__builtin_ctz(t.a),b=__builtin_ctz(t.b),c=__builtin_ctz(t.c);vector<Gate> pre;parity(pre,g[0],t.a,w,0,a);parity(pre,g[0],t.b,w,24,b);parity(pre,g[0],t.c,w,48,c,true);r.insert(r.end(),pre.begin(),pre.end());r.push_back(gg(g[0],49,w[a],w[24+b],w[48+c]));r.insert(r.end(),pre.rbegin(),pre.rend());}
- // Transport old affine signs into the exact common coordinate frame.
- U constant=0;array<U,48> lin{};
+ for(auto t:cand.t){
+  W a=t.a,b=t.b;if(!(a&~b))swap(a,b);
+  assert(a&~b);int p=__builtin_ctzll(a&~b),q=__builtin_ctzll(b),c=__builtin_ctz(t.c);
+  vector<Gate> pre;for(int j=0;j<48;j++)if(j!=p&&(a>>j&1))pre.push_back(gg(g[0],33,w[j],w[p]));
+  for(int j=0;j<48;j++)if(j!=q&&(b>>j&1))pre.push_back(gg(g[0],33,w[j],w[q]));
+  parity(pre,g[0],t.c,w,48,c,true);
+  r.insert(r.end(),pre.begin(),pre.end());r.push_back(gg(g[0],49,w[p],w[q],w[48+c]));r.insert(r.end(),pre.rbegin(),pre.rend());
+ }
+ U constant=0;array<U,48> lin=cand.lin;
  for(int k=0;k<99;k++){auto t=orig[typ][k];auto p=e.p[k];if(p.ca&&p.cb)constant^=t.c;if(p.cb)for(int j=0;j<24;j++)if(t.a>>j&1)lin[j]^=t.c;if(p.ca)for(int j=0;j<24;j++)if(t.b>>j&1)lin[24+j]^=t.c;}
  for(int j=0;j<24;j++)if(constant>>j&1)r.push_back(gg(g[0],17,w[48+j]));
  for(int i=0;i<48;i++)for(int j=0;j<24;j++)if(lin[i]>>j&1)r.push_back(gg(g[0],33,w[i],w[48+j]));
@@ -114,7 +132,7 @@ optional<vector<Gate>> replace_block(vector<Gate>const&g,bool dry){
  Rank a,b,c;for(int j=0;j<24;j++){a.add(A.get(1u<<j));b.add(B.get(1u<<j));c.add(C.get(1u<<j));}if(a.n!=24||b.n!=24||c.n!=24)continue;
  matched++;types[typ]++;signs+=any_of(e->p.begin(),e->p.end(),[](auto x){return x.ca||x.cb;});
  optional<vector<Gate>> best;int count=100;string name;
- for(auto &t:bank)if(t.typ==typ){if(!dry&&t.t.size()>=99)continue;auto r=substitute(g,*e,A,B,C,typ,t);if(r&&(int(t.t.size())<count||(int(t.t.size())==count&&(!best||r->size()<best->size())))){count=t.t.size();best=move(r);name=t.name;}}
+ for(auto &t:bank)if(t.typ==typ){if(!dry&&t.t.size()>97)continue;auto r=substitute(g,*e,A,B,C,typ,t);if(r&&(int(t.t.size())<count||(int(t.t.size())==count&&(!best||r->size()<best->size())))){count=t.t.size();best=move(r);name=t.name;}}
  if(best){if(!dry&&count>=99)throw runtime_error("not reduced");changed++;saved+=99-count;oldops+=g.size();newops+=best->size();selected[name]++;}
  return best;
  }
