@@ -1,0 +1,120 @@
+{
+ "official_verifier": "competition verifiers/dfthcsos (unchanged; file hashes checked against local copies)",
+ "verifier_pins": {
+  "dfthcsos/verify.py": true,
+  "dfthcsos/scoreinfra/circuits.py": true,
+  "dfthcsos/scoreinfra/costs_prepare.py": true,
+  "dfthcsos/scoreinfra/dfthc_math.py": true,
+  "dfthcsos/scoreinfra/reference.py": true
+ },
+ "kickmix": "/tmp/km/kickmix.so 0.1 3.13.18",
+ "runs": [
+  {
+   "who": "integration run",
+   "salt": "",
+   "internet": "off",
+   "status": "PASS",
+   "lambda_eff": 46.917982145460485,
+   "toffoli_count": 13124.0,
+   "num_qubits": 405,
+   "verified_shots": 78016,
+   "error_1": 0.019999999900007847,
+   "error_2": 0.019999999901087223,
+   "submission_sha256": "736d3b17762302442d73a4b9a527c825658df94b033295f4e3bcfb73fa95796e",
+   "cost": 249379397.05919448
+  },
+  {
+   "who": "integration run",
+   "salt": "notebook-verification",
+   "internet": "off",
+   "status": "PASS",
+   "lambda_eff": 46.917982145460485,
+   "toffoli_count": 13124.0,
+   "num_qubits": 405,
+   "verified_shots": 78016,
+   "error_1": 0.019999999900007847,
+   "error_2": 0.019999999901087223,
+   "submission_sha256": "736d3b17762302442d73a4b9a527c825658df94b033295f4e3bcfb73fa95796e",
+   "cost": 249379397.05919448
+  },
+  {
+   "who": "independent re-check",
+   "family": "new",
+   "salt": "",
+   "internet": "off (gaierror)",
+   "status": "PASS",
+   "score": 249379397.05919448,
+   "toffoli_count": 13124.0,
+   "num_qubits": 405,
+   "lambda_eff": 46.917982145460485,
+   "verified_shots": 78016,
+   "submission_sha256": "736d3b17762302442d73a4b9a527c825658df94b033295f4e3bcfb73fa95796e",
+   "angles_toffoli_per_pass": 3312.0
+  },
+  {
+   "who": "independent re-check",
+   "family": "new",
+   "salt": "main-check-3312-5f0d2a77-20261126",
+   "internet": "off (gaierror)",
+   "status": "PASS",
+   "score": 249379397.05919448,
+   "toffoli_count": 13124.0,
+   "num_qubits": 405,
+   "lambda_eff": 46.917982145460485,
+   "verified_shots": 78016,
+   "submission_sha256": "736d3b17762302442d73a4b9a527c825658df94b033295f4e3bcfb73fa95796e",
+   "angles_toffoli_per_pass": 3312.0
+  },
+  {
+   "who": "independent re-check",
+   "family": "old",
+   "salt": "",
+   "internet": "off (gaierror)",
+   "status": "PASS",
+   "score": 251051553.9428587,
+   "toffoli_count": 13212.0,
+   "num_qubits": 405,
+   "lambda_eff": 46.917982145460485,
+   "verified_shots": 78016,
+   "submission_sha256": "2021427cca4d1c1c6308e9161ac7a454bcd08bd2e70e68faacf32fb7774fa3e1",
+   "angles_toffoli_per_pass": 3356.0
+  }
+ ],
+ "word_recovery_by_official_code": {
+  "old": {
+   "toffoli_mean_forward_plus_reverse": 6712.0,
+   "words_sha256": "37a39b81d43cda6859b912f7c09cc9fc9595844726c01df3e1121d9f7878fb96"
+  },
+  "new": {
+   "toffoli_mean_forward_plus_reverse": 6624.0,
+   "words_sha256": "400f91269152758b0e3a6c4465a39d48398d7f2b29361508b6dfebe2bc49c095"
+  },
+  "differing_word_entries": 1127,
+  "word_entries": 91425,
+  "deleted_phase_fix_controls": [
+   "rejected: ANGLE_1: uncorrected phase (measurement kickback)",
+   "rejected: ANGLE_1: uncorrected phase (measurement kickback)",
+   "rejected: ANGLE_1: uncorrected phase (measurement kickback)"
+  ]
+ },
+ "member_sha256": {
+  "angle_k_0.kmb": "5be55d801666756f895a0ab12f735bf6d0a8cb3bd510b83e1fd6b793774e69ac",
+  "angle_k_1.kmb": "0e322eed0d6faec48ae758768671279dba79bcfa1bbc3f541869124403d9985d",
+  "angle_k_10.kmb": "dca717e6cef74dde8d2d3939ee20802de806eb7ecc444ad90f751919f18ddce3",
+  "angle_k_11.kmb": "6ef4c81432a5a774d87e0549f2c161094f94551b48677dc50ccb3325c955240f",
+  "angle_k_12.kmb": "d6a5b9e45f5ac5ffbf363aa89ef21baec66e884c10be3c7f4d43e4cfba68524f",
+  "angle_k_13.kmb": "430793d63a7e12f569cdb1daa9e0265cb4ae74c3dc278857e06f583ea9227dd3",
+  "angle_k_14.kmb": "2e6d7caec3299aa5d2e3d448145f70de80482aac83e98959de46a9ea6ab627bc",
+  "angle_k_2.kmb": "ad15e5f7a198103af1fba6af7f36048948395853464b5876191844c8f2c4a539",
+  "angle_k_3.kmb": "3fd389c5452f3c487ee29d8b0f781d3608ae77a0982febe82d92427c0b04010b",
+  "angle_k_4.kmb": "4a51a166bc17b67463daee7a6e421faff7de8c4e6ed819714980d0e95c3eb3af",
+  "angle_k_5.kmb": "f7201a840e5252a936cfa9f1559ddd5a3862516a6fd1c6f69aa789c56c55d204",
+  "angle_k_6.kmb": "5ea8a2182ae7c70bb6b7f095970b9abe7dde84d8ca4c6940713a75a70655a0cd",
+  "angle_k_7.kmb": "989d6058fde3baf7539c503b31ff94022e777b8cc1256e373f3cfe78de825be9",
+  "angle_k_8.kmb": "88f51400530be73e03d6f90b04911fd36ad9b51a66d361d597ee21c3e25ec44c",
+  "angle_k_9.kmb": "8bf4d02f5b49d4d9bda8f0572d078dfd088b0eec6165d669be62685604ca1d5d",
+  "submission.npz": "890b595cd42fba73bfa94d38b4aa2c9160e19021189c3268bd02b2895381ca55"
+ },
+ "submitted_package_sha256": "42b2f8d8974ba52daaf8f70d086fc4002be93cacc662b9391f8cc5361480e12f",
+ "kaggle_submission_ref": "58942727"
+}
