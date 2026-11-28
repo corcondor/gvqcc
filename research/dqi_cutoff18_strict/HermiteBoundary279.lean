@@ -34,7 +34,7 @@ theorem inv_jet_unit (h : (2:F)=0) (u v : F) (hu : u ≠ 0) :
   · simp [jetMul, hu]
   · change u*(v/u^2)+v*u⁻¹ = 0
     calc
-      _ = (2:F)*(v/u) := by field_simp <;> ring
+      _ = (2:F)*(v/u) := by field_simp; ring
       _ = 0 := by rw [h, zero_mul]
 
 theorem inv_jet_zero (v : F) : invJet 0 v = (0,v) := by simp [invJet]
@@ -44,7 +44,7 @@ theorem inv_jet_involutive (u v : F) :
   by_cases hu : u=0
   · subst u
     simp [invJet]
-  · simp only [invJet, if_neg hu, if_neg (inv_ne_zero hu), inv_inv]
+  · simp only [invJet, ite_eq_right hu, ite_eq_right (inv_ne_zero hu), inv_inv]
     apply Prod.ext
     · rfl
     · field_simp <;> ring
@@ -99,7 +99,7 @@ theorem padded_root_equiv (D G : Polynomial F) (x : F) (hg : G.eval x ≠ 0) :
 
 theorem dual_jet_factor [DecidableEq F] (_h : (2:F)=0) (u v : F) (hu : u≠0) :
     (u^2)*(invJet u v).2 = v := by
-  rw [invJet,if_neg hu]
+  rw [invJet,ite_eq_right hu]
   change u^2*(v/u^2)=v
   field_simp
 
