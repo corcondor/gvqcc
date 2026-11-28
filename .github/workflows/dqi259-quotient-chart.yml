@@ -1,0 +1,33 @@
+name: DQI 259 quotient chart strict Lean
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_cutoff18_strict/QuotientChart259.lean'
+      - '.github/workflows/dqi259-quotient-chart.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: research/dqi_cutoff18_strict
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lake update
+          lake exe cache get
+          lake env lean -DwarningAsError=true QuotientChart259.lean | tee quotient-chart.log
+          test "$(grep -c 'GVQCC.QuotientChart259.*axiom' quotient-chart.log)" -eq 6
+          ! grep -E 'sorryAx|ofReduceBool' quotient-chart.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quotient-chart259-axioms
+          path: research/dqi_cutoff18_strict/quotient-chart.log
