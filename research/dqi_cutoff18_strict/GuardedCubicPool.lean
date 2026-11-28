@@ -34,9 +34,9 @@ theorem guard_xor (a b p : ZMod 2) : (a+b)*p = a*p+b*p := by ring
 
 theorem phase_debt (a b r : ZMod 2) (h : a = b+r) : a+b=r := by
   rw [h]
-  ring_nf
-  have hh : (2 : ZMod 2) = 0 := by decide
-  simp [hh]
+  calc
+    _ = (2 : ZMod 2)*b+r := by ring
+    _ = r := by rw [show (2 : ZMod 2) = 0 by decide, zero_mul, zero_add]
 
 /-- Pull back a binary mask through a linear coordinate map. -/
 theorem mask_transpose {I J : Type*} [Fintype I] [Fintype J]
