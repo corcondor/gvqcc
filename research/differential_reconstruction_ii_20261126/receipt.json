@@ -1,0 +1,57 @@
+{
+  "status": "RESEARCH_NOT_SUBMISSION",
+  "competitive_score_updated": false,
+  "invsqrt25": {
+    "width": 25,
+    "ccx": [
+      5007,
+      4964,
+      4963
+    ],
+    "cost": [
+      1695645.4891464112,
+      1694545.4891464112
+    ],
+    "full_cube": 4194304,
+    "independent_hmr": 2750,
+    "sha256": "ad36c19d9f5981667347b2065b3e10a143e0fd1dd4f61482b1c8dcbd0395a57e"
+  },
+  "invsqrt36": {
+    "width": 36,
+    "ccx": [
+      1358,
+      1355
+    ],
+    "cost": [
+      2332126.5622262387,
+      2332018.5622262387
+    ],
+    "full_cube": 4194304,
+    "independent_hmr": 1259,
+    "sha256": "241e7ca6b2b857a23c60332d268e20b2a2ac7628fb553a13b8e1a74d76d7b2d6"
+  },
+  "dqi": {
+    "Q": 900,
+    "ops": 68799061,
+    "static_paid": 318950,
+    "new_paid_savings": 0,
+    "peak_episodes": 668,
+    "rank_deficient": 350,
+    "full_rank_overapprox": 318,
+    "local_chart": {
+      "from": 14,
+      "to": 13,
+      "inputs": 8192,
+      "phase_verified": false
+    }
+  },
+  "chemistry": {
+    "banks": 15,
+    "paid": 3357,
+    "delayed_checks": 150207,
+    "deletions": 0
+  },
+  "archive_sha256": "90fbe00e6ece365c4e83eb8c8d0c0b3ce91ecc5d5d595c2463c495bc2710ed8c",
+  "official_verifier": false,
+  "lean_compiled": false
+}
