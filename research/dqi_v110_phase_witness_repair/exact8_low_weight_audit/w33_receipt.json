@@ -1,0 +1,36 @@
+{
+  "exact8.kmb": {
+    "input_shots": 64,
+    "syndrome_errors": 0,
+    "phase_errors": 0,
+    "dirty_errors": 0,
+    "mask_errors": 0,
+    "syndrome_bit_counts": [
+      0
+    ],
+    "distinct_residuals": 1,
+    "matched_old_residuals": {
+      "V111 Joint": 0,
+      "V110 Extended": 0
+    },
+    "output_digest": "2767beb7b354f2b5b1901dd29dff1e70f83360ea589daec64e0868863500c532",
+    "phase_digest": "72bb6ca0f575aad0fc84b2fc15086f249a1779c57763426e07397a1114058b5c"
+  },
+  "base.kmb": {
+    "input_shots": 64,
+    "syndrome_errors": 0,
+    "phase_errors": 0,
+    "dirty_errors": 0,
+    "mask_errors": 0,
+    "syndrome_bit_counts": [
+      0
+    ],
+    "distinct_residuals": 1,
+    "matched_old_residuals": {
+      "V111 Joint": 0,
+      "V110 Extended": 0
+    },
+    "output_digest": "2767beb7b354f2b5b1901dd29dff1e70f83360ea589daec64e0868863500c532",
+    "phase_digest": "72bb6ca0f575aad0fc84b2fc15086f249a1779c57763426e07397a1114058b5c"
+  }
+}
