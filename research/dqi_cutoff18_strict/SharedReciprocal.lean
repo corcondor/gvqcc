@@ -8,7 +8,7 @@ variable {F : Type*} [Field F]
 /-- Retain the retired scalar alpha=a/h through the child solve. -/
 theorem retired_pivot (a h p : F) (ha : a ≠ 0) (hh : h ≠ 0) :
     (p/h)/(a/h) = p/a := by
-  field_simp [ha, hh] <;> ring
+  field_simp [ha, hh]
 
 theorem retired_restore (a h : F) (hh : h ≠ 0) :
     (a/h)*h = a := by
@@ -33,7 +33,7 @@ theorem interpolation_restore (a c b : F) (hc : c ≠ 0) :
 /-- Nonmonic triangular Bezout application keeps the leading factor. -/
 theorem nonmonic_step (b y z : F) (hb : b ≠ 0) :
     b*(y+z/b) = b*y+z := by
-  field_simp [hb] <;> ring
+  field_simp [hb]
 
 theorem shared_inverse (s r p : F) (h : s*r = 1) :
     (p*s)*r = p := by
