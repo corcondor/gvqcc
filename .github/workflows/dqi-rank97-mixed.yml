@@ -56,3 +56,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: node research/dqi_rank97_mixed/hermite_profile.mjs
+      - run: node research/dqi_rank97_mixed/jet_asymmetric.mjs
