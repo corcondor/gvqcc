@@ -1,0 +1,210 @@
+[
+  {
+    "block": "field_1_wiring_70.json",
+    "local_groups": 14,
+    "products": 70,
+    "lower_per_group": 5,
+    "pair_input_rank": {
+      "12": 91
+    },
+    "rank12_triples_zero_based": [
+      [
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10
+      ],
+      [
+        11,
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "block": "field_1_wiring_84.json",
+    "local_groups": 14,
+    "products": 84,
+    "lower_per_group": 6,
+    "pair_input_rank": {
+      "12": 91
+    },
+    "rank12_triples_zero_based": [
+      [
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10
+      ],
+      [
+        11,
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "block": "field_2_wiring_70.json",
+    "local_groups": 14,
+    "products": 70,
+    "lower_per_group": 5,
+    "pair_input_rank": {
+      "12": 91
+    },
+    "rank12_triples_zero_based": [
+      [
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10
+      ],
+      [
+        11,
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "block": "field_2_wiring_84.json",
+    "local_groups": 14,
+    "products": 84,
+    "lower_per_group": 6,
+    "pair_input_rank": {
+      "12": 91
+    },
+    "rank12_triples_zero_based": [
+      [
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10
+      ],
+      [
+        11,
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "block": "field_3_wiring_70.json",
+    "local_groups": 14,
+    "products": 70,
+    "lower_per_group": 5,
+    "pair_input_rank": {
+      "12": 91
+    },
+    "rank12_triples_zero_based": [
+      [
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10
+      ],
+      [
+        11,
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "block": "field_3_wiring_84.json",
+    "local_groups": 14,
+    "products": 84,
+    "lower_per_group": 6,
+    "pair_input_rank": {
+      "12": 91
+    },
+    "rank12_triples_zero_based": [
+      [
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10
+      ],
+      [
+        11,
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "block": "field_4_wiring_70.json",
+    "local_groups": 14,
+    "products": 70,
+    "lower_per_group": 5,
+    "pair_input_rank": {
+      "12": 91
+    },
+    "rank12_triples_zero_based": [
+      [
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10
+      ],
+      [
+        11,
+        12,
+        13
+      ]
+    ]
+  },
+  {
+    "block": "field_4_wiring_84.json",
+    "local_groups": 14,
+    "products": 84,
+    "lower_per_group": 6,
+    "pair_input_rank": {
+      "12": 91
+    },
+    "rank12_triples_zero_based": [
+      [
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10
+      ],
+      [
+        11,
+        12,
+        13
+      ]
+    ]
+  }
+]

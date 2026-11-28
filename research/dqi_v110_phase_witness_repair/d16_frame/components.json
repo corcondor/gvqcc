@@ -1,0 +1,50 @@
+{
+  "field_1_wiring_70": {
+    "paid": 70,
+    "old_ops": 6286,
+    "new_ops": 6286,
+    "lanes": 1691
+  },
+  "field_1_wiring_84": {
+    "paid": 84,
+    "old_ops": 30226,
+    "new_ops": 10508,
+    "lanes": 1691
+  },
+  "field_2_wiring_70": {
+    "paid": 70,
+    "old_ops": 6286,
+    "new_ops": 6286,
+    "lanes": 1691
+  },
+  "field_2_wiring_84": {
+    "paid": 84,
+    "old_ops": 36674,
+    "new_ops": 11048,
+    "lanes": 1691
+  },
+  "field_3_wiring_70": {
+    "paid": 70,
+    "old_ops": 6286,
+    "new_ops": 6286,
+    "lanes": 1691
+  },
+  "field_3_wiring_84": {
+    "paid": 84,
+    "old_ops": 10198,
+    "new_ops": 8822,
+    "lanes": 1691
+  },
+  "field_4_wiring_70": {
+    "paid": 70,
+    "old_ops": 6286,
+    "new_ops": 6286,
+    "lanes": 1691
+  },
+  "field_4_wiring_84": {
+    "paid": 84,
+    "old_ops": 10834,
+    "new_ops": 8788,
+    "lanes": 1691
+  }
+}
