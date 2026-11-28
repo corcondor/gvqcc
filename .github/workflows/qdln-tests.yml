@@ -1,0 +1,30 @@
+name: QDLN exact synthesis tests
+on:
+  push:
+    branches:
+      - research/qdln-quantum-cost-aware
+    paths:
+      - research/qdln/**
+      - .github/workflows/qdln-tests.yml
+  pull_request:
+    paths:
+      - research/qdln/**
+      - .github/workflows/qdln-tests.yml
+  workflow_dispatch:
+
+jobs:
+  exact-boolean-and-clean-oracle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Exact 4-input GF(2) and reversible oracle tests
+        run: python research/qdln/test_qdln.py
+      - name: Native KMB symbolic recovery and exact polar-rank certificates
+        run: python research/qdln/test_native_warmstart.py
+      - name: Exact GF2 variable-projection gate indispensability tests
+        run: python research/qdln/exact_projection.py
+      - name: Validate native HMR and PyTorch training source parses
+        run: python -m py_compile research/qdln/post_hmr_screen.py research/qdln/post_hmr_pytorch.py
