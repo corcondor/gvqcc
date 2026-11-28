@@ -1,0 +1,48 @@
+name: Mixed exterior rank97 exact native admission
+on:
+  pull_request:
+    paths:
+      - 'research/dqi_rank97_exterior/**'
+      - '.github/workflows/dqi-exterior-rank97.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install kickmix==1.0.0 numpy==2.2.6
+      - run: |
+          set -euo pipefail
+          cd research/dqi_rank97_exterior
+          python certify.py --native /tmp/mixed-native | tee /tmp/mixed-native.log
+          if python certify.py --require97; then
+            echo 'CERTIFIED97: full tape splicer eligible'
+          else
+            echo 'NO_RANK97: no lower-paid full tape may be emitted'
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mixed-exterior-native
+          path: |
+            /tmp/mixed-native/
+            /tmp/mixed-native.log
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          set -euo pipefail
+          lean -DwarningAsError=true research/dqi_rank97_exterior/ExteriorRank97.lean | tee /tmp/exterior.log
+          test "$(grep -c 'axiom' /tmp/exterior.log)" -eq 4
+          ! grep -E 'sorryAx|ofReduceBool' /tmp/exterior.log
