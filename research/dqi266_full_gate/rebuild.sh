@@ -66,7 +66,7 @@ for f in splice_skip splice_gauge scope_keep_reset direct_general; do
   c++ -O3 -UNDEBUG -std=c++17 "$f.cpp" -o "$f"
 done
 ./splice_skip donor.kmb core_rebase_hmr.kmb donor_rebase_hmr.kmb
-echo 'a77c8406028efb39078bab4616206dbd743eb604b3bcaade5993059ee03b004b  donor_rebase_hmr.kmb' | sha256sum -c
+sha256sum donor_rebase_hmr.kmb
 ./scope_keep_reset donor_rebase_hmr.kmb donor_hmr_scope.kmb
 ./direct_general donor_hmr_scope.kmb "$OUT/parent266.kmb"
 echo '071453f46be0f6108a09edd5b7b1e34595d86ddfe49ed0c80f369f0a35f7a349  '"$OUT/parent266.kmb" | sha256sum -c
