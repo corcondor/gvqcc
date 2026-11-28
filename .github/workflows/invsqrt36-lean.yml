@@ -1,0 +1,38 @@
+name: invsqrt36 nonlinear lifetime Lean certificate
+on:
+  push:
+    branches:
+      - research/invsqrt36-nonlinear-lending-20261124
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean-certificate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install Lean 4.35.0
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Compile real-KMB prefix reachability and arbitrary-HMR-loan proof
+        run: |
+          cd research/invsqrt36_nonlinear_lending/lean
+          lake build
+      - name: Local Python truth-functional loan regression
+        run: |
+          python3 -m unittest discover -s research/invsqrt36_nonlinear_lending -p 'test_*.py' -v
+      - name: Compile whole-subprogram rematerialization Boolean proof
+        run: |
+          cd research/invsqrt36_nonlinear_lending/lean
+          lake env lean GlobalRemat.lean
+      - name: Kernel-check generic central-hub pivot and measurement phase algebra
+        run: |
+          cd research/invsqrt36_nonlinear_lending/lean
+          lake env lean RadialHub.lean
+      - name: Universal late-materialization regression
+        run: |
+          python3 -m unittest discover -s research/invsqrt36_nonlinear_lending/global_remat -p 'test_*.py' -v
