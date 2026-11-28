@@ -1,0 +1,4 @@
+Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+'Gvqcc.PairedMask257.translatedDelta' depends on axioms: [propext]
+'Gvqcc.PairedMask257.identicalBadValue' does not depend on any axioms
+'Gvqcc.PairedMask257.commonDebt' does not depend on any axioms
